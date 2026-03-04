@@ -64,19 +64,26 @@
 -    const overlay = document.getElementById("drawerOverlay");
 -
 -    if(hamburgerBtn && drawer && overlay){
--        hamburgerBtn.addEventListener("click", () => {
--            drawer.classList.remove("translate-x-full");
--            overlay.classList.remove("hidden");
--            document.body.style.overflow = "hidden";
--        });
--
--        overlay.addEventListener("click", () => {
--            drawer.classList.add("translate-x-full");
--            overlay.classList.add("hidden");
--            document.body.style.overflow = "auto";
--        });
--    }
--});
+
+    hamburgerBtn.addEventListener("click", (e) => {
+
+        e.stopPropagation();
+
+        drawer.classList.remove("translate-x-full");
+        overlay.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+
+    });
+
+    overlay.addEventListener("click", () => {
+
+        drawer.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+        document.body.style.overflow = "auto";
+
+    });
+
+}
 -
 -/* ==========================================
 -   QUIZ DATA SCRAPER
@@ -773,3 +780,4 @@
 +
 +});
 +
+
