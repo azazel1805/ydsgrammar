@@ -64,13 +64,13 @@ safeInject("tab-sentence", typeof sentenceCorrectorHTML !== 'undefined' ? senten
 
     if(hamburgerBtn && drawer && overlay){
         hamburgerBtn.addEventListener("click", () => {
-            drawer.classList.remove("translate-x-full");
+            drawer.classList.remove("translate-x-[100%]");
             overlay.classList.remove("hidden");
             document.body.style.overflow = "hidden";
         });
 
         overlay.addEventListener("click", () => {
-            drawer.classList.add("translate-x-full");
+            drawer.classList.add("translate-x-[100%]");
             overlay.classList.add("hidden");
             document.body.style.overflow = "auto";
         });
@@ -422,6 +422,7 @@ document.addEventListener("click", function(e){
     }
 
 });
+
 
 
 
