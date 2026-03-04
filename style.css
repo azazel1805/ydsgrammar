@@ -1,0 +1,309 @@
+/* =====================================================
+   YDS MASTER – SOPHISTICATED ACADEMIC SYSTEM
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* =============================
+   BASE
+============================= */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* =============================
+   PROGRESS BARS
+============================= */
+
+.prob-bar {
+    height: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.prob-fill {
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* =============================
+   BADGES
+============================= */
+
+.badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.badge-str {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 3px 8px;
+    border-radius: 6px;
+    border: 1px solid #93c5fd;
+    font-size: 0.75rem;
+    display: block;
+    width: fit-content;
+    margin-bottom: 4px;
+}
+
+.dark .badge-str {
+    background: rgba(37, 99, 235, 0.15);
+    color: #93c5fd;
+    border-color: #1e40af;
+}
+
+.badge-nuance {
+    background: #fff1f2;
+    color: #be123c;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    border: 1px solid #fda4af;
+}
+
+.dark .badge-nuance {
+    background: rgba(190, 18, 60, 0.2);
+    color: #fda4af;
+    border-color: #881337;
+}
+
+/* =============================
+   EXAMPLES
+============================= */
+
+.example-block {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.example-text {
+    font-style: italic;
+    color: #334155;
+    font-size: 0.85rem;
+    border-left: 3px solid #cbd5e1;
+    padding: 6px 10px;
+    background: #f8fafc;
+    border-radius: 0 6px 6px 0;
+}
+
+.dark .example-text {
+    color: #cbd5e1;
+    border-color: #475569;
+    background: #1e293b;
+}
+
+/* =============================
+   NAVIGATION – CLEAN
+============================= */
+
+.nav-container {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dark .nav-container {
+    background: #111827;
+    border-bottom: 1px solid #1f2937;
+}
+
+.tab-btn {
+    position: relative;
+    padding: 10px 16px;
+    font-weight: 600;
+    color: #475569;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: #111827;
+}
+
+.dark .tab-btn {
+    color: #9ca3af;
+}
+
+.dark .tab-btn:hover {
+    color: #ffffff;
+}
+
+.tab-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: #111827;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+.tab-btn.active {
+    color: #111827;
+}
+
+.tab-btn.active::after {
+    width: 80%;
+}
+
+.dark .tab-btn.active {
+    color: #ffffff;
+}
+
+.dark .tab-btn::after {
+    background: #ffffff;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================
+   DRAWER BUTTON
+============================= */
+
+.drawer-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.drawer-btn:hover {
+    background: #f3f4f6;
+}
+
+.dark .drawer-btn:hover {
+    background: #1e293b;
+}
+
+.drawer-btn.active {
+    background: #111827;
+    color: white;
+}
+
+/* =============================
+   FLOATING BUTTONS – MINIMAL
+============================= */
+
+.floating-scroll,
+.floating-whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.floating-scroll {
+    bottom: 25px;
+    right: 25px;
+    background: #111827;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.floating-scroll:hover {
+    transform: translateY(-4px);
+}
+
+.floating-whatsapp {
+    bottom: 25px;
+    left: 25px;
+    background: #ffffff;
+    color: #16a34a;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-4px);
+}
+
+/* =============================
+   TOAST
+============================= */
+
+#toast {
+    visibility: hidden;
+    min-width: 200px;
+    background-color: #111827;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    padding: 12px 20px;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+}
+
+#toast.show {
+    visibility: visible;
+    animation: fadein 0.3s, fadeout 0.3s 2.5s;
+}
+
+/* =============================
+   SIGNATURE – CLEAN
+============================= */
+
+.signature {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6b7280;
+}
+
+/* =============================
+   ANALYZER COLORS
+============================= */
+
+.an-verb { color:#ef4444; font-weight:600; }
+.an-noun { color:#3b82f6; font-weight:600; }
+.an-conj { color:#eab308; font-weight:600; }
+.an-subject { color:#3b82f6; font-weight:600; }
