@@ -385,3 +385,42 @@ document.addEventListener("DOMContentLoaded", () => {␊
 ␊
 });␊
 ␊
+/* ==========================================
+   MOBILE DRAWER FIX
+========================================== */
+
+document.addEventListener("click", function(e){
+
+    if(e.target.id === "hamburgerBtn"){
+
+        const drawer = document.getElementById("mobileDrawer");
+        const overlay = document.getElementById("drawerOverlay");
+
+        if(drawer && overlay){
+            drawer.classList.remove("translate-x-full");
+            overlay.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }
+
+    }
+
+});
+
+document.addEventListener("click", function(e){
+
+    if(e.target.id === "drawerOverlay"){
+
+        const drawer = document.getElementById("mobileDrawer");
+        const overlay = document.getElementById("drawerOverlay");
+
+        if(drawer && overlay){
+            drawer.classList.add("translate-x-full");
+            overlay.classList.add("hidden");
+            document.body.style.overflow = "auto";
+        }
+
+    }
+
+});
+
+
