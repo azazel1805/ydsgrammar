@@ -1,8 +1,4 @@
-diff --git a/main.js b/main.js
-index d0fa1fca7ed0b4905f300452b3bd8792c5f9cdb5..dc8e395de8290fe6a4f1d147a5f77497075472ca 100644
---- a/main.js
- b/main.js
-@@ -1,387 1,387 @@
+
 -/* ==========================================
 -   GLOBAL VARIABLES (Quiz)
 -========================================== */
@@ -776,4 +772,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
 
