@@ -76,7 +76,7 @@ Sign in with Google
 
 <header class="text-center mb-6">
 <h1 class="text-3xl md:text-5xl font-extrabold mb-2">
-<span class="bg-clip-text text-transparent bg-gradient-to-r 
+<span class="bg-clip-text text-transparent bg-gradient-to-r
 from-blue-500 via-purple-500 to-pink-500">
 YDS & YDT
 </span>
@@ -87,7 +87,7 @@ Encyclopedia v2.0
 <!-- MOBILE HEADER -->
 <div class="flex items-center justify-between px-4 py-3 md:hidden">
   <div class="font-bold text-purple-400 text-lg">
-     
+
   </div>
   <button id="hamburgerBtn"
     class="text-2xl text-purple focus:outline-none">
@@ -96,25 +96,41 @@ Encyclopedia v2.0
 </div>
 
 <!-- DESKTOP NAV -->
-<nav class="hidden md:flex flex-wrap justify-center gap-4 py-4">
-<button onclick="switchTab('dashboard')" class="tab-btn active">Dashboard</button>
-<button onclick="switchTab('tenses')" class="tab-btn">Tenses</button>
-<button onclick="switchTab('modals')" class="tab-btn">Modals</button>
-<button onclick="switchTab('conjunctions')" class="tab-btn">Conjunctions</button>
-<button onclick="switchTab('dictionary')" class="tab-btn">Dictionary</button>
-<button onclick="switchTab('prepositions')" class="tab-btn">Prepositions</button>
-<button onclick="switchTab('reading')" class="tab-btn">Reading</button>
-<button onclick="switchTab('passive')" class="tab-btn">Passive</button>
-<button onclick="switchTab('relative')" class="tab-btn">Relative Clauses</button>
-<button onclick="switchTab('noun')" class="tab-btn">Noun Clauses</button>
-<button onclick="switchTab('sentence')" class="tab-btn">Sentence Corrector</button>
-<button onclick="switchTab('profile')" class="tab-btn">Profile</button>
-<button onclick="switchTab('vocabulary')" class="tab-btn">Vocabulary</button>
-<button onclick="switchTab('miniexams')" class="tab-btn">Mini Exams</button>
-<button id="analyzerNavBtn"onclick="switchTab('analyzer')"class="tab-btn hidden">ANALYZER</button>
-<button id="testlabNavBtn"onclick="switchTab('testlab')"class="tab-btn hidden">AI LAB</button>
-<button id="linguisticlabNavBtn"onclick="switchTab('linguisticlab')"class="tab-btn hidden">LINGUISTIC LAB</button>
+<nav class="hidden md:grid gap-4 py-4">
+  <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+    <h2 class="font-bold text-blue-600 dark:text-blue-400 mb-3">YDS</h2>
+    <div class="flex flex-wrap gap-3">
+      <button data-tab="dashboard" onclick="switchTab('dashboard')" class="tab-btn active">Dashboard</button>
+      <button data-tab="tenses" onclick="switchTab('tenses')" class="tab-btn">Tenses</button>
+      <button data-tab="modals" onclick="switchTab('modals')" class="tab-btn">Modals</button>
+      <button data-tab="conjunctions" onclick="switchTab('conjunctions')" class="tab-btn">Conjunctions</button>
+      <button data-tab="prepositions" onclick="switchTab('prepositions')" class="tab-btn">Prepositions</button>
+      <button data-tab="reading" onclick="switchTab('reading')" class="tab-btn">Reading</button>
+      <button data-tab="passive" onclick="switchTab('passive')" class="tab-btn">Passive</button>
+      <button data-tab="relative" onclick="switchTab('relative')" class="tab-btn">Relative Clauses</button>
+      <button data-tab="noun" onclick="switchTab('noun')" class="tab-btn">Noun Clauses</button>
+      <button data-tab="miniexams" onclick="switchTab('miniexams')" class="tab-btn">Mini Exams</button>
+    </div>
+  </div>
 
+  <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+    <h2 class="font-bold text-emerald-600 dark:text-emerald-400 mb-3">General English</h2>
+    <div class="flex flex-wrap gap-3">
+      <button data-tab="dictionary" onclick="switchTab('dictionary')" class="tab-btn">Dictionary</button>
+      <button data-tab="sentence" onclick="switchTab('sentence')" class="tab-btn">Sentence Corrector</button>
+      <button data-tab="vocabulary" onclick="switchTab('vocabulary')" class="tab-btn">Vocabulary</button>
+      <button data-tab="profile" onclick="switchTab('profile')" class="tab-btn">Profile</button>
+    </div>
+  </div>
+
+  <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+    <h2 class="font-bold text-purple-600 dark:text-purple-400 mb-3">AI Tools</h2>
+    <div class="flex flex-wrap gap-3">
+      <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')" class="tab-btn hidden">ANALYZER</button>
+      <button id="testlabNavBtn" data-tab="testlab" onclick="switchTab('testlab')" class="tab-btn hidden">AI LAB</button>
+      <button id="linguisticlabNavBtn" data-tab="linguisticlab" onclick="switchTab('linguisticlab')" class="tab-btn hidden">LINGUISTIC LAB</button>
+    </div>
+  </div>
 </nav>
 
 <!-- OVERLAY -->
@@ -133,27 +149,40 @@ z-50 p-6 space-y-4">
 Navigation
 </h2>
 
-<button onclick="switchTabAndClose('dashboard')" class="block w-full text-left">Dashboard</button>
-<button onclick="switchTabAndClose('modals')" class="block w-full text-left">Modals</button>
-<button onclick="switchTabAndClose('tenses')" class="block w-full text-left">Tenses</button>
-<button onclick="switchTabAndClose('conjunctions')" class="block w-full text-left">Conjunctions</button>
-<button onclick="switchTabAndClose('dictionary')" class="block w-full text-left">Dictionary</button>
-<button onclick="switchTabAndClose('prepositions')" class="block w-full text-left">Prepositions</button>
-<button onclick="switchTabAndClose('reading')" class="block w-full text-left">Reading</button>
-<button onclick="switchTabAndClose('passive')" class="block w-full text-left">Passive</button>
-<button onclick="switchTabAndClose('relative')" class="block w-full text-left">Relative Clause</button>
-<button onclick="switchTabAndClose('noun')" class="block w-full text-left">Noun Clause</button>
-<button onclick="switchTabAndClose('sentence')" class="block w-full text-left">Sentence Corrector</button>
-<button onclick="switchTabAndClose('profile')" class="block w-full text-left">Profile</button>
-<button onclick="switchTabAndClose('vocabulary')" class="block w-full text-left">Vocabulary</button>
-<button onclick="switchTabAndClose('miniexams')" class="block w-full text-left">Mini Exams</button>
-<button id="analyzerMobileBtn"onclick="switchTabAndClose('analyzer')"class="block w-full text-left hidden">Analyzer
-</button>
-<button id="testlabMobileBtn"onclick="switchTabAndClose('testlab')"class="block w-full text-left hidden">Test Lab
-</button>
-<button id="linguisticlabMobileBtn"onclick="switchTabAndClose('linguisticlab')"class="block w-full text-left hidden">
-Linguistic Lab
-</button>
+<div>
+  <h3 class="text-blue-300 font-semibold mb-2">YDS</h3>
+  <div class="space-y-2 mb-4">
+    <button data-tab="dashboard" onclick="switchTabAndClose('dashboard')" class="drawer-btn">Dashboard</button>
+    <button data-tab="modals" onclick="switchTabAndClose('modals')" class="drawer-btn">Modals</button>
+    <button data-tab="tenses" onclick="switchTabAndClose('tenses')" class="drawer-btn">Tenses</button>
+    <button data-tab="conjunctions" onclick="switchTabAndClose('conjunctions')" class="drawer-btn">Conjunctions</button>
+    <button data-tab="prepositions" onclick="switchTabAndClose('prepositions')" class="drawer-btn">Prepositions</button>
+    <button data-tab="reading" onclick="switchTabAndClose('reading')" class="drawer-btn">Reading</button>
+    <button data-tab="passive" onclick="switchTabAndClose('passive')" class="drawer-btn">Passive</button>
+    <button data-tab="relative" onclick="switchTabAndClose('relative')" class="drawer-btn">Relative Clause</button>
+    <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause</button>
+    <button data-tab="miniexams" onclick="switchTabAndClose('miniexams')" class="drawer-btn">Mini Exams</button>
+  </div>
+</div>
+
+<div>
+  <h3 class="text-emerald-300 font-semibold mb-2">General English</h3>
+  <div class="space-y-2 mb-4">
+    <button data-tab="dictionary" onclick="switchTabAndClose('dictionary')" class="drawer-btn">Dictionary</button>
+    <button data-tab="sentence" onclick="switchTabAndClose('sentence')" class="drawer-btn">Sentence Corrector</button>
+    <button data-tab="vocabulary" onclick="switchTabAndClose('vocabulary')" class="drawer-btn">Vocabulary</button>
+    <button data-tab="profile" onclick="switchTabAndClose('profile')" class="drawer-btn">Profile</button>
+  </div>
+</div>
+
+<div>
+  <h3 class="text-purple-300 font-semibold mb-2">AI Tools</h3>
+  <div class="space-y-2">
+    <button id="analyzerMobileBtn" data-tab="analyzer" onclick="switchTabAndClose('analyzer')" class="drawer-btn hidden">Analyzer</button>
+    <button id="testlabMobileBtn" data-tab="testlab" onclick="switchTabAndClose('testlab')" class="drawer-btn hidden">Test Lab</button>
+    <button id="linguisticlabMobileBtn" data-tab="linguisticlab" onclick="switchTabAndClose('linguisticlab')" class="drawer-btn hidden">Linguistic Lab</button>
+  </div>
+</div>
 </div>
 
 <!-- CONTENT -->
@@ -182,9 +211,9 @@ Linguistic Lab
 
   <div class="absolute inset-0 flex items-center justify-center p-4">
 
-    <div class="bg-white dark:bg-slate-900 
-                w-full max-w-2xl 
-                max-h-[90vh] 
+    <div class="bg-white dark:bg-slate-900
+                w-full max-w-2xl
+                max-h-[90vh]
                 overflow-y-auto
                 rounded-xl shadow-2xl relative p-8">
 
@@ -263,3 +292,4 @@ Linguistic Lab
 
 </body>
 </html>
+main.js
