@@ -306,4 +306,21 @@ html, body {
 .an-verb { color:#ef4444; font-weight:600; }
 .an-noun { color:#3b82f6; font-weight:600; }
 .an-conj { color:#eab308; font-weight:600; }
+
+.drawer{
+position:fixed;
+top:0;
+right:0;
+height:100%;
+width:18rem;
+background:#0f172a;
+transform:translateX(100%);
+transition:transform .3s;
+z-index:50;
+}
+
+.drawer.open{
+transform:translateX(0);
+}
+
 .an-subject { color:#3b82f6; font-weight:600; }
