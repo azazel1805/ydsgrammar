@@ -159,35 +159,39 @@ if(!topicEl) return;
 const topic = topicEl.value;
 
 const searchUrl =
-`https://simple.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(topic)}&format=json&origin=*`;
+`https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(topic)}&format=json&origin=*`;
 
 const searchRes = await fetch(searchUrl);
 const searchData = await searchRes.json();
 
 const results = searchData.query.search;
 
-if(!results || results.length === 0){
+if(!results || results.length===0){
 document.getElementById("readingText").innerHTML =
 "No related articles found.";
 return;
 }
 
-// random article seç
-const randomIndex = Math.floor(Math.random() * results.length);
-const title = results[randomIndex].title;
+const randomIndex = Math.floor(Math.random()*results.length);
+fetchFullArticle(results[randomIndex].title);
+}
 
-// article fetch
-const articleUrl =
-`https://simple.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=true&titles=${encodeURIComponent(title)}&format=json&origin=*`;
+async function fetchFullArticle(title){
 
-const articleRes = await fetch(articleUrl);
-const articleData = await articleRes.json();
+const url =
+`https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=true&titles=${encodeURIComponent(title)}&format=json&origin=*`;
 
-const pages = articleData.query.pages;
-const page = Object.values(pages)[0];
+const res = await fetch(url);
+const data = await res.json();
 
-document.getElementById("readingText").innerText = page.extract;
+const pages = data.query.pages;
+const pageId = Object.keys(pages)[0];
+let text = pages[pageId].extract;
 
+if(!text){
+document.getElementById("readingText").innerHTML =
+"Content not found.";
+return;
 }
 
 fullArticleText = text;
