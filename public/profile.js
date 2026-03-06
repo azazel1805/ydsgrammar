@@ -318,7 +318,7 @@ async function checkAnalyzerAccess(code) {
         return;
     }
 
-    const res = await fetch("/api/verifyAccess", {
+    const res = await fetch("/.netlify/functions/verifyAccess", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
