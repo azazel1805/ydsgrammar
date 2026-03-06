@@ -1,14 +1,24 @@
-export default async function handler(req, res) {
-  // Vercel auto-parses JSON requests
-  const code = req.body?.code;
+export async function handler(event, context) {
+
+  const body = JSON.parse(event.body || "{}");
+  const code = body.code;
 
   if (!code) {
-    return res.status(400).send("Missing code");
+    return {
+      statusCode: 400,
+      body: "Missing code"
+    };
   }
 
   if (code === process.env.AI_SECRET_CODE) {
-    return res.status(200).json({ success: true });
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ success: true })
+    };
   }
 
-  return res.status(403).send("Invalid code");
+  return {
+    statusCode: 403,
+    body: "Invalid code"
+  };
 }
