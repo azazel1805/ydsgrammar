@@ -1,34 +1,21 @@
 {
   "name": "ydsgrammar",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/azazel1805/ydsgrammar.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/azazel1805/ydsgrammar/issues"
-  },
-  "homepage": "https://github.com/azazel1805/ydsgrammar#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "tailwindcss": "^4.2.1",
     "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/postcss": "^4.2.1",
     "@tailwindcss/vite": "^4.2.1",
-    "autoprefixer": "^10.4.27",
-    "concurrently": "^9.2.1",
     "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.1",
-    "vite": "^7.3.1"
+    "autoprefixer": "^10.4.27",
+    "concurrently": "^9.2.1"
   }
 }
