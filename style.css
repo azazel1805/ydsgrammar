@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@source "./public";
+
 /* =====================================================
    YDS MASTER – SOPHISTICATED ACADEMIC SYSTEM
 ===================================================== */
@@ -12,7 +15,8 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -114,65 +118,73 @@ html, body {
 }
 
 /* =============================
-   NAVIGATION – CLEAN
+   NAVIGATION – CLEAN LITERARY
 ============================= */
 
 .nav-container {
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+    background: transparent;
 }
 
-.dark .nav-container {
-    background: #111827;
-    border-bottom: 1px solid #1f2937;
-}
-
-.tab-btn {
+.nav-drop-btn {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
     position: relative;
-    padding: 10px 16px;
-    font-weight: 600;
-    color: #475569;
-    transition: all 0.2s ease;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
 
-.tab-btn:hover {
-    color: #111827;
-}
-
-.dark .tab-btn {
-    color: #9ca3af;
-}
-
-.dark .tab-btn:hover {
-    color: #ffffff;
-}
-
-.tab-btn::after {
-    content: "";
+.nav-drop-btn::after {
+    content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
     width: 0%;
     height: 2px;
-    background: #111827;
-    transform: translateX(-50%);
+    background: #b91c1c;
+    /* Blood red */
     transition: 0.3s ease;
 }
 
+/* Hover effects for dropdown parent */
+.group:hover .nav-drop-btn {
+    color: #b91c1c;
+}
+
+.group:hover .nav-drop-btn::after {
+    width: 100%;
+}
+
+/* Dropdown styling */
+.group .absolute {
+    background-color: #ffffff;
+    border-top: 2px solid #b91c1c;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    /* Soft glow/shadow */
+}
+
+.tab-btn {
+    font-family: 'Lora', serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333333;
+    transition: all 0.2s ease;
+    border-left: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    color: #b91c1c;
+    background: #fafafa;
+    border-left: 2px solid #b91c1c;
+}
+
 .tab-btn.active {
-    color: #111827;
-}
-
-.tab-btn.active::after {
-    width: 80%;
-}
-
-.dark .tab-btn.active {
-    color: #ffffff;
-}
-
-.dark .tab-btn::after {
-    background: #ffffff;
+    color: #b91c1c !important;
+    font-weight: 700;
+    background: rgba(185, 28, 28, 0.05) !important;
+    border-left: 2px solid #b91c1c;
 }
 
 .tab-content {
@@ -185,8 +197,15 @@ html, body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* =============================
@@ -237,13 +256,17 @@ html, body {
 .floating-scroll {
     bottom: 25px;
     right: 25px;
-    background: #111827;
-    color: white;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(185, 28, 28, 0.6);
+    /* Red glow */
+    border: 1px solid #b91c1c;
 }
 
 .floating-scroll:hover {
     transform: translateY(-4px);
+    background: #b91c1c;
+    box-shadow: 0 0 25px rgba(185, 28, 28, 0.9);
 }
 
 .floating-whatsapp {
@@ -252,7 +275,7 @@ html, body {
     background: #ffffff;
     color: #16a34a;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .floating-whatsapp:hover {
@@ -277,7 +300,7 @@ html, body {
     transform: translateX(-50%);
     bottom: 30px;
     font-weight: 600;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     font-size: 0.9rem;
 }
 
@@ -303,24 +326,38 @@ html, body {
    ANALYZER COLORS
 ============================= */
 
-.an-verb { color:#ef4444; font-weight:600; }
-.an-noun { color:#3b82f6; font-weight:600; }
-.an-conj { color:#eab308; font-weight:600; }
-
-.drawer{
-position:fixed;
-top:0;
-right:0;
-height:100%;
-width:18rem;
-background:#0f172a;
-transform:translateX(100%);
-transition:transform .3s;
-z-index:50;
+.an-verb {
+    color: #ef4444;
+    font-weight: 600;
 }
 
-.drawer.open{
-transform:translateX(0);
+.an-noun {
+    color: #3b82f6;
+    font-weight: 600;
 }
 
-.an-subject { color:#3b82f6; font-weight:600; }
+.an-conj {
+    color: #eab308;
+    font-weight: 600;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 18rem;
+    transform: translateX(100%);
+    transition: transform .3s;
+    z-index: 50;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.drawer.open {
+    transform: translateX(0);
+}
+
+.an-subject {
+    color: #3b82f6;
+    font-weight: 600;
+}

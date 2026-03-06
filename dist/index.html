@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YDS & YDT Master Encyclopedia v2.0</title>
+
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+
+  <!-- Tailwind will be injected by Vite -->
+
+  <link rel="manifest" href="/assets/manifest-mDTR93Jz.json">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Literary Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/tailwind.css">
+  <script type="module" crossorigin src="/assets/index-DNa_1lYZ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-3BgYB19C.css">
+</head>
+
+<body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
+  <p class="signature text-center mt-2 mb-4 text-gray-400 text-xs tracking-[0.2em] uppercase font-semibold">
+    Created by <span class="text-red-600 font-extrabold drop-shadow-[0_0_8px_rgba(220,38,38,0.8)] animate-pulse">HOT <i
+        class="fas fa-fire"></i></span>
+  </p>
+  <!-- LOGIN PAGE -->
+  <div id="loginPage" class="min-h-screen flex items-center justify-center bg-slate-950 hidden">
+    <div class="bg-slate-900 p-8 rounded-xl w-full max-w-md space-y-4">
+      <h2 class="text-xl font-bold text-white text-center">
+        Login / Register
+      </h2>
+
+      <input id="emailInput" type="email" class="w-full p-3 rounded bg-slate-800 text-white" placeholder="Email">
+
+      <input id="passwordInput" type="password" class="w-full p-3 rounded bg-slate-800 text-white"
+        placeholder="Password">
+
+      <div class="flex gap-3">
+        <button id="registerBtn" class="flex-1 bg-blue-600 py-2 rounded text-white">
+          Register
+        </button>
+
+        <button id="loginBtn" class="flex-1 bg-green-600 py-2 rounded text-white">
+          Login
+        </button>
+        <button onclick="loginWithGoogle()"
+          class="w-full bg-white text-black py-2 rounded flex items-center justify-center gap-2 mt-3">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20">
+          Sign in with Google
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP WRAPPER -->
+  <div id="appWrapper" class="hidden">
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+
+      <header class="text-center mb-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-1 tracking-tight"
+          style="font-family: 'Playfair Display', serif;">
+          YDS & YDT
+        </h1>
+        <p
+          class="text-lg text-gray-500 italic tracking-widest uppercase text-sm mt-3 border-b border-gray-200 pb-4 w-max mx-auto">
+          Encyclopedia v2.0</p>
+      </header>
+
+      <!-- MOBILE HEADER -->
+      <div class="flex items-center justify-between px-4 py-3 md:hidden">
+        <div class="font-bold text-purple-400 text-lg">
+
+        </div>
+        <button id="hamburgerBtn" class="text-2xl text-purple focus:outline-none">
+          ☰
+        </button>
+      </div>
+
+      <!-- DESKTOP NAV: MODERN DROPDOWNS -->
+      <nav
+        class="hidden md:flex items-center justify-center gap-12 py-4 mb-10 border-b border-gray-200 uppercase text-sm tracking-widest font-semibold">
+
+        <!-- Dashboard Tab (Standalone) -->
+        <div class="relative group">
+          <button data-tab="dashboard" onclick="switchTab('dashboard')"
+            class="nav-drop-btn pb-4 hover:text-red-700 transition-colors">Dashboard</button>
+        </div>
+
+        <!-- YDS Dropdown -->
+        <div class="relative group">
+          <button class="nav-drop-btn pb-4">YDS <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
+          <div
+            class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+            <button data-tab="tenses" onclick="switchTab('tenses')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Tenses</button>
+            <button data-tab="modals" onclick="switchTab('modals')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Modals</button>
+            <button data-tab="conjunctions" onclick="switchTab('conjunctions')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Conjunctions</button>
+            <button data-tab="prepositions" onclick="switchTab('prepositions')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Prepositions</button>
+            <button data-tab="reading" onclick="switchTab('reading')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Reading</button>
+            <button data-tab="passive" onclick="switchTab('passive')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Passive</button>
+            <button data-tab="relative" onclick="switchTab('relative')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Relative
+              Clauses</button>
+            <button data-tab="noun" onclick="switchTab('noun')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Noun
+              Clauses</button>
+            <button data-tab="miniexams" onclick="switchTab('miniexams')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Mini
+              Exams</button>
+          </div>
+        </div>
+
+        <!-- General English Dropdown -->
+        <div class="relative group">
+          <button class="nav-drop-btn pb-4">Gen. English <i
+              class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
+          <div
+            class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+            <button data-tab="dictionary" onclick="switchTab('dictionary')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Dictionary</button>
+            <button data-tab="sentence" onclick="switchTab('sentence')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Sentence
+              Corrector</button>
+            <button data-tab="vocabulary" onclick="switchTab('vocabulary')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Vocabulary</button>
+          </div>
+        </div>
+
+        <!-- AI Tools Dropdown -->
+        <div class="relative group">
+          <button class="nav-drop-btn pb-4">AI Tools <i
+              class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
+          <div
+            class="absolute right-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[220px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+
+            <div id="aiToolsLockedMsg" class="px-5 py-4 text-sm text-gray-400 italic font-medium">
+              <i class="fas fa-lock text-xs mr-2 relative -top-[1px]"></i> VIP Access Locked.<br><span
+                class="text-xs text-red-800 ml-4 not-italic font-bold cursor-pointer"
+                onclick="switchTab('profile')">Unlock in Profile &rarr;</span>
+            </div>
+
+            <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Question
+              Analyzer</button>
+            <button id="testlabNavBtn" data-tab="testlab" onclick="switchTab('testlab')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Sentence
+              Visualizer</button>
+            <button id="linguisticlabNavBtn" data-tab="linguisticlab" onclick="switchTab('linguisticlab')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Linguistic
+              Lab</button>
+          </div>
+        </div>
+
+        <!-- Profile Tab (Standalone) -->
+        <div class="relative group">
+          <button data-tab="profile" onclick="switchTab('profile')"
+            class="nav-drop-btn pb-4 hover:text-red-700 transition-colors">Profile</button>
+        </div>
+      </nav>
+
+      <!-- OVERLAY -->
+      <div id="drawerOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+      <!-- MOBILE DRAWER -->
+      <div id="mobileDrawer" class="fixed top-0 right-0 h-screen w-72
+bg-white text-black border-l border-gray-200
+transform translate-x-full
+transition-transform duration-300
+z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
+
+        <h2 class="text-2xl font-bold mb-6 text-red-800 border-b border-gray-100 pb-2"
+          style="font-family: 'Playfair Display', serif;">
+          Navigation
+        </h2>
+
+        <div>
+          <h3 class="text-red-800 font-bold mb-2 uppercase tracking-widest text-xs">YDS</h3>
+          <div class="space-y-2 mb-4">
+            <button data-tab="dashboard" onclick="switchTabAndClose('dashboard')" class="drawer-btn">Dashboard</button>
+            <button data-tab="modals" onclick="switchTabAndClose('modals')" class="drawer-btn">Modals</button>
+            <button data-tab="tenses" onclick="switchTabAndClose('tenses')" class="drawer-btn">Tenses</button>
+            <button data-tab="conjunctions" onclick="switchTabAndClose('conjunctions')"
+              class="drawer-btn">Conjunctions</button>
+            <button data-tab="prepositions" onclick="switchTabAndClose('prepositions')"
+              class="drawer-btn">Prepositions</button>
+            <button data-tab="reading" onclick="switchTabAndClose('reading')" class="drawer-btn">Reading</button>
+            <button data-tab="passive" onclick="switchTabAndClose('passive')" class="drawer-btn">Passive</button>
+            <button data-tab="relative" onclick="switchTabAndClose('relative')" class="drawer-btn">Relative
+              Clause</button>
+            <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause</button>
+            <button data-tab="miniexams" onclick="switchTabAndClose('miniexams')" class="drawer-btn">Mini Exams</button>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">General English</h3>
+          <div class="space-y-2 mb-4">
+            <button data-tab="dictionary" onclick="switchTabAndClose('dictionary')"
+              class="drawer-btn">Dictionary</button>
+            <button data-tab="sentence" onclick="switchTabAndClose('sentence')" class="drawer-btn">Sentence
+              Corrector</button>
+            <button data-tab="vocabulary" onclick="switchTabAndClose('vocabulary')"
+              class="drawer-btn">Vocabulary</button>
+            <button data-tab="profile" onclick="switchTabAndClose('profile')" class="drawer-btn">Profile</button>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">AI Tools</h3>
+          <div class="space-y-2">
+
+            <div id="aiToolsLockedMobile" class="text-sm text-gray-400 italic font-medium py-2">
+              <i class="fas fa-lock text-xs mr-2"></i> VIP Access Locked
+            </div>
+
+            <button id="analyzerMobileBtn" data-tab="analyzer" onclick="switchTabAndClose('analyzer')"
+              class="drawer-btn hidden">Question Analyzer</button>
+            <button id="testlabMobileBtn" data-tab="testlab" onclick="switchTabAndClose('testlab')"
+              class="drawer-btn hidden">Sentence Visualizer</button>
+            <button id="linguisticlabMobileBtn" data-tab="linguisticlab" onclick="switchTabAndClose('linguisticlab')"
+              class="drawer-btn hidden">Linguistic Lab</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div id="tab-dashboard" class="tab-content active"></div>
+      <div id="tab-modals" class="tab-content"></div>
+      <div id="tab-tenses" class="tab-content"></div>
+      <div id="tab-conjunctions" class="tab-content"></div>
+      <div id="tab-dictionary" class="tab-content"></div>
+      <div id="tab-prepositions" class="tab-content"></div>
+      <div id="tab-reading" class="tab-content"></div>
+      <div id="tab-passive" class="tab-content"></div>
+      <div id="tab-relative" class="tab-content"></div>
+      <div id="tab-noun" class="tab-content"></div>
+      <div id="tab-sentence" class="tab-content"></div>
+      <div id="tab-profile" class="tab-content"></div>
+      <div id="tab-vocabulary" class="tab-content hidden"></div>
+      <div id="tab-miniexams" class="tab-content"></div>
+      <div id="tab-analyzer" class="tab-content hidden"></div>
+      <div id="tab-testlab" class="tab-content hidden"></div>
+      <div id="tab-linguisticlab" class="tab-content hidden"></div>
+    </div>
+
+    <!-- QUIZ MODAL -->
+    <div id="quizModal" class="fixed inset-0 bg-black/80 hidden z-[200]">
+
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+
+        <div class="bg-white 
+                w-full max-w-2xl
+                max-h-[90vh]
+                overflow-y-auto
+                rounded-xl shadow-2xl relative p-8 border border-gray-200">
+
+          <button onclick="closeQuiz()" class="absolute top-4 right-4 text-red-500 text-xl">✖</button>
+
+          <!-- START -->
+          <div id="quizStart" class="text-center">
+            <h3 class="text-3xl font-bold mb-6 text-red-800" style="font-family: 'Playfair Display', serif;">Ultimate
+              Mix Quiz</h3>
+            <button onclick="startQuiz(10)"
+              class="px-8 py-3 bg-red-800 text-white rounded-lg font-bold hover:bg-black transition-colors shadow-lg shadow-red-800/20">
+              Start Quiz
+            </button>
+          </div>
+
+          <!-- GAME -->
+          <div id="quizGame" style="display:none;">
+            <div class="mb-4 font-bold">
+              Question <span id="qNum"></span> |
+              Score: <span id="qScore"></span>
+            </div>
+
+            <div id="qSentence" class="mb-4"></div>
+            <div id="qOptions" class="grid gap-3"></div>
+          </div>
+
+          <!-- RESULT -->
+          <div id="quizResult" style="display:none;">
+            <h3 class="text-xl font-bold mb-3">
+              Final Score: <span id="finalScore"></span>
+            </h3>
+            <div id="quizErrorSummary"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="/modals.js"></script>
+    <script src="/tenses.js"></script>
+    <script src="/conjunctions.js"></script>
+    <script src="/dictionary.js"></script>
+    <script src="/prepositions-data.js"></script>
+    <script src="/prepositions.js"></script>
+    <script src="/reading.js"></script>
+    <script src="/passive.js"></script>
+    <script src="/relative.js"></script>
+    <script src="/noun.js"></script>
+    <script src="/sentencecorrectorhtml.js"></script>
+    <script src="/sentencecorrector.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/dashboard.js"></script>
+    <script src="/vocabulary.js"></script>
+    <script src="/miniexams.js"></script>
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="/analyzer.js"></script>
+    <script src="/testlab.js"></script>
+    <script src="/linguistic-lab.js"></script>
+    <script src="/main.js"></script>
+
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/905431395739?text=Merhaba,%20bir%20sorum%20var!" target="_blank" class="floating-whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- REMOVED THEME TOGGLE -->
+
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTopBtn" class="floating-scroll hidden">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+
+</html>

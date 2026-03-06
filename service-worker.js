@@ -44,6 +44,11 @@ self.addEventListener("activate", event => {
 
 // FETCH (Network First Strategy)
 self.addEventListener("fetch", event => {
+  // Only cache GET requests and HTTP/HTTPS schemes
+  if (event.request.method !== "GET" || !event.request.url.startsWith("http")) {
+    return;
+  }
+
   event.respondWith(
     fetch(event.request)
       .then(response => {

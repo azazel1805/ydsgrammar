@@ -5,10 +5,10 @@ let authInitialized = false;
    EMAIL + GOOGLE LOGIN SYSTEM
 ========================================= */
 
-import { initializeApp } 
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { initializeApp }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-import { 
+import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -18,7 +18,7 @@ import {
   signInWithPopup
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-import { 
+import {
   getFirestore,
   doc,
   setDoc,
@@ -26,7 +26,10 @@ import {
   addDoc,
   getDocs,
   deleteDoc,
-  updateDoc
+  updateDoc,
+  query,
+  orderBy,
+  limit
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 /* =========================================
@@ -64,11 +67,11 @@ window.db = db;
    REGISTER (EMAIL)
 ========================================= */
 
-window.registerUser = async function(email, password){
+window.registerUser = async function (email, password) {
   try {
 
     const userCredential =
-    await createUserWithEmailAndPassword(auth, email, password);
+      await createUserWithEmailAndPassword(auth, email, password);
 
     const user = userCredential.user;
 
@@ -81,7 +84,7 @@ window.registerUser = async function(email, password){
 
     alert("Registered successfully!");
 
-  } catch(err) {
+  } catch (err) {
     alert(err.message);
   }
 };
@@ -90,10 +93,10 @@ window.registerUser = async function(email, password){
    LOGIN (EMAIL)
 ========================================= */
 
-window.loginUser = async function(email, password){
+window.loginUser = async function (email, password) {
   try {
     await signInWithEmailAndPassword(auth, email, password);
-  } catch(err){
+  } catch (err) {
     alert(err.message);
   }
 };
@@ -102,7 +105,7 @@ window.loginUser = async function(email, password){
    LOGIN (GOOGLE)
 ========================================= */
 
-window.loginWithGoogle = async function(){
+window.loginWithGoogle = async function () {
 
   try {
 
@@ -116,7 +119,7 @@ window.loginWithGoogle = async function(){
       createdAt: new Date()
     }, { merge: true });
 
-  } catch(err){
+  } catch (err) {
     alert(err.message);
   }
 
@@ -126,7 +129,7 @@ window.loginWithGoogle = async function(){
    LOGOUT
 ========================================= */
 
-window.logoutUser = async function(){
+window.logoutUser = async function () {
   await signOut(auth);
 };
 
@@ -139,31 +142,31 @@ onAuthStateChanged(auth, (user) => {
   const loginPage = document.getElementById("loginPage");
   const appWrapper = document.getElementById("appWrapper");
 
-  if(!authInitialized){
-      authInitialized = true;
+  if (!authInitialized) {
+    authInitialized = true;
   }
 
-  if(user){
+  if (user) {
 
     window.currentUser = user;
 
-    if(loginPage) loginPage.classList.add("hidden");
-    if(appWrapper) appWrapper.classList.remove("hidden");
+    if (loginPage) loginPage.classList.add("hidden");
+    if (appWrapper) appWrapper.classList.remove("hidden");
 
     if (typeof renderNotesDashboard === "function") {
-        renderNotesDashboard();
+      renderNotesDashboard();
     }
 
   } else {
 
     window.currentUser = null;
 
-    if(loginPage) loginPage.classList.remove("hidden");
-    if(appWrapper) appWrapper.classList.add("hidden");
+    if (loginPage) loginPage.classList.remove("hidden");
+    if (appWrapper) appWrapper.classList.add("hidden");
   }
 
-  if(typeof window.forceProfileRender === "function"){
-      window.forceProfileRender();
+  if (typeof window.forceProfileRender === "function") {
+    window.forceProfileRender();
   }
 
 });
@@ -177,13 +180,13 @@ window.addEventListener("DOMContentLoaded", () => {
   const loginBtn = document.getElementById("loginBtn");
   const registerBtn = document.getElementById("registerBtn");
 
-  if(loginBtn){
+  if (loginBtn) {
     loginBtn.addEventListener("click", async () => {
 
       const email = document.getElementById("emailInput").value.trim();
       const password = document.getElementById("passwordInput").value.trim();
 
-      if(!email || !password){
+      if (!email || !password) {
         alert("Enter email & password");
         return;
       }
@@ -192,13 +195,13 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if(registerBtn){
+  if (registerBtn) {
     registerBtn.addEventListener("click", async () => {
 
       const email = document.getElementById("emailInput").value.trim();
       const password = document.getElementById("passwordInput").value.trim();
 
-      if(!email || !password){
+      if (!email || !password) {
         alert("Enter email & password");
         return;
       }
@@ -214,8 +217,8 @@ window.addEventListener("DOMContentLoaded", () => {
    FIRESTORE HELPERS (GLOBAL)
 ========================================= */
 
-window.saveWordFirestore = async function(wordData){
-  if(!window.currentUser) return;
+window.saveWordFirestore = async function (wordData) {
+  if (!window.currentUser) return;
 
   await addDoc(
     collection(db, "users", window.currentUser.uid, "savedWords"),
@@ -223,8 +226,8 @@ window.saveWordFirestore = async function(wordData){
   );
 };
 
-window.getSavedWordsFirestore = async function(){
-  if(!window.currentUser) return [];
+window.getSavedWordsFirestore = async function () {
+  if (!window.currentUser) return [];
 
   const snapshot = await getDocs(
     collection(db, "users", window.currentUser.uid, "savedWords")
@@ -236,8 +239,8 @@ window.getSavedWordsFirestore = async function(){
   }));
 };
 
-window.saveNoteFirestore = async function(noteText){
-  if(!window.currentUser) return;
+window.saveNoteFirestore = async function (noteText) {
+  if (!window.currentUser) return;
 
   await addDoc(
     collection(db, "users", window.currentUser.uid, "notes"),
@@ -248,8 +251,40 @@ window.saveNoteFirestore = async function(noteText){
   );
 };
 
-window.getNotesFirestore = async function(){
-  if(!window.currentUser) return [];
+/* =========================================
+   QUIZ GAMIFICATION (FIRESTORE)
+========================================= */
+
+window.saveQuizScoreFirestore = async function (score) {
+  if (!window.currentUser) return;
+
+  await addDoc(
+    collection(db, "users", window.currentUser.uid, "quizHistory"),
+    {
+      score: score,
+      timestamp: new Date()
+    }
+  );
+};
+
+window.getQuizHistoryFirestore = async function () {
+  if (!window.currentUser) return [];
+
+  const histQuery = query(
+    collection(db, "users", window.currentUser.uid, "quizHistory"),
+    orderBy("timestamp", "asc")
+  );
+
+  const snapshot = await getDocs(histQuery);
+
+  return snapshot.docs.map(doc => ({
+    id: doc.id,
+    ...doc.data()
+  }));
+};
+
+window.getNotesFirestore = async function () {
+  if (!window.currentUser) return [];
 
   const snapshot = await getDocs(
     collection(db, "users", window.currentUser.uid, "notes")
@@ -261,24 +296,24 @@ window.getNotesFirestore = async function(){
   }));
 };
 
-window.deleteWordFirestore = async function(wordId){
-  if(!window.currentUser) return;
+window.deleteWordFirestore = async function (wordId) {
+  if (!window.currentUser) return;
 
   await deleteDoc(
     doc(db, "users", window.currentUser.uid, "savedWords", wordId)
   );
 };
 
-window.deleteNoteFirestore = async function(noteId){
-  if(!window.currentUser) return;
+window.deleteNoteFirestore = async function (noteId) {
+  if (!window.currentUser) return;
 
   await deleteDoc(
     doc(db, "users", window.currentUser.uid, "notes", noteId)
   );
 };
 
-window.updateNoteFirestore = async function(noteId, newText){
-  if(!window.currentUser) return;
+window.updateNoteFirestore = async function (noteId, newText) {
+  if (!window.currentUser) return;
 
   await updateDoc(
     doc(db, "users", window.currentUser.uid, "notes", noteId),
