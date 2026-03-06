@@ -237,7 +237,7 @@ async function analyzeWord() {
     const output = document.getElementById("labWordOutput");
     output.innerHTML = "Analyzing...";
 
-    const res = await fetch("/.netlify/functions/linguistic-lab", {
+    const res = await fetch("/api/linguistic-lab", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -320,7 +320,7 @@ async function analyzeSentenceLab() {
 
     try {
 
-        const res = await fetch("/.netlify/functions/linguistic-lab", {
+        const res = await fetch("/api/linguistic-lab", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -387,7 +387,7 @@ async function analyzeParagraphLab() {
 
     try {
 
-        const res = await fetch("/.netlify/functions/linguistic-lab", {
+        const res = await fetch("/api/linguistic-lab", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
