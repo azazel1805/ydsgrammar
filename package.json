@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"vite\" \"tailwindcss -i style.css -o public/tailwind.css --watch\"",
-    "build": "tailwindcss -i style.css -o public/tailwind.css --minify && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "repository": {
