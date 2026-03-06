@@ -50,7 +50,7 @@ async function analyzeSentence() {
 
     try {
 
-        const response = await fetch("/.netlify/functions/testlab", {
+        const response = await fetch("/api/testlab", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
