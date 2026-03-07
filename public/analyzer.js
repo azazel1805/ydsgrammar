@@ -59,7 +59,7 @@ function initAnalyzer() {
 
         try {
 
-            const response = await fetch("/api/analyze", {
+            const response = await fetch("/.netlify/functions/analyze")
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
