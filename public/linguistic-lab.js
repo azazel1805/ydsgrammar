@@ -320,7 +320,7 @@ async function analyzeSentenceLab() {
 
     try {
 
-        const res = await fetch("/api/linguistic-lab", {
+        const res = await fetch("/.netlify/functions/linguistic-lab", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
