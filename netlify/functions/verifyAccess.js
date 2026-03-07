@@ -1,23 +1,25 @@
-async function checkAnalyzerAccess(code) {
+exports.handler = async function (event) {
 
-    if (!code) {
-        alert("Enter code");
-        return;
+  const body = JSON.parse(event.body || "{}")
+  const code = body.code
+
+  if (!code) {
+    return {
+      statusCode: 400,
+      body: "Missing code"
     }
+  }
 
-    const res = await fetch("/.netlify/functions/verifyAccess", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ code })
-    });
-
-    if (res.ok) {
-        localStorage.setItem("analyzer_access", "true");
-        unlockAnalyzerUI();
-        alert("AI unlocked 🔓");
-    } else {
-        alert("Wrong code ❌");
+  if (code === process.env.AI_SECRET_CODE) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ success: true })
     }
+  }
+
+  return {
+    statusCode: 403,
+    body: "Invalid code"
+  }
+
 }
