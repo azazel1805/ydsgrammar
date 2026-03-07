@@ -264,9 +264,7 @@ async function analyzeWord() {
 function labCard(title, content) {
 
     return `
-        < div class="p-6 rounded-xl bg-white 
- border border - slate - 200
-    shadow - sm">
+<div class="p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
 
         < h3 class="font-serif text-lg text-slate-900 " style = "font-family: 'Playfair Display', serif;" >
             ${title}
@@ -387,7 +385,7 @@ async function analyzeParagraphLab() {
 
     try {
 
-        const res = await fetch("/api/linguistic-lab", {
+        const res = await fetch("/.netlify/functions/linguistic-lab", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
