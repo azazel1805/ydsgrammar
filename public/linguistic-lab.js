@@ -19,25 +19,25 @@ function injectLinguisticLab() {
 <aside class="w-full md:w-[200px] bg-white border-b md:border-b-0 md:border-r border-slate-200 p-6">
 
 <h1 class="font-serif text-xl text-slate-900">
-Linguistic Lab
+Dilbilim Laboratuvarı
 </h1>
 
 <p class="text-xs italic text-slate-500 mt-1">
-Where language reveals its architecture.
+Dilin mimarisinin çözüldüğü yer.
 </p>
 
 <nav class="mt-6 space-y-3 text-sm">
 
 <button onclick="switchLabTab('word')" class="lab-tab w-full text-left ${tabClass("word")}">
-Word Intelligence
+Kelime Zekası
 </button>
 
 <button onclick="switchLabTab('sentence')" class="lab-tab w-full text-left ${tabClass("sentence")}">
-Sentence Architecture
+Cümle Mimarisi
 </button>
 
 <button onclick="switchLabTab('paragraph')" class="lab-tab w-full text-left ${tabClass("paragraph")}">
-Discourse Structure
+Söylem Yapısı
 </button>
 
 </nav>
@@ -80,22 +80,22 @@ function renderWordModule() {
     return `
 <div class="space-y-8">
 
-<h2 class="font-serif text-3xl text-slate-900">Word Intelligence</h2>
+<h2 class="font-serif text-3xl text-slate-900">Kelime Zekası</h2>
 
 <div class="flex gap-4">
 
 <input id="labWordInput"
-placeholder="Enter a word..."
+placeholder="Bir kelime girin..."
 class="flex-1 px-4 py-3 border border-slate-300 rounded-lg">
 
 <button onclick="analyzeWord()"
 class="px-6 py-3 bg-red-800 text-white rounded-lg">
-Analyze
+Analiz Et
 </button>
 
 </div>
 
-<div id="labWordOutput" class="grid md:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+<div id="labWordOutput" class="grid md:grid-cols-2 xl:grid-cols-3 gap-6" translate="no"></div>
 
 </div>
 `;
@@ -137,15 +137,15 @@ async function analyzeWord() {
         }
 
         output.innerHTML = `
-${labCard("Morphology", data.morphology)}
-${labCard("Semantic Evolution", data.semantic_evolution)}
-${labCard("Academic Register", data.register)}
-${labListCard("Collocations", data.collocations)}
-${labListCard("Derivations", data.derivations)}
-${labCard("Passive Usage", data.passive_tendency)}
-${labCard("YDS Trap Insight", data.yds_trap)}
-${labCard("CEFR Level", data.cefr)}
-${labCard("Turkish Explanation", data.turkish_explanation)}
+${labCard("Morfoloji", data.morphology)}
+${labCard("Anlamsal Evrim", data.semantic_evolution)}
+${labCard("Akademik Register", data.register)}
+${labListCard("Eşdizimler (Collocations)", data.collocations)}
+${labListCard("Türetmeler", data.derivations)}
+${labCard("Edilgen (Passive) Eğilimi", data.passive_tendency)}
+${labCard("YDS Tuzak Analizi", data.yds_trap)}
+${labCard("CEFR Seviyesi", data.cefr)}
+${labCard("Türkçe Açıklama", data.turkish_explanation)}
 `;
 
     } catch (err) {
