@@ -192,3 +192,123 @@ ${list.map(i => `<li>${i}</li>`).join("")}
 </div>
 `;
 }
+
+// ==========================================
+// SENTENCE ARCHITECTURE
+// ==========================================
+
+function renderSentenceModule() {
+    return `
+<div class="space-y-8">
+    <h2 class="font-serif text-3xl text-slate-900">Cümle Mimarisi</h2>
+    <div class="flex flex-col gap-4">
+        <textarea id="labSentenceInput" 
+            placeholder="Analiz edilecek İngilizce cümleyi girin..."
+            class="w-full px-4 py-3 border border-slate-300 rounded-lg min-h-[100px]"></textarea>
+        <button onclick="analyzeSentenceLab()"
+            class="px-6 py-3 bg-red-800 text-white rounded-lg self-end">
+            Analiz Et
+        </button>
+    </div>
+    <div id="labSentenceOutput" class="grid md:grid-cols-2 xl:grid-cols-3 gap-6" translate="no"></div>
+</div>
+`;
+}
+
+async function analyzeSentenceLab() {
+    const input = document.getElementById("labSentenceInput").value.trim();
+    if (!input) return;
+
+    const output = document.getElementById("labSentenceOutput");
+    output.innerHTML = "Analiz ediliyor...";
+
+    try {
+        const res = await fetch("/.netlify/functions/linguistic-lab", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ mode: "sentence", input })
+        });
+
+        const text = await res.text();
+        if (!res.ok) {
+            output.innerHTML = `<div class="text-red-500">Sunucu hatası</div>`;
+            return;
+        }
+
+        const data = JSON.parse(text);
+        output.innerHTML = `
+            ${labCard("Yan Cümle Yapısı", data.clause_structure)}
+            ${labCard("Fiil Analizi", data.verb_analysis)}
+            ${labCard("Zaman ve Çatı", data.tense_voice)}
+            ${labCard("Karmaşıklık Seviyesi", data.complexity_level)}
+            ${labCard("Akademik Yoğunluk", data.academic_density)}
+            ${labCard("Sınav Tuzakları", data.exam_traps)}
+            ${labCard("Anlamdaşlık Zorluğu", data.paraphrase_difficulty)}
+            ${labCard("Türkçe Açıklama", data.turkish_explanation)}
+        `;
+    } catch (err) {
+        console.error(err);
+        output.innerHTML = `<div class="text-red-500">Sunucu hatası</div>`;
+    }
+}
+
+// ==========================================
+// DISCOURSE STRUCTURE
+// ==========================================
+
+function renderParagraphModule() {
+    return `
+<div class="space-y-8">
+    <h2 class="font-serif text-3xl text-slate-900">Söylem Yapısı</h2>
+    <div class="flex flex-col gap-4">
+        <textarea id="labParaInput" 
+            placeholder="Analiz edilecek İngilizce paragrafı girin..."
+            class="w-full px-4 py-3 border border-slate-300 rounded-lg min-h-[150px]"></textarea>
+        <button onclick="analyzeParagraphLab()"
+            class="px-6 py-3 bg-red-800 text-white rounded-lg self-end">
+            Analiz Et
+        </button>
+    </div>
+    <div id="labParaOutput" class="grid md:grid-cols-2 xl:grid-cols-3 gap-6" translate="no"></div>
+</div>
+`;
+}
+
+async function analyzeParagraphLab() {
+    const input = document.getElementById("labParaInput").value.trim();
+    if (!input) return;
+
+    const output = document.getElementById("labParaOutput");
+    output.innerHTML = "Analiz ediliyor...";
+
+    try {
+        const res = await fetch("/.netlify/functions/linguistic-lab", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ mode: "paragraph", input })
+        });
+
+        const text = await res.text();
+        if (!res.ok) {
+            output.innerHTML = `<div class="text-red-500">Sunucu hatası</div>`;
+            return;
+        }
+
+        const data = JSON.parse(text);
+        output.innerHTML = `
+            ${labCard("Ana Fikir Cümlesi", data.topic_sentence)}
+            ${labCard("Mantıksal İlerleme", data.logical_progression)}
+            ${labCard("Bağlaçlar", data.connectors)}
+            ${labCard("Argüman Stili", data.argument_style)}
+            ${labCard("Anlamsal Bağlantılar", data.cohesion_devices)}
+            ${labCard("Akademik Ton", data.academic_tone)}
+            ${labCard("Sınav Öngörüsü", data.exam_prediction)}
+            ${labCard("Anlamdaşlık Seviyesi", data.paraphrase_level)}
+            ${labCard("Türkçe Meta Bilgi", data.turkish_meta)}
+        `;
+    } catch (err) {
+        console.error(err);
+        output.innerHTML = `<div class="text-red-500">Sunucu hatası</div>`;
+    }
+}
+
