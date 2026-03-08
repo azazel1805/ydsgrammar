@@ -77,7 +77,7 @@ function renderLabContent() {
 
 function renderWordModule() {
 
-return `
+    return `
 <div class="space-y-8">
 
 <h2 class="font-serif text-3xl text-slate-900">Word Intelligence</h2>
@@ -103,40 +103,40 @@ Analyze
 
 async function analyzeWord() {
 
-const word = document.getElementById("labWordInput").value.trim();
-if (!word) return;
+    const word = document.getElementById("labWordInput").value.trim();
+    if (!word) return;
 
-const output = document.getElementById("labWordOutput");
-output.innerHTML = "Analyzing...";
+    const output = document.getElementById("labWordOutput");
+    output.innerHTML = "Analyzing...";
 
-try {
+    try {
 
-const res = await fetch("/.netlify/functions/linguistic-lab", {
-method:"POST",
-headers:{ "Content-Type":"application/json" },
-body: JSON.stringify({
-mode:"word",
-input:word
-})
-});
+        const res = await fetch("/.netlify/functions/linguistic-lab", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                mode: "word",
+                input: word
+            })
+        });
 
-const text = await res.text();
+        const text = await res.text();
 
-if(!res.ok){
-output.innerHTML = `<div class="text-red-500">Server error</div>`;
-return;
-}
+        if (!res.ok) {
+            output.innerHTML = `<div class="text-red-500">Server error</div>`;
+            return;
+        }
 
-let data;
+        let data;
 
-try{
-data = JSON.parse(text);
-}catch{
-output.innerHTML = `<pre>${text}</pre>`;
-return;
-}
+        try {
+            data = JSON.parse(text);
+        } catch {
+            output.innerHTML = `<pre>${text}</pre>`;
+            return;
+        }
 
-output.innerHTML = `
+        output.innerHTML = `
 ${labCard("Morphology", data.morphology)}
 ${labCard("Semantic Evolution", data.semantic_evolution)}
 ${labCard("Academic Register", data.register)}
@@ -148,18 +148,18 @@ ${labCard("CEFR Level", data.cefr)}
 ${labCard("Turkish Explanation", data.turkish_explanation)}
 `;
 
-}catch(err){
+    } catch (err) {
 
-console.error(err);
-output.innerHTML = `<div class="text-red-500">Server error</div>`;
+        console.error(err);
+        output.innerHTML = `<div class="text-red-500">Server error</div>`;
+
+    }
 
 }
 
-}
+function labCard(title, content) {
 
-function labCard(title, content){
-
-return `
+    return `
 <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
 
 <h3 class="font-serif text-lg text-slate-900">${title}</h3>
@@ -174,11 +174,11 @@ ${content || "-"}
 `;
 }
 
-function labListCard(title,list){
+function labListCard(title, list) {
 
-if(!Array.isArray(list)) list=[];
+    if (!Array.isArray(list)) list = [];
 
-return `
+    return `
 <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
 
 <h3 class="font-serif text-lg text-slate-900">${title}</h3>
@@ -186,7 +186,7 @@ return `
 <div class="h-[2px] w-10 bg-red-800 my-3"></div>
 
 <ul class="list-disc ml-5 space-y-1 text-slate-700">
-${list.map(i=>`<li>${i}</li>`).join("")}
+${list.map(i => `<li>${i}</li>`).join("")}
 </ul>
 
 </div>
