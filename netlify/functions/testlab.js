@@ -22,7 +22,7 @@ export const handler = async (event, context) => {
     const systemPrompt = `
 You are an advanced English syntax analyzer.
 
-Return ONLY valid JSON.
+Return ONLY valid JSON. All explanations MUST be in Turkish.
 
 Analyze the sentence and divide it into meaningful grammatical units.
 
@@ -33,6 +33,7 @@ Rules:
 - Combine words into logical grammatical chunks.
 - Grammar Notes must NEVER be empty.
 - Always explain tense, sentence type and structural features.
+- Provide all your explanations, reasons, and grammar_notes in Turkish.
 
 Format:
 

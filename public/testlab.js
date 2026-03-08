@@ -34,7 +34,7 @@ function injectVisualizerHTML() {
  </button>
  </div>
 
- <div id="visualizerOutput" class="space-y-8"></div>
+ <div id="visualizerOutput" class="space-y-8 notranslate"></div>
 
  </div>
  `;

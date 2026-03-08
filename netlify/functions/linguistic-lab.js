@@ -71,7 +71,7 @@ function getStructuredPrompt(mode) {
         return `
 You are an academic linguist.
 
-Return ONLY valid JSON.
+Return ONLY valid JSON. All explanations MUST be in Turkish.
 
 {
   "morphology": "",
@@ -91,7 +91,7 @@ Return ONLY valid JSON.
         return `
 You are a syntax analyst.
 
-Return ONLY valid JSON.
+Return ONLY valid JSON. All explanations MUST be in Turkish.
 
 {
   "clause_structure": "",
@@ -110,7 +110,7 @@ Return ONLY valid JSON.
         return `
 You are a discourse analyst.
 
-Return ONLY valid JSON.
+Return ONLY valid JSON. All explanations MUST be in Turkish.
 
 {
   "topic_sentence": "",

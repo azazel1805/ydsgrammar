@@ -41,7 +41,7 @@ function injectAnalyzerHTML() {
 
  </div>
 
- <div id="analysisOutput" class="mt-6 space-y-6"></div>
+ <div id="analysisOutput" class="mt-6 space-y-6 notranslate"></div>
 
 </div>
 `;
