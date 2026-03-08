@@ -139,6 +139,22 @@ window.logoutUser = async function () {
 
 onAuthStateChanged(auth, (user) => {
 
+  const initialLoader = document.getElementById("initialLoader");
+  if (initialLoader) {
+    initialLoader.classList.add("hidden");
+    // Completely remove from DOM after a short fade
+    setTimeout(() => initialLoader.remove(), 500);
+  }
+
+  // Fallback protection: hide loader if Firebase fails to trigger within 8s
+  setTimeout(() => {
+    const loader = document.getElementById("initialLoader");
+    if (loader) {
+      loader.classList.add("hidden");
+      setTimeout(() => loader.remove(), 500);
+    }
+  }, 8000);
+
   const loginPage = document.getElementById("loginPage");
   const appWrapper = document.getElementById("appWrapper");
 
