@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-forum", typeof forumHTML !== 'undefined' ? forumHTML : undefined);
     safeInject("tab-restatement", typeof restatementHTML !== 'undefined' ? restatementHTML : undefined);
     safeInject("tab-paragraph", typeof paragraphHTML !== 'undefined' ? paragraphHTML : undefined);
+    safeInject("tab-textdecon", typeof textDeconHTML !== 'undefined' ? textDeconHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
@@ -161,7 +162,8 @@ function reinjectTabContent(tabName) {
         "sentence": typeof sentenceCorrectorHTML !== 'undefined' ? sentenceCorrectorHTML : null,
         "forum": typeof forumHTML !== 'undefined' ? forumHTML : null,
         "restatement": typeof restatementHTML !== 'undefined' ? restatementHTML : null,
-        "paragraph": typeof paragraphHTML !== 'undefined' ? paragraphHTML : null
+        "paragraph": typeof paragraphHTML !== 'undefined' ? paragraphHTML : null,
+        "textdecon": typeof textDeconHTML !== 'undefined' ? textDeconHTML : null
     };
 
     const content = mappings[tabName];
