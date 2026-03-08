@@ -204,37 +204,37 @@ const prepositionsHTML = `
 
 function switchPrepTab(tab) {
 
- document.querySelectorAll("#prep-verbs,#prep-adjectives,#prep-nouns,#prep-phrases")
- .forEach(el => el.classList.add("hidden"));
+    document.querySelectorAll("#prep-verbs,#prep-adjectives,#prep-nouns,#prep-phrases")
+        .forEach(el => el.classList.add("hidden"));
 
- document.getElementById("prep-" + tab).classList.remove("hidden");
+    document.getElementById("prep-" + tab).classList.remove("hidden");
 
- document.querySelectorAll(".prep-tab").forEach(btn => btn.classList.remove("active-tab"));
- event.target.classList.add("active-tab");
+    document.querySelectorAll(".prep-tab").forEach(btn => btn.classList.remove("active-tab"));
+    event.target.classList.add("active-tab");
 }
 
 /* ================= RENDER ================= */
 
 function renderPrepCategory(category) {
 
- if(!PREP_DATA[category]) return;
+    if (!PREP_DATA[category]) return;
 
- const container = document.getElementById("prep-" + category);
- if(!container) return;
+    const container = document.getElementById("prep-" + category);
+    if (!container) return;
 
- container.innerHTML = PREP_DATA[category].map((item, index) => {
+    container.innerHTML = PREP_DATA[category].map((item, index) => {
 
- const riskColor =
- item.risk === "very-high" ? "text-red-500" :
- item.risk === "high" ? "text-orange-500" :
- "text-yellow-500";
+        const riskColor =
+            item.risk === "very-high" ? "text-red-500" :
+                item.risk === "high" ? "text-orange-500" :
+                    "text-yellow-500";
 
- const trapHTML = item.trap && item.trap.length
- ? `<div class="text-red-400 text-sm mt-2">
+        const trapHTML = item.trap && item.trap.length
+            ? `<div class="text-red-400 text-sm mt-2">
  ⚠ Trap: ${item.trap.join(", ")}
  </div>` : "";
 
- return `
+        return `
  <div class="bg-slate-100 p-4 rounded-lg mb-4 shadow">
 
  <div class="flex justify-between items-center">
@@ -266,15 +266,15 @@ function renderPrepCategory(category) {
 
  </div>
  `;
- }).join("");
+    }).join("");
 }
 
-function togglePrepTactics(){
- document.getElementById("prepTacticContent")
- .classList.toggle("hidden");
+function togglePrepTactics() {
+    document.getElementById("prepTacticContent")
+        .classList.toggle("hidden");
 
- const icon = document.getElementById("prepTacticToggleIcon");
- icon.innerText = icon.innerText === "▼" ? "▲" : "▼";
+    const icon = document.getElementById("prepTacticToggleIcon");
+    icon.innerText = icon.innerText === "▼" ? "▲" : "▼";
 }
 
 /* ================= QUIZ SYSTEM ================= */
@@ -284,99 +284,98 @@ let prepCurrent = 0;
 let prepScore = 0;
 
 function openPrepQuiz() {
- document.getElementById("prepQuizModal").classList.remove("hidden");
- document.getElementById("prepQuizModal").classList.add("flex");
- startPrepQuiz();
+    document.getElementById("prepQuizModal").classList.remove("hidden");
+    document.getElementById("prepQuizModal").classList.add("flex");
+    startPrepQuiz();
 }
 
 function closePrepQuiz() {
- document.getElementById("prepQuizModal").classList.add("hidden");
- document.getElementById("prepQuizModal").classList.remove("flex");
+    document.getElementById("prepQuizModal").classList.add("hidden");
+    document.getElementById("prepQuizModal").classList.remove("flex");
 }
 
 function startPrepQuiz() {
 
- const allItems = [
- ...PREP_DATA.verbs,
- ...PREP_DATA.adjectives,
- ...PREP_DATA.nouns
- ];
+    const allItems = [
+        ...PREP_DATA.verbs,
+        ...PREP_DATA.adjectives,
+        ...PREP_DATA.nouns
+    ];
 
- prepQuizSet = allItems.sort(() => 0.5 - Math.random()).slice(0, 10);
- prepCurrent = 0;
- prepScore = 0;
+    prepQuizSet = allItems.sort(() => 0.5 - Math.random()).slice(0, 10);
+    prepCurrent = 0;
+    prepScore = 0;
 
- showPrepQuestion();
+    showPrepQuestion();
 }
 
 function showPrepQuestion() {
 
- const container = document.getElementById("prepQuizContainer");
- const q = prepQuizSet[prepCurrent];
+    const container = document.getElementById("prepQuizContainer");
+    const q = prepQuizSet[prepCurrent];
 
- const wrongOptions = prepQuizSet
- .filter(i => i.prep !== q.prep)
- .sort(() => 0.5 - Math.random())
- .slice(0,3)
- .map(i => i.prep);
+    const wrongOptions = prepQuizSet
+        .filter(i => i.prep !== q.prep)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 3)
+        .map(i => i.prep);
 
- const options = [...wrongOptions, q.prep].sort(() => 0.5 - Math.random());
+    const options = [...wrongOptions, q.prep].sort(() => 0.5 - Math.random());
 
- container.innerHTML = `
+    container.innerHTML = `
  <div class="mb-4 font-bold">
  ${q.word} ______ ?
  </div>
 
  <div class="grid grid-cols-2 gap-3">
  ${options.map(opt =>
- `<button onclick="checkPrepAnswer('${opt}','${q.prep}')"
+        `<button onclick="checkPrepAnswer('${opt}','${q.prep}')"
  class="p-3 bg-slate-200 rounded hover:bg-blue-400 hover:text-black transition">
  ${opt}
  </button>`
- ).join("")}
+    ).join("")}
  </div>
 
  <div class="mt-4 text-sm text-gray-500">
- Question ${prepCurrent+1} / 10
+ Question ${prepCurrent + 1} / 10
  </div>
  `;
 }
 
 function checkPrepAnswer(selected, correct) {
 
- const buttons = document.querySelectorAll("#prepQuizContainer button");
+    const buttons = document.querySelectorAll("#prepQuizContainer button");
 
- // Tüm butonları disable et
- buttons.forEach(btn => btn.disabled = true);
+    // Tüm butonları disable et
+    buttons.forEach(btn => btn.disabled = true);
 
- buttons.forEach(btn => {
+    buttons.forEach(btn => {
+        const btnText = btn.innerText.trim();
+        if (btnText === correct) {
+            // DOĞRUYU YEŞİL YAP
+            btn.classList.remove("bg-slate-200");
+            btn.classList.add("bg-emerald-600", "text-white");
+        }
 
- if(btn.innerText === correct){
- // DOĞRUYU YEŞİL YAP
- btn.classList.remove("bg-slate-200","");
- btn.classList.add("bg-red-700","text-black");
- }
+        if (btnText === selected && selected !== correct) {
+            // YANLIŞ SEÇİMİ KIRMIZI YAP
+            btn.classList.remove("bg-slate-200");
+            btn.classList.add("bg-red-600", "text-white");
+        }
+    });
 
- if(btn.innerText === selected && selected !== correct){
- // YANLIŞ SEÇİMİ KIRMIZI YAP
- btn.classList.remove("bg-slate-200","");
- btn.classList.add("bg-red-500","text-black");
- }
+    if (selected === correct) prepScore++;
 
- });
+    // 1.2 saniye sonra devam
+    setTimeout(() => {
 
- if(selected === correct) prepScore++;
+        prepCurrent++;
 
- // 1.2 saniye sonra devam
- setTimeout(() => {
+        if (prepCurrent < prepQuizSet.length) {
+            showPrepQuestion();
+        } else {
 
- prepCurrent++;
-
- if(prepCurrent < prepQuizSet.length){
- showPrepQuestion();
- } else {
-
- document.getElementById("prepQuizContainer").innerHTML = `
+            document.getElementById("prepQuizContainer").innerHTML = `
  <div class="text-center">
  <h4 class="text-xl font-bold mb-4">Quiz Finished</h4>
  <div class="text-2xl text-indigo-500 font-bold">
@@ -384,21 +383,21 @@ function checkPrepAnswer(selected, correct) {
  </div>
  </div>
  `;
- }
+        }
 
- }, 1200);
+    }, 1200);
 }
 
 
 /* ================= INIT ================= */
 
-window.initPrepositions = function(){
+window.initPrepositions = function () {
 
- // Varsayılan kategori
- renderPrepCategory("verbs");
+    // Varsayılan kategori
+    renderPrepCategory("verbs");
 
- // İstersen diğerlerini de preload edebilirsin:
- renderPrepCategory("adjectives");
- renderPrepCategory("nouns");
- renderPrepCategory("phrases");
+    // İstersen diğerlerini de preload edebilirsin:
+    renderPrepCategory("adjectives");
+    renderPrepCategory("nouns");
+    renderPrepCategory("phrases");
 };
