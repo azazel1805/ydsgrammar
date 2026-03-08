@@ -104,7 +104,6 @@ window.loadQuizData = function () {
 ========================================== */
 
 window.switchTab = function (tabName) {
-
     document.querySelectorAll('.tab-content')
         .forEach(el => el.classList.remove('active'));
 
@@ -112,7 +111,14 @@ window.switchTab = function (tabName) {
         .forEach(btn => btn.classList.remove('active'));
 
     const target = document.getElementById('tab-' + tabName);
-    if (target) target.classList.add('active');
+    if (target) {
+        target.classList.add('active');
+        // If content is empty (due to race condition or error), try re-injecting
+        if (target.innerHTML.trim() === "" || target.innerHTML.includes("undefined")) {
+            console.warn("Tab content empty, re-injecting:", tabName);
+            reinjectTabContent(tabName);
+        }
+    }
 
     document.querySelectorAll('.tab-btn, .drawer-btn').forEach(btn => {
         if (btn.dataset.tab === tabName) {
@@ -130,6 +136,40 @@ window.switchTab = function (tabName) {
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+window.switchTabAndClose = function (tabName) {
+    switchTab(tabName);
+    const drawer = document.getElementById("mobileDrawer");
+    const overlay = document.getElementById("drawerOverlay");
+    if (drawer && overlay) {
+        drawer.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+        document.body.style.overflow = "auto";
+    }
+};
+
+function reinjectTabContent(tabName) {
+    const mappings = {
+        "profile": typeof profileHTML !== 'undefined' ? profileHTML : null,
+        "modals": typeof modalsHTML !== 'undefined' ? modalsHTML : null,
+        "prepositions": typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : null,
+        "tenses": typeof tensesHTML !== 'undefined' ? tensesHTML : null,
+        "conjunctions": typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : null,
+        "dictionary": typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : null,
+        "reading": typeof readingHTML !== 'undefined' ? readingHTML : null,
+        "passive": typeof passiveHTML !== 'undefined' ? passiveHTML : null,
+        "relative": typeof relativeHTML !== 'undefined' ? relativeHTML : null,
+        "noun": typeof nounHTML !== 'undefined' ? nounHTML : null,
+        "sentence": typeof sentenceCorrectorHTML !== 'undefined' ? sentenceCorrectorHTML : null,
+        "forum": typeof forumHTML !== 'undefined' ? forumHTML : null
+    };
+
+    const content = mappings[tabName];
+    if (content) {
+        const el = document.getElementById('tab-' + tabName);
+        if (el) el.innerHTML = content;
+    }
+}
 
 /* ==========================================
  QUIZ ENGINE
@@ -366,4 +406,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* ==========================================
+ SEARCH / FILTER LOGIC
+========================================== */
+
+window.filterTab = function (input) {
+    const filter = input.value.toUpperCase();
+    const tabId = input.closest('.tab-content')?.id;
+    if (!tabId) return;
+
+    const tab = document.getElementById(tabId);
+    // Find containers that should be filtered
+    const items = tab.querySelectorAll('.italic, .example-text, .p-4.rounded-lg, .bg-white.p-6.rounded-2xl');
+
+    items.forEach(item => {
+        const text = item.textContent || item.innerText;
+        if (text.toUpperCase().indexOf(filter) > -1) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+    });
+};
 

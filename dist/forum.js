@@ -83,7 +83,7 @@ const forumHTML = `
 
 function initForum() {
     const checkInterval = setInterval(() => {
-        if (window.firebaseExports && window.firebaseExports.db) {
+        if (window.firebaseExports && window.firebaseExports.db && typeof window.currentUser !== 'undefined') {
             clearInterval(checkInterval);
             startForumListener();
         }
