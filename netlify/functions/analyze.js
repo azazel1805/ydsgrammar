@@ -1,18 +1,20 @@
-export default async function handler(req, res) {
-  // CORS for OPTIONS
-  if (req.method === "OPTIONS") {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-    res.setHeader("Access-Control-Allow-Methods", "POST");
-    return res.status(200).end();
+export const handler = async (event, context) => {
+  const headers = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "POST, OPTIONS"
+  };
+
+  if (event.httpMethod === "OPTIONS") {
+    return { statusCode: 200, headers, body: "" };
   }
 
   try {
-    // Vercel auto-parses JSON body
-    const input = req.body?.input;
+    const body = event.body ? JSON.parse(event.body) : {};
+    const input = body.input;
 
     if (!input) {
-      return res.status(400).json({ error: "Input missing" });
+      return { statusCode: 400, headers, body: JSON.stringify({ error: "Input missing" }) };
     }
 
     const systemPrompt = `
@@ -69,7 +71,7 @@ Return EXACTLY this JSON format:
     const content = data.choices?.[0]?.message?.content;
 
     if (!content) {
-      return res.status(500).json({ error: "AI returned empty content" });
+      return { statusCode: 500, headers, body: JSON.stringify({ error: "AI returned empty content" }) };
     }
 
     const clean = content
@@ -77,10 +79,9 @@ Return EXACTLY this JSON format:
       .replace(/```/g, "")
       .trim();
 
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    return res.status(200).send(clean);
+    return { statusCode: 200, headers, body: clean };
 
   } catch (err) {
-    return res.status(500).json({ error: err.message });
+    return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
   }
-}
+};

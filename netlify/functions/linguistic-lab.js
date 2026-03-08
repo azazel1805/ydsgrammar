@@ -1,27 +1,31 @@
-export default async function handler(req, res) {
-    if (req.method === "OPTIONS") {
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-        res.setHeader("Access-Control-Allow-Methods", "POST");
-        return res.status(200).end();
+export const handler = async (event, context) => {
+    const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "POST, OPTIONS"
+    };
+
+    if (event.httpMethod === "OPTIONS") {
+        return { statusCode: 200, headers, body: "" };
     }
 
-    if (req.method !== "POST") {
-        return res.status(405).send("Method Not Allowed");
+    if (event.httpMethod !== "POST") {
+        return { statusCode: 405, headers, body: "Method Not Allowed" };
     }
 
     try {
-        const mode = req.body?.mode;
-        const input = req.body?.input || req.body?.text;
+        const body = event.body ? JSON.parse(event.body) : {};
+        const mode = body.mode;
+        const input = body.input || body.text;
 
         if (!mode || !input) {
-            return res.status(400).json({ error: "Missing mode or text" });
+            return { statusCode: 400, headers, body: JSON.stringify({ error: "Missing mode or text" }) };
         }
 
         const systemPrompt = getStructuredPrompt(mode);
 
         if (!systemPrompt) {
-            return res.status(400).json({ error: "Invalid mode" });
+            return { statusCode: 400, headers, body: JSON.stringify({ error: "Invalid mode" }) };
         }
 
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -43,7 +47,7 @@ export default async function handler(req, res) {
         const data = await response.json();
 
         if (!data.choices) {
-            return res.status(500).json({ error: "OpenAI response invalid" });
+            return { statusCode: 500, headers, body: JSON.stringify({ error: "OpenAI response invalid" }) };
         }
 
         const content = data.choices[0].message.content;
@@ -53,16 +57,13 @@ export default async function handler(req, res) {
             .replace(/```/g, "")
             .trim();
 
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        return res.status(200).send(clean);
+        return { statusCode: 200, headers, body: clean };
 
     } catch (err) {
-
         console.error("Linguistic Lab Error:", err);
-
-        return res.status(500).json({ error: err.message });
+        return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
     }
-}
+};
 
 function getStructuredPrompt(mode) {
 

@@ -1,21 +1,23 @@
-export default async function handler(req, res) {
+export const handler = async (event, context) => {
+  const headers = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "POST, OPTIONS"
+  };
 
-  if (req.method === "OPTIONS") {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-    res.setHeader("Access-Control-Allow-Methods", "POST");
-    return res.status(200).end();
+  if (event.httpMethod === "OPTIONS") {
+    return { statusCode: 200, headers, body: "" };
   }
 
   try {
-
-    const mode = req.body?.mode;
+    const body = event.body ? JSON.parse(event.body) : {};
+    const mode = body.mode;
 
     if (mode !== "syntax_analyze") {
-      return res.status(400).json({ error: "Invalid mode" });
+      return { statusCode: 400, headers, body: JSON.stringify({ error: "Invalid mode" }) };
     }
 
-    const sentence = req.body?.sentence;
+    const sentence = body.sentence;
 
     const systemPrompt = `
 You are an advanced English syntax analyzer.
@@ -72,7 +74,7 @@ Format:
     const content = data.choices?.[0]?.message?.content;
 
     if (!content) {
-      return res.status(500).json({ error: "AI returned empty content" });
+      return { statusCode: 500, headers, body: JSON.stringify({ error: "AI returned empty content" }) };
     }
 
     const clean = content
@@ -80,10 +82,9 @@ Format:
       .replace(/```/g, "")
       .trim();
 
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    return res.status(200).send(clean);
+    return { statusCode: 200, headers, body: clean };
 
   } catch (err) {
-    return res.status(500).json({ error: err.message });
+    return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
   }
-}
+};
