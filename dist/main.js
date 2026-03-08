@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
         initForum();
     }
 
+    if (typeof initFullExam === "function") {
+        initFullExam();
+    }
+
     /* ================= THEME ================= */
     // Dark mode logic has been removed as per the literary light-only aesthetic.
 
