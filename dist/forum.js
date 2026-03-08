@@ -33,9 +33,9 @@ const forumHTML = `
                     <i class="fas fa-info-circle text-red-800"></i> Forum Kuralları
                 </h3>
                 <ul class="text-sm text-slate-600 space-y-3">
-                    <li class="flex gap-2"><span>•</span> <span>Sorunun fotoğrafını net çekmeye çalışın.</span></li>
-                    <li class="flex gap-2"><span>•</span> <span>Saygılı bir dil kullanın.</span></li>
-                    <li class="flex gap-2"><span>•</span> <span>Başkalarının sorularına yardım ederek XP kazanın.</span></li>
+                    <li class="flex gap-2"><span>•</span> <span>Sorunuzu veya takıldığınız cümleyi net bir şekilde yazın.</span></li>
+                    <li class="flex gap-2"><span>•</span> <span>Saygılı ve akademik bir dil kullanın.</span></li>
+                    <li class="flex gap-2"><span>•</span> <span>Başkalarının sorularına yardım ederek topluluğa katkı sağlayın.</span></li>
                 </ul>
             </div>
             
@@ -146,6 +146,11 @@ function renderPosts(posts) {
                     <button onclick="toggleComments('${post.id}')" class="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-red-800 transition-colors">
                         <i class="far fa-comment-alt"></i> ${post.commentCount || 0} Yorum
                     </button>
+                    ${(window.currentUser?.email === 'onurtosuner@gmail.com' || window.currentUser?.uid === post.authorId) ? `
+                        <button onclick="deletePost('${post.id}')" class="text-xs font-bold text-red-300 hover:text-red-600 transition-colors">
+                            <i class="fas fa-trash-alt"></i> Sil
+                        </button>
+                    ` : ''}
                     <div class="text-xs text-slate-300 ml-auto">#YDS_SORU</div>
                 </div>
                 
@@ -293,11 +298,15 @@ async function submitComment(postId) {
             createdAt: serverTimestamp()
         });
 
-        // Update comment count
-        const postRef = doc(db, "forum_posts", postId);
-        await updateDoc(postRef, {
-            commentCount: increment ? increment(1) : 1 // Simple fallback if increment missing
-        });
+        // Update comment count (Try but don't fail if permissions block this specific update)
+        try {
+            const postRef = doc(db, "forum_posts", postId);
+            await updateDoc(postRef, {
+                commentCount: increment ? increment(1) : 1
+            });
+        } catch (counterErr) {
+            console.warn("Counter update failed, but comment was saved:", counterErr);
+        }
 
         input.value = "";
         // Refresh comments view
@@ -307,7 +316,20 @@ async function submitComment(postId) {
 
     } catch (err) {
         console.error(err);
-        alert("Yorum yaparken hata oluştu: " + err.message);
+        alert("Yorum gönderilemedi: " + err.message);
+    }
+}
+
+async function deletePost(postId) {
+    if (!confirm("Bu gönderiyi tamamen silmek istediğine emin misin?")) return;
+
+    try {
+        const { doc, deleteDoc, db } = window.firebaseExports;
+        await deleteDoc(doc(db, "forum_posts", postId));
+        alert("Gönderi silindi.");
+    } catch (err) {
+        console.error(err);
+        alert("Silme hatası: " + err.message);
     }
 }
 

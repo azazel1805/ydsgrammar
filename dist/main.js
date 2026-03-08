@@ -258,13 +258,13 @@ function checkAnswer(btn, selected, correct) {
     const isCorrect = selected === correct;
 
     if (isCorrect) {
-        btn.classList.add('bg-red-700', 'text-black');
+        btn.classList.add('bg-emerald-600', 'text-white');
         score += 10;
     } else {
-        btn.classList.add('bg-red-500', 'text-black');
+        btn.classList.add('bg-red-600', 'text-white');
         buttons.forEach(b => {
             if (b.innerText === correct) {
-                b.classList.add('bg-red-700', 'text-black');
+                b.classList.add('bg-emerald-600', 'text-white');
             }
         });
     }

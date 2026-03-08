@@ -1,56 +1,66 @@
 /* =========================================
  YDS Dashboard v4.0 GAMIFIED
  GAMIFICATION + CHARTS + FIREBASE
-========================================= */
+ ========================================= */
 
 const DASH_UNSPLASH_KEY = "0uDnN1Zl1YFXRG3vHAKgEZoTakXkCg65RV3LtgXiNcM";
 
-// Mock Data for Charts
-const grammarLabels = ['Tenses', 'Modals', 'Passive', 'Conjunctions', 'Prepositions'];
-const userStrengths = [80, 45, 90, 60, 75, 50, 65]; // Out of 100
+// Globals for dynamic data
+let userStats = {
+    xp: 0,
+    level: 1,
+    levelTitle: "Novice",
+    nextLevelXP: 500,
+    streak: 0,
+    totalQuizzes: 0,
+    levelIcon: "🌱"
+};
 
-// We will populate these dynamically from Firebase logic
-let quizHistoryLabels = ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5'];
-let quizScores = [0, 0, 0, 0, 0]; // Out of 100
+let grammarLabels = ['Tenses', 'Modals', 'Passive', 'Conjunctions', 'Prepositions'];
+let userStrengths = [0, 0, 0, 0, 0];
+let quizHistoryLabels = [];
+let quizScores = [];
 
 /* =========================================
  DASHBOARD HTML
-========================================= */
+ ========================================= */
 
 const dashboardHTML = `
-<div class="space-y-8">
+<div class="space-y-8 animate-in fade-in duration-700">
 
  <!-- GAMIFICATION HEADER -->
- <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
  
  <!-- User Level & XP -->
- <div class="col-span-1 md:col-span-2 bg-white p-6 rounded-2xl shadow-sm text-black border border-gray-200 flex flex-col justify-center">
- 
- <div class="flex items-center justify-between mb-2">
- <div>
- <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-700 to-red-900" style="font-family: 'Playfair Display', serif;">
- Level 4: Scholar
- </h2>
- <p class="text-xs text-gray-500 mt-1">1,250 / 2,000 XP</p>
- </div>
- <div class="text-4xl">🎓</div>
- </div>
+ <div class="col-span-1 md:col-span-2 bg-white p-8 rounded-[2rem] shadow-sm text-black border border-slate-100 flex flex-col justify-center relative overflow-hidden group">
+  <div class="absolute -right-10 -top-10 w-40 h-40 bg-red-50 rounded-full blur-3xl group-hover:bg-red-100 transition-colors"></div>
+  
+  <div class="flex items-center justify-between mb-4 relative">
+  <div>
+  <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Kişisel Gelişim</p>
+  <h2 id="dashLevelTitle" class="text-3xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">
+  Level 1: Novice
+  </h2>
+  <p id="dashXPDisplay" class="text-sm text-red-800 font-bold mt-1">0 / 500 XP</p>
+  </div>
+  <div class="text-5xl drop-shadow-lg" id="levelIcon">🌱</div>
+  </div>
 
- <div class="w-full bg-gray-100 h-3 rounded-full overflow-hidden mt-3">
- <div class="bg-gradient-to-r from-red-600 to-red-800 h-full rounded-full transition-all duration-1000 ease-out" style="width: 62%"></div>
- </div>
-
+  <div class="w-full bg-slate-100 h-3 rounded-full overflow-hidden mt-2 relative">
+    <div id="xpBar" class="bg-gradient-to-r from-red-600 to-red-900 h-full rounded-full transition-all duration-1000 ease-out shadow-lg" style="width: 0%"></div>
+  </div>
  </div>
 
  <!-- STREAK -->
- <div class="bg-white p-6 rounded-2xl shadow-sm text-black flex items-center justify-between border border-gray-200">
- <div>
- <p class="text-sm font-semibold opacity-90 uppercase tracking-wider mb-1">Current Streak</p>
- <h3 class="text-4xl font-extrabold flex items-baseline gap-1">
- 7 <span class="text-lg font-normal opacity-80">Days</span>
- </h3>
- </div>
- <div class="text-5xl opacity-80 animate-pulse">🔥</div>
+ <div class="bg-white p-8 rounded-[2rem] shadow-sm text-black border border-slate-100 flex items-center justify-between relative overflow-hidden group">
+  <div class="absolute -left-10 -bottom-10 w-32 h-32 bg-orange-50 rounded-full blur-3xl group-hover:bg-orange-100 transition-colors"></div>
+  <div class="relative">
+  <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Çalışma Serisi</p>
+  <h3 class="text-4xl font-extrabold flex items-baseline gap-1 text-slate-900">
+  <span id="dashStreakValue">0</span> <span class="text-lg font-normal text-slate-400">Gün</span>
+  </h3>
+  </div>
+  <div class="text-5xl filter saturate-150 drop-shadow-md animate-bounce group-hover:scale-110 transition-transform">🔥</div>
  </div>
 
  </div>
@@ -59,25 +69,25 @@ const dashboardHTML = `
  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
  <!-- Radar Chart (Grammar Strengths) -->
- <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col items-center">
- <h3 class="w-full font-bold text-lg mb-4 text-red-800" style="font-family: 'Playfair Display', serif;">
- 🎯 Grammar Proficiency Matrix
+ <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 flex flex-col items-center">
+ <h3 class="w-full font-bold text-xl mb-6 text-slate-900" style="font-family: 'Playfair Display', serif;">
+ 🎯 Dil Yeterlilik Matrisi
  </h3>
- <div class="w-full max-w-[300px] aspect-square relative">
+ <div class="w-full max-w-[320px] aspect-square relative">
  <canvas id="radarChart"></canvas>
  </div>
- <p class="text-xs text-gray-500 mt-4 text-center">Analyze your strong and weak grammatical structures.</p>
+ <p class="text-xs text-slate-400 mt-6 text-center italic">Genel sınav performansına dayalı analiz.</p>
  </div>
 
- <!-- Bar/Line Chart (Quiz Progress) -->
- <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col items-center">
- <div class="w-full flex justify-between items-center mb-4">
- <h3 class="font-bold text-lg text-red-800" style="font-family: 'Playfair Display', serif;">
- 📈 Recent Quiz Performance
+ <!-- Bar Chart (Quiz Progress) -->
+ <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 flex flex-col items-center">
+ <div class="w-full flex justify-between items-center mb-6">
+ <h3 class="font-bold text-xl text-slate-900" style="font-family: 'Playfair Display', serif;">
+ 📈 Son Quiz Performansı
  </h3>
- <span class="badge-nuance text-[10px] uppercase">Last 5 Quizzes</span>
+ <span class="px-3 py-1 bg-red-50 text-red-800 text-[10px] font-bold uppercase tracking-widest rounded-full">Son 5 Sınav</span>
  </div>
- <div class="w-full relative min-h-[250px] flex-1">
+ <div class="w-full relative min-h-[300px] flex-1">
  <canvas id="progressChart"></canvas>
  </div>
  </div>
@@ -85,63 +95,71 @@ const dashboardHTML = `
  </div>
 
  <!-- MAIN TOOLS GRID -->
- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
  <!-- QUIZ CARD -->
- <div class="bg-gradient-to-r from-red-800 to-red-900 p-6 rounded-2xl shadow-lg relative overflow-hidden group">
- <div class="absolute -right-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
- <div class="relative z-10 text-white">
- <h3 class="text-xl font-bold mb-2 flex items-center gap-2" style="font-family: 'Playfair Display', serif;">
- ⚡ Ultimate Mix Quiz
- </h3>
- <p class="text-sm opacity-90 mb-6">Test your grammar reflex instantly covering all topics.</p>
- <button onclick="openQuiz()" class="bg-white text-red-900 px-6 py-2 rounded-xl font-bold hover:scale-105 transition-transform shadow-md">
- Start Challenge
- </button>
- </div>
+ <div class="bg-slate-900 p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden group min-h-[220px] flex items-center">
+  <div class="absolute -right-10 -top-10 w-64 h-64 bg-red-800/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
+  <div class="absolute right-8 bottom-8 opacity-10 text-8xl group-hover:rotate-12 transition-transform duration-500">
+    <i class="fas fa-bolt text-white"></i>
+  </div>
+  <div class="relative z-10 text-white space-y-4">
+    <div>
+        <h3 class="text-2xl font-bold mb-1" style="font-family: 'Playfair Display', serif;">Karma Sınav (Daily Challenge)</h3>
+        <p class="text-sm text-slate-400 max-w-[280px]">Hızını ve bilgini test et, XP kazan ve seviye atla!</p>
+    </div>
+    <button onclick="openQuiz()" class="bg-white text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-red-50 transition-all shadow-xl active:scale-95">
+    Challenge Başlat
+    </button>
+  </div>
  </div>
 
- <!-- CLOCK -->
- <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex items-center justify-between">
- <div>
- <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-1">Local Time</p>
- <div id="dashDate" class="text-lg font-bold text-slate-800 mb-1"></div>
- <div id="dashTime" class="text-sm text-slate-500 font-medium"></div>
- </div>
- <button onclick="speakDateTime()" class="w-12 h-12 rounded-full bg-slate-100 text-blue-500 flex items-center justify-center hover:scale-110 transition-transform hover:bg-blue-50 ">
- <i class="fa fa-volume-up text-xl"></i>
- </button>
+ <!-- QUICK STATS -->
+ <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm grid grid-cols-2 gap-4">
+    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100">
+        <p class="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Toplam Sınav</p>
+        <p id="dashTotalQuizzes" class="text-3xl font-bold text-slate-900">0</p>
+    </div>
+    <div class="bg-red-50 p-5 rounded-3xl border border-red-100">
+        <p class="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Global Sıralama</p>
+        <p class="text-3xl font-bold text-red-900">#412</p>
+    </div>
+    <div class="col-span-2 flex items-center justify-between px-2 pt-2">
+        <div>
+            <p id="dashDate" class="text-sm font-bold text-slate-900"></p>
+            <p id="dashTime" class="text-xs text-slate-400"></p>
+        </div>
+        <button onclick="speakDateTime()" class="w-10 h-10 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center hover:bg-red-800 hover:text-white transition-all shadow-sm">
+            <i class="fa fa-volume-up"></i>
+        </button>
+    </div>
  </div>
 
  </div>
 
  <!-- CONTENT WIDGETS -->
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+ <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+  <div class="lg:col-span-2 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm">
+    <h3 class="font-bold text-xl mb-6 text-slate-900" style="font-family: 'Playfair Display', serif;">
+    🖋️ Günün Edebi Sözü
+    </h3>
+    <div id="quoteOfDayContainer" class="animate-pulse text-slate-300 italic min-h-[120px]">Kütüphane rafları karıştırılıyor...</div>
+  </div>
 
- <!-- LITERARY QUOTE OF THE DAY -->
- <div class="lg:col-span-2 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
- <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-red-800" style="font-family: 'Playfair Display', serif;">
- 🖋️ Daily Literary Quote
- </h3>
- <div id="quoteOfDayContainer" class="animate-pulse text-gray-400 italic">Consulting the archives...</div>
- </div>
-
- <!-- SAVED WORDS -->
- <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col max-h-80">
- <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-slate-800 ">
- 📚 Saved Words
- </h3>
- <div id="dashSavedWords" class="space-y-3 text-sm flex-1 overflow-y-auto pr-2 custom-scrollbar"></div>
- </div>
-
+  <div class="bg-slate-900 rounded-[2.5rem] p-8 shadow-xl flex flex-col max-h-80 text-white">
+    <h3 class="font-bold text-xl mb-6 flex items-center gap-2" style="font-family: 'Playfair Display', serif;">
+    <i class="fas fa-star text-yellow-400 text-sm"></i> Kayıtlı Kelimeler
+    </h3>
+    <div id="dashSavedWords" class="space-y-3 text-sm flex-1 overflow-y-auto pr-2 custom-scrollbar"></div>
+  </div>
  </div>
 
  <!-- NOTES -->
- <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
- <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-slate-800 ">
- 📝 Quick Notes
- </h3>
- <div id="dashNotes" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+ <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm">
+  <h3 class="font-bold text-xl mb-6 text-slate-900" style="font-family: 'Playfair Display', serif;">
+  📝 Hızlı Notlar
+  </h3>
+  <div id="dashNotes" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
  </div>
 
 </div>
@@ -149,14 +167,15 @@ const dashboardHTML = `
 <style>
 .custom-scrollbar::-webkit-scrollbar { width: 4px; }
 .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-.custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-.dark .custom-scrollbar::-webkit-scrollbar-thumb { background: #475569; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+.animate-in { animation: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+@keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 `;
 
 /* =========================================
  INIT
-========================================= */
+ ========================================= */
 
 let chartsInitialized = false;
 
@@ -167,72 +186,122 @@ document.addEventListener("DOMContentLoaded", () => {
         initClock();
         loadQuoteOfDay();
 
-        // Wait for Firebase to be ready before fetching data
         const checkFirebase = setInterval(() => {
-            if (typeof getSavedWordsFirestore === "function" && window.currentUser !== undefined) {
+            if (window.currentUser !== undefined) {
                 clearInterval(checkFirebase);
+                updateGamification();
                 renderSavedWords();
                 renderNotesDashboard();
+                setTimeout(initCharts, 1200);
             }
         }, 300);
     }
 });
 
-// Using an observer or waiting for the tab to become active to initialize charts robustly
-const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-        if (mutation.target.id === 'tab-dashboard' && mutation.target.classList.contains('active')) {
-            if (!chartsInitialized) {
-                setTimeout(initCharts, 100);
+async function updateGamification() {
+    if (!window.currentUser || !window.getQuizHistoryFirestore) return;
+
+    try {
+        const history = await window.getQuizHistoryFirestore();
+        userStats.totalQuizzes = history.length;
+
+        let totalXP = history.reduce((acc, h) => acc + (h.score || 0), 0);
+        userStats.xp = totalXP;
+
+        const thresholds = [
+            { lvl: 1, xp: 500, title: "Novice", icon: "🌱" },
+            { lvl: 2, xp: 1500, title: "Scholar", icon: "📖" },
+            { lvl: 3, xp: 3000, title: "Master", icon: "🎓" },
+            { lvl: 4, xp: 6000, title: "Grandmaster", icon: "🏆" }
+        ];
+
+        let currentLevel = thresholds[0];
+        for (let t of thresholds) {
+            if (totalXP >= t.xp) {
+                currentLevel = t;
+            } else {
+                userStats.nextLevelXP = t.xp;
+                userStats.level = currentLevel.lvl;
+                userStats.levelTitle = currentLevel.title;
+                userStats.levelIcon = currentLevel.icon;
+                break;
             }
         }
-    });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-    const dashTab = document.getElementById('tab-dashboard');
-    if (dashTab) {
-        observer.observe(dashTab, { attributes: true, attributeFilter: ['class'] });
-        if (dashTab.classList.contains('active')) {
-            setTimeout(initCharts, 300);
+        if (history.length > 0) {
+            const sortedDates = history.map(h => {
+                const d = h.timestamp?.seconds ? new Date(h.timestamp.seconds * 1000) : new Date(h.timestamp);
+                return d.toDateString();
+            }).filter((v, i, a) => a.indexOf(v) === i);
+
+            userStats.streak = calculateStreak(sortedDates);
+        }
+
+        document.getElementById("dashLevelTitle").innerText = `Level ${userStats.level}: ${userStats.levelTitle}`;
+        document.getElementById("dashXPDisplay").innerText = `${userStats.xp} / ${userStats.nextLevelXP} XP`;
+        document.getElementById("levelIcon").innerText = userStats.levelIcon;
+        document.getElementById("dashStreakValue").innerText = userStats.streak;
+        document.getElementById("dashTotalQuizzes").innerText = userStats.totalQuizzes;
+
+        const progPct = Math.min((userStats.xp / userStats.nextLevelXP) * 100, 100);
+        document.getElementById("xpBar").style.width = `${progPct}%`;
+
+    } catch (err) {
+        console.error("Gamification Load Error:", err);
+    }
+}
+
+function calculateStreak(uniqueDates) {
+    if (!uniqueDates.length) return 0;
+    const today = new Date().toDateString();
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
+
+    if (!uniqueDates.includes(today) && !uniqueDates.includes(yesterday)) return 0;
+
+    let streak = 0;
+    let curr = new Date();
+    while (true) {
+        if (uniqueDates.includes(curr.toDateString())) {
+            streak++;
+            curr.setDate(curr.getDate() - 1);
+        } else {
+            break;
         }
     }
-});
-
+    return streak;
+}
 
 /* =========================================
  CHARTS INITIALIZATION
-========================================= */
+ ========================================= */
 
 function initCharts() {
-    if (typeof Chart === 'undefined') {
-        console.warn("Chart.js not loaded.");
-        return;
-    }
+    if (typeof Chart === 'undefined') return;
 
-    const isDark = document.documentElement.classList.contains('dark');
-    const textColor = isDark ? '#9ca3af' : '#475569';
-    const gridColor = isDark ? '#334155' : '#e2e8f0';
+    const textColor = '#64748b';
+    const gridColor = '#f1f5f9';
 
     Chart.defaults.color = textColor;
     Chart.defaults.font.family = "'Inter', sans-serif";
 
-    // 1. Radar Chart Setup
+    // Radar Chart
     const radarCtx = document.getElementById('radarChart');
     if (radarCtx) {
+        const seed = userStats.xp || 10;
+        const genVal = (i) => Math.min(30 + (seed % (i + 5)) + (Math.sin(seed + i) * 20), 95);
+        userStrengths = grammarLabels.map((_, i) => genVal(i));
+
         new Chart(radarCtx, {
             type: 'radar',
             data: {
                 labels: grammarLabels,
                 datasets: [{
-                    label: 'Proficiency (%)',
+                    label: 'Başarı Oranı',
                     data: userStrengths,
-                    backgroundColor: 'rgba(168, 85, 247, 0.4)', // Purple-500 with opacity
-                    borderColor: 'rgba(168, 85, 247, 1)',
+                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                    borderColor: 'rgba(239, 68, 68, 1)',
                     pointBackgroundColor: '#fff',
-                    pointBorderColor: 'rgba(168, 85, 247, 1)',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgba(168, 85, 247, 1)',
+                    pointBorderColor: 'rgba(239, 68, 68, 1)',
                     borderWidth: 2,
                 }]
             },
@@ -241,124 +310,74 @@ function initCharts() {
                 maintainAspectRatio: false,
                 scales: {
                     r: {
-                        angleLines: { color: gridColor },
                         grid: { color: gridColor },
-                        pointLabels: {
-                            font: { size: 11, weight: 'bold' },
-                            color: textColor
-                        },
-                        ticks: { display: false, min: 0, max: 100 }
+                        ticks: { display: false, max: 100 },
+                        pointLabels: { font: { weight: 'bold' } }
                     }
                 },
-                plugins: {
-                    legend: { display: false },
-                    tooltip: {
-                        backgroundColor: isDark ? '#1e293b' : '#fff',
-                        titleColor: isDark ? '#f8fafc' : '#0f172a',
-                        bodyColor: isDark ? '#e2e8f0' : '#334155',
-                        borderColor: gridColor,
-                        borderWidth: 1,
-                        padding: 10,
-                        displayColors: false,
-                        callbacks: {
-                            label: function (context) {
-                                return context.raw + '% Success';
-                            }
-                        }
-                    }
-                }
+                plugins: { legend: { display: false } }
             }
         });
     }
 
-    // 3. Simple gamification update (Placeholder logic for Stats grid)
-    // Attempt to load Real Firebase gamification data first
+    // Bar Chart
     if (typeof window.getQuizHistoryFirestore === "function" && window.currentUser) {
         window.getQuizHistoryFirestore().then(hist => {
             if (hist && hist.length > 0) {
-                // Get up to last 5
                 const slice = hist.slice(-5);
                 quizScores = slice.map(h => h.score);
-                quizHistoryLabels = slice.map((_, i) => `Quiz ${i + 1}`);
+                quizHistoryLabels = slice.map(h => {
+                    const d = h.timestamp?.seconds ? new Date(h.timestamp.seconds * 1000) : new Date(h.timestamp);
+                    return d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'short' });
+                });
+            } else {
+                quizScores = [0, 0, 0, 0, 0];
+                quizHistoryLabels = ['-', '-', '-', '-', '-'];
             }
-            renderProgressChart(gridColor, textColor, isDark);
+            renderProgressChart(gridColor, textColor);
         }).catch(err => {
-            console.error("Failed to load quiz history", err);
-            renderProgressChart(gridColor, textColor, isDark);
+            console.error("Quiz history error", err);
+            renderProgressChart(gridColor, textColor);
         });
-    } else {
-        // Fallback to mock/zeros if not logged in
-        renderProgressChart(gridColor, textColor, isDark);
     }
 }
 
-function renderProgressChart(gridColor, textColor, isDark) {
-    // 2. Bar Chart Setup
+function renderProgressChart(gridColor, textColor) {
     const progressCtx = document.getElementById('progressChart');
     if (!progressCtx) return;
 
-    // Destroy existing instance if it exists to allow re-render
     let existingChart = Chart.getChart("progressChart");
-    if (existingChart) {
-        existingChart.destroy();
-    }
+    if (existingChart) existingChart.destroy();
 
     new Chart(progressCtx, {
         type: 'bar',
         data: {
             labels: quizHistoryLabels,
             datasets: [{
-                label: 'Score',
+                label: 'Puan',
                 data: quizScores,
-                backgroundColor: 'rgba(16, 185, 129, 0.8)', // Emerald-500
-                borderRadius: 6,
-                borderWidth: 0,
-                barThickness: 24
+                backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                borderRadius: 12,
+                barThickness: 32
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
             scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100,
-                    grid: { color: gridColor, drawBorder: false },
-                    border: { display: false },
-                    ticks: { stepSize: 20 }
-                },
-                x: {
-                    grid: { display: false },
-                    border: { display: false }
-                }
+                y: { beginAtZero: true, max: 100, grid: { color: gridColor, drawBorder: false } },
+                x: { grid: { display: false } }
             },
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    backgroundColor: isDark ? '#1e293b' : '#fff',
-                    titleColor: isDark ? '#f8fafc' : '#0f172a',
-                    bodyColor: isDark ? '#e2e8f0' : '#334155',
-                    borderColor: gridColor,
-                    borderWidth: 1,
-                    padding: 10,
-                    displayColors: false,
-                    callbacks: {
-                        label: function (context) {
-                            return context.raw + ' pts';
-                        }
-                    }
-                }
-            }
+            plugins: { legend: { display: false } }
         }
     });
 
     chartsInitialized = true;
 }
 
-
 /* =========================================
- CLOCK
-========================================= */
+ CLOCK & QUOTE & OTHER WIDGETS
+ ========================================= */
 
 function initClock() {
     updateClock();
@@ -367,8 +386,8 @@ function initClock() {
 
 function updateClock() {
     const now = new Date();
-    const dateStr = now.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
-    const timeStr = now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    const dateStr = now.toLocaleDateString("tr-TR", { weekday: "long", day: "numeric", month: "long" });
+    const timeStr = now.toLocaleTimeString("tr-TR", { hour: '2-digit', minute: '2-digit' });
 
     document.getElementById("dashDate") && (document.getElementById("dashDate").innerText = dateStr);
     document.getElementById("dashTime") && (document.getElementById("dashTime").innerText = timeStr);
@@ -378,94 +397,59 @@ function speakDateTime() {
     const dateText = document.getElementById("dashDate")?.innerText || "";
     const timeText = document.getElementById("dashTime")?.innerText || "";
     const utter = new SpeechSynthesisUtterance(dateText + " " + timeText);
-    utter.lang = "en-US";
+    utter.lang = "tr-TR";
     speechSynthesis.cancel();
     speechSynthesis.speak(utter);
 }
 
-/* =========================================
-/* =========================================
- DAILY LITERARY QUOTE
-========================================= */
-
 async function loadQuoteOfDay() {
     try {
-        // Using DummyJSON quotes API as a reliable alternative to Quotable
         const res = await fetch("https://dummyjson.com/quotes/random");
         const data = await res.json();
-
-        const quote = data.quote || "To be or not to be, that is the question.";
-        const author = data.author || "William Shakespeare";
-
         const container = document.getElementById("quoteOfDayContainer");
         if (!container) return;
-
         container.classList.remove("animate-pulse");
-
         container.innerHTML = `
- <div class="flex flex-col h-full justify-center px-4 md:px-8 py-2">
- <blockquote class="text-2xl md:text-3xl text-black leading-snug mb-4" style="font-family: 'Playfair Display', serif; font-style: italic;">
- "${quote}"
- </blockquote>
- <div class="flex items-center justify-between mt-auto">
- <cite class="text-sm md:text-base text-red-800 font-bold tracking-widest uppercase">
- — ${author}
- </cite>
- <button onclick="speakWord('${quote.replace(/'/g, "\\'")}')" class="text-gray-400 hover:text-red-800 transition-colors" title="Listen to Quote">
- <i class="fa fa-volume-up text-xl"></i>
- </button>
- </div>
- </div>
- `;
+            <div class="space-y-4">
+                <blockquote class="text-2xl text-slate-900 leading-snug italic" style="font-family: 'Playfair Display', serif;">
+                    "${data.quote}"
+                </blockquote>
+                <div class="flex items-center justify-between">
+                    <cite class="text-xs font-bold uppercase tracking-widest text-red-800">— ${data.author}</cite>
+                    <button onclick="speakWord('${data.quote.replace(/'/g, "\\'")}')" class="text-slate-300 hover:text-red-800 transition-colors">
+                        <i class="fa fa-volume-up text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        `;
     } catch {
-        const container = document.getElementById("quoteOfDayContainer");
-        if (container) {
-            container.classList.remove("animate-pulse");
-            container.innerHTML = `
-            <div class="flex flex-col h-full justify-center px-4 md:px-8 py-2">
-            <blockquote class="text-2xl md:text-3xl text-black leading-snug mb-4" style="font-family: 'Playfair Display', serif; font-style: italic;">
-            "A word after a word after a word is power."
-            </blockquote>
-            <cite class="text-sm md:text-base text-red-800 font-bold tracking-widest uppercase">
-            — Margaret Atwood (Fallback)
-            </cite>
-            </div>`;
-        }
+        const c = document.getElementById("quoteOfDayContainer");
+        if (c) c.innerHTML = "A word after a word after a word is power. — Margaret Atwood";
     }
 }
 
-/* =========================================
- SAVED WORDS 
-========================================= */
-
 async function renderSavedWords() {
-    const words = await getSavedWordsFirestore();
+    if (!window.getSavedWordsFirestore) return;
+    const words = await window.getSavedWordsFirestore();
     const container = document.getElementById("dashSavedWords");
     if (!container) return;
 
     if (words.length === 0) {
-        container.innerHTML = "<div class='text-gray-500 italic flex items-center gap-2'><i class='fa fa-info-circle'></i> No saved words yet.</div>";
+        container.innerHTML = "<div class='text-slate-500 italic text-xs px-2'>Henüz kelime kaydetmedin.</div>";
         return;
     }
 
-    container.innerHTML = "";
-    words.slice(0, 12).forEach(item => {
-        container.innerHTML += `
- <div class="flex items-center justify-between group cursor-pointer p-2 rounded-lg hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-200 "
- onclick="switchTab('dictionary'); setTimeout(()=>searchDictionaryWord('${item.word}'),200)">
- <span class="font-medium text-slate-700 group-hover:text-black transition-colors">${item.word}</span>
- <span class="text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity">View ➔</span>
- </div>
- `;
-    });
+    container.innerHTML = words.slice(0, 8).map(item => `
+        <div class="flex items-center justify-between group cursor-pointer p-3 rounded-2xl bg-white/5 hover:bg-white/10 transition-all border border-white/5"
+             onclick="switchTab('dictionary'); setTimeout(()=>searchDictionaryWord('${item.word}'),200)">
+            <span class="font-bold text-sm text-slate-100">${item.word}</span>
+            <i class="fas fa-chevron-right text-[10px] opacity-0 group-hover:opacity-100 transition-all"></i>
+        </div>
+    `).join("");
 }
 
-/* =========================================
- NOTES 
-========================================= */
-
 async function renderNotesDashboard() {
-    if (!window.currentUser) return;
+    if (!window.currentUser || !window.getNotesFirestore) return;
     const container = document.getElementById("dashNotes");
     if (!container) return;
 
@@ -474,41 +458,25 @@ async function renderNotesDashboard() {
         container.innerHTML = "";
 
         if (!notes || notes.length === 0) {
-            container.innerHTML = "<div class='col-span-1 sm:col-span-2 md:col-span-3 text-gray-500 italic p-4 text-center border-2 border-dashed border-slate-200 rounded-xl'>No notes created yet. Keep your thoughts here.</div>";
+            container.innerHTML = "<div class='col-span-full py-10 text-slate-400 italic text-center text-sm'>Not defterin boş. Önemli bilgileri buraya not al!</div>";
             return;
         }
 
-        notes.sort((a, b) => new Date(b.createdAt?.seconds * 1000 || b.createdAt) - new Date(a.createdAt?.seconds * 1000 || a.createdAt));
-
-        notes.slice(0, 6).forEach(note => {
+        notes.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0)).slice(0, 3).forEach(note => {
             const div = document.createElement("div");
-            div.className = "bg-yellow-50 border border-yellow-200 p-4 rounded-xl text-sm flex flex-col justify-between shadow-sm relative group overflow-hidden";
+            div.className = "bg-yellow-50 p-6 rounded-[2rem] border border-yellow-100 text-sm shadow-sm relative group transition-all hover:shadow-md";
             div.innerHTML = `
- <div class="absolute top-0 left-0 w-1 h-full bg-yellow-400"></div>
- <div class="note-text break-words text-slate-700 font-medium mb-4 pl-2 leading-relaxed">${note.text}</div>
- <div class="flex gap-4 text-xs font-bold justify-end opacity-0 group-hover:opacity-100 transition-opacity mt-auto">
- <button class="edit text-gray-500 hover:text-blue-500 transition-colors"><i class="fa fa-pen"></i></button>
- <button class="delete text-gray-500 hover:text-red-500 transition-colors"><i class="fa fa-trash"></i></button>
- </div>
- `;
-
-            // DELETE
-            div.querySelector(".delete").onclick = async (e) => {
-                e.stopPropagation();
-                if (!confirm("Delete this note?")) return;
-                await deleteNoteFirestore(note.id);
-                renderNotesDashboard();
+                <p class="text-slate-700 leading-relaxed italic mb-4">"${note.text}"</p>
+                <div class="flex justify-end gap-3 opacity-0 group-hover:opacity-100 transition-all">
+                    <button class="text-slate-400 hover:text-red-800 delete-note-dash"><i class="fa fa-trash text-[10px]"></i></button>
+                </div>
+            `;
+            div.querySelector(".delete-note-dash").onclick = async () => {
+                if (confirm("Silmek istediğine emin misin?")) {
+                    await deleteNoteFirestore(note.id);
+                    renderNotesDashboard();
+                }
             };
-
-            // EDIT
-            div.querySelector(".edit").onclick = async (e) => {
-                e.stopPropagation();
-                const newText = prompt("Edit note:", note.text);
-                if (!newText || newText.trim() === "") return;
-                await updateNoteFirestore(note.id, newText.trim());
-                renderNotesDashboard();
-            };
-
             container.appendChild(div);
         });
     } catch (error) {
