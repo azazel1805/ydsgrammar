@@ -124,12 +124,12 @@ function renderPosts(posts) {
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden group hover:border-red-200 transition-all duration-300">
             <div class="p-6">
                 <div class="flex items-center gap-3 mb-4">
-                    <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-800 font-bold">
-                        ${post.authorEmail ? post.authorEmail[0].toUpperCase() : 'U'}
+                    <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-800 font-bold overflow-hidden shadow-inner">
+                        ${post.authorPhotoURL ? `<img src="${post.authorPhotoURL}" class="w-full h-full object-cover">` : (post.authorName || post.authorEmail || 'U')[0].toUpperCase()}
                     </div>
                     <div>
-                        <p class="text-sm font-bold text-slate-900">${post.authorEmail || 'Anonim'}</p>
-                        <p class="text-xs text-slate-400">${formatDate(post.createdAt)}</p>
+                        <p class="text-sm font-bold text-slate-900">${post.authorName || post.authorEmail || 'Anonim'}</p>
+                        <p class="text-xs text-slate-400 font-medium">${formatDate(post.createdAt)}</p>
                     </div>
                 </div>
                 
@@ -222,6 +222,8 @@ async function handlePostSubmit() {
             imageUrl,
             authorId: window.currentUser.uid,
             authorEmail: window.currentUser.email,
+            authorName: window.currentUser.displayName || "",
+            authorPhotoURL: window.currentUser.photoURL || "",
             createdAt: serverTimestamp(),
             commentCount: 0
         });
@@ -263,12 +265,17 @@ async function toggleComments(postId) {
             list.innerHTML = `<p class="text-xs text-slate-400 italic font-medium">İlk yorumu sen yap!</p>`;
         } else {
             list.innerHTML = comments.map(c => `
-                <div class="bg-slate-50 p-3 rounded-lg">
-                    <div class="flex items-center justify-between mb-1">
-                        <span class="text-xs font-bold text-slate-900">${c.authorEmail || 'Anonim'}</span>
-                        <span class="text-[10px] text-slate-400">${formatDate(c.createdAt)}</span>
+                <div class="bg-slate-50 p-3 rounded-lg flex gap-3">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center text-red-800 font-bold text-[10px] overflow-hidden">
+                        ${c.authorPhotoURL ? `<img src="${c.authorPhotoURL}" class="w-full h-full object-cover">` : (c.authorName || c.authorEmail || 'U')[0].toUpperCase()}
                     </div>
-                    <p class="text-sm text-slate-600">${c.content}</p>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-[10px] font-bold text-slate-900">${c.authorName || c.authorEmail || 'Anonim'}</span>
+                            <span class="text-[10px] text-slate-400">${formatDate(c.createdAt)}</span>
+                        </div>
+                        <p class="text-sm text-slate-600">${c.content}</p>
+                    </div>
                 </div>
             `).join("");
         }
@@ -295,6 +302,8 @@ async function submitComment(postId) {
             content,
             authorId: window.currentUser.uid,
             authorEmail: window.currentUser.email,
+            authorName: window.currentUser.displayName || "",
+            authorPhotoURL: window.currentUser.photoURL || "",
             createdAt: serverTimestamp()
         });
 

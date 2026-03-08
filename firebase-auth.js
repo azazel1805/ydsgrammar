@@ -15,7 +15,8 @@ import {
   signOut,
   onAuthStateChanged,
   GoogleAuthProvider,
-  signInWithPopup
+  signInWithPopup,
+  updateProfile
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 import {
@@ -161,6 +162,31 @@ window.loginWithGoogle = async function () {
 
 window.logoutUser = async function () {
   await signOut(auth);
+};
+
+window.updateUserProfile = async function (displayName, photoURL) {
+  if (!auth.currentUser) return;
+  try {
+    const updateData = {};
+    if (displayName) updateData.displayName = displayName;
+    if (photoURL) updateData.photoURL = photoURL;
+
+    await updateProfile(auth.currentUser, updateData);
+
+    // Update local currentUser reference
+    window.currentUser = auth.currentUser;
+
+    // Attempt to sync to Firestore too
+    await setDoc(doc(db, "users", auth.currentUser.uid), {
+      displayName: displayName || auth.currentUser.displayName,
+      photoURL: photoURL || auth.currentUser.photoURL
+    }, { merge: true });
+
+    return { success: true };
+  } catch (err) {
+    console.error("Profile update failed:", err);
+    return { success: false, error: err.message };
+  }
 };
 
 /* =========================================
