@@ -37,8 +37,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="./assets/index-CptfCNCE.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CG8aKgjF.css">
+  <script type="module" crossorigin src="./assets/index-mqGiVcMw.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index--6OTRQTK.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -242,6 +242,9 @@
               Corrector</button>
             <button data-tab="vocabulary" onclick="switchTab('vocabulary')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Vocabulary</button>
+            <button data-tab="tenseguide" onclick="switchTab('tenseguide')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Tense
+              Rehberi</button>
           </div>
         </div>
 
@@ -337,6 +340,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               Corrector</button>
             <button data-tab="vocabulary" onclick="switchTabAndClose('vocabulary')"
               class="drawer-btn">Vocabulary</button>
+            <button data-tab="tenseguide" onclick="switchTabAndClose('tenseguide')" class="drawer-btn">Tense
+              Rehberi</button>
             <button data-tab="profile" onclick="switchTabAndClose('profile')" class="drawer-btn">Profile</button>
           </div>
         </div>
@@ -381,6 +386,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-miniexams" class="tab-content"></div>
       <div id="tab-fullexam" class="tab-content"></div>
       <div id="tab-tacticguide" class="tab-content"></div>
+      <div id="tab-tenseguide" class="tab-content"></div>
       <div id="tab-analyzer" class="tab-content hidden"></div>
       <div id="tab-testlab" class="tab-content hidden"></div>
       <div id="tab-restatement" class="tab-content hidden"></div>
@@ -453,6 +459,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./miniexams.js"></script>
     <script src="./fullexam.js"></script>
     <script src="./tacticguide.js"></script>
+    <script src="./tenseguide.js"></script>
     <script src="./forum.js"></script>
     <script src="https://unpkg.com/compromise"></script>
     <script src="./analyzer.js"></script>

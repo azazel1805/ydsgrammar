@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
         initTacticGuide();
     }
 
+    if (typeof initTenseGuide2 === "function") {
+        initTenseGuide2();
+    }
+
     /* ================= THEME ================= */
     // Dark mode logic has been removed as per the literary light-only aesthetic.
 
