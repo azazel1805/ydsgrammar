@@ -82,6 +82,15 @@ const forumHTML = `
 `;
 
 function initForum() {
+    const checkInterval = setInterval(() => {
+        if (window.firebaseExports && window.firebaseExports.db) {
+            clearInterval(checkInterval);
+            startForumListener();
+        }
+    }, 100);
+}
+
+function startForumListener() {
     const { onSnapshot, collection, query, orderBy, db } = window.firebaseExports;
 
     const container = document.getElementById("forumPostsContainer");

@@ -77,7 +77,8 @@ window.firebaseExports = {
   limit,
   onSnapshot,
   serverTimestamp,
-  increment
+  increment,
+  db
 };
 
 window.storageExports = {

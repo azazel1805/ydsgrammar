@@ -187,27 +187,27 @@ async function renderSavedWords() {
         countBadge.innerText = words.length;
 
         if (!words || words.length === 0) {
-            container.innerHTML = \`
+            container.innerHTML = `
                 <div class="text-center py-10 opacity-30">
                     <i class="fas fa-book-open text-4xl mb-2"></i>
                     <p class="text-xs font-bold uppercase tracking-widest">Defter Henüz Boş</p>
                 </div>
-            \`;
+            `;
             return;
         }
 
         words.forEach(item => {
             const div = document.createElement("div");
             div.className = "group flex justify-between items-center bg-slate-50 border border-slate-100 p-4 rounded-2xl hover:bg-white hover:border-red-100 transition-all cursor-pointer";
-            
-            div.innerHTML = \`
-                <div class="flex-1" onclick="switchTab('dictionary'); setTimeout(() => searchDictionaryWord('\${item.word}'), 200)">
-                    <span class="font-bold text-slate-800 group-hover:text-red-900 transition-colors">\${item.word}</span>
+
+            div.innerHTML = `
+                <div class="flex-1" onclick="switchTab('dictionary'); setTimeout(() => searchDictionaryWord('${item.word}'), 200)">
+                    <span class="font-bold text-slate-800 group-hover:text-red-900 transition-colors">${item.word}</span>
                 </div>
                 <button class="text-slate-300 hover:text-red-600 transition-colors px-2">
                     <i class="fas fa-trash-alt text-xs"></i>
                 </button>
-            \`;
+            `;
 
             // Delete word
             div.querySelector("button").onclick = async (e) => {
@@ -240,7 +240,7 @@ window.addNoteFromProfile = async function () {
         input.value = "";
         await renderNotes();
         // Also update dashboard if possible
-        if(typeof renderNotesDashboard === 'function') renderNotesDashboard();
+        if (typeof renderNotesDashboard === 'function') renderNotesDashboard();
     } catch (error) {
         console.error("Add note error:", error);
     }
@@ -260,22 +260,22 @@ async function renderNotes() {
         }
 
         // Sort by date
-        notes.sort((a,b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
+        notes.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
 
         notes.slice(0, 4).forEach(note => {
             const div = document.createElement("div");
             div.className = "bg-yellow-50/50 border border-yellow-100 p-5 rounded-3xl relative group h-full flex flex-col justify-between";
-            div.innerHTML = \`
-                <p class="text-sm text-slate-700 leading-relaxed italic mb-4">"\${note.text}"</p>
+            div.innerHTML = `
+                <p class="text-sm text-slate-700 leading-relaxed italic mb-4">"${note.text}"</p>
                 <div class="flex items-center justify-between mt-auto pt-4 border-t border-yellow-200/50">
                     <span class="text-[10px] text-yellow-600 font-bold uppercase tracking-widest">
-                        \${note.createdAt ? new Date(note.createdAt.seconds * 1000).toLocaleDateString('tr-TR') : 'Bugün'}
+                        ${note.createdAt ? new Date(note.createdAt.seconds * 1000).toLocaleDateString('tr-TR') : 'Bugün'}
                     </span>
                     <button class="text-yellow-600/30 hover:text-red-600 transition-colors opacity-0 group-hover:opacity-100">
                         <i class="fas fa-trash-alt text-[10px]"></i>
                     </button>
                 </div>
-            \`;
+            `;
 
             div.querySelector("button").onclick = async () => {
                 if (!confirm("Notu silmek istiyor musunuz?")) return;
@@ -297,10 +297,10 @@ async function renderNotes() {
 function unlockAnalyzerUI() {
     document.querySelectorAll('[id*="analyzerNavBtn"], [id*="analyzerMobileBtn"], [id*="tab-analyzer"], [id*="testlabNavBtn"], [id*="testlabMobileBtn"], [id*="linguisticlabNavBtn"], [id*="linguisticlabMobileBtn"]')
         .forEach(el => el.classList.remove("hidden"));
-    
+
     document.getElementById("aiToolsLockedMsg")?.classList.add("hidden");
     document.getElementById("aiToolsLockedMobile")?.classList.add("hidden");
-    
+
     // Show VIP badge if profile is open
     document.getElementById("vipBadge")?.classList.remove("hidden");
 }

@@ -166,8 +166,15 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = dashboardHTML;
         initClock();
         loadQuoteOfDay();
-        renderSavedWords();
-        renderNotesDashboard();
+
+        // Wait for Firebase to be ready before fetching data
+        const checkFirebase = setInterval(() => {
+            if (typeof getSavedWordsFirestore === "function" && window.currentUser !== undefined) {
+                clearInterval(checkFirebase);
+                renderSavedWords();
+                renderNotesDashboard();
+            }
+        }, 300);
     }
 });
 
