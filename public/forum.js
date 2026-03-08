@@ -293,11 +293,15 @@ async function submitComment(postId) {
             createdAt: serverTimestamp()
         });
 
-        // Update comment count
-        const postRef = doc(db, "forum_posts", postId);
-        await updateDoc(postRef, {
-            commentCount: increment ? increment(1) : 1 // Simple fallback if increment missing
-        });
+        // Update comment count (Try but don't fail if permissions block this specific update)
+        try {
+            const postRef = doc(db, "forum_posts", postId);
+            await updateDoc(postRef, {
+                commentCount: increment ? increment(1) : 1
+            });
+        } catch (counterErr) {
+            console.warn("Counter update failed, but comment was saved:", counterErr);
+        }
 
         input.value = "";
         // Refresh comments view
@@ -307,7 +311,7 @@ async function submitComment(postId) {
 
     } catch (err) {
         console.error(err);
-        alert("Yorum yaparken hata oluştu: " + err.message);
+        alert("Yorum gönderilemedi: " + err.message);
     }
 }
 
