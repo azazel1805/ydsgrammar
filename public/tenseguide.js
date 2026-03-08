@@ -38,7 +38,7 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ "I am knowing the answer." → Stative verbs continuous yapılmaz!',
+        mistake: '❌ "I am knowing the answer." -> Stative verbs continuous yapılmaz!',
         tip: '💡 "s/es" son ek: He/She/It için unutma. "He go" değil "He goes".',
     },
     {
@@ -76,8 +76,8 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ "I am wanting a coffee." → want/know/love gibi stative verbs ile KULLANILMAZ.',
-        tip: '💡 "right now" görürsen → muhtemelen Present Continuous.',
+        mistake: '❌ "I am wanting a coffee." -> want/know/love gibi stative verbs ile KULLANILMAZ.',
+        tip: '💡 "right now" görürsen -> muhtemelen Present Continuous.',
     },
     {
         id: 'present_perfect',
@@ -114,7 +114,7 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ "I have seen him yesterday." → Kesin geçmiş zaman (yesterday/ago/last) ile KULLANILMAZ! → "I saw him yesterday."',
+        mistake: '❌ "I have seen him yesterday." -> Kesin geçmiş zaman (yesterday/ago/last) ile KULLANILMAZ! -> "I saw him yesterday."',
         tip: '💡 since = başlangıç noktası (2010, Monday) / for = süre (3 years, a week)',
     },
     {
@@ -140,7 +140,7 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ "I have been knowing her for years." → Stative verbs burada da continuous yapılmaz. → "I have known her for years."',
+        mistake: '❌ "I have been knowing her for years." -> Stative verbs burada da continuous yapılmaz. -> "I have known her for years."',
         tip: '💡 Perfect Simple: Kaç tane? / Perfect Continuous: Ne kadar süredir?',
     },
     {
@@ -171,7 +171,7 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ "I have seen him yesterday." → "yesterday" kesin zaman = Past Simple zorunlu.',
+        mistake: '❌ "I have seen him yesterday." -> "yesterday" kesin zaman = Past Simple zorunlu.',
         tip: '💡 Hikaye anlatırken ana fiil Past Simple, arkaplan Past Continuous olur.',
     },
     {
@@ -202,8 +202,8 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ when+Past Simple + while+Past Continuous → birbirini karıştırma!\n"When I was sleeping" ✓ / "While I slept" ✗ (genellikle)',
-        tip: '💡 "when" → kısa, tamamlanan eylem (P.Simple) / "while" → devam eden eylem (P.Continuous)',
+        mistake: '❌ when+Past Simple + while+Past Continuous -> birbirini karıştırma!\n"When I was sleeping" ✓ / "While I slept" ✗ (genellikle)',
+        tip: '💡 "when" -> kısa, tamamlanan eylem (P.Simple) / "while" -> devam eden eylem (P.Continuous)',
     },
     {
         id: 'past_perfect',
@@ -297,7 +297,7 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ "If it will rain, I\'ll stay home." → Zaman/koşul yan cümleciklerinde will KULLANILMAZ!',
+        mistake: '❌ "If it will rain, I\'ll stay home." -> Zaman/koşul yan cümleciklerinde will KULLANILMAZ!',
         tip: '💡 Will: Anlık karar + tahmin. Going to: Önceden planlanmış.',
     },
     {
@@ -323,8 +323,8 @@ const TENSES = [
                 ]
             },
         ],
-        mistake: '❌ "I\'m going to close the window" (anlık karar değil planlanmış olmalı) → "I\'ll close it" daha doğal.',
-        tip: '💡 Kanıt gözle görülebiliyorsa → going to ✓ / "I think/believe" varsa → will ✓',
+        mistake: '❌ "I\'m going to close the window" (anlık karar değil planlanmış olmalı) -> "I\'ll close it" daha doğal.',
+        tip: '💡 Kanıt gözle görülebiliyorsa -> going to ✓ / "I think/believe" varsa -> will ✓',
     },
     {
         id: 'future_continuous',
@@ -454,7 +454,7 @@ function buildTenseCard(t) {
       ${u.examples.map(ex => `
         <div class="tg2-example" style="border-left-color:${u.color}55;">
           <p class="tg2-en">"${ex.en}"</p>
-          <p class="tg2-tr">→ ${ex.tr}</p>
+          <p class="tg2-tr">-> ${ex.tr}</p>
         </div>`).join('')}
     </div>`).join('');
 
