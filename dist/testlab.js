@@ -11,10 +11,10 @@ function injectVisualizerHTML() {
     if (!container) return;
 
     container.innerHTML = `
- <div class="max-w-4xl mx-auto p-8 space-y-8">
+<div class="max-w-4xl mx-auto p-8 space-y-8">
 
  <h2 class="text-4xl font-bold text-center text-red-800 mb-2" style="font-family: 'Playfair Display', serif;">
- 🧠 Sentence Structure Visualizer
+ 🧠 Cümle Yapısı Çözümleyici
  </h2>
 
  <div class="space-y-4">
@@ -25,16 +25,16 @@ function injectVisualizerHTML() {
  border border-slate-300 
  focus:outline-none focus:ring-2 focus:ring-red-800"
  rows="4"
- placeholder="Paste your English sentence here..."></textarea>
+ placeholder="İngilizce cümlenizi buraya yapıştırın..."></textarea>
 
  <button onclick="analyzeSentence()"
  class="px-6 py-3 bg-red-800 hover:bg-black
  text-white rounded-xl font-bold transition shadow-sm">
- Analyze Sentence
+ Cümleyi Analiz Et
  </button>
  </div>
 
- <div id="visualizerOutput" class="space-y-8"></div>
+ <div id="visualizerOutput" class="space-y-8" translate="no"></div>
 
  </div>
  `;
@@ -50,7 +50,7 @@ async function analyzeSentence() {
 
     try {
 
-        const response = await fetch("/api/testlab", {
+        const response = await fetch("/.netlify/functions/testlab", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -120,7 +120,7 @@ function renderExplanations(data) {
 text-slate-900 
 border border-slate-200 rounded-2xl border border-slate-200 shadow-sm space-y-4">
  <h3 class="text-xl font-semibold text-slate-800">
- Element Explanations
+ Öğe Açıklamaları
  </h3>
  `;
 
@@ -143,12 +143,12 @@ border border-slate-200 rounded-2xl border border-slate-200 shadow-sm space-y-4"
     explanationHTML += `
  <div class="mt-6 p-4 bg-purple-50 border border-purple-200 rounded-xl">
  <div class="font-semibold text-purple-800">
- Grammar Notes
+ Gramer Notları
  </div>
  <div class="mt-2 text-purple-900">
  ${data.grammar_notes && data.grammar_notes.trim() !== ""
             ? data.grammar_notes
-            : "This sentence follows a standard declarative structure. No additional advanced grammatical features detected."}
+            : "Bu cümle standart bir beyan yapısına sahiptir. Ek gelişmiş gramer özelliği tespit edilmedi."}
  </div>
  </div>
  </div>

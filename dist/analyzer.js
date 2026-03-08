@@ -12,7 +12,7 @@ function injectAnalyzerHTML() {
 <div class="max-w-5xl mx-auto p-8 space-y-8">
 
  <h2 class="text-4xl font-bold text-center text-red-800 mb-2" style="font-family: 'Playfair Display', serif;">
- 🧠 YDS Question Analyzer
+ 🧠 YDS Soru Analizörü
  </h2>
 
  <div class="p-6 rounded-2xl shadow-sm
@@ -36,12 +36,12 @@ function injectAnalyzerHTML() {
  class="w-full py-3 rounded-xl font-bold text-lg
  bg-red-800 hover:bg-black
  text-white transition shadow-sm">
- Analyze Question
+ Soruyu Analiz Et
  </button>
 
  </div>
 
- <div id="analysisOutput" class="mt-6 space-y-6"></div>
+ <div id="analysisOutput" class="mt-6 space-y-6 notranslate" translate="no"></div>
 
 </div>
 `;
@@ -59,7 +59,7 @@ function initAnalyzer() {
 
         try {
 
-            const response = await fetch("/api/analyze", {
+            const response = await fetch("/.netlify/functions/analyze", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

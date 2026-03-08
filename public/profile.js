@@ -187,65 +187,7 @@ async function renderSavedWords() {
     }
 }
 
-/* =========================================
- SAVED WORDS
-========================================= */
 
-async function renderSavedWords() {
-
-    const container = document.getElementById("profileNotebookList");
-    if (!container) return;
-
-    try {
-
-        const words = await getSavedWordsFirestore();
-
-        container.innerHTML = "";
-
-        if (!words || words.length === 0) {
-            container.innerHTML =
-                "<p class='text-sm text-gray-500'>No saved words yet.</p>";
-            return;
-        }
-
-        words.forEach(item => {
-
-            const div = document.createElement("div");
-            div.className =
-                "flex justify-between items-center bg-slate-200 p-2 rounded mb-2 text-sm";
-
-            div.innerHTML = `
- <span class="cursor-pointer text-black hover:underline">
- ${item.word}
- </span>
-
- <button class="text-red-500 text-xs hover:text-red-700">
- Delete
- </button>
- `;
-
-            // Dictionary jump
-            div.querySelector("span").onclick = () => {
-                switchTab('dictionary');
-                setTimeout(() => searchDictionaryWord(item.word), 200);
-            };
-
-            // Delete word
-            div.querySelector("button").onclick = async () => {
-
-                if (!confirm("Delete this word?")) return;
-
-                await deleteWordFirestore(item.id);
-                renderSavedWords();
-            };
-
-            container.appendChild(div);
-        });
-
-    } catch (error) {
-        console.error("Saved words render error:", error);
-    }
-}
 /* =========================================
  ADD NOTE
 ========================================= */
