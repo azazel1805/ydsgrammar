@@ -3,7 +3,7 @@
    ============================================================ */
 
 const EXAM_LIST = [
-    { id: 'exam2', label: 'Practice Exam 2', file: '/exams/fullexam/exam2.json' }
+  { id: 'exam2', label: 'Practice Exam 2', file: '/exams/fullexam/exam2.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────
@@ -59,7 +59,7 @@ const fullExamHTML = /* html */`
       <i class="fas fa-info-circle text-amber-600 mt-1 text-lg"></i>
       <div>
         <p class="font-semibold text-amber-800 mb-1">Sınav Bilgisi</p>
-        <p class="text-sm text-amber-700">Sınav başladığında 180 dakikalık geri sayım başlar. Sınavı istediğiniz zaman teslim edebilirsiniz. <strong>34-51. sorular kaynak metne dayalıdır</strong> – bu soruları orijinal sınav kâğıdıyla çözünüz.</p>
+        <p class="text-sm text-amber-700">Sınav başladığında 180 dakikalık geri sayım başlar. Sınavı istediğiniz zaman teslim edebilirsiniz. Okuma parçaları (34-51. sorular) sınav ekranında görüntülenir.</p>
       </div>
     </div>
 
@@ -185,269 +185,272 @@ let feCurrentIdx = 0;
 
 // ─── Init ────────────────────────────────────────────────────
 function initFullExam() {
-    const container = document.getElementById('tab-fullexam');
-    if (!container) return;
-    container.innerHTML = fullExamHTML;
+  const container = document.getElementById('tab-fullexam');
+  if (!container) return;
+  container.innerHTML = fullExamHTML;
 }
 
 // ─── Exam card selection ─────────────────────────────────────
 async function feSelectExam(id) {
-    document.querySelectorAll('.fe-exam-card').forEach(c => {
-        c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50');
-    });
-    const card = document.getElementById(`feCard-${id}`);
-    if (card) {
-        card.classList.add('border-red-500', 'shadow-lg', 'bg-red-50');
-    }
-    document.getElementById('feSelectedInfo').classList.remove('hidden');
-    document.getElementById('feStartBtn').disabled = false;
-    document.getElementById('feStartBtn').dataset.selectedId = id;
+  document.querySelectorAll('.fe-exam-card').forEach(c => {
+    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50');
+  });
+  const card = document.getElementById(`feCard-${id}`);
+  if (card) {
+    card.classList.add('border-red-500', 'shadow-lg', 'bg-red-50');
+  }
+  document.getElementById('feSelectedInfo').classList.remove('hidden');
+  document.getElementById('feStartBtn').disabled = false;
+  document.getElementById('feStartBtn').dataset.selectedId = id;
 }
 
 // ─── Start exam ──────────────────────────────────────────────
 async function feStartExam() {
-    const btn = document.getElementById('feStartBtn');
-    const examId = btn.dataset.selectedId;
-    if (!examId) return;
+  const btn = document.getElementById('feStartBtn');
+  const examId = btn.dataset.selectedId;
+  if (!examId) return;
 
-    const exam = EXAM_LIST.find(e => e.id === examId);
-    if (!exam) return;
+  const exam = EXAM_LIST.find(e => e.id === examId);
+  if (!exam) return;
 
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Yükleniyor...';
-    btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Yükleniyor...';
+  btn.disabled = true;
 
-    try {
-        const res = await fetch(exam.file);
-        feExamData = await res.json();
-    } catch (err) {
-        alert('Sınav yüklenirken hata oluştu.');
-        btn.innerHTML = '<i class="fas fa-play"></i> Sınavı Başlat';
-        btn.disabled = false;
-        return;
-    }
+  try {
+    const res = await fetch(exam.file);
+    feExamData = await res.json();
+  } catch (err) {
+    alert('Sınav yüklenirken hata oluştu.');
+    btn.innerHTML = '<i class="fas fa-play"></i> Sınavı Başlat';
+    btn.disabled = false;
+    return;
+  }
 
-    feAnswers = {};
-    feCurrentIdx = 0;
-    feSecondsLeft = feExamData.meta.duration_minutes * 60;
-    feStarted = true;
+  feAnswers = {};
+  feCurrentIdx = 0;
+  feSecondsLeft = feExamData.meta.duration_minutes * 60;
+  feStarted = true;
 
-    document.getElementById('feStartScreen').classList.add('hidden');
-    document.getElementById('feExamScreen').classList.remove('hidden');
+  document.getElementById('feStartScreen').classList.add('hidden');
+  document.getElementById('feExamScreen').classList.remove('hidden');
 
-    feRenderQGrid();
-    feRenderQuestion();
-    feStartTimer();
+  feRenderQGrid();
+  feRenderQuestion();
+  feStartTimer();
 }
 
 // ─── Timer ───────────────────────────────────────────────────
 function feStartTimer() {
-    if (feTimerRef) clearInterval(feTimerRef);
-    feTimerRef = setInterval(() => {
-        feSecondsLeft--;
-        feUpdateTimerDisplay();
-        if (feSecondsLeft <= 0) {
-            clearInterval(feTimerRef);
-            feFinish();
-        }
-    }, 1000);
+  if (feTimerRef) clearInterval(feTimerRef);
+  feTimerRef = setInterval(() => {
+    feSecondsLeft--;
+    feUpdateTimerDisplay();
+    if (feSecondsLeft <= 0) {
+      clearInterval(feTimerRef);
+      feFinish();
+    }
+  }, 1000);
 }
 
 function feUpdateTimerDisplay() {
-    const h = Math.floor(feSecondsLeft / 3600);
-    const m = Math.floor((feSecondsLeft % 3600) / 60);
-    const s = feSecondsLeft % 60;
-    const el = document.getElementById('feTimer');
-    if (!el) return;
-    el.textContent = `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-    if (feSecondsLeft < 600) {
-        el.classList.add('text-red-400');
-    }
+  const h = Math.floor(feSecondsLeft / 3600);
+  const m = Math.floor((feSecondsLeft % 3600) / 60);
+  const s = feSecondsLeft % 60;
+  const el = document.getElementById('feTimer');
+  if (!el) return;
+  el.textContent = `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  if (feSecondsLeft < 600) {
+    el.classList.add('text-red-400');
+  }
 }
 
 // ─── Render question ─────────────────────────────────────────
 function feRenderQuestion() {
-    if (!feExamData) return;
-    const q = feExamData.questions[feCurrentIdx];
-    if (!q) return;
+  if (!feExamData) return;
+  const q = feExamData.questions[feCurrentIdx];
+  if (!q) return;
 
-    // Qnum + progress
-    document.getElementById('feQNum').textContent = `${feCurrentIdx + 1}/${feExamData.questions.length}`;
-    const answered = Object.keys(feAnswers).length;
-    document.getElementById('feAnsweredCount').textContent = `${answered} cevaplanmış`;
-    document.getElementById('feProgressBar').style.width = `${(answered / feExamData.questions.length) * 100}%`;
+  // Qnum + progress
+  document.getElementById('feQNum').textContent = `${feCurrentIdx + 1}/${feExamData.questions.length}`;
+  const answered = Object.keys(feAnswers).length;
+  document.getElementById('feAnsweredCount').textContent = `${answered} cevaplanmış`;
+  document.getElementById('feProgressBar').style.width = `${(answered / feExamData.questions.length) * 100}%`;
 
-    // Section label
-    const section = feExamData.sections.find(s => s.id === q.section_id);
-    document.getElementById('feSectionLabel').textContent = section ? section.label : '';
+  // Section label
+  const section = feExamData.sections.find(s => s.id === q.section_id);
+  document.getElementById('feSectionLabel').textContent = section ? section.label : '';
 
-    // Passage / leading text / reading notice
-    const passageBox = document.getElementById('fePassageBox');
-    const readingNotice = document.getElementById('feReadingNotice');
-    const passTitle = document.getElementById('fePassageTitle');
+  // Passage / leading text / reading notice
+  const passageBox = document.getElementById('fePassageBox');
+  const readingNotice = document.getElementById('feReadingNotice');
+  const passTitle = document.getElementById('fePassageTitle');
 
-    passageBox.classList.add('hidden');
-    readingNotice.classList.add('hidden');
+  passageBox.classList.add('hidden');
+  readingNotice.classList.add('hidden');
 
-    if (q.leading_text) {
-        passageBox.textContent = q.leading_text;
-        passageBox.classList.remove('hidden');
-    } else if (q.passage_id) {
-        const passage = feExamData.passages.find(p => p.id === q.passage_id);
-        if (passage) {
-            passTitle.textContent = `"${passage.title}"`;
-            readingNotice.classList.remove('hidden');
-        }
+  if (q.leading_text) {
+    passageBox.textContent = q.leading_text;
+    passageBox.classList.remove('hidden');
+  } else if (q.passage_id) {
+    const passage = feExamData.passages.find(p => p.id === q.passage_id);
+    if (passage && passage.text) {
+      passageBox.textContent = passage.text;
+      passageBox.classList.remove('hidden');
+    } else if (passage) {
+      passTitle.textContent = `"${passage.title}"`;
+      readingNotice.classList.remove('hidden');
     }
+  }
 
-    // Question text
-    document.getElementById('feQuestion').textContent = q.question;
+  // Question text
+  document.getElementById('feQuestion').textContent = q.question;
 
-    // Options
-    const optBox = document.getElementById('feOptions');
-    optBox.innerHTML = '';
-    const userAnswer = feAnswers[q.id];
-    Object.entries(q.options).forEach(([key, val]) => {
-        const isSelected = userAnswer === key;
-        const btn = document.createElement('button');
-        btn.id = `feOpt-${key}`;
-        btn.className = [
-            'w-full text-left px-4 py-3 rounded-xl border-2 font-medium transition-all text-sm flex items-start gap-3 group',
-            isSelected
-                ? 'border-red-600 bg-red-50 text-red-800'
-                : 'border-slate-200 bg-white hover:border-red-200 hover:bg-red-50 text-slate-700'
-        ].join(' ');
-        btn.innerHTML = `
+  // Options
+  const optBox = document.getElementById('feOptions');
+  optBox.innerHTML = '';
+  const userAnswer = feAnswers[q.id];
+  Object.entries(q.options).forEach(([key, val]) => {
+    const isSelected = userAnswer === key;
+    const btn = document.createElement('button');
+    btn.id = `feOpt-${key}`;
+    btn.className = [
+      'w-full text-left px-4 py-3 rounded-xl border-2 font-medium transition-all text-sm flex items-start gap-3 group',
+      isSelected
+        ? 'border-red-600 bg-red-50 text-red-800'
+        : 'border-slate-200 bg-white hover:border-red-200 hover:bg-red-50 text-slate-700'
+    ].join(' ');
+    btn.innerHTML = `
           <span class="shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold
             ${isSelected ? 'bg-red-700 border-red-700 text-white' : 'border-slate-300 text-slate-500 group-hover:border-red-400'}">${key}</span>
           <span class="leading-snug pt-0.5">${val}</span>`;
-        btn.onclick = () => feSelectAnswer(q.id, key);
-        optBox.appendChild(btn);
-    });
+    btn.onclick = () => feSelectAnswer(q.id, key);
+    optBox.appendChild(btn);
+  });
 
-    // Grid highlight
-    feUpdateQGrid();
+  // Grid highlight
+  feUpdateQGrid();
 }
 
 // ─── Select answer ───────────────────────────────────────────
 function feSelectAnswer(qId, key) {
-    feAnswers[qId] = key;
-    feRenderQuestion();   // re-render with selection
+  feAnswers[qId] = key;
+  feRenderQuestion();   // re-render with selection
 }
 
 // ─── Navigation ──────────────────────────────────────────────
 function feNavQuestion(delta) {
-    const newIdx = feCurrentIdx + delta;
-    if (newIdx < 0 || newIdx >= feExamData.questions.length) return;
-    feCurrentIdx = newIdx;
-    feRenderQuestion();
-    // Scroll to top of exam area
-    document.getElementById('feExamScreen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const newIdx = feCurrentIdx + delta;
+  if (newIdx < 0 || newIdx >= feExamData.questions.length) return;
+  feCurrentIdx = newIdx;
+  feRenderQuestion();
+  // Scroll to top of exam area
+  document.getElementById('feExamScreen').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function feJumpQuestion(idx) {
-    feCurrentIdx = idx;
-    feRenderQuestion();
-    document.getElementById('feExamScreen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  feCurrentIdx = idx;
+  feRenderQuestion();
+  document.getElementById('feExamScreen').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // ─── Question grid ───────────────────────────────────────────
 function feRenderQGrid() {
-    if (!feExamData) return;
-    const grid = document.getElementById('feQGrid');
-    if (!grid) return;
-    grid.innerHTML = '';
+  if (!feExamData) return;
+  const grid = document.getElementById('feQGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
 
-    feExamData.questions.forEach((q, idx) => {
-        const btn = document.createElement('button');
-        btn.id = `feGridBtn-${idx}`;
-        btn.className = 'w-7 h-7 rounded text-xs font-bold transition-all';
-        btn.textContent = q.id;
-        btn.onclick = () => feJumpQuestion(idx);
-        grid.appendChild(btn);
-    });
-    feUpdateQGrid();
+  feExamData.questions.forEach((q, idx) => {
+    const btn = document.createElement('button');
+    btn.id = `feGridBtn-${idx}`;
+    btn.className = 'w-7 h-7 rounded text-xs font-bold transition-all';
+    btn.textContent = q.id;
+    btn.onclick = () => feJumpQuestion(idx);
+    grid.appendChild(btn);
+  });
+  feUpdateQGrid();
 }
 
 function feUpdateQGrid() {
-    if (!feExamData) return;
-    feExamData.questions.forEach((q, idx) => {
-        const btn = document.getElementById(`feGridBtn-${idx}`);
-        if (!btn) return;
-        if (idx === feCurrentIdx) {
-            btn.className = 'w-7 h-7 rounded text-xs font-bold bg-red-800 text-white';
-        } else if (feAnswers[q.id]) {
-            btn.className = 'w-7 h-7 rounded text-xs font-bold bg-green-500 text-white hover:bg-green-600';
-        } else {
-            btn.className = 'w-7 h-7 rounded text-xs font-bold bg-slate-200 text-slate-600 hover:bg-slate-300';
-        }
-    });
+  if (!feExamData) return;
+  feExamData.questions.forEach((q, idx) => {
+    const btn = document.getElementById(`feGridBtn-${idx}`);
+    if (!btn) return;
+    if (idx === feCurrentIdx) {
+      btn.className = 'w-7 h-7 rounded text-xs font-bold bg-red-800 text-white';
+    } else if (feAnswers[q.id]) {
+      btn.className = 'w-7 h-7 rounded text-xs font-bold bg-green-500 text-white hover:bg-green-600';
+    } else {
+      btn.className = 'w-7 h-7 rounded text-xs font-bold bg-slate-200 text-slate-600 hover:bg-slate-300';
+    }
+  });
 }
 
 // ─── Finish confirmation ──────────────────────────────────────
 function feFinishConfirm() {
-    const unanswered = feExamData.questions.length - Object.keys(feAnswers).length;
-    const msg = unanswered > 0
-        ? `${unanswered} soru cevaplanmamış. Yine de teslim etmek istiyor musunuz?`
-        : 'Sınavı teslim etmek istiyor musunuz?';
-    if (confirm(msg)) feFinish();
+  const unanswered = feExamData.questions.length - Object.keys(feAnswers).length;
+  const msg = unanswered > 0
+    ? `${unanswered} soru cevaplanmamış. Yine de teslim etmek istiyor musunuz?`
+    : 'Sınavı teslim etmek istiyor musunuz?';
+  if (confirm(msg)) feFinish();
 }
 
 // ─── Finish & show results ────────────────────────────────────
 function feFinish() {
-    if (feTimerRef) clearInterval(feTimerRef);
-    feStarted = false;
+  if (feTimerRef) clearInterval(feTimerRef);
+  feStarted = false;
 
-    const questions = feExamData.questions;
-    let total = 0;
-    const sectionStats = {};
+  const questions = feExamData.questions;
+  let total = 0;
+  const sectionStats = {};
 
-    // Init section stats
-    feExamData.sections.forEach(s => {
-        sectionStats[s.id] = { label: s.label.substring(0, 50) + '...', correct: 0, total: 0, sectionShort: s.id };
-    });
+  // Init section stats
+  feExamData.sections.forEach(s => {
+    sectionStats[s.id] = { label: s.label.substring(0, 50) + '...', correct: 0, total: 0, sectionShort: s.id };
+  });
 
-    questions.forEach(q => {
-        const sec = sectionStats[q.section_id];
-        if (sec) sec.total++;
-        if (feAnswers[q.id] === q.correct) {
-            total++;
-            if (sec) sec.correct++;
-        }
-    });
+  questions.forEach(q => {
+    const sec = sectionStats[q.section_id];
+    if (sec) sec.total++;
+    if (feAnswers[q.id] === q.correct) {
+      total++;
+      if (sec) sec.correct++;
+    }
+  });
 
-    document.getElementById('feExamScreen').classList.add('hidden');
-    document.getElementById('feResultScreen').classList.remove('hidden');
+  document.getElementById('feExamScreen').classList.add('hidden');
+  document.getElementById('feResultScreen').classList.remove('hidden');
 
-    const pct = Math.round((total / questions.length) * 100);
-    document.getElementById('feScoreNum').textContent = total;
-    document.getElementById('feScoreCircle').style.background =
-        `conic-gradient(#991b1b ${pct * 3.6}deg, #e5e7eb ${pct * 3.6}deg)`;
+  const pct = Math.round((total / questions.length) * 100);
+  document.getElementById('feScoreNum').textContent = total;
+  document.getElementById('feScoreCircle').style.background =
+    `conic-gradient(#991b1b ${pct * 3.6}deg, #e5e7eb ${pct * 3.6}deg)`;
 
-    let msg = '';
-    if (pct >= 80) msg = '🏆 Mükemmel! Gerçek YDS\'ye hazırsınız.';
-    else if (pct >= 65) msg = '👏 Çok İyi! Biraz daha pratikle sınava hazır olacaksınız.';
-    else if (pct >= 50) msg = '📚 İyi! Zayıf bölümlere odaklanmaya devam edin.';
-    else msg = '💪 Başlangıç için iyi! Düzenli çalışmayla gelişeceksiniz.';
-    document.getElementById('feScoreMsg').textContent = `${pct}% — ${msg}`;
+  let msg = '';
+  if (pct >= 80) msg = '🏆 Mükemmel! Gerçek YDS\'ye hazırsınız.';
+  else if (pct >= 65) msg = '👏 Çok İyi! Biraz daha pratikle sınava hazır olacaksınız.';
+  else if (pct >= 50) msg = '📚 İyi! Zayıf bölümlere odaklanmaya devam edin.';
+  else msg = '💪 Başlangıç için iyi! Düzenli çalışmayla gelişeceksiniz.';
+  document.getElementById('feScoreMsg').textContent = `${pct}% — ${msg}`;
 
-    // Section breakdown
-    const breakdown = document.getElementById('feSectionBreakdown');
-    breakdown.innerHTML = '';
-    const sectionNames = {
-        vocab: 'Kelime / Dilbilgisi (1-25)',
-        completion: 'Cümle Tamamlama (26-33)',
-        reading1: 'Okuma (34-45)',
-        reading2: 'Okuma (46-51)',
-        tr_to_en: 'Türkçe→İngilizce (52-59)',
-        en_to_tr: 'İngilizce→Türkçe (60-67)',
-        para_comp: 'Paragraf Tamamlama (68-73)',
-        dialogue: 'Diyalog (74-80)'
-    };
+  // Section breakdown
+  const breakdown = document.getElementById('feSectionBreakdown');
+  breakdown.innerHTML = '';
+  const sectionNames = {
+    vocab: 'Kelime / Dilbilgisi (1-25)',
+    completion: 'Cümle Tamamlama (26-33)',
+    reading1: 'Okuma (34-45)',
+    reading2: 'Okuma (46-51)',
+    tr_to_en: 'Türkçe→İngilizce (52-59)',
+    en_to_tr: 'İngilizce→Türkçe (60-67)',
+    para_comp: 'Paragraf Tamamlama (68-73)',
+    dialogue: 'Diyalog (74-80)'
+  };
 
-    Object.entries(sectionStats).forEach(([id, s]) => {
-        const sPct = s.total ? Math.round((s.correct / s.total) * 100) : 0;
-        const color = sPct >= 70 ? 'bg-green-500' : sPct >= 50 ? 'bg-amber-400' : 'bg-red-500';
-        breakdown.innerHTML += `
+  Object.entries(sectionStats).forEach(([id, s]) => {
+    const sPct = s.total ? Math.round((s.correct / s.total) * 100) : 0;
+    const color = sPct >= 70 ? 'bg-green-500' : sPct >= 50 ? 'bg-amber-400' : 'bg-red-500';
+    breakdown.innerHTML += `
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
             <div class="flex justify-between items-center mb-2">
               <span class="text-xs font-bold text-slate-600">${sectionNames[id] || id}</span>
@@ -457,90 +460,93 @@ function feFinish() {
               <div class="${color} h-full rounded-full transition-all" style="width:${sPct}%"></div>
             </div>
           </div>`;
-    });
+  });
 }
 
 // ─── Review mode ─────────────────────────────────────────────
 function feReviewAnswers() {
-    feCurrentIdx = 0;
-    document.getElementById('feResultScreen').classList.add('hidden');
-    document.getElementById('feExamScreen').classList.remove('hidden');
-    feRenderReviewQuestion();
+  feCurrentIdx = 0;
+  document.getElementById('feResultScreen').classList.add('hidden');
+  document.getElementById('feExamScreen').classList.remove('hidden');
+  feRenderReviewQuestion();
 }
 
 function feRenderReviewQuestion() {
-    if (!feExamData) return;
-    const q = feExamData.questions[feCurrentIdx];
-    if (!q) return;
+  if (!feExamData) return;
+  const q = feExamData.questions[feCurrentIdx];
+  if (!q) return;
 
-    // Basic info
-    const section = feExamData.sections.find(s => s.id === q.section_id);
-    document.getElementById('feSectionLabel').textContent = (section ? section.label : '') + ' [İNCELEME MODU]';
-    document.getElementById('feQNum').textContent = `${feCurrentIdx + 1}/${feExamData.questions.length}`;
+  // Basic info
+  const section = feExamData.sections.find(s => s.id === q.section_id);
+  document.getElementById('feSectionLabel').textContent = (section ? section.label : '') + ' [İNCELEME MODU]';
+  document.getElementById('feQNum').textContent = `${feCurrentIdx + 1}/${feExamData.questions.length}`;
 
-    const passageBox = document.getElementById('fePassageBox');
-    const readingNotice = document.getElementById('feReadingNotice');
-    const passTitle = document.getElementById('fePassageTitle');
+  const passageBox = document.getElementById('fePassageBox');
+  const readingNotice = document.getElementById('feReadingNotice');
+  const passTitle = document.getElementById('fePassageTitle');
 
-    passageBox.classList.add('hidden');
-    readingNotice.classList.add('hidden');
+  passageBox.classList.add('hidden');
+  readingNotice.classList.add('hidden');
 
-    if (q.leading_text) {
-        passageBox.textContent = q.leading_text;
-        passageBox.classList.remove('hidden');
-    } else if (q.passage_id) {
-        const passage = feExamData.passages.find(p => p.id === q.passage_id);
-        if (passage) {
-            passTitle.textContent = `"${passage.title}"`;
-            readingNotice.classList.remove('hidden');
-        }
+  if (q.leading_text) {
+    passageBox.textContent = q.leading_text;
+    passageBox.classList.remove('hidden');
+  } else if (q.passage_id) {
+    const passage = feExamData.passages.find(p => p.id === q.passage_id);
+    if (passage && passage.text) {
+      passageBox.textContent = passage.text;
+      passageBox.classList.remove('hidden');
+    } else if (passage) {
+      passTitle.textContent = `"${passage.title}"`;
+      readingNotice.classList.remove('hidden');
     }
+  }
 
-    document.getElementById('feQuestion').textContent = q.question;
+  document.getElementById('feQuestion').textContent = q.question;
 
-    const optBox = document.getElementById('feOptions');
-    optBox.innerHTML = '';
-    const userAnswer = feAnswers[q.id];
+  const optBox = document.getElementById('feOptions');
+  optBox.innerHTML = '';
+  const userAnswer = feAnswers[q.id];
 
-    Object.entries(q.options).forEach(([key, val]) => {
-        const isUser = userAnswer === key;
-        const isCorrect = q.correct === key;
-        let cls = 'w-full text-left px-4 py-3 rounded-xl border-2 font-medium text-sm flex items-start gap-3 ';
-        if (isCorrect) cls += 'border-green-500 bg-green-50 text-green-800';
-        else if (isUser) cls += 'border-red-400 bg-red-50 text-red-800';
-        else cls += 'border-slate-200 bg-white text-slate-500';
+  Object.entries(q.options).forEach(([key, val]) => {
+    const isUser = userAnswer === key;
+    const isCorrect = q.correct === key;
+    let cls = 'w-full text-left px-4 py-3 rounded-xl border-2 font-medium text-sm flex items-start gap-3 ';
+    if (isCorrect) cls += 'border-green-500 bg-green-50 text-green-800';
+    else if (isUser) cls += 'border-red-400 bg-red-50 text-red-800';
+    else cls += 'border-slate-200 bg-white text-slate-500';
 
-        const icon = isCorrect ? '✓' : (isUser ? '✗' : key);
-        const optEl = document.createElement('div');
-        optEl.className = cls;
-        optEl.innerHTML = `
+    const icon = isCorrect ? '✓' : (isUser ? '✗' : key);
+    const optEl = document.createElement('div');
+    optEl.className = cls;
+    optEl.innerHTML = `
           <span class="shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold
             ${isCorrect ? 'bg-green-600 border-green-600 text-white' : isUser ? 'bg-red-500 border-red-500 text-white' : 'border-slate-300 text-slate-400'}">${icon}</span>
           <span class="leading-snug pt-0.5">${val}</span>`;
-        optBox.appendChild(optEl);
-    });
+    optBox.appendChild(optEl);
+  });
 
-    // Use nav buttons but rewire to review mode
-    document.querySelector('button[onclick="feNavQuestion(-1)"]').onclick = () => { feCurrentIdx = Math.max(0, feCurrentIdx - 1); feRenderReviewQuestion(); };
-    document.querySelector('button[onclick="feNavQuestion(1)"]').onclick = () => { feCurrentIdx = Math.min(feExamData.questions.length - 1, feCurrentIdx + 1); feRenderReviewQuestion(); };
+  // Use nav buttons but rewire to review mode
+  document.querySelector('button[onclick="feNavQuestion(-1)"]').onclick = () => { feCurrentIdx = Math.max(0, feCurrentIdx - 1); feRenderReviewQuestion(); };
+  document.querySelector('button[onclick="feNavQuestion(1)"]').onclick = () => { feCurrentIdx = Math.min(feExamData.questions.length - 1, feCurrentIdx + 1); feRenderReviewQuestion(); };
 }
 
 // ─── Reset ───────────────────────────────────────────────────
 function feResetExam() {
-    if (feTimerRef) clearInterval(feTimerRef);
-    feExamData = null;
-    feAnswers = {};
-    feStarted = false;
-    feCurrentIdx = 0;
+  if (feTimerRef) clearInterval(feTimerRef);
+  feExamData = null;
+  feAnswers = {};
+  feStarted = false;
+  feCurrentIdx = 0;
 
-    document.getElementById('feResultScreen').classList.add('hidden');
-    document.getElementById('feExamScreen').classList.add('hidden');
-    document.getElementById('feStartScreen').classList.remove('hidden');
-    document.getElementById('feSelectedInfo').classList.add('hidden');
-    document.getElementById('feStartBtn').disabled = true;
-    delete document.getElementById('feStartBtn').dataset.selectedId;
-    document.querySelectorAll('.fe-exam-card').forEach(c =>
-        c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50'));
+  document.getElementById('feResultScreen').classList.add('hidden');
+  document.getElementById('feExamScreen').classList.add('hidden');
+  document.getElementById('feStartScreen').classList.remove('hidden');
+  document.getElementById('feSelectedInfo').classList.add('hidden');
+  document.getElementById('feStartBtn').disabled = true;
+  delete document.getElementById('feStartBtn').dataset.selectedId;
+  document.querySelectorAll('.fe-exam-card').forEach(c =>
+    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50'));
 }
 
 // Make everything global
