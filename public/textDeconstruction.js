@@ -216,22 +216,22 @@ function showTextDeconDetail(index) {
     `;
 }
 
-async function saveDeconWord(word, meaning, sIdx, kwIdx) {
+window.saveDeconWord = async function (word, meaning, sIdx, kwIdx) {
     if (!window.currentUser) { alert("Giriş yapmanız gerekiyor."); return; }
     if (savedDeconWords.has(word)) return;
 
     try {
-        await window.saveWordFirestore({ word, meaning, source: "textDeconstruction" });
+        await window.saveWordFirestore({ word: word, meaning: meaning, source: "textDeconstruction" });
         savedDeconWords.add(word);
 
         const btn = document.querySelector(`#kw-row-${sIdx}-${kwIdx} .save-word-btn`);
         if (btn) {
             btn.classList.add("saved");
             btn.innerHTML = `<i class="fas fa-check"></i>`;
-            setTimeout(() => btn.innerHTML = `<i class="fas fa-bookmark"></i>`, 1500);
+            setTimeout(() => { btn.innerHTML = `<i class="fas fa-bookmark"></i>`; }, 1800);
         }
     } catch (err) {
         console.error("Save word error:", err);
-        alert("Kaydetme başarısız.");
+        alert("Kaydetme başarısız: " + err.message);
     }
-}
+};
