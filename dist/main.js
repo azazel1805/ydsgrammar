@@ -34,12 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-relative", typeof relativeHTML !== 'undefined' ? relativeHTML : undefined);
     safeInject("tab-noun", typeof nounHTML !== 'undefined' ? nounHTML : undefined);
     safeInject("tab-sentence", typeof sentenceCorrectorHTML !== 'undefined' ? sentenceCorrectorHTML : undefined);
-
-
+    safeInject("tab-forum", typeof forumHTML !== 'undefined' ? forumHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
+    }
 
+    if (typeof initForum === "function") {
+        initForum();
     }
 
     /* ================= THEME ================= */

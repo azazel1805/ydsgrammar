@@ -26,8 +26,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="./assets/index-BrHk84R_.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Cw3VORpS.css">
+  <script type="module" crossorigin src="./assets/index-HTVqRpoa.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BDHK1038.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -103,6 +103,12 @@
         <div class="relative group">
           <button data-tab="dashboard" onclick="switchTab('dashboard')"
             class="nav-drop-btn pb-4 hover:text-red-700 transition-colors">Dashboard</button>
+        </div>
+
+        <!-- Forum Tab (Standalone) -->
+        <div class="relative group">
+          <button data-tab="forum" onclick="switchTab('forum')"
+            class="nav-drop-btn pb-4 hover:text-red-700 transition-colors">Forum</button>
         </div>
 
         <!-- YDS Dropdown -->
@@ -201,6 +207,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
           <h3 class="text-red-800 font-bold mb-2 uppercase tracking-widest text-xs">YDS</h3>
           <div class="space-y-2 mb-4">
             <button data-tab="dashboard" onclick="switchTabAndClose('dashboard')" class="drawer-btn">Dashboard</button>
+            <button data-tab="forum" onclick="switchTabAndClose('forum')" class="drawer-btn">Forum (Soru Sor)</button>
             <button data-tab="modals" onclick="switchTabAndClose('modals')" class="drawer-btn">Modals</button>
             <button data-tab="tenses" onclick="switchTabAndClose('tenses')" class="drawer-btn">Tenses</button>
             <button data-tab="conjunctions" onclick="switchTabAndClose('conjunctions')"
@@ -249,6 +256,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
 
       <!-- CONTENT -->
       <div id="tab-dashboard" class="tab-content active"></div>
+      <div id="tab-forum" class="tab-content"></div>
       <div id="tab-modals" class="tab-content"></div>
       <div id="tab-tenses" class="tab-content"></div>
       <div id="tab-conjunctions" class="tab-content"></div>
@@ -330,6 +338,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./dashboard.js"></script>
     <script src="./vocabulary.js"></script>
     <script src="./miniexams.js"></script>
+    <script src="./forum.js"></script>
     <script src="https://unpkg.com/compromise"></script>
     <script src="./analyzer.js"></script>
     <script src="./testlab.js"></script>
