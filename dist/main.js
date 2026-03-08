@@ -157,12 +157,9 @@ function reinjectTabContent(tabName) {
         "tenses": typeof tensesHTML !== 'undefined' ? tensesHTML : null,
         "conjunctions": typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : null,
         "dictionary": typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : null,
-        "reading": typeof readingHTML !== 'undefined' ? readingHTML : null,
-        "passive": typeof passiveHTML !== 'undefined' ? passiveHTML : null,
-        "relative": typeof relativeHTML !== 'undefined' ? relativeHTML : null,
-        "noun": typeof nounHTML !== 'undefined' ? nounHTML : null,
         "sentence": typeof sentenceCorrectorHTML !== 'undefined' ? sentenceCorrectorHTML : null,
-        "forum": typeof forumHTML !== 'undefined' ? forumHTML : null
+        "forum": typeof forumHTML !== 'undefined' ? forumHTML : null,
+        "restatement": typeof restatementHTML !== 'undefined' ? restatementHTML : null
     };
 
     const content = mappings[tabName];
