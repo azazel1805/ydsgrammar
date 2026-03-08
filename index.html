@@ -4,17 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YDS & YDT Master Encyclopedia v2.0</title>
+  <title>yds.monster — YDS & YDT Master Encyclopedia</title>
 
 
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f0f0f'/><circle cx='35' cy='52' r='11' fill='%2300ff88'/><circle cx='65' cy='52' r='11' fill='%2300ff88'/><circle cx='35' cy='52' r='6' fill='%23000'/><circle cx='65' cy='52' r='6' fill='%23000'/><circle cx='37' cy='50' r='2.5' fill='%23fff'/><circle cx='67' cy='50' r='2.5' fill='%23fff'/><path d='M30 70 Q50 82 70 70' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/><polygon points='38,70 42,78 46,70' fill='white'/><polygon points='54,70 58,78 62,70' fill='white'/><rect x='38' y='18' width='24' height='4' rx='2' fill='%23cc0000'/><polygon points='50,10 62,18 38,18' fill='%23cc0000'/><rect x='60' y='14' width='3' height='10' fill='%23cc0000'/><rect x='58' y='23' width='7' height='3' rx='1' fill='%23990000'/></svg>">
 
 
   <!-- Tailwind will be injected by Vite -->
 
   <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="description"
+    content="yds.monster — YDS & YDT sınavına hazırlık için kapsamlı gramer rehberi, mini sınavlar, tam deneme ve taktik rehberi. Ücretsiz kullan!">
+  <meta property="og:title" content="yds.monster — YDS & YDT Master Encyclopedia">
+  <meta property="og:description"
+    content="YDS sınavına hazırlık için tüm gramer konuları, mini sınavlar, full deneme ve taktik rehberi bir arada.">
+  <meta property="og:url" content="https://yds.monster">
+  <meta property="og:type" content="website">
 
   <!-- Literary Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,24 +117,55 @@
 
     <div class="max-w-7xl mx-auto px-4 py-8">
 
-      <header class="text-center mb-6">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-1 tracking-tight"
-          style="font-family: 'Playfair Display', serif;">
-          YDS & YDT
+      <header class="text-center mb-8">
+        <!-- Monster mascot icon -->
+        <div class="flex justify-center mb-4">
+          <div class="relative inline-flex items-center justify-center w-16 h-16 rounded-2xl shadow-2xl"
+            style="background:#0f0f0f;">
+            <svg viewBox="0 0 100 100" width="52" height="52">
+              <circle cx="35" cy="52" r="11" fill="#00ff88" />
+              <circle cx="65" cy="52" r="11" fill="#00ff88" />
+              <circle cx="35" cy="52" r="6" fill="#000" />
+              <circle cx="65" cy="52" r="6" fill="#000" />
+              <circle cx="37" cy="50" r="2.5" fill="#fff" />
+              <circle cx="67" cy="50" r="2.5" fill="#fff" />
+              <path d="M30 70 Q50 82 70 70" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" />
+              <polygon points="38,70 42,78 46,70" fill="white" />
+              <polygon points="54,70 58,78 62,70" fill="white" />
+              <rect x="38" y="18" width="24" height="4" rx="2" fill="#cc0000" />
+              <polygon points="50,10 62,18 38,18" fill="#cc0000" />
+              <rect x="60" y="14" width="3" height="10" fill="#cc0000" />
+              <rect x="58" y="23" width="7" height="3" rx="1" fill="#990000" />
+            </svg>
+          </div>
+        </div>
+        <h1 class="font-extrabold tracking-tight mb-1"
+          style="font-family:'Playfair Display',serif; font-size: clamp(2rem, 6vw, 3.75rem); letter-spacing: -0.02em;">
+          yds<span style="color:#00cc6a;">.</span><span style="color:#0f0f0f;">monster</span>
         </h1>
-        <p
-          class="text-lg text-gray-500 italic tracking-widest uppercase text-sm mt-3 border-b border-gray-200 pb-4 w-max mx-auto">
-          Encyclopedia v2.0</p>
+        <p class="text-gray-400 tracking-widest uppercase text-xs mt-2 border-b border-gray-200 pb-4 w-max mx-auto">
+          YDS &amp; YDT Master Encyclopedia &bull; v2.0
+        </p>
       </header>
 
       <!-- MOBILE HEADER -->
       <div class="flex items-center justify-between px-4 py-4 md:hidden border-b border-slate-100 mb-6">
         <div class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-red-800 rounded-lg flex items-center justify-center text-white text-xs shadow-lg">
-            <i class="fas fa-graduation-cap"></i>
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center shadow-md" style="background:#0f0f0f;">
+            <svg viewBox="0 0 100 100" width="22" height="22">
+              <circle cx="35" cy="52" r="11" fill="#00ff88" />
+              <circle cx="65" cy="52" r="11" fill="#00ff88" />
+              <circle cx="35" cy="52" r="6" fill="#000" />
+              <circle cx="65" cy="52" r="6" fill="#000" />
+              <circle cx="37" cy="50" r="2.5" fill="#fff" />
+              <circle cx="67" cy="50" r="2.5" fill="#fff" />
+              <path d="M30 70 Q50 82 70 70" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" />
+              <rect x="38" y="18" width="24" height="4" rx="2" fill="#cc0000" />
+              <polygon points="50,10 62,18 38,18" fill="#cc0000" />
+            </svg>
           </div>
-          <span class="font-bold text-slate-800 tracking-tighter" style="font-family: 'Playfair Display', serif;">YDS
-            MASTER</span>
+          <span class="font-bold text-slate-800 tracking-tight" style="font-family: 'Playfair Display', serif;">yds<span
+              style="color:#00cc6a;">.</span>monster</span>
         </div>
         <button id="hamburgerBtn"
           class="text-3xl text-slate-800 focus:outline-none hover:text-red-800 transition-colors">
