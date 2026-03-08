@@ -25,12 +25,24 @@ import {
   collection,
   addDoc,
   getDocs,
+  getDoc,
   deleteDoc,
   updateDoc,
   query,
+  where,
   orderBy,
-  limit
+  limit,
+  onSnapshot,
+  serverTimestamp,
+  increment
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+import {
+  getStorage,
+  ref,
+  uploadBytes,
+  getDownloadURL
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
 
 /* =========================================
    FIREBASE CONFIG
@@ -40,7 +52,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyCLsO5_4YrrbLPicpQTLgMp9S-4258_kzY",
   authDomain: "ydsgrammar.firebaseapp.com",
   projectId: "ydsgrammar",
-  storageBucket: "ydsgrammar.firebasestorage.app",
+  storageBucket: "ydsgrammar.appspot.com",
   messagingSenderId: "1049391024061",
   appId: "1:1049391024061:web:8b3381de9c074af07f34d4"
 };
@@ -48,20 +60,37 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
+const storage = getStorage(app);
+
 window.firebaseExports = {
   doc,
+  getDoc,
   setDoc,
   deleteDoc,
   updateDoc,
   getDocs,
   collection,
-  addDoc
+  addDoc,
+  query,
+  where,
+  orderBy,
+  limit,
+  onSnapshot,
+  serverTimestamp,
+  increment
+};
+
+window.storageExports = {
+  ref,
+  uploadBytes,
+  getDownloadURL
 };
 
 const googleProvider = new GoogleAuthProvider();
 
 window.currentUser = null;
 window.db = db;
+window.storage = storage;
 
 /* =========================================
    REGISTER (EMAIL)
