@@ -8,8 +8,8 @@ const forumHTML = `
     <!-- Header -->
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-6">
         <div>
-            <h1 class="text-3xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">Soru Çözüm Forumu</h1>
-            <p class="text-slate-500 italic mt-1">Takıldığın soruların fotoğrafını paylaş, toplulukla birlikte çöz.</p>
+            <h1 class="text-3xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">YDS Tartışma Forumu</h1>
+            <p class="text-slate-500 italic mt-1">Takıldığın konuları paylaş, toplulukla birlikte çözümle.</p>
         </div>
         <button onclick="openNewPostModal()" class="px-6 py-3 bg-red-800 text-white rounded-xl font-bold hover:bg-black transition-all shadow-lg flex items-center gap-2">
             <i class="fas fa-plus"></i> Soru Sor
@@ -65,8 +65,8 @@ const forumHTML = `
                 <label class="block text-sm font-bold text-slate-700 mb-1">Açıklama</label>
                 <textarea id="postDescription" placeholder="Sorunla ilgili eklemek istediğin bir şey var mı?" class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:ring-2 focus:ring-red-800 outline-none h-24"></textarea>
             </div>
-            <div>
-                <label class="block text-sm font-bold text-slate-700 mb-1">Soru Fotoğrafı</label>
+            <div class="hidden">
+                <label class="block text-sm font-bold text-slate-700 mb-1">Soru Fotoğrafı (Opsiyonel)</label>
                 <label for="postImage" class="w-full h-32 border-2 border-dashed border-slate-200 rounded-xl flex flex-col items-center justify-center cursor-pointer hover:bg-slate-50 transition-colors group">
                     <i class="fas fa-camera text-2xl text-slate-300 group-hover:text-red-800 transition-colors mb-2"></i>
                     <span class="text-xs text-slate-400" id="fileLabel">Fotoğraf Seç veya Sürükle</span>
