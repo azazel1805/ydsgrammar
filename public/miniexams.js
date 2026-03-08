@@ -43,6 +43,7 @@ function injectMiniExamHTML() {
  <option value="relatives">Relatives</option>
  <option value="nounclauses">Noun Clauses</option>
  <option value="vocabulary">Vocabulary</option>
+ <option value="irrelevant">Irrelevant Sentence</option>
  </select>
 
  <select id="miniCount"
