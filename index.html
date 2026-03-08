@@ -180,6 +180,9 @@
             <button data-tab="fullexam" onclick="switchTab('fullexam')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2"><span
                 class="inline-block w-1.5 h-1.5 rounded-full bg-red-600"></span>Full Deneme</button>
+            <button data-tab="tacticguide" onclick="switchTab('tacticguide')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2"><span
+                class="inline-block w-1.5 h-1.5 rounded-full bg-amber-500"></span>Taktik Rehberi</button>
           </div>
         </div>
 
@@ -270,6 +273,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause</button>
             <button data-tab="miniexams" onclick="switchTabAndClose('miniexams')" class="drawer-btn">Mini Exams</button>
             <button data-tab="fullexam" onclick="switchTabAndClose('fullexam')" class="drawer-btn">Full Deneme</button>
+            <button data-tab="tacticguide" onclick="switchTabAndClose('tacticguide')" class="drawer-btn">Taktik
+              Rehberi</button>
           </div>
         </div>
 
@@ -325,6 +330,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-vocabulary" class="tab-content hidden"></div>
       <div id="tab-miniexams" class="tab-content"></div>
       <div id="tab-fullexam" class="tab-content"></div>
+      <div id="tab-tacticguide" class="tab-content"></div>
       <div id="tab-analyzer" class="tab-content hidden"></div>
       <div id="tab-testlab" class="tab-content hidden"></div>
       <div id="tab-restatement" class="tab-content hidden"></div>
@@ -397,6 +403,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/vocabulary.js"></script>
     <script src="/miniexams.js"></script>
     <script src="/fullexam.js"></script>
+    <script src="/tacticguide.js"></script>
     <script src="/forum.js"></script>
     <script src="https://unpkg.com/compromise"></script>
     <script src="/analyzer.js"></script>

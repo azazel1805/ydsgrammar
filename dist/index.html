@@ -26,8 +26,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="./assets/index-DrVYnqW_.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DTgU7Tsy.css">
+  <script type="module" crossorigin src="./assets/index-DKmaLwL5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DQo5uL2T.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -181,6 +181,9 @@
             <button data-tab="fullexam" onclick="switchTab('fullexam')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2"><span
                 class="inline-block w-1.5 h-1.5 rounded-full bg-red-600"></span>Full Deneme</button>
+            <button data-tab="tacticguide" onclick="switchTab('tacticguide')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2"><span
+                class="inline-block w-1.5 h-1.5 rounded-full bg-amber-500"></span>Taktik Rehberi</button>
           </div>
         </div>
 
@@ -271,6 +274,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause</button>
             <button data-tab="miniexams" onclick="switchTabAndClose('miniexams')" class="drawer-btn">Mini Exams</button>
             <button data-tab="fullexam" onclick="switchTabAndClose('fullexam')" class="drawer-btn">Full Deneme</button>
+            <button data-tab="tacticguide" onclick="switchTabAndClose('tacticguide')" class="drawer-btn">Taktik
+              Rehberi</button>
           </div>
         </div>
 
@@ -326,6 +331,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-vocabulary" class="tab-content hidden"></div>
       <div id="tab-miniexams" class="tab-content"></div>
       <div id="tab-fullexam" class="tab-content"></div>
+      <div id="tab-tacticguide" class="tab-content"></div>
       <div id="tab-analyzer" class="tab-content hidden"></div>
       <div id="tab-testlab" class="tab-content hidden"></div>
       <div id="tab-restatement" class="tab-content hidden"></div>
@@ -397,6 +403,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./vocabulary.js"></script>
     <script src="./miniexams.js"></script>
     <script src="./fullexam.js"></script>
+    <script src="./tacticguide.js"></script>
     <script src="./forum.js"></script>
     <script src="https://unpkg.com/compromise"></script>
     <script src="./analyzer.js"></script>
