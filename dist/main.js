@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-noun", typeof nounHTML !== 'undefined' ? nounHTML : undefined);
     safeInject("tab-sentence", typeof sentenceCorrectorHTML !== 'undefined' ? sentenceCorrectorHTML : undefined);
     safeInject("tab-forum", typeof forumHTML !== 'undefined' ? forumHTML : undefined);
+    safeInject("tab-restatement", typeof restatementHTML !== 'undefined' ? restatementHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
