@@ -1,13 +1,20 @@
 {
     "meta": {
-        "question_count": 81,
-        "type": "yds_irrelevant_sentence"
+        "question_count": 33,
+        "type": "irrelevant_sentence",
+        "source": "Eskişehir YESDİL / www.yesdil.com"
     },
     "questions": [
         {
             "id": 1,
-            "test": 1,
-            "question": "(I) Before any species can receive protection, they must first be declared as endangered or threatened. (II) They must first be declared as endangered or threatened. (III) For this reason, it is important to determine whether a species is threatened or endangered. (IV) Unlike a threatened species, an endangered species is one that is in danger of extinction throughout a significant portion of its range. (V) Their habitats must also be protected from further destruction.",
+            "paragraf": [
+                "(I) Temporary adhesives are designed to repeatedly or easily stick and unstick.",
+                "(II) They have low adhesion and generally can't support much weight.",
+                "(III) An adhesive is a compound that adheres or bonds two items together.",
+                "(IV) They are commonly used on paper.",
+                "(V) They have common applications such as bookmarks, informal notes, and office supplies."
+            ],
+            "question": "(I) Temporary adhesives are designed to repeatedly or easily stick and unstick. (II) They have low adhesion and generally can't support much weight. (III) An adhesive is a compound that adheres or bonds two items together. (IV) They are commonly used on paper. (V) They have common applications such as bookmarks, informal notes, and office supplies.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -15,12 +22,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "B"
+            "correct": "C"
         },
         {
             "id": 2,
-            "test": 1,
-            "question": "(I) We will probably never know the truth of Alexander the Great's mysterious death. (II) He died at the age of 33, on June 10, 323 BC. (III) Some historians claim that he drank a cup of wine which was poisoned, and died soon after. (IV) Unfortunately, the tomb was not left untouched. (V) However, according to new theories it seems most likely that he died from complications of the flu, or was struck by malaria while in Babylon.",
+            "paragraf": [
+                "(I) We will probably never know the truth of Alexander the Great's mysterious death.",
+                "(II) He died at the age of 33, on June 10, 323 BC.",
+                "(III) Some historians claim that he drank a cup of wine, which was poisoned, and died soon after.",
+                "(IV) Unfortunately, the tomb was not left untouched.",
+                "(V) However according to new theories it seems most likely that he died from complications of the flu, or was struck by malaria while in Babylon."
+            ],
+            "question": "(I) We will probably never know the truth of Alexander the Great's mysterious death. (II) He died at the age of 33, on June 10, 323 BC. (III) Some historians claim that he drank a cup of wine, which was poisoned, and died soon after. (IV) Unfortunately, the tomb was not left untouched. (V) However according to new theories it seems most likely that he died from complications of the flu, or was struck by malaria while in Babylon.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -32,8 +45,14 @@
         },
         {
             "id": 3,
-            "test": 1,
-            "question": "(I) Being healthy today has very little to do with actual weight. (II) Therefore someone's weight, although a health indicator, does not necessarily determine his or her overall health. (III) There are plenty of slightly overweight people that are far healthier than many skinny people. (IV) Many of these people suffer from eating disorders in the sake of being thin. (V) Exercising as a teenager is as important as exercising as an adult.",
+            "paragraf": [
+                "(I) Being healthy today has very little to do with actual weight.",
+                "(II) Therefore someone's weight, although a health indicator, does not necessarily determine his or her overall health.",
+                "(III) There are plenty of slightly overweight people that are far healthier than many skinny people.",
+                "(IV) Many of these people suffer from eating disorders in the sake of being thin.",
+                "(V) Exercising as a teenager is as important as exercising an adult."
+            ],
+            "question": "(I) Being healthy today has very little to do with actual weight. (II) Therefore someone's weight, although a health indicator, does not necessarily determine his or her overall health. (III) There are plenty of slightly overweight people that are far healthier than many skinny people. (IV) Many of these people suffer from eating disorders in the sake of being thin. (V) Exercising as a teenager is as important as exercising an adult.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -45,7 +64,13 @@
         },
         {
             "id": 4,
-            "test": 1,
+            "paragraf": [
+                "(I) In every society, one has to learn the customs, attitudes and values of this social group or culture.",
+                "(II) It is important that you make them as entertaining and rewarding as you possibly can.",
+                "(III) This learning process is called socialization.",
+                "(IV) It is important for the development of every individual.",
+                "(V) This development is most strongly enforced by family, school and continues throughout an individual's lifetime."
+            ],
             "question": "(I) In every society, one has to learn the customs, attitudes and values of this social group or culture. (II) It is important that you make them as entertaining and rewarding as you possibly can. (III) This learning process is called socialization. (IV) It is important for the development of every individual. (V) This development is most strongly enforced by family, school and continues throughout an individual's lifetime.",
             "options": {
                 "A": "I",
@@ -58,8 +83,14 @@
         },
         {
             "id": 5,
-            "test": 1,
-            "question": "(I) The Turkish Van is a rare, naturally occurring breed of cat originally found in the Lake Van region of Turkey. (II) It is distinctive with its all-white body and coloration confined mainly to the head and tail. (III) The coat on a Van is considered semi-longhaired. (IV) They were accepted for the championship show in Britain. (V) This makes their coat feel like cashmere or rabbit fur, and it dries quickly when wet.",
+            "paragraf": [
+                "(I) The Turkish Van is a rare, naturally occurring breed of cat originally found in the Lake Van region of Turkey.",
+                "(II) It is distinctive with its all white body and coloration confined mainly to the head and tail.",
+                "(III) The coat on a Van is considered semi-longhaired.",
+                "(IV) They were accepted for the championship show in Britain.",
+                "(V) This makes their coat feel like cashmere or rabbit fur, and it dries quickly when wet."
+            ],
+            "question": "(I) The Turkish Van is a rare, naturally occurring breed of cat originally found in the Lake Van region of Turkey. (II) It is distinctive with its all white body and coloration confined mainly to the head and tail. (III) The coat on a Van is considered semi-longhaired. (IV) They were accepted for the championship show in Britain. (V) This makes their coat feel like cashmere or rabbit fur, and it dries quickly when wet.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -71,8 +102,14 @@
         },
         {
             "id": 6,
-            "test": 1,
-            "question": "(I) Many traditional medicines use wildlife as ingredients. (II) Traditional East Asian medicine, for example, uses more than 1000 plant and animal species. (III) However, it is a misconception that the use of wildlife in traditional medicines occurs primarily in East Asia. (IV) It is wrong to believe that herbs don't have any side effects. (V) It is a global phenomenon.",
+            "paragraf": [
+                "(I) Before any species can receive protection it must first be declared as endangered or threatened.",
+                "(II) For this reason, it is important to determine whether a species is threatened or endangered.",
+                "(III) No one knows how many new species were discovered.",
+                "(IV) Unlike a threatened, an endangered species is one that is in danger of extinction throughout a significant portion of its range.",
+                "(V) Their reproductive rates are lower than their mortality over long periods of time."
+            ],
+            "question": "(I) Before any species can receive protection it must first be declared as endangered or threatened. (II) For this reason, it is important to determine whether a species is threatened or endangered. (III) No one knows how many new species were discovered. (IV) Unlike a threatened, an endangered species is one that is in danger of extinction throughout a significant portion of its range. (V) Their reproductive rates are lower than their mortality over long periods of time.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -80,12 +117,94 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "D"
+            "correct": "C"
         },
         {
             "id": 7,
-            "test": 1,
-            "question": "(I) Iron has been considered mystical and precious since ancient times. (II) That's why horseshoes, which were made of iron, became good luck charms. (III) It was believed that if a horseshoe was hung with the two ends pointing up then good luck would occur. (IV) It is still not known when metal horseshoes were first invented. (V) However, if the two ends pointed downwards then bad luck would occur.",
+            "paragraf": [
+                "(I) A wedding ring consists of a precious metal ring and is a symbol for love and eternity.",
+                "(II) It is given by the groom or bride to his or her future spouse during the wedding ceremony.",
+                "(III) Rings were used as money and were a sign of personal wealth.",
+                "(IV) It is usually worn on the base of the left ring finger of the left hand.",
+                "(V) However in some parts of the world it is worn on the right ring finger."
+            ],
+            "question": "(I) A wedding ring consists of a precious metal ring and is a symbol for love and eternity. (II) It is given by the groom or bride to his or her future spouse during the wedding ceremony. (III) Rings were used as money and were a sign of personal wealth. (IV) It is usually worn on the base of the left ring finger of the left hand. (V) However in some parts of the world it is worn on the right ring finger.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 8,
+            "paragraf": [
+                "(I) Unlike today the one room schoolhouse was common in the 1800's.",
+                "(II) As we can understand from its name the one room schoolhouse had one room.",
+                "(III) Back then, kids walked to school so they built schools close by.",
+                "(IV) Therefore it had only one teacher who taught all grades within this classroom.",
+                "(V) The small room usually had one stove at the back of the room and two windows on the each side of the building depending on how wealthy the community was."
+            ],
+            "question": "(I) Unlike today the one room schoolhouse was common in the 1800's. (II) As we can understand from its name the one room schoolhouse had one room. (III) Back then, kids walked to school so they built schools close by. (IV) Therefore it had only one teacher who taught all grades within this classroom. (V) The small room usually had one stove at the back of the room and two windows on the each side of the building depending on how wealthy the community was.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 9,
+            "paragraf": [
+                "(I) Engineering DNA, the basic code of all life, is no longer the science fiction it was some years ago.",
+                "(II) Identical twins have nearly the same DNA.",
+                "(III) This modern science fact is the ultimate solution to countless present-day problems.",
+                "(IV) For example, genetic problems in the population can be easily tackled.",
+                "(V) DNA is also a powerful tool in other areas, such as criminology."
+            ],
+            "question": "(I) Engineering DNA, the basic code of all life, is no longer the science fiction it was some years ago. (II) Identical twins have nearly the same DNA. (III) This modern science fact is the ultimate solution to countless present-day problems. (IV) For example, genetic problems in the population can be easily tackled. (V) DNA is also a powerful tool in other areas, such as criminology.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 10,
+            "paragraf": [
+                "(I) All of us care about how we look and how other people see us.",
+                "(II) In the past, plastic surgery was a field reserved for the elite and notable public figures in society.",
+                "(III) Just like any operation, plastic surgery also involves risks.",
+                "(IV) Moreover, it was a taboo subject, never discussed openly.",
+                "(V) However, today plastic surgery is performed on people and is no longer a luxury reserved for the privileged few."
+            ],
+            "question": "(I) All of us care about how we look and how other people see us. (II) In the past, plastic surgery was a field reserved for the elite and notable public figures in society. (III) Just like any operation, plastic surgery also involves risks. (IV) Moreover, it was a taboo subject, never discussed openly. (V) However, today plastic surgery is performed on people and is no longer a luxury reserved for the privileged few.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 11,
+            "paragraf": [
+                "(I) Many traditional medicines use wildlife as ingredients.",
+                "(II) Traditional East Asian medicine, for example, uses more than 1000 plant and animal species.",
+                "(III) However, it is a misconception that the use of wildlife in traditional medicines occurs primarily in East Asia.",
+                "(IV) It is wrong to believe that herbs don't have any side affects.",
+                "(V) It is a global phenomenon."
+            ],
+            "question": "(I) Many traditional medicines use wildlife as ingredients. (II) Traditional East Asian medicine, for example, uses more than 1000 plant and animal species. (III) However, it is a misconception that the use of wildlife in traditional medicines occurs primarily in East Asia. (IV) It is wrong to believe that herbs don't have any side affects. (V) It is a global phenomenon.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -96,8 +215,33 @@
             "correct": "D"
         },
         {
-            "id": 8,
-            "test": 1,
+            "id": 12,
+            "paragraf": [
+                "(I) Iron has been considered mystical and precious since ancient times.",
+                "(II) That's why, horseshoes, which were made of iron, became good luck charms.",
+                "(III) It was believed that if a horseshoe was hung with the two ends pointing up then good luck would occur.",
+                "(IV) It is still not known when metal horseshoes were first invented.",
+                "(V) However, if the two ends pointed downwards then bad luck would occur."
+            ],
+            "question": "(I) Iron has been considered mystical and precious since ancient times. (II) That's why, horseshoes, which were made of iron, became good luck charms. (III) It was believed that if a horseshoe was hung with the two ends pointing up then good luck would occur. (IV) It is still not known when metal horseshoes were first invented. (V) However, if the two ends pointed downwards then bad luck would occur.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 13,
+            "paragraf": [
+                "(I) Just a few years ago, bird watchers were stereotyped as harmless but strange.",
+                "(II) It is important for the bird watcher to have a good set of binoculars.",
+                "(III) They were the subjects of jokes because the general public did not find birds interesting.",
+                "(IV) Nowadays, bird watching has become a national pastime.",
+                "(V) However, unfortunately, this great growth of interest in birding has caused the destruction of many bird habitats."
+            ],
             "question": "(I) Just a few years ago, bird watchers were stereotyped as harmless but strange. (II) It is important for the bird watcher to have a good set of binoculars. (III) They were the subjects of jokes because the general public did not find birds interesting. (IV) Nowadays, bird watching has become a national pastime. (V) However, unfortunately, this great growth of interest in birding has caused the destruction of many bird habitats.",
             "options": {
                 "A": "I",
@@ -109,74 +253,15 @@
             "correct": "B"
         },
         {
-            "id": 9,
-            "test": 1,
-            "question": "(I) X-rays are a form of ionising radiation and as such can be dangerous. (II) How can you find out what is going on inside a person's body without opening the patient up? (III) Doctors use X-rays to study and diagnose diseases and injuries within the body. (IV) Nonetheless, X-rays can only locate foreign objects inside the body or take pictures of some internal organs. (V) CAT scanners, a special X-ray machine, however, can give a three-dimensional view of all the organs.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 10,
-            "test": 1,
-            "question": "(I) Computer games and online gaming is used as entertainment and stress relief by many. (II) An awareness of the basic symptoms of addiction is important. (III) However, once you get addicted to it, it can be detrimental to your health. (IV) An extreme case of Internet obsession hit the news headlines last month. (V) A Korean man collapsed and died after playing computer games virtually non-stop for 86 hours.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 11,
-            "test": 1,
-            "question": "(I) The Black Death, which hit Europe, had a significant impact on household sizes. (II) A household in any time period consists of a person or people living in one house. (III) Nevertheless, a household is not necessarily the same as a family. (IV) In the Middle Ages, the households of nobles might include servants, seasonal or permanent workers. (V) However, poorer households that were unable to afford servants would most likely consist of only the family.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 12,
-            "test": 1,
-            "question": "(I) Most people probably think of salt as simply that white granular food seasoning found in a saltshaker. (II) A lifetime of eating too much salt is putting Americans' lives in jeopardy. (III) It is that, surely, but it is far more. (IV) It is an essential element in the diet of not only humans but of animals, and even of many plants. (V) It is also one of the most effective and most widely used of all food preservatives and the oldest as well.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 13,
-            "test": 1,
-            "question": "(I) Despite recent economic growth, India still faces incredible lack of basic resources for many of its 1 billion people. (II) Poverty is a widespread problem, particularly in rural areas. (III) It has the best and biggest agriculture research system in the world. (IV) This has a significant impact on educational infrastructure and attainment. (V) Throughout India school infrastructure is often poor quality and many children enrolled in school never make it to grade.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
             "id": 14,
-            "test": 1,
-            "question": "(I) Many parents have questions about children and money. (II) For example, how do children learn about managing money? (III) That is the way that a child learns the concept of scarcity. (IV) Children learn about money from those around them. (V) For instance, they watch their parents spend money and learn from them.",
+            "paragraf": [
+                "(I) X-rays are a form of ionising radiation and as such can be dangerous.",
+                "(II) How can you find out what is going on inside a person's body without opening the patient up?",
+                "(III) Doctors use X rays to study and diagnose diseases and injuries within the body.",
+                "(IV) Nonetheless, X rays can only locate foreign objects inside the body or take pictures of some internal organs.",
+                "(V) CAT scanners, a special X-ray machine, however, can give a three-dimensional view of all the organs."
+            ],
+            "question": "(I) X-rays are a form of ionising radiation and as such can be dangerous. (II) How can you find out what is going on inside a person's body without opening the patient up? (III) Doctors use X rays to study and diagnose diseases and injuries within the body. (IV) Nonetheless, X rays can only locate foreign objects inside the body or take pictures of some internal organs. (V) CAT scanners, a special X-ray machine, however, can give a three-dimensional view of all the organs.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -184,12 +269,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "C"
+            "correct": "A"
         },
         {
             "id": 15,
-            "test": 1,
-            "question": "(I) Mummies are one of the most characteristic aspects of ancient Egyptian culture. (II) The preservation of the body was an essential part of the Egyptian funerary belief and practice. (III) However, the earliest ancient Egyptians did not mummify their dead. (IV) They buried them in coffins in small pits to protect them from wild animals. (V) Tutankhamun's mummy was severely damaged by the mummification process.",
+            "paragraf": [
+                "(I) Computer games and online gaming is used as entertainment and stress relief by many.",
+                "(II) An awareness of the basic symptoms of addiction is important.",
+                "(III) However once you get addicted to it, it can be detrimental to your health.",
+                "(IV) An extreme case of Internet obsession hit the news headlines last month.",
+                "(V) A Korean man collapsed and died after playing computer games virtually non-stop for 86 hours."
+            ],
+            "question": "(I) Computer games and online gaming is used as entertainment and stress relief by many. (II) An awareness of the basic symptoms of addiction is important. (III) However once you get addicted to it, it can be detrimental to your health. (IV) An extreme case of Internet obsession hit the news headlines last month. (V) A Korean man collapsed and died after playing computer games virtually non-stop for 86 hours.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -197,12 +288,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "E"
+            "correct": "B"
         },
         {
             "id": 16,
-            "test": 1,
-            "question": "(I) Culture shock is exactly what the name implies. (II) It is an emotional shock induced by finding yourself in an unfamiliar situation or place. (III) The term, culture shock, was introduced for the first time in 1958 as the first guest workers came to Germany. (IV) The symptoms of cultural shock can appear at different times. (V) Suddenly, the way that they lived and the language they spoke before was not accepted.",
+            "paragraf": [
+                "(I) Nowadays a number of NASA officials are concerned about the growing problem of space garbage.",
+                "(II) They burn up harmlessly in the Earth's atmosphere.",
+                "(III) This trash is a by-product of old satellites and upper storage units left in orbit from previous flights.",
+                "(IV) It causes a great danger to future flights due to its high speed while orbiting the earth.",
+                "(V) This is why NASA is trying to find a way to remove the trash inexpensively from the space."
+            ],
+            "question": "(I) Nowadays a number of NASA officials are concerned about the growing problem of space garbage. (II) They burn up harmlessly in the Earth's atmosphere. (III) This trash is a by-product of old satellites and upper storage units left in orbit from previous flights. (IV) It causes a great danger to future flights due to its high speed while orbiting the earth. (V) This is why NASA is trying to find a way to remove the trash inexpensively from the space.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -210,38 +307,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "D"
+            "correct": "B"
         },
         {
             "id": 17,
-            "test": 1,
-            "question": "(I) We all know what ageing does to us. (II) Age discrimination is worse now than it was in the past. (III) But do we actually know what causes ageing and if we can slow its advance? (IV) Of course, we can control some aspects of the ageing process. (V) For example, changing the lifestyle is one of the important aspects in ageing.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 18,
-            "test": 1,
-            "question": "(I) Nearly everybody knows about the kids' game Pokemon. (II) Many children are obsessed with puzzles. (III) However, for those who are unfamiliar with Pokemon, they are creatures that possess special abilities. (IV) In the Pokemon world, human beings act as trainers. (V) Pokemon battles are a core part of the game.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 19,
-            "test": 1,
-            "question": "(I) It has been hypothesised that the rise in mobile phone usage replaced smoking among teenagers. (II) Nevertheless, researchers could not find any connection between these two subjects. (III) Mobile phones were once reserved for the very wealthy. (IV) In fact, it has been found that teenagers who use their phones regularly were more likely to be daily smokers. (V) This suggests the two habits may share social or psychological drivers.",
+            "paragraf": [
+                "(I) The era of cheap, abundant oil is most probably at or past its absolute peak, according to the oil geologists.",
+                "(II) If this analysis is accurate, the economic and social consequences will be staggering.",
+                "(III) Generally easy to reach resources will be found and used first.",
+                "(IV) For example, there will be a severe liquid fuels problem for the transportation sector and dramatically higher oil prices.",
+                "(V) However, this fact is being hidden by governments in order to not to cause chaos."
+            ],
+            "question": "(I) The era of cheap, abundant oil is most probably at or past its absolute peak, according to the oil geologists. (II) If this analysis is accurate, the economic and social consequences will be staggering. (III) Generally easy to reach resources will be found and used first. (IV) For example, there will be a severe liquid fuels problem for the transportation sector and dramatically higher oil prices. (V) However, this fact is being hidden by governments in order to not to cause chaos.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -252,9 +329,53 @@
             "correct": "C"
         },
         {
+            "id": 18,
+            "paragraf": [
+                "(I) Before World War I, in 1914, Germany was a prosperous country, with a gold-backed currency.",
+                "(II) It was the world leadership in optics, chemicals, and machinery.",
+                "(III) Many of them had already emigrated before the war started.",
+                "(IV) The German Mark was exchanged four to the dollar.",
+                "(V) In 1923, however, during the time of the German hyperinflation, the exchange rate between the dollar and the Mark was one trillion Marks to one dollar."
+            ],
+            "question": "(I) Before World War I, in 1914, Germany was a prosperous country, with a gold-backed currency. (II) It was the world leadership in optics, chemicals, and machinery. (III) Many of them had already emigrated before the war started. (IV) The German Mark was exchanged four to the dollar. (V) In 1923, however, during the time of the German hyperinflation, the exchange rate between the dollar and the Mark was one trillion Marks to one dollar.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 19,
+            "paragraf": [
+                "(I) Dogs are pack animals.",
+                "(II) Like most breeds with problem reputations, Rottweilers are viewed as dangerous.",
+                "(III) Nonetheless, they have this reputation because of the actions of irresponsible owners.",
+                "(IV) In reality, a Rottweiler can be a great family pet.",
+                "(V) Unfortunately, some people purchase Rottweilers as a status symbol, or for unethical reasons such as dog fighting."
+            ],
+            "question": "(I) Dogs are pack animals. (II) Like most breeds with problem reputations, Rottweilers are viewed as dangerous. (III) Nonetheless, they have this reputation because of the actions of irresponsible owners. (IV) In reality, a Rottweiler can be a great family pet. (V) Unfortunately, some people purchase Rottweilers as a status symbol, or for unethical reasons such as dog fighting.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "A"
+        },
+        {
             "id": 20,
-            "test": 1,
-            "question": "(I) It is a fact that watching a solar eclipse without eyewear protection seriously damages your eyesight. (II) Since some experts have claimed that the solar eclipse triggered the 1999 earthquakes, Turkish people have become wary of solar eclipses. (III) The scenario surfaced again with the March 29 total eclipse. (IV) For this reason, Turkey's top seismologist explained in an interview that there was no scientific link between them. (V) She also clarified the optical dangers involved.",
+            "paragraf": [
+                "(I) Home fires are a serious threat to your family's safety.",
+                "(II) Every year in the United States, approximately 5,000 people are killed by residential fires.",
+                "(III) Smoke detectors save lives, prevent injuries and minimize property damage.",
+                "(IV) In addition, more than $8 billion worth of property damage is done by home fires.",
+                "(V) Many fire victims die of inhalation of smoke and toxic gases, not because of burns."
+            ],
+            "question": "(I) Home fires are a serious threat to your family's safety. (II) Every year in the United States, approximately 5,000 people are killed by residential fires. (III) Smoke detectors save lives, prevent injuries and minimize property damage. (IV) In addition, more than $8 billion worth of property damage is done by home fires. (V) Many fire victims die of inhalation of smoke and toxic gases, not because of burns.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -266,8 +387,14 @@
         },
         {
             "id": 21,
-            "test": 1,
-            "question": "(I) Kefir is one of the oldest cultured milks. (II) It has many reputed health benefits. (III) It has antibiotic properties and contains many vitamins, minerals and enzymes. (IV) Real kefir can be produced only by traditional methods at home. (V) It has been used in the treatment of a variety of conditions, including metabolic disorders and other severe diseases.",
+            "paragraf": [
+                "(I) The Black Death, which hit Europe, had a significant impact on household sizes.",
+                "(II) A household in any time period consists of a person or people living in one house.",
+                "(III) Nevertheless, a household is not necessarily the same as a family.",
+                "(IV) In the Middle Ages for instance, the households of nobles might include servants, seasonal or permanent workers.",
+                "(V) However, poorer households that were unable to afford servants would most likely consist of only the family."
+            ],
+            "question": "(I) The Black Death, which hit Europe, had a significant impact on household sizes. (II) A household in any time period consists of a person or people living in one house. (III) Nevertheless, a household is not necessarily the same as a family. (IV) In the Middle Ages for instance, the households of nobles might include servants, seasonal or permanent workers. (V) However, poorer households that were unable to afford servants would most likely consist of only the family.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -275,12 +402,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "D"
+            "correct": "A"
         },
         {
             "id": 22,
-            "test": 2,
-            "question": "(I) Throughout the history of coffee, the preparation of the beverage has changed. (II) Most coffee production is still done by hand. (III) First, people would eat the coffee cherries to get the caffeine effects. (IV) As time went on, people dried the beans and attempted to concentrate the flavour by roasting them. (V) Eventually, somebody thought to grind the beans and brew them with water.",
+            "paragraf": [
+                "(I) Most people probably think of salt as simply that white granular food seasoning found in a saltshaker.",
+                "(II) A lifetime of eating too much salt is putting Americans' lives in jeopardy.",
+                "(III) It is that, surely, but it is far more.",
+                "(IV) It is an essential element in the diet of not only humans but of animals, and even of many plants.",
+                "(V) It is also one of the most effective and most widely used of all food preservatives and the oldest as well."
+            ],
+            "question": "(I) Most people probably think of salt as simply that white granular food seasoning found in a saltshaker. (II) A lifetime of eating too much salt is putting Americans' lives in jeopardy. (III) It is that, surely, but it is far more. (IV) It is an essential element in the diet of not only humans but of animals, and even of many plants. (V) It is also one of the most effective and most widely used of all food preservatives and the oldest as well.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -292,8 +425,14 @@
         },
         {
             "id": 23,
-            "test": 2,
-            "question": "(I) Doping is the use of drugs to try to improve sports performance. (II) This practice is banned by sports federations throughout the world. (III) Athletes need to know which substances are banned in sport. (IV) The use of drugs during athletic festivals is evident. (V) Furthermore, they must make sure that any product or medication they take does not contain a prohibited substance.",
+            "paragraf": [
+                "(I) Despite recent economic growth, India still faces incredible lack of basic resources for many of its 1 billion people.",
+                "(II) Poverty is a widespread problem, particularly in rural areas.",
+                "(III) It has the best and biggest agriculture research system in the world.",
+                "(IV) This has a significant impact on educational infrastructure and attainment.",
+                "(V) Throughout India school infrastructure is often poor quality and many children enrolled in school never make it to grade."
+            ],
+            "question": "(I) Despite recent economic growth, India still faces incredible lack of basic resources for many of its 1 billion people. (II) Poverty is a widespread problem, particularly in rural areas. (III) It has the best and biggest agriculture research system in the world. (IV) This has a significant impact on educational infrastructure and attainment. (V) Throughout India school infrastructure is often poor quality and many children enrolled in school never make it to grade.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -301,12 +440,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "D"
+            "correct": "C"
         },
         {
             "id": 24,
-            "test": 2,
-            "question": "(I) Garfield is a comic strip featuring the cat Garfield, the pet dog Odie, and their socially inept owner Jon Arbuckle. (II) The main character is Garfield, who is a lazy, overweight, orange cat. (III) He considers himself to be more intelligent than humans or dogs. (IV) He was named Garfield after his grandfather. (V) He hates Mondays and loves lasagne apparently.",
+            "paragraf": [
+                "(I) Many parents have questions about children and money.",
+                "(II) For example, how do children learn about managing money?",
+                "(III) That is the way that a child learns the concept of scarcity.",
+                "(IV) Children learn about money from those around them.",
+                "(V) For instance, they watch their parents spend money and learn from them."
+            ],
+            "question": "(I) Many parents have questions about children and money. (II) For example, how do children learn about managing money? (III) That is the way that a child learns the concept of scarcity. (IV) Children learn about money from those around them. (V) For instance, they watch their parents spend money and learn from them.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -314,25 +459,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "D"
+            "correct": "C"
         },
         {
             "id": 25,
-            "test": 2,
-            "question": "(I) The Temple of Artemis was a Greek temple dedicated to Artemis. (II) It was considered to be one of the Seven Wonders of the Ancient World. (III) The temple was destroyed by a lunatic called Herostatus in 356 BC. (IV) Today two of them can be seen in the nearby museum. (V) Eventually, in 323 BC, it was reconstructed by the people of Ephesus.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 26,
-            "test": 2,
-            "question": "(I) May 10, 1996 was the deadliest day in Everest history. (II) A storm stranded many climbers near the summit and killed eight people. (III) Among those who died were Rob Hall and Scott Fischer. (IV) Both were experienced guides and were leading paid expeditions to the summit. (V) Everest can be climbed without supplementary oxygen, but this requires special fitness training.",
+            "paragraf": [
+                "(I) Mummies are one of the most characteristic aspects of ancient Egyptian culture.",
+                "(II) The preservation of the body was an essential part of the Egyptian funerary belief and practice.",
+                "(III) However, the earliest ancient Egyptians did not mummify their deaths.",
+                "(IV) They buried them in coffins in small pits to protect them from wild animals.",
+                "(V) Tutankhamun's mummy was severely damaged by the mummification process."
+            ],
+            "question": "(I) Mummies are one of the most characteristic aspects of ancient Egyptian culture. (II) The preservation of the body was an essential part of the Egyptian funerary belief and practice. (III) However, the earliest ancient Egyptians did not mummify their deaths. (IV) They buried them in coffins in small pits to protect them from wild animals. (V) Tutankhamun's mummy was severely damaged by the mummification process.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -343,9 +481,34 @@
             "correct": "E"
         },
         {
+            "id": 26,
+            "paragraf": [
+                "(I) In the early 20th century, in Europe, girls generally left home before reaching adulthood.",
+                "(II) Some worked as governess to support their families or to save money.",
+                "(III) Others migrated to the cities, where they could find employment in laundries or restaurants.",
+                "(IV) Many girls continue to live with their parents if they are still unmarried.",
+                "(V) All these jobs fitted with what people considered women's traditional activities."
+            ],
+            "question": "(I) In the early 20th century, in Europe, girls generally left home before reaching adulthood. (II) Some worked as governess to support their families or to save money. (III) Others migrated to the cities, where they could find employment in laundries or restaurants. (IV) Many girls continue to live with their parents if they are still unmarried. (V) All these jobs fitted with what people considered women's traditional activities.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
             "id": 27,
-            "test": 2,
-            "question": "(I) The American family changed dramatically over the last decades of the twentieth century. (II) In 1960, 70 percent of families had a parent at home full-time. (III) Today, this is reversed. (IV) Both parents had to work long hours. (V) Fully 70 percent of families with children are now headed by two working parents.",
+            "paragraf": [
+                "(I) Many types of toothpaste contain large amounts of fluoride.",
+                "(II) If ingested in excessive amounts, fluoride can cause various health problems.",
+                "(III) However, there are many other more dangerous chemicals, besides fluoride, that are also put in the toothpastes.",
+                "(IV) Most people in developed countries consider toothpaste a necessity.",
+                "(V) These chemicals, when absorbed, can be dangerous for health since they poison the bones, blood and other parts of the body."
+            ],
+            "question": "(I) Many types of toothpaste contain large amounts of fluoride. (II) If ingested in excessive amounts, fluoride can cause various health problems. (III) However, there are many other more dangerous chemicals, besides fluoride, that are also put in the toothpastes. (IV) Most people in developed countries consider toothpaste a necessity. (V) These chemicals, when absorbed, can be dangerous for health since they poison the bones, blood and other parts of the body.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -357,8 +520,14 @@
         },
         {
             "id": 28,
-            "test": 2,
-            "question": "(I) Debate has raged over the years as to the source of Van Gogh's mental illness. (II) Over 150 psychiatrists have attempted to label his illness. (III) As an artist he was only ten years active, but in that time he made approximately 900 paintings. (IV) Eventually nearly everyone agrees on schizophrenia. (V) But some still claim that his fondness for alcoholic beverages might be the reason for his madness.",
+            "paragraf": [
+                "(I) The witch is one of the most popular Halloween symbols.",
+                "(II) Nobody knows for sure how many women were burned as witches in Europe.",
+                "(III) The number might be 50.000 or several hundred thousands.",
+                "(IV) The Church believed that witches worshiped Satan and cast spells to help him do evil deeds.",
+                "(V) Therefore, by the end of the Middle Ages, the Church began condemning people to death for practising witchcraft."
+            ],
+            "question": "(I) The witch is one of the most popular Halloween symbols. (II) Nobody knows for sure how many women were burned as witches in Europe. (III) The number might be 50.000 or several hundred thousands. (IV) The Church believed that witches worshiped Satan and cast spells to help him do evil deeds. (V) Therefore, by the end of the Middle Ages, the Church began condemning people to death for practising witchcraft.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -366,12 +535,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "C"
+            "correct": "A"
         },
         {
             "id": 29,
-            "test": 2,
-            "question": "(I) The caste system in India is of great importance and affects almost all spheres of life. (II) It was born with virtually harmless intentions. (III) Upward mobility is very rare in the caste system. (IV) It was a simple way of organizing society. (V) Over time, however, it became a rigid and oppressive hierarchy.",
+            "paragraf": [
+                "(I) In 1502, Columbus became the first European to discover cocoa beans.",
+                "(II) But because he was searching for a sea route to India, he was not interested in cocoa.",
+                "(III) It was only in 1528 that Hernando Cortez took the first cocoa to Spain, along with the means of producing the chocolate drink.",
+                "(IV) However, it had little in common with the instant cocoa popular among children today.",
+                "(V) The consumption of cocoa beans was restricted to the Mayan society's elite."
+            ],
+            "question": "(I) In 1502, Columbus became the first European to discover cocoa beans. (II) But because he was searching for a sea route to India, he was not interested in cocoa. (III) It was only in 1528 that Hernando Cortez took the first cocoa to Spain, along with the means of producing the chocolate drink. (IV) However, it had little in common with the instant cocoa popular among children today. (V) The consumption of cocoa beans was restricted to the Mayan society's elite.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -379,12 +554,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "C"
+            "correct": "E"
         },
         {
             "id": 30,
-            "test": 2,
-            "question": "(I) A hieroglyphic script is one consisting of a variety of pictures and symbols. (II) Papyrus sheets were derived after processing the papyrus plant. (III) Some symbols had independent meanings, whereas some of such symbols were used in combinations. (IV) The script was used for religious texts and official inscriptions. (V) It has been deciphered largely thanks to the Rosetta Stone.",
+            "paragraf": [
+                "(I) Culture shock is exactly what the name implies.",
+                "(II) It is an emotional shock induced by finding yourself in an unfamiliar situation or place.",
+                "(III) The term, culture shock, was introduced for the first time in 1958 as the first guest workers came to Germany.",
+                "(IV) The symptoms of cultural shock can appear at different times.",
+                "(V) Suddenly, the way that they lived and the language they spoke before was not accepted."
+            ],
+            "question": "(I) Culture shock is exactly what the name implies. (II) It is an emotional shock induced by finding yourself in an unfamiliar situation or place. (III) The term, culture shock, was introduced for the first time in 1958 as the first guest workers came to Germany. (IV) The symptoms of cultural shock can appear at different times. (V) Suddenly, the way that they lived and the language they spoke before was not accepted.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -392,12 +573,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "B"
+            "correct": "D"
         },
         {
             "id": 31,
-            "test": 2,
-            "question": "(I) The Himalaya mountain range is the world's highest mountain range. (II) They form India's north-eastern border, separating it from the rest of Asia. (III) The geography of India is extremely diverse. (IV) They extend almost uninterrupted for a distance of 2,500 km. (V) They cover an area of 500,000 km.",
+            "paragraf": [
+                "(I) We all know what ageing does to us.",
+                "(II) Age discrimination is worse now than it was in the past.",
+                "(III) But do we actually know what causes ageing and if we can slow its advance?",
+                "(IV) Of course, we can control some aspects of the ageing process.",
+                "(V) For example, changing the life style is one of the important aspects in ageing."
+            ],
+            "question": "(I) We all know what ageing does to us. (II) Age discrimination is worse now than it was in the past. (III) But do we actually know what causes ageing and if we can slow its advance? (IV) Of course, we can control some aspects of the ageing process. (V) For example, changing the life style is one of the important aspects in ageing.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -405,12 +592,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "C"
+            "correct": "B"
         },
         {
             "id": 32,
-            "test": 2,
-            "question": "(I) A sign language is a language which uses manual communication instead of sound to convey meaning. (II) It develops in deaf communities, which can include interpreters and friends and families of deaf people as well as people who are deaf or hearing-impaired themselves. (III) For instance, sign language is not universal. (IV) When people using different sign languages meet, communication is significantly easier than when people of different spoken languages meet. (V) Sign language in this respect gives access to an international community.",
+            "paragraf": [
+                "(I) Nearly everybody knows about the kids' game Pokemon.",
+                "(II) Many children are obsessed with puzzles.",
+                "(III) However, for those who are unfamiliar with Pokemon, they are creatures that possess special abilities.",
+                "(IV) In the Pokemon world, human beings act as Pokemon trainers and capture as many of the Pokemon creatures as they can.",
+                "(V) The captured Pokemon then join the trainer's team and help them capture other Pokemon."
+            ],
+            "question": "(I) Nearly everybody knows about the kids' game Pokemon. (II) Many children are obsessed with puzzles. (III) However, for those who are unfamiliar with Pokemon, they are creatures that possess special abilities. (IV) In the Pokemon world, human beings act as Pokemon trainers and capture as many of the Pokemon creatures as they can. (V) The captured Pokemon then join the trainer's team and help them capture other Pokemon.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -418,116 +611,18 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "C"
+            "correct": "B"
         },
         {
             "id": 33,
-            "test": 2,
-            "question": "(I) Americans often plan social gatherings on short notice, so don't be surprised if you get invited to someone's home or to see a movie or baseball game without much warning. (II) At a party, don't be surprised if you are asked what you do for a living. (III) If the time is convenient, accept the invitation immediately. (IV) Many consider thinness to be sickly and unsuitable for nurturing a large family. (V) The bathing suit undoubtedly played a role in determining the ideal body shape.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 34,
-            "test": 2,
-            "question": "(I) While dieting or losing weight, there are often times when we are tempted to eat things which we are not supposed to eat. (II) Therefore it is not very easy for someone to lose body fat and it can be very frustrating as well. (III) However, many studies nowadays support the idea that while dieting one should allow himself to eat once a week whatever he desires. (IV) Following a high-protein diet over a long period of time can cause considerable health problems. (V) It has been proved that this not only makes the dieter happy but also helps the person to continue his diet.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 35,
-            "test": 2,
-            "question": "(I) The climate of East Asia is both similar to and different from that of Europe and the United States. (II) It is similar in that it is a temperate climate, with colder winters and warm summers. (III) It is different in that most of the rainfall occurs during the warm summer months, rather than during the winter months. (IV) Climate, agriculture, and population size are closely related in East Asia. (V) This abundant water supply allows for intensive agriculture, with two and sometimes three crop cycles per year.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 36,
-            "test": 2,
-            "question": "(I) Although often referred to as tidal waves, a tsunami is not a usual wave which is only much bigger. (II) People unaware of the danger may remain at the shore for collecting fish from the exposed seabed. (III) Instead it is an endlessly onrushing tide that forces its way through any obstacle. (IV) Most of the damage is caused by the huge mass of water behind the initial wave front. (V) The sheer weight of water is enough to pulverise objects in its path, often reducing buildings to their foundations.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 37,
-            "test": 2,
-            "question": "(I) In 1929, the United States saw one of the most dramatic upheavals in its history, the Great Depression. (II) This was the worst economic crisis in the country's history. (III) It left an indelible scar on American society, causing millions of people to languish in joblessness, and starvation. (IV) People from the middle class were considered depression proof due to their professions. (V) Even today, nearly every survivor of the Great Depression can still recall the feelings of hunger and desperation.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 38,
-            "test": 2,
-            "question": "(I) Thanks to his theory of relativity, Einstein became the most famous scientist of the 20th century. (II) The father of a classmate helped him obtain employment as a technical assistant examiner. (III) In 1905, he published a paper proposing a special theory of relativity. (IV) His work had a profound impact on everything from quantum theory to the atom bomb. (V) He continued to develop his early ideas, and in 1915 published what is known as his general theory of relativity.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 39,
-            "test": 2,
-            "question": "(I) Like many insects, ants have six legs. (II) An ant colony consists of the queen ant, workers, soldiers and males. (III) They are very strong so they can run very quickly. (IV) If a man could run as fast for his size as an ant can, he could run as fast as a racehorse. (V) Although many ants are tiny and only three millimeters long they can lift 20 times their own body weight.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 40,
-            "test": 2,
-            "question": "(I) There is an old saying, 'An apple a day keeps the doctor away and helps losing weight.' (II) In fact, studies have shown that a number of components in apples help the body to fight many diseases. (III) Apples are also a source of dietary fibre which helps digestion and promotes weight loss. (IV) Blackberries and apples are a traditional duo for pies. (V) Unlike other snacks such as biscuits, raw apples contain almost zero fat and cholesterol.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 41,
-            "test": 2,
-            "question": "(I) It is not unusual to have sleep troubles from time to time. (II) But, if you feel that you do not get enough sleep you may have insomnia. (III) You should make sure your bedroom is quiet and dark. (IV) Insomnia is not defined by the number of hours you sleep every night. (V) It is when the sufferer of this illness is not able to fall asleep or to fall back asleep when he wakes up during the night.",
+            "paragraf": [
+                "(I) It has been hypothesised that the rise in mobile phone usage replaced smoking among teenagers.",
+                "(II) Nevertheless researchers could not find any connection between these two subjects.",
+                "(III) Mobile phones were once reserved for the very wealthy.",
+                "(IV) In fact, it has been found that teenagers who use their phones regularly were more likely to be daily smokers.",
+                "(V) Also, the theory that the pay for phone cards competes with cigarettes has been proved to be incorrect."
+            ],
+            "question": "(I) It has been hypothesised that the rise in mobile phone usage replaced smoking among teenagers. (II) Nevertheless researchers could not find any connection between these two subjects. (III) Mobile phones were once reserved for the very wealthy. (IV) In fact, it has been found that teenagers who use their phones regularly were more likely to be daily smokers. (V) Also, the theory that the pay for phone cards competes with cigarettes has been proved to be incorrect.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -536,526 +631,6 @@
                 "E": "V"
             },
             "correct": "C"
-        },
-        {
-            "id": 42,
-            "test": 3,
-            "question": "(I) Vampires in folklore are animated corpses. (II) Probably the most famous vampire in literature is Count Dracula in the novel Dracula by Bram Stoker. (III) They are said to suck the blood of humans. (IV) Vampires are often described as having a variety of additional powers and character traits. (V) Belief in vampires has existed from the earliest times and has given rise to legends and superstitions.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 43,
-            "test": 3,
-            "question": "(I) Many medicinal claims have been made for yoghurt throughout the ages. (II) It has been claimed as a cure for everything from insomnia to yeast infections, as a cancer preventive and a life-extender. (III) It is the fermentation of milk sugar into lactic acid that gives yoghurt its gel-like texture. (IV) Whether or not it can extend life, it is unarguable that low-fat or non-fat yoghurt is nutritious. (V) It is an excellent source of calcium and protein.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 44,
-            "test": 3,
-            "question": "(I) Plants not only add beauty to a room, but also make it a friendly, inviting place to live or work. (II) People feel relaxed when they are near to living plants. (III) They symbolize friendship and appear to have a calming effect on most people. (IV) If they do not get sunlight, they can't produce chlorophyll and they will lose their green colour and eventually die. (V) This perhaps explains why plants play such an important role in human events such as weddings, funerals, holidays and hospital stays.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 45,
-            "test": 3,
-            "question": "(I) Visits to the summit of Etna can be very dangerous. (II) This is not only so when eruptions occur at or near the summit. (III) Etna is a surprisingly large mountain. (IV) That's why people can easily lose orientation. (V) Since 1999, four people have been killed by lightning in the higher areas of Etna.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 46,
-            "test": 3,
-            "question": "(I) The birth of rafting doubtlessly began when man first grasped a branch floating on a river. (II) Today, rafting is a popular sport in the Western world. (III) This sport is practiced in rapid rivers with 4 to 12 people on inflated boats. (IV) The only protection the sportsmen had in this struggle against nature was life vests and helmets. (V) Arriving at the goal is the ultimate fulfilment after struggling against the wild current of a river despite all difficulties.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 47,
-            "test": 3,
-            "question": "(I) In humans, the heart and the stomach are on the left, while the appendix is on the right. (II) Externally, humans and all other vertebrates have bilateral symmetry. (III) This means that their left side is a mirror image of their right. (IV) However internally, vertebrates are not symmetric. (V) There are differences in the internal organs on the left and right sides of the body.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 48,
-            "test": 3,
-            "question": "(I) Many years ago on her 21st birthday Princess Elizabeth proclaimed that she would spend her life devoted to public service. (II) And true to her word, she has spent her long life serving her people. (III) Her personal fortune is estimated to be about $720 million. (IV) She has been awarded numerous international awards. (V) She is also a patron of more than 620 charities and organizations.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 49,
-            "test": 3,
-            "question": "(I) Venice experiences many floods throughout the year. (II) One of the reasons is that the water from the ocean comes through to the city. (III) Since the streets are very low, the water fills the houses. (IV) The classical Venetian boat is the gondola, although it is now mostly used for tourists, or for weddings. (V) When it rains the water rises and it goes into people's homes.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 50,
-            "test": 3,
-            "question": "(I) In 1963, the news of J. F. Kennedy's death by assassination shocked the world. (II) In cities around the world, people wept openly. (III) The presidential motorcade travelled nearly its entire route without incident. (IV) People clustered in department stores to catch TV coverage, and others prayed. (V) Motor traffic in some areas came to a halt as the news of Kennedy's death spread literally from car to car.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 51,
-            "test": 3,
-            "question": "(I) In Britain, Christmas Day is normally spent at home, with the family. (II) It is regarded as a celebration of the family and its continuity. (III) In 1834, Christmas Day became one of only four days on which banks closed. (IV) Preparations start well in advance, with the decoration of a Christmas tree in a prominent place in the home. (V) Presents are bought and wrapped, and traditionally placed under the Christmas tree.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 52,
-            "test": 3,
-            "question": "(I) Pesticides are chemicals that kill pests. (II) People use them to kill harmful insects, weeds, and animals like mice and rats. (III) Thanks to pesticides, some insect-related diseases like malaria have been nearly wiped out. (IV) As a result, crops have been saved from destruction. (V) Some researchers think that hundreds of thousands of farm workers suffer from pesticide poisoning every year.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 53,
-            "test": 3,
-            "question": "(I) Some people have no difficulty in remembering several dreams nightly. (II) Further, stopping certain medications suddenly may cause nightmares. (III) Others, on the other hand, recall dreams only occasionally or not at all. (IV) Nearly everything that happens during sleep is forgotten by morning. (V) There is something about the phenomenon of sleep itself which makes it difficult to remember what has occurred and most dreams are forgotten unless they are written down.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 54,
-            "test": 3,
-            "question": "(I) Before the advent of alarm clocks, many farmers woke up hearing the rooster crowing, announcing the arrival of morning. (II) They milked their cows, worked in the farm and went into bed at night. (III) Modern lifestyle differs significantly from these early days. (IV) There was no electricity. (V) So, daylight announced the initiation and termination of many activities.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 55,
-            "test": 3,
-            "question": "(I) Each Sumerian city-state had a distinct social hierarchy, or system of ranks. (II) They also developed trade based on small handicraft industries such as metalwork, leather goods, and pottery. (III) The highest class included the ruling family, leading officials, and high priests. (IV) A small middle class was made up of merchants, artisans, and lesser priests and scribes. (V) At the base of society were the slaves and common labourers.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 56,
-            "test": 3,
-            "question": "(I) In the fall of 1918, soldiers returning to Canada from the Great War brought with them an airborne killer, the Spanish Influenza Epidemic. (II) It killed over 50,000 people in Canada. (III) The chills, aches and fever of the flu are a painful ritual with which all Canadians are familiar. (IV) The greatest effects were felt between 1918 and 1919. (V) However, virulent cases of the flu continued well into the 1920s.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 57,
-            "test": 3,
-            "question": "(I) Just as the glass in a greenhouse holds the sun's warmth inside, so the atmosphere traps the sun's heat near the Earth's surface and keeps the Earth warm. (II) Tiny quantities of greenhouse gases in the atmosphere trap the sun's heat, warming land, air and water. (III) We call this the natural greenhouse effect. (IV) If it were not for the natural greenhouse effect, the Earth would be like the moon, too cold to support life. (V) The glass panels of the greenhouse let in light but keep heat from escaping.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 58,
-            "test": 3,
-            "question": "(I) The ancient Egyptians mummified reptiles and animals such as dogs, apes and bulls. (II) However, one of the most common animal mummies in Egypt was the cat. (III) Cats were believed to represent the goddess Bastet. (IV) Mummies come in all shapes and sizes and species. (V) When they died, they were mummified and buried in huge cemeteries, often in large communal graves.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 59,
-            "test": 3,
-            "question": "(I) The records of ancient people covering wounds in honey go back to ancient India and Egypt. (II) Honey could help to treat wounds that refuse to heal. (III) Like other sweeteners, honey can cause blood sugar problems. (IV) It was generally believed that honey's syrupy consistency kept air out of wounds, and that its high sugar content slowed bacterial growth. (V) But recent research shows that honey must also have other properties that kill bacteria.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 60,
-            "test": 3,
-            "question": "(I) Until recently, researchers knew that laughing was good for us, but they didn't really understand how. (II) Laughing at somebody is considered to be ridiculing the individual. (III) New evidence points to changes in the brain as the source for laughter. (IV) Researchers found that when people laugh, a part of the brain's reward system is triggered. (V) In this reward system, a person feels pleasure and wants to have the same pleasant feelings over and over again.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 61,
-            "test": 4,
-            "question": "(I) You carry millions of microbes on your hands. (II) There are many alcohol-based products made for washing hands. (III) Most are harmless, but you can pick up some that cause illnesses. (IV) Therefore, washing our hands is a crucial part of our everyday life. (V) It not only protects our health it also protects the health of others.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 62,
-            "test": 4,
-            "question": "(I) The Maya civilization was one of the grandest in the history of the world. (II) Their ritual calendar was composed of only 260 days. (III) They occupied a vast geographic area in Central and South America until 1500 AD. (IV) The Maya civilization was extremely advanced in mathematics and archaeology. (V) They built awe-inspiring temples, pyramids and cities.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 63,
-            "test": 4,
-            "question": "(I) Some types of birds, like eagles, are in danger of extinction. (II) In fact, their numbers are decreasing so rapidly that they are in danger of being extinct. (III) Many concerned citizens have organized into groups to try to save these birds. (IV) The rise in the number of Eagles indicates that they were successful in saving them. (V) For example, their nesting places have been destroyed.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 64,
-            "test": 4,
-            "question": "(I) Based on years of research into human variation, many anthropologists now reject race as a biological concept. (II) Minorities also often face barriers in education and employment. (III) However, the idea that people belong to different races remains deeply embedded in many societies. (IV) People continue to classify themselves and others as members of particular races. (V) More importantly, race continues to define how many people think about and behave toward one another.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 65,
-            "test": 4,
-            "question": "(I) Conjoined twins, known as Siamese twins, have intrigued people for centuries. (II) As surgical techniques improve, more of these rare children can be separated. (III) Nonetheless, these operations carry high risks. (IV) Conjoined twins are twins whose bodies are joined together at birth. (V) Unfortunately, they can sometimes mean the death of one or even both.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 66,
-            "test": 4,
-            "question": "(I) Despite what most people believe, gold was not first discovered in California. (II) The discovery of gold in California in 1848 prompted thousands of Americans to leave their homes. (III) They all wanted to become rich. (IV) Before gold was discovered in California in 1848, very few Americans had ever seen California. (V) In 1849 alone over 80,000 people left for California to seek a quick and easy fortune.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 67,
-            "test": 4,
-            "question": "(I) Human trafficking is modern-day slavery. (II) It is the third largest and fastest growing criminal industry in the world. (III) Women form the majority of trafficking victims. (IV) Unlike human trafficking, smuggling may take many forms. (V) Nonetheless, men are also at risk of being trafficked for unskilled work.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 68,
-            "test": 4,
-            "question": "(I) Champagne was and is still an agriculturally rich region north and east of Paris. (II) Champagne has launched thousands of ships, toasted billions of weddings and special occasions. (III) Champagne is the wine of celebration. (IV) No other wine is so associated with joy and festivity than Champagne. (V) Its meaning and appeal are universal.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 69,
-            "test": 4,
-            "question": "(I) The grey African parrot named Nikiski is a real scientific sensation. (II) Nikiski is one of the most advanced users of human language in the animal world. (III) Its vocabulary consists of 950 words. (IV) It has also the ability to use the right grammar forms of verbs. (V) Parrots are generally known for their ability to mimic sounds.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 70,
-            "test": 4,
-            "question": "(I) IQ testing is a method to measure what is generally considered intelligence. (II) Originally, IQ was used to detect children of lower intelligence. (III) Today IQ testing is used not primarily for children, but for adults. (IV) An IQ test can be very useful in picking up on a child's likely learning style. (V) They are common during job applications.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 71,
-            "test": 4,
-            "question": "(I) Everyone likes a clean home. (II) It is not the easiest way to remove dust and dirt from delicate surfaces. (III) So we often make a cocktail of hazardous substances to make our floors shine. (IV) But unfortunately we forget that they contain bleach and other corrosives. (V) These substances not only pollute the groundwater but also severely damage our health.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 72,
-            "test": 4,
-            "question": "(I) The 19th century Sweden saw a significant population increase. (II) Consequently many people found themselves unemployed. (III) Unemployment resulted in poverty and massive emigration. (IV) It is believed that between 1850 and 1910 more than one million Swedes moved to the United States alone. (V) Its neutrality during World War II has been disputed.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 73,
-            "test": 4,
-            "question": "(I) Generally speaking, pygmy can refer to any human or animal of unusually small size. (II) They lived outside the money economy and survived by bartering their labour. (III) In anthropology, Pygmies are hunter-gatherer people living in equatorial rainforests. (IV) Their characteristic is their short height, which is below 1.5 meters. (V) The reason for their short size is the reduced levels of certain growth factors.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 74,
-            "test": 4,
-            "question": "(I) Pope John Paul II reigned as pope of the Roman Catholic Church for almost 27 years until his death. (II) He was the first non-Italian pope since the 16th century. (III) During his reign, the pope travelled extensively, visiting over 100 countries, more than any of his predecessors. (IV) Even in 1992 as he was diagnosed with Parkinson disease, he continued with his travels. (V) He maintained an impressive physical condition throughout the 1980s.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
-        },
-        {
-            "id": 75,
-            "test": 4,
-            "question": "(I) The Golden Gate Bridge has been called one of the world's most beautiful bridges. (II) It is also one of the most visited places in the world. (III) Experts say about nine million people visit the bridge each year. (IV) Bridges are notorious for committing suicide. (V) They say more than one thousand million vehicles have used the bridge since it opened almost seventy years ago.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 76,
-            "test": 4,
-            "question": "(I) Film festivals, such as the Cannes Film Festival, involve showing many films over a short period of time. (II) It is a competition of sorts between all the different films produced in a given year in a country or within a certain genre. (III) This year's Oscar Awards were given in March. (IV) Such an event doesn't only include full-length feature films. (V) It may also be two and three minute pieces and documentaries.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 77,
-            "test": 4,
-            "question": "(I) A transit of Venus across the Sun takes place when Venus passes directly between the Sun and the Earth. (II) Astrology helped scientists measure the distance between the Sun and the Earth. (III) During a transit, Venus can be seen from the Earth as a small black disc moving across the face of the Sun. (IV) Transits of Venus are the rarest of all astronomical phenomena. (V) They occur in a pattern that repeats every 243 years.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 78,
-            "test": 4,
-            "question": "(I) In many cultures ear piercing became a relative rarity from the 1920s until the 1960s. (II) Some people choose to be pierced for symbolic reasons. (III) At that time, it regained popularity among women. (IV) A few years later it was also adopted by men in some communities. (V) Today, ear piercing is extremely common among women, and men.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 79,
-            "test": 4,
-            "question": "(I) Throughout the 18th century pianos were financially beyond the reach of most families. (II) They were generally the property of the gentry and the aristocracy. (III) Many parents still feel today that piano lessons teach their children concentration and self-discipline. (IV) Visiting music masters taught their children, more often the girls, to play the piano. (V) It was thought that ability to play the piano made young women more marriageable.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 80,
-            "test": 4,
-            "question": "(I) The term narcissism comes from the figure of Narcissus in Greek mythology. (II) We are all narcissistic at an early stage of our lives. (III) Narcissus was a handsome man who rejected the desperate love of the nymph Echo. (IV) As a punishment, he was cursed to fall in love with his own reflection. (V) He was so transfixed by his reflection that he couldn't move and therefore faded away.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 81,
-            "test": 4,
-            "question": "(I) Worn by dancers, leg warmers are functional pieces of clothing used to keep the lower legs warm. (II) In the early 1980s however, they became popular with teenage girls as everyday clothing. (III) Their popularity was partly due to the influence of the film Flashdance. (IV) However, they had retreated back into relative obscurity by 1989. (V) They are very flexible and comfortable.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "E"
         }
     ]
 }

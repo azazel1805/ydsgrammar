@@ -154,7 +154,16 @@ function renderMiniQuestion() {
 
     document.getElementById("miniScore").innerText = miniScore;
 
-    document.getElementById("miniQuestion").innerText = q.question;
+    const questionEl = document.getElementById("miniQuestion");
+
+    // If question has a paragraf array → render sentences line by line
+    if (q.paragraf && Array.isArray(q.paragraf)) {
+        questionEl.innerHTML = q.paragraf.map(sentence =>
+            `<div class="py-1 border-b border-slate-100 last:border-0 leading-relaxed">${sentence}</div>`
+        ).join("");
+    } else {
+        questionEl.innerText = q.question;
+    }
 
     const optionsBox = document.getElementById("miniOptions");
     optionsBox.innerHTML = "";
