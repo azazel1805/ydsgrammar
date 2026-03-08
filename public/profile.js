@@ -361,7 +361,7 @@ async function renderNotes() {
  ========================================= */
 
 function unlockAnalyzerUI() {
-    document.querySelectorAll('[id*="analyzerNavBtn"], [id*="analyzerMobileBtn"], [id*="tab-analyzer"], [id*="testlabNavBtn"], [id*="testlabMobileBtn"], [id*="restatementNavBtn"], [id*="restatementMobileBtn"], [id*="tab-restatement"]')
+    document.querySelectorAll('[id*="analyzerNavBtn"], [id*="analyzerMobileBtn"], [id*="tab-analyzer"], [id*="testlabNavBtn"], [id*="testlabMobileBtn"], [id*="restatementNavBtn"], [id*="restatementMobileBtn"], [id*="tab-restatement"], [id*="paragraphNavBtn"], [id*="paragraphMobileBtn"], [id*="tab-paragraph"]')
         .forEach(el => el.classList.remove("hidden"));
 
     document.getElementById("aiToolsLockedMsg")?.classList.add("hidden");
