@@ -162,6 +162,21 @@ const dashboardHTML = `
   <div id="dashNotes" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
  </div>
 
+ <!-- FOOTER BANNER -->
+ <div class="flex flex-col md:flex-row items-center justify-center gap-4 py-8 border-t border-slate-100 opacity-40 hover:opacity-100 transition-opacity">
+    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+        <i class="fas fa-robot text-slate-300"></i>
+        <span>Powered by</span>
+        <span class="text-slate-900">ChatGPT</span>
+    </div>
+    <div class="hidden md:block w-px h-3 bg-slate-200"></div>
+    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+        <i class="fas fa-feather-alt text-slate-300"></i>
+        <span>Made with</span>
+        <span class="text-red-700">Anti Gravity</span>
+    </div>
+ </div>
+
 </div>
 
 <style>
