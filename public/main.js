@@ -240,6 +240,18 @@ window.switchTab = function (tabName) {
         }
     }
 
+    const protectedTabs = ['profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary'];
+
+    if (protectedTabs.includes(tabName) && !window.currentUser) {
+        console.warn("Protected tab accessed without login:", tabName);
+        if (typeof window.openLoginModal === "function") {
+            window.openLoginModal();
+        } else {
+            alert("This feature is for registered users only. Please sign in.");
+        }
+        return; // Halt tab switch
+    }
+
     document.querySelectorAll('.tab-btn, .drawer-btn').forEach(btn => {
         if (btn.dataset.tab === tabName) {
             btn.classList.add('active');
@@ -563,6 +575,48 @@ window.toggleModalTactics = function () {
 
     if (content) content.classList.toggle("hidden");
     if (icon) icon.innerText = icon.innerText === "▼" ? "▲" : "▼";
+};
+
+/* ==========================================
+ LOCK / UNLOCK AI TOOLS UI
+========================================== */
+
+window.lockAnalyzerUI = function () {
+    const lockMsgDesktop = document.getElementById("aiToolsLockedMsg");
+    const lockMsgMobile = document.getElementById("aiToolsLockedMobile");
+
+    if (lockMsgDesktop) lockMsgDesktop.classList.remove("hidden");
+    if (lockMsgMobile) lockMsgMobile.classList.remove("hidden");
+
+    // Hide actual nav buttons
+    const navButtons = [
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn"
+    ];
+
+    navButtons.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add("hidden");
+    });
+};
+
+window.unlockAnalyzerUI = function () {
+    const lockMsgDesktop = document.getElementById("aiToolsLockedMsg");
+    const lockMsgMobile = document.getElementById("aiToolsLockedMobile");
+
+    if (lockMsgDesktop) lockMsgDesktop.classList.add("hidden");
+    if (lockMsgMobile) lockMsgMobile.classList.add("hidden");
+
+    // Show actual nav buttons
+    const navButtons = [
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn"
+    ];
+
+    navButtons.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.remove("hidden");
+    });
 };
 
 

@@ -219,9 +219,7 @@ onAuthStateChanged(auth, (user) => {
   }
 
   if (user) {
-
     window.currentUser = user;
-
     if (loginPage) loginPage.classList.add("hidden");
     if (appWrapper) appWrapper.classList.remove("hidden");
 
@@ -229,22 +227,19 @@ onAuthStateChanged(auth, (user) => {
       renderNotesDashboard();
     }
 
-    // AI TOOLS ACCESS CONTROL (Admin: onurtosuner@gmail.com)
     if (user.email === "onurtosuner@gmail.com") {
       localStorage.setItem("analyzer_access", "true");
       if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
     } else {
-      // FORCE LOCK for everyone else (requested "only for me")
       if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
     }
-
   } else {
-
     window.currentUser = null;
     if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
 
-    if (loginPage) loginPage.classList.remove("hidden");
-    if (appWrapper) appWrapper.classList.add("hidden");
+    // Always show app for statics
+    if (appWrapper) appWrapper.classList.remove("hidden");
+    // Only show login on load if we wanted it forced, but we want public now
   }
 
   if (typeof window.forceProfileRender === "function") {
@@ -257,42 +252,19 @@ onAuthStateChanged(auth, (user) => {
    LOGIN BUTTON BIND
 ========================================= */
 
-window.addEventListener("DOMContentLoaded", () => {
-
-  const loginBtn = document.getElementById("loginBtn");
-  const registerBtn = document.getElementById("registerBtn");
-
-  if (loginBtn) {
-    loginBtn.addEventListener("click", async () => {
-
-      const email = document.getElementById("emailInput").value.trim();
-      const password = document.getElementById("passwordInput").value.trim();
-
-      if (!email || !password) {
-        alert("Enter email & password");
-        return;
-      }
-
-      await loginUser(email, password);
-    });
+window.openLoginModal = function () {
+  const loginPage = document.getElementById("loginPage");
+  if (loginPage) {
+    loginPage.classList.remove("hidden");
+    loginPage.classList.add("fixed", "inset-0", "z-[300]"); // Ensure it's on top
   }
+};
 
-  if (registerBtn) {
-    registerBtn.addEventListener("click", async () => {
+window.closeLoginModal = function () {
+  const loginPage = document.getElementById("loginPage");
+  if (loginPage) loginPage.classList.add("hidden");
+};
 
-      const email = document.getElementById("emailInput").value.trim();
-      const password = document.getElementById("passwordInput").value.trim();
-
-      if (!email || !password) {
-        alert("Enter email & password");
-        return;
-      }
-
-      await registerUser(email, password);
-    });
-  }
-
-});
 
 
 /* =========================================
