@@ -234,6 +234,17 @@ window.switchTab = function (tabName) {
         history.replaceState(null, null, "#" + tabName);
     }
 
+    // Call dynamic SEO update
+    updateSEO(tabName);
+
+    // Send page view to GA if it exists
+    if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_path: window.location.hash
+        });
+    }
+
     if (tabName === "dashboard") {
         setTimeout(loadQuizData, 500);
     }
@@ -279,10 +290,42 @@ function reinjectTabContent(tabName) {
         "tacticguide": typeof tacticGuideHTML !== 'undefined' ? tacticGuideHTML : null
     };
 
-    const content = mappings[tabName];
     if (content) {
         const el = document.getElementById('tab-' + tabName);
         if (el) el.innerHTML = content;
+    }
+}
+
+/* ==========================================
+ DYNAMIC SEO & HEADERS
+========================================== */
+
+function updateSEO(tab) {
+    const seoMap = {
+        "dashboard": { title: "Dashboard – YDS & YDT İlerleme Takibi", desc: "Kendi YDS gelişiminizi takip edin, başarı istatistiklerinizi görün." },
+        "tacticguide": { title: "YDS & YDT Taktik Rehberi – Sınav Stratejileri", desc: "YDS sınavında hız kazandıracak, net artıracak gizli taktikler ve ipuçları." },
+        "modals": { title: "Modals (Kipler) Rehberi – YDS Gramer Konuları", desc: "Kan, could, must gibi kiplerin YDS'de en çok çıkan kullanım alanları." },
+        "conjunctions": { title: "Bağlaçlar (Conjunctions) – YDS En Kapsamlı Liste", desc: "Zıtlık, sebep-sonuç ve ekleme bağlaçlarının tam listesi ve çevirileri." },
+        "reading": { title: "YDS Reading (Okuma) Çalışmaları ve Çeviriler", desc: "Güncel akademik makaleler ve detaylı cümle analizli okuma parçaları." },
+        "vocabulary": { title: "YDS Kelime Ezberleme ve Listeler", desc: "Sınavda en sık sorulan 1000+ kelime ve ezberleme kartları." },
+        "forum": { title: "YDS Forum – Soru Sor & Cevap Al", desc: "Takıldığın soruları sor, diğer öğrencilerle yardımlaş." },
+        "prepositions": { title: "Prepositions (Edatlar) – YDS Çıkmış Listeler", desc: "YDS'de en çok kafa karıştıran edatlar ve fiil-edat öbekleri." },
+        "passive": { title: "Passive Voice (Edilgen Yapı) – YDS Gramer", desc: "Edilgen yapıların sınavdaki fonksiyonları ve çeviri teknikleri." },
+        "relative": { title: "Relative Clauses – YDS Sıfat Cümlecikleri", desc: "Who, which, that gibi yapıların karmaşık cümlelerdeki tespiti." },
+        "profile": { title: "Profilim – YDS İstatistiklerim", desc: "Kaydettiğiniz kelimeler ve kişisel çalışma verileriniz." },
+        "miniexams": { title: "Mini Denemeler – YDS Konu Quizleri", desc: "Konu konu ayrılmış 10 soruluk hızlı YDS mini denemeleri." },
+        "fullexam": { title: "Full Deneme Sınavları – YDS / YDT Denemeler", desc: "Sınav formatında, süreli ve cevap açıklamalı full YDS denemeleri." },
+        "tenseguide": { title: "Tense Rehberi – Zamanlar ve Kullanımları", desc: "İngilizce zamanların YDS perspektifinden sadeleştirilmiş anlatımı." },
+        "ifclauses": { title: "If Clauses (Koşul Cümleleri) – YDS Rehberi", desc: "Tüm type'lar ve devrik yapılar (inversion) ile koşul cümleleri." },
+        "sentence": { title: "Sentence Corrector – Cümle Yapısı Analizi", desc: "Cümlelerdeki gramer hatalarını bulan yapay zeka destekli araç." }
+    };
+
+    const data = seoMap[tab] || { title: "yds.monster – YDS & YDT Master Encyclopedia", desc: "Kapsamlı YDS ve YDT hazırlık platformu." };
+
+    document.title = data.title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute('content', data.desc);
     }
 }
 
