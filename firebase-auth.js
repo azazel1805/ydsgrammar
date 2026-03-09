@@ -226,6 +226,15 @@ onAuthStateChanged(auth, (user) => {
     if (typeof renderDashboardNotes === "function") {
       renderDashboardNotes();
     }
+    if (typeof renderDashboardSavedWords === "function") {
+      renderDashboardSavedWords();
+    }
+    if (typeof updateGamification === "function") {
+      updateGamification();
+    }
+    if (typeof initCharts === "function") {
+      setTimeout(initCharts, 1500);
+    }
 
     const isVip = user.email === "onurtosuner@gmail.com" || localStorage.getItem("analyzer_access") === "true";
     if (isVip) {

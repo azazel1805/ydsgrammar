@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-async function updateGamification() {
+window.updateGamification = async function () {
     if (!window.currentUser || !window.getQuizHistoryFirestore) return;
 
     try {
@@ -290,7 +290,7 @@ function calculateStreak(uniqueDates) {
  CHARTS INITIALIZATION
  ========================================= */
 
-function initCharts() {
+window.initCharts = function () {
     if (typeof Chart === 'undefined') return;
 
     const textColor = '#64748b';
@@ -443,7 +443,7 @@ async function loadQuoteOfDay() {
     }
 }
 
-async function renderDashboardSavedWords() {
+window.renderDashboardSavedWords = async function () {
     if (!window.getSavedWordsFirestore) return;
     const words = await window.getSavedWordsFirestore();
     const container = document.getElementById("dashSavedWords");
@@ -463,7 +463,7 @@ async function renderDashboardSavedWords() {
     `).join("");
 }
 
-async function renderDashboardNotes() {
+window.renderDashboardNotes = async function () {
     if (!window.currentUser || !window.getNotesFirestore) return;
     const container = document.getElementById("dashNotes");
     if (!container) return;
