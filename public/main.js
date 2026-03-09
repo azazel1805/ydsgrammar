@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-profile", typeof profileHTML !== 'undefined' ? profileHTML : undefined);
     safeInject("tab-modals", typeof modalsHTML !== 'undefined' ? modalsHTML : undefined);
     safeInject("tab-prepositions", typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : undefined);
+    safeInject("tab-tenseagreement", typeof tenseAgreementHTML !== 'undefined' ? tenseAgreementHTML : undefined);
 
     safeInject("tab-conjunctions", typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : undefined);
     safeInject("tab-dictionary", typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : undefined);
@@ -249,6 +250,7 @@ function reinjectTabContent(tabName) {
         "profile": typeof profileHTML !== 'undefined' ? profileHTML : null,
         "modals": typeof modalsHTML !== 'undefined' ? modalsHTML : null,
         "prepositions": typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : null,
+        "tenseagreement": typeof tenseAgreementHTML !== 'undefined' ? tenseAgreementHTML : null,
 
         "conjunctions": typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : null,
         "dictionary": typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : null,
