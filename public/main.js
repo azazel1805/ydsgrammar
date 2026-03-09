@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-restatement", typeof restatementHTML !== 'undefined' ? restatementHTML : undefined);
     safeInject("tab-paragraph", typeof paragraphHTML !== 'undefined' ? paragraphHTML : undefined);
     safeInject("tab-textdecon", typeof textDeconHTML !== 'undefined' ? textDeconHTML : undefined);
+    safeInject("tab-analyzer", typeof analyzerHTML !== 'undefined' ? analyzerHTML : undefined);
+    safeInject("tab-testlab", typeof testlabHTML !== 'undefined' ? testlabHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
@@ -290,7 +292,9 @@ function reinjectTabContent(tabName) {
         "paragraph": typeof paragraphHTML !== 'undefined' ? paragraphHTML : null,
         "textdecon": typeof textDeconHTML !== 'undefined' ? textDeconHTML : null,
         "tacticalpanels": typeof tacticalPanelsHTML !== 'undefined' ? tacticalPanelsHTML : null,
-        "tacticguide": typeof tacticGuideHTML !== 'undefined' ? tacticGuideHTML : null
+        "tacticguide": typeof tacticGuideHTML !== 'undefined' ? tacticGuideHTML : null,
+        "analyzer": typeof analyzerHTML !== 'undefined' ? analyzerHTML : null,
+        "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null
     };
 
     const content = mappings[tabName];

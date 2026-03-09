@@ -3,12 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initAnalyzer();
 });
 
-function injectAnalyzerHTML() {
-
-    const container = document.getElementById("tab-analyzer");
-    if (!container) return;
-
-    container.innerHTML = `
+const analyzerHTML = `
 <div class="max-w-5xl mx-auto p-8 space-y-8">
 
  <h2 class="text-4xl font-bold text-center text-red-800 mb-2" style="font-family: 'Playfair Display', serif;">
@@ -45,6 +40,11 @@ function injectAnalyzerHTML() {
 
 </div>
 `;
+
+function injectAnalyzerHTML() {
+    const container = document.getElementById("tab-analyzer");
+    if (!container) return;
+    container.innerHTML = analyzerHTML;
 }
 
 function initAnalyzer() {

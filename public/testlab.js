@@ -6,11 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injectVisualizerHTML();
 });
 
-function injectVisualizerHTML() {
-    const container = document.getElementById("tab-testlab");
-    if (!container) return;
-
-    container.innerHTML = `
+const testlabHTML = `
 <div class="max-w-4xl mx-auto p-8 space-y-8">
 
  <h2 class="text-4xl font-bold text-center text-red-800 mb-2" style="font-family: 'Playfair Display', serif;">
@@ -38,6 +34,11 @@ function injectVisualizerHTML() {
 
  </div>
  `;
+
+function injectVisualizerHTML() {
+    const container = document.getElementById("tab-testlab");
+    if (!container) return;
+    container.innerHTML = testlabHTML;
 }
 
 async function analyzeSentence() {
@@ -117,8 +118,8 @@ function renderExplanations(data) {
 
     let explanationHTML = `
  <div class="p-6 bg-white 
-text-slate-900 
-border border-slate-200 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+ text-slate-900 
+ border border-slate-200 rounded-2xl border border-slate-200 shadow-sm space-y-4">
  <h3 class="text-xl font-semibold text-slate-800">
  Öğe Açıklamaları
  </h3>

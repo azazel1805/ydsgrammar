@@ -3,11 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initRestatement();
 });
 
-function injectRestatementHTML() {
-    const container = document.getElementById("tab-restatement");
-    if (!container) return;
-
-    container.innerHTML = `
+const restatementHTML = `
 <div class="max-w-4xl mx-auto p-8 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
     <!-- Header -->
     <div class="text-center space-y-2">
@@ -45,6 +41,11 @@ function injectRestatementHTML() {
 .animate-in { animation: slide-in-bottom 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 </style>
 `;
+
+function injectRestatementHTML() {
+    const container = document.getElementById("tab-restatement");
+    if (!container) return;
+    container.innerHTML = restatementHTML;
 }
 
 function initRestatement() {
