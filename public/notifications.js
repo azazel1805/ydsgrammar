@@ -17,9 +17,10 @@ function initNotifications() {
 function startNotificationListener() {
     const { onSnapshot, collection, query, orderBy, db, where } = window.firebaseExports;
 
-    // Listen to notifications for current user
+    // Listen to notifications for current user in global collection
     const q = query(
-        collection(db, "users", window.currentUser.uid, "notifications"),
+        collection(db, "notifications"),
+        where("targetUserId", "==", window.currentUser.uid),
         orderBy("createdAt", "desc")
     );
 
@@ -83,7 +84,7 @@ window.markAllAsRead = async function () {
     const unread = notifications.filter(n => !n.read);
 
     for (const n of unread) {
-        await updateDoc(doc(db, "users", window.currentUser.uid, "notifications", n.id), {
+        await updateDoc(doc(db, "notifications", n.id), {
             read: true
         });
     }
@@ -93,7 +94,7 @@ window.handleClickNotification = async function (id, link) {
     const { doc, updateDoc, db } = window.firebaseExports;
 
     // Mark as read
-    await updateDoc(doc(db, "users", window.currentUser.uid, "notifications", id), {
+    await updateDoc(doc(db, "notifications", id), {
         read: true
     });
 
@@ -114,8 +115,9 @@ window.handleClickNotification = async function (id, link) {
 window.createNotification = async function (targetUserId, notifData) {
     const { addDoc, collection, serverTimestamp, db } = window.firebaseExports;
 
-    await addDoc(collection(db, "users", targetUserId, "notifications"), {
+    await addDoc(collection(db, "notifications"), {
         ...notifData,
+        targetUserId: targetUserId,
         read: false,
         createdAt: serverTimestamp()
     });
