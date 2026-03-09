@@ -107,14 +107,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Hash check for deep links
+    // Deep link check (Both Hash and Pathname for SEO friendliness)
     const currentHash = window.location.hash.replace('#', '');
+    const currentPath = window.location.pathname.replace(/^\/|\/$/g, '');
+
+    const pathMap = {
+        'passive-voice': 'passive',
+        'noun-clauses': 'noun',
+        'modals': 'modals',
+        'prepositions': 'prepositions',
+        'yds-vocabulary': 'vocabulary'
+    };
+
     if (currentHash) {
-        setTimeout(() => {
-            switchTab(currentHash);
-        }, 1200); // Small delay to ensure all JS objects (profile, quiz etc) are loaded
+        setTimeout(() => switchTab(currentHash), 1200);
+    } else if (currentPath && pathMap[currentPath]) {
+        setTimeout(() => switchTab(pathMap[currentPath]), 1200);
+    } else if (currentPath && document.getElementById('tab-' + currentPath)) {
+        setTimeout(() => switchTab(currentPath), 1200);
     } else {
-        // Default to dashboard if no hash
+        // Default to dashboard
         switchTab('dashboard');
     }
 });
