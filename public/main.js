@@ -111,6 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             switchTab(currentHash);
         }, 1200); // Small delay to ensure all JS objects (profile, quiz etc) are loaded
+    } else {
+        // Default to dashboard if no hash
+        switchTab('dashboard');
     }
 });
 
@@ -290,6 +293,7 @@ function reinjectTabContent(tabName) {
         "tacticguide": typeof tacticGuideHTML !== 'undefined' ? tacticGuideHTML : null
     };
 
+    const content = mappings[tabName];
     if (content) {
         const el = document.getElementById('tab-' + tabName);
         if (el) el.innerHTML = content;
