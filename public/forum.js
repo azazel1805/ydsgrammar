@@ -307,12 +307,28 @@ async function submitComment(postId) {
             createdAt: serverTimestamp()
         });
 
-        // Update comment count (Try but don't fail if permissions block this specific update)
+        // Update comment count
         try {
             const postRef = doc(db, "forum_posts", postId);
-            await updateDoc(postRef, {
-                commentCount: increment ? increment(1) : 1
-            });
+            const postDoc = await getDoc(postRef);
+            const postData = postDoc.exists() ? postDoc.data() : null;
+
+            if (postData) {
+                await updateDoc(postRef, {
+                    commentCount: increment ? increment(1) : (postData.commentCount || 0) + 1
+                });
+
+                // NOTIFY THE AUTHOR (If not notifying themselves)
+                if (postData.authorId && postData.authorId !== window.currentUser.uid && typeof window.createNotification === "function") {
+                    await window.createNotification(postData.authorId, {
+                        title: "Yorum Bildirimi",
+                        message: `"${postData.title}" sorunuza ${window.currentUser.displayName || 'bir kullanıcı'} yorum yaptı.`,
+                        type: "forum_reply",
+                        link: `forum/${postId}`,
+                        read: false
+                    });
+                }
+            }
         } catch (counterErr) {
             console.warn("Counter update failed, but comment was saved:", counterErr);
         }
