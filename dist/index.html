@@ -37,8 +37,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="./assets/index-CmA_PE8h.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CLXrdyG5.css">
+  <script type="module" crossorigin src="./assets/index-CD7swdlL.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CoESWfoH.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -236,6 +236,9 @@
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Noun
               Clauses</button>
             <div class="border-t border-gray-100 my-1"></div>
+            <button data-tab="tenseagreement" onclick="switchTab('tenseagreement')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Tense
+              Uyumu</button>
             <button data-tab="tenseguide" onclick="switchTab('tenseguide')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Tense
               Rehberi</button>
@@ -348,6 +351,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               Clause</button>
             <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause</button>
             <div class="border-t border-gray-100 my-1"></div>
+            <button data-tab="tenseagreement" onclick="switchTabAndClose('tenseagreement')" class="drawer-btn">Tense
+              Uyumu</button>
             <button data-tab="tenseguide" onclick="switchTabAndClose('tenseguide')" class="drawer-btn">Tense
               Rehberi</button>
             <button data-tab="ifclauses" onclick="switchTabAndClose('ifclauses')" class="drawer-btn">If Clauses
@@ -406,6 +411,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-fullexam" class="tab-content"></div>
       <div id="tab-tacticguide" class="tab-content"></div>
       <div id="tab-tenseguide" class="tab-content"></div>
+      <div id="tab-tenseagreement" class="tab-content"></div>
       <div id="tab-ifclauses" class="tab-content"></div>
       <div id="tab-reportedspeech" class="tab-content"></div>
       <div id="tab-gerunds" class="tab-content"></div>
@@ -502,6 +508,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./fullexam.js"></script>
     <script src="./tacticguide.js"></script>
     <script src="./tenseguide.js"></script>
+    <script src="./tenseagreement.js"></script>
     <script src="./ifclauses.js"></script>
     <script src="./reportedspeech.js"></script>
     <script src="./gerunds.js"></script>
