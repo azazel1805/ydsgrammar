@@ -104,6 +104,14 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.style.overflow = "auto";
         });
     }
+
+    // Hash check for deep links
+    const currentHash = window.location.hash.replace('#', '');
+    if (currentHash) {
+        setTimeout(() => {
+            switchTab(currentHash);
+        }, 1200); // Small delay to ensure all JS objects (profile, quiz etc) are loaded
+    }
 });
 
 /* ==========================================
@@ -220,6 +228,11 @@ window.switchTab = function (tabName) {
             btn.classList.add('active');
         }
     });
+
+    // Update URL hash without scrolling
+    if (window.location.hash !== "#" + tabName) {
+        history.replaceState(null, null, "#" + tabName);
+    }
 
     if (tabName === "dashboard") {
         setTimeout(loadQuizData, 500);
