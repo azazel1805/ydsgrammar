@@ -163,6 +163,40 @@ const tenseAgreementHTML = `
     </div>
   </div>
 
+  <!-- QUIZ PRACTICE EXAMPLES (Hidden or visible, for the scraper) -->
+  <div class="mb-16">
+    <div class="flex items-center gap-4 border-b-2 border-slate-100 pb-4 mb-6">
+      <i class="fas fa-edit text-indigo-500 text-2xl"></i>
+      <h2 class="text-3xl font-bold text-slate-800" style="font-family:'Playfair Display',serif;">Quiz Hazırlık Örnekleri</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "I <span class="font-bold">knew</span> that he <span class="font-bold">had been working</span> there for years."
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "By the time the firemen <span class="font-bold">arrived</span>, the house <span class="font-bold">had burnt</span> down."
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "She <span class="font-bold">will have finished</span> her homework by the time her father <span class="font-bold">comes</span> home."
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "He <span class="font-bold">was playing</span> computer games while his mother <span class="font-bold">was cooking</span>."
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "Since I <span class="font-bold">moved</span> to this city, I <span class="font-bold">have made</span> many friends."
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "Scientists <span class="font-bold">believe</span> that the climate <span class="font-bold">will change</span> drastically soon."
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "If they <span class="font-bold">had left</span> earlier, they <span class="font-bold">would have caught</span> the train."
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
+        "While I <span class="font-bold">was walking</span> down the street, I <span class="font-bold">saw</span> an old friend."
+      </div>
+    </div>
+  </div>
+
   <!-- CONDITIONALS PREVIEW -->
   <div class="bg-indigo-900 text-white rounded-[3rem] p-10 shadow-2xl relative overflow-hidden">
     <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/5 rounded-full"></div>
