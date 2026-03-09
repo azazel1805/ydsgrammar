@@ -108,26 +108,70 @@ document.addEventListener("DOMContentLoaded", function () {
 ========================================== */
 
 window.loadQuizData = function () {
-
     allItems = [];
 
-    document.querySelectorAll('.italic, .example-text')
-        .forEach(ex => {
-
-            let highlight = ex.querySelector(
-                '.highlight-modal, .highlight-verb, .font-bold'
-            );
-
+    // 1. Scraping from DOM (Legacy sections like Tenses, Modals in HTML)
+    document.querySelectorAll('.tab-content').forEach(tab => {
+        const topicId = tab.id.replace('tab-', '');
+        tab.querySelectorAll('.italic, .example-text').forEach(ex => {
+            let highlight = ex.querySelector('.highlight-modal, .highlight-verb, .font-bold');
             if (highlight && ex.innerText.length > 20) {
-
                 allItems.push({
+                    topic: topicId,
                     fullSentence: ex.innerText.trim(),
                     correct: highlight.innerText.trim()
                 });
             }
         });
+    });
 
-    console.log("Quiz data loaded:", allItems.length);
+    // 2. Scraping from JS Modules (New sections)
+    // --- IF CLAUSES ---
+    if (typeof IF_TYPES !== 'undefined') {
+        IF_TYPES.forEach(type => {
+            type.usages.forEach(u => {
+                u.examples.forEach(ex => {
+                    // Try to guess the "correct" part or use common patterns
+                    // In IF clauses, we often test the verb form.
+                    let sentence = ex.en;
+                    let match = sentence.match(/\b(will|would|had|was|were|if|unless)\b/i);
+                    if (match) {
+                        allItems.push({ topic: 'ifclauses', fullSentence: sentence, correct: match[0] });
+                    }
+                });
+            });
+        });
+    }
+
+    // --- ARTICLES ---
+    if (typeof ART_SECTIONS !== 'undefined') {
+        ART_SECTIONS.forEach(sec => {
+            sec.usages.forEach(u => {
+                u.examples.forEach(ex => {
+                    let match = ex.en.match(/\b(a|an|the)\b/i);
+                    if (match) {
+                        allItems.push({ topic: 'articles', fullSentence: ex.en, correct: match[0] });
+                    }
+                });
+            });
+        });
+    }
+
+    // --- GERUNDS & INF ---
+    if (typeof GI_SECTIONS !== 'undefined') {
+        GI_SECTIONS.forEach(sec => {
+            sec.usages.forEach(u => {
+                u.examples.forEach(ex => {
+                    let match = ex.en.match(/\b\w+(ing|to \w+)\b/i);
+                    if (match) {
+                        allItems.push({ topic: 'gerunds', fullSentence: ex.en, correct: match[0] });
+                    }
+                });
+            });
+        });
+    }
+
+    console.log("Quiz engine updated. Total samples:", allItems.length);
 };
 
 /* ==========================================
@@ -227,14 +271,23 @@ function resetQuizView() {
     document.getElementById('quizResult').style.display = 'none';
 }
 
-window.startQuiz = function (n) {
-
-    if (allItems.length < 5) {
-        alert("Quiz data not ready yet.");
-        return;
+window.startQuiz = function (n, topic = 'all') {
+    let pool = allItems;
+    if (topic !== 'all') {
+        pool = allItems.filter(i => i.topic === topic);
     }
 
-    quizSet = [...allItems]
+    if (pool.length < 5) {
+        if (topic !== 'all') {
+            console.warn(`Not enough items for topic ${topic}, falling back to all.`);
+            pool = allItems;
+        } else {
+            alert("Quiz data not ready yet.");
+            return;
+        }
+    }
+
+    quizSet = [...pool]
         .sort(() => 0.5 - Math.random())
         .slice(0, n);
 
