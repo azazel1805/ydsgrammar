@@ -192,7 +192,7 @@ body {
     animation: fadeIn 0.4s ease;
 }
 
-.tab-content.active {
+.tab-content.active:not(.hidden) {
     display: block;
 }
 
@@ -212,7 +212,7 @@ body {
    DRAWER BUTTON
 ============================= */
 
-.drawer-btn {
+.drawer-btn:not(.hidden) {
     display: block;
     width: 100%;
     text-align: left;
