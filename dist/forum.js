@@ -295,7 +295,7 @@ async function submitComment(postId) {
     if (!content) return;
 
     try {
-        const { addDoc, collection, serverTimestamp, db, doc, updateDoc, increment } = window.firebaseExports;
+        const { addDoc, collection, serverTimestamp, db, doc, updateDoc, increment, getDoc } = window.firebaseExports;
 
         // Add comment
         await addDoc(collection(db, "forum_posts", postId, "comments"), {
