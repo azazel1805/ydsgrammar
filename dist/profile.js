@@ -416,9 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = profileHTML;
         observeAuthForProfile();
     }
-    if (localStorage.getItem("analyzer_access") === "true") {
-        unlockAnalyzerUI();
-    }
+    // AI access check removed from here, handled centrally in firebase-auth.js
 });
 
 window.forceProfileRender = function () {
