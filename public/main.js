@@ -129,15 +129,11 @@ window.loadQuizData = function () {
     // --- IF CLAUSES ---
     if (typeof IF_TYPES !== 'undefined') {
         IF_TYPES.forEach(type => {
-            type.usages.forEach(u => {
-                u.examples.forEach(ex => {
-                    // Try to guess the "correct" part or use common patterns
-                    // In IF clauses, we often test the verb form.
+            (type.usages || []).forEach(u => {
+                (u.examples || []).forEach(ex => {
                     let sentence = ex.en;
                     let match = sentence.match(/\b(will|would|had|was|were|if|unless)\b/i);
-                    if (match) {
-                        allItems.push({ topic: 'ifclauses', fullSentence: sentence, correct: match[0] });
-                    }
+                    if (match) allItems.push({ topic: 'ifclauses', fullSentence: sentence, correct: match[0] });
                 });
             });
         });
@@ -146,26 +142,47 @@ window.loadQuizData = function () {
     // --- ARTICLES ---
     if (typeof ART_SECTIONS !== 'undefined') {
         ART_SECTIONS.forEach(sec => {
-            sec.usages.forEach(u => {
-                u.examples.forEach(ex => {
+            (sec.usages || []).forEach(u => {
+                (u.examples || []).forEach(ex => {
                     let match = ex.en.match(/\b(a|an|the)\b/i);
-                    if (match) {
-                        allItems.push({ topic: 'articles', fullSentence: ex.en, correct: match[0] });
-                    }
+                    if (match) allItems.push({ topic: 'articles', fullSentence: ex.en, correct: match[0] });
                 });
             });
         });
     }
 
-    // --- GERUNDS & INF ---
+    // --- REPORTED SPEECH ---
+    if (typeof RS_DATA !== 'undefined' && RS_DATA.types) {
+        RS_DATA.types.forEach(type => {
+            (type.usages || []).forEach(u => {
+                (u.examples || []).forEach(ex => {
+                    let match = ex.en.match(/\b(said|told|asked|suggested|promised|refused|if|whether)\b/i);
+                    if (match) allItems.push({ topic: 'reportedspeech', fullSentence: ex.en, correct: match[0] });
+                });
+            });
+        });
+    }
+
+    // --- GERUNDS & INF (Fixed structure) ---
     if (typeof GI_SECTIONS !== 'undefined') {
         GI_SECTIONS.forEach(sec => {
-            sec.usages.forEach(u => {
-                u.examples.forEach(ex => {
-                    let match = ex.en.match(/\b\w+(ing|to \w+)\b/i);
-                    if (match) {
-                        allItems.push({ topic: 'gerunds', fullSentence: ex.en, correct: match[0] });
-                    }
+            // Check direct examples
+            (sec.examples || []).forEach(ex => {
+                let match = ex.en.match(/\b\w+(ing|to \w+)\b/i);
+                if (match) allItems.push({ topic: 'gerunds', fullSentence: ex.en, correct: match[0] });
+            });
+            // Check pairs (begin/start etc)
+            (sec.pairs || []).forEach(p => {
+                [p.e1, p.e2].forEach(sent => {
+                    let match = sent.match(/\b\w+(ing|to \w+)\b/i);
+                    if (match) allItems.push({ topic: 'gerunds', fullSentence: sent, correct: match[0] });
+                });
+            });
+            // Check meaning_pairs (stop/try etc)
+            (sec.meaning_pairs || []).forEach(mp => {
+                (mp.cases || []).forEach(c => {
+                    let match = c.e.match(/\b\w+(ing|to \w+)\b/i);
+                    if (match) allItems.push({ topic: 'gerunds', fullSentence: c.e, correct: match[0] });
                 });
             });
         });
