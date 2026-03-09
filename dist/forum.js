@@ -307,30 +307,34 @@ async function submitComment(postId) {
             createdAt: serverTimestamp()
         });
 
-        // Update comment count
+        // 1. UPDATE COMMENT COUNT (Independent Try)
+        try {
+            const postRef = doc(db, "forum_posts", postId);
+            await updateDoc(postRef, {
+                commentCount: increment ? increment(1) : 1
+            });
+        } catch (counterErr) {
+            console.warn("Counter update failed, likely permissions:", counterErr);
+        }
+
+        // 2. SEND NOTIFICATION (Independent Try)
         try {
             const postRef = doc(db, "forum_posts", postId);
             const postDoc = await getDoc(postRef);
             const postData = postDoc.exists() ? postDoc.data() : null;
 
-            if (postData) {
-                await updateDoc(postRef, {
-                    commentCount: increment ? increment(1) : (postData.commentCount || 0) + 1
-                });
-
-                // NOTIFY THE AUTHOR (If not notifying themselves)
-                if (postData.authorId && postData.authorId !== window.currentUser.uid && typeof window.createNotification === "function") {
+            if (postData && postData.authorId && postData.authorId !== window.currentUser.uid) {
+                if (typeof window.createNotification === "function") {
                     await window.createNotification(postData.authorId, {
                         title: "Yorum Bildirimi",
                         message: `"${postData.title}" sorunuza ${window.currentUser.displayName || 'bir kullanıcı'} yorum yaptı.`,
                         type: "forum_reply",
-                        link: `forum/${postId}`,
-                        read: false
+                        link: `forum/${postId}`
                     });
                 }
             }
-        } catch (counterErr) {
-            console.warn("Counter update failed, but comment was saved:", counterErr);
+        } catch (notifErr) {
+            console.error("Notification failed:", notifErr);
         }
 
         input.value = "";
