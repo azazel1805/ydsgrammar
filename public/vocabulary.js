@@ -58,7 +58,7 @@ function injectVocabularyHTML() {
  bg-slate-100 
  text-slate-900 
  border border-slate-300 ">
- <option value="all">All Levels</option>
+ <option value="all">Tüm Seviyeler</option>
  <option value="A1">A1</option>
  <option value="A2">A2</option>
  <option value="B1">B1</option>
@@ -69,7 +69,7 @@ function injectVocabularyHTML() {
  <input 
  type="text"
  id="searchInput"
- placeholder="Search word..."
+ placeholder="Kelime ara..."
  class="p-2 rounded-xl flex-1
  bg-slate-100 
  text-slate-900 
@@ -85,7 +85,7 @@ function injectVocabularyHTML() {
  bg-slate-200 
  hover:bg-slate-300 
  text-slate-900 ">
- Prev
+ Geri
  </button>
 
  <span id="pageInfo"
@@ -97,7 +97,7 @@ function injectVocabularyHTML() {
  bg-slate-200 
  hover:bg-slate-300 
  text-slate-900 ">
- Next
+ İleri
  </button>
  </div>
 
@@ -213,7 +213,7 @@ function renderPage() {
     const totalPages = Math.ceil(filteredWords.length / wordsPerPage);
 
     document.getElementById("pageInfo").textContent =
-        `Page ${currentPage} / ${totalPages}`;
+        `Sayfa ${currentPage} / ${totalPages}`;
 }
 
 
@@ -439,24 +439,24 @@ async function toggleDetails(word, element) {
  </div>
 
  <div>
- <strong>Synonyms:</strong>
+ <strong>Eş Anlamlılar:</strong>
  <p>${synonyms}</p>
  </div>
 
  <div>
- <strong>Antonyms:</strong>
+ <strong>Zıt Anlamlılar:</strong>
  <p>${antonyms}</p>
  </div>
 
  <div>
- <strong>Rhymes With:</strong>
+ <strong>Rhymes With (Uyaklar):</strong>
  <p>${rhymes}</p>
  </div>
 
  <button 
  onclick="event.stopPropagation(); speakWord('${word}')"
  class="mt-4 flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-lg hover:border-red-800 hover:text-red-800 transition-colors font-semibold" style="font-family: 'Playfair Display', serif;">
- <i class="fas fa-volume-up"></i> Listen Pronunciation
+ <i class="fas fa-volume-up"></i> Telaffuzu Dinle
  </button>
 
  </div>
@@ -499,50 +499,32 @@ function handleSave(btn) {
 async function toggleSaveWord(word, level, oxford, buttonEl) {
 
     if (!window.currentUser) {
-        alert("Please login first.");
+        if (typeof window.openLoginModal === "function") window.openLoginModal();
         return;
     }
 
-    const { doc, setDoc, deleteDoc } = window.firebaseExports;
-
-    const wordRef = doc(
-        window.db,
-        "users",
-        window.currentUser.uid,
-        "savedWords",
-        word
-    );
-
     try {
-
         if (savedWordSet.has(word)) {
-
-            await deleteDoc(wordRef);
+            await window.deleteWordFirestore(word);
             savedWordSet.delete(word);
 
             buttonEl.textContent = "☆";
-            buttonEl.classList.remove("text-yellow-400");
+            buttonEl.classList.remove("text-yellow-500");
             buttonEl.classList.add("text-gray-500");
-
         } else {
-
             const data = {
-                word: word || "",
+                word: word,
                 level: level || null,
                 oxford: oxford ? Number(oxford) : null,
-                source: "vocabulary",
-                savedAt: new Date()
+                source: "vocabulary"
             };
-
-            await setDoc(wordRef, data);
-
+            await window.saveWordFirestore(data);
             savedWordSet.add(word);
 
             buttonEl.textContent = "★";
             buttonEl.classList.remove("text-gray-500");
-            buttonEl.classList.add("text-yellow-400");
+            buttonEl.classList.add("text-yellow-500");
         }
-
     } catch (err) {
         console.error("Save toggle error:", err);
     }

@@ -92,7 +92,7 @@ function renderAnalysis(data) {
         return;
     }
 
-    container.innerHTML = `
+    let renderedHtml = `
  <div class="bg-gray-50 p-6 rounded text-black space-y-6">
 
  <h3 class="text-2xl text-red-700 font-bold">
@@ -140,4 +140,14 @@ function renderAnalysis(data) {
 
  </div>
  `;
+
+    // Apply syntax term enhancements
+    if (window.SYNTAX_TERMS) {
+        Object.keys(window.SYNTAX_TERMS).forEach(term => {
+            const regex = new RegExp(`\\b${term}\\b`, 'g');
+            renderedHtml = renderedHtml.replace(regex, `<b>${term}</b> <span class="text-[10px] text-slate-400 bg-slate-100 px-1 rounded">(${window.SYNTAX_TERMS[term]})</span>`);
+        });
+    }
+
+    container.innerHTML = renderedHtml;
 }

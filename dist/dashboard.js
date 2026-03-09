@@ -205,8 +205,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (window.currentUser !== undefined) {
                 clearInterval(checkFirebase);
                 updateGamification();
-                renderSavedWords();
-                renderNotesDashboard();
+                renderDashboardSavedWords();
+                renderDashboardNotes();
                 setTimeout(initCharts, 1200);
             }
         }, 300);
@@ -443,7 +443,7 @@ async function loadQuoteOfDay() {
     }
 }
 
-async function renderSavedWords() {
+async function renderDashboardSavedWords() {
     if (!window.getSavedWordsFirestore) return;
     const words = await window.getSavedWordsFirestore();
     const container = document.getElementById("dashSavedWords");
@@ -463,7 +463,7 @@ async function renderSavedWords() {
     `).join("");
 }
 
-async function renderNotesDashboard() {
+async function renderDashboardNotes() {
     if (!window.currentUser || !window.getNotesFirestore) return;
     const container = document.getElementById("dashNotes");
     if (!container) return;
@@ -489,7 +489,7 @@ async function renderNotesDashboard() {
             div.querySelector(".delete-note-dash").onclick = async () => {
                 if (confirm("Silmek istediğine emin misin?")) {
                     await deleteNoteFirestore(note.id);
-                    renderNotesDashboard();
+                    renderDashboardNotes();
                 }
             };
             container.appendChild(div);

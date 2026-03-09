@@ -291,13 +291,7 @@ window.switchTab = function (tabName) {
 
 window.switchTabAndClose = function (tabName) {
     switchTab(tabName);
-    const drawer = document.getElementById("mobileDrawer");
-    const overlay = document.getElementById("drawerOverlay");
-    if (drawer && overlay) {
-        drawer.classList.add("translate-x-full");
-        overlay.classList.add("hidden");
-        document.body.style.overflow = "auto";
-    }
+    closeDrawer();
 };
 
 function reinjectTabContent(tabName) {
@@ -560,10 +554,7 @@ window.closeDrawer = function () {
     document.body.style.overflow = "auto";
 };
 
-window.switchTabAndClose = function (tab) {
-    switchTab(tab);
-    closeDrawer();
-};
+
 
 /* ==========================================
  TACTIC TOGGLES
@@ -582,13 +573,6 @@ window.toggleModalTactics = function () {
 ========================================== */
 
 window.lockAnalyzerUI = function () {
-    const lockMsgDesktop = document.getElementById("aiToolsLockedMsg");
-    const lockMsgMobile = document.getElementById("aiToolsLockedMobile");
-
-    if (lockMsgDesktop) lockMsgDesktop.classList.remove("hidden");
-    if (lockMsgMobile) lockMsgMobile.classList.remove("hidden");
-
-    // Hide actual nav buttons
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn"
@@ -598,16 +582,11 @@ window.lockAnalyzerUI = function () {
         const el = document.getElementById(id);
         if (el) el.classList.add("hidden");
     });
+
+    document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.remove('hidden'));
 };
 
 window.unlockAnalyzerUI = function () {
-    const lockMsgDesktop = document.getElementById("aiToolsLockedMsg");
-    const lockMsgMobile = document.getElementById("aiToolsLockedMobile");
-
-    if (lockMsgDesktop) lockMsgDesktop.classList.add("hidden");
-    if (lockMsgMobile) lockMsgMobile.classList.add("hidden");
-
-    // Show actual nav buttons
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn"
@@ -617,6 +596,25 @@ window.unlockAnalyzerUI = function () {
         const el = document.getElementById(id);
         if (el) el.classList.remove("hidden");
     });
+
+    document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.add('hidden'));
+};
+
+/* ==========================================
+ SYNTAX ABBREVIATIONS
+========================================== */
+
+window.SYNTAX_TERMS = {
+    "NP": "Noun Phrase (İsim Öbeği)",
+    "VP": "Verb Phrase (Fiil Öbeği)",
+    "SBAR": "Subordinating Clause (Yan Cümle)",
+    "PP": "Prepositional Phrase (Edat Öbeği)",
+    "ADJP": "Adjective Phrase (Sıfat Öbeği)",
+    "ADVP": "Adverb Phrase (Zarf Öbeği)",
+    "S": "Sentence (Cümle)",
+    "PRN": "Parenthetical (Ara Söz)",
+    "CONJP": "Conjunction Phrase (Bağlaç Öbeği)",
+    "WHNP": "Wh-Noun Phrase (Soru Zamiri Öbeği)"
 };
 
 

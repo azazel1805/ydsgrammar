@@ -223,23 +223,25 @@ onAuthStateChanged(auth, (user) => {
     if (loginPage) loginPage.classList.add("hidden");
     if (appWrapper) appWrapper.classList.remove("hidden");
 
-    if (typeof renderNotesDashboard === "function") {
-      renderNotesDashboard();
+    if (typeof renderDashboardNotes === "function") {
+      renderDashboardNotes();
     }
 
-    if (user.email === "onurtosuner@gmail.com") {
-      localStorage.setItem("analyzer_access", "true");
+    const isVip = user.email === "onurtosuner@gmail.com" || localStorage.getItem("analyzer_access") === "true";
+    if (isVip) {
       if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
     } else {
       if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
     }
   } else {
     window.currentUser = null;
-    if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
+    const isVip = localStorage.getItem("analyzer_access") === "true";
+    if (!isVip && typeof window.lockAnalyzerUI === "function") {
+      window.lockAnalyzerUI();
+    }
 
     // Always show app for statics
     if (appWrapper) appWrapper.classList.remove("hidden");
-    // Only show login on load if we wanted it forced, but we want public now
   }
 
   if (typeof window.forceProfileRender === "function") {
@@ -274,9 +276,17 @@ window.closeLoginModal = function () {
 window.saveWordFirestore = async function (wordData) {
   if (!window.currentUser) return;
 
-  await addDoc(
-    collection(db, "users", window.currentUser.uid, "savedWords"),
-    wordData
+  const word = wordData.word;
+  if (!word) return;
+
+  // Use word as ID to prevent duplicates
+  await setDoc(
+    doc(db, "users", window.currentUser.uid, "savedWords", word),
+    {
+      ...wordData,
+      savedAt: serverTimestamp()
+    },
+    { merge: true }
   );
 };
 

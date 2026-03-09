@@ -194,8 +194,8 @@ async function renderProfile() {
         document.getElementById("profileStreak") && (document.getElementById("profileStreak").innerText = window.userStats.streak + ' Gün');
     }
 
-    await renderSavedWords();
-    await renderNotes();
+    await renderProfileSavedWords();
+    await renderProfileNotes();
 }
 
 /* =========================================
@@ -253,8 +253,8 @@ window.handleProfileUpdate = async function () {
    SAVED WORDS LOGIC
  ========================================= */
 
-async function renderSavedWords() {
-    console.log("renderSavedWords() triggered");
+async function renderProfileSavedWords() {
+    console.log("renderProfileSavedWords() triggered");
     const container = document.getElementById("profileNotebookList");
     const countBadge = document.getElementById("savedWordsCount");
     if (!container) {
@@ -295,7 +295,7 @@ async function renderSavedWords() {
                 e.stopPropagation();
                 if (!confirm("Bu kelimeyi silmek istediğine emin misin?")) return;
                 await window.deleteWordFirestore(item.id);
-                renderSavedWords();
+                renderProfileSavedWords();
             };
 
             container.appendChild(div);
@@ -319,14 +319,14 @@ window.addNoteFromProfile = async function () {
     try {
         await window.saveNoteFirestore(text);
         input.value = "";
-        await renderNotes();
-        if (typeof renderNotesDashboard === 'function') renderNotesDashboard();
+        await renderProfileNotes();
+        if (typeof renderDashboardNotes === 'function') renderDashboardNotes();
     } catch (error) {
         console.error("Add note error:", error);
     }
 };
 
-async function renderNotes() {
+async function renderProfileNotes() {
     const container = document.getElementById("notesList");
     if (!container) return;
 
@@ -356,7 +356,7 @@ async function renderNotes() {
             div.querySelector("button").onclick = async () => {
                 if (!confirm("Notu silmek istiyor musunuz?")) return;
                 await window.deleteNoteFirestore(note.id);
-                renderNotes();
+                renderProfileNotes();
             };
             container.appendChild(div);
         });
@@ -369,24 +369,7 @@ async function renderNotes() {
    AI UNLOCK & UI HELPERS
  ========================================= */
 
-window.unlockAnalyzerUI = function () {
-    document.querySelectorAll('[id*="analyzerNavBtn"], [id*="analyzerMobileBtn"], [id*="tab-analyzer"], [id*="testlabNavBtn"], [id*="testlabMobileBtn"], [id*="restatementNavBtn"], [id*="restatementMobileBtn"], [id*="tab-restatement"], [id*="paragraphNavBtn"], [id*="paragraphMobileBtn"], [id*="tab-paragraph"], [id*="textDeconNavBtn"], [id*="textDeconMobileBtn"], [id*="tab-textdecon"]')
-        .forEach(el => el.classList.remove("hidden"));
 
-    document.getElementById("aiToolsLockedMsg")?.classList.add("hidden");
-    document.getElementById("aiToolsLockedMobile")?.classList.add("hidden");
-    document.getElementById("vipBadge")?.classList.remove("hidden");
-}
-
-window.lockAnalyzerUI = function () {
-    document.querySelectorAll('[id*="analyzerNavBtn"], [id*="analyzerMobileBtn"], [id*="tab-analyzer"], [id*="testlabNavBtn"], [id*="testlabMobileBtn"], [id*="restatementNavBtn"], [id*="restatementMobileBtn"], [id*="tab-restatement"], [id*="paragraphNavBtn"], [id*="paragraphMobileBtn"], [id*="tab-paragraph"], [id*="textDeconNavBtn"], [id*="textDeconMobileBtn"], [id*="tab-textdecon"]')
-        .forEach(el => el.classList.add("hidden"));
-
-    document.getElementById("aiToolsLockedMsg")?.classList.remove("hidden");
-    document.getElementById("aiToolsLockedMobile")?.classList.remove("hidden");
-    document.getElementById("vipBadge")?.classList.add("hidden");
-    localStorage.removeItem("analyzer_access");
-}
 
 async function checkAnalyzerAccess(code) {
     if (!code) {
@@ -401,7 +384,7 @@ async function checkAnalyzerAccess(code) {
         });
         if (res.ok) {
             localStorage.setItem("analyzer_access", "true");
-            unlockAnalyzerUI();
+            if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
             alert("VIP Özellikler Açıldı! 🔓");
         } else {
             alert("Hatalı kod. Lütfen tekrar deneyin. ❌");
