@@ -220,8 +220,7 @@
           <button class="nav-drop-btn pb-4">Grammar <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
           <div
             class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
-            <button data-tab="tenses" onclick="switchTab('tenses')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Tenses</button>
+
             <button data-tab="modals" onclick="switchTab('modals')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Modals</button>
             <button data-tab="conjunctions" onclick="switchTab('conjunctions')"
@@ -338,7 +337,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
         <div>
           <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">Grammar</h3>
           <div class="space-y-2 mb-4">
-            <button data-tab="tenses" onclick="switchTabAndClose('tenses')" class="drawer-btn">Tenses</button>
+
             <button data-tab="modals" onclick="switchTabAndClose('modals')" class="drawer-btn">Modals</button>
             <button data-tab="conjunctions" onclick="switchTabAndClose('conjunctions')"
               class="drawer-btn">Conjunctions</button>
@@ -392,7 +391,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-dashboard" class="tab-content active"></div>
       <div id="tab-forum" class="tab-content"></div>
       <div id="tab-modals" class="tab-content"></div>
-      <div id="tab-tenses" class="tab-content"></div>
+
       <div id="tab-conjunctions" class="tab-content"></div>
       <div id="tab-dictionary" class="tab-content"></div>
       <div id="tab-prepositions" class="tab-content"></div>
@@ -443,8 +442,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
                 class="col-span-2 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-red-900 transition-colors shadow-lg shadow-black/10">
                 <i class="fas fa-random mr-2"></i> Karma Sınav (Ultimate Mix)
               </button>
-              <button onclick="startQuiz(10, 'tenses')"
-                class="p-3 bg-slate-50 border border-slate-100 rounded-xl text-xs font-bold hover:border-red-200 hover:bg-red-50 transition-all">Tenses</button>
+
               <button onclick="startQuiz(10, 'modals')"
                 class="p-3 bg-slate-50 border border-slate-100 rounded-xl text-xs font-bold hover:border-red-200 hover:bg-red-50 transition-all">Modals</button>
               <button onclick="startQuiz(10, 'ifclauses')"
@@ -486,7 +484,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     </div>
     <!-- SCRIPTS -->
     <script src="./modals.js"></script>
-    <script src="./tenses.js"></script>
+
     <script src="./conjunctions.js"></script>
     <script src="./dictionary.js"></script>
     <script src="./prepositions-data.js"></script>

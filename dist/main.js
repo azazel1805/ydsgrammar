@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-profile", typeof profileHTML !== 'undefined' ? profileHTML : undefined);
     safeInject("tab-modals", typeof modalsHTML !== 'undefined' ? modalsHTML : undefined);
     safeInject("tab-prepositions", typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : undefined);
-    safeInject("tab-tenses", typeof tensesHTML !== 'undefined' ? tensesHTML : undefined);
+
     safeInject("tab-conjunctions", typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : undefined);
     safeInject("tab-dictionary", typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : undefined);
     safeInject("tab-reading", typeof readingHTML !== 'undefined' ? readingHTML : undefined);
@@ -249,7 +249,7 @@ function reinjectTabContent(tabName) {
         "profile": typeof profileHTML !== 'undefined' ? profileHTML : null,
         "modals": typeof modalsHTML !== 'undefined' ? modalsHTML : null,
         "prepositions": typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : null,
-        "tenses": typeof tensesHTML !== 'undefined' ? tensesHTML : null,
+
         "conjunctions": typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : null,
         "dictionary": typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : null,
         "sentence": typeof sentenceCorrectorHTML !== 'undefined' ? sentenceCorrectorHTML : null,
@@ -482,13 +482,7 @@ window.toggleModalTactics = function () {
     if (icon) icon.innerText = icon.innerText === "▼" ? "▲" : "▼";
 };
 
-window.toggleTenseTactics = function () {
-    const content = document.getElementById("tenseTacticContent");
-    const icon = document.getElementById("tenseTacticToggleIcon");
 
-    if (content) content.classList.toggle("hidden");
-    if (icon) icon.innerText = icon.innerText === "▼" ? "▲" : "▼";
-};
 
 
 document.addEventListener("DOMContentLoaded", () => {
