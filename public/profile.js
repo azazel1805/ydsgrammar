@@ -369,13 +369,23 @@ async function renderNotes() {
    AI UNLOCK & UI HELPERS
  ========================================= */
 
-function unlockAnalyzerUI() {
+window.unlockAnalyzerUI = function () {
     document.querySelectorAll('[id*="analyzerNavBtn"], [id*="analyzerMobileBtn"], [id*="tab-analyzer"], [id*="testlabNavBtn"], [id*="testlabMobileBtn"], [id*="restatementNavBtn"], [id*="restatementMobileBtn"], [id*="tab-restatement"], [id*="paragraphNavBtn"], [id*="paragraphMobileBtn"], [id*="tab-paragraph"], [id*="textDeconNavBtn"], [id*="textDeconMobileBtn"], [id*="tab-textdecon"]')
         .forEach(el => el.classList.remove("hidden"));
 
     document.getElementById("aiToolsLockedMsg")?.classList.add("hidden");
     document.getElementById("aiToolsLockedMobile")?.classList.add("hidden");
     document.getElementById("vipBadge")?.classList.remove("hidden");
+}
+
+window.lockAnalyzerUI = function () {
+    document.querySelectorAll('[id*="analyzerNavBtn"], [id*="analyzerMobileBtn"], [id*="tab-analyzer"], [id*="testlabNavBtn"], [id*="testlabMobileBtn"], [id*="restatementNavBtn"], [id*="restatementMobileBtn"], [id*="tab-restatement"], [id*="paragraphNavBtn"], [id*="paragraphMobileBtn"], [id*="tab-paragraph"], [id*="textDeconNavBtn"], [id*="textDeconMobileBtn"], [id*="tab-textdecon"]')
+        .forEach(el => el.classList.add("hidden"));
+
+    document.getElementById("aiToolsLockedMsg")?.classList.remove("hidden");
+    document.getElementById("aiToolsLockedMobile")?.classList.remove("hidden");
+    document.getElementById("vipBadge")?.classList.add("hidden");
+    localStorage.removeItem("analyzer_access");
 }
 
 async function checkAnalyzerAccess(code) {

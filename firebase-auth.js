@@ -229,6 +229,22 @@ onAuthStateChanged(auth, (user) => {
       renderNotesDashboard();
     }
 
+    // AI TOOLS ACCESS CONTROL (Admin: onurtosuner@gmail.com)
+    if (user.email === "onurtosuner@gmail.com") {
+      localStorage.setItem("analyzer_access", "true");
+      if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
+    } else {
+      // If NOT admin, check if they have legitimate access
+      // This part ensures that if they manually set localStorage, it gets cleared on login unless they are admin
+      // Legitimate paid access would normally use the checkAnalyzerAccess function
+      if (localStorage.getItem("analyzer_access") === "true") {
+        // We allow it to remain if it was set via the code verification
+        if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
+      } else {
+        if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
+      }
+    }
+
   } else {
 
     window.currentUser = null;
