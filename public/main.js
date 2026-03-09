@@ -240,7 +240,7 @@ window.switchTab = function (tabName) {
         }
     }
 
-    const protectedTabs = ['profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary'];
+    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary'];
 
     if (protectedTabs.includes(tabName) && !window.currentUser) {
         console.warn("Protected tab accessed without login:", tabName);
