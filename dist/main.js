@@ -63,6 +63,18 @@ document.addEventListener("DOMContentLoaded", function () {
         initIfClauses();
     }
 
+    if (typeof initReportedSpeech === "function") {
+        initReportedSpeech();
+    }
+
+    if (typeof initGerunds === "function") {
+        initGerunds();
+    }
+
+    if (typeof initArticles === "function") {
+        initArticles();
+    }
+
     /* ================= THEME ================= */
     // Dark mode logic has been removed as per the literary light-only aesthetic.
 

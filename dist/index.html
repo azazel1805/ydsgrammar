@@ -37,8 +37,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="./assets/index-DtLACdyg.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-C2DEWsdI.css">
+  <script type="module" crossorigin src="./assets/index-BPw_hXCk.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bn9kQrZi.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -248,6 +248,14 @@
             <button data-tab="ifclauses" onclick="switchTab('ifclauses')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">If
               Clauses Rehberi</button>
+            <button data-tab="reportedspeech" onclick="switchTab('reportedspeech')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Reported
+              Speech</button>
+            <button data-tab="gerunds" onclick="switchTab('gerunds')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Gerunds &
+              Inf.</button>
+            <button data-tab="articles" onclick="switchTab('articles')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Articles</button>
           </div>
         </div>
 
@@ -347,6 +355,10 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               Rehberi</button>
             <button data-tab="ifclauses" onclick="switchTabAndClose('ifclauses')" class="drawer-btn">If Clauses
               Rehberi</button>
+            <button data-tab="reportedspeech" onclick="switchTabAndClose('reportedspeech')" class="drawer-btn">Reported
+              Speech</button>
+            <button data-tab="gerunds" onclick="switchTabAndClose('gerunds')" class="drawer-btn">Gerunds & Inf.</button>
+            <button data-tab="articles" onclick="switchTabAndClose('articles')" class="drawer-btn">Articles</button>
             <button data-tab="profile" onclick="switchTabAndClose('profile')" class="drawer-btn">Profile</button>
           </div>
         </div>
@@ -393,6 +405,9 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-tacticguide" class="tab-content"></div>
       <div id="tab-tenseguide" class="tab-content"></div>
       <div id="tab-ifclauses" class="tab-content"></div>
+      <div id="tab-reportedspeech" class="tab-content"></div>
+      <div id="tab-gerunds" class="tab-content"></div>
+      <div id="tab-articles" class="tab-content"></div>
       <div id="tab-analyzer" class="tab-content hidden"></div>
       <div id="tab-testlab" class="tab-content hidden"></div>
       <div id="tab-restatement" class="tab-content hidden"></div>
@@ -467,6 +482,9 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./tacticguide.js"></script>
     <script src="./tenseguide.js"></script>
     <script src="./ifclauses.js"></script>
+    <script src="./reportedspeech.js"></script>
+    <script src="./gerunds.js"></script>
+    <script src="./articles.js"></script>
     <script src="./forum.js"></script>
     <script src="https://unpkg.com/compromise"></script>
     <script src="./analyzer.js"></script>
