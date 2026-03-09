@@ -172,7 +172,7 @@ const dashboardHTML = `
     <div class="hidden md:block w-px h-3 bg-slate-200"></div>
     <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
         <i class="fas fa-feather-alt text-slate-300"></i>
-        <span>Made with</span>
+        <span>MADE WITH</span>
         <span class="text-red-700">ANTI GRAVITY</span>
     </div>
  </div>
