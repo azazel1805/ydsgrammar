@@ -209,6 +209,10 @@ window.switchTab = function (tabName) {
         initPrepositions();
     }
 
+    if (tabName === "profile" && typeof window.forceProfileRender === "function") {
+        window.forceProfileRender();
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 

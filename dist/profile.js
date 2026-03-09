@@ -254,7 +254,7 @@ async function renderSavedWords() {
     if (!container) return;
 
     try {
-        const words = await getSavedWordsFirestore();
+        const words = await window.getSavedWordsFirestore();
         container.innerHTML = "";
         countBadge.innerText = words.length;
 
@@ -284,7 +284,7 @@ async function renderSavedWords() {
             div.querySelector("button").onclick = async (e) => {
                 e.stopPropagation();
                 if (!confirm("Bu kelimeyi silmek istediğine emin misin?")) return;
-                await deleteWordFirestore(item.id);
+                await window.deleteWordFirestore(item.id);
                 renderSavedWords();
             };
 
@@ -307,7 +307,7 @@ window.addNoteFromProfile = async function () {
     if (!text) return;
 
     try {
-        await saveNoteFirestore(text);
+        await window.saveNoteFirestore(text);
         input.value = "";
         await renderNotes();
         if (typeof renderNotesDashboard === 'function') renderNotesDashboard();
@@ -321,8 +321,7 @@ async function renderNotes() {
     if (!container) return;
 
     try {
-        const notes = await getDocs(collection(db, "users", window.currentUser.uid, "notes"));
-        const notesArr = notes.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        const notesArr = await window.getNotesFirestore();
         container.innerHTML = "";
 
         if (notesArr.length === 0) {
@@ -346,7 +345,7 @@ async function renderNotes() {
             `;
             div.querySelector("button").onclick = async () => {
                 if (!confirm("Notu silmek istiyor musunuz?")) return;
-                await deleteNoteFirestore(note.id);
+                await window.deleteNoteFirestore(note.id);
                 renderNotes();
             };
             container.appendChild(div);
