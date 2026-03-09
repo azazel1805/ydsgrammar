@@ -37,8 +37,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="./assets/index-B2vM2ont.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DZ5_2RSS.css">
+  <script type="module" crossorigin src="./assets/index-BBUq5qRE.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-FU1lZKN0.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -212,6 +212,9 @@
             <button data-tab="tacticguide" onclick="switchTab('tacticguide')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2"><span
                 class="inline-block w-1.5 h-1.5 rounded-full bg-amber-500"></span>Taktik Rehberi</button>
+            <button data-tab="tacticalpanels" onclick="switchTab('tacticalpanels')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2"><span
+                class="inline-block w-1.5 h-1.5 rounded-full bg-blue-500"></span>Hızlı Taktikler</button>
           </div>
         </div>
 
@@ -334,6 +337,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button data-tab="fullexam" onclick="switchTabAndClose('fullexam')" class="drawer-btn">Full Deneme</button>
             <button data-tab="tacticguide" onclick="switchTabAndClose('tacticguide')" class="drawer-btn">Taktik
               Rehberi</button>
+            <button data-tab="tacticalpanels" onclick="switchTabAndClose('tacticalpanels')" class="drawer-btn">Hızlı
+              Taktikler</button>
           </div>
         </div>
 
@@ -410,6 +415,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-miniexams" class="tab-content"></div>
       <div id="tab-fullexam" class="tab-content"></div>
       <div id="tab-tacticguide" class="tab-content"></div>
+      <div id="tab-tacticalpanels" class="tab-content"></div>
       <div id="tab-tenseguide" class="tab-content"></div>
       <div id="tab-tenseagreement" class="tab-content"></div>
       <div id="tab-ifclauses" class="tab-content"></div>
@@ -513,6 +519,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./fullexam.js"></script>
     <script src="./tacticguide.js"></script>
     <script src="./tenseguide.js"></script>
+    <script src="./tacticalpanels.js"></script>
     <script src="./tenseagreement.js"></script>
     <script src="./ifclauses.js"></script>
     <script src="./reportedspeech.js"></script>

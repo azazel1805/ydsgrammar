@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-modals", typeof modalsHTML !== 'undefined' ? modalsHTML : undefined);
     safeInject("tab-prepositions", typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : undefined);
     safeInject("tab-tenseagreement", typeof tenseAgreementHTML !== 'undefined' ? tenseAgreementHTML : undefined);
+    safeInject("tab-tacticalpanels", typeof tacticalPanelsHTML !== 'undefined' ? tacticalPanelsHTML : undefined);
 
     safeInject("tab-conjunctions", typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : undefined);
     safeInject("tab-dictionary", typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : undefined);
@@ -258,7 +259,9 @@ function reinjectTabContent(tabName) {
         "forum": typeof forumHTML !== 'undefined' ? forumHTML : null,
         "restatement": typeof restatementHTML !== 'undefined' ? restatementHTML : null,
         "paragraph": typeof paragraphHTML !== 'undefined' ? paragraphHTML : null,
-        "textdecon": typeof textDeconHTML !== 'undefined' ? textDeconHTML : null
+        "textdecon": typeof textDeconHTML !== 'undefined' ? textDeconHTML : null,
+        "tacticalpanels": typeof tacticalPanelsHTML !== 'undefined' ? tacticalPanelsHTML : null,
+        "tacticguide": typeof tacticGuideHTML !== 'undefined' ? tacticGuideHTML : null
     };
 
     const content = mappings[tabName];
