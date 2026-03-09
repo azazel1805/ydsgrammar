@@ -245,6 +245,8 @@
             <button data-tab="relative" onclick="switchTab('relative')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Relative
               Clauses</button>
+            <button data-tab="quantifiers" onclick="switchTab('quantifiers')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Quantifiers/Nouns</button>
             <button data-tab="noun" onclick="switchTab('noun')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Noun
               Clauses</button>
@@ -269,6 +271,8 @@
             <div class="border-t border-gray-100 my-1"></div>
             <button data-tab="dictionary" onclick="switchTab('dictionary')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Dictionary</button>
+            <button data-tab="quantifiers" onclick="switchTab('quantifiers')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Quantifiers</button>
             <button data-tab="sentence" onclick="switchTab('sentence')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Sentence
               Corrector</button>
@@ -392,6 +396,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button data-tab="relative" onclick="switchTabAndClose('relative')" class="drawer-btn">Relative
               Clause</button>
             <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause</button>
+            <button data-tab="quantifiers" onclick="switchTabAndClose('quantifiers')"
+              class="drawer-btn">Quantifiers/Nouns</button>
             <div class="border-t border-gray-100 my-1"></div>
             <button data-tab="tenseagreement" onclick="switchTabAndClose('tenseagreement')" class="drawer-btn">Tense
               Uyumu</button>
@@ -445,6 +451,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-reading" class="tab-content"></div>
       <div id="tab-passive" class="tab-content"></div>
       <div id="tab-relative" class="tab-content"></div>
+      <div id="tab-quantifiers" class="tab-content"></div>
       <div id="tab-noun" class="tab-content"></div>
       <div id="tab-sentence" class="tab-content"></div>
       <div id="tab-profile" class="tab-content"></div>
@@ -547,6 +554,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/reading.js"></script>
     <script src="/passive.js"></script>
     <script src="/relative.js"></script>
+    <script src="/quantifiers.js"></script>
     <script src="/noun.js"></script>
     <script src="/sentencecorrectorhtml.js"></script>
     <script src="/sentencecorrector.js"></script>

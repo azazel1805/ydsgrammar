@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-reading", typeof readingHTML !== 'undefined' ? readingHTML : undefined);
     safeInject("tab-passive", typeof passiveHTML !== 'undefined' ? passiveHTML : undefined);
     safeInject("tab-relative", typeof relativeHTML !== 'undefined' ? relativeHTML : undefined);
+    safeInject("tab-quantifiers", typeof quantifiersHTML !== 'undefined' ? quantifiersHTML : undefined);
     safeInject("tab-noun", typeof nounHTML !== 'undefined' ? nounHTML : undefined);
     safeInject("tab-sentence", typeof sentenceCorrectorHTML !== 'undefined' ? sentenceCorrectorHTML : undefined);
     safeInject("tab-forum", typeof forumHTML !== 'undefined' ? forumHTML : undefined);
@@ -251,6 +252,7 @@ function reinjectTabContent(tabName) {
         "profile": typeof profileHTML !== 'undefined' ? profileHTML : null,
         "modals": typeof modalsHTML !== 'undefined' ? modalsHTML : null,
         "prepositions": typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : null,
+        "quantifiers": typeof quantifiersHTML !== 'undefined' ? quantifiersHTML : null,
         "tenseagreement": typeof tenseAgreementHTML !== 'undefined' ? tenseAgreementHTML : null,
 
         "conjunctions": typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : null,
