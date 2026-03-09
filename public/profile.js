@@ -153,21 +153,26 @@ const profileHTML = `
 
 function observeAuthForProfile() {
     const interval = setInterval(() => {
-        if (typeof window.currentUser !== "undefined") {
+        if (window.currentUser) {
+            console.log("Profile observer: User ready, rendering...");
             clearInterval(interval);
             renderProfile();
         }
-    }, 200);
+    }, 500);
 }
 
 async function renderProfile() {
+    console.log("renderProfile() triggered");
     const nameDisplay = document.getElementById("profileNameDisplay");
     const emailDisplay = document.getElementById("profileEmailDisplay");
     const initialsDisplay = document.getElementById("profileInitials");
     const photoContainer = document.getElementById("profilePhotoContainer");
     const vipBadge = document.getElementById("vipBadge");
 
-    if (!nameDisplay || !window.currentUser) return;
+    if (!nameDisplay || !window.currentUser) {
+        console.warn("Profile render aborted: nameDisplay or currentUser missing.");
+        return;
+    }
 
     // Update UI with User Data
     nameDisplay.innerText = window.currentUser.displayName || "Kütüphane Üyesi";
@@ -249,12 +254,17 @@ window.handleProfileUpdate = async function () {
  ========================================= */
 
 async function renderSavedWords() {
+    console.log("renderSavedWords() triggered");
     const container = document.getElementById("profileNotebookList");
     const countBadge = document.getElementById("savedWordsCount");
-    if (!container) return;
+    if (!container) {
+        console.warn("profileNotebookList container not found");
+        return;
+    }
 
     try {
         const words = await window.getSavedWordsFirestore();
+        console.log("Firestore words fetched:", words.length);
         container.innerHTML = "";
         countBadge.innerText = words.length;
 

@@ -6,7 +6,7 @@
 const DASH_UNSPLASH_KEY = "0uDnN1Zl1YFXRG3vHAKgEZoTakXkCg65RV3LtgXiNcM";
 
 // Globals for dynamic data
-let userStats = {
+window.userStats = {
     xp: 0,
     level: 1,
     levelTitle: "Novice",
@@ -203,10 +203,10 @@ async function updateGamification() {
 
     try {
         const history = await window.getQuizHistoryFirestore();
-        userStats.totalQuizzes = history.length;
+        window.userStats.totalQuizzes = history.length;
 
         let totalXP = history.reduce((acc, h) => acc + (h.score || 0), 0);
-        userStats.xp = totalXP;
+        window.userStats.xp = totalXP;
 
         const thresholds = [
             { lvl: 1, xp: 500, title: "Novice", icon: "🌱" },
@@ -220,10 +220,10 @@ async function updateGamification() {
             if (totalXP >= t.xp) {
                 currentLevel = t;
             } else {
-                userStats.nextLevelXP = t.xp;
-                userStats.level = currentLevel.lvl;
-                userStats.levelTitle = currentLevel.title;
-                userStats.levelIcon = currentLevel.icon;
+                window.userStats.nextLevelXP = t.xp;
+                window.userStats.level = currentLevel.lvl;
+                window.userStats.levelTitle = currentLevel.title;
+                window.userStats.levelIcon = currentLevel.icon;
                 break;
             }
         }
@@ -234,16 +234,16 @@ async function updateGamification() {
                 return d.toDateString();
             }).filter((v, i, a) => a.indexOf(v) === i);
 
-            userStats.streak = calculateStreak(sortedDates);
+            window.userStats.streak = calculateStreak(sortedDates);
         }
 
-        document.getElementById("dashLevelTitle").innerText = `Level ${userStats.level}: ${userStats.levelTitle}`;
-        document.getElementById("dashXPDisplay").innerText = `${userStats.xp} / ${userStats.nextLevelXP} XP`;
-        document.getElementById("levelIcon").innerText = userStats.levelIcon;
-        document.getElementById("dashStreakValue").innerText = userStats.streak;
-        document.getElementById("dashTotalQuizzes").innerText = userStats.totalQuizzes;
+        document.getElementById("dashLevelTitle").innerText = `Level ${window.userStats.level}: ${window.userStats.levelTitle}`;
+        document.getElementById("dashXPDisplay").innerText = `${window.userStats.xp} / ${window.userStats.nextLevelXP} XP`;
+        document.getElementById("levelIcon").innerText = window.userStats.levelIcon;
+        document.getElementById("dashStreakValue").innerText = window.userStats.streak;
+        document.getElementById("dashTotalQuizzes").innerText = window.userStats.totalQuizzes;
 
-        const progPct = Math.min((userStats.xp / userStats.nextLevelXP) * 100, 100);
+        const progPct = Math.min((window.userStats.xp / window.userStats.nextLevelXP) * 100, 100);
         document.getElementById("xpBar").style.width = `${progPct}%`;
 
     } catch (err) {
