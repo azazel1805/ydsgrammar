@@ -114,7 +114,7 @@ window.loadQuizData = function () {
     // 1. Scraping from DOM (Legacy sections like Tenses, Modals in HTML)
     document.querySelectorAll('.tab-content').forEach(tab => {
         const topicId = tab.id.replace('tab-', '');
-        tab.querySelectorAll('.italic, .example-text').forEach(ex => {
+        tab.querySelectorAll('.italic, .example-text, .tg2-en').forEach(ex => {
             let highlight = ex.querySelector('.highlight-modal, .highlight-verb, .font-bold');
             if (highlight && ex.innerText.length > 20) {
                 allItems.push({

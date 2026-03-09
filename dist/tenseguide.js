@@ -15,26 +15,26 @@ const TENSES = [
         usages: [
             {
                 tag: 'Alışkanlık & Rutin', color: '#16a34a', desc: 'Tekrarlayan eylemler, alışkanlıklar ve rutinler.', examples: [
-                    { en: 'She drinks coffee every morning.', tr: 'Her sabah kahve içer.' },
-                    { en: 'He never eats fast food.', tr: 'Hiç fast food yemez.' },
+                    { en: 'She <span class="font-bold">drinks</span> coffee every morning.', tr: 'Her sabah kahve içer.' },
+                    { en: 'He never <span class="font-bold">eats</span> fast food.', tr: 'Hiç fast food yemez.' },
                 ]
             },
             {
                 tag: 'Genel Gerçekler & Doğa Yasaları', color: '#dc2626', desc: 'Değişmeyen gerçekler ve bilimsel yasalar.', examples: [
-                    { en: 'Water boils at 100°C.', tr: 'Su 100°C\'de kaynar.' },
-                    { en: 'The Earth revolves around the Sun.', tr: 'Dünya Güneş\'in etrafında döner.' },
+                    { en: 'Water <span class="font-bold">boils</span> at 100°C.', tr: 'Su 100°C\'de kaynar.' },
+                    { en: 'The Earth <span class="font-bold">revolves</span> around the Sun.', tr: 'Dünya Güneş\'in etrafında döner.' },
                 ]
             },
             {
                 tag: 'Program & Tarifeli Gelecek', color: '#7c3aed', desc: 'Resmi program ve tarifeler (uçuş, maç, taks vb.).', examples: [
-                    { en: 'The train leaves at 9 AM.', tr: 'Tren sabah 9\'da kalkıyor.' },
-                    { en: 'The match starts at 8 PM tonight.', tr: 'Maç bu gece 20\'de başlıyor.' },
+                    { en: 'The train <span class="font-bold">leaves</span> at 9 AM.', tr: 'Tren sabah 9\'da kalkıyor.' },
+                    { en: 'The match <span class="font-bold">starts</span> at 8 PM tonight.', tr: 'Maç bu gece 20\'de başlıyor.' },
                 ]
             },
             {
                 tag: 'Duygular & Düşünceler (Stative Verbs)', color: '#b45309', desc: 'Eylem değil, durum bildiren fiiller (like, know, want...).', examples: [
-                    { en: 'I know the answer.', tr: 'Cevabı biliyorum.' },
-                    { en: 'She loves classical music.', tr: 'Klasik müziği seviyor.' },
+                    { en: 'I <span class="font-bold">know</span> the answer.', tr: 'Cevabı biliyorum.' },
+                    { en: 'She <span class="font-bold">loves</span> classical music.', tr: 'Klasik müziği seviyor.' },
                 ]
             },
         ],
@@ -53,20 +53,20 @@ const TENSES = [
         usages: [
             {
                 tag: 'Şu An Olan Eylem', color: '#0891b2', desc: 'Tam konuşma anında devam eden eylemler.', examples: [
-                    { en: 'She is reading a book right now.', tr: 'Şu anda bir kitap okuyor.' },
-                    { en: 'They are playing football in the garden.', tr: 'Bahçede futbol oynuyorlar.' },
+                    { en: 'She <span class="font-bold">is reading</span> a book right now.', tr: 'Şu anda bir kitap okuyor.' },
+                    { en: 'They <span class="font-bold">are playing</span> football in the garden.', tr: 'Bahçede futbol oynuyorlar.' },
                 ]
             },
             {
                 tag: 'Geçici Durum', color: '#7c3aed', desc: 'Kalıcı olmayan, geçici durumlar.', examples: [
-                    { en: 'I\'m staying at my friend\'s place this week.', tr: 'Bu hafta arkadaşımın evinde kalıyorum.' },
-                    { en: 'She\'s working from home these days.', tr: 'Bu günlerde evden çalışıyor.' },
+                    { en: 'I<span class="font-bold">\'m staying</span> at my friend\'s place this week.', tr: 'Bu hafta arkadaşımın evinde kalıyorum.' },
+                    { en: 'She<span class="font-bold">\'s working</span> from home these days.', tr: 'Bu günlerde evden çalışıyor.' },
                 ]
             },
             {
                 tag: 'Kesin Planlanmış Gelecek', color: '#16a34a', desc: 'Yakın gelecekte organize edilmiş planlar (bilet alınmış, saat ayarlanmış vb.).', examples: [
-                    { en: 'We\'re meeting the client tomorrow afternoon.', tr: 'Yarın öğleden sonra müşteriyle buluşuyoruz.' },
-                    { en: 'I\'m flying to London next Monday.', tr: 'Gelecek Pazartesi Londra\'ya uçuyorum.' },
+                    { en: 'We<span class="font-bold">\'re meeting</span> the client tomorrow afternoon.', tr: 'Yarın öğleden sonra müşteriyle buluşuyoruz.' },
+                    { en: 'I<span class="font-bold">\'m flying</span> to London next Monday.', tr: 'Gelecek Pazartesi Londra\'ya uçuyorum.' },
                 ]
             },
             {
@@ -91,26 +91,26 @@ const TENSES = [
         usages: [
             {
                 tag: 'Yakın Geçmiş (just)', color: '#7c3aed', desc: 'Çok kısa süre önce tamamlanan eylemler.', examples: [
-                    { en: 'I have just finished the report.', tr: 'Raporu az önce bitirdim.' },
+                    { en: 'I <span class="font-bold">have just finished</span> the report.', tr: 'Raporu az önce bitirdim.' },
                     { en: 'She has just arrived.', tr: 'Az önce geldi.' },
                 ]
             },
             {
                 tag: 'Deneyim (ever/never)', color: '#dc2626', desc: 'Hayat boyu yaşanmış ya da yaşanmamış deneyimler.', examples: [
-                    { en: 'Have you ever been to Japan?', tr: 'Hiç Japonya\'ya gittin mi?' },
+                    { en: '<span class="font-bold">Have you ever been</span> to Japan?', tr: 'Hiç Japonya\'ya gittin mi?' },
                     { en: 'I\'ve never tried sushi.', tr: 'Hiç sushi denemedim.' },
                 ]
             },
             {
                 tag: 'Devam Eden Durum (since/for)', color: '#0891b2', desc: 'Geçmişte başlayıp hâlâ devam eden durumlar.', examples: [
-                    { en: 'She has lived here for ten years.', tr: 'On yıldır burada yaşıyor.' },
-                    { en: 'I\'ve known him since 2010.', tr: '2010\'dan beri onu tanıyorum.' },
+                    { en: 'She <span class="font-bold">has lived</span> here for ten years.', tr: 'On yıldır burada yaşıyor.' },
+                    { en: 'I<span class="font-bold">\'ve known</span> him since 2010.', tr: '2010\'dan beri onu tanıyorum.' },
                 ]
             },
             {
                 tag: 'Sonucu Şimdi Önemli', color: '#16a34a', desc: 'Geçmişte oldu ama sonucu şu an önemli/görünür.', examples: [
-                    { en: 'I\'ve lost my keys. (can\'t get in now)', tr: 'Anahtarlarımı kaybettim. (şimdi giremiyorum)' },
-                    { en: 'She\'s broken her leg. (she\'s on crutches)', tr: 'Bacağını kırdı. (şimdi koltuk değneğiyle geziyor)' },
+                    { en: 'I<span class="font-bold">\'ve lost</span> my keys. (can\'t get in now)', tr: 'Anahtarlarımı kaybettim. (şimdi giremiyorum)' },
+                    { en: 'She<span class="font-bold">\'s broken</span> her leg. (she\'s on crutches)', tr: 'Bacağını kırdı. (şimdi koltuk değneğiyle geziyor)' },
                 ]
             },
         ],
@@ -129,14 +129,14 @@ const TENSES = [
         usages: [
             {
                 tag: 'Süresi Vurgulanan Devam Eden Eylem', color: '#0d9488', desc: 'Geçmişte başladı, hâlâ devam ediyor — süreye vurgu.', examples: [
-                    { en: 'I\'ve been studying for five hours.', tr: 'Beş saattir çalışıyorum.' },
-                    { en: 'She has been waiting since noon.', tr: 'Öğleden beri bekliyor.' },
+                    { en: 'I<span class="font-bold">\'ve been studying</span> for five hours.', tr: 'Beş saattir çalışıyorum.' },
+                    { en: 'She <span class="font-bold">has been waiting</span> since noon.', tr: 'Öğleden beri bekliyor.' },
                 ]
             },
             {
                 tag: 'Görünür Sonucu Olan Eylem', color: '#7c3aed', desc: 'Eylemin şu anki görünür etkisi/izi var.', examples: [
-                    { en: 'Your eyes are red. Have you been crying?', tr: 'Gözlerin kırmızı. Ağlıyor muydun?' },
-                    { en: 'You\'re sweating. Have you been running?', tr: 'Terlemişsin. Koşuyor muydun?' },
+                    { en: 'Your eyes are red. <span class="font-bold">Have you been crying</span>?', tr: 'Gözlerin kırmızı. Ağlıyor muydun?' },
+                    { en: 'You\'re sweating. <span class="font-bold">Have you been running</span>?', tr: 'Terlemişsin. Koşuyor muydun?' },
                 ]
             },
         ],
@@ -155,13 +155,13 @@ const TENSES = [
         usages: [
             {
                 tag: 'Tamamlanmış Geçmiş Eylem', color: '#b45309', desc: 'Kesin bir geçmiş zamanda başlayıp biten eylemler.', examples: [
-                    { en: 'She graduated from university in 2015.', tr: '2015\'te üniversiteden mezun oldu.' },
-                    { en: 'He called me an hour ago.', tr: 'Bir saat önce beni aradı.' },
+                    { en: 'She <span class="font-bold">graduated</span> from university in 2015.', tr: '2015\'te üniversiteden mezun oldu.' },
+                    { en: 'He <span class="font-bold">called</span> me an hour ago.', tr: 'Bir saat önce beni aradı.' },
                 ]
             },
             {
                 tag: 'Ardışık Geçmiş Eylemler', color: '#7c3aed', desc: 'Birbiri ardına gerçekleşen geçmiş olaylar.', examples: [
-                    { en: 'She woke up, had breakfast, and left.', tr: '"Uyandı, kahvaltı yaptı ve ayrıldı.' },
+                    { en: 'She <span class="font-bold">woke up</span>, <span class="font-bold">had</span> breakfast, and <span class="font-bold">left</span>.', tr: '"Uyandı, kahvaltı yaptı ve ayrıldı.' },
                 ]
             },
             {
@@ -186,13 +186,13 @@ const TENSES = [
         usages: [
             {
                 tag: 'Arkaplan / Atmosfer', color: '#0369a1', desc: 'Başka bir eylem oluştuğunda devam etmekte olan eylem.', examples: [
-                    { en: 'I was reading when she called.', tr: 'O aradığında kitap okuyordum.' },
-                    { en: 'It was raining when we arrived.', tr: 'Geldiğimizde yağmur yağıyordu.' },
+                    { en: 'I <span class="font-bold">was reading</span> when she called.', tr: 'O aradığında kitap okuyordum.' },
+                    { en: 'It <span class="font-bold">was raining</span> when we arrived.', tr: 'Geldiğimizde yağmur yağıyordu.' },
                 ]
             },
             {
                 tag: 'Eş Zamanlı Geçmiş Eylemler', color: '#16a34a', desc: 'İki eylem aynı anda devam ediyordu.', examples: [
-                    { en: 'While she was cooking, he was setting the table.', tr: 'O yemek pişirirken, o masayı kuruyordu.' },
+                    { en: 'While she <span class="font-bold">was cooking</span>, he <span class="font-bold">was setting</span> the table.', tr: 'O yemek pişirirken, o masayı kuruyordu.' },
                 ]
             },
             {
@@ -217,8 +217,8 @@ const TENSES = [
         usages: [
             {
                 tag: 'Daha Önce Tamamlanan Eylem', color: '#6d28d9', desc: 'Geçmişte iki olay: biri diğerinden önce tamamlanmış.', examples: [
-                    { en: 'When I arrived, the meeting had already started.', tr: 'Geldiğimde toplantı çoktan başlamıştı.' },
-                    { en: 'She had left before I called.', tr: 'Ben aramadan önce ayrılmıştı.' },
+                    { en: 'When I arrived, the meeting <span class="font-bold">had already started</span>.', tr: 'Geldiğimde toplantı çoktan başlamıştı.' },
+                    { en: 'She <span class="font-bold">had left</span> before I called.', tr: 'Ben aramadan önce ayrılmıştı.' },
                 ]
             },
             {
@@ -249,8 +249,8 @@ const TENSES = [
         usages: [
             {
                 tag: 'Süresine Vurgu Yapılan Geçmiş Eylem', color: '#0f766e', desc: 'Bir geçmiş olaydan önce ne kadar süredir devam ettiği önemli.', examples: [
-                    { en: 'She had been waiting for two hours when he finally arrived.', tr: 'O geldiğinde iki saattir bekliyordu.' },
-                    { en: 'They had been arguing all morning before they made up.', tr: 'Barışmadan önce sabahtan beri tartışıyorlardı.' },
+                    { en: 'She <span class="font-bold">had been waiting</span> for two hours when he finally arrived.', tr: 'O geldiğinde iki saattir bekliyordu.' },
+                    { en: 'They <span class="font-bold">had been arguing</span> all morning before they made up.', tr: 'Barışmadan önce sabahtan beri tartışıyorlardı.' },
                 ]
             },
             {
@@ -280,8 +280,8 @@ const TENSES = [
             },
             {
                 tag: 'Tahmin & Öngörü', color: '#f59e0b', desc: 'Kanıta dayalı olmayan, kişisel tahminler.', examples: [
-                    { en: 'I think it will rain tomorrow.', tr: 'Sanırım yarın yağmur yağacak.' },
-                    { en: 'She\'ll probably be late again.', tr: 'Muhtemelen yine geç kalacak.' },
+                    { en: 'I think it <span class="font-bold">will rain</span> tomorrow.', tr: 'Sanırım yarın yağmur yağacak.' },
+                    { en: 'She<span class="font-bold">\'ll probably be</span> late again.', tr: 'Muhtemelen yine geç kalacak.' },
                 ]
             },
             {
@@ -318,8 +318,8 @@ const TENSES = [
             },
             {
                 tag: 'Kanıta Dayalı Tahmin', color: '#dc2626', desc: 'Görebildiğin bir kanıta dayanarak yapılan tahmin.', examples: [
-                    { en: 'Look at those clouds! It\'s going to rain.', tr: 'Şu bulutlara bak! Yağmur yağacak.' },
-                    { en: 'Be careful! You\'re going to fall!', tr: 'Dikkat et! Düşeceksin!' },
+                    { en: 'Look at those clouds! It<span class="font-bold">\'s going to rain</span>.', tr: 'Şu bulutlara bak! Yağmur yağacak.' },
+                    { en: 'Be careful! You<span class="font-bold">\'re going to fall</span>!', tr: 'Dikkat et! Düşeceksin!' },
                 ]
             },
         ],
@@ -369,8 +369,8 @@ const TENSES = [
         usages: [
             {
                 tag: 'Belirli Bir Gelecek Zamana Kadar Tamamlanacak', color: '#7e22ce', desc: 'Belirtilen bir gelecek an geldiğinde eylem tamamlanmış olacak.', examples: [
-                    { en: 'By 2026, she will have finished her PhD.', tr: '2026\'ya kadar doktorasını bitirmiş olacak.' },
-                    { en: 'By the time you arrive, I will have cooked dinner.', tr: 'Sen geldiğinde akşam yemeğini pişirmiş olacağım.' },
+                    { en: 'By 2026, she <span class="font-bold">will have finished</span> her PhD.', tr: '2026\'ya kadar doktorasını bitirmiş olacak.' },
+                    { en: 'By the time you arrive, I <span class="font-bold">will have cooked</span> dinner.', tr: 'Sen geldiğinde akşam yemeğini pişirmiş olacağım.' },
                 ]
             },
         ],
