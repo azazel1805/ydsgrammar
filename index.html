@@ -248,6 +248,17 @@
             <button data-tab="wordpractice" onclick="switchTab('wordpractice')"
               class="tab-btn w-full text-left px-5 py-3 font-bold text-red-800 hover:bg-gray-50 hover:text-red-700 transition-colors">Kelime
               Çalışması</button>
+            <div class="border-t border-gray-100 my-1"></div>
+            <p class="px-5 py-2 text-[10px] font-black text-slate-400 uppercase tracking-widest">Training Center</p>
+            <button data-tab="grammarchallenge" onclick="switchTab('grammarchallenge')"
+              class="tab-btn w-full text-left px-5 py-2 hover:bg-gray-50 hover:text-red-700 transition-colors text-xs font-bold">Bağlaç
+              & Edat Canavarı</button>
+            <button data-tab="irrelevant" onclick="switchTab('irrelevant')"
+              class="tab-btn w-full text-left px-5 py-2 hover:bg-gray-50 hover:text-red-700 transition-colors text-xs font-bold">Anlam
+              Akışını Bozan Cümle</button>
+            <button data-tab="synonymmatch" onclick="switchTab('synonymmatch')"
+              class="tab-btn w-full text-left px-5 py-2 hover:bg-gray-50 hover:text-red-700 transition-colors text-xs font-bold">Eş
+              Anlamlı Eşleştirme</button>
           </div>
         </div>
 
@@ -416,6 +427,12 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               Taktikler</button>
             <button data-tab="wordpractice" onclick="switchTabAndClose('wordpractice')"
               class="drawer-btn font-bold text-red-800">Kelime Çalışması</button>
+            <button data-tab="grammarchallenge" onclick="switchTabAndClose('grammarchallenge')"
+              class="drawer-btn text-xs font-bold">Bağlaç & Edat Canavarı</button>
+            <button data-tab="irrelevant" onclick="switchTabAndClose('irrelevant')"
+              class="drawer-btn text-xs font-bold">Anlam Akışını Bozan Cümle</button>
+            <button data-tab="synonymmatch" onclick="switchTabAndClose('synonymmatch')"
+              class="drawer-btn text-xs font-bold">Eş Anlamlı Eşleştirme</button>
           </div>
         </div>
 
@@ -506,6 +523,9 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-tacticguide" class="tab-content"></div>
       <div id="tab-tacticalpanels" class="tab-content"></div>
       <div id="tab-wordpractice" class="tab-content"></div>
+      <div id="tab-grammarchallenge" class="tab-content"></div>
+      <div id="tab-irrelevant" class="tab-content"></div>
+      <div id="tab-synonymmatch" class="tab-content"></div>
       <div id="tab-tenseguide" class="tab-content"></div>
       <div id="tab-tenseagreement" class="tab-content"></div>
       <div id="tab-ifclauses" class="tab-content"></div>
@@ -627,6 +647,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/paragraphAnalysis.js"></script>
     <script src="/textDeconstruction.js"></script>
     <script src="/wordPractice.js"></script>
+    <script src="/trainingCenter.js"></script>
     <script src="/main.js"></script>
 
 
