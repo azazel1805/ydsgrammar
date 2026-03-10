@@ -13,7 +13,6 @@ const nlpAnalizHTML = `
                 </div>
                 <div>
                     <h2 class="text-2xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">Cümle Analizcisi</h2>
-                    <p class="text-slate-500 text-sm">Ücretsiz Google Cloud NLP ile derinlemesine cümle analizi</p>
                 </div>
             </div>
 
