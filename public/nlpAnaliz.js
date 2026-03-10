@@ -271,14 +271,12 @@ async function fetchTranslation(text) {
     try {
         // Log to identify translation source
         console.log("Fetching translation from MyMemory...");
-        const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|tr`);
+        const response = await fetch("/.netlify/functions/nlpAnalyze", {
+            method: "POST",
+            body: JSON.stringify({ text: text })
+        });
         const data = await response.json();
-
-        if (data.status === 403 || (data.responseData?.translatedText && data.responseData.translatedText.includes("MYMEMORY WARNING"))) {
-            throw new Error("MyMemory limit reached");
-        }
-
-        trDiv.innerText = data.responseData.translatedText || "Çeviri bulunamadı.";
+        trDiv.innerText = data.translation || "Çeviri bulunamadı.";
     } catch (err) {
         console.warn("MyMemory failed, trying Google NLP Proxy fallback...", err.message);
         trDiv.innerHTML = `<span class="text-amber-400 text-sm italic">MyMemory limitine ulaşıldı. Google Cloud ile çeviriliyor...</span>`;

@@ -56,108 +56,110 @@ class="absolute top-2 right-3 text-red-500 text-xl">✖</button>
  CEFR
  ========================================= */
 
-function getCEFR(score){
-if(score >= 6.5) return "A1";
-if(score >= 5.5) return "A2";
-if(score >= 4.5) return "B1";
-if(score >= 3.5) return "B2";
-if(score >= 2.5) return "C1";
-return "C2";
+function getCEFR(score) {
+    if (score >= 6.5) return "A1";
+    if (score >= 5.5) return "A2";
+    if (score >= 4.5) return "B1";
+    if (score >= 3.5) return "B2";
+    if (score >= 2.5) return "C1";
+    return "C2";
 }
 
 /* =========================================
  UNSPLASH
  ========================================= */
 
-async function fetchUnsplashImages(word){
-try{
-const res = await fetch(
-`https://api.unsplash.com/search/photos?query=${encodeURIComponent(word)}&per_page=3`,
-{
-headers:{
-Authorization:`Client-ID ${UNSPLASH_ACCESS_KEY}`
-}
-}
-);
+async function fetchUnsplashImages(word) {
+    try {
+        const res = await fetch(
+            `https://api.unsplash.com/search/photos?query=${encodeURIComponent(word)}&per_page=3`,
+            {
+                headers: {
+                    Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`
+                }
+            }
+        );
 
-const data = await res.json();
+        const data = await res.json();
 
-if(data.results){
-return data.results.map(img => ({
-thumb: img.urls.small,
-full: img.urls.regular,
-author: img.user.name,
-authorLink: img.user.links.html
-}));
-}
+        if (data.results) {
+            return data.results.map(img => ({
+                thumb: img.urls.small,
+                full: img.urls.regular,
+                author: img.user.name,
+                authorLink: img.user.links.html
+            }));
+        }
 
-return [];
-}catch{
-return [];
-}
+        return [];
+    } catch {
+        return [];
+    }
 }
 
 /* =========================================
  TRANSLATE
  ========================================= */
 
-async function translateText(text){
-try{
-const res = await fetch(
-`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|tr`
-);
-const data = await res.json();
-return data.responseData?.translatedText || "";
-}catch{
-return "";
-}
+async function translateText(text) {
+    try {
+        const res = await fetch("/.netlify/functions/nlpAnalyze", {
+            method: "POST",
+            body: JSON.stringify({ text: text })
+        });
+        const data = await res.json();
+        return data.translation || "";
+    } catch (e) {
+        console.error("Translation error:", e);
+        return "";
+    }
 }
 
 /* =========================================
  MAIN SEARCH
  ========================================= */
 
-async function searchDictionaryWord(wordParam=null){
+async function searchDictionaryWord(wordParam = null) {
 
-const input = document.getElementById("dictWordInput");
-if(!input) return;
+    const input = document.getElementById("dictWordInput");
+    if (!input) return;
 
-const word = (wordParam || input.value).toLowerCase().trim();
-if(!word) return;
+    const word = (wordParam || input.value).toLowerCase().trim();
+    if (!word) return;
 
-input.value = word;
+    input.value = word;
 
-const output = document.getElementById("dictOutput");
-if(!output) return;
+    const output = document.getElementById("dictOutput");
+    if (!output) return;
 
-output.innerHTML = "Loading...";
+    output.innerHTML = "Loading...";
 
-try{
+    try {
 
-const dictRes = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-if(!dictRes.ok) throw new Error();
-const dictData = await dictRes.json();
+        const dictRes = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+        if (!dictRes.ok) throw new Error();
+        const dictData = await dictRes.json();
 
-const synData = await (await fetch(`https://api.datamuse.com/words?rel_syn=${word}`)).json();
-const antData = await (await fetch(`https://api.datamuse.com/words?rel_ant=${word}`)).json();
-const freqData = await (await fetch(`https://api.datamuse.com/words?sp=${word}&md=f`)).json();
-const familyData = await (await fetch(`https://api.datamuse.com/words?ml=${word}&max=10`)).json();
+        const synData = await (await fetch(`https://api.datamuse.com/words?rel_syn=${word}`)).json();
+        const antData = await (await fetch(`https://api.datamuse.com/words?rel_ant=${word}`)).json();
+        const freqData = await (await fetch(`https://api.datamuse.com/words?sp=${word}&md=f`)).json();
+        const familyData = await (await fetch(`https://api.datamuse.com/words?ml=${word}&max=10`)).json();
 
-const images = await fetchUnsplashImages(word);
+        const images = await fetchUnsplashImages(word);
 
-let score = 0;
-const freqTag = freqData[0]?.tags?.find(t => t.startsWith("f:"));
-if(freqTag) score = parseFloat(freqTag.split(":")[1]);
-score = Math.max(0, Math.min(score, 7));
-const percent = (score/7)*100;
-const cefr = getCEFR(score);
+        let score = 0;
+        const freqTag = freqData[0]?.tags?.find(t => t.startsWith("f:"));
+        if (freqTag) score = parseFloat(freqTag.split(":")[1]);
+        score = Math.max(0, Math.min(score, 7));
+        const percent = (score / 7) * 100;
+        const cefr = getCEFR(score);
 
-let html = "";
-const entry = dictData[0];
+        let html = "";
+        const entry = dictData[0];
 
-/* HEADER */
+        /* HEADER */
 
-html += `
+        html += `
 <div class="flex items-center gap-4 flex-wrap">
 <div class="text-3xl font-bold text-black">
 ${entry.word}
@@ -167,9 +169,9 @@ ${entry.word}
 </div>
 `;
 
-/* CEFR */
+        /* CEFR */
 
-html += `
+        html += `
 <div class="mt-3 text-sm">
 CEFR Level: <b>${cefr}</b>
 </div>
@@ -179,170 +181,170 @@ style="width:${percent}%"></div>
 </div>
 `;
 
-/* DEFINITIONS */
+        /* DEFINITIONS */
 
-for(const m of entry.meanings){
+        for (const m of entry.meanings) {
 
-html += `<div class="mt-6"><b>${m.partOfSpeech}</b><ul class="list-disc ml-6 mt-3">`;
+            html += `<div class="mt-6"><b>${m.partOfSpeech}</b><ul class="list-disc ml-6 mt-3">`;
 
-for(const d of m.definitions.slice(0,3)){
+            for (const d of m.definitions.slice(0, 3)) {
 
-const trDef = await translateText(d.definition);
+                const trDef = await translateText(d.definition);
 
-html += `
+                html += `
 <li class="mb-3">
 <div>${d.definition}</div>
 ${trDef ? `<div class="text-sm text-green-600 ">➜ ${trDef}</div>` : ""}
 </li>
 `;
-}
+            }
 
-html += `</ul></div>`;
-}
+            html += `</ul></div>`;
+        }
 
-/* IMAGES */
+        /* IMAGES */
 
-if(images.length){
+        if (images.length) {
 
-html += `
+            html += `
 <div class="mt-6">
 <b>Visual Context:</b>
 <div class="grid grid-cols-3 gap-3 mt-3">
 `;
 
-images.forEach(img=>{
-html += `
+            images.forEach(img => {
+                html += `
 <div onclick="openImagePopup('${img.full}','${img.author}','${img.authorLink}')"
 class="cursor-pointer">
 <img src="${img.thumb}" 
 class="rounded-lg shadow hover:scale-105 transition object-cover h-28 w-full">
 </div>
 `;
-});
+            });
 
-html += `
+            html += `
 </div>
 </div>
 `;
-}
+        }
 
-/* WORD FAMILY */
+        /* WORD FAMILY */
 
-if(familyData.length){
-html += `<div class="mt-6"><b>Word Family:</b><br>`;
-familyData.slice(0,6).forEach(w=>{
-html += `<span onclick="searchDictionaryWord('${w.word}')"
+        if (familyData.length) {
+            html += `<div class="mt-6"><b>Word Family:</b><br>`;
+            familyData.slice(0, 6).forEach(w => {
+                html += `<span onclick="searchDictionaryWord('${w.word}')"
 class="m-1 px-2 py-1 bg-purple-200 rounded cursor-pointer text-sm">
 ${w.word}
 </span>`;
-});
-html += `</div>`;
-}
+            });
+            html += `</div>`;
+        }
 
-/* SYNONYMS */
+        /* SYNONYMS */
 
-if(synData.length){
-html += `<div class="mt-6"><b>Synonyms:</b><br>`;
-synData.slice(0,5).forEach(w=>{
-html += `<span onclick="searchDictionaryWord('${w.word}')"
+        if (synData.length) {
+            html += `<div class="mt-6"><b>Synonyms:</b><br>`;
+            synData.slice(0, 5).forEach(w => {
+                html += `<span onclick="searchDictionaryWord('${w.word}')"
 class="m-1 px-2 py-1 bg-blue-200 rounded cursor-pointer text-sm">
 ${w.word}
 </span>`;
-});
-html += `</div>`;
-}
+            });
+            html += `</div>`;
+        }
 
-/* ANTONYMS */
+        /* ANTONYMS */
 
-if(antData.length){
-html += `<div class="mt-6"><b>Antonyms:</b><br>`;
-antData.slice(0,5).forEach(w=>{
-html += `<span onclick="searchDictionaryWord('${w.word}')"
+        if (antData.length) {
+            html += `<div class="mt-6"><b>Antonyms:</b><br>`;
+            antData.slice(0, 5).forEach(w => {
+                html += `<span onclick="searchDictionaryWord('${w.word}')"
 class="m-1 px-2 py-1 bg-red-200 rounded cursor-pointer text-sm">
 ${w.word}
 </span>`;
-});
-html += `</div>`;
-}
+            });
+            html += `</div>`;
+        }
 
-output.innerHTML = html;
+        output.innerHTML = html;
 
-}catch{
-output.innerHTML = "Word not found.";
-}
+    } catch {
+        output.innerHTML = "Word not found.";
+    }
 }
 
 /* =========================================
  IMAGE POPUP
  ========================================= */
 
-function openImagePopup(url, author, link){
-const popup = document.getElementById("imagePopup");
-const img = document.getElementById("popupImage");
-const credit = document.getElementById("popupCredit");
+function openImagePopup(url, author, link) {
+    const popup = document.getElementById("imagePopup");
+    const img = document.getElementById("popupImage");
+    const credit = document.getElementById("popupCredit");
 
-img.src = url;
-credit.innerHTML = `Photo by <a href="${link}" target="_blank" class="underline">${author}</a> on Unsplash`;
+    img.src = url;
+    credit.innerHTML = `Photo by <a href="${link}" target="_blank" class="underline">${author}</a> on Unsplash`;
 
-popup.classList.remove("hidden");
-popup.classList.add("flex");
+    popup.classList.remove("hidden");
+    popup.classList.add("flex");
 }
 
-function closeImagePopup(){
-document.getElementById("imagePopup").classList.add("hidden");
+function closeImagePopup() {
+    document.getElementById("imagePopup").classList.add("hidden");
 }
 
 /* =========================================
  SPEECH
  ========================================= */
 
-function speakWord(text){
-const utter = new SpeechSynthesisUtterance(text);
-utter.lang = "en-US";
-speechSynthesis.cancel();
-speechSynthesis.speak(utter);
+function speakWord(text) {
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = "en-US";
+    speechSynthesis.cancel();
+    speechSynthesis.speak(utter);
 }
 
 /* =========================================
  FIRESTORE NOTEBOOK (SAFE VERSION)
 ========================================= */
 
-async function saveWord(word){
+async function saveWord(word) {
 
- if(!word || typeof word !== "string") {
- console.error("Invalid word:", word);
- return;
- }
+    if (!word || typeof word !== "string") {
+        console.error("Invalid word:", word);
+        return;
+    }
 
- if(!window.currentUser){
- alert("Please login first.");
- return;
- }
+    if (!window.currentUser) {
+        alert("Please login first.");
+        return;
+    }
 
- try {
+    try {
 
- // 🔍 Duplicate kontrolü
- const existing = await getSavedWordsFirestore();
- const alreadySaved = existing.some(item => item.word === word);
+        // 🔍 Duplicate kontrolü
+        const existing = await getSavedWordsFirestore();
+        const alreadySaved = existing.some(item => item.word === word);
 
- if(alreadySaved){
- alert("Word already saved.");
- return;
- }
+        if (alreadySaved) {
+            alert("Word already saved.");
+            return;
+        }
 
- // ✅ Firestore'a OBJECT gönderiyoruz
- await saveWordFirestore({
- word: word,
- createdAt: new Date()
- });
+        // ✅ Firestore'a OBJECT gönderiyoruz
+        await saveWordFirestore({
+            word: word,
+            createdAt: new Date()
+        });
 
- alert("Word saved successfully!");
- renderNotebook();
+        alert("Word saved successfully!");
+        renderNotebook();
 
- } catch(error){
- console.error("Save error:", error);
- alert("Error saving word.");
- }
+    } catch (error) {
+        console.error("Save error:", error);
+        alert("Error saving word.");
+    }
 }
 
 
@@ -350,32 +352,32 @@ async function saveWord(word){
  RENDER NOTEBOOK
 ========================================= */
 
-async function renderNotebook(){
+async function renderNotebook() {
 
- if(!window.currentUser) return;
+    if (!window.currentUser) return;
 
- const container = document.getElementById("profileNotebookList");
- if(!container) return;
+    const container = document.getElementById("profileNotebookList");
+    if (!container) return;
 
- try {
+    try {
 
- const notebook = await getSavedWordsFirestore();
+        const notebook = await getSavedWordsFirestore();
 
- container.innerHTML = "";
+        container.innerHTML = "";
 
- if(!notebook || notebook.length === 0){
- container.innerHTML =
- "<p class='text-sm text-gray-500'>No saved words yet.</p>";
- return;
- }
+        if (!notebook || notebook.length === 0) {
+            container.innerHTML =
+                "<p class='text-sm text-gray-500'>No saved words yet.</p>";
+            return;
+        }
 
- notebook.forEach(item => {
+        notebook.forEach(item => {
 
- const div = document.createElement("div");
- div.className =
- "flex justify-between items-center bg-slate-100 p-2 rounded mb-2 text-sm";
+            const div = document.createElement("div");
+            div.className =
+                "flex justify-between items-center bg-slate-100 p-2 rounded mb-2 text-sm";
 
- div.innerHTML = `
+            div.innerHTML = `
  <span class="font-medium cursor-pointer text-black hover:underline">
  ${item.word}
  </span>
@@ -385,27 +387,27 @@ async function renderNotebook(){
  </button>
  `;
 
- // Word click
- div.querySelector("span").onclick = () => {
- switchTab('dictionary');
- setTimeout(() => searchDictionaryWord(item.word), 200);
- };
+            // Word click
+            div.querySelector("span").onclick = () => {
+                switchTab('dictionary');
+                setTimeout(() => searchDictionaryWord(item.word), 200);
+            };
 
- // Delete click
- div.querySelector("button").onclick = async () => {
+            // Delete click
+            div.querySelector("button").onclick = async () => {
 
- if(!confirm("Delete this word?")) return;
+                if (!confirm("Delete this word?")) return;
 
- await deleteWordFirestore(item.id);
- renderNotebook();
- };
+                await deleteWordFirestore(item.id);
+                renderNotebook();
+            };
 
- container.appendChild(div);
- });
+            container.appendChild(div);
+        });
 
- } catch(error){
- console.error(error);
- }
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 /* =========================================
@@ -414,11 +416,11 @@ async function renderNotebook(){
 
 document.addEventListener("DOMContentLoaded", () => {
 
- // Eğer auth state değişimini dinliyorsan,
- // en sağlıklısı oradan renderNotebook çağırmak.
+    // Eğer auth state değişimini dinliyorsan,
+    // en sağlıklısı oradan renderNotebook çağırmak.
 
- setTimeout(() => {
- renderNotebook();
- }, 500);
+    setTimeout(() => {
+        renderNotebook();
+    }, 500);
 
 });

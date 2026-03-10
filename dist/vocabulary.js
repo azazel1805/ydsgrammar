@@ -366,11 +366,12 @@ async function toggleDetails(word, element) {
 
         let turkish = "—";
         try {
-            const trRes = await fetch(
-                `https://api.mymemory.translated.net/get?q=${word}&langpair=en|tr`
-            );
+            const trRes = await fetch("/.netlify/functions/nlpAnalyze", {
+                method: "POST",
+                body: JSON.stringify({ text: word })
+            });
             const trData = await trRes.json();
-            turkish = trData.responseData?.translatedText || "—";
+            turkish = trData.translation || "—";
         } catch { }
 
         /* ---------- Rhymes ---------- */
