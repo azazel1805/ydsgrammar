@@ -3,7 +3,9 @@
    ============================================================ */
 
 const EXAM_LIST = [
-  { id: 'exam2', label: 'Practice Exam 2', file: '/exams/fullexam/exam2.json' }
+  { id: 'exam1', label: 'Practice Exam 1', file: '/exams/fullexam/exam1.json' },
+  { id: 'exam2', label: 'Practice Exam 2', file: '/exams/fullexam/exam2.json' },
+  { id: 'exam3', label: 'Practice Exam 3', file: '/exams/fullexam/exam3.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────
