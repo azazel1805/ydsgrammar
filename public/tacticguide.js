@@ -699,38 +699,38 @@ const tacticGuideHTML = /* html */`
 
 // ─── Toggle accordion ────────────────────────────────────────
 function tgToggle(id) {
-    const body = document.getElementById(`tg-${id}`);
-    const chevron = document.getElementById(`chevron-${id}`);
-    if (!body) return;
-    const isHidden = body.classList.contains('hidden');
-    body.classList.toggle('hidden', !isHidden);
-    if (chevron) chevron.classList.toggle('open', isHidden);
+  const body = document.getElementById(`tg-${id}`);
+  const chevron = document.getElementById(`chevron-${id}`);
+  if (!body) return;
+  const isHidden = body.classList.contains('hidden');
+  body.classList.toggle('hidden', !isHidden);
+  if (chevron) chevron.classList.toggle('open', isHidden);
 }
 
 // ─── Level filter ────────────────────────────────────────────
 function tgSetLevel(level) {
-    document.querySelectorAll('.tg-level-btn').forEach(b => {
-        b.classList.remove('border-red-700', 'bg-red-700', 'text-white');
-        b.classList.add('border-slate-200', 'text-slate-600');
-    });
-    const active = document.getElementById(`tgBtn-${level}`);
-    if (active) {
-        active.classList.add('border-red-700', 'bg-red-700', 'text-white');
-        active.classList.remove('border-slate-200', 'text-slate-600');
-    }
+  document.querySelectorAll('.tg-level-btn').forEach(b => {
+    b.classList.remove('border-red-700', 'bg-red-700', 'text-white');
+    b.classList.add('border-slate-200', 'text-slate-600');
+  });
+  const active = document.getElementById(`tgBtn-${level}`);
+  if (active) {
+    active.classList.add('border-red-700', 'bg-red-700', 'text-white');
+    active.classList.remove('border-slate-200', 'text-slate-600');
+  }
 
-    const beginnerCards = document.querySelectorAll('.tg-beginner');
-    const advancedCards = document.querySelectorAll('.tg-advanced');
+  const beginnerCards = document.querySelectorAll('.tg-beginner');
+  const advancedCards = document.querySelectorAll('.tg-advanced');
 
-    beginnerCards.forEach(c => c.classList.toggle('hidden', level === 'advanced'));
-    advancedCards.forEach(c => c.classList.toggle('hidden', level === 'beginner'));
+  beginnerCards.forEach(c => c.classList.toggle('hidden', level === 'advanced'));
+  advancedCards.forEach(c => c.classList.toggle('hidden', level === 'beginner'));
 }
 
 // ─── Init ────────────────────────────────────────────────────
 function initTacticGuide() {
-    const container = document.getElementById('tab-tacticguide');
-    if (!container) return;
-    container.innerHTML = tacticGuideHTML;
+  const container = document.getElementById('tab-tacticguide');
+  if (!container) return;
+  container.innerHTML = tacticGuideHTML;
 }
 
 window.initTacticGuide = initTacticGuide;
