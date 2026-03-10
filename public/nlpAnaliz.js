@@ -23,11 +23,18 @@ const nlpAnalizHTML = `
                     placeholder="Analiz etmek istediğiniz İngilizce cümleyi buraya yazın..."
                 ></textarea>
 
-                <button onclick="runNlpAnalysis()" id="nlpBtn"
-                    class="w-full bg-slate-900 hover:bg-purple-900 text-white py-4 rounded-2xl font-bold transition-all transform active:scale-95 flex items-center justify-center gap-2 shadow-xl shadow-slate-200">
-                    <span>Cümleyi Çözümle</span>
-                    <i class="fas fa-magic"></i>
-                </button>
+                <div class="flex gap-2">
+                    <button onclick="runNlpAnalysis()" id="nlpBtn"
+                        class="flex-1 bg-slate-900 hover:bg-purple-900 text-white py-4 rounded-2xl font-bold transition-all transform active:scale-95 flex items-center justify-center gap-2 shadow-xl shadow-slate-200">
+                        <span>Cümleyi Çözümle</span>
+                        <i class="fas fa-magic"></i>
+                    </button>
+                    <button onclick="speakPremium()" id="nlpSpeakBtn"
+                        class="px-6 bg-white border-2 border-slate-100 text-slate-600 hover:text-purple-600 hover:border-purple-200 rounded-2xl transition-all active:scale-95 flex items-center justify-center gap-2">
+                        <i class="fas fa-volume-up"></i>
+                        <span class="text-xs font-bold uppercase tracking-widest hidden md:inline">Premium Dinle</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -64,6 +71,17 @@ const nlpAnalizHTML = `
                 <div>
                     <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Detected Tense</p>
                     <p id="nlpTense" class="text-xl font-bold text-slate-900">N/A</p>
+                </div>
+            </div>
+
+            <!-- Content Classification (Category) -->
+            <div id="nlpCategoryCard" class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex items-center gap-4 hidden">
+                <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Konu (Topic)</p>
+                    <p id="nlpCategory" class="text-xl font-bold text-slate-900">...</p>
                 </div>
             </div>
         </div>
@@ -120,7 +138,12 @@ async function runNlpAnalysis() {
         }
 
         renderNlpResults(data);
-        fetchTranslation(input.value.trim()); // Async translation call
+        // Translation is now handled directly by the proxy response, but let's keep MyMemory as secondary or logic check
+        if (data.translation) {
+            document.getElementById("nlpTranslation").innerText = data.translation;
+        } else {
+            fetchTranslation(input.value.trim()); // Fallback if Google translation is missing
+        }
         container.classList.remove("hidden");
     } catch (err) {
         console.error("NLP Analysis Error:", err);
@@ -152,6 +175,16 @@ function renderNlpResults(data) {
     else if (hasIng) detectedTense = "Present Continuous";
 
     document.getElementById("nlpTense").innerText = detectedTense;
+
+    // 2.5 Categories
+    const catCard = document.getElementById("nlpCategoryCard");
+    const catText = document.getElementById("nlpCategory");
+    if (data.categories && data.categories.length > 0) {
+        catCard.classList.remove("hidden");
+        catText.innerText = data.categories.map(c => c.name.split("/").pop()).join(", ");
+    } else {
+        catCard.classList.add("hidden");
+    }
 
     // 3. Tree View
     const treeDiv = document.getElementById("nlpTree");
@@ -258,5 +291,36 @@ async function fetchTranslation(text) {
         } catch (innerErr) {
             trDiv.innerText = "Çeviri şu an yapılamıyor.";
         }
+    }
+}
+
+async function speakPremium() {
+    const text = document.getElementById("nlpInput")?.value.trim();
+    if (!text) return;
+
+    const btn = document.getElementById("nlpSpeakBtn");
+    const originalIcon = btn.innerHTML;
+    btn.innerHTML = `<i class="fas fa-spinner animate-spin"></i>`;
+    btn.disabled = true;
+
+    try {
+        const res = await fetch("/.netlify/functions/speakPremium", {
+            method: "POST",
+            body: JSON.stringify({ text })
+        });
+        const data = await res.json();
+
+        if (data.audioContent) {
+            const audio = new Audio(`data:audio/mp3;base64,${data.audioContent}`);
+            audio.play();
+        } else {
+            // Fallback to basic TTS
+            if (typeof speakWord === "function") speakWord(text);
+        }
+    } catch (err) {
+        if (typeof speakWord === "function") speakWord(text);
+    } finally {
+        btn.innerHTML = originalIcon;
+        btn.disabled = false;
     }
 }
