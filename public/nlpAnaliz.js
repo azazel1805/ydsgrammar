@@ -106,19 +106,25 @@ async function runNlpAnalysis() {
     btn.innerHTML = `<i class="fas fa-spinner animate-spin"></i> Analiz Ediliyor...`;
 
     try {
+        console.log("Starting NLP Analysis for:", input.value.trim());
         const response = await fetch("/.netlify/functions/nlpAnalyze", {
             method: "POST",
             body: JSON.stringify({ text: input.value.trim() })
         });
 
-        if (!response.ok) throw new Error("API call failed");
-
         const data = await response.json();
+        console.log("NLP API Response:", data);
+
+        if (!response.ok || data.error) {
+            const msg = data.error?.message || data.error || "API call failed";
+            throw new Error(msg);
+        }
+
         renderNlpResults(data);
         container.classList.remove("hidden");
     } catch (err) {
-        console.error(err);
-        alert("Üzgünüz, bir hata oluştu. Lütfen tekrar deneyin.");
+        console.error("NLP Analysis Error:", err);
+        alert("Hata: " + err.message);
     } finally {
         btn.disabled = false;
         btn.innerHTML = originalBtnText;
