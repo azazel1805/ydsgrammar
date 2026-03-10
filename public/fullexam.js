@@ -408,7 +408,13 @@ function feFinish() {
 
   // Init section stats
   feExamData.sections.forEach(s => {
-    sectionStats[s.id] = { label: s.label.substring(0, 50) + '...', correct: 0, total: 0, sectionShort: s.id };
+    sectionStats[s.id] = {
+      label: s.label.length > 55 ? s.label.substring(0, 52) + '...' : s.label,
+      correct: 0,
+      total: 0,
+      from: s.from,
+      to: s.to
+    };
   });
 
   questions.forEach(q => {
@@ -438,16 +444,6 @@ function feFinish() {
   // Section breakdown
   const breakdown = document.getElementById('feSectionBreakdown');
   breakdown.innerHTML = '';
-  const sectionNames = {
-    vocab: 'Kelime / Dilbilgisi (1-25)',
-    completion: 'Cümle Tamamlama (26-33)',
-    reading1: 'Okuma (34-45)',
-    reading2: 'Okuma (46-51)',
-    tr_to_en: 'Türkçe→İngilizce (52-59)',
-    en_to_tr: 'İngilizce→Türkçe (60-67)',
-    para_comp: 'Paragraf Tamamlama (68-73)',
-    dialogue: 'Diyalog (74-80)'
-  };
 
   Object.entries(sectionStats).forEach(([id, s]) => {
     const sPct = s.total ? Math.round((s.correct / s.total) * 100) : 0;
@@ -455,7 +451,7 @@ function feFinish() {
     breakdown.innerHTML += `
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
             <div class="flex justify-between items-center mb-2">
-              <span class="text-xs font-bold text-slate-600">${sectionNames[id] || id}</span>
+              <span class="text-xs font-bold text-slate-600">${s.label} (${s.from}-${s.to})</span>
               <span class="text-sm font-extrabold ${sPct >= 70 ? 'text-green-600' : sPct >= 50 ? 'text-amber-600' : 'text-red-600'}">${s.correct}/${s.total}</span>
             </div>
             <div class="h-2 bg-slate-200 rounded-full overflow-hidden">
