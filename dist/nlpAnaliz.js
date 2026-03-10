@@ -79,14 +79,13 @@ const nlpAnalizHTML = `
             </div>
         </div>
 
-        <!-- Entity Detection -->
-        <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl">
-            <h3 class="text-lg font-bold mb-4 opacity-80 flex items-center gap-2 text-purple-300">
-                <i class="fas fa-fingerprint"></i>
-                Varlık Tespiti (Named Entities)
+        <!-- Translation Card -->
+        <div class="bg-slate-900 rounded-3xl p-8 text-white shadow-xl">
+            <h3 class="font-bold text-lg mb-4 flex items-center gap-2" style="font-family: 'Playfair Display', serif;">
+                <i class="fas fa-language text-blue-400"></i> Cümlenin Anlamı (Translation)
             </h3>
-            <div id="nlpEntities" class="flex flex-wrap gap-2">
-                <!-- Entities injected here -->
+            <div id="nlpTranslation" class="text-xl font-medium leading-relaxed italic opacity-90 border-l-4 border-blue-500 pl-6">
+                Çeviri yükleniyor...
             </div>
         </div>
 
@@ -121,6 +120,7 @@ async function runNlpAnalysis() {
         }
 
         renderNlpResults(data);
+        fetchTranslation(input.value.trim()); // Async translation call
         container.classList.remove("hidden");
     } catch (err) {
         console.error("NLP Analysis Error:", err);
@@ -133,7 +133,6 @@ async function runNlpAnalysis() {
 
 function renderNlpResults(data) {
     const tokens = data.tokens || [];
-    const entities = data.entities || [];
 
     // 1. Stats
     document.getElementById("nlpTokenCount").innerText = tokens.length;
@@ -174,28 +173,16 @@ function renderNlpResults(data) {
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
                 <div class="bg-white text-slate-900 text-xs p-3 rounded-xl shadow-2xl border border-slate-100 min-w-[150px]">
                     <p class="font-bold border-b border-slate-100 pb-1 mb-1">${label}</p>
-                    <p class="opacity-70">Kelime Kökü (Lemma): ${t.lemma}</p>
-                    <p class="opacity-70">Durum (Case): ${t.partOfSpeech.case || 'N/A'}</p>
-                    <p class="opacity-70">Şahıs (Person): ${t.partOfSpeech.person || 'N/A'}</p>
+                    ${t.lemma && t.lemma !== t.text.content ? `<p class="opacity-70">Kelime Kökü: ${t.lemma}</p>` : ''}
+                    ${t.partOfSpeech.case && !t.partOfSpeech.case.includes('UNKNOWN') ? `<p class="opacity-70">Durum: ${t.partOfSpeech.case}</p>` : ''}
+                    ${t.partOfSpeech.person && !t.partOfSpeech.person.includes('UNKNOWN') ? `<p class="opacity-70">Şahıs: ${t.partOfSpeech.person}</p>` : ''}
+                    ${t.partOfSpeech.mood && !t.partOfSpeech.mood.includes('UNKNOWN') ? `<p class="opacity-70">Kip: ${t.partOfSpeech.mood}</p>` : ''}
+                    ${t.partOfSpeech.tense && !t.partOfSpeech.tense.includes('UNKNOWN') ? `<p class="opacity-70">Zaman: ${t.partOfSpeech.tense}</p>` : ''}
                 </div>
             </div>
         `;
         treeDiv.appendChild(tokenEl);
     });
-
-    // 4. Entities
-    const entityDiv = document.getElementById("nlpEntities");
-    entityDiv.innerHTML = "";
-    if (entities.length === 0) {
-        entityDiv.innerHTML = `<span class="text-xs opacity-50 italic">Varlık bulunamadı.</span>`;
-    } else {
-        entities.forEach(e => {
-            const badge = document.createElement("span");
-            badge.className = "px-3 py-1.5 rounded-full bg-white/10 text-xs font-bold border border-white/5";
-            badge.innerText = `${e.name} (${e.type})`;
-            entityDiv.appendChild(badge);
-        });
-    }
 
     // 5. CEFR guess (Using locally available oxford_master_5000 if global)
     if (typeof oxford_master_5000 !== 'undefined') {
@@ -245,4 +232,15 @@ function getNlpLabel(tag) {
         'PUNCT': 'Noktalama'
     };
     return labels[tag] || tag;
+}
+async function fetchTranslation(text) {
+    const trDiv = document.getElementById("nlpTranslation");
+    if (!trDiv) return;
+    try {
+        const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|tr`);
+        const data = await response.json();
+        trDiv.innerText = data.responseData.translatedText || "Çeviri bulunamadı.";
+    } catch {
+        trDiv.innerText = "Çeviri başarısız oldu.";
+    }
 }

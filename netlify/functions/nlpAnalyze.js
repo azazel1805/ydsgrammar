@@ -29,7 +29,7 @@ export const handler = async (event) => {
                 },
                 features: {
                     extractSyntax: true,
-                    extractEntities: true,
+                    extractEntities: false,
                     extractDocumentSentiment: false,
                     extractEntitySentiment: false,
                     classifyText: false
