@@ -104,26 +104,46 @@ async function initIrrelevant() {
 async function generateIRQuestion() {
     setupUIStatus("ir");
 
-    // Using Wikipedia Content for real sentences
-    const topics = ["Albert Einstein", "Industrial Revolution", "Global Warming", "Space Exploration", "Artificial Intelligence", "DNA"];
+    // Topics list
+    const topics = ["Albert Einstein", "Industrial Revolution", "Global Warming", "Space Exploration", "Artificial Intelligence", "DNA", "Ancient Egypt", "Quantum Mechanics", "French Revolution", "Climate Change"];
     const topic = topics[Math.floor(Math.random() * topics.length)];
 
     try {
-        const wikiRes = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${topic}`);
+        // Fetch a longer extract to have enough sentences for "contextually related but out-of-flow" difficulty
+        const wikiRes = await fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${encodeURIComponent(topic)}&explaintext=1&exchars=2000&origin=*`);
         const data = await wikiRes.json();
-        const sentences = data.extract.split('. ').filter(s => s.length > 20).map(s => s.trim() + ".");
+        const pages = data.query.pages;
+        const pageId = Object.keys(pages)[0];
+        const extract = pages[pageId].extract;
 
-        if (sentences.length < 4) {
+        if (!extract) {
             generateIRQuestion();
             return;
         }
 
-        const baseSentences = sentences.slice(0, 4);
+        // Split into sentences, clean up
+        let sentences = extract.split(/[.!?]\s+/).filter(s => s.length > 30).map(s => s.trim() + ".");
 
-        // Add one irrelevant sentence from dictionary examples or random
-        const irrevPrompt = "Cats are mammals that have been domesticated for thousands of years."; // Placeholder for now or fetch random
+        if (sentences.length < 12) {
+            // Fallback to summary if extract is too short or retry
+            generateIRQuestion();
+            return;
+        }
+
+        // Pick 4 consecutive sentences for the main paragraph
+        const startIdx = Math.floor(Math.random() * (sentences.length - 8));
+        const baseSentences = sentences.slice(startIdx, startIdx + 4);
+
+        // Pick an irrelevant sentence from at least 6 sentences away (same article)
+        // This follows the user request "aynı makalede ki 10 cümle sonra"
+        let irrevIdx = (startIdx + 8) % sentences.length;
+        if (irrevIdx >= startIdx && irrevIdx < startIdx + 4) {
+            irrevIdx = (startIdx + 5) % sentences.length;
+        }
+        const irrevPrompt = sentences[irrevIdx];
+
         const finalSet = [...baseSentences, irrevPrompt];
-        const shuffled = finalSet.map((text, index) => ({ text, isCorrect: text === irrevPrompt, originalIndex: index }));
+        const shuffled = finalSet.map((text, index) => ({ text, isCorrect: text === irrevPrompt }));
         shuffled.sort(() => 0.5 - Math.random());
 
         const template = shuffled.map((s, i) => `<div class="mb-2 text-left p-3 bg-slate-50/50 rounded-xl border border-slate-100 text-sm md:text-base"><span class="font-bold text-red-800 mr-2">(${i + 1})</span> ${s.text}</div>`).join("");
@@ -136,7 +156,9 @@ async function generateIRQuestion() {
 
     } catch (e) {
         console.error("IR load fail", e);
-        generateIRQuestion();
+        // Fallback to a simple placeholder if API fails
+        setupUIStatus("ir");
+        setTimeout(generateIRQuestion, 1000);
     }
 }
 
