@@ -89,6 +89,19 @@ let fullArticleText = "";
 let truncated = false;
 let isSimpleWikipedia = false;
 const MAX_CHAR = 5000;
+let dictionaryData = [];
+
+// Load the full dictionary for hover info
+async function loadFullDictionary() {
+    try {
+        const res = await fetch("/data/dictionary_full.json");
+        dictionaryData = await res.json();
+        console.log("Full dictionary loaded for reading tooltips:", dictionaryData.length, "words");
+    } catch (e) {
+        console.error("Failed to load full dictionary:", e);
+    }
+}
+loadFullDictionary();
 
 /* ================= HTML ================= */
 
@@ -297,94 +310,95 @@ async function fetchFullArticle(title) {
 /* ================= ANALYSIS ================= */
 
 function analyzeText(text) {
-
     if (!text) return;
 
-    let words = text.split(/\s+/);
-    let wordCount = words.length;
-    let readingTime = Math.ceil(wordCount / 200);
+    // Split text into words while preserving punctuation and whitespace
+    const parts = text.split(/(\b\w+\b)/g);
 
+    let processedHtml = "";
+    let wordCount = 0;
     let academicCount = 0;
 
-    academicWords.forEach(word => {
-        const regex = new RegExp("\\b" + word + "\\b", "gi");
-        const matches = text.match(regex);
-        if (matches) academicCount += matches.length;
-        text = text.replace(regex,
-            `<span class="text-green-400 font-semibold">${word}</span>`);
+    // Helper to find word in our dictionary
+    const findWordInfo = (w) => {
+        const lower = w.toLowerCase();
+        return dictionaryData.find(d => d.word.toLowerCase() === lower);
+    };
+
+    parts.forEach(part => {
+        if (/^\w+$/.test(part)) {
+            // It's a word
+            wordCount++;
+            const wordInfo = findWordInfo(part);
+            let classes = "reading-word transition-colors cursor-help border-b border-transparent hover:border-slate-400 ";
+            let tooltipContent = "";
+
+            if (wordInfo) {
+                const level = (wordInfo.level || "??").toUpperCase();
+                const pos = wordInfo.pos || "";
+                const ipa = wordInfo.ipa || "";
+
+                // Color by level
+                if (level.startsWith("A")) classes += "text-emerald-700 ";
+                else if (level.startsWith("B")) classes += "text-blue-700 ";
+                else if (level.startsWith("C")) classes += "text-rose-700 ";
+
+                tooltipContent = `
+                    <div class='p-3 min-w-[220px] text-left whitespace-normal'>
+                        <div class='flex justify-between items-center border-b border-slate-100 pb-1 mb-1'>
+                            <span class='font-bold text-slate-800'>${part}</span>
+                            <span class='text-[9px] font-bold bg-slate-100 px-1.5 py-0.5 rounded text-slate-600'>${level}</span>
+                        </div>
+                        <div class='text-[10px] text-slate-400 italic mb-1'>${pos} ${ipa}</div>
+                        ${wordInfo.synonyms?.length ? `<div class='text-[10px] text-slate-600 leading-tight'><b>Eş Anlam:</b> ${wordInfo.synonyms.slice(0, 3).join(", ")}</div>` : ""}
+                        ${wordInfo.examples?.length ? `<div class='text-[10px] mt-2 italic text-slate-500 line-clamp-2'>"${wordInfo.examples[0]}"</div>` : ""}
+                    </div>
+                `;
+            }
+
+            // Academic Word Highlight
+            if (academicWords.includes(part.toLowerCase())) {
+                academicCount++;
+                if (!wordInfo) classes += "text-emerald-800 font-semibold ";
+            }
+
+            processedHtml += `
+                <span class="group relative inline-block ${classes}">
+                    ${part}
+                    ${tooltipContent ? `
+                    <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-[100] bg-white border border-slate-200 shadow-2xl rounded-xl">
+                        ${tooltipContent}
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-white"></div>
+                    </div>` : ""}
+                </span>`;
+        } else {
+            // It's whitespace or punctuation
+            processedHtml += part;
+        }
     });
 
-    const passiveMatches =
-        text.match(/\b(be|is|are|was|were|been|being)\s+\w+ed\b/gi) || [];
-
-    const passiveCount = passiveMatches.length;
-
-    text = text.replace(
-        /\b(be|is|are|was|were|been|being)\s+\w+ed\b/gi,
-        '<span class="text-red-400 font-bold">$&</span>'
-    );
-
-    // CONJUNCTIONS HIGHLIGHTER (EXPANDED FOR YDS)
-    const targetConjunctions = [
-        // Contrast & Concession (Zıtlık)
-        "however", "nevertheless", "nonetheless", "on the other hand", "conversely",
-        "in contrast", "contrary to", "alternatively", "instead", "whereas", "while",
-        "although", "even though", "though", "even so", "despite", "in spite of",
-        "notwithstanding", "much as", "even if", "still", "yet", "but",
-
-        // Cause & Effect (Sebep-Sonuç)
-        "therefore", "consequently", "as a result", "thus", "hence", "accordingly",
-        "for this reason", "so", "because", "as", "since", "now that", "seeing that",
-        "in that", "due to", "owing to", "because of", "on account of", "thanks to",
-        "so that", "in order that", "with the aim of",
-
-        // Addition & Transition (Ekleme)
-        "moreover", "furthermore", "in addition", "additionally", "besides",
-        "what is more", "also", "too", "as well as", "along with", "coupled with",
-
-        // Condition (Koşul)
-        "provided that", "providing that", "as long as", "so long as", "on condition that",
-        "unless", "if", "whether", "supposing", "in case",
-
-        // Example & Focus (Örnekleme)
-        "for example", "for instance", "to illustrate", "such as", "namely", "that is",
-        "particularly", "especially", "notably", "in particular"
-    ];
-
-    let conjunctionCount = 0;
-    targetConjunctions.forEach(conj => {
-        const regex = new RegExp("\\b" + conj + "\\b", "gi");
-        const matches = text.match(regex);
-        if (matches) conjunctionCount += matches.length;
-        text = text.replace(regex, '<span class="text-orange-500 font-extrabold underline decoration-orange-300">$&</span>');
-    });
-
-    const difficulty =
-        (Math.min(wordCount / 50, 10)
-            + passiveCount * 0.5
-            + academicCount * 1.2).toFixed(1);
+    let readingTime = Math.ceil(wordCount / 200);
 
     const textContainer = document.getElementById("readingText");
     const statsContainer = document.getElementById("readingStats");
 
-    if (textContainer) textContainer.innerHTML = text;
+    if (textContainer) textContainer.innerHTML = processedHtml;
 
     if (statsContainer) statsContainer.innerHTML = `
-Words: ${wordCount} |
-Reading Time: ~${readingTime} min |
-Academic Words: ${academicCount} |
-Passive: ${passiveCount} |
-Conjunctions: <span class="text-orange-500 font-bold">${conjunctionCount}</span> |
-Difficulty: <span class="text-red-700 font-bold">${difficulty}/20</span>
-`;
+        <div class="flex flex-wrap gap-4 items-center mb-4">
+            <span class="px-2 py-1 bg-slate-100 rounded text-xs font-bold uppercase tracking-wider text-slate-500">Kelimeler: ${wordCount}</span>
+            <span class="px-2 py-1 bg-slate-100 rounded text-xs font-bold uppercase tracking-wider text-slate-500">Süre: ~${readingTime} dk</span>
+            <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs font-bold uppercase tracking-wider">Akademik: ${academicCount}</span>
+        </div>
+    `;
 
     if (truncated && textContainer) {
         textContainer.innerHTML += `
-<div class="mt-6">
-<button onclick="showFullArticle()" 
-class="bg-purple-600 px-4 py-2 rounded font-bold">
-Devamını Oku
-</button>
+<div class="mt-8 flex justify-center">
+    <button onclick="showFullArticle()" 
+    class="bg-slate-900 hover:bg-purple-900 px-8 py-3 rounded-full font-bold text-white transition-all transform hover:scale-105 shadow-xl">
+    Devamını Oku & Çözümle
+    </button>
 </div>
 `;
     }
