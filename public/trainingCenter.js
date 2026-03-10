@@ -5,37 +5,37 @@
  */
 
 const trainingCenterCommonHTML = (id, title, desc, icon) => `
-<div class="max-w-4xl mx-auto p-8 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700 mb-20">
-    <div class="text-center space-y-4">
-        <h2 class="text-5xl font-black text-slate-900 tracking-tighter italic" style="font-family: 'Playfair Display', serif;">
+<div class="max-w-3xl mx-auto p-4 md:p-8 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700 mb-20">
+    <div class="text-center space-y-2">
+        <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter italic" style="font-family: 'Playfair Display', serif;">
             ${icon} ${title}
         </h2>
-        <p class="text-slate-500 italic max-w-xl mx-auto">${desc}</p>
+        <p class="text-slate-500 text-sm italic max-w-xl mx-auto">${desc}</p>
     </div>
 
     <div id="${id}-container" class="relative">
-        <div id="${id}-loader" class="flex flex-col items-center justify-center p-20 space-y-4">
-            <div class="w-12 h-12 border-4 border-slate-100 border-t-red-800 rounded-full animate-spin"></div>
-            <p class="text-sm font-bold text-red-800 animate-pulse uppercase tracking-widest">Hazırlanıyor...</p>
+        <div id="${id}-loader" class="flex flex-col items-center justify-center p-12 space-y-4">
+            <div class="w-10 h-10 border-4 border-slate-100 border-t-red-800 rounded-full animate-spin"></div>
+            <p class="text-[10px] font-bold text-red-800 animate-pulse uppercase tracking-widest">Hazırlanıyor...</p>
         </div>
 
-        <div id="${id}-card" class="hidden bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-10 md:p-16 space-y-12 relative overflow-hidden">
-            <div class="absolute -top-20 -right-20 w-60 h-60 bg-red-50 rounded-full blur-[100px] opacity-60"></div>
+        <div id="${id}-card" class="hidden bg-white rounded-[2rem] border border-slate-200 shadow-xl p-6 md:p-10 space-y-8 relative overflow-hidden">
+            <div class="absolute -top-20 -right-20 w-40 h-40 bg-red-50 rounded-full blur-[100px] opacity-60"></div>
             
-            <div class="space-y-8 relative z-10">
-                <div id="${id}-template" class="text-2xl md:text-3xl font-medium leading-[1.6] text-slate-900 text-center" style="font-family: 'Lora', serif;"></div>
+            <div class="space-y-6 relative z-10 text-center">
+                <div id="${id}-template" class="text-xl md:text-2xl font-medium leading-[1.6] text-slate-900" style="font-family: 'Lora', serif;"></div>
             </div>
 
-            <div id="${id}-options" class="grid grid-cols-1 md:grid-cols-2 gap-5 relative z-10"></div>
+            <div id="${id}-options" class="grid grid-cols-1 md:grid-cols-2 gap-3 relative z-10"></div>
 
-            <div id="${id}-feedback" class="hidden p-8 rounded-[2rem] border transition-all duration-500 relative z-10">
-                <div class="flex flex-col md:flex-row items-center gap-6">
-                    <div id="${id}-feedback-icon" class="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl shadow-lg"></div>
+            <div id="${id}-feedback" class="hidden p-6 rounded-[1.5rem] border transition-all duration-500 relative z-10">
+                <div class="flex flex-col md:flex-row items-center gap-4">
+                    <div id="${id}-feedback-icon" class="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-md"></div>
                     <div class="text-center md:text-left flex-1">
-                        <p id="${id}-feedback-title" class="font-black text-2xl tracking-tight italic"></p>
-                        <p id="${id}-feedback-text" class="mt-2 text-slate-600 font-medium"></p>
+                        <p id="${id}-feedback-title" class="font-black text-xl tracking-tight italic"></p>
+                        <p id="${id}-feedback-text" class="mt-1 text-slate-600 font-medium text-sm"></p>
                     </div>
-                    <button onclick="next${id}Question()" class="px-10 py-5 bg-slate-900 text-white font-black rounded-2xl hover:bg-black transition-all shadow-xl">
+                    <button onclick="next${id}Question()" class="px-8 py-3 bg-slate-900 text-white font-black rounded-xl hover:bg-black transition-all shadow-lg text-xs uppercase tracking-widest">
                         Sıradaki <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                 </div>
@@ -126,7 +126,7 @@ async function generateIRQuestion() {
         const shuffled = finalSet.map((text, index) => ({ text, isCorrect: text === irrevPrompt, originalIndex: index }));
         shuffled.sort(() => 0.5 - Math.random());
 
-        const template = shuffled.map((s, i) => `<div class="mb-4 text-left p-4 bg-slate-50/50 rounded-xl border border-slate-100"><span class="font-bold text-red-800 mr-2">(${i + 1})</span> ${s.text}</div>`).join("");
+        const template = shuffled.map((s, i) => `<div class="mb-2 text-left p-3 bg-slate-50/50 rounded-xl border border-slate-100 text-sm md:text-base"><span class="font-bold text-red-800 mr-2">(${i + 1})</span> ${s.text}</div>`).join("");
 
         const options = shuffled.map((s, i) => `Cümle ${i + 1}`);
         const correctIndex = shuffled.findIndex(s => s.isCorrect);
@@ -215,8 +215,8 @@ function renderQuestion(id, template, options, clickFn) {
             optContainer.innerHTML = "";
             options.forEach(opt => {
                 const btn = document.createElement("button");
-                btn.className = "p-6 text-left rounded-[1.5rem] border border-slate-100 bg-white hover:border-red-200 hover:bg-slate-50 transition-all font-bold text-slate-800 shadow-sm flex justify-between items-center group";
-                btn.innerHTML = `<span class="text-xl tracking-tight">${opt}</span><div class="h-8 w-8 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-red-800 group-hover:text-white transition-all"><i class="fas fa-chevron-right text-xs"></i></div>`;
+                btn.className = "p-4 md:p-5 text-left rounded-2xl border border-slate-100 bg-white hover:border-red-200 hover:bg-slate-50 transition-all font-bold text-slate-800 shadow-sm flex justify-between items-center group";
+                btn.innerHTML = `<span class="text-lg tracking-tight">${opt}</span><div class="h-6 w-6 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-red-800 group-hover:text-white transition-all"><i class="fas fa-chevron-right text-[10px]"></i></div>`;
                 btn.onclick = () => clickFn(opt, btn);
                 optContainer.appendChild(btn);
             });
