@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-textdecon", typeof textDeconHTML !== 'undefined' ? textDeconHTML : undefined);
     safeInject("tab-analyzer", typeof analyzerHTML !== 'undefined' ? analyzerHTML : undefined);
     safeInject("tab-testlab", typeof testlabHTML !== 'undefined' ? testlabHTML : undefined);
+    safeInject("tab-wordpractice", typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
@@ -241,7 +242,7 @@ window.switchTab = function (tabName) {
         }
     }
 
-    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary'];
+    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary', 'wordpractice'];
 
     if (protectedTabs.includes(tabName) && !window.currentUser) {
         console.warn("Protected tab accessed without login:", tabName);
@@ -287,6 +288,10 @@ window.switchTab = function (tabName) {
         window.forceProfileRender();
     }
 
+    if (tabName === "wordpractice" && typeof initWordPractice === "function") {
+        initWordPractice();
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
@@ -314,7 +319,8 @@ function reinjectTabContent(tabName) {
         "tacticguide": typeof tacticGuideHTML !== 'undefined' ? tacticGuideHTML : null,
         "analyzer": typeof analyzerHTML !== 'undefined' ? analyzerHTML : null,
         "nlpanaliz": typeof nlpAnalizHTML !== 'undefined' ? nlpAnalizHTML : null,
-        "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null
+        "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null,
+        "wordpractice": typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : null
     };
 
     const content = mappings[tabName];

@@ -13,6 +13,7 @@ window.userStats = {
     nextLevelXP: 500,
     streak: 0,
     totalQuizzes: 0,
+    wpCount: 0,
     levelIcon: "🌱"
 };
 
@@ -124,6 +125,10 @@ const dashboardHTML = `
         <p class="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Global Sıralama</p>
         <p class="text-3xl font-bold text-red-900">#412</p>
     </div>
+    <div class="bg-blue-50 p-5 rounded-3xl border border-blue-100 col-span-2">
+        <p class="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Kelime Çalışması</p>
+        <p id="dashWPCount" class="text-3xl font-bold text-blue-900">0</p>
+    </div>
     <div class="col-span-2 flex items-center justify-between px-2 pt-2">
         <div>
             <p id="dashDate" class="text-sm font-bold text-slate-900"></p>
@@ -151,6 +156,16 @@ const dashboardHTML = `
     <i class="fas fa-star text-yellow-400 text-sm"></i> Kayıtlı Kelimeler
     </h3>
     <div id="dashSavedWords" class="space-y-3 text-sm flex-1 overflow-y-auto pr-2 custom-scrollbar"></div>
+  </div>
+
+  <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm flex flex-col max-h-80">
+    <h3 class="font-bold text-xl mb-6 flex items-center gap-2 text-slate-900" style="font-family: 'Playfair Display', serif;">
+    <i class="fas fa-comments text-red-800 text-sm"></i> Forumdan Son Sorular
+    </h3>
+    <div id="dashForumPosts" class="space-y-3 text-sm flex-1 overflow-y-auto pr-2 custom-scrollbar">
+        <div class="p-8 text-center text-slate-300 animate-pulse">Sorular yükleniyor...</div>
+    </div>
+    <button onclick="switchTab('forum')" class="mt-4 text-[10px] font-bold text-red-800 hover:underline uppercase tracking-widest text-center">Tümünü Gör →</button>
   </div>
  </div>
 
@@ -207,6 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateGamification();
                 renderDashboardSavedWords();
                 renderDashboardNotes();
+                renderDashboardForumPosts();
                 setTimeout(initCharts, 1200);
             }
         }, 300);
@@ -257,6 +273,17 @@ window.updateGamification = async function () {
         document.getElementById("levelIcon").innerText = window.userStats.levelIcon;
         document.getElementById("dashStreakValue").innerText = window.userStats.streak;
         document.getElementById("dashTotalQuizzes").innerText = window.userStats.totalQuizzes;
+
+        // Load Word Practice Stats
+        if (typeof window.firebaseExports !== "undefined") {
+            const wpSnapshot = await window.firebaseExports.getDocs(
+                window.firebaseExports.collection(window.db, "users", window.currentUser.uid, "wpStats")
+            );
+            window.userStats.wpCount = wpSnapshot.size;
+            if (document.getElementById("dashWPCount")) {
+                document.getElementById("dashWPCount").innerText = window.userStats.wpCount;
+            }
+        }
 
         const progPct = Math.min((window.userStats.xp / window.userStats.nextLevelXP) * 100, 100);
         document.getElementById("xpBar").style.width = `${progPct}%`;
@@ -499,5 +526,44 @@ window.renderDashboardNotes = async function () {
         });
     } catch (error) {
         console.error("Dashboard notes error:", error);
+    }
+}
+
+window.renderDashboardForumPosts = async function () {
+    if (!window.firebaseExports || !window.firebaseExports.db) return;
+    const { getDocs, collection, query, orderBy, limit, db } = window.firebaseExports;
+
+    const container = document.getElementById("dashForumPosts");
+    if (!container) return;
+
+    try {
+        const q = query(collection(db, "forum_posts"), orderBy("createdAt", "desc"), limit(5));
+        const snapshot = await getDocs(q);
+
+        if (snapshot.empty) {
+            container.innerHTML = "<div class='text-slate-400 italic text-xs px-2 py-4 text-center'>Henüz hiç soru sorulmamış.</div>";
+            return;
+        }
+
+        container.innerHTML = snapshot.docs.map(doc => {
+            const data = doc.data();
+            const date = data.createdAt?.seconds ? new Date(data.createdAt.seconds * 1000) : new Date();
+            const timeStr = date.toLocaleDateString("tr-TR", { day: "numeric", month: "short" });
+
+            return `
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all cursor-pointer group"
+                     onclick="switchTab('forum')">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="font-bold text-slate-900 line-clamp-1 group-hover:text-red-800 transition-colors">${data.title}</span>
+                        <span class="text-[10px] text-slate-400 whitespace-nowrap ml-2">${timeStr}</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 line-clamp-2 leading-relaxed">${data.description}</p>
+                </div>
+            `;
+        }).join("");
+
+    } catch (err) {
+        console.error("Dashboard forum fetch error:", err);
+        container.innerHTML = "<div class='text-red-400 text-xs text-center py-4'>Hata oluştu.</div>";
     }
 }

@@ -340,6 +340,31 @@ window.saveQuizScoreFirestore = async function (score) {
   );
 };
 
+window.saveWPResultFirestore = async function (word, isCorrect) {
+  if (!window.currentUser) return;
+
+  await addDoc(
+    collection(db, "users", window.currentUser.uid, "wpStats"),
+    {
+      word: word,
+      isCorrect: isCorrect,
+      timestamp: serverTimestamp()
+    }
+  );
+
+  // Also give some small XP for Word Practice
+  if (isCorrect) {
+    await addDoc(
+      collection(db, "users", window.currentUser.uid, "quizHistory"),
+      {
+        score: 5, // Small XP for each correct word
+        topic: "wordpractice",
+        timestamp: new Date()
+      }
+    );
+  }
+};
+
 window.getQuizHistoryFirestore = async function () {
   if (!window.currentUser) return [];
 
