@@ -130,44 +130,66 @@ let irRetryCount = 0;
 async function generateIRQuestion() {
     setupUIStatus("ir");
 
-    if (irRetryCount > 5) {
-        document.getElementById("ir-loader").innerHTML = `<p class="text-red-500 font-bold p-4 text-center">İçerik yüklenirken bir sorun oluştu. <br> <button onclick="irRetryCount=0;generateIRQuestion()" class="mt-4 px-4 py-2 bg-slate-900 text-white rounded-lg">Tekrar Dene</button></p>`;
+    // If we've retried too many times, show a more helpful message
+    if (irRetryCount > 8) {
+        const loader = document.getElementById("ir-loader");
+        if (loader) loader.innerHTML = `
+            <div class="text-center p-6 space-y-4">
+                <p class="text-red-500 font-bold">İçerik yüklenirken bir sorun oluştu.</p>
+                <p class="text-xs text-slate-400">Wikipedia bağlantısında veya içerik miktarında sorun olabilir.</p>
+                <button onclick="irRetryCount=0;generateIRQuestion()" class="mt-4 px-8 py-3 bg-red-800 text-white rounded-xl shadow-lg hover:bg-red-900 transition-all font-bold">
+                    Tekrar Dene
+                </button>
+            </div>
+        `;
         return;
     }
 
-    // Topics list
-    const topics = ["Albert Einstein", "Industrial Revolution", "Global Warming", "Space Exploration", "Artificial Intelligence", "DNA", "Ancient Egypt", "Quantum Mechanics", "French Revolution", "Climate Change"];
+    // Larger and more balanced topics list
+    const topics = [
+        "History of London", "Renaissance", "Ancient Greece", "World War II", "Industrial Revolution",
+        "Artificial Intelligence", "Global Warming", "Renewable Energy", "Medical Science", "Oceanography",
+        "Space Exploration", "DNA", "Internet", "Smartphone", "Psychology", "Sustainable development",
+        "European Union", "Economics", "Philosophy", "Great Wall of China"
+    ];
     const topic = topics[Math.floor(Math.random() * topics.length)];
 
     try {
-        const wikiRes = await fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${encodeURIComponent(topic)}&explaintext=1&exchars=3000&origin=*`);
+        // Using action=query with redirects=1 and longer character count
+        const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${encodeURIComponent(topic)}&explaintext=1&exchars=4000&origin=*&redirects=1`;
+        const wikiRes = await fetch(url);
         const data = await wikiRes.json();
+
+        if (!data.query || !data.query.pages) throw new Error("Invalid API response");
+
         const pages = data.query.pages;
         const pageId = Object.keys(pages)[0];
+
+        if (pageId === "-1") throw new Error("Page not found");
+
         const extract = pages[pageId].extract;
 
-        if (!extract) {
+        if (!extract || extract.length < 500) {
             irRetryCount++;
-            generateIRQuestion();
+            setTimeout(generateIRQuestion, 100); // Try again with a small delay
             return;
         }
 
-        // Split into sentences, clean up
-        let sentences = extract.split(/[.!?]\s+/).filter(s => s.length > 40 && !s.includes('==')).map(s => s.trim() + ".");
+        // Split into sentences. Improved regex and lower threshold (30 chars)
+        let sentences = extract
+            .split(/[.!?]\s+/)
+            .map(s => s.trim())
+            .filter(s => s.length > 30 && !s.includes('==') && !s.includes('  '));
 
-        if (sentences.length < 10) {
+        if (sentences.length < 12) {
             irRetryCount++;
-            generateIRQuestion();
+            setTimeout(generateIRQuestion, 100);
             return;
         }
 
-        irRetryCount = 0; // Success
+        irRetryCount = 0; // Reset counter on success
 
         // Pick 4 consecutive sentences for the main paragraph
-        const startIdx = Math.floor(Math.random() * (sentences.length - 8));
-        const baseSentences = sentences.slice(startIdx, startIdx + 4);
-
-        // Pick an irrelevant sentence from at least 6 sentences away (same article)
         // This follows the user request "aynı makalede ki 10 cümle sonra"
         let irrevIdx = (startIdx + 8) % sentences.length;
         if (irrevIdx >= startIdx && irrevIdx < startIdx + 4) {
