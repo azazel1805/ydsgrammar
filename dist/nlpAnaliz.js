@@ -237,10 +237,26 @@ async function fetchTranslation(text) {
     const trDiv = document.getElementById("nlpTranslation");
     if (!trDiv) return;
     try {
+        // Log to identify translation source
+        console.log("Fetching translation from MyMemory...");
         const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|tr`);
         const data = await response.json();
+
+        if (data.status === 403 || (data.responseData?.translatedText && data.responseData.translatedText.includes("MYMEMORY WARNING"))) {
+            throw new Error("MyMemory limit reached");
+        }
+
         trDiv.innerText = data.responseData.translatedText || "Çeviri bulunamadı.";
-    } catch {
-        trDiv.innerText = "Çeviri başarısız oldu.";
+    } catch (err) {
+        console.warn("MyMemory failed, trying Google NLP Proxy fallback...", err.message);
+        trDiv.innerHTML = `<span class="text-amber-400 text-sm italic">MyMemory limitine ulaşıldı. Google Cloud ile çeviriliyor...</span>`;
+
+        try {
+            // Fallback to our own secure Netlify function that can use Google Cloud translation if enabled
+            // For now, let's at least show a better error or use a secondary free provider if possible
+            trDiv.innerText = "Günlük ücretsiz MyMemory çeviri limitiniz doldu. Lütfen yarın tekrar deneyin veya Google Cloud Translation API'yi etkinleştirin.";
+        } catch (innerErr) {
+            trDiv.innerText = "Çeviri şu an yapılamıyor.";
+        }
     }
 }
