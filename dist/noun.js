@@ -1,8 +1,15 @@
 
 const nounHTML = `
 
+<!-- Action Bar (Print) -->
+<div class="flex justify-end mb-4 no-print">
+    <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+        <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+    </button>
+</div>
+
 <!-- Local Search -->
-<div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm mb-6">
+<div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm mb-6 no-print">
  <div class="relative w-full">
  <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
  <input type="text" onkeyup="filterTab(this)" placeholder="Noun Clause ara: subjunctive, what, fact that..." 

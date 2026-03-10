@@ -361,3 +361,116 @@ body {
     color: #3b82f6;
     font-weight: 600;
 }
+
+/* =============================
+   PRINT & PDF OPTIMIZATION
+============================= */
+
+@media print {
+
+    /* Hide non-essential elements */
+    header,
+    nav,
+    #mobileDrawer,
+    #drawerOverlay,
+    .floating-whatsapp,
+    .floating-scroll,
+    #initialLoader,
+    .signature,
+    #notificationDropdown,
+    .adsbygoogle,
+    #hamburgerBtn,
+    .no-print,
+    .print-btn {
+        display: none !important;
+    }
+
+    /* Reset layout for print */
+    body {
+        background: white !important;
+        color: black !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .max-w-7xl,
+    .max-w-4xl,
+    .max-w-5xl {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .tab-content {
+        display: none !important;
+    }
+
+    .tab-content.active {
+        display: block !important;
+    }
+
+    /* Content styling for print */
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: #b91c1c !important;
+        /* Ensure headers remain visible but primary */
+        page-break-after: avoid;
+    }
+
+    table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+
+    th,
+    td {
+        border: 1px solid #e2e8f0 !important;
+    }
+
+    .bg-white,
+    .bg-slate-50,
+    .bg-teal-50,
+    .bg-yellow-50,
+    .bg-rose-50 {
+        background-color: transparent !important;
+        border: 1px solid #e2e8f0 !important;
+    }
+
+    .text-white {
+        color: black !important;
+    }
+
+    /* Force background visibility for badges/highlights if needed */
+    .highlight-verb {
+        background-color: #fef08a !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Page breaks */
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 2rem !important;
+    }
+
+    /* Tense & Article & Grammar Guide specifics for print */
+    #tense-cards .hidden,
+    #art-root .hidden,
+    #tab-gerunds .hidden,
+    #tab-reportedspeech .hidden,
+    #tab-ifclauses .hidden,
+    #tab-tenseagreement .hidden,
+    #tg-root .hidden,
+    #tactical-panels-root .hidden {
+        display: block !important;
+    }
+
+    .fa-chevron-down {
+        display: none !important;
+    }
+}

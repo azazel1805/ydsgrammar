@@ -1,6 +1,12 @@
 
 const tenseAgreementHTML = `
 <div class="max-w-5xl mx-auto px-4 py-10" id="tense-agreement-root">
+  <!-- Action Bar (Print) -->
+  <div class="flex justify-end mb-4 no-print">
+      <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+          <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+      </button>
+  </div>
 
   <!-- HERO SECTION -->
   <div class="text-center mb-12">
@@ -227,7 +233,7 @@ const tenseAgreementHTML = `
           <p class="text-sm font-mono">Had V3 ↔ WOULD (now)</p>
         </div>
       </div>
-      <button onclick="switchTab('ifclauses')" class="mt-8 text-sm font-bold text-indigo-200 hover:text-white transition-colors flex items-center gap-2">
+      <button onclick="switchTab('ifclauses')" class="mt-8 text-sm font-bold text-indigo-200 hover:text-white transition-colors flex items-center gap-2 no-print">
         If Clauses detaylı rehberine git <i class="fas fa-external-link-alt text-xs"></i>
       </button>
     </div>

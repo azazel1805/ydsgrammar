@@ -156,6 +156,13 @@ const prepositionsHTML = `
  </div>
 </div>
 
+<!-- Action Bar (Print) -->
+<div class="flex justify-end my-4 no-print">
+    <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+        <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+    </button>
+</div>
+
 <!-- HEADER -->
 <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-black p-6 rounded-xl shadow-lg">
  <h2 class="text-2xl font-bold">YDS Preposition Intelligence Engine</h2>

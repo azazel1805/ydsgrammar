@@ -4,6 +4,12 @@
 
 const tacticGuideHTML = /* html */`
 <div class="max-w-4xl mx-auto px-4 py-10" id="tg-root">
+  <!-- Action Bar (Print) -->
+  <div class="flex justify-end mb-4 no-print">
+      <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+          <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+      </button>
+  </div>
 
   <!-- ── Hero ────────────────────────────────────────────── -->
   <div class="text-center mb-12">
@@ -16,7 +22,7 @@ const tacticGuideHTML = /* html */`
   </div>
 
   <!-- ── Level Selector ──────────────────────────────────── -->
-  <div class="flex gap-3 justify-center mb-10 flex-wrap">
+  <div class="flex gap-3 justify-center mb-10 flex-wrap no-print">
     <button onclick="tgSetLevel('all')" id="tgBtn-all"
       class="tg-level-btn px-5 py-2.5 rounded-xl border-2 font-bold text-sm transition-all border-red-700 bg-red-700 text-white">
       <i class="fas fa-users mr-2"></i>Tümü

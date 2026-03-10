@@ -1,5 +1,12 @@
 
 const quantifiersHTML = `
+<!-- Action Bar (Print) -->
+<div class="flex justify-end mb-4 no-print relative z-50">
+    <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+        <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+    </button>
+</div>
+
 <div class="space-y-10 max-w-5xl mx-auto px-4 py-8">
     <!-- Header Section -->
     <div class="text-center space-y-4">

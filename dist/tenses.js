@@ -5,7 +5,14 @@ const tensesHTML = `
 <!-- YDS TENSES TACTICAL PANEL -->
 <!-- ===================================== -->
 
-<div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-600 text-black p-6 rounded-2xl shadow-xl">
+<!-- Action Bar (Print) -->
+<div class="flex justify-end mb-4 no-print">
+    <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+        <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+    </button>
+</div>
+
+<div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-600 text-black p-6 rounded-2xl shadow-xl no-print">
 
  <div class="flex justify-between items-center cursor-pointer"
  onclick="toggleTenseTactics()">
@@ -115,7 +122,7 @@ const tensesHTML = `
  </div>
 </div>
 <!-- Local Search -->
-<div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm mb-6">
+<div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm mb-6 no-print">
  <div class="relative w-full">
  <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
  <input type="text" onkeyup="filterTab(this)" placeholder="Tenses içinde ara: past perfect, by the time..." 
@@ -789,7 +796,7 @@ const tensesHTML = `
 </section>
 
 <!-- 6. INTERACTIVE DRAG & DROP PRACTICE -->
-<section class="mt-8 searchable-section" data-cat="Practice">
+<section class="mt-8 searchable-section no-print" data-cat="Practice">
  <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl border border-blue-100 shadow-sm">
  <h3 class="text-xl font-bold mb-2 flex items-center gap-2 text-indigo-700 ">
  <i class="fa-solid fa-puzzle-piece"></i> Interactive Practice (Drag & Drop)
@@ -832,46 +839,46 @@ const tensesHTML = `
 
 // Drag and Drop Global Functions
 window.allowDropQuiz = function (ev) {
- ev.preventDefault();
+    ev.preventDefault();
 }
 
 window.dragQuiz = function (ev) {
- ev.dataTransfer.setData("text", ev.target.id);
- ev.target.classList.add("opacity-50");
+    ev.dataTransfer.setData("text", ev.target.id);
+    ev.target.classList.add("opacity-50");
 }
 
 window.dropQuiz = function (ev, correctId) {
- ev.preventDefault();
- var data = ev.dataTransfer.getData("text");
- var draggedEl = document.getElementById(data);
- if (draggedEl) draggedEl.classList.remove("opacity-50");
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    var draggedEl = document.getElementById(data);
+    if (draggedEl) draggedEl.classList.remove("opacity-50");
 
- if (data === correctId) {
- ev.target.appendChild(draggedEl);
- ev.target.classList.replace("border-slate-300", "border-emerald-500");
- ev.target.classList.replace("", "");
- ev.target.classList.replace("border-dashed", "border-solid");
- ev.target.classList.replace("bg-white/50", "bg-emerald-50");
- ev.target.classList.replace("", "");
+    if (data === correctId) {
+        ev.target.appendChild(draggedEl);
+        ev.target.classList.replace("border-slate-300", "border-emerald-500");
+        ev.target.classList.replace("", "");
+        ev.target.classList.replace("border-dashed", "border-solid");
+        ev.target.classList.replace("bg-white/50", "bg-emerald-50");
+        ev.target.classList.replace("", "");
 
- draggedEl.classList.replace("cursor-grab", "cursor-default");
- draggedEl.classList.replace("hover:scale-105", "hover:scale-100");
- draggedEl.classList.add("animate-pulse");
- setTimeout(() => draggedEl.classList.remove("animate-pulse"), 1000);
- draggedEl.setAttribute("draggable", "false");
- } else {
- ev.target.classList.replace("border-slate-300", "border-rose-500");
- ev.target.classList.replace("", "");
- setTimeout(() => {
- ev.target.classList.replace("border-rose-500", "border-slate-300");
- ev.target.classList.replace("", "");
- }, 500);
- }
+        draggedEl.classList.replace("cursor-grab", "cursor-default");
+        draggedEl.classList.replace("hover:scale-105", "hover:scale-100");
+        draggedEl.classList.add("animate-pulse");
+        setTimeout(() => draggedEl.classList.remove("animate-pulse"), 1000);
+        draggedEl.setAttribute("draggable", "false");
+    } else {
+        ev.target.classList.replace("border-slate-300", "border-rose-500");
+        ev.target.classList.replace("", "");
+        setTimeout(() => {
+            ev.target.classList.replace("border-rose-500", "border-slate-300");
+            ev.target.classList.replace("", "");
+        }, 500);
+    }
 }
 
 document.addEventListener("dragend", function (ev) {
- if (ev.target && ev.target.classList) {
- ev.target.classList.remove("opacity-50");
- }
+    if (ev.target && ev.target.classList) {
+        ev.target.classList.remove("opacity-50");
+    }
 });
 document.getElementById('tab-tenses').innerHTML = tensesHTML;

@@ -372,6 +372,12 @@ const IF_TYPES = [
 function buildIfClausesHTML() {
     return `
 <div class="max-w-4xl mx-auto px-4 py-10" id="ifc-root">
+  <!-- Action Bar (Print) -->
+  <div class="flex justify-end mb-4 no-print">
+      <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+          <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+      </button>
+  </div>
 
   <!-- Hero -->
   <div class="text-center mb-10">
@@ -384,7 +390,7 @@ function buildIfClausesHTML() {
   </div>
 
   <!-- Type overview cards -->
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 no-print">
     ${[
             { label: 'Sifir Tip', sub: 'Genel Gercek', color: '#0369a1', id: 'zero' },
             { label: '1. Tip', sub: 'Gercekci Gelecek', color: '#15803d', id: 'first' },

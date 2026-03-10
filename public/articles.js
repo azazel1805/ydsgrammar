@@ -188,6 +188,12 @@ function buildArticlesHTML() {
 
     return `
 <div class="max-w-4xl mx-auto px-4 py-10" id="art-root">
+  <!-- Action Bar (Print) -->
+  <div class="flex justify-end mb-4 no-print">
+      <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-red-800 transition-all shadow-lg active:scale-95">
+          <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+      </button>
+  </div>
   <div class="text-center mb-10">
     <div class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-800 to-blue-900 text-white px-6 py-3 rounded-2xl shadow-xl mb-5">
       <i class="fas fa-font text-xl"></i>
