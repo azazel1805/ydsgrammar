@@ -71,8 +71,33 @@ function generateGCQuestion() {
     const word = target.word;
     const example = target.examples[0];
 
-    const regex = new RegExp(`\\b${word}\\b`, 'gi');
-    const template = example.replace(regex, '__________');
+    // Improved regex to handle slight variations (like toward/towards or plurals)
+    // We try exact word first, then a more relaxed version
+    const regexExact = new RegExp(`\\b${word}\\b`, 'gi');
+    let template = example.replace(regexExact, '__________');
+
+    if (template === example) {
+        // Try without the trailing 's' if it exists, or adding an 's'
+        const base = word.endsWith('s') ? word.slice(0, -1) : word;
+        const regexRelaxed = new RegExp(`\\b${base}[a-z]*\\b`, 'gi');
+        template = example.replace(regexRelaxed, '__________');
+    }
+
+    if (template === example) {
+        // Still not replaced? Try matching the longest word in the sentence that starts with 
+        // the first 3 letters of our target word
+        const words = example.split(/\s+/);
+        let bestMatch = "";
+        words.forEach(w => {
+            const cleanW = w.toLowerCase().replace(/[^a-z]/g, '');
+            if (cleanW.startsWith(word.toLowerCase().slice(0, 3)) && cleanW.length >= word.length - 2) {
+                bestMatch = w.replace(/[^a-z]/g, '');
+            }
+        });
+        if (bestMatch) {
+            template = example.replace(new RegExp(`\\b${bestMatch}\\b`, 'gi'), '__________');
+        }
+    }
 
     // Distractors from same POS
     const distractors = grammarPool.filter(i => i.pos === target.pos && i.word !== word).sort(() => 0.5 - Math.random()).slice(0, 3);
@@ -101,34 +126,42 @@ async function initIrrelevant() {
     generateIRQuestion();
 }
 
+let irRetryCount = 0;
 async function generateIRQuestion() {
     setupUIStatus("ir");
+
+    if (irRetryCount > 5) {
+        document.getElementById("ir-loader").innerHTML = `<p class="text-red-500 font-bold p-4 text-center">İçerik yüklenirken bir sorun oluştu. <br> <button onclick="irRetryCount=0;generateIRQuestion()" class="mt-4 px-4 py-2 bg-slate-900 text-white rounded-lg">Tekrar Dene</button></p>`;
+        return;
+    }
 
     // Topics list
     const topics = ["Albert Einstein", "Industrial Revolution", "Global Warming", "Space Exploration", "Artificial Intelligence", "DNA", "Ancient Egypt", "Quantum Mechanics", "French Revolution", "Climate Change"];
     const topic = topics[Math.floor(Math.random() * topics.length)];
 
     try {
-        // Fetch a longer extract to have enough sentences for "contextually related but out-of-flow" difficulty
-        const wikiRes = await fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${encodeURIComponent(topic)}&explaintext=1&exchars=2000&origin=*`);
+        const wikiRes = await fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${encodeURIComponent(topic)}&explaintext=1&exchars=3000&origin=*`);
         const data = await wikiRes.json();
         const pages = data.query.pages;
         const pageId = Object.keys(pages)[0];
         const extract = pages[pageId].extract;
 
         if (!extract) {
+            irRetryCount++;
             generateIRQuestion();
             return;
         }
 
         // Split into sentences, clean up
-        let sentences = extract.split(/[.!?]\s+/).filter(s => s.length > 30).map(s => s.trim() + ".");
+        let sentences = extract.split(/[.!?]\s+/).filter(s => s.length > 40 && !s.includes('==')).map(s => s.trim() + ".");
 
-        if (sentences.length < 12) {
-            // Fallback to summary if extract is too short or retry
+        if (sentences.length < 10) {
+            irRetryCount++;
             generateIRQuestion();
             return;
         }
+
+        irRetryCount = 0; // Success
 
         // Pick 4 consecutive sentences for the main paragraph
         const startIdx = Math.floor(Math.random() * (sentences.length - 8));
@@ -238,6 +271,7 @@ function renderQuestion(id, template, options, clickFn) {
             options.forEach(opt => {
                 const btn = document.createElement("button");
                 btn.className = "p-4 md:p-5 text-left rounded-2xl border border-slate-100 bg-white hover:border-red-200 hover:bg-slate-50 transition-all font-bold text-slate-800 shadow-sm flex justify-between items-center group";
+                btn.setAttribute("data-opt", opt.toLowerCase());
                 btn.innerHTML = `<span class="text-lg tracking-tight">${opt}</span><div class="h-6 w-6 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-red-800 group-hover:text-white transition-all"><i class="fas fa-chevron-right text-[10px]"></i></div>`;
                 btn.onclick = () => clickFn(opt, btn);
                 optContainer.appendChild(btn);
@@ -251,7 +285,12 @@ function renderQuestion(id, template, options, clickFn) {
 function showFeedback(id, isCorrect, btn, correctVal, text) {
     document.querySelectorAll(`#${id}-options button`).forEach(b => {
         b.disabled = true;
-        if (b.innerText.includes(correctVal)) b.classList.add("border-emerald-500", "bg-emerald-50", "text-emerald-800");
+        const bOpt = b.getAttribute("data-opt");
+        if (bOpt === correctVal.toLowerCase()) {
+            b.classList.add("border-emerald-500", "bg-emerald-50", "text-emerald-800");
+            const iconDiv = b.querySelector("div");
+            if (iconDiv) iconDiv.classList.add("bg-emerald-500", "text-white", "border-emerald-500");
+        }
     });
 
     const feedback = document.getElementById(`${id}-feedback`);
@@ -261,18 +300,21 @@ function showFeedback(id, isCorrect, btn, correctVal, text) {
 
     feedback.classList.remove("hidden");
     if (isCorrect) {
-        fIcon.className = "w-16 h-16 rounded-2xl flex items-center justify-center bg-emerald-500 text-white shadow-lg";
+        fIcon.className = "w-12 h-12 rounded-xl flex items-center justify-center bg-emerald-500 text-white shadow-lg";
         fIcon.innerHTML = `<i class="fas fa-check"></i>`;
         fTitle.innerText = "Doğru!";
         fTitle.className = "font-black text-2xl text-emerald-900 italic";
-        feedback.className = "p-8 rounded-[2rem] border border-emerald-100 bg-emerald-50/50 animate-in zoom-in duration-500";
+        feedback.className = "p-6 rounded-[1.5rem] border border-emerald-100 bg-emerald-50/50 animate-in zoom-in duration-500";
     } else {
         btn.classList.add("border-red-500", "bg-red-50", "text-red-900");
-        fIcon.className = "w-16 h-16 rounded-2xl flex items-center justify-center bg-red-600 text-white shadow-lg";
+        const iconDiv = btn.querySelector("div");
+        if (iconDiv) iconDiv.classList.add("bg-red-600", "text-white", "border-red-600");
+
+        fIcon.className = "w-12 h-12 rounded-xl flex items-center justify-center bg-red-600 text-white shadow-lg";
         fIcon.innerHTML = `<i class="fas fa-times"></i>`;
         fTitle.innerText = "Yanlış!";
         fTitle.className = "font-black text-2xl text-red-900 italic";
-        feedback.className = "p-8 rounded-[2rem] border border-red-100 bg-red-50/50";
+        feedback.className = "p-6 rounded-[1.5rem] border border-red-100 bg-red-50/50";
     }
-    fText.innerText = text;
+    fText.innerHTML = `<b class="text-slate-900">Doğru Cevap: ${correctVal}</b><br>${text}`;
 }
