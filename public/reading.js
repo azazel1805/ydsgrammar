@@ -37,10 +37,10 @@ const readingHTML = `
 <div class="space-y-8">
 <div class="p-8 rounded-2xl shadow-sm bg-white border border-slate-200 ">
 <div class="flex items-center justify-between mb-4">
-    <h2 class="text-xl font-bold text-red-800">📘 YDS Reading Intelligence Engine</h2>
+    <h2 class="text-xl font-bold text-red-800" style="font-family: 'Playfair Display', serif;">📘 Reading Intelligence</h2>
     <div class="flex bg-slate-100 p-1 rounded-lg border border-slate-200 text-black">
-        <button id="toggleEnWiki" onclick="toggleWikiSource(false)" class="px-3 py-1 text-xs font-bold rounded-md transition-all bg-white text-purple-600 shadow-sm">English</button>
-        <button id="toggleSimpleWiki" onclick="toggleWikiSource(true)" class="px-3 py-1 text-xs font-bold rounded-md transition-all text-slate-500 hover:text-purple-600">Simple En</button>
+        <button id="toggleEnWiki" onclick="toggleWikiSource(false)" class="px-3 py-1 text-xs font-bold rounded-md bg-white text-slate-800 shadow-sm transition-all">English</button>
+        <button id="toggleSimpleWiki" onclick="toggleWikiSource(true)" class="px-3 py-1 text-xs font-bold rounded-md text-slate-500 hover:text-slate-800 transition-all">Simple En</button>
     </div>
 </div>
 <div class="flex flex-wrap gap-2 text-black">
@@ -48,47 +48,34 @@ const readingHTML = `
     <select id="topicSelect" class="p-2 rounded text-sm bg-slate-100 text-slate-900 border border-slate-300"></select>
 </div>
 <div class="flex flex-wrap gap-2 mt-4">
-    <button onclick="loadReading()" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded font-bold text-white transition shadow-lg shadow-purple-200">Load Article</button>
-    <button onclick="loadRandomArticle()" class="bg-slate-200 hover:bg-slate-300 px-4 py-2 rounded font-bold text-slate-900 transition">🔄 Change Topic</button>
+    <button onclick="loadReading()" class="bg-black hover:bg-slate-800 px-6 py-2 rounded-lg font-bold text-white transition shadow-lg">Makale Yükle</button>
+    <button onclick="loadRandomArticle()" class="bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg font-bold text-slate-900 transition border border-slate-200">🔄 Başka Konu</button>
 </div>
-<div id="readingStats" class="mt-4 text-sm text-slate-600 flex gap-4"></div>
-<div id="readingText" class="mt-6 text-xl leading-relaxed break-words text-slate-900 selection:bg-yellow-200"></div>
+<div id="readingStats" class="mt-4 text-[10px] uppercase tracking-widest font-bold text-slate-400 flex gap-4 border-t pt-4 border-slate-100"></div>
+<div id="readingText" class="mt-6 text-xl leading-relaxed break-words text-slate-800 selection:bg-yellow-200"></div>
 </div>
 </div>
 
-<!-- Modal -->
-<div id="wordModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-[200] p-4">
-    <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
-        <div class="p-8">
-            <div class="flex justify-between items-start mb-6">
+<!-- Premium Word Modal -->
+<div id="wordModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-[200] p-4 overflow-y-auto">
+    <div class="bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+        <div class="p-10">
+            <div class="flex justify-between items-start mb-8">
                 <div>
-                    <h2 id="modalWord" class="text-4xl font-black text-slate-900 uppercase tracking-tighter italic">WORD</h2>
-                    <p id="modalIpa" class="text-slate-400 font-mono mt-1 text-sm"></p>
+                    <h2 id="modalWord" class="text-5xl font-black text-slate-900 uppercase tracking-tighter italic" style="font-family: 'Inter', sans-serif;">WORD</h2>
+                    <p id="modalIpa" class="text-slate-400 font-mono mt-2 text-sm">// IPA //</p>
                 </div>
-                <button onclick="closeWordModal()" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-red-50 transition-colors">✖</button>
+                <button onclick="closeWordModal()" class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
             
-            <div id="modalContent" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar text-black">
-                <div id="modalTr" class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 hidden">
-                    <p class="text-emerald-800 font-bold text-lg mb-1">Türkçe Anlamı</p>
-                    <p id="modalTrText" class="text-emerald-900"></p>
-                </div>
-                <div id="modalDef" class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                    <p class="text-slate-400 text-xs font-bold uppercase mb-2">Definition</p>
-                    <p id="modalDefText" class="text-slate-800 leading-snug"></p>
-                </div>
-                <div id="modalSyn" class="bg-blue-50/50 p-4 rounded-2xl border border-blue-100 hidden">
-                    <p class="text-blue-400 text-xs font-bold uppercase mb-2">Synonyms</p>
-                    <p id="modalSynText" class="text-blue-800 text-sm"></p>
-                </div>
-                <div id="modalAnt" class="bg-rose-50/50 p-4 rounded-2xl border border-rose-100 hidden">
-                    <p class="text-rose-400 text-xs font-bold uppercase mb-2">Antonyms</p>
-                    <p id="modalAntText" class="text-rose-800 text-sm"></p>
-                </div>
+            <div id="modalContent" class="space-y-4 max-h-[450px] overflow-y-auto pr-2 custom-scrollbar text-black">
+                <!-- Cards injected here -->
             </div>
 
-            <div class="mt-8 flex justify-end">
-                <button onclick="closeWordModal()" class="px-10 py-3 bg-slate-900 text-white font-bold rounded-2xl hover:bg-black transition-all">KAPAT</button>
+            <div class="mt-10 flex gap-4">
+                <button onclick="closeWordModal()" class="flex-1 px-8 py-4 bg-slate-100 text-slate-600 font-black rounded-3xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">KAPAT</button>
             </div>
         </div>
     </div>
@@ -97,13 +84,13 @@ const readingHTML = `
 <style>
 .reading-word { 
     display: inline-block;
-    padding: 0 2px;
+    padding: 0 1px;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.1s ease-in-out;
 }
 .reading-word:hover { 
-    background-color: #fef08a !important; /* Yellow-200 */
+    background-color: #fef08a !important; 
     color: #000 !important;
 }
 /* Legend Markings */
@@ -111,8 +98,21 @@ const readingHTML = `
 .passive-hilite { color: #f43f5e; font-weight: bold; }
 .conjunction-hilite { border-bottom: 2px dashed #f59e0b; font-weight: bold; }
 
-.custom-scrollbar::-webkit-scrollbar { width: 6px; }
-.custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+.word-info-card {
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+}
+.tr-meaning {
+    color: #ef4444; /* Red-500 */
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
 </style>
 `;
 
@@ -121,11 +121,11 @@ function toggleWikiSource(isSimple) {
     const enBtn = document.getElementById("toggleEnWiki");
     const simpleBtn = document.getElementById("toggleSimpleWiki");
     if (isSimpleWikipedia) {
-        simpleBtn.classList.add("bg-white", "text-purple-600", "shadow-sm");
-        enBtn.classList.remove("bg-white", "text-purple-600", "shadow-sm");
+        simpleBtn.classList.add("bg-white", "text-slate-800", "shadow-sm");
+        enBtn.classList.remove("bg-white", "text-slate-800", "shadow-sm");
     } else {
-        enBtn.classList.add("bg-white", "text-purple-600", "shadow-sm");
-        simpleBtn.classList.remove("bg-white", "text-purple-600", "shadow-sm");
+        enBtn.classList.add("bg-white", "text-slate-800", "shadow-sm");
+        simpleBtn.classList.remove("bg-white", "text-slate-800", "shadow-sm");
     }
 }
 
@@ -161,38 +161,43 @@ async function loadRandomArticle() {
     if (!topicEl) return;
     const topic = topicEl.value;
     const domain = isSimpleWikipedia ? "simple.wikipedia.org" : "en.wikipedia.org";
-    const res = await fetch(`https://${domain}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(topic)}&format=json&origin=*`);
-    const data = await res.json();
-    const results = data.query.search;
-    if (!results || results.length === 0) return;
-    fetchFullArticle(results[Math.floor(Math.random() * results.length)].title);
+    try {
+        const res = await fetch(`https://${domain}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(topic)}&format=json&origin=*`);
+        const data = await res.json();
+        const results = data.query.search;
+        if (!results || results.length === 0) return;
+        fetchFullArticle(results[Math.floor(Math.random() * results.length)].title);
+    } catch (e) {
+        console.error("Random fetch fail:", e);
+    }
 }
 
 async function fetchFullArticle(title) {
     const domain = isSimpleWikipedia ? "simple.wikipedia.org" : "en.wikipedia.org";
-    const res = await fetch(`https://${domain}/w/api.php?action=query&prop=extracts&explaintext=true&titles=${encodeURIComponent(title)}&format=json&origin=*`);
-    const data = await res.json();
-    const pageId = Object.keys(data.query.pages)[0];
-    let text = data.query.pages[pageId].extract;
-    if (!text) return;
-    fullArticleText = text;
-    truncated = false;
-    if (text.length > MAX_CHAR) {
-        text = text.substring(0, MAX_CHAR);
-        let lastStop = Math.max(text.lastIndexOf("."), text.lastIndexOf("?"), text.lastIndexOf("!"));
-        if (lastStop > 100) text = text.substring(0, lastStop + 1);
-        truncated = true;
+    try {
+        const res = await fetch(`https://${domain}/w/api.php?action=query&prop=extracts&explaintext=true&titles=${encodeURIComponent(title)}&format=json&origin=*`);
+        const data = await res.json();
+        const pageId = Object.keys(data.query.pages)[0];
+        let text = data.query.pages[pageId].extract;
+        if (!text) return;
+        fullArticleText = text;
+        truncated = false;
+        if (text.length > MAX_CHAR) {
+            text = text.substring(0, MAX_CHAR);
+            let lastStop = Math.max(text.lastIndexOf("."), text.lastIndexOf("?"), text.lastIndexOf("!"));
+            if (lastStop > 100) text = text.substring(0, lastStop + 1);
+            truncated = true;
+        }
+        analyzeText(text);
+    } catch (e) {
+        console.error("Article fetch fail:", e);
     }
-    analyzeText(text);
 }
 
 function analyzeText(text) {
     if (!text) return;
 
-    // Passive regex
     const passiveWords = ["be", "is", "are", "was", "were", "been", "being"];
-
-    // Conjunctions
     const targetConjunctions = ["however", "nevertheless", "nonetheless", "on the other hand", "conversely", "although", "even though", "despite", "therefore", "consequently", "moreover", "furthermore"];
 
     const parts = text.split(/(\b\w+\b)/g);
@@ -207,22 +212,19 @@ function analyzeText(text) {
             let classes = "reading-word ";
             const lowerPart = part.toLowerCase();
 
-            // Academic Highlight
             if (academicWords.includes(lowerPart)) {
                 academicCount++;
                 classes += "academic-hilite ";
             }
 
-            // Passive Highlight (Checking be + V3 pattern)
             if (passiveWords.includes(lowerPart)) {
-                let nextPart = parts[index + 2]; // parts[index+1] is whitespace
+                let nextPart = parts[index + 2];
                 if (nextPart && (nextPart.endsWith("ed") || ["done", "gone", "seen", "taken", "known"].includes(nextPart.toLowerCase()))) {
                     classes += "passive-hilite ";
                     passiveCount++;
                 }
             }
 
-            // Conjunction Highlight
             if (targetConjunctions.includes(lowerPart)) {
                 classes += "conjunction-hilite ";
             }
@@ -233,12 +235,20 @@ function analyzeText(text) {
         }
     });
 
-    document.getElementById("readingText").innerHTML = processedHtml + (truncated ? `<div class="mt-8 flex justify-center"><button onclick="showFullArticle()" class="bg-slate-900 px-8 py-3 rounded-full font-bold text-white shadow-xl">Devamını Oku</button></div>` : "");
-    document.getElementById("readingStats").innerHTML = `
-        <span class="bg-slate-100 px-3 py-1 rounded-full font-bold text-slate-700">Kelimeler: ${wordCount}</span>
-        <span class="bg-emerald-50 px-3 py-1 rounded-full font-bold text-emerald-700">Akademik: ${academicCount}</span>
-        <span class="bg-rose-50 px-3 py-1 rounded-full font-bold text-rose-700">Passive: ${passiveCount}</span>
-    `;
+    const textContainer = document.getElementById("readingText");
+    const statsContainer = document.getElementById("readingStats");
+
+    if (textContainer) {
+        textContainer.innerHTML = processedHtml + (truncated ? `<div class="mt-12 flex justify-center"><button onclick="showFullArticle()" class="bg-black px-10 py-4 rounded-2xl font-black text-white shadow-2xl hover:bg-slate-800 transition-all uppercase tracking-widest text-xs">Makaleyi Tamamla</button></div>` : "");
+    }
+
+    if (statsContainer) {
+        statsContainer.innerHTML = `
+            <span>Kelimeler: ${wordCount}</span>
+            <span>Akademik: ${academicCount}</span>
+            <span>Passive: ${passiveCount}</span>
+        `;
+    }
 }
 
 async function fetchTRMeaning(word) {
@@ -250,7 +260,6 @@ async function fetchTRMeaning(word) {
         const data = await res.json();
         return data.translation || null;
     } catch (e) {
-        console.error("Translation fail:", e);
         return null;
     }
 }
@@ -259,72 +268,88 @@ async function showWordDetails(word) {
     const modal = document.getElementById("wordModal");
     const modalWord = document.getElementById("modalWord");
     const modalIpa = document.getElementById("modalIpa");
-    const modalTrText = document.getElementById("modalTrText");
-    const modalDefText = document.getElementById("modalDefText");
-    const modalSynText = document.getElementById("modalSynText");
-    const modalAntText = document.getElementById("modalAntText");
+    const modalContent = document.getElementById("modalContent");
 
     modalWord.innerText = word;
-    modalIpa.innerText = "Yükleniyor...";
-    modalDefText.innerText = "Searching meanings...";
-    document.getElementById("modalTr").classList.add("hidden");
-    document.getElementById("modalSyn").classList.add("hidden");
-    document.getElementById("modalAnt").classList.add("hidden");
+    modalIpa.innerText = "Sözlük aranıyor...";
+    modalContent.innerHTML = `<div class="p-8 text-center text-slate-300 animate-pulse"><i class="fas fa-spinner fa-spin text-2xl"></i></div>`;
 
     modal.classList.remove("hidden");
     modal.classList.add("flex");
 
-    // TR Meaning fetch anyway
-    fetchTRMeaning(word).then(tr => {
-        if (tr) {
-            modalTrText.innerText = tr;
-            document.getElementById("modalTr").classList.remove("hidden");
-        }
-    });
+    // Start Translator
+    const trPromise = fetchTRMeaning(word);
 
-    // Check Local
+    // Check Dictionary Data
     let wordInfo = dictionaryData.find(d => d.word.toLowerCase() === word.toLowerCase());
 
+    // If not in local, check External API
     if (!wordInfo) {
-        // Fallback to Free Dictionary API
         try {
-            const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-            if (res.ok) {
-                const data = await res.json();
-                const first = data[0];
+            const apiRes = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+            if (apiRes.ok) {
+                const apiData = await apiRes.json();
+                const first = apiData[0];
                 wordInfo = {
                     word: first.word,
-                    ipa: first.phonetic || (first.phonetics?.[1]?.text),
-                    examples: first.meanings?.[0]?.definitions?.[0]?.definition ? [first.meanings[0].definitions[0].definition] : [],
-                    synonyms: first.meanings?.[0]?.synonyms || [],
-                    antonyms: first.meanings?.[0]?.antonyms || []
+                    ipa: first.phonetic || (first.phonetics?.find(p => p.text)?.text),
+                    definitions: first.meanings.map(m => m.definitions[0].definition),
+                    synonyms: first.meanings[0].synonyms || [],
+                    antonyms: first.meanings[0].antonyms || []
                 };
             }
         } catch (e) { }
     }
 
+    const trMeaning = await trPromise;
+
+    let html = "";
+
     if (wordInfo) {
-        modalWord.innerText = wordInfo.word;
         modalIpa.innerText = wordInfo.ipa ? `// ${wordInfo.ipa} //` : "";
-        modalDefText.innerText = wordInfo.examples?.[0] || wordInfo.definition || "No definition found.";
+
+        // Combine definitions with TR meaning
+        const defs = wordInfo.definitions || (wordInfo.examples ? [wordInfo.examples[0]] : ["Tanım bulunamadı."]);
+
+        defs.slice(0, 2).forEach((def, i) => {
+            html += `
+                <div class="word-info-card">
+                    <p class="text-slate-800 leading-snug">${def}</p>
+                    ${(i === 0 && trMeaning) ? `<p class="tr-meaning">${trMeaning}</p>` : ""}
+                </div>
+            `;
+        });
 
         if (wordInfo.synonyms?.length) {
-            modalSynText.innerText = wordInfo.synonyms.join(", ");
-            document.getElementById("modalSyn").classList.remove("hidden");
+            html += `<div class="word-info-card"><p class="text-slate-400 text-[10px] font-bold uppercase mb-2">Synonyms</p><p class="text-slate-600 font-medium">${wordInfo.synonyms.slice(0, 5).join(", ")}</p></div>`;
         }
         if (wordInfo.antonyms?.length) {
-            modalAntText.innerText = wordInfo.antonyms.join(", ");
-            document.getElementById("modalAnt").classList.remove("hidden");
+            html += `<div class="word-info-card"><p class="text-slate-400 text-[10px] font-bold uppercase mb-2">Antonyms</p><p class="text-slate-600 font-medium">${wordInfo.antonyms.slice(0, 5).join(", ")}</p></div>`;
         }
     } else {
-        modalDefText.innerText = "Detaylı açıklama bulunamadı.";
+        html = `
+            <div class="word-info-card">
+                <p class="text-slate-800 italic">Sözlük verisi bulunamadı.</p>
+                ${trMeaning ? `<p class="tr-meaning">${trMeaning}</p>` : ""}
+            </div>
+        `;
         modalIpa.innerText = "";
     }
+
+    modalContent.innerHTML = html;
 }
 
 function closeWordModal() {
-    document.getElementById("wordModal").classList.add("hidden");
-    document.getElementById("wordModal").classList.remove("flex");
+    const modal = document.getElementById("wordModal");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+}
+
+window.onclick = function (event) {
+    const modal = document.getElementById("wordModal");
+    if (event.target == modal) {
+        closeWordModal();
+    }
 }
 
 function showFullArticle() {
