@@ -174,6 +174,21 @@ function generateWPQuestion() {
         meaning: targetItem.tr || null
     };
 
+    // Dinamik Çeviri Desteği (Eksik TR alanları için)
+    if (!currentWPQuestion.meaning) {
+        fetch(`/.netlify/functions/nlpAnalyze`, {
+            method: "POST",
+            body: JSON.stringify({ text: word })
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.translation) {
+                    currentWPQuestion.meaning = data.translation;
+                }
+            })
+            .catch(() => { });
+    }
+
     // Render with subtle delay for "preparing" feel
     setTimeout(() => {
         const templateEl = document.getElementById("wp-template");
