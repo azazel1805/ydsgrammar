@@ -30,9 +30,9 @@ const nlpAnalizHTML = `
                         <i class="fas fa-magic"></i>
                     </button>
                     <button onclick="speakPremium()" id="nlpSpeakBtn"
-                        class="px-6 bg-white border-2 border-slate-100 text-slate-600 hover:text-purple-600 hover:border-purple-200 rounded-2xl transition-all active:scale-95 flex items-center justify-center gap-2">
+                        class="px-6 bg-white border-2 border-slate-100 text-slate-600 hover:text-purple-600 hover:border-purple-200 rounded-2xl transition-all active:scale-95 flex items-center justify-center gap-2"
+                        title="Premium Dinle">
                         <i class="fas fa-volume-up"></i>
-                        <span class="text-xs font-bold uppercase tracking-widest hidden md:inline">Premium Dinle</span>
                     </button>
                 </div>
             </div>
