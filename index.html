@@ -245,10 +245,6 @@
             <button data-tab="tacticalpanels" onclick="switchTab('tacticalpanels')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2"><span
                 class="inline-block w-1.5 h-1.5 rounded-full bg-blue-500"></span>Hızlı Taktikler</button>
-            <button data-tab="nlpanaliz" onclick="switchTab('nlpanaliz')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center gap-2">
-              <span class="inline-block w-1.5 h-1.5 rounded-full bg-purple-600"></span>Cümle Analizcisi
-            </button>
           </div>
         </div>
 
@@ -308,6 +304,10 @@
             <button data-tab="sentence" onclick="switchTab('sentence')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Cümle
               Düzeltici</button>
+            <button data-tab="nlpanaliz" onclick="switchTab('nlpanaliz')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-purple-700 flex items-center gap-2">
+              <i class="fas fa-brain text-xs"></i> Cümle Analizcisi
+            </button>
           </div>
         </div>
 
@@ -412,8 +412,6 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               Rehberi</button>
             <button data-tab="tacticalpanels" onclick="switchTabAndClose('tacticalpanels')" class="drawer-btn">Hızlı
               Taktikler</button>
-            <button data-tab="nlpanaliz" onclick="switchTabAndClose('nlpanaliz')" class="drawer-btn">Cümle
-              Analizcisi</button>
           </div>
         </div>
 
@@ -453,6 +451,9 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button data-tab="dictionary" onclick="switchTabAndClose('dictionary')" class="drawer-btn">Sözlük</button>
             <button data-tab="sentence" onclick="switchTabAndClose('sentence')" class="drawer-btn">Cümle
               Düzeltici</button>
+            <button data-tab="nlpanaliz" onclick="switchTabAndClose('nlpanaliz')"
+              class="drawer-btn font-bold text-purple-700">Cümle
+              Analizcisi</button>
             <button data-tab="profile" onclick="switchTabAndClose('profile')" class="drawer-btn">Profil</button>
           </div>
         </div>
