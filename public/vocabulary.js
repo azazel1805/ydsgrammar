@@ -120,6 +120,8 @@ async function loadWords() {
         oxford: w.oxford ?? null
     }));
 
+    window.oxford_master_5000 = masterWords;
+
     applyFilters();
 }
 

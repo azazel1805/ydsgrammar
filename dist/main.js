@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-prepositions", typeof prepositionsHTML !== 'undefined' ? prepositionsHTML : undefined);
     safeInject("tab-tenseagreement", typeof tenseAgreementHTML !== 'undefined' ? tenseAgreementHTML : undefined);
     safeInject("tab-tacticalpanels", typeof tacticalPanelsHTML !== 'undefined' ? tacticalPanelsHTML : undefined);
+    safeInject("tab-nlpanaliz", typeof nlpAnalizHTML !== 'undefined' ? nlpAnalizHTML : undefined);
 
     safeInject("tab-conjunctions", typeof conjunctionsHTML !== 'undefined' ? conjunctionsHTML : undefined);
     safeInject("tab-dictionary", typeof dictionaryHTML !== 'undefined' ? dictionaryHTML : undefined);
@@ -312,6 +313,7 @@ function reinjectTabContent(tabName) {
         "tacticalpanels": typeof tacticalPanelsHTML !== 'undefined' ? tacticalPanelsHTML : null,
         "tacticguide": typeof tacticGuideHTML !== 'undefined' ? tacticGuideHTML : null,
         "analyzer": typeof analyzerHTML !== 'undefined' ? analyzerHTML : null,
+        "nlpanaliz": typeof nlpAnalizHTML !== 'undefined' ? nlpAnalizHTML : null,
         "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null
     };
 
