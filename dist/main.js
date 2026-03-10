@@ -45,9 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-analyzer", typeof analyzerHTML !== 'undefined' ? analyzerHTML : undefined);
     safeInject("tab-testlab", typeof testlabHTML !== 'undefined' ? testlabHTML : undefined);
     safeInject("tab-wordpractice", typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : undefined);
-    safeInject("tab-grammarchallenge", typeof trainingCenterCommonHTML !== 'undefined' ? trainingCenterCommonHTML('gc', '', '', '') : undefined);
-    safeInject("tab-irrelevant", typeof trainingCenterCommonHTML !== 'undefined' ? trainingCenterCommonHTML('ir', '', '', '') : undefined);
-    safeInject("tab-synonymmatch", typeof trainingCenterCommonHTML !== 'undefined' ? trainingCenterCommonHTML('sm', '', '', '') : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
@@ -245,7 +242,7 @@ window.switchTab = function (tabName) {
         }
     }
 
-    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary', 'wordpractice', 'grammarchallenge', 'irrelevant', 'synonymmatch'];
+    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary', 'wordpractice'];
 
     if (protectedTabs.includes(tabName) && !window.currentUser) {
         console.warn("Protected tab accessed without login:", tabName);
@@ -295,18 +292,6 @@ window.switchTab = function (tabName) {
         initWordPractice();
     }
 
-    if (tabName === "grammarchallenge" && typeof initGrammarChallenge === "function") {
-        initGrammarChallenge();
-    }
-
-    if (tabName === "irrelevant" && typeof initIrrelevant === "function") {
-        initIrrelevant();
-    }
-
-    if (tabName === "synonymmatch" && typeof initSynonymMatch === "function") {
-        initSynonymMatch();
-    }
-
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
@@ -335,10 +320,7 @@ function reinjectTabContent(tabName) {
         "analyzer": typeof analyzerHTML !== 'undefined' ? analyzerHTML : null,
         "nlpanaliz": typeof nlpAnalizHTML !== 'undefined' ? nlpAnalizHTML : null,
         "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null,
-        "wordpractice": typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : null,
-        "grammarchallenge": typeof trainingCenterCommonHTML !== 'undefined' ? trainingCenterCommonHTML('gc', '', '', '') : null,
-        "irrelevant": typeof trainingCenterCommonHTML !== 'undefined' ? trainingCenterCommonHTML('ir', '', '', '') : null,
-        "synonymmatch": typeof trainingCenterCommonHTML !== 'undefined' ? trainingCenterCommonHTML('sm', '', '', '') : null
+        "wordpractice": typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : null
     };
 
     const content = mappings[tabName];
