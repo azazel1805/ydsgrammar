@@ -306,6 +306,9 @@ window.initCharts = function () {
         const genVal = (i) => Math.min(30 + (seed % (i + 5)) + (Math.sin(seed + i) * 20), 95);
         userStrengths = grammarLabels.map((_, i) => genVal(i));
 
+        let existingRadar = Chart.getChart("radarChart");
+        if (existingRadar) existingRadar.destroy();
+
         new Chart(radarCtx, {
             type: 'radar',
             data: {
