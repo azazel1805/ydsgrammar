@@ -32,7 +32,7 @@ export const handler = async (event) => {
                     extractEntities: true,
                     extractDocumentSentiment: false,
                     extractEntitySentiment: false,
-                    classifyContent: false
+                    classifyText: false
                 },
                 encodingType: "UTF8"
             })
