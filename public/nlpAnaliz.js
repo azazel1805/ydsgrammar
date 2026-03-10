@@ -12,7 +12,7 @@ const nlpAnalizHTML = `
                     <i class="fas fa-brain text-white text-xl"></i>
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">Smart NLP Analyzer</h2>
+                    <h2 class="text-2xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">Cümle Analizcisi</h2>
                     <p class="text-slate-500 text-sm">Ücretsiz Google Cloud NLP ile derinlemesine cümle analizi</p>
                 </div>
             </div>
@@ -174,9 +174,9 @@ function renderNlpResults(data) {
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block z-50">
                 <div class="bg-white text-slate-900 text-xs p-3 rounded-xl shadow-2xl border border-slate-100 min-w-[150px]">
                     <p class="font-bold border-b border-slate-100 pb-1 mb-1">${label}</p>
-                    <p class="opacity-70">Lemma: ${t.lemma}</p>
-                    <p class="opacity-70">Case: ${t.partOfSpeech.case || 'N/A'}</p>
-                    <p class="opacity-70">Person: ${t.partOfSpeech.person || 'N/A'}</p>
+                    <p class="opacity-70">Kelime Kökü (Lemma): ${t.lemma}</p>
+                    <p class="opacity-70">Durum (Case): ${t.partOfSpeech.case || 'N/A'}</p>
+                    <p class="opacity-70">Şahıs (Person): ${t.partOfSpeech.person || 'N/A'}</p>
                 </div>
             </div>
         `;
