@@ -242,16 +242,26 @@ window.switchTab = function (tabName) {
         }
     }
 
-    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary', 'wordpractice', 'fullexam'];
+    const userTabs = ['forum', 'profile', 'vocabulary', 'wordpractice'];
+    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam'];
 
-    if (protectedTabs.includes(tabName) && !window.currentUser) {
+    // Level 1: Must be logged in
+    if ((userTabs.includes(tabName) || premiumTabs.includes(tabName)) && !window.currentUser) {
         console.warn("Protected tab accessed without login:", tabName);
-        if (typeof window.openLoginModal === "function") {
-            window.openLoginModal();
-        } else {
-            alert("This feature is for registered users only. Please sign in.");
+        if (typeof window.openLoginModal === "function") window.openLoginModal();
+        else alert("Bu özellik sadece üyeler içindir. Lütfen giriş yapın.");
+        return;
+    }
+
+    // Level 2: Must be VIP for Premium Tabs
+    if (premiumTabs.includes(tabName)) {
+        const isVip = window.currentUser?.email === "onurtosuner@gmail.com" || localStorage.getItem("analyzer_access") === "true";
+        if (!isVip) {
+            console.warn("Premium tab accessed without VIP status:", tabName);
+            alert("Bu özellik sadece Premium üyeler içindir. Kilidi açmak için lütfen Profil sayfasından VIP kodunuzu giriniz.");
+            switchTab('profile');
+            return;
         }
-        return; // Halt tab switch
     }
 
     document.querySelectorAll('.tab-btn, .drawer-btn').forEach(btn => {
