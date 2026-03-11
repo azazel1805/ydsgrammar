@@ -65,7 +65,13 @@ const CATEGORICAL_MINI_LIST = [
     category: 'Karma Denemeler',
     icon: 'fa-random',
     exams: [
-      { id: 'mini_karma1', label: 'Karma Mini Deneme 1', file: '/exams/mini/special/karma1.json', info: '40 Soru' },
+      { id: 'mini_karma1', label: 'Yeni Karma Mini 1', file: '/exams/mini/special/karma1.json', info: '40 Soru' },
+      ...Array.from({ length: 25 }, (_, i) => ({
+        id: `mini_old_${i + 1}`,
+        label: `Karma Mini Deneme ${i + 1}`,
+        file: `/exams/mini/miniexam${i + 1}.json`,
+        info: '20 Soru'
+      }))
     ]
   }
 ];
