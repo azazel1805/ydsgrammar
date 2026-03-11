@@ -1,0 +1,1192 @@
+{
+    "meta": {
+        "title": "YDS Tam Deneme 5",
+        "subtitle": "80 Soru - 180 Dakika",
+        "total_questions": 80,
+        "duration_minutes": 180
+    },
+    "sections": [
+        {
+            "id": "vocab_gram",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 16
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 17,
+            "to": 26
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 27,
+            "to": 36
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 37,
+            "to": 42
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 43,
+            "to": 62
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 63,
+            "to": 67
+        },
+        {
+            "id": "restatement",
+            "label": "Restatement (Closest Meaning)",
+            "from": 68,
+            "to": 71
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 72,
+            "to": 75
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 76,
+            "to": 80
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The sudden ____ in global temperatures has led to unprecedented melting of the polar ice caps, threatening coastal ecosystems.",
+            "options": {
+                "A": "diminution",
+                "B": "surge",
+                "C": "stability",
+                "D": "fluctuation",
+                "E": "contraction"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "Recent archaeological findings suggest that the ancient civilization was not isolated but had ____ trade routes with neighboring regions.",
+            "options": {
+                "A": "redundant",
+                "B": "extinct",
+                "C": "extensive",
+                "D": "negligible",
+                "E": "obscure"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The government has implemented new policies to ____ the economic impact of the ongoing pandemic on small businesses.",
+            "options": {
+                "A": "aggravate",
+                "B": "mitigate",
+                "C": "exacerbate",
+                "D": "nullify",
+                "E": "prolong"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "Her research provides ____ evidence that the proposed theory is flawed and requires significant revision.",
+            "options": {
+                "A": "compelling",
+                "B": "ambiguous",
+                "C": "superficial",
+                "D": "vague",
+                "E": "arbitrary"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 5,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The artist's work is characterized by a ____ blend of traditional techniques and modern conceptual themes.",
+            "options": {
+                "A": "monotonous",
+                "B": "seamless",
+                "C": "disjointed",
+                "D": "clumsy",
+                "E": "repetitive"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 6,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "Advancements in biotechnology have ____ the way for more effective treatments for genetic disorders.",
+            "options": {
+                "A": "paved",
+                "B": "blocked",
+                "C": "hindered",
+                "D": "diverted",
+                "E": "halted"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "If the committee ____ the proposal earlier, the project could have been completed by the end of the year.",
+            "options": {
+                "A": "has approved",
+                "B": "approves",
+                "C": "had approved",
+                "D": "would approve",
+                "E": "is approving"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 8,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The results of the study indicate that there is a significant correlation ____ physical activity and mental health.",
+            "options": {
+                "A": "among",
+                "B": "between",
+                "C": "within",
+                "D": "towards",
+                "E": "from"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "Hardly ____ the lecture started when a fire alarm went off, forcing everyone to evacuate the building.",
+            "options": {
+                "A": "did",
+                "B": "has",
+                "C": "had",
+                "D": "was",
+                "E": "is"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 10,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The novel, ____ was published posthumously, has become a classic of modern literature.",
+            "options": {
+                "A": "who",
+                "B": "which",
+                "C": "whose",
+                "D": "whom",
+                "E": "that"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 11,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "By the time the reinforcements arrived, the local militia ____ the enemy for over three days.",
+            "options": {
+                "A": "has been fighting",
+                "B": "was fighting",
+                "C": "had been fighting",
+                "D": "is fighting",
+                "E": "fought"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 12,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "Scientists are concerned ____ the rapid decline in biodiversity, which could have catastrophic effects on the ecosystem.",
+            "options": {
+                "A": "about",
+                "B": "with",
+                "C": "for",
+                "D": "at",
+                "E": "in"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "Neither the manager ____ the employees were aware of the changes in the company's safety protocols.",
+            "options": {
+                "A": "or",
+                "B": "nor",
+                "C": "but",
+                "D": "and",
+                "E": "yet"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 14,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The more information we gather about the universe, ____ we realize how much we still have to learn.",
+            "options": {
+                "A": "more",
+                "B": "the more",
+                "C": "the most",
+                "D": "mostly",
+                "E": "much"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 15,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The professor suggested that the students ____ more time on their research papers to ensure high quality.",
+            "options": {
+                "A": "spend",
+                "B": "spends",
+                "C": "spent",
+                "D": "spending",
+                "E": "will spend"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "vocab_gram",
+            "passage_id": null,
+            "question": "The software is designed to automatically update ____ new versions are released by the developer.",
+            "options": {
+                "A": "whenever",
+                "B": "wherever",
+                "C": "however",
+                "D": "whichever",
+                "E": "whoever"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Text 1: The Industrial Revolution (1)____ a period of profound social and economic change. It (2)____ in Great Britain and quickly spread across Europe. (3)____ the transition to new manufacturing processes, many people moved from rural areas to cities. This urbanization (4)____ to overcrowded living conditions. However, it also (5)____ the groundwork for modern industrial society. Blank (1):",
+            "options": {
+                "A": "marks",
+                "B": "marked",
+                "C": "marking",
+                "D": "has marked",
+                "E": "was marking"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 18,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (2):",
+            "options": {
+                "A": "commences",
+                "B": "commenced",
+                "C": "is commencing",
+                "D": "will commence",
+                "E": "has commenced"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 19,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (3):",
+            "options": {
+                "A": "Despite",
+                "B": "Instead of",
+                "C": "Because of",
+                "D": "During",
+                "E": "Unless"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 20,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (4):",
+            "options": {
+                "A": "led",
+                "B": "leads",
+                "C": "is leading",
+                "D": "has led",
+                "E": "was leading"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (5):",
+            "options": {
+                "A": "lay",
+                "B": "laid",
+                "C": "lied",
+                "D": "lain",
+                "E": "laying"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 22,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Text 2: Quantum mechanics is a (6)____ branch of physics that deals with the behavior of matter and energy at the atomic level. It (7)____ classical physics in several key ways. For instance, particles can exist in multiple states (8)____. This phenomenon is known as superposition. (9)____ the complexity of the subject, it has led to the development of many technologies, (10)____ lasers and transistors. Blank (6):",
+            "options": {
+                "A": "fundamental",
+                "B": "trivial",
+                "C": "secondary",
+                "D": "superficial",
+                "E": "irrelevant"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (7):",
+            "options": {
+                "A": "challenges",
+                "B": "challenging",
+                "C": "challenged",
+                "D": "is challenging",
+                "E": "has challenged"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (8):",
+            "options": {
+                "A": "simultaneously",
+                "B": "sequentially",
+                "C": "gradually",
+                "D": "randomly",
+                "E": "rarely"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (9):",
+            "options": {
+                "A": "Because",
+                "B": "Although",
+                "C": "Despite",
+                "D": "Since",
+                "E": "Provided"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 26,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Blank (10):",
+            "options": {
+                "A": "including",
+                "B": "excluding",
+                "C": "besides",
+                "D": "except",
+                "E": "notably"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Although the new drug showed promising results in initial trials, ____.",
+            "options": {
+                "A": "it was immediately approved for public use",
+                "B": "further testing revealed significant side effects",
+                "C": "many patients reported a full recovery",
+                "D": "it is expected to revolutionize the field of medicine",
+                "E": "the researchers were awarded a prestigious prize"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 28,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Unless the global community takes immediate action to reduce carbon emissions, ____.",
+            "options": {
+                "A": "the effects of climate change will be irreversible",
+                "B": "renewable energy sources will become more expensive",
+                "C": "the ozone layer will continue to thicken",
+                "D": "deforestation will cease to be a major concern",
+                "E": "global temperatures will remain stable"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "In light of the recent economic downturn, many corporations ____.",
+            "options": {
+                "A": "are expanding their operations globally",
+                "B": "have decided to increase employee bonuses",
+                "C": "are implementing cost-cutting measures to stay afloat",
+                "D": "have seen a significant rise in their stock prices",
+                "E": "are hiring more staff to handle the workload"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 30,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Since the dawn of the digital age, the way people communicate ____.",
+            "options": {
+                "A": "has remained largely unchanged",
+                "B": "has undergone a radical transformation",
+                "C": "is becoming more dependent on traditional mail",
+                "D": "is limited to face-to-face interactions",
+                "E": "has lost its importance in modern society"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 31,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Despite being one of the most brilliant scientists of his time, ____.",
+            "options": {
+                "A": "he was widely recognized for his achievements",
+                "B": "his work was often dismissed by his peers",
+                "C": "he received numerous awards for his research",
+                "D": "his theories were instantly accepted by the community",
+                "E": "he had no difficulty securing funding for his projects"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 32,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "The researchers conducted several experiments in order to ____.",
+            "options": {
+                "A": "validating their hypothesis without any doubt",
+                "B": "confirm the validity of their initial findings",
+                "C": "they could publish their results in a journal",
+                "D": "to ignore any conflicting data they encountered",
+                "E": "had established a new framework for the study"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 33,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "While some experts believe that artificial intelligence will replace human jobs, ____.",
+            "options": {
+                "A": "others argue that it will create new opportunities",
+                "B": "it is certain that all professions will disappear",
+                "C": "technology has always led to lower productivity",
+                "D": "human labor is no longer necessary in any field",
+                "E": "AI is unable to perform complex tasks"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 34,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "The study concludes that children who are exposed to multiple languages at a young age ____.",
+            "options": {
+                "A": "struggle to learn their native language properly",
+                "B": "develop better cognitive and analytical skills",
+                "C": "are more likely to experience learning disabilities",
+                "D": "have a limited vocabulary in all languages",
+                "E": "tend to avoid social interactions with peers"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 35,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Provided that the weather conditions remain favorable, ____.",
+            "options": {
+                "A": "the harvest is expected to be exceptionally bountiful",
+                "B": "the flight would have been canceled",
+                "C": "the crops would have suffered from drought",
+                "D": "farmers had already started planting the seeds",
+                "E": "there is no hope for a successful season"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 36,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "The city council has decided to renovate the historic district ____.",
+            "options": {
+                "A": "so that it can attract more tourists and investment",
+                "B": "because it was demolished several years ago",
+                "C": "despite the fact that it is in perfect condition",
+                "D": "in order to destroy the remaining old structures",
+                "E": "even though no one is interested in its history"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 37,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "The development of sustainable energy sources is crucial for reducing our dependence on fossil fuels.",
+            "options": {
+                "A": "Sürdürülebilir enerji kaynaklarının geliştirilmesi, fosil yakıtlara olan bağımlılığımızı azaltmak için hayati önem taşımaktadır.",
+                "B": "Fosil yakıtlara olan bağımlılığı azaltmak, sürdürülebilir enerji kaynaklarının gelişimine bağlıdır.",
+                "C": "Sürdürülebilir enerji kaynakları geliştikçe, fosil yakıtlara olan bağımlılığımız azalacaktır.",
+                "D": "Fosil yakıtlara bağımlılığı azaltmak için sürdürülebilir enerji kaynaklarını geliştirmek zorundayız.",
+                "E": "Sürdürülebilir enerji kaynaklarının geliştirilmesi fosil yakıtlara bağımlılığı tamamen bitirecektir."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 38,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Many scholars argue that the origins of the Greek alphabet can be traced back to Phoenician script.",
+            "options": {
+                "A": "Pek çok bilim insanı, Yunan alfabesinin kökenlerinin Fenike yazısına kadar uzandığını savunmaktadır.",
+                "B": "Yunan alfabesinin kökenlerinin Fenike yazısı olduğu pek çok bilim insanı tarafından kanıtlanmıştır.",
+                "C": "Bazı bilginler Yunan alfabesinin Fenike yazısından türediğini düşünmektedir.",
+                "D": "Yunan alfabesi ile Fenike yazısı arasındaki benzerlik pek çok bilginin dikkatini çekmiştir.",
+                "E": "Fenike yazısının Yunan alfabesinin temeli olduğu çoğu akademisyen tarafından kabul edilir."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 39,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Unless individuals take responsibility for their waste, pollution levels in the oceans will continue to rise.",
+            "options": {
+                "A": "Bireyler atıklarının sorumluluğunu almadıkça, okyanuslardaki kirlilik seviyeleri artmaya devam edecektir.",
+                "B": "Okyanus kirliliğinin artmasının nedeni bireylerin atıklar konusunda sorumsuz davranmasıdır.",
+                "C": "Eğer bireyler atıklar için sorumluluk alırsa okyanuslardaki kirlilik seviyesi azalacaktır.",
+                "D": "Okyanuslardaki kirlilik seviyesini düşürmek için bireylerin sorumluluk alması şarttır.",
+                "E": "Bireyler sorumluluk alsa bile okyanuslardaki kirlilik seviyesi artmaya devam edebilir."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 40,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Modern tıp, genetik mühendisliğindeki ilerlemeler sayesinde birçok hastalığı tedavi edebilmektedir.",
+            "options": {
+                "A": "Modern medicine is able to treat many diseases thanks to advancements in genetic engineering.",
+                "B": "Advancements in genetic engineering allow modern medicine to treat all diseases.",
+                "C": "Modern medicine has been treating many diseases with the help of genetic engineering.",
+                "D": "Many diseases are treated by modern medicine because of genetic engineering progress.",
+                "E": "Thanks to genetic engineering, modern medicine is now focusing on disease prevention."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 41,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Küresel ısınmanın etkileri kutup bölgelerinde daha belirgin bir şekilde hissedilmektedir.",
+            "options": {
+                "A": "The effects of global warming are felt more prominently in polar regions.",
+                "B": "Global warming affects the polar regions more than any other part of the world.",
+                "C": "The polar regions are experiencing the most severe impacts of global warming.",
+                "D": "It is in the polar regions that the effects of global warming are most visible.",
+                "E": "The impact of global warming in polar regions has become a major concern."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 42,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Eğitim sistemi, öğrencilerin eleştirel düşünme becerilerini geliştirmeyi hedeflemelidir.",
+            "options": {
+                "A": "The education system should aim to develop students' critical thinking skills.",
+                "B": "Critical thinking skills must be the main goal of every education system.",
+                "C": "The aim of the education system is to improve students' critical thinking.",
+                "D": "Students' critical thinking skills are developed within the education system.",
+                "E": "An education system that aims to develop critical thinking is essential."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 43,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957, suggests that individuals have an inner drive to hold all their attitudes and beliefs in harmony and avoid disharmony. When there is an inconsistency between attitudes or behaviors, something must change to eliminate the dissonance. This often leads to 'rationalization,' where an individual justifies a behavior that contradicts their values. Modern neuroscience has begun to map the neural correlates of this phenomenon, identifying the anterior cingulate cortex as a primary region involved in conflict monitoring. While some critics argue that the theory is too subjective to be measured accurately, its applications in marketing and public health remain widespread. It can be inferred from the passage that cognitive dissonance ---.",
+            "options": {
+                "A": "is a purely biological process with no psychological components",
+                "B": "results from a lack of harmony between one's beliefs and actions",
+                "C": "was dismissed by Festinger shortly after its initial proposal",
+                "D": "only occurs in individuals who lack a strong moral compass",
+                "E": "is primarily resolved through the intervention of external observers"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 44,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... According to the passage, the process of 'rationalization' serves to ---.",
+            "options": {
+                "A": "increase the amount of psychological stress an individual feels",
+                "B": "provide a scientific explanation for neurological malfunctions",
+                "C": "help individuals justify actions that conflict with their inner values",
+                "D": "encourage people to adopt more radical political views",
+                "E": "prevent the anterior cingulate cortex from functioning"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 45,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... The author mentions the 'anterior cingulate cortex' to ---.",
+            "options": {
+                "A": "show that cognitive dissonance has physical manifestations in the brain",
+                "B": "prove that Festinger's theory was entirely incorrect",
+                "C": "highlight the differences between marketing and public health",
+                "D": "demonstrate how surgery can cure psychological inconsistencies",
+                "E": "explain why some people are unable to rationalize their behavior"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 46,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... What is the primary criticism of the theory mentioned in the text?",
+            "options": {
+                "A": "It is too reliant on marketing data.",
+                "B": "It fails to account for modern neuroscience.",
+                "C": "It is considered too subjective for precise measurement.",
+                "D": "It only applies to individuals born before 1957.",
+                "E": "It ignores the role of the anterior cingulate cortex."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 47,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although the International Commission on Stratigraphy has not yet officially approved the term, many scientists use it to highlight the extent of human-induced climate change and biodiversity loss. The primary marker often cited for this period is the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it shifts the blame to all of humanity rather than specific economic systems. Nevertheless, the concept has gained significant traction in both scientific and humanities circles. According to the passage, the term 'Anthropocene' ---.",
+            "options": {
+                "A": "has been officially adopted by all geological commissions",
+                "B": "refers to a period before human influence became significant",
+                "C": "is used to emphasize the scale of human impact on the planet",
+                "D": "is only accepted by researchers in the humanities",
+                "E": "dates back to the beginning of the agricultural revolution"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 48,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The Anthropocene is a proposed geological epoch... What is mentioned as a 'primary marker' for the start of this epoch?",
+            "options": {
+                "A": "The invention of the steam engine in the 18th century",
+                "B": "The mid-20th century's rapid industrial and population growth",
+                "C": "The end of the last ice age roughly 12,000 years ago",
+                "D": "The total disappearance of biodiversity on Earth",
+                "E": "The official decree of the International Commission on Stratigraphy"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 49,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The Anthropocene is a proposed geological epoch... Some critics find the term problematic because they believe ---.",
+            "options": {
+                "A": "it does not place enough blame on the entire human race",
+                "B": "it overlooks the role of specific economic structures in environmental damage",
+                "C": "human impact is actually beneficial for the Earth's geology",
+                "D": "the 'Great Acceleration' never actually took place",
+                "E": "geological epochs should only be named after animals"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 50,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The Anthropocene is a proposed geological epoch... It can be inferred from the passage that the International Commission on Stratigraphy ---.",
+            "options": {
+                "A": "has the final authority on naming geological epochs",
+                "B": "is a branch of a marketing firm",
+                "C": "was founded during the mid-20th century",
+                "D": "disagrees that climate change is happening",
+                "E": "prefers the term 'Great Acceleration' over 'Anthropocene'"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 51,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The 'Silk Road' was not a single thoroughfare but a network of trade routes connecting the East and West. Facilitating the exchange of goods like silk, spices, and precious metals, it also served as a conduit for ideas, religions, and technologies. One of the most significant impacts of the Silk Road was the spread of Buddhism from India to China. However, the route was also responsible for the transmission of diseases, most notably the Black Death. With the rise of maritime trade in the 15th century, the overland routes saw a decline in importance. Today, the 'New Silk Road' project aims to revitalize these ancient connections through modern infrastructure. According to the text, the Silk Road was ---.",
+            "options": {
+                "A": "a single paved road stretching across Asia",
+                "B": "primarily used for the transportation of spices only",
+                "C": "a complex system of routes for both trade and cultural exchange",
+                "D": "established by the Chinese government in the 15th century",
+                "E": "the main cause of the rise of maritime trade"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 52,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The 'Silk Road' was not a single thoroughfare... Which of the following is mentioned as a negative consequence of the Silk Road?",
+            "options": {
+                "A": "The spread of Buddhism to China",
+                "B": "The decline of maritime trade",
+                "C": "The exchange of precious metals",
+                "D": "The transmission of the Black Death",
+                "E": "The development of modern infrastructure"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 53,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The 'Silk Road' was not a single thoroughfare... What led to the decreased significance of the overland Silk Road routes?",
+            "options": {
+                "A": "The complete eradication of silk production",
+                "B": "The total conversion of Asia to Buddhism",
+                "C": "The emergence and growth of sea-based trade",
+                "D": "The lack of modern infrastructure in the 20th century",
+                "E": "A series of wars that blocked all land travel"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 54,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The 'Silk Road' was not a single thoroughfare... The 'New Silk Road' mentioned in the passage refers to ---.",
+            "options": {
+                "A": "a historical document found in India",
+                "B": "a contemporary initiative to rebuild trade links",
+                "C": "a religious movement spreading through China",
+                "D": "a book written about the Black Death",
+                "E": "the first maritime route established in the 15th century"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 55,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The concept of 'Deep Time' was developed in the 18th century by James Hutton, often called the father of modern geology. Before this, most people believed the Earth was only a few thousand years old, based on religious texts. Hutton observed geological processes like erosion and sedimentation and realized they occurred so slowly that the Earth must be millions, if not billions, of years old. This shift in perspective allowed Charles Darwin to conceptualize the long periods required for biological evolution. Deep Time fundamentally changed how humans perceive their place in the universe, reducing human history to a mere blink of an eye. The passage suggests that before James Hutton's observations, ---.",
+            "options": {
+                "A": "most people believed the Earth was extremely old",
+                "B": "geological processes were thought to be very fast",
+                "C": "religious texts were not used to date the Earth",
+                "D": "Charles Darwin had already published his theory of evolution",
+                "E": "the Earth's age was generally underestimated based on tradition"
+            },
+            "correct": "E"
+        },
+        {
+            "id": 56,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The concept of 'Deep Time' was developed in the 18th century... How did Hutton's work influence Charles Darwin?",
+            "options": {
+                "A": "It provided the chronological framework necessary for evolution.",
+                "B": "It proved that erosion was the cause of genetic mutations.",
+                "C": "It allowed Darwin to calculate the exact age of the sun.",
+                "D": "It discouraged Darwin from studying biology.",
+                "E": "It showed that evolution could happen in just a few thousand years."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 57,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The concept of 'Deep Time' was developed in the 18th century... The term 'Deep Time' refers to ---.",
+            "options": {
+                "A": "the time it takes for a clock to stop working",
+                "B": "the immense span of geological history",
+                "C": "the period before the invention of the telescope",
+                "D": "the duration of a single human life",
+                "E": "the time required for a religious text to be written"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 58,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "The concept of 'Deep Time' was developed in the 18th century... In the context of the passage, 'a mere blink of an eye' illustrates ---.",
+            "options": {
+                "A": "the speed of geological erosion",
+                "B": "how long it took for Hutton to write his theory",
+                "C": "the relative insignificance of human history in geological terms",
+                "D": "the visual nature of Darwin's research",
+                "E": "the frequency of volcanic eruptions"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 59,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Bioluminescence, the production and emission of light by a living organism, occurs widely in marine vertebrates and invertebrates, as well as in some fungi and insects. The chemical reaction involves a light-emitting molecule called luciferin and an enzyme called luciferase. In the deep ocean, where sunlight cannot penetrate, bioluminescence is used for a variety of purposes: attracting prey, finding mates, and deterring predators. Some species use 'counter-illumination' to camouflage themselves against the faint light from the surface. While terrestrial bioluminescence is rarer, the firefly remains the most famous example. Researchers are now exploring ways to use bioluminescent genes as 'biosensors' in medical research. According to the passage, the light in bioluminescence is produced by ---.",
+            "options": {
+                "A": "absorbing sunlight during the day and releasing it at night",
+                "B": "a chemical reaction between luciferin and luciferase",
+                "C": "frictional heat generated by fast movement",
+                "D": "the digestion of radioactive materials in the ocean",
+                "E": "the reflection of moonlight on the surface of the skin"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 60,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Bioluminescence, the production and emission of light by a living organism... Why is bioluminescence particularly common in the deep ocean?",
+            "options": {
+                "A": "Because the water is warmer at great depths",
+                "B": "Due to the total absence of natural sunlight",
+                "C": "Because there are no predators in the deep sea",
+                "D": "To help marine life stay warm in freezing temperatures",
+                "E": "To facilitate the growth of underwater plants"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 61,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Bioluminescence, the production and emission of light by a living organism... 'Counter-illumination' is a technique used by some organisms to ---.",
+            "options": {
+                "A": "scare away their mates",
+                "B": "increase their visibility to predators",
+                "C": "blend in with the light coming from above",
+                "D": "hunt in packs more effectively",
+                "E": "convert light into chemical energy"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 62,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Bioluminescence, the production and emission of light by a living organism... The passage mentions that bioluminescent genes ---.",
+            "options": {
+                "A": "are being used to develop new types of streetlights",
+                "B": "can only be found in fireflies and deep-sea fish",
+                "C": "have potential applications as tools in medical science",
+                "D": "are responsible for causing several diseases in humans",
+                "E": "were first discovered by researchers in the 21st century"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 63,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "A: Have you noticed how many companies are now prioritizing 'ESG' criteria in their annual reports?\nB: Definitely. It seems like environmental, social, and governance factors are no longer just optional.\nA: --- \nB: Exactly. Investors are realizing that sustainable practices often lead to better long-term financial performance.",
+            "options": {
+                "A": "I think it is just a marketing gimmick to attract younger customers.",
+                "B": "Why would anyone care about social factors in a business setting?",
+                "C": "It is more than just ethics; it is actually about risk management and viability.",
+                "D": "The government should ban these reports to simplify the process.",
+                "E": "I prefer focusing on short-term profits regardless of the environmental impact."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 64,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor: The industrial revolution was a turning point, but its environmental cost was immense.\nStudent: Is that why some historians call it the 'Carbon Revolution'?\nProfessor: --- \nStudent: So, it highlights both the energy source and the atmospheric consequence.",
+            "options": {
+                "A": "No, that term refers specifically to the discovery of diamonds.",
+                "B": "Precisely, as it marked the beginning of our heavy reliance on fossil fuels.",
+                "C": "I have never heard that term used in any academic context.",
+                "D": "The revolution was actually based on wind and solar power initially.",
+                "E": "Historians are more interested in the social changes than the carbon levels."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 65,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Hiring Manager: Your resume is impressive, but we are looking for someone with more 'soft skills'.\nApplicant: I understand. Technical expertise is only half the battle in a collaborative environment.\nHiring Manager: ---\nApplicant: I agree. Communication and empathy are vital for team cohesion.",
+            "options": {
+                "A": "We don't really value communication skills here.",
+                "B": "Actually, we need someone who can work completely alone.",
+                "C": "Indeed; we need leaders who can navigate complex interpersonal dynamics.",
+                "D": "Can you explain what you mean by 'technical expertise'?",
+                "E": "Soft skills are often overrated in the engineering department."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 66,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Doctor: I'm concerned about your sedentary lifestyle. It's a major risk factor for cardiovascular disease.\nPatient: I know I should exercise, but my office job keeps me glued to a chair for ten hours.\nDoctor: ---\nPatient: That sounds manageable. I'll try to incorporate more movement into my routine.",
+            "options": {
+                "A": "You should probably quit your job immediately for your health.",
+                "B": "Even short walks every hour can significantly mitigate the risks.",
+                "C": "There is nothing we can do if you refuse to go to the gym.",
+                "D": "Cardiovascular disease is mostly genetic anyway, so don't worry.",
+                "E": "I will prescribe you a medication that replaces the need for exercise."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 67,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Art Critic: This exhibition perfectly captures the 'uncanny'—that feeling of something being both familiar and alien.\nVisitor: I felt that particularly in the room with the hyper-realistic sculptures.\nArt Critic: ---\nVisitor: It’s true. It’s hard to look away, yet you feel an instinctive urge to do so.",
+            "options": {
+                "A": "The artist actually meant for them to look like cartoons.",
+                "B": "The lighting in that room is far too bright for my taste.",
+                "C": "The goal was to make the audience feel as comfortable as possible.",
+                "D": "That’s the paradox of the uncanny; it attracts and repels simultaneously.",
+                "E": "Hyper-realism is generally considered a very boring art movement."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 68,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "The assumption that economic growth will eventually trickle down to the poorest sectors of society has been largely debunked by recent empirical data.",
+            "options": {
+                "A": "Recent data confirms that the poor benefit most from rapid economic expansion.",
+                "B": "Evidence now suggests that wealth does not necessarily reach the lower classes through growth alone.",
+                "C": "Economists have finally proven that growth is the only way to eliminate poverty.",
+                "D": "It is widely assumed that empirical data cannot measure the effects of economic growth.",
+                "E": "The poorest sectors of society are responsible for the recent decline in economic growth."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 69,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "Had the government implemented stricter quarantine measures earlier, the spread of the virus could have been significantly curtailed.",
+            "options": {
+                "A": "The virus spread rapidly because the government refused to implement any measures.",
+                "B": "The government implemented strict measures, but they failed to stop the virus.",
+                "C": "The virus was contained despite the government's late intervention.",
+                "D": "Earlier and more rigorous quarantine actions would have greatly reduced the virus's transmission.",
+                "E": "Strict quarantine measures are the only way to ensure a virus does not spread at all."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 70,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "Despite her lack of formal training in linguistics, Maria's intuitive grasp of syntax was comparable to that of a seasoned professional.",
+            "options": {
+                "A": "Maria's lack of training prevented her from understanding complex syntax.",
+                "B": "Maria was a seasoned professional who taught linguistics to untrained students.",
+                "C": "Maria understood syntax instinctively as well as an experienced linguist, even without formal education.",
+                "D": "Professional linguists were surprised that Maria had no formal training in the field.",
+                "E": "Formal training is unnecessary if one has an intuitive grasp of linguistics."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 71,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "The city's infrastructure is barely capable of sustaining the current population, let alone accommodating the projected influx of migrants.",
+            "options": {
+                "A": "The city is planning to build new infrastructure for the expected migrants.",
+                "B": "Current residents and future migrants will find the city's infrastructure perfectly adequate.",
+                "C": "The city's facilities are already struggling and will not be able to handle more people.",
+                "D": "Migrants are moving to the city because the infrastructure is so well-developed.",
+                "E": "The population is decreasing, so the infrastructure is becoming more than sufficient."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 72,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The concept of 'Universal Basic Income' (UBI) has moved from the fringes of economic theory to the center of policy debates. Proponents argue that it provides a safety net in an era of automation and job displacement. ---. Critics often point to the high fiscal cost and the potential for reduced labor participation as primary drawbacks. However, pilot programs in various countries continue to provide data on its actual impact.",
+            "options": {
+                "A": "They also claim it empowers individuals to pursue creative or entrepreneurial endeavors.",
+                "B": "UBI is a system where the government takes over all private industries.",
+                "C": "Most economists agree that UBI is impossible to implement in modern states.",
+                "D": "The history of UBI can be traced back to ancient Roman welfare systems.",
+                "E": "Automated robots are the primary reason why people lose their jobs today."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 73,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "In the realm of quantum mechanics, particles can exist in a state of 'superposition,' meaning they are in multiple states simultaneously until measured. ---. This phenomenon, known as entanglement, suggests that information can be shared across vast distances instantaneously. This challenges the classical notion that nothing can travel faster than the speed of light.",
+            "options": {
+                "A": "Albert Einstein was the first person to invent a quantum computer.",
+                "B": "Furthermore, two particles can become linked such that the state of one affects the other.",
+                "C": "Most people find quantum mechanics to be a very simple and intuitive subject.",
+                "D": "Superposition is only a theory and has never been observed in a laboratory.",
+                "E": "The speed of light is the absolute limit for all types of communication."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 74,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Urbanization is a global trend that shows no signs of slowing down. As more people move to cities in search of better opportunities, urban centers face the challenge of providing adequate housing and transport. ---. Innovative solutions, such as green roofs and smart grids, are being integrated into city planning to mitigate these issues. The goal is to create 'smart cities' that are both efficient and liveable.",
+            "options": {
+                "A": "The rural population is actually growing faster than the urban one in many regions.",
+                "B": "Traffic congestion is the only problem that city planners need to worry about.",
+                "C": "Moreover, the environmental impact of dense populations cannot be overlooked.",
+                "D": "Most cities were built before the invention of the automobile.",
+                "E": "Living in the countryside is generally considered healthier than living in a city."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 75,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The Renaissance was a period of intense cultural and intellectual flowering that began in Italy. It marked a transition from the Middle Ages to modernity, characterized by a revival of interest in Classical antiquity. ---. This shift led to groundbreaking achievements in art, science, and philosophy. Figures like Leonardo da Vinci and Michelangelo became the embodiments of this new humanistic spirit.",
+            "options": {
+                "A": "The Black Death had no impact on the development of Renaissance thought.",
+                "B": "Medieval scholars were strictly focused on the study of modern technology.",
+                "C": "Central to this movement was the philosophy of humanism, which emphasized human potential.",
+                "D": "Italy was the only country in Europe that did not experience the Renaissance.",
+                "E": "The printing press was invented long after the Renaissance had already ended."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 76,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Genetic engineering has the potential to revolutionize medicine by curing hereditary diseases. (II) By editing the DNA of embryos, scientists could eliminate conditions like cystic fibrosis. (III) Many people enjoy gardening as a way to relax and connect with nature. (IV) However, the ethical implications of 'designer babies' remain a subject of intense debate. (V) Regulatory bodies are struggling to keep pace with the rapid advancement of CRISPR technology.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 77,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Volcanic eruptions are among the most destructive natural disasters on Earth. (II) They can release massive amounts of ash and sulfur dioxide into the atmosphere. (III) This often results in a temporary cooling of the global climate. (IV) Mount St. Helens erupted in 1980, causing widespread damage in Washington State. (V) Local tourism boards often use volcanic landscapes to attract hikers and photographers.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "E"
+        },
+        {
+            "id": 78,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The rise of the internet has fundamentally transformed how we consume news. (II) Traditional newspapers have seen a sharp decline in circulation and advertising revenue. (III) Social media platforms have become the primary source of information for many young adults. (IV) Digital literacy is a skill that is taught in most primary schools today. (V) This shift has also led to the proliferation of 'fake news' and misinformation online.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 79,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections. (II) This process allows the neurons in the brain to compensate for injury and disease. (III) It was once believed that the adult brain was 'hard-wired' and incapable of change. (IV) Learning a new language or musical instrument is a great way to stimulate the brain. (V) Some people prefer acoustic guitars over electric ones because of the natural sound.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "E"
+        },
+        {
+            "id": 80,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Space exploration has always been a symbol of human curiosity and ambition. (II) The Apollo moon landings in the 1960s were a high point of the Cold War space race. (III) Today, private companies like SpaceX are playing an increasingly dominant role. (IV) Mars is often called the 'Red Planet' because of the iron oxide on its surface. (V) The cost of launching satellites has plummeted, opening up new possibilities for global internet coverage.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        }
+    ]
+}

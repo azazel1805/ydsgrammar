@@ -30,6 +30,14 @@ const EXAM_LIST = [
   { id: 'mini25', label: 'Mini Deneme 25', file: '/exams/mini/miniexam25.json' }
 ];
 
+const FULL_EXAM_LIST = [
+  { id: 'full1', label: 'Tam Deneme 1', file: '/exams/full/fullexam1.json' },
+  { id: 'full2', label: 'Tam Deneme 2', file: '/exams/full/fullexam2.json' },
+  { id: 'full3', label: 'Tam Deneme 3', file: '/exams/full/fullexam3.json' },
+  { id: 'full4', label: 'Tam Deneme 4', file: '/exams/full/fullexam4.json' },
+  { id: 'full5', label: 'Tam Deneme 5', file: '/exams/full/fullexam5.json' }
+];
+
 // ── State ────────────────────────────────────────────────────
 let feExamData = null;
 let feAnswers = {};          // { questionId: 'A' }
@@ -44,54 +52,87 @@ const fullExamHTML = /* html */`
   <!-- Header card -->
   <div class="text-center mb-10">
     <div class="inline-flex items-center gap-3 bg-gradient-to-r from-red-800 to-red-900 text-white px-6 py-3 rounded-2xl shadow-xl mb-6">
-      <i class="fas fa-bolt text-xl"></i>
-      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">YDS Mini Deneme</span>
+      <i class="fas fa-graduation-cap text-xl"></i>
+      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">YDS Deneme Merkezi</span>
     </div>
-    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Mini YDS Deneme Sınavları</h2>
-    <p class="text-slate-500 text-sm">40 soru · 90 dakika · Hızlı Pratik</p>
+    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Pratik ve Tam Deneme Sınavları</h2>
+    <p class="text-slate-500 text-sm">Kendinizi gerçek sınav formatında test edin.</p>
   </div>
 
   <!-- Exam selector -->
-  <div id="feStartScreen" class="space-y-6">
-    <div class="grid md:grid-cols-2 gap-4">
-      ${EXAM_LIST.map(e => `
-        <div onclick="feSelectExam('${e.id}')" id="feCard-${e.id}"
-          class="fe-exam-card cursor-pointer border-2 border-slate-200 rounded-2xl p-6 hover:border-red-300 hover:shadow-lg transition-all group relative overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          <div class="relative z-10">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center text-red-800">
-                <i class="fas fa-book-open"></i>
+  <div id="feStartScreen" class="space-y-12">
+    
+    <!-- Full Exams Section -->
+    <section>
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-8 w-1 bg-red-800 rounded-full"></div>
+        <h3 class="text-xl font-bold text-slate-800">Tam Deneme Sınavları (80 Soru)</h3>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+        ${FULL_EXAM_LIST.map(e => `
+          <div onclick="feSelectExam('${e.id}')" id="feCard-${e.id}"
+            class="fe-exam-card cursor-pointer border-2 border-slate-200 rounded-2xl p-6 hover:border-red-300 hover:shadow-lg transition-all group relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="relative z-10">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-12 h-12 rounded-xl bg-red-800 flex items-center justify-center text-white shadow-lg">
+                  <i class="fas fa-file-alt text-lg"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-slate-800 text-lg">${e.label}</p>
+                  <p class="text-xs text-slate-400 font-semibold tracking-wide">80 SORU · 180 DAKİKA</p>
+                </div>
               </div>
-              <div>
-                <p class="font-bold text-slate-800">${e.label}</p>
-                <p class="text-xs text-slate-400">40 Soru · 1.5 Saat</p>
+              <div class="flex gap-2 flex-wrap text-xs text-slate-500">
+                <span class="bg-red-50 text-red-700 font-bold px-2 py-1 rounded-md border border-red-100 italic">Gerçek Sınav Formatı</span>
+                <span class="bg-slate-100 px-2 py-1 rounded-md">Tüm Bölümler</span>
               </div>
             </div>
-            <div class="flex gap-2 flex-wrap text-xs text-slate-500">
-              <span class="bg-slate-100 px-2 py-1 rounded-full">Kelime</span>
-              <span class="bg-slate-100 px-2 py-1 rounded-full">Cümle Tamamlama</span>
-              <span class="bg-slate-100 px-2 py-1 rounded-full">Okuma</span>
-              <span class="bg-slate-100 px-2 py-1 rounded-full">Çeviri</span>
-              <span class="bg-slate-100 px-2 py-1 rounded-full">Diyalog</span>
-            </div>
-          </div>
-        </div>`).join('')}
-    </div>
+          </div>`).join('')}
+      </div>
+    </section>
 
-    <div id="feSelectedInfo" class="hidden bg-amber-50 border border-amber-200 rounded-2xl p-5 flex items-start gap-4">
-      <i class="fas fa-info-circle text-amber-600 mt-1 text-lg"></i>
+    <!-- Mini Exams Section -->
+    <section>
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-8 w-1 bg-amber-600 rounded-full"></div>
+        <h3 class="text-xl font-bold text-slate-800">Mini Deneme Sınavları (40 Soru)</h3>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        ${EXAM_LIST.map(e => `
+          <div onclick="feSelectExam('${e.id}')" id="feCard-${e.id}"
+            class="fe-exam-card cursor-pointer border-2 border-slate-200 rounded-2xl p-5 hover:border-amber-300 hover:shadow-lg transition-all group relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="relative z-10">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-800">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-slate-800">${e.label}</p>
+                  <p class="text-xs text-slate-400">40 SORU · 90 DK</p>
+                </div>
+              </div>
+            </div>
+          </div>`).join('')}
+      </div>
+    </section>
+
+    <div id="feSelectedInfo" class="hidden bg-slate-900 border border-slate-800 rounded-2xl p-6 flex items-start gap-4 shadow-2xl">
+      <div class="w-12 h-12 rounded-full bg-red-800 flex items-center justify-center shrink-0">
+        <i class="fas fa-info-circle text-white text-xl"></i>
+      </div>
       <div>
-        <p class="font-semibold text-amber-800 mb-1">Sınav Bilgisi</p>
-        <p class="text-sm text-amber-700">Sınav başladığında 90 dakikalık geri sayım başlar. Sınavı istediğiniz zaman teslim edebilirsiniz.</p>
+        <p class="font-bold text-white text-lg mb-1">Hazır mısınız?</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Sınav başladığında zamanlayıcı çalışmaya başlayacaktır. Seçtiğiniz sınavın tüm bölümlerini bitirdiğinizden emin olun.</p>
       </div>
     </div>
 
-    <div class="flex justify-center">
+    <div class="flex justify-center pb-10">
       <button id="feStartBtn" onclick="feStartExam()" disabled
-        class="px-10 py-4 bg-gradient-to-r from-red-800 to-red-700 text-white rounded-2xl font-bold text-lg shadow-xl shadow-red-800/20 hover:shadow-red-800/40 hover:scale-105 transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:scale-100 flex items-center gap-3">
-        <i class="fas fa-play"></i>
-        Sınavı Başlat
+        class="px-12 py-5 bg-gradient-to-r from-red-800 to-red-700 text-white rounded-2xl font-black text-xl shadow-2xl shadow-red-900/40 hover:shadow-red-900/60 hover:scale-105 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:scale-100 flex items-center gap-4">
+        <i class="fas fa-play-circle text-2xl"></i>
+        SINAVI BAŞLAT
       </button>
     </div>
   </div>
@@ -234,7 +275,8 @@ async function feStartExam() {
   const examId = btn.dataset.selectedId;
   if (!examId) return;
 
-  const exam = EXAM_LIST.find(e => e.id === examId);
+  const combined = [...EXAM_LIST, ...FULL_EXAM_LIST];
+  const exam = combined.find(e => e.id === examId);
   if (!exam) return;
 
   btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Yükleniyor...';
@@ -442,7 +484,7 @@ function feFinish() {
   questions.forEach(q => {
     const sec = sectionStats[q.section_id];
     if (sec) sec.total++;
-    if (feAnswers[q.id] === q.correct) {
+    if (String(feAnswers[q.id]) === String(q.correct)) {
       total++;
       if (sec) sec.correct++;
     }
@@ -451,10 +493,14 @@ function feFinish() {
   document.getElementById('feExamScreen').classList.add('hidden');
   document.getElementById('feResultScreen').classList.remove('hidden');
 
-  const pct = Math.round((total / questions.length) * 100);
+  const qLen = questions.length;
+  const pct = Math.round((total / qLen) * 100);
   document.getElementById('feScoreNum').textContent = total;
   document.getElementById('feScoreCircle').style.background =
     `conic-gradient(#991b1b ${pct * 3.6}deg, #e5e7eb ${pct * 3.6}deg)`;
+  
+  const scoreCircleSub = document.querySelector('#feResultScreen .text-slate-400.font-semibold');
+  if (scoreCircleSub) scoreCircleSub.textContent = `/${qLen}`;
 
   let msg = '';
   if (pct >= 80) msg = '🏆 Mükemmel! Gerçek YDS\'ye hazırsınız.';
