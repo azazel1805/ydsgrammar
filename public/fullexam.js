@@ -2,7 +2,7 @@
    fullexam.js  –  YDS Full Practice Exam Engine
    ============================================================ */
 
-const CATEGORICAL_MINI_LIST = []; // Moved to miniexams.js
+// CATEGORICAL_MINI_LIST is now managed in miniexams.js
 
 const FULL_EXAM_LIST = [
   { id: 'full1', label: 'Tam Deneme 1', file: '/exams/full/fullexam1.json' },

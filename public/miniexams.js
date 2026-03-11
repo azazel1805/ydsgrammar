@@ -173,9 +173,7 @@ function injectMiniExamHTML() {
   if (container) container.innerHTML = miniexamsHTML;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    injectMiniExamHTML();
-});
+// Initialized via main.js
 
 function meSelectExam(id) {
   document.querySelectorAll('.me-exam-card').forEach(c => c.classList.remove('border-red-300', 'bg-red-50/30'));

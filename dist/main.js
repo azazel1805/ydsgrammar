@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-analyzer", typeof analyzerHTML !== 'undefined' ? analyzerHTML : undefined);
     safeInject("tab-testlab", typeof testlabHTML !== 'undefined' ? testlabHTML : undefined);
     safeInject("tab-wordpractice", typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : undefined);
+    safeInject("tab-miniexams", typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
@@ -56,6 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (typeof initFullExam === "function") {
         initFullExam();
+    }
+
+    if (typeof injectMiniExamHTML === "function") {
+        injectMiniExamHTML();
     }
 
     if (typeof initTacticGuide === "function") {
@@ -330,7 +335,9 @@ function reinjectTabContent(tabName) {
         "analyzer": typeof analyzerHTML !== 'undefined' ? analyzerHTML : null,
         "nlpanaliz": typeof nlpAnalizHTML !== 'undefined' ? nlpAnalizHTML : null,
         "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null,
-        "wordpractice": typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : null
+        "wordpractice": typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : null,
+        "fullexam": typeof fullExamHTML !== 'undefined' ? fullExamHTML : null,
+        "miniexams": typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : null
     };
 
     const content = mappings[tabName];
