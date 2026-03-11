@@ -89,7 +89,7 @@ const miniexamsHTML = `
               <div onclick="meSelectExam('${e.id}')" id="meCard-${e.id}"
                 class="me-exam-card cursor-pointer border border-slate-200 rounded-xl p-4 hover:border-red-300 hover:bg-red-50/30 transition-all text-center group">
                 <p class="text-sm font-bold text-slate-700 group-hover:text-red-800 mb-1">${e.label}</p>
-                <p class="text-[10px] text-slate-400 font-medium uppercase tracking-tight">Soru Havuzundan Seç</p>
+                <p class="text-[10px] text-slate-400 font-medium uppercase tracking-tight">${e.info}</p>
               </div>
             `).join('')}
           </div>
@@ -98,24 +98,36 @@ const miniexamsHTML = `
     </div>
 
     <div id="meSelectedInfo" class="hidden bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl">
-      <div class="flex items-start gap-4 mb-6">
-        <div class="w-12 h-12 rounded-full bg-red-800 flex items-center justify-center shrink-0">
-          <i class="fas fa-sliders-h text-white text-xl"></i>
-        </div>
-        <div>
-          <p class="font-bold text-white text-lg mb-1">Sınav Ayarları</p>
-          <p class="text-slate-400 text-sm leading-relaxed">Kaç soru çözmek istediğinizi belirleyin. Sorular havuzdan rastgele seçilecektir.</p>
-        </div>
+      <div id="meCountSettings">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-red-800 flex items-center justify-center shrink-0">
+              <i class="fas fa-sliders-h text-white text-xl"></i>
+            </div>
+            <div>
+              <p class="font-bold text-white text-lg mb-1">Sınav Ayarları</p>
+              <p class="text-slate-400 text-sm leading-relaxed">Kaç soru çözmek istediğinizi belirleyin. Sorular havuzdan rastgele seçilecektir.</p>
+            </div>
+          </div>
+          
+          <div class="max-w-xs mx-auto text-center space-y-4">
+            <label class="block text-slate-400 text-xs font-bold uppercase tracking-wider mb-2">Kaç Soru Çözeceksiniz?</label>
+            <div class="flex items-center justify-center gap-4">
+                <button onclick="updateMeCount(-5)" class="w-10 h-10 rounded-full bg-slate-800 text-white hover:bg-red-800 transition-colors">-</button>
+                <input type="number" id="meQuestionCount" value="20" min="5" max="100" class="w-20 bg-slate-800 border-2 border-slate-700 text-white text-center font-bold text-xl py-2 rounded-xl focus:border-red-800 outline-none">
+                <button onclick="updateMeCount(5)" class="w-10 h-10 rounded-full bg-slate-800 text-white hover:bg-red-800 transition-colors">+</button>
+            </div>
+            <p id="meMaxInfo" class="text-[10px] text-slate-500 uppercase font-bold mt-2">Maksimum Soru: --</p>
+          </div>
       </div>
       
-      <div class="max-w-xs mx-auto text-center space-y-4">
-        <label class="block text-slate-400 text-xs font-bold uppercase tracking-wider mb-2">Kaç Soru Çözeceksiniz?</label>
-        <div class="flex items-center justify-center gap-4">
-            <button onclick="updateMeCount(-5)" class="w-10 h-10 rounded-full bg-slate-800 text-white hover:bg-red-800 transition-colors">-</button>
-            <input type="number" id="meQuestionCount" value="20" min="5" max="100" class="w-20 bg-slate-800 border-2 border-slate-700 text-white text-center font-bold text-xl py-2 rounded-xl focus:border-red-800 outline-none">
-            <button onclick="updateMeCount(5)" class="w-10 h-10 rounded-full bg-slate-800 text-white hover:bg-red-800 transition-colors">+</button>
+      <div id="meFixedInfo" class="hidden flex items-start gap-4">
+        <div class="w-12 h-12 rounded-full bg-red-800 flex items-center justify-center shrink-0">
+          <i class="fas fa-check-circle text-white text-xl"></i>
         </div>
-        <p id="meMaxInfo" class="text-[10px] text-slate-500 uppercase font-bold mt-2">Maksimum Soru: --</p>
+        <div>
+          <p class="font-bold text-white text-lg mb-1">Sabit Deneme Seçildi</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Bu deneme orijinal 40 soruluk settir. Soru sırası ve sayısı sabittir.</p>
+        </div>
       </div>
     </div>
 
@@ -126,6 +138,7 @@ const miniexamsHTML = `
       </button>
     </div>
   </div>
+
 
   <div id="meExamScreen" class="hidden">
     <!-- Exam Interface (similar to fullexam) -->
@@ -184,17 +197,26 @@ async function meSelectExam(id) {
   if (card) card.classList.add('border-red-300', 'bg-red-50/30');
   
   const exam = findExamById(id);
+  const isFixed = id.startsWith('mini_fixed');
+
   if (exam) {
-      try {
-          const res = await fetch(exam.file);
-          const temp = await res.json();
-          const totalQ = temp.questions.length;
-          document.getElementById('meMaxInfo').textContent = `Maksimum Soru: ${totalQ}`;
-          document.getElementById('meQuestionCount').max = totalQ;
-          if (parseInt(document.getElementById('meQuestionCount').value) > totalQ) {
-              document.getElementById('meQuestionCount').value = totalQ;
-          }
-      } catch (e) {}
+      if (isFixed) {
+          document.getElementById('meCountSettings').classList.add('hidden');
+          document.getElementById('meFixedInfo').classList.remove('hidden');
+      } else {
+          document.getElementById('meCountSettings').classList.remove('hidden');
+          document.getElementById('meFixedInfo').classList.add('hidden');
+          try {
+              const res = await fetch(exam.file);
+              const temp = await res.json();
+              const totalQ = temp.questions.length;
+              document.getElementById('meMaxInfo').textContent = `Maksimum Soru: ${totalQ}`;
+              document.getElementById('meQuestionCount').max = totalQ;
+              if (parseInt(document.getElementById('meQuestionCount').value) > totalQ) {
+                  document.getElementById('meQuestionCount').value = totalQ;
+              }
+          } catch (e) {}
+      }
   }
 
   document.getElementById('meSelectedInfo').classList.remove('hidden');
