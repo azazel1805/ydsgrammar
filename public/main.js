@@ -243,7 +243,7 @@ window.switchTab = function (tabName) {
     }
 
     const userTabs = ['forum', 'profile', 'vocabulary', 'wordpractice'];
-    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam'];
+    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams'];
 
     // Level 1: Must be logged in
     if ((userTabs.includes(tabName) || premiumTabs.includes(tabName)) && !window.currentUser) {

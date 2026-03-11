@@ -2,33 +2,7 @@
    fullexam.js  –  YDS Full Practice Exam Engine
    ============================================================ */
 
-const EXAM_LIST = [
-  { id: 'mini1', label: 'Mini Deneme 1', file: '/exams/mini/miniexam1.json' },
-  { id: 'mini2', label: 'Mini Deneme 2', file: '/exams/mini/miniexam2.json' },
-  { id: 'mini3', label: 'Mini Deneme 3', file: '/exams/mini/miniexam3.json' },
-  { id: 'mini4', label: 'Mini Deneme 4', file: '/exams/mini/miniexam4.json' },
-  { id: 'mini5', label: 'Mini Deneme 5', file: '/exams/mini/miniexam5.json' },
-  { id: 'mini6', label: 'Mini Deneme 6', file: '/exams/mini/miniexam6.json' },
-  { id: 'mini7', label: 'Mini Deneme 7', file: '/exams/mini/miniexam7.json' },
-  { id: 'mini8', label: 'Mini Deneme 8', file: '/exams/mini/miniexam8.json' },
-  { id: 'mini9', label: 'Mini Deneme 9', file: '/exams/mini/miniexam9.json' },
-  { id: 'mini10', label: 'Mini Deneme 10', file: '/exams/mini/miniexam10.json' },
-  { id: 'mini11', label: 'Mini Deneme 11', file: '/exams/mini/miniexam11.json' },
-  { id: 'mini12', label: 'Mini Deneme 12', file: '/exams/mini/miniexam12.json' },
-  { id: 'mini13', label: 'Mini Deneme 13', file: '/exams/mini/miniexam13.json' },
-  { id: 'mini14', label: 'Mini Deneme 14', file: '/exams/mini/miniexam14.json' },
-  { id: 'mini15', label: 'Mini Deneme 15', file: '/exams/mini/miniexam15.json' },
-  { id: 'mini16', label: 'Mini Deneme 16', file: '/exams/mini/miniexam16.json' },
-  { id: 'mini17', label: 'Mini Deneme 17', file: '/exams/mini/miniexam17.json' },
-  { id: 'mini18', label: 'Mini Deneme 18', file: '/exams/mini/miniexam18.json' },
-  { id: 'mini19', label: 'Mini Deneme 19', file: '/exams/mini/miniexam19.json' },
-  { id: 'mini20', label: 'Mini Deneme 20', file: '/exams/mini/miniexam20.json' },
-  { id: 'mini21', label: 'Mini Deneme 21', file: '/exams/mini/miniexam21.json' },
-  { id: 'mini22', label: 'Mini Deneme 22', file: '/exams/mini/miniexam22.json' },
-  { id: 'mini23', label: 'Mini Deneme 23', file: '/exams/mini/miniexam23.json' },
-  { id: 'mini24', label: 'Mini Deneme 24', file: '/exams/mini/miniexam24.json' },
-  { id: 'mini25', label: 'Mini Deneme 25', file: '/exams/mini/miniexam25.json' }
-];
+const CATEGORICAL_MINI_LIST = []; // Moved to miniexams.js
 
 const FULL_EXAM_LIST = [
   { id: 'full1', label: 'Tam Deneme 1', file: '/exams/full/fullexam1.json' },
@@ -61,7 +35,7 @@ const fullExamHTML = /* html */`
       <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">Premium Deneme Merkezi</span>
     </div>
     <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Özel Hazırlanmış Deneme Sınavları</h2>
-    <p class="text-slate-500 text-sm">YDS zorluk seviyesinde, 80 soruluk tam ve 40 soruluk mini denemeler.</p>
+    <p class="text-slate-500 text-sm">YDS zorluk seviyesinde, 80 soruluk tam denemeler.</p>
 </div>
 
   <!-- Exam selector -->
@@ -97,31 +71,6 @@ const fullExamHTML = /* html */`
       </div>
     </section>
 
-    <!-- Mini Exams Section -->
-    <section>
-      <div class="flex items-center gap-3 mb-6">
-        <div class="h-8 w-1 bg-amber-600 rounded-full"></div>
-        <h3 class="text-xl font-bold text-slate-800">Mini Deneme Sınavları (40 Soru)</h3>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        ${EXAM_LIST.map(e => `
-          <div onclick="feSelectExam('${e.id}')" id="feCard-${e.id}"
-            class="fe-exam-card cursor-pointer border-2 border-slate-200 rounded-2xl p-5 hover:border-amber-300 hover:shadow-lg transition-all group relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-amber-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-800">
-                  <i class="fas fa-bolt"></i>
-                </div>
-                <div>
-                  <p class="font-bold text-slate-800">${e.label}</p>
-                  <p class="text-xs text-slate-400">40 SORU · 90 DK</p>
-                </div>
-              </div>
-            </div>
-          </div>`).join('')}
-      </div>
-    </section>
 
     <div id="feSelectedInfo" class="hidden bg-slate-900 border border-slate-800 rounded-2xl p-6 flex items-start gap-4 shadow-2xl">
       <div class="w-12 h-12 rounded-full bg-red-800 flex items-center justify-center shrink-0">
@@ -150,7 +99,7 @@ const fullExamHTML = /* html */`
       <div class="flex items-center justify-between px-4 py-3 gap-3">
         <div class="flex items-center gap-3 min-w-0">
           <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden sm:block">Soru</span>
-          <span id="feQNum" class="font-extrabold text-red-800 text-lg">1/40</span>
+          <span id="feQNum" class="font-extrabold text-red-800 text-lg">---</span>
           <div class="h-4 w-px bg-slate-200 hidden sm:block"></div>
           <span id="feAnsweredCount" class="text-xs text-slate-500 hidden sm:block">0 cevaplanmış</span>
         </div>
@@ -226,7 +175,7 @@ const fullExamHTML = /* html */`
         <div id="feScoreCircle" class="absolute inset-0 rounded-full" style="background: conic-gradient(#991b1b 0%, #e5e7eb 0%)"></div>
         <div class="relative z-10 text-center">
           <div id="feScoreNum" class="text-4xl font-extrabold text-red-800"></div>
-          <div class="text-xs text-slate-400 font-semibold">/40</div>
+          <div id="feScoreTotal" class="text-xs text-slate-400 font-semibold"></div>
         </div>
       </div>
       <h3 class="text-2xl font-extrabold text-slate-800 mb-1" style="font-family:'Playfair Display',serif;">Sonuçlarınız</h3>
@@ -263,11 +212,15 @@ function initFullExam() {
 // ─── Exam card selection ─────────────────────────────────────
 async function feSelectExam(id) {
   document.querySelectorAll('.fe-exam-card').forEach(c => {
-    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50');
+    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50', 'border-red-300', 'bg-red-50/30');
   });
   const card = document.getElementById(`feCard-${id}`);
   if (card) {
-    card.classList.add('border-red-500', 'shadow-lg', 'bg-red-50');
+    if (id.startsWith('full')) {
+      card.classList.add('border-red-500', 'shadow-lg', 'bg-red-50');
+    } else {
+      card.classList.add('border-red-300', 'bg-red-50/30');
+    }
   }
   document.getElementById('feSelectedInfo').classList.remove('hidden');
   document.getElementById('feStartBtn').disabled = false;
@@ -280,8 +233,13 @@ async function feStartExam() {
   const examId = btn.dataset.selectedId;
   if (!examId) return;
 
-  const combined = [...EXAM_LIST, ...FULL_EXAM_LIST];
-  const exam = combined.find(e => e.id === examId);
+  let exam = FULL_EXAM_LIST.find(e => e.id === examId);
+  if (!exam) {
+    for (const cat of CATEGORICAL_MINI_LIST) {
+      exam = cat.exams.find(e => e.id === examId);
+      if (exam) break;
+    }
+  }
   if (!exam) return;
 
   btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Yükleniyor...';
@@ -504,7 +462,7 @@ function feFinish() {
   document.getElementById('feScoreCircle').style.background =
     `conic-gradient(#991b1b ${pct * 3.6}deg, #e5e7eb ${pct * 3.6}deg)`;
   
-  const scoreCircleSub = document.querySelector('#feResultScreen .text-slate-400.font-semibold');
+  const scoreCircleSub = document.getElementById('feScoreTotal');
   if (scoreCircleSub) scoreCircleSub.textContent = `/${qLen}`;
 
   let msg = '';

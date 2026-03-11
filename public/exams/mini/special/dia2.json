@@ -1,0 +1,299 @@
+{
+    "meta": {
+        "title": "Diyalog Sınavı 2",
+        "subtitle": "20 Soru - 30 Dakika",
+        "total_questions": 20,
+        "duration_minutes": 30
+    },
+    "sections": [
+        {
+            "id": "dialogue",
+            "label": "Diyalog Tamamlama",
+            "from": 1,
+            "to": 20
+        }
+    ],
+    "passages": [],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor Alan: I suspect the recent data on carbon sequestration in boreal forests is slightly skewed due to the methodology used in soil sampling. \nGraduate Student: __________ \nProfessor Alan: Precisely. By overlooking the deeper mineral soil layers, we are likely underestimating the long-term storage capacity.",
+            "options": {
+                "A": "Could it be that the researchers focused too heavily on the organic topsoil layer?",
+                "B": "Do you think the carbon levels are actually lower than reported?",
+                "C": "Is it possible that boreal forests are not as efficient as we thought?",
+                "D": "Should we consider using satellite imagery instead of ground sampling?",
+                "E": "Are you suggesting that the atmospheric measurements were also flawed?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Interviewer: Many economists argue that universal basic income could disincentivize labor. How do you respond to that? \nEconomist: __________ \nInterviewer: So, you are saying that it provides a safety net that actually encourages entrepreneurial risk-taking?",
+            "options": {
+                "A": "I believe that human nature is fundamentally driven by a desire for leisure.",
+                "B": "Actually, empirical evidence from pilot programs suggests it often has the opposite effect.",
+                "C": "The cost of implementing such a program would be prohibitively high for most nations.",
+                "D": "Most people would simply stop working if their basic needs were met by the state.",
+                "E": "It is a complex issue that requires more longitudinal studies before any conclusion."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Dr. Sarah: The patient's resistance to standard antibiotics is concerning; we might need to explore phage therapy. \nDr. Miller: __________ \nDr. Sarah: Given the urgency of the infection and the lack of alternatives, it is a risk we may have to take.",
+            "options": {
+                "A": "Phage therapy is widely accepted as the primary treatment for such cases.",
+                "B": "I disagree; the patient is showing signs of improvement with current medication.",
+                "C": "Isnt there a concern regarding the specificity of the viruses and potential immune reactions?",
+                "D": "The cost of phage therapy is significantly lower than traditional antibiotics.",
+                "E": "We should wait for another week before changing the treatment protocol."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 4,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Art Historian A: The brushwork in this late-period landscape suggests a significant departure from the artist's earlier precision. \nArt Historian B: __________ \nArt Historian A: That makes sense. His deteriorating eyesight would certainly explain the shift toward more impressionistic forms.",
+            "options": {
+                "A": "He was likely experimenting with new pigments imported from the East.",
+                "B": "I think it reflects his growing obsession with symmetrical compositions.",
+                "C": "It might be attributed to his physical ailments during his final decade.",
+                "D": "The influence of his contemporaries is clearly visible in these strokes.",
+                "E": "He actually returned to his earlier style just before his death."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 5,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Technologist: The ethical implications of autonomous AI in warfare are becoming increasingly difficult to navigate. \nEthicist: __________ \nTechnologist: Exactly. Without a human in the loop, the question of accountability in the event of a war crime remains unanswered.",
+            "options": {
+                "A": "Technology has always outpaced the development of legal frameworks.",
+                "B": "The primary concern is the potential for a global arms race in AI.",
+                "C": "We must define who is legally responsible when an algorithm makes a lethal decision.",
+                "D": "Autonomous systems are far more precise than human soldiers ever could be.",
+                "E": "Most nations are already moving toward a total ban on such technologies."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 6,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Archaeologist: The discovery of these cedar planks suggests the civilization had advanced maritime trade capabilities. \nResearcher: __________ \nArchaeologist: Indeed, and since cedar is not indigenous to this region, it confirms they were importing raw materials from the Levant.",
+            "options": {
+                "A": "They likely used the wood for constructing religious temples instead.",
+                "B": "Does the carbon dating align with the established timeline of the dynasty?",
+                "C": "That would explain the presence of foreign pottery found in the lower strata.",
+                "D": "The planks seem to have been used for residential flooring rather than ships.",
+                "E": "Many civilizations in this era were known for their isolationist policies."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 7,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Journalist: Do you think the rise of social media has permanently altered the landscape of political discourse? \nSociologist: __________ \nJournalist: I see. So the echo chamber effect is more a result of human psychology than the platforms themselves.",
+            "options": {
+                "A": "Social media is merely a tool that amplifies existing cognitive biases.",
+                "B": "The platforms have introduced entirely new ways of logical reasoning.",
+                "C": "Political discourse has remained largely unchanged since the printing press.",
+                "D": "It has certainly made it easier for people to access diverse viewpoints.",
+                "E": "The algorithms are designed to challenge our preconceived notions."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 8,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Physicist A: If we can achieve stable cold fusion, the global energy crisis would effectively vanish overnight. \nPhysicist B: __________ \nPhysicist A: True, the containment of the plasma at lower temperatures remains our most formidable hurdle.",
+            "options": {
+                "A": "The cost of uranium is currently at an all-time low.",
+                "B": "Solar energy is already more efficient than any nuclear alternative.",
+                "C": "We have already achieved this in several laboratory settings.",
+                "D": "The theoretical framework is sound, but the engineering challenges are immense.",
+                "E": "Most governments are withdrawing funding from nuclear research."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 9,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Linguist: The extinction of minority languages is not just a loss of words, but a loss of unique ways of perceiving the world. \nAnthropologist: __________ \nLinguist: Quite so. Many of these languages contain specific botanical knowledge that is not documented elsewhere.",
+            "options": {
+                "A": "Globalization is an inevitable process that we must embrace.",
+                "B": "Language is primarily a tool for communication, not for perception.",
+                "C": "We should focus on teaching everyone a single global language for efficiency.",
+                "D": "When a language dies, we lose centuries of accumulated indigenous wisdom.",
+                "E": "Computers can now translate any language with perfect accuracy."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 10,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Philosopher: Kant’s categorical imperative suggests we should act only according to rules that we would want to become universal laws. \nStudent: __________ \nPhilosopher: That is the classic critique. In a situation where lying could save a life, Kant’s rigid adherence to truth-telling becomes problematic.",
+            "options": {
+                "A": "Doesnt this approach allow for too much moral flexibility?",
+                "B": "But what happens when two universal duties come into conflict with each other?",
+                "C": "I believe Kant was advocating for a more utilitarian perspective.",
+                "D": "So, we should always prioritize our own happiness over the law?",
+                "E": "This theory seems very similar to the ideas of John Stuart Mill."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 11,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Biologist: The decline in bee populations is reaching a critical tipping point for global food security. \nPolicy Maker: __________ \nBiologist: While urban gardens help, the real issue lies in the widespread use of neonicotinoid pesticides in industrial farming.",
+            "options": {
+                "A": "Can we not simply replace bees with robotic pollinators?",
+                "B": "Is there any evidence that honey production has actually decreased?",
+                "C": "Should we encourage more citizens to take up beekeeping in their backyards?",
+                "D": "Are there any specific crops that are immune to this decline?",
+                "E": "Does the decline have anything to do with climate change?"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 12,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Architect: The Brutalist movement was less about aesthetic 'ugliness' and more about the honesty of materials and social utility. \nCritic: __________ \nArchitect: That may be true, but the intention was to create egalitarian spaces that rejected bourgeois ornamentation.",
+            "options": {
+                "A": "The use of raw concrete often makes the buildings feel cold and dehumanizing.",
+                "B": "I think Brutalism is the most beautiful style of the twentieth century.",
+                "C": "Why did the movement rely so heavily on glass and steel?",
+                "D": "Most people find these buildings to be very welcoming and warm.",
+                "E": "The movement was primarily funded by wealthy private investors."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Psychologist: Cognitive behavioral therapy focuses on changing maladaptive thought patterns to improve emotional regulation. \nPatient: __________ \nPsychologist: Not exactly. It's about identifying irrational beliefs and testing them against reality, rather than just forcing a smile.",
+            "options": {
+                "A": "Is it true that this therapy takes many years to show results?",
+                "B": "So you are saying I just need to think positively all the time?",
+                "C": "Does this involve exploring my childhood trauma in great detail?",
+                "D": "Will I need to take medication alongside this therapy?",
+                "E": "How does this differ from traditional psychoanalysis?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 14,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Historian: The Industrial Revolution did not just change how goods were made; it fundamentally restructured the family unit. \nStudent: __________ \nHistorian: Precisely. For the first time, work was separated from the home, leading to the rise of the nuclear family model.",
+            "options": {
+                "A": "Did it lead to an increase in agricultural productivity?",
+                "B": "Was the steam engine the most important invention of that era?",
+                "C": "Are you referring to the shift from cottage industries to factory labor?",
+                "D": "How did the monarchy react to these economic changes?",
+                "E": "Did it result in a decrease in the overall population of Europe?"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 15,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Political Scientist: The 'resource curse' explains why many countries with abundant natural resources often suffer from poor economic growth. \nStudent: __________ \nPolitical Scientist: Correct. It often leads to corruption and the neglect of other sectors like manufacturing and education.",
+            "options": {
+                "A": "Because the high value of currency makes other exports less competitive?",
+                "B": "Is it because these countries lack any valuable minerals?",
+                "C": "Does it mean that natural resources are actually a disadvantage?",
+                "D": "Are these countries usually the most democratic in the world?",
+                "E": "So, having oil is the only way to ensure a stable economy?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Legal Expert: The concept of 'fair use' in copyright law is notoriously ambiguous and depends on the context of the work. \nContent Creator: __________ \nLegal Expert: That is one factor, but the court also looks at the purpose of the use and the effect on the potential market.",
+            "options": {
+                "A": "If I only use ten seconds of a video, is it automatically legal?",
+                "B": "Does it mean I can use any music as long as I give credit?",
+                "C": "Why is the law so protective of large corporations?",
+                "D": "Is it true that educational use is always considered fair?",
+                "E": "Can I be sued even if I am not making any money from the content?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Astronomer: The James Webb Space Telescope has allowed us to peer back to the very first galaxies formed after the Big Bang. \nScience Reporter: __________ \nAstronomer: It's because light from those distant objects has been stretched into infrared wavelengths by the expansion of the universe.",
+            "options": {
+                "A": "Why is it better than the Hubble Telescope for this specific task?",
+                "B": "Is the telescope currently orbiting the Moon or the Earth?",
+                "C": "How long did it take to build such a complex instrument?",
+                "D": "Can it see the actual surface of planets in other solar systems?",
+                "E": "Will it eventually be able to travel to those distant galaxies?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Environmentalist: Fast fashion is responsible for nearly 10% of global carbon emissions and massive water pollution. \nConsumer: __________ \nEnvironmentalist: It requires a shift toward quality over quantity and supporting brands with transparent supply chains.",
+            "options": {
+                "A": "Is it really that much worse than the airline industry?",
+                "B": "What can the average person do to mitigate this impact?",
+                "C": "Why are clothes so much cheaper than they used to be?",
+                "D": "Does recycling my old clothes help solve the problem?",
+                "E": "Which countries are the biggest producers of these garments?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 19,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Geneticist: CRISPR technology allows for highly precise editing of the genome, but the potential for 'off-target' effects remains. \nJournalist: __________ \nGeneticist: It means the system might inadvertently alter a different gene than the one intended, with unknown consequences.",
+            "options": {
+                "A": "Does this mean we can now cure all hereditary diseases?",
+                "B": "Could you elaborate on what exactly an 'off-target' effect is?",
+                "C": "Is the technology currently being used on human subjects?",
+                "D": "How much does a single CRISPR treatment cost at the moment?",
+                "E": "Are there any laws preventing the use of this technology?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 20,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Literary Critic: The protagonist's descent into madness is not a failure of character, but a rational response to an irrational society. \nReader: __________ \nLiterary Critic: Exactly. The author uses the internal chaos of the individual to mirror the external collapse of social norms.",
+            "options": {
+                "A": "I found the ending to be quite optimistic and uplifting.",
+                "B": "Are you saying the society is the real villain of the story?",
+                "C": "The writing style was too complex for the average reader to enjoy.",
+                "D": "Why did the author choose a setting in the distant future?",
+                "E": "Is this book considered a classic of Victorian literature?"
+            },
+            "correct": "B"
+        }
+    ]
+}
