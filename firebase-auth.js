@@ -331,13 +331,15 @@ window.saveNoteFirestore = async function (noteText) {
    QUIZ GAMIFICATION (FIRESTORE)
 ========================================= */
 
-window.saveQuizScoreFirestore = async function (score) {
+window.saveQuizScoreFirestore = async function (score, xp, topic) {
   if (!window.currentUser) return;
 
   await addDoc(
     collection(db, "users", window.currentUser.uid, "quizHistory"),
     {
-      score: score,
+      score: score, // Percentage (0-100)
+      xp: xp || score, // Actual XP earned
+      topic: topic || "general",
       timestamp: new Date()
     }
   );

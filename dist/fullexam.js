@@ -490,6 +490,16 @@ function feFinish() {
             </div>
           </div>`;
   });
+
+  // FIREBASE SAVE
+  if (typeof window.saveQuizScoreFirestore === "function") {
+    const xp = total * 10;
+    const topic = (feExamData && feExamData.meta) ? feExamData.meta.title : "Full Exam";
+    window.saveQuizScoreFirestore(pct, xp, topic).then(() => {
+        if (typeof updateGamification === "function") updateGamification();
+        if (typeof initCharts === "function") setTimeout(initCharts, 1000);
+    }).catch(console.error);
+  }
 }
 
 // ─── Review mode ─────────────────────────────────────────────

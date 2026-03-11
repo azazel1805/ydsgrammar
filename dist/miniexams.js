@@ -464,6 +464,19 @@ function meFinish() {
   document.getElementById('resCorrect').textContent = correctCount;
   document.getElementById('resWrong').textContent = meExamData.questions.length - correctCount;
 
+  // FIREBASE SAVE
+  if (typeof window.saveQuizScoreFirestore === 'function') {
+      const total = meExamData.questions.length;
+      const pct = Math.round((correctCount / total) * 100);
+      const xp = correctCount * 10;
+      const topic = meExamData.meta.title || "Mini Exam";
+      
+      window.saveQuizScoreFirestore(pct, xp, topic).then(() => {
+          if (typeof updateGamification === 'function') updateGamification();
+          if (typeof initCharts === 'function') setTimeout(initCharts, 1000);
+      }).catch(console.error);
+  }
+
   document.getElementById('meExamScreen').classList.add('hidden');
   document.getElementById('meResultScreen').classList.remove('hidden');
 }

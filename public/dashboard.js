@@ -236,7 +236,7 @@ window.updateGamification = async function () {
         const history = await window.getQuizHistoryFirestore();
         window.userStats.totalQuizzes = history.length;
 
-        let totalXP = history.reduce((acc, h) => acc + (h.score || 0), 0);
+        let totalXP = history.reduce((acc, h) => acc + (h.xp || h.score || 0), 0);
         window.userStats.xp = totalXP;
 
         const thresholds = [
@@ -328,40 +328,56 @@ window.initCharts = function () {
 
     // Radar Chart
     const radarCtx = document.getElementById('radarChart');
-    if (radarCtx) {
-        const seed = userStats.xp || 10;
-        const genVal = (i) => Math.min(30 + (seed % (i + 5)) + (Math.sin(seed + i) * 20), 95);
-        userStrengths = grammarLabels.map((_, i) => genVal(i));
+    if (radarCtx && window.currentUser) {
+        window.getQuizHistoryFirestore().then(hist => {
+            const strengths = {};
+            grammarLabels.forEach(l => strengths[l.toLowerCase()] = { total: 0, count: 0 });
 
-        let existingRadar = Chart.getChart("radarChart");
-        if (existingRadar) existingRadar.destroy();
-
-        new Chart(radarCtx, {
-            type: 'radar',
-            data: {
-                labels: grammarLabels,
-                datasets: [{
-                    label: 'Başarı Oranı',
-                    data: userStrengths,
-                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
-                    borderColor: 'rgba(239, 68, 68, 1)',
-                    pointBackgroundColor: '#fff',
-                    pointBorderColor: 'rgba(239, 68, 68, 1)',
-                    borderWidth: 2,
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    r: {
-                        grid: { color: gridColor },
-                        ticks: { display: false, max: 100 },
-                        pointLabels: { font: { weight: 'bold' } }
+            hist.forEach(h => {
+                const topic = (h.topic || "").toLowerCase();
+                grammarLabels.forEach(l => {
+                    if (topic.includes(l.toLowerCase().substring(0, 5))) {
+                        strengths[l.toLowerCase()].total += (h.score || 0);
+                        strengths[l.toLowerCase()].count++;
                     }
+                });
+            });
+
+            const dataPoints = grammarLabels.map(l => {
+                const s = strengths[l.toLowerCase()];
+                return s.count > 0 ? Math.round(s.total / s.count) : 20; // fallback to 20 for visibility
+            });
+
+            let existingRadar = Chart.getChart("radarChart");
+            if (existingRadar) existingRadar.destroy();
+
+            new Chart(radarCtx, {
+                type: 'radar',
+                data: {
+                    labels: grammarLabels,
+                    datasets: [{
+                        label: 'Başarı Oranı',
+                        data: dataPoints,
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                        borderColor: 'rgba(239, 68, 68, 1)',
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: 'rgba(239, 68, 68, 1)',
+                        borderWidth: 2,
+                    }]
                 },
-                plugins: { legend: { display: false } }
-            }
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            grid: { color: gridColor },
+                            ticks: { display: false, min: 0, max: 100 },
+                            pointLabels: { font: { weight: 'bold' } }
+                        }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
         });
     }
 
