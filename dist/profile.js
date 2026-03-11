@@ -74,10 +74,10 @@ const profileHTML = `
             
             <div class="relative">
                 <h3 class="text-xl font-bold flex items-center gap-2" style="font-family: 'Playfair Display', serif;">
-                    <i class="fas fa-bolt text-yellow-500"></i> AI VIP Özellikleri
+                    <i class="fas fa-crown text-yellow-500"></i> Premium Paket
                 </h3>
                 <p class="text-slate-400 text-sm leading-relaxed mt-2">
-                    Yapay zeka destekli modüllere erişmek için kodunuzu girin.
+                    Premium denemeler ve yapay zeka araçlarına erişmek için kodunuzu girin.
                 </p>
             </div>
 
