@@ -168,15 +168,46 @@ const miniexamsHTML = `
   </div>
 
   <div id="meResultScreen" class="hidden">
-      <div class="text-center mb-10">
-        <h3 class="text-3xl font-extrabold text-slate-800 mb-2">Sınav Sonucu</h3>
-        <p id="meScoreMsg" class="text-xl font-bold text-red-800"></p>
-        <div class="flex justify-center gap-4 mt-8">
-            <button onclick="meResetExam()" class="px-8 py-3 bg-slate-800 text-white rounded-xl font-bold">Yeni Sınav</button>
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100">
+          <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-10 text-center text-white">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-red-800/20 border-2 border-red-800/30 mb-6">
+              <i class="fas fa-trophy text-4xl text-yellow-500"></i>
+            </div>
+            <h3 class="text-4xl font-black mb-2" style="font-family:'Playfair Display',serif;">Sınav Tamamlandı!</h3>
+            <p class="text-slate-400 font-medium italic">Performans analizinizi aşağıda görebilirsiniz.</p>
+            
+            <div class="grid grid-cols-3 gap-4 mt-10">
+              <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
+                <p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-1">Toplam Soru</p>
+                <p id="resTotal" class="text-2xl font-black">--</p>
+              </div>
+              <div class="bg-green-500/10 backdrop-blur-sm rounded-2xl p-4 border border-green-500/20">
+                <p class="text-[10px] text-green-400 uppercase font-bold tracking-widest mb-1">Doğru</p>
+                <p id="resCorrect" class="text-2xl font-black text-green-400">--</p>
+              </div>
+              <div class="bg-red-500/10 backdrop-blur-sm rounded-2xl p-4 border border-red-500/20">
+                <p class="text-[10px] text-red-400 uppercase font-bold tracking-widest mb-1">Yanlış</p>
+                <p id="resWrong" class="text-2xl font-black text-red-400">--</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-8">
+            <div class="flex items-center justify-between mb-8">
+              <h4 class="text-xl font-bold text-slate-800">Soru Detayları</h4>
+              <button onclick="meResetExam()" class="px-6 py-2 bg-slate-900 text-white rounded-xl font-bold text-sm hover:bg-red-800 transition-colors">Yeni Sınav Başlat</button>
+            </div>
+            
+            <div id="meReviewList" class="space-y-6">
+              <!-- Questions will be injected here -->
+            </div>
+          </div>
         </div>
       </div>
   </div>
 </div>
+
 `;
 
 function injectMiniExamHTML() {
@@ -390,11 +421,51 @@ function meFinishConfirm() { if (confirm("Bitirmek istiyor musunuz?")) meFinish(
 
 function meFinish() {
   clearInterval(meTimerRef);
-  let score = 0;
-  meExamData.questions.forEach(q => { if (meAnswers[q.id] === q.correct) score++; });
+  let correctCount = 0;
+  let wrongCount = 0;
+  const reviewList = document.getElementById('meReviewList');
+  reviewList.innerHTML = '';
+
+  meExamData.questions.forEach((q, idx) => {
+    const userAns = meAnswers[q.id];
+    const isCorrect = userAns === q.correct;
+    if (isCorrect) correctCount++;
+    else if (userAns) wrongCount++;
+
+    const div = document.createElement('div');
+    div.className = `p-6 rounded-2xl border-2 ${isCorrect ? 'border-green-100 bg-green-50/30' : (userAns ? 'border-red-100 bg-red-50/30' : 'border-slate-100 bg-slate-50/30')}`;
+    
+    let optionsHtml = '';
+    Object.entries(q.options).forEach(([k, v]) => {
+      let statusClass = 'text-slate-600';
+      let icon = '';
+      if (k === q.correct) {
+        statusClass = 'text-green-700 font-bold';
+        icon = '<i class="fas fa-check-circle mr-2"></i>';
+      } else if (k === userAns) {
+        statusClass = 'text-red-700 font-bold';
+        icon = '<i class="fas fa-times-circle mr-2"></i>';
+      }
+      optionsHtml += `<div class="text-sm py-1 ${statusClass}">${icon}<strong>${k})</strong> ${v}</div>`;
+    });
+
+    div.innerHTML = `
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-8 h-8 rounded-lg ${isCorrect ? 'bg-green-600' : (userAns ? 'bg-red-600' : 'bg-slate-400')} text-white flex items-center justify-center font-bold text-xs">${idx + 1}</span>
+        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">${q.section_id || 'SORU'}</span>
+      </div>
+      <div class="text-sm text-slate-800 font-semibold mb-4 leading-relaxed">${q.question.replace(/\n/g, '<br>')}</div>
+      <div class="space-y-1 bg-white/50 rounded-xl p-4 border border-white/80">${optionsHtml}</div>
+    `;
+    reviewList.appendChild(div);
+  });
+
+  document.getElementById('resTotal').textContent = meExamData.questions.length;
+  document.getElementById('resCorrect').textContent = correctCount;
+  document.getElementById('resWrong').textContent = meExamData.questions.length - correctCount;
+
   document.getElementById('meExamScreen').classList.add('hidden');
   document.getElementById('meResultScreen').classList.remove('hidden');
-  document.getElementById('meScoreMsg').textContent = `Skor: ${score} / ${meExamData.questions.length}`;
 }
 
 function meResetExam() {
