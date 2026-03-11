@@ -244,13 +244,16 @@ onAuthStateChanged(auth, (user) => {
     }
   } else {
     window.currentUser = null;
-    const isVip = localStorage.getItem("analyzer_access") === "true";
-    if (!isVip && typeof window.lockAnalyzerUI === "function") {
+    if (typeof window.lockAnalyzerUI === "function") {
       window.lockAnalyzerUI();
     }
 
-    // Always show app for statics
-    if (appWrapper) appWrapper.classList.remove("hidden");
+    // Force Login: Hide app, show login page
+    if (appWrapper) appWrapper.classList.add("hidden");
+    if (loginPage) {
+      loginPage.classList.remove("hidden");
+      loginPage.classList.add("flex"); // Ensure flex for centering
+    }
   }
 
   if (typeof window.forceProfileRender === "function") {
