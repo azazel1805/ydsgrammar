@@ -1,1461 +1,1461 @@
 {
-    "meta": {
-        "title": "Kelime Soruları",
-        "subtitle": "103 Soru Havuzu",
-        "total_questions": 103,
-        "duration_minutes": 60
+  "meta": {
+    "title": "Kelime Soruları",
+    "subtitle": "103 Soru Havuzu",
+    "total_questions": 103,
+    "duration_minutes": 60
+  },
+  "sections": [
+    {
+      "id": "mixed",
+      "label": "Kelime Soruları",
+      "from": 1,
+      "to": 103
+    }
+  ],
+  "passages": [],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The researcher's findings were so --- that they completely overturned long-standing theories in the field of quantum physics.",
+      "options": {
+        "A": "negligible",
+        "B": "superficial",
+        "C": "groundbreaking",
+        "D": "redundant",
+        "E": "ambiguous"
+      },
+      "correct": "C"
     },
-    "sections": [
-        {
-            "id": "mixed",
-            "label": "Kelime Soruları",
-            "from": 1,
-            "to": 103
-        }
-    ],
-    "passages": [],
-    "questions": [
-        {
-            "id": 1,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The researcher's findings were so --- that they completely overturned long-standing theories in the field of quantum physics.",
-            "options": {
-                "A": "negligible",
-                "B": "superficial",
-                "C": "groundbreaking",
-                "D": "redundant",
-                "E": "ambiguous"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 2,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Despite the complexity of the data, the professor provided a(n) --- explanation that made the concept accessible to all students.",
-            "options": {
-                "A": "intricate",
-                "B": "lucid",
-                "C": "convoluted",
-                "D": "obscure",
-                "E": "tedious"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 3,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The government has implemented several policies to --- the economic impact of the recent global pandemic.",
-            "options": {
-                "A": "exacerbate",
-                "B": "mitigate",
-                "C": "aggravate",
-                "D": "validate",
-                "E": "scrutinize"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 4,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Her --- dedication to the cause of environmental protection has inspired thousands of young activists worldwide.",
-            "options": {
-                "A": "wavering",
-                "B": "unwavering",
-                "C": "intermittent",
-                "D": "sporadic",
-                "E": "reluctant"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 5,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The archeological team discovered a(n) --- number of artifacts that suggest a highly advanced civilization once lived in the region.",
-            "options": {
-                "A": "scant",
-                "B": "unprecedented",
-                "C": "minuscule",
-                "D": "mediocre",
-                "E": "trivial"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 6,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The treaty was signed with the hope that it would finally --- the long-standing hostilities between the two neighboring countries.",
-            "options": {
-                "A": "perpetuate",
-                "B": "instigate",
-                "C": "terminate",
-                "D": "reiterate",
-                "E": "cultivate"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 7,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Due to the --- of natural resources, the island nation has had to rely heavily on imports for its survival.",
-            "options": {
-                "A": "abundance",
-                "B": "scarcity",
-                "C": "surplus",
-                "D": "diversity",
-                "E": "proliferation"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 8,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Scientists are still trying to determine the --- factors that lead to the development of certain autoimmune diseases.",
-            "options": {
-                "A": "underlying",
-                "B": "peripheral",
-                "C": "superfluous",
-                "D": "external",
-                "E": "obvious"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 9,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The lawyer argued that the evidence presented by the prosecution was --- and should not be admitted in court.",
-            "options": {
-                "A": "conclusive",
-                "B": "inadmissible",
-                "C": "substantial",
-                "D": "pertinent",
-                "E": "valid"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 10,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The author's latest novel has been praised for its --- portrayal of the human condition in times of crisis.",
-            "options": {
-                "A": "shallow",
-                "B": "poignant",
-                "C": "indifferent",
-                "D": "generic",
-                "E": "monotonous"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 11,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The company's decision to downsize was a(n) --- response to the sudden decline in market demand.",
-            "options": {
-                "A": "proactive",
-                "B": "deliberate",
-                "C": "arbitrary",
-                "D": "involuntary",
-                "E": "spontaneous"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 12,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "In the face of rising inflation, many families have been forced to --- their spending on luxury items.",
-            "options": {
-                "A": "augment",
-                "B": "curtail",
-                "C": "escalate",
-                "D": "maintain",
-                "E": "enhance"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 13,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The architect's design was praised for its --- integration of modern technology with traditional aesthetic values.",
-            "options": {
-                "A": "disjointed",
-                "B": "seamless",
-                "C": "clumsy",
-                "D": "sporadic",
-                "E": "superficial"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 14,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "One of the most --- challenges facing the modern world is the rapid pace of climate change.",
-            "options": {
-                "A": "insignificant",
-                "B": "daunting",
-                "C": "trivial",
-                "D": "predictable",
-                "E": "manageable"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 15,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The committee reached a(n) --- decision after several hours of intense deliberation and debate.",
-            "options": {
-                "A": "unanimous",
-                "B": "divided",
-                "C": "random",
-                "D": "hasty",
-                "E": "ambiguous"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 16,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "It is --- that all employees adhere to the safety protocols to prevent accidents in the workplace.",
-            "options": {
-                "A": "optional",
-                "B": "imperative",
-                "C": "redundant",
-                "D": "discretionary",
-                "E": "negligible"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 17,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The museum's collection includes several --- manuscripts that provide insight into medieval history.",
-            "options": {
-                "A": "contemporary",
-                "B": "valueless",
-                "C": "invaluable",
-                "D": "common",
-                "E": "replicated"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 18,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The patient showed a(n) --- improvement in health after the new medication was administered.",
-            "options": {
-                "A": "marginal",
-                "B": "marked",
-                "C": "imperceptible",
-                "D": "stagnant",
-                "E": "detrimental"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 19,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The city council has proposed a plan to --- the old industrial district into a vibrant cultural hub.",
-            "options": {
-                "A": "demolish",
-                "B": "revitalize",
-                "C": "neglect",
-                "D": "abandon",
-                "E": "isolate"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 20,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The speaker's --- remarks about the opposition party sparked a heated debate during the conference.",
-            "options": {
-                "A": "conciliatory",
-                "B": "inflammatory",
-                "C": "neutral",
-                "D": "complimentary",
-                "E": "vague"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 21,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Despite numerous setbacks, the team's --- spirit led them to complete the project ahead of schedule.",
-            "options": {
-                "A": "fragile",
-                "B": "indomitable",
-                "C": "indifferent",
-                "D": "lethargic",
-                "E": "pessimistic"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 22,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The theory remains --- until further empirical evidence can be gathered to support its claims.",
-            "options": {
-                "A": "conclusive",
-                "B": "speculative",
-                "C": "validated",
-                "D": "irrefutable",
-                "E": "evident"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 23,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Artificial intelligence is expected to --- many industries by automating routine tasks and improving efficiency.",
-            "options": {
-                "A": "stagnate",
-                "B": "revolutionize",
-                "C": "hinder",
-                "D": "complicate",
-                "E": "obsolete"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 24,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The diplomat's primary role was to --- between the two factions and reach a peaceful settlement.",
-            "options": {
-                "A": "interfere",
-                "B": "mediate",
-                "C": "agitate",
-                "D": "ignore",
-                "E": "obstruct"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 25,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Exposure to high levels of noise can have a --- effect on a person's hearing over time.",
-            "options": {
-                "A": "beneficial",
-                "B": "detrimental",
-                "C": "neutral",
-                "D": "transient",
-                "E": "negligible"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 26,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The novel is known for its --- use of metaphor and symbolism to convey deep philosophical themes.",
-            "options": {
-                "A": "sparse",
-                "B": "intricate",
-                "C": "literal",
-                "D": "simplistic",
-                "E": "transparent"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 27,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The government's refusal to --- the treaty has led to international criticism and sanctions.",
-            "options": {
-                "A": "ratify",
-                "B": "discard",
-                "C": "denounce",
-                "D": "ignore",
-                "E": "violate"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 28,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The scientist's claims were met with --- by his peers, who demanded more rigorous testing.",
-            "options": {
-                "A": "enthusiasm",
-                "B": "skepticism",
-                "C": "indifference",
-                "D": "acceptance",
-                "E": "certainty"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 29,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The forest fire caused --- damage to the ecosystem, destroying thousands of acres of wildlife habitat.",
-            "options": {
-                "A": "superficial",
-                "B": "extensive",
-                "C": "minimal",
-                "D": "temporary",
-                "E": "localized"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 30,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The software update was designed to --- the security vulnerabilities found in the previous version.",
-            "options": {
-                "A": "ignore",
-                "B": "address",
-                "C": "exploit",
-                "D": "neglect",
-                "E": "reproduce"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 31,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The witness provided a(n) --- account of the events that occurred on the night of the incident.",
-            "options": {
-                "A": "vague",
-                "B": "vivid",
-                "C": "ambiguous",
-                "D": "distorted",
-                "E": "inconsistent"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 32,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Economic growth has been --- by the lack of investment in infrastructure and technology.",
-            "options": {
-                "A": "accelerated",
-                "B": "impeded",
-                "C": "facilitated",
-                "D": "boosted",
-                "E": "encouraged"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 33,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The philosopher argued that human knowledge is largely --- and subject to constant revision.",
-            "options": {
-                "A": "absolute",
-                "B": "fallible",
-                "C": "infallible",
-                "D": "permanent",
-                "E": "unquestionable"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 34,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The artist's work is characterized by its --- blend of traditional techniques and modern themes.",
-            "options": {
-                "A": "awkward",
-                "B": "eclectic",
-                "C": "monotonous",
-                "D": "uniform",
-                "E": "repetitive"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 35,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The new regulation aims to --- the process of applying for a business license.",
-            "options": {
-                "A": "complicate",
-                "B": "streamline",
-                "C": "hinder",
-                "D": "prolong",
-                "E": "obstruct"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 36,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The judge ruled that the defendant's actions were a --- violation of the law.",
-            "options": {
-                "A": "minor",
-                "B": "flagrant",
-                "C": "hidden",
-                "D": "justified",
-                "E": "unintentional"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 37,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The expansion of the desert is a(n) --- threat to the livelihoods of people living in the Sahel region.",
-            "options": {
-                "A": "distant",
-                "B": "imminent",
-                "C": "improbable",
-                "D": "minor",
-                "E": "past"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 38,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Researchers are exploring the --- link between diet and mental health.",
-            "options": {
-                "A": "tenuous",
-                "B": "intrinsic",
-                "C": "irrelevant",
-                "D": "separate",
-                "E": "accidental"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 39,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The company faced a --- of complaints after the faulty product was released to the public.",
-            "options": {
-                "A": "dearth",
-                "B": "multitude",
-                "C": "scarcity",
-                "D": "handful",
-                "E": "lack"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 40,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The sudden increase in stock prices was widely attributed to --- trading rather than economic fundamentals.",
-            "options": {
-                "A": "rational",
-                "B": "speculative",
-                "C": "conservative",
-                "D": "stable",
-                "E": "cautious"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 41,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The ruins of the ancient city provide a --- reminder of the transience of human empires.",
-            "options": {
-                "A": "cheerful",
-                "B": "stark",
-                "C": "vague",
-                "D": "forgettable",
-                "E": "minor"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 42,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "His --- knowledge of classical music made him the perfect candidate for the position of radio host.",
-            "options": {
-                "A": "limited",
-                "B": "profound",
-                "C": "superficial",
-                "D": "rudimentary",
-                "E": "narrow"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 43,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The satellite will provide --- data on atmospheric conditions to help improve weather forecasting.",
-            "options": {
-                "A": "obsolete",
-                "B": "precise",
-                "C": "random",
-                "D": "inaccurate",
-                "E": "vague"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 44,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The transition to renewable energy is often seen as a(n) --- step toward a sustainable future.",
-            "options": {
-                "A": "optional",
-                "B": "pivotal",
-                "C": "trivial",
-                "D": "redundant",
-                "E": "insignificant"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 45,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The committee's report was criticized for being too --- and failing to address the core issues.",
-            "options": {
-                "A": "thorough",
-                "B": "superficial",
-                "C": "comprehensive",
-                "D": "detailed",
-                "E": "exhaustive"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 46,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The company's success can be attributed to its --- ability to adapt to changing market conditions.",
-            "options": {
-                "A": "failure",
-                "B": "innate",
-                "C": "reluctance",
-                "D": "inability",
-                "E": "resistance"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 47,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The virus has the ability to --- quickly, making it difficult to develop a universal vaccine.",
-            "options": {
-                "A": "stagnate",
-                "B": "mutate",
-                "C": "stabilize",
-                "D": "perish",
-                "E": "diminish"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 48,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The historian's work is based on a(n) --- analysis of primary sources and archival documents.",
-            "options": {
-                "A": "careless",
-                "B": "rigorous",
-                "C": "cursory",
-                "D": "informal",
-                "E": "subjective"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 49,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The agreement was reached after both sides made several --- to their original demands.",
-            "options": {
-                "A": "concessions",
-                "B": "threats",
-                "C": "insults",
-                "D": "refusals",
-                "E": "demands"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 50,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The new technology is designed to --- energy consumption in residential buildings.",
-            "options": {
-                "A": "increase",
-                "B": "optimize",
-                "C": "waste",
-                "D": "ignore",
-                "E": "disregard"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 51,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The rapid ____ of urban areas has led to significant environmental challenges, requiring innovative solutions in sustainable architecture.",
-            "options": {
-                "A": "deterioration",
-                "B": "proliferation",
-                "C": "mitigation",
-                "D": "relinquishment",
-                "E": "exhaustion"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 52,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Despite numerous setbacks, the researchers remained ____ in their pursuit of a cure for the rare neurological disorder.",
-            "options": {
-                "A": "unwavering",
-                "B": "obsolete",
-                "C": "redundant",
-                "D": "superficial",
-                "E": "ambiguous"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 53,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The government’s new fiscal policy is designed to ____ the negative effects of inflation on low-income households.",
-            "options": {
-                "A": "aggravate",
-                "B": "exacerbate",
-                "C": "alleviate",
-                "D": "intensify",
-                "E": "perpetuate"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 54,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The rapid depletion of natural resources has led to an ---- need for sustainable energy alternatives across the globe.",
-            "options": {
-                "A": "A) insignificant",
-                "B": "B) urgent",
-                "C": "C) optional",
-                "D": "D) indifferent",
-                "E": "E) obsolete"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 55,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Psychologists argue that the ---- of certain behavioral traits is often determined by both genetic factors and environmental influences.",
-            "options": {
-                "A": "A) absence",
-                "B": "B) prevalence",
-                "C": "C) rejection",
-                "D": "D) avoidance",
-                "E": "E) suspension"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 56,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The government’s decision to increase taxes on luxury goods was intended to ---- the budget deficit.",
-            "options": {
-                "A": "A) exacerbate",
-                "B": "B) alleviate",
-                "C": "C) ignore",
-                "D": "D) prolong",
-                "E": "E) complicate"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 57,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Scholars have noted that the author's latest novel is remarkably ----, containing various layers of meaning that are difficult to decode.",
-            "options": {
-                "A": "A) transparent",
-                "B": "B) ambiguous",
-                "C": "C) simple",
-                "D": "D) straightforward",
-                "E": "E) obvious"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 58,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The researchers had to ---- the experiment multiple times to ensure that the results were consistent and reliable.",
-            "options": {
-                "A": "A) abandon",
-                "B": "B) conduct",
-                "C": "C) overlook",
-                "D": "D) neglect",
-                "E": "E) terminate"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 59,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Despite many obstacles, the medical team was able to ---- a breakthrough in the treatment of the rare neurological disorder.",
-            "options": {
-                "A": "A) give up",
-                "B": "B) bring about",
-                "C": "C) look after",
-                "D": "D) call off",
-                "E": "E) back down"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 60,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The archaeological site provided ---- evidence that the civilization had developed sophisticated irrigation systems.",
-            "options": {
-                "A": "A) flimsy",
-                "B": "B) compelling",
-                "C": "C) negligible",
-                "D": "D) suspicious",
-                "E": "E) biased"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 61,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Environmentalists warn that if carbon emissions are not reduced, the effects of global warming will become ----.",
-            "options": {
-                "A": "A) reversible",
-                "B": "B) temporary",
-                "C": "C) irreversible",
-                "D": "D) manageable",
-                "E": "E) negligible"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 62,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The scientist ---- the data for several months before publishing the final report in a prestigious academic journal.",
-            "options": {
-                "A": "A) scrutinized",
-                "B": "B) discarded",
-                "C": "C) ignored",
-                "D": "D) improvised",
-                "E": "E) falsified"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 63,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "In some cultures, traditional practices are deeply ---- in the daily lives of people, making them resistant to change.",
-            "options": {
-                "A": "A) uprooted",
-                "B": "B) embedded",
-                "C": "C) detached",
-                "D": "D) superficial",
-                "E": "E) external"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 64,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The new policy was designed to ---- innovation within the technology sector by providing grants to small startups.",
-            "options": {
-                "A": "A) hinder",
-                "B": "B) foster",
-                "C": "C) restrict",
-                "D": "D) suppress",
-                "E": "E) discourage"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 65,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Economic indicators suggest that the country is currently facing an ---- downturn that could last for several years.",
-            "options": {
-                "A": "A) inevitable",
-                "B": "B) unlikely",
-                "C": "C) accidental",
-                "D": "D) optional",
-                "E": "E) intentional"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 66,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Many historians believe that the fall of the empire was ---- by a combination of internal corruption and external invasions.",
-            "options": {
-                "A": "A) prevented",
-                "B": "B) triggered",
-                "C": "C) halted",
-                "D": "D) improved",
-                "E": "E) clarified"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 67,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The results of the study were ---- because the sample size was too small to represent the entire population.",
-            "options": {
-                "A": "A) conclusive",
-                "B": "B) inconclusive",
-                "C": "C) definitive",
-                "D": "D) absolute",
-                "E": "E) persuasive"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 68,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The director’s ---- approach to filmmaking involves paying extreme attention to every minor detail in the scene.",
-            "options": {
-                "A": "A) careless",
-                "B": "B) meticulous",
-                "C": "C) haphazard",
-                "D": "D) indifferent",
-                "E": "E) reckless"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 69,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "One of the main challenges in space exploration is the ---- of maintaining life-support systems in such a harsh environment.",
-            "options": {
-                "A": "A) ease",
-                "B": "B) feasibility",
-                "C": "C) simplicity",
-                "D": "D) certainty",
-                "E": "E) comfort"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 70,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The company had to ---- the merger after discovering significant financial discrepancies during the auditing process.",
-            "options": {
-                "A": "A) carry out",
-                "B": "B) call off",
-                "C": "C) set up",
-                "D": "D) take on",
-                "E": "E) put up"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 71,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Her contributions to the field of quantum physics have been so ---- that she was awarded the Nobel Prize.",
-            "options": {
-                "A": "A) mediocre",
-                "B": "B) profound",
-                "C": "C) trivial",
-                "D": "D) insignificant",
-                "E": "E) common"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 72,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The software is highly ----, allowing users to customize almost every aspect of the interface to suit their needs.",
-            "options": {
-                "A": "A) rigid",
-                "B": "B) versatile",
-                "C": "C) limited",
-                "D": "D) fragile",
-                "E": "E) static"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 73,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The sudden ---- in stock prices caused widespread panic among investors who feared a total market collapse.",
-            "options": {
-                "A": "A) stability",
-                "B": "B) plummet",
-                "C": "C) increase",
-                "D": "D) surge",
-                "E": "E) peak"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 74,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Social media platforms have a ---- influence on the way young people perceive themselves and the world around them.",
-            "options": {
-                "A": "A) marginal",
-                "B": "B) pervasive",
-                "C": "C) negligible",
-                "D": "D) local",
-                "E": "E) minor"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 75,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The teacher encouraged the students to ---- their arguments with evidence from primary sources.",
-            "options": {
-                "A": "A) contradict",
-                "B": "B) substantiate",
-                "C": "C) undermine",
-                "D": "D) weaken",
-                "E": "E) dismiss"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 76,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "It is widely accepted that healthy eating habits and regular exercise are ---- to maintaining a long life.",
-            "options": {
-                "A": "A) detrimental",
-                "B": "B) conducive",
-                "C": "C) harmful",
-                "D": "D) irrelevant",
-                "E": "E) obstructive"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 77,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The city council had to ---- new regulations to control the noise pollution caused by the construction of the new highway.",
-            "options": {
-                "A": "A) abolish",
-                "B": "B) implement",
-                "C": "C) ignore",
-                "D": "D) repeal",
-                "E": "E) withdraw"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 78,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The ancient ruins were ---- by the dense jungle, remaining undiscovered for hundreds of years.",
-            "options": {
-                "A": "A) revealed",
-                "B": "B) concealed",
-                "C": "C) exposed",
-                "D": "D) displayed",
-                "E": "E) manifested"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 79,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Modern technology has rendered many traditional manufacturing methods ----, as machines can now do the work more efficiently.",
-            "options": {
-                "A": "A) essential",
-                "B": "B) obsolete",
-                "C": "C) trendy",
-                "D": "D) modern",
-                "E": "E) indispensable"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 80,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The politician's speech was criticized for being ----, as it failed to address the core issues facing the voters.",
-            "options": {
-                "A": "A) concise",
-                "B": "B) superficial",
-                "C": "C) profound",
-                "D": "D) detailed",
-                "E": "E) thorough"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 81,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "After hours of debate, the committee finally reached a ---- regarding the proposed budget cuts.",
-            "options": {
-                "A": "A) disagreement",
-                "B": "B) consensus",
-                "C": "C) conflict",
-                "D": "D) dispute",
-                "E": "E) quarrel"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 82,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The increase in global temperatures is expected to ---- the frequency and intensity of extreme weather events.",
-            "options": {
-                "A": "A) decrease",
-                "B": "B) augment",
-                "C": "C) reduce",
-                "D": "D) stabilize",
-                "E": "E) eliminate"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 83,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Vitamins play a ---- role in various biological processes, including the strengthening of the immune system.",
-            "options": {
-                "A": "A) minor",
-                "B": "B) vital",
-                "C": "C) secondary",
-                "D": "D) trivial",
-                "E": "E) redundant"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 84,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The lawyer argued that his client should be released because the evidence against him was purely ----.",
-            "options": {
-                "A": "A) direct",
-                "B": "B) circumstantial",
-                "C": "C) conclusive",
-                "D": "D) undeniable",
-                "E": "E) factual"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 85,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "During the economic crisis, the government had to ---- its spending on infrastructure projects to save funds.",
-            "options": {
-                "A": "A) expand",
-                "B": "B) curtail",
-                "C": "C) increase",
-                "D": "D) promote",
-                "E": "E) maintain"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 86,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The discovery of the new planet was an ---- event in the history of astronomy, changing our understanding of the solar system.",
-            "options": {
-                "A": "A) ordinary",
-                "B": "B) unprecedented",
-                "C": "C) common",
-                "D": "D) frequent",
-                "E": "E) expected"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 87,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "To be successful in this role, you must be able to ---- with people from diverse cultural and linguistic backgrounds.",
-            "options": {
-                "A": "A) isolate",
-                "B": "B) interact",
-                "C": "C) withdraw",
-                "D": "D) disconnect",
-                "E": "E) segregate"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 88,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The author used a series of metaphors to ---- the complex emotions of the protagonist in the novel.",
-            "options": {
-                "A": "A) hide",
-                "B": "B) convey",
-                "C": "C) suppress",
-                "D": "D) mask",
-                "E": "E) ignore"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 89,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Heavy rain and strong winds can ---- the growth of certain crops, leading to a lower harvest than expected.",
-            "options": {
-                "A": "A) facilitate",
-                "B": "B) hamper",
-                "C": "C) promote",
-                "D": "D) accelerate",
-                "E": "E) aid"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 90,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The detective was tasked with ---- the mysterious disappearance of the wealthy businessman.",
-            "options": {
-                "A": "A) looking into",
-                "B": "B) giving away",
-                "C": "C) putting off",
-                "D": "D) taking after",
-                "E": "E) getting over"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 91,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Ethical considerations are ---- when conducting medical research involving human subjects.",
-            "options": {
-                "A": "A) optional",
-                "B": "B) paramount",
-                "C": "C) negligible",
-                "D": "D) irrelevant",
-                "E": "E) minor"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 92,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The rapid growth of the city has put a significant ---- on its existing transportation infrastructure.",
-            "options": {
-                "A": "A) relief",
-                "B": "B) strain",
-                "C": "C) ease",
-                "D": "D) comfort",
-                "E": "E) benefit"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 93,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Children who are exposed to multiple languages at an early age often develop superior ---- abilities.",
-            "options": {
-                "A": "A) physical",
-                "B": "B) cognitive",
-                "C": "C) manual",
-                "D": "D) athletic",
-                "E": "E) nutritional"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 94,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The scientist’s theory was initially met with ----, but later it was proven correct by several independent studies.",
-            "options": {
-                "A": "A) acceptance",
-                "B": "B) skepticism",
-                "C": "C) enthusiasm",
-                "D": "D) agreement",
-                "E": "E) approval"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 95,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The museum’s collection includes many ---- artifacts that provide insight into the daily lives of ancient people.",
-            "options": {
-                "A": "A) contemporary",
-                "B": "B) invaluable",
-                "C": "C) worthless",
-                "D": "D) modern",
-                "E": "E) cheap"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 96,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The company’s failure to ---- with safety regulations resulted in a heavy fine from the authorities.",
-            "options": {
-                "A": "A) resist",
-                "B": "B) comply",
-                "C": "C) rebel",
-                "D": "D) object",
-                "E": "E) disagree"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 97,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "In the face of adversity, the community showed great ----, working together to rebuild their homes after the flood.",
-            "options": {
-                "A": "A) weakness",
-                "B": "B) resilience",
-                "C": "C) fragility",
-                "D": "D) despair",
-                "E": "E) indifference"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 98,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The patient’s condition began to ---- rapidly, requiring immediate intervention from the medical staff.",
-            "options": {
-                "A": "A) improve",
-                "B": "B) deteriorate",
-                "C": "C) stabilize",
-                "D": "D) recover",
-                "E": "E) heal"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 99,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The transition from a command economy to a market economy can be a ---- process for many developing nations.",
-            "options": {
-                "A": "A) painless",
-                "B": "B) turbulent",
-                "C": "C) smooth",
-                "D": "D) effortless",
-                "E": "E) steady"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 100,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The study aims to ---- the relationship between social media usage and academic performance among teenagers.",
-            "options": {
-                "A": "A) overlook",
-                "B": "B) investigate",
-                "C": "C) ignore",
-                "D": "D) forget",
-                "E": "E) conceal"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 101,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "Some species of animals have had to ---- their behavior to survive in urban environments dominated by humans.",
-            "options": {
-                "A": "A) maintain",
-                "B": "B) adapt",
-                "C": "C) freeze",
-                "D": "D) rigidify",
-                "E": "E) preserve"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 102,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "The philosopher’s ideas were so ---- that they influenced thinkers for centuries after his death.",
-            "options": {
-                "A": "A) shallow",
-                "B": "B) influential",
-                "C": "C) insignificant",
-                "D": "D) weak",
-                "E": "E) forgettable"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 103,
-            "section_id": "vocab",
-            "passage_id": null,
-            "question": "It is important to ---- between facts and opinions when evaluating the credibility of a news source.",
-            "options": {
-                "A": "A) combine",
-                "B": "B) distinguish",
-                "C": "C) merge",
-                "D": "D) confuse",
-                "E": "E) unite"
-            },
-            "correct": "B"
-        }
-    ]
+    {
+      "id": 2,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Despite the complexity of the data, the professor provided a(n) --- explanation that made the concept accessible to all students.",
+      "options": {
+        "A": "intricate",
+        "B": "lucid",
+        "C": "convoluted",
+        "D": "obscure",
+        "E": "tedious"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The government has implemented several policies to --- the economic impact of the recent global pandemic.",
+      "options": {
+        "A": "exacerbate",
+        "B": "mitigate",
+        "C": "aggravate",
+        "D": "validate",
+        "E": "scrutinize"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Her --- dedication to the cause of environmental protection has inspired thousands of young activists worldwide.",
+      "options": {
+        "A": "wavering",
+        "B": "unwavering",
+        "C": "intermittent",
+        "D": "sporadic",
+        "E": "reluctant"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The archeological team discovered a(n) --- number of artifacts that suggest a highly advanced civilization once lived in the region.",
+      "options": {
+        "A": "scant",
+        "B": "unprecedented",
+        "C": "minuscule",
+        "D": "mediocre",
+        "E": "trivial"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The treaty was signed with the hope that it would finally --- the long-standing hostilities between the two neighboring countries.",
+      "options": {
+        "A": "perpetuate",
+        "B": "instigate",
+        "C": "terminate",
+        "D": "reiterate",
+        "E": "cultivate"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Due to the --- of natural resources, the island nation has had to rely heavily on imports for its survival.",
+      "options": {
+        "A": "abundance",
+        "B": "scarcity",
+        "C": "surplus",
+        "D": "diversity",
+        "E": "proliferation"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Scientists are still trying to determine the --- factors that lead to the development of certain autoimmune diseases.",
+      "options": {
+        "A": "underlying",
+        "B": "peripheral",
+        "C": "superfluous",
+        "D": "external",
+        "E": "obvious"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The lawyer argued that the evidence presented by the prosecution was --- and should not be admitted in court.",
+      "options": {
+        "A": "conclusive",
+        "B": "inadmissible",
+        "C": "substantial",
+        "D": "pertinent",
+        "E": "valid"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The author's latest novel has been praised for its --- portrayal of the human condition in times of crisis.",
+      "options": {
+        "A": "shallow",
+        "B": "poignant",
+        "C": "indifferent",
+        "D": "generic",
+        "E": "monotonous"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 11,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The company's decision to downsize was a(n) --- response to the sudden decline in market demand.",
+      "options": {
+        "A": "proactive",
+        "B": "deliberate",
+        "C": "arbitrary",
+        "D": "involuntary",
+        "E": "spontaneous"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 12,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "In the face of rising inflation, many families have been forced to --- their spending on luxury items.",
+      "options": {
+        "A": "augment",
+        "B": "curtail",
+        "C": "escalate",
+        "D": "maintain",
+        "E": "enhance"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 13,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The architect's design was praised for its --- integration of modern technology with traditional aesthetic values.",
+      "options": {
+        "A": "disjointed",
+        "B": "seamless",
+        "C": "clumsy",
+        "D": "sporadic",
+        "E": "superficial"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 14,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "One of the most --- challenges facing the modern world is the rapid pace of climate change.",
+      "options": {
+        "A": "insignificant",
+        "B": "daunting",
+        "C": "trivial",
+        "D": "predictable",
+        "E": "manageable"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 15,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The committee reached a(n) --- decision after several hours of intense deliberation and debate.",
+      "options": {
+        "A": "unanimous",
+        "B": "divided",
+        "C": "random",
+        "D": "hasty",
+        "E": "ambiguous"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 16,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "It is --- that all employees adhere to the safety protocols to prevent accidents in the workplace.",
+      "options": {
+        "A": "optional",
+        "B": "imperative",
+        "C": "redundant",
+        "D": "discretionary",
+        "E": "negligible"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 17,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The museum's collection includes several --- manuscripts that provide insight into medieval history.",
+      "options": {
+        "A": "contemporary",
+        "B": "valueless",
+        "C": "invaluable",
+        "D": "common",
+        "E": "replicated"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 18,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The patient showed a(n) --- improvement in health after the new medication was administered.",
+      "options": {
+        "A": "marginal",
+        "B": "marked",
+        "C": "imperceptible",
+        "D": "stagnant",
+        "E": "detrimental"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 19,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The city council has proposed a plan to --- the old industrial district into a vibrant cultural hub.",
+      "options": {
+        "A": "demolish",
+        "B": "revitalize",
+        "C": "neglect",
+        "D": "abandon",
+        "E": "isolate"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 20,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The speaker's --- remarks about the opposition party sparked a heated debate during the conference.",
+      "options": {
+        "A": "conciliatory",
+        "B": "inflammatory",
+        "C": "neutral",
+        "D": "complimentary",
+        "E": "vague"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 21,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Despite numerous setbacks, the team's --- spirit led them to complete the project ahead of schedule.",
+      "options": {
+        "A": "fragile",
+        "B": "indomitable",
+        "C": "indifferent",
+        "D": "lethargic",
+        "E": "pessimistic"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 22,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The theory remains --- until further empirical evidence can be gathered to support its claims.",
+      "options": {
+        "A": "conclusive",
+        "B": "speculative",
+        "C": "validated",
+        "D": "irrefutable",
+        "E": "evident"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 23,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Artificial intelligence is expected to --- many industries by automating routine tasks and improving efficiency.",
+      "options": {
+        "A": "stagnate",
+        "B": "revolutionize",
+        "C": "hinder",
+        "D": "complicate",
+        "E": "obsolete"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 24,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The diplomat's primary role was to --- between the two factions and reach a peaceful settlement.",
+      "options": {
+        "A": "interfere",
+        "B": "mediate",
+        "C": "agitate",
+        "D": "ignore",
+        "E": "obstruct"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 25,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Exposure to high levels of noise can have a --- effect on a person's hearing over time.",
+      "options": {
+        "A": "beneficial",
+        "B": "detrimental",
+        "C": "neutral",
+        "D": "transient",
+        "E": "negligible"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 26,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The novel is known for its --- use of metaphor and symbolism to convey deep philosophical themes.",
+      "options": {
+        "A": "sparse",
+        "B": "intricate",
+        "C": "literal",
+        "D": "simplistic",
+        "E": "transparent"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 27,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The government's refusal to --- the treaty has led to international criticism and sanctions.",
+      "options": {
+        "A": "ratify",
+        "B": "discard",
+        "C": "denounce",
+        "D": "ignore",
+        "E": "violate"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 28,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The scientist's claims were met with --- by his peers, who demanded more rigorous testing.",
+      "options": {
+        "A": "enthusiasm",
+        "B": "skepticism",
+        "C": "indifference",
+        "D": "acceptance",
+        "E": "certainty"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 29,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The forest fire caused --- damage to the ecosystem, destroying thousands of acres of wildlife habitat.",
+      "options": {
+        "A": "superficial",
+        "B": "extensive",
+        "C": "minimal",
+        "D": "temporary",
+        "E": "localized"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 30,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The software update was designed to --- the security vulnerabilities found in the previous version.",
+      "options": {
+        "A": "ignore",
+        "B": "address",
+        "C": "exploit",
+        "D": "neglect",
+        "E": "reproduce"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 31,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The witness provided a(n) --- account of the events that occurred on the night of the incident.",
+      "options": {
+        "A": "vague",
+        "B": "vivid",
+        "C": "ambiguous",
+        "D": "distorted",
+        "E": "inconsistent"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 32,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Economic growth has been --- by the lack of investment in infrastructure and technology.",
+      "options": {
+        "A": "accelerated",
+        "B": "impeded",
+        "C": "facilitated",
+        "D": "boosted",
+        "E": "encouraged"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 33,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The philosopher argued that human knowledge is largely --- and subject to constant revision.",
+      "options": {
+        "A": "absolute",
+        "B": "fallible",
+        "C": "infallible",
+        "D": "permanent",
+        "E": "unquestionable"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 34,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The artist's work is characterized by its --- blend of traditional techniques and modern themes.",
+      "options": {
+        "A": "awkward",
+        "B": "eclectic",
+        "C": "monotonous",
+        "D": "uniform",
+        "E": "repetitive"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 35,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The new regulation aims to --- the process of applying for a business license.",
+      "options": {
+        "A": "complicate",
+        "B": "streamline",
+        "C": "hinder",
+        "D": "prolong",
+        "E": "obstruct"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 36,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The judge ruled that the defendant's actions were a --- violation of the law.",
+      "options": {
+        "A": "minor",
+        "B": "flagrant",
+        "C": "hidden",
+        "D": "justified",
+        "E": "unintentional"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 37,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The expansion of the desert is a(n) --- threat to the livelihoods of people living in the Sahel region.",
+      "options": {
+        "A": "distant",
+        "B": "imminent",
+        "C": "improbable",
+        "D": "minor",
+        "E": "past"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 38,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Researchers are exploring the --- link between diet and mental health.",
+      "options": {
+        "A": "tenuous",
+        "B": "intrinsic",
+        "C": "irrelevant",
+        "D": "separate",
+        "E": "accidental"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 39,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The company faced a --- of complaints after the faulty product was released to the public.",
+      "options": {
+        "A": "dearth",
+        "B": "multitude",
+        "C": "scarcity",
+        "D": "handful",
+        "E": "lack"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 40,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The sudden increase in stock prices was widely attributed to --- trading rather than economic fundamentals.",
+      "options": {
+        "A": "rational",
+        "B": "speculative",
+        "C": "conservative",
+        "D": "stable",
+        "E": "cautious"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 41,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The ruins of the ancient city provide a --- reminder of the transience of human empires.",
+      "options": {
+        "A": "cheerful",
+        "B": "stark",
+        "C": "vague",
+        "D": "forgettable",
+        "E": "minor"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 42,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "His --- knowledge of classical music made him the perfect candidate for the position of radio host.",
+      "options": {
+        "A": "limited",
+        "B": "profound",
+        "C": "superficial",
+        "D": "rudimentary",
+        "E": "narrow"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 43,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The satellite will provide --- data on atmospheric conditions to help improve weather forecasting.",
+      "options": {
+        "A": "obsolete",
+        "B": "precise",
+        "C": "random",
+        "D": "inaccurate",
+        "E": "vague"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 44,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The transition to renewable energy is often seen as a(n) --- step toward a sustainable future.",
+      "options": {
+        "A": "optional",
+        "B": "pivotal",
+        "C": "trivial",
+        "D": "redundant",
+        "E": "insignificant"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 45,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The committee's report was criticized for being too --- and failing to address the core issues.",
+      "options": {
+        "A": "thorough",
+        "B": "superficial",
+        "C": "comprehensive",
+        "D": "detailed",
+        "E": "exhaustive"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 46,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The company's success can be attributed to its --- ability to adapt to changing market conditions.",
+      "options": {
+        "A": "failure",
+        "B": "innate",
+        "C": "reluctance",
+        "D": "inability",
+        "E": "resistance"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 47,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The virus has the ability to --- quickly, making it difficult to develop a universal vaccine.",
+      "options": {
+        "A": "stagnate",
+        "B": "mutate",
+        "C": "stabilize",
+        "D": "perish",
+        "E": "diminish"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 48,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The historian's work is based on a(n) --- analysis of primary sources and archival documents.",
+      "options": {
+        "A": "careless",
+        "B": "rigorous",
+        "C": "cursory",
+        "D": "informal",
+        "E": "subjective"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 49,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The agreement was reached after both sides made several --- to their original demands.",
+      "options": {
+        "A": "concessions",
+        "B": "threats",
+        "C": "insults",
+        "D": "refusals",
+        "E": "demands"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 50,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The new technology is designed to --- energy consumption in residential buildings.",
+      "options": {
+        "A": "increase",
+        "B": "optimize",
+        "C": "waste",
+        "D": "ignore",
+        "E": "disregard"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 51,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The rapid ____ of urban areas has led to significant environmental challenges, requiring innovative solutions in sustainable architecture.",
+      "options": {
+        "A": "deterioration",
+        "B": "proliferation",
+        "C": "mitigation",
+        "D": "relinquishment",
+        "E": "exhaustion"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 52,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Despite numerous setbacks, the researchers remained ____ in their pursuit of a cure for the rare neurological disorder.",
+      "options": {
+        "A": "unwavering",
+        "B": "obsolete",
+        "C": "redundant",
+        "D": "superficial",
+        "E": "ambiguous"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 53,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The government’s new fiscal policy is designed to ____ the negative effects of inflation on low-income households.",
+      "options": {
+        "A": "aggravate",
+        "B": "exacerbate",
+        "C": "alleviate",
+        "D": "intensify",
+        "E": "perpetuate"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 54,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The rapid depletion of natural resources has led to an ---- need for sustainable energy alternatives across the globe.",
+      "options": {
+        "A": "insignificant",
+        "B": "urgent",
+        "C": "optional",
+        "D": "indifferent",
+        "E": "obsolete"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 55,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Psychologists argue that the ---- of certain behavioral traits is often determined by both genetic factors and environmental influences.",
+      "options": {
+        "A": "absence",
+        "B": "prevalence",
+        "C": "rejection",
+        "D": "avoidance",
+        "E": "suspension"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 56,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The government’s decision to increase taxes on luxury goods was intended to ---- the budget deficit.",
+      "options": {
+        "A": "exacerbate",
+        "B": "alleviate",
+        "C": "ignore",
+        "D": "prolong",
+        "E": "complicate"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 57,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Scholars have noted that the author's latest novel is remarkably ----, containing various layers of meaning that are difficult to decode.",
+      "options": {
+        "A": "transparent",
+        "B": "ambiguous",
+        "C": "simple",
+        "D": "straightforward",
+        "E": "obvious"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 58,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The researchers had to ---- the experiment multiple times to ensure that the results were consistent and reliable.",
+      "options": {
+        "A": "abandon",
+        "B": "conduct",
+        "C": "overlook",
+        "D": "neglect",
+        "E": "terminate"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 59,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Despite many obstacles, the medical team was able to ---- a breakthrough in the treatment of the rare neurological disorder.",
+      "options": {
+        "A": "give up",
+        "B": "bring about",
+        "C": "look after",
+        "D": "call off",
+        "E": "back down"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 60,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The archaeological site provided ---- evidence that the civilization had developed sophisticated irrigation systems.",
+      "options": {
+        "A": "flimsy",
+        "B": "compelling",
+        "C": "negligible",
+        "D": "suspicious",
+        "E": "biased"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 61,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Environmentalists warn that if carbon emissions are not reduced, the effects of global warming will become ----.",
+      "options": {
+        "A": "reversible",
+        "B": "temporary",
+        "C": "irreversible",
+        "D": "manageable",
+        "E": "negligible"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 62,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The scientist ---- the data for several months before publishing the final report in a prestigious academic journal.",
+      "options": {
+        "A": "scrutinized",
+        "B": "discarded",
+        "C": "ignored",
+        "D": "improvised",
+        "E": "falsified"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 63,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "In some cultures, traditional practices are deeply ---- in the daily lives of people, making them resistant to change.",
+      "options": {
+        "A": "uprooted",
+        "B": "embedded",
+        "C": "detached",
+        "D": "superficial",
+        "E": "external"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 64,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The new policy was designed to ---- innovation within the technology sector by providing grants to small startups.",
+      "options": {
+        "A": "hinder",
+        "B": "foster",
+        "C": "restrict",
+        "D": "suppress",
+        "E": "discourage"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 65,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Economic indicators suggest that the country is currently facing an ---- downturn that could last for several years.",
+      "options": {
+        "A": "inevitable",
+        "B": "unlikely",
+        "C": "accidental",
+        "D": "optional",
+        "E": "intentional"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 66,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Many historians believe that the fall of the empire was ---- by a combination of internal corruption and external invasions.",
+      "options": {
+        "A": "prevented",
+        "B": "triggered",
+        "C": "halted",
+        "D": "improved",
+        "E": "clarified"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 67,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The results of the study were ---- because the sample size was too small to represent the entire population.",
+      "options": {
+        "A": "conclusive",
+        "B": "inconclusive",
+        "C": "definitive",
+        "D": "absolute",
+        "E": "persuasive"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 68,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The director’s ---- approach to filmmaking involves paying extreme attention to every minor detail in the scene.",
+      "options": {
+        "A": "careless",
+        "B": "meticulous",
+        "C": "haphazard",
+        "D": "indifferent",
+        "E": "reckless"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 69,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "One of the main challenges in space exploration is the ---- of maintaining life-support systems in such a harsh environment.",
+      "options": {
+        "A": "ease",
+        "B": "feasibility",
+        "C": "simplicity",
+        "D": "certainty",
+        "E": "comfort"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 70,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The company had to ---- the merger after discovering significant financial discrepancies during the auditing process.",
+      "options": {
+        "A": "carry out",
+        "B": "call off",
+        "C": "set up",
+        "D": "take on",
+        "E": "put up"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 71,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Her contributions to the field of quantum physics have been so ---- that she was awarded the Nobel Prize.",
+      "options": {
+        "A": "mediocre",
+        "B": "profound",
+        "C": "trivial",
+        "D": "insignificant",
+        "E": "common"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 72,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The software is highly ----, allowing users to customize almost every aspect of the interface to suit their needs.",
+      "options": {
+        "A": "rigid",
+        "B": "versatile",
+        "C": "limited",
+        "D": "fragile",
+        "E": "static"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 73,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The sudden ---- in stock prices caused widespread panic among investors who feared a total market collapse.",
+      "options": {
+        "A": "stability",
+        "B": "plummet",
+        "C": "increase",
+        "D": "surge",
+        "E": "peak"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 74,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Social media platforms have a ---- influence on the way young people perceive themselves and the world around them.",
+      "options": {
+        "A": "marginal",
+        "B": "pervasive",
+        "C": "negligible",
+        "D": "local",
+        "E": "minor"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 75,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The teacher encouraged the students to ---- their arguments with evidence from primary sources.",
+      "options": {
+        "A": "contradict",
+        "B": "substantiate",
+        "C": "undermine",
+        "D": "weaken",
+        "E": "dismiss"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 76,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "It is widely accepted that healthy eating habits and regular exercise are ---- to maintaining a long life.",
+      "options": {
+        "A": "detrimental",
+        "B": "conducive",
+        "C": "harmful",
+        "D": "irrelevant",
+        "E": "obstructive"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 77,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The city council had to ---- new regulations to control the noise pollution caused by the construction of the new highway.",
+      "options": {
+        "A": "abolish",
+        "B": "implement",
+        "C": "ignore",
+        "D": "repeal",
+        "E": "withdraw"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 78,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The ancient ruins were ---- by the dense jungle, remaining undiscovered for hundreds of years.",
+      "options": {
+        "A": "revealed",
+        "B": "concealed",
+        "C": "exposed",
+        "D": "displayed",
+        "E": "manifested"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 79,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Modern technology has rendered many traditional manufacturing methods ----, as machines can now do the work more efficiently.",
+      "options": {
+        "A": "essential",
+        "B": "obsolete",
+        "C": "trendy",
+        "D": "modern",
+        "E": "indispensable"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 80,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The politician's speech was criticized for being ----, as it failed to address the core issues facing the voters.",
+      "options": {
+        "A": "concise",
+        "B": "superficial",
+        "C": "profound",
+        "D": "detailed",
+        "E": "thorough"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 81,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "After hours of debate, the committee finally reached a ---- regarding the proposed budget cuts.",
+      "options": {
+        "A": "disagreement",
+        "B": "consensus",
+        "C": "conflict",
+        "D": "dispute",
+        "E": "quarrel"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 82,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The increase in global temperatures is expected to ---- the frequency and intensity of extreme weather events.",
+      "options": {
+        "A": "decrease",
+        "B": "augment",
+        "C": "reduce",
+        "D": "stabilize",
+        "E": "eliminate"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 83,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Vitamins play a ---- role in various biological processes, including the strengthening of the immune system.",
+      "options": {
+        "A": "minor",
+        "B": "vital",
+        "C": "secondary",
+        "D": "trivial",
+        "E": "redundant"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 84,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The lawyer argued that his client should be released because the evidence against him was purely ----.",
+      "options": {
+        "A": "direct",
+        "B": "circumstantial",
+        "C": "conclusive",
+        "D": "undeniable",
+        "E": "factual"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 85,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "During the economic crisis, the government had to ---- its spending on infrastructure projects to save funds.",
+      "options": {
+        "A": "expand",
+        "B": "curtail",
+        "C": "increase",
+        "D": "promote",
+        "E": "maintain"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 86,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The discovery of the new planet was an ---- event in the history of astronomy, changing our understanding of the solar system.",
+      "options": {
+        "A": "ordinary",
+        "B": "unprecedented",
+        "C": "common",
+        "D": "frequent",
+        "E": "expected"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 87,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "To be successful in this role, you must be able to ---- with people from diverse cultural and linguistic backgrounds.",
+      "options": {
+        "A": "isolate",
+        "B": "interact",
+        "C": "withdraw",
+        "D": "disconnect",
+        "E": "segregate"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 88,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The author used a series of metaphors to ---- the complex emotions of the protagonist in the novel.",
+      "options": {
+        "A": "hide",
+        "B": "convey",
+        "C": "suppress",
+        "D": "mask",
+        "E": "ignore"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 89,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Heavy rain and strong winds can ---- the growth of certain crops, leading to a lower harvest than expected.",
+      "options": {
+        "A": "facilitate",
+        "B": "hamper",
+        "C": "promote",
+        "D": "accelerate",
+        "E": "aid"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 90,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The detective was tasked with ---- the mysterious disappearance of the wealthy businessman.",
+      "options": {
+        "A": "looking into",
+        "B": "giving away",
+        "C": "putting off",
+        "D": "taking after",
+        "E": "getting over"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 91,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Ethical considerations are ---- when conducting medical research involving human subjects.",
+      "options": {
+        "A": "optional",
+        "B": "paramount",
+        "C": "negligible",
+        "D": "irrelevant",
+        "E": "minor"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 92,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The rapid growth of the city has put a significant ---- on its existing transportation infrastructure.",
+      "options": {
+        "A": "relief",
+        "B": "strain",
+        "C": "ease",
+        "D": "comfort",
+        "E": "benefit"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 93,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Children who are exposed to multiple languages at an early age often develop superior ---- abilities.",
+      "options": {
+        "A": "physical",
+        "B": "cognitive",
+        "C": "manual",
+        "D": "athletic",
+        "E": "nutritional"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 94,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The scientist’s theory was initially met with ----, but later it was proven correct by several independent studies.",
+      "options": {
+        "A": "acceptance",
+        "B": "skepticism",
+        "C": "enthusiasm",
+        "D": "agreement",
+        "E": "approval"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 95,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The museum’s collection includes many ---- artifacts that provide insight into the daily lives of ancient people.",
+      "options": {
+        "A": "contemporary",
+        "B": "invaluable",
+        "C": "worthless",
+        "D": "modern",
+        "E": "cheap"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 96,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The company’s failure to ---- with safety regulations resulted in a heavy fine from the authorities.",
+      "options": {
+        "A": "resist",
+        "B": "comply",
+        "C": "rebel",
+        "D": "object",
+        "E": "disagree"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 97,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "In the face of adversity, the community showed great ----, working together to rebuild their homes after the flood.",
+      "options": {
+        "A": "weakness",
+        "B": "resilience",
+        "C": "fragility",
+        "D": "despair",
+        "E": "indifference"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 98,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The patient’s condition began to ---- rapidly, requiring immediate intervention from the medical staff.",
+      "options": {
+        "A": "improve",
+        "B": "deteriorate",
+        "C": "stabilize",
+        "D": "recover",
+        "E": "heal"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 99,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The transition from a command economy to a market economy can be a ---- process for many developing nations.",
+      "options": {
+        "A": "painless",
+        "B": "turbulent",
+        "C": "smooth",
+        "D": "effortless",
+        "E": "steady"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 100,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The study aims to ---- the relationship between social media usage and academic performance among teenagers.",
+      "options": {
+        "A": "overlook",
+        "B": "investigate",
+        "C": "ignore",
+        "D": "forget",
+        "E": "conceal"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 101,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "Some species of animals have had to ---- their behavior to survive in urban environments dominated by humans.",
+      "options": {
+        "A": "maintain",
+        "B": "adapt",
+        "C": "freeze",
+        "D": "rigidify",
+        "E": "preserve"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 102,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "The philosopher’s ideas were so ---- that they influenced thinkers for centuries after his death.",
+      "options": {
+        "A": "shallow",
+        "B": "influential",
+        "C": "insignificant",
+        "D": "weak",
+        "E": "forgettable"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 103,
+      "section_id": "vocab",
+      "passage_id": null,
+      "question": "It is important to ---- between facts and opinions when evaluating the credibility of a news source.",
+      "options": {
+        "A": "combine",
+        "B": "distinguish",
+        "C": "merge",
+        "D": "confuse",
+        "E": "unite"
+      },
+      "correct": "B"
+    }
+  ]
 }
