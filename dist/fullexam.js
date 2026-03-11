@@ -57,12 +57,12 @@ const fullExamHTML = /* html */`
   <!-- Header card -->
   <div class="text-center mb-10">
     <div class="inline-flex items-center gap-3 bg-gradient-to-r from-red-800 to-red-900 text-white px-6 py-3 rounded-2xl shadow-xl mb-6">
-      <i class="fas fa-graduation-cap text-xl"></i>
-      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">YDS Deneme Merkezi</span>
+      <i class="fas fa-crown text-xl text-yellow-500"></i>
+      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">Premium Deneme Merkezi</span>
     </div>
-    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Pratik ve Tam Deneme Sınavları</h2>
-    <p class="text-slate-500 text-sm">Kendinizi gerçek sınav formatında test edin.</p>
-  </div>
+    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Özel Hazırlanmış Deneme Sınavları</h2>
+    <p class="text-slate-500 text-sm">YDS zorluk seviyesinde, 80 soruluk tam ve 40 soruluk mini denemeler.</p>
+</div>
 
   <!-- Exam selector -->
   <div id="feStartScreen" class="space-y-12">

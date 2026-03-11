@@ -232,8 +232,7 @@
             <button data-tab="miniexams" onclick="switchTab('miniexams')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Mini
               Sınavlar</button>
-            <button data-tab="fullexam" onclick="switchTab('fullexam')"
-              class="tab-btn w-full text-left px-5 py-3 font-bold text-red-800 hover:bg-gray-50 hover:text-red-700 transition-colors">Deneme Sınavları</button>
+
             <button data-tab="tacticguide" onclick="switchTab('tacticguide')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Taktik
               Rehberi</button>
@@ -321,6 +320,10 @@
                 onclick="switchTab('profile')">Profilde Kilidi Aç &rarr;</span>
             </div>
 
+            <button id="premiumNavBtn" data-tab="fullexam" onclick="switchTab('fullexam')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-red-800 hidden">
+              <i class="fas fa-crown mr-2 text-yellow-500"></i> Premium Denemeler
+            </button>
             <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Soru
               Analizörü</button>
@@ -404,7 +407,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button data-tab="vocabulary" onclick="switchTabAndClose('vocabulary')" class="drawer-btn">Kelime</button>
             <button data-tab="miniexams" onclick="switchTabAndClose('miniexams')" class="drawer-btn">Mini
               Sınavlar</button>
-            <button data-tab="fullexam" onclick="switchTabAndClose('fullexam')" class="drawer-btn font-bold text-red-800">Deneme Sınavları</button>
+
             <button data-tab="tacticguide" onclick="switchTabAndClose('tacticguide')" class="drawer-btn">Taktik
               Rehberi</button>
             <button data-tab="tacticalpanels" onclick="switchTabAndClose('tacticalpanels')" class="drawer-btn">Hızlı
@@ -465,6 +468,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               <i class="fas fa-lock text-xs mr-2"></i> VIP Erişimi Kilitli
             </div>
 
+            <button id="premiumMobileBtn" data-tab="fullexam" onclick="switchTabAndClose('fullexam')"
+              class="drawer-btn font-bold text-red-800 hidden"><i class="fas fa-crown mr-2 text-yellow-500"></i> Premium Denemeler</button>
             <button id="analyzerMobileBtn" data-tab="analyzer" onclick="switchTabAndClose('analyzer')"
               class="drawer-btn hidden">Soru Analizörü</button>
             <button id="testlabMobileBtn" data-tab="testlab" onclick="switchTabAndClose('testlab')"

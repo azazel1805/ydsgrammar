@@ -242,7 +242,7 @@ window.switchTab = function (tabName) {
         }
     }
 
-    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary', 'wordpractice'];
+    const protectedTabs = ['forum', 'profile', 'analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'vocabulary', 'wordpractice', 'fullexam'];
 
     if (protectedTabs.includes(tabName) && !window.currentUser) {
         console.warn("Protected tab accessed without login:", tabName);
@@ -582,8 +582,8 @@ window.toggleModalTactics = function () {
 
 window.lockAnalyzerUI = function () {
     const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn"
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "premiumNavBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "premiumMobileBtn"
     ];
 
     navButtons.forEach(id => {
@@ -596,8 +596,8 @@ window.lockAnalyzerUI = function () {
 
 window.unlockAnalyzerUI = function () {
     const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn"
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "premiumNavBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "premiumMobileBtn"
     ];
 
     navButtons.forEach(id => {
