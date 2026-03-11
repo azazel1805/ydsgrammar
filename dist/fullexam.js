@@ -10,7 +10,19 @@ const EXAM_LIST = [
   { id: 'mini5', label: 'Mini Deneme 5', file: '/exams/mini/miniexam5.json' },
   { id: 'mini6', label: 'Mini Deneme 6', file: '/exams/mini/miniexam6.json' },
   { id: 'mini7', label: 'Mini Deneme 7', file: '/exams/mini/miniexam7.json' },
-  { id: 'mini8', label: 'Mini Deneme 8', file: '/exams/mini/miniexam8.json' }
+  { id: 'mini8', label: 'Mini Deneme 8', file: '/exams/mini/miniexam8.json' },
+  { id: 'mini9', label: 'Mini Deneme 9', file: '/exams/mini/miniexam9.json' },
+  { id: 'mini10', label: 'Mini Deneme 10', file: '/exams/mini/miniexam10.json' },
+  { id: 'mini11', label: 'Mini Deneme 11', file: '/exams/mini/miniexam11.json' },
+  { id: 'mini12', label: 'Mini Deneme 12', file: '/exams/mini/miniexam12.json' },
+  { id: 'mini13', label: 'Mini Deneme 13', file: '/exams/mini/miniexam13.json' },
+  { id: 'mini14', label: 'Mini Deneme 14', file: '/exams/mini/miniexam14.json' },
+  { id: 'mini15', label: 'Mini Deneme 15', file: '/exams/mini/miniexam15.json' },
+  { id: 'mini16', label: 'Mini Deneme 16', file: '/exams/mini/miniexam16.json' },
+  { id: 'mini17', label: 'Mini Deneme 17', file: '/exams/mini/miniexam17.json' },
+  { id: 'mini18', label: 'Mini Deneme 18', file: '/exams/mini/miniexam18.json' },
+  { id: 'mini19', label: 'Mini Deneme 19', file: '/exams/mini/miniexam19.json' },
+  { id: 'mini20', label: 'Mini Deneme 20', file: '/exams/mini/miniexam20.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────

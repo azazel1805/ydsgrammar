@@ -1,0 +1,638 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 19",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The newly discovered enzyme acts as a crucial ---- in the metabolic process, significantly accelerating the breakdown of complex carbohydrates into glucose.",
+            "options": {
+                "A": "catalyst",
+                "B": "deterrent",
+                "C": "obstacle",
+                "D": "liability",
+                "E": "precedent"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Despite the rigorous safety protocols, the chemical plant remains ---- to potential leaks due to aging infrastructure.",
+            "options": {
+                "A": "immune",
+                "B": "vulnerable",
+                "C": "resistant",
+                "D": "indifferent",
+                "E": "impervious"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Recent archeological findings in Mesopotamia have ---- traditional theories about the timeline of early urban development.",
+            "options": {
+                "A": "corroborated",
+                "B": "undermined",
+                "C": "reconciled",
+                "D": "perpetuated",
+                "E": "facilitated"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Although many experts argued that the economic stimulus would lead to inflation, ----.",
+            "options": {
+                "A": "the central bank decided to raise interest rates immediately",
+                "B": "it actually resulted in a period of unprecedented price stability",
+                "C": "most consumers began to spend their savings rapidly",
+                "D": "the government was forced to reduce its budget deficit",
+                "E": "global markets reacted with high levels of volatility"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Unless the international community takes decisive action to reduce carbon emissions, ----.",
+            "options": {
+                "A": "renewable energy sources will become more expensive",
+                "B": "the targets set by the Paris Agreement will remain attainable",
+                "C": "the frequency of extreme weather events is expected to escalate",
+                "D": "deforestation in the Amazon has been partially reversed",
+                "E": "industrialized nations have already met their obligations"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "---- that the human brain continues to develop and rewire itself well into early adulthood.",
+            "options": {
+                "A": "It is now widely accepted by neuroscientists",
+                "B": "The hypothesis was rejected decades ago",
+                "C": "Many people still believe mistakenly",
+                "D": "Some researchers are hesitant to claim",
+                "E": "Hardly anyone would dare to suggest"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Since the local government failed to allocate sufficient funds for urban renewal, ----.",
+            "options": {
+                "A": "the city has become a hub for tech startups",
+                "B": "public transportation systems have undergone a massive overhaul",
+                "C": "the historical district has fallen into a state of disrepair",
+                "D": "more parks and recreational areas are being constructed",
+                "E": "tourism revenue has reached an all-time high"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Cloze Test (Part 1): The industrial revolution was a period of (1) ---- change that transformed agricultural societies into industrial ones. (1)",
+            "options": {
+                "A": "minimal",
+                "B": "profound",
+                "C": "superficial",
+                "D": "temporary",
+                "E": "gradual"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Cloze Test (Part 2): This era saw the introduction of machinery (2) ---- replaced manual labor. (2)",
+            "options": {
+                "A": "where",
+                "B": "whose",
+                "C": "whom",
+                "D": "which",
+                "E": "when"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Cloze Test (Part 3): (3) ---- the increase in production, many workers faced harsh conditions. (3)",
+            "options": {
+                "A": "Despite",
+                "B": "Because",
+                "C": "Instead of",
+                "D": "In addition to",
+                "E": "Unlike"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Cloze Test (Part 4): Urban populations grew (4) ---- as people moved to cities for work. (4)",
+            "options": {
+                "A": "exponentially",
+                "B": "scarcely",
+                "C": "vaguely",
+                "D": "reluctantly",
+                "E": "incidentally"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Cloze Test (Part 5): Eventually, these shifts led to the (5) ---- of modern labor laws. (5)",
+            "options": {
+                "A": "abolition",
+                "B": "establishment",
+                "C": "rejection",
+                "D": "neglect",
+                "E": "suspension"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Kuantum fiziĐi, atom altı par\u0007acıkların davranışını inceleyen ve modern teknolojinin temelini oluşturan bir bilim dalıdır.",
+            "options": {
+                "A": "Quantum physics is a branch of science that examines the behavior of subatomic particles and forms the basis of modern technology.",
+                "B": "Modern technology is based on quantum physics, which studies the movement of atoms.",
+                "C": "The study of subatomic particles in quantum physics has led to the development of modern technology.",
+                "D": "Quantum physics, which is essential for technology, focuses on how particles behave.",
+                "E": "Modern technology relies on the science of quantum physics to understand atoms."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Despite the high cost of implementation, solar energy remains one of the most promising alternatives to fossil fuels.",
+            "options": {
+                "A": "Fosil yakıtlara en iyi alternatif g\u0000neş enerjisi olsa da uygulama maliyeti y\u0000ksektir.",
+                "B": "Uygulama maliyetinin y\u0000ksek olmasına rağmen, g\u0000neş enerjisi fosil yakıtlara en vaat edici alternatiflerden biri olmayı s\u0000rd\u0000rmektedir.",
+                "C": "G\u0000neş enerjisi maliyetli bir y\u0000ntemdir ancak fosil yakıtların yerini alabilir.",
+                "D": "Fosil yakıtların yerine ge\u0000ebilecek en ucuz alternatif g\u0000neş enerjisidir.",
+                "E": "G\u0000neş enerjisi y\u0000ksek maliyetine rağmen fosil yakıtlardan daha fazla tercih edilmektedir."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Eğitim sistemindeki reformların temel amacı, \u0000ğrencilerin eleştirel d\u0000ş\u0000nme becerilerini geliştirmektir.",
+            "options": {
+                "A": "The main goal of the reforms in the education system is to develop students' critical thinking skills.",
+                "B": "Critical thinking skills are being developed through reforms in the education system.",
+                "C": "Students need critical thinking skills, which is the aim of the educational reform.",
+                "D": "Reforming the education system will help students think more critically.",
+                "E": "To improve critical thinking, the education system must be reformed immediately."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "The rise of social media has fundamentally altered the way information is disseminated and consumed worldwide.",
+            "options": {
+                "A": "Sosyal medyanın y\u0000kselişinin temel sebebi bilginin t\u0000m d\u0000nyada hızlıca yayılmasıdır.",
+                "B": "Bilgi t\u0000m d\u0000nyada sosyal medya aracılığıyla yayılmakta ve t\u0000ketilmektedir.",
+                "C": "Sosyal medyanın y\u0000kselişi, bilginin d\u0000nya \u0000apında yayılma ve t\u0000ketilme bi\u0000imini temelden değıştirmiştir.",
+                "D": "Sosyal medya sayesinde bilgi artık d\u0000nya genelinde daha farklı bir şekilde t\u0000ketiliyor.",
+                "E": "Bilginin yayılmasındaki değışim sosyal medyanın y\u0000kselişine bağlanabilir."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Hardly had the government announced the new tax regulations when several major corporations threatened to move their headquarters abroad.",
+            "options": {
+                "A": "As soon as the new tax rules were made public, many large companies warned that they might relocate to other countries.",
+                "B": "Major corporations moved their headquarters because the government announced new tax regulations.",
+                "C": "The government announced the tax regulations after the corporations had already moved abroad.",
+                "D": "Because the government delayed the tax announcement, corporations stayed in the country.",
+                "E": "Corporations threatened to move only before the government announced the tax regulations."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It was not until the late 20th century that the impact of human activity on the global climate became a primary concern for scientists.",
+            "options": {
+                "A": "Scientists have always been concerned about the climate since the early 20th century.",
+                "B": "Human activity began to affect the climate only in the late 20th century.",
+                "C": "Only towards the end of the 20th century did scientists start to focus seriously on how humans affect the climate.",
+                "D": "The global climate changed significantly in the late 20th century due to scientific research.",
+                "E": "Human activity was not considered a problem by scientists before the 20th century ended."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The manager would have approved the project if the budget proposal had been more realistic.",
+            "options": {
+                "A": "The manager approved the project despite the unrealistic budget proposal.",
+                "B": "The project was rejected because the budget proposal was not practical.",
+                "C": "Even if the budget were realistic, the manager would not have approved the project.",
+                "D": "The manager did not look at the budget proposal, so the project failed.",
+                "E": "A realistic budget proposal was submitted, but the manager still rejected it."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Contrary to popular belief, the Great Wall of China is not visible from the moon with the naked eye.",
+            "options": {
+                "A": "People believe the Great Wall is visible from the moon, and they are correct.",
+                "B": "The Great Wall can be seen from space, but not from the moon.",
+                "C": "Despite what most people think, you cannot see the Great Wall from the moon without equipment.",
+                "D": "The Great Wall is the only man-made structure visible from the moon.",
+                "E": "Because it is so large, many people think the Great Wall is visible from the moon."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "James: Have you seen the latest report on the declining bee populations? \nSarah: Yes, it's quite alarming. They are essential for pollinating many of our food crops.\nJames: ---- \nSarah: Exactly. Without them, the entire agricultural sector could face a massive crisis.",
+            "options": {
+                "A": "I didn't know bees were that important for our survival.",
+                "B": "So, their disappearance would have a direct impact on global food security.",
+                "C": "Maybe we should start using artificial pollination methods instead.",
+                "D": "Bees are not the only insects that help with pollination, though.",
+                "E": "The report suggests that pesticides are the main cause of the decline."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor: The midterm results were quite disappointing for most of the class.\nStudent: Do you think the questions were too difficult, or were we just unprepared?\nProfessor: ----\nStudent: That makes sense. I noticed many people left the analytical sections blank.",
+            "options": {
+                "A": "The questions were actually easier than last year's exam.",
+                "B": "I believe the issue was more about a lack of critical analysis rather than factual knowledge.",
+                "C": "I will consider curving the grades to help everyone pass.",
+                "D": "You should have spent more time in the library studying the textbook.",
+                "E": "Most students performed exceptionally well in the multiple-choice section."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Recruiter: Your resume is impressive, but we are looking for someone with more leadership experience.\nApplicant: I understand. However, I have led several small-scale projects in my previous role.\nRecruiter: ----\nApplicant: Certainly. I can provide the documentation and references for those projects by tomorrow.",
+            "options": {
+                "A": "That sounds promising. Can you provide specific examples of your leadership in those cases?",
+                "B": "We prefer candidates who have managed teams of more than fifty people.",
+                "C": "Leadership is something that cannot be learned; you either have it or you don't.",
+                "D": "Thank you for coming in, we will let you know our decision next week.",
+                "E": "Could you explain why you decided to leave your previous company?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Doctor: Your blood pressure is still a bit high. Have you been following the diet we discussed?\nPatient: I've tried, but it's very difficult to avoid salt when eating out.\nDoctor: ----\nPatient: I'll try that. I didn't realize small changes could make such a difference.",
+            "options": {
+                "A": "You must stop eating out entirely if you want to get better.",
+                "B": "Maybe you should try cooking at home more often and using herbs for flavor.",
+                "C": "I will have to prescribe a stronger medication if this continues.",
+                "D": "Salt is necessary for the body, but only in very small amounts.",
+                "E": "High blood pressure is a common problem in people your age."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Cybersecurity has become a top priority for governments and corporations alike. As more sensitive data is stored online, the risk of data breaches and cyberattacks continues to grow. ----. Therefore, investing in advanced encryption and employee training is no longer optional.",
+            "options": {
+                "A": "Hackers are becoming increasingly sophisticated in their methods.",
+                "B": "Many people still use simple passwords for their personal accounts.",
+                "C": "Social media platforms are the primary targets for cybercriminals.",
+                "D": "Computers are faster today than they were ten years ago.",
+                "E": "Most software updates are designed to fix minor bugs."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "In the world of art, Impressionism marked a significant departure from traditional techniques. Instead of focusing on precise details, Impressionist painters sought to capture the fleeting effects of light and color. ----. This approach initially faced criticism from the art establishment but eventually revolutionized modern art.",
+            "options": {
+                "A": "They often worked outdoors to observe natural light directly.",
+                "B": "Oil paints were the only medium used during this period.",
+                "C": "Many Impressionist artists were born in the late 19th century.",
+                "D": "The Louvre museum houses some of the most famous paintings.",
+                "E": "Art critics in the 1800s were known for being very conservative."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The concept of 'emotional intelligence' has gained widespread popularity in the workplace. It refers to the ability to recognize, understand, and manage one's own emotions as well as those of others. ----. Research shows that leaders with high emotional intelligence tend to have more motivated and productive teams.",
+            "options": {
+                "A": "Technical skills are often more important than social skills.",
+                "B": "Many employees prefer working alone rather than in groups.",
+                "C": "This skill is particularly crucial for effective leadership and conflict resolution.",
+                "D": "Emotional intelligence is a trait that cannot be improved over time.",
+                "E": "Most companies focus only on IQ when hiring new managers."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Sustainable architecture aims to minimize the negative environmental impact of buildings. This is achieved through efficiency and moderation in the use of materials, energy, and development space. ----. For instance, using solar panels and rainwater harvesting systems can significantly reduce a building's carbon footprint.",
+            "options": {
+                "A": "Modern buildings are often made of glass and steel.",
+                "B": "The integration of renewable energy sources is a key component of this approach.",
+                "C": "Architects must follow local building codes and regulations.",
+                "D": "Most people prefer living in traditional houses rather than modern ones.",
+                "E": "Construction costs have risen sharply due to inflation."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The evidence presented during the trial was so overwhelming that the jury reached a verdict in less than an hour.",
+            "options": {
+                "A": "The jury was very fast because the evidence was extremely convincing and clear.",
+                "B": "The trial lasted less than an hour because there was no evidence.",
+                "C": "The jury had a hard time deciding the verdict despite the evidence.",
+                "D": "Because the evidence was weak, the jury reached a verdict quickly.",
+                "E": "The evidence was presented so quickly that the jury was confused."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Rarely do we encounter a scientific discovery that has the potential to change our understanding of the universe so fundamentally.",
+            "options": {
+                "A": "Scientific discoveries usually change our understanding of the universe.",
+                "B": "It is very unusual to find a discovery that changes our view of the universe so much.",
+                "C": "We often see discoveries that are fundamental to our understanding of science.",
+                "D": "Most scientific discoveries are not understood by the general public.",
+                "E": "The universe is so complex that no discovery can ever change our view of it."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The company's decision to expand into the Asian market was prompted by a significant increase in demand for its products there.",
+            "options": {
+                "A": "The company expanded to Asia even though there was no demand.",
+                "B": "The increase in demand in Asia led the company to decide to expand its operations there.",
+                "C": "The company wanted to create demand in Asia by expanding its market.",
+                "D": "Asian markets are difficult to enter despite high demand for products.",
+                "E": "The company decided not to expand until demand increased in Asia."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Renaissance was a fervent period of European cultural, artistic, political and economic rebirth following the Middle Ages. (II) It took place from the 14th century to the 17th century, promoting the rediscovery of classical philosophy, literature and art. (III) Some of the greatest thinkers, authors, statesmen, scientists and artists in human history thrived during this era. (IV) The Black Death, which occurred earlier, had killed nearly half of Europe's population. (V) Global exploration opened up new lands and cultures to European commerce.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll. (II) This process generally involves the green pigment chlorophyll and generates oxygen as a byproduct. (III) Most plants are green because they contain a large amount of chlorophyll. (IV) Oxygen is essential for the survival of almost all living organisms on Earth. (V) Without photosynthesis, the atmosphere would lack the oxygen necessary for life.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Virtual Reality (VR) is a simulated experience that can be similar to or completely different from the real world. (II) Applications of virtual reality include entertainment, education, and business. (III) VR headsets are becoming more affordable for the average consumer. (IV) Augmented reality, on the other hand, overlays digital information onto the real world. (V) Many medical schools are now using VR to train surgeons in a risk-free environment.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system. It is home to thousands of species of marine life, including fish, whales, and turtles. However, the reef is facing a severe threat from climate change. Rising ocean temperatures cause coral bleaching, a process where corals expel the algae living in their tissues, turning them white and making them more susceptible to disease. Question: According to the passage, what is the primary cause of coral bleaching?",
+            "options": {
+                "A": "Overfishing in the Australian coast",
+                "B": "The presence of too many marine species",
+                "C": "Rising temperatures in the ocean",
+                "D": "Pollution from nearby industrial plants",
+                "E": "The natural aging process of the coral"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system. It is home to thousands of species of marine life, including fish, whales, and turtles. However, the reef is facing a severe threat from climate change. Rising ocean temperatures cause coral bleaching, a process where corals expel the algae living in their tissues, turning them white and making them more susceptible to disease. Question: What happens to corals during the bleaching process?",
+            "options": {
+                "A": "They grow faster to compensate for the heat.",
+                "B": "They turn white and become more prone to illness.",
+                "C": "They attract more algae to their tissues.",
+                "D": "They provide more food for the fish and whales.",
+                "E": "They become immune to any future temperature changes."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system. It is home to thousands of species of marine life, including fish, whales, and turtles. However, the reef is facing a severe threat from climate change. Rising ocean temperatures cause coral bleaching, a process where corals expel the algae living in their tissues, turning them white and making them more susceptible to disease. Question: Which of the following is NOT mentioned as a resident of the reef?",
+            "options": {
+                "A": "Whales",
+                "B": "Fish",
+                "C": "Turtles",
+                "D": "Sharks",
+                "E": "Marine life"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. It shifted the economy from manual labor and draft-animal-based manufacturing to machine-based manufacturing. This transition was fueled by the invention of the steam engine, which allowed for the mass production of goods. While it led to economic growth, it also caused significant social changes, including urbanization and the rise of the working class. Question: What was the main factor that enabled mass production during the Industrial Revolution?",
+            "options": {
+                "A": "The use of draft animals in factories",
+                "B": "The invention of the steam engine",
+                "C": "The decrease in the urban population",
+                "D": "The reliance on manual labor",
+                "E": "The decline of the British economy"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. It shifted the economy from manual labor and draft-animal-based manufacturing to machine-based manufacturing. This transition was fueled by the invention of the steam engine, which allowed for the mass production of goods. While it led to economic growth, it also caused significant social changes, including urbanization and the rise of the working class. Question: According to the passage, the Industrial Revolution caused ----.",
+            "options": {
+                "A": "a decrease in the number of people living in cities",
+                "B": "a shift back to agricultural-based economies",
+                "C": "the rise of a new class of workers",
+                "D": "the end of international trade",
+                "E": "a slower production process for most goods"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. It shifted the economy from manual labor and draft-animal-based manufacturing to machine-based manufacturing. This transition was fueled by the invention of the steam engine, which allowed for the mass production of goods. While it led to economic growth, it also caused significant social changes, including urbanization and the rise of the working class. Question: The passage implies that before the late 18th century, ----.",
+            "options": {
+                "A": "manufacturing was mostly done by hand or animals",
+                "B": "steam engines were already common in Britain",
+                "C": "most people lived in large urban centers",
+                "D": "the economy was based on machine production",
+                "E": "Britain was not a global power"
+            },
+            "correct": "A"
+        }
+    ]
+}

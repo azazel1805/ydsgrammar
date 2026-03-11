@@ -1,0 +1,638 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 18",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The rapid _____ of urban areas often leads to the degradation of local ecosystems and increased pollution levels.",
+            "options": {
+                "A": "proliferation",
+                "B": "diminution",
+                "C": "stagnation",
+                "D": "rectification",
+                "E": "mitigation"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Despite the initial skepticism, the researcher's findings were later _____ by several independent studies.",
+            "options": {
+                "A": "refuted",
+                "B": "corroborated",
+                "C": "undermined",
+                "D": "contradicted",
+                "E": "negated"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The government's decision to implement stricter environmental regulations was _____ to the long-term sustainability of the region.",
+            "options": {
+                "A": "detrimental",
+                "B": "conducive",
+                "C": "perfluous",
+                "D": "hazardous",
+                "E": "indifferent"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "While some argue that globalization has led to cultural homogenization, _____.",
+            "options": {
+                "A": "others believe it fosters cultural exchange and diversity",
+                "B": "it has clearly increased global trade volumes",
+                "C": "most people prefer local traditions over global ones",
+                "D": "it is a phenomenon that started centuries ago",
+                "E": "governments should regulate international markets more strictly"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "_____ than it became apparent that the initial economic forecasts were overly optimistic.",
+            "options": {
+                "A": "Hardly had the new fiscal policy been implemented",
+                "B": "No sooner the government announced the reforms",
+                "C": "As soon as the market recovered",
+                "D": "While the data was being analyzed",
+                "E": "Because the growth rate was steady"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "The discovery of the ancient manuscript provided invaluable insights into the social hierarchy of the civilization, _____.",
+            "options": {
+                "A": "which had previously been a matter of conjecture",
+                "B": "although the text was written in a known dialect",
+                "C": "because it was found in a remote desert location",
+                "D": "since historians had already documented their history",
+                "E": "unless the carbon dating results are proven wrong"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "The committee decided to postpone the vote on the proposed legislation _____ so that further deliberations could take place.",
+            "options": {
+                "A": "in light of the recent public protests",
+                "B": "because the majority of members were in favor",
+                "C": "so as to expedite the legal process",
+                "D": "as if there were no significant disagreements",
+                "E": "regardless of the potential economic consequences"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "(Cloze Test Paragraph) The concept of emotional intelligence (EQ) has (1)_____ significant attention in recent years. It refers to the ability to recognize and manage one's own emotions, as well as (2)_____ those of others. Proponents argue that EQ is (3)_____ more important than IQ for professional success. (4)_____, critics suggest that the concept lacks scientific empirical support. (5)_____ the debate, many organizations now include EQ assessments in their hiring processes. Question 1:",
+            "options": {
+                "A": "garnered",
+                "B": "neglected",
+                "C": "depleted",
+                "D": "waived",
+                "E": "discarded"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "(Cloze Test Paragraph continued) Question 2:",
+            "options": {
+                "A": "empathize with",
+                "B": "diverge from",
+                "C": "recoil at",
+                "D": "submit to",
+                "E": "abstain from"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "(Cloze Test Paragraph continued) Question 3:",
+            "options": {
+                "A": "potentially",
+                "B": "marginally",
+                "C": "seldom",
+                "D": "scarcely",
+                "E": "redundantly"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "(Cloze Test Paragraph continued) Question 4:",
+            "options": {
+                "A": "However",
+                "B": "Moreover",
+                "C": "Therefore",
+                "D": "Likewise",
+                "E": "Consequently"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "(Cloze Test Paragraph continued) Question 5:",
+            "options": {
+                "A": "Notwithstanding",
+                "B": "Instead of",
+                "C": "Prior to",
+                "D": "In accordance with",
+                "E": "By means of"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Sanayi Devrimi, üretim süreçlerini kökten değiştirerek modern kapitalist sistemin temellerini atmıştır.",
+            "options": {
+                "A": "The Industrial Revolution fundamentally changed production processes and laid the foundations of the modern capitalist system.",
+                "B": "The modern capitalist system was established after production processes changed during the Industrial Revolution.",
+                "C": "Changing production processes during the Industrial Revolution led to the modern capitalist system's development.",
+                "D": "The Industrial Revolution, which changed production processes, was the basis of the capitalist system.",
+                "E": "Production processes were changed by the Industrial Revolution to create the modern capitalist system."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Many scientists believe that climate change is the most significant threat facing humanity in the twenty-first century.",
+            "options": {
+                "A": "Pek çok bilim insanı, iklim değişikliğinin yirmi birinci yüzyılda insanlığın karşılaştığı en önemli tehdit olduğuna inanmaktadır.",
+                "B": "Yirmi birinci yüzyılda insanlığı tehdit eden en önemli unsurun iklim değişikliği olduğu birçok bilim insanı tarafından söyleniyor.",
+                "C": "Bilim insanlarının çoğu, iklim değişikliğinin yirmi birinci yüzyıldaki tek büyük tehdit olduğunu düşünmektedir.",
+                "D": "İklim değişikliği, yirmi birinci yüzyılda insanlık için en büyük tehlikedir diyen pek çok bilim insanı vardır.",
+                "E": "Pek çok bilim insanına göre yirmi birinci yüzyılda insanlık iklim değişikliği tehdidiyle karşı karşıyadır."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Yapay zeka teknolojilerindeki hızlı ilerleme, etik ve gizlilik konularında yeni tartışmaları da beraberinde getirmiştir.",
+            "options": {
+                "A": "The rapid advancement in artificial intelligence technologies has brought about new debates on ethics and privacy issues.",
+                "B": "Ethics and privacy issues are being debated due to the rapid advancement in artificial intelligence technologies.",
+                "C": "As artificial intelligence technologies advance rapidly, debates on ethics and privacy have emerged.",
+                "D": "The development of artificial intelligence technologies has sparked new concerns regarding ethical privacy.",
+                "E": "Rapid progress in AI technology is accompanied by debates regarding privacy and ethics."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Despite the challenges posed by the pandemic, the global economy has shown remarkable resilience.",
+            "options": {
+                "A": "Pandeminin yarattığı zorluklara rağmen, küresel ekonomi dikkate değer bir direnç göstermiştir.",
+                "B": "Küresel ekonomi, pandeminin zorluklarına rağmen dirençli kalmayı başarmıştır.",
+                "C": "Pandemi zorluklar yaratsa da küresel ekonominin gösterdiği direnç takdire şayandır.",
+                "D": "Küresel ekonominin dirençli olması, pandeminin getirdiği zorluklar sayesinde olmuştur.",
+                "E": "Pandemi döneminde küresel ekonomi beklenmedik bir şekilde direnç sergilemiştir."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The failure of the mission was attributed to a lack of communication between the ground crew and the astronauts.",
+            "options": {
+                "A": "The mission failed because the ground crew and the astronauts did not communicate effectively.",
+                "B": "A lack of communication caused the mission to be aborted by the astronauts.",
+                "C": "The ground crew failed to communicate with the astronauts during the mission.",
+                "D": "The mission was unsuccessful as a result of poor coordination with the ground crew.",
+                "E": "Communication issues between the ground crew and astronauts led to the mission's delay."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It is widely accepted that children who read for pleasure perform better academically than those who do not.",
+            "options": {
+                "A": "Most people agree that children who enjoy reading books tend to be more successful in school.",
+                "B": "Academic performance is strictly related to the amount of time children spend reading for fun.",
+                "C": "Reading for pleasure is the only factor that determines a child's academic success.",
+                "D": "Children who do not read for pleasure are likely to fail in their academic careers.",
+                "E": "It is a known fact that academic success encourages children to read more for pleasure."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Hardly had the announcement been made when the stock prices began to plummet.",
+            "options": {
+                "A": "Stock prices started to fall sharply immediately after the announcement was made.",
+                "B": "The announcement was made only after the stock prices had already plummeted.",
+                "C": "The stock prices fell so much that the company had to make an announcement.",
+                "D": "As soon as the stock prices plummeted, an official announcement was released.",
+                "E": "If the announcement hadn't been made, the stock prices wouldn't have fallen."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The architect's design was so innovative that it completely redefined modern aesthetics.",
+            "options": {
+                "A": "Modern aesthetics were transformed entirely by the architect's highly original design.",
+                "B": "The architect designed a building that followed the principles of modern aesthetics.",
+                "C": "Modern aesthetics influenced the architect to create an innovative design.",
+                "D": "Because the design was innovative, it was rejected by modern aesthetic standards.",
+                "E": "The architect's design was one of many that defined modern aesthetics."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "John: Have you seen the latest report on renewable energy adoption rates? \nSarah: Yes, it seems that solar power is leading the way in many developing nations. \nJohn: _____ \nSarah: Absolutely, especially with the costs of photovoltaic cells dropping so significantly recently.",
+            "options": {
+                "A": "That's surprising, I thought wind energy would be more popular there.",
+                "B": "I wonder if this trend will continue in the next decade.",
+                "C": "It's encouraging to see a shift away from fossil fuels in those regions.",
+                "D": "Do you think the government subsidies are the primary reason for this?",
+                "E": "The report also mentions that storage technology is still a bottleneck."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Mark: The new museum exhibit on ancient Mesopotamia is opening tomorrow. \nAlice: I've heard they've included some artifacts that have never been displayed before. \nMark: _____ \nAlice: Then we should definitely go early to avoid the crowds.",
+            "options": {
+                "A": "I doubt they will be as interesting as the ones in the British Museum.",
+                "B": "That's what the curator mentioned in the interview last night.",
+                "C": "I prefer the Egyptian exhibit to the Mesopotamian one.",
+                "D": "Is the museum open on weekends during the summer?",
+                "E": "How much does the entrance ticket cost for students?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor: Your thesis proposal is interesting, but you need to narrow down your research question. \nStudent: I see. It's currently too broad to cover in a single semester, isn't it? \nProfessor: _____ \nStudent: I'll focus specifically on the impact of social media on adolescent sleep patterns then.",
+            "options": {
+                "A": "Yes, you should try to address all aspects of the topic.",
+                "B": "Exactly. You need a more specific focus to conduct a thorough analysis.",
+                "C": "I think your current question is actually too specific.",
+                "D": "You should consider changing your topic entirely to something easier.",
+                "E": "The deadline for the final submission is in three months."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Waiter: Would you like to see the dessert menu, or can I bring you the check? \nCustomer: I'm quite full, but my friend might want something. \nFriend: _____ \nWaiter: Certainly, I'll bring the menu right away.",
+            "options": {
+                "A": "I'll just have a cup of coffee, please.",
+                "B": "No, thank you. I couldn't eat another bite.",
+                "C": "Actually, I'd love to try the chocolate lava cake.",
+                "D": "How much is the total amount on the bill?",
+                "E": "Can we pay separately with our credit cards?"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Renewable energy sources, such as solar and wind, are becoming increasingly cost-competitive with fossil fuels. Many countries are now setting ambitious targets to reach net-zero emissions by 2050. _____. This shift is driven by both environmental concerns and the declining cost of technology. Consequently, the global energy landscape is undergoing a profound transformation.",
+            "options": {
+                "A": "The transition to green energy requires significant investment in infrastructure.",
+                "B": "Fossil fuel companies are lobbying against these new regulations.",
+                "C": "Nuclear power remains a controversial topic in the energy debate.",
+                "D": "Solar panels are more efficient in regions with high solar radiation.",
+                "E": "Wind turbines can be installed both onshore and offshore."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The Renaissance was a period of great cultural and intellectual ferment in Europe. It saw a resurgence of interest in the classical learning of Greece and Rome. _____. This movement, known as humanism, emphasized the potential and agency of human beings. Artists and scholars alike began to explore new ways of representing the world.",
+            "options": {
+                "A": "The printing press played a crucial role in spreading these new ideas.",
+                "B": "Feudalism was the dominant social system during the Middle Ages.",
+                "C": "The Black Death had a devastating impact on the European population.",
+                "D": "Leonardo da Vinci is often cited as the quintessential Renaissance man.",
+                "E": "The Reformation led to a split within the Christian church."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "In recent years, there has been a growing concern about the impact of microplastics on marine life. These tiny plastic particles are ingested by a wide range of organisms, from plankton to whales. _____. Furthermore, these toxins can bioaccumulate up the food chain, potentially affecting human health. Researchers are still trying to understand the full extent of the problem.",
+            "options": {
+                "A": "Microplastics often carry toxic chemicals that can harm the animals that eat them.",
+                "B": "Most plastic waste ends up in landfills rather than in the ocean.",
+                "C": "Recycling programs have been successful in reducing plastic pollution.",
+                "D": "The ban on single-use plastics has already shown positive results.",
+                "E": "Ocean currents play a significant role in the distribution of microplastics."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The concept of the 'Internet of Things' (IoT) refers to the interconnection of everyday objects via the internet. This allows devices to collect and exchange data, leading to increased efficiency and automation. _____. For instance, smart thermostats can adjust the temperature of a home based on the occupants' preferences and schedules. As more devices become connected, the potential applications of IoT continue to expand.",
+            "options": {
+                "A": "This connectivity also raises significant concerns about data privacy and security.",
+                "B": "Smart homes are becoming increasingly popular among young homeowners.",
+                "C": "The hardware required for IoT devices is becoming cheaper and more accessible.",
+                "D": "Companies are investing heavily in IoT research and development.",
+                "E": "IoT technology is being used in agriculture to monitor soil moisture levels."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Hardly any other invention has had as much impact on modern society as the personal computer.",
+            "options": {
+                "A": "The personal computer is one of the most influential inventions of the modern era.",
+                "B": "No other invention has had any impact on modern society except for the personal computer.",
+                "C": "Modern society was not impacted by inventions until the personal computer was created.",
+                "D": "The personal computer has had more impact on society than any other invention ever.",
+                "E": "Few inventions have influenced modern society to the same extent as the personal computer."
+            },
+            "correct": "E"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "It is not only his talent but also his dedication that has made him a successful artist.",
+            "options": {
+                "A": "He is a successful artist because he is talented and dedicated.",
+                "B": "His talent is more important than his dedication to his success as an artist.",
+                "C": "He would be a successful artist even if he were not dedicated.",
+                "D": "Being talented is the only reason why he became a successful artist.",
+                "E": "His success as an artist is due to his dedication despite his lack of talent."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The results of the experiment were so inconclusive that no firm deductions could be made.",
+            "options": {
+                "A": "The experiment failed to provide clear results, so no certain conclusions could be drawn.",
+                "B": "The results were clear, but the researchers could not make any deductions.",
+                "C": "Because the experiment was inconclusive, the researchers made several firm deductions.",
+                "D": "No one could understand the results of the experiment because they were so complex.",
+                "E": "The researchers had to repeat the experiment because the results were not firm."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(1) Quantum mechanics is a fundamental theory in physics that describes the physical properties of nature at the scale of atoms and subatomic particles. (2) It is the foundation of all quantum physics including quantum chemistry, quantum field theory, and quantum technology. (3) Classical physics, on the other hand, describes many aspects of nature at an ordinary scale. (4) Many famous physicists, such as Albert Einstein and Niels Bohr, contributed to its development. (5) The invention of the microscope was a major breakthrough in the field of biology.",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4",
+                "E": "5"
+            },
+            "correct": "E"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(1) The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states. (2) It was constructed to protect the Chinese states and empires against the raids and invasions of various nomadic groups. (3) Several walls were being built from as early as the 7th century BC. (4) Tourism in China has seen a significant increase in the last decade. (5) The most well-known sections of the wall were built by the Ming dynasty.",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4",
+                "E": "5"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(1) Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy. (2) This energy is stored in carbohydrate molecules, such as sugars, which are synthesized from carbon dioxide and water. (3) In most cases, oxygen is also released as a waste product. (4) Most plants need sunlight, water, and carbon dioxide to grow. (5) The price of organic vegetables has risen sharply due to increased demand.",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4",
+                "E": "5"
+            },
+            "correct": "E"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. It transitioned societies from agrarian economies to industrialized ones, characterized by the use of new machinery and the development of factories. This shift led to significant urban growth as people moved from the countryside to cities in search of work. While it brought about technological advancements and increased production, it also resulted in poor working conditions and social inequality. The long-term effects of the Industrial Revolution continue to shape the modern world, influencing everything from global trade to environmental issues. \n\nQuestion: According to the passage, what was a primary characteristic of the Industrial Revolution?",
+            "options": {
+                "A": "A shift from industrial to agrarian economies.",
+                "B": "The development of new machinery and factories.",
+                "C": "A decrease in urban population.",
+                "D": "The total elimination of social inequality.",
+                "E": "A decline in technological advancements."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage (same as above): The Industrial Revolution, which began in Britain in the late 18th century... \n\nQuestion: What was one of the negative consequences mentioned in the passage?",
+            "options": {
+                "A": "Increased production efficiency.",
+                "B": "Significant urban growth.",
+                "C": "Technological advancements.",
+                "D": "Poor working conditions.",
+                "E": "Global trade expansion."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage (same as above): The Industrial Revolution, which began in Britain in the late 18th century... \n\nQuestion: It can be inferred from the passage that the Industrial Revolution _____.",
+            "options": {
+                "A": "had no impact on the environment",
+                "B": "was limited only to Britain",
+                "C": "has lasting influences on today's world",
+                "D": "did not affect the social structure",
+                "E": "was a purely agricultural movement"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: Biodiversity, the variety of life on Earth, is essential for the health of our planet. It provides ecosystem services such as pollination, water purification, and climate regulation. However, human activities, including habitat destruction, pollution, and climate change, are causing a rapid decline in biodiversity. This loss threatens the stability of ecosystems and the well-being of future generations. Conservation efforts, such as protecting natural habitats and promoting sustainable practices, are crucial to halting this decline. Protecting biodiversity is not just an environmental issue; it is a necessity for human survival. \n\nQuestion: Why is biodiversity considered essential according to the passage?",
+            "options": {
+                "A": "Because it leads to habitat destruction.",
+                "B": "Because it provides critical ecosystem services.",
+                "C": "Because it is the sole cause of climate change.",
+                "D": "Because it limits the growth of human populations.",
+                "E": "Because it replaces the need for sustainable practices."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage (same as above): Biodiversity, the variety of life on Earth... \n\nQuestion: Which of the following is mentioned as a cause of biodiversity decline?",
+            "options": {
+                "A": "Pollination",
+                "B": "Water purification",
+                "C": "Habitat destruction",
+                "D": "Conservation efforts",
+                "E": "Sustainable practices"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage (same as above): Biodiversity, the variety of life on Earth... \n\nQuestion: The author of the passage emphasizes that protecting biodiversity is _____.",
+            "options": {
+                "A": "only important for scientists",
+                "B": "a choice rather than a necessity",
+                "C": "vital for the survival of humanity",
+                "D": "the main cause of social inequality",
+                "E": "secondary to industrial growth"
+            },
+            "correct": "C"
+        }
+    ]
+}

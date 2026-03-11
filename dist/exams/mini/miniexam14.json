@@ -1,0 +1,638 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 14",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The sudden ______ of the global economy after the pandemic highlights the intrinsic vulnerability of supply chains to unforeseen disruptions.",
+            "options": {
+                "A": "deterioration",
+                "B": "fortification",
+                "C": "emancipation",
+                "D": "rectification",
+                "E": "standardization"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Archaeologists have found evidence suggesting that early hominids were ______ enough to adapt to diverse climatic conditions through tool use.",
+            "options": {
+                "A": "resilient",
+                "B": "indifferent",
+                "C": "apathetic",
+                "D": "fragile",
+                "E": "superficial"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Scientific progress often requires researchers to ______ established theories when new data consistently contradicts long-held assumptions.",
+            "options": {
+                "A": "scrutinize",
+                "B": "discard",
+                "C": "endorse",
+                "D": "substantiate",
+                "E": "implement"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Although the implementation of carbon taxes is controversial among industrial leaders, ______.",
+            "options": {
+                "A": "it remains one of the most effective tools for reducing greenhouse gas emissions",
+                "B": "most companies have already reached their net-zero targets",
+                "C": "environmentalists argue that such measures are entirely unnecessary",
+                "D": "global temperatures have stabilized regardless of human intervention",
+                "E": "the cost of fossil fuels has plummeted in the international market"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "______ unless the local government provides substantial subsidies for public transportation infrastructure.",
+            "options": {
+                "A": "Urban congestion will continue to worsen",
+                "B": "Traffic flow has improved significantly",
+                "C": "The city will become a hub for innovation",
+                "D": "More people are opting for cycling",
+                "E": "Commuters are satisfied with the current system"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Since the Renaissance emphasized humanism and the revival of classical learning, ______.",
+            "options": {
+                "A": "it fundamentally altered the cultural and intellectual landscape of Europe",
+                "B": "the Middle Ages were characterized by feudalism",
+                "C": "modern technology was non-existent during that era",
+                "D": "many artists decided to abandon their craft entirely",
+                "E": "the church gained more political power than ever before"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "The study of linguistics is not merely about learning new languages ______.",
+            "options": {
+                "A": "but also about understanding the cognitive structures that underpin communication",
+                "B": "so that tourists can navigate foreign countries easily",
+                "C": "because grammar rules are often arbitrary and boring",
+                "D": "even though many people find it difficult to master phonetics",
+                "E": "which is why translation apps are becoming so popular"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution (1)______ the way humans lived and worked. Before this era, production was largely artisanal. (2)______, the introduction of steam power enabled mass production. This shift led to (3)______ urbanization as people moved to cities for work. (4)______ the economic gains, the working conditions were often abysmal. Today, historians (5)______ the long-term impact of these changes on modern society. Blank (1):",
+            "options": {
+                "A": "transformed",
+                "B": "neglected",
+                "C": "diminished",
+                "D": "hindered",
+                "E": "reverted"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution (1)______ the way humans lived and worked. Before this era, production was largely artisanal. (2)______, the introduction of steam power enabled mass production. This shift led to (3)______ urbanization as people moved to cities for work. (4)______ the economic gains, the working conditions were often abysmal. Today, historians (5)______ the long-term impact of these changes on modern society. Blank (2):",
+            "options": {
+                "A": "However",
+                "B": "Therefore",
+                "C": "Moreover",
+                "D": "Otherwise",
+                "E": "Namely"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution (1)______ the way humans lived and worked. Before this era, production was largely artisanal. (2)______, the introduction of steam power enabled mass production. This shift led to (3)______ urbanization as people moved to cities for work. (4)______ the economic gains, the working conditions were often abysmal. Today, historians (5)______ the long-term impact of these changes on modern society. Blank (3):",
+            "options": {
+                "A": "unprecedented",
+                "B": "negligible",
+                "C": "temporary",
+                "D": "stagnant",
+                "E": "insignificant"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution (1)______ the way humans lived and worked. Before this era, production was largely artisanal. (2)______, the introduction of steam power enabled mass production. This shift led to (3)______ urbanization as people moved to cities for work. (4)______ the economic gains, the working conditions were often abysmal. Today, historians (5)______ the long-term impact of these changes on modern society. Blank (4):",
+            "options": {
+                "A": "Despite",
+                "B": "Because of",
+                "C": "In addition to",
+                "D": "As for",
+                "E": "Instead of"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution (1)______ the way humans lived and worked. Before this era, production was largely artisanal. (2)______, the introduction of steam power enabled mass production. This shift led to (3)______ urbanization as people moved to cities for work. (4)______ the economic gains, the working conditions were often abysmal. Today, historians (5)______ the long-term impact of these changes on modern society. Blank (5):",
+            "options": {
+                "A": "evaluate",
+                "B": "ignore",
+                "C": "fabricate",
+                "D": "undermine",
+                "E": "surpass"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "The integration of artificial intelligence into the healthcare sector has significantly improved the accuracy of diagnostic procedures.",
+            "options": {
+                "A": "Yapay zekanin saglik sektorune entegrasyonu, tani prosedürlerinin dogrulugunu önemli ölçüde artirmistir.",
+                "B": "Saglik sektöründeki yapay zeka uygulamalari, hastaliklarin teshis edilmesini kolaylastirmistir.",
+                "C": "Yapay zeka sayesinde saglik alanindaki teshis islemleri artik daha hizli yapilmaktadir.",
+                "D": "Hastaliklarin dogru teshis edilmesi için saglik sektöründe yapay zeka kullanilmalidir.",
+                "E": "Yapay zekanin saglik sektöründeki en büyük katkisi tani yöntemlerini degistirmesi olmustur."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Küresel isinma ile mücadele etmek için ülkelerin fosil yakit tüketimini azaltmalari ve yenilenebilir enerji kaynaklarina yönelmeleri gerekmektedir.",
+            "options": {
+                "A": "In order to combat global warming, countries must reduce fossil fuel consumption and turn to renewable energy sources.",
+                "B": "Global warming can only be stopped if countries use more renewable energy instead of fossil fuels.",
+                "C": "To prevent climate change, countries should focus on renewable energy rather than fossil fuels.",
+                "D": "Countries are reducing fossil fuel use and moving toward renewable energy to fight global warming.",
+                "E": "The reduction of fossil fuel consumption is the only way for countries to combat global warming."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Although the philosopher's ideas were initially rejected, they eventually laid the foundation for modern political thought.",
+            "options": {
+                "A": "Filozofun fikirleri baslangiçta reddedilmis olsa da, sonunda modern siyasi düsüncenin temelini olusturdu.",
+                "B": "Filozofun fikirleri reddedildigi için modern siyasi düsünce geç gelismistir.",
+                "C": "Modern siyasi düsüncenin temeli, baslangiçta kabul görmeyen filozoflarin fikirlerine dayanir.",
+                "D": "Filozofun fikirleri önce kabul edilmemis, ancak daha sonra siyasi acidan önem kazanmistir.",
+                "E": "Siyasi düsüncenin gelisimi için filozofun fikirlerinin reddedilmesi bir dönüm noktasi olmustur."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Bazi bilim insanlari, Mars'ta yasamin bir zamanlar var olduguna dair ikna edici kanitlar bulduklarini iddia ediyorlar.",
+            "options": {
+                "A": "Some scientists claim that they have found compelling evidence that life once existed on Mars.",
+                "B": "Evidence of life on Mars has been discovered by scientists who claim it was once there.",
+                "C": "Scientists are trying to find proof that Mars was once a place where life existed.",
+                "D": "Some scientists believe that life on Mars will be discovered through compelling evidence.",
+                "E": "It is claimed by some scientists that life on Mars is a result of compelling evidence."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Hardly had the government announced the new tax reform when protests broke out across the major cities.",
+            "options": {
+                "A": "The protests in major cities started immediately after the government's announcement of the new tax reform.",
+                "B": "The government announced the tax reform because protests had already started in major cities.",
+                "C": "Protests in major cities prevented the government from announcing the new tax reform.",
+                "D": "The new tax reform was so unpopular that the government had to announce it during the protests.",
+                "E": "As soon as the protests broke out, the government decided to announce a new tax reform."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Owing to the lack of sufficient funding, the ambitious space mission had to be postponed indefinitely.",
+            "options": {
+                "A": "The ambitious space mission was put off for an uncertain period because there was not enough money.",
+                "B": "The space mission was cancelled entirely because the funding was diverted to other projects.",
+                "C": "Despite having enough funding, the government decided to postpone the space mission.",
+                "D": "The space mission could have been successful if the funding had not been so limited.",
+                "E": "Lack of funding is the main reason why many space missions are postponed by the agency."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The results of the clinical trial were more promising than the researchers had originally anticipated.",
+            "options": {
+                "A": "The researchers found the clinical trial results to be better than they had first expected.",
+                "B": "The clinical trial results were exactly what the researchers had predicted from the start.",
+                "C": "Researchers were disappointed that the clinical trial results were not as promising as expected.",
+                "D": "Originally, the researchers thought the clinical trial would be a complete failure.",
+                "E": "The results of the clinical trial were so promising that the researchers decided to end the study early."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It is not until children reach the age of seven that they begin to develop a complex understanding of social norms.",
+            "options": {
+                "A": "Children only start to understand social norms in a complex way once they are seven years old.",
+                "B": "By the age of seven, children have already fully mastered all social norms.",
+                "C": "Social norms are too complex for children to understand even after the age of seven.",
+                "D": "At the age of seven, children lose their interest in social norms and focus on other things.",
+                "E": "Children under seven understand social norms better than those who are older."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "John: Have you seen the latest report on biodiversity loss? \n Sarah: Yes, it is quite alarming. The rate of extinction is much higher than previously estimated. \n John: ______ \n Sarah: Exactly. Without immediate intervention, we might lose several keystone species within a decade.",
+            "options": {
+                "A": "It seems our current conservation efforts are falling short.",
+                "B": "I think the report is exaggerating the situation for political reasons.",
+                "C": "Do you know which species are most affected by this?",
+                "D": "I heard that some species are actually recovering in certain areas.",
+                "E": "How much funding do these conservation projects usually receive?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor: Your thesis on quantum entanglement is quite thorough, but you need to clarify your methodology. \n Student: I understand, Professor. I will add a more detailed explanation of the experimental setup. \n Professor: ______ \n Student: I'll focus on that in the next revision.",
+            "options": {
+                "A": "Make sure to also address the potential variables that could affect the results.",
+                "B": "You should probably change the topic to something more manageable.",
+                "C": "I don't think you need to change anything at this stage.",
+                "D": "Why did you choose this specific area of physics?",
+                "E": "The conclusion is the most important part of your research."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Interviewer: What do you consider to be the most significant challenge facing the journalism industry today? \n Journalist: The rise of misinformation and the erosion of public trust are definitely at the top. \n Interviewer: ______ \n Journalist: By prioritizing fact-checking and transparent reporting to rebuild that credibility.",
+            "options": {
+                "A": "How do you think news organizations can combat these issues?",
+                "B": "Is social media the primary source of this misinformation?",
+                "C": "Do you think traditional newspapers will eventually disappear?",
+                "D": "What role does the government play in regulating the media?",
+                "E": "Have you ever been a victim of fake news yourself?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Clara: I've been reading about the impact of remote work on employee productivity. \n Tom: Most studies suggest that it actually increases efficiency for many roles. \n Clara: ______ \n Tom: That's true. Isolation can be a major drawback for those who thrive on social interaction.",
+            "options": {
+                "A": "However, there are concerns about the lack of face-to-face collaboration.",
+                "B": "It's surprising that companies didn't adopt this model much earlier.",
+                "C": "Does it also lead to a better work-life balance for the employees?",
+                "D": "I find it much harder to focus when I am working from home.",
+                "E": "Many employers are now insisting that workers return to the office."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Urbanization is a global phenomenon that has transformed the landscape of human civilization. As more people move to cities in search of better opportunities, the demand for housing and infrastructure increases exponentially. ______. Consequently, city planners must find innovative ways to balance development with environmental preservation.",
+            "options": {
+                "A": "This rapid growth often outpaces the ability of local governments to provide essential services.",
+                "B": "Most people prefer living in rural areas because of the lower cost of living.",
+                "C": "Technological advancements have made it possible for people to work from anywhere.",
+                "D": "Historical cities were much smaller and more fortified than modern metropolises.",
+                "E": "Urban parks are essential for the mental well-being of city residents."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The concept of 'soft power' refers to a nation's ability to influence others through attraction rather than coercion. This includes cultural exports, diplomatic initiatives, and educational exchanges. ______. Thus, countries that invest in their cultural reputation often find it easier to build international alliances.",
+            "options": {
+                "A": "Unlike hard power, which relies on military strength, soft power builds long-term goodwill.",
+                "B": "Military interventions are often criticized for being too expensive and ineffective.",
+                "C": "Economic sanctions are a common tool used in international diplomacy today.",
+                "D": "Many nations are now focusing on increasing their defense budgets.",
+                "E": "The internet has changed the way information is disseminated across borders."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "In the field of medicine, the development of antibiotics was one of the most significant breakthroughs of the 20th century. Before their discovery, even minor infections could be fatal. ______. Overuse and misuse of these drugs have led to the emergence of resistant strains of bacteria.",
+            "options": {
+                "A": "However, the rise of antibiotic resistance now poses a grave threat to global health.",
+                "B": "Antibiotics are only effective against bacterial infections, not viral ones.",
+                "C": "The discovery of penicillin by Alexander Fleming changed the course of history.",
+                "D": "Many pharmaceutical companies are now investing in the development of new vaccines.",
+                "E": "Doctors usually prescribe a full course of antibiotics to ensure the infection is gone."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The study of ethics involves examining what is considered right and wrong in human conduct. Different cultures have various moral frameworks that guide their behavior. ______. These universal principles, such as justice and fairness, often transcend cultural boundaries.",
+            "options": {
+                "A": "Despite these differences, some ethical values appear to be shared by all societies.",
+                "B": "Philosophers have debated the nature of morality for thousands of years.",
+                "C": "Relativism suggests that there is no absolute truth in ethical matters.",
+                "D": "The legal system is often based on the ethical values of the majority.",
+                "E": "Teaching ethics in schools is becoming increasingly popular in modern education."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The manager's decision to cut costs by reducing the workforce proved to be counterproductive in the long run.",
+            "options": {
+                "A": "Reducing staff to save money ultimately had the opposite effect of what the manager intended.",
+                "B": "The manager succeeded in saving money by firing several employees as planned.",
+                "C": "If the manager had not cut costs, the company would have gone bankrupt.",
+                "D": "The workforce was unhappy with the manager's decision to reduce their wages.",
+                "E": "It was necessary for the manager to reduce the workforce to stay competitive."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Few people realized that the seemingly insignificant event would lead to a major political crisis.",
+            "options": {
+                "A": "The major political crisis was triggered by an event that most people thought was unimportant.",
+                "B": "Everyone knew that the event would cause a crisis, but no one did anything to stop it.",
+                "C": "The political crisis could have been avoided if the event had been taken more seriously.",
+                "D": "It was an important event, but its political consequences were mostly ignored by the public.",
+                "E": "The event was so significant that it immediately caused a nationwide political crisis."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The novel's intricate plot and complex characters make it a challenging but rewarding read.",
+            "options": {
+                "A": "The book is difficult to read due to its complicated story, but it is worth the effort.",
+                "B": "The characters in the novel are so simple that the plot becomes boring after a while.",
+                "C": "Readers find the novel rewarding because the plot is very straightforward and easy to follow.",
+                "D": "The author failed to create a rewarding experience because the plot was too simple.",
+                "E": "It is impossible to understand the novel without first knowing the background of the characters."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Solar energy is one of the most abundant sources of renewable energy on Earth. (II) It is harnessed using photovoltaic cells or solar thermal collectors. (III) Fossil fuels, on the other hand, are finite and contribute to environmental pollution. (IV) The efficiency of solar panels has improved significantly over the last decade. (V) This makes it a viable alternative for meeting the world's growing energy needs.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Cognitive behavioral therapy (CBT) is a widely used psychological treatment for various mental health issues. (II) It focuses on identifying and changing negative thought patterns. (III) Many patients find it helpful for managing anxiety and depression. (IV) Some people prefer traditional psychoanalysis over more modern techniques. (V) Clinical trials have shown that CBT is as effective as medication for certain conditions.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Great Wall of China is one of the most impressive architectural feats in human history. (II) It was built over several centuries to protect the Chinese Empire from invasions. (III) Tourism has become a major source of income for many regions near the wall. (IV) The wall stretches for thousands of miles across rugged terrain and mountains. (V) Despite its age, many sections of the wall remain remarkably well-preserved today.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Deepsea Challenger was a deep-diving submersible designed to reach the bottom of the Mariana Trench, the deepest part of the world's oceans. In 2012, it successfully carried filmmaker James Cameron to a depth of nearly 11 kilometers. The mission was not just a personal milestone for Cameron but also a significant scientific endeavor. The submersible was equipped with high-definition cameras and sampling tools to collect biological and geological data from the ocean floor. The extreme pressure at such depths—over a thousand times the atmospheric pressure at sea level—meant that the vessel had to be constructed from specialized materials to prevent it from imploding. Question: What was a primary technical challenge for the construction of the Deepsea Challenger?",
+            "options": {
+                "A": "The immense pressure found at the bottom of the Mariana Trench.",
+                "B": "The lack of light in the deepest parts of the ocean.",
+                "C": "The difficulty of installing high-definition cameras on the vessel.",
+                "D": "The need to make the submersible fast enough to reach the bottom quickly.",
+                "E": "The high cost of the materials required for the mission."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Deepsea Challenger was a deep-diving submersible designed to reach the bottom of the Mariana Trench, the deepest part of the world's oceans. In 2012, it successfully carried filmmaker James Cameron to a depth of nearly 11 kilometers. The mission was not just a personal milestone for Cameron but also a significant scientific endeavor. The submersible was equipped with high-definition cameras and sampling tools to collect biological and geological data from the ocean floor. The extreme pressure at such depths—over a thousand times the atmospheric pressure at sea level—meant that the vessel had to be constructed from specialized materials to prevent it from imploding. Question: According to the passage, the mission's objectives included ______.",
+            "options": {
+                "A": "both personal achievement and scientific research",
+                "B": "finding new species of fish for commercial use",
+                "C": "testing the limits of human endurance in deep water",
+                "D": "filming a movie about the Mariana Trench",
+                "E": "breaking the world record for the fastest descent"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Deepsea Challenger was a deep-diving submersible designed to reach the bottom of the Mariana Trench, the deepest part of the world's oceans. In 2012, it successfully carried filmmaker James Cameron to a depth of nearly 11 kilometers. The mission was not just a personal milestone for Cameron but also a significant scientific endeavor. The submersible was equipped with high-definition cameras and sampling tools to collect biological and geological data from the ocean floor. The extreme pressure at such depths—over a thousand times the atmospheric pressure at sea level—meant that the vessel had to be constructed from specialized materials to prevent it from imploding. Question: It can be inferred from the passage that ______.",
+            "options": {
+                "A": "human exploration of the deep ocean requires advanced engineering",
+                "B": "the Mariana Trench is the only place with extreme underwater pressure",
+                "C": "James Cameron is the only person to have ever visited the trench",
+                "D": "scientific data from the deep sea is relatively easy to collect",
+                "E": "high-definition cameras are useless in the dark ocean depths"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The concept of the 'Uncanny Valley' was first proposed by Japanese roboticist Masahiro Mori in 1970. It suggests that as a robot's appearance becomes more human-like, a person's emotional response to the robot will become increasingly positive and empathetic. However, there is a point where the appearance becomes so realistic, yet slightly 'off,' that the response quickly turns to strong revulsion or unease. This dip in the emotional response graph is the 'uncanny valley.' As the robot's appearance continues to improve and becomes indistinguishable from a real human, the emotional response becomes positive again. This phenomenon has significant implications for the design of humanoid robots and computer-generated characters in movies. Question: What does the 'Uncanny Valley' describe?",
+            "options": {
+                "A": "A sudden drop in positive emotional response toward near-human-like robots.",
+                "B": "The process of making robots look exactly like human beings.",
+                "C": "A valley in Japan where the first humanoid robots were developed.",
+                "D": "The high cost of creating realistic characters in films.",
+                "E": "The positive reaction people have to very simple, non-human robots."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The concept of the 'Uncanny Valley' was first proposed by Japanese roboticist Masahiro Mori in 1970. It suggests that as a robot's appearance becomes more human-like, a person's emotional response to the robot will become increasingly positive and empathetic. However, there is a point where the appearance becomes so realistic, yet slightly 'off,' that the response quickly turns to strong revulsion or unease. This dip in the emotional response graph is the 'uncanny valley.' As the robot's appearance continues to improve and becomes indistinguishable from a real human, the emotional response becomes positive again. This phenomenon has significant implications for the design of humanoid robots and computer-generated characters in movies. Question: According to the passage, when does the emotional response toward a robot become positive again?",
+            "options": {
+                "A": "When the robot's appearance is indistinguishable from a real person.",
+                "B": "When the robot starts to behave like a human rather than just looking like one.",
+                "C": "When the robot is simplified to look more like a cartoon character.",
+                "D": "When the user becomes accustomed to the 'uncanny' appearance.",
+                "E": "When the robot is used in a movie instead of in real life."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The concept of the 'Uncanny Valley' was first proposed by Japanese roboticist Masahiro Mori in 1970. It suggests that as a robot's appearance becomes more human-like, a person's emotional response to the robot will become increasingly positive and empathetic. However, there is a point where the appearance becomes so realistic, yet slightly 'off,' that the response quickly turns to strong revulsion or unease. This dip in the emotional response graph is the 'uncanny valley.' As the robot's appearance continues to improve and becomes indistinguishable from a real human, the emotional response becomes positive again. This phenomenon has significant implications for the design of humanoid robots and computer-generated characters in movies. Question: Which of the following fields would find the 'Uncanny Valley' concept most relevant according to the text?",
+            "options": {
+                "A": "Animation and robotics design.",
+                "B": "Deep-sea exploration and geology.",
+                "C": "Agricultural science and farming.",
+                "D": "Linguistics and language teaching.",
+                "E": "Traditional architecture and civil engineering."
+            },
+            "correct": "A"
+        }
+    ]
+}

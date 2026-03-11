@@ -1,0 +1,638 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 16",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The newly developed vaccine showed a/an ---- effect on the progression of the virus, significantly reducing the mortality rate in clinical trials.",
+            "options": {
+                "A": "adverse",
+                "B": "marginal",
+                "C": "profound",
+                "D": "ambiguous",
+                "E": "redundant"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Advancements in artificial intelligence have ---- the way industries approach data analysis, making it faster and more precise than ever before.",
+            "options": {
+                "A": "impeded",
+                "B": "revolutionized",
+                "C": "curtailed",
+                "D": "neglected",
+                "E": "deteriorated"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The archaeological findings at the site were ---- of a complex society that existed long before written records were established.",
+            "options": {
+                "A": "indicative",
+                "B": "suspicious",
+                "C": "negligent",
+                "D": "exclusive",
+                "E": "vulnerable"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Although the global economy is showing signs of recovery, ----.",
+            "options": {
+                "A": "the unemployment rates in several regions remain alarmingly high",
+                "B": "most investors are confident that the growth will be permanent",
+                "C": "international trade has reached its peak in the last decade",
+                "D": "the central banks have decided to lower the interest rates immediately",
+                "E": "governments have successfully eliminated all fiscal deficits"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "---- that the ancient ruins found in the jungle belonged to a previously unknown civilization.",
+            "options": {
+                "A": "It was only after years of intensive research",
+                "B": "Researchers have been skeptical about the claim",
+                "C": "Despite the evidence provided by the team",
+                "D": "Even though local legends spoke of the site",
+                "E": "The discovery was so unexpected"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Just as the Industrial Revolution transformed the social fabric of the 19th century, ----.",
+            "options": {
+                "A": "the digital age is currently reshaping the way we interact and work",
+                "B": "people used to live in rural areas before moving to cities",
+                "C": "steam engines were once the primary source of power",
+                "D": "labor laws were eventually introduced to protect workers",
+                "E": "traditional agriculture remained the backbone of the economy"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Environmentalists argue that unless stricter regulations are implemented, ----.",
+            "options": {
+                "A": "the biodiversity of the Amazon rainforest will continue to decline",
+                "B": "the local communities have already started recycling programs",
+                "C": "renewable energy sources are becoming more affordable",
+                "D": "pollution levels have stayed constant for the past five years",
+                "E": "global warming is a phenomenon that can be ignored"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "CLOZE TEST - PASSAGE: The Renaissance was a fervent period of European cultural, artistic, political and economic 'rebirth' following the Middle Ages. Generally (1) ---- to have taken place from the 14th century to the 17th century, the Renaissance promoted the rediscovery of classical philosophy, literature and art. [Blank 1]",
+            "options": {
+                "A": "described",
+                "B": "regarded",
+                "C": "ignored",
+                "D": "consisted",
+                "E": "attributed"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 2] Some of the greatest thinkers, authors, statesmen, scientists and artists in human history (2) ---- during this era.",
+            "options": {
+                "A": "flourished",
+                "B": "vanished",
+                "C": "declined",
+                "D": "suffered",
+                "E": "stagnated"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 3] While the period is often associated with Italy, it (3) ---- spread across the rest of Europe.",
+            "options": {
+                "A": "hardly",
+                "B": "eventually",
+                "C": "never",
+                "D": "rarely",
+                "E": "temporarily"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 4] This cultural movement had a (4) ---- impact on the course of Western civilization.",
+            "options": {
+                "A": "lasting",
+                "B": "minor",
+                "C": "negative",
+                "D": "fictional",
+                "E": "superficial"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 5] It is often credited (5) ---- bridging the gap between the Middle Ages and modern-day civilization.",
+            "options": {
+                "A": "for",
+                "B": "with",
+                "C": "by",
+                "D": "to",
+                "E": "at"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Kuantum fiziĐi, atom altı d\u0000zeydeki maddelerin ve enerjinin doĐasını anlamaya ŕalıŕan modern bilim dalıdır.",
+            "options": {
+                "A": "Quantum physics is a branch of modern science that seeks to understand the nature of matter and energy at the subatomic level.",
+                "B": "Modern science uses quantum physics to explore how matter and energy behave in atoms.",
+                "C": "The nature of energy and matter is studied by quantum physics in the subatomic world.",
+                "D": "Quantum physics aims to describe the subatomic particles within modern scientific frameworks.",
+                "E": "Matter and energy at the subatomic level are the main subjects of quantum physics."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Despite the harsh weather conditions, the rescue team managed to reach the stranded climbers.",
+            "options": {
+                "A": "Sert hava koŕullarına raĐmen kurtarma ekibi mahsur kalan daĐcılara ulaŕmayı baŕardı.",
+                "B": "Hava koŕulları sert olsa da kurtarma ekibi daĐcıların yanına ulaŕtı.",
+                "C": "Kurtarma ekibi sert hava koŕullarına karŕı daĐcılara ulaŕmak iŕin ŕabaladı.",
+                "D": "DaĐcılar mahsur kaldıĐında hava koŕullarına raĐmen ekibe haber verildi.",
+                "E": "Kurtarma ekibinin mahsur kalan daĐcılara ulaŕması sert hava nedeniyle gecikti."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Yenilenebilir enerji kaynaklarının kullanımı, karbon salınımını azaltmak iŕin hayati \u0000neme sahiptir.",
+            "options": {
+                "A": "The use of renewable energy sources is of vital importance for reducing carbon emissions.",
+                "B": "Reducing carbon emissions requires the vital use of renewable energy sources.",
+                "C": "Using renewable energy is important because it can reduce carbon emissions.",
+                "D": "Renewable energy sources are vital if we want to lower carbon emissions.",
+                "E": "Carbon emissions can only be reduced by the vital use of renewable energy."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "The decision to postpone the conference was made due to unforeseen logistical challenges.",
+            "options": {
+                "A": "Konferansı erteleme kararı \u0000ng\u0000r\u0000lemeyen lojistik zorluklar nedeniyle alındı.",
+                "B": "Lojistik zorluklar y\u0000z\u0000nden konferans ertelenmek zorunda kaldı.",
+                "C": "\u0000ng\u0000r\u0000lemeyen sorunlar y\u0000z\u0000nden konferansın ertelenmesine karar verildi.",
+                "D": "Lojistik engeller nedeniyle konferans ileri bir tarihe ertelendi.",
+                "E": "Konferans ertelendi ŕ\u0000nk\u0000 beklenmedik lojistik problemler ortaya ŕıktı."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Only by working together can we hope to solve the complex problems facing our society today.",
+            "options": {
+                "A": "We can only solve the difficult issues of our time if we cooperate.",
+                "B": "Working together is one of the many ways to solve social problems.",
+                "C": "Societal problems are too complex to be solved even if we work together.",
+                "D": "We hope that working together will eventually solve our problems.",
+                "E": "Collaboration is helpful, but not necessary to solve today's problems."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The result of the study was quite unexpected, as it contradicted previous research in the field.",
+            "options": {
+                "A": "The study's outcome was surprising because it went against earlier findings.",
+                "B": "Previous research was confirmed by the unexpected results of the new study.",
+                "C": "The researchers did not expect the study to be so different from others.",
+                "D": "The study was surprising, although it matched what was previously known.",
+                "E": "Contradicting previous research, the study produced expected results."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Hardly had the government announced the new policy when public protests began.",
+            "options": {
+                "A": "Protests started almost immediately after the government's policy announcement.",
+                "B": "The government announced the policy despite the ongoing public protests.",
+                "C": "Public protests had already begun before the policy was announced.",
+                "D": "The policy announcement was delayed due to the threat of public protests.",
+                "E": "As soon as the protests started, the government announced the policy."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It is estimated that more than half of the world's population will live in urban areas by 2050.",
+            "options": {
+                "A": "By 2050, over 50 percent of people globally are expected to reside in cities.",
+                "B": "More than half of the population has already moved to cities by 2050.",
+                "C": "Cities will house exactly half of the world's population in the year 2050.",
+                "D": "Urban living will be the choice for most people before the year 2050.",
+                "E": "The population in urban areas will double by the year 2050."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Alex: Have you seen the latest report on climate change? It's quite alarming.\nSarah: ----\nAlex: Exactly. If we don't act now, the damage might be irreversible.",
+            "options": {
+                "A": "I haven't had the chance to read it yet.",
+                "B": "Yes, it highlights how quickly the polar ice caps are melting.",
+                "C": "Climate change is a natural cycle of the Earth.",
+                "D": "I think the report is a bit too pessimistic.",
+                "E": "Which report are you referring to?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor: The midterm exam will cover everything we've discussed so far.\nStudent: ----\nProfessor: Yes, that includes the guest lecture from last week.",
+            "options": {
+                "A": "Will there be any multiple-choice questions?",
+                "B": "Is the guest lecture also included in the exam?",
+                "C": "Can we use our textbooks during the test?",
+                "D": "How much time will we have to complete it?",
+                "E": "Where will the exam take place?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Manager: I'm concerned about the delay in the project timeline.\nTeam Lead: ----\nManager: We need to find a way to speed up the process without compromising quality.",
+            "options": {
+                "A": "The team is working overtime to catch up.",
+                "B": "I think the timeline was too ambitious from the start.",
+                "C": "We are actually ahead of schedule.",
+                "D": "The delay is due to the lack of resources.",
+                "E": "Everything is going according to plan."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Doctor: How have you been feeling since we started the new medication?\nPatient: ----\nDoctor: That's a common side effect. It should subside in a few days.",
+            "options": {
+                "A": "I feel much better, thank you.",
+                "B": "I've been experiencing some dizziness in the mornings.",
+                "C": "I haven't started taking it yet.",
+                "D": "The medication is very expensive.",
+                "E": "Can you prescribe something else?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The concept of sustainable development emerged in the late 20th century as a response to growing environmental concerns. It emphasizes the need to balance economic growth with environmental protection. ----. This approach aims to ensure that future generations can also enjoy a high quality of life.",
+            "options": {
+                "A": "Economic growth is the only priority for developing nations.",
+                "B": "It suggests that resources should be used in a way that doesn't deplete them.",
+                "C": "Environmental protection is often ignored by large corporations.",
+                "D": "The concept has been criticized for being too idealistic.",
+                "E": "Many countries have already achieved sustainable development."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "In the world of finance, risk management is a crucial process. It involves identifying, assessing, and prioritizing risks to minimize their impact on an organization. ----. By doing so, they can protect their assets and ensure long-term stability.",
+            "options": {
+                "A": "Companies use various tools and strategies to manage these risks.",
+                "B": "Risks are often unpredictable and cannot be managed.",
+                "C": "The stock market is the most volatile area of finance.",
+                "D": "Most organizations do not have a dedicated risk management team.",
+                "E": "Individual investors are more prone to risks than corporations."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Language is not just a tool for communication; it is also a carrier of culture. Through language, people express their values, beliefs, and traditions. ----. Therefore, when a language disappears, a unique cultural heritage is often lost as well.",
+            "options": {
+                "A": "Learning a new language is a challenging but rewarding experience.",
+                "B": "Many languages are now being taught in schools around the world.",
+                "C": "It is deeply intertwined with the identity of a community.",
+                "D": "English has become the global lingua franca of the modern era.",
+                "E": "Translation software has made communication much easier."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The rise of social media has fundamentally changed the way we consume news. Instead of waiting for the evening broadcast, people now get instant updates on their smartphones. ----. This has led to concerns about the spread of misinformation and echo chambers.",
+            "options": {
+                "A": "Social media platforms are now the primary source of news for many.",
+                "B": "Traditional newspapers are still the most reliable source of information.",
+                "C": "Most people prefer to read news in print rather than online.",
+                "D": "The internet has made news more accessible to everyone.",
+                "E": "Journalists are now required to have a strong social media presence."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The expansion of the city has led to the destruction of many natural habitats.",
+            "options": {
+                "A": "The city's growth has caused many natural environments to be destroyed.",
+                "B": "Many habitats were preserved despite the expansion of the city.",
+                "C": "The city expanded because many natural habitats were destroyed.",
+                "D": "Natural habitats were destroyed before the city started to expand.",
+                "E": "The destruction of habitats led to the rapid expansion of the city."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "It's essential that you follow the instructions carefully to avoid any mistakes.",
+            "options": {
+                "A": "You must adhere to the instructions strictly so as not to make errors.",
+                "B": "Mistakes can be avoided even if you don't follow the instructions.",
+                "C": "Following the instructions is optional if you want to avoid mistakes.",
+                "D": "If you make mistakes, it's because you didn't follow the instructions.",
+                "E": "Carefully following instructions is one way to minimize mistakes."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Despite her talent, she failed to win the competition.",
+            "options": {
+                "A": "She didn't win the competition, even though she is talented.",
+                "B": "Her talent was the reason she almost won the competition.",
+                "C": "She failed the competition because she lacked enough talent.",
+                "D": "She won the competition because her talent was recognized.",
+                "E": "Although she won, her talent was not really acknowledged."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Great Wall of China is one of the most impressive architectural feats in history. (II) It was built over several centuries to protect the Chinese Empire from invasions. (III) Today, it is a major tourist attraction, drawing millions of visitors each year. (IV) Most of the wall we see today was built during the Ming Dynasty. (V) Chinese cuisine is famous for its diverse flavors and ingredients.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "E"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Solar energy is a clean and renewable source of power. (II) It harnesses the energy from the sun using photovoltaic cells. (III) Many countries are investing heavily in solar infrastructure to reduce their carbon footprint. (IV) Fossil fuels, on the other hand, are finite and contribute to pollution. (V) The cost of solar panels has decreased significantly in recent years.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The human brain is a complex organ that controls every function of the body. (II) It consists of billions of neurons that communicate through electrical signals. (III) Regular exercise is important for maintaining overall physical health. (IV) Different regions of the brain are responsible for specific tasks, such as memory and emotion. (V) Research into the brain continues to reveal new insights into how we think and learn.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE: The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. It transitioned societies from agrarian economies to industrialized ones, characterized by the use of new machines and production techniques. This shift led to massive urbanization as people moved from the countryside to cities in search of work in factories. While it brought about significant economic growth and technological advancement, it also resulted in poor working conditions and environmental degradation. QUESTION: According to the passage, what was a direct result of the shift to industrialized economies?",
+            "options": {
+                "A": "A decrease in the global population",
+                "B": "A move from urban areas to the countryside",
+                "C": "The development of new machines and production techniques",
+                "D": "An improvement in environmental conditions",
+                "E": "A decline in technological advancement"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE: [Same as above] QUESTION: Which of the following is mentioned as a negative consequence of the Industrial Revolution?",
+            "options": {
+                "A": "Rapid urbanization",
+                "B": "Economic growth",
+                "C": "Technological advancement",
+                "D": "Poor working conditions",
+                "E": "Transition from agrarian economies"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE: [Same as above] QUESTION: Where did the Industrial Revolution originate?",
+            "options": {
+                "A": "France",
+                "B": "Germany",
+                "C": "The United States",
+                "D": "Britain",
+                "E": "China"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE: Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll. This process involves the intake of carbon dioxide and the release of oxygen as a byproduct. Photosynthesis is crucial for life on Earth because it provides the primary source of energy for nearly all food chains. Furthermore, it plays a vital role in regulating the Earth's atmosphere by maintaining oxygen levels. QUESTION: What is a byproduct of the photosynthesis process?",
+            "options": {
+                "A": "Carbon dioxide",
+                "B": "Sunlight",
+                "C": "Chlorophyll",
+                "D": "Oxygen",
+                "E": "Glucose"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE: [Same as above] QUESTION: Why is photosynthesis considered crucial for life on Earth?",
+            "options": {
+                "A": "It consumes oxygen from the atmosphere.",
+                "B": "It is the primary source of energy for most food chains.",
+                "C": "It only occurs in the deep ocean.",
+                "D": "It prevents plants from growing too large.",
+                "E": "It eliminates the need for sunlight."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE: [Same as above] QUESTION: Which substance helps plants in the synthesis of food during photosynthesis?",
+            "options": {
+                "A": "Nitrogen",
+                "B": "Chlorophyll",
+                "C": "Hydrogen",
+                "D": "Carbon monoxide",
+                "E": "Helium"
+            },
+            "correct": "B"
+        }
+    ]
+}
