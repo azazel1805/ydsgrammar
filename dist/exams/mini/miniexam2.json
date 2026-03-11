@@ -1,0 +1,587 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 2",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 8
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 9,
+            "to": 13
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 14,
+            "to": 18
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 19,
+            "to": 23
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 24,
+            "to": 28
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 29,
+            "to": 33
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 34,
+            "to": 37
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 38,
+            "to": 40
+        }
+    ],
+    "passages": [],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "question": "Despite the rapid advancements in medical technology, a complete cure for certain autoimmune diseases remains ----, leaving researchers to focus primarily on symptom management.",
+            "options": {
+                "A": "elusive",
+                "B": "inevitable",
+                "C": "redundant",
+                "D": "lucrative",
+                "E": "obsolete"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "question": "The archaeological team discovered a series of artifacts that ---- the previously held theory about the ancient civilization's trade networks.",
+            "options": {
+                "A": "corroborated",
+                "B": "undermined",
+                "C": "perpetuated",
+                "D": "instigated",
+                "E": "alleviated"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "question": "In many developing nations, the transition to renewable energy sources is often hindered by ---- bureaucratic regulations that deter foreign investment.",
+            "options": {
+                "A": "streamlined",
+                "B": "cumbersome",
+                "C": "ephemeral",
+                "D": "pragmatic",
+                "E": "arbitrary"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "question": "Although artificial intelligence has significantly improved the efficiency of data analysis, ----.",
+            "options": {
+                "A": "it still lacks the intuitive reasoning required for nuanced decision-making",
+                "B": "there is a growing demand for data scientists in the technology sector",
+                "C": "the algorithms have become increasingly complex and difficult to maintain",
+                "D": "many companies have seamlessly integrated these systems into their workflow",
+                "E": "its potential applications in healthcare are virtually limitless"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "question": "----, the central bank decided to increase interest rates for the third consecutive quarter.",
+            "options": {
+                "A": "Unless inflation begins to show signs of stabilizing",
+                "B": "In order to curb the escalating inflation that threatens the economy",
+                "C": "Given that consumer spending has reached an all-time low",
+                "D": "While the government introduced new tax incentives for businesses",
+                "E": "Because the unemployment rate had dropped significantly"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "question": "The documentary not only sheds light on the environmental impact of fast fashion ----.",
+            "options": {
+                "A": "but also highlights the unethical labor practices prevalent in the industry",
+                "B": "and it provides a comprehensive overview of global trade agreements",
+                "C": "so consumers are increasingly opting for sustainable clothing brands",
+                "D": "yet it fails to offer viable solutions for everyday shoppers",
+                "E": "because the textile industry is one of the largest polluters worldwide"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "question": "Had the research team secured the necessary funding earlier, ----.",
+            "options": {
+                "A": "they would have been able to conduct a much larger clinical trial",
+                "B": "the project will likely yield groundbreaking results in genetics",
+                "C": "they might face fewer obstacles in publishing their findings",
+                "D": "the university has already allocated a budget for next year",
+                "E": "they can hire more assistants to accelerate the data collection"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 8,
+            "section_id": "completion",
+            "question": "Urban planners must consider not only the immediate housing needs of the growing population ----.",
+            "options": {
+                "A": "but also the long-term sustainability of the city's infrastructure",
+                "B": "which is why public transportation is heavily subsidized",
+                "C": "since many residents prefer living in suburban neighborhoods",
+                "D": "thus creating a more vibrant and diverse community",
+                "E": "rather than focusing solely on commercial real estate development"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "question": "The concept of dark matter was (1) ---- proposed to explain the gravitational anomalies observed in galaxy clusters.",
+            "options": {
+                "A": "initially",
+                "B": "reluctantly",
+                "C": "inadvertently",
+                "D": "maliciously",
+                "E": "superficially"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "question": "Despite decades of intensive research, dark matter remains undetectable (2) ---- direct observation.",
+            "options": {
+                "A": "through",
+                "B": "over",
+                "C": "against",
+                "D": "beneath",
+                "E": "within"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "question": "Scientists believe that it accounts (3) ---- approximately 85 percent of the matter in the universe.",
+            "options": {
+                "A": "for",
+                "B": "to",
+                "C": "with",
+                "D": "by",
+                "E": "from"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "question": "If researchers (4) ---- a way to interact with it, our understanding of physics would fundamentally change.",
+            "options": {
+                "A": "were to find",
+                "B": "had found",
+                "C": "will find",
+                "D": "are finding",
+                "E": "have found"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "cloze",
+            "question": "Until then, astrophysicists must rely on indirect evidence, (5) ---- involves studying the cosmic microwave background.",
+            "options": {
+                "A": "which",
+                "B": "that",
+                "C": "whose",
+                "D": "where",
+                "E": "whom"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "question": "The ability of certain marine species to adapt to rising ocean temperatures provides crucial insights into the resilience of aquatic ecosystems.",
+            "options": {
+                "A": "Bazi deniz turlerinin artan okyanus sicakliklarina uyum saglama yetenegi, su ekosistemlerinin dayanikliligi hakkinda cok onemli bilgiler saglar.",
+                "B": "Artan okyanus sicakliklarina uyum saglayan bazi deniz turleri, su ekosistemlerinin ne kadar dayanikli oldugunu gostermektedir.",
+                "C": "Su ekosistemlerinin dayanikliligi hakkindaki en onemli bilgiler, bazi deniz turlerinin artan okyanus sicakliklarina uyum saglamasindan elde edilir.",
+                "D": "Bazi deniz turlerinin artan okyanus sicakliklarina karsi gosterdigi direnc, su ekosistemlerinin uyum saglama yetenegi hakkinda ipuclari verir.",
+                "E": "Okyanus sicakliklari arttikca bazi deniz turlerinin buna uyum saglamasi, su ekosistemlerinin dayanikliligini anlamamizi saglar."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "question": "Unless comprehensive measures are taken to reduce carbon emissions, extreme weather events will become more frequent and severe.",
+            "options": {
+                "A": "Karbon emisyonlarini azaltmak icin kapsamli onlemler alinmadikca, asiri hava olaylari daha sik ve siddetli hale gelecektir.",
+                "B": "Eger karbon emisyonlarini azaltacak kapsamli onlemler alinmazsa, asiri hava olaylarinin sikligi ve siddeti artabilir.",
+                "C": "Karbon emisyonlarinin azaltilmasi amaciyla alinacak kapsamli onlemler, asiri hava olaylarinin daha sik ve siddetli olmasini engelleyecektir.",
+                "D": "Asiri hava olaylarinin daha sik ve siddetli hale gelmemesi icin karbon emisyonlarini azaltmaya yonelik kapsamli onlemler alinmalidir.",
+                "E": "Kapsamli onlemler alinarak karbon emisyonlari azaltilmazsa, asiri hava olaylarinin yasanma sikligi ve siddeti artmaya devam edecektir."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "question": "Yapay zeka teknolojilerinin hizli gelisimi, bircok sektorun isleyis bicimini kokten degistirme potansiyeline sahiptir.",
+            "options": {
+                "A": "The rapid development of artificial intelligence technologies has the potential to fundamentally change the way many sectors operate.",
+                "B": "Artificial intelligence technologies are developing so rapidly that they can fundamentally change the operations of many sectors.",
+                "C": "The potential to fundamentally change how many sectors operate lies in the rapid development of artificial intelligence technologies.",
+                "D": "Due to the rapid development of artificial intelligence technologies, the way many sectors operate will fundamentally change.",
+                "E": "Many sectors have the potential to change their operations fundamentally because of the rapid development of artificial intelligence technologies."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "translation",
+            "question": "Tarihci, imparatorlugun cokusunun tek bir nedene degil, bir dizi karmasik sosyoekonomik faktore bagli oldugunu iddia etmektedir.",
+            "options": {
+                "A": "The historian argues that the collapse of the empire was due not to a single cause, but to a series of complex socioeconomic factors.",
+                "B": "According to the historian, a series of complex socioeconomic factors, rather than a single cause, led to the collapse of the empire.",
+                "C": "The historian claims that it was a series of complex socioeconomic factors, not just a single cause, that brought about the fall of the empire.",
+                "D": "The fall of the empire, as the historian argues, depended on a series of complex socioeconomic factors instead of a single cause.",
+                "E": "The historian maintains that the empire declined not because of a single reason, but due to multiple complex socioeconomic factors."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "translation",
+            "question": "Genetik arastirmalardaki son bulgular, bazi hastaliklarin kalitsal olabilecegini kesin olarak kanitlamistir.",
+            "options": {
+                "A": "Recent findings in genetic research have conclusively proven that certain diseases can be hereditary.",
+                "B": "It has been conclusively proven by recent findings in genetic research that some diseases are hereditary.",
+                "C": "Recent genetic research findings provide conclusive proof that certain diseases might be inherited.",
+                "D": "The fact that certain diseases can be hereditary has been definitively proven by recent findings in genetic research.",
+                "E": "Conclusive evidence from recent findings in genetic research shows that some diseases are inherited."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "question": "No sooner had the company launched its new software than users started reporting critical security flaws.",
+            "options": {
+                "A": "Immediately after the company released its new software, users began to complain about major security vulnerabilities.",
+                "B": "The company launched its new software because users were complaining about critical security flaws.",
+                "C": "Users started reporting critical security flaws long before the company actually launched its new software.",
+                "D": "If the company had not launched its new software, users would not have reported critical security flaws.",
+                "E": "The company delayed the launch of its new software until users stopped reporting critical security flaws."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "question": "But for the generous donations from alumni, the university would not have been able to build the new research facility.",
+            "options": {
+                "A": "If it hadn't been for the substantial financial support of former students, the university's new research center could not have been constructed.",
+                "B": "The university built the new research facility in order to encourage generous donations from its alumni.",
+                "C": "Despite the generous donations from alumni, the university failed to complete the construction of the new research facility.",
+                "D": "The university would have built the new research facility even if the alumni had not made generous donations.",
+                "E": "Thanks to the new research facility, the university was able to collect generous donations from its alumni."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "paraphrase",
+            "question": "Much to the dismay of the environmentalists, the government approved the construction of the controversial dam.",
+            "options": {
+                "A": "The government's decision to authorize the building of the disputed dam caused great disappointment among environmental advocates.",
+                "B": "The environmentalists were delighted when the government finally approved the construction of the controversial dam.",
+                "C": "The government decided not to approve the construction of the controversial dam due to the protests of environmentalists.",
+                "D": "Environmentalists persuaded the government to approve the construction of the controversial dam despite public dismay.",
+                "E": "The construction of the controversial dam was delayed because of the dismay expressed by environmentalists and the government."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 22,
+            "section_id": "paraphrase",
+            "question": "It is widely acknowledged that a balanced diet is indispensable for maintaining optimal physical and mental health.",
+            "options": {
+                "A": "Everyone agrees that you cannot maintain perfect physical and mental well-being without consuming a well-proportioned diet.",
+                "B": "Some experts believe that a balanced diet is somewhat helpful for maintaining physical and mental health.",
+                "C": "It is often claimed that physical and mental health can be maintained even without a balanced diet.",
+                "D": "A balanced diet is generally considered to be the only factor that influences optimal physical and mental health.",
+                "E": "Most people ignore the fact that a balanced diet is essential for physical and mental health."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "paraphrase",
+            "question": "The CEO resigned amidst allegations of financial misconduct, paving the way for a massive restructuring of the corporation.",
+            "options": {
+                "A": "Following accusations of financial impropriety, the CEO stepped down, which led to a significant reorganization within the company.",
+                "B": "The corporation underwent a massive restructuring because the CEO refused to resign despite allegations of financial misconduct.",
+                "C": "The CEO reorganized the corporation heavily before resigning due to rumors of financial misconduct.",
+                "D": "Allegations of financial misconduct arose after the CEO resigned and the corporation was massively restructured.",
+                "E": "The CEO's resignation prevented the corporation from undergoing a massive restructuring amid financial misconduct allegations."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "question": "Professor: The essay lacks a clear thesis statement, which makes your argument difficult to follow. Student: ---- Professor: Exactly. You need to explicitly state your main point in the introduction so the reader knows what to expect.",
+            "options": {
+                "A": "Are you suggesting that I need to make my central claim more obvious right at the beginning?",
+                "B": "Do you think I should add more references to support my conclusion?",
+                "C": "Is it because the topic itself is too complex for a standard essay?",
+                "D": "Should I change the formatting to make the paragraphs look more organized?",
+                "E": "Are you saying that my vocabulary choices are too informal for academic writing?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "dialogue",
+            "question": "Interviewer: How does your team handle the ethical implications of using AI in recruitment? Manager: ---- Interviewer: That sounds like a solid approach, but how do you verify that the training data itself is unbiased?",
+            "options": {
+                "A": "We ensure that all our algorithms are regularly audited for potential biases by an independent third party.",
+                "B": "We primarily focus on maximizing efficiency and reducing the time-to-hire for our clients.",
+                "C": "Ethical implications are not a major concern for us as long as the software functions correctly.",
+                "D": "We let the AI make all the final decisions to completely remove human error from the process.",
+                "E": "Our clients are solely responsible for any ethical issues that arise from using our platform."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "dialogue",
+            "question": "Doctor: Your cholesterol levels are quite high for someone your age. We need to look at your diet. Patient: I usually eat out a lot because of my busy work schedule. Doctor: ---- Patient: I guess I could start preparing my meals on weekends to take to work.",
+            "options": {
+                "A": "Well, you will have to find a way to cook healthier meals at home if you want to lower those numbers.",
+                "B": "Eating out is fine as long as you order a salad every once in a while.",
+                "C": "There is a new medication that can fix this without you having to change your lifestyle at all.",
+                "D": "You should probably quit your job if it's causing you this much stress and affecting your diet.",
+                "E": "I don't think your diet is the problem; it must be purely genetic."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "dialogue",
+            "question": "Colleague A: I heard the funding for our department is being cut by 20% next year. Colleague B: ---- Colleague A: Yes, they mentioned that travel grants and new equipment purchases will be the first to go.",
+            "options": {
+                "A": "That's terrible news. Did they specify which projects will be affected the most?",
+                "B": "I don't believe that rumor. The dean just promised us more resources last week.",
+                "C": "That's actually great! We can finally focus on our core responsibilities without distractions.",
+                "D": "I suppose I should start looking for a new job in a different university then.",
+                "E": "Did you know that the biology department is getting a massive increase in their budget?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 28,
+            "section_id": "dialogue",
+            "question": "Journalist: Critics argue that the new tax policy disproportionately benefits large corporations. Politician: ---- Journalist: However, small business owners claim that the tax breaks don't apply to their operational models.",
+            "options": {
+                "A": "On the contrary, the policy includes specific provisions designed to help small and medium-sized enterprises grow.",
+                "B": "I completely agree with the critics; our intention was always to support large corporations exclusively.",
+                "C": "Tax policies are far too complicated for the general public to understand properly.",
+                "D": "We will be raising taxes on large corporations next year to balance the budget.",
+                "E": "The opposition party is just trying to create controversy where there is none."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "para_comp",
+            "question": "The domestication of plants was a pivotal moment in human history, marking the transition from nomadic hunter-gatherer societies to settled agricultural communities. ----. This reliable food supply allowed populations to grow rapidly and led to the development of complex societies, complete with social hierarchies and specialized labor.",
+            "options": {
+                "A": "By cultivating crops, humans were able to produce a surplus of food that could be stored for times of scarcity",
+                "B": "Some hunter-gatherer groups fiercely resisted the shift to agriculture, preferring their traditional way of life",
+                "C": "The exact geographical origin of the first domesticated plants remains a subject of intense debate among archaeologists",
+                "D": "Animal domestication occurred roughly around the same time, providing early humans with meat, milk, and labor",
+                "E": "Modern agricultural practices rely heavily on synthetic fertilizers and genetically modified organisms to maximize yield"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "para_comp",
+            "question": "Sleep is an essential biological function that allows the body and mind to rest, repair, and consolidate memories. Chronic sleep deprivation has been linked to a myriad of health issues, including obesity, cardiovascular disease, and cognitive decline. ----. Furthermore, the constant exposure to blue light from screens suppresses the production of melatonin, a hormone that regulates the sleep-wake cycle.",
+            "options": {
+                "A": "In today's fast-paced society, however, many individuals sacrifice sleep in favor of work or entertainment",
+                "B": "Some people naturally require less sleep than the recommended eight hours due to a rare genetic mutation",
+                "C": "Dreams occur primarily during the Rapid Eye Movement (REM) stage of the sleep cycle",
+                "D": "Historically, humans practiced biphasic sleep, waking up for a few hours in the middle of the night",
+                "E": "There are various medications available over the counter that can help treat severe cases of insomnia"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "para_comp",
+            "question": "Renewable energy sources such as solar and wind power are crucial for reducing global greenhouse gas emissions. However, they face a significant challenge: intermittency. The sun does not always shine, and the wind does not always blow. ----. This ensures that a stable supply of electricity is available to the grid even when weather conditions are unfavorable for energy generation.",
+            "options": {
+                "A": "Therefore, developing efficient and scalable energy storage technologies, like advanced batteries, is absolutely vital",
+                "B": "Fossil fuels, despite their environmental impact, are still the most reliable source of baseload power",
+                "C": "Nuclear power plants generate electricity consistently, but public concern over safety remains high",
+                "D": "Many countries are heavily subsidizing the installation of solar panels on residential properties",
+                "E": "The initial cost of building wind farms offshore is significantly higher than constructing them on land"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "para_comp",
+            "question": "Language is not merely a tool for communication; it also shapes the way we perceive and interact with the world around us. The linguistic relativity hypothesis, often associated with Sapir and Whorf, suggests that the structure of a language influences its speakers' cognition. ----. For instance, languages that assign genders to inanimate objects can affect how speakers describe the qualities of those objects.",
+            "options": {
+                "A": "Although the strong version of this theory has been largely discredited, a weaker version is supported by modern psychological research",
+                "B": "Learning a second language in adulthood is significantly more difficult than acquiring it during early childhood",
+                "C": "Many linguists focus entirely on syntax and grammar, completely ignoring the cultural context of language use",
+                "D": "The evolution of language is believed to have coincided with the development of complex tool-making skills in early humans",
+                "E": "Translation software has improved dramatically, making cross-cultural communication easier than ever before"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 33,
+            "section_id": "para_comp",
+            "question": "Quantum computing represents a paradigm shift in information processing. Unlike classical computers, which use bits to represent either a 0 or a 1, quantum computers use quantum bits, or qubits. ----. This phenomenon, known as superposition, allows quantum computers to perform complex calculations at speeds exponentially faster than the most powerful supercomputers available today.",
+            "options": {
+                "A": "These qubits can exist in multiple states simultaneously, representing both 0 and 1 at the same time",
+                "B": "Maintaining the stability of qubits requires extremely low temperatures, close to absolute zero",
+                "C": "The first theoretical models of quantum computing were proposed by physicists in the early 1980s",
+                "D": "Cybersecurity experts warn that quantum computers could potentially break current encryption methods",
+                "E": "Classical computers rely on transistors, which have been shrinking in size over the past few decades"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 34,
+            "section_id": "closest",
+            "question": "In spite of the overwhelming evidence presented by the prosecution, the jury took an unusually long time to reach a verdict.",
+            "options": {
+                "A": "Even though the prosecution offered highly convincing proof, the jury's decision-making process was exceptionally protracted.",
+                "B": "Because the prosecution presented so much evidence, the jury was forced to deliberate for a longer time than usual.",
+                "C": "The jury reached a verdict relatively quickly, completely ignoring the overwhelming evidence presented by the prosecution.",
+                "D": "The evidence provided by the prosecution was so confusing that the jury could not reach a verdict for a long time.",
+                "E": "Despite the lack of solid evidence from the prosecution, the jury deliberated for an unusually long period."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 35,
+            "section_id": "closest",
+            "question": "Had it not been for the timely intervention of the central bank, the country's currency would have collapsed entirely.",
+            "options": {
+                "A": "The nation's currency was saved from total ruin solely because the central bank stepped in at the right moment.",
+                "B": "The central bank intervened just in time to prevent a minor drop in the value of the country's currency.",
+                "C": "The country's currency collapsed entirely despite the central bank attempting to intervene in a timely manner.",
+                "D": "If the central bank had intervened earlier, the country's currency would not have faced the risk of collapsing.",
+                "E": "The central bank's timely intervention caused the country's currency to collapse entirely instead of recovering."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 36,
+            "section_id": "closest",
+            "question": "Virtually all scientists agree that human activities are the primary driver of the current climate crisis.",
+            "options": {
+                "A": "There is a near-universal consensus among researchers that the present climate emergency is mainly caused by human actions.",
+                "B": "A small minority of scientists still dispute the idea that human activities are responsible for the current climate crisis.",
+                "C": "Scientists are divided on whether human activities or natural cycles are the main cause of the current climate crisis.",
+                "D": "It is widely believed that human activities are only a minor contributing factor to the current global climate crisis.",
+                "E": "Almost all scientists agree that the current climate crisis will eventually force humans to change their daily activities."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 37,
+            "section_id": "closest",
+            "question": "The success of the new educational program is contingent upon the continuous support of the local community.",
+            "options": {
+                "A": "For the novel educational initiative to be successful, it absolutely requires the ongoing backing of local residents.",
+                "B": "The local community is continuously supporting the new educational program because it has been so successful.",
+                "C": "The new educational program will be successful regardless of whether the local community provides continuous support.",
+                "D": "Continuous support from the local community is the only benefit of the newly implemented educational program.",
+                "E": "The local community supports the new educational program to ensure its contingent success in the future."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 38,
+            "section_id": "irrelevant",
+            "question": "(I) The printing press, invented by Johannes Gutenberg in the 15th century, revolutionized the spread of information. (II) Before its invention, books were painstakingly copied by hand, making them rare and expensive. (III) Gutenberg's background as a goldsmith provided him with the skills necessary to create durable metal type. (IV) The mass production of texts led to a significant increase in literacy rates across Europe. (V) Furthermore, it played a crucial role in disseminating the ideas of the Renaissance and the Scientific Revolution.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 39,
+            "section_id": "irrelevant",
+            "question": "(I) Coral reefs are among the most diverse and biologically complex ecosystems on Earth. (II) They provide habitat and shelter for roughly one-quarter of all marine species. (III) Marine biologists often spend months at sea collecting data on ocean currents. (IV) In addition to supporting biodiversity, reefs protect coastlines from the damaging effects of wave action and tropical storms. (V) Unfortunately, these vital ecosystems are currently under severe threat from ocean acidification and rising temperatures.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "irrelevant",
+            "question": "(I) The concept of emotional intelligence (EI) has gained significant traction in corporate leadership training. (II) It involves the ability to recognize, understand, and manage our own emotions, as well as those of others. (III) Many multinational corporations now use algorithmic screening tools to evaluate resumes. (IV) Leaders with high EI are generally more adept at conflict resolution and fostering a collaborative team environment. (V) Consequently, companies are increasingly incorporating EI assessments into their hiring and promotion processes.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        }
+    ]
+}

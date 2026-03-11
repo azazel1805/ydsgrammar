@@ -348,7 +348,7 @@ function updateSEO(tab) {
         "relative": { title: "Relative Clauses – YDS Sıfat Cümlecikleri", desc: "Who, which, that gibi yapıların karmaşık cümlelerdeki tespiti." },
         "profile": { title: "Profilim – YDS İstatistiklerim", desc: "Kaydettiğiniz kelimeler ve kişisel çalışma verileriniz." },
         "miniexams": { title: "Mini Denemeler – YDS Konu Quizleri", desc: "Konu konu ayrılmış 10 soruluk hızlı YDS mini denemeleri." },
-        "fullexam": { title: "Full Deneme Sınavları – YDS / YDT Denemeler", desc: "Sınav formatında, süreli ve cevap açıklamalı full YDS denemeleri." },
+        "fullexam": { title: "Mini Deneme Sınavları – 40 Sorulu YDS / YDT Denemeler", desc: "40 soruluk, 90 dakikalık süreli ve cevap açıklamalı mini YDS denemeleri." },
         "tenseguide": { title: "Tense Rehberi – Zamanlar ve Kullanımları", desc: "İngilizce zamanların YDS perspektifinden sadeleştirilmiş anlatımı." },
         "ifclauses": { title: "If Clauses (Koşul Cümleleri) – YDS Rehberi", desc: "Tüm type'lar ve devrik yapılar (inversion) ile koşul cümleleri." },
         "sentence": { title: "Sentence Corrector – Cümle Yapısı Analizi", desc: "Cümlelerdeki gramer hatalarını bulan yapay zeka destekli araç." }

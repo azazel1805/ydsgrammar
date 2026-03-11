@@ -3,9 +3,11 @@
    ============================================================ */
 
 const EXAM_LIST = [
-  { id: 'exam1', label: 'Practice Exam 1', file: '/exams/fullexam/exam1.json' },
-  { id: 'exam2', label: 'Practice Exam 2', file: '/exams/fullexam/exam2.json' },
-  { id: 'exam3', label: 'Practice Exam 3', file: '/exams/fullexam/exam3.json' }
+  { id: 'mini1', label: 'Mini Deneme 1', file: '/exams/mini/miniexam1.json' },
+  { id: 'mini2', label: 'Mini Deneme 2', file: '/exams/mini/miniexam2.json' },
+  { id: 'mini3', label: 'Mini Deneme 3', file: '/exams/mini/miniexam3.json' },
+  { id: 'mini4', label: 'Mini Deneme 4', file: '/exams/mini/miniexam4.json' },
+  { id: 'mini5', label: 'Mini Deneme 5', file: '/exams/mini/miniexam5.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────
@@ -22,11 +24,11 @@ const fullExamHTML = /* html */`
   <!-- Header card -->
   <div class="text-center mb-10">
     <div class="inline-flex items-center gap-3 bg-gradient-to-r from-red-800 to-red-900 text-white px-6 py-3 rounded-2xl shadow-xl mb-6">
-      <i class="fas fa-file-alt text-xl"></i>
-      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">YDS Full Deneme</span>
+      <i class="fas fa-bolt text-xl"></i>
+      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">YDS Mini Deneme</span>
     </div>
-    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Tam YDS Deneme Sınavı</h2>
-    <p class="text-slate-500 text-sm">80 soru · 180 dakika · Gerçek YDS formatı</p>
+    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Mini YDS Deneme Sınavları</h2>
+    <p class="text-slate-500 text-sm">40 soru · 90 dakika · Hızlı Pratik</p>
   </div>
 
   <!-- Exam selector -->
@@ -43,7 +45,7 @@ const fullExamHTML = /* html */`
               </div>
               <div>
                 <p class="font-bold text-slate-800">${e.label}</p>
-                <p class="text-xs text-slate-400">80 Soru · 3 Saat</p>
+                <p class="text-xs text-slate-400">40 Soru · 1.5 Saat</p>
               </div>
             </div>
             <div class="flex gap-2 flex-wrap text-xs text-slate-500">
@@ -61,7 +63,7 @@ const fullExamHTML = /* html */`
       <i class="fas fa-info-circle text-amber-600 mt-1 text-lg"></i>
       <div>
         <p class="font-semibold text-amber-800 mb-1">Sınav Bilgisi</p>
-        <p class="text-sm text-amber-700">Sınav başladığında 180 dakikalık geri sayım başlar. Sınavı istediğiniz zaman teslim edebilirsiniz. Okuma parçaları (34-51. sorular) sınav ekranında görüntülenir.</p>
+        <p class="text-sm text-amber-700">Sınav başladığında 90 dakikalık geri sayım başlar. Sınavı istediğiniz zaman teslim edebilirsiniz.</p>
       </div>
     </div>
 
@@ -82,7 +84,7 @@ const fullExamHTML = /* html */`
       <div class="flex items-center justify-between px-4 py-3 gap-3">
         <div class="flex items-center gap-3 min-w-0">
           <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden sm:block">Soru</span>
-          <span id="feQNum" class="font-extrabold text-red-800 text-lg">1/80</span>
+          <span id="feQNum" class="font-extrabold text-red-800 text-lg">1/40</span>
           <div class="h-4 w-px bg-slate-200 hidden sm:block"></div>
           <span id="feAnsweredCount" class="text-xs text-slate-500 hidden sm:block">0 cevaplanmış</span>
         </div>
@@ -95,7 +97,7 @@ const fullExamHTML = /* html */`
         <!-- Timer -->
         <div class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-xl font-mono font-bold text-sm shrink-0">
           <i class="fas fa-clock text-xs text-red-400"></i>
-          <span id="feTimer">3:00:00</span>
+          <span id="feTimer">1:30:00</span>
         </div>
         <button onclick="feFinishConfirm()" class="bg-red-800 text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-red-900 transition-colors shrink-0">
           Teslim Et
@@ -158,7 +160,7 @@ const fullExamHTML = /* html */`
         <div id="feScoreCircle" class="absolute inset-0 rounded-full" style="background: conic-gradient(#991b1b 0%, #e5e7eb 0%)"></div>
         <div class="relative z-10 text-center">
           <div id="feScoreNum" class="text-4xl font-extrabold text-red-800"></div>
-          <div class="text-xs text-slate-400 font-semibold">/80</div>
+          <div class="text-xs text-slate-400 font-semibold">/40</div>
         </div>
       </div>
       <h3 class="text-2xl font-extrabold text-slate-800 mb-1" style="font-family:'Playfair Display',serif;">Sonuçlarınız</h3>

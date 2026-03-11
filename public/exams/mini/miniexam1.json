@@ -1,0 +1,587 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 1",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 8
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 9,
+            "to": 13
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 14,
+            "to": 18
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 19,
+            "to": 23
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 24,
+            "to": 28
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 29,
+            "to": 33
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 34,
+            "to": 37
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 38,
+            "to": 40
+        }
+    ],
+    "passages": [],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "question": "Despite the ______ of evidence suggesting that climate change is accelerating, some policymakers still refuse to take immediate action.",
+            "options": {
+                "A": "paucity",
+                "B": "preponderance",
+                "C": "ambiguity",
+                "D": "fallacy",
+                "E": "scarcity"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "question": "The theory of relativity profoundly changed our understanding of the universe, rendering many previous astronomical models ______.",
+            "options": {
+                "A": "indispensable",
+                "B": "lucrative",
+                "C": "obsolete",
+                "D": "resilient",
+                "E": "pragmatic"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "question": "Sociologists argue that urban ______ often leads to the marginalization of low-income families who are forced out of gentrifying neighborhoods.",
+            "options": {
+                "A": "stagnation",
+                "B": "displacement",
+                "C": "assimilation",
+                "D": "cohesion",
+                "E": "proliferation"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "question": "______ the ancient Romans were renowned for their engineering prowess, many of their architectural techniques were actually adapted from the Etruscans.",
+            "options": {
+                "A": "Just as",
+                "B": "Even though",
+                "C": "Because",
+                "D": "Unless",
+                "E": "Provided that"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "question": "Artificial intelligence has the potential to revolutionize healthcare; ______, it raises significant ethical concerns regarding patient privacy.",
+            "options": {
+                "A": "furthermore",
+                "B": "consequently",
+                "C": "on the other hand",
+                "D": "in other words",
+                "E": "similarly"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "question": "The central bank decided to increase interest rates ______ curb the rising inflation that had been destabilizing the economy for months.",
+            "options": {
+                "A": "in order to",
+                "B": "with a view to",
+                "C": "so that",
+                "D": "due to",
+                "E": "in spite of"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "question": "______ had the archeologists unearthed the tomb than they realized it had been looted centuries ago.",
+            "options": {
+                "A": "No sooner",
+                "B": "Hardly",
+                "C": "Not until",
+                "D": "Only when",
+                "E": "Scarcely"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 8,
+            "section_id": "completion",
+            "question": "Marine biologists are concerned that if ocean acidification continues at its current rate, coral reefs ______.",
+            "options": {
+                "A": "would have been destroyed",
+                "B": "will be irreversibly damaged",
+                "C": "had been decimated",
+                "D": "are being recovered",
+                "E": "were entirely wiped out"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "question": "The advent of agriculture around 10,000 years ago marked a major turning point in human history. Prior to this, humans (1) ______ as nomadic hunter-gatherers.",
+            "options": {
+                "A": "survived",
+                "B": "had survived",
+                "C": "were surviving",
+                "D": "have survived",
+                "E": "would survive"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "question": "The shift to farming allowed for the establishment of permanent settlements. (2) ______, this transition led to the rise of complex societies.",
+            "options": {
+                "A": "However",
+                "B": "Instead",
+                "C": "Consequently",
+                "D": "Nevertheless",
+                "E": "Otherwise"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "question": "With food surpluses, not everyone had to be involved in food production, which paved the way for the specialization of labor. This meant that individuals could devote (3) ______ to trades and crafts.",
+            "options": {
+                "A": "themselves",
+                "B": "them",
+                "C": "their",
+                "D": "theirs",
+                "E": "itself"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "question": "However, this new lifestyle also brought disadvantages. The concentration of people and domesticated animals in close proximity (4) ______ the spread of infectious diseases.",
+            "options": {
+                "A": "prevented",
+                "B": "hindered",
+                "C": "facilitated",
+                "D": "eliminated",
+                "E": "concealed"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 13,
+            "section_id": "cloze",
+            "question": "Despite these challenges, the agricultural revolution was undeniably the catalyst (5) ______ the modern civilizations we see today.",
+            "options": {
+                "A": "for",
+                "B": "in",
+                "C": "with",
+                "D": "by",
+                "E": "from"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "question": "Although genetic engineering offers promising solutions for food security, it is still a highly controversial topic among environmentalists.",
+            "options": {
+                "A": "Genetik mühendisliği gıda güvenliği için umut verici çözümler sunmasına rağmen, çevreciler arasında hala oldukça tartışmalı bir konudur.",
+                "B": "Genetik mühendisliği gıda güvenliği için çözümler sunsa da, çevreciler bunun tartışmalı bir konu olduğuna inanmaktadır.",
+                "C": "Çevreciler arasında tartışmalı bir konu olan genetik mühendisliği, gıda güvenliği için umut verici çözümler sunmaktadır.",
+                "D": "Gıda güvenliği için umut verici çözümler sunan genetik mühendisliği, çevreciler tarafından çok tartışılmaktadır.",
+                "E": "Genetik mühendisliğinin gıda güvenliğine umut verici çözümler sunması, çevreciler arasında oldukça tartışmalı bir durumdur."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "question": "Güneş enerjisine yapılan yatırımlar son on yılda önemli ölçüde artmıştır, bu da fosil yakıtlara olan bağımlılığın azaldığını göstermektedir.",
+            "options": {
+                "A": "Investments in solar energy have increased significantly in the last decade, indicating a decrease in reliance on fossil fuels.",
+                "B": "Solar energy investments increased remarkably over the past decade, causing a reduction in fossil fuel dependence.",
+                "C": "The significant increase in solar energy investments over the last decade shows that the dependence on fossil fuels has ended.",
+                "D": "Investments in solar energy will increase significantly in the next decade, indicating less reliance on fossil fuels.",
+                "E": "There has been a significant increase in solar energy investments in the last decade, meaning fossil fuels are no longer needed."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "question": "The success of a public health campaign depends not only on the accuracy of the information provided but also on how effectively it is communicated to the target audience.",
+            "options": {
+                "A": "Bir halk sağlığı kampanyasının başarısı, sadece sunulan bilginin doğruluğuna değil, aynı zamanda hedef kitleye ne kadar etkili bir şekilde iletildiğine de bağlıdır.",
+                "B": "Halk sağlığı kampanyalarının başarılı olması için bilginin doğru olması ve hedef kitleye etkili bir şekilde iletilmesi gerekir.",
+                "C": "Sunulan bilginin doğruluğu ve hedef kitleye etkili bir şekilde iletilmesi, bir halk sağlığı kampanyasının başarısını belirler.",
+                "D": "Bir halk sağlığı kampanyası başarılıysa, bu sadece bilginin doğruluğundan değil, hedef kitleye etkili iletilmesindendir.",
+                "E": "Halk sağlığı kampanyasının başarısı, doğru bilginin hedef kitleye etkili bir biçimde sunulmasına bağlıdır."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "translation",
+            "question": "Küreselleşme, farklı kültürler arasındaki etkileşimi artırırken, yerel geleneklerin kaybolmasına da yol açabilir.",
+            "options": {
+                "A": "While globalization increases interaction among different cultures, it can also lead to the loss of local traditions.",
+                "B": "Globalization increases interaction between cultures, which always results in the loss of local traditions.",
+                "C": "As globalization increases cultural interaction, local traditions are gradually being lost.",
+                "D": "Because globalization enhances interaction among different cultures, local traditions might disappear.",
+                "E": "Globalization has led to the loss of local traditions by increasing interaction among different cultures."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "translation",
+            "question": "Many historians argue that the French Revolution was primarily driven by economic inequality rather than purely ideological motives.",
+            "options": {
+                "A": "Pek çok tarihçi, Fransız Devrimi'nin tamamen ideolojik motiflerden ziyade öncelikle ekonomik eşitsizlik tarafından yönlendirildiğini iddia etmektedir.",
+                "B": "Tarihçiler, Fransız Devrimi'nin ekonomik eşitsizlikten çok ideolojik sebeplerle ortaya çıktığını savunmaktadır.",
+                "C": "Birçok tarihçiye göre Fransız Devrimi'nin temel nedeni ideolojik motifler değil, ekonomik eşitsizliktir.",
+                "D": "Fransız Devrimi'nin ideolojik motiflerden ziyade ekonomik eşitsizlikten kaynaklandığı birçok tarihçi tarafından tartışılmaktadır.",
+                "E": "Tarihçilerin çoğu, Fransız Devrimi'nin arkasındaki asıl itici gücün ideolojik değil ekonomik olduğuna inanmaktadır."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "question": "Unless significant measures are taken to reduce carbon emissions, global temperatures will continue to rise uncontrollably.",
+            "options": {
+                "A": "If we do not implement major steps to cut down on carbon emissions, the unchecked increase in global temperatures will persist.",
+                "B": "Global temperatures will rise uncontrollably even if we take significant measures to reduce carbon emissions.",
+                "C": "Because significant measures are being taken to reduce carbon emissions, global temperatures will stop rising.",
+                "D": "Only by taking significant measures can we ensure that global temperatures will rise uncontrollably.",
+                "E": "Global temperatures have continued to rise uncontrollably because no significant measures were taken to reduce carbon emissions."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "question": "The discovery of penicillin revolutionized medicine by providing a cure for bacterial infections that were previously fatal.",
+            "options": {
+                "A": "Penicillin's discovery brought about a profound change in medicine, as it offered a treatment for formerly deadly bacterial infections.",
+                "B": "Medicine was completely changed when penicillin was discovered, though bacterial infections remained fatal.",
+                "C": "Before the discovery of penicillin, medicine had already revolutionized the cure for fatal bacterial infections.",
+                "D": "The discovery of penicillin provided a cure for bacterial infections, yet it failed to revolutionize medicine.",
+                "E": "Bacterial infections became fatal after the discovery of penicillin, which revolutionized medicine."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "paraphrase",
+            "question": "No other artist of his generation had as profound an impact on modern sculpture as Rodin did.",
+            "options": {
+                "A": "Rodin's influence on modern sculpture was greater than that of any of his contemporaries.",
+                "B": "Rodin was one of the many artists of his generation who had a profound impact on modern sculpture.",
+                "C": "Modern sculpture was profoundly impacted by many artists, but Rodin was the least influential.",
+                "D": "Rodin had a profound impact on modern sculpture, similar to other artists of his generation.",
+                "E": "Many artists of his generation had a more profound impact on modern sculpture than Rodin did."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 22,
+            "section_id": "paraphrase",
+            "question": "The new policy is designed to alleviate poverty; nevertheless, critics argue it might inadvertently increase unemployment.",
+            "options": {
+                "A": "Although the new policy aims to reduce poverty, detractors claim it could unintentionally cause a rise in unemployment.",
+                "B": "The new policy will definitely increase unemployment, despite its design to alleviate poverty.",
+                "C": "Critics argue that the new policy should alleviate poverty so that it doesn't inadvertently increase unemployment.",
+                "D": "Because the new policy is designed to alleviate poverty, critics believe it will decrease unemployment.",
+                "E": "The new policy aims to increase unemployment unintentionally, which critics argue will alleviate poverty."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "paraphrase",
+            "question": "It was not until the 19th century that scientists began to understand the true nature of infectious diseases.",
+            "options": {
+                "A": "Scientists started to comprehend the actual mechanisms of infectious diseases only in the 19th century.",
+                "B": "Scientists had fully understood the true nature of infectious diseases long before the 19th century.",
+                "C": "By the 19th century, scientists had already stopped studying the true nature of infectious diseases.",
+                "D": "The true nature of infectious diseases was understood by scientists well after the 19th century.",
+                "E": "In the 19th century, scientists realized they could never understand the true nature of infectious diseases."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "question": "Professor: The recent data suggests a significant correlation between sleep deprivation and cognitive decline in adolescents. \nStudent: ______ \nProfessor: Exactly. That's why pushing back school start times could be a viable intervention.",
+            "options": {
+                "A": "So, you're saying that teenagers who don't get enough sleep perform worse academically?",
+                "B": "Do you think adults suffer from the same cognitive decline?",
+                "C": "I don't believe sleep has any real impact on cognitive functions.",
+                "D": "Are there any other factors that contribute to cognitive decline?",
+                "E": "Sleep deprivation is mostly caused by excessive screen time, right?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "dialogue",
+            "question": "Journalist: Your latest book argues that economic growth does not always lead to an increase in societal happiness. Why is that? \nEconomist: ______ \nJournalist: It makes sense. Wealth distribution plays a crucial role.",
+            "options": {
+                "A": "Because GDP fails to account for inequality and environmental degradation.",
+                "B": "Because economic growth is the only true measure of a nation's prosperity.",
+                "C": "I believe that people simply do not know how to spend their money wisely.",
+                "D": "Happiness is entirely subjective and cannot be measured by any standard.",
+                "E": "Societal happiness always increases when a country's economy grows rapidly."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "dialogue",
+            "question": "Researcher A: The results of our clinical trial are statistically significant, but the effect size is quite small. \nResearcher B: ______ \nResearcher A: I agree. We shouldn't overstate the practical implications of our findings.",
+            "options": {
+                "A": "That means the drug might not be as practically useful to patients as we hoped.",
+                "B": "We should immediately publish these findings and claim a major breakthrough.",
+                "C": "Statistical significance is all that matters; the effect size is irrelevant.",
+                "D": "This proves that the trial was a complete failure and we should start over.",
+                "E": "I think we should alter the data to make the effect size look larger."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "dialogue",
+            "question": "Student: I'm having trouble understanding the concept of 'entropy' in thermodynamics. \nTeacher: ______ \nStudent: Oh, so it's a measure of disorder or randomness in a closed system?",
+            "options": {
+                "A": "Think of it as the inevitable progression from order to disorder.",
+                "B": "It's essentially the total amount of energy conserved in a system.",
+                "C": "Entropy is just another word for temperature in an open environment.",
+                "D": "It describes how energy can be created out of nothing.",
+                "E": "Don't worry, it's not a very important concept for your exam."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 28,
+            "section_id": "dialogue",
+            "question": "Manager: We need to transition to more sustainable supply chain practices to reduce our carbon footprint. \nConsultant: ______ \nManager: Yes, the initial costs will be high, but it will pay off in the long run.",
+            "options": {
+                "A": "Are you prepared for the short-term financial investments required for this shift?",
+                "B": "I don't think sustainability is a priority for consumers nowadays.",
+                "C": "Our current supply chain is perfectly fine and doesn't need any changes.",
+                "D": "This will definitely reduce our expenses immediately.",
+                "E": "Have you considered increasing our carbon footprint instead?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "para_comp",
+            "question": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. Generally described as taking place from the 14th century to the 17th century, the Renaissance promoted the rediscovery of classical philosophy, literature, and art. ______. This shift in perspective profoundly influenced everything from painting to science.",
+            "options": {
+                "A": "Humanism, a cultural movement that emphasized human potential and achievements, was at the heart of this era.",
+                "B": "The Middle Ages were often characterized by widespread famine, disease, and intellectual stagnation.",
+                "C": "Consequently, the Industrial Revolution began shortly after, changing manufacturing processes.",
+                "D": "Many classical texts were completely lost and never recovered during this time.",
+                "E": "Modern art movements often reject the strict rules established by Renaissance painters."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "para_comp",
+            "question": "Black holes are regions of space where gravity is so strong that nothing, not even light, can escape them. They are typically formed from the remnants of massive stars that collapse under their own gravity at the end of their life cycle. ______. As they consume more matter, their mass and gravitational pull increase proportionately.",
+            "options": {
+                "A": "Once formed, a black hole can continue to grow by absorbing mass from its surroundings.",
+                "B": "Stars emit a tremendous amount of light and heat through nuclear fusion.",
+                "C": "The Milky Way galaxy contains billions of stars, some of which are very old.",
+                "D": "Albert Einstein's theory of general relativity does not apply to black holes.",
+                "E": "Light travels at a speed of approximately 299,792 kilometers per second."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "para_comp",
+            "question": "Language acquisition in children is a complex process that has fascinated linguists for decades. While some theorists argue that humans are born with an innate grammatical blueprint, others believe that language is entirely learned through social interaction. ______. This suggests that both biological predispositions and environmental factors play essential roles.",
+            "options": {
+                "A": "Recent neuroimaging studies have shown that language development relies on both pre-wired brain structures and continuous exposure.",
+                "B": "Therefore, adults find it much more difficult to learn a second language than children do.",
+                "C": "Noam Chomsky famously proposed the concept of a Universal Grammar shared by all human languages.",
+                "D": "In contrast, animal communication systems lack the infinite creativity of human language.",
+                "E": "Some languages rely heavily on tone, which can alter the meaning of a word entirely."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "para_comp",
+            "question": "The concept of Universal Basic Income (UBI) involves providing all citizens of a country with a regular, unconditional sum of money. Proponents argue that UBI could eradicate extreme poverty and provide a safety net in an age of increasing automation. ______. They worry that such a program could lead to high inflation and disincentivize work.",
+            "options": {
+                "A": "Opponents, however, point to the massive financial burden it would place on governments.",
+                "B": "Several pilot programs have been conducted in countries like Finland and Canada with mixed results.",
+                "C": "Automation has already replaced many low-skill jobs in the manufacturing sector.",
+                "D": "In a capitalist society, wealth is often concentrated in the hands of a small elite.",
+                "E": "The welfare state was originally designed to protect individuals from economic hardship."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 33,
+            "section_id": "para_comp",
+            "question": "Symbiosis is a biological concept that describes a close and long-term interaction between two different biological species. In some cases, known as mutualism, both species benefit from the relationship. ______. A classic example is the relationship between dogs and ticks, where the tick gains nourishment at the dog's expense.",
+            "options": {
+                "A": "In other instances, such as parasitism, one organism benefits while the other is harmed.",
+                "B": "Commensalism is another type where one species benefits and the other is neither helped nor harmed.",
+                "C": "Bees and flowers exhibit mutualism, as bees get nectar and flowers get pollinated.",
+                "D": "Ecosystems rely heavily on predator-prey dynamics to maintain balance.",
+                "E": "Evolutionary biology studies how these interactions have developed over millions of years."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 34,
+            "section_id": "closest",
+            "question": "In the face of mounting public pressure, the corporation was forced to retract its controversial advertising campaign.",
+            "options": {
+                "A": "The company had to withdraw its contentious ad campaign because of increasing public demand.",
+                "B": "Public pressure was not strong enough to make the corporation change its advertising strategy.",
+                "C": "The corporation decided to launch a controversial campaign despite warnings from the public.",
+                "D": "Because of the controversial campaign, the public forced the corporation into bankruptcy.",
+                "E": "The advertising campaign was successful until the public pressured the corporation to alter it."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 35,
+            "section_id": "closest",
+            "question": "Scarcely had the speaker finished his presentation when the audience erupted into a standing ovation.",
+            "options": {
+                "A": "As soon as the speaker concluded his presentation, the audience stood up and cheered wildly.",
+                "B": "The audience gave a standing ovation long after the speaker had finished his presentation.",
+                "C": "The speaker was interrupted by a standing ovation before he could finish his presentation.",
+                "D": "Because the presentation was so long, the audience scarcely clapped when it finished.",
+                "E": "The audience refused to give a standing ovation, even though the speaker had just finished."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 36,
+            "section_id": "closest",
+            "question": "It is highly improbable that a consensus will be reached during today's negotiations, given the profound ideological differences between the two parties.",
+            "options": {
+                "A": "Due to deep ideological divides, it is very unlikely that the two sides will come to an agreement in today's talks.",
+                "B": "The two parties will definitely reach a consensus today, despite their minor ideological differences.",
+                "C": "Because the parties share similar ideologies, reaching an agreement today is highly probable.",
+                "D": "The negotiations will likely fail today unless the two parties can hide their ideological differences.",
+                "E": "It is somewhat possible that the two parties will reach an agreement today if they ignore their ideologies."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 37,
+            "section_id": "closest",
+            "question": "Regardless of how meticulously a scientific experiment is designed, there is always a margin for unforeseen errors.",
+            "options": {
+                "A": "No matter how carefully a scientific experiment is planned, unexpected mistakes are always a possibility.",
+                "B": "Unforeseen errors only occur when a scientific experiment is not designed meticulously enough.",
+                "C": "A meticulously designed scientific experiment will completely eliminate the margin for unforeseen errors.",
+                "D": "If you design a scientific experiment well, you will only have to deal with expected errors.",
+                "E": "Scientific experiments are always full of errors, so meticulous design is essentially useless."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 38,
+            "section_id": "irrelevant",
+            "question": "(I) The printing press, invented by Johannes Gutenberg in the 15th century, revolutionized the spread of information. (II) Before its invention, books were painstakingly copied by hand, making them rare and expensive. (III) The demand for digital e-books has surged in the 21st century. (IV) By mass-producing texts, the printing press democratized knowledge and fueled the Renaissance. (V) It also played a crucial role in the Protestant Reformation by allowing religious texts to be widely distributed.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 39,
+            "section_id": "irrelevant",
+            "question": "(I) Photosynthesis is the process by which green plants transform light energy into chemical energy. (II) During this process, plants absorb carbon dioxide from the air and release oxygen as a byproduct. (III) Deforestation in the Amazon basin is a major environmental concern. (IV) The energy captured is stored in the bonds of sugar molecules, which plants use for growth. (V) Without photosynthesis, most life on Earth would eventually cease to exist due to a lack of food and oxygen.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "irrelevant",
+            "question": "(I) Cryptocurrencies operate on a technology called blockchain, a decentralized ledger of all transactions across a network. (II) This technology ensures transparency and security without the need for a central authority like a bank. (III) Many traditional banks have strict dress codes for their employees. (IV) Transactions are verified by network nodes through cryptography and recorded in a public distributed ledger. (V) As a result, altering past records is virtually impossible, which prevents fraud.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        }
+    ]
+}

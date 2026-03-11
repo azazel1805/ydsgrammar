@@ -1,0 +1,587 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 3",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 8
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 9,
+            "to": 13
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 14,
+            "to": 18
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 19,
+            "to": 23
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 24,
+            "to": 28
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 29,
+            "to": 33
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 34,
+            "to": 37
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 38,
+            "to": 40
+        }
+    ],
+    "passages": [],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "question": "The unprecedented melting of polar ice caps has led to a significant ____ in global sea levels, threatening coastal communities worldwide.",
+            "options": {
+                "A": "fluctuation",
+                "B": "surge",
+                "C": "mitigation",
+                "D": "deterioration",
+                "E": "stagnation"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "question": "Despite the overwhelming evidence presented by the prosecution, the defense attorney remained ____ in her belief that her client was innocent.",
+            "options": {
+                "A": "ambivalent",
+                "B": "resolute",
+                "C": "lethargic",
+                "D": "submissive",
+                "E": "evasive"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "question": "The archeological team discovered a set of artifacts that are largely ____ to the early Bronze Age, changing our understanding of ancient trade routes.",
+            "options": {
+                "A": "detrimental",
+                "B": "indispensable",
+                "C": "indigenous",
+                "D": "attributable",
+                "E": "impervious"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "question": "____, the fundamental principles of quantum mechanics remain deeply counterintuitive to those accustomed to classical physics.",
+            "options": {
+                "A": "Because the experimental results were largely fabricated",
+                "B": "Although technological applications of the theory are ubiquitous",
+                "C": "Provided that scientists continue to ignore the anomalies",
+                "D": "Since the mathematical framework is relatively simple to grasp",
+                "E": "Unless researchers secure more funding for particle accelerators"
+            },
+            "correct": ""
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "question": "Many economists argue that universal basic income could alleviate severe poverty, ____.",
+            "options": {
+                "A": "whereas critics maintain it would disincentivize labor participation",
+                "B": "so that governments can reduce their overall tax revenue",
+                "C": "as if the current welfare systems were entirely flawless",
+                "D": "despite the fact that inequality has been steadily decreasing",
+                "E": "in case inflation rates drop below the targeted threshold"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "question": "____, early human societies were able to develop specialized labor and complex social hierarchies.",
+            "options": {
+                "A": "In spite of the transition from nomadic foraging to settled agriculture",
+                "B": "Before the invention of the wheel revolutionized transportation",
+                "C": "By harnessing the predictable flooding of major river valleys",
+                "D": "Even though the domestication of animals proved highly challenging",
+                "E": "Unless climate change drastically altered their migratory patterns"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "question": "The integration of artificial intelligence into healthcare diagnostics is highly promising, ____.",
+            "options": {
+                "A": "given that it entirely eliminates the need for human physicians",
+                "B": "yet it raises profound ethical questions regarding patient privacy",
+                "C": "so the cost of medical treatments will inevitably skyrocket",
+                "D": "as long as algorithms remain completely unregulated by authorities",
+                "E": "because historical data is largely irrelevant to future predictions"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 8,
+            "section_id": "completion",
+            "question": "____ the severe economic sanctions imposed by the international community, the regime continued to heavily fund its nuclear proliferation program.",
+            "options": {
+                "A": "In accordance with",
+                "B": "Notwithstanding",
+                "C": "By means of",
+                "D": "As a consequence of",
+                "E": "In comparison to"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "question": "(1) The Industrial Revolution marked a major turning point in Earth's ecology and humans' relationship with their environment.",
+            "options": {
+                "A": "In addition",
+                "B": "For instance",
+                "C": "However",
+                "D": "Consequently",
+                "E": "Furthermore"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "question": "(2) Before this era, human impact on the environment was largely localized and ____ by natural processes.",
+            "options": {
+                "A": "absorbed",
+                "B": "aggravated",
+                "C": "ignored",
+                "D": "accelerated",
+                "E": "depleted"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "question": "(3) With the advent of mechanization, ____, the scale of resource extraction grew exponentially.",
+            "options": {
+                "A": "therefore",
+                "B": "moreover",
+                "C": "nevertheless",
+                "D": "however",
+                "E": "similarly"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "question": "(4) Factories began emitting unprecedented amounts of greenhouse gases, ____ the atmosphere's chemical composition.",
+            "options": {
+                "A": "to alter",
+                "B": "altering",
+                "C": "altered",
+                "D": "having altered",
+                "E": "being altered"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 13,
+            "section_id": "cloze",
+            "question": "(5) Today, we are still grappling with the long-term consequences of these early industrial ____.",
+            "options": {
+                "A": "remedies",
+                "B": "innovations",
+                "C": "setbacks",
+                "D": "restrictions",
+                "E": "practices"
+            },
+            "correct": "E"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "question": "Küresel ısınmanın etkileri her geçen gün daha belirgin hale gelse de, birçok ülke karbon emisyonlarını azaltmak için gerekli olan köklü politika değişikliklerini yapmakta isteksiz görünmektedir.",
+            "options": {
+                "A": "Although the effects of global warming are becoming more apparent day by day, many countries seem reluctant to make the radical policy changes necessary to reduce carbon emissions.",
+                "B": "Since the effects of global warming have become more evident, many countries are willing to make the radical policy changes required to reduce carbon emissions.",
+                "C": "Even if the impacts of global warming are clearly visible, several nations hesitate to implement the minor policy adjustments needed for carbon emission reduction.",
+                "D": "As global warming's effects become increasingly obvious, most countries appear eager to establish the fundamental policy shifts needed to cut carbon emissions.",
+                "E": "Despite the fact that global warming is a growing threat, numerous countries are unable to make the significant policy changes necessary to lower their carbon footprint."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "question": "Modern tıptaki ilerlemeler, bir zamanlar ölümcül kabul edilen hastalıkların artık rutin olarak tedavi edilmesine olanak tanımıştır.",
+            "options": {
+                "A": "Advances in modern medicine have allowed diseases once considered fatal to be treated routinely now.",
+                "B": "Modern medical advancements have made it possible to eradicate diseases that were previously thought to be deadly.",
+                "C": "Progress in modern medicine has led to the routine prevention of diseases that used to cause widespread death.",
+                "D": "Developments in contemporary medicine ensure that fatal diseases can now be managed with routine care.",
+                "E": "The evolution of modern medicine means that illnesses once deemed incurable are now easily prevented."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "question": "Birçok sosyolog, artan gelir eşitsizliğinin toplumdaki sosyal hareketliliği kısıtlayan en önemli faktör olduğunu ileri sürmektedir.",
+            "options": {
+                "A": "Many sociologists argue that increasing income inequality is the most significant factor restricting social mobility in society.",
+                "B": "Several sociologists claim that rising wealth disparity is one of the factors limiting social progress in modern communities.",
+                "C": "Most sociologists believe that growing economic inequality is a crucial element that destroys social mobility globally.",
+                "D": "Some sociologists suggest that the lack of income equality is the primary reason for the absence of social mobility.",
+                "E": "A number of sociologists point out that widening income gaps restrict social dynamics more than any other factor."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "translation",
+            "question": "Yapay zeka sistemleri ne kadar gelişmiş olursa olsun, insan empati ve ahlaki yargı kapasitesinin yerini almaları pek olası değildir.",
+            "options": {
+                "A": "No matter how advanced artificial intelligence systems become, they are highly unlikely to replace the human capacity for empathy and moral judgment.",
+                "B": "Even if artificial intelligence systems are highly sophisticated, they will never be able to substitute human empathy and ethical decision-making.",
+                "C": "Regardless of the progress in artificial intelligence, it is impossible for them to take the place of human emotions and moral values.",
+                "D": "However complex artificial intelligence systems may be, replacing human empathy and moral reasoning remains a distant possibility.",
+                "E": "Although AI systems are developing rapidly, they probably cannot supersede the human ability to feel empathy and make moral choices."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "translation",
+            "question": "Tarih boyunca imparatorluklar, yalnızca askeri güçle değil, aynı zamanda fethettikleri bölgelerin kültürlerini asimile ederek de ayakta kalmışlardır.",
+            "options": {
+                "A": "Throughout history, empires have survived not only through military power but also by assimilating the cultures of the regions they conquered.",
+                "B": "In the course of history, empires managed to endure mostly by military might, though they also assimilated conquered cultures.",
+                "C": "Throughout history, the survival of empires depended strictly on military dominance and the cultural assimilation of conquered lands.",
+                "D": "Historically, empires sustained themselves less by military force and more by integrating the cultural practices of their conquests.",
+                "E": "Over the centuries, empires have expanded not just by using military force, but by completely absorbing the cultures of the invaded territories."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "question": "The sheer complexity of the human brain makes it exceedingly difficult for neuroscientists to fully map its neural pathways.",
+            "options": {
+                "A": "Because the human brain is so immensely complex, neuroscientists find it extremely challenging to completely chart its neural connections.",
+                "B": "The human brain is complex, but neuroscientists have managed to map most of its neural pathways with great difficulty.",
+                "C": "Neuroscientists are highly skilled, yet they cannot understand the neural pathways due to the brain's complicated structure.",
+                "D": "Mapping the neural pathways of the human brain is entirely impossible for neuroscientists because of its inherent complexity.",
+                "E": "The complexity of the brain is the only reason why neuroscientists have abandoned mapping its neural networks."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "question": "Unless comprehensive measures are taken to curb deforestation, countless endemic species will face imminent extinction.",
+            "options": {
+                "A": "If extensive actions are not implemented to reduce forest clearing, numerous species native to those areas will soon die out.",
+                "B": "Comprehensive measures have been taken against deforestation, saving countless endemic species from extinction.",
+                "C": "To prevent endemic species from going extinct, we must slightly reduce the rate of deforestation.",
+                "D": "Since deforestation was curbed through comprehensive measures, many endemic species avoided extinction.",
+                "E": "Countless endemic species have already gone extinct because comprehensive measures against deforestation failed."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "paraphrase",
+            "question": "Economic growth is inextricably linked to energy consumption, posing a dilemma for developing nations aiming to reduce carbon footprints.",
+            "options": {
+                "A": "Developing nations face a difficult choice regarding reducing carbon emissions because their economic expansion is permanently tied to using energy.",
+                "B": "Developing nations have solved the dilemma of reducing their carbon footprints by completely separating economic growth from energy use.",
+                "C": "Energy consumption dictates the economic growth of all nations, meaning carbon footprints can never be successfully reduced.",
+                "D": "Since developing nations want to decrease their carbon footprints, they must entirely halt their economic growth and energy consumption.",
+                "E": "The link between economic growth and energy consumption is weak, making it easy for developing countries to lower carbon emissions."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 22,
+            "section_id": "paraphrase",
+            "question": "It is widely acknowledged that regular physical exercise not only improves cardiovascular health but also significantly enhances cognitive function.",
+            "options": {
+                "A": "People generally accept that exercising regularly boosts both heart health and mental capabilities considerably.",
+                "B": "It is often claimed that physical exercise is the only way to improve both cardiovascular systems and brain function.",
+                "C": "Regular exercise is known to improve cardiovascular health, but its effects on cognitive function remain highly debated.",
+                "D": "Only recently has it been discovered that regular physical activity can enhance cognitive function as well as cardiovascular health.",
+                "E": "If you want to improve your cognitive function, it is widely acknowledged that you must prioritize cardiovascular health."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "paraphrase",
+            "question": "The professor's groundbreaking research on renewable energy storage was largely overlooked until the recent global energy crisis.",
+            "options": {
+                "A": "The professor's innovative work regarding how to store renewable energy received little attention prior to the current worldwide energy shortage.",
+                "B": "During the recent global energy crisis, the professor's research on renewable energy storage was completely ignored by the scientific community.",
+                "C": "Because of the recent global energy crisis, the professor was forced to conduct groundbreaking research on renewable energy storage.",
+                "D": "The professor's research on energy storage caused a global energy crisis, which is why it was previously overlooked.",
+                "E": "Although the professor's research was well-known, it only became groundbreaking after the global energy crisis occurred."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "question": "Professor Hayes: The latest data indicates a severe decline in the bee population. \nDr. Simon: ____ \nProfessor Hayes: Indeed. If pollination rates drop further, agricultural yields will plummet.",
+            "options": {
+                "A": "Are you suggesting we should invest more in artificial pollination technologies?",
+                "B": "That's alarming. The ecological and economic implications of this are staggering.",
+                "C": "I don't think the data is entirely reliable, given the small sample size.",
+                "D": "Bees have always experienced cyclical population changes, haven't they?",
+                "E": "We should probably focus our research on other insect species instead."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 25,
+            "section_id": "dialogue",
+            "question": "Journalist: Your new book argues that the Roman Empire fell primarily due to internal economic instability. \nHistorian: ____ \nJournalist: So, you believe the barbarian invasions were merely the final blow to an already crumbling structure?",
+            "options": {
+                "A": "Exactly. The excessive taxation and hyperinflation hollowed out the state from within long before the borders were breached.",
+                "B": "Not entirely. I still maintain that military defeats were the primary catalyst for the empire's ultimate collapse.",
+                "C": "I'm actually arguing that climate change and devastating plagues played the most crucial roles in the empire's demise.",
+                "D": "It's a common misconception, but my research focuses more on the cultural shifts during late antiquity.",
+                "E": "Yes, the barbarian invasions were completely irrelevant to the actual fall of the empire."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "dialogue",
+            "question": "Project Manager: We are falling behind schedule on the software development phase. \nLead Developer: ____ \nProject Manager: I understand, but the client expects the beta version by next Friday. We might need to authorize overtime.",
+            "options": {
+                "A": "The delay is mainly because we had to rewrite the legacy code to ensure security compliance.",
+                "B": "I think we are actually ahead of schedule if you look at the updated timeline.",
+                "C": "The client should be more flexible; developing good software takes a lot of time.",
+                "D": "We don't have enough developers, so I suggest we hire a new team immediately.",
+                "E": "The design team hasn't provided the UI assets yet, so we are completely stuck."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "dialogue",
+            "question": "Student: I'm having trouble understanding the concept of 'opportunity cost' in this economics chapter. \nProfessor: ____ \nStudent: Oh, I see. So by choosing to study for this exam, the cost is the leisure time I gave up.",
+            "options": {
+                "A": "It simply refers to the monetary price you pay for purchasing a specific good or service.",
+                "B": "Think of it as the value of the next best alternative that you forego when making a decision.",
+                "C": "It's a theoretical concept that has very little practical application in daily decision-making.",
+                "D": "Opportunity cost is the total amount of resources a company needs to manufacture a product.",
+                "E": "You should probably re-read the first three chapters; they cover the absolute basics."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 28,
+            "section_id": "dialogue",
+            "question": "Dr. Aris: The experimental results contradict our initial hypothesis regarding the chemical catalyst. \nDr. Vance: ____ \nDr. Aris: Let's run the trials one more time. If we get the same anomaly, we'll have to publish the findings as they are.",
+            "options": {
+                "A": "We must have made a calculation error; let's alter the data to fit the hypothesis.",
+                "B": "Then we should discard the results immediately; they are clearly invalid.",
+                "C": "Perhaps the temperature fluctuations in the lab affected the reaction rate.",
+                "D": "I always knew this hypothesis was completely flawed from the very beginning.",
+                "E": "Let's just abandon this project and focus on the secondary research topic."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 29,
+            "section_id": "para_comp",
+            "question": "Language acquisition in children is a remarkably rapid and complex process. By the age of three, most children have mastered the basic grammatical structures of their native tongue. ____. This innate capability suggests that the human brain is biologically hardwired for linguistic development from birth.",
+            "options": {
+                "A": "However, adults find it incredibly difficult to learn a second language with the same fluency.",
+                "B": "They can generate novel sentences they have never heard before, demonstrating an intuitive grasp of syntax.",
+                "C": "Consequently, schools should focus less on grammar and more on practical communication skills.",
+                "D": "Many linguists argue that exposure to multiple languages early on can cause slight speech delays.",
+                "E": "Animal communication systems, in contrast, rely heavily on repetitive vocalizations and gestures."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 30,
+            "section_id": "para_comp",
+            "question": "The Renaissance was characterized by a profound revival of classical art and literature. Originating in Italy during the 14th century, this cultural movement emphasized humanism, shifting the focus from divine matters to human achievements. ____. Consequently, European society experienced a surge in scientific inquiry and artistic innovation that permanently altered the course of history.",
+            "options": {
+                "A": "Scholars began to translate ancient Greek and Roman texts, rediscovering forgotten philosophical ideals.",
+                "B": "The bubonic plague had devastated Europe's population just decades prior to this cultural awakening.",
+                "C": "Gothic architecture continued to dominate the landscape of Northern Europe for several more centuries.",
+                "D": "Economic trade with the Ottoman Empire introduced new spices and textiles to the Italian city-states.",
+                "E": "Many contemporary historians argue that the Renaissance was not a distinct historical period at all."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "para_comp",
+            "question": "Black holes are regions of spacetime where gravity is so intense that nothing, not even light, can escape. They are typically formed from the remnants of massive stars that have collapsed under their own gravity at the end of their life cycles. ____. As matter is pulled into this boundary, it forms a superheated accretion disk that emits powerful X-rays.",
+            "options": {
+                "A": "The closest known black hole to Earth is located several thousand light-years away in the constellation Telescopium.",
+                "B": "The boundary surrounding a black hole, known as the event horizon, represents the point of no return.",
+                "C": "Stephen Hawking famously theorized that black holes slowly emit radiation and eventually evaporate.",
+                "D": "Wormholes, on the other hand, are theoretical passages through spacetime that could allow for time travel.",
+                "E": "Einstein's theory of general relativity predicted their existence long before they were observationally confirmed."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 32,
+            "section_id": "para_comp",
+            "question": "Behavioral economics challenges the traditional assumption that humans are perfectly rational actors who always maximize their own utility. Instead, it incorporates psychological insights to explain why people frequently make irrational financial decisions. ____. By understanding these cognitive biases, policymakers can design better systems to encourage savings and healthy habits.",
+            "options": {
+                "A": "For example, individuals often overvalue immediate rewards while heavily discounting long-term benefits.",
+                "B": "Classical economists adamantly refuse to accept any theories that contradict strict mathematical models.",
+                "C": "Stock market crashes are usually caused by unpredictable external shocks rather than human behavior.",
+                "D": "The concept of supply and demand remains the foundational pillar of all macroeconomic theories.",
+                "E": "Therefore, consumers should be entirely left alone to navigate complex financial markets without intervention."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 33,
+            "section_id": "para_comp",
+            "question": "Microplastics have infiltrated virtually every marine ecosystem on the planet. From the deepest ocean trenches to Arctic sea ice, these tiny plastic fragments pose a severe threat to marine life. ____. Once ingested, they can cause physical blockages, reproductive issues, and the transfer of toxic chemicals up the food chain.",
+            "options": {
+                "A": "Many filter-feeding organisms inadvertently consume these particles, mistaking them for plankton.",
+                "B": "The invention of synthetic polymers in the 20th century revolutionized the manufacturing industry.",
+                "C": "Governments are currently drafting international treaties to completely ban single-use plastics.",
+                "D": "Biodegradable alternatives are slowly becoming more cost-effective for major packaging companies.",
+                "E": "Ocean currents play a minimal role in distributing these pollutants across different geographical regions."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 34,
+            "section_id": "closest",
+            "question": "In the face of mounting public pressure, the corporation was compelled to issue a formal apology and retract its controversial advertising campaign.",
+            "options": {
+                "A": "The corporation had to formally apologize and withdraw its disputed ad campaign because the public heavily pressured them.",
+                "B": "The public pressured the corporation to such an extent that the controversial ad campaign became a huge success.",
+                "C": "Despite the public's demands for a formal apology, the corporation refused to cancel its controversial advertising campaign.",
+                "D": "The controversial advertising campaign was retracted, but the corporation never officially apologized despite public pressure.",
+                "E": "Because the ad campaign was highly controversial, the public demanded a formal apology, which the corporation happily provided."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 35,
+            "section_id": "closest",
+            "question": "Scarcely had the renowned author finished her lecture when the audience erupted into a prolonged standing ovation.",
+            "options": {
+                "A": "The moment the famous author concluded her talk, the attendees immediately stood up and applauded for a long time.",
+                "B": "The renowned author finished her lecture early because the audience interrupted her with a prolonged standing ovation.",
+                "C": "Even though the author had barely started her lecture, the audience gave her a massive standing ovation.",
+                "D": "The audience waited a long time after the famous author finished her lecture before giving her a standing ovation.",
+                "E": "Only after receiving a prolonged standing ovation did the renowned author decide to finish her lecture."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 36,
+            "section_id": "closest",
+            "question": "Had the government invested adequately in renewable energy infrastructure a decade ago, the current fossil fuel shortages would be largely negligible.",
+            "options": {
+                "A": "The current scarcity of fossil fuels would hardly be an issue now if the government had properly funded renewable energy infrastructure ten years ago.",
+                "B": "The government invested heavily in renewable energy ten years ago, which is why the current fossil fuel shortages are not a major problem.",
+                "C": "If the government decides to invest in renewable energy now, the fossil fuel shortages will become negligible in ten years.",
+                "D": "Because the government ignored renewable energy a decade ago, we will never be able to overcome the current fossil fuel shortages.",
+                "E": "The fossil fuel shortage is largely negligible despite the government's failure to invest in renewable energy infrastructure a decade ago."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 37,
+            "section_id": "closest",
+            "question": "The profound impact of the printing press on the dissemination of knowledge in 15th-century Europe cannot be overstated.",
+            "options": {
+                "A": "It is impossible to exaggerate how deeply the printing press affected the spread of information in Europe during the 1400s.",
+                "B": "The printing press had a huge impact on 15th-century Europe, but people often exaggerate its role in spreading knowledge.",
+                "C": "In the 15th century, the spread of knowledge in Europe was completely reliant on the invention of the printing press.",
+                "D": "Historians frequently overstate the importance of the printing press regarding how knowledge was distributed in 15th-century Europe.",
+                "E": "The dissemination of knowledge in 15th-century Europe was significantly hindered by the late invention of the printing press."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 38,
+            "section_id": "irrelevant",
+            "question": "(I) Sleep is an essential biological process that allows the brain to consolidate memories and flush out neurotoxins. (II) Chronic sleep deprivation has been strongly linked to cognitive decline, weakened immunity, and mood disorders. (III) Many successful entrepreneurs claim to sleep only four hours a night to maximize their productivity. (IV) During the deep stages of sleep, the body also repairs muscle tissue and regulates vital hormones. (V) Therefore, maintaining a consistent and adequate sleep schedule is paramount for long-term health.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 39,
+            "section_id": "irrelevant",
+            "question": "(I) The architecture of the ancient Maya civilization is renowned for its towering step pyramids and intricate stone carvings. (II) These monumental structures were typically aligned with astronomical events, such as the solstices and equinoxes. (III) The Aztec empire, located further north, also built impressive pyramids dedicated to their sun god. (IV) They served not only as religious temples but also as symbols of the ruling elite's political power. (V) The limestone used for construction was quarried locally using remarkably primitive but effective tools.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "irrelevant",
+            "question": "(I) Cryptocurrencies operate on decentralized blockchain networks, completely bypassing traditional banking institutions. (II) This decentralization offers users a high degree of anonymity and lower transaction fees for international transfers. (III) The first paper money was introduced in China during the Tang dynasty to facilitate large-scale commerce. (IV) However, the lack of central regulation also makes these digital assets highly volatile and susceptible to market manipulation. (V) Consequently, many retail investors have experienced massive financial losses overnight during sudden market crashes.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        }
+    ]
+}

@@ -1,0 +1,587 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 4",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 8
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 9,
+            "to": 13
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 14,
+            "to": 18
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 19,
+            "to": 23
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 24,
+            "to": 28
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 29,
+            "to": 33
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 34,
+            "to": 37
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 38,
+            "to": 40
+        }
+    ],
+    "passages": [],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "question": "The rapid industrialization of the 19th century led to a sudden and ______ increase in urban populations, causing severe housing shortages.",
+            "options": {
+                "A": "ubiquitous",
+                "B": "unprecedented",
+                "C": "equivocal",
+                "D": "sporadic",
+                "E": "lethargic"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "question": "In order to ______ the effects of climate change, governments must implement stringent emission policies immediately.",
+            "options": {
+                "A": "exacerbate",
+                "B": "mitigate",
+                "C": "fluctuate",
+                "D": "vindicate",
+                "E": "obliterate"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "question": "Despite the ______ evidence presented by the prosecution, the jury remained unconvinced of the defendant's guilt.",
+            "options": {
+                "A": "ambiguous",
+                "B": "compelling",
+                "C": "negligible",
+                "D": "frivolous",
+                "E": "dormant"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "question": "Although renewable energy sources have become more cost-effective in recent years, ______.",
+            "options": {
+                "A": "fossil fuels still dominate the global energy market",
+                "B": "solar panels are highly efficient in sunny regions",
+                "C": "wind turbines require significant initial investments",
+                "D": "they produce zero greenhouse gas emissions",
+                "E": "governments are subsidizing their production heavily"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "question": "______ since it provides a deeper understanding of human behavioral patterns across different cultures.",
+            "options": {
+                "A": "Sociology is considered a relatively modern discipline",
+                "B": "Anthropology is an essential field of study",
+                "C": "Psychology focuses primarily on individual mental processes",
+                "D": "The research was largely criticized by experts",
+                "E": "Many ancient civilizations left behind written records"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "question": "Unless developing nations receive adequate technological support, ______.",
+            "options": {
+                "A": "they have already achieved sustainable economic growth",
+                "B": "the gap between rich and poor countries will continue to widen",
+                "C": "international trade agreements are highly beneficial",
+                "D": "their natural resources are being depleted rapidly",
+                "E": "globalization has leveled the playing field"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "question": "Because the genetic mutation is recessive, ______.",
+            "options": {
+                "A": "it occurs in every generation of the family tree",
+                "B": "an individual must inherit two copies of the gene to express the trait",
+                "C": "the protein it produces is highly toxic to cells",
+                "D": "it was discovered only in the late 20th century",
+                "E": "environmental factors play no role in its expression"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 8,
+            "section_id": "completion",
+            "question": "While some historians argue that the Roman Empire fell due to external invasions, ______.",
+            "options": {
+                "A": "the Byzantine Empire survived for another thousand years",
+                "B": "others point to internal political corruption and economic instability",
+                "C": "the military was stronger than ever before",
+                "D": "Julius Caesar was assassinated in 44 BC",
+                "E": "the aqueducts were a marvel of ancient engineering"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "question": "The concept of artificial intelligence (AI) is not entirely new; it has roots dating back to classical antiquity. (1) ______, the modern field of AI was officially founded in 1956.",
+            "options": {
+                "A": "Therefore",
+                "B": "However",
+                "C": "Furthermore",
+                "D": "Consequently",
+                "E": "Similarly"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "question": "Since then, it has experienced several waves of optimism, (2) ______ by disappointment and the loss of funding.",
+            "options": {
+                "A": "followed",
+                "B": "following",
+                "C": "to follow",
+                "D": "having followed",
+                "E": "to be followed"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "question": "Today, AI has become an essential part of the technology industry, (3) ______ the heavy lifting for many of the most challenging problems in computer science.",
+            "options": {
+                "A": "doing",
+                "B": "done",
+                "C": "to do",
+                "D": "did",
+                "E": "having done"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "question": "Machine learning, a subset of AI, focuses on the development of computer programs that can access data and use it to learn (4) ______.",
+            "options": {
+                "A": "for themselves",
+                "B": "by themselves",
+                "C": "themselves",
+                "D": "of themselves",
+                "E": "with themselves"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "cloze",
+            "question": "The primary aim is to allow the computers to learn automatically (5) ______ human intervention or assistance.",
+            "options": {
+                "A": "with",
+                "B": "without",
+                "C": "through",
+                "D": "beyond",
+                "E": "despite"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "question": "The discovery of penicillin revolutionized medicine by providing a cure for bacterial infections that were previously fatal.",
+            "options": {
+                "A": "Penisilinin kesfi, daha once olumcul olan bakteriyel enfeksiyonlara bir tedavi saglayarak tibbi devrim niteliginde degistirdi.",
+                "B": "Daha once olumcul olan bakteriyel enfeksiyonlarin tedavisi, penisilinin kesfiyle tipta bir devrim yaratti.",
+                "C": "Tipta devrim yaratan penisilinin kesfi, bakteriyel enfeksiyonlari olumcul olmaktan cikardi.",
+                "D": "Penisilinin bulunmasi, bakteriyel enfeksiyonlari tedavi ederek tipta devrimsel bir ilerleme sagladi.",
+                "E": "Bakteriyel enfeksiyonlarin olumcul olmasini engelleyen penisilinin kesfi, tibbi tamamen degistirdi."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "question": "Many researchers argue that the transition to a circular economy is essential for achieving long-term sustainability.",
+            "options": {
+                "A": "Bircok arastirmaci, uzun vadeli surdurulebilirlige ulasmak icin dongusel ekonomiye gecisin sart oldugunu savunuyor.",
+                "B": "Uzun vadeli surdurulebilirlik icin dongusel ekonomiye gecilmesi gerektigi bircok arastirmaci tarafindan tartisilmaktadir.",
+                "C": "Arastirmacilarin cogu, dongusel ekonominin uzun vadeli surdurulebilirlik icin gerekli oldugunu iddia ediyor.",
+                "D": "Dongusel ekonomiye gecisin, uzun vadeli surdurulebilirligi saglamak icin onemli oldugunu savunan bircok arastirmaci var.",
+                "E": "Uzun vadeli surdurulebilirlik amaciyla dongusel ekonomiye gecisin kacinilmaz oldugu bircok arastirmaci tarafindan one suruluyor."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "question": "Despite the widespread availability of vaccines, certain infectious diseases continue to pose a significant threat to global public health.",
+            "options": {
+                "A": "Asilarin yaygin olarak bulunmasina ragmen, bazi bulasici hastaliklar kuresel halk sagligi icin onemli bir tehdit olusturmaya devam ediyor.",
+                "B": "Bazi bulasici hastaliklar kuresel halk sagligini tehdit etmeye devam etse de, asilar yaygin olarak bulunmaktadir.",
+                "C": "Asilarin yaygin bulunabilirligi, bazi bulasici hastaliklarin kuresel halk sagligi icin tehdit olusturmasini engelleyememektedir.",
+                "D": "Kuresel halk sagligini tehdit eden bazi bulasici hastaliklar, asilarin yaygin olarak bulunmasina ragmen devam etmektedir.",
+                "E": "Bulasici hastaliklarin halk sagligi icin bir tehdit olusturmasi, asilarin yayginligina ragmen surmektedir."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "translation",
+            "question": "Kuresel isinmanin etkilerini azaltmak icin uluslararasi isbirligi kacinilmazdir.",
+            "options": {
+                "A": "International cooperation is inevitable to mitigate the effects of global warming.",
+                "B": "To reduce the effects of global warming, international cooperation is necessary.",
+                "C": "Global warming effects can only be mitigated through international cooperation.",
+                "D": "International cooperation is essential for decreasing global warming impacts.",
+                "E": "The mitigation of global warming requires inevitable international cooperation."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "translation",
+            "question": "Yapay zeka teknolojilerindeki hizli gelismeler, is gucu piyasasinda koklu degisikliklere neden olabilir.",
+            "options": {
+                "A": "Rapid advancements in artificial intelligence technologies may cause fundamental changes in the labor market.",
+                "B": "Artificial intelligence technologies are rapidly advancing and causing changes in the labor market.",
+                "C": "The labor market might undergo fundamental changes due to rapid developments in AI.",
+                "D": "Fast developments in AI technologies will lead to radical changes in the workforce.",
+                "E": "Fundamental changes in the labor market are a result of rapid AI advancements."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "question": "The professor emphasized that attending the lectures is crucial for passing the final examination.",
+            "options": {
+                "A": "According to the professor, it is impossible to pass the final exam without attending the lectures.",
+                "B": "The professor noted that only those who attend the lectures will pass the final exam.",
+                "C": "The professor pointed out the great importance of lecture attendance in order to succeed in the final exam.",
+                "D": "Attending lectures was suggested by the professor as a good way to pass the final exam.",
+                "E": "The professor warned that failing the final exam is a direct result of missing lectures."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "question": "No sooner had the government announced the new tax policy than public protests erupted across the country.",
+            "options": {
+                "A": "Immediately after the new tax policy was announced by the government, public protests broke out nationwide.",
+                "B": "The government announced the new tax policy because public protests had erupted across the country.",
+                "C": "Public protests erupted across the country shortly before the government announced the new tax policy.",
+                "D": "The new tax policy was announced by the government to prevent public protests from erupting across the country.",
+                "E": "As soon as public protests erupted across the country, the government announced the new tax policy."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "paraphrase",
+            "question": "Despite her extensive research, the scientist could not find a conclusive answer to the anomaly.",
+            "options": {
+                "A": "Even though she researched extensively, a definitive explanation for the anomaly eluded the scientist.",
+                "B": "The scientist found a conclusive answer to the anomaly because of her extensive research.",
+                "C": "If the scientist had done more extensive research, she might have found a conclusive answer to the anomaly.",
+                "D": "The anomaly was finally explained by the scientist following her extensive research.",
+                "E": "Unless she conducts extensive research, the scientist will not find a conclusive answer to the anomaly."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 22,
+            "section_id": "paraphrase",
+            "question": "The sudden drop in temperature led to severe crop damage in the region.",
+            "options": {
+                "A": "Severe crop damage in the region was brought about by the abrupt decrease in temperature.",
+                "B": "The temperature dropped suddenly because the crops in the region were severely damaged.",
+                "C": "Despite the sudden drop in temperature, the crops in the region suffered severe damage.",
+                "D": "The severe crop damage in the region caused the temperature to drop suddenly.",
+                "E": "There was a sudden drop in temperature, but it did not lead to severe crop damage in the region."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "paraphrase",
+            "question": "It is widely believed that physical exercise is just as important for mental health as it is for physical well-being.",
+            "options": {
+                "A": "Many people think that working out benefits one's mental state equally as much as it does physical health.",
+                "B": "Physical exercise is believed to be more important for physical well-being than for mental health.",
+                "C": "Mental health is widely considered to be more dependent on physical exercise than physical well-being is.",
+                "D": "People believe that physical exercise is important for physical well-being, but not for mental health.",
+                "E": "It is a common belief that physical well-being and mental health are unrelated to physical exercise."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "question": "Professor: Have you finalized the methodology for your thesis yet? Student: ______ Professor: That sounds appropriate. Make sure to justify your choice of sampling technique in the introduction.",
+            "options": {
+                "A": "Yes, I've decided to use a mixed-methods approach to gather both quantitative and qualitative data.",
+                "B": "No, I'm still trying to figure out which literature to review.",
+                "C": "I think the conclusion will be the hardest part to write.",
+                "D": "I've already submitted the final draft to the committee.",
+                "E": "My theoretical framework is based on social constructivism."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "dialogue",
+            "question": "Researcher A: The latest data shows a significant correlation between sleep deprivation and cognitive decline. Researcher B: ______ Researcher A: Exactly. We need longitudinal studies to determine causation.",
+            "options": {
+                "A": "But correlation does not necessarily imply causation.",
+                "B": "I disagree, I think the methodology was flawed.",
+                "C": "Are you sure the sample size was large enough?",
+                "D": "That confirms our initial hypothesis perfectly.",
+                "E": "Sleep deprivation is becoming more common among students."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "dialogue",
+            "question": "Journalist: How do you respond to critics who claim the new economic policy will increase inflation? Economist: ______ Journalist: So you believe the long-term benefits outweigh the short-term risks?",
+            "options": {
+                "A": "While there might be a temporary spike, the structural reforms will ultimately stabilize prices.",
+                "B": "I completely agree with the critics; inflation is bound to rise.",
+                "C": "The central bank has no control over these macroeconomic variables.",
+                "D": "Inflation is a global phenomenon that we cannot isolate ourselves from.",
+                "E": "We are not concerned about inflation at this stage of the recovery."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "dialogue",
+            "question": "Doctor: Your blood test results indicate a slight deficiency in Vitamin D. Patient: ______ Doctor: Just a mild supplement and increasing your sun exposure should be enough.",
+            "options": {
+                "A": "Is this something I need to be worried about?",
+                "B": "I knew I shouldn't have eaten so much sugar.",
+                "C": "Does this mean I need surgery?",
+                "D": "I've been feeling extremely fatigued lately.",
+                "E": "Can I get a copy of the report for my records?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 28,
+            "section_id": "dialogue",
+            "question": "Colleague 1: The software update caused the server to crash again. Colleague 2: ______ Colleague 1: I'll notify the IT department immediately.",
+            "options": {
+                "A": "We need to roll back to the previous version before the clients notice.",
+                "B": "It's probably just a minor glitch that will fix itself.",
+                "C": "I think it's time we upgraded our hardware anyway.",
+                "D": "Did you remember to back up the database?",
+                "E": "The new features are really impressive, though."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "para_comp",
+            "question": "Photosynthesis is the process used by plants, algae and certain bacteria to harness energy from sunlight and turn it into chemical energy. ______ This oxygen is vital for the survival of aerobic organisms on Earth.",
+            "options": {
+                "A": "A byproduct of this complex biochemical process is the release of oxygen into the atmosphere.",
+                "B": "The rate of photosynthesis is affected by light intensity, carbon dioxide concentration, and temperature.",
+                "C": "Cellular respiration is the complementary process that consumes oxygen and releases carbon dioxide.",
+                "D": "Chlorophyll is the green pigment responsible for capturing light energy.",
+                "E": "Photosynthesis occurs primarily in the leaves of plants, specifically in the chloroplasts."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "para_comp",
+            "question": "The Renaissance was a fervent period of European cultural, artistic, political and economic 'rebirth' following the Middle Ages. ______ Thinkers and artists of the time sought to revive the ideals of ancient Greek and Roman culture.",
+            "options": {
+                "A": "It generally took place from the 14th century to the 17th century, promoting the rediscovery of classical philosophy, literature and art.",
+                "B": "The Black Death had previously devastated the population of Europe in the 14th century.",
+                "C": "The Industrial Revolution would later bring about massive technological and social changes.",
+                "D": "Feudalism was the dominant social system in medieval Europe.",
+                "E": "The invention of the printing press by Johannes Gutenberg revolutionized the spread of information."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "para_comp",
+            "question": "Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. ______ This principle challenges our classical intuition about how the universe operates.",
+            "options": {
+                "A": "One of its key concepts is superposition, which states that a particle can exist in multiple states simultaneously until it is observed.",
+                "B": "Albert Einstein famously criticized aspects of quantum mechanics, stating 'God does not play dice with the universe'.",
+                "C": "Classical mechanics, formulated by Isaac Newton, accurately describes the motion of macroscopic objects.",
+                "D": "The theory of general relativity explains gravity as the curvature of spacetime.",
+                "E": "String theory attempts to reconcile quantum mechanics with general relativity."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "para_comp",
+            "question": "Urbanization refers to the population shift from rural to urban areas, the corresponding decrease in the proportion of people living in rural areas, and the ways in which societies adapt to this change. ______ This rapid growth often outpaces the development of adequate infrastructure and housing.",
+            "options": {
+                "A": "Consequently, many developing nations are currently experiencing an explosion in the size of their megacities.",
+                "B": "Rural communities often suffer from a lack of access to specialized healthcare and higher education.",
+                "C": "The agricultural sector remains a crucial component of the global economy despite urbanization.",
+                "D": "Suburbanization is a related phenomenon where people move from the city center to the outskirts.",
+                "E": "Historically, the Industrial Revolution was a major catalyst for urban migration."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 33,
+            "section_id": "para_comp",
+            "question": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. ______ Without it, communication would consist of merely disjointed vocabularies lacking coherent meaning.",
+            "options": {
+                "A": "It provides the rules and principles that govern the structure of language.",
+                "B": "Semantics, on the other hand, deals with the meaning of words and sentences.",
+                "C": "Phonology is the study of the sound systems of languages.",
+                "D": "Many linguists argue that the capacity for language is innate to humans.",
+                "E": "The English language has borrowed heavily from Latin and French throughout its history."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 34,
+            "section_id": "closest",
+            "question": "Unless the government implements strict anti-pollution laws, the city's air quality will deteriorate further.",
+            "options": {
+                "A": "If the government does not enforce rigorous regulations against pollution, the air quality in the city will get worse.",
+                "B": "The city's air quality has deteriorated because the government failed to implement strict anti-pollution laws.",
+                "C": "Even if the government implements strict anti-pollution laws, the city's air quality might still deteriorate.",
+                "D": "The government must implement strict anti-pollution laws since the city's air quality has deteriorated.",
+                "E": "The deterioration of the city's air quality forced the government to implement strict anti-pollution laws."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 35,
+            "section_id": "closest",
+            "question": "The CEO resigned not because of the recent scandal, but due to his declining health.",
+            "options": {
+                "A": "The underlying reason for the CEO's resignation was his failing health, rather than the recent scandal.",
+                "B": "The recent scandal caused the CEO's health to decline, which led to his resignation.",
+                "C": "Both the recent scandal and his declining health contributed to the CEO's decision to resign.",
+                "D": "The CEO resigned because of the recent scandal, even though his health was declining.",
+                "E": "If it weren't for his declining health, the CEO would have resigned because of the recent scandal."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 36,
+            "section_id": "closest",
+            "question": "Hardly had the play begun when the fire alarm went off, causing the audience to evacuate.",
+            "options": {
+                "A": "The fire alarm rang almost immediately after the play started, leading to the evacuation of the audience.",
+                "B": "The play had not yet begun when the fire alarm forced the audience to evacuate.",
+                "C": "The audience evacuated because the fire alarm went off before the play could begin.",
+                "D": "The fire alarm going off caused the audience to evacuate, which delayed the start of the play.",
+                "E": "As soon as the audience evacuated due to the fire alarm, the play began."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 37,
+            "section_id": "closest",
+            "question": "Despite being recognized as a brilliant scientist, her theories were initially met with intense skepticism.",
+            "options": {
+                "A": "Although she was acknowledged as an exceptional scientist, people were very doubtful of her theories at first.",
+                "B": "Because her theories were met with intense skepticism, she was not recognized as a brilliant scientist at first.",
+                "C": "Her theories were initially met with intense skepticism, which proved she was a brilliant scientist.",
+                "D": "She was recognized as a brilliant scientist only after her theories overcame intense skepticism.",
+                "E": "People were skeptical of her theories because she was recognized as a brilliant scientist."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 38,
+            "section_id": "irrelevant",
+            "question": "(I) The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states. (II) Several walls were built from as early as the 7th century BC. (III) The Ming dynasty is well known for its beautiful porcelain and ceramic art. (IV) Later on, many successive dynasties built and maintained multiple stretches of border walls. (V) The most well-known sections of the wall were built by the Ming dynasty.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 39,
+            "section_id": "irrelevant",
+            "question": "(I) Earthquakes are the result of sudden movement along faults within the Earth. (II) The movement releases stored-up elastic strain energy in the form of seismic waves. (III) Tsunamis are giant ocean waves caused by earthquakes or volcanic eruptions under the sea. (IV) These waves propagate through the Earth and cause the ground surface to shake. (V) Such ground shaking can lead to significant structural damage and loss of life.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "irrelevant",
+            "question": "(I) Coffee is one of the most popular beverages in the world. (II) It is cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India, and Africa. (III) Green tea is known for its high concentration of antioxidants and health benefits. (IV) The two most commonly grown coffee bean types are Arabica and Robusta. (V) Once ripe, coffee berries are picked, processed, and dried to extract the beans inside.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        }
+    ]
+}
