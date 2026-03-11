@@ -46,9 +46,9 @@
     icon: 'fa-random',
     exams: [
       { id: 'mini_karma', label: 'Hepsinden Karışık (Dinamik)', file: '/exams/mini/special/master_karma.json', info: 'Sayı Seçlebilir' },
-      ...Array.from({ length: 25 }, (_, i) => ({
+      ...Array.from({ length: 26 }, (_, i) => ({
         id: `mini_fixed_${i + 1}`,
-        label: i === 0 ? `Yeni Karma Mini 1 (40 Soru)` : `Eski Karma Mini ${i}`, // The first one is that 40-q set you sent
+        label: `Mini Deneme ${i + 1}`,
         file: i === 0 ? '/exams/mini/special/karma1.json' : `/exams/mini/miniexam${i}.json`,
         info: '40 Soru Sabit'
       }))
