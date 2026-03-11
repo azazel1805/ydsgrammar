@@ -16,52 +16,67 @@
             "id": "completion",
             "label": "Sentence Completion",
             "from": 4,
-            "to": 8
+            "to": 7
         },
         {
             "id": "cloze",
             "label": "Cloze Test",
-            "from": 9,
-            "to": 13
+            "from": 8,
+            "to": 12
         },
         {
             "id": "translation",
             "label": "Translation",
-            "from": 14,
-            "to": 18
+            "from": 13,
+            "to": 16
         },
         {
             "id": "paraphrase",
             "label": "Paraphrase",
-            "from": 19,
-            "to": 23
+            "from": 17,
+            "to": 20
         },
         {
             "id": "dialogue",
             "label": "Dialogue Completion",
-            "from": 24,
-            "to": 28
+            "from": 21,
+            "to": 24
         },
         {
             "id": "para_comp",
             "label": "Paragraph Completion",
-            "from": 29,
-            "to": 33
+            "from": 25,
+            "to": 28
         },
         {
             "id": "closest",
             "label": "Closest Meaning",
-            "from": 34,
-            "to": 37
+            "from": 29,
+            "to": 31
         },
         {
             "id": "irrelevant",
             "label": "Irrelevant Sentence",
-            "from": 38,
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
             "to": 40
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p1",
+            "text": "Mars has long been a source of fascination for astronomers and science fiction writers alike. Known as the Red Planet due to iron oxide on its surface, it is the most Earth-like planet in our solar system. Evidence from recent missions suggests that liquid water may have flowed on its surface in the distant past, raising questions about the possibility of ancient life. NASA and other space agencies are currently planning manned missions to Mars, which could take place within the next two decades. However, the harsh environment, characterized by extreme cold and thin atmosphere, presents significant challenges for long-term human survival."
+        },
+        {
+            "id": "p2",
+            "text": "Artificial Intelligence (AI) is rapidly changing the landscape of education by providing personalized learning experiences for students. Adaptive software can analyze a student's performance in real-time and adjust the difficulty level of tasks accordingly. This allows students to learn at their own pace, ensuring they do not fall behind. Teachers can also use AI tools to automate grading and administrative work, giving them more time for individual instruction. However, some critics worry that an over-reliance on AI could diminish the human connection that is vital for effective teaching and emotional development in children."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -156,19 +171,6 @@
         },
         {
             "id": 8,
-            "section_id": "completion",
-            "question": "____ the severe economic sanctions imposed by the international community, the regime continued to heavily fund its nuclear proliferation program.",
-            "options": {
-                "A": "In accordance with",
-                "B": "Notwithstanding",
-                "C": "By means of",
-                "D": "As a consequence of",
-                "E": "In comparison to"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 9,
             "section_id": "cloze",
             "question": "(1) The Industrial Revolution marked a major turning point in Earth's ecology and humans' relationship with their environment.",
             "options": {
@@ -181,7 +183,7 @@
             "correct": "B"
         },
         {
-            "id": 10,
+            "id": 9,
             "section_id": "cloze",
             "question": "(2) Before this era, human impact on the environment was largely localized and ____ by natural processes.",
             "options": {
@@ -194,7 +196,7 @@
             "correct": "A"
         },
         {
-            "id": 11,
+            "id": 10,
             "section_id": "cloze",
             "question": "(3) With the advent of mechanization, ____, the scale of resource extraction grew exponentially.",
             "options": {
@@ -207,7 +209,7 @@
             "correct": "D"
         },
         {
-            "id": 12,
+            "id": 11,
             "section_id": "cloze",
             "question": "(4) Factories began emitting unprecedented amounts of greenhouse gases, ____ the atmosphere's chemical composition.",
             "options": {
@@ -220,7 +222,7 @@
             "correct": "B"
         },
         {
-            "id": 13,
+            "id": 12,
             "section_id": "cloze",
             "question": "(5) Today, we are still grappling with the long-term consequences of these early industrial ____.",
             "options": {
@@ -233,7 +235,7 @@
             "correct": "E"
         },
         {
-            "id": 14,
+            "id": 13,
             "section_id": "translation",
             "question": "Küresel ısınmanın etkileri her geçen gün daha belirgin hale gelse de, birçok ülke karbon emisyonlarını azaltmak için gerekli olan köklü politika değişikliklerini yapmakta isteksiz görünmektedir.",
             "options": {
@@ -246,7 +248,7 @@
             "correct": "A"
         },
         {
-            "id": 15,
+            "id": 14,
             "section_id": "translation",
             "question": "Modern tıptaki ilerlemeler, bir zamanlar ölümcül kabul edilen hastalıkların artık rutin olarak tedavi edilmesine olanak tanımıştır.",
             "options": {
@@ -259,7 +261,7 @@
             "correct": "A"
         },
         {
-            "id": 16,
+            "id": 15,
             "section_id": "translation",
             "question": "Birçok sosyolog, artan gelir eşitsizliğinin toplumdaki sosyal hareketliliği kısıtlayan en önemli faktör olduğunu ileri sürmektedir.",
             "options": {
@@ -272,7 +274,7 @@
             "correct": "A"
         },
         {
-            "id": 17,
+            "id": 16,
             "section_id": "translation",
             "question": "Yapay zeka sistemleri ne kadar gelişmiş olursa olsun, insan empati ve ahlaki yargı kapasitesinin yerini almaları pek olası değildir.",
             "options": {
@@ -285,20 +287,7 @@
             "correct": "A"
         },
         {
-            "id": 18,
-            "section_id": "translation",
-            "question": "Tarih boyunca imparatorluklar, yalnızca askeri güçle değil, aynı zamanda fethettikleri bölgelerin kültürlerini asimile ederek de ayakta kalmışlardır.",
-            "options": {
-                "A": "Throughout history, empires have survived not only through military power but also by assimilating the cultures of the regions they conquered.",
-                "B": "In the course of history, empires managed to endure mostly by military might, though they also assimilated conquered cultures.",
-                "C": "Throughout history, the survival of empires depended strictly on military dominance and the cultural assimilation of conquered lands.",
-                "D": "Historically, empires sustained themselves less by military force and more by integrating the cultural practices of their conquests.",
-                "E": "Over the centuries, empires have expanded not just by using military force, but by completely absorbing the cultures of the invaded territories."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 19,
+            "id": 17,
             "section_id": "paraphrase",
             "question": "The sheer complexity of the human brain makes it exceedingly difficult for neuroscientists to fully map its neural pathways.",
             "options": {
@@ -311,7 +300,7 @@
             "correct": "A"
         },
         {
-            "id": 20,
+            "id": 18,
             "section_id": "paraphrase",
             "question": "Unless comprehensive measures are taken to curb deforestation, countless endemic species will face imminent extinction.",
             "options": {
@@ -324,7 +313,7 @@
             "correct": "A"
         },
         {
-            "id": 21,
+            "id": 19,
             "section_id": "paraphrase",
             "question": "Economic growth is inextricably linked to energy consumption, posing a dilemma for developing nations aiming to reduce carbon footprints.",
             "options": {
@@ -337,7 +326,7 @@
             "correct": "A"
         },
         {
-            "id": 22,
+            "id": 20,
             "section_id": "paraphrase",
             "question": "It is widely acknowledged that regular physical exercise not only improves cardiovascular health but also significantly enhances cognitive function.",
             "options": {
@@ -350,20 +339,7 @@
             "correct": "A"
         },
         {
-            "id": 23,
-            "section_id": "paraphrase",
-            "question": "The professor's groundbreaking research on renewable energy storage was largely overlooked until the recent global energy crisis.",
-            "options": {
-                "A": "The professor's innovative work regarding how to store renewable energy received little attention prior to the current worldwide energy shortage.",
-                "B": "During the recent global energy crisis, the professor's research on renewable energy storage was completely ignored by the scientific community.",
-                "C": "Because of the recent global energy crisis, the professor was forced to conduct groundbreaking research on renewable energy storage.",
-                "D": "The professor's research on energy storage caused a global energy crisis, which is why it was previously overlooked.",
-                "E": "Although the professor's research was well-known, it only became groundbreaking after the global energy crisis occurred."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 24,
+            "id": 21,
             "section_id": "dialogue",
             "question": "Professor Hayes: The latest data indicates a severe decline in the bee population. \nDr. Simon: ____ \nProfessor Hayes: Indeed. If pollination rates drop further, agricultural yields will plummet.",
             "options": {
@@ -376,7 +352,7 @@
             "correct": "B"
         },
         {
-            "id": 25,
+            "id": 22,
             "section_id": "dialogue",
             "question": "Journalist: Your new book argues that the Roman Empire fell primarily due to internal economic instability. \nHistorian: ____ \nJournalist: So, you believe the barbarian invasions were merely the final blow to an already crumbling structure?",
             "options": {
@@ -389,7 +365,7 @@
             "correct": "A"
         },
         {
-            "id": 26,
+            "id": 23,
             "section_id": "dialogue",
             "question": "Project Manager: We are falling behind schedule on the software development phase. \nLead Developer: ____ \nProject Manager: I understand, but the client expects the beta version by next Friday. We might need to authorize overtime.",
             "options": {
@@ -402,7 +378,7 @@
             "correct": "A"
         },
         {
-            "id": 27,
+            "id": 24,
             "section_id": "dialogue",
             "question": "Student: I'm having trouble understanding the concept of 'opportunity cost' in this economics chapter. \nProfessor: ____ \nStudent: Oh, I see. So by choosing to study for this exam, the cost is the leisure time I gave up.",
             "options": {
@@ -415,20 +391,7 @@
             "correct": "B"
         },
         {
-            "id": 28,
-            "section_id": "dialogue",
-            "question": "Dr. Aris: The experimental results contradict our initial hypothesis regarding the chemical catalyst. \nDr. Vance: ____ \nDr. Aris: Let's run the trials one more time. If we get the same anomaly, we'll have to publish the findings as they are.",
-            "options": {
-                "A": "We must have made a calculation error; let's alter the data to fit the hypothesis.",
-                "B": "Then we should discard the results immediately; they are clearly invalid.",
-                "C": "Perhaps the temperature fluctuations in the lab affected the reaction rate.",
-                "D": "I always knew this hypothesis was completely flawed from the very beginning.",
-                "E": "Let's just abandon this project and focus on the secondary research topic."
-            },
-            "correct": "C"
-        },
-        {
-            "id": 29,
+            "id": 25,
             "section_id": "para_comp",
             "question": "Language acquisition in children is a remarkably rapid and complex process. By the age of three, most children have mastered the basic grammatical structures of their native tongue. ____. This innate capability suggests that the human brain is biologically hardwired for linguistic development from birth.",
             "options": {
@@ -441,7 +404,7 @@
             "correct": "B"
         },
         {
-            "id": 30,
+            "id": 26,
             "section_id": "para_comp",
             "question": "The Renaissance was characterized by a profound revival of classical art and literature. Originating in Italy during the 14th century, this cultural movement emphasized humanism, shifting the focus from divine matters to human achievements. ____. Consequently, European society experienced a surge in scientific inquiry and artistic innovation that permanently altered the course of history.",
             "options": {
@@ -454,7 +417,7 @@
             "correct": "A"
         },
         {
-            "id": 31,
+            "id": 27,
             "section_id": "para_comp",
             "question": "Black holes are regions of spacetime where gravity is so intense that nothing, not even light, can escape. They are typically formed from the remnants of massive stars that have collapsed under their own gravity at the end of their life cycles. ____. As matter is pulled into this boundary, it forms a superheated accretion disk that emits powerful X-rays.",
             "options": {
@@ -467,7 +430,7 @@
             "correct": "B"
         },
         {
-            "id": 32,
+            "id": 28,
             "section_id": "para_comp",
             "question": "Behavioral economics challenges the traditional assumption that humans are perfectly rational actors who always maximize their own utility. Instead, it incorporates psychological insights to explain why people frequently make irrational financial decisions. ____. By understanding these cognitive biases, policymakers can design better systems to encourage savings and healthy habits.",
             "options": {
@@ -480,20 +443,7 @@
             "correct": "A"
         },
         {
-            "id": 33,
-            "section_id": "para_comp",
-            "question": "Microplastics have infiltrated virtually every marine ecosystem on the planet. From the deepest ocean trenches to Arctic sea ice, these tiny plastic fragments pose a severe threat to marine life. ____. Once ingested, they can cause physical blockages, reproductive issues, and the transfer of toxic chemicals up the food chain.",
-            "options": {
-                "A": "Many filter-feeding organisms inadvertently consume these particles, mistaking them for plankton.",
-                "B": "The invention of synthetic polymers in the 20th century revolutionized the manufacturing industry.",
-                "C": "Governments are currently drafting international treaties to completely ban single-use plastics.",
-                "D": "Biodegradable alternatives are slowly becoming more cost-effective for major packaging companies.",
-                "E": "Ocean currents play a minimal role in distributing these pollutants across different geographical regions."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 34,
+            "id": 29,
             "section_id": "closest",
             "question": "In the face of mounting public pressure, the corporation was compelled to issue a formal apology and retract its controversial advertising campaign.",
             "options": {
@@ -506,7 +456,7 @@
             "correct": "A"
         },
         {
-            "id": 35,
+            "id": 30,
             "section_id": "closest",
             "question": "Scarcely had the renowned author finished her lecture when the audience erupted into a prolonged standing ovation.",
             "options": {
@@ -519,7 +469,7 @@
             "correct": "A"
         },
         {
-            "id": 36,
+            "id": 31,
             "section_id": "closest",
             "question": "Had the government invested adequately in renewable energy infrastructure a decade ago, the current fossil fuel shortages would be largely negligible.",
             "options": {
@@ -532,20 +482,7 @@
             "correct": "A"
         },
         {
-            "id": 37,
-            "section_id": "closest",
-            "question": "The profound impact of the printing press on the dissemination of knowledge in 15th-century Europe cannot be overstated.",
-            "options": {
-                "A": "It is impossible to exaggerate how deeply the printing press affected the spread of information in Europe during the 1400s.",
-                "B": "The printing press had a huge impact on 15th-century Europe, but people often exaggerate its role in spreading knowledge.",
-                "C": "In the 15th century, the spread of knowledge in Europe was completely reliant on the invention of the printing press.",
-                "D": "Historians frequently overstate the importance of the printing press regarding how knowledge was distributed in 15th-century Europe.",
-                "E": "The dissemination of knowledge in 15th-century Europe was significantly hindered by the late invention of the printing press."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 38,
+            "id": 32,
             "section_id": "irrelevant",
             "question": "(I) Sleep is an essential biological process that allows the brain to consolidate memories and flush out neurotoxins. (II) Chronic sleep deprivation has been strongly linked to cognitive decline, weakened immunity, and mood disorders. (III) Many successful entrepreneurs claim to sleep only four hours a night to maximize their productivity. (IV) During the deep stages of sleep, the body also repairs muscle tissue and regulates vital hormones. (V) Therefore, maintaining a consistent and adequate sleep schedule is paramount for long-term health.",
             "options": {
@@ -558,7 +495,7 @@
             "correct": "C"
         },
         {
-            "id": 39,
+            "id": 33,
             "section_id": "irrelevant",
             "question": "(I) The architecture of the ancient Maya civilization is renowned for its towering step pyramids and intricate stone carvings. (II) These monumental structures were typically aligned with astronomical events, such as the solstices and equinoxes. (III) The Aztec empire, located further north, also built impressive pyramids dedicated to their sun god. (IV) They served not only as religious temples but also as symbols of the ruling elite's political power. (V) The limestone used for construction was quarried locally using remarkably primitive but effective tools.",
             "options": {
@@ -571,7 +508,7 @@
             "correct": "C"
         },
         {
-            "id": 40,
+            "id": 34,
             "section_id": "irrelevant",
             "question": "(I) Cryptocurrencies operate on decentralized blockchain networks, completely bypassing traditional banking institutions. (II) This decentralization offers users a high degree of anonymity and lower transaction fees for international transfers. (III) The first paper money was introduced in China during the Tang dynasty to facilitate large-scale commerce. (IV) However, the lack of central regulation also makes these digital assets highly volatile and susceptible to market manipulation. (V) Consequently, many retail investors have experienced massive financial losses overnight during sudden market crashes.",
             "options": {
@@ -582,6 +519,90 @@
                 "E": "V"
             },
             "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Why is Mars referred to as the Red Planet?",
+            "options": {
+                "A": "Because it has a very hot and liquid surface.",
+                "B": "Due to the presence of iron oxide on the ground.",
+                "C": "It reflects the light from our sun in a red spectrum.",
+                "D": "Because it was named after the ancient god of war.",
+                "E": "Due to its thick atmosphere that traps heat."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What discovery has increased the hope of finding ancient life on Mars?",
+            "options": {
+                "A": "The presence of alien civilizations found by NASA.",
+                "B": "The planet's similarity to the Earth's atmosphere.",
+                "C": "Evidence that liquid water once existed on the surface.",
+                "D": "The successful landing of manned missions already.",
+                "E": "The thin atmosphere that is easy to breathe for humans."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What is one major obstacle to human colonization of Mars?",
+            "options": {
+                "A": "The iron oxide that makes the soil too toxic to farm.",
+                "B": "The two-decade travel time required to reach the planet.",
+                "C": "The extremely cold climate and the thin atmosphere.",
+                "D": "The lack of interest from international space agencies.",
+                "E": "The Red Planet's refusal to host liquid water again."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "How does adaptive AI software benefit individual students?",
+            "options": {
+                "A": "It provides them with the same tasks regardless of level.",
+                "B": "It adjusts the difficulty based on their actual progress.",
+                "C": "It encourages them to learn at a slower pace.",
+                "D": "It replaces the need for any human teachers in school.",
+                "E": "It focuses on emotional development rather than grades."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What is one primary advantage of AI for teachers?",
+            "options": {
+                "A": "It allows them to avoid grading students' work entirely.",
+                "B": "It provides more time for personalized human interaction.",
+                "C": "It automates the lesson planning for the whole year.",
+                "D": "It eliminates the need for any administrative meetings.",
+                "E": "It makes students more reliant on digital interfaces."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What concern do critics voice regarding AI in the classroom?",
+            "options": {
+                "A": "It might weaken the essential bond between teacher and student.",
+                "B": "The cost of adaptive software is too high for most schools.",
+                "C": "It will make students more emotional than they should be.",
+                "D": "AI tools are often inaccurate when grading complex work.",
+                "E": "It prevents students from using digital software properly."
+            },
+            "correct": "A"
         }
     ]
 }

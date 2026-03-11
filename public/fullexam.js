@@ -7,7 +7,9 @@ const EXAM_LIST = [
   { id: 'mini2', label: 'Mini Deneme 2', file: '/exams/mini/miniexam2.json' },
   { id: 'mini3', label: 'Mini Deneme 3', file: '/exams/mini/miniexam3.json' },
   { id: 'mini4', label: 'Mini Deneme 4', file: '/exams/mini/miniexam4.json' },
-  { id: 'mini5', label: 'Mini Deneme 5', file: '/exams/mini/miniexam5.json' }
+  { id: 'mini5', label: 'Mini Deneme 5', file: '/exams/mini/miniexam5.json' },
+  { id: 'mini6', label: 'Mini Deneme 6', file: '/exams/mini/miniexam6.json' },
+  { id: 'mini7', label: 'Mini Deneme 7', file: '/exams/mini/miniexam7.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────

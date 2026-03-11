@@ -1,0 +1,628 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 6",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": "The concept of sustainable development emerged in the late 20th century as a response to growing concerns about environmental degradation and social inequality. Defined by the Brundtland Commission as development that meets the needs of the present without compromising the ability of future generations to meet their own needs, it encompasses three main pillars: economic growth, environmental protection, and social equity. While the idea has gained widespread acceptance in international policy circles, its implementation remains a challenge. Critics argue that the current global economic system, which prioritizes short-term profits, is fundamentally at odds with long-term sustainability. Furthermore, there is often a conflict between the economic aspirations of developing nations and the environmental restrictions advocated by wealthier countries."
+        },
+        {
+            "id": "p2",
+            "text": "Neuroplasticity, also known as brain plasticity, refers to the brain's ability to reorganize itself by forming new neural connections throughout life. For many years, it was believed that the adult brain was a 'non-renewable' organ, meaning that once neurons died or were damaged, they could not be replaced or repaired. However, research since the 1970s has overturned this view, showing that the brain is dynamic and adaptable. Neuroplasticity allows the neurons in the brain to compensate for injury and disease and to adjust their activities in response to new situations or changes in their environment. This phenomenon is particularly evident in people who recover from strokes or in musicians whose brains show structural changes in areas related to motor skills and auditory processing."
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Scientific breakthroughs in genetic engineering have the potential to ---- our understanding of hereditary diseases and lead to more effective treatments.",
+            "options": {
+                "A": "hinder",
+                "B": "augment",
+                "C": "undermine",
+                "D": "alleviate",
+                "E": "jeopardize"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Despite the overwhelming evidence suggesting a decline in biodiversity, some policymakers remain ---- about the urgency of climate action.",
+            "options": {
+                "A": "scrupulous",
+                "B": "skeptical",
+                "C": "enthusiastic",
+                "D": "vigilant",
+                "E": "adept"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "---- the government has invested heavily in renewable energy infrastructure over the last decade, fossil fuels still account for the majority of the nation's energy consumption.",
+            "options": {
+                "A": "Provided that",
+                "B": "In case",
+                "C": "Even though",
+                "D": "As long as",
+                "E": "Since"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Research indicates that cognitive decline in the elderly can be significantly delayed ---- they engage in regular physical exercise and mental stimulation.",
+            "options": {
+                "A": "so that",
+                "B": "unless",
+                "C": "as if",
+                "D": "on condition that",
+                "E": "rather than"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Economists argue that a sudden increase in the minimum wage could lead to higher unemployment rates, ---- it might also boost consumer spending in the long run.",
+            "options": {
+                "A": "furthermore",
+                "B": "nevertheless",
+                "C": "consequently",
+                "D": "similarly",
+                "E": "likewise"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Urban planners are increasingly focusing on green spaces ---- they provide essential psychological benefits to residents in densely populated areas.",
+            "options": {
+                "A": "in spite of",
+                "B": "due to the fact that",
+                "C": "regardless of",
+                "D": "contrary to",
+                "E": "by means of"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 7,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "(1) ---- many cultures, the concept of time is perceived as a linear progression.",
+            "options": {
+                "A": "Among",
+                "B": "Within",
+                "C": "Between",
+                "D": "Across",
+                "E": "Through"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "(2) ----, some indigenous societies view time as cyclical, repeating patterns of nature.",
+            "options": {
+                "A": "Moreover",
+                "B": "However",
+                "C": "Therefore",
+                "D": "Additionally",
+                "E": "Instead"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "This fundamental difference (3) ---- how a society organizes its labor and celebrations.",
+            "options": {
+                "A": "affects",
+                "B": "effect",
+                "C": "is affected",
+                "D": "affecting",
+                "E": "has affected"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "If a culture (4) ---- to view time as finite, it tends to prioritize efficiency.",
+            "options": {
+                "A": "is choosing",
+                "B": "chooses",
+                "C": "had chosen",
+                "D": "will choose",
+                "E": "has been chosen"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Consequently, the (5) ---- of time management becomes a central pillar of their civilization.",
+            "options": {
+                "A": "notion",
+                "B": "denial",
+                "C": "rejection",
+                "D": "waste",
+                "E": "absence"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Modern arkeologlar, antik medeniyetlerin sosyal yapısını anlamak için gelişmiş dijital görüntüleme tekniklerini kullanmaktadırlar.",
+            "options": {
+                "A": "Modern archaeologists use advanced digital imaging techniques to understand the social structure of ancient civilizations.",
+                "B": "Advanced digital imaging techniques are used by archaeologists to clarify the social life of ancient people.",
+                "C": "To understand ancient civilizations, archaeologists had to use modern digital imaging techniques.",
+                "D": "Modern archaeologists, who use digital imaging, want to understand social structures.",
+                "E": "The social structure of ancient civilizations is being researched by modern archaeologists using technology."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Eğitim sistemindeki reformlar, öğrencilerin eleştirel düşünme becerilerini geliştirmeyi amaçlamaktadır.",
+            "options": {
+                "A": "The reforms in the education system aim to improve students' critical thinking skills.",
+                "B": "Students' critical thinking skills are being improved by education reforms.",
+                "C": "Reforms aimed at the education system focus on student thinking.",
+                "D": "In order to improve critical thinking, the education system must be reformed.",
+                "E": "The aim of students is to improve their thinking skills through education reforms."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Although the experimental drug showed promise in early trials, its side effects led to its eventual withdrawal.",
+            "options": {
+                "A": "Deneysel ilaç erken denemelerde umut vaat etmesine rağmen, yan etkileri nihai olarak geri çekilmesine yol açtı.",
+                "B": "İlaç denemeleri başarılı olsa da yan etkiler yüzünden piyasadan kaldırıldı.",
+                "C": "Erken denemelerde umut veren ilaç, yan etkileri nedeniyle yasaklandı.",
+                "D": "İlacın yan etkileri o kadar fazlaydı ki erken denemeler başarısızlıkla sonuçlandı.",
+                "E": "Denemelerdeki yan etkiler ilacın geri çekilmesine sebep olan tek faktördü."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Artificial intelligence is expected to transform the job market by automating repetitive tasks.",
+            "options": {
+                "A": "Yapay zekanın, tekrarlayan görevleri otomatikleştirmek suretiyle iş piyasasını dönüştürmesi beklenmektedir.",
+                "B": "İş piyasası, yapay zekanın görevleri otomatikleştirmesiyle tamamen değişecektir.",
+                "C": "Tekrarlayan görevlerin otomatize edilmesi yapay zeka sayesinde mümkün olmuştur.",
+                "D": "Yapay zeka iş piyasasını dönüştürürken insan gücüne olan ihtiyacı azaltacaktır.",
+                "E": "Gelecekte yapay zeka tüm iş kollarını otomatik hale getirecektir."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Hardly had the witness begun to speak when the lawyer interrupted him with a question.",
+            "options": {
+                "A": "The lawyer interrupted the witness with a question as soon as he started speaking.",
+                "B": "The witness could not speak because the lawyer kept asking questions.",
+                "C": "The lawyer waited for the witness to finish before asking a question.",
+                "D": "The witness began to speak only after the lawyer asked a question.",
+                "E": "The witness was interrupted by the lawyer before he could say anything at all."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The manager would have promoted Sarah if she had met the sales targets.",
+            "options": {
+                "A": "Sarah wasn't promoted because she failed to reach the sales targets.",
+                "B": "The manager promoted Sarah despite her missing the sales targets.",
+                "C": "Sarah met the sales targets, so she will be promoted soon.",
+                "D": "The manager will promote Sarah once she meets the sales targets.",
+                "E": "Sarah didn't want a promotion even if she met the sales targets."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It is not necessary to complete the report today as the deadline has been extended.",
+            "options": {
+                "A": "You don't have to finish the report today because the deadline is now later.",
+                "B": "The report must be finished today despite the deadline extension.",
+                "C": "The deadline was extended so that we could finish the report today.",
+                "D": "We cannot complete the report today because the deadline was changed.",
+                "E": "Completing the report today is optional but recommended by the manager."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Only by working together can we solve the global climate crisis.",
+            "options": {
+                "A": "We can solve the climate crisis only if we cooperate with one another.",
+                "B": "Working together is one of the ways to solve the climate crisis.",
+                "C": "If we solve the climate crisis, we will be able to work together.",
+                "D": "Global climate crisis cannot be solved even if we work together.",
+                "E": "We must work together because the climate crisis is getting worse."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor: Your thesis proposal on urban migration is quite detailed. However, I noticed a lack of primary data sources. \\nStudent: ---- \\nProfessor: That would certainly strengthen your argument. Make sure to include a sample size that is statistically significant.",
+            "options": {
+                "A": "I was planning to rely mainly on existing literature and census data.",
+                "B": "I intend to conduct face-to-face interviews with recent migrants in the city.",
+                "C": "Primary data is often unreliable in sociological studies of this scale.",
+                "D": "I found it difficult to access the archives at the national library.",
+                "E": "Would you suggest that I change my topic to something more theoretical?"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Doctor: The blood tests show that your cholesterol levels are still quite high. \\nPatient: I've been trying to eat more vegetables and less red meat. \\nDoctor: ---- \\nPatient: You're right. I'll start by walking for 30 minutes every morning.",
+            "options": {
+                "A": "That is good, but diet alone may not be enough; you also need regular exercise.",
+                "B": "I will prescribe a stronger medication to help lower your levels immediately.",
+                "C": "Actually, red meat is not the main cause of high cholesterol in your case.",
+                "D": "How long have you been following this new dietary regime?",
+                "E": "We should schedule another test for next week to be certain."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Journalist: Many people are concerned about the impact of automation on employment. \\nExpert: It's a valid concern, but history shows that technology creates more jobs than it destroys. \\nJournalist: ---- \\nExpert: Precisely. The challenge lies in retraining the workforce for these new roles.",
+            "options": {
+                "A": "So, you are saying the nature of work changes rather than work disappearing?",
+                "B": "Are you suggesting that we should stop the development of AI?",
+                "C": "Why do you think people are so afraid of new technologies?",
+                "D": "Does this mean that low-skilled workers will be unaffected?",
+                "E": "How can governments provide a universal basic income for everyone?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Librarian: I'm afraid the book you're looking for is currently checked out by another student. \\nStudent: That's a pity. I need it for an essay that is due this Friday. \\nLibrarian: ---- \\nStudent: That would be great. I can wait a couple of days for the digital version.",
+            "options": {
+                "A": "You can buy a copy from the university bookstore.",
+                "B": "I can place a hold on it for you, but it might not be back in time.",
+                "C": "We have an e-book version available that you can access immediately.",
+                "D": "Why didn't you come to the library earlier in the semester?",
+                "E": "The student who has it usually returns books very late."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 24,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Solar energy is one of the most promising sources of renewable energy today. It is abundant, clean, and increasingly cost-effective. ----. Consequently, many countries are investing in large-scale battery systems to ensure a steady supply of electricity.",
+            "options": {
+                "A": "However, its main drawback is its intermittent nature, as it depends on sunlight.",
+                "B": "Moreover, solar panels can be installed on the roofs of residential buildings.",
+                "C": "In fact, fossil fuels are still cheaper than solar power in many regions.",
+                "D": "Therefore, governments should stop subsidizing the oil and gas industry.",
+                "E": "Solar energy has been used for centuries to heat water and dry crops."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The Renaissance was a period of intense cultural and intellectual change in Europe. It marked the transition from the Middle Ages to modernity. ----. This shift led to unprecedented achievements in art, science, and philosophy.",
+            "options": {
+                "A": "During this time, the feudal system remained the dominant social structure.",
+                "B": "One of the key features of this era was the revival of interest in classical antiquity.",
+                "C": "However, the Renaissance did not reach all parts of Europe at the same time.",
+                "D": "The Black Death had a devastating impact on the population of Europe.",
+                "E": "Most people in the Renaissance were still illiterate and lived in rural areas."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Emotional intelligence (EQ) is defined as the ability to recognize and manage one's own emotions and those of others. In the workplace, high EQ is often more valuable than high IQ. ----. Leaders who can empathize with their employees tend to foster a more productive environment.",
+            "options": {
+                "A": "This is because technical skills are easy to teach but soft skills are not.",
+                "B": "Individuals with high IQ scores are usually better at problem-solving.",
+                "C": "It allows for better communication, conflict resolution, and leadership.",
+                "D": "Many companies still use standardized tests to hire new employees.",
+                "E": "EQ was first introduced as a concept in the early 1990s by psychologists."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The Great Barrier Reef is the world's largest coral reef system, stretching over 2,300 kilometers. It is home to thousands of species of marine life. ----. Rising sea temperatures have caused widespread coral bleaching, threatening this delicate ecosystem.",
+            "options": {
+                "A": "Tourism provides a significant boost to the local economy of Australia.",
+                "B": "The reef is so large that it can be seen from outer space.",
+                "C": "Unfortunately, it is currently facing a severe threat from climate change.",
+                "D": "Scientists are studying the genetic diversity of the coral species.",
+                "E": "Coral reefs are often called the rainforests of the sea due to their diversity."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 28,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The results of the study were inconclusive, necessitating further research to confirm the initial hypothesis.",
+            "options": {
+                "A": "The study proved the hypothesis, but more research is needed to publish the results.",
+                "B": "Because the results were not clear, more studies must be conducted to verify the theory.",
+                "C": "The hypothesis was rejected because the results of the study were too confusing.",
+                "D": "Further research confirmed the initial hypothesis despite the inconclusive results.",
+                "E": "The study was unnecessary because the results did not provide any new information."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Rarely do we find a politician who is willing to admit their mistakes in public.",
+            "options": {
+                "A": "It is very uncommon for politicians to publicly acknowledge their errors.",
+                "B": "Politicians often admit their mistakes when they are in a public setting.",
+                "C": "Publicly admitting mistakes is a requirement for most politicians today.",
+                "D": "Most politicians prefer to admit their mistakes privately rather than publicly.",
+                "E": "Finding a politician who never makes mistakes is almost impossible."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "If it hadn't been for the timely intervention of the rescue team, the hikers wouldn't have survived.",
+            "options": {
+                "A": "The hikers survived because the rescue team arrived just in time to help them.",
+                "B": "The rescue team arrived too late to save the hikers from the dangerous situation.",
+                "C": "Even if the rescue team had arrived earlier, the hikers might not have survived.",
+                "D": "The hikers were lucky to survive until the rescue team finally arrived.",
+                "E": "The rescue team's intervention was not enough to save all of the hikers."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Deep-sea exploration has revealed a world of strange and fascinating creatures. (II) These organisms have adapted to extreme pressure and total darkness. (III) Most of them rely on bioluminescence to attract prey or find mates. (IV) Scuba diving is a popular recreational activity in tropical coastal regions. (V) Scientists continue to discover new species every time they send submersibles to the ocean floor.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Industrial Revolution began in Britain in the late 18th century. (II) It brought about a shift from agrarian economies to industrial manufacturing. (III) Steam engines played a crucial role in powering factories and transportation. (IV) Modern computers use silicon chips to process vast amounts of data. (V) This period also saw significant urbanization as people moved to cities for work.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Language acquisition is a complex process that begins in early childhood. (II) Children learn their first language naturally through interaction with caregivers. (III) Bilingualism has been shown to have several cognitive benefits for the brain. (IV) By the age of five, most children have mastered the basic grammar of their native tongue. (V) The process involves both innate biological factors and environmental input.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 34,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "According to the passage, what is the core definition of sustainable development?",
+            "options": {
+                "A": "Focusing solely on environmental protection to prevent climate change.",
+                "B": "Prioritizing the economic growth of developing nations over wealthy ones.",
+                "C": "Meeting current needs while ensuring future generations can meet theirs.",
+                "D": "Eliminating the global economic system to promote social equality.",
+                "E": "Investing in technology to reduce the impact of industrialization."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What does the passage identify as a major obstacle to implementing sustainable development?",
+            "options": {
+                "A": "A lack of international policy agreements on the topic.",
+                "B": "The global economic system's focus on short-term gains.",
+                "C": "The refusal of developing nations to grow their economies.",
+                "D": "The lack of definition for the three pillars of sustainability.",
+                "E": "Decreasing interest in environmental protection worldwide."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Which of the following can be inferred from the passage regarding the relationship between wealthy and developing nations?",
+            "options": {
+                "A": "They are in complete agreement regarding environmental regulations.",
+                "B": "Wealthy nations are helping developing nations achieve economic growth.",
+                "C": "There are tensions between their economic goals and environmental policies.",
+                "D": "Developing nations have more sustainable systems than wealthy nations.",
+                "E": "Wealthy nations are primarily responsible for the three pillars of development."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "How has the scientific understanding of the brain changed since the 1970s?",
+            "options": {
+                "A": "It was discovered that neurons are the only cells that never change.",
+                "B": "The belief that the adult brain cannot change has been proven wrong.",
+                "C": "Scientists found that the brain's structure is fixed at birth.",
+                "D": "Research showed that musicians have smaller brains than other people.",
+                "E": "It was proven that brain injuries are always permanent."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What does neuroplasticity enable the brain to do in response to an injury?",
+            "options": {
+                "A": "Immediately regrow all lost limbs and tissues.",
+                "B": "Shift its functions to healthy neurons to compensate.",
+                "C": "Permanently shut down the damaged areas to save energy.",
+                "D": "Prevent any future diseases from affecting the brain.",
+                "E": "Ignore the environment and focus only on internal repair."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "Why are musicians mentioned in the passage?",
+            "options": {
+                "A": "To show that they are the only people with neuroplasticity.",
+                "B": "To argue that music is the best way to prevent brain damage.",
+                "C": "To provide an example of how the brain's structure can change through practice.",
+                "D": "To explain why musicians are more likely to suffer from strokes.",
+                "E": "To demonstrate that auditory processing is the most important brain function."
+            },
+            "correct": "C"
+        }
+    ]
+}

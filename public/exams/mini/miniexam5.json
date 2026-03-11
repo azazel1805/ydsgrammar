@@ -16,52 +16,67 @@
             "id": "completion",
             "label": "Sentence Completion",
             "from": 4,
-            "to": 8
+            "to": 7
         },
         {
             "id": "cloze",
             "label": "Cloze Test",
-            "from": 9,
-            "to": 13
+            "from": 8,
+            "to": 12
         },
         {
             "id": "translation",
             "label": "Translation",
-            "from": 14,
-            "to": 18
+            "from": 13,
+            "to": 16
         },
         {
             "id": "paraphrase",
             "label": "Paraphrase",
-            "from": 19,
-            "to": 23
+            "from": 17,
+            "to": 20
         },
         {
             "id": "dialogue",
             "label": "Dialogue Completion",
-            "from": 24,
-            "to": 28
+            "from": 21,
+            "to": 24
         },
         {
             "id": "para_comp",
             "label": "Paragraph Completion",
-            "from": 29,
-            "to": 33
+            "from": 25,
+            "to": 28
         },
         {
             "id": "closest",
             "label": "Closest Meaning",
-            "from": 34,
-            "to": 37
+            "from": 29,
+            "to": 31
         },
         {
             "id": "irrelevant",
             "label": "Irrelevant Sentence",
-            "from": 38,
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
             "to": 40
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p1",
+            "text": "Telemedicine, the remote diagnosis and treatment of patients by means of telecommunications technology, has seen rapid growth in recent years. This shift was accelerated by the global health crisis, which made in-person consultations difficult for many. Telemedicine offers several benefits, including reduced travel time for patients and better access to healthcare for those in remote areas. It also helps to decrease the burden on hospital emergency rooms. Despite these advantages, challenges remain, such as ensuring patient privacy and the need for high-speed internet connections. Moreover, some medical conditions still require physical examinations that cannot be performed through a screen."
+        },
+        {
+            "id": "p2",
+            "text": "The Louvre Museum in Paris is the world's largest art museum and a historic monument in France. A central landmark of the city, it is located on the Right Bank of the Seine. Roughly 38,000 objects from prehistory to the 21st century are exhibited over an area of 72,735 square meters. The museum is housed in the Louvre Palace, originally built as the Louvre castle in the late 12th to 13th century. It is most famous for housing the Mona Lisa by Leonardo da Vinci, which attracts millions of visitors annually. The museum has expanded several times over the centuries, most notably with the addition of the glass pyramid in the courtyard in 1989."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -156,19 +171,6 @@
         },
         {
             "id": 8,
-            "section_id": "completion",
-            "question": "The newly discovered fossil provides a crucial link in mammalian evolution; ______ , it raises new questions about their geographical origins.",
-            "options": {
-                "A": "however",
-                "B": "moreover",
-                "C": "consequently",
-                "D": "for instance",
-                "E": "in other words"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 9,
             "section_id": "cloze",
             "question": "The Industrial Revolution (1) ______ a major turning point in Earth's ecology.",
             "options": {
@@ -181,7 +183,7 @@
             "correct": "A"
         },
         {
-            "id": 10,
+            "id": 9,
             "section_id": "cloze",
             "question": "Human populations grew exponentially, (2) ______ massive deforestation.",
             "options": {
@@ -194,7 +196,7 @@
             "correct": "A"
         },
         {
-            "id": 11,
+            "id": 10,
             "section_id": "cloze",
             "question": "Factories emitted unprecedented levels of carbon dioxide, (3) ______ the natural greenhouse effect.",
             "options": {
@@ -207,7 +209,7 @@
             "correct": "A"
         },
         {
-            "id": 12,
+            "id": 11,
             "section_id": "cloze",
             "question": "(4) ______ some early scientists warned about pollution, their concerns were largely ignored.",
             "options": {
@@ -220,7 +222,7 @@
             "correct": "A"
         },
         {
-            "id": 13,
+            "id": 12,
             "section_id": "cloze",
             "question": "Today, we are still dealing with the environmental legacy (5) ______ that era.",
             "options": {
@@ -233,7 +235,7 @@
             "correct": "A"
         },
         {
-            "id": 14,
+            "id": 13,
             "section_id": "translation",
             "question": "Küresel ısınma, sadece kutup ayılarını değil, tüm deniz ekosistemlerini tehdit etmektedir.",
             "options": {
@@ -246,7 +248,7 @@
             "correct": "A"
         },
         {
-            "id": 15,
+            "id": 14,
             "section_id": "translation",
             "question": "Yeni araştırmalar, uyku eksikliğinin bilişsel işlevler üzerinde kalıcı hasar bırakabileceğini gösteriyor.",
             "options": {
@@ -259,7 +261,7 @@
             "correct": "A"
         },
         {
-            "id": 16,
+            "id": 15,
             "section_id": "translation",
             "question": "Yapay zeka etiği, teknolojinin gelişim hızına ayak uydurmakta zorlanmaktadır.",
             "options": {
@@ -272,7 +274,7 @@
             "correct": "B"
         },
         {
-            "id": 17,
+            "id": 16,
             "section_id": "translation",
             "question": "Bir dilin yok olması, sadece kelimelerin değil, koca bir kültürel mirasın yitirilmesi demektir.",
             "options": {
@@ -285,20 +287,7 @@
             "correct": "A"
         },
         {
-            "id": 18,
-            "section_id": "translation",
-            "question": "Ekonomik krizler genellikle gelir eşitsizliğini derinleştirir ve yoksul kesimleri daha fazla etkiler.",
-            "options": {
-                "A": "Economic crises generally deepen income inequality and affect the poor segments more.",
-                "B": "Economic crises often deepen income inequality, affecting poorer segments more heavily.",
-                "C": "Income inequality is generally deepened by economic crises, which affect the poor more.",
-                "D": "Economic crises usually worsen income inequality and have a greater impact on the poor.",
-                "E": "Generally, economic crises deepen income inequality and affect poor communities the most."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 19,
+            "id": 17,
             "section_id": "paraphrase",
             "question": "The team could have finished the project on time if they had been provided with adequate funding.",
             "options": {
@@ -311,7 +300,7 @@
             "correct": "A"
         },
         {
-            "id": 20,
+            "id": 18,
             "section_id": "paraphrase",
             "question": "No sooner had the central bank announced the interest rate hike than the stock market plummeted.",
             "options": {
@@ -324,7 +313,7 @@
             "correct": "A"
         },
         {
-            "id": 21,
+            "id": 19,
             "section_id": "paraphrase",
             "question": "Despite the complexity of the theory, the professor explained it in a way that everyone could understand.",
             "options": {
@@ -337,7 +326,7 @@
             "correct": "A"
         },
         {
-            "id": 22,
+            "id": 20,
             "section_id": "paraphrase",
             "question": "It is widely believed that renewable energy is the only viable solution to climate change.",
             "options": {
@@ -350,20 +339,7 @@
             "correct": "A"
         },
         {
-            "id": 23,
-            "section_id": "paraphrase",
-            "question": "Had the symptoms been detected earlier, the patient's chances of survival would have been significantly higher.",
-            "options": {
-                "A": "An earlier diagnosis would have greatly increased the patient's likelihood of living.",
-                "B": "The patient survived because the symptoms were detected early enough.",
-                "C": "Even with early detection, the patient's chances of survival were very low.",
-                "D": "The symptoms were detected early, yet the patient's survival chances did not improve.",
-                "E": "The patient's survival chances were high regardless of when the symptoms were detected."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 24,
+            "id": 21,
             "section_id": "dialogue",
             "question": "Dr. Smith: The new clinical trial results are quite promising. \nDr. Jones: ______ \nDr. Smith: Yes, especially in patients who showed no response to conventional therapies.",
             "options": {
@@ -376,7 +352,7 @@
             "correct": "A"
         },
         {
-            "id": 25,
+            "id": 22,
             "section_id": "dialogue",
             "question": "Student: I'm having trouble understanding the concept of entropy in this system. \nProfessor: ______ \nStudent: Oh, so it's a measure of disorder or randomness rather than just heat loss.",
             "options": {
@@ -389,7 +365,7 @@
             "correct": "A"
         },
         {
-            "id": 26,
+            "id": 23,
             "section_id": "dialogue",
             "question": "Manager: Our quarterly profits have dropped by 15%. We need to cut costs. \nAnalyst: ______ \nManager: That might be true, but we need an immediate solution to satisfy the shareholders.",
             "options": {
@@ -402,7 +378,7 @@
             "correct": "B"
         },
         {
-            "id": 27,
+            "id": 24,
             "section_id": "dialogue",
             "question": "Researcher: The archaeological dig revealed artifacts from a previously unknown civilization. \nColleague: ______ \nResearcher: Carbon dating places them around 4000 BCE, much older than the surrounding settlements.",
             "options": {
@@ -415,20 +391,7 @@
             "correct": "A"
         },
         {
-            "id": 28,
-            "section_id": "dialogue",
-            "question": "Policy Maker: We must implement stricter emission regulations immediately. \nIndustry Rep: ______ \nPolicy Maker: While I understand your financial concerns, public health must take precedence.",
-            "options": {
-                "A": "Such regulations will drastically increase production costs and lead to job losses.",
-                "B": "We fully support your initiative and will comply immediately.",
-                "C": "Public health has always been our industry's primary concern.",
-                "D": "There is no scientific evidence linking our emissions to health issues.",
-                "E": "We should expand our operations overseas to avoid these rules."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 29,
+            "id": 25,
             "section_id": "para_comp",
             "question": "Photosynthesis is the process by which green plants transform light energy into chemical energy. ______ . These sugars then serve as the fundamental energy source for almost all other organisms on Earth, directly or indirectly. Without this process, life as we know it would cease to exist.",
             "options": {
@@ -441,7 +404,7 @@
             "correct": "A"
         },
         {
-            "id": 30,
+            "id": 26,
             "section_id": "para_comp",
             "question": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. ______ . Thinkers, authors, statesmen, scientists, and artists in Europe thrived during this era, while global exploration opened up new lands and cultures to European commerce.",
             "options": {
@@ -454,7 +417,7 @@
             "correct": "A"
         },
         {
-            "id": 31,
+            "id": 27,
             "section_id": "para_comp",
             "question": "Behavioral economics combines elements of economics and psychology to understand how and why people behave the way they do in the real world. Unlike classical economics, which assumes humans are perfectly rational actors. ______ . It explains why individuals often make choices that are detrimental to their long-term financial health.",
             "options": {
@@ -467,7 +430,7 @@
             "correct": "A"
         },
         {
-            "id": 32,
+            "id": 28,
             "section_id": "para_comp",
             "question": "Volcanic eruptions can have a profound impact on global climate. When a large eruption occurs, massive amounts of sulfur dioxide gas are injected into the stratosphere. ______ . This aerosol layer reflects incoming solar radiation back into space, leading to a temporary cooling of the Earth's surface.",
             "options": {
@@ -480,20 +443,7 @@
             "correct": "A"
         },
         {
-            "id": 33,
-            "section_id": "para_comp",
-            "question": "In literature, the concept of the 'unreliable narrator' forces readers to question the truthfulness of the story being told. ______ . By doing so, the author creates a layer of psychological complexity, requiring the audience to read between the lines to uncover the actual reality of the fictional world.",
-            "options": {
-                "A": "This narrator may be deceptive, naive, or mentally unstable, thus skewing the narrative",
-                "B": "First-person narration is always the most objective way to tell a story",
-                "C": "Omniscient narrators provide a completely unbiased view of all characters' thoughts",
-                "D": "The protagonist is usually completely honest with the reader in classic novels",
-                "E": "Historical fiction relies heavily on strict factual accuracy rather than narrative style"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 34,
+            "id": 29,
             "section_id": "closest",
             "question": "The rapid advancement of artificial intelligence has sparked both immense optimism and profound anxiety among tech experts.",
             "options": {
@@ -506,7 +456,7 @@
             "correct": "A"
         },
         {
-            "id": 35,
+            "id": 30,
             "section_id": "closest",
             "question": "Unless significant measures are taken to curb deforestation, numerous indigenous species will face imminent extinction.",
             "options": {
@@ -519,7 +469,7 @@
             "correct": "A"
         },
         {
-            "id": 36,
+            "id": 31,
             "section_id": "closest",
             "question": "The treaty was deemed invalid because it had been signed under duress by the defeated nation's representatives.",
             "options": {
@@ -532,20 +482,7 @@
             "correct": "A"
         },
         {
-            "id": 37,
-            "section_id": "closest",
-            "question": "While the initial cost of installing solar panels is high, the long-term savings on energy bills make it a worthwhile investment.",
-            "options": {
-                "A": "Although putting in solar panels requires a large upfront expense, it pays off over time through reduced electricity costs.",
-                "B": "The long-term savings from solar panels rarely justify the incredibly high initial costs of installation.",
-                "C": "Because energy bills are so high, the initial cost of installing solar panels is no longer considered expensive.",
-                "D": "Installing solar panels is a worthwhile investment only if the initial costs are subsidized by the government.",
-                "E": "The high cost of solar panels makes them a poor investment despite the potential savings on future energy bills."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 38,
+            "id": 32,
             "section_id": "irrelevant",
             "question": "(I) The invention of the printing press by Johannes Gutenberg in the 15th century revolutionized the spread of information. (II) Before this invention, books were meticulously copied by hand, making them rare and expensive. (III) Digital media has largely replaced physical books in the 21st century. (IV) The printing press allowed for the mass production of texts, making literature accessible to a wider audience. (V) Consequently, literacy rates across Europe surged, fueling the Renaissance and the Scientific Revolution.",
             "options": {
@@ -558,7 +495,7 @@
             "correct": "C"
         },
         {
-            "id": 39,
+            "id": 33,
             "section_id": "irrelevant",
             "question": "(I) Sleep is essential for the consolidation of memories and overall cognitive function. (II) During the REM stage of sleep, the brain is highly active, and dreaming typically occurs. (III) Many people suffer from insomnia, which can be treated with cognitive behavioral therapy. (IV) In contrast, deep sleep stages are crucial for physical repair and immune system strengthening. (V) Without cycling through these distinct sleep stages, the human body cannot maintain optimal health.",
             "options": {
@@ -571,7 +508,7 @@
             "correct": "C"
         },
         {
-            "id": 40,
+            "id": 34,
             "section_id": "irrelevant",
             "question": "(I) Cryptocurrency relies on blockchain technology to ensure decentralized and secure transactions. (II) A blockchain is essentially a distributed ledger that records all transactions across a network of computers. (III) Traditional banks are heavily regulated by government entities to prevent fraud and money laundering. (IV) Once a block of data is added to this ledger, it cannot be altered without the consensus of the entire network. (V) This immutability is what makes blockchain networks highly resistant to hacking and fraud.",
             "options": {
@@ -582,6 +519,90 @@
                 "E": "V"
             },
             "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What was the main catalyst for the recent growth in telemedicine?",
+            "options": {
+                "A": "The development of high-speed internet in remote areas.",
+                "B": "A global health crisis that limited physical interactions.",
+                "C": "Patients' desire to reduce their travel time to hospitals.",
+                "D": "A legal requirement to move all consultations to screens.",
+                "E": "The reduction of the financial burden on emergency rooms."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "According to the passage, who benefits most from telemedicine?",
+            "options": {
+                "A": "People living in regions far from medical facilities.",
+                "B": "Doctors who want to avoid physical examinations entirely.",
+                "C": "Health agencies that focus solely on patient privacy.",
+                "D": "Patients who have slow or no internet connections.",
+                "E": "Emergency room staff who no longer have any patients."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What is one limitation of telemedicine mentioned in the passage?",
+            "options": {
+                "A": "It is more expensive than visiting a hospital in person.",
+                "B": "Some conditions still need an actual physical check-up.",
+                "C": "It increases the travel time for doctors in remote areas.",
+                "D": "Most patients are unwilling to use telecommunications.",
+                "E": "It creates a burden on high-speed internet networks."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What was the original purpose of the Louvre building?",
+            "options": {
+                "A": "A central landmark for the city of Paris.",
+                "B": "A castle built in the 12th and 13th centuries.",
+                "C": "A museum designed to house the Mona Lisa.",
+                "D": "A glass pyramid for the Right Bank of the Seine.",
+                "E": "A prehistoric exhibit that expanded over time."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "How many objects are currently displayed in the museum?",
+            "options": {
+                "A": "Over 72,000 prehistoric and modern items.",
+                "B": "Millions of paintings, mostly by Da Vinci.",
+                "C": "Approximately thirty-eight thousand objects.",
+                "D": "One large glass pyramid in the courtyard.",
+                "E": "An area of 38,000 square meters of art."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "Which 20th-century addition to the Louvre is mentioned?",
+            "options": {
+                "A": "The Right Bank of the Seine river project.",
+                "B": "The collection of art from the 21st century.",
+                "C": "The expansion of the Louvre Palace into a castle.",
+                "D": "The construction of a glass pyramid in 1989.",
+                "E": "The acquisition of the Mona Lisa painting."
+            },
+            "correct": "D"
         }
     ]
 }

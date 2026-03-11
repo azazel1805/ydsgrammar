@@ -16,52 +16,67 @@
             "id": "completion",
             "label": "Sentence Completion",
             "from": 4,
-            "to": 8
+            "to": 7
         },
         {
             "id": "cloze",
             "label": "Cloze Test",
-            "from": 9,
-            "to": 13
+            "from": 8,
+            "to": 12
         },
         {
             "id": "translation",
             "label": "Translation",
-            "from": 14,
-            "to": 18
+            "from": 13,
+            "to": 16
         },
         {
             "id": "paraphrase",
             "label": "Paraphrase",
-            "from": 19,
-            "to": 23
+            "from": 17,
+            "to": 20
         },
         {
             "id": "dialogue",
             "label": "Dialogue Completion",
-            "from": 24,
-            "to": 28
+            "from": 21,
+            "to": 24
         },
         {
             "id": "para_comp",
             "label": "Paragraph Completion",
-            "from": 29,
-            "to": 33
+            "from": 25,
+            "to": 28
         },
         {
             "id": "closest",
             "label": "Closest Meaning",
-            "from": 34,
-            "to": 37
+            "from": 29,
+            "to": 31
         },
         {
             "id": "irrelevant",
             "label": "Irrelevant Sentence",
-            "from": 38,
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
             "to": 40
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p1",
+            "text": "The concept of 'zero waste' is a philosophy that encourages the redesign of resource life cycles so that all products are reused. The goal is for no trash to be sent to landfills, incinerators, or the ocean. In a zero-waste system, the end of one product's life becomes the beginning of another's, mimicking the natural world where nothing is wasted. This requires a significant shift in corporate manufacturing and consumer habits. While achieving absolute zero waste is difficult, many cities around the world have successfully reduced their waste output by implementing comprehensive recycling and composting programs."
+        },
+        {
+            "id": "p2",
+            "text": "Bees play a vital role in our ecosystem as the world's most important pollinators. They are responsible for pollinating roughly one-third of the food we consume, including many fruits, vegetables, and nuts. However, bee populations have been declining globally at an alarming rate due to factors like pesticide use, habitat loss, and climate change. This phenomenon, known as Colony Collapse Disorder, poses a serious threat to global food security. Conservation efforts are now focused on creating bee-friendly environments, reducing harmful chemicals in agriculture, and raising public awareness about the crucial importance of these tiny insects to human survival."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -156,19 +171,6 @@
         },
         {
             "id": 8,
-            "section_id": "completion",
-            "question": "While some historians argue that the Roman Empire fell due to external invasions, ______.",
-            "options": {
-                "A": "the Byzantine Empire survived for another thousand years",
-                "B": "others point to internal political corruption and economic instability",
-                "C": "the military was stronger than ever before",
-                "D": "Julius Caesar was assassinated in 44 BC",
-                "E": "the aqueducts were a marvel of ancient engineering"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 9,
             "section_id": "cloze",
             "question": "The concept of artificial intelligence (AI) is not entirely new; it has roots dating back to classical antiquity. (1) ______, the modern field of AI was officially founded in 1956.",
             "options": {
@@ -181,7 +183,7 @@
             "correct": "B"
         },
         {
-            "id": 10,
+            "id": 9,
             "section_id": "cloze",
             "question": "Since then, it has experienced several waves of optimism, (2) ______ by disappointment and the loss of funding.",
             "options": {
@@ -194,7 +196,7 @@
             "correct": "A"
         },
         {
-            "id": 11,
+            "id": 10,
             "section_id": "cloze",
             "question": "Today, AI has become an essential part of the technology industry, (3) ______ the heavy lifting for many of the most challenging problems in computer science.",
             "options": {
@@ -207,7 +209,7 @@
             "correct": "A"
         },
         {
-            "id": 12,
+            "id": 11,
             "section_id": "cloze",
             "question": "Machine learning, a subset of AI, focuses on the development of computer programs that can access data and use it to learn (4) ______.",
             "options": {
@@ -220,7 +222,7 @@
             "correct": "A"
         },
         {
-            "id": 13,
+            "id": 12,
             "section_id": "cloze",
             "question": "The primary aim is to allow the computers to learn automatically (5) ______ human intervention or assistance.",
             "options": {
@@ -233,7 +235,7 @@
             "correct": "B"
         },
         {
-            "id": 14,
+            "id": 13,
             "section_id": "translation",
             "question": "The discovery of penicillin revolutionized medicine by providing a cure for bacterial infections that were previously fatal.",
             "options": {
@@ -246,7 +248,7 @@
             "correct": "A"
         },
         {
-            "id": 15,
+            "id": 14,
             "section_id": "translation",
             "question": "Many researchers argue that the transition to a circular economy is essential for achieving long-term sustainability.",
             "options": {
@@ -259,7 +261,7 @@
             "correct": "A"
         },
         {
-            "id": 16,
+            "id": 15,
             "section_id": "translation",
             "question": "Despite the widespread availability of vaccines, certain infectious diseases continue to pose a significant threat to global public health.",
             "options": {
@@ -272,7 +274,7 @@
             "correct": "A"
         },
         {
-            "id": 17,
+            "id": 16,
             "section_id": "translation",
             "question": "Kuresel isinmanin etkilerini azaltmak icin uluslararasi isbirligi kacinilmazdir.",
             "options": {
@@ -285,20 +287,7 @@
             "correct": "A"
         },
         {
-            "id": 18,
-            "section_id": "translation",
-            "question": "Yapay zeka teknolojilerindeki hizli gelismeler, is gucu piyasasinda koklu degisikliklere neden olabilir.",
-            "options": {
-                "A": "Rapid advancements in artificial intelligence technologies may cause fundamental changes in the labor market.",
-                "B": "Artificial intelligence technologies are rapidly advancing and causing changes in the labor market.",
-                "C": "The labor market might undergo fundamental changes due to rapid developments in AI.",
-                "D": "Fast developments in AI technologies will lead to radical changes in the workforce.",
-                "E": "Fundamental changes in the labor market are a result of rapid AI advancements."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 19,
+            "id": 17,
             "section_id": "paraphrase",
             "question": "The professor emphasized that attending the lectures is crucial for passing the final examination.",
             "options": {
@@ -311,7 +300,7 @@
             "correct": "C"
         },
         {
-            "id": 20,
+            "id": 18,
             "section_id": "paraphrase",
             "question": "No sooner had the government announced the new tax policy than public protests erupted across the country.",
             "options": {
@@ -324,7 +313,7 @@
             "correct": "A"
         },
         {
-            "id": 21,
+            "id": 19,
             "section_id": "paraphrase",
             "question": "Despite her extensive research, the scientist could not find a conclusive answer to the anomaly.",
             "options": {
@@ -337,7 +326,7 @@
             "correct": "A"
         },
         {
-            "id": 22,
+            "id": 20,
             "section_id": "paraphrase",
             "question": "The sudden drop in temperature led to severe crop damage in the region.",
             "options": {
@@ -350,20 +339,7 @@
             "correct": "A"
         },
         {
-            "id": 23,
-            "section_id": "paraphrase",
-            "question": "It is widely believed that physical exercise is just as important for mental health as it is for physical well-being.",
-            "options": {
-                "A": "Many people think that working out benefits one's mental state equally as much as it does physical health.",
-                "B": "Physical exercise is believed to be more important for physical well-being than for mental health.",
-                "C": "Mental health is widely considered to be more dependent on physical exercise than physical well-being is.",
-                "D": "People believe that physical exercise is important for physical well-being, but not for mental health.",
-                "E": "It is a common belief that physical well-being and mental health are unrelated to physical exercise."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 24,
+            "id": 21,
             "section_id": "dialogue",
             "question": "Professor: Have you finalized the methodology for your thesis yet? Student: ______ Professor: That sounds appropriate. Make sure to justify your choice of sampling technique in the introduction.",
             "options": {
@@ -376,7 +352,7 @@
             "correct": "A"
         },
         {
-            "id": 25,
+            "id": 22,
             "section_id": "dialogue",
             "question": "Researcher A: The latest data shows a significant correlation between sleep deprivation and cognitive decline. Researcher B: ______ Researcher A: Exactly. We need longitudinal studies to determine causation.",
             "options": {
@@ -389,7 +365,7 @@
             "correct": "A"
         },
         {
-            "id": 26,
+            "id": 23,
             "section_id": "dialogue",
             "question": "Journalist: How do you respond to critics who claim the new economic policy will increase inflation? Economist: ______ Journalist: So you believe the long-term benefits outweigh the short-term risks?",
             "options": {
@@ -402,7 +378,7 @@
             "correct": "A"
         },
         {
-            "id": 27,
+            "id": 24,
             "section_id": "dialogue",
             "question": "Doctor: Your blood test results indicate a slight deficiency in Vitamin D. Patient: ______ Doctor: Just a mild supplement and increasing your sun exposure should be enough.",
             "options": {
@@ -415,20 +391,7 @@
             "correct": "A"
         },
         {
-            "id": 28,
-            "section_id": "dialogue",
-            "question": "Colleague 1: The software update caused the server to crash again. Colleague 2: ______ Colleague 1: I'll notify the IT department immediately.",
-            "options": {
-                "A": "We need to roll back to the previous version before the clients notice.",
-                "B": "It's probably just a minor glitch that will fix itself.",
-                "C": "I think it's time we upgraded our hardware anyway.",
-                "D": "Did you remember to back up the database?",
-                "E": "The new features are really impressive, though."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 29,
+            "id": 25,
             "section_id": "para_comp",
             "question": "Photosynthesis is the process used by plants, algae and certain bacteria to harness energy from sunlight and turn it into chemical energy. ______ This oxygen is vital for the survival of aerobic organisms on Earth.",
             "options": {
@@ -441,7 +404,7 @@
             "correct": "A"
         },
         {
-            "id": 30,
+            "id": 26,
             "section_id": "para_comp",
             "question": "The Renaissance was a fervent period of European cultural, artistic, political and economic 'rebirth' following the Middle Ages. ______ Thinkers and artists of the time sought to revive the ideals of ancient Greek and Roman culture.",
             "options": {
@@ -454,7 +417,7 @@
             "correct": "A"
         },
         {
-            "id": 31,
+            "id": 27,
             "section_id": "para_comp",
             "question": "Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. ______ This principle challenges our classical intuition about how the universe operates.",
             "options": {
@@ -467,7 +430,7 @@
             "correct": "A"
         },
         {
-            "id": 32,
+            "id": 28,
             "section_id": "para_comp",
             "question": "Urbanization refers to the population shift from rural to urban areas, the corresponding decrease in the proportion of people living in rural areas, and the ways in which societies adapt to this change. ______ This rapid growth often outpaces the development of adequate infrastructure and housing.",
             "options": {
@@ -480,20 +443,7 @@
             "correct": "A"
         },
         {
-            "id": 33,
-            "section_id": "para_comp",
-            "question": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. ______ Without it, communication would consist of merely disjointed vocabularies lacking coherent meaning.",
-            "options": {
-                "A": "It provides the rules and principles that govern the structure of language.",
-                "B": "Semantics, on the other hand, deals with the meaning of words and sentences.",
-                "C": "Phonology is the study of the sound systems of languages.",
-                "D": "Many linguists argue that the capacity for language is innate to humans.",
-                "E": "The English language has borrowed heavily from Latin and French throughout its history."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 34,
+            "id": 29,
             "section_id": "closest",
             "question": "Unless the government implements strict anti-pollution laws, the city's air quality will deteriorate further.",
             "options": {
@@ -506,7 +456,7 @@
             "correct": "A"
         },
         {
-            "id": 35,
+            "id": 30,
             "section_id": "closest",
             "question": "The CEO resigned not because of the recent scandal, but due to his declining health.",
             "options": {
@@ -519,7 +469,7 @@
             "correct": "A"
         },
         {
-            "id": 36,
+            "id": 31,
             "section_id": "closest",
             "question": "Hardly had the play begun when the fire alarm went off, causing the audience to evacuate.",
             "options": {
@@ -532,20 +482,7 @@
             "correct": "A"
         },
         {
-            "id": 37,
-            "section_id": "closest",
-            "question": "Despite being recognized as a brilliant scientist, her theories were initially met with intense skepticism.",
-            "options": {
-                "A": "Although she was acknowledged as an exceptional scientist, people were very doubtful of her theories at first.",
-                "B": "Because her theories were met with intense skepticism, she was not recognized as a brilliant scientist at first.",
-                "C": "Her theories were initially met with intense skepticism, which proved she was a brilliant scientist.",
-                "D": "She was recognized as a brilliant scientist only after her theories overcame intense skepticism.",
-                "E": "People were skeptical of her theories because she was recognized as a brilliant scientist."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 38,
+            "id": 32,
             "section_id": "irrelevant",
             "question": "(I) The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states. (II) Several walls were built from as early as the 7th century BC. (III) The Ming dynasty is well known for its beautiful porcelain and ceramic art. (IV) Later on, many successive dynasties built and maintained multiple stretches of border walls. (V) The most well-known sections of the wall were built by the Ming dynasty.",
             "options": {
@@ -558,7 +495,7 @@
             "correct": "C"
         },
         {
-            "id": 39,
+            "id": 33,
             "section_id": "irrelevant",
             "question": "(I) Earthquakes are the result of sudden movement along faults within the Earth. (II) The movement releases stored-up elastic strain energy in the form of seismic waves. (III) Tsunamis are giant ocean waves caused by earthquakes or volcanic eruptions under the sea. (IV) These waves propagate through the Earth and cause the ground surface to shake. (V) Such ground shaking can lead to significant structural damage and loss of life.",
             "options": {
@@ -571,7 +508,7 @@
             "correct": "C"
         },
         {
-            "id": 40,
+            "id": 34,
             "section_id": "irrelevant",
             "question": "(I) Coffee is one of the most popular beverages in the world. (II) It is cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India, and Africa. (III) Green tea is known for its high concentration of antioxidants and health benefits. (IV) The two most commonly grown coffee bean types are Arabica and Robusta. (V) Once ripe, coffee berries are picked, processed, and dried to extract the beans inside.",
             "options": {
@@ -582,6 +519,90 @@
                 "E": "V"
             },
             "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What is the primary objective of the zero-waste philosophy?",
+            "options": {
+                "A": "To increase the capacity of modern landfills and incinerators.",
+                "B": "To ensure that all products are redesigned for single Use.",
+                "C": "To prevent any waste from entering the natural environment.",
+                "D": "To mimic the manufacturing habits of large corporations.",
+                "E": "To rely more heavily on composting than on recycling."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "How does a zero-waste system relate to the 'natural world'?",
+            "options": {
+                "A": "It uses natural materials like wood and stone for production.",
+                "B": "It follows a cyclic process where one end is a new start.",
+                "C": "It encourages people to live in forests away from cities.",
+                "D": "It prioritizes the preservation of animals over human trash.",
+                "E": "It mimics the difficulty of manufacturing in absolute terms."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What has helped some cities reduce their waste output significantly?",
+            "options": {
+                "A": "The closure of all incinerators and landfills in the region.",
+                "B": "The implementation of recycling and composting programs.",
+                "C": "A complete ban on all corporate manufacturing processes.",
+                "D": "Achieving absolute zero waste within a single year.",
+                "E": "The redesign of single-use products into circular ones."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "Why are bees considered essential for human food supply?",
+            "options": {
+                "A": "Because they produce honey, which is a key nutritional source.",
+                "B": "Due to their role in pollinating a third of what we eat.",
+                "C": "They are the only insects that can survive in our ecosystem.",
+                "D": "They prevent habitat loss by living in fruits and vegetables.",
+                "E": "Because their population is declining at an alarming rate."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What is identified as a cause of declining bee populations?",
+            "options": {
+                "A": "The over-pollination of nuts and vegetables in agriculture.",
+                "B": "Colony Collapse Disorder caused by food security in cities.",
+                "C": "Human conservation efforts that create too many chemicals.",
+                "D": "Factors such as habitat loss and the use of pesticides.",
+                "E": "A lack of public awareness about the size of tiny insects."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What is one way conservationists are trying to save the bees?",
+            "options": {
+                "A": "By increasing the use of chemical pesticides in farming.",
+                "B": "By encouraging bees to move to more secure environments.",
+                "C": "By developing agriculture that does not require pollination.",
+                "D": "By establishing environments that are friendly to bees.",
+                "E": "By reducing the public awareness of Colony Collapse Disorder."
+            },
+            "correct": "D"
         }
     ]
 }

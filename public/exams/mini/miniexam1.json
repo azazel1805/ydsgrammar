@@ -16,52 +16,67 @@
             "id": "completion",
             "label": "Sentence Completion",
             "from": 4,
-            "to": 8
+            "to": 7
         },
         {
             "id": "cloze",
             "label": "Cloze Test",
-            "from": 9,
-            "to": 13
+            "from": 8,
+            "to": 12
         },
         {
             "id": "translation",
             "label": "Translation",
-            "from": 14,
-            "to": 18
+            "from": 13,
+            "to": 16
         },
         {
             "id": "paraphrase",
             "label": "Paraphrase",
-            "from": 19,
-            "to": 23
+            "from": 17,
+            "to": 20
         },
         {
             "id": "dialogue",
             "label": "Dialogue Completion",
-            "from": 24,
-            "to": 28
+            "from": 21,
+            "to": 24
         },
         {
             "id": "para_comp",
             "label": "Paragraph Completion",
-            "from": 29,
-            "to": 33
+            "from": 25,
+            "to": 28
         },
         {
             "id": "closest",
             "label": "Closest Meaning",
-            "from": 34,
-            "to": 37
+            "from": 29,
+            "to": 31
         },
         {
             "id": "irrelevant",
             "label": "Irrelevant Sentence",
-            "from": 38,
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
             "to": 40
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p1",
+            "text": "The Amazon Rainforest, often referred to as the 'lungs of the planet,' is the world's largest tropical rainforest. It covers roughly 5.5 million square kilometers and is home to an estimated 390 billion individual trees. Biodiversity in the Amazon is unparalleled; it contains one in ten known species on Earth. However, the region is facing significant threats from deforestation due to logging, agriculture, and infrastructure development. Scientists warn that losing the Amazon would not only be a disaster for local ecosystems but would also accelerate global climate change by releasing vast amounts of stored carbon into the atmosphere."
+        },
+        {
+            "id": "p2",
+            "text": "The Industrial Revolution, which began in Britain in the late 18th century, transformed human society from an agrarian-based economy to an industrial one. Key inventions like the steam engine and the power loom allowed for mass production, leading to the growth of cities as people moved from rural areas for factory work. This period also saw significant improvements in transportation and communication. However, it also brought about social challenges, including poor working conditions and environmental pollution. Despite these issues, the Industrial Revolution laid the necessary foundation for the modern technological world we live in today."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -156,19 +171,6 @@
         },
         {
             "id": 8,
-            "section_id": "completion",
-            "question": "Marine biologists are concerned that if ocean acidification continues at its current rate, coral reefs ______.",
-            "options": {
-                "A": "would have been destroyed",
-                "B": "will be irreversibly damaged",
-                "C": "had been decimated",
-                "D": "are being recovered",
-                "E": "were entirely wiped out"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 9,
             "section_id": "cloze",
             "question": "The advent of agriculture around 10,000 years ago marked a major turning point in human history. Prior to this, humans (1) ______ as nomadic hunter-gatherers.",
             "options": {
@@ -181,7 +183,7 @@
             "correct": "B"
         },
         {
-            "id": 10,
+            "id": 9,
             "section_id": "cloze",
             "question": "The shift to farming allowed for the establishment of permanent settlements. (2) ______, this transition led to the rise of complex societies.",
             "options": {
@@ -194,7 +196,7 @@
             "correct": "C"
         },
         {
-            "id": 11,
+            "id": 10,
             "section_id": "cloze",
             "question": "With food surpluses, not everyone had to be involved in food production, which paved the way for the specialization of labor. This meant that individuals could devote (3) ______ to trades and crafts.",
             "options": {
@@ -207,7 +209,7 @@
             "correct": "A"
         },
         {
-            "id": 12,
+            "id": 11,
             "section_id": "cloze",
             "question": "However, this new lifestyle also brought disadvantages. The concentration of people and domesticated animals in close proximity (4) ______ the spread of infectious diseases.",
             "options": {
@@ -220,7 +222,7 @@
             "correct": "C"
         },
         {
-            "id": 13,
+            "id": 12,
             "section_id": "cloze",
             "question": "Despite these challenges, the agricultural revolution was undeniably the catalyst (5) ______ the modern civilizations we see today.",
             "options": {
@@ -233,7 +235,7 @@
             "correct": "A"
         },
         {
-            "id": 14,
+            "id": 13,
             "section_id": "translation",
             "question": "Although genetic engineering offers promising solutions for food security, it is still a highly controversial topic among environmentalists.",
             "options": {
@@ -246,7 +248,7 @@
             "correct": "A"
         },
         {
-            "id": 15,
+            "id": 14,
             "section_id": "translation",
             "question": "Güneş enerjisine yapılan yatırımlar son on yılda önemli ölçüde artmıştır, bu da fosil yakıtlara olan bağımlılığın azaldığını göstermektedir.",
             "options": {
@@ -259,7 +261,7 @@
             "correct": "A"
         },
         {
-            "id": 16,
+            "id": 15,
             "section_id": "translation",
             "question": "The success of a public health campaign depends not only on the accuracy of the information provided but also on how effectively it is communicated to the target audience.",
             "options": {
@@ -272,7 +274,7 @@
             "correct": "A"
         },
         {
-            "id": 17,
+            "id": 16,
             "section_id": "translation",
             "question": "Küreselleşme, farklı kültürler arasındaki etkileşimi artırırken, yerel geleneklerin kaybolmasına da yol açabilir.",
             "options": {
@@ -285,20 +287,7 @@
             "correct": "A"
         },
         {
-            "id": 18,
-            "section_id": "translation",
-            "question": "Many historians argue that the French Revolution was primarily driven by economic inequality rather than purely ideological motives.",
-            "options": {
-                "A": "Pek çok tarihçi, Fransız Devrimi'nin tamamen ideolojik motiflerden ziyade öncelikle ekonomik eşitsizlik tarafından yönlendirildiğini iddia etmektedir.",
-                "B": "Tarihçiler, Fransız Devrimi'nin ekonomik eşitsizlikten çok ideolojik sebeplerle ortaya çıktığını savunmaktadır.",
-                "C": "Birçok tarihçiye göre Fransız Devrimi'nin temel nedeni ideolojik motifler değil, ekonomik eşitsizliktir.",
-                "D": "Fransız Devrimi'nin ideolojik motiflerden ziyade ekonomik eşitsizlikten kaynaklandığı birçok tarihçi tarafından tartışılmaktadır.",
-                "E": "Tarihçilerin çoğu, Fransız Devrimi'nin arkasındaki asıl itici gücün ideolojik değil ekonomik olduğuna inanmaktadır."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 19,
+            "id": 17,
             "section_id": "paraphrase",
             "question": "Unless significant measures are taken to reduce carbon emissions, global temperatures will continue to rise uncontrollably.",
             "options": {
@@ -311,7 +300,7 @@
             "correct": "A"
         },
         {
-            "id": 20,
+            "id": 18,
             "section_id": "paraphrase",
             "question": "The discovery of penicillin revolutionized medicine by providing a cure for bacterial infections that were previously fatal.",
             "options": {
@@ -324,7 +313,7 @@
             "correct": "A"
         },
         {
-            "id": 21,
+            "id": 19,
             "section_id": "paraphrase",
             "question": "No other artist of his generation had as profound an impact on modern sculpture as Rodin did.",
             "options": {
@@ -337,7 +326,7 @@
             "correct": "A"
         },
         {
-            "id": 22,
+            "id": 20,
             "section_id": "paraphrase",
             "question": "The new policy is designed to alleviate poverty; nevertheless, critics argue it might inadvertently increase unemployment.",
             "options": {
@@ -350,20 +339,7 @@
             "correct": "A"
         },
         {
-            "id": 23,
-            "section_id": "paraphrase",
-            "question": "It was not until the 19th century that scientists began to understand the true nature of infectious diseases.",
-            "options": {
-                "A": "Scientists started to comprehend the actual mechanisms of infectious diseases only in the 19th century.",
-                "B": "Scientists had fully understood the true nature of infectious diseases long before the 19th century.",
-                "C": "By the 19th century, scientists had already stopped studying the true nature of infectious diseases.",
-                "D": "The true nature of infectious diseases was understood by scientists well after the 19th century.",
-                "E": "In the 19th century, scientists realized they could never understand the true nature of infectious diseases."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 24,
+            "id": 21,
             "section_id": "dialogue",
             "question": "Professor: The recent data suggests a significant correlation between sleep deprivation and cognitive decline in adolescents. \nStudent: ______ \nProfessor: Exactly. That's why pushing back school start times could be a viable intervention.",
             "options": {
@@ -376,7 +352,7 @@
             "correct": "A"
         },
         {
-            "id": 25,
+            "id": 22,
             "section_id": "dialogue",
             "question": "Journalist: Your latest book argues that economic growth does not always lead to an increase in societal happiness. Why is that? \nEconomist: ______ \nJournalist: It makes sense. Wealth distribution plays a crucial role.",
             "options": {
@@ -389,7 +365,7 @@
             "correct": "A"
         },
         {
-            "id": 26,
+            "id": 23,
             "section_id": "dialogue",
             "question": "Researcher A: The results of our clinical trial are statistically significant, but the effect size is quite small. \nResearcher B: ______ \nResearcher A: I agree. We shouldn't overstate the practical implications of our findings.",
             "options": {
@@ -402,7 +378,7 @@
             "correct": "A"
         },
         {
-            "id": 27,
+            "id": 24,
             "section_id": "dialogue",
             "question": "Student: I'm having trouble understanding the concept of 'entropy' in thermodynamics. \nTeacher: ______ \nStudent: Oh, so it's a measure of disorder or randomness in a closed system?",
             "options": {
@@ -415,20 +391,7 @@
             "correct": "A"
         },
         {
-            "id": 28,
-            "section_id": "dialogue",
-            "question": "Manager: We need to transition to more sustainable supply chain practices to reduce our carbon footprint. \nConsultant: ______ \nManager: Yes, the initial costs will be high, but it will pay off in the long run.",
-            "options": {
-                "A": "Are you prepared for the short-term financial investments required for this shift?",
-                "B": "I don't think sustainability is a priority for consumers nowadays.",
-                "C": "Our current supply chain is perfectly fine and doesn't need any changes.",
-                "D": "This will definitely reduce our expenses immediately.",
-                "E": "Have you considered increasing our carbon footprint instead?"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 29,
+            "id": 25,
             "section_id": "para_comp",
             "question": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. Generally described as taking place from the 14th century to the 17th century, the Renaissance promoted the rediscovery of classical philosophy, literature, and art. ______. This shift in perspective profoundly influenced everything from painting to science.",
             "options": {
@@ -441,7 +404,7 @@
             "correct": "A"
         },
         {
-            "id": 30,
+            "id": 26,
             "section_id": "para_comp",
             "question": "Black holes are regions of space where gravity is so strong that nothing, not even light, can escape them. They are typically formed from the remnants of massive stars that collapse under their own gravity at the end of their life cycle. ______. As they consume more matter, their mass and gravitational pull increase proportionately.",
             "options": {
@@ -454,7 +417,7 @@
             "correct": "A"
         },
         {
-            "id": 31,
+            "id": 27,
             "section_id": "para_comp",
             "question": "Language acquisition in children is a complex process that has fascinated linguists for decades. While some theorists argue that humans are born with an innate grammatical blueprint, others believe that language is entirely learned through social interaction. ______. This suggests that both biological predispositions and environmental factors play essential roles.",
             "options": {
@@ -467,7 +430,7 @@
             "correct": "A"
         },
         {
-            "id": 32,
+            "id": 28,
             "section_id": "para_comp",
             "question": "The concept of Universal Basic Income (UBI) involves providing all citizens of a country with a regular, unconditional sum of money. Proponents argue that UBI could eradicate extreme poverty and provide a safety net in an age of increasing automation. ______. They worry that such a program could lead to high inflation and disincentivize work.",
             "options": {
@@ -480,20 +443,7 @@
             "correct": "A"
         },
         {
-            "id": 33,
-            "section_id": "para_comp",
-            "question": "Symbiosis is a biological concept that describes a close and long-term interaction between two different biological species. In some cases, known as mutualism, both species benefit from the relationship. ______. A classic example is the relationship between dogs and ticks, where the tick gains nourishment at the dog's expense.",
-            "options": {
-                "A": "In other instances, such as parasitism, one organism benefits while the other is harmed.",
-                "B": "Commensalism is another type where one species benefits and the other is neither helped nor harmed.",
-                "C": "Bees and flowers exhibit mutualism, as bees get nectar and flowers get pollinated.",
-                "D": "Ecosystems rely heavily on predator-prey dynamics to maintain balance.",
-                "E": "Evolutionary biology studies how these interactions have developed over millions of years."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 34,
+            "id": 29,
             "section_id": "closest",
             "question": "In the face of mounting public pressure, the corporation was forced to retract its controversial advertising campaign.",
             "options": {
@@ -506,7 +456,7 @@
             "correct": "A"
         },
         {
-            "id": 35,
+            "id": 30,
             "section_id": "closest",
             "question": "Scarcely had the speaker finished his presentation when the audience erupted into a standing ovation.",
             "options": {
@@ -519,7 +469,7 @@
             "correct": "A"
         },
         {
-            "id": 36,
+            "id": 31,
             "section_id": "closest",
             "question": "It is highly improbable that a consensus will be reached during today's negotiations, given the profound ideological differences between the two parties.",
             "options": {
@@ -532,20 +482,7 @@
             "correct": "A"
         },
         {
-            "id": 37,
-            "section_id": "closest",
-            "question": "Regardless of how meticulously a scientific experiment is designed, there is always a margin for unforeseen errors.",
-            "options": {
-                "A": "No matter how carefully a scientific experiment is planned, unexpected mistakes are always a possibility.",
-                "B": "Unforeseen errors only occur when a scientific experiment is not designed meticulously enough.",
-                "C": "A meticulously designed scientific experiment will completely eliminate the margin for unforeseen errors.",
-                "D": "If you design a scientific experiment well, you will only have to deal with expected errors.",
-                "E": "Scientific experiments are always full of errors, so meticulous design is essentially useless."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 38,
+            "id": 32,
             "section_id": "irrelevant",
             "question": "(I) The printing press, invented by Johannes Gutenberg in the 15th century, revolutionized the spread of information. (II) Before its invention, books were painstakingly copied by hand, making them rare and expensive. (III) The demand for digital e-books has surged in the 21st century. (IV) By mass-producing texts, the printing press democratized knowledge and fueled the Renaissance. (V) It also played a crucial role in the Protestant Reformation by allowing religious texts to be widely distributed.",
             "options": {
@@ -558,7 +495,7 @@
             "correct": "C"
         },
         {
-            "id": 39,
+            "id": 33,
             "section_id": "irrelevant",
             "question": "(I) Photosynthesis is the process by which green plants transform light energy into chemical energy. (II) During this process, plants absorb carbon dioxide from the air and release oxygen as a byproduct. (III) Deforestation in the Amazon basin is a major environmental concern. (IV) The energy captured is stored in the bonds of sugar molecules, which plants use for growth. (V) Without photosynthesis, most life on Earth would eventually cease to exist due to a lack of food and oxygen.",
             "options": {
@@ -571,7 +508,7 @@
             "correct": "C"
         },
         {
-            "id": 40,
+            "id": 34,
             "section_id": "irrelevant",
             "question": "(I) Cryptocurrencies operate on a technology called blockchain, a decentralized ledger of all transactions across a network. (II) This technology ensures transparency and security without the need for a central authority like a bank. (III) Many traditional banks have strict dress codes for their employees. (IV) Transactions are verified by network nodes through cryptography and recorded in a public distributed ledger. (V) As a result, altering past records is virtually impossible, which prevents fraud.",
             "options": {
@@ -582,6 +519,90 @@
                 "E": "V"
             },
             "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Why is the Amazon Rainforest called the 'lungs of the planet'?",
+            "options": {
+                "A": "Because it houses billions of trees that produce oxygen.",
+                "B": "Because it is the largest rainforest in the world.",
+                "C": "Due to its unique shape resembling a human lung.",
+                "D": "Because it absorbs carbon dioxide and regulates the climate.",
+                "E": "It is a metaphor used by scientists to describe its biodiversity."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What is the primary cause of the threats facing the Amazon region?",
+            "options": {
+                "A": "Severe droughts caused by global warming.",
+                "B": "Deforestation linked to human activities and development.",
+                "C": "The extinction of one in ten known species.",
+                "D": "Natural forest fires that occur during the dry season.",
+                "E": "An overabundance of logging and carbon storage."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What would be one major global consequence of losing the Amazon?",
+            "options": {
+                "A": "A significant increase in world oxygen levels.",
+                "B": "The immediate collapse of all local ecosystems.",
+                "C": "The acceleration of climate change due to carbon release.",
+                "D": "The transformation of 5.5 million km² into desert.",
+                "E": "The discovery of new species in the atmosphere."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What was the most significant shift during the Industrial Revolution?",
+            "options": {
+                "A": "The development of steam-powered transportation.",
+                "B": "The move from rural areas to major urban centers.",
+                "C": "The transition from agriculture to industrial production.",
+                "D": "The invention of the power loom and factory work.",
+                "E": "The improvement of communication and social challenges."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "According to the passage, what was one benefit of this era?",
+            "options": {
+                "A": "The eradication of environmental pollution.",
+                "B": "The improvement of working conditions in factories.",
+                "C": "Significant advancements in transportation systems.",
+                "D": "The preservation of rural lifestyle and agrarian values.",
+                "E": "The reduction of mass production in the cities."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What is the passage's overall view of the Industrial Revolution?",
+            "options": {
+                "A": "It was a period of purely social and environmental disaster.",
+                "B": "It was necessary for the development of modern technology.",
+                "C": "It should have remained focused on agrarian economies.",
+                "D": "It primarily benefited rural populations in Britain.",
+                "E": "It failed to provide a foundation for future civilizations."
+            },
+            "correct": "B"
         }
     ]
 }
