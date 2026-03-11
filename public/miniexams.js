@@ -222,18 +222,53 @@ async function meStartExam() {
     const res = await fetch(exam.file);
     const fullData = await res.json();
     
-    // Shuffle and pick
-    let questions = [...fullData.questions].sort(() => 0.5 - Math.random());
-    questions = questions.slice(0, count);
+    // Grouping Logic
+    let processedQuestions = fullData.questions;
+    let isFixed = exam.id.startsWith('mini_fixed');
+    
+    if (!isFixed) {
+        // Dynamic: need to group to preserve context
+        let groups = [];
+        if (examId === 'mini_cloze') {
+            // Group by 5s for Cloze
+            for (let i = 0; i < processedQuestions.length; i += 5) {
+                groups.push(processedQuestions.slice(i, i + 5));
+            }
+        } else if (examId === 'mini_read') {
+            // Group by common passage prefix or passage_id
+            let tempGroups = {};
+            processedQuestions.forEach(q => {
+                let key = q.passage_id || q.question.substring(0, 100);
+                if (!tempGroups[key]) tempGroups[key] = [];
+                tempGroups[key].push(q);
+            });
+            groups = Object.values(tempGroups);
+        } else {
+            // Others: single question sets
+            groups = processedQuestions.map(q => [q]);
+        }
+
+        // Shuffle groups and pick
+        groups.sort(() => 0.5 - Math.random());
+        let selectedQuestions = [];
+        for (let group of groups) {
+            if (selectedQuestions.length >= count) break;
+            selectedQuestions.push(...group);
+        }
+        processedQuestions = selectedQuestions;
+    } else {
+        // Fixed exams: just slice to count if necessary (though usually they are 40)
+        // No shuffle for fixed exams to keep order
+    }
 
     meExamData = {
         ...fullData,
-        questions: questions
+        questions: processedQuestions
     };
 
     meAnswers = {};
     meCurrentIdx = 0;
-    meSecondsLeft = Math.min(60, count * 1.5) * 60; // Dynamic duration
+    meSecondsLeft = Math.min(60, processedQuestions.length * 1.5) * 60;
     meStarted = true;
     document.getElementById('meStartScreen').classList.add('hidden');
     document.getElementById('meExamScreen').classList.remove('hidden');
@@ -257,28 +292,68 @@ function startMeTimer() {
 
 function meRenderQuestion() {
   const q = meExamData.questions[meCurrentIdx];
-  document.getElementById('meQNum').textContent = `${meCurrentIdx + 1}/${meExamData.questions.length}`;
+  const total = meExamData.questions.length;
+  document.getElementById('meQNum').textContent = `${meCurrentIdx + 1}/${total}`;
+  
   const section = (meExamData.sections || []).find(s => s.id === q.section_id);
-  document.getElementById('meSectionLabel').textContent = section ? section.label : (q.type || '');
+  const type = q.section_id || q.type || '';
+  document.getElementById('meSectionLabel').textContent = section ? section.label : type;
   
   const pBox = document.getElementById('mePassageBox');
   pBox.classList.add('hidden');
-  
-  // Handle passage (some have passage_id, some have passage text in a field)
-  if (q.passage_id && meExamData.passages) {
-    const p = meExamData.passages.find(px => px.id === q.passage_id);
-    if (p) { pBox.innerHTML = p.text.replace(/\n/g, '<br>'); pBox.classList.remove('hidden'); }
-  } else if (q.passage) {
-     pBox.innerHTML = q.passage.replace(/\n/g, '<br>'); pBox.classList.remove('hidden');
+  pBox.innerHTML = '';
+
+  let isCloze = type.toLowerCase().includes('cloze');
+  let isReading = type.toLowerCase().includes('read');
+
+  if (isCloze) {
+      // Reconstruct Cloze Passage from sister questions
+      // Find the group of 5 (or less) this question belongs to in CURRENT meExamData
+      let startIdx = meCurrentIdx - (meCurrentIdx % 5);
+      let group = meExamData.questions.slice(startIdx, startIdx + 5);
+      let fullText = group.map(g => g.question).join(" ");
+      
+      // Cleanup: sometimes questions repeat parts of sentences. 
+      // For now, simple join works for most of our data.
+      pBox.innerHTML = `<div class="font-bold mb-2 text-red-800"><i class="fas fa-file-alt mr-2"></i>CLOZE TEST PARÇASI</div>` + fullText.replace(/\n/g, '<br>');
+      pBox.classList.remove('hidden');
+      document.getElementById('meQuestion').innerHTML = `<span class="bg-red-800 text-white px-2 py-0.5 rounded text-sm mr-2">SORU ${meCurrentIdx + 1}</span> <b>Boşluk için en uygun seçeneği bulun.</b>`;
+  } else if (isReading) {
+      // Show passage
+      let passageText = q.passage || q.passage_text || "";
+      if (!passageText && q.passage_id && meExamData.passages) {
+          let pObj = meExamData.passages.find(px => px.id === q.passage_id);
+          if (pObj) passageText = pObj.text;
+      }
+      // If still no passage, maybe it's in the question itself (some old formats)
+      if (!passageText && q.question.length > 200) {
+          passageText = q.question; // The long part is usually the passage
+      }
+
+      if (passageText) {
+          pBox.innerHTML = `<div class="font-bold mb-2 text-blue-800"><i class="fas fa-book-open mr-2"></i>OKUMA PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
+          pBox.classList.remove('hidden');
+      }
+      
+      // If question was the passage, we need to extract the actual question part if it's at the end
+      let displayQuestion = q.question;
+      if (isReading && passageText === q.question) {
+          // It's likely the question is "According to the passage..." at the end.
+          // But our Reading JSON often puts the same passage in every question.
+          displayQuestion = "Parçaya göre soruyu cevaplayınız.";
+      }
+      document.getElementById('meQuestion').innerHTML = displayQuestion.replace(/\n/g, '<br>');
+  } else {
+      // Normal questions
+      document.getElementById('meQuestion').innerHTML = q.question.replace(/\n/g, '<br>');
   }
 
-  document.getElementById('meQuestion').innerHTML = q.question.replace(/\n/g, '<br>');
   const optBox = document.getElementById('meOptions');
   optBox.innerHTML = '';
   Object.entries(q.options).forEach(([k, v]) => {
     const b = document.createElement('button');
-    b.className = `w-full text-left px-4 py-3 rounded-xl border-2 ${meAnswers[q.id] === k ? 'border-red-600 bg-red-50' : 'border-slate-200 hover:border-slate-300'}`;
-    b.innerHTML = `<strong>${k})</strong> ${v}`;
+    b.className = `w-full text-left px-4 py-3 rounded-xl border-2 transition-all ${meAnswers[q.id] === k ? 'border-red-600 bg-red-50 ring-2 ring-red-100' : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50'}`;
+    b.innerHTML = `<span class="inline-block w-8 font-bold text-red-800">${k})</span> ${v}`;
     b.onclick = () => { meAnswers[q.id] = k; meRenderQuestion(); };
     optBox.appendChild(b);
   });
