@@ -1,0 +1,638 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 24",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The sudden ______ of the pandemic forced many educational institutions to shift rapidly to online platforms, revealing deep-seated inequalities in digital access.",
+            "options": {
+                "A": "emergence",
+                "B": "disregard",
+                "C": "fluctuation",
+                "D": "diminution",
+                "E": "stagnation"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Research suggests that some species are inherently more ______ to climate change than others due to their unique physiological adaptations.",
+            "options": {
+                "A": "resilient",
+                "B": "indifferent",
+                "C": "lethargic",
+                "D": "vulnerable",
+                "E": "ambivalent"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The government's decision to ______ the old trade regulations was met with widespread approval from the international business community.",
+            "options": {
+                "A": "enforce",
+                "B": "rescind",
+                "C": "maintain",
+                "D": "uphold",
+                "E": "disseminate"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Although the preliminary findings of the study were quite promising, ______.",
+            "options": {
+                "A": "the researchers decided to publish them immediately",
+                "B": "they failed to account for long-term environmental impacts",
+                "C": "there was no need for further investigation",
+                "D": "the data confirmed all previous hypotheses",
+                "E": "every participant showed a positive response to the treatment"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "______ unless the local authorities take immediate action to restore the damaged infrastructure.",
+            "options": {
+                "A": "The city will attract more tourists next year",
+                "B": "Economic recovery in the region will be significantly delayed",
+                "C": "New businesses are expected to open soon",
+                "D": "The public transportation system is working perfectly",
+                "E": "Urban planning has reached its final stage"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "In light of the recent security breaches, the IT department has recommended ______.",
+            "options": {
+                "A": "that all employees change their passwords every month",
+                "B": "to ignore the minor glitches in the system",
+                "C": "having been notified of the situation earlier",
+                "D": "which would prevent any future attacks",
+                "E": "despite the high cost of the software"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Just as the Industrial Revolution transformed the 19th-century economy, ______.",
+            "options": {
+                "A": "it was a period of great social upheaval",
+                "B": "the digital revolution is currently reshaping the modern workforce",
+                "C": "many people moved from rural areas to cities",
+                "D": "steam engines became the primary source of power",
+                "E": "labor laws were eventually introduced to protect workers"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Paragraph: The concept of sustainable development emerged in the late 20th century as a response to growing concerns about environmental degradation. (1) ______ its popularity, the term remains difficult to define precisely. Some scholars argue that it is a (2) ______ between economic growth and ecological preservation. (3) ______, others believe that true sustainability requires a fundamental shift in human values. (4) ______ we achieve this shift, the global environment will continue to deteriorate. Therefore, it is (5) ______ that policy makers integrate environmental goals into all levels of planning. [Blank 1]",
+            "options": {
+                "A": "Despite",
+                "B": "Because of",
+                "C": "In addition to",
+                "D": "Regardless of",
+                "E": "Instead of"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 2 from the previous paragraph]",
+            "options": {
+                "A": "conflict",
+                "B": "compromise",
+                "C": "contradiction",
+                "D": "barrier",
+                "E": "coincidence"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 3 from the previous paragraph]",
+            "options": {
+                "A": "Consequently",
+                "B": "However",
+                "C": "Similarly",
+                "D": "Moreover",
+                "E": "For instance"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 4 from the previous paragraph]",
+            "options": {
+                "A": "Once",
+                "B": "Unless",
+                "C": "Since",
+                "D": "If",
+                "E": "While"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "[Blank 5 from the previous paragraph]",
+            "options": {
+                "A": "optional",
+                "B": "redundant",
+                "C": "imperative",
+                "D": "negligible",
+                "E": "trivial"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Modern tıp, genetik araştırmalar sayesinde hastalıkların teşhis ve tedavisinde devrim niteliğinde adımlar atmaktadır.",
+            "options": {
+                "A": "Modern medicine is taking revolutionary steps in the diagnosis and treatment of diseases thanks to genetic research.",
+                "B": "Genetic research allows modern medicine to take steps toward curing diseases.",
+                "C": "The diagnosis of diseases is being revolutionized by modern medicine and genetics.",
+                "D": "Modern medicine is diagnosing and treating diseases through various genetic steps.",
+                "E": "Thanks to modern medicine, genetic research is being used in the treatment of diseases."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Despite the harsh weather conditions, the rescue team managed to reach the stranded climbers before nightfall.",
+            "options": {
+                "A": "Sert hava koşullarına rağmen, kurtarma ekibi gece çökmeden önce mahsur kalan dağcılara ulaşmayı başardı.",
+                "B": "Hava koşulları sert olmasına rağmen, kurtarma ekibi dağcıların yanına gece yarısı ulaştı.",
+                "C": "Kurtarma ekibi, sert hava koşulları yüzünden dağcılara gece çökmeden ulaşamadı.",
+                "D": "Gece çökmeden önce dağcılara ulaşan kurtarma ekibi sert hava koşullarından etkilendi.",
+                "E": "Sert hava koşullarında mahsur kalan dağcılar, gece çökmeden önce kurtarma ekibi tarafından kurtarıldı."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Yapay zeka teknolojilerinin gelişimi, iş gücü piyasasında hem yeni fırsatlar hem de ciddi zorluklar yaratmaktadır.",
+            "options": {
+                "A": "The development of AI technologies is creating both new opportunities and serious challenges in the labor market.",
+                "B": "AI technologies are developing and creating many opportunities and challenges for workers.",
+                "C": "In the labor market, AI technologies are creating new opportunities despite the challenges.",
+                "D": "Both opportunities and challenges are being developed by AI technologies in the market.",
+                "E": "Serious challenges in the labor market are being addressed by the development of AI technologies."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Unlike his predecessors, the new CEO prioritizes environmental sustainability over short-term financial gains.",
+            "options": {
+                "A": "Yeni CEO, seleflerinden farklı olarak, çevresel sürdürülebilirliği kısa vadeli finansal kazançların üzerinde tutmaktadır.",
+                "B": "Seleflerinin aksine, yeni CEO finansal kazançları çevresel sürdürülebilirliğe tercih etmektedir.",
+                "C": "Yeni CEO ve selefleri, çevresel sürdürülebilirliği finansal kazançlardan daha önemli görmektedir.",
+                "D": "Kısa vadeli finansal kazançlar, yeni CEO için çevresel sürdürülebilirlikten daha önceliklidir.",
+                "E": "Yeni CEO'nun önceliği, selefleri gibi çevresel sürdürülebilirlik ve finansal kazançlardır."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It is not until you travel abroad that you realize how much you value your own culture.",
+            "options": {
+                "A": "You only appreciate your own culture once you have visited other countries.",
+                "B": "Traveling abroad is the only way to learn about different cultures.",
+                "C": "You value your own culture more than any other culture when you are abroad.",
+                "D": "People who do not travel abroad cannot appreciate their own culture.",
+                "E": "Your culture becomes more valuable to you if you decide to live abroad permanently."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Rarely have we seen such a level of public engagement in environmental issues as we do today.",
+            "options": {
+                "A": "Today's level of public interest in the environment is quite common compared to the past.",
+                "B": "Public engagement in environmental issues has reached an unprecedented level today.",
+                "C": "In the past, people were more engaged in environmental issues than they are today.",
+                "D": "The public is not as interested in the environment today as researchers believe.",
+                "E": "We have seen similar levels of public engagement in the past, but not very often."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The witness's testimony was so contradictory that the jury found it difficult to reach a verdict.",
+            "options": {
+                "A": "The jury reached a verdict easily despite the witness's confusing testimony.",
+                "B": "Because the witness gave conflicting information, the jury struggled to make a decision.",
+                "C": "The witness's testimony helped the jury reach a verdict more quickly.",
+                "D": "The jury ignored the witness's testimony because it was too long and detailed.",
+                "E": "The contradictory nature of the case made the witness's testimony irrelevant."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Had the government taken earlier precautions, the impact of the economic crisis would have been less severe.",
+            "options": {
+                "A": "The economic crisis was not severe because the government took early precautions.",
+                "B": "The government took precautions, but they were not enough to stop the economic crisis.",
+                "C": "The severity of the economic crisis resulted from the government's failure to act sooner.",
+                "D": "If the government takes precautions now, the economic crisis will become less severe.",
+                "E": "The impact of the economic crisis was severe despite the government's early actions."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Dr. Smith: Have you reviewed the latest data from the Mars rover mission? \nResearcher: Yes, the findings regarding water ice in the polar regions are quite significant. \nDr. Smith: ______ \nResearcher: Absolutely. It changes our entire understanding of the planet's geological history.",
+            "options": {
+                "A": "Do you think they will find life there soon?",
+                "B": "It means we need to recalibrate our existing theories, doesn't it?",
+                "C": "Is the rover still operational after the dust storm?",
+                "D": "How long did it take for the data to reach Earth?",
+                "E": "I wonder if there is enough oxygen for a human colony."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Alice: I’m thinking of applying for the exchange program in Germany next semester. \nBob: That sounds like a great opportunity! Are you worried about the language barrier? \nAlice: ______ \nBob: That’s true. Most academic programs there are offered in English anyway.",
+            "options": {
+                "A": "I have been taking German classes for three years now.",
+                "B": "Not really, since the university provides intensive language courses.",
+                "C": "A little, but I'm sure I can manage with my basic skills.",
+                "D": "Actually, I heard that English is widely spoken in the academic community.",
+                "E": "Yes, I'm afraid I won't be able to understand the lectures."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Client: The project timeline seems a bit tight. Can we extend the deadline by two weeks? \nManager: I understand your concern, but we have a fixed launch date. \nClient: ______ \nManager: In that case, we might need to allocate more resources to meet the original date.",
+            "options": {
+                "A": "Could we reduce the scope of the project instead?",
+                "B": "What if we increase the budget to hire extra staff?",
+                "C": "The quality of the final product is our main priority.",
+                "D": "I'm sure the team can handle the pressure.",
+                "E": "We can't afford any delays at this stage."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Interviewer: How do you handle stressful situations in a fast-paced work environment? \nCandidate: I try to stay organized and prioritize tasks based on their urgency. \nInterviewer: ______ \nCandidate: I usually take a short break to clear my head and then reassess the situation.",
+            "options": {
+                "A": "That sounds like a good strategy. What if that doesn't work?",
+                "B": "Do you prefer working alone or in a team?",
+                "C": "What are your long-term career goals?",
+                "D": "How do you handle conflicts with your colleagues?",
+                "E": "Can you give me an example of a difficult task you completed?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The Great Depression was a severe worldwide economic depression that took place mostly during the 1930s. It began in the United States after a major fall in stock prices. ______. The depression had devastating effects in both rich and poor countries, with personal income, tax revenue, profits, and prices dropping significantly.",
+            "options": {
+                "A": "This event is often referred to as Black Tuesday.",
+                "B": "The stock market recovered quickly in the following months.",
+                "C": "Many people became wealthy overnight due to speculation.",
+                "D": "It was a period of great technological advancement.",
+                "E": "Agricultural production increased throughout the decade."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Urbanization is the process by which more and more people leave the countryside to live in cities. This trend is driven by several factors, including the search for better job opportunities and access to improved services. ______. As a result, cities face challenges such as overcrowding, pollution, and inadequate housing.",
+            "options": {
+                "A": "Rural areas are becoming more popular for young professionals.",
+                "B": "However, rapid urbanization can put a strain on urban infrastructure.",
+                "C": "Government policies are encouraging people to move back to the countryside.",
+                "D": "The cost of living in cities is generally lower than in rural areas.",
+                "E": "Public transportation is the only way to solve traffic problems."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll. ______. Without this process, life as we know it would not be possible, as it provides the primary source of energy for nearly all organisms.",
+            "options": {
+                "A": "Chlorophyll is a pigment that absorbs red and blue light.",
+                "B": "The process involves the conversion of light energy into chemical energy.",
+                "C": "Plants also require oxygen to perform photosynthesis.",
+                "D": "Most animals can produce their own food through similar processes.",
+                "E": "Desert plants have adapted to minimize water loss during the day."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Artificial intelligence (AI) has become an integral part of our daily lives, from voice assistants to personalized recommendations on streaming platforms. ______. Ethicists and scientists are calling for strict regulations to ensure that AI is developed and used responsibly.",
+            "options": {
+                "A": "AI can process vast amounts of data much faster than humans.",
+                "B": "The history of AI dates back to the mid-20th century.",
+                "C": "However, its rapid advancement has also raised significant ethical concerns.",
+                "D": "Many companies are investing heavily in AI research and development.",
+                "E": "AI-powered robots are being used in manufacturing and healthcare."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Hardly anyone expected the underdog team to win the championship against the defending champions.",
+            "options": {
+                "A": "Almost everyone was surprised when the underdog team defeated the defending champions.",
+                "B": "The defending champions were expected to win, but they lost by a small margin.",
+                "C": "No one was surprised that the underdog team lost the championship.",
+                "D": "The underdog team's victory was predicted by only a few experts.",
+                "E": "Everyone knew the underdog team had a chance to win the championship."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The more people consume fossil fuels, the more the global temperature is likely to rise.",
+            "options": {
+                "A": "Global temperature rises independently of the consumption of fossil fuels.",
+                "B": "Increased use of fossil fuels is directly linked to a rise in global temperatures.",
+                "C": "Reducing fossil fuel consumption will have no effect on global warming.",
+                "D": "Fossil fuels are the only cause of the increase in global temperature.",
+                "E": "The global temperature will rise even if we stop using fossil fuels."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "She couldn't have finished the report on time without the help of her colleagues.",
+            "options": {
+                "A": "Her colleagues helped her with the report, but she still finished it late.",
+                "B": "She finished the report on time because her colleagues assisted her.",
+                "C": "Even with her colleagues' help, she wasn't able to finish the report.",
+                "D": "She would have finished the report on time even if her colleagues hadn't helped.",
+                "E": "The report was finished on time, although her colleagues didn't do much."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Genetic engineering has the potential to solve many of the world's most pressing problems. (II) It can be used to create crops that are resistant to pests and diseases. (III) Traditional farming methods have been used for thousands of years. (IV) Furthermore, it could lead to the development of new treatments for genetic disorders. (V) However, the technology also raises ethical and safety concerns that must be addressed.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Renaissance was a period of great cultural and artistic achievement in Europe. (II) It began in Italy in the 14th century and later spread to the rest of the continent. (III) Michelangelo and Leonardo da Vinci are among the most famous artists of this era. (IV) The Industrial Revolution led to a shift from agrarian to industrial societies. (V) During the Renaissance, there was also a renewed interest in the classical learning of Greece and Rome.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Renewable energy sources, such as solar and wind power, are becoming increasingly affordable. (II) Many countries are setting ambitious targets to reduce their carbon emissions. (III) Fossil fuels are still the primary source of energy for most of the world. (IV) Coal mining is a dangerous occupation that has many health risks. (V) The transition to clean energy is essential for combating climate change.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The term 'cognitive dissonance' refers to the mental discomfort experienced by a person who holds two or more contradictory beliefs, values, or ideas. This discomfort is triggered by a situation in which a person’s belief clashes with new evidence they perceive. To reduce the discomfort, individuals may change their beliefs or justify their behavior. For example, a smoker who knows that smoking is harmful may experience dissonance. To resolve this, they might quit smoking, or they might downplay the risks by convincing themselves that 'everyone dies of something anyway.' According to the passage, what is the primary cause of cognitive dissonance?",
+            "options": {
+                "A": "The physical pain associated with changing one's habits.",
+                "B": "The act of ignoring new information altogether.",
+                "C": "Holding conflicting beliefs or values simultaneously.",
+                "D": "The social pressure to conform to a certain group.",
+                "E": "The inability to learn new information quickly."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Based on the passage about cognitive dissonance, how might a person deal with the discomfort of dissonance?",
+            "options": {
+                "A": "By seeking more contradictory information.",
+                "B": "By altering their existing beliefs to fit the new evidence.",
+                "C": "By increasing the frequency of the behavior that causes it.",
+                "D": "By avoiding any form of self-justification.",
+                "E": "By accepting that discomfort is a natural part of life."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "What can be inferred from the example of the smoker in the passage?",
+            "options": {
+                "A": "Smokers are more likely to experience dissonance than non-smokers.",
+                "B": "Justification is a common way to reduce mental discomfort.",
+                "C": "Quitting smoking is the only way to resolve cognitive dissonance.",
+                "D": "Most people are unaware of the health risks of smoking.",
+                "E": "Dissonance always leads to positive behavioral changes."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Silk Road was not a single road but a network of trade routes that connected the East and West. It was central to cultural interaction between the regions for many centuries. While it is best known for the trade of silk, many other goods were exchanged, including spices, precious stones, and technology. More importantly, the Silk Road served as a conduit for the spread of ideas, religions, and even diseases. The decline of the Silk Road began with the rise of maritime trade, which was faster and safer than the long overland journeys. According to the passage, the Silk Road was significant mainly because ______.",
+            "options": {
+                "A": "it was the only way to transport silk from China to Europe",
+                "B": "it facilitated the exchange of both goods and ideas between cultures",
+                "C": "it prevented the spread of diseases across different continents",
+                "D": "it was a single, well-maintained highway across Asia",
+                "E": "it encouraged the development of maritime trade routes"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Based on the passage, why did the Silk Road eventually lose its importance?",
+            "options": {
+                "A": "Because the production of silk moved to the West.",
+                "B": "Due to constant wars between the countries along the route.",
+                "C": "Because sea travel became a more efficient alternative.",
+                "D": "Because the demand for spices and precious stones decreased.",
+                "E": "Due to a lack of interest in cultural exchange."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Which of the following is mentioned in the passage as an item traded on the Silk Road?",
+            "options": {
+                "A": "Steam engines",
+                "B": "Petroleum",
+                "C": "Spices",
+                "D": "Automobiles",
+                "E": "Electronic devices"
+            },
+            "correct": "C"
+        }
+    ]
+}

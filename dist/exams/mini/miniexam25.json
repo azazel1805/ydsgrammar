@@ -1,0 +1,638 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 25",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The unprecedented rapid melting of Arctic permafrost has the potential to ________ large quantities of methane, a potent greenhouse gas, into the atmosphere.",
+            "options": {
+                "A": "liberate",
+                "B": "constrain",
+                "C": "deter",
+                "D": "obliterate",
+                "E": "fluctuate"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The philosopher's latest treatise provides a(n) ________ analysis of existentialism, challenging long-held assumptions within the field.",
+            "options": {
+                "A": "superficial",
+                "B": "profound",
+                "C": "arbitrary",
+                "D": "negligent",
+                "E": "precarious"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The newly implemented fiscal policy was designed to ________ the economic downturn by encouraging private investment through tax incentives.",
+            "options": {
+                "A": "aggravate",
+                "B": "mitigate",
+                "C": "stagnate",
+                "D": "deplete",
+                "E": "undermine"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Although the patient showed some signs of improvement in the initial stages of the treatment, ________.",
+            "options": {
+                "A": "the doctors were optimistic about a full recovery",
+                "B": "the therapy was considered an absolute success",
+                "C": "the subsequent relapse was unexpected and severe",
+                "D": "it was clear that the medication worked perfectly",
+                "E": "the hospital staff celebrated the discharge"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "________, the archaeologists were able to reconstruct the social hierarchy of the ancient civilization.",
+            "options": {
+                "A": "Because the artifacts were damaged during excavation",
+                "B": "Despite the lack of written records in the burial sites",
+                "C": "By analyzing the distribution of luxury goods in the graves",
+                "D": "Since the climate was too harsh for permanent settlement",
+                "E": "Unless they find more evidence regarding the trade routes"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "The government decided to subsidize renewable energy projects ________.",
+            "options": {
+                "A": "so as to reduce the country's dependence on imported fossil fuels",
+                "B": "in case the prices of solar panels increased significantly",
+                "C": "even if the carbon emissions remained at an all-time high",
+                "D": "provided that the coal industry continued to grow steadily",
+                "E": "instead of addressing the urgent environmental concerns"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Hardly had the new software been released to the public ________.",
+            "options": {
+                "A": "then several critical security vulnerabilities were discovered",
+                "B": "when users began reporting significant performance issues",
+                "C": "while the development team was still testing the features",
+                "D": "that the company decided to cancel the entire project",
+                "E": "as soon as the marketing campaign reached its peak"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution was a period of (1)____ economic change. It shifted societies from agrarian bases to industrial ones. (2)____, this transition was not without its costs. Laborers often faced (3)____ conditions in factories. Researchers argue that (4)____ these hardships, the long-term standard of living eventually rose. Governments had to (5)____ new laws to protect workers. Blank 1:",
+            "options": {
+                "A": "marginal",
+                "B": "momentous",
+                "C": "redundant",
+                "D": "trivial",
+                "E": "adverse"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution was a period of (1)____ economic change. It shifted societies from agrarian bases to industrial ones. (2)____, this transition was not without its costs. Laborers often faced (3)____ conditions in factories. Researchers argue that (4)____ these hardships, the long-term standard of living eventually rose. Governments had to (5)____ new laws to protect workers. Blank 2:",
+            "options": {
+                "A": "Moreover",
+                "B": "However",
+                "C": "Consequently",
+                "D": "Similarly",
+                "E": "Therefore"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution was a period of (1)____ economic change. It shifted societies from agrarian bases to industrial ones. (2)____, this transition was not without its costs. Laborers often faced (3)____ conditions in factories. Researchers argue that (4)____ these hardships, the long-term standard of living eventually rose. Governments had to (5)____ new laws to protect workers. Blank 3:",
+            "options": {
+                "A": "favorable",
+                "B": "exhilarating",
+                "C": "deplorable",
+                "D": "luxurious",
+                "E": "stable"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution was a period of (1)____ economic change. It shifted societies from agrarian bases to industrial ones. (2)____, this transition was not without its costs. Laborers often faced (3)____ conditions in factories. Researchers argue that (4)____ these hardships, the long-term standard of living eventually rose. Governments had to (5)____ new laws to protect workers. Blank 4:",
+            "options": {
+                "A": "despite",
+                "B": "because of",
+                "C": "owing to",
+                "D": "in addition to",
+                "E": "rather than"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "Passage: The industrial revolution was a period of (1)____ economic change. It shifted societies from agrarian bases to industrial ones. (2)____, this transition was not without its costs. Laborers often faced (3)____ conditions in factories. Researchers argue that (4)____ these hardships, the long-term standard of living eventually rose. Governments had to (5)____ new laws to protect workers. Blank 5:",
+            "options": {
+                "A": "repeal",
+                "B": "enact",
+                "C": "violate",
+                "D": "ignore",
+                "E": "withdraw"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Genetik mühendisliğindeki son gelişmeler, bilim insanlarının hastalıkları daha etkili bir şekilde tedavi etmelerine olanak sağlamıştır.",
+            "options": {
+                "A": "Scientists have treated diseases effectively thanks to recent genetic engineering.",
+                "B": "Recent advances in genetic engineering have enabled scientists to treat diseases more effectively.",
+                "C": "Genetic engineering allows scientists to treat various diseases with success.",
+                "D": "The effective treatment of diseases is possible because of recent engineering advances.",
+                "E": "Scientists are treating diseases more effectively than ever before in genetic history."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "The global economy is currently facing a set of challenges that are both complex and interconnected.",
+            "options": {
+                "A": "Küresel ekonomi şu anda hem karmaşık hem de birbiriyle bağlantılı bir dizi zorlukla karşı karşıyadır.",
+                "B": "Dünya ekonomisi karmaşık ve bağlantılı zorluklar yüzünden krizdedir.",
+                "C": "Karmaşık ve bağlantılı zorluklar küresel ekonomiyi etkilemeye devam ediyor.",
+                "D": "Mevcut küresel ekonomik zorluklar hem karmaşık hem de çok yönlüdür.",
+                "E": "Ekonomik zorlukların karmaşık ve birbiriyle bağlantılı olması küresel bir sorundur."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Kuantum mekaniği, atom altı parçacıkların davranışlarını geleneksel fiziğin yapamayacağı şekillerde açıklar.",
+            "options": {
+                "A": "Quantum mechanics explains subatomic particles in ways traditional physics cannot.",
+                "B": "Subatomic particles are explained by quantum mechanics unlike traditional physics.",
+                "C": "Quantum mechanics explains the behaviors of subatomic particles in ways that traditional physics cannot.",
+                "D": "The behavior of particles is explained through quantum mechanics rather than physics.",
+                "E": "Traditional physics fails to explain subatomic behaviors as quantum mechanics does."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Cognitive psychology focuses on how people perceive, think, remember, and learn.",
+            "options": {
+                "A": "Bilişsel psikoloji insanların nasıl algıladığını, düşündüğünü ve öğrendiğini inceler.",
+                "B": "İnsanların algılama ve hatırlama süreçleri bilişsel psikolojinin temelidir.",
+                "C": "Bilişsel psikoloji; insanların nasıl algıladığına, düşündüğüne, hatırladığına ve öğrendiğine odaklanır.",
+                "D": "Öğrenme ve hatırlama süreçleri bilişsel psikolojinin odak noktalarıdır.",
+                "E": "Bilişsel psikolojinin odağı insanların düşünme ve algılama biçimleridir."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Hardly anyone expected the team to win the championship after their star player was injured.",
+            "options": {
+                "A": "The team was expected to win even though their star player had an injury.",
+                "B": "Almost no one thought the team would be champions once their key player got hurt.",
+                "C": "Winning the championship was easy for the team despite the injury of their star player.",
+                "D": "Everyone was certain the team would lose after the injury to their star player.",
+                "E": "The injury of the star player led the team to win the championship unexpectedly."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Had the company invested more in research and development, they would not be struggling today.",
+            "options": {
+                "A": "The company is struggling because they did not put enough money into research and development.",
+                "B": "If the company invests in research and development, they will stop struggling.",
+                "C": "The company invested a lot in research but they are still struggling today.",
+                "D": "Struggling was inevitable for the company despite their research and development efforts.",
+                "E": "Investing in research and development is the only way the company can survive."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The sheer number of tourists visiting the historic site is causing irreversible damage to the monuments.",
+            "options": {
+                "A": "The monuments are being destroyed because of the lack of tourists in the area.",
+                "B": "Historic sites are often damaged when too many tourists visit them at once.",
+                "C": "The monuments are suffering permanent harm due to the massive volume of tourists.",
+                "D": "Irreversible damage to the site is being caused by factors other than tourism.",
+                "E": "The number of tourists must be limited to prevent damage to the historic monuments."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Few scientific discoveries have had as much impact on modern medicine as the development of antibiotics.",
+            "options": {
+                "A": "Modern medicine has been influenced by many discoveries, but antibiotics are unique.",
+                "B": "Antibiotics are one of the most influential scientific discoveries for modern medicine.",
+                "C": "No other discovery in science has impacted modern medicine as much as antibiotics.",
+                "D": "The development of antibiotics had little impact compared to other scientific discoveries.",
+                "E": "Antibiotics have changed modern medicine more than any other single invention."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "James: Do you think artificial intelligence will eventually replace human creative roles? \nSarah: ________ \nJames: Why is that? \nSarah: Because AI relies on existing data, whereas human creativity often involves breaking rules and emotional intuition.",
+            "options": {
+                "A": "I believe it already has in many industries.",
+                "B": "It is highly unlikely in the near future.",
+                "C": "AI is much more creative than humans in many aspects.",
+                "D": "I don't think humans are creative enough anyway.",
+                "E": "Computers can easily replicate emotional intuition."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Professor: The deadline for the dissertation is approaching. How is your progress? \nStudent: ________ \nProfessor: I suggest you narrow down your scope; otherwise, you won't finish in time. \nStudent: That makes sense. I will focus only on the case study from last year.",
+            "options": {
+                "A": "I have already finished the first three chapters.",
+                "B": "I am struggling to manage the vast amount of data I collected.",
+                "C": "I think I need an extension because I was ill.",
+                "D": "The dissertation is much easier than I expected.",
+                "E": "I have decided to change my topic completely."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Interviewer: What do you consider to be your greatest professional achievement? \nCandidate: ________ \nInterviewer: That's impressive. How did you manage the team during such a crisis? \nCandidate: Communication and clear delegation were key.",
+            "options": {
+                "A": "I once saved the company from a major data breach.",
+                "B": "I am a very hardworking person with great potential.",
+                "C": "I graduated from a top-tier university with honors.",
+                "D": "I can speak three different languages fluently.",
+                "E": "I hope to become a manager within the next five years."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Customer: I'm looking for a book on Renaissance art, but I can't find it on the shelves. \nLibrarian: ________ \nCustomer: Oh, that's a pity. Can I reserve it for when it's returned? \nLibrarian: Of course, just fill out this form.",
+            "options": {
+                "A": "We have a large collection in the basement.",
+                "B": "It should be right there in the art section.",
+                "C": "I'm afraid all copies are currently checked out.",
+                "D": "The Renaissance section is closed for renovation.",
+                "E": "Would you like to see our modern art collection instead?"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Urbanization is a global phenomenon that has transformed the way people live. As more people move to cities in search of better opportunities, urban centers face immense pressure. ________. Therefore, sustainable urban planning is essential to ensure that cities remain livable for future generations.",
+            "options": {
+                "A": "Cities are becoming hubs for innovation and cultural exchange.",
+                "B": "The rural population is actually increasing in some parts of the world.",
+                "C": "Infrastructure, housing, and public services must be expanded to accommodate this growth.",
+                "D": "Most people prefer the quiet life of the countryside to the noise of the city.",
+                "E": "Historical monuments are often preserved in urban areas."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The concept of 'emotional intelligence' gained popularity in the 1990s. It refers to the ability to recognize, understand, and manage our own emotions and the emotions of others. ________. For instance, leaders with high emotional intelligence are better at motivating their teams and resolving conflicts.",
+            "options": {
+                "A": "IQ is still considered the most important measure of success.",
+                "B": "Many psychologists argue that emotional intelligence cannot be learned.",
+                "C": "This skill is particularly important in professional environments.",
+                "D": "The history of psychology is full of various intelligence theories.",
+                "E": "Emotions are often seen as a distraction in the workplace."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Climate change is affecting biodiversity at an alarming rate. Many species are unable to adapt to the rapidly changing temperatures and habitat loss. ________. If these trends continue, we may face a mass extinction event similar to those seen in the geological past.",
+            "options": {
+                "A": "Conservation efforts have been successful in some regions.",
+                "B": "Polar bears are the only species affected by melting ice.",
+                "C": "The loss of a single species can disrupt entire ecosystems.",
+                "D": "Climate change is a natural process that has occurred for millions of years.",
+                "E": "Technological solutions are being developed to capture carbon."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "In the digital age, cybersecurity has become a top priority for businesses and governments alike. Data breaches can lead to significant financial losses and damage to reputation. ________. As a result, there is a growing demand for skilled cybersecurity professionals who can defend against these threats.",
+            "options": {
+                "A": "Traditional security measures like locks and alarms are still used.",
+                "B": "Hackers are constantly developing more sophisticated methods of attack.",
+                "C": "Most people use simple passwords that are easy to remember.",
+                "D": "Cybersecurity software is becoming more affordable for home users.",
+                "E": "Social media companies are responsible for protecting user data."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The evidence presented during the trial was so compelling that the jury reached a verdict in record time.",
+            "options": {
+                "A": "The jury took a long time to decide because the evidence was very confusing.",
+                "B": "The trial lasted longer than expected due to the nature of the evidence.",
+                "C": "The jury made a quick decision because the evidence was very persuasive.",
+                "D": "The evidence was not strong enough to convince the jury immediately.",
+                "E": "The verdict was reached quickly despite the lack of compelling evidence."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Few people realize that the success of the project was due more to luck than to careful planning.",
+            "options": {
+                "A": "The project was successful because it was planned very carefully by the team.",
+                "B": "Not many people understand that luck played a bigger role in the project's success than planning did.",
+                "C": "Luck and planning were equally important for the success of the project.",
+                "D": "The project would have been even more successful if there had been more planning.",
+                "E": "Most people think the project failed because of bad luck and poor planning."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "No matter how hard he tried, he couldn't convince his colleagues to adopt the new strategy.",
+            "options": {
+                "A": "He didn't try hard enough to convince his colleagues about the new strategy.",
+                "B": "His colleagues eventually accepted the new strategy after a lot of effort.",
+                "C": "Despite his best efforts, his colleagues remained unconvinced about the new strategy.",
+                "D": "He managed to convince his colleagues but it took a lot of time.",
+                "E": "The new strategy was so bad that no one would ever accept it."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Solar energy is one of the most promising sources of renewable energy. (II) It harnesses the power of the sun to generate electricity through photovoltaic cells. (III) Many countries are investing heavily in solar farms to reduce their carbon footprint. (IV) Nuclear power plants, however, provide a constant supply of energy regardless of weather conditions. (V) As technology improves, the cost of solar panels continues to drop, making it more accessible.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Renaissance was a period of great cultural and artistic achievement in Europe. (II) It began in Italy and spread across the continent over several centuries. (III) During this time, artists like Leonardo da Vinci and Michelangelo created masterpieces. (IV) Modern art movements often reject the techniques used by Renaissance masters. (V) This era also saw significant advancements in science, literature, and philosophy.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Sleep is essential for maintaining physical and mental health. (II) During sleep, the body repairs tissues and the brain processes information from the day. (III) Most adults require between seven and nine hours of sleep per night to function optimally. (IV) Caffeine is a stimulant that can help people stay awake when they are tired. (V) Lack of sleep can lead to a variety of health problems, including obesity and heart disease.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Great Library of Alexandria was once the largest library in the world. It was founded in the 3rd century BCE and served as a major center of scholarship. It attracted thinkers from across the Mediterranean to study science, philosophy, and literature. However, the library's destruction remains a subject of historical debate. Some accounts blame Julius Caesar, while others point to later conflicts. Regardless of how it happened, the loss of the library resulted in the disappearance of countless ancient texts. Question: According to the passage, the Great Library of Alexandria ________.",
+            "options": {
+                "A": "was founded by Julius Caesar in the 3rd century BCE",
+                "B": "contained only books about science and philosophy",
+                "C": "was a vital hub for scholars from various regions",
+                "D": "is still standing today as a museum in Egypt",
+                "E": "was destroyed by a natural disaster"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Great Library of Alexandria... (same passage as above) Question: What can be inferred about the destruction of the library?",
+            "options": {
+                "A": "Historians are certain that Julius Caesar was the only person responsible.",
+                "B": "The exact circumstances of its destruction are not definitively known.",
+                "C": "The library was destroyed because it didn't attract enough scholars.",
+                "D": "It was a peaceful transition where books were moved to other libraries.",
+                "E": "Most of the texts were saved before the library was destroyed."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: The Great Library of Alexandria... (same passage as above) Question: The loss of the library is significant because ________.",
+            "options": {
+                "A": "it led to the end of the Mediterranean civilization",
+                "B": "it meant that many ancient writings were lost forever",
+                "C": "it was the only library in the ancient world",
+                "D": "it caused scholars to stop studying philosophy",
+                "E": "it proved that libraries are not safe places"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon allows the neurons in the brain to compensate for injury and disease and to adjust their activities in response to new situations or changes in the environment. For a long time, it was believed that the brain's structure was relatively fixed after childhood. However, research now shows that the brain is dynamic and continues to change even into old age through learning and experience. Question: Neuroplasticity enables the brain to ________.",
+            "options": {
+                "A": "remain unchanged after a person reaches adulthood",
+                "B": "stop the aging process entirely",
+                "C": "adapt to new environmental conditions and injuries",
+                "D": "function without the use of neurons",
+                "E": "only change during the early years of childhood"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: Neuroplasticity... (same passage as above) Question: What was the traditional belief regarding the brain's structure?",
+            "options": {
+                "A": "It was thought to be flexible throughout a person's life.",
+                "B": "It was believed to be unchangeable once childhood ended.",
+                "C": "Scientists thought neurons could not form connections.",
+                "D": "It was assumed that injuries to the brain were always fatal.",
+                "E": "Learning was thought to be impossible after age twenty."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Passage: Neuroplasticity... (same passage as above) Question: Which of the following is true according to the passage?",
+            "options": {
+                "A": "Neuroplasticity is a recently discovered myth in science.",
+                "B": "The brain becomes less dynamic as we learn new things.",
+                "C": "Experience and learning contribute to brain changes in adults.",
+                "D": "The brain cannot compensate for diseases.",
+                "E": "Neural connections are only formed in response to injuries."
+            },
+            "correct": "C"
+        }
+    ]
+}

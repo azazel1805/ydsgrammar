@@ -22,7 +22,12 @@ const EXAM_LIST = [
   { id: 'mini17', label: 'Mini Deneme 17', file: '/exams/mini/miniexam17.json' },
   { id: 'mini18', label: 'Mini Deneme 18', file: '/exams/mini/miniexam18.json' },
   { id: 'mini19', label: 'Mini Deneme 19', file: '/exams/mini/miniexam19.json' },
-  { id: 'mini20', label: 'Mini Deneme 20', file: '/exams/mini/miniexam20.json' }
+  { id: 'mini20', label: 'Mini Deneme 20', file: '/exams/mini/miniexam20.json' },
+  { id: 'mini21', label: 'Mini Deneme 21', file: '/exams/mini/miniexam21.json' },
+  { id: 'mini22', label: 'Mini Deneme 22', file: '/exams/mini/miniexam22.json' },
+  { id: 'mini23', label: 'Mini Deneme 23', file: '/exams/mini/miniexam23.json' },
+  { id: 'mini24', label: 'Mini Deneme 24', file: '/exams/mini/miniexam24.json' },
+  { id: 'mini25', label: 'Mini Deneme 25', file: '/exams/mini/miniexam25.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────

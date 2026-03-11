@@ -1,0 +1,638 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 23",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": ""
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The discovery of the new antibiotic was hailed as a/an ---- breakthrough in the fight against multi-drug resistant bacteria, potentially saving millions of lives.",
+            "options": {
+                "A": "momentous",
+                "B": "adverse",
+                "C": "redundant",
+                "D": "trivial",
+                "E": "precarious"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The archaeological team had to ---- the ancient ruins with extreme care to avoid damaging the fragile murals beneath the sediment.",
+            "options": {
+                "A": "excavate",
+                "B": "obliterate",
+                "C": "validate",
+                "D": "augment",
+                "E": "curtail"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Despite the evidence suggesting economic growth, the benefits have been ---- distributed, leaving the rural population in poverty.",
+            "options": {
+                "A": "disproportionately",
+                "B": "simultaneously",
+                "C": "consecutively",
+                "D": "notoriously",
+                "E": "reverently"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "----, the government has decided to implement stricter environmental regulations to mitigate carbon emissions.",
+            "options": {
+                "A": "Although the industrial sector has shown resistance",
+                "B": "Because the country has reached its green energy goals",
+                "C": "While international treaties are being abolished",
+                "D": "Despite the lack of public concern regarding climate",
+                "E": "Provided that the economic crisis continues to worsen"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Quantum computing is expected to revolutionize data encryption ----.",
+            "options": {
+                "A": "so that traditional methods remain superior",
+                "B": "unless researchers find a way to stabilize qubits",
+                "C": "even if current computers are fast enough",
+                "D": "by providing processing speeds that are currently unattainable",
+                "E": "since classical bits are more reliable than quantum states"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Many historians argue that the fall of the empire was not a single event ----.",
+            "options": {
+                "A": "so it happened overnight during a coup",
+                "B": "but rather a gradual process of internal decay",
+                "C": "because the borders were never actually breached",
+                "D": "which means the emperor was a brilliant strategist",
+                "E": "although the population remained loyal to the end"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Rarely ---- such a profound impact on the global economy as the invention of the internet.",
+            "options": {
+                "A": "has a single innovation had",
+                "B": "a single innovation has had",
+                "C": "did a single innovation have",
+                "D": "does a single innovation has",
+                "E": "had a single innovation have"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "CLOZE TEST PASSAGE: The Enlightenment was a philosophical movement that (8) ---- Europe in the 18th century. It stressed the use of reason and scientific method (9) ---- tradition. Thinkers of this era sought to (10) ---- human knowledge and improve social conditions. (11) ----, many of the democratic ideals we value today find their roots in this period. The movement eventually (12) ---- the way for the French and American Revolutions. \n\n Question 8:",
+            "options": {
+                "A": "dominated",
+                "B": "neglected",
+                "C": "originated",
+                "D": "impeded",
+                "E": "postponed"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 9:",
+            "options": {
+                "A": "instead of",
+                "B": "as well as",
+                "C": "owing to",
+                "D": "in spite of",
+                "E": "regardless of"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 10:",
+            "options": {
+                "A": "advance",
+                "B": "deplete",
+                "C": "conceal",
+                "D": "undermine",
+                "E": "surrender"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 11:",
+            "options": {
+                "A": "Consequently",
+                "B": "However",
+                "C": "Otherwise",
+                "D": "Nevertheless",
+                "E": "Instead"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 12:",
+            "options": {
+                "A": "paved",
+                "B": "sent",
+                "C": "cleared",
+                "D": "made",
+                "E": "gave"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Son yıllarda yapılan araştırmalar, düzenli egzersizin sadece fiziksel sağlığı değil, aynı zamanda bilişsel fonksiyonları da geliştirdiğini göstermektedir.",
+            "options": {
+                "A": "Recent research shows that regular exercise improves not only physical health but also cognitive functions.",
+                "B": "Physical health and cognitive functions are shown to be improved by regular exercise in recent years.",
+                "C": "Research conducted in recent years suggests that regular exercise is as important as cognitive health.",
+                "D": "To improve physical health and cognitive functions, research shows that one must exercise regularly.",
+                "E": "Regular exercise has been found by researchers to be more effective than cognitive training."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Although the treaty was signed by all parties, its implementation has been delayed due to financial constraints.",
+            "options": {
+                "A": "Antlaşma tüm taraflarca imzalanmış olsa da, uygulaması finansal kısıtlamalar nedeniyle ertelenmiştir.",
+                "B": "Finansal kısıtlamalar nedeniyle ertelenen antlaşma, tüm taraflarca imzalanmıştı.",
+                "C": "Tüm taraflar antlaşmayı imzaladı ancak finansal sorunlar uygulamanın önüne geçti.",
+                "D": "Antlaşmanın imzalanmasına rağmen finansal yetersizlikler süreci durdurmuştur.",
+                "E": "Ertelenen antlaşma ancak tüm taraflar finansal kısıtlamaları kabul edince imzalanmıştır."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Yapay zeka teknolojilerindeki hızlı gelişim, etik kuralların ve yasal düzenlemelerin yeniden gözden geçirilmesini zorunlu kılmıştır.",
+            "options": {
+                "A": "The rapid development in AI technologies has made it mandatory to revise ethical rules and legal regulations.",
+                "B": "Ethical rules and legal regulations must be revised due to the development of AI technologies.",
+                "C": "The evolution of AI requires new ethical rules and legal frameworks to be established immediately.",
+                "D": "Revising legal regulations and ethics is a result of the fast progress in artificial intelligence.",
+                "E": "AI technologies are developing so fast that ethical and legal rules are no longer sufficient."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "If the volcanic eruption had been more severe, the global temperature would have dropped significantly for several years.",
+            "options": {
+                "A": "Volkanik patlama daha şiddetli olsaydı, küresel sıcaklık birkaç yıl boyunca önemli ölçüde düşerdi.",
+                "B": "Volkanik patlama şiddetli olduğu için küresel sıcaklık birkaç yıl boyunca düşük seyretti.",
+                "C": "Küresel sıcaklığın düşmesi için volkanik patlamanın daha şiddetli olması gerekiyordu.",
+                "D": "Eğer volkanik patlama daha şiddetli olsaydı, küresel ısınma birkaç yıl dururdu.",
+                "E": "Volkanik patlamanın şiddeti küresel sıcaklığın birkaç yıl düşük kalmasına neden oldu."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Hardly had the new law been passed when the public started protesting in the streets.",
+            "options": {
+                "A": "The public began their street protests almost immediately after the new law was enacted.",
+                "B": "The law was passed despite the intense protests of the public in the streets.",
+                "C": "By the time the public started protesting, the law had already been in effect for a long time.",
+                "D": "The public protested in the streets because they didn't want the new law to be passed.",
+                "E": "Since the new law was passed, the public has been protesting for a long period."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It is unlikely that the economy will recover unless the government takes drastic measures to curb inflation.",
+            "options": {
+                "A": "The economy will probably not improve if the government fails to take extreme steps to control inflation.",
+                "B": "The government has taken drastic measures, so the economy is expected to recover soon.",
+                "C": "Inflation is so high that even drastic measures by the government may not help the economy.",
+                "D": "If the government takes steps to reduce inflation, the economy will definitely recover.",
+                "E": "The economy is recovering slowly because the government has not yet curbed inflation."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "She wouldn't have failed the exam if she had studied more consistently throughout the semester.",
+            "options": {
+                "A": "She failed the exam because she did not study on a regular basis during the term.",
+                "B": "She studied hard throughout the semester, yet she still failed the exam.",
+                "C": "Despite her inconsistent study habits, she managed to pass the final exam.",
+                "D": "If she fails the exam, it will be because she hasn't studied consistently.",
+                "E": "She didn't study at all, which is why she failed the exam so badly."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The manager postponed the meeting to next week because most of the staff were on leave.",
+            "options": {
+                "A": "Due to the absence of the majority of the employees, the manager rescheduled the meeting for the following week.",
+                "B": "The meeting was canceled by the manager since only a few staff members were available.",
+                "C": "Most of the staff will be on leave next week, so the manager held the meeting today.",
+                "D": "The manager decided to have the meeting next week even though the staff are on leave.",
+                "E": "Next week's meeting has been moved to an earlier date because the staff are returning from leave."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Secretary: Dr. Smith, a journalist called to ask about your latest publication. \n Dr. Smith: ---- \n Secretary: He said he wanted to discuss the implications of your findings on climate change. \n Dr. Smith: In that case, please schedule an interview for tomorrow afternoon.",
+            "options": {
+                "A": "Did he mention which newspaper he represents?",
+                "B": "What specific aspect of the study was he interested in?",
+                "C": "I am too busy to talk to anyone right now.",
+                "D": "Why did he call me instead of the university PR?",
+                "E": "Tell him I don't have anything to say about that."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Patient: I've been feeling very fatigued lately, even after a full night's sleep. \n Doctor: ---- \n Patient: Not really, my diet hasn't changed and I don't have any other symptoms. \n Doctor: I see. Let's run some blood tests to check your iron levels.",
+            "options": {
+                "A": "Have you noticed any other changes in your health or lifestyle?",
+                "B": "Do you think you are under a lot of stress at work?",
+                "C": "How many hours of sleep do you get on average?",
+                "D": "Are you taking any supplements or medications?",
+                "E": "When did this fatigue first start appearing?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Student: Professor, I'm struggling with the concept of 'entropy' in our physics class. \n Professor: It's a complex topic. Think of it as a measure of disorder in a system. \n Student: ---- \n Professor: Exactly. In a closed system, entropy always tends to increase over time.",
+            "options": {
+                "A": "So, you mean things naturally move from order to chaos?",
+                "B": "Does it mean that energy is always conserved in the process?",
+                "C": "Can we calculate the exact amount of entropy in a liquid?",
+                "D": "Is this related to the first law of thermodynamics?",
+                "E": "Why is it so difficult to reverse the process of entropy?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Travel Agent: We have a great deal for a safari in Kenya this summer. \n Customer: It sounds exciting, but I'm worried about the safety and health risks. \n Travel Agent: ---- \n Customer: That's reassuring. I'll take a look at the details you sent.",
+            "options": {
+                "A": "We provide comprehensive insurance and only work with certified guides.",
+                "B": "Most people find the heat more challenging than the safety risks.",
+                "C": "You will need several vaccinations before you travel there.",
+                "D": "Kenya is generally a safe country for experienced travelers.",
+                "E": "The price includes all meals and luxury accommodation."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Renewable energy sources, such as solar and wind power, are becoming increasingly vital as the world seeks to reduce its dependence on fossil fuels. ----. For instance, the intermittent nature of wind and sunlight requires efficient energy storage solutions like large-scale batteries. Furthermore, the initial cost of installing these systems can be quite high for developing nations.",
+            "options": {
+                "A": "However, there are still significant challenges to overcome before they can fully replace traditional energy.",
+                "B": "In fact, solar energy is now cheaper than coal in many parts of the world.",
+                "C": "Governments are providing subsidies to encourage the adoption of green technology.",
+                "D": "Climate change is the primary driver behind the shift to renewable energy.",
+                "E": "Many countries have already reached their 2030 carbon neutrality targets."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Cognitive psychology focuses on how people perceive, think, remember, and learn. It examines internal mental processes that were once ignored by behaviorists. ----. By understanding these processes, psychologists can help people improve their memory and decision-making skills.",
+            "options": {
+                "A": "These include attention, language use, memory, and problem-solving.",
+                "B": "Behaviorism was the dominant school of thought in the early 20th century.",
+                "C": "Computers are often used as a metaphor for the human mind in this field.",
+                "D": "The brain is a complex organ with billions of interconnected neurons.",
+                "E": "Clinical psychology, on the other hand, deals with mental disorders."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The Great Depression was the worst economic downturn in the history of the industrialized world. It began after the stock market crash of October 1929, which sent Wall Street into a panic and wiped out millions of investors. ----. Consumer spending and investment dropped, causing steep declines in industrial output and employment as failing companies laid off workers.",
+            "options": {
+                "A": "Over the next several years, the crisis deepened significantly.",
+                "B": "The Roaring Twenties had been a period of immense prosperity.",
+                "C": "World War II eventually helped the US economy to recover.",
+                "D": "President Roosevelt introduced the New Deal to combat the depression.",
+                "E": "Agriculture was also hit hard due to the Dust Bowl in the plains."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Urbanization is a global phenomenon where populations move from rural areas to cities. This trend is driven by the search for better employment opportunities and improved access to services. ----. Overcrowding, pollution, and the strain on infrastructure are common issues in rapidly growing metropolises.",
+            "options": {
+                "A": "However, such rapid growth often brings about significant social and environmental problems.",
+                "B": "Cities offer a vibrant cultural life that attracts many young professionals.",
+                "C": "Urban planning is essential to ensure that cities remain livable and sustainable.",
+                "D": "The migration to cities has led to a decline in agricultural productivity.",
+                "E": "Smart cities use technology to manage resources more efficiently."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The results of the study were so ambiguous that no definite conclusion could be drawn.",
+            "options": {
+                "A": "The study's findings were unclear, making it impossible to reach a certain result.",
+                "B": "The study was conducted so poorly that the conclusions were entirely wrong.",
+                "C": "Because the results were varied, the researchers had to change their conclusion.",
+                "D": "The data was so complex that only experts could understand the conclusion.",
+                "E": "The conclusion was so obvious that the results of the study were not needed."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Hardly any students managed to pass the advanced calculus exam due to its extreme difficulty.",
+            "options": {
+                "A": "Almost no students were successful in passing the advanced calculus test because it was very hard.",
+                "B": "A few students found the advanced calculus exam easy enough to pass.",
+                "C": "Only the best students in the class could pass the difficult calculus exam.",
+                "D": "The advanced calculus exam was so difficult that everyone failed it.",
+                "E": "Since the exam was difficult, students didn't even try to pass it."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "The company's profits have soared this year, thanks to the successful launch of their new product line.",
+            "options": {
+                "A": "The company seen a large increase in profits this year because of their new products.",
+                "B": "Launching new products is the only way for the company to increase its profits.",
+                "C": "Despite the new product line, the company's profits have remained stagnant.",
+                "D": "The company's profits would have been higher if the new product launch had been better.",
+                "E": "The success of the new product line was expected to increase the company's profits."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Genetic engineering has the potential to solve many of the world's most pressing problems. (II) It could help eliminate hereditary diseases and increase crop yields to feed a growing population. (III) Most people prefer organic food because they believe it is healthier and more natural. (IV) However, the technology also raises significant ethical concerns regarding 'designer babies'. (V) Therefore, careful regulation and public debate are essential for its future development.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Renaissance was a period of great cultural and artistic achievement in Europe. (II) It began in Italy in the 14th century and later spread to the rest of the continent. (III) Leonardo da Vinci and Michelangelo were among the most famous artists of this era. (IV) Italy is still one of the most visited countries in the world for its historical sites. (V) The movement was characterized by a renewed interest in the classical learning of Greece and Rome.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Polar bears are uniquely adapted to survive in the harsh Arctic environment. (II) Their thick layer of blubber and dense fur provide insulation against the freezing cold. (III) Climate change is causing the sea ice to melt at an alarming rate. (IV) They also have large paws that help them walk on snow and swim long distances. (V) White fur acts as camouflage, allowing them to hunt seals more effectively.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE 1: The Industrial Revolution, which began in Britain in the late 18th century, transformed the world from an agrarian society into an industrial one. This period saw the introduction of steam power, the development of factories, and mass production. While it led to significant economic growth and technological advancement, it also brought about harsh working conditions, child labor, and environmental pollution. The social structure changed as people moved from the countryside to cities, creating a new working class. \n\n According to the passage, the Industrial Revolution ----.",
+            "options": {
+                "A": "was purely beneficial for all social classes",
+                "B": "originated in North America before spreading to Europe",
+                "C": "caused a significant shift in where people lived",
+                "D": "was primarily focused on improving agricultural techniques",
+                "E": "eliminated the need for manual labor entirely"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE 1: (See above) \n\n One of the negative consequences of the Industrial Revolution mentioned in the text is ----.",
+            "options": {
+                "A": "the rapid increase in global trade",
+                "B": "the invention of the steam engine",
+                "C": "the emergence of a new working class",
+                "D": "the degradation of the environment",
+                "E": "the transition to an industrial society"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE 1: (See above) \n\n It can be inferred from the passage that before the late 18th century, Britain's economy was ----.",
+            "options": {
+                "A": "based on industrial manufacturing",
+                "B": "largely dependent on agriculture",
+                "C": "suffering from high rates of pollution",
+                "D": "dominated by the working class in cities",
+                "E": "heavily reliant on steam power technology"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE 2: Deep-sea exploration remains one of the greatest challenges for modern science. The ocean floor is a realm of extreme pressure, freezing temperatures, and total darkness. To study these depths, scientists use Remotely Operated Vehicles (ROVs) equipped with cameras and sensors. These machines allow researchers to discover unique ecosystems, such as hydrothermal vents, where life thrives without sunlight. Despite these advancements, more than 80% of the ocean remains unmapped and unexplored. \n\n The passage states that the environment of the deep sea is characterized by ----.",
+            "options": {
+                "A": "abundant sunlight and warm waters",
+                "B": "high pressure and lack of light",
+                "C": "easily accessible ecosystems",
+                "D": "frequent volcanic eruptions",
+                "E": "a lack of biological diversity"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE 2: (See above) \n\n ROVs are essential for deep-sea research because they ----.",
+            "options": {
+                "A": "can withstand the harsh conditions of the ocean floor",
+                "B": "are the only way to map the entire ocean surface",
+                "C": "allow humans to dive to the deepest parts of the ocean",
+                "D": "operate without the need for cameras or sensors",
+                "E": "are cheaper to build than traditional submarines"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "PASSAGE 2: (See above) \n\n What does the author mean by stating that more than 80% of the ocean is unexplored?",
+            "options": {
+                "A": "Our knowledge of the ocean floor is still very limited.",
+                "B": "Technology has failed to reach the deepest parts of the sea.",
+                "C": "We have already mapped most of the important ocean areas.",
+                "D": "The deep sea is too dangerous for any future exploration.",
+                "E": "Scientists have lost interest in studying the ocean floor."
+            },
+            "correct": "A"
+        }
+    ]
+}

@@ -1,0 +1,642 @@
+{
+    "meta": {
+        "title": "YDS Mini Deneme 21",
+        "subtitle": "40 Soru - 90 Dakika",
+        "total_questions": 40,
+        "duration_minutes": 90
+    },
+    "sections": [
+        {
+            "id": "vocab",
+            "label": "Vocabulary & Grammar",
+            "from": 1,
+            "to": 3
+        },
+        {
+            "id": "completion",
+            "label": "Sentence Completion",
+            "from": 4,
+            "to": 7
+        },
+        {
+            "id": "cloze",
+            "label": "Cloze Test",
+            "from": 8,
+            "to": 12
+        },
+        {
+            "id": "translation",
+            "label": "Translation",
+            "from": 13,
+            "to": 16
+        },
+        {
+            "id": "paraphrase",
+            "label": "Paraphrase",
+            "from": 17,
+            "to": 20
+        },
+        {
+            "id": "dialogue",
+            "label": "Dialogue Completion",
+            "from": 21,
+            "to": 24
+        },
+        {
+            "id": "para_comp",
+            "label": "Paragraph Completion",
+            "from": 25,
+            "to": 28
+        },
+        {
+            "id": "closest",
+            "label": "Closest Meaning",
+            "from": 29,
+            "to": 31
+        },
+        {
+            "id": "irrelevant",
+            "label": "Irrelevant Sentence",
+            "from": 32,
+            "to": 34
+        },
+        {
+            "id": "reading",
+            "label": "Reading Comprehension",
+            "from": 35,
+            "to": 40
+        }
+    ],
+    "passages": [
+        {
+            "id": "p1",
+            "text": "The Great Depression, which began in 1929, was the most severe economic downturn in the history of the industrialized world. It was triggered by the stock market crash in October 1929, which sent Wall Street into a panic and wiped out millions of investors. Over the next several years, consumer spending and investment dropped, causing steep declines in industrial output and employment as failing companies laid off workers. By 1933, when the Great Depression reached its lowest point, some 15 million Americans were unemployed and nearly half the country’s banks had failed."
+        },
+        {
+            "id": "p2",
+            "text": "Biomimicry is the practice of looking to nature for inspiration to solve complex human problems. By studying the designs and processes found in the natural world, scientists and engineers can develop more sustainable and efficient technologies. For example, the design of high-speed trains in Japan was inspired by the beak of the kingfisher bird, which allows it to dive into water with minimal splash. Similarly, the structure of shark skin has led to the creation of bacteria-resistant surfaces for hospitals."
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The unprecedented melting of Arctic glaciers is not just a regional concern but a(n) ---- indicator of the global climate crisis.",
+            "options": {
+                "A": "indifferent",
+                "B": "ambiguous",
+                "C": "pivotal",
+                "D": "redundant",
+                "E": "superficial"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 2,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "The government has decided to ---- the new economic policy to mitigate the effects of high inflation on low-income households.",
+            "options": {
+                "A": "curtail",
+                "B": "implement",
+                "C": "relinquish",
+                "D": "undermine",
+                "E": "forfeit"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 3,
+            "section_id": "vocab",
+            "passage_id": null,
+            "question": "Scholars have long debated whether the rise of digital media will ---- lead to the disappearance of traditional print journalism.",
+            "options": {
+                "A": "adversely",
+                "B": "tentatively",
+                "C": "inevitably",
+                "D": "scarcely",
+                "E": "vaguely"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 4,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "----, the results of the recent experiment were unexpectedly inconclusive.",
+            "options": {
+                "A": "Because the researchers adhered strictly to the protocols",
+                "B": "Despite the fact that highly advanced technology was utilized",
+                "C": "Since the hypothesis was supported by existing literature",
+                "D": "As soon as the data was collected from the participants",
+                "E": "While the laboratory conditions remained unstable throughout"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 5,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Unless the international community takes immediate action to reduce carbon emissions, ----.",
+            "options": {
+                "A": "the temperature of the oceans had been rising for decades",
+                "B": "it would have been impossible to save the coral reefs",
+                "C": "the consequences for biodiversity will be irreversible",
+                "D": "many species would thrive in warmer environments",
+                "E": "environmentalists are optimistic about the future of the planet"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 6,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Neuroscience has revealed that the human brain remains plastic throughout adulthood, ----.",
+            "options": {
+                "A": "which means it can form new neural connections in response to learning",
+                "B": "so that children can learn languages faster than adults",
+                "C": "although cognitive decline is a natural part of the aging process",
+                "D": "because the brain is the most complex organ in the body",
+                "E": "whereby researchers are still looking for a cure for Alzheimer's"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 7,
+            "section_id": "completion",
+            "passage_id": null,
+            "question": "Although the treaty was signed with the intention of fostering peace, ----.",
+            "options": {
+                "A": "it was celebrated by the citizens of both nations",
+                "B": "it failed to address the underlying causes of the conflict",
+                "C": "the two countries have been allies for several centuries",
+                "D": "as it provided a framework for future economic cooperation",
+                "E": "economic sanctions were lifted immediately after the ceremony"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 8,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "The Renaissance was a period of intense cultural and artistic (1) ---- that began in Italy. During this time, thinkers (2) ---- ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) ---- the importance of human agency and reason. (4) ----, the invention of the printing press played a crucial role. It allowed ideas to spread (5) ---- across Europe than ever before. [Blank 1]",
+            "options": {
+                "A": "stagnation",
+                "B": "uprising",
+                "C": "renewal",
+                "D": "decline",
+                "E": "negligence"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 9,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) ---- ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) emphasized the importance of human agency and reason. (4) Furthermore, the invention of the printing press played a crucial role. It allowed ideas to spread (5) more rapidly across Europe than ever before. [Blank 2]",
+            "options": {
+                "A": "refuted",
+                "B": "revisited",
+                "C": "ignored",
+                "D": "abolished",
+                "E": "distorted"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 10,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) revisited ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) ---- the importance of human agency and reason. (4) Furthermore, the invention of the printing press played a crucial role. It allowed ideas to spread (5) more rapidly across Europe than ever before. [Blank 3]",
+            "options": {
+                "A": "diminished",
+                "B": "overlooked",
+                "C": "emphasized",
+                "D": "dismissed",
+                "E": "constrained"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 11,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) revisited ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) emphasized the importance of human agency and reason. (4) ----, the invention of the printing press played a crucial role. It allowed ideas to spread (5) more rapidly across Europe than ever before. [Blank 4]",
+            "options": {
+                "A": "However",
+                "B": "Conversely",
+                "C": "Furthermore",
+                "D": "Otherwise",
+                "E": "Namely"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 12,
+            "section_id": "cloze",
+            "passage_id": null,
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) revisited ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) emphasized the importance of human agency and reason. (4) Furthermore, the invention of the printing press played a crucial role. It allowed ideas to spread (5) ---- across Europe than ever before. [Blank 5]",
+            "options": {
+                "A": "more rapidly",
+                "B": "less efficiently",
+                "C": "as slow as",
+                "D": "the fastest",
+                "E": "quite redundant"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 13,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Modern tıp, genetik araştırmalar sayesinde hastalıkların teşhis ve tedavisinde devrim niteliğinde adımlar atmaktadır.",
+            "options": {
+                "A": "Modern medicine is taking revolutionary steps in the diagnosis and treatment of diseases thanks to genetic research.",
+                "B": "Genetic research allows modern medicine to diagnose and treat many diseases with revolutionary methods.",
+                "C": "Thanks to genetic research, modern medicine has diagnosed and treated diseases in a revolutionary way.",
+                "D": "Diagnosing and treating diseases has become a revolutionary step for modern medicine through genetic studies.",
+                "E": "Modern medicine is using genetic research to revolutionize the way diseases are diagnosed and treated."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 14,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Küresel ısınma ile mücadele etmek için sadece fosil yakıt kullanımını azaltmak yeterli olmayacak, aynı zamanda yenilenebilir enerjiye geçiş hızlandırılmalıdır.",
+            "options": {
+                "A": "To fight global warming, reducing fossil fuel use is sufficient, but we must also accelerate the transition to renewable energy.",
+                "B": "Reducing fossil fuel use will not be enough to combat global warming; at the same time, the transition to renewable energy must be accelerated.",
+                "C": "The transition to renewable energy should be accelerated because reducing fossil fuel use is not the only way to fight global warming.",
+                "D": "Global warming can only be combated if we reduce fossil fuel use and accelerate the transition to renewable energy.",
+                "E": "While reducing fossil fuel usage is necessary, the transition to renewable energy is the only way to stop global warming."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 15,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Artificial intelligence has reached a point where it can perform tasks that were once thought to be exclusive to human intelligence.",
+            "options": {
+                "A": "Yapay zeka, bir zamanlar sadece insan zekasına özgü olduğu düşünülen görevleri yerine getirebildiği bir noktaya ulaşmıştır.",
+                "B": "Yapay zeka, insan zekasının yapabildiği her şeyi yapabildiği bir noktaya doğru hızla ilerlemektedir.",
+                "C": "İnsan zekasına özgü görevlerin yapay zeka tarafından yapılması, teknolojinin ulaştığı son noktayı göstermektedir.",
+                "D": "Bir zamanlar sadece insan zekasıyla sınırlı olan görevler, artık yapay zeka tarafından kolaylıkla yapılabilmektedir.",
+                "E": "Yapay zeka geliştikçe, insan zekasına özgü olduğu düşünülen pek çok görevi de devralmaya başlamıştır."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 16,
+            "section_id": "translation",
+            "passage_id": null,
+            "question": "Sociologists argue that the rapid urbanization of the last century has significantly altered traditional family structures.",
+            "options": {
+                "A": "Sosyologlara göre, son yüzyıldaki hızlı şehirleşme geleneksel aile yapılarını tamamen ortadan kaldırmıştır.",
+                "B": "Sosyologlar, son yüzyıldaki hızlı şehirleşmenin geleneksel aile yapılarını önemli ölçüde değiştirdiğini savunmaktadırlar.",
+                "C": "Hızlı şehirleşmenin geleneksel aile yapıları üzerindeki etkileri, sosyologlar tarafından yüzyıldır tartışılmaktadır.",
+                "D": "Geleneksel aile yapıları, sosyologların iddia ettiği gibi son yüzyıldaki hızlı şehirleşmeden etkilenmiştir.",
+                "E": "Son yüzyılda gerçekleşen hızlı şehirleşme, sosyologların savunduğu gibi aile yapılarında büyük bir dönüşüme yol açmıştır."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 17,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Despite being one of the world's most successful entrepreneurs, Elon Musk has faced numerous failures throughout his career.",
+            "options": {
+                "A": "Elon Musk's success as an entrepreneur is primarily due to the numerous failures he encountered early in his career.",
+                "B": "Although Elon Musk is considered a highly successful entrepreneur globally, his career has been marked by many setbacks.",
+                "C": "Many failures in his career did not stop Elon Musk from becoming the most successful entrepreneur in the world.",
+                "D": "Elon Musk became a successful entrepreneur only after he had overcome several major failures in his professional life.",
+                "E": "Elon Musk is a successful entrepreneur; however, he would have been more successful if he hadn't failed so many times."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 18,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "The discovery of penicillin by Alexander Fleming revolutionized the treatment of infectious diseases, saving millions of lives.",
+            "options": {
+                "A": "Alexander Fleming's discovery of penicillin was the only reason why infectious diseases were finally eradicated.",
+                "B": "Infectious diseases were treated more effectively and millions survived because Alexander Fleming discovered penicillin.",
+                "C": "Millions of lives were saved when Alexander Fleming found a way to cure all infectious diseases with penicillin.",
+                "D": "The treatment of infectious diseases changed completely and millions of lives were saved thanks to Fleming's discovery of penicillin.",
+                "E": "If Alexander Fleming hadn't discovered penicillin, millions of people would have died from various infections."
+            },
+            "correct": "D"
+        },
+        {
+            "id": 19,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "It is unlikely that the economy will recover unless the government introduces radical reforms to support small businesses.",
+            "options": {
+                "A": "The economy will probably not improve if the government fails to implement significant reforms for small enterprises.",
+                "B": "The government must support small businesses with radical reforms so that the economy can recover quickly.",
+                "C": "Unless small businesses are supported, the government cannot expect the economy to recover at all.",
+                "D": "Small businesses need radical reforms from the government; otherwise, the economy will definitely collapse.",
+                "E": "If the government introduces reforms, it is certain that small businesses will help the economy recover."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 20,
+            "section_id": "paraphrase",
+            "passage_id": null,
+            "question": "Rarely do we find a literary work that captures the essence of the human condition as profoundly as Dostoevsky's 'Crime and Punishment'.",
+            "options": {
+                "A": "Dostoevsky's 'Crime and Punishment' is one of the few books that deeply expresses what it means to be human.",
+                "B": "Most literary works, including 'Crime and Punishment', try to capture the essence of the human condition.",
+                "C": "Dostoevsky's 'Crime and Punishment' is the only book that truly understands the complexity of human nature.",
+                "D": "It is not common for a book like 'Crime and Punishment' to be written by such a profound author as Dostoevsky.",
+                "E": "We often find literary works that are as deep as 'Crime and Punishment' when it comes to the human condition."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 21,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Researcher: Do you think the implementation of Universal Basic Income is feasible in developing nations? \nEconomist: ---- \nResearcher: But wouldn't that lead to hyperinflation if not managed properly? \nEconomist: That is a risk, but with structured tax reforms, it could be mitigated.",
+            "options": {
+                "A": "It depends on the specific fiscal capacity and political will of each country.",
+                "B": "No, developing nations should focus on industrialization instead.",
+                "C": "Developing nations have already implemented such systems successfully.",
+                "D": "Hyperinflation is a myth created by opponents of social welfare.",
+                "E": "The cost of such a program would be negligible for most emerging markets."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 22,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Student: Professor, I'm struggling to understand the difference between 'dark matter' and 'dark energy'. \nProfessor: Well, think of dark matter as a cosmic glue that holds galaxies together. \nStudent: ---- \nProfessor: Exactly. It’s an unknown force that is pushing the universe apart at an accelerating rate.",
+            "options": {
+                "A": "So, dark energy is what prevents the universe from expanding too fast?",
+                "B": "Does that mean dark matter is responsible for the expansion of the universe?",
+                "C": "And dark energy is more like an expansive force that acts against gravity?",
+                "D": "Is dark energy also found within the atoms of visible matter?",
+                "E": "Then why is it called 'dark' if we can see its effects on galaxies?"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 23,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Journalist: Your latest book explores the ethics of gene editing. What is your primary concern? \nBioethicist: My main worry is the potential for 'designer babies' which could create a genetic divide in society. \nJournalist: ---- \nBioethicist: Precisely. It could lead to a new form of social inequality based on biological enhancement.",
+            "options": {
+                "A": "Are you saying that only the wealthy would have access to these technologies?",
+                "B": "Do you think gene editing should be banned entirely for all medical purposes?",
+                "C": "Isn't it true that gene editing can also cure hereditary diseases?",
+                "D": "How do you propose we regulate the international biotech industry?",
+                "E": "So you believe that genetic diversity is not important for human evolution?"
+            },
+            "correct": "A"
+        },
+        {
+            "id": 24,
+            "section_id": "dialogue",
+            "passage_id": null,
+            "question": "Architect: We want to design this building to be completely carbon-neutral. \nClient: That sounds expensive. Will the long-term savings justify the initial cost? \nArchitect: ---- \nClient: If that's the case, let's proceed with the sustainable materials.",
+            "options": {
+                "A": "Actually, carbon-neutral buildings are usually cheaper to build than traditional ones.",
+                "B": "The initial cost is high, and you might never see a return on your investment.",
+                "C": "The energy efficiency alone will significantly reduce operational costs over the next decade.",
+                "D": "We should probably reconsider and use cheaper, standard materials instead.",
+                "E": "The government doesn't provide any subsidies for green building projects anyway."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 25,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The concept of 'Soft Power', coined by Joseph Nye, refers to the ability of a country to persuade others without the use of force or coercion. ----. This includes its culture, political values, and foreign policies. When these elements are perceived as attractive by other nations, a country's influence grows significantly.",
+            "options": {
+                "A": "Hard power, on the other hand, relies on military and economic might.",
+                "B": "It is primarily achieved through a nation's intangible resources.",
+                "C": "Many countries prefer to use military force to achieve their diplomatic goals.",
+                "D": "Economic sanctions are the most effective way to exercise soft power.",
+                "E": "The United Nations was founded to prevent the use of soft power."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 26,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "Quantum computing represents a paradigm shift in how information is processed. Unlike classical computers that use bits (0s and 1s), quantum computers use qubits. ----. This allows quantum computers to solve complex problems that are currently impossible for even the fastest supercomputers.",
+            "options": {
+                "A": "Qubits are much slower than bits in processing simple calculations.",
+                "B": "These qubits can exist in multiple states simultaneously due to superposition.",
+                "C": "Most people will soon be using quantum computers for their daily tasks.",
+                "D": "Classical computers will remain the dominant technology for the next century.",
+                "E": "The hardware required for quantum computing is remarkably easy to manufacture."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 27,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "The Industrial Revolution brought about profound changes in the social structure of 19th-century Europe. As factories emerged, there was a massive migration from rural areas to urban centers. ----. Living conditions in these burgeoning cities were often cramped and unsanitary, leading to various public health crises.",
+            "options": {
+                "A": "Agriculture remained the backbone of the European economy during this time.",
+                "B": "This shift created a new working class that faced harsh labor conditions.",
+                "C": "Rural life was generally considered more prestigious than living in the city.",
+                "D": "Governments immediately passed laws to protect the rights of factory workers.",
+                "E": "Technological advancements were limited to the textile industry."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 28,
+            "section_id": "para_comp",
+            "passage_id": null,
+            "question": "In psychology, the term 'emotional intelligence' refers to the capacity to recognize and manage one's own emotions and the emotions of others. ----. High emotional intelligence is often linked to better leadership skills and more stable interpersonal relationships.",
+            "options": {
+                "A": "It is a trait that is determined solely by a person's genetic makeup.",
+                "B": "IQ tests are the most accurate way to measure emotional intelligence.",
+                "C": "It involves skills such as empathy, self-regulation, and social awareness.",
+                "D": "People with low emotional intelligence are usually more successful in business.",
+                "E": "Most psychologists believe that emotions should be suppressed in the workplace."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 29,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Only by working together can we hope to overcome the challenges posed by global pandemics.",
+            "options": {
+                "A": "We can overcome global pandemics if we choose to work together or separately.",
+                "B": "Global pandemics are challenges that can never be fully overcome by anyone.",
+                "C": "The only way to deal with the difficulties of global pandemics is through collective effort.",
+                "D": "Working together is one of the many ways to face the challenges of pandemics.",
+                "E": "If we work together, we might eventually find a way to stop all pandemics."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 30,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Had the researchers known about the side effects earlier, they would have halted the clinical trials immediately.",
+            "options": {
+                "A": "The researchers stopped the clinical trials as soon as they discovered the side effects.",
+                "B": "The clinical trials continued because the researchers were unaware of the side effects at the time.",
+                "C": "Since the side effects were known from the start, the trials were never initiated.",
+                "D": "Researchers knew about the side effects but decided to continue the trials anyway.",
+                "E": "The clinical trials were halted immediately, although side effects were not yet proven."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 31,
+            "section_id": "closest",
+            "passage_id": null,
+            "question": "Virtually no other discovery in the 20th century has had as much impact on daily life as the internet.",
+            "options": {
+                "A": "The internet is arguably the most influential 20th-century discovery regarding everyday life.",
+                "B": "A few discoveries in the 20th century were actually more important than the internet.",
+                "C": "Daily life has been impacted by many 20th-century discoveries, including the internet.",
+                "D": "The internet's impact on daily life is often exaggerated by 20th-century historians.",
+                "E": "No other 20th-century discovery, except for the internet, has changed our lives."
+            },
+            "correct": "A"
+        },
+        {
+            "id": 32,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Solar energy is one of the most abundant energy sources available on Earth. (II) It can be harnessed using various technologies such as photovoltaic cells and solar thermal collectors. (III) Many homeowners are now installing solar panels to reduce their electricity bills. (IV) Coal, however, remains a primary source of energy in many developing nations. (V) As technology advances, the efficiency of solar energy conversion continues to improve.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 33,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) The Great Barrier Reef is the world's largest coral reef system. (II) It supports a wide diversity of marine life, including thousands of species of fish and mollusks. (III) Climate change and rising sea temperatures are posing a significant threat to its survival. (IV) Scuba diving is a popular activity for tourists visiting the Australian coast. (V) Efforts are being made globally to protect this vital ecosystem from further degradation.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 34,
+            "section_id": "irrelevant",
+            "passage_id": null,
+            "question": "(I) Kafka's writing is often characterized by nightmarish settings and bureaucratic complexity. (II) His most famous work, 'The Metamorphosis', tells the story of a man who turns into an insect. (III) Many readers find his prose to be both unsettling and deeply philosophical. (IV) Prague, where Kafka lived, was a vibrant cultural hub in the early 20th century. (V) This 'Kafkaesque' style has influenced countless writers and filmmakers across the globe.",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV",
+                "E": "V"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 35,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "According to the passage, what was the immediate trigger of the Great Depression?",
+            "options": {
+                "A": "A decline in industrial output and employment",
+                "B": "The failure of nearly half of the country's banks",
+                "C": "The stock market crash in October 1929",
+                "D": "A sudden increase in consumer spending",
+                "E": "The layoff of workers by failing companies"
+            },
+            "correct": "C"
+        },
+        {
+            "id": 36,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "It can be inferred from the passage that by 1933 ----.",
+            "options": {
+                "A": "the economy had started to recover",
+                "B": "the economic situation was at its worst",
+                "C": "investors had regained their confidence",
+                "D": "unemployment had started to decrease",
+                "E": "most banks were still operational"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 37,
+            "section_id": "reading",
+            "passage_id": "p1",
+            "question": "Which of the following is NOT mentioned as a consequence of the stock market crash?",
+            "options": {
+                "A": "Panic on Wall Street",
+                "B": "Wiping out millions of investors",
+                "C": "A drop in consumer spending",
+                "D": "An increase in industrial output",
+                "E": "Massive unemployment"
+            },
+            "correct": "D"
+        },
+        {
+            "id": 38,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "What is the primary goal of biomimicry according to the text?",
+            "options": {
+                "A": "To protect endangered species from extinction",
+                "B": "To find solutions to human problems by imitating nature",
+                "C": "To create high-speed transportation systems in Japan",
+                "D": "To study the behavior of birds and marine animals",
+                "E": "To replace synthetic materials with natural ones"
+            },
+            "correct": "B"
+        },
+        {
+            "id": 39,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "How did the kingfisher bird influence Japanese engineering?",
+            "options": {
+                "A": "Its wings were used as a model for airplane design.",
+                "B": "Its feathers inspired new waterproof materials.",
+                "C": "Its beak served as a model for high-speed train design.",
+                "D": "Its diving technique was used to improve submarine efficiency.",
+                "E": "Its vision helped in developing advanced camera lenses."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 40,
+            "section_id": "reading",
+            "passage_id": "p2",
+            "question": "The passage implies that shark skin is useful because ----.",
+            "options": {
+                "A": "it is extremely soft and flexible",
+                "B": "it has properties that discourage bacterial growth",
+                "C": "it can be easily replicated in a laboratory",
+                "D": "it is the strongest material found in nature",
+                "E": "it helps hospitals save energy and costs"
+            },
+            "correct": "B"
+        }
+    ]
+}
