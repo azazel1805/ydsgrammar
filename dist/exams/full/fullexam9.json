@@ -1003,6 +1003,62 @@
         },
         {
             "id": 68,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "Despite the team's best efforts to secure the perimeter, the hackers managed to breach the server and exfiltrate sensitive data.",
+            "options": {
+                "A": "The hackers failed to access the server because the team had successfully secured the perimeter.",
+                "B": "Although the team tried very hard to protect the area, the hackers broke into the server and stole important information.",
+                "C": "Sensitive data was lost only because the team did not put enough effort into securing the perimeter.",
+                "D": "The hackers were able to exfiltrate data easily since the team made no attempt to secure the perimeter.",
+                "E": "The team's efforts were mainly focused on the server, yet the hackers attacked from the perimeter."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 69,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "Had the government implemented the economic reforms sooner, the country might have avoided the severe recession it is currently facing.",
+            "options": {
+                "A": "The country is now in a recession because the government refused to implement any economic reforms.",
+                "B": "Economic reforms were implemented early enough to prevent the country from entering a recession.",
+                "C": "The current harsh economic downturn could potentially have been prevented by earlier implementation of reforms.",
+                "D": "The government is planning to implement reforms to stop the recession that has just started.",
+                "E": "Recession was inevitable regardless of when the government decided to implement the economic reforms."
+            },
+            "correct": "C"
+        },
+        {
+            "id": 70,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "Rarely do we encounter a scientific discovery that completely shifts our understanding of the fundamental laws of physics.",
+            "options": {
+                "A": "Most scientific discoveries happen so frequently that we often misunderstand the laws of physics.",
+                "B": "It is not often that a scientific finding comes along and entirely changes how we perceive basic physical laws.",
+                "C": "We always encounter discoveries that shift our understanding of physics on a regular basis.",
+                "D": "Our understanding of the laws of physics is rarely challenged by new scientific discoveries.",
+                "E": "Every new discovery in physics eventually leads to a total shift in our fundamental understanding."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 71,
+            "section_id": "restatement",
+            "passage_id": null,
+            "question": "The manager decided to postpone the meeting indefinitely until more concrete evidence regarding the product's safety could be gathered.",
+            "options": {
+                "A": "The meeting was cancelled because there was enough evidence to prove the product was safe.",
+                "B": "Because the product's safety was in question, the manager put off the meeting for an uncertain period to wait for solid proof.",
+                "C": "The manager will hold the meeting as soon as possible, even without the evidence about the product's safety.",
+                "D": "Due to a lack of evidence, the meeting was moved to next week by the manager and the safety team.",
+                "E": "Despite having concrete evidence of safety, the manager still decided to delay the meeting indefinitely."
+            },
+            "correct": "B"
+        },
+        {
+            "id": 72,
             "section_id": "para_comp",
             "passage_id": null,
             "question": "In the realm of international trade, protectionism refers to government policies that restrict international trade to help domestic industries. --- This is often achieved through methods such as tariffs on imported goods, import quotas, and various other government regulations. While these measures can protect local jobs in the short term, they often lead to higher prices for consumers and retaliatory measures from trading partners.",
@@ -1016,7 +1072,7 @@
             "correct": "B"
         },
         {
-            "id": 69,
+            "id": 73,
             "section_id": "para_comp",
             "passage_id": null,
             "question": "The Renaissance was a fervent period of European cultural, artistic, political and economic 'rebirth' following the Middle Ages. --- This movement first took hold in the Italian city-states and eventually spread across the continent. It promoted the rediscovery of classical philosophy, literature, and art, leading to significant changes in how people perceived the world.",
@@ -1030,7 +1086,7 @@
             "correct": "A"
         },
         {
-            "id": 70,
+            "id": 74,
             "section_id": "para_comp",
             "passage_id": null,
             "question": "Renewable energy sources, such as solar and wind power, are essential for reducing our carbon footprint. --- Unlike fossil fuels, which release harmful greenhouse gases, these sources are replenished naturally and are virtually inexhaustible. As technology improves, the cost of capturing this energy continues to fall, making it more accessible to developing nations.",
@@ -1044,7 +1100,7 @@
             "correct": "B"
         },
         {
-            "id": 71,
+            "id": 75,
             "section_id": "para_comp",
             "passage_id": null,
             "question": "Cybersecurity has become a top priority for corporations and governments alike. With the increasing frequency of data breaches, protecting sensitive information is no longer optional. --- This includes implementing multi-factor authentication, regular software updates, and employee training programs. Failure to do so can result in massive financial losses and a total breakdown of public trust.",
@@ -1058,7 +1114,7 @@
             "correct": "C"
         },
         {
-            "id": 72,
+            "id": 76,
             "section_id": "irrelevant",
             "passage_id": null,
             "question": "(I) Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. (II) It is the foundation of all quantum physics including quantum chemistry and quantum technology. (III) Albert Einstein was famously skeptical of some of its implications, particularly the concept of entanglement. (IV) Most modern electronics, such as transistors and lasers, rely on the principles of quantum mechanics. (V) Classical physics is generally sufficient for describing the motion of macroscopic objects like cars and planets.",
@@ -1072,7 +1128,7 @@
             "correct": "E"
         },
         {
-            "id": 73,
+            "id": 77,
             "section_id": "irrelevant",
             "passage_id": null,
             "question": "(I) The Industrial Revolution marked a major turning point in history, influencing almost every aspect of daily life. (II) In particular, average income and population began to exhibit unprecedented sustained growth. (III) Textile manufacturing was the first industry to use modern production methods. (IV) The steam engine, developed by James Watt, became the power source for factories and transportation. (V) Many people today enjoy visiting museums that showcase Victorian-era clothing and furniture.",
@@ -1086,7 +1142,7 @@
             "correct": "E"
         },
         {
-            "id": 74,
+            "id": 78,
             "section_id": "irrelevant",
             "passage_id": null,
             "question": "(I) Marine biology is the scientific study of marine life, organisms in the sea. (II) Given that in biology many phyla, families and genera have some species that live in the sea and others that live on land, marine biology classifies species based on the environment. (III) Coral reefs are often called the 'rainforests of the sea' due to their immense biodiversity. (IV) Oceanography is a broader field that includes the study of ocean currents, waves, and geology. (V) Divers must be careful to avoid decompression sickness when ascending from deep water.",
@@ -1100,7 +1156,7 @@
             "correct": "E"
         },
         {
-            "id": 75,
+            "id": 79,
             "section_id": "irrelevant",
             "passage_id": null,
             "question": "(I) Urbanization refers to the population shift from rural to urban areas and the ways in which each society adapts to this change. (II) It is predominantly the process by which towns and cities are formed and become larger as more people begin living and working in central areas. (III) This process can lead to significant social and economic opportunities, but also presents challenges like overcrowding. (IV) Rural areas often provide the raw materials and food necessary for city dwellers to survive. (V) Effective urban planning is crucial for managing the infrastructure needs of a growing city population.",
@@ -1114,7 +1170,7 @@
             "correct": "D"
         },
         {
-            "id": 76,
+            "id": 80,
             "section_id": "irrelevant",
             "passage_id": null,
             "question": "(I) The Renaissance man was a person whose expertise spanned a significant number of different subject areas. (II) Leonardo da Vinci is the most famous example of this ideal, being a painter, scientist, and engineer. (III) During this period, the Catholic Church remained a powerful influence on European politics. (IV) This polymathic approach encouraged the idea that humans are limitless in their capacity for development. (V) Modern education, by contrast, tends to favor specialization in a single field over a broad range of knowledge.",
