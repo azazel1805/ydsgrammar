@@ -105,10 +105,38 @@ function renderCodesInList(containerId, list) {
         
         div.innerHTML = `
             <span class="text-xs font-mono font-bold text-slate-700">${code.id}</span>
-            <i class="fas fa-copy text-[10px] text-slate-300 group-hover:text-red-800 transition-colors"></i>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-copy text-[10px] text-slate-300 group-hover:text-red-800 transition-colors" title="Kopyala"></i>
+                <button onclick="markAsSent(event, '${code.id}')" class="p-2 hover:bg-red-50 text-slate-200 hover:text-green-600 transition-all" title="Gönderildi İşaretle">
+                    <i class="fas fa-check-circle text-xs"></i>
+                </button>
+            </div>
         `;
         container.appendChild(div);
     });
+}
+
+async function markAsSent(event, codeId) {
+    if (event) event.stopPropagation();
+    if (!confirm("Bu kodu 'Gönderildi' olarak işaretlemek ve listeden kaldırmak istiyor musunuz?")) return;
+
+    try {
+        const res = await fetch("/api/getUnusedCodes", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ 
+                email: window.currentUser.email,
+                action: "mark_sent",
+                codeId: codeId
+            })
+        });
+
+        if (!res.ok) throw new Error(await res.text());
+        refreshAdminCodes();
+    } catch (err) {
+        console.error("Mark sent error:", err);
+        alert("Hata: " + err.message);
+    }
 }
 
 function copyToClipboard(text) {

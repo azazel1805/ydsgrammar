@@ -49,7 +49,7 @@ export const handler = async (event, context) => {
 
             const batch = db.batch();
             for (const type of types) {
-                for (let i = 0; i < 5; i++) { // Generate 5 of each for start
+                for (let i = 0; i < 5; i++) {
                     const code = generateSimpleCode(type.prefix);
                     const ref = db.collection('promo_codes').doc(code);
                     batch.set(ref, {
@@ -62,6 +62,21 @@ export const handler = async (event, context) => {
             }
             await batch.commit();
             return { statusCode: 200, headers, body: JSON.stringify({ success: true, message: "15 yeni kod üretildi." }) };
+        }
+
+        // ACTION: MARK SENT (Used manually)
+        if (action === "mark_sent") {
+            const { codeId } = body;
+            if (!codeId) return { statusCode: 400, headers, body: "Missing codeId" };
+            
+            await db.collection('promo_codes').doc(codeId).update({
+                used: true,
+                usedAt: admin.firestore.FieldValue.serverTimestamp(),
+                usedBy: "ADMIN_SENT",
+                isSent: true
+            });
+            
+            return { statusCode: 200, headers, body: JSON.stringify({ success: true }) };
         }
 
         // ACTION: FETCH (Default)
