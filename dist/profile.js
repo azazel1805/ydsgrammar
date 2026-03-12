@@ -161,7 +161,7 @@ const profileHTML = `
                     <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınav Koçu Mentorluğu</li>
                     <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınırsız Soru Analizi</li>
                 </ul>
-                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45147673')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
+                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45165102')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
                     Hemen Başla
                 </button>
             </div>
@@ -183,7 +183,7 @@ const profileHTML = `
                     <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Full Deneme Havuzu</li>
                     <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Öncelikli Destek</li>
                 </ul>
-                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45147695')" class="w-full py-3 bg-red-800 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-xl shadow-red-900/20 active:scale-95">
+                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45165102')" class="w-full py-3 bg-red-800 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-xl shadow-red-900/20 active:scale-95">
                     Hemen Başla
                 </button>
             </div>
@@ -202,7 +202,7 @@ const profileHTML = `
                     <li class="flex items-center gap-2"><i class="fas fa-star text-amber-500"></i> Tüm Gelecek Özellikler</li>
                     <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınırsız Arşiv Erişimi</li>
                 </ul>
-                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45147714')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
+                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45165102')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
                     Hemen Başla
                 </button>
             </div>
@@ -324,6 +324,20 @@ async function renderProfile() {
 
     await renderProfileSavedWords();
     await renderProfileNotes();
+
+    // Admin Link
+    const admins = ["onurtosuner@gmail.com", "hasanonurtosuner@gmail.com"];
+    if (admins.includes(window.currentUser.email)) {
+        const header = document.querySelector("#profileMainContainer h2")?.parentElement;
+        if (header && !document.getElementById("adminLinkBtn")) {
+            const adminBtn = document.createElement("button");
+            adminBtn.id = "adminLinkBtn";
+            adminBtn.onclick = () => switchTab('admin');
+            adminBtn.className = "ml-4 px-3 py-1 bg-slate-900 text-white text-[10px] font-bold rounded-lg hover:bg-red-800 transition-all";
+            adminBtn.innerHTML = '<i class="fas fa-user-shield mr-1"></i> Admin';
+            header.appendChild(adminBtn);
+        }
+    }
 }
 
 /* =========================================

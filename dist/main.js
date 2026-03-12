@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-testlab", typeof testlabHTML !== 'undefined' ? testlabHTML : undefined);
     safeInject("tab-wordpractice", typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : undefined);
     safeInject("tab-miniexams", typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : undefined);
+    safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
         initSentenceCorrector();
@@ -249,6 +250,7 @@ window.switchTab = function (tabName) {
 
     const userTabs = ['forum', 'profile', 'vocabulary', 'wordpractice'];
     const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams'];
+    const adminTabs = ['admin'];
 
     // Level 1: Must be logged in
     if ((userTabs.includes(tabName) || premiumTabs.includes(tabName)) && !window.currentUser) {
@@ -268,6 +270,16 @@ window.switchTab = function (tabName) {
             setTimeout(() => {
                 document.getElementById('premiumSection')?.scrollIntoView({ behavior: 'smooth' });
             }, 500);
+            return;
+        }
+    }
+
+    // Level 3: Admin only
+    if (adminTabs.includes(tabName)) {
+        const isAdmin = ["onurtosuner@gmail.com", "hasanonurtosuner@gmail.com"].includes(window.currentUser?.email);
+        if (!isAdmin) {
+            alert("Bu sayfaya erişim yetkiniz yok.");
+            switchTab('dashboard');
             return;
         }
     }
@@ -310,6 +322,10 @@ window.switchTab = function (tabName) {
         initWordPractice();
     }
 
+    if (tabName === "admin" && typeof window.initAdminPanel === "function") {
+        window.initAdminPanel();
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
@@ -340,7 +356,8 @@ function reinjectTabContent(tabName) {
         "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null,
         "wordpractice": typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : null,
         "fullexam": typeof fullExamHTML !== 'undefined' ? fullExamHTML : null,
-        "miniexams": typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : null
+        "miniexams": typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : null,
+        "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
     const content = mappings[tabName];
