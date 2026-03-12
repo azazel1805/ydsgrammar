@@ -3,7 +3,7 @@
  ========================================= */
 
 const profileHTML = `
-<div class="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+<div id="profileMainContainer" class="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700 block" style="display: block !important; opacity: 1 !important; visibility: visible !important;">
     
     <!-- Profile Header Card -->
     <div class="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center gap-8 relative overflow-hidden group">
