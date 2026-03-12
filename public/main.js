@@ -599,8 +599,8 @@ window.toggleModalTactics = function () {
 
 window.lockAnalyzerUI = function () {
     const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "premiumNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "premiumMobileBtn"
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn"
     ];
 
     navButtons.forEach(id => {
@@ -608,19 +608,25 @@ window.lockAnalyzerUI = function () {
         if (el) el.classList.add("hidden");
     });
 
+    const floatingBot = document.getElementById("floatingChatbotContainer");
+    if (floatingBot) floatingBot.classList.add("hidden");
+
     document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.remove('hidden'));
 };
 
 window.unlockAnalyzerUI = function () {
     const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "premiumNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "premiumMobileBtn"
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn"
     ];
 
     navButtons.forEach(id => {
         const el = document.getElementById(id);
         if (el) el.classList.remove("hidden");
     });
+
+    const floatingBot = document.getElementById("floatingChatbotContainer");
+    if (floatingBot) floatingBot.classList.remove("hidden");
 
     document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.add('hidden'));
 };

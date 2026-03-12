@@ -624,6 +624,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/notifications.js"></script>
     <script src="/forum.js"></script>
     <script src="https://unpkg.com/compromise"></script>
+    <script src="/chatbot.js"></script>
     <script src="/analyzer.js"></script>
     <script src="/testlab.js"></script>
     <script src="/restatement.js"></script>
@@ -633,10 +634,56 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/main.js"></script>
 
 
-    <!-- WHATSAPP BUTTON -->
-    <a href="https://wa.me/905431395739?text=Merhaba,%20bir%20sorum%20var!" target="_blank" class="floating-whatsapp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- PREMIUM FLOATING AI CHATBOT -->
+    <div id="floatingChatbotContainer" class="fixed bottom-6 right-6 z-[300] hidden">
+      <!-- Chat Window (Initial hidden) -->
+      <div id="chatbotWindow" class="absolute bottom-20 right-0 w-[90vw] md:w-[400px] h-[500px] bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden hidden flex flex-col animate-in fade-in slide-in-from-bottom-5 duration-300">
+          <div class="bg-red-800 p-4 flex items-center justify-between text-white">
+              <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                      <i class="fas fa-robot text-sm"></i>
+                  </div>
+                  <span class="font-bold text-sm tracking-tight">AI Sınav Koçu</span>
+              </div>
+              <button onclick="toggleChatbotWindow()" class="hover:bg-black/20 p-2 rounded-lg transition-colors">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-50/50">
+              <div class="flex justify-start">
+                  <div class="bg-white text-slate-800 p-3 rounded-2xl rounded-tl-none max-w-[85%] shadow-sm border border-slate-100">
+                      <p class="text-[10px] font-bold mb-1 text-red-800 uppercase tracking-widest">Sınav Koçu</p>
+                      <p class="text-xs md:text-sm leading-relaxed">Merhaba! Ben AI Sınav Koçun. YDSstratejileri, gramer veya kelimeler hakkında sana yardımcı olabilirim. Ne yapalım?</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Typing Indicator -->
+          <div id="typingIndicator" class="hidden px-4 py-2 bg-slate-50/50 border-t border-slate-100">
+              <div class="flex items-center gap-2 text-slate-400 italic text-[10px]">
+                  <div class="flex gap-1">
+                      <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce"></span>
+                      <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+                      <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce [animation-delay:0.4s]"></span>
+                  </div>
+                  Koç yazıyor...
+              </div>
+          </div>
+          <div class="p-3 bg-white border-t border-slate-100">
+              <div class="flex gap-2">
+                  <input type="text" id="chatInput" class="flex-1 p-2 bg-slate-100 rounded-xl text-xs focus:outline-none focus:ring-1 focus:ring-red-800" placeholder="Bir şey sor...">
+                  <button id="chatSendBtn" class="w-10 h-10 bg-red-800 text-white rounded-xl flex items-center justify-center hover:bg-black transition-all shadow-sm">
+                      <i class="fas fa-paper-plane text-xs"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Toggle Button -->
+      <button onclick="toggleChatbotWindow()" class="w-16 h-16 bg-red-800 text-white rounded-2xl shadow-2xl flex items-center justify-center hover:bg-black hover:scale-110 transition-all duration-300 group relative">
+          <i class="fas fa-robot text-2xl group-hover:rotate-12 transition-transform"></i>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-500 rounded-full border-2 border-white animate-pulse"></span>
+      </button>
+    </div>
 
     <!-- REMOVED THEME TOGGLE -->
 

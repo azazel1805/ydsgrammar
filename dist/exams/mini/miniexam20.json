@@ -1,6 +1,6 @@
 {
     "meta": {
-        "title": "YDS Mini Deneme 20",
+        "title": "YDS Mini Deneme 21",
         "subtitle": "40 Soru - 90 Dakika",
         "total_questions": 40,
         "duration_minutes": 90
@@ -70,7 +70,11 @@
     "passages": [
         {
             "id": "p1",
-            "text": ""
+            "text": "The Great Depression, which began in 1929, was the most severe economic downturn in the history of the industrialized world. It was triggered by the stock market crash in October 1929, which sent Wall Street into a panic and wiped out millions of investors. Over the next several years, consumer spending and investment dropped, causing steep declines in industrial output and employment as failing companies laid off workers. By 1933, when the Great Depression reached its lowest point, some 15 million Americans were unemployed and nearly half the country’s banks had failed."
+        },
+        {
+            "id": "p2",
+            "text": "Biomimicry is the practice of looking to nature for inspiration to solve complex human problems. By studying the designs and processes found in the natural world, scientists and engineers can develop more sustainable and efficient technologies. For example, the design of high-speed trains in Japan was inspired by the beak of the kingfisher bird, which allows it to dive into water with minimal splash. Similarly, the structure of shark skin has led to the creation of bacteria-resistant surfaces for hospitals."
         }
     ],
     "questions": [
@@ -78,13 +82,13 @@
             "id": 1,
             "section_id": "vocab",
             "passage_id": null,
-            "question": "The sudden ______ of the global economy after the pandemic sparked intense debates among scholars regarding the resilience of modern financial systems.",
+            "question": "The unprecedented melting of Arctic glaciers is not just a regional concern but a(n) ---- indicator of the global climate crisis.",
             "options": {
-                "A": "deterioration",
-                "B": "fluctuation",
-                "C": "contraction",
-                "D": "augmentation",
-                "E": "stabilization"
+                "A": "indifferent",
+                "B": "ambiguous",
+                "C": "pivotal",
+                "D": "redundant",
+                "E": "superficial"
             },
             "correct": "C"
         },
@@ -92,13 +96,13 @@
             "id": 2,
             "section_id": "vocab",
             "passage_id": null,
-            "question": "Despite the rigorous testing phase, some critics argued that the results were ______ by a lack of diverse demographic representation in the study group.",
+            "question": "The government has decided to ---- the new economic policy to mitigate the effects of high inflation on low-income households.",
             "options": {
-                "A": "alleviated",
-                "B": "compromised",
-                "C": "enhanced",
-                "D": "authenticated",
-                "E": "validated"
+                "A": "curtail",
+                "B": "implement",
+                "C": "relinquish",
+                "D": "undermine",
+                "E": "forfeit"
             },
             "correct": "B"
         },
@@ -106,125 +110,125 @@
             "id": 3,
             "section_id": "vocab",
             "passage_id": null,
-            "question": "Ancient Roman engineering is ______ characterized by its durability and innovation, as evidenced by the aqueducts that still stand today.",
+            "question": "Scholars have long debated whether the rise of digital media will ---- lead to the disappearance of traditional print journalism.",
             "options": {
-                "A": "sporadically",
-                "B": "negligibly",
-                "C": "adversely",
-                "D": "distinctively",
-                "E": "marginally"
+                "A": "adversely",
+                "B": "tentatively",
+                "C": "inevitably",
+                "D": "scarcely",
+                "E": "vaguely"
             },
-            "correct": "D"
+            "correct": "C"
         },
         {
             "id": 4,
             "section_id": "completion",
             "passage_id": null,
-            "question": "While the implementation of renewable energy sources has increased significantly over the last decade, ______.",
+            "question": "----, the results of the recent experiment were unexpectedly inconclusive.",
             "options": {
-                "A": "fossil fuel consumption continues to dominate the global energy market",
-                "B": "solar panels are becoming more affordable for domestic use",
-                "C": "government subsidies have encouraged many new startups",
-                "D": "carbon emissions have dropped to pre-industrial levels",
-                "E": "technological advancements are making storage easier"
+                "A": "Because the researchers adhered strictly to the protocols",
+                "B": "Despite the fact that highly advanced technology was utilized",
+                "C": "Since the hypothesis was supported by existing literature",
+                "D": "As soon as the data was collected from the participants",
+                "E": "While the laboratory conditions remained unstable throughout"
             },
-            "correct": "A"
+            "correct": "B"
         },
         {
             "id": 5,
             "section_id": "completion",
             "passage_id": null,
-            "question": "Even though the psychological effects of social media are still being researched, ______.",
+            "question": "Unless the international community takes immediate action to reduce carbon emissions, ----.",
             "options": {
-                "A": "most users find it beneficial for networking",
-                "B": "it is clear that excessive use can lead to anxiety",
-                "C": "it was invented for communication purposes",
-                "D": "digital literacy is taught in primary schools",
-                "E": "companies are spending more on online ads"
+                "A": "the temperature of the oceans had been rising for decades",
+                "B": "it would have been impossible to save the coral reefs",
+                "C": "the consequences for biodiversity will be irreversible",
+                "D": "many species would thrive in warmer environments",
+                "E": "environmentalists are optimistic about the future of the planet"
             },
-            "correct": "B"
+            "correct": "C"
         },
         {
             "id": 6,
             "section_id": "completion",
             "passage_id": null,
-            "question": "No sooner had the archaeologists discovered the hidden tomb ______.",
+            "question": "Neuroscience has revealed that the human brain remains plastic throughout adulthood, ----.",
             "options": {
-                "A": "when they realized it had already been looted",
-                "B": "than they alerted the local authorities",
-                "C": "as the weather conditions began to worsen",
-                "D": "that the museum offered to house the relics",
-                "E": "where the gold coins were scattered"
+                "A": "which means it can form new neural connections in response to learning",
+                "B": "so that children can learn languages faster than adults",
+                "C": "although cognitive decline is a natural part of the aging process",
+                "D": "because the brain is the most complex organ in the body",
+                "E": "whereby researchers are still looking for a cure for Alzheimer's"
             },
-            "correct": "B"
+            "correct": "A"
         },
         {
             "id": 7,
             "section_id": "completion",
             "passage_id": null,
-            "question": "Because the urban population is growing at an unprecedented rate, ______.",
+            "question": "Although the treaty was signed with the intention of fostering peace, ----.",
             "options": {
-                "A": "city planners are struggling to provide adequate housing",
-                "B": "rural areas are becoming more densely populated",
-                "C": "migration patterns are shifting toward coastal towns",
-                "D": "agricultural productivity has doubled recently",
-                "E": "transportation costs are surprisingly falling"
+                "A": "it was celebrated by the citizens of both nations",
+                "B": "it failed to address the underlying causes of the conflict",
+                "C": "the two countries have been allies for several centuries",
+                "D": "as it provided a framework for future economic cooperation",
+                "E": "economic sanctions were lifted immediately after the ceremony"
             },
-            "correct": "A"
+            "correct": "B"
         },
         {
             "id": 8,
             "section_id": "cloze",
             "passage_id": null,
-            "question": "CLOZE TEXT: The Enlightenment was an intellectual movement that (5) ______ the 17th and 18th centuries. Question 5:",
+            "question": "The Renaissance was a period of intense cultural and artistic (1) ---- that began in Italy. During this time, thinkers (2) ---- ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) ---- the importance of human agency and reason. (4) ----, the invention of the printing press played a crucial role. It allowed ideas to spread (5) ---- across Europe than ever before. [Blank 1]",
             "options": {
-                "A": "preceded",
-                "B": "spanned",
-                "C": "isolated",
-                "D": "diverted",
-                "E": "refuted"
+                "A": "stagnation",
+                "B": "uprising",
+                "C": "renewal",
+                "D": "decline",
+                "E": "negligence"
             },
-            "correct": "B"
+            "correct": "C"
         },
         {
             "id": 9,
             "section_id": "cloze",
             "passage_id": null,
-            "question": "CLOZE TEXT: (6) ______ its focus on reason, it challenged traditional authority. Question 6:",
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) ---- ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) emphasized the importance of human agency and reason. (4) Furthermore, the invention of the printing press played a crucial role. It allowed ideas to spread (5) more rapidly across Europe than ever before. [Blank 2]",
             "options": {
-                "A": "Instead of",
-                "B": "In spite of",
-                "C": "Due to",
-                "D": "Prior to",
-                "E": "Rather than"
+                "A": "refuted",
+                "B": "revisited",
+                "C": "ignored",
+                "D": "abolished",
+                "E": "distorted"
             },
-            "correct": "C"
+            "correct": "B"
         },
         {
             "id": 10,
             "section_id": "cloze",
             "passage_id": null,
-            "question": "CLOZE TEXT: Thinkers like Locke and Voltaire argued (7) ______ individual liberty. Question 7:",
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) revisited ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) ---- the importance of human agency and reason. (4) Furthermore, the invention of the printing press played a crucial role. It allowed ideas to spread (5) more rapidly across Europe than ever before. [Blank 3]",
             "options": {
-                "A": "against",
-                "B": "for",
-                "C": "with",
-                "D": "into",
-                "E": "onto"
+                "A": "diminished",
+                "B": "overlooked",
+                "C": "emphasized",
+                "D": "dismissed",
+                "E": "constrained"
             },
-            "correct": "B"
+            "correct": "C"
         },
         {
             "id": 11,
             "section_id": "cloze",
             "passage_id": null,
-            "question": "CLOZE TEXT: These ideas (8) ______ influenced the American Revolution. Question 8:",
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) revisited ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) emphasized the importance of human agency and reason. (4) ----, the invention of the printing press played a crucial role. It allowed ideas to spread (5) more rapidly across Europe than ever before. [Blank 4]",
             "options": {
-                "A": "scarcely",
-                "B": "vaguely",
-                "C": "profoundly",
-                "D": "erroneously",
-                "E": "superficially"
+                "A": "However",
+                "B": "Conversely",
+                "C": "Furthermore",
+                "D": "Otherwise",
+                "E": "Namely"
             },
             "correct": "C"
         },
@@ -232,27 +236,27 @@
             "id": 12,
             "section_id": "cloze",
             "passage_id": null,
-            "question": "CLOZE TEXT: (9) ______ its historical significance, many modern democracies still uphold these values. Question 9:",
+            "question": "The Renaissance was a period of intense cultural and artistic (1) renewal that began in Italy. During this time, thinkers (2) revisited ancient Greek and Roman texts. This intellectual movement, known as Humanism, (3) emphasized the importance of human agency and reason. (4) Furthermore, the invention of the printing press played a crucial role. It allowed ideas to spread (5) ---- across Europe than ever before. [Blank 5]",
             "options": {
-                "A": "Regardless of",
-                "B": "Given",
-                "C": "By means of",
-                "D": "Except for",
-                "E": "As if"
+                "A": "more rapidly",
+                "B": "less efficiently",
+                "C": "as slow as",
+                "D": "the fastest",
+                "E": "quite redundant"
             },
-            "correct": "B"
+            "correct": "A"
         },
         {
             "id": 13,
             "section_id": "translation",
             "passage_id": null,
-            "question": "Küresel ısınma, kutup buzullarının erimesine ve deniz seviyelerinin yükselmesine neden olmaktadır.",
+            "question": "Modern tıp, genetik araştırmalar sayesinde hastalıkların teşhis ve tedavisinde devrim niteliğinde adımlar atmaktadır.",
             "options": {
-                "A": "Global warming causes polar ice caps to melt and sea levels to rise.",
-                "B": "The melting of ice caps is caused by rising sea levels and global warming.",
-                "C": "Global warming is caused by rising sea levels and melting ice.",
-                "D": "Polar ice caps melt when global warming causes sea levels to rise.",
-                "E": "Sea levels rise because global warming melts the polar ice."
+                "A": "Modern medicine is taking revolutionary steps in the diagnosis and treatment of diseases thanks to genetic research.",
+                "B": "Genetic research allows modern medicine to diagnose and treat many diseases with revolutionary methods.",
+                "C": "Thanks to genetic research, modern medicine has diagnosed and treated diseases in a revolutionary way.",
+                "D": "Diagnosing and treating diseases has become a revolutionary step for modern medicine through genetic studies.",
+                "E": "Modern medicine is using genetic research to revolutionize the way diseases are diagnosed and treated."
             },
             "correct": "A"
         },
@@ -260,27 +264,27 @@
             "id": 14,
             "section_id": "translation",
             "passage_id": null,
-            "question": "Sanayi Devrimi, üretim yöntemlerini kökten değiştirerek modern toplumun temelini atmıştır.",
+            "question": "Küresel ısınma ile mücadele etmek için sadece fosil yakıt kullanımını azaltmak yeterli olmayacak, aynı zamanda yenilenebilir enerjiye geçiş hızlandırılmalıdır.",
             "options": {
-                "A": "The Industrial Revolution changed production methods to create modern society.",
-                "B": "The foundation of modern society was changed by the Industrial Revolution.",
-                "C": "By radically changing production methods, the Industrial Revolution laid the foundation of modern society.",
-                "D": "Production methods were changed radically because the Industrial Revolution was the foundation.",
-                "E": "Modern society founded the Industrial Revolution through production methods."
+                "A": "To fight global warming, reducing fossil fuel use is sufficient, but we must also accelerate the transition to renewable energy.",
+                "B": "Reducing fossil fuel use will not be enough to combat global warming; at the same time, the transition to renewable energy must be accelerated.",
+                "C": "The transition to renewable energy should be accelerated because reducing fossil fuel use is not the only way to fight global warming.",
+                "D": "Global warming can only be combated if we reduce fossil fuel use and accelerate the transition to renewable energy.",
+                "E": "While reducing fossil fuel usage is necessary, the transition to renewable energy is the only way to stop global warming."
             },
-            "correct": "C"
+            "correct": "B"
         },
         {
             "id": 15,
             "section_id": "translation",
             "passage_id": null,
-            "question": "Recent studies suggest that sleep deprivation significantly impairs cognitive functions.",
+            "question": "Artificial intelligence has reached a point where it can perform tasks that were once thought to be exclusive to human intelligence.",
             "options": {
-                "A": "Son çalışmalar, uykusuzluğun bilişsel fonksiyonları önemli ölçüde bozduğunu göstermektedir.",
-                "B": "Uykusuzluk bilişsel fonksiyonları bozduğu için son çalışmalar yapılmıştır.",
-                "C": "Bilişsel fonksiyonlar uykusuzluktan etkilendiği için çalışmalar sürmektedir.",
-                "D": "Uykusuzluğun bilişsel yetenekleri etkilediği son çalışmalarda görülmüştür.",
-                "E": "Çalışmaların çoğu uykusuzluğun zihinsel faaliyetleri durdurduğunu söyler."
+                "A": "Yapay zeka, bir zamanlar sadece insan zekasına özgü olduğu düşünülen görevleri yerine getirebildiği bir noktaya ulaşmıştır.",
+                "B": "Yapay zeka, insan zekasının yapabildiği her şeyi yapabildiği bir noktaya doğru hızla ilerlemektedir.",
+                "C": "İnsan zekasına özgü görevlerin yapay zeka tarafından yapılması, teknolojinin ulaştığı son noktayı göstermektedir.",
+                "D": "Bir zamanlar sadece insan zekasıyla sınırlı olan görevler, artık yapay zeka tarafından kolaylıkla yapılabilmektedir.",
+                "E": "Yapay zeka geliştikçe, insan zekasına özgü olduğu düşünülen pek çok görevi de devralmaya başlamıştır."
             },
             "correct": "A"
         },
@@ -288,27 +292,27 @@
             "id": 16,
             "section_id": "translation",
             "passage_id": null,
-            "question": "Language is not only a tool for communication but also a reflection of culture.",
+            "question": "Sociologists argue that the rapid urbanization of the last century has significantly altered traditional family structures.",
             "options": {
-                "A": "Dil sadece iletişim için bir araç değil, aynı zamanda kültürün bir yansımasıdır.",
-                "B": "İletişim aracı olan dil kültürün kendisini yansıtır.",
-                "C": "Kültür yansıtıldığı sürece dil bir iletişim aracıdır.",
-                "D": "Dil ve kültür iletişim için kullanılan araçlardır.",
-                "E": "İletişim aracı olarak kullanılan dil kültürle beraber gelişir."
+                "A": "Sosyologlara göre, son yüzyıldaki hızlı şehirleşme geleneksel aile yapılarını tamamen ortadan kaldırmıştır.",
+                "B": "Sosyologlar, son yüzyıldaki hızlı şehirleşmenin geleneksel aile yapılarını önemli ölçüde değiştirdiğini savunmaktadırlar.",
+                "C": "Hızlı şehirleşmenin geleneksel aile yapıları üzerindeki etkileri, sosyologlar tarafından yüzyıldır tartışılmaktadır.",
+                "D": "Geleneksel aile yapıları, sosyologların iddia ettiği gibi son yüzyıldaki hızlı şehirleşmeden etkilenmiştir.",
+                "E": "Son yüzyılda gerçekleşen hızlı şehirleşme, sosyologların savunduğu gibi aile yapılarında büyük bir dönüşüme yol açmıştır."
             },
-            "correct": "A"
+            "correct": "B"
         },
         {
             "id": 17,
             "section_id": "paraphrase",
             "passage_id": null,
-            "question": "Unless the government intervenes immediately, the inflation rate will reach record highs by the end of the year.",
+            "question": "Despite being one of the world's most successful entrepreneurs, Elon Musk has faced numerous failures throughout his career.",
             "options": {
-                "A": "The inflation rate will stay low if the government acts quickly.",
-                "B": "If the government doesn't step in right away, inflation will be at an all-time high by year-end.",
-                "C": "Despite government intervention, inflation will likely rise by the end of the year.",
-                "D": "The government must intervene to stop inflation from reaching record levels last year.",
-                "E": "Record high inflation is expected regardless of what the government does."
+                "A": "Elon Musk's success as an entrepreneur is primarily due to the numerous failures he encountered early in his career.",
+                "B": "Although Elon Musk is considered a highly successful entrepreneur globally, his career has been marked by many setbacks.",
+                "C": "Many failures in his career did not stop Elon Musk from becoming the most successful entrepreneur in the world.",
+                "D": "Elon Musk became a successful entrepreneur only after he had overcome several major failures in his professional life.",
+                "E": "Elon Musk is a successful entrepreneur; however, he would have been more successful if he hadn't failed so many times."
             },
             "correct": "B"
         },
@@ -316,27 +320,27 @@
             "id": 18,
             "section_id": "paraphrase",
             "passage_id": null,
-            "question": "Few people realize that the Sahara was once a lush green landscape with abundant wildlife.",
+            "question": "The discovery of penicillin by Alexander Fleming revolutionized the treatment of infectious diseases, saving millions of lives.",
             "options": {
-                "A": "Many people know that the Sahara used to be green and full of animals.",
-                "B": "The Sahara is currently a green area but people don't realize it.",
-                "C": "It is not widely known that the Sahara was formerly a fertile region with many animals.",
-                "D": "The Sahara has always been a desert despite what some people believe.",
-                "E": "Archaeologists discovered that the Sahara was green, but nobody cares."
+                "A": "Alexander Fleming's discovery of penicillin was the only reason why infectious diseases were finally eradicated.",
+                "B": "Infectious diseases were treated more effectively and millions survived because Alexander Fleming discovered penicillin.",
+                "C": "Millions of lives were saved when Alexander Fleming found a way to cure all infectious diseases with penicillin.",
+                "D": "The treatment of infectious diseases changed completely and millions of lives were saved thanks to Fleming's discovery of penicillin.",
+                "E": "If Alexander Fleming hadn't discovered penicillin, millions of people would have died from various infections."
             },
-            "correct": "C"
+            "correct": "D"
         },
         {
             "id": 19,
             "section_id": "paraphrase",
             "passage_id": null,
-            "question": "The manager postponed the meeting until Friday because several team members were ill.",
+            "question": "It is unlikely that the economy will recover unless the government introduces radical reforms to support small businesses.",
             "options": {
-                "A": "The meeting was moved to Friday due to the illness of some staff.",
-                "B": "The manager ill-treated the team members during the Friday meeting.",
-                "C": "Since everyone was sick, the meeting on Friday was cancelled.",
-                "D": "Postponing the meeting until Friday made the team members feel ill.",
-                "E": "Friday's meeting was delayed although the team members were healthy."
+                "A": "The economy will probably not improve if the government fails to implement significant reforms for small enterprises.",
+                "B": "The government must support small businesses with radical reforms so that the economy can recover quickly.",
+                "C": "Unless small businesses are supported, the government cannot expect the economy to recover at all.",
+                "D": "Small businesses need radical reforms from the government; otherwise, the economy will definitely collapse.",
+                "E": "If the government introduces reforms, it is certain that small businesses will help the economy recover."
             },
             "correct": "A"
         },
@@ -344,13 +348,13 @@
             "id": 20,
             "section_id": "paraphrase",
             "passage_id": null,
-            "question": "It is estimated that artificial intelligence will create more jobs than it destroys in the long run.",
+            "question": "Rarely do we find a literary work that captures the essence of the human condition as profoundly as Dostoevsky's 'Crime and Punishment'.",
             "options": {
-                "A": "AI is expected to lead to a net increase in employment over time.",
-                "B": "AI will definitely destroy all current jobs in the future.",
-                "C": "Long-term job loss is the most likely outcome of AI development.",
-                "D": "Experts think AI will destroy jobs faster than it creates them.",
-                "E": "The number of jobs created by AI is equal to the number of jobs it destroys."
+                "A": "Dostoevsky's 'Crime and Punishment' is one of the few books that deeply expresses what it means to be human.",
+                "B": "Most literary works, including 'Crime and Punishment', try to capture the essence of the human condition.",
+                "C": "Dostoevsky's 'Crime and Punishment' is the only book that truly understands the complexity of human nature.",
+                "D": "It is not common for a book like 'Crime and Punishment' to be written by such a profound author as Dostoevsky.",
+                "E": "We often find literary works that are as deep as 'Crime and Punishment' when it comes to the human condition."
             },
             "correct": "A"
         },
@@ -358,97 +362,97 @@
             "id": 21,
             "section_id": "dialogue",
             "passage_id": null,
-            "question": "John: Have you seen the latest report on urban heat islands? \nMark: Yes, it's quite alarming how much higher temperatures are in cities. \nJohn: ______ \nMark: Exactly. More trees and green roofs could make a significant difference.",
+            "question": "Researcher: Do you think the implementation of Universal Basic Income is feasible in developing nations? \nEconomist: ---- \nResearcher: But wouldn't that lead to hyperinflation if not managed properly? \nEconomist: That is a risk, but with structured tax reforms, it could be mitigated.",
             "options": {
-                "A": "I think we should move to the countryside.",
-                "B": "It's mainly because of the lack of vegetation and the abundance of concrete.",
-                "C": "Air conditioning is making the problem worse.",
-                "D": "The report didn't offer any solutions though.",
-                "E": "I wonder if the government will increase taxes."
+                "A": "It depends on the specific fiscal capacity and political will of each country.",
+                "B": "No, developing nations should focus on industrialization instead.",
+                "C": "Developing nations have already implemented such systems successfully.",
+                "D": "Hyperinflation is a myth created by opponents of social welfare.",
+                "E": "The cost of such a program would be negligible for most emerging markets."
             },
-            "correct": "B"
+            "correct": "A"
         },
         {
             "id": 22,
             "section_id": "dialogue",
             "passage_id": null,
-            "question": "Susan: I'm struggling to choose between a degree in literature or linguistics. \nAcademic Advisor: Both are great, but they offer very different perspectives. \nSusan: ______ \nAcademic Advisor: Literature focuses on the artistic side, while linguistics is more scientific and analytical.",
+            "question": "Student: Professor, I'm struggling to understand the difference between 'dark matter' and 'dark energy'. \nProfessor: Well, think of dark matter as a cosmic glue that holds galaxies together. \nStudent: ---- \nProfessor: Exactly. It’s an unknown force that is pushing the universe apart at an accelerating rate.",
             "options": {
-                "A": "Can I study both at the same time?",
-                "B": "What do you mean by different perspectives?",
-                "C": "I've always loved reading novels.",
-                "D": "Will I be able to find a job easily?",
-                "E": "Which one do you recommend for a teacher?"
+                "A": "So, dark energy is what prevents the universe from expanding too fast?",
+                "B": "Does that mean dark matter is responsible for the expansion of the universe?",
+                "C": "And dark energy is more like an expansive force that acts against gravity?",
+                "D": "Is dark energy also found within the atoms of visible matter?",
+                "E": "Then why is it called 'dark' if we can see its effects on galaxies?"
             },
-            "correct": "B"
+            "correct": "C"
         },
         {
             "id": 23,
             "section_id": "dialogue",
             "passage_id": null,
-            "question": "Patient: I've been feeling very lethargic lately, even though I sleep well. \nDoctor: It could be due to a variety of factors, including your diet or iron levels. \nPatient: ______ \nDoctor: Then we should definitely run some blood tests to be sure.",
+            "question": "Journalist: Your latest book explores the ethics of gene editing. What is your primary concern? \nBioethicist: My main worry is the potential for 'designer babies' which could create a genetic divide in society. \nJournalist: ---- \nBioethicist: Precisely. It could lead to a new form of social inequality based on biological enhancement.",
             "options": {
-                "A": "I eat very healthily and take vitamins.",
-                "B": "I've always been a tired person.",
-                "C": "My sister has the same problem.",
-                "D": "I haven't changed my diet recently.",
-                "E": "I suspect it might be my work stress."
+                "A": "Are you saying that only the wealthy would have access to these technologies?",
+                "B": "Do you think gene editing should be banned entirely for all medical purposes?",
+                "C": "Isn't it true that gene editing can also cure hereditary diseases?",
+                "D": "How do you propose we regulate the international biotech industry?",
+                "E": "So you believe that genetic diversity is not important for human evolution?"
             },
-            "correct": "D"
+            "correct": "A"
         },
         {
             "id": 24,
             "section_id": "dialogue",
             "passage_id": null,
-            "question": "Tourist: Is it possible to see the entire museum in just one afternoon? \nGuide: To be honest, it's quite vast. You might have to rush. \nTourist: ______ \nGuide: In that case, I suggest focusing on the Egyptian and Renaissance wings.",
+            "question": "Architect: We want to design this building to be completely carbon-neutral. \nClient: That sounds expensive. Will the long-term savings justify the initial cost? \nArchitect: ---- \nClient: If that's the case, let's proceed with the sustainable materials.",
             "options": {
-                "A": "I have all the time in the world.",
-                "B": "I only want to see the highlights.",
-                "C": "Is there a cafeteria inside?",
-                "D": "How much is the entrance fee?",
-                "E": "Can I take photos of the statues?"
+                "A": "Actually, carbon-neutral buildings are usually cheaper to build than traditional ones.",
+                "B": "The initial cost is high, and you might never see a return on your investment.",
+                "C": "The energy efficiency alone will significantly reduce operational costs over the next decade.",
+                "D": "We should probably reconsider and use cheaper, standard materials instead.",
+                "E": "The government doesn't provide any subsidies for green building projects anyway."
             },
-            "correct": "B"
+            "correct": "C"
         },
         {
             "id": 25,
             "section_id": "para_comp",
             "passage_id": null,
-            "question": "Genetic engineering has the potential to solve many global issues, from food security to genetic diseases. However, it also raises ethical concerns. ______. Critics worry about the long-term effects on biodiversity and the possibility of creating 'designer babies'.",
+            "question": "The concept of 'Soft Power', coined by Joseph Nye, refers to the ability of a country to persuade others without the use of force or coercion. ----. This includes its culture, political values, and foreign policies. When these elements are perceived as attractive by other nations, a country's influence grows significantly.",
             "options": {
-                "A": "Scientists are excited about the new possibilities.",
-                "B": "The debate over its safety is still ongoing.",
-                "C": "Many countries have already banned GMOs.",
-                "D": "Ethical guidelines are being developed by international bodies.",
-                "E": "For instance, the manipulation of human embryos is highly controversial."
+                "A": "Hard power, on the other hand, relies on military and economic might.",
+                "B": "It is primarily achieved through a nation's intangible resources.",
+                "C": "Many countries prefer to use military force to achieve their diplomatic goals.",
+                "D": "Economic sanctions are the most effective way to exercise soft power.",
+                "E": "The United Nations was founded to prevent the use of soft power."
             },
-            "correct": "E"
+            "correct": "B"
         },
         {
             "id": 26,
             "section_id": "para_comp",
             "passage_id": null,
-            "question": "In the world of finance, 'liquidity' refers to how quickly an asset can be converted into cash without affecting its market price. Cash is considered the most liquid asset. ______. Real estate, on the other hand, is relatively illiquid because it takes time to sell.",
+            "question": "Quantum computing represents a paradigm shift in how information is processed. Unlike classical computers that use bits (0s and 1s), quantum computers use qubits. ----. This allows quantum computers to solve complex problems that are currently impossible for even the fastest supercomputers.",
             "options": {
-                "A": "Stocks and bonds are also highly liquid.",
-                "B": "Gold has always been a safe investment.",
-                "C": "Banks require a lot of cash to operate.",
-                "D": "Interest rates affect the liquidity of the market.",
-                "E": "Investors prefer liquid assets during a crisis."
+                "A": "Qubits are much slower than bits in processing simple calculations.",
+                "B": "These qubits can exist in multiple states simultaneously due to superposition.",
+                "C": "Most people will soon be using quantum computers for their daily tasks.",
+                "D": "Classical computers will remain the dominant technology for the next century.",
+                "E": "The hardware required for quantum computing is remarkably easy to manufacture."
             },
-            "correct": "A"
+            "correct": "B"
         },
         {
             "id": 27,
             "section_id": "para_comp",
             "passage_id": null,
-            "question": "The Great Wall of China is not a single continuous wall but a series of fortifications built over centuries. ______. It was primarily designed to protect the Chinese Empire from nomadic tribes from the north.",
+            "question": "The Industrial Revolution brought about profound changes in the social structure of 19th-century Europe. As factories emerged, there was a massive migration from rural areas to urban centers. ----. Living conditions in these burgeoning cities were often cramped and unsanitary, leading to various public health crises.",
             "options": {
-                "A": "It is one of the New Seven Wonders of the World.",
-                "B": "Construction began as early as the 7th century BC.",
-                "C": "The wall is visible from the moon with the naked eye.",
-                "D": "Many workers died during its construction.",
-                "E": "It stretches over 13,000 miles across the country."
+                "A": "Agriculture remained the backbone of the European economy during this time.",
+                "B": "This shift created a new working class that faced harsh labor conditions.",
+                "C": "Rural life was generally considered more prestigious than living in the city.",
+                "D": "Governments immediately passed laws to protect the rights of factory workers.",
+                "E": "Technological advancements were limited to the textile industry."
             },
             "correct": "B"
         },
@@ -456,27 +460,27 @@
             "id": 28,
             "section_id": "para_comp",
             "passage_id": null,
-            "question": "Renewable energy is often criticized for its intermittency, as solar and wind power depend on weather conditions. ______. These technologies allow excess energy to be stored and used when the sun isn't shining or the wind isn't blowing.",
+            "question": "In psychology, the term 'emotional intelligence' refers to the capacity to recognize and manage one's own emotions and the emotions of others. ----. High emotional intelligence is often linked to better leadership skills and more stable interpersonal relationships.",
             "options": {
-                "A": "However, advancements in battery technology are addressing this issue.",
-                "B": "Fossil fuels are more reliable in this regard.",
-                "C": "Governments are still subsidizing coal mines.",
-                "D": "Energy consumption is highest during the winter months.",
-                "E": "Nuclear power is a cleaner alternative to wind."
+                "A": "It is a trait that is determined solely by a person's genetic makeup.",
+                "B": "IQ tests are the most accurate way to measure emotional intelligence.",
+                "C": "It involves skills such as empathy, self-regulation, and social awareness.",
+                "D": "People with low emotional intelligence are usually more successful in business.",
+                "E": "Most psychologists believe that emotions should be suppressed in the workplace."
             },
-            "correct": "A"
+            "correct": "C"
         },
         {
             "id": 29,
             "section_id": "closest",
             "passage_id": null,
-            "question": "It is virtually impossible to predict the exact outcome of the election at this stage.",
+            "question": "Only by working together can we hope to overcome the challenges posed by global pandemics.",
             "options": {
-                "A": "The election result is almost certain.",
-                "B": "We can easily guess who will win the election.",
-                "C": "It is nearly impossible to foresee the result of the election now.",
-                "D": "The outcome of the election will be announced very soon.",
-                "E": "Nobody wants to predict the election because it is difficult."
+                "A": "We can overcome global pandemics if we choose to work together or separately.",
+                "B": "Global pandemics are challenges that can never be fully overcome by anyone.",
+                "C": "The only way to deal with the difficulties of global pandemics is through collective effort.",
+                "D": "Working together is one of the many ways to face the challenges of pandemics.",
+                "E": "If we work together, we might eventually find a way to stop all pandemics."
             },
             "correct": "C"
         },
@@ -484,13 +488,13 @@
             "id": 30,
             "section_id": "closest",
             "passage_id": null,
-            "question": "Hardly had the movie started when the fire alarm went off.",
+            "question": "Had the researchers known about the side effects earlier, they would have halted the clinical trials immediately.",
             "options": {
-                "A": "The movie started after the fire alarm went off.",
-                "B": "The fire alarm rang just as the movie was beginning.",
-                "C": "The movie was cancelled because of a fire alarm.",
-                "D": "They waited for the fire alarm before starting the movie.",
-                "E": "The movie finished right before the fire alarm rang."
+                "A": "The researchers stopped the clinical trials as soon as they discovered the side effects.",
+                "B": "The clinical trials continued because the researchers were unaware of the side effects at the time.",
+                "C": "Since the side effects were known from the start, the trials were never initiated.",
+                "D": "Researchers knew about the side effects but decided to continue the trials anyway.",
+                "E": "The clinical trials were halted immediately, although side effects were not yet proven."
             },
             "correct": "B"
         },
@@ -498,21 +502,21 @@
             "id": 31,
             "section_id": "closest",
             "passage_id": null,
-            "question": "The team would have won the match if the captain hadn't been injured.",
+            "question": "Virtually no other discovery in the 20th century has had as much impact on daily life as the internet.",
             "options": {
-                "A": "The team won despite the captain's injury.",
-                "B": "The team lost because the captain was injured.",
-                "C": "The captain's injury didn't affect the match result.",
-                "D": "The team didn't win even though the captain was healthy.",
-                "E": "The captain was injured but the team still won."
+                "A": "The internet is arguably the most influential 20th-century discovery regarding everyday life.",
+                "B": "A few discoveries in the 20th century were actually more important than the internet.",
+                "C": "Daily life has been impacted by many 20th-century discoveries, including the internet.",
+                "D": "The internet's impact on daily life is often exaggerated by 20th-century historians.",
+                "E": "No other 20th-century discovery, except for the internet, has changed our lives."
             },
-            "correct": "B"
+            "correct": "A"
         },
         {
             "id": 32,
             "section_id": "irrelevant",
             "passage_id": null,
-            "question": "(I) Quantum mechanics is a fundamental theory in physics that describes the physical properties of nature at the scale of atoms. (II) It is the foundation of all quantum physics including quantum chemistry and quantum technology. (III) Most people find it very difficult to understand because it is counter-intuitive. (IV) Albert Einstein was born in Germany in 1879. (V) Despite its complexity, it has led to the development of transistors and lasers.",
+            "question": "(I) Solar energy is one of the most abundant energy sources available on Earth. (II) It can be harnessed using various technologies such as photovoltaic cells and solar thermal collectors. (III) Many homeowners are now installing solar panels to reduce their electricity bills. (IV) Coal, however, remains a primary source of energy in many developing nations. (V) As technology advances, the efficiency of solar energy conversion continues to improve.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -526,7 +530,7 @@
             "id": 33,
             "section_id": "irrelevant",
             "passage_id": null,
-            "question": "(I) Caffeine is a central nervous system stimulant of the methylxanthine class. (II) It is the world's most widely consumed psychoactive substance. (III) Coffee beans are actually the seeds of a fruit called a coffee cherry. (IV) Unlike many other psychoactive substances, it is legal and unregulated in nearly all parts of the world. (V) It works by blocking the action of adenosine, a neurotransmitter that promotes sleep.",
+            "question": "(I) The Great Barrier Reef is the world's largest coral reef system. (II) It supports a wide diversity of marine life, including thousands of species of fish and mollusks. (III) Climate change and rising sea temperatures are posing a significant threat to its survival. (IV) Scuba diving is a popular activity for tourists visiting the Australian coast. (V) Efforts are being made globally to protect this vital ecosystem from further degradation.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -534,13 +538,13 @@
                 "D": "IV",
                 "E": "V"
             },
-            "correct": "C"
+            "correct": "D"
         },
         {
             "id": 34,
             "section_id": "irrelevant",
             "passage_id": null,
-            "question": "(I) The Renaissance was a fervent period of European cultural, artistic, political and economic 'rebirth' following the Middle Ages. (II) It took place from the 14th century to the 17th century. (III) During this time, many classical Greek and Roman texts were rediscovered. (IV) The Black Death killed nearly half of the population of Europe in the 14th century. (V) This period produced some of the greatest artists in history, such as Leonardo da Vinci.",
+            "question": "(I) Kafka's writing is often characterized by nightmarish settings and bureaucratic complexity. (II) His most famous work, 'The Metamorphosis', tells the story of a man who turns into an insect. (III) Many readers find his prose to be both unsettling and deeply philosophical. (IV) Prague, where Kafka lived, was a vibrant cultural hub in the early 20th century. (V) This 'Kafkaesque' style has influenced countless writers and filmmakers across the globe.",
             "options": {
                 "A": "I",
                 "B": "II",
@@ -554,83 +558,83 @@
             "id": 35,
             "section_id": "reading",
             "passage_id": "p1",
-            "question": "PASSAGE 1: The Amazon Rainforest is often referred to as the 'lungs of the planet' because its vegetation continuously recycles carbon dioxide into oxygen. However, this vast ecosystem is under threat from deforestation, primarily driven by cattle ranching and soy production. As trees are cleared, the forest's ability to absorb carbon diminishes, accelerating global warming. QUESTION: Why is the Amazon Rainforest called the 'lungs of the planet'?",
+            "question": "According to the passage, what was the immediate trigger of the Great Depression?",
             "options": {
-                "A": "Because it is the largest forest in the world.",
-                "B": "Because it produces a large amount of oxygen by recycling carbon dioxide.",
-                "C": "Because it is shaped like a human lung from above.",
-                "D": "Because it provides a habitat for many different species.",
-                "E": "Because it is located in the center of South America."
+                "A": "A decline in industrial output and employment",
+                "B": "The failure of nearly half of the country's banks",
+                "C": "The stock market crash in October 1929",
+                "D": "A sudden increase in consumer spending",
+                "E": "The layoff of workers by failing companies"
             },
-            "correct": "B"
+            "correct": "C"
         },
         {
             "id": 36,
             "section_id": "reading",
             "passage_id": "p1",
-            "question": "PASSAGE 1 (cont.): The Amazon Rainforest... QUESTION: What is the main cause of deforestation mentioned in the text?",
+            "question": "It can be inferred from the passage that by 1933 ----.",
             "options": {
-                "A": "Urbanization and road construction.",
-                "B": "Mining and logging.",
-                "C": "Cattle ranching and soy production.",
-                "D": "Forest fires caused by lightning.",
-                "E": "Illegal hunting and poaching."
+                "A": "the economy had started to recover",
+                "B": "the economic situation was at its worst",
+                "C": "investors had regained their confidence",
+                "D": "unemployment had started to decrease",
+                "E": "most banks were still operational"
             },
-            "correct": "C"
+            "correct": "B"
         },
         {
             "id": 37,
             "section_id": "reading",
             "passage_id": "p1",
-            "question": "PASSAGE 1 (cont.): The Amazon Rainforest... QUESTION: According to the passage, how does deforestation affect global warming?",
+            "question": "Which of the following is NOT mentioned as a consequence of the stock market crash?",
             "options": {
-                "A": "It causes more rainfall in the region.",
-                "B": "It reduces the forest's ability to absorb carbon dioxide.",
-                "C": "It leads to a decrease in the Earth's temperature.",
-                "D": "It has no direct impact on the climate.",
-                "E": "It increases the number of cattle in the world."
+                "A": "Panic on Wall Street",
+                "B": "Wiping out millions of investors",
+                "C": "A drop in consumer spending",
+                "D": "An increase in industrial output",
+                "E": "Massive unemployment"
             },
-            "correct": "B"
+            "correct": "D"
         },
         {
             "id": 38,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "PASSAGE 2: Architecture in Ancient Greece is best known for its temples, many of which are found throughout the region, mostly as ruins but many substantially intact. The second important type of building that survives is the open-air theater. The formal vocabulary of ancient Greek architecture, in particular the division of architectural style into three defined orders: the Doric, the Ionic and the Corinthian, was to have a profound effect on Western architecture of later periods. QUESTION: What are the two main types of buildings surviving from Ancient Greece mentioned in the text?",
+            "passage_id": "p2",
+            "question": "What is the primary goal of biomimicry according to the text?",
             "options": {
-                "A": "Palaces and libraries.",
-                "B": "Temples and open-air theaters.",
-                "C": "Aqueducts and stadiums.",
-                "D": "Markets and city walls.",
-                "E": "Schools and houses."
+                "A": "To protect endangered species from extinction",
+                "B": "To find solutions to human problems by imitating nature",
+                "C": "To create high-speed transportation systems in Japan",
+                "D": "To study the behavior of birds and marine animals",
+                "E": "To replace synthetic materials with natural ones"
             },
             "correct": "B"
         },
         {
             "id": 39,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "PASSAGE 2 (cont.): Architecture in Ancient Greece... QUESTION: Which of the following is NOT one of the three architectural orders mentioned?",
+            "passage_id": "p2",
+            "question": "How did the kingfisher bird influence Japanese engineering?",
             "options": {
-                "A": "Doric",
-                "B": "Ionic",
-                "C": "Corinthian",
-                "D": "Byzantine",
-                "E": "None of the above"
+                "A": "Its wings were used as a model for airplane design.",
+                "B": "Its feathers inspired new waterproof materials.",
+                "C": "Its beak served as a model for high-speed train design.",
+                "D": "Its diving technique was used to improve submarine efficiency.",
+                "E": "Its vision helped in developing advanced camera lenses."
             },
-            "correct": "D"
+            "correct": "C"
         },
         {
             "id": 40,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "PASSAGE 2 (cont.): Architecture in Ancient Greece... QUESTION: What effect did Ancient Greek architecture have on later periods according to the text?",
+            "passage_id": "p2",
+            "question": "The passage implies that shark skin is useful because ----.",
             "options": {
-                "A": "It had no impact on Western design.",
-                "B": "It influenced the formal vocabulary of Western architecture.",
-                "C": "It was quickly forgotten after the Roman Empire.",
-                "D": "It was only used for religious buildings.",
-                "E": "It caused people to stop building theaters."
+                "A": "it is extremely soft and flexible",
+                "B": "it has properties that discourage bacterial growth",
+                "C": "it can be easily replicated in a laboratory",
+                "D": "it is the strongest material found in nature",
+                "E": "it helps hospitals save energy and costs"
             },
             "correct": "B"
         }

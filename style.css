@@ -239,8 +239,7 @@ body {
    FLOATING BUTTONS – MINIMAL
 ============================= */
 
-.floating-scroll,
-.floating-whatsapp {
+.floating-scroll {
     position: fixed;
     width: 55px;
     height: 55px;
@@ -251,15 +250,11 @@ body {
     font-size: 20px;
     z-index: 999;
     transition: 0.3s ease;
-}
-
-.floating-scroll {
     bottom: 25px;
-    right: 25px;
+    left: 25px;
     background: #000000;
     color: #ffffff;
     box-shadow: 0 0 15px rgba(185, 28, 28, 0.6);
-    /* Red glow */
     border: 1px solid #b91c1c;
 }
 
@@ -267,19 +262,6 @@ body {
     transform: translateY(-4px);
     background: #b91c1c;
     box-shadow: 0 0 25px rgba(185, 28, 28, 0.9);
-}
-
-.floating-whatsapp {
-    bottom: 25px;
-    left: 25px;
-    background: #ffffff;
-    color: #16a34a;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.floating-whatsapp:hover {
-    transform: translateY(-4px);
 }
 
 /* =============================
