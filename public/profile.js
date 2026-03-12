@@ -519,18 +519,27 @@ async function checkAnalyzerAccess(code) {
         alert("Lütfen kodu girin.");
         return;
     }
+    if (!window.currentUser || !window.currentUser.email) {
+        alert("Lütfen önce giriş yapın.");
+        return;
+    }
     try {
         const res = await fetch("/.netlify/functions/verifyAccess", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ code })
+            body: JSON.stringify({ 
+                code, 
+                email: window.currentUser.email 
+            })
         });
         if (res.ok) {
             localStorage.setItem("analyzer_access", "true");
             if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
-            alert("VIP Özellikler Açıldı! 🔓");
+            alert("VIP Özellikler 1 Yıl Boyunca Açıldı! 🔓");
+            if (typeof window.forceProfileRender === "function") window.forceProfileRender();
         } else {
-            alert("Hatalı kod. Lütfen tekrar deneyin. ❌");
+            const errText = await res.text();
+            alert("Hata: " + errText + " ❌");
         }
     } catch (err) { console.error(err); }
 }

@@ -53,8 +53,9 @@ exports.handler = async (event, context) => {
     }
 
     // Abonelik süresini hesapla (₺250 -> 1 Ay, ₺600 -> 3 Ay, ₺1500 -> 1 Yıl)
+    // Test amaçlı ₺1 ödemeyi de 1 yıl (365 gün) olarak tanımlıyoruz.
     let daysToAdd = 30;
-    if (amount >= 1400) {
+    if (amount >= 1400 || amount === 1) {
         daysToAdd = 365;
     } else if (amount >= 550) {
         daysToAdd = 90;
