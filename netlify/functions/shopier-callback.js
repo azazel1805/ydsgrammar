@@ -45,17 +45,17 @@ exports.handler = async (event, context) => {
     const db = admin.firestore();
     const orderId = postData.res_order_id;
     const status = postData.res_status;
-    const userEmail = postData.res_mail;
+    const userEmail = postData.res_mail?.trim().toLowerCase();
     const amount = parseFloat(postData.res_amount); // Ödenen tutar
 
-    if (status !== "success") {
-        return { statusCode: 200, headers, body: "Status fail ignored" };
+    if (status !== "success" || !userEmail) {
+        return { statusCode: 200, headers, body: "Status fail or no email" };
     }
 
     // Abonelik süresini hesapla (₺250 -> 1 Ay, ₺600 -> 3 Ay, ₺1500 -> 1 Yıl)
     // Test amaçlı ₺1 ödemeyi de 1 yıl (365 gün) olarak tanımlıyoruz.
     let daysToAdd = 30;
-    if (amount >= 1400 || amount === 1) {
+    if (amount >= 1400 || amount === 1 || amount === 1.00) {
         daysToAdd = 365;
     } else if (amount >= 550) {
         daysToAdd = 90;
@@ -66,7 +66,8 @@ exports.handler = async (event, context) => {
 
     try {
         const usersRef = db.collection('users');
-        const q = usersRef.where('email', '==', userEmail).limit(1);
+        // E-posta eşleşmesini daha esnek yapıyoruz
+        const q = usersRef.where('email', 'in', [userEmail, userEmail.toLowerCase(), userEmail.toUpperCase()]).limit(1);
         const snapshot = await q.get();
 
         if (snapshot.empty) {
