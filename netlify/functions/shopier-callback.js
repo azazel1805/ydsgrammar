@@ -1,25 +1,52 @@
 const admin = require('firebase-admin');
 const crypto = require('crypto');
 
-// Initialize Firebase Admin
-if (!admin.apps.length) {
-    admin.initializeApp({
-        credential: admin.credential.cert({
-            projectId: process.env.FIREBASE_PROJECT_ID,
-            clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-            privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-        }),
-        databaseURL: `https://${process.env.FIREBASE_PROJECT_ID}.firebaseio.com`
-    });
-}
-
-const db = admin.firestore();
-
 exports.handler = async (event, context) => {
-    // Only allow POST
-    if (event.httpMethod !== "POST") {
-        return { statusCode: 405, body: "Method Not Allowed" };
+    const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
+    };
+
+    // Handle OPTIONS and GET (for browser tests)
+    if (event.httpMethod === "OPTIONS" || event.httpMethod === "GET") {
+        return { 
+            statusCode: 200, 
+            headers, 
+            body: "Shopier Callback is active. Only POST requests are processed." 
+        };
     }
+
+    if (event.httpMethod !== "POST") {
+        return { statusCode: 405, headers, body: "Method Not Allowed" };
+    }
+
+    // Initialize Firebase Admin only if needed
+    if (!process.env.FIREBASE_PROJECT_ID || !process.env.FIREBASE_CLIENT_EMAIL) {
+        console.error("Missing Firebase Admin Environment Variables");
+        return { 
+            statusCode: 500, 
+            headers, 
+            body: "Server configuration missing. Please check Netlify Environment Variables." 
+        };
+    }
+
+    if (!admin.apps.length) {
+        try {
+            admin.initializeApp({
+                credential: admin.credential.cert({
+                    projectId: process.env.FIREBASE_PROJECT_ID,
+                    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+                    privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+                }),
+            });
+        } catch (e) {
+            console.error("Firebase Admin Init Error:", e);
+            return { statusCode: 500, headers, body: "Database initialization failed." };
+        }
+    }
+
+    const db = admin.firestore();
 
     // Shopier Notification Post Data
     // Shopier sends data as application/x-www-form-urlencoded
