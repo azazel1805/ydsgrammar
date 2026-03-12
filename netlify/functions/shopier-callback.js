@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
     // Shopier URL'yi kaydederken GET veya boş POST gönderebilir. 
     // Bu durumlarda hemen 200 dönerek "sistem aktif" diyoruz.
     if (event.httpMethod === "GET" || event.httpMethod === "OPTIONS" || !event.body) {
-        return { statusCode: 200, headers, body: "Shopier Callback Active" };
+        return { statusCode: 200, headers, body: "OK" };
     }
 
     // 2. DATA PARSING
