@@ -31,37 +31,58 @@ export const handler = async (event, context) => {
       return { statusCode: 400, headers, body: "Missing code or email" };
     }
 
-    // Define 1-Year Codes (Product ID or Secret Code)
-    const yearCodes = ["45156537", process.env.AI_SECRET_CODE, "YDS2026"];
-    
-    if (yearCodes.includes(code)) {
+    const promoRef = db.collection('promo_codes').doc(code);
+    const promoDoc = await promoRef.get();
+
+    if (promoDoc.exists) {
+      const promoData = promoDoc.data();
+      
+      if (promoData.used) {
+        return { statusCode: 403, headers, body: "Bu kod zaten kullanılmış." };
+      }
+
       const usersRef = db.collection('users');
       const q = usersRef.where('email', '==', email).limit(1);
       const snapshot = await q.get();
 
       if (!snapshot.empty) {
         const userId = snapshot.docs[0].id;
+        const days = promoData.days || 365; // Varsayılan 365 gün
+        
         const premiumUntil = new Date();
-        premiumUntil.setFullYear(premiumUntil.getFullYear() + 1); // 1 Year
+        premiumUntil.setDate(premiumUntil.getDate() + days);
 
-        await db.collection('users').doc(userId).update({
-          role: 'premium',
-          isVip: true,
-          premiumUntil: admin.firestore.Timestamp.fromDate(premiumUntil),
-          activationMethod: "code_" + code
+        await db.runTransaction(async (transaction) => {
+          transaction.update(db.collection('users').doc(userId), {
+            role: 'premium',
+            isVip: true,
+            premiumUntil: admin.firestore.Timestamp.fromDate(premiumUntil),
+            activationMethod: "promo_" + code
+          });
+          transaction.update(promoRef, {
+            used: true,
+            usedBy: email,
+            usedAt: admin.firestore.FieldValue.serverTimestamp()
+          });
         });
 
         return { 
           statusCode: 200, 
           headers, 
-          body: JSON.stringify({ success: true, message: "1 Year Premium Activated" }) 
+          body: JSON.stringify({ success: true, message: `${days} Günlük VIP Tanımlandı` }) 
         };
       } else {
-        return { statusCode: 404, headers, body: "User not found in Firestore" };
+        return { statusCode: 404, headers, body: "Kullanıcı kaydı bulunamadı." };
       }
     }
 
-    return { statusCode: 403, headers, body: "Invalid code" };
+    // Geriye dönük uyumluluk için eski yöntemleri de bırakabilirsiniz veya sadece yeni sisteme geçebilirsiniz.
+    if (code === process.env.AI_SECRET_CODE) {
+        // ... eski manuel kod logic'i devam edebilir
+    }
+
+    return { statusCode: 403, headers, body: "Geçersiz kod." };
+
   } catch (err) {
     console.error("VerifyAccess Error:", err);
     return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
