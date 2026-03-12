@@ -265,6 +265,9 @@ window.switchTab = function (tabName) {
             console.warn("Premium tab accessed without VIP status:", tabName);
             alert("Bu özellik sadece Premium üyeler içindir. Kilidi açmak için lütfen Profil sayfasından VIP kodunuzu giriniz.");
             switchTab('profile');
+            setTimeout(() => {
+                document.getElementById('premiumSection')?.scrollIntoView({ behavior: 'smooth' });
+            }, 500);
             return;
         }
     }
