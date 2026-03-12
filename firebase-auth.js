@@ -226,38 +226,49 @@ onAuthStateChanged(auth, (user) => {
     // 🔥 Real-time VIP Check: Query Firestore to see current role
     getDoc(doc(db, "users", user.uid)).then(userDoc => {
       let isVip = false;
+      const now = new Date();
+      
       if (userDoc.exists()) {
         const userData = userDoc.data();
-        const now = new Date();
         const premiumUntil = userData.premiumUntil ? userData.premiumUntil.toDate() : null;
         
-        // Check if either they have an old 'isVip' flag OR a valid 'premiumUntil' date
+        console.log("Firestore User Data:", userData);
+        console.log("Subscription Ends:", premiumUntil);
+
+        // Core VIP Condition
         isVip = (userData.role === 'premium' || userData.isVip === true);
 
-        // If a date exists, it MUST be in the future
+        // Expiry Check
         if (premiumUntil && premiumUntil < now) {
-          console.log("VIP status expired on:", premiumUntil);
+          console.log("VIP status EXPIRED on:", premiumUntil);
           isVip = false;
         }
       }
       
       // Admin bypass
-      if (user.email === "onurtosuner@gmail.com") isVip = true;
-      // Local check
-      if (localStorage.getItem("analyzer_access") === "true") isVip = true;
-
-      console.log("VIP Status Check:", isVip ? "PREMIUM" : "FREE");
+      if (user.email === "onurtosuner@gmail.com") {
+         console.log("Admin Bypass Activated");
+         isVip = true;
+      }
+      
+      console.log("Final VIP Determination:", isVip ? "PREMIUM" : "FREE");
 
       if (isVip) {
         if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
-        localStorage.setItem("analyzer_access", "true"); // Cache the success
+        localStorage.setItem("analyzer_access", "true"); 
       } else {
         if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
+        localStorage.removeItem("analyzer_access"); // Clear cache if expired
       }
       
-      // Refresh profile view if it exists
       if (typeof window.forceProfileRender === "function") window.forceProfileRender();
-    }).catch(err => console.error("VIP status check error:", err));
+    }).catch(err => {
+      console.error("VIP status check error:", err);
+      // If DB fails, fallback to local cache to not block user
+      if (localStorage.getItem("analyzer_access") === "true") {
+          if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
+      }
+    });
 
     if (typeof renderDashboardNotes === "function") {
       renderDashboardNotes();
