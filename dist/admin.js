@@ -61,19 +61,25 @@ async function refreshAdminCodes() {
         return;
     }
 
-    const db = window.firebaseExports.db;
-    const codesRef = window.firebaseExports.collection(db, "promo_codes");
-    const q = window.firebaseExports.query(codesRef, window.firebaseExports.where("used", "==", false));
-
     try {
-        const snapshot = await window.firebaseExports.getDocs(q);
-        const codes = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        const res = await fetch("/api/getUnusedCodes", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: window.currentUser.email })
+        });
+
+        if (!res.ok) {
+            throw new Error(await res.text());
+        }
+
+        const codes = await res.json();
 
         renderCodesInList("codes-monthly", codes.filter(c => c.days === 30 || c.package === 'monthly'));
         renderCodesInList("codes-seasonal", codes.filter(c => c.days === 90 || c.package === 'seasonal'));
         renderCodesInList("codes-yearly", codes.filter(c => c.days === 365 || c.package === 'yearly' || (!c.days && !c.package))); // Default to yearly for legacy
     } catch (err) {
         console.error("Admin codes fetch error:", err);
+        alert("Hata: Kodlar yüklenemedi. Yetki sorunu olabilir.");
     }
 }
 
