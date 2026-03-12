@@ -74,10 +74,10 @@ const profileHTML = `
             
             <div class="relative">
                 <h3 class="text-xl font-bold flex items-center gap-2" style="font-family: 'Playfair Display', serif;">
-                    <i class="fas fa-crown text-yellow-500"></i> Premium Paket
+                    <i class="fas fa-key text-yellow-500"></i> Aktivasyon Kodu
                 </h3>
                 <p class="text-slate-400 text-sm leading-relaxed mt-2">
-                    Premium denemeler ve yapay zeka araçlarına erişmek için kodunuzu girin.
+                    Premium paket kodunuz varsa buraya girerek anında aktif edebilirsiniz.
                 </p>
             </div>
 
@@ -104,6 +104,113 @@ const profileHTML = `
                     <p class="text-2xl font-bold text-slate-800" id="profileStreak">...</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Premium Advantages / Shopier Section -->
+    <div id="premiumSection" class="bg-gradient-to-br from-slate-50 to-white rounded-[3rem] p-10 border border-slate-200 shadow-xl overflow-hidden relative">
+        <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+            <i class="fas fa-crown text-[15rem]"></i>
+        </div>
+
+        <div class="text-center space-y-4 mb-12 relative">
+            <h2 class="text-4xl font-extrabold text-slate-900" style="font-family: 'Playfair Display', serif;">YDS Monster <span class="text-red-800">Premium</span></h2>
+            <p class="text-slate-500 max-w-xl mx-auto italic">Tüm engelleri kaldırın, yapay zeka desteğiyle hedefinize ışık hızında ulaşın.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 relative">
+            <!-- Feature 1 -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-red-50 text-red-700 rounded-2xl flex items-center justify-center mb-4">
+                    <i class="fas fa-robot text-xl"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-2">AI Sınav Koçu</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">7/24 soru sorabileceğiniz, size özel strateji geliştiren mentorunuz.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-blue-50 text-blue-700 rounded-2xl flex items-center justify-center mb-4">
+                    <i class="fas fa-microscope text-xl"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-2">Gelişmiş Analiz Araçları</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Cümle analizci, soru çözücü ve restatement motoru ile derinlemesine öğrenme.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-purple-50 text-purple-700 rounded-2xl flex items-center justify-center mb-4">
+                    <i class="fas fa-file-alt text-xl"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-2">Full Denemeler</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Tam kapsamlı, açıklamalı ve süreli deneme sınavlarıyla gerçek sınav deneyimi.</p>
+            </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto pb-8">
+            <!-- Monthly -->
+            <div class="bg-white rounded-[2.5rem] p-6 border border-slate-200 shadow-sm flex flex-col items-center space-y-6 hover:scale-[1.02] transition-transform cursor-pointer relative overflow-hidden border-2 border-slate-100">
+                <div class="text-center">
+                    <h5 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Aylık Erişim</h5>
+                    <div class="flex items-baseline gap-1 justify-center">
+                        <span class="text-3xl font-bold text-slate-900">₺250</span>
+                        <span class="text-xs text-slate-400">/ay</span>
+                    </div>
+                </div>
+                <ul class="w-full space-y-2 text-[10px] text-slate-600">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Tüm AI Araçları Dahil</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınav Koçu Mentorluğu</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınırsız Soru Analizi</li>
+                </ul>
+                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45147673')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
+                    Hemen Başla
+                </button>
+            </div>
+
+            <!-- 3 Months - Recommended -->
+            <div class="bg-white rounded-[2.5rem] p-6 border-2 border-red-800 shadow-xl flex flex-col items-center space-y-6 scale-105 hover:scale-[1.07] transition-transform cursor-pointer relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-red-800 text-white px-3 py-1 rounded-bl-xl text-[8px] font-bold uppercase tracking-tighter">
+                    En Popüler
+                </div>
+                <div class="text-center">
+                    <h5 class="text-[10px] font-bold text-red-800 uppercase tracking-widest mb-1">Sezonluk (3 Ay)</h5>
+                    <div class="flex items-baseline gap-1 justify-center">
+                        <span class="text-3xl font-bold text-slate-900">₺600</span>
+                        <span class="text-xs text-slate-400">/paket</span>
+                    </div>
+                </div>
+                <ul class="w-full space-y-2 text-[10px] text-slate-600">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Aylığa göre %20 Tasarruf</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Full Deneme Havuzu</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Öncelikli Destek</li>
+                </ul>
+                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45147695')" class="w-full py-3 bg-red-800 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-xl shadow-red-900/20 active:scale-95">
+                    Hemen Başla
+                </button>
+            </div>
+
+            <!-- Yearly -->
+            <div class="bg-white rounded-[2.5rem] p-6 border border-slate-200 shadow-sm flex flex-col items-center space-y-6 hover:scale-[1.02] transition-transform cursor-pointer relative overflow-hidden border-2 border-slate-100">
+                <div class="text-center">
+                    <h5 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Yıllık (Master)</h5>
+                    <div class="flex items-baseline gap-1 justify-center">
+                        <span class="text-3xl font-bold text-slate-900">₺1500</span>
+                        <span class="text-xs text-slate-400">/yıl</span>
+                    </div>
+                </div>
+                <ul class="w-full space-y-2 text-[10px] text-slate-600">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> En İyi Fiyat Garantisi</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-star text-amber-500"></i> Tüm Gelecek Özellikler</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınırsız Arşiv Erişimi</li>
+                </ul>
+                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45147714')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
+                    Hemen Başla
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center text-[10px] text-slate-400 uppercase tracking-widest font-semibold flex items-center justify-center gap-6">
+            <span class="flex items-center gap-2"><i class="fas fa-shield-alt text-emerald-500"></i> Güvenli Ödeme (Shopier)</span>
+            <span class="flex items-center gap-2"><i class="fas fa-bolt text-yellow-500"></i> Anında Aktivasyon</span>
         </div>
     </div>
 
@@ -366,10 +473,25 @@ async function renderProfileNotes() {
 }
 
 /* =========================================
-   AI UNLOCK & UI HELPERS
+   PREMIUM & SHOPIER HELPERS
  ========================================= */
 
+window.startShopierPayment = function (url) {
+    if (!window.currentUser) {
+        alert("Ödeme yapmak için önce giriş yapmalısınız.");
+        if (typeof window.openLoginModal === "function") window.openLoginModal();
+        return;
+    }
 
+    // Shopier direct links don't pre-fill email easily via URL params 
+    // without API integration, but we'll remind the user to use their registered email.
+    
+    const confirmMsg = `Satın alma sayfasına yönlendiriliyorsunuz.\n\nÖNEMLİ: VIP erişiminizin otomatik aktif olması için ödeme sayfasında "${window.currentUser.email}" e-posta adresinizi kullanmayı unutmayın.`;
+    
+    if (confirm(confirmMsg)) {
+        window.open(url, '_blank');
+    }
+};
 
 async function checkAnalyzerAccess(code) {
     if (!code) {
