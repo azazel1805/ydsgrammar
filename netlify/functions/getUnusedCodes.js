@@ -12,42 +12,67 @@ if (!admin.apps.length) {
 
 const db = admin.firestore();
 
+function generateSimpleCode(prefix = 'YDS') {
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; 
+    let code = `${prefix}-`;
+    for(let i=0; i<4; i++) code += chars.charAt(Math.floor(Math.random() * chars.length));
+    code += '-';
+    for(let i=0; i<4; i++) code += chars.charAt(Math.floor(Math.random() * chars.length));
+    return code;
+}
+
 export const handler = async (event, context) => {
-  const headers = {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Access-Control-Allow-Methods": "POST, OPTIONS"
-  };
-
-  if (event.httpMethod === "OPTIONS") {
-    return { statusCode: 200, headers, body: "" };
-  }
-
-  try {
-    const body = event.body ? JSON.parse(event.body) : {};
-    const { email } = body;
-
-    const admins = ["onurtosuner@gmail.com", "hasanonurtosuner@gmail.com"];
-    if (!email || !admins.includes(email)) {
-      return { statusCode: 403, headers, body: "Unauthorized" };
-    }
-
-    const codesRef = db.collection('promo_codes');
-    const snapshot = await codesRef.where('used', '==', false).get();
-    
-    const codes = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-    }));
-
-    return { 
-      statusCode: 200, 
-      headers, 
-      body: JSON.stringify(codes) 
+    const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "POST, OPTIONS"
     };
 
-  } catch (err) {
-    console.error("GetUnusedCodes Error:", err);
-    return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
-  }
+    if (event.httpMethod === "OPTIONS") return { statusCode: 200, headers, body: "" };
+
+    try {
+        const body = event.body ? JSON.parse(event.body) : {};
+        const { email, action } = body;
+
+        const admins = ["onurtosuner@gmail.com", "hasanonurtosuner@gmail.com"];
+        if (!email || !admins.includes(email)) {
+            return { statusCode: 403, headers, body: "Unauthorized" };
+        }
+
+        // ACTION: SEED
+        if (action === "seed") {
+            const types = [
+                { name: 'monthly', days: 30, prefix: 'MON' },
+                { name: 'seasonal', days: 90, prefix: 'SEA' },
+                { name: 'yearly', days: 365, prefix: 'YDS' }
+            ];
+
+            const batch = db.batch();
+            for (const type of types) {
+                for (let i = 0; i < 5; i++) { // Generate 5 of each for start
+                    const code = generateSimpleCode(type.prefix);
+                    const ref = db.collection('promo_codes').doc(code);
+                    batch.set(ref, {
+                        used: false,
+                        days: type.days,
+                        package: type.name,
+                        createdAt: admin.firestore.FieldValue.serverTimestamp()
+                    });
+                }
+            }
+            await batch.commit();
+            return { statusCode: 200, headers, body: JSON.stringify({ success: true, message: "15 yeni kod üretildi." }) };
+        }
+
+        // ACTION: FETCH (Default)
+        const codesRef = db.collection('promo_codes');
+        const snapshot = await codesRef.where('used', '==', false).get();
+        const codes = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+
+        return { statusCode: 200, headers, body: JSON.stringify(codes) };
+
+    } catch (err) {
+        console.error("Admin API Error:", err);
+        return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
+    }
 };

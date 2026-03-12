@@ -8,9 +8,14 @@ const adminHTML = `
     <div class="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm flex flex-col gap-6">
         <div class="flex items-center justify-between">
             <h2 class="text-3xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">Admin Paneli</h2>
+        <div class="flex items-center gap-4">
+            <button onclick="seedNewCodes()" id="seedBtn" class="p-4 bg-red-800 text-white rounded-2xl hover:bg-black transition-all text-xs font-bold">
+                <i class="fas fa-magic mr-2"></i> 15 Yeni Kod Üret
+            </button>
             <button onclick="refreshAdminCodes()" class="p-4 bg-slate-100 hover:bg-slate-200 rounded-2xl transition-all">
                 <i class="fas fa-sync-alt"></i> Yenile
             </button>
+        </div>
         </div>
         
         <p class="text-slate-500 text-sm italic">Buradan kullanılmamış kodları görebilir ve Shopier siparişlerine göre kullanıcılara gönderebilirsiniz.</p>
@@ -110,6 +115,35 @@ function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
         alert("Kod kopyalandı: " + text);
     });
+}
+
+async function seedNewCodes() {
+    if (!confirm("15 yeni (5 her paketten) kod üretmek istediğinize emin misiniz?")) return;
+    const btn = document.getElementById("seedBtn");
+    btn.disabled = true;
+    btn.innerText = "Üretiliyor...";
+
+    try {
+        const res = await fetch("/api/getUnusedCodes", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ 
+                email: window.currentUser.email,
+                action: "seed"
+            })
+        });
+
+        if (!res.ok) throw new Error(await res.text());
+        const data = await res.json();
+        alert(data.message);
+        refreshAdminCodes();
+    } catch (err) {
+        console.error("Seed error:", err);
+        alert("Üretim hatası: " + err.message);
+    } finally {
+        btn.disabled = false;
+        btn.innerText = "15 Yeni Kod Üret";
+    }
 }
 
 // Global initialization check
