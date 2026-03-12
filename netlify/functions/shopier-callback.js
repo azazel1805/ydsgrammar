@@ -64,10 +64,18 @@ exports.handler = async (event, context) => {
     const status = postData.res_status;
     const userEmail = postData.res_mail;
 
-    // 1. Verify Signature
+    // 1. Verify Signature (or handle Shopier Probes)
     const apiSecret = process.env.SHOPIER_API_SECRET;
-    if (!apiSecret || !signature) {
-        return { statusCode: 400, body: "Missing signature or secret" };
+    
+    // If no signature is provided, it's likely Shopier's initial validation probe.
+    // Return 200 OK to satisfy Shopier's URL validation.
+    if (!signature) {
+        return { statusCode: 200, headers, body: "Probe success" };
+    }
+
+    if (!apiSecret) {
+        console.error("Missing SHOPIER_API_SECRET environment variable");
+        return { statusCode: 500, headers, body: "Server configuration missing secret" };
     }
 
     // Shopier Signature Verification
