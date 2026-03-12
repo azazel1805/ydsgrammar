@@ -293,6 +293,18 @@ async function renderProfile() {
 
     if (localStorage.getItem("analyzer_access") === "true") {
         vipBadge.classList.remove("hidden");
+        
+        // Show expiration date if we can find it in Firestore
+        window.firebaseExports.getDoc(window.firebaseExports.doc(window.firebaseExports.db, "users", window.currentUser.uid)).then(docSnap => {
+            if (docSnap.exists()) {
+                const data = docSnap.data();
+                if (data.premiumUntil) {
+                    const expiry = data.premiumUntil.toDate();
+                    const dateStr = expiry.toLocaleDateString('tr-TR');
+                    vipBadge.innerText = `VIP (Bitiş: ${dateStr})`;
+                }
+            }
+        });
     }
 
     // Sync gamification stats if available

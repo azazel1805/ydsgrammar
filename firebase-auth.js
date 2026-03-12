@@ -228,7 +228,17 @@ onAuthStateChanged(auth, (user) => {
       let isVip = false;
       if (userDoc.exists()) {
         const userData = userDoc.data();
-        isVip = userData.role === 'premium' || userData.isVip === true;
+        const now = new Date();
+        const premiumUntil = userData.premiumUntil ? userData.premiumUntil.toDate() : null;
+        
+        // Check if either they have an old 'isVip' flag OR a valid 'premiumUntil' date
+        isVip = (userData.role === 'premium' || userData.isVip === true);
+
+        // If a date exists, it MUST be in the future
+        if (premiumUntil && premiumUntil < now) {
+          console.log("VIP status expired on:", premiumUntil);
+          isVip = false;
+        }
       }
       
       // Admin bypass
