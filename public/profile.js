@@ -301,6 +301,15 @@ async function renderProfile() {
         document.getElementById("profileStreak") && (document.getElementById("profileStreak").innerText = window.userStats.streak + ' Gün');
     }
 
+    console.log("Checking premiumSection visibility...");
+    const premiumSec = document.getElementById("premiumSection");
+    if (premiumSec) {
+        premiumSec.classList.remove("hidden");
+        console.log("premiumSection found and forced visible.");
+    } else {
+        console.warn("premiumSection NOT found in DOM!");
+    }
+
     await renderProfileSavedWords();
     await renderProfileNotes();
 }
