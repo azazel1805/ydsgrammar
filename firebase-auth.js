@@ -223,6 +223,32 @@ onAuthStateChanged(auth, (user) => {
     if (loginPage) loginPage.classList.add("hidden");
     if (appWrapper) appWrapper.classList.remove("hidden");
 
+    // 🔥 Real-time VIP Check: Query Firestore to see current role
+    getDoc(doc(db, "users", user.uid)).then(userDoc => {
+      let isVip = false;
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        isVip = userData.role === 'premium' || userData.isVip === true;
+      }
+      
+      // Admin bypass
+      if (user.email === "onurtosuner@gmail.com") isVip = true;
+      // Local check
+      if (localStorage.getItem("analyzer_access") === "true") isVip = true;
+
+      console.log("VIP Status Check:", isVip ? "PREMIUM" : "FREE");
+
+      if (isVip) {
+        if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
+        localStorage.setItem("analyzer_access", "true"); // Cache the success
+      } else {
+        if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
+      }
+      
+      // Refresh profile view if it exists
+      if (typeof window.forceProfileRender === "function") window.forceProfileRender();
+    }).catch(err => console.error("VIP status check error:", err));
+
     if (typeof renderDashboardNotes === "function") {
       renderDashboardNotes();
     }
@@ -234,13 +260,6 @@ onAuthStateChanged(auth, (user) => {
     }
     if (typeof initCharts === "function") {
       setTimeout(initCharts, 1500);
-    }
-
-    const isVip = user.email === "onurtosuner@gmail.com" || localStorage.getItem("analyzer_access") === "true";
-    if (isVip) {
-      if (typeof window.unlockAnalyzerUI === "function") window.unlockAnalyzerUI();
-    } else {
-      if (typeof window.lockAnalyzerUI === "function") window.lockAnalyzerUI();
     }
   } else {
     window.currentUser = null;
