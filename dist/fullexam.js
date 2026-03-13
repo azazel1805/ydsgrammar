@@ -2,8 +2,6 @@
    fullexam.js  –  YDS Full Practice Exam Engine
    ============================================================ */
 
-// CATEGORICAL_MINI_LIST is now managed in miniexams.js
-
 const FULL_EXAM_LIST = [
   { id: 'full1', label: 'Tam Deneme 1', file: '/exams/full/fullexam1.json' },
   { id: 'full2', label: 'Tam Deneme 2', file: '/exams/full/fullexam2.json' },
@@ -22,44 +20,56 @@ const FULL_EXAM_LIST = [
   { id: 'full15', label: 'Tam Deneme 15', file: '/exams/full/fullexam15.json' }
 ];
 
+const FREE_EXAM_LIST = [
+  { id: 'free1', label: 'Ücretsiz Deneme 1', file: '/exams/full/fullexam16.json' },
+  { id: 'free2', label: 'Ücretsiz Deneme 2', file: '/exams/full/fullexam17.json' },
+  { id: 'free3', label: 'Ücretsiz Deneme 3', file: '/exams/full/fullexam18.json' },
+  { id: 'free4', label: 'Ücretsiz Deneme 4', file: '/exams/full/fullexam19.json' },
+  { id: 'free5', label: 'Ücretsiz Deneme 5', file: '/exams/full/fullexam20.json' }
+];
+
 // ── State ────────────────────────────────────────────────────
 let feExamData = null;
 let feAnswers = {};          // { questionId: 'A' }
 let feTimerRef = null;
 let feSecondsLeft = 0;
 let feStarted = false;
+let feCurrentIdx = 0;
 
-// ── HTML injected into tab-fullexam ─────────────────────────
-const fullExamHTML = /* html */`
+// ── HTML Templates ───────────────────────────────────────────
+
+function getSelectorHTML(list, title, isPremium) {
+  const icon = isPremium ? 'fa-crown text-yellow-500' : 'fa-gift text-green-500';
+  const headerLabel = isPremium ? 'Premium Deneme Merkezi' : 'Ücretsiz Deneme Merkezi';
+  const gradient = isPremium ? 'from-red-800 to-red-900' : 'from-green-700 to-green-800';
+  const badgeClass = isPremium ? 'bg-red-800' : 'bg-green-700';
+  const startBtnGradient = isPremium ? 'from-red-800 to-red-700 shadow-red-900/40' : 'from-green-700 to-green-600 shadow-green-900/40';
+
+  return /* html */`
 <div class="max-w-5xl mx-auto px-4 py-10">
-
-  <!-- Header card -->
   <div class="text-center mb-10">
-    <div class="inline-flex items-center gap-3 bg-gradient-to-r from-red-800 to-red-900 text-white px-6 py-3 rounded-2xl shadow-xl mb-6">
-      <i class="fas fa-crown text-xl text-yellow-500"></i>
-      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">Premium Deneme Merkezi</span>
+    <div class="inline-flex items-center gap-3 bg-gradient-to-r ${gradient} text-white px-6 py-3 rounded-2xl shadow-xl mb-6">
+      <i class="fas ${icon} text-xl"></i>
+      <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">${headerLabel}</span>
     </div>
-    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">Özel Hazırlanmış Deneme Sınavları</h2>
+    <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">${title}</h2>
     <p class="text-slate-500 text-sm">YDS zorluk seviyesinde, 80 soruluk tam denemeler.</p>
-</div>
+  </div>
 
-  <!-- Exam selector -->
-  <div id="feStartScreen" class="space-y-12">
-    
-    <!-- Full Exams Section -->
+  <div class="space-y-12">
     <section>
       <div class="flex items-center gap-3 mb-6">
-        <div class="h-8 w-1 bg-red-800 rounded-full"></div>
-        <h3 class="text-xl font-bold text-slate-800">Tam Deneme Sınavları (80 Soru)</h3>
+        <div class="h-8 w-1 ${badgeClass} rounded-full"></div>
+        <h3 class="text-xl font-bold text-slate-800">${title} (80 Soru)</h3>
       </div>
       <div class="grid md:grid-cols-2 gap-4">
-        ${FULL_EXAM_LIST.map(e => `
-          <div onclick="feSelectExam('${e.id}')" id="feCard-${e.id}"
+        ${list.map(e => `
+          <div onclick="feSelectExam('${e.id}', this)" id="feCard-${e.id}"
             class="fe-exam-card cursor-pointer border-2 border-slate-200 rounded-2xl p-6 hover:border-red-300 hover:shadow-lg transition-all group relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <div class="relative z-10">
               <div class="flex items-center gap-3 mb-3">
-                <div class="w-12 h-12 rounded-xl bg-red-800 flex items-center justify-center text-white shadow-lg">
+                <div class="w-12 h-12 rounded-xl ${badgeClass} flex items-center justify-center text-white shadow-lg">
                   <i class="fas fa-file-alt text-lg"></i>
                 </div>
                 <div>
@@ -76,9 +86,8 @@ const fullExamHTML = /* html */`
       </div>
     </section>
 
-
-    <div id="feSelectedInfo" class="hidden bg-slate-900 border border-slate-800 rounded-2xl p-6 flex items-start gap-4 shadow-2xl">
-      <div class="w-12 h-12 rounded-full bg-red-800 flex items-center justify-center shrink-0">
+    <div class="feSelectedInfo hidden bg-slate-900 border border-slate-800 rounded-2xl p-6 flex items-start gap-4 shadow-2xl">
+      <div class="w-12 h-12 rounded-full ${badgeClass} flex items-center justify-center shrink-0">
         <i class="fas fa-info-circle text-white text-xl"></i>
       </div>
       <div>
@@ -88,16 +97,21 @@ const fullExamHTML = /* html */`
     </div>
 
     <div class="flex justify-center pb-10">
-      <button id="feStartBtn" onclick="feStartExam()" disabled
-        class="px-12 py-5 bg-gradient-to-r from-red-800 to-red-700 text-white rounded-2xl font-black text-xl shadow-2xl shadow-red-900/40 hover:shadow-red-900/60 hover:scale-105 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:scale-100 flex items-center gap-4">
+      <button onclick="feStartExam(this)" disabled
+        class="feStartBtn px-12 py-5 bg-gradient-to-r ${startBtnGradient} text-white rounded-2xl font-black text-xl shadow-2xl hover:scale-105 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:scale-100 flex items-center gap-4">
         <i class="fas fa-play-circle text-2xl"></i>
         SINAVI BAŞLAT
       </button>
     </div>
   </div>
+</div>
+`;
+}
 
+const engineHTML = /* html */`
+<div class="max-w-5xl mx-auto px-4 py-10">
   <!-- Exam screen (hidden until started) -->
-  <div id="feExamScreen" class="hidden">
+  <div id="feExamScreen" class="">
 
     <!-- Sticky top bar -->
     <div class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm mb-6 rounded-xl">
@@ -127,28 +141,21 @@ const fullExamHTML = /* html */`
 
     <!-- Two-column layout: question + nav grid -->
     <div class="flex gap-6 items-start">
-
       <!-- Question panel -->
       <div class="flex-1 min-w-0">
-
         <!-- Section label -->
         <div id="feSectionLabel" class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 mb-4 text-sm text-slate-600 font-medium leading-snug"></div>
-
-        <!-- Passage/leading text (reading, dialogue, paragraph) -->
+        <!-- Passage/leading text -->
         <div id="fePassageBox" class="hidden bg-blue-50 border-l-4 border-blue-400 rounded-xl p-5 mb-4 text-sm text-slate-700 leading-relaxed overflow-y-auto max-h-[300px]"></div>
-
-        <!-- Reading comprehension notice -->
+        <!-- Reading notice -->
         <div id="feReadingNotice" class="hidden bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-700 flex items-center gap-2">
           <i class="fas fa-book text-amber-500"></i>
           <span>Bu soru için orijinal sınav kağıdındaki <strong id="fePassageTitle"></strong> metnini okuyunuz.</span>
         </div>
-
         <!-- Question -->
         <div id="feQuestion" class="font-semibold text-slate-800 text-base md:text-lg leading-relaxed mb-6"></div>
-
         <!-- Options -->
         <div id="feOptions" class="space-y-3"></div>
-
         <!-- Nav buttons -->
         <div class="flex justify-between mt-8">
           <button onclick="feNavQuestion(-1)" class="flex items-center gap-2 px-5 py-3 border border-slate-300 rounded-xl text-slate-600 hover:bg-slate-50 font-medium transition-colors">
@@ -159,7 +166,6 @@ const fullExamHTML = /* html */`
           </button>
         </div>
       </div>
-
       <!-- Question grid sidebar -->
       <div class="w-48 shrink-0 hidden lg:block sticky top-28">
         <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Sorular</p>
@@ -186,11 +192,7 @@ const fullExamHTML = /* html */`
       <h3 class="text-2xl font-extrabold text-slate-800 mb-1" style="font-family:'Playfair Display',serif;">Sonuçlarınız</h3>
       <p id="feScoreMsg" class="text-slate-500 text-sm"></p>
     </div>
-
-    <!-- Section breakdown -->
     <div id="feSectionBreakdown" class="grid sm:grid-cols-2 gap-4 mb-8"></div>
-
-    <!-- Buttons -->
     <div class="flex flex-wrap justify-center gap-4">
       <button onclick="feReviewAnswers()" class="px-8 py-3 bg-slate-800 text-white rounded-xl font-bold hover:bg-slate-700 transition-colors flex items-center gap-2">
         <i class="fas fa-search"></i> Cevapları İncele
@@ -200,53 +202,76 @@ const fullExamHTML = /* html */`
       </button>
     </div>
   </div>
-
 </div>
 `;
 
-// ─── Current question index ───────────────────────────────────
-let feCurrentIdx = 0;
+const fullExamHTML = getSelectorHTML(FULL_EXAM_LIST, 'Özel Hazırlanmış Deneme Sınavları', true);
+const freeExamsHTML = getSelectorHTML(FREE_EXAM_LIST, 'Ücretsiz Deneme Sınavları', false);
 
 // ─── Init ────────────────────────────────────────────────────
 function initFullExam() {
   const container = document.getElementById('tab-fullexam');
-  if (!container) return;
-  container.innerHTML = fullExamHTML;
+  if (container) {
+    container.innerHTML = fullExamHTML;
+  }
+  
+  const freeContainer = document.getElementById('tab-freeexams');
+  if (freeContainer) {
+    freeContainer.innerHTML = freeExamsHTML;
+  }
+
+  // Global engine injection (if not already there)
+  const engineContainer = document.getElementById('globalFullExamContainer');
+  if (engineContainer) {
+    engineContainer.innerHTML = engineHTML;
+  }
 }
 
 // ─── Exam card selection ─────────────────────────────────────
-async function feSelectExam(id) {
+async function feSelectExam(id, cardEl) {
+  // Clear all selections in both tabs
   document.querySelectorAll('.fe-exam-card').forEach(c => {
-    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50', 'border-red-300', 'bg-red-50/30');
+    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50', 'border-red-300', 'bg-red-50/30', 'border-green-500', 'bg-green-50');
   });
-  const card = document.getElementById(`feCard-${id}`);
-  if (card) {
-    if (id.startsWith('full')) {
-      card.classList.add('border-red-500', 'shadow-lg', 'bg-red-50');
+
+  const isFree = id.startsWith('free');
+  if (cardEl) {
+    if (isFree) {
+      cardEl.classList.add('border-green-500', 'shadow-lg', 'bg-green-50');
     } else {
-      card.classList.add('border-red-300', 'bg-red-50/30');
+      cardEl.classList.add('border-red-500', 'shadow-lg', 'bg-red-50');
     }
   }
-  document.getElementById('feSelectedInfo').classList.remove('hidden');
-  document.getElementById('feStartBtn').disabled = false;
-  document.getElementById('feStartBtn').dataset.selectedId = id;
+
+  const parent = cardEl.closest('.tab-content');
+  const info = parent.querySelector('.feSelectedInfo');
+  const btn = parent.querySelector('.feStartBtn');
+
+  if (info) info.classList.remove('hidden');
+  if (btn) {
+    btn.disabled = false;
+    btn.dataset.selectedId = id;
+  }
 }
 
 // ─── Start exam ──────────────────────────────────────────────
-async function feStartExam() {
-  const btn = document.getElementById('feStartBtn');
+async function feStartExam(btn) {
   const examId = btn.dataset.selectedId;
   if (!examId) return;
 
-  let exam = FULL_EXAM_LIST.find(e => e.id === examId);
+  let exam = FULL_EXAM_LIST.find(e => e.id === examId) || FREE_EXAM_LIST.find(e => e.id === examId);
   if (!exam) {
-    for (const cat of CATEGORICAL_MINI_LIST) {
-      exam = cat.exams.find(e => e.id === examId);
-      if (exam) break;
+    // Check miniexams if any
+    if (typeof CATEGORICAL_MINI_LIST !== 'undefined') {
+        for (const cat of CATEGORICAL_MINI_LIST) {
+            exam = cat.exams.find(e => e.id === examId);
+            if (exam) break;
+        }
     }
   }
   if (!exam) return;
 
+  const originalContent = btn.innerHTML;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Yükleniyor...';
   btn.disabled = true;
 
@@ -255,7 +280,7 @@ async function feStartExam() {
     feExamData = await res.json();
   } catch (err) {
     alert('Sınav yüklenirken hata oluştu.');
-    btn.innerHTML = '<i class="fas fa-play"></i> Sınavı Başlat';
+    btn.innerHTML = originalContent;
     btn.disabled = false;
     return;
   }
@@ -265,8 +290,16 @@ async function feStartExam() {
   feSecondsLeft = feExamData.meta.duration_minutes * 60;
   feStarted = true;
 
-  document.getElementById('feStartScreen').classList.add('hidden');
+  // Hide selector screen (all selectors)
+  document.querySelectorAll('.tab-content').forEach(tc => {
+      const selector = tc.querySelector('.max-w-5xl'); // This is the container we put in the tab
+      if (selector) selector.classList.add('hidden');
+  });
+
+  // Show global engine
+  document.getElementById('globalFullExamContainer').classList.remove('hidden');
   document.getElementById('feExamScreen').classList.remove('hidden');
+  document.getElementById('feResultScreen').classList.add('hidden');
 
   feRenderQGrid();
   feRenderQuestion();
@@ -295,6 +328,8 @@ function feUpdateTimerDisplay() {
   el.textContent = `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
   if (feSecondsLeft < 600) {
     el.classList.add('text-red-400');
+  } else {
+    el.classList.remove('text-red-400');
   }
 }
 
@@ -304,30 +339,26 @@ function feRenderQuestion() {
   const q = feExamData.questions[feCurrentIdx];
   if (!q) return;
 
-  // Qnum + progress
   document.getElementById('feQNum').textContent = `${feCurrentIdx + 1}/${feExamData.questions.length}`;
   const answered = Object.keys(feAnswers).length;
   document.getElementById('feAnsweredCount').textContent = `${answered} cevaplanmış`;
   document.getElementById('feProgressBar').style.width = `${(answered / feExamData.questions.length) * 100}%`;
 
-  // Section label
   const section = feExamData.sections.find(s => s.id === q.section_id);
   document.getElementById('feSectionLabel').textContent = section ? section.label : '';
 
-  // Passage / leading text / reading notice
   const passageBox = document.getElementById('fePassageBox');
   const readingNotice = document.getElementById('feReadingNotice');
   const passTitle = document.getElementById('fePassageTitle');
 
   passageBox.classList.add('hidden');
   readingNotice.classList.add('hidden');
-  passageBox.innerHTML = ''; // Ensure we use innerHTML for better formatting
+  passageBox.innerHTML = '';
 
-    const sectionType = (section ? section.id : '').toLowerCase();
+  const sectionType = (section ? section.id : '').toLowerCase();
   const isCloze = sectionType.includes('cloze');
   const isReading = sectionType.includes('reading');
 
-  // 1. DISPLAY PASSAGE
   let passageText = "";
   if (q.passage_id && feExamData.passages) {
       const pObj = feExamData.passages.find(p => p.id === q.passage_id);
@@ -345,12 +376,10 @@ function feRenderQuestion() {
       passageBox.classList.remove('hidden');
   }
 
-  // 2. DISPLAY QUESTION TEXT
   let qDisplay = q.question || "";
   if (isCloze) {
       qDisplay = `<b>SORU ${feCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
   } else if (isReading && passageText) {
-      // Cleanup redundancy
       if (qDisplay.includes(passageText.substring(0, 50))) {
           qDisplay = qDisplay.replace(passageText.substring(0, 100), "").trim();
       }
@@ -366,14 +395,12 @@ function feRenderQuestion() {
   }
   document.getElementById('feQuestion').innerHTML = qDisplay.replace(/\n/g, '<br>');
 
-  // Options
   const optBox = document.getElementById('feOptions');
   optBox.innerHTML = '';
   const userAnswer = feAnswers[q.id];
   Object.entries(q.options).forEach(([key, val]) => {
     const isSelected = userAnswer === key;
     const btn = document.createElement('button');
-    btn.id = `feOpt-${key}`;
     btn.className = [
       'w-full text-left px-4 py-3 rounded-xl border-2 font-medium transition-all text-sm flex items-start gap-3 group',
       isSelected
@@ -388,33 +415,28 @@ function feRenderQuestion() {
     optBox.appendChild(btn);
   });
 
-  // Grid highlight
   feUpdateQGrid();
 }
 
-// ─── Select answer ───────────────────────────────────────────
 function feSelectAnswer(qId, key) {
   feAnswers[qId] = key;
-  feRenderQuestion();   // re-render with selection
+  feRenderQuestion();
 }
 
-// ─── Navigation ──────────────────────────────────────────────
 function feNavQuestion(delta) {
   const newIdx = feCurrentIdx + delta;
   if (newIdx < 0 || newIdx >= feExamData.questions.length) return;
   feCurrentIdx = newIdx;
   feRenderQuestion();
-  // Scroll to top of exam area
-  document.getElementById('feExamScreen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function feJumpQuestion(idx) {
   feCurrentIdx = idx;
   feRenderQuestion();
-  document.getElementById('feExamScreen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ─── Question grid ───────────────────────────────────────────
 function feRenderQGrid() {
   if (!feExamData) return;
   const grid = document.getElementById('feQGrid');
@@ -425,7 +447,7 @@ function feRenderQGrid() {
     const btn = document.createElement('button');
     btn.id = `feGridBtn-${idx}`;
     btn.className = 'w-7 h-7 rounded text-xs font-bold transition-all';
-    btn.textContent = q.id;
+    btn.textContent = idx + 1;
     btn.onclick = () => feJumpQuestion(idx);
     grid.appendChild(btn);
   });
@@ -447,7 +469,6 @@ function feUpdateQGrid() {
   });
 }
 
-// ─── Finish confirmation ──────────────────────────────────────
 function feFinishConfirm() {
   const unanswered = feExamData.questions.length - Object.keys(feAnswers).length;
   const msg = unanswered > 0
@@ -456,7 +477,6 @@ function feFinishConfirm() {
   if (confirm(msg)) feFinish();
 }
 
-// ─── Finish & show results ────────────────────────────────────
 function feFinish() {
   if (feTimerRef) clearInterval(feTimerRef);
   feStarted = false;
@@ -465,7 +485,6 @@ function feFinish() {
   let total = 0;
   const sectionStats = {};
 
-  // Init section stats
   feExamData.sections.forEach(s => {
     sectionStats[s.id] = {
       label: s.label.length > 55 ? s.label.substring(0, 52) + '...' : s.label,
@@ -504,7 +523,6 @@ function feFinish() {
   else msg = '💪 Başlangıç için iyi! Düzenli çalışmayla gelişeceksiniz.';
   document.getElementById('feScoreMsg').textContent = `${pct}% — ${msg}`;
 
-  // Section breakdown
   const breakdown = document.getElementById('feSectionBreakdown');
   breakdown.innerHTML = '';
 
@@ -523,7 +541,6 @@ function feFinish() {
           </div>`;
   });
 
-  // FIREBASE SAVE
   if (typeof window.saveQuizScoreFirestore === "function") {
     const xp = total * 10;
     const topic = (feExamData && feExamData.meta) ? feExamData.meta.title : "Full Exam";
@@ -534,7 +551,6 @@ function feFinish() {
   }
 }
 
-// ─── Review mode ─────────────────────────────────────────────
 function feReviewAnswers() {
   feCurrentIdx = 0;
   document.getElementById('feResultScreen').classList.add('hidden');
@@ -547,7 +563,6 @@ function feRenderReviewQuestion() {
   const q = feExamData.questions[feCurrentIdx];
   if (!q) return;
 
-  // Basic info
   const section = feExamData.sections.find(s => s.id === q.section_id);
   document.getElementById('feSectionLabel').textContent = (section ? section.label : '') + ' [İNCELEME MODU]';
   document.getElementById('feQNum').textContent = `${feCurrentIdx + 1}/${feExamData.questions.length}`;
@@ -560,12 +575,12 @@ function feRenderReviewQuestion() {
   readingNotice.classList.add('hidden');
 
   if (q.leading_text) {
-    passageBox.textContent = q.leading_text;
+    passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
     passageBox.classList.remove('hidden');
   } else if (q.passage_id) {
     const passage = feExamData.passages.find(p => p.id === q.passage_id);
     if (passage && passage.text) {
-      passageBox.textContent = passage.text;
+      passageBox.innerHTML = passage.text.replace(/\n/g, '<br>');
       passageBox.classList.remove('hidden');
     } else if (passage) {
       passTitle.textContent = `"${passage.title}"`;
@@ -573,7 +588,7 @@ function feRenderReviewQuestion() {
     }
   }
 
-  document.getElementById('feQuestion').textContent = q.question;
+  document.getElementById('feQuestion').innerHTML = q.question.replace(/\n/g, '<br>');
 
   const optBox = document.getElementById('feOptions');
   optBox.innerHTML = '';
@@ -596,13 +611,8 @@ function feRenderReviewQuestion() {
           <span class="leading-snug pt-0.5">${val}</span>`;
     optBox.appendChild(optEl);
   });
-
-  // Use nav buttons but rewire to review mode
-  document.querySelector('button[onclick="feNavQuestion(-1)"]').onclick = () => { feCurrentIdx = Math.max(0, feCurrentIdx - 1); feRenderReviewQuestion(); };
-  document.querySelector('button[onclick="feNavQuestion(1)"]').onclick = () => { feCurrentIdx = Math.min(feExamData.questions.length - 1, feCurrentIdx + 1); feRenderReviewQuestion(); };
 }
 
-// ─── Reset ───────────────────────────────────────────────────
 function feResetExam() {
   if (feTimerRef) clearInterval(feTimerRef);
   feExamData = null;
@@ -610,14 +620,22 @@ function feResetExam() {
   feStarted = false;
   feCurrentIdx = 0;
 
-  document.getElementById('feResultScreen').classList.add('hidden');
-  document.getElementById('feExamScreen').classList.add('hidden');
-  document.getElementById('feStartScreen').classList.remove('hidden');
-  document.getElementById('feSelectedInfo').classList.add('hidden');
-  document.getElementById('feStartBtn').disabled = true;
-  delete document.getElementById('feStartBtn').dataset.selectedId;
+  document.getElementById('globalFullExamContainer').classList.add('hidden');
+  
+  // Show all selectors again
+  document.querySelectorAll('.tab-content').forEach(tc => {
+      const selector = tc.querySelector('.max-w-5xl');
+      if (selector) selector.classList.remove('hidden');
+  });
+
+  // Reset button states
+  document.querySelectorAll('.feStartBtn').forEach(btn => {
+      btn.disabled = true;
+      delete btn.dataset.selectedId;
+  });
+  document.querySelectorAll('.feSelectedInfo').forEach(info => info.classList.add('hidden'));
   document.querySelectorAll('.fe-exam-card').forEach(c =>
-    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50'));
+    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50', 'border-green-500', 'bg-green-50'));
 }
 
 // Make everything global

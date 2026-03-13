@@ -1,0 +1,1222 @@
+{
+  "meta": {
+    "title": "Advanced English Proficiency Exam",
+    "subtitle": "YDS/YDT Mock Part 1",
+    "total_questions": 80,
+    "duration_minutes": 180
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 6
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar",
+      "from": 7,
+      "to": 16
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 17,
+      "to": 26
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 27,
+      "to": 36
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 37,
+      "to": 42
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 43,
+      "to": 62
+    },
+    {
+      "id": "dialogue_completion",
+      "label": "Dialogue Completion",
+      "from": 63,
+      "to": 67
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 68,
+      "to": 71
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 72,
+      "to": 75
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 76,
+      "to": 80
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Industrial Revolution was not merely a period of technological innovation; it represented a fundamental shift in the socio-economic (17) ---- of Western society. As factories began to dominate the landscape, the traditional agrarian lifestyle (18) ---- way to urbanization. Many workers, (19) ---- by the promise of steady wages, migrated to cities that were often ill-equipped to handle the sudden influx. Consequently, living conditions in these urban centers deteriorated (20) ----, leading to the spread of diseases. Despite these hardships, the era (21) ---- the groundwork for the modern global economy."
+    },
+    {
+      "id": "cloze_2",
+      "text": "Quantum mechanics is a branch of physics that deals with the behavior of matter and energy at the molecular level. It has (22) ---- our understanding of the physical world, challenging classical notions of causality. In the quantum realm, particles can exist in multiple states simultaneously (23) ---- they are observed. This phenomenon, known as superposition, suggests that the act of measurement (24) ---- influences the outcome of an experiment. While the mathematical framework is incredibly (25) ----, the conceptual implications remain a subject of intense debate among (26) ---- and philosophers alike."
+    },
+    {
+      "id": "p1",
+      "text": "The concept of 'epigenetics' refers to the study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence. Unlike genetic mutations, which change the code itself, epigenetic modifications act like switches, turning genes on or off in response to environmental factors such as diet, stress, and toxins. One of the most well-documented mechanisms is DNA methylation, where a methyl group is added to the DNA molecule, typically silencing the gene. This field has revolutionized our understanding of biology, suggesting that our lifestyle choices and environments can leave a molecular legacy not only on our own health but potentially on that of our descendants. However, the degree to which these 'acquired' traits are truly passed down through multiple generations in humans remains a subject of intense scientific debate, as the mammalian embryo undergoes extensive 'reprogramming' to clear most epigenetic marks."
+    },
+    {
+      "id": "p2",
+      "text": "The Industrial Revolution is often portrayed as a sudden explosion of technological progress, but many historians now view it as the culmination of centuries of incremental social and economic shifts. Pre-industrial Britain possessed a unique combination of high wages and cheap energy, which created a powerful incentive for entrepreneurs to develop labor-saving machinery. The Steam engine, often cited as the catalyst, was initially an inefficient pump used in coal mines. It took decades of refinement by James Watt and others to make it versatile enough for factories and locomotion. This gradual evolution suggests that innovation is not just about 'great men' but about a fertile environment where economic needs meet technical feasibility. Furthermore, the social cost—including child labor and urban squalor—highlights that progress often comes with profound ethical trade-offs."
+    },
+    {
+      "id": "p3",
+      "text": "Bio-luminescence, the production and emission of light by a living organism, is a phenomenon found predominantly in marine ecosystems. It occurs through a chemical reaction involving a light-emitting molecule called luciferin and an enzyme called luciferase. In the deep sea, where sunlight cannot penetrate, bioluminescence serves a variety of purposes. Some species use it for camouflage through 'counter-illumination,' matching the faint light from the surface to hide their silhouettes from predators below. Others use bioluminescent lures to attract prey or flashes to startle enemies. The complexity of these systems evolved independently dozens of times across different taxa, a classic example of convergent evolution. Scientists are now harnessing these natural properties for medical research, using bioluminescent markers to track the spread of cancer cells or the effectiveness of new drugs within living tissue."
+    },
+    {
+      "id": "p4",
+      "text": "The philosophy of Existentialism, which gained prominence in the mid-20th century through thinkers like Jean-Paul Sartre and Albert Camus, posits that existence precedes essence. This means that individuals are not born with a predetermined purpose or nature; rather, they define themselves through their choices and actions. This radical freedom, however, is a double-edged sword, leading to what Sartre called 'anguish'—the realization of the immense responsibility one carries for one's own identity. While existentialism is often associated with nihilism or despair, its proponents argue it is a philosophy of empowerment. By accepting that the universe is inherently indifferent or 'absurd,' the individual is liberated to create their own meaning and values, asserting their agency in an otherwise silent world."
+    },
+    {
+      "id": "p5",
+      "text": "In the realm of linguistics, the 'Sapir-Whorf Hypothesis' suggests that the structure of a language influences its speakers' cognition and world-view. The strong version of this theory, linguistic determinism, argues that language dictates thought—if a language lacks a word for a concept, its speakers cannot conceive of it. This extreme view has largely been discredited by modern cognitive science. However, the 'weak' version, linguistic relativity, remains influential. It suggests that language shapes our tendencies or the ease with which we categorize information. For instance, speakers of languages that use cardinal directions (north, south) instead of relative terms (left, right) tend to have a much more acute sense of spatial orientation. Thus, while language may not imprison our thoughts, it certainly provides a particular lens through which we interpret reality."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The researcher's findings were so ---- that they prompted a complete re-evaluation of the existing theories in the field of linguistics.",
+      "options": {
+        "A": "redundant",
+        "B": "trivial",
+        "C": "profound",
+        "D": "negligible",
+        "E": "ambiguous"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "Despite the complexity of the negotiations, the diplomat managed to ---- a deal that satisfied both parties involved.",
+      "options": {
+        "A": "relinquish",
+        "B": "broker",
+        "C": "hinder",
+        "D": "aggravate",
+        "E": "jeopardize"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "The rapid ---- of urban areas into the surrounding countryside has raised significant environmental concerns regarding biodiversity loss.",
+      "options": {
+        "A": "encroachment",
+        "B": "depletion",
+        "C": "stagnation",
+        "D": "rectification",
+        "E": "elimination"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "vocabulary",
+      "question": "Due to his ---- behavior during the trial, the judge decided to impose a stricter sentence than initially anticipated.",
+      "options": {
+        "A": "conciliatory",
+        "B": "meticulous",
+        "C": "defiant",
+        "D": "plausible",
+        "E": "benevolent"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "vocabulary",
+      "question": "The new policy was designed to ---- the economic disparities that had been widening between the northern and southern regions.",
+      "options": {
+        "A": "intensify",
+        "B": "mitigate",
+        "C": "bypass",
+        "D": "nullify",
+        "E": "provoke"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "vocabulary",
+      "question": "The author's latest novel is a ---- critique of contemporary consumer culture, using satire to highlight the absurdity of modern life.",
+      "options": {
+        "A": "scathing",
+        "B": "lenient",
+        "C": "vague",
+        "D": "redundant",
+        "E": "superficial"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "grammar",
+      "question": "Had the committee known about the potential risks earlier, they ---- the project much sooner.",
+      "options": {
+        "A": "would cancel",
+        "B": "will have cancelled",
+        "C": "would have cancelled",
+        "D": "could cancel",
+        "E": "must have cancelled"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "grammar",
+      "question": "Rarely ---- such a talented musician in this small town, so the concert was a highly anticipated event.",
+      "options": {
+        "A": "we have seen",
+        "B": "have we seen",
+        "C": "we had seen",
+        "D": "do we see",
+        "E": "we see"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 9,
+      "section_id": "grammar",
+      "question": "The environmental impact of the new dam is being studied ---- its potential to provide renewable energy to the region.",
+      "options": {
+        "A": "in spite of",
+        "B": "with a view to",
+        "C": "in terms of",
+        "D": "as opposed to",
+        "E": "on behalf of"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 10,
+      "section_id": "grammar",
+      "question": "By the time the rescue team reached the stranded hikers, they ---- in the freezing temperatures for over forty-eight hours.",
+      "options": {
+        "A": "had been surviving",
+        "B": "were surviving",
+        "C": "have survived",
+        "D": "survived",
+        "E": "are surviving"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 11,
+      "section_id": "grammar",
+      "question": "The CEO insisted that the report ---- by the end of the week, regardless of the additional workload.",
+      "options": {
+        "A": "is finished",
+        "B": "be finished",
+        "C": "to be finished",
+        "D": "finishes",
+        "E": "finished"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 12,
+      "section_id": "grammar",
+      "question": "The witness's testimony was ---- inconsistent ---- the prosecution decided to call another person to the stand.",
+      "options": {
+        "A": "both / and",
+        "B": "either / or",
+        "C": "neither / nor",
+        "D": "so / that",
+        "E": "not only / but also"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "grammar",
+      "question": "The university has implemented new regulations ---- to improve the academic performance of its undergraduate students.",
+      "options": {
+        "A": "aimed",
+        "B": "aiming",
+        "C": "having aimed",
+        "D": "to aim",
+        "E": "to have aimed"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "grammar",
+      "question": "Scientists are still trying to determine the extent ---- climate change is affecting the migratory patterns of birds.",
+      "options": {
+        "A": "which",
+        "B": "of whose",
+        "C": "at which",
+        "D": "to which",
+        "E": "where"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "grammar",
+      "question": "The budget was allocated ---- the various departments based on their specific needs and previous performance.",
+      "options": {
+        "A": "through",
+        "B": "among",
+        "C": "between",
+        "D": "along",
+        "E": "towards"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "grammar",
+      "question": "No sooner had the government announced the tax hike ---- protests broke out in several major cities across the country.",
+      "options": {
+        "A": "when",
+        "B": "then",
+        "C": "than",
+        "D": "while",
+        "E": "as"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "cloze_test",
+      "question": "17",
+      "options": {
+        "A": "fabric",
+        "B": "margin",
+        "C": "obstacle",
+        "D": "dispute",
+        "E": "residue"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 18,
+      "section_id": "cloze_test",
+      "question": "18",
+      "options": {
+        "A": "made",
+        "B": "gave",
+        "C": "lost",
+        "D": "found",
+        "E": "took"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 19,
+      "section_id": "cloze_test",
+      "question": "19",
+      "options": {
+        "A": "lured",
+        "B": "having lured",
+        "C": "luring",
+        "D": "to lure",
+        "E": "to be lured"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 20,
+      "section_id": "cloze_test",
+      "question": "20",
+      "options": {
+        "A": "superficially",
+        "B": "gradually",
+        "C": "rapidly",
+        "D": "optimistically",
+        "E": "marginally"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 21,
+      "section_id": "cloze_test",
+      "question": "21",
+      "options": {
+        "A": "lays",
+        "B": "lied",
+        "C": "laid",
+        "D": "lain",
+        "E": "laying"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 22,
+      "section_id": "cloze_test",
+      "question": "22",
+      "options": {
+        "A": "revolutionized",
+        "B": "demolished",
+        "C": "concealed",
+        "D": "diminished",
+        "E": "perpetuated"
+      },
+      "correct": "A",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 23,
+      "section_id": "cloze_test",
+      "question": "23",
+      "options": {
+        "A": "until",
+        "B": "whereas",
+        "C": "since",
+        "D": "if",
+        "E": "even"
+      },
+      "correct": "A",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 24,
+      "section_id": "cloze_test",
+      "question": "24",
+      "options": {
+        "A": "intentionally",
+        "B": "inherently",
+        "C": "scarcely",
+        "D": "adversely",
+        "E": "mutually"
+      },
+      "correct": "B",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 25,
+      "section_id": "cloze_test",
+      "question": "25",
+      "options": {
+        "A": "robust",
+        "B": "fragile",
+        "C": "arbitrary",
+        "D": "obsolete",
+        "E": "vulnerable"
+      },
+      "correct": "A",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 26,
+      "section_id": "cloze_test",
+      "question": "26",
+      "options": {
+        "A": "physicists",
+        "B": "biologists",
+        "C": "architects",
+        "D": "economists",
+        "E": "geologists"
+      },
+      "correct": "A",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 27,
+      "section_id": "sentence_completion",
+      "question": "Although the solar panels are expensive to install initially, ----.",
+      "options": {
+        "A": "they require constant maintenance which adds to the cost",
+        "B": "the government has decided to reduce subsidies for green energy",
+        "C": "the long-term energy savings far outweigh the upfront investment",
+        "D": "most homeowners prefer traditional energy sources for reliability",
+        "E": "they are not as efficient in regions with frequent cloud cover"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "sentence_completion",
+      "question": "----, the museum decided to extend the exhibition by another month.",
+      "options": {
+        "A": "Because the curator was dissatisfied with the turnout",
+        "B": "Since the public interest exceeded all expectations",
+        "C": "Although several artifacts were returned to their owners",
+        "D": "Unless there is a significant increase in ticket sales",
+        "E": "If the building undergoes structural repairs during the winter"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "sentence_completion",
+      "question": "Unless the international community takes immediate action to reduce carbon emissions, ----.",
+      "options": {
+        "A": "global temperatures would have remained stable",
+        "B": "the effects of global warming will become irreversible",
+        "C": "renewable energy sources are becoming more affordable",
+        "D": "many countries have already met their climate targets",
+        "E": "there was a noticeable decline in industrial production"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "sentence_completion",
+      "question": "Genetic engineering has the potential to eradicate hereditary diseases, ----.",
+      "options": {
+        "A": "so it is widely accepted without any ethical concerns",
+        "B": "nevertheless it has already been used to cure everyone",
+        "C": "yet it also raises significant ethical and social questions",
+        "D": "because scientists are not interested in human DNA",
+        "E": "since it is a technique that was discovered centuries ago"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "sentence_completion",
+      "question": "The primary reason why the company failed was not a lack of capital ----.",
+      "options": {
+        "A": "as long as they had a very skilled management team",
+        "B": "but rather its inability to adapt to changing market trends",
+        "C": "so they decided to open several new branches overseas",
+        "D": "whereas the competitors were struggling even more",
+        "E": "even though the employees were highly motivated"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "sentence_completion",
+      "question": "Just as the Renaissance transformed European art and culture, ----.",
+      "options": {
+        "A": "the digital age is reshaping the way we communicate today",
+        "B": "the Middle Ages were characterized by feudalism",
+        "C": "many artists struggled to find wealthy patrons",
+        "D": "science and religion were often in conflict",
+        "E": "ancient Greek philosophy was largely forgotten"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "sentence_completion",
+      "question": "Despite being one of the most talented players on the team, ----.",
+      "options": {
+        "A": "he always arrives at practice earlier than anyone else",
+        "B": "his performance has consistently improved over the years",
+        "C": "he is often criticized for his lack of discipline on the field",
+        "D": "the coach considers him an indispensable part of the squad",
+        "E": "he has won several awards for his outstanding sportsmanship"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "sentence_completion",
+      "question": "While the internet has made information more accessible than ever, ----.",
+      "options": {
+        "A": "it has also led to the rapid spread of misinformation",
+        "B": "people used to spend more time in public libraries",
+        "C": "it is easy to find scholarly articles on various topics",
+        "D": "technology continues to advance at an incredible pace",
+        "E": "educational institutions are adopting online learning tools"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "sentence_completion",
+      "question": "In light of the recent economic downturn, many small businesses ----.",
+      "options": {
+        "A": "have been forced to downsize or close permanently",
+        "B": "are planning to expand their operations next year",
+        "C": "have seen a record-breaking increase in their profits",
+        "D": "were able to hire more staff members last month",
+        "E": "decided to increase the prices of their products"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "sentence_completion",
+      "question": "The bridge was closed to traffic for several hours ----.",
+      "options": {
+        "A": "so that the engineers can inspect the structural integrity",
+        "B": "after a minor collision between two heavy trucks",
+        "C": "because the weather is expected to be sunny all day",
+        "D": "unless the repairs are completed by the maintenance crew",
+        "E": "as if there were no other way to cross the river"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "translation",
+      "question": "The transition to a circular economy is essential not only for environmental sustainability but also for long-term economic resilience.",
+      "options": {
+        "A": "Döngüsel ekonomiye geçiş sadece çevresel sürdürülebilirlik için değil, aynı zamanda uzun vadeli ekonomik direnç için de gereklidir.",
+        "B": "Çevresel sürdürülebilirlik ve ekonomik direnç sağlamak için döngüsel ekonomiye geçmek zorunlu bir hal almıştır.",
+        "C": "Hem ekonomik direnç hem de çevresel sürdürülebilirlik döngüsel ekonomiye geçişle mümkün olacaktır.",
+        "D": "Döngüsel ekonomiye geçişin amacı, uzun vadeli ekonomik direnç ve çevresel sürdürülebilirliği bir araya getirmektir.",
+        "E": "Döngüsel ekonomiye geçmek, çevresel sürdürülebilirlik kadar uzun vadeli ekonomik direnci de beraberinde getirir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "translation",
+      "question": "Many historians argue that the fall of the Roman Empire was caused by a combination of internal strife and external invasions.",
+      "options": {
+        "A": "Roma İmparatorluğu'nun çöküşünün hem iç karışıklıklar hem de dış istilalar nedeniyle gerçekleştiği tarihçilerce bilinmektedir.",
+        "B": "Birçok tarihçi, Roma İmparatorluğu'nun çöküşüne iç çatışmaların ve dış saldırıların birleşiminin neden olduğunu savunmaktadır.",
+        "C": "İç çekişmeler ve dış istilalar bir araya gelince Roma İmparatorluğu'nun yıkılması kaçınılmaz olmuştur.",
+        "D": "Tarihçilerin çoğu, Roma İmparatorluğu'nun yıkılma sebebinin sadece dış istilalar değil iç karışıklıklar olduğunu söyler.",
+        "E": "Roma İmparatorluğu'nun çöküşü, birçok tarihçiye göre iç ve dış baskıların sonucunda meydana gelmiştir."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "translation",
+      "question": "By analyzing the chemical composition of stars, astronomers can gain insights into the early history of the universe.",
+      "options": {
+        "A": "Gökbilimciler evrenin erken tarihini anlamak için yıldızların kimyasal yapısını incelemek zorundadırlar.",
+        "B": "Yıldızların kimyasal bileşimini analiz ederek, gökbilimciler evrenin erken tarihi hakkında bilgi edinebilirler.",
+        "C": "Yıldızlardaki kimyasal değişimler, gökbilimcilere evrenin geçmişine dair önemli ipuçları sunmaktadır.",
+        "D": "Gökbilimciler, evrenin tarihini araştırırken yıldızların kimyasal bileşiminden faydalanırlar.",
+        "E": "Evrenin erken dönemlerine dair bilgiler, gökbilimcilerin yıldız analizleri sayesinde ortaya çıkmıştır."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "translation",
+      "question": "Yapay zekanın iş gücü piyasası üzerindeki etkisi, hem fırsatlar hem de zorluklar sunduğu için dünya çapında hararetli bir tartışma konusudur.",
+      "options": {
+        "A": "Artificial intelligence is a topic of debate because it creates many opportunities and challenges in the labor market.",
+        "B": "The impact of artificial intelligence on the labor market is a subject of heated debate worldwide as it presents both opportunities and challenges.",
+        "C": "Worldwide debates on artificial intelligence focus on whether it provides more opportunities than challenges in the market.",
+        "D": "Because of the challenges and opportunities it brings, artificial intelligence has become a global issue for workers.",
+        "E": "The reason why artificial intelligence is debated globally is that it affects the labor market in various ways."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "translation",
+      "question": "Güneş enerjisi gibi yenilenebilir enerji kaynakları, fosil yakıtlara olan bağımlılığımızı azaltmak için hayati öneme sahiptir.",
+      "options": {
+        "A": "Renewable energy sources, such as solar energy, are of vital importance to reduce our dependence on fossil fuels.",
+        "B": "To reduce dependence on fossil fuels, we must prioritize renewable energy sources like solar power.",
+        "C": "Solar energy is one of the most vital renewable energy sources for ending the era of fossil fuels.",
+        "D": "Our dependence on fossil fuels can only be reduced by utilizing vital renewable energy sources like solar energy.",
+        "E": "Renewable energy sources like solar energy are necessary if we want to eliminate fossil fuel use."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "translation",
+      "question": "Şehirlerdeki hava kirliliği seviyelerini azaltmak amacıyla, yerel yönetimler toplu taşıma kullanımını teşvik eden yeni politikalar geliştirmektedir.",
+      "options": {
+        "A": "In order to reduce air pollution levels in cities, local governments are developing new policies that encourage the use of public transport.",
+        "B": "Local governments are trying to encourage public transport so that air pollution in cities can be eliminated.",
+        "C": "New policies aimed at encouraging public transport have been introduced by local governments to stop pollution.",
+        "D": "Air pollution levels in cities will decrease once local governments implement policies for public transportation.",
+        "E": "Local governments should develop policies to encourage public transport if they want to reduce air pollution."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage on epigenetics, what distinguishes epigenetic changes from genetic mutations?",
+      "options": {
+        "A": "Epigenetic changes are always permanent and irreversible.",
+        "B": "Genetic mutations do not involve any changes to the DNA sequence.",
+        "C": "Epigenetics involves changes in how genes are expressed without changing the DNA code.",
+        "D": "Environmental factors have no impact on genetic mutations.",
+        "E": "DNA methylation is only present in genetic mutations."
+      },
+      "correct": "C",
+      "passage_id": "p1"
+    },
+    {
+      "id": 44,
+      "section_id": "reading_comprehension",
+      "question": "Why is the inheritance of epigenetic traits in humans still a debated topic?",
+      "options": {
+        "A": "Because the human diet is too varied to track epigenetic marks.",
+        "B": "Because the mammalian embryo undergoes a process that clears most epigenetic marks.",
+        "C": "Because there is no evidence that stress affects gene expression.",
+        "D": "Because DNA methylation is too difficult to measure in laboratory settings.",
+        "E": "Because human generations are too long to provide reliable data."
+      },
+      "correct": "B",
+      "passage_id": "p1"
+    },
+    {
+      "id": 45,
+      "section_id": "reading_comprehension",
+      "question": "Which of the following can be inferred from the passage about the 'molecular legacy'?",
+      "options": {
+        "A": "It refers to the physical fossils left by ancient ancestors.",
+        "B": "It implies that our lifestyle might affect the health of future generations.",
+        "C": "It is a term used to describe the discovery of the double helix.",
+        "D": "It suggests that only negative traits are passed down through epigenetics.",
+        "E": "It proves that Darwinian evolution is entirely incorrect."
+      },
+      "correct": "B",
+      "passage_id": "p1"
+    },
+    {
+      "id": 46,
+      "section_id": "reading_comprehension",
+      "question": "The author's tone regarding epigenetics can best be described as ----.",
+      "options": {
+        "A": "Dismissive and skeptical",
+        "B": "Informative and cautious",
+        "C": "Overly enthusiastic and biased",
+        "D": "Critical and hostile",
+        "E": "Indifferent and bored"
+      },
+      "correct": "B",
+      "passage_id": "p1"
+    },
+    {
+      "id": 47,
+      "section_id": "reading_comprehension",
+      "question": "What does the author suggest about the origin of the Industrial Revolution?",
+      "options": {
+        "A": "It was a sudden event triggered solely by the invention of the steam engine.",
+        "B": "It resulted from a combination of economic incentives and long-term social shifts.",
+        "C": "It was primarily driven by child labor in urban areas.",
+        "D": "It occurred because British coal was the most expensive in the world.",
+        "E": "It was hindered by the lack of skilled entrepreneurs in Britain."
+      },
+      "correct": "B",
+      "passage_id": "p2"
+    },
+    {
+      "id": 48,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, the steam engine ----.",
+      "options": {
+        "A": "Was perfect from its first iteration in the coal mines.",
+        "B": "Was invented by James Watt with no prior versions.",
+        "C": "Gained versatility only after several decades of improvements.",
+        "D": "Was primarily used for transportation rather than industry.",
+        "E": "Failed to have any significant impact on the factory system."
+      },
+      "correct": "C",
+      "passage_id": "p2"
+    },
+    {
+      "id": 49,
+      "section_id": "reading_comprehension",
+      "question": "The passage argues that innovation is the result of ----.",
+      "options": {
+        "A": "Isolated 'great men' working in total solitude.",
+        "B": "Random chance and accidental discoveries.",
+        "C": "A mixture of economic needs and technical possibility.",
+        "D": "Strict government regulations and subsidies.",
+        "E": "The immediate abolition of ethical trade-offs."
+      },
+      "correct": "C",
+      "passage_id": "p2"
+    },
+    {
+      "id": 50,
+      "section_id": "reading_comprehension",
+      "question": "What is mentioned as a negative consequence of the industrial progress described?",
+      "options": {
+        "A": "The decrease in coal production.",
+        "B": "The scarcity of labor-saving machinery.",
+        "C": "The ethical issues related to child labor and living conditions.",
+        "D": "The decline of international trade.",
+        "E": "The loss of interest in technological refinement."
+      },
+      "correct": "C",
+      "passage_id": "p2"
+    },
+    {
+      "id": 51,
+      "section_id": "reading_comprehension",
+      "question": "How does counter-illumination help marine organisms?",
+      "options": {
+        "A": "It allows them to attract larger prey.",
+        "B": "It creates a bright flash that blinds their enemies.",
+        "C": "It hides their silhouette by matching the light from above.",
+        "D": "It signals to potential mates in the dark.",
+        "E": "It provides heat to survive in freezing waters."
+      },
+      "correct": "C",
+      "passage_id": "p3"
+    },
+    {
+      "id": 52,
+      "section_id": "reading_comprehension",
+      "question": "The term 'convergent evolution' is used in the passage to explain that ----.",
+      "options": {
+        "A": "Bioluminescence evolved from a single common ancestor.",
+        "B": "Different species developed similar bioluminescent traits independently.",
+        "C": "Luciferin and luciferase are only found in one type of fish.",
+        "D": "Marine ecosystems are becoming less diverse over time.",
+        "E": "Light-emitting molecules are incompatible with terrestrial life."
+      },
+      "correct": "B",
+      "passage_id": "p3"
+    },
+    {
+      "id": 53,
+      "section_id": "reading_comprehension",
+      "question": "What is one way scientists are utilizing bioluminescence today?",
+      "options": {
+        "A": "To light up urban streets without electricity.",
+        "B": "To improve the taste of deep-sea fish.",
+        "C": "To monitor the progression of cancer cells in research.",
+        "D": "To create new types of underwater fuels.",
+        "E": "To map the entire ocean floor using satellites."
+      },
+      "correct": "C",
+      "passage_id": "p3"
+    },
+    {
+      "id": 54,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, bioluminescence is primarily found in ----.",
+      "options": {
+        "A": "High-altitude mountain ranges.",
+        "B": "Dense tropical rainforests.",
+        "C": "Oceanic environments.",
+        "D": "Arid desert landscapes.",
+        "E": "Freshwater lakes and rivers."
+      },
+      "correct": "C",
+      "passage_id": "p3"
+    },
+    {
+      "id": 55,
+      "section_id": "reading_comprehension",
+      "question": "What is the core meaning of 'existence precedes essence' in existentialist thought?",
+      "options": {
+        "A": "Human beings are born with a fixed destiny.",
+        "B": "The universe has a plan for every individual.",
+        "C": "People first exist and then define who they are through choices.",
+        "D": "Essence is more important than existence.",
+        "E": "God determines the purpose of all human beings."
+      },
+      "correct": "C",
+      "passage_id": "p4"
+    },
+    {
+      "id": 56,
+      "section_id": "reading_comprehension",
+      "question": "Sartre's concept of 'anguish' arises from ----.",
+      "options": {
+        "A": "The lack of physical freedom in modern society.",
+        "B": "The burden of being responsible for one's own identity.",
+        "C": "The fear of death and the afterlife.",
+        "D": "The inability to make any choices at all.",
+        "E": "The belief that the universe is governed by fate."
+      },
+      "correct": "B",
+      "passage_id": "p4"
+    },
+    {
+      "id": 57,
+      "section_id": "reading_comprehension",
+      "question": "Existentialism is described by its proponents as a philosophy of empowerment because ----.",
+      "options": {
+        "A": "It promises a happy ending for everyone.",
+        "B": "It allows individuals to create their own meaning.",
+        "C": "It removes all responsibility from the individual.",
+        "D": "It provides a set of universal laws to follow.",
+        "E": "It guarantees that the universe will respond to human needs."
+      },
+      "correct": "B",
+      "passage_id": "p4"
+    },
+    {
+      "id": 58,
+      "section_id": "reading_comprehension",
+      "question": "The passage suggests that existentialism and nihilism ----.",
+      "options": {
+        "A": "Are exactly the same thing.",
+        "B": "Are both focused on following religious doctrines.",
+        "C": "Are often linked, though existentialists find meaning through agency.",
+        "D": "Have no historical connection to the 20th century.",
+        "E": "Both believe the universe has an inherent purpose."
+      },
+      "correct": "C",
+      "passage_id": "p4"
+    },
+    {
+      "id": 59,
+      "section_id": "reading_comprehension",
+      "question": "What is the main difference between 'linguistic determinism' and 'linguistic relativity'?",
+      "options": {
+        "A": "Relativity says language dictates thought, while determinism says it only influences it.",
+        "B": "Determinism claims language controls thought, while relativity suggests it merely shapes tendencies.",
+        "C": "Determinism is widely accepted today, whereas relativity is not.",
+        "D": "Relativity is only about vocabulary, while determinism is only about grammar.",
+        "E": "There is no difference; they are synonymous terms."
+      },
+      "correct": "B",
+      "passage_id": "p5"
+    },
+    {
+      "id": 60,
+      "section_id": "reading_comprehension",
+      "question": "Why is the 'strong version' of the Sapir-Whorf Hypothesis currently discredited?",
+      "options": {
+        "A": "Because all languages are actually the same.",
+        "B": "Because cognitive science shows people can conceive of things without specific words.",
+        "C": "Because no one speaks those languages anymore.",
+        "D": "Because language has no impact on social behavior.",
+        "E": "Because translation between languages is impossible."
+      },
+      "correct": "B",
+      "passage_id": "p5"
+    },
+    {
+      "id": 61,
+      "section_id": "reading_comprehension",
+      "question": "The example of cardinal directions (north, south) is used to illustrate ----.",
+      "options": {
+        "A": "How language can improve one's sense of spatial orientation.",
+        "B": "The difficulty of learning geography in different cultures.",
+        "C": "That all people have an innate compass regardless of language.",
+        "D": "That relative terms (left, right) are more accurate than cardinal ones.",
+        "E": "The total inability of some speakers to navigate their environment."
+      },
+      "correct": "A",
+      "passage_id": "p5"
+    },
+    {
+      "id": 62,
+      "section_id": "reading_comprehension",
+      "question": "The author concludes that language ----.",
+      "options": {
+        "A": "Has no effect on how we see the world.",
+        "B": "Acts as a prison for the human mind.",
+        "C": "Provides a specific lens for interpreting reality.",
+        "D": "Is the only thing that matters in human evolution.",
+        "E": "Will eventually be replaced by telepathy."
+      },
+      "correct": "C",
+      "passage_id": "p5"
+    },
+    {
+      "id": 63,
+      "section_id": "dialogue_completion",
+      "question": "Dr. Aris: The data suggests that the implementation of the new carbon tax has significantly reduced industrial emissions.\nResearcher: ----\nDr. Aris: True, but we must also consider that many companies have simply moved their production to countries with laxer regulations.",
+      "options": {
+        "A": "I believe the tax was too low to make any real difference anyway.",
+        "B": "That is a promising start, indicating that policy can drive environmental change.",
+        "C": "Why would they do that if the goal was to save the planet?",
+        "D": "It seems the public is very unhappy with the rising energy costs.",
+        "E": "The carbon tax is the most effective tool we have against climate change."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 64,
+      "section_id": "dialogue_completion",
+      "question": "Sarah: I’m struggling to understand why some people are so resistant to the idea of universal basic income.\nMark: ----\nSarah: I see, so it's more about the fear of devaluing the traditional concept of work than just the financial cost?",
+      "options": {
+        "A": "It's mostly because it would be too expensive for the government to afford.",
+        "B": "Most people just don't like getting free money from the state.",
+        "C": "Many fear it might discourage productivity and erode the social fabric built around employment.",
+        "D": "I think it’s a great idea that will eventually be implemented everywhere.",
+        "E": "The resistance comes from those who already have a lot of money."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 65,
+      "section_id": "dialogue_completion",
+      "question": "Professor: Your thesis on the Byzantine Empire is brilliant, but you need to address the economic factors more deeply.\nStudent: I focused mostly on the religious and military aspects to explain the decline.\nProfessor: ----\nStudent: You're right. I’ll add a chapter on trade routes and the devaluation of the currency.",
+      "options": {
+        "A": "Religion was the only factor that truly mattered back then.",
+        "B": "But without understanding the fiscal crisis, the military's failure remains contextless.",
+        "C": "The military was actually quite strong until the very end.",
+        "D": "I think you should focus more on the architecture of the period instead.",
+        "E": "Why did you choose such a difficult topic for your thesis?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 66,
+      "section_id": "dialogue_completion",
+      "question": "Interviewee: I have always believed that adaptability is the most crucial skill in the modern workplace.\nInterviewer: That's a valid point. Can you give an example of when you had to demonstrate this?\nInterviewee: ----\nInterviewer: That sounds like a challenging situation, but it seems you handled it with great composure.",
+      "options": {
+        "A": "I usually prefer to work in a stable environment where nothing ever changes.",
+        "B": "I once led a team through a sudden software migration while we were meeting a major deadline.",
+        "C": "Adaptability is something that cannot be taught; you either have it or you don't.",
+        "D": "I am still looking for an opportunity to prove my adaptability to a manager.",
+        "E": "I think the workplace is becoming too fast-paced for most people to handle."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 67,
+      "section_id": "dialogue_completion",
+      "question": "Customer: I was looking for a laptop that is powerful enough for video editing but light enough for travel.\nSalesperson: We have several models, but the ZenBook Pro is specifically designed for 'prosumers' like you.\nCustomer: ----\nSalesperson: Actually, it has a dedicated cooling system and a high-capacity battery to handle demanding tasks.",
+      "options": {
+        "A": "Does it come in any other colors besides silver?",
+        "B": "Is it true that it's much cheaper than the other models?",
+        "C": "I'm concerned that such a slim device might overheat during long editing sessions.",
+        "D": "Can I use it to play high-end video games as well?",
+        "E": "I'll take it; please wrap it up for me immediately."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 68,
+      "section_id": "closest_meaning",
+      "question": "The sheer complexity of the human brain makes the task of fully mapping its neural pathways an incredibly daunting endeavor for neuroscientists.",
+      "options": {
+        "A": "Neuroscientists find it nearly impossible to understand the human brain because it is so small and intricate.",
+        "B": "Due to its immense intricacy, fully charting the brain's neural connections is a very difficult challenge for scientists.",
+        "C": "If the human brain were less complex, neuroscientists would have already finished mapping its pathways.",
+        "D": "Mapping the brain is a daunting task that only the most experienced neuroscientists should attempt.",
+        "E": "The complexity of the brain is the only reason why we haven't yet discovered its full potential."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 69,
+      "section_id": "closest_meaning",
+      "question": "Had the government intervened earlier with stricter quarantine measures, the spread of the virus could have been contained more effectively.",
+      "options": {
+        "A": "The government intervened early, which is why the virus did not spread as much as expected.",
+        "B": "The virus spread rapidly because the government refused to implement any quarantine measures.",
+        "C": "The virus would have been better controlled if the government had taken tougher action sooner.",
+        "D": "Even if the government had intervened earlier, the virus would still have spread at the same rate.",
+        "E": "Stricter quarantine measures are the only way the government can stop the spread of viruses."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 70,
+      "section_id": "closest_meaning",
+      "question": "Regardless of the economic benefits, the environmental degradation caused by open-pit mining is often considered too high a price to pay.",
+      "options": {
+        "A": "Open-pit mining is profitable, so the environmental damage it causes is usually ignored.",
+        "B": "The financial gains from open-pit mining frequently fail to justify the resulting environmental destruction.",
+        "C": "Environmental degradation is a small price to pay for the massive economic benefits of mining.",
+        "D": "Because of the high price of minerals, open-pit mining is becoming more common despite the environment.",
+        "E": "Mining should be banned everywhere because it is never economically beneficial in the long run."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 71,
+      "section_id": "closest_meaning",
+      "question": "The author's latest novel is a departure from his usual style, as it explores dark themes through a satirical lens.",
+      "options": {
+        "A": "The author's new book is similar to his previous ones because it is also a satire about dark themes.",
+        "B": "The author has changed his writing style in his most recent novel by using satire to examine somber subjects.",
+        "C": "Readers are disappointed that the author's latest novel is not as funny as his earlier works.",
+        "D": "The latest novel is difficult to read because the author uses a very dark and complicated style.",
+        "E": "Satire is the author's usual style, but his latest novel is much darker than the previous ones."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 72,
+      "section_id": "paragraph_completion",
+      "question": "Urbanization has led to the 'urban heat island' effect, where cities experience significantly higher temperatures than their surrounding rural areas. This is primarily due to the prevalence of heat-absorbing surfaces like asphalt and concrete. ----. Additionally, the lack of vegetation in urban centers prevents the natural cooling provided by evapotranspiration.",
+      "options": {
+        "A": "Rural areas are becoming hotter as well due to global climate change.",
+        "B": "These materials trap solar radiation during the day and release it slowly at night.",
+        "C": "Most people prefer living in cities despite the uncomfortable heat.",
+        "D": "Air conditioning units are the main reason for the temperature rise in cities.",
+        "E": "Architects are now focusing on building more skyscrapers to save space."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 73,
+      "section_id": "paragraph_completion",
+      "question": "In the late 19th century, the Impressionist movement challenged the traditional standards of the French Academy. Instead of focusing on realistic detail and historical subjects, Impressionists sought to capture the fleeting effects of light and color. ----. This shift paved the way for Modernism and changed the course of art history forever.",
+      "options": {
+        "A": "They often painted outdoors to observe the changing atmosphere in real-time.",
+        "B": "The French Academy eventually banned all Impressionist paintings from being shown.",
+        "C": "Most Impressionists were actually trained in classical techniques before they rebelled.",
+        "D": "Photography had not yet been invented, so painting was the only way to record images.",
+        "E": "The public immediately loved the new style and bought all the paintings."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 74,
+      "section_id": "paragraph_completion",
+      "question": "The Great Library of Alexandria was once the largest and most significant library of the ancient world. It served as a major center for scholarship, housing thousands of papyrus scrolls from across the Mediterranean. ----. Some theories suggest a fire set during Caesar's siege, while others point to later religious conflicts or gradual neglect.",
+      "options": {
+        "A": "It was built by Alexander the Great to showcase his immense wealth.",
+        "B": "Despite its fame, the exact cause and timing of its destruction remain a mystery.",
+        "C": "Modern libraries are much more efficient thanks to digital technology.",
+        "D": "The scrolls were written in many different languages, including Greek and Egyptian.",
+        "E": "Scholars from all over the world still visit the site of the library today."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 75,
+      "section_id": "paragraph_completion",
+      "question": "Artificial Intelligence is increasingly being used in the legal profession to analyze vast amounts of case law. By automating the discovery process, AI can find relevant precedents in a fraction of the time it would take a human clerk. ----. Issues such as algorithmic bias and the loss of the 'human element' in judicial reasoning must be carefully managed.",
+      "options": {
+        "A": "Lawyers are worried that AI will eventually replace them entirely.",
+        "B": "However, this technological integration also raises significant ethical concerns.",
+        "C": "AI is also very useful for medical diagnoses and financial forecasting.",
+        "D": "Most law schools now require students to take courses in computer science.",
+        "E": "The cost of AI software is falling, making it accessible to smaller law firms."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 76,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Dark matter is a hypothetical form of matter that is thought to account for approximately 85% of the matter in the universe. (II) It does not emit, absorb, or reflect light, making it extremely difficult to detect directly. (III) Scientists have observed its existence through its gravitational effects on visible matter. (IV) Most stars in the galaxy are composed primarily of hydrogen and helium. (V) Understanding dark matter is crucial for explaining the structure and evolution of the cosmos.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 77,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Silk Road was an ancient network of trade routes that connected the East and West. (II) It facilitated the exchange of goods like silk, spices, and precious metals. (III) Furthermore, it played a vital role in the spread of ideas, religions, and technologies. (IV) Modern transportation has made international trade much faster than it was in antiquity. (V) The decline of the Silk Road began with the rise of maritime trade routes in the 15th century.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 78,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Bees are essential pollinators for many of the crops that provide our global food supply. (II) In recent years, bee populations have been declining due to 'Colony Collapse Disorder.' (III) This phenomenon is linked to factors such as pesticide use, habitat loss, and climate change. (IV) Some species of wasps are also known to be quite aggressive when their nests are disturbed. (V) The loss of these insects could lead to a significant crisis in global agriculture and biodiversity.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 79,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Renewable energy sources, such as solar and wind, are becoming increasingly cost-competitive with fossil fuels. (II) Solar panels convert sunlight into electricity using photovoltaic cells. (III) This transition is driven by both technological advancements and growing environmental concerns. (IV) Governments around the world are implementing subsidies to encourage the adoption of green energy. (V) Fossil fuels, however, still provide a large portion of the world's total energy consumption.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 80,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Renaissance was a period of intense cultural and artistic rebirth in Europe. (II) It began in Italy in the 14th century and eventually spread to the rest of the continent. (III) Renaissance thinkers rediscovered the classical texts of ancient Greece and Rome. (IV) Michelangelo's David is considered one of the greatest masterpieces of Renaissance sculpture. (V) Many people today still enjoy visiting museums to see historical artifacts.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "V",
+      "passage_id": null
+    }
+  ]
+}

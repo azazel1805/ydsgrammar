@@ -79,8 +79,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <script type="module" crossorigin src="./assets/index-DJeYmkMm.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Dj3MiA4P.css">
+  <script type="module" crossorigin src="./assets/index-BvljOark.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CBqK6WkQ.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -271,6 +271,10 @@
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-red-800">
               Strateji Laboratuvarı
             </button>
+            <button data-tab="freeexams" onclick="switchTab('freeexams')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-green-700">
+              <i class="fas fa-gift mr-1"></i> Ücretsiz Denemeler
+            </button>
           </div>
         </div>
 
@@ -447,6 +451,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               class="drawer-btn font-bold text-red-800">Kelime Çalışması</button>
             <button data-tab="strategy" onclick="switchTabAndClose('strategy')"
               class="drawer-btn font-bold text-red-800">Strateji Laboratuvarı</button>
+            <button data-tab="freeexams" onclick="switchTabAndClose('freeexams')"
+              class="drawer-btn font-bold text-green-700">Ücretsiz Denemeler</button>
           </div>
         </div>
 
@@ -562,9 +568,13 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             </div>
           </section>
       </div>
+      <div id="tab-freeexams" class="tab-content"></div>
       <div id="tab-textdecon" class="tab-content hidden"></div>
       <div id="tab-admin" class="tab-content"></div>
     </div>
+
+    <!-- GLOBAL FULL EXAM ENGINE -->
+    <div id="globalFullExamContainer" class="hidden"></div>
 
     <!-- QUIZ MODAL -->
     <div id="quizModal" class="fixed inset-0 bg-black/80 hidden z-[200]">

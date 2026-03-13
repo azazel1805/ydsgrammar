@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-testlab", typeof testlabHTML !== 'undefined' ? testlabHTML : undefined);
     safeInject("tab-wordpractice", typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : undefined);
     safeInject("tab-miniexams", typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : undefined);
+    safeInject("tab-freeexams", typeof freeExamsHTML !== 'undefined' ? freeExamsHTML : undefined);
     safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
@@ -361,6 +362,7 @@ function reinjectTabContent(tabName) {
         "testlab": typeof testlabHTML !== 'undefined' ? testlabHTML : null,
         "wordpractice": typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : null,
         "fullexam": typeof fullExamHTML !== 'undefined' ? fullExamHTML : null,
+        "freeexams": typeof freeExamsHTML !== 'undefined' ? freeExamsHTML : null,
         "miniexams": typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
@@ -393,7 +395,8 @@ function updateSEO(tab) {
         "fullexam": { title: "Mini Deneme Sınavları – 40 Sorulu YDS / YDT Denemeler", desc: "40 soruluk, 90 dakikalık süreli ve cevap açıklamalı mini YDS denemeleri." },
         "tenseguide": { title: "Tense Rehberi – Zamanlar ve Kullanımları", desc: "İngilizce zamanların YDS perspektifinden sadeleştirilmiş anlatımı." },
         "ifclauses": { title: "If Clauses (Koşul Cümleleri) – YDS Rehberi", desc: "Tüm type'lar ve devrik yapılar (inversion) ile koşul cümleleri." },
-        "sentence": { title: "Sentence Corrector – Cümle Yapısı Analizi", desc: "Cümlelerdeki gramer hatalarını bulan yapay zeka destekli araç." }
+        "sentence": { title: "Sentence Corrector – Cümle Yapısı Analizi", desc: "Cümlelerdeki gramer hatalarını bulan yapay zeka destekli araç." },
+        "freeexams": { title: "Ücretsiz YDS Deneme Sınavları – yds.monster", desc: "80 soruluk ücretsiz tam YDS denemeleri ile kendinizi test edin." }
     };
 
     const data = seoMap[tab] || { title: "yds.monster – YDS & YDT Master Encyclopedia", desc: "Kapsamlı YDS ve YDT hazırlık platformu." };
