@@ -71,6 +71,21 @@
         {
             "id": "p1",
             "text": ""
+        },
+        {
+            "id": "p_cloze_8",
+            "title": "Cloze Test",
+            "text": "The Enlightenment was a philosophical movement that (8) ---- Europe in the 18th century. It stressed the use of reason and scientific method (9) ---- tradition. Thinkers of this era sought to (10) ---- human knowledge and improve social conditions. (11) ----, many of the democratic ideals we value today find their roots in this period. The movement eventually (12) ---- the way for the French and American Revolutions."
+        },
+        {
+            "id": "p_read_35",
+            "title": "Reading",
+            "text": "The Industrial Revolution, which began in Britain in the late 18th century, transformed the world from an agrarian society into an industrial one. This period saw the introduction of steam power, the development of factories, and mass production. While it led to significant economic growth and technological advancement, it also brought about harsh working conditions, child labor, and environmental pollution. The social structure changed as people moved from the countryside to cities, creating a new working class. \n\n According to the passage, the Industrial Revolution ----."
+        },
+        {
+            "id": "p_read_38",
+            "title": "Reading",
+            "text": "Deep-sea exploration remains one of the greatest challenges for modern science. The ocean floor is a realm of extreme pressure, freezing temperatures, and total darkness. To study these depths, scientists use Remotely Operated Vehicles (ROVs) equipped with cameras and sensors. These machines allow researchers to discover unique ecosystems, such as hydrothermal vents, where life thrives without sunlight. Despite these advancements, more than 80% of the ocean remains unmapped and unexplored. \n\n The passage states that the environment of the deep sea is characterized by ----."
         }
     ],
     "questions": [
@@ -175,8 +190,8 @@
         {
             "id": 8,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "CLOZE TEST PASSAGE: The Enlightenment was a philosophical movement that (8) ---- Europe in the 18th century. It stressed the use of reason and scientific method (9) ---- tradition. Thinkers of this era sought to (10) ---- human knowledge and improve social conditions. (11) ----, many of the democratic ideals we value today find their roots in this period. The movement eventually (12) ---- the way for the French and American Revolutions. \n\n Question 8:",
+            "passage_id": "p_cloze_8",
+            "question": "8",
             "options": {
                 "A": "dominated",
                 "B": "neglected",
@@ -189,8 +204,8 @@
         {
             "id": 9,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 9:",
+            "passage_id": "p_cloze_8",
+            "question": "9",
             "options": {
                 "A": "instead of",
                 "B": "as well as",
@@ -203,8 +218,8 @@
         {
             "id": 10,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 10:",
+            "passage_id": "p_cloze_8",
+            "question": "10",
             "options": {
                 "A": "advance",
                 "B": "deplete",
@@ -217,8 +232,8 @@
         {
             "id": 11,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 11:",
+            "passage_id": "p_cloze_8",
+            "question": "11",
             "options": {
                 "A": "Consequently",
                 "B": "However",
@@ -231,8 +246,8 @@
         {
             "id": 12,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "CLOZE TEST PASSAGE: (See above) \n\n Question 12:",
+            "passage_id": "p_cloze_8",
+            "question": "12",
             "options": {
                 "A": "paved",
                 "B": "sent",
@@ -553,8 +568,8 @@
         {
             "id": 35,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "PASSAGE 1: The Industrial Revolution, which began in Britain in the late 18th century, transformed the world from an agrarian society into an industrial one. This period saw the introduction of steam power, the development of factories, and mass production. While it led to significant economic growth and technological advancement, it also brought about harsh working conditions, child labor, and environmental pollution. The social structure changed as people moved from the countryside to cities, creating a new working class. \n\n According to the passage, the Industrial Revolution ----.",
+            "passage_id": "p_read_35",
+            "question": "According to the passage, the Industrial Revolution ----.",
             "options": {
                 "A": "was purely beneficial for all social classes",
                 "B": "originated in North America before spreading to Europe",
@@ -568,7 +583,7 @@
             "id": 36,
             "section_id": "reading",
             "passage_id": "p1",
-            "question": "PASSAGE 1: (See above) \n\n One of the negative consequences of the Industrial Revolution mentioned in the text is ----.",
+            "question": "One of the negative consequences of the Industrial Revolution mentioned in the text is ----.",
             "options": {
                 "A": "the rapid increase in global trade",
                 "B": "the invention of the steam engine",
@@ -582,7 +597,7 @@
             "id": 37,
             "section_id": "reading",
             "passage_id": "p1",
-            "question": "PASSAGE 1: (See above) \n\n It can be inferred from the passage that before the late 18th century, Britain's economy was ----.",
+            "question": "It can be inferred from the passage that before the late 18th century, Britain's economy was ----.",
             "options": {
                 "A": "based on industrial manufacturing",
                 "B": "largely dependent on agriculture",
@@ -595,8 +610,8 @@
         {
             "id": 38,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "PASSAGE 2: Deep-sea exploration remains one of the greatest challenges for modern science. The ocean floor is a realm of extreme pressure, freezing temperatures, and total darkness. To study these depths, scientists use Remotely Operated Vehicles (ROVs) equipped with cameras and sensors. These machines allow researchers to discover unique ecosystems, such as hydrothermal vents, where life thrives without sunlight. Despite these advancements, more than 80% of the ocean remains unmapped and unexplored. \n\n The passage states that the environment of the deep sea is characterized by ----.",
+            "passage_id": "p_read_38",
+            "question": "The passage states that the environment of the deep sea is characterized by ----.",
             "options": {
                 "A": "abundant sunlight and warm waters",
                 "B": "high pressure and lack of light",
@@ -610,7 +625,7 @@
             "id": 39,
             "section_id": "reading",
             "passage_id": "p1",
-            "question": "PASSAGE 2: (See above) \n\n ROVs are essential for deep-sea research because they ----.",
+            "question": "ROVs are essential for deep-sea research because they ----.",
             "options": {
                 "A": "can withstand the harsh conditions of the ocean floor",
                 "B": "are the only way to map the entire ocean surface",
@@ -624,7 +639,7 @@
             "id": 40,
             "section_id": "reading",
             "passage_id": "p1",
-            "question": "PASSAGE 2: (See above) \n\n What does the author mean by stating that more than 80% of the ocean is unexplored?",
+            "question": "What does the author mean by stating that more than 80% of the ocean is unexplored?",
             "options": {
                 "A": "Our knowledge of the ocean floor is still very limited.",
                 "B": "Technology has failed to reach the deepest parts of the sea.",

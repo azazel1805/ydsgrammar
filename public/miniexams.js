@@ -355,51 +355,51 @@ function meRenderQuestion() {
   const pBox = document.getElementById('mePassageBox');
   pBox.classList.add('hidden');
   pBox.innerHTML = '';
+  pBox.className = "p-6 bg-slate-50 border-x border-slate-200 text-slate-700 leading-relaxed max-h-[300px] overflow-y-auto";
 
   let isCloze = type.toLowerCase().includes('cloze');
   let isReading = type.toLowerCase().includes('read');
 
+  // 1. DISPLAY PASSAGE (Priority: passage_id -> custom logic)
+  let passageText = "";
+  if (q.passage_id && meExamData.passages) {
+      const pObj = meExamData.passages.find(p => p.id === q.passage_id);
+      if (pObj) passageText = pObj.text;
+  }
+
   if (isCloze) {
-      // Reconstruct Cloze Passage from sister questions
-      // Find the group of 5 (or less) this question belongs to in CURRENT meExamData
-      let startIdx = meCurrentIdx - (meCurrentIdx % 5);
-      let group = meExamData.questions.slice(startIdx, startIdx + 5);
-      let fullText = group.map(g => g.question).join(" ");
-      
-      // Cleanup: sometimes questions repeat parts of sentences. 
-      // For now, simple join works for most of our data.
-      pBox.innerHTML = `<div class="font-bold mb-2 text-red-800"><i class="fas fa-file-alt mr-2"></i>CLOZE TEST PARÇASI</div>` + fullText.replace(/\n/g, '<br>');
+      if (!passageText) {
+          // Fallback if no passage_id: try sisters in current list (already refactored mostly but just in case)
+          let startIdx = meCurrentIdx - (meCurrentIdx % 5);
+          let group = meExamData.questions.slice(startIdx, startIdx + 5);
+          passageText = group.map(g => g.question).join(" ").substring(0, 1000); // Guard long joins
+      }
+      pBox.innerHTML = `<div class="font-bold mb-2 text-red-800 uppercase text-xs tracking-tighter">CLOZE TEST PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
       pBox.classList.remove('hidden');
-      document.getElementById('meQuestion').innerHTML = `<span class="bg-red-800 text-white px-2 py-0.5 rounded text-sm mr-2">SORU ${meCurrentIdx + 1}</span> <b>Boşluk için en uygun seçeneği bulun.</b>`;
   } else if (isReading) {
-      // Show passage
-      let passageText = q.passage || q.passage_text || "";
-      if (!passageText && q.passage_id && meExamData.passages) {
-          let pObj = meExamData.passages.find(px => px.id === q.passage_id);
-          if (pObj) passageText = pObj.text;
-      }
-      // If still no passage, maybe it's in the question itself (some old formats)
-      if (!passageText && q.question.length > 200) {
-          passageText = q.question; // The long part is usually the passage
-      }
+      if (!passageText) passageText = q.passage || q.passage_text || "";
+      if (!passageText && q.question.length > 200) passageText = q.question;
 
       if (passageText) {
-          pBox.innerHTML = `<div class="font-bold mb-2 text-blue-800"><i class="fas fa-book-open mr-2"></i>OKUMA PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
+          pBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase text-xs tracking-tighter">OKUMA PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
           pBox.classList.remove('hidden');
       }
-      
-      // If question was the passage, we need to extract the actual question part if it's at the end
-      let displayQuestion = q.question;
-      if (isReading && passageText === q.question) {
-          // It's likely the question is "According to the passage..." at the end.
-          // But our Reading JSON often puts the same passage in every question.
-          displayQuestion = "Parçaya göre soruyu cevaplayınız.";
-      }
-      document.getElementById('meQuestion').innerHTML = displayQuestion.replace(/\n/g, '<br>');
-  } else {
-      // Normal questions
-      document.getElementById('meQuestion').innerHTML = q.question.replace(/\n/g, '<br>');
   }
+
+  // 2. DISPLAY QUESTION TEXT
+  let qDisplay = q.question || "";
+  if (isCloze) {
+      qDisplay = `<b>SORU ${meCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
+  } else if (isReading && passageText) {
+       // Only cleanup if it's Reading and we have a passage box
+       qDisplay = qDisplay.replace(passageText.substring(0, 50), '') // Basic prefix cleanup
+                          .replace(/^PASSAGE \d+.*?:/i, '')
+                          .replace(/^\(See above\)/i, '')
+                          .trim();
+       if (!qDisplay || qDisplay.length < 5) qDisplay = "Parçaya göre soruyu cevaplayınız.";
+  }
+  
+  document.getElementById('meQuestion').innerHTML = qDisplay.replace(/\n/g, '<br>');
 
   const optBox = document.getElementById('meOptions');
   optBox.innerHTML = '';
