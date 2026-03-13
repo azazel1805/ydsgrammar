@@ -13,7 +13,23 @@
             "to": 106
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_read_43_master_reading",
+            "title": "Reading 43",
+            "text": "Behavioral economics suggests that humans are not always rational actors. Instead, they are influenced by cognitive biases and heuristics. Nudge Theory, proposed by Thaler and Sunstein, utilizes these biases to influence behavior without restricting freedom of choice. For example, placing fruit at eye level in a cafeteria is a nudge that encourages healthier eating. Unlike mandates or bans, nudges are subtle and preserve individual autonomy. However, critics argue that nudging can be manipulative if the goals of the choice architect do not align with the individuals best interests."
+        },
+        {
+            "id": "p_read_47_master_reading",
+            "title": "Reading 47",
+            "text": "Passage: The advent of quantum computing represents a paradigm shift in computational theory, moving beyond binary logic into the realm of superposition and entanglement. While classical computers process information in bits, quantum systems utilize qubits, which can exist in multiple states simultaneously. This allows for the resolution of complex algorithms that would take traditional supercomputers millennia to solve. However, the primary obstacle remains decoherence—the tendency of quantum states to collapse when interacting with their environment. Question:"
+        },
+        {
+            "id": "p_read_51_master_reading",
+            "title": "Reading 51",
+            "text": "Passage: Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the former scientific consensus that the adult brain is a static organ. Neuroplasticity allows neurons in the brain to compensate for injury and adjust their activities in response to new situations or changes in the environment. Question:"
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -612,8 +628,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Behavioral economics suggests that humans are not always rational actors. Instead, they are influenced by cognitive biases and heuristics. Nudge Theory, proposed by Thaler and Sunstein, utilizes these biases to influence behavior without restricting freedom of choice. For example, placing fruit at eye level in a cafeteria is a nudge that encourages healthier eating. Unlike mandates or bans, nudges are subtle and preserve individual autonomy. However, critics argue that nudging can be manipulative if the goals of the choice architect do not align with the individuals best interests. According to the passage, how does Nudge Theory influence behavior?",
+            "passage_id": "p_read_43_master_reading",
+            "question": "According to the passage, how does Nudge Theory influence behavior?",
             "options": {
                 "A": "By imposing strict laws and penalties.",
                 "B": "By providing financial incentives for good behavior.",
@@ -626,8 +642,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Behavioral economics suggests that humans are not always rational actors. Instead, they are influenced by cognitive biases and heuristics. Nudge Theory, proposed by Thaler and Sunstein, utilizes these biases to influence behavior without restricting freedom of choice. For example, placing fruit at eye level in a cafeteria is a nudge that encourages healthier eating. Unlike mandates or bans, nudges are subtle and preserve individual autonomy. However, critics argue that nudging can be manipulative if the goals of the choice architect do not align with the individuals best interests. What is the difference between a nudge and a mandate?",
+            "passage_id": "p_read_43_master_reading",
+            "question": "What is the difference between a nudge and a mandate?",
             "options": {
                 "A": "A nudge is more expensive to implement than a mandate.",
                 "B": "A mandate is subtle, while a nudge is very obvious.",
@@ -640,8 +656,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Behavioral economics suggests that humans are not always rational actors. Instead, they are influenced by cognitive biases and heuristics. Nudge Theory, proposed by Thaler and Sunstein, utilizes these biases to influence behavior without restricting freedom of choice. For example, placing fruit at eye level in a cafeteria is a nudge that encourages healthier eating. Unlike mandates or bans, nudges are subtle and preserve individual autonomy. However, critics argue that nudging can be manipulative if the goals of the choice architect do not align with the individuals best interests. Why do some people criticize Nudge Theory?",
+            "passage_id": "p_read_43_master_reading",
+            "question": "Why do some people criticize Nudge Theory?",
             "options": {
                 "A": "Because it is too difficult to understand.",
                 "B": "Because it might be used to serve the interests of the architect rather than the individual.",
@@ -654,8 +670,8 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Behavioral economics suggests that humans are not always rational actors. Instead, they are influenced by cognitive biases and heuristics. Nudge Theory, proposed by Thaler and Sunstein, utilizes these biases to influence behavior without restricting freedom of choice. For example, placing fruit at eye level in a cafeteria is a nudge that encourages healthier eating. Unlike mandates or bans, nudges are subtle and preserve individual autonomy. However, critics argue that nudging can be manipulative if the goals of the choice architect do not align with the individuals best interests. What does the term choice architect refer to in this context?",
+            "passage_id": "p_read_43_master_reading",
+            "question": "the term choice architect refer to in this context?",
             "options": {
                 "A": "A person who designs the environment where decisions are made.",
                 "B": "A professional architect who builds cafeterias.",
@@ -668,8 +684,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage: The advent of quantum computing represents a paradigm shift in computational theory, moving beyond binary logic into the realm of superposition and entanglement. While classical computers process information in bits, quantum systems utilize qubits, which can exist in multiple states simultaneously. This allows for the resolution of complex algorithms that would take traditional supercomputers millennia to solve. However, the primary obstacle remains decoherence—the tendency of quantum states to collapse when interacting with their environment. Question: According to the passage, what is the most significant hurdle currently facing the practical application of quantum computing?",
+            "passage_id": "p_read_47_master_reading",
+            "question": "According to the passage, what is the most significant hurdle currently facing the practical application of quantum computing?",
             "options": {
                 "A": "The lack of binary logic in quantum systems",
                 "B": "The inability to process multiple states simultaneously",
@@ -682,7 +698,7 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_47_master_reading",
             "question": "Passage: The Enlightenment period in Europe was characterized by a profound shift toward rationalism and empiricism. Thinkers like Voltaire and Rousseau challenged the established divine right of kings and the hegemony of the Church. This intellectual upheaval paved the way for modern secularism and democratic governance. Nevertheless, the movement was not without its contradictions, as many proponents of liberty continued to justify colonial expansion and social hierarchies. Question: Which of the following can be inferred about the Enlightenment from the passage?",
             "options": {
                 "A": "It was a period of absolute intellectual consistency regarding liberty.",
@@ -696,7 +712,7 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_47_master_reading",
             "question": "Passage: Biodiversity hotspots are regions that contain a high level of endemic species and are experiencing significant habitat loss. To qualify as a hotspot, a region must have lost at least 70 percent of its primary vegetation. Conservationists argue that focusing resources on these areas provides the highest 'return on investment' for preserving global biological variety. Critics, however, suggest that this approach neglects less diverse but equally vital ecosystems. Question: What is a requirement for a region to be classified as a biodiversity hotspot?",
             "options": {
                 "A": "It must have a high level of species that are found nowhere else.",
@@ -710,7 +726,7 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_47_master_reading",
             "question": "Passage: The development of antibiotic resistance is a natural evolutionary process, but it has been accelerated by the misuse and overuse of these drugs in medicine and agriculture. When bacteria are exposed to sub-lethal doses of antibiotics, the most resilient strains survive and replicate, passing on their resistant traits. This has led to the emergence of 'superbugs' that are impervious to standard treatments. Question: According to the passage, why has antibiotic resistance become a more pressing issue recently?",
             "options": {
                 "A": "Because bacteria have stopped evolving naturally.",
@@ -724,8 +740,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage: Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the former scientific consensus that the adult brain is a static organ. Neuroplasticity allows neurons in the brain to compensate for injury and adjust their activities in response to new situations or changes in the environment. Question: The term 'neuroplasticity' as described in the passage implies that the brain is:",
+            "passage_id": "p_read_51_master_reading",
+            "question": "The term 'neuroplasticity' as described in the passage implies that the brain is:",
             "options": {
                 "A": "Fixed and unchangeable after adolescence.",
                 "B": "Capable of adapting and restructuring itself.",
@@ -738,7 +754,7 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_51_master_reading",
             "question": "Passage: The Silk Road was not a single thoroughfare but a network of trade routes connecting the East and West. While it is most famous for the exchange of luxury goods like silk and spices, its most enduring legacy was the transmission of ideas, religions, and technologies. Buddhism, for instance, spread from India to China via these routes, fundamentally altering the cultural landscape of East Asia. Question: What does the author suggest was the most significant impact of the Silk Road?",
             "options": {
                 "A": "The monopolization of the silk trade by Western powers.",
@@ -752,7 +768,7 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_51_master_reading",
             "question": "Passage: Macroeconomics focuses on the behavior and performance of an economy as a whole. It examines aggregate indicators such as GDP, unemployment rates, and price indices to understand how the entire economy functions. Policymakers use macroeconomic models to develop strategies for economic growth and stability, though these models often struggle to account for irrational human behavior. Question: What is one limitation of macroeconomic models mentioned in the passage?",
             "options": {
                 "A": "They only focus on individual consumer choices.",
@@ -766,7 +782,7 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_51_master_reading",
             "question": "Passage: Urbanization, the process by which more of a population comes to live in cities, has profound social and economic implications. While cities offer concentrated economic opportunities and better access to services, they also face challenges such as overcrowding, pollution, and social inequality. The rapid pace of urbanization in developing nations often outstrips the capacity of infrastructure to support it. Question: According to the passage, what is a common problem associated with rapid urbanization in developing countries?",
             "options": {
                 "A": "A decrease in overall population density.",

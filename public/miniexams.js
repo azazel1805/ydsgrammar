@@ -391,12 +391,19 @@ function meRenderQuestion() {
   if (isCloze) {
       qDisplay = `<b>SORU ${meCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
   } else if (isReading && passageText) {
-       // Only cleanup if it's Reading and we have a passage box
-       qDisplay = qDisplay.replace(passageText.substring(0, 50), '') // Basic prefix cleanup
-                          .replace(/^PASSAGE \d+.*?:/i, '')
+       // If the question text contains the passage text (partial or full), strip it
+       if (passageText && qDisplay.includes(passageText.substring(0, 50))) {
+           // Heuristic: if question starts with the passage, cut it
+           qDisplay = qDisplay.replace(passageText.substring(0, 100), '').trim();
+       }
+       
+       qDisplay = qDisplay.replace(/^PASSAGE \d+.*?:/i, '')
                           .replace(/^\(See above\)/i, '')
+                          .replace(/^Cont\.:/i, '')
+                          .replace(/^\(Cont\.\):?/i, '')
                           .trim();
-       if (!qDisplay || qDisplay.length < 5) qDisplay = "Parçaya göre soruyu cevaplayınız.";
+                          
+       if (!qDisplay || qDisplay.length < 3) qDisplay = "Parçaya göre soruyu cevaplayınız.";
   }
   
   document.getElementById('meQuestion').innerHTML = qDisplay.replace(/\n/g, '<br>');

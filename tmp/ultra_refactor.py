@@ -1,107 +1,175 @@
-import os
 import json
+import os
 import re
 
-def clean_passage_junk(text):
-    if not text: return text
-    
-    # 1. Clean the 'Q17: CLOZE TEST 1: Q18:...' style junk
-    # This usually appears at the end.
-    text = re.sub(r'Q\d+:\s*(CLOZE TEST|Reading|Passage).*?$', '', text, flags=re.IGNORECASE | re.MULTILINE)
-    # Sometimes it's a long chain: Q17: ... Q18: ...
-    text = re.sub(r'Q\d+:\s*[A-Z\s\d]+:?', '', text, flags=re.IGNORECASE)
-    
-    # 2. Clean 'CLOZE TEST 1:' or 'PASSAGE 1:' from the START
-    text = re.sub(r'^(CLOZE TEST|PASSAGE|Reading)\s*\d+:\s*', '', text, flags=re.IGNORECASE)
-    
-    # 3. Clean '- Question 11' style junk at the end
-    text = re.sub(r'\s*-\s*Question\s*\d+\s*$', '', text, flags=re.IGNORECASE)
-    
+def clean_cloze_passage(text):
+    # Remove selection markers like (Q17 selection):
+    text = re.sub(r'\(Q\d+ selection\):.*', '', text, flags=re.IGNORECASE)
+    # Remove Part headers
+    text = re.sub(r'\(Cloze Test \d+ - Part \d+\)\s*', '', text, flags=re.IGNORECASE)
+    # Remove question numbers like (17)___
+    text = re.sub(r'\(\d+\)\s*[_.]+', ' (___) ', text)
+    text = text.strip()
+    return text
+
+def clean_reading_passage(text):
+    # Remove markers like PASSAGE 1:
+    text = re.sub(r'^PASSAGE\s+\d+:?\s*', '', text, flags=re.IGNORECASE)
     return text.strip()
 
-def process_exam(data):
-    changed = False
-    if 'passages' not in data:
-        data['passages'] = []
+def refactor_file(filepath):
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except:
+        return False
+
+    if 'questions' not in data:
+        return False
+
+    passages = data.get('passages', [])
+    questions = data['questions']
     
-    # Track which passages we've already extracted to avoid duplicates
-    existing_texts = {p['text'].strip() for p in data['passages'] if 'text' in p}
-    
-    questions = data.get('questions', [])
-    for q in questions:
-        q_text = q.get('question', '')
-        section_id = q.get('section_id', '').lower()
-        
-        # We only care about Reading and Cloze for extraction
-        if 'read' in section_id or 'cloze' in section_id:
-            # If the question is long, it might HAVE the passage
-            if len(q_text) > 200:
-                # Try to separate passage from question
-                # Pattern: Passage text... \n\n Question?
-                parts = re.split(r'\n\n|\r\n\r\n', q_text)
-                if len(parts) > 1:
-                    p_candidate = parts[0].strip()
-                    q_candidate = parts[-1].strip()
+    # ─── REFINE CLOZE SECTIONS (17-26) ───
+    for start_q in [17, 22]:
+        idx = next((i for i, q in enumerate(questions) if q['id'] == start_q), None)
+        if idx is not None:
+            full_p_text = ""
+            for offset in range(5):
+                if idx + offset < len(questions):
+                    q_part = questions[idx + offset]
+                    if q_part.get('section_id') != 'cloze': continue
                     
-                    # Clean the passage candidate
-                    p_candidate = clean_passage_junk(p_candidate)
+                    t = q_part.get('question', '')
+                    if "Boşluk" in t and "için en uygun" in t:
+                        continue # Already refactored, skip extraction
                     
-                    if len(p_candidate) > 100:
-                        # Extract this as a new passage if not already there
-                        if p_candidate not in existing_texts:
-                            pid = f"p_auto_{q['id']}"
-                            data['passages'].append({
-                                "id": pid,
-                                "title": "Passage" if 'read' in section_id else "Cloze Test",
-                                "text": p_candidate
-                            })
-                            existing_texts.add(p_candidate)
-                            q['passage_id'] = pid
+                    # Remove "Part X" and "selection"
+                    t = re.sub(r'\(Cloze Test \d+ - Part \d+\)\s*', '', t, flags=re.IGNORECASE)
+                    t = re.sub(r'\(Q\d+ selection\):.*', '', t, flags=re.IGNORECASE)
+                    
+                    clean_t = t.strip()
+                    if clean_t and clean_t not in full_p_text:
+                        # If Part 1 already has the whole thing
+                        if full_p_text and len(clean_t) > len(full_p_text) * 0.8 and full_p_text in clean_t:
+                            full_p_text = clean_t
+                        elif clean_t and clean_t in full_p_text:
+                            pass
                         else:
-                            # Link to existing
-                            for p in data['passages']:
-                                if p['text'].strip() == p_candidate:
-                                    q['passage_id'] = p['id']
-                                    break
-                        
-                        # Set the cleaned question
-                        q['question'] = q_candidate
-                        changed = True
-    
-    # Final pass on all passages and questions to clean remnants
-    for p in data['passages']:
-        if 'text' in p:
-            old = p['text']
-            p['text'] = clean_passage_junk(p['text'])
-            if old != p['text']: changed = True
+                            if full_p_text: full_p_text += " "
+                            full_p_text += clean_t
             
-    for q in questions:
-        if 'question' in q:
-            old = q['question']
-            q['question'] = clean_passage_junk(q['question'])
-            # Special case for "See above"
-            if "(See above)" in q['question'] or "See above" == q['question'].strip():
-                if 'read' in q.get('section_id', ''):
-                    q['question'] = "Parçaya göre soruyu cevaplayınız."
-                else:
-                    q['question'] = "Boşluk için en uygun seçeneği bulun."
-            if old != q['question']: changed = True
+            if full_p_text and "Boşluk" not in full_p_text:
+                p_text = clean_cloze_passage(full_p_text)
+                if len(p_text) > 30:
+                    p_id = f"p_cloze_{start_q}_{os.path.basename(filepath).replace('.json','')}"
+                    # Update or create
+                    exists = False
+                    for p in passages:
+                        if p['id'] == p_id:
+                            p['text'] = p_text
+                            exists = True
+                            break
+                    if not exists:
+                        passages.append({
+                            "id": p_id,
+                            "title": f"Cloze Test {start_q}-{start_q+4}",
+                            "text": p_text
+                        })
+                    
+                    for offset in range(5):
+                        if idx + offset < len(questions):
+                            tq = questions[idx + offset]
+                            if tq.get('section_id') == 'cloze':
+                                tq['passage_id'] = p_id
+                                tq['question'] = f"Boşluk {tq['id']} için en uygun seçeneği bulun."
 
-    return changed
+    # ─── REFINE READING SECTIONS (43-62) ───
+    for start_q in [43, 47, 51, 55, 59]:
+        idx = next((i for i, q in enumerate(questions) if q['id'] == start_q), None)
+        if idx is not None:
+            q_lead = questions[idx]
+            q_text = q_lead.get('question', '')
+            
+            split_markers = [
+                "According to the passage", "As stated in the", "It can be inferred",
+                "What is the primary", "What is the main", "The term", "Which of the following",
+                "It is clear from", "The author", "---",
+                "Lütfen yukarıdaki metne göre", "Hangisi parçaya göre", "Metne göre", "Parçadan anlaşılacağı üzere"
+            ]
+            
+            best_pos = -1
+            for m in split_markers:
+                match = re.search(re.escape(m), q_text, re.IGNORECASE)
+                if match:
+                    pos = match.start()
+                    if pos > 100:
+                        if best_pos == -1 or pos < best_pos:
+                            best_pos = pos
+            
+            if best_pos != -1:
+                p_text = q_text[:best_pos].strip()
+                actual_q = q_text[best_pos:].strip()
+                
+                if len(actual_q) < 15 and "---" in actual_q:
+                    p_sentences = re.split(r'(?<=[.!?])\s+', p_text)
+                    if len(p_sentences) > 1:
+                        actual_q = p_sentences[-1] + " " + actual_q
+                        p_text = " ".join(p_sentences[:-1])
+                
+                p_text = clean_reading_passage(p_text)
+                p_id = f"p_read_{start_q}_{os.path.basename(filepath).replace('.json','')}"
+                
+                exists = False
+                for p in passages:
+                    if p['id'] == p_id:
+                        p['text'] = p_text
+                        exists = True
+                        break
+                if not exists:
+                    passages.append({
+                        "id": p_id,
+                        "title": f"Reading {start_q}",
+                        "text": p_text
+                    })
+                
+                for offset in range(4):
+                    if idx + offset < len(questions):
+                        target_q = questions[idx + offset]
+                        if target_q.get('section_id') == 'reading':
+                            target_q['passage_id'] = p_id
+                            t_text = target_q.get('question', '')
+                            t_text = re.sub(r'^.*?\(Cont\.\):?\s*', '', t_text, flags=re.IGNORECASE)
+                            t_text = re.sub(r'^.*?PASSAGE\s+\d+:?\s*', '', t_text, flags=re.IGNORECASE)
+                            
+                            if offset == 0:
+                                target_q['question'] = actual_q
+                            else:
+                                if p_text and p_text[:30] in t_text:
+                                    found = False
+                                    for m in split_markers:
+                                        m_match = re.search(re.escape(m), t_text, re.IGNORECASE)
+                                        if m_match:
+                                            target_q['question'] = t_text[m_match.start():].strip()
+                                            found = True
+                                            break
+                                    if not found:
+                                        target_q['question'] = t_text.replace(p_text, "").strip()
+                                else:
+                                    target_q['question'] = t_text.strip()
+                            
+                            if not target_q['question'] or len(target_q['question']) < 5:
+                                target_q['question'] = "Lütfen yukarıdaki metne göre soruyu cevaplayınız."
 
-base_dir = r'c:\Users\User\Desktop\Adai\yds\ydsgrammar\public\exams'
-for sub in ['full', 'mini']:
-    folder = os.path.join(base_dir, sub)
-    if not os.path.exists(folder): continue
-    for filename in os.listdir(folder):
-        if filename.endswith('.json'):
-            path = os.path.join(folder, filename)
-            try:
-                with open(path, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                if process_exam(data):
-                    with open(path, 'w', encoding='utf-8') as f:
-                        json.dump(data, f, indent=4, ensure_ascii=False)
-                    print(f"Fixed {sub}/{filename}")
-            except Exception as e:
-                print(f"Error {filename}: {e}")
+    data['passages'] = passages
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    return True
+
+base_dir = r"c:\Users\User\Desktop\Adai\yds\ydsgrammar\public\exams"
+for root, dirs, files in os.walk(base_dir):
+    for file in files:
+        if file.endswith('.json'):
+            path = os.path.join(root, file)
+            if refactor_file(path):
+                print(f"Final Refactored {path}")

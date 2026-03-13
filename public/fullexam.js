@@ -328,36 +328,40 @@ function feRenderQuestion() {
   const isCloze = sectionType.includes('cloze');
   const isReading = sectionType.includes('reading');
 
-  // DISPLAY PASSAGE / LEADING TEXT
-  if (q.passage_id) {
-    const passage = feExamData.passages.find(p => p.id === q.passage_id);
-    if (passage && passage.text) {
-      const typeLabel = isCloze ? 'CLOZE TEST PARÇASI' : (isReading ? 'OKUMA PARÇASI' : 'DETAY METNİ');
-      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">${typeLabel}</div>` + passage.text.replace(/\n/g, '<br>');
-      passageBox.classList.remove('hidden');
-    }
-  } else if (q.leading_text) {
-    passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
-    passageBox.classList.remove('hidden');
+  // 1. DISPLAY PASSAGE
+  let passageText = "";
+  if (q.passage_id && feExamData.passages) {
+      const pObj = feExamData.passages.find(p => p.id === q.passage_id);
+      if (pObj) passageText = pObj.text;
   }
 
-  // QUESTION TEXT CLEANING
-  let qDisplay = q.question;
+  if (isCloze || isReading) {
+      if (passageText) {
+          const typeLabel = isCloze ? 'CLOZE TEST PARÇASI' : 'OKUMA PARÇASI';
+          passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">${typeLabel}</div>` + passageText.replace(/\n/g, '<br>');
+          passageBox.classList.remove('hidden');
+      }
+  } else if (q.leading_text) {
+      passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
+      passageBox.classList.remove('hidden');
+  }
+
+  // 2. DISPLAY QUESTION TEXT
+  let qDisplay = q.question || "";
   if (isCloze) {
-      // For Cloze, we usually just show the prompt
       qDisplay = `<b>SORU ${feCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
-  } else {
-      // Final cleanup: remove residual labels and fix casing
-      qDisplay = qDisplay.replace(/Passage\s+\d+.*?:/i, '')
-                         .replace(/^\(Cont\.\):/i, '')
+  } else if (isReading && passageText) {
+      // Cleanup redundancy
+      if (qDisplay.includes(passageText.substring(0, 50))) {
+          qDisplay = qDisplay.replace(passageText.substring(0, 100), "").trim();
+      }
+      qDisplay = qDisplay.replace(/^PASSAGE\s+\d+:?\s*/i, '')
+                         .replace(/^\(Cont\.\):?\s*/i, '')
+                         .replace(/^Cont\.:?/i, '')
                          .replace(/\[Text as above\]/i, '')
-                         .replace(/\(Paragraph\s+\d+.*?\)/i, '')
-                         .replace(/\(Cloze Test\s+\d+.*?\)/i, '')
                          .trim();
       
-      if (qDisplay.length > 0) {
-          qDisplay = qDisplay.charAt(0).toUpperCase() + qDisplay.slice(1);
-      } else {
+      if (!qDisplay || qDisplay.length < 3) {
           qDisplay = "Lütfen yukarıdaki metne göre soruyu cevaplayınız.";
       }
   }

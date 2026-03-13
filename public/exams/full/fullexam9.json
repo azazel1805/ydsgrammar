@@ -61,7 +61,43 @@
             "to": 80
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_fullexam9",
+            "title": "Cloze Test 17-21",
+            "text": "Neuroplasticity is the brain's ability to reorganize itself  (___)  forming new neural connections throughout life. This phenomenon  (___)  the brain to compensate for injury and disease.  (___)  it was once thought that the brain was a static organ, we now know it is highly  (___)  This discovery has  (___)  new avenues for treating neurological disorders."
+        },
+        {
+            "id": "p_cloze_22_fullexam9",
+            "title": "Cloze Test 22-26",
+            "text": "Sustainable development seeks to meet the needs of the present  (___)  compromising the ability of future generations. It  (___)  a balance between economic growth and environmental protection. Many experts argue that  (___)  we change our consumption patterns, the planet's resources will be exhausted.  (___) , renewable energy sources must be prioritized. The transition,  (___) , requires significant global cooperation."
+        },
+        {
+            "id": "p_read_43_fullexam9",
+            "title": "Reading 43",
+            "text": "The Anthropocene epoch, a proposed geological period characterized by human impact on Earth, remains a subject of intense debate among stratigraphers. While some argue that the onset of the Industrial Revolution in the late 18th century marks its beginning, others point to the mid-20th century 'Great Acceleration' as a more definitive boundary. This latter period is marked by a surge in nuclear testing, which left a distinct radioactive signature in the global geological record. Regardless of its official start date, the Anthropocene signifies a shift where biological and geological processes are fundamentally altered by anthropogenic activities."
+        },
+        {
+            "id": "p_read_47_fullexam9",
+            "title": "Reading 47",
+            "text": "The advent of CRISPR-Cas9 technology has revolutionized genetic engineering by allowing for precise edits to the DNA of living organisms. Unlike previous methods, which were cumbersome and imprecise, CRISPR uses a guide RNA to target specific sequences. This has opened new avenues for treating hereditary diseases and enhancing agricultural yields. However, the potential for 'germline editing'—changes that are inheritable—raises profound ethical questions about the future of human evolution and the risk of unintended ecological consequences."
+        },
+        {
+            "id": "p_read_51_fullexam9",
+            "title": "Reading 51",
+            "text": "The concept of 'Soft Power', coined by Joseph Nye, refers to a nation's ability to influence others through attraction and persuasion rather than coercion or payment. While 'Hard Power' relies on military might and economic sanctions, Soft Power draws on culture, political values, and foreign policies. In the digital age, the diffusion of information has made Soft Power increasingly vital, as public perception can sway international relations more rapidly than ever. However, critics argue that Soft Power is difficult to measure and cannot replace the necessity of a strong military."
+        },
+        {
+            "id": "p_read_55_fullexam9",
+            "title": "Reading 55",
+            "text": "Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the traditional view that the adult brain is a static organ. Neuroplasticity allows neurons in the brain to compensate for injury and adjust their activities in response to new situations or changes in their environment. For instance, when one sensory system is damaged, other systems may become more acute. However, this adaptability also means the brain can be negatively influenced by chronic stress or addictive behaviors, which 're-wire' the brain in harmful ways."
+        },
+        {
+            "id": "p_read_59_fullexam9",
+            "title": "Reading 59",
+            "text": "The 'Resource Curse' refers to the paradox that countries with an abundance of natural resources, such as oil and minerals, tend to have less economic growth and worse development outcomes than countries with fewer natural resources. This often occurs because the economy becomes overly dependent on a single export, making it vulnerable to market fluctuations. Furthermore, the wealth generated often leads to corruption and the neglect of other sectors like education and manufacturing. To avoid this, some nations have established sovereign wealth funds to diversify their investments and ensure long-term stability."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -290,8 +326,8 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Neuroplasticity is the brain's ability to reorganize itself (17) ___ forming new neural connections throughout life. This phenomenon (18) ___ the brain to compensate for injury and disease. (19) ___ it was once thought that the brain was a static organ, we now know it is highly (20) ___. This discovery has (21) ___ new avenues for treating neurological disorders. (Q17 selection):",
+            "passage_id": "p_cloze_17_fullexam9",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "by",
                 "B": "at",
@@ -304,8 +340,8 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Neuroplasticity is the brain's ability to reorganize itself (17) ___ forming new neural connections throughout life. This phenomenon (18) ___ the brain to compensate for injury and disease. (19) ___ it was once thought that the brain was a static organ, we now know it is highly (20) ___. This discovery has (21) ___ new avenues for treating neurological disorders. (Q18 selection):",
+            "passage_id": "p_cloze_17_fullexam9",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "allows",
                 "B": "denies",
@@ -318,8 +354,8 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Neuroplasticity is the brain's ability to reorganize itself (17) ___ forming new neural connections throughout life. This phenomenon (18) ___ the brain to compensate for injury and disease. (19) ___ it was once thought that the brain was a static organ, we now know it is highly (20) ___. This discovery has (21) ___ new avenues for treating neurological disorders. (Q19 selection):",
+            "passage_id": "p_cloze_17_fullexam9",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "While",
                 "B": "Since",
@@ -332,8 +368,8 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Neuroplasticity is the brain's ability to reorganize itself (17) ___ forming new neural connections throughout life. This phenomenon (18) ___ the brain to compensate for injury and disease. (19) ___ it was once thought that the brain was a static organ, we now know it is highly (20) ___. This discovery has (21) ___ new avenues for treating neurological disorders. (Q20 selection):",
+            "passage_id": "p_cloze_17_fullexam9",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "malleable",
                 "B": "rigid",
@@ -346,8 +382,8 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Neuroplasticity is the brain's ability to reorganize itself (17) ___ forming new neural connections throughout life. This phenomenon (18) ___ the brain to compensate for injury and disease. (19) ___ it was once thought that the brain was a static organ, we now know it is highly (20) ___. This discovery has (21) ___ new avenues for treating neurological disorders. (Q21 selection):",
+            "passage_id": "p_cloze_17_fullexam9",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "opened up",
                 "B": "turned down",
@@ -360,8 +396,8 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Sustainable development seeks to meet the needs of the present (22) ___ compromising the ability of future generations. It (23) ___ a balance between economic growth and environmental protection. Many experts argue that (24) ___ we change our consumption patterns, the planet's resources will be exhausted. (25) ___, renewable energy sources must be prioritized. The transition, (26) ___, requires significant global cooperation. (Q22 selection):",
+            "passage_id": "p_cloze_22_fullexam9",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "without",
                 "B": "by",
@@ -374,8 +410,8 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Sustainable development seeks to meet the needs of the present (22) ___ compromising the ability of future generations. It (23) ___ a balance between economic growth and environmental protection. Many experts argue that (24) ___ we change our consumption patterns, the planet's resources will be exhausted. (25) ___, renewable energy sources must be prioritized. The transition, (26) ___, requires significant global cooperation. (Q23 selection):",
+            "passage_id": "p_cloze_22_fullexam9",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "necessitates",
                 "B": "eliminates",
@@ -388,8 +424,8 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Sustainable development seeks to meet the needs of the present (22) ___ compromising the ability of future generations. It (23) ___ a balance between economic growth and environmental protection. Many experts argue that (24) ___ we change our consumption patterns, the planet's resources will be exhausted. (25) ___, renewable energy sources must be prioritized. The transition, (26) ___, requires significant global cooperation. (Q24 selection):",
+            "passage_id": "p_cloze_22_fullexam9",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "unless",
                 "B": "if",
@@ -402,8 +438,8 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Sustainable development seeks to meet the needs of the present (22) ___ compromising the ability of future generations. It (23) ___ a balance between economic growth and environmental protection. Many experts argue that (24) ___ we change our consumption patterns, the planet's resources will be exhausted. (25) ___, renewable energy sources must be prioritized. The transition, (26) ___, requires significant global cooperation. (Q25 selection):",
+            "passage_id": "p_cloze_22_fullexam9",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Therefore",
                 "B": "However",
@@ -416,8 +452,8 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Sustainable development seeks to meet the needs of the present (22) ___ compromising the ability of future generations. It (23) ___ a balance between economic growth and environmental protection. Many experts argue that (24) ___ we change our consumption patterns, the planet's resources will be exhausted. (25) ___, renewable energy sources must be prioritized. The transition, (26) ___, requires significant global cooperation. (Q26 selection):",
+            "passage_id": "p_cloze_22_fullexam9",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "however",
                 "B": "rather",
@@ -654,8 +690,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "The Anthropocene epoch, a proposed geological period characterized by human impact on Earth, remains a subject of intense debate among stratigraphers. While some argue that the onset of the Industrial Revolution in the late 18th century marks its beginning, others point to the mid-20th century 'Great Acceleration' as a more definitive boundary. This latter period is marked by a surge in nuclear testing, which left a distinct radioactive signature in the global geological record. Regardless of its official start date, the Anthropocene signifies a shift where biological and geological processes are fundamentally altered by anthropogenic activities. According to the passage, the primary disagreement regarding the Anthropocene concerns ---.",
+            "passage_id": "p_read_43_fullexam9",
+            "question": "According to the passage, the primary disagreement regarding the Anthropocene concerns ---.",
             "options": {
                 "A": "its long-term impact on the Earths biodiversity",
                 "B": "the specific point in time when it officially began",
@@ -668,8 +704,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The Anthropocene epoch... The 'Great Acceleration' mentioned in the text refers to ---.",
+            "passage_id": "p_read_43_fullexam9",
+            "question": "The Anthropocene epoch... The 'Great Acceleration' mentioned in the text refers to ---.",
             "options": {
                 "A": "the rapid growth of industrial output in the 18th century",
                 "B": "the swift transition from coal to nuclear energy sources",
@@ -682,8 +718,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The Anthropocene epoch... It can be inferred from the passage that nuclear testing ---.",
+            "passage_id": "p_read_43_fullexam9",
+            "question": "The Anthropocene epoch... It can be inferred from the passage that nuclear testing ---.",
             "options": {
                 "A": "is the sole reason for proposing the Anthropocene",
                 "B": "has had a negligible effect on the geological record",
@@ -696,8 +732,8 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The Anthropocene epoch... What is the author's attitude toward the Anthropocene?",
+            "passage_id": "p_read_43_fullexam9",
+            "question": "The Anthropocene epoch... What is the author's attitude toward the Anthropocene?",
             "options": {
                 "A": "Dismissive of its scientific validity",
                 "B": "Purely descriptive and objective",
@@ -710,8 +746,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "The advent of CRISPR-Cas9 technology has revolutionized genetic engineering by allowing for precise edits to the DNA of living organisms. Unlike previous methods, which were cumbersome and imprecise, CRISPR uses a guide RNA to target specific sequences. This has opened new avenues for treating hereditary diseases and enhancing agricultural yields. However, the potential for 'germline editing'—changes that are inheritable—raises profound ethical questions about the future of human evolution and the risk of unintended ecological consequences. It is clear from the passage that CRISPR-Cas9 is superior to older gene-editing tools because ---.",
+            "passage_id": "p_read_47_fullexam9",
+            "question": "It is clear from the passage that CRISPR-Cas9 is superior to older gene-editing tools because ---.",
             "options": {
                 "A": "it is less expensive to implement in third-world countries",
                 "B": "it allows for more accurate modifications of genetic material",
@@ -724,8 +760,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The advent of CRISPR... The term 'germline editing' is significant because ---.",
+            "passage_id": "p_read_47_fullexam9",
+            "question": "The advent of CRISPR... The term 'germline editing' is significant because ---.",
             "options": {
                 "A": "it refers only to the editing of plant species",
                 "B": "the modifications made can be passed down to future generations",
@@ -738,8 +774,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The advent of CRISPR... One can conclude from the passage that while CRISPR is technologically advanced, ---.",
+            "passage_id": "p_read_47_fullexam9",
+            "question": "The advent of CRISPR... One can conclude from the passage that while CRISPR is technologically advanced, ---.",
             "options": {
                 "A": "it is still too slow for practical use in medicine",
                 "B": "it has no practical applications outside of human health",
@@ -752,8 +788,8 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The advent of CRISPR... The author mentions 'agricultural yields' to ---.",
+            "passage_id": "p_read_47_fullexam9",
+            "question": "The advent of CRISPR... The author mentions 'agricultural yields' to ---.",
             "options": {
                 "A": "argue that food production is more important than medicine",
                 "B": "illustrate one of the diverse applications of CRISPR",
@@ -766,8 +802,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "The concept of 'Soft Power', coined by Joseph Nye, refers to a nation's ability to influence others through attraction and persuasion rather than coercion or payment. While 'Hard Power' relies on military might and economic sanctions, Soft Power draws on culture, political values, and foreign policies. In the digital age, the diffusion of information has made Soft Power increasingly vital, as public perception can sway international relations more rapidly than ever. However, critics argue that Soft Power is difficult to measure and cannot replace the necessity of a strong military. The passage defines 'Soft Power' as the capacity to ---.",
+            "passage_id": "p_read_51_fullexam9",
+            "question": "The passage defines 'Soft Power' as the capacity to ---.",
             "options": {
                 "A": "force other nations to comply using economic pressure",
                 "B": "utilize cultural and ideological appeal to gain influence",
@@ -780,8 +816,8 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The concept of Soft Power... According to the text, the digital age has ---.",
+            "passage_id": "p_read_51_fullexam9",
+            "question": "The concept of Soft Power... According to the text, the digital age has ---.",
             "options": {
                 "A": "rendered Soft Power obsolete in the face of cyber warfare",
                 "B": "decreased the importance of a nation's public image",
@@ -794,8 +830,8 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The concept of Soft Power... What is a common criticism of Soft Power mentioned in the passage?",
+            "passage_id": "p_read_51_fullexam9",
+            "question": "The concept of Soft Power... What is a common criticism of Soft Power mentioned in the passage?",
             "options": {
                 "A": "It is too expensive for developing nations to cultivate",
                 "B": "It leads to more frequent military conflicts",
@@ -808,8 +844,8 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The concept of Soft Power... The relationship between Hard Power and Soft Power, as described, is one of ---.",
+            "passage_id": "p_read_51_fullexam9",
+            "question": "The concept of Soft Power... The relationship between Hard Power and Soft Power, as described, is one of ---.",
             "options": {
                 "A": "complete synonymy",
                 "B": "total independence",
@@ -822,8 +858,8 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the traditional view that the adult brain is a static organ. Neuroplasticity allows neurons in the brain to compensate for injury and adjust their activities in response to new situations or changes in their environment. For instance, when one sensory system is damaged, other systems may become more acute. However, this adaptability also means the brain can be negatively influenced by chronic stress or addictive behaviors, which 're-wire' the brain in harmful ways. It can be inferred from the passage that the traditional view of the brain ---.",
+            "passage_id": "p_read_55_fullexam9",
+            "question": "It can be inferred from the passage that the traditional view of the brain ---.",
             "options": {
                 "A": "was correct in assuming the brain does not change after childhood",
                 "B": "underestimated the brain's capacity for structural change",
@@ -836,8 +872,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) Neuroplasticity... According to the passage, if a person loses their sight, neuroplasticity might ---.",
+            "passage_id": "p_read_55_fullexam9",
+            "question": "Neuroplasticity... According to the passage, if a person loses their sight, neuroplasticity might ---.",
             "options": {
                 "A": "eventually restore the damaged optic nerves",
                 "B": "cause the brain to stop forming new connections",
@@ -850,8 +886,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) Neuroplasticity... The passage suggests that the brain's adaptability ---.",
+            "passage_id": "p_read_55_fullexam9",
+            "question": "Neuroplasticity... The passage suggests that the brain's adaptability ---.",
             "options": {
                 "A": "is always beneficial to the individual",
                 "B": "is limited to the recovery from physical head injuries",
@@ -864,8 +900,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) Neuroplasticity... Which of the following is true about 're-wiring' as mentioned in the text?",
+            "passage_id": "p_read_55_fullexam9",
+            "question": "Neuroplasticity... Which of the following is true about 're-wiring' as mentioned in the text?",
             "options": {
                 "A": "It only occurs during the very first years of life",
                 "B": "It is a process that requires surgical intervention",
@@ -878,8 +914,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "The 'Resource Curse' refers to the paradox that countries with an abundance of natural resources, such as oil and minerals, tend to have less economic growth and worse development outcomes than countries with fewer natural resources. This often occurs because the economy becomes overly dependent on a single export, making it vulnerable to market fluctuations. Furthermore, the wealth generated often leads to corruption and the neglect of other sectors like education and manufacturing. To avoid this, some nations have established sovereign wealth funds to diversify their investments and ensure long-term stability. The 'Resource Curse' is considered a paradox because ---.",
+            "passage_id": "p_read_59_fullexam9",
+            "question": "The 'Resource Curse' is considered a paradox because ---.",
             "options": {
                 "A": "natural resources are usually expected to boost a country's prosperity",
                 "B": "countries with many resources have the highest education levels",
@@ -892,8 +928,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The Resource Curse... According to the passage, one reason for poor development in resource-rich countries is ---.",
+            "passage_id": "p_read_59_fullexam9",
+            "question": "The Resource Curse... According to the passage, one reason for poor development in resource-rich countries is ---.",
             "options": {
                 "A": "the lack of demand for minerals in the global market",
                 "B": "the excessive focus on a single economic sector",
@@ -906,8 +942,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The Resource Curse... Sovereign wealth funds are mentioned as a way to ---.",
+            "passage_id": "p_read_59_fullexam9",
+            "question": "The Resource Curse... Sovereign wealth funds are mentioned as a way to ---.",
             "options": {
                 "A": "increase a country's dependence on its natural resources",
                 "B": "encourage corruption among government officials",
@@ -920,8 +956,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "(Cont.) The Resource Curse... It can be inferred from the passage that long-term stability requires ---.",
+            "passage_id": "p_read_59_fullexam9",
+            "question": "The Resource Curse... It can be inferred from the passage that long-term stability requires ---.",
             "options": {
                 "A": "an economy that relies solely on natural resource exports",
                 "B": "the elimination of all foreign trade and investment",
