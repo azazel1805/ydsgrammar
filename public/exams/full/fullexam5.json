@@ -64,11 +64,11 @@
     "passages": [
         {
             "id": "cloze_1",
-            "text": "(I) The Industrial Revolution marked a major turning point in history, (17) ____  almost every aspect of daily life. (II) It began in Great Britain in the late 18th century and (18) ____  spread to other parts of the world. (III) This period saw the transition from manual labor (19) ____  machine-based manufacturing. (IV) (20) ____ , urban populations exploded as people moved to cities for work. (V) This shift brought about both economic growth and social (21) ____ .:"
+            "text": "(I) The Industrial Revolution marked a major turning point in history, (17) ____ influencing almost every aspect of daily life. (II) It began in Great Britain in the late 18th century and (18) ____ spread to other parts of the world. (III) This period saw the transition from manual labor (19) ____ machine-based manufacturing. (IV) (20) ____, urban populations exploded as people moved to cities for work. (V) This shift brought about both economic growth and social (21) ____."
         },
         {
             "id": "cloze_2",
-            "text": "(I) Photosynthesis is the process (22) ____  green plants and some other organisms use sunlight to synthesize foods. (II) It (23) ____  involves the green pigment chlorophyll and generates oxygen as a byproduct. (III) Without this process, life on Earth (24) ____  as we know it. (IV) Plants absorb carbon dioxide from the atmosphere, (25) ____  helps mitigate the greenhouse effect. (V) (26) ____ , protecting forests is crucial for maintaining planetary health.:"
+            "text": "(I) Photosynthesis is the process (22) ____ whereby green plants and some other organisms use sunlight to synthesize foods. (II) It (23) ____ involves the green pigment chlorophyll and generates oxygen as a byproduct. (III) Without this process, life on Earth (24) ____ as we know it. (IV) Plants absorb carbon dioxide from the atmosphere, (25) ____ helps mitigate the greenhouse effect. (V) (26) ____, protecting forests is crucial for maintaining planetary health."
         },
         {
             "id": "reading_1",
@@ -76,7 +76,7 @@
         },
         {
             "id": "reading_2",
-            "text": "Behavioral economics challenges the classical assumption of the 'homo economicus'—the perfectly rational actor who always makes decisions to maximize utility. Instead, it incorporates psychological insights to explain why individuals often act irrationally. Concepts such as loss aversion, where the pain of losing is psychologically twice as powerful as the pleasure of gaining, and the endowment effect, where people overvalue what they already own, provide a more nuanced understanding of market behavior. These 'heuristics' or mental shortcuts are often efficient but can lead to systematic biases. By understanding these biases, policymakers can design 'nudges' that steer people toward better choices without restricting their freedom. The concept of 'loss aversion' implies that:"
+            "text": "Behavioral economics challenges the classical assumption of the 'homo economicus'—the perfectly rational actor who always makes decisions to maximize utility. Instead, it incorporates psychological insights to explain why individuals often act irrationally. Concepts such as loss aversion, where the pain of losing is psychologically twice as powerful as the pleasure of gaining, and the endowment effect, where people overvalue what they already own, provide a more nuanced understanding of market behavior. These 'heuristics' or mental shortcuts are often efficient but can lead to systematic biases. By understanding these biases, policymakers can design 'nudges' that steer people toward better choices without restricting their freedom."
         },
         {
             "id": "reading_3",
@@ -84,11 +84,11 @@
         },
         {
             "id": "reading_4",
-            "text": "Epigenetics refers to the study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence. Essentially, while the 'blueprint' of the DNA remains the same, external factors—such as diet, stress, and environmental toxins—can trigger chemical modifications that turn genes on or off. One of the most common mechanisms is DNA methylation. These changes can be passed down to future generations, meaning that the lifestyle choices of ancestors could potentially affect the health of their descendants. This field challenges the traditional view that our genetic destiny is fixed at birth, suggesting a dynamic interaction between nature and nurture. Epigenetics is defined as the study of:"
+            "text": "Epigenetics refers to the study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence. Essentially, while the 'blueprint' of the DNA remains the same, external factors—such as diet, stress, and environmental toxins—can trigger chemical modifications that turn genes on or off. One of the most common mechanisms is DNA methylation. These changes can be passed down to future generations, meaning that the lifestyle choices of ancestors could potentially affect the health of their descendants. This field challenges the traditional view that our genetic destiny is fixed at birth, suggesting a dynamic interaction between nature and nurture."
         },
         {
             "id": "reading_5",
-            "text": "The emergence of Abstract Expressionism in post-World War II New York marked a pivotal shift in the art world, moving its center from Paris to the United States. Artists like Jackson Pollock and Mark Rothko sought to express profound emotional and subconscious states through non-representational forms. Pollock's 'drip paintings' emphasized the physical act of painting itself, a technique known as action painting, while Rothko's 'color fields' utilized large expanses of color to evoke a sense of the sublime. Though criticized by some as chaotic or lacking skill, the movement was a response to the trauma of the war, seeking a new visual language that transcended traditional boundaries. Abstract Expressionism is characterized by:"
+            "text": "The emergence of Abstract Expressionism in post-World War II New York marked a pivotal shift in the art world, moving its center from Paris to the United States. Artists like Jackson Pollock and Mark Rothko sought to express profound emotional and subconscious states through non-representational forms. Pollock's 'drip paintings' emphasized the physical act of painting itself, a technique known as action painting, while Rothko's 'color fields' utilized large expanses of color to evoke a sense of the sublime. Though criticized by some as chaotic or lacking skill, the movement was a response to the trauma of the war, seeking a new visual language that transcended traditional boundaries."
         }
     ],
     "questions": [
@@ -320,7 +320,7 @@
             "id": 17,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 17 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (17).",
             "options": {
                 "A": "influencing",
                 "B": "influenced",
@@ -334,7 +334,7 @@
             "id": 18,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 18 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (18).",
             "options": {
                 "A": "subsequently",
                 "B": "rarely",
@@ -348,7 +348,7 @@
             "id": 19,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 19 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (19).",
             "options": {
                 "A": "to",
                 "B": "with",
@@ -362,7 +362,7 @@
             "id": 20,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 20 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (20).",
             "options": {
                 "A": "Consequently",
                 "B": "However",
@@ -376,7 +376,7 @@
             "id": 21,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 21 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (21).",
             "options": {
                 "A": "challenges",
                 "B": "benefits",
@@ -390,7 +390,7 @@
             "id": 22,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 22 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (22).",
             "options": {
                 "A": "whereby",
                 "B": "which",
@@ -404,7 +404,7 @@
             "id": 23,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 23 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (23).",
             "options": {
                 "A": "primarily",
                 "B": "scarcely",
@@ -418,7 +418,7 @@
             "id": 24,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 24 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (24).",
             "options": {
                 "A": "would not exist",
                 "B": "will not exist",
@@ -432,7 +432,7 @@
             "id": 25,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 25 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (25).",
             "options": {
                 "A": "which",
                 "B": "what",
@@ -446,7 +446,7 @@
             "id": 26,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 26 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (26).",
             "options": {
                 "A": "Therefore",
                 "B": "However",
@@ -698,7 +698,7 @@
             "id": 44,
             "section_id": "reading",
             "passage_id": "reading_1",
-            "question": "[Text as above] What is the main point of contention regarding the Anthropocene among scientists?",
+            "question": "What is the main point of contention regarding the Anthropocene among scientists?",
             "options": {
                 "A": "Whether humans have actually impacted the Earth's ecosystems",
                 "B": "The specific date and marker that defines its beginning",
@@ -712,7 +712,7 @@
             "id": 45,
             "section_id": "reading",
             "passage_id": "reading_1",
-            "question": "[Text as above] The author mentions 'radioactive isotopes' to:",
+            "question": "The author mentions 'radioactive isotopes' to:",
             "options": {
                 "A": "Argue against the use of nuclear energy",
                 "B": "Provide an example of a potential marker for the new epoch",
@@ -726,7 +726,7 @@
             "id": 46,
             "section_id": "reading",
             "passage_id": "reading_1",
-            "question": "[Text as above] It can be inferred from the passage that the Anthropocene:",
+            "question": "It can be inferred from the passage that the Anthropocene:",
             "options": {
                 "A": "Is an officially recognized geological epoch by all scientific bodies",
                 "B": "Is characterized by human influence on global natural processes",
@@ -740,7 +740,7 @@
             "id": 47,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "",
+            "question": "The concept of 'loss aversion' implies that:",
             "options": {
                 "A": "People value gains and losses equally",
                 "B": "Losing something is more impactful than gaining something of equal value",
@@ -754,7 +754,7 @@
             "id": 48,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "[Text as above] According to the passage, 'heuristics' are:",
+            "question": "According to the passage, 'heuristics' are:",
             "options": {
                 "A": "Logical fallacies that should always be avoided",
                 "B": "Mental shortcuts that can cause systematic biases",
@@ -768,7 +768,7 @@
             "id": 49,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "[Text as above] What is the purpose of a 'nudge' in the context of behavioral economics?",
+            "question": "What is the purpose of a 'nudge' in the context of behavioral economics?",
             "options": {
                 "A": "To force citizens to comply with strict economic laws",
                 "B": "To eliminate the psychological endowment effect entirely",
@@ -782,7 +782,7 @@
             "id": 50,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "[Text as above] The passage suggests that classical economic models:",
+            "question": "The passage suggests that classical economic models:",
             "options": {
                 "A": "Are more accurate than behavioral ones in predicting human behavior",
                 "B": "Reliably account for the psychological biases of individuals",
@@ -810,7 +810,7 @@
             "id": 52,
             "section_id": "reading",
             "passage_id": "reading_3",
-            "question": "[Text as above] According to the text, what role did neglect play in the library's history?",
+            "question": "According to the text, what role did neglect play in the library's history?",
             "options": {
                 "A": "It was the primary reason Julius Caesar decided to attack",
                 "B": "It led to the loss of many scrolls before the library finally closed",
@@ -824,7 +824,7 @@
             "id": 53,
             "section_id": "reading",
             "passage_id": "reading_3",
-            "question": "[Text as above] The mention of 'Theodosius I' serves to:",
+            "question": "The mention of 'Theodosius I' serves to:",
             "options": {
                 "A": "Show that the library was protected by the Roman Empire",
                 "B": "Illustrate the religious tensions that contributed to the library's decline",
@@ -838,7 +838,7 @@
             "id": 54,
             "section_id": "reading",
             "passage_id": "reading_3",
-            "question": "[Text as above] It can be inferred from the passage that:",
+            "question": "It can be inferred from the passage that:",
             "options": {
                 "A": "The popular myth about the library is historically accurate",
                 "B": "The library's contents were insignificant by the time of the Muslim conquest",
@@ -852,7 +852,7 @@
             "id": 55,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "",
+            "question": "Epigenetics is defined as the study of:",
             "options": {
                 "A": "Changes in the DNA sequence caused by mutations",
                 "B": "How environmental factors change gene activity without changing DNA",
@@ -866,7 +866,7 @@
             "id": 56,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "[Text as above] According to the passage, DNA methylation is:",
+            "question": "According to the passage, DNA methylation is:",
             "options": {
                 "A": "A harmful mutation caused by radiation",
                 "B": "A chemical modification that regulates gene expression",
@@ -880,7 +880,7 @@
             "id": 57,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "[Text as above] What is the implication of epigenetic changes being 'heritable'?",
+            "question": "What is the implication of epigenetic changes being 'heritable'?",
             "options": {
                 "A": "Lifestyle choices only affect the individual, not their children",
                 "B": "Genetic traits are determined solely by the DNA sequence",
@@ -894,7 +894,7 @@
             "id": 58,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "[Text as above] The passage suggests that the relationship between nature and nurture is:",
+            "question": "The passage suggests that the relationship between nature and nurture is:",
             "options": {
                 "A": "A strict dichotomy where nature is always more powerful",
                 "B": "A dynamic interaction where nurture can influence nature",
@@ -908,7 +908,7 @@
             "id": 59,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "",
+            "question": "Abstract Expressionism is characterized by:",
             "options": {
                 "A": "A return to classical painting techniques and realism",
                 "B": "The use of non-representational forms to express emotion",
@@ -922,7 +922,7 @@
             "id": 60,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "[Text as above] How did Jackson Pollock's style differ from traditional painting?",
+            "question": "How did Jackson Pollock's style differ from traditional painting?",
             "options": {
                 "A": "He used only primary colors in his expanses",
                 "B": "He focused on the physical process of applying paint",
@@ -936,7 +936,7 @@
             "id": 61,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "[Text as above] What was a major consequence of the Abstract Expressionist movement?",
+            "question": "What was a major consequence of the Abstract Expressionist movement?",
             "options": {
                 "A": "Paris became the undisputed capital of the art world",
                 "B": "The move of the art world's focus to New York City",
@@ -950,7 +950,7 @@
             "id": 62,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "[Text as above] The author suggests that Abstract Expressionism was:",
+            "question": "The author suggests that Abstract Expressionism was:",
             "options": {
                 "A": "A reaction to the psychological impact of World War II",
                 "B": "Widely praised by all critics from its inception",
