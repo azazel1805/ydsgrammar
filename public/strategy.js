@@ -95,7 +95,7 @@ function renderStrategyQuestion() {
                             </p>
                         </div>
 
-                        <!-- Grammar/Vocab -->
+                        <!-- Grammar/Vocab/Trap -->
                         <div class="space-y-6">
                             <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
                                 <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Odak Noktası</h4>
@@ -108,6 +108,13 @@ function renderStrategyQuestion() {
                                     ${(q.explanation?.vocabulary || []).map(v => `<span class="px-3 py-1 bg-red-900/20 border border-red-900/30 rounded-lg text-red-400 text-sm">${v}</span>`).join('') || '<span class="text-slate-500 italic">Veri hazırlanıyor...</span>'}
                                 </div>
                             </div>
+
+                            <div class="p-6 bg-red-900/10 rounded-2xl border border-red-900/20">
+                                <h4 class="text-xs font-bold text-red-500 uppercase tracking-widest mb-3">YDS Tuzağı / Sınav İpucu</h4>
+                                <p class="text-slate-300 text-sm italic" id="trapText">
+                                    ${q.explanation?.trap || "Dikkatli okuma gerektiren bir soru."}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,10 +123,49 @@ function renderStrategyQuestion() {
     `;
 }
 
-function revealAnalysis() {
+async function revealAnalysis() {
+    const q = strategyQuestions[currentQuestionIndex];
     const panel = document.getElementById('analysisPanel');
     const btn = document.getElementById('showAnalysisBtn');
     
+    // If no pre-baked explanation, call AI
+    if (!q.explanation || !q.explanation.tactic) {
+        showLoader();
+        btn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> AI Analiz Ediyor...';
+        btn.classList.add('opacity-50', 'pointer-events-none');
+
+        try {
+            const questionText = `${q.question}\n\nOptions:\nA) ${q.options.A}\nB) ${q.options.B}\nC) ${q.options.C}\nD) ${q.options.D}\nE) ${q.options.E}`;
+            
+            const response = await fetch("/.netlify/functions/analyze", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ input: questionText })
+            });
+
+            const data = await response.json();
+            
+            if (data.question_analysis) {
+                // Map AI response to Strategy Lab format
+                q.explanation = {
+                    tactic: `${data.question_analysis.why_correct} ${data.yds_trap_engine.elimination_strategy}`,
+                    grammar: data.question_analysis.grammar_focus || "General Academic Grammar",
+                    vocabulary: [data.question_analysis.logical_structure.split(' ')[0] || "Academic"], // Mock vocab from logic or keep simple
+                    trap: data.yds_trap_engine.exam_tip
+                };
+                
+                // Re-render only the analysis part to show data
+                updateAnalysisUI(q);
+            }
+        } catch (error) {
+            console.error("AI Analysis failed:", error);
+            document.getElementById('tacticText').innerText = "AI analizi şu an yapılamadı. Lütfen daha sonra tekrar deneyin.";
+        } finally {
+            hideLoader();
+            btn.innerHTML = '<i class="fas fa-lightbulb mr-2"></i> Stratejik Analiz Hazır';
+        }
+    }
+
     panel.classList.remove('hidden');
     btn.classList.add('opacity-50', 'pointer-events-none');
     
@@ -127,26 +173,43 @@ function revealAnalysis() {
     panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+function updateAnalysisUI(q) {
+    const tacticEl = document.getElementById('tacticText');
+    const grammarEl = document.querySelector('#analysisPanel p.text-slate-200');
+    const vocabContainer = document.querySelector('#analysisPanel .flex.flex-wrap.gap-2');
+    const trapEl = document.getElementById('trapText');
+
+    if (tacticEl) tacticEl.innerText = q.explanation.tactic;
+    if (grammarEl) grammarEl.innerText = q.explanation.grammar;
+    if (trapEl) trapEl.innerText = q.explanation.trap || "Dikkatli okuma gerektiren bir soru.";
+    
+    if (vocabContainer && q.explanation.vocabulary) {
+        vocabContainer.innerHTML = q.explanation.vocabulary.map(v => 
+            `<span class="px-3 py-1 bg-red-900/20 border border-red-900/30 rounded-lg text-red-400 text-sm">${v}</span>`
+        ).join('');
+    }
+}
+
 function checkStrategyAnswer(selected) {
     const q = strategyQuestions[currentQuestionIndex];
     const btns = document.querySelectorAll('.option-btn');
     
     btns.forEach(btn => {
-        const key = btn.querySelector('span').innerText;
+        const key = btn.querySelector('span:first-child').innerText;
         if (key === q.correct) {
             btn.classList.add('bg-green-900/40', 'border-green-500/50');
-            btn.querySelector('span:first-child').classList.replace('bg-white/5', 'bg-green-600');
-            btn.querySelector('span:first-child').classList.replace('text-slate-400', 'text-white');
+            btn.querySelector('span:first-child').classList.add('bg-green-600', 'text-white');
+            btn.querySelector('span:first-child').classList.remove('bg-white/5', 'text-slate-400');
         } else if (key === selected && selected !== q.correct) {
             btn.classList.add('bg-red-900/40', 'border-red-500/50');
-            btn.querySelector('span:first-child').classList.replace('bg-white/5', 'bg-red-600');
-            btn.querySelector('span:first-child').classList.replace('text-slate-400', 'text-white');
+            btn.querySelector('span:first-child').classList.add('bg-red-600', 'text-white');
+            btn.querySelector('span:first-child').classList.remove('bg-white/5', 'text-slate-400');
         }
         btn.classList.add('pointer-events-none');
     });
 
     // Auto reveal analysis after answer
-    setTimeout(revealAnalysis, 500);
+    setTimeout(revealAnalysis, 800);
 }
 
 function nextStrategyQuestion() {
