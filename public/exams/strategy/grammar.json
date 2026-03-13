@@ -1,8 +1,766 @@
 {
   "meta": {
-    "title": "Grammar Strategy Lab",
-    "subtitle": "Advanced Tense, Modals, and Passive structures",
-    "total_questions": 0
+    "title": "Academic English Grammar Assessment",
+    "subtitle": "Advanced Proficiency Level (B2-C1) for University Preparatory Programs",
+    "total_questions": 50,
+    "duration_minutes": 90
   },
-  "questions": []
+  "sections": [
+    {
+      "id": "mcq_grammar",
+      "label": "Part I: Advanced Sentence Structure and Tense Usage",
+      "from": 1,
+      "to": 20
+    },
+    {
+      "id": "error_id",
+      "label": "Part II: Error Recognition",
+      "from": 21,
+      "to": 35
+    },
+    {
+      "id": "cloze_test",
+      "label": "Part III: Contextual Grammar and Cohesion",
+      "from": 36,
+      "to": 50
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage_cloze",
+      "text": "The implementation of renewable energy systems (36) ______ a subject of intense debate among policymakers for decades. Despite the significant initial costs, many argue that the long-term benefits (37) ______ the drawbacks. If the government (38) ______ more proactively in the early 2000s, the current energy crisis might have been averted. Not only (39) ______ these systems reduce carbon emissions, but they also foster energy independence. Consequently, researchers (40) ______ new methods to enhance battery storage efficiency for several years now. (41) ______, the transition remains slow due to geopolitical constraints. It is essential that the international community (42) ______ together to standardize regulations. Had we known the extent of global warming earlier, we (43) ______ different choices. Many environmentalists suggest (44) ______ subsidies for fossil fuels immediately. By the time the next decade ends, it is hoped that green energy (45) ______ the primary source of power. (46) ______ the high cost of installation, many households are switching to solar panels. The technology is (47) ______ advanced that even cloudy regions can benefit. (48) ______ some critics claim the technology is unreliable, data shows otherwise. It is high time we (49) ______ our infrastructure to accommodate these changes. We look forward to (50) ______ a cleaner, more sustainable planet."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "mcq_grammar",
+      "question": "Rarely ______ such a complex socio-economic phenomenon without conducting extensive longitudinal studies.",
+      "options": {
+        "A": "economists can understand",
+        "B": "do economists understand",
+        "C": "economists do understand",
+        "D": "have economists understand",
+        "E": "economists understanding"
+      },
+      "correct": "B",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Cümle 'Rarely' (Nadir) gibi olumsuz/sınırlayıcı bir zarf ile başladığı için devrik yapı (inversion) gerektirir. Soru formu gibi yardımcı fiil (do/does/did) öznenin önüne gelmelidir.",
+        "grammar": "Negative Inversion (Rarely + helping verb + subject)",
+        "vocabulary": ["Longitudinal (Boylamsal/Uzun süreli)", "Extensive (Kapsamlı)", "Phenomenon (Olgu)"],
+        "trap": "A şıkkı düz cümle yapısıdır; cümlenin başındaki 'Rarely' bu yapıyı bozar."
+      }
+    },
+    {
+      "id": 2,
+      "section_id": "mcq_grammar",
+      "question": "By the time the delegation arrives next month, the committee ______ the final draft of the proposal.",
+      "options": {
+        "A": "will have completed",
+        "B": "will be completing",
+        "C": "has completed",
+        "D": "completes",
+        "E": "is completing"
+      },
+      "correct": "A",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "'By the time' + Present Simple (arrives) yapısı, ana cümlede 'Future Perfect' (will have done) kullanımını işaret eder. Belirli bir gelecekteki zamana kadar tamamlanmış eylemleri anlatır.",
+        "grammar": "Future Perfect Tense (By the time sequence)",
+        "vocabulary": ["Delegation (Delegasyon/Heyet)", "Draft (Taslak)", "Committee (Komite)"],
+        "trap": "C şıkkı Present Perfect'tir; ancak 'next month' geleceğe işaret ettiği için Future Perfect şarttır."
+      }
+    },
+    {
+      "id": 3,
+      "section_id": "mcq_grammar",
+      "question": "The professor suggested that the research paper ______ before the end of the semester to allow for peer review.",
+      "options": {
+        "A": "is submitted",
+        "B": "be submitted",
+        "C": "was submitted",
+        "D": "submits",
+        "E": "must submit"
+      },
+      "correct": "B",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "'Suggest that' yapısından sonra fiil yalın halde (subjunctive mood) kullanılır. Kağıdın teslim edilmesi 'edilgen' (passive) bir durum olduğu için 'be submitted' yapısı seçilir.",
+        "grammar": "Subjunctive Mood (Suggest that + be V3)",
+        "vocabulary": ["Submit (Teslim etmek)", "Peer review (Akran değerlendirmesi)", "Semester (Dönem)"],
+        "trap": "A şıkkı (is submitted) subjunctive kuralına uymaz; suggest'ten sonra 'should' veya 'yalın fiil' gelir."
+      }
+    },
+    {
+      "id": 4,
+      "section_id": "mcq_grammar",
+      "question": "Had the researchers known about the contamination in the samples, they ______ the experiment much sooner.",
+      "options": {
+        "A": "would halt",
+        "B": "halted",
+        "C": "would have halted",
+        "D": "will have halted",
+        "E": "had halted"
+      },
+      "correct": "C",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Cümle 'Had + Subject + V3' (If they had known) ile başlamıştır; yani Type 3 Conditional yapısındayız. Temel cümle 'would have V3' yapısında olmalıdır.",
+        "grammar": "Conditional Type 3 (Inversion: Had I known...)",
+        "vocabulary": ["Contamination (Kontaminasyon/Kirlenme)", "Halt (Durdurmak)", "Experiment (Deney)"],
+        "trap": "A şıkkı Type 2 sonucudur; ancak 'had known' geçmişe yönelik bir varsayımdır."
+      }
+    },
+    {
+      "id": 5,
+      "section_id": "mcq_grammar",
+      "question": "The theory of relativity, ______ by Albert Einstein, revolutionized our understanding of space and time.",
+      "options": {
+        "A": "which proposed",
+        "B": "proposing",
+        "C": "that was proposed",
+        "D": "proposed",
+        "E": "it was proposed"
+      },
+      "correct": "D",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "İki virgül arası bir niteler sıfat (relative clause) kısaltmasıdır. 'Relativity' teorisi 'teklif edilen' (pasif) olduğu için 'which was proposed' yerine sadece V3 (proposed) kullanılır.",
+        "grammar": "Relative Clause Reduction (Passive: V3)",
+        "vocabulary": ["Proposed (Önerilen)", "Revolutionize (Devrim yaratmak)", "Relativity (Görecelik)"],
+        "trap": "A şıkkı aktiftir (öneren teori olurdu); C şıkkı 'that was' virgül sonrası (non-defining) kullanılmaz."
+      }
+    },
+    {
+      "id": 6,
+      "section_id": "mcq_grammar",
+      "question": "The university requires that every student ______ an ethics seminar during their first year of study.",
+      "options": {
+        "A": "attends",
+        "B": "attend",
+        "C": "is attending",
+        "D": "has attended",
+        "E": "to attend"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "mcq_grammar",
+      "question": "The more stringent the environmental regulations become, ______ it is for small businesses to comply without subsidies.",
+      "options": {
+        "A": "the most difficult",
+        "B": "difficult",
+        "C": "it is more difficult",
+        "D": "the more difficult",
+        "E": "much more difficult"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "mcq_grammar",
+      "question": "The CEO, ______ leadership style was often criticized, managed to double the company's revenue in two years.",
+      "options": {
+        "A": "who",
+        "B": "whom",
+        "C": "whose",
+        "D": "that",
+        "E": "which"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 9,
+      "section_id": "mcq_grammar",
+      "question": "No sooner ______ the podium than the audience erupted into a standing ovation.",
+      "options": {
+        "A": "had he approached",
+        "B": "he had approached",
+        "C": "did he approached",
+        "D": "he approached",
+        "E": "was he approaching"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 10,
+      "section_id": "mcq_grammar",
+      "question": "I would rather you ______ the confidential documents via an encrypted server instead of standard email.",
+      "options": {
+        "A": "send",
+        "B": "to send",
+        "C": "sending",
+        "D": "sent",
+        "E": "will send"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 11,
+      "section_id": "mcq_grammar",
+      "question": "The witness denied ______ the defendant near the crime scene on the night of the incident.",
+      "options": {
+        "A": "to see",
+        "B": "having seen",
+        "C": "see",
+        "D": "to have seen",
+        "E": "be seeing"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 12,
+      "section_id": "mcq_grammar",
+      "question": "Provided that the data ______ accurately, the software should generate the report within minutes.",
+      "options": {
+        "A": "is input",
+        "B": "inputs",
+        "C": "will be input",
+        "D": "is inputting",
+        "E": "to be input"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "mcq_grammar",
+      "question": "Despite ______ for several hours, the jury was unable to reach a unanimous verdict.",
+      "options": {
+        "A": "deliberate",
+        "B": "they deliberated",
+        "C": "having deliberated",
+        "D": "deliberation",
+        "E": "of deliberating"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "mcq_grammar",
+      "question": "It is essential that the patient ______ absolute bed rest for at least forty-eight hours.",
+      "options": {
+        "A": "maintains",
+        "B": "maintain",
+        "C": "is maintaining",
+        "D": "will maintain",
+        "E": "to maintain"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "mcq_grammar",
+      "question": "The results of the survey were ______ disappointing that the marketing strategy had to be completely overhauled.",
+      "options": {
+        "A": "such",
+        "B": "so",
+        "C": "too",
+        "D": "very",
+        "E": "enough"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "mcq_grammar",
+      "question": "If the architect ______ more attention to the structural integrity, the building wouldn't have collapsed during the earthquake.",
+      "options": {
+        "A": "paid",
+        "B": "has paid",
+        "C": "would have paid",
+        "D": "had paid",
+        "E": "was paying"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "mcq_grammar",
+      "question": "Little ______ that the small start-up would eventually become a global tech giant.",
+      "options": {
+        "A": "did they know",
+        "B": "they knew",
+        "C": "they did know",
+        "D": "have they known",
+        "E": "knowing"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "mcq_grammar",
+      "question": "The scientist found it difficult to explain the phenomenon, ______ she had spent years studying it.",
+      "options": {
+        "A": "because",
+        "B": "even though",
+        "C": "as if",
+        "D": "unless",
+        "E": "since"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "mcq_grammar",
+      "question": "Not until the late 19th century ______ to gain widespread recognition as a legitimate field of science.",
+      "options": {
+        "A": "psychology began",
+        "B": "did psychology begin",
+        "C": "psychology did begin",
+        "D": "began psychology",
+        "E": "has psychology begun"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "mcq_grammar",
+      "question": "The committee members are looking forward to ______ the final decision at the upcoming board meeting.",
+      "options": {
+        "A": "discuss",
+        "B": "discussing",
+        "C": "discussion",
+        "D": "be discussed",
+        "E": "having discussed"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "error_id",
+      "question": "The newly (A) developed vaccine, (B) what was tested (C) extensively, proved to be (D) highly effective against the virus.",
+      "options": {
+        "A": "developed",
+        "B": "what",
+        "C": "extensively",
+        "D": "highly",
+        "E": "No error"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "error_id",
+      "question": "If the manager (A) would have listened to the (B) employees' concerns, the (C) strike might have (D) been avoided.",
+      "options": {
+        "A": "would have listened",
+        "B": "employees'",
+        "C": "strike",
+        "D": "been avoided",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "error_id",
+      "question": "The (A) number of students (B) enrolling in the computer science (C) program have (D) increased significantly this year.",
+      "options": {
+        "A": "number",
+        "B": "enrolling",
+        "C": "program",
+        "D": "have",
+        "E": "No error"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "error_id",
+      "question": "(A) Despite it was (B) raining heavily, the (C) outdoor concert continued (D) as scheduled.",
+      "options": {
+        "A": "Despite",
+        "B": "raining",
+        "C": "outdoor",
+        "D": "as scheduled",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "error_id",
+      "question": "The (A) information (B) provided in the brochure (C) were found to be (D) inaccurate by the investigators.",
+      "options": {
+        "A": "information",
+        "B": "provided",
+        "C": "were",
+        "D": "inaccurate",
+        "E": "No error"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "error_id",
+      "question": "Neither the (A) lead researcher nor his (B) assistants (C) was aware of the (D) discrepancy in the data.",
+      "options": {
+        "A": "lead",
+        "B": "assistants",
+        "C": "was",
+        "D": "discrepancy",
+        "E": "No error"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "error_id",
+      "question": "I suggest (A) to consult a specialist (B) before making a (C) final decision on (D) the surgery.",
+      "options": {
+        "A": "to consult",
+        "B": "before",
+        "C": "final",
+        "D": "the surgery",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "error_id",
+      "question": "The city (A) is known for (B) its beautiful parks, (C) which many tourists (D) visit them every year.",
+      "options": {
+        "A": "is known",
+        "B": "its",
+        "C": "which",
+        "D": "visit them",
+        "E": "No error"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "error_id",
+      "question": "She (A) has been (B) working as a consultant (C) since three years (D) now.",
+      "options": {
+        "A": "has been",
+        "B": "working",
+        "C": "since",
+        "D": "now",
+        "E": "No error"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "error_id",
+      "question": "Hardly (A) the speaker (B) had begun (C) when he was (D) interrupted by a heckler.",
+      "options": {
+        "A": "the speaker",
+        "B": "had begun",
+        "C": "when",
+        "D": "interrupted",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "error_id",
+      "question": "The (A) most unique (B) feature of this (C) software is its ability to (D) translate languages in real-time.",
+      "options": {
+        "A": "most unique",
+        "B": "feature",
+        "C": "software",
+        "D": "translate",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "error_id",
+      "question": "The (A) reason why he (B) failed the exam was (C) because he did not (D) study hard enough.",
+      "options": {
+        "A": "reason why",
+        "B": "failed",
+        "C": "because",
+        "D": "study",
+        "E": "No error"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "error_id",
+      "question": "Each of the (A) candidates (B) were given ten minutes (C) to present (D) their proposals.",
+      "options": {
+        "A": "candidates",
+        "B": "were",
+        "C": "to present",
+        "D": "their",
+        "E": "No error"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "error_id",
+      "question": "The (A) criteria for the scholarship (B) is very strict, (C) making it difficult (D) for most students to qualify.",
+      "options": {
+        "A": "criteria",
+        "B": "is",
+        "C": "making",
+        "D": "for most students",
+        "E": "No error"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "error_id",
+      "question": "Not only (A) did the storm (B) damage the roof, but it (C) also flooded the (D) basement either.",
+      "options": {
+        "A": "did the storm",
+        "B": "damage",
+        "C": "also flooded",
+        "D": "basement either",
+        "E": "No error"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (36).",
+      "options": {
+        "A": "is",
+        "B": "has been",
+        "C": "was",
+        "D": "being",
+        "E": "had been"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 37,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (37).",
+      "options": {
+        "A": "outweigh",
+        "B": "outweighs",
+        "C": "outweighing",
+        "D": "outweighed",
+        "E": "are outweighed"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 38,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (38).",
+      "options": {
+        "A": "acted",
+        "B": "has acted",
+        "C": "had acted",
+        "D": "would act",
+        "E": "was acting"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 39,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (39).",
+      "options": {
+        "A": "do",
+        "B": "does",
+        "C": "have",
+        "D": "did",
+        "E": "is"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 40,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (40).",
+      "options": {
+        "A": "develop",
+        "B": "are developing",
+        "C": "have been developing",
+        "D": "developed",
+        "E": "were developing"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 41,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (41).",
+      "options": {
+        "A": "Moreover",
+        "B": "Furthermore",
+        "C": "However",
+        "D": "Therefore",
+        "E": "Similarly"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 42,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (42).",
+      "options": {
+        "A": "works",
+        "B": "work",
+        "C": "worked",
+        "D": "working",
+        "E": "to work"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 43,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (43).",
+      "options": {
+        "A": "will make",
+        "B": "would make",
+        "C": "would have made",
+        "D": "had made",
+        "E": "might make"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 44,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (44).",
+      "options": {
+        "A": "cut",
+        "B": "cutting",
+        "C": "to cut",
+        "D": "be cut",
+        "E": "having cut"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 45,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (45).",
+      "options": {
+        "A": "will become",
+        "B": "becomes",
+        "C": "will have become",
+        "D": "is becoming",
+        "E": "became"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 46,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (46).",
+      "options": {
+        "A": "In spite",
+        "B": "Although",
+        "C": "Despite",
+        "D": "Even though",
+        "E": "Whereas"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 47,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (47).",
+      "options": {
+        "A": "too",
+        "B": "such",
+        "C": "so",
+        "D": "very",
+        "E": "quite"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 48,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (48).",
+      "options": {
+        "A": "Because",
+        "B": "While",
+        "C": "Since",
+        "D": "As",
+        "E": "If"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 49,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (49).",
+      "options": {
+        "A": "update",
+        "B": "updated",
+        "C": "to update",
+        "D": "updating",
+        "E": "have updated"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 50,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (50).",
+      "options": {
+        "A": "see",
+        "B": "seeing",
+        "C": "be seen",
+        "D": "have seen",
+        "E": "seen"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    }
+  ]
 }
