@@ -252,7 +252,7 @@ async function feStartExam() {
   btn.disabled = true;
 
   try {
-    const res = await fetch(exam.file);
+    const res = await fetch(`${exam.file}?v=${new Date().getTime()}`);
     feExamData = await res.json();
   } catch (err) {
     alert('Sınav yüklenirken hata oluştu.');
