@@ -136,7 +136,7 @@ const fullExamHTML = /* html */`
         <div id="feSectionLabel" class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 mb-4 text-sm text-slate-600 font-medium leading-snug"></div>
 
         <!-- Passage/leading text (reading, dialogue, paragraph) -->
-        <div id="fePassageBox" class="hidden bg-blue-50 border-l-4 border-blue-400 rounded-xl p-5 mb-4 text-sm text-slate-700 leading-relaxed"></div>
+        <div id="fePassageBox" class="hidden bg-blue-50 border-l-4 border-blue-400 rounded-xl p-5 mb-4 text-sm text-slate-700 leading-relaxed overflow-y-auto max-h-[300px]"></div>
 
         <!-- Reading comprehension notice -->
         <div id="feReadingNotice" class="hidden bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 text-sm text-amber-700 flex items-center gap-2">
@@ -322,14 +322,59 @@ function feRenderQuestion() {
 
   passageBox.classList.add('hidden');
   readingNotice.classList.add('hidden');
+  passageBox.innerHTML = ''; // Ensure we use innerHTML for better formatting
 
-  if (q.leading_text) {
-    passageBox.textContent = q.leading_text;
+  const sectionType = (section ? section.id : '').toLowerCase();
+  const isCloze = sectionType.includes('cloze');
+  const isReading = sectionType.includes('reading');
+
+  if (isCloze) {
+    // CLOZE RECONSTRUCTION:
+    // Look for previous/next questions in the same section to build the full text
+    // Usually cloze tests are in chunks of 5 (e.g., 17-21, 22-26)
+    let startIdx = feCurrentIdx;
+    while (startIdx > 0 && feExamData.questions[startIdx - 1].section_id === q.section_id) {
+        startIdx--;
+    }
+    // Limit to current group of 5 if possible, but YDS sections are often strictly 5 questions
+    // We'll take the first question in this section that HAS leading_text or a significant question body
+    let displayHtml = '';
+    let foundText = false;
+
+    // Strategy 1: Look for leading_text in any question of this section
+    for (let i = startIdx; i < feExamData.questions.length && feExamData.questions[i].section_id === q.section_id; i++) {
+        const sq = feExamData.questions[i];
+        if (sq.leading_text) {
+            displayHtml = sq.leading_text.replace(/\n/g, '<br>');
+            foundText = true;
+            break;
+        }
+    }
+
+    // Strategy 2: If no leading_text, join question fragments (common in some JSON exports)
+    if (!foundText) {
+        let fragments = [];
+        for (let i = startIdx; i < feExamData.questions.length && feExamData.questions[i].section_id === q.section_id; i++) {
+            const sq = feExamData.questions[i];
+            // Clean up titles like "(Cloze Test 1 - Part 1)"
+            let cleanQ = sq.question.replace(/\(Cloze Test.*?\)/i, '').trim();
+            fragments.push(cleanQ);
+        }
+        displayHtml = fragments.join(' ');
+    }
+
+    if (displayHtml) {
+        passageBox.innerHTML = `<div class="font-bold mb-2 text-red-800 uppercase tracking-tighter text-xs">CLOZE TEST PARÇASI</div>` + displayHtml;
+        passageBox.classList.remove('hidden');
+    }
+
+  } else if (q.leading_text) {
+    passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
     passageBox.classList.remove('hidden');
   } else if (q.passage_id) {
     const passage = feExamData.passages.find(p => p.id === q.passage_id);
     if (passage && passage.text) {
-      passageBox.textContent = passage.text;
+      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passage.text.replace(/\n/g, '<br>');
       passageBox.classList.remove('hidden');
     } else if (passage) {
       passTitle.textContent = `"${passage.title}"`;
@@ -338,7 +383,12 @@ function feRenderQuestion() {
   }
 
   // Question text
-  document.getElementById('feQuestion').textContent = q.question;
+  let qDisplay = q.question;
+  if (isCloze) {
+      // Just show "Question X" or a short snippet for Cloze
+      qDisplay = `<b>SORU ${feCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
+  }
+  document.getElementById('feQuestion').innerHTML = qDisplay.replace(/\n/g, '<br>');
 
   // Options
   const optBox = document.getElementById('feOptions');
