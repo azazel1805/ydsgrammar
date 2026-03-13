@@ -79,6 +79,63 @@ export const handler = async (event, context) => {
             return { statusCode: 200, headers, body: JSON.stringify({ success: true }) };
         }
 
+        // ACTION: ACTIVATE USER (Manual Premium Activation)
+        if (action === "activate_user") {
+            const { targetEmail, packageType } = body;
+            if (!targetEmail || !packageType) {
+                return { statusCode: 400, headers, body: "Email ve paket tipi gerekli." };
+            }
+
+            const daysMap = { 'monthly': 30, 'seasonal': 90, 'yearly': 365 };
+            const daysToAdd = daysMap[packageType] || 365;
+
+            const usersRef = db.collection('users');
+            const q = usersRef.where('email', 'in', [
+                targetEmail.trim().toLowerCase(),
+                targetEmail.trim().toUpperCase(),
+                targetEmail.trim()
+            ]).limit(1);
+            
+            const snapshot = await q.get();
+
+            if (snapshot.empty) {
+                return { statusCode: 404, headers, body: "Kullanıcı bulunamadı. Lütfen kullanıcının sisteme kayıtlı olduğundan emin olun." };
+            }
+
+            const userDoc = snapshot.docs[0];
+            const userData = userDoc.data();
+            const userId = userDoc.id;
+
+            let startDate = new Date();
+            if (userData.premiumUntil && userData.premiumUntil.toDate() > new Date()) {
+                startDate = userData.premiumUntil.toDate();
+            }
+            
+            const newExpiry = new Date(startDate);
+            newExpiry.setDate(newExpiry.getDate() + daysToAdd);
+
+            await db.collection('users').doc(userId).update({
+                role: 'premium',
+                isVip: true,
+                premiumUntil: admin.firestore.Timestamp.fromDate(newExpiry),
+                lastManualActivation: {
+                    activatedBy: email,
+                    date: admin.firestore.FieldValue.serverTimestamp(),
+                    packageType,
+                    daysAdded: daysToAdd
+                }
+            });
+
+            return { 
+                statusCode: 200, 
+                headers, 
+                body: JSON.stringify({ 
+                    success: true, 
+                    message: `${targetEmail} için ${daysToAdd} günlük premium aktif edildi.` 
+                }) 
+            };
+        }
+
         // ACTION: FETCH (Default)
         const codesRef = db.collection('promo_codes');
         const snapshot = await codesRef.where('used', '==', false).get();
