@@ -2,6 +2,7 @@
 /* Strategy Lab Core Logic */
 
 let strategyQuestions = [];
+let strategyPassages = [];
 let currentCategory = '';
 let currentQuestionIndex = 0;
 
@@ -14,6 +15,7 @@ async function loadCategory(category) {
         const response = await fetch(path);
         const data = await response.json();
         strategyQuestions = data.questions;
+        strategyPassages = data.passages || [];
         currentQuestionIndex = 0;
         
         if (strategyQuestions.length === 0) {
@@ -51,6 +53,8 @@ function renderStrategyQuestion() {
                 <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <i class="fas fa-microchip text-4xl"></i>
                 </div>
+                
+                ${getPassageHtml(q)}
                 
                 <p class="text-xl md:text-2xl text-slate-100 leading-relaxed font-medium mb-10">
                     ${q.question}
@@ -199,6 +203,18 @@ function previousStrategyQuestion() {
 
 function backToCategories() {
     renderStrategyCategories();
+}
+
+function getPassageHtml(q) {
+    if (!q.passage_id) return '';
+    const passage = strategyPassages.find(p => p.id === q.passage_id);
+    if (!passage) return '';
+    
+    return `
+        <div class="mb-10 p-6 md:p-8 bg-white/5 border border-white/5 rounded-2xl text-slate-300 leading-loose text-lg italic bg-gradient-to-br from-white/5 to-transparent">
+            ${passage.text}
+        </div>
+    `;
 }
 
 function renderStrategyCategories() {
