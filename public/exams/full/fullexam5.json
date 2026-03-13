@@ -63,8 +63,14 @@
     ],
     "passages": [
         {
-            "id": "p1",
-            "text": ""
+            "id": "p_ex5_cloze_17",
+            "title": "Cloze Test 17",
+            "text": "Text 1: The Industrial Revolution (1)____ a period of profound social and economic change. It (2)____ in Great Britain and quickly spread across Europe. (3)____ the transition to new manufacturing processes, many people moved from rural areas to cities. This urbanization (4)____ to overcrowded living conditions. However, it also (5)____ the groundwork for modern industrial society. Blank (1): Blank (2): Blank (3): Blank (4): Blank (5):"
+        },
+        {
+            "id": "p_ex5_cloze_22",
+            "title": "Cloze Test 22",
+            "text": "Text 2: Quantum mechanics is a (6)____ branch of physics that deals with the behavior of matter and energy at the atomic level. It (7)____ classical physics in several key ways. For instance, particles can exist in multiple states (8)____. This phenomenon is known as superposition. (9)____ the complexity of the subject, it has led to the development of many technologies, (10)____ lasers and transistors. Blank (6): Blank (7): Blank (8): Blank (9): Blank (10):"
         }
     ],
     "questions": [
@@ -295,7 +301,7 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_17",
             "question": "Text 1: The Industrial Revolution (1)____ a period of profound social and economic change. It (2)____ in Great Britain and quickly spread across Europe. (3)____ the transition to new manufacturing processes, many people moved from rural areas to cities. This urbanization (4)____ to overcrowded living conditions. However, it also (5)____ the groundwork for modern industrial society. Blank (1):",
             "options": {
                 "A": "marks",
@@ -309,7 +315,7 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_17",
             "question": "Blank (2):",
             "options": {
                 "A": "commences",
@@ -323,7 +329,7 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_17",
             "question": "Blank (3):",
             "options": {
                 "A": "Despite",
@@ -337,7 +343,7 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_17",
             "question": "Blank (4):",
             "options": {
                 "A": "led",
@@ -351,7 +357,7 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_17",
             "question": "Blank (5):",
             "options": {
                 "A": "lay",
@@ -365,7 +371,7 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_22",
             "question": "Text 2: Quantum mechanics is a (6)____ branch of physics that deals with the behavior of matter and energy at the atomic level. It (7)____ classical physics in several key ways. For instance, particles can exist in multiple states (8)____. This phenomenon is known as superposition. (9)____ the complexity of the subject, it has led to the development of many technologies, (10)____ lasers and transistors. Blank (6):",
             "options": {
                 "A": "fundamental",
@@ -379,7 +385,7 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_22",
             "question": "Blank (7):",
             "options": {
                 "A": "challenges",
@@ -393,7 +399,7 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_22",
             "question": "Blank (8):",
             "options": {
                 "A": "simultaneously",
@@ -407,7 +413,7 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_22",
             "question": "Blank (9):",
             "options": {
                 "A": "Because",
@@ -421,7 +427,7 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex5_cloze_22",
             "question": "Blank (10):",
             "options": {
                 "A": "including",
@@ -659,8 +665,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957, suggests that individuals have an inner drive to hold all their attitudes and beliefs in harmony and avoid disharmony. When there is an inconsistency between attitudes or behaviors, something must change to eliminate the dissonance. This often leads to 'rationalization,' where an individual justifies a behavior that contradicts their values. Modern neuroscience has begun to map the neural correlates of this phenomenon, identifying the anterior cingulate cortex as a primary region involved in conflict monitoring. While some critics argue that the theory is too subjective to be measured accurately, its applications in marketing and public health remain widespread. It can be inferred from the passage that cognitive dissonance ---.",
+            "passage_id": "p_read_43",
+            "question": "It can be inferred from the passage that cognitive dissonance ---.",
             "options": {
                 "A": "is a purely biological process with no psychological components",
                 "B": "results from a lack of harmony between one's beliefs and actions",
@@ -673,7 +679,7 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_43",
             "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... According to the passage, the process of 'rationalization' serves to ---.",
             "options": {
                 "A": "increase the amount of psychological stress an individual feels",
@@ -687,7 +693,7 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_43",
             "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... The author mentions the 'anterior cingulate cortex' to ---.",
             "options": {
                 "A": "show that cognitive dissonance has physical manifestations in the brain",
@@ -701,7 +707,7 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_43",
             "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... What is the primary criticism of the theory mentioned in the text?",
             "options": {
                 "A": "It is too reliant on marketing data.",
@@ -715,8 +721,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although the International Commission on Stratigraphy has not yet officially approved the term, many scientists use it to highlight the extent of human-induced climate change and biodiversity loss. The primary marker often cited for this period is the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it shifts the blame to all of humanity rather than specific economic systems. Nevertheless, the concept has gained significant traction in both scientific and humanities circles. According to the passage, the term 'Anthropocene' ---.",
+            "passage_id": "p_read_47",
+            "question": "The term, many scientists use it to highlight the extent of human-induced climate change and biodiversity loss. The primary marker often cited for this period is the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it shifts the blame to all of humanity rather than specific economic systems. Nevertheless, the concept has gained significant traction in both scientific and humanities circles. According to the passage, the term 'Anthropocene' ---.",
             "options": {
                 "A": "has been officially adopted by all geological commissions",
                 "B": "refers to a period before human influence became significant",
@@ -729,7 +735,7 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_47",
             "question": "The Anthropocene is a proposed geological epoch... What is mentioned as a 'primary marker' for the start of this epoch?",
             "options": {
                 "A": "The invention of the steam engine in the 18th century",
@@ -743,7 +749,7 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_47",
             "question": "The Anthropocene is a proposed geological epoch... Some critics find the term problematic because they believe ---.",
             "options": {
                 "A": "it does not place enough blame on the entire human race",
@@ -757,7 +763,7 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_47",
             "question": "The Anthropocene is a proposed geological epoch... It can be inferred from the passage that the International Commission on Stratigraphy ---.",
             "options": {
                 "A": "has the final authority on naming geological epochs",
@@ -771,8 +777,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The 'Silk Road' was not a single thoroughfare but a network of trade routes connecting the East and West. Facilitating the exchange of goods like silk, spices, and precious metals, it also served as a conduit for ideas, religions, and technologies. One of the most significant impacts of the Silk Road was the spread of Buddhism from India to China. However, the route was also responsible for the transmission of diseases, most notably the Black Death. With the rise of maritime trade in the 15th century, the overland routes saw a decline in importance. Today, the 'New Silk Road' project aims to revitalize these ancient connections through modern infrastructure. According to the text, the Silk Road was ---.",
+            "passage_id": "p_read_51",
+            "question": "According to the text, the Silk Road was ---.",
             "options": {
                 "A": "a single paved road stretching across Asia",
                 "B": "primarily used for the transportation of spices only",
@@ -785,7 +791,7 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_51",
             "question": "The 'Silk Road' was not a single thoroughfare... Which of the following is mentioned as a negative consequence of the Silk Road?",
             "options": {
                 "A": "The spread of Buddhism to China",
@@ -799,7 +805,7 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_51",
             "question": "The 'Silk Road' was not a single thoroughfare... What led to the decreased significance of the overland Silk Road routes?",
             "options": {
                 "A": "The complete eradication of silk production",
@@ -813,7 +819,7 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_51",
             "question": "The 'Silk Road' was not a single thoroughfare... The 'New Silk Road' mentioned in the passage refers to ---.",
             "options": {
                 "A": "a historical document found in India",
@@ -883,8 +889,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "Bioluminescence, the production and emission of light by a living organism, occurs widely in marine vertebrates and invertebrates, as well as in some fungi and insects. The chemical reaction involves a light-emitting molecule called luciferin and an enzyme called luciferase. In the deep ocean, where sunlight cannot penetrate, bioluminescence is used for a variety of purposes: attracting prey, finding mates, and deterring predators. Some species use 'counter-illumination' to camouflage themselves against the faint light from the surface. While terrestrial bioluminescence is rarer, the firefly remains the most famous example. Researchers are now exploring ways to use bioluminescent genes as 'biosensors' in medical research. According to the passage, the light in bioluminescence is produced by ---.",
+            "passage_id": "p_read_59",
+            "question": "According to the passage, the light in bioluminescence is produced by ---.",
             "options": {
                 "A": "absorbing sunlight during the day and releasing it at night",
                 "B": "a chemical reaction between luciferin and luciferase",
@@ -897,7 +903,7 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_59",
             "question": "Bioluminescence, the production and emission of light by a living organism... Why is bioluminescence particularly common in the deep ocean?",
             "options": {
                 "A": "Because the water is warmer at great depths",
@@ -911,7 +917,7 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_59",
             "question": "Bioluminescence, the production and emission of light by a living organism... 'Counter-illumination' is a technique used by some organisms to ---.",
             "options": {
                 "A": "scare away their mates",
@@ -925,7 +931,7 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_59",
             "question": "Bioluminescence, the production and emission of light by a living organism... The passage mentions that bioluminescent genes ---.",
             "options": {
                 "A": "are being used to develop new types of streetlights",

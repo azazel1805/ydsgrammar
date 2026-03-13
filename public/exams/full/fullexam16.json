@@ -63,24 +63,14 @@
     ],
     "passages": [
         {
-            "id": "p1",
-            "title": "Ancient Mesopotamian Agriculture",
-            "text": "Mesopotamia, often referred to as the cradle of civilization, was home to some of the earliest complex societies. The success of these societies was deeply rooted in their innovative agricultural practices. Situated between the Tigris and Euphrates rivers, the land was fertile but prone to unpredictable flooding. To manage this, the Sumerians developed sophisticated irrigation systems, including canals and dikes, which allowed them to control the water supply and cultivate crops year-round. This surplus of food supported a growing population and facilitated the rise of urban centers like Ur and Uruk. However, long-term irrigation led to soil salinization, a process where salt accumulates in the soil, eventually making it infertile. This ecological challenge contributed to the eventual decline of southern Mesopotamian city-states."
+            "id": "p_ex16_cloze_17",
+            "title": "Cloze Test 17",
+            "text": "The evolution of social behaviors in primates has long been a subject of fascination for anthropologists. Researchers have observed that monkeys often (17)_____ complex heirarchical structures. These structures are essential (18)_____ maintaining order and reducing conflict within the group. (19)_____ the importance of these social bonds, isolation can lead to severe stress in individuals. Studies show that primates (20)_____ are raised in social environments exhibit better cognitive abilities. Ultimately, these findings help us (21)_____ our own social origins."
         },
         {
-            "id": "p2",
-            "title": "The Mechanics of Bioluminescence",
-            "text": "Bioluminescence is a remarkable biological phenomenon where living organisms produce light through specialized chemical reactions. This ability is found across a diverse range of species, from tiny plankton to deep-sea fish and terrestrial fireflies. The process primarily involves a light-emitting molecule called luciferin and an enzyme known as luciferase. When luciferin reacts with oxygen in the presence of luciferase, energy is released in the form of light. Unlike human-made light bulbs, which lose most of their energy as heat, bioluminescence is highly efficient, producing what is known as cold light. In the deep ocean, where sunlight never reaches, bioluminescence is used for a variety of purposes, including attracting prey, deterrence of predators, and communication between individuals of the same species."
-        },
-        {
-            "id": "p3",
-            "title": "The Impact of the Printing Press",
-            "text": "The invention of the movable-type printing press by Johannes Gutenberg in the mid-15th century is often considered one of the most influential events in human history. Before this innovation, books were laboriously hand-copied by scribes, making them rare and prohibitively expensive. Gutenberg’s press allowed for the mass production of texts, drastically reducing their cost and making them accessible to a wider segment of society. This democratization of knowledge played a crucial role in the spread of the Renaissance, the Scientific Revolution, and the Protestant Reformation. Literacy rates began to climb as books on various subjects became readily available. However, the rapid dissemination of ideas also posed a threat to established authorities, leading to many attempts at censorship and control of the printed word."
-        },
-        {
-            "id": "p4",
-            "title": "The Psychology of Altruism",
-            "text": "Altruism, the selfless concern for the well-being of others, has long intrigued psychologists and evolutionary biologists alike. From an evolutionary perspective, purely altruistic behavior seems counterintuitive, as it often involves a cost to the individual’s own survival or reproduction. However, theories such as inclusive fitness suggest that helping relatives can indirectly promote the survival of one’s own genes. In human psychology, altruism is often linked to empathy—the ability to understand and share the feelings of others. Research indicates that acts of kindness can activate the reward centers of the brain, leading to a phenomenon known as the helper’s high. While some argue that all altruistic acts are ultimately motivated by some form of self-interest, others maintain that true selflessness is a fundamental part of the human experience."
+            "id": "p_ex16_cloze_22",
+            "title": "Cloze Test 22",
+            "text": "The development of early writing systems (22)_____ the way humans recorded their history and legal codes. Before the invention of paper, many civilizations relied (23)_____ clay tablets or stone inscriptions. These durable materials (24)_____ to survive for thousands of years, providing us with invaluable data. (25)_____ , deciphering these ancient languages is often a painstaking process. Without these records, our knowledge of past civilizations would be (26)_____ incomplete."
         }
     ],
     "questions": [
@@ -308,7 +298,8 @@
                 "D": "formed",
                 "E": "forms"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_17"
         },
         {
             "id": 18,
@@ -321,7 +312,8 @@
                 "D": "with",
                 "E": "by"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_17"
         },
         {
             "id": 19,
@@ -334,7 +326,8 @@
                 "D": "Although",
                 "E": "Instead"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_17"
         },
         {
             "id": 20,
@@ -347,7 +340,8 @@
                 "D": "which",
                 "E": "that"
             },
-            "correct": "D"
+            "correct": "D",
+            "passage_id": "p_ex16_cloze_17"
         },
         {
             "id": 21,
@@ -360,7 +354,8 @@
                 "D": "understood",
                 "E": "understands"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_17"
         },
         {
             "id": 22,
@@ -373,7 +368,8 @@
                 "D": "predicted",
                 "E": "reverted"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_22"
         },
         {
             "id": 23,
@@ -386,7 +382,8 @@
                 "D": "with",
                 "E": "for"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_22"
         },
         {
             "id": 24,
@@ -399,7 +396,8 @@
                 "D": "manages",
                 "E": "have managed"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_22"
         },
         {
             "id": 25,
@@ -412,7 +410,8 @@
                 "D": "Instead",
                 "E": "Consequently"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_22"
         },
         {
             "id": 26,
@@ -425,7 +424,8 @@
                 "D": "rudimentary",
                 "E": "negligible"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_ex16_cloze_22"
         },
         {
             "id": 27,

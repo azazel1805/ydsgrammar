@@ -324,103 +324,17 @@ function feRenderQuestion() {
   readingNotice.classList.add('hidden');
   passageBox.innerHTML = ''; // Ensure we use innerHTML for better formatting
 
-  const sectionType = (section ? section.id : '').toLowerCase();
+    const sectionType = (section ? section.id : '').toLowerCase();
   const isCloze = sectionType.includes('cloze');
   const isReading = sectionType.includes('reading');
 
-  if (isCloze) {
-    // CLOZE RECONSTRUCTION:
-    // YDS Cloze tests are strictly 5 questions (17-21, 22-26)
-    // We find the block of 5 this question belongs to
-    let setStart = feCurrentIdx;
-    // Standard YDS start indices: 16 (Q17), 21 (Q22), 26 (Q27)...
-    // We iterate back to find the nearest such boundary or section start
-    while (setStart > 0 && 
-           feExamData.questions[setStart - 1].section_id === q.section_id && 
-           (setStart % 5 !== 1 || setStart < 16)) {
-        setStart--;
-    }
-    
-    let displayHtml = '';
-    let foundText = false;
-
-    // Strategy 1: Look for leading_text in this specific 5-question block
-    for (let i = setStart; i < setStart + 5 && i < feExamData.questions.length; i++) {
-        const sq = feExamData.questions[i];
-        if (sq.section_id !== q.section_id) break;
-        if (sq.leading_text) {
-            displayHtml = sq.leading_text.replace(/\n/g, '<br>');
-            foundText = true;
-            break;
-        }
-    }
-
-    // Strategy 2: If no leading_text, join question fragments from THIS BLOCK ONLY
-    if (!foundText) {
-        let fragments = [];
-        for (let i = setStart; i < setStart + 5 && i < feExamData.questions.length; i++) {
-            const sq = feExamData.questions[i];
-            if (sq.section_id !== q.section_id) break;
-            // Clean up titles like "(Cloze Test 1 - Part 1)" or "(Paragraph 1: ...)"
-            let cleanQ = sq.question.replace(/\(Cloze Test.*?\)/i, '')
-                                   .replace(/\(Paragraph.*?\)/i, '')
-                                   .trim();
-            fragments.push(cleanQ);
-        }
-        displayHtml = fragments.join(' ');
-    }
-
-    if (displayHtml) {
-        passageBox.innerHTML = `<div class="font-bold mb-2 text-red-800 uppercase tracking-tighter text-xs">CLOZE TEST PARÇASI</div>` + displayHtml;
-        passageBox.classList.remove('hidden');
-    }
-
-  } else if (isReading) {
-    // ADVANCED READING RECONSTRUCTION:
-    // Some JSONs (like fullexam1) have broken passage_ids or empty passage objects.
-    // We rely on the "Passage X:" prefixes in the question text.
-    
-    // 1. Identify the current question's passage label (e.g., "Passage 1", "Passage 2")
-    const match = q.question.match(/Passage\s+(\d+)/i);
-    const currentPassageLabel = match ? match[0].toLowerCase() : null;
-    
-    let passageText = "";
-
-    // 2. Find the full text for this passage label
-    if (currentPassageLabel) {
-        // Search all questions in this exam for this specific passage label
-        // We look for the one that has the longest text or a ":" after the label
-        for (let testQ of feExamData.questions) {
-            if (testQ.section_id === q.section_id && testQ.question.toLowerCase().includes(currentPassageLabel)) {
-                // Check if it looks like a full passage (long text with multiple sentences)
-                const parts = testQ.question.split(/According to the (?:passage|text)/i);
-                if (parts.length > 1 && parts[0].length > 100) {
-                    passageText = parts[0].trim();
-                    break;
-                }
-                // Fallback: check for ":" after label
-                const colonParts = testQ.question.split(/Passage\s+\d+:/i);
-                if (colonParts.length > 1 && colonParts[1].length > 100) {
-                    passageText = colonParts[1].split('?')[0].trim();
-                    // Re-add the label for context
-                    passageText = currentPassageLabel.toUpperCase() + ": " + passageText;
-                    break;
-                }
-            }
-        }
-    }
-
-    // 3. Display if found
-    if (passageText) {
-        passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
-        passageBox.classList.remove('hidden');
-    } else {
-        // Last resort: Fallback to passage_id if our label-based search failed
-        const passage = q.passage_id ? feExamData.passages.find(p => p.id === q.passage_id) : null;
-        if (passage && passage.text) {
-            passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passage.text.replace(/\n/g, '<br>');
-            passageBox.classList.remove('hidden');
-        }
+  // DISPLAY PASSAGE / LEADING TEXT
+  if (q.passage_id) {
+    const passage = feExamData.passages.find(p => p.id === q.passage_id);
+    if (passage && passage.text) {
+      const typeLabel = isCloze ? 'CLOZE TEST PARÇASI' : (isReading ? 'OKUMA PARÇASI' : 'DETAY METNİ');
+      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">${typeLabel}</div>` + passage.text.replace(/\n/g, '<br>');
+      passageBox.classList.remove('hidden');
     }
   } else if (q.leading_text) {
     passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
@@ -430,33 +344,15 @@ function feRenderQuestion() {
   // QUESTION TEXT CLEANING
   let qDisplay = q.question;
   if (isCloze) {
+      // For Cloze, we usually just show the prompt
       qDisplay = `<b>SORU ${feCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
-  } else if (isReading && !passageBox.classList.contains('hidden')) {
-      // Look for the exact point where the question starts
-      // This regex identifies common YDS question starters
-      const questionStarterRegex = /\b(According to|It (?:can be|is) (?:inferred|stated|implied|suggested)|The author (?:mentions|suggests|argues|states|uses)|Which of the following|What is the (?:main|primary|reason)|In the passage|The term|One notable|Why is)\b/i;
-      
-      const match = qDisplay.match(questionStarterRegex);
-      if (match) {
-          // Take everything from the starter to the end
-          qDisplay = qDisplay.substring(match.index);
-      } else {
-          // Fallback: If no starter found, but there's a question mark, 
-          // take the last sentence before it.
-          const qMarkIdx = qDisplay.lastIndexOf('?');
-          if (qMarkIdx !== -1) {
-              const beforeQ = qDisplay.substring(0, qMarkIdx);
-              const lastPeriod = beforeQ.lastIndexOf('. ');
-              if (lastPeriod !== -1) {
-                  qDisplay = qDisplay.substring(lastPeriod + 1);
-              }
-          }
-      }
-
+  } else {
       // Final cleanup: remove residual labels and fix casing
       qDisplay = qDisplay.replace(/Passage\s+\d+.*?:/i, '')
                          .replace(/^\(Cont\.\):/i, '')
                          .replace(/\[Text as above\]/i, '')
+                         .replace(/\(Paragraph\s+\d+.*?\)/i, '')
+                         .replace(/\(Cloze Test\s+\d+.*?\)/i, '')
                          .trim();
       
       if (qDisplay.length > 0) {

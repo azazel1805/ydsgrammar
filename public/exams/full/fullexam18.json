@@ -61,7 +61,18 @@
             "to": 80
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_ex18_cloze_17",
+            "title": "Cloze Test 17",
+            "text": "Question 17 Content Placeholder Question 18 Content Placeholder Question 19 Content Placeholder Question 20 Content Placeholder Question 21 Content Placeholder"
+        },
+        {
+            "id": "p_ex18_cloze_22",
+            "title": "Cloze Test 22",
+            "text": "Question 22 Content Placeholder Question 23 Content Placeholder Question 24 Content Placeholder Question 25 Content Placeholder Question 26 Content Placeholder"
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -290,7 +301,7 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_17",
             "question": "Question 17 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -304,7 +315,7 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_17",
             "question": "Question 18 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -318,7 +329,7 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_17",
             "question": "Question 19 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -332,7 +343,7 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_17",
             "question": "Question 20 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -346,7 +357,7 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_17",
             "question": "Question 21 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -360,7 +371,7 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_22",
             "question": "Question 22 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -374,7 +385,7 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_22",
             "question": "Question 23 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -388,7 +399,7 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_22",
             "question": "Question 24 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -402,7 +413,7 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_22",
             "question": "Question 25 Content Placeholder",
             "options": {
                 "A": "Option A",
@@ -416,7 +427,7 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": null,
+            "passage_id": "p_ex18_cloze_22",
             "question": "Question 26 Content Placeholder",
             "options": {
                 "A": "Option A",
