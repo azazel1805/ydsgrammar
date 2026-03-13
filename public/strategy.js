@@ -87,33 +87,42 @@ function renderStrategyQuestion() {
                     </h3>
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <!-- Tactic -->
-                        <div class="space-y-4">
-                            <h4 class="text-sm font-bold text-red-500 uppercase tracking-widest">Soru Çözüm Taktiği</h4>
-                            <p class="text-slate-300 leading-relaxed text-lg" id="tacticText">
-                                ${q.explanation?.tactic || "Bu soru için özel bir taktik hazırlanıyor..."}
-                            </p>
-                        </div>
-
-                        <!-- Grammar/Vocab/Trap -->
+                        <!-- Left Side: Tactic & Logic -->
                         <div class="space-y-6">
                             <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
-                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Odak Noktası</h4>
-                                <p class="text-slate-200 font-medium">${q.explanation?.grammar || "Genel Akademik Kelime Bilgisi"}</p>
+                                <h4 class="text-xs font-bold text-red-500 uppercase tracking-widest mb-3">🎯 İlk Bakılacak Yer (Clue)</h4>
+                                <p class="text-slate-200 font-medium leading-relaxed" id="logicText">
+                                    ${q.explanation?.logical_structure || "Soru kökündeki anahtar yapıyı belirleyin."}
+                                </p>
                             </div>
-                            
+
+                            <div class="space-y-4">
+                                <h4 class="text-xs font-bold text-red-500 uppercase tracking-widest">🚀 Adım Adım Yol Haritası</h4>
+                                <p class="text-slate-300 leading-relaxed text-lg" id="tacticText">
+                                    ${q.explanation?.tactic || "Soru analiz ediliyor..."}
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Elimination & Tips -->
+                        <div class="space-y-6">
                             <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
-                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Anahtar Kelimeler</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    ${(q.explanation?.vocabulary || []).map(v => `<span class="px-3 py-1 bg-red-900/20 border border-red-900/30 rounded-lg text-red-400 text-sm">${v}</span>`).join('') || '<span class="text-slate-500 italic">Veri hazırlanıyor...</span>'}
-                                </div>
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">🔍 Eleme Stratejisi</h4>
+                                <p class="text-slate-200 text-sm leading-relaxed" id="eliminationText">
+                                    ${q.explanation?.elimination || "Yanlış şıkları nasıl eleriz?"}
+                                </p>
                             </div>
 
                             <div class="p-6 bg-red-900/10 rounded-2xl border border-red-900/20">
-                                <h4 class="text-xs font-bold text-red-500 uppercase tracking-widest mb-3">YDS Tuzağı / Sınav İpucu</h4>
+                                <h4 class="text-xs font-bold text-red-500 uppercase tracking-widest mb-3">⚠️ YDS Tuzağı / Sınav İpucu</h4>
                                 <p class="text-slate-300 text-sm italic" id="trapText">
                                     ${q.explanation?.trap || "Dikkatli okuma gerektiren bir soru."}
                                 </p>
+                            </div>
+
+                            <div class="p-4 border-t border-white/5 mt-4">
+                                <h4 class="text-[10px] font-bold text-slate-600 uppercase tracking-[0.2em]">Dilbilgisi Odağı</h4>
+                                <p class="text-slate-400 text-xs mt-1 italic">${q.explanation?.grammar || "Academic Structure"}</p>
                             </div>
                         </div>
                     </div>
@@ -148,10 +157,12 @@ async function revealAnalysis() {
             if (data.question_analysis) {
                 // Map AI response to Strategy Lab format
                 q.explanation = {
-                    tactic: `${data.question_analysis.why_correct} ${data.yds_trap_engine.elimination_strategy}`,
+                    tactic: data.question_analysis.why_correct || "Adım adım yol haritası hazırlanıyor...",
                     grammar: data.question_analysis.grammar_focus || "General Academic Grammar",
-                    vocabulary: [data.question_analysis.logical_structure.split(' ')[0] || "Academic"], // Mock vocab from logic or keep simple
-                    trap: data.yds_trap_engine.exam_tip
+                    logical_structure: data.question_analysis.logical_structure || "Cümle yapısı ve anahtar sözcükler.",
+                    elimination: data.yds_trap_engine.elimination_strategy || "Eleme stratejisi belirleniyor...",
+                    trap: data.yds_trap_engine.exam_tip,
+                    vocabulary: data.question_analysis.why_others_wrong ? [data.question_analysis.why_others_wrong[0]] : ["Academic"]
                 };
                 
                 // Re-render only the analysis part to show data
@@ -176,18 +187,15 @@ async function revealAnalysis() {
 function updateAnalysisUI(q) {
     const tacticEl = document.getElementById('tacticText');
     const grammarEl = document.querySelector('#analysisPanel p.text-slate-200');
-    const vocabContainer = document.querySelector('#analysisPanel .flex.flex-wrap.gap-2');
+    const logicEl = document.getElementById('logicText');
+    const eliminationEl = document.getElementById('eliminationText');
     const trapEl = document.getElementById('trapText');
 
     if (tacticEl) tacticEl.innerText = q.explanation.tactic;
     if (grammarEl) grammarEl.innerText = q.explanation.grammar;
+    if (logicEl) logicEl.innerText = q.explanation.logical_structure || "Cümle geneline odaklanın.";
+    if (eliminationEl) eliminationEl.innerText = q.explanation.elimination || "Uyumsuz şıkları eleyin.";
     if (trapEl) trapEl.innerText = q.explanation.trap || "Dikkatli okuma gerektiren bir soru.";
-    
-    if (vocabContainer && q.explanation.vocabulary) {
-        vocabContainer.innerHTML = q.explanation.vocabulary.map(v => 
-            `<span class="px-3 py-1 bg-red-900/20 border border-red-900/30 rounded-lg text-red-400 text-sm">${v}</span>`
-        ).join('');
-    }
 }
 
 function checkStrategyAnswer(selected) {
