@@ -63,54 +63,39 @@
     ],
     "passages": [
         {
-            "id": "p1",
-            "text": "Passage 1: The Anthropocene epoch, a term popularized by Paul Crutzen, suggests that human activity has become the dominant influence on Earth's geology and ecosystems. While the term is widely used in academic circles, the formal ratification of the Anthropocene as a geochronological unit remains a subject of intense debate among stratigraphers. The primary point of contention is the 'golden spike'—the physical marker in the sedimentary record that defines the start of the epoch. Some argue for the Industrial Revolution, while others point to the 'Great Acceleration' of the mid-20th century, characterized by nuclear fallout and a surge in plastic consumption. Despite the lack of formal recognition, the concept serves as a powerful heuristic tool for understanding the unprecedented scale of human-induced environmental change."
-        },
-        {
-            "id": "p2",
-            "text": "Passage 1 (Continued):"
-        },
-        {
-            "id": "p3",
-            "text": "Passage 2: Neural plasticity, the brain's ability to reorganize itself by forming new neural connections, was once thought to be limited to childhood. However, contemporary neuroscience has demonstrated that the adult brain remains remarkably malleable. This neuroplasticity occurs in response to learning, experience, and even physical injury. For instance, when one area of the brain is damaged, other regions can sometimes compensate for the lost functions. This discovery has profound implications for the treatment of stroke survivors and patients with neurodegenerative diseases. Nevertheless, while the brain's capacity for change is lifelong, the rate of plasticity generally decreases with age, requiring more intensive stimuli to trigger structural changes in older adults."
-        },
-        {
-            "id": "p4",
-            "text": "Passage 2 (Continued):"
-        },
-        {
-            "id": "p5",
-            "text": "Passage 3: The Silk Road was not a single thoroughfare but a vast network of maritime and overland trade routes connecting the East and West. While silk was a primary commodity, the exchange of ideas, religions, and technologies was arguably more impactful. Buddhism, for example, spread from India to China via these routes, fundamentally altering Chinese society. Likewise, the West received papermaking and gunpowder from the East. However, the Silk Road also facilitated the spread of diseases, most notably the Black Death, which devastated populations in the 14th century. The decline of the Silk Road began with the rise of Ottoman control over trade routes and the subsequent European Age of Discovery, which favored sea routes over land travel."
-        },
-        {
-            "id": "p6",
-            "text": "Passage 3 (Continued):"
-        },
-        {
-            "id": "p7",
-            "text": "Passage 4: Quantum entanglement is a phenomenon where two or more particles become linked such that the state of one instantly influences the state of the other, regardless of the distance separating them. Albert Einstein famously referred to this as 'spooky action at a distance,' as it seemed to defy the classical law that nothing can travel faster than the speed of light. Modern experiments have consistently confirmed entanglement, leading to the development of quantum cryptography and quantum computing. In quantum computing, entangled particles called qubits allow for processing speeds that far exceed those of classical computers. Despite its potential, maintaining entanglement—a state known as coherence—is extremely difficult, as environmental interference can easily disrupt the delicate link."
-        },
-        {
-            "id": "p8",
-            "text": "Passage 4 (Continued):"
-        },
-        {
-            "id": "p9",
-            "text": "Passage 5: Behavioral economics challenges the traditional 'Homo Economicus' model, which assumes that individuals are perfectly rational agents who always seek to maximize their utility. Instead, behavioral economists argue that human decision-making is often influenced by cognitive biases and heuristics. One common bias is 'loss aversion,' the tendency for people to prefer avoiding losses over acquiring equivalent gains. Another is 'anchoring,' where individuals rely too heavily on the first piece of information they receive. By understanding these irrational patterns, policymakers can design 'nudges'—subtle interventions that guide people toward better choices without restricting their freedom. For example, making organ donation an 'opt-out' rather than an 'opt-in' system significantly increases enrollment rates."
-        },
-        {
-            "id": "p10",
-            "text": "Passage 5 (Continued):"
-        },
-        {
             "id": "p_cloze_17_fullexam2",
             "title": "Cloze Test 17-21",
-            "text": "(Paragraph 1: The Impact of Artificial Intelligence) Artificial Intelligence (AI) has become an integral part of modern technology.  (___)  its benefits, there are also concerns regarding job displacement."
+            "text": "(Paragraph 1: The Impact of Artificial Intelligence) Artificial Intelligence (AI) has become an integral part of modern technology. (___) its benefits, there are also concerns regarding job displacement."
         },
         {
             "id": "p_cloze_22_fullexam2",
             "title": "Cloze Test 22-26",
-            "text": "(Paragraph 2: Marine Biodiversity) Marine ecosystems are essential for the health of our planet. They  (___)  a vast array of life forms."
+            "text": "(Paragraph 2: Marine Biodiversity) Marine ecosystems are essential for the health of our planet. They (___) a vast array of life forms."
+        },
+        {
+            "id": "p_read_43_fullexam2",
+            "title": "Reading unknown",
+            "text": ""
+        },
+        {
+            "id": "p_read_47_fullexam2",
+            "title": "Reading unknown",
+            "text": "How does the passage contrast the plasticity of adult brains with that of children?"
+        },
+        {
+            "id": "p_read_51_fullexam2",
+            "title": "Reading unknown",
+            "text": ""
+        },
+        {
+            "id": "p_read_55_fullexam2",
+            "title": "Reading unknown",
+            "text": ""
+        },
+        {
+            "id": "p_read_59_fullexam2",
+            "title": "Reading unknown",
+            "text": "The example of the 'opt-out' system for organ donation is used to illustrate..."
         }
     ],
     "questions": [
@@ -705,7 +690,7 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_43_fullexam2",
             "question": "According to the passage, what is the main obstacle to the formal classification of the Anthropocene?",
             "options": {
                 "A": "The lack of consensus on a specific physical marker in the geological record",
@@ -719,8 +704,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": "p2",
-            "question": "The term 'Great Acceleration' is used in the text to describe...",
+            "passage_id": "p_read_43_fullexam2",
+            "question": "",
             "options": {
                 "A": "The rapid expansion of industrial activities during the 18th century",
                 "B": "A period in the mid-20th century marked by significant environmental and technological shifts",
@@ -733,8 +718,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": "p2",
-            "question": "It can be inferred from the passage that the term 'Anthropocene'...",
+            "passage_id": "p_read_43_fullexam2",
+            "question": "",
             "options": {
                 "A": "Is officially recognized by all international geological societies",
                 "B": "Was first coined in the mid-20th century following nuclear tests",
@@ -747,7 +732,7 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": "p2",
+            "passage_id": "p_read_43_fullexam2",
             "question": "What is the author's attitude towards the concept of the Anthropocene?",
             "options": {
                 "A": "Dismissive of its scientific validity",
@@ -761,7 +746,7 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": "p3",
+            "passage_id": "p_read_47_fullexam2",
             "question": "Which of the following is true about neuroplasticity according to the passage?",
             "options": {
                 "A": "It is a process that only occurs in the early stages of human development",
@@ -775,8 +760,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": "p4",
-            "question": "The word 'malleable' in the passage is closest in meaning to...",
+            "passage_id": "p_read_47_fullexam2",
+            "question": "",
             "options": {
                 "A": "Rigid",
                 "B": "Adaptable",
@@ -789,8 +774,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": "p4",
-            "question": "How does the passage contrast the plasticity of adult brains with that of children?",
+            "passage_id": "p_read_47_fullexam2",
+            "question": "",
             "options": {
                 "A": "Adults have more neural connections but less ability to change them",
                 "B": "Children's brains are less responsive to learning than adult brains",
@@ -803,7 +788,7 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": "p4",
+            "passage_id": "p_read_47_fullexam2",
             "question": "What is one clinical application of neuroplasticity mentioned in the text?",
             "options": {
                 "A": "The prevention of all aging-related cognitive decline",
@@ -817,8 +802,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": "p5",
-            "question": "The passage emphasizes that the Silk Road was...",
+            "passage_id": "p_read_51_fullexam2",
+            "question": "",
             "options": {
                 "A": "The only way for Europeans to reach Asia in the 14th century",
                 "B": "A multifaceted network facilitating both material and cultural exchange",
@@ -831,7 +816,7 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": "p6",
+            "passage_id": "p_read_51_fullexam2",
             "question": "According to the passage, how did Buddhism reach China?",
             "options": {
                 "A": "Through the efforts of European explorers during the Age of Discovery",
@@ -845,7 +830,7 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": "p6",
+            "passage_id": "p_read_51_fullexam2",
             "question": "Which of the following was a negative consequence of the Silk Road?",
             "options": {
                 "A": "The loss of traditional Chinese papermaking techniques",
@@ -859,7 +844,7 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": "p6",
+            "passage_id": "p_read_51_fullexam2",
             "question": "Why did the Silk Road's importance eventually diminish?",
             "options": {
                 "A": "Because silk became a common and inexpensive commodity",
@@ -873,7 +858,7 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": "p7",
+            "passage_id": "p_read_55_fullexam2",
             "question": "What did Albert Einstein find troubling about quantum entanglement?",
             "options": {
                 "A": "It required too much energy to maintain in a lab",
@@ -887,8 +872,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": "p8",
-            "question": "According to the text, 'qubits' are essential because they...",
+            "passage_id": "p_read_55_fullexam2",
+            "question": "",
             "options": {
                 "A": "Prevent environmental interference from affecting computers",
                 "B": "Travel faster than the speed of light across long distances",
@@ -901,8 +886,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": "p8",
-            "question": "The term 'coherence' in the context of the passage refers to...",
+            "passage_id": "p_read_55_fullexam2",
+            "question": "",
             "options": {
                 "A": "The ability of a scientist to explain complex theories",
                 "B": "The stability of the link between entangled particles",
@@ -915,7 +900,7 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": "p8",
+            "passage_id": "p_read_55_fullexam2",
             "question": "What is the main challenge in utilizing quantum entanglement for technology?",
             "options": {
                 "A": "The high cost of producing entangled particles",
@@ -929,7 +914,7 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": "p9",
+            "passage_id": "p_read_59_fullexam2",
             "question": "How does behavioral economics differ from traditional economic theory?",
             "options": {
                 "A": "It focuses exclusively on the behavior of large corporations",
@@ -943,8 +928,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": "p10",
-            "question": "The concept of 'loss aversion' suggests that...",
+            "passage_id": "p_read_59_fullexam2",
+            "question": "",
             "options": {
                 "A": "People are more motivated to prevent a loss than to achieve a gain",
                 "B": "Losing money is a necessary part of a healthy economy",
@@ -957,7 +942,7 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": "p10",
+            "passage_id": "p_read_59_fullexam2",
             "question": "In the context of the passage, what is a 'nudge'?",
             "options": {
                 "A": "A strict regulation that forces people to behave in a certain way",
@@ -971,8 +956,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": "p10",
-            "question": "The example of the 'opt-out' system for organ donation is used to illustrate...",
+            "passage_id": "p_read_59_fullexam2",
+            "question": "",
             "options": {
                 "A": "The failure of behavioral economics in public policy",
                 "B": "The effectiveness of nudges in changing societal outcomes",

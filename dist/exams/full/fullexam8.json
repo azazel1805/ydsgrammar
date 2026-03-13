@@ -65,27 +65,37 @@
         {
             "id": "p_cloze_17_fullexam8",
             "title": "Cloze Test 17-21",
-            "text": "The Renaissance was a period of profound cultural change in Europe.  (___)  the 14th to the 17th century, it marked the transition from the Middle Ages to modernity. It was  (___)  by a surge of interest in Classical Greek and Roman thought. Artists and scholars  (___)  to explore humanism, which placed emphasis on human potential and achievements.  (___) , the invention of the printing press facilitated the rapid spread of these new ideas across the continent. This era  (___)  the foundations for modern Western civilization. [Blank 11]"
+            "text": "The Renaissance was a period of profound cultural change in Europe. (___) the 14th to the 17th century, it marked the transition from the Middle Ages to modernity. It was (___) by a surge of interest in Classical Greek and Roman thought. Artists and scholars (___) to explore humanism, which placed emphasis on human potential and achievements. (___) , the invention of the printing press facilitated the rapid spread of these new ideas across the continent. This era (___) the foundations for modern Western civilization. [Blank 11]"
         },
         {
             "id": "p_cloze_22_fullexam8",
             "title": "Cloze Test 22-26",
-            "text": "Photosynthesis is the process  (___)  green plants transform light energy into chemical energy. During this process, plants use sunlight  (___)  carbon dioxide and water into glucose. Oxygen is released as a  (___)  product, which is vital for the survival of aerobic organisms.  (___)  light is essential, the rate of photosynthesis can be affected by temperature and CO2 concentration. Understanding this mechanism is  (___)  for improving crop yields in agriculture. [Blank 16]"
+            "text": "Photosynthesis is the process (___) green plants transform light energy into chemical energy. During this process, plants use sunlight (___) carbon dioxide and water into glucose. Oxygen is released as a (___) product, which is vital for the survival of aerobic organisms. (___) light is essential, the rate of photosynthesis can be affected by temperature and CO2 concentration. Understanding this mechanism is (___) for improving crop yields in agriculture. [Blank 16]"
         },
         {
             "id": "p_read_43_fullexam8",
-            "title": "Reading 43",
+            "title": "Reading 1",
             "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. While the term is widely used in scientific and environmental discourse, there is still debate among geologists regarding its formal adoption. Proponents argue that the isotopic signals of nuclear testing and the ubiquity of plastic pollution constitute a distinct stratigraphic layer. However, critics suggest that the human influence, while profound, is too recent and heterogeneous to be categorized alongside periods lasting millions of years. This tension highlights the difficulty of reconciling human-scale history with geological time."
         },
         {
             "id": "p_read_47_fullexam8",
-            "title": "Reading 47",
+            "title": "Reading 2",
             "text": "Stoicism, an ancient Greek school of philosophy, emphasizes the development of self-control and fortitude as a means of overcoming destructive emotions. It teaches that while we cannot control external events, we can control our reactions to them. This internal locus of control is central to achieving 'eudaimonia,' or flourishing. In modern psychology, many of these tenets have been integrated into Cognitive Behavioral Therapy (CBT), which encourages patients to identify and challenge irrational thought patterns. The enduring relevance of Stoicism suggests that the human struggle with emotional regulation transcends cultural and temporal boundaries."
         },
         {
             "id": "p_read_51_fullexam8",
-            "title": "Reading 51",
+            "title": "Reading 3",
             "text": "The Drake Equation is a probabilistic argument used to estimate the number of active, communicative extraterrestrial civilizations in the Milky Way galaxy. Proposed by Frank Drake in 1961, the equation factors in variables such as the rate of star formation, the fraction of those stars with planets, and the length of time such civilizations might release detectable signals. While the equation provides a structured framework for the Search for Extraterrestrial Intelligence (SETI), it remains highly speculative because many of its parameters are currently unknowable. Consequently, it serves more as a tool to stimulate scientific curiosity than as a precise mathematical proof. Why is the Drake Equation considered speculative"
+        },
+        {
+            "id": "p_read_55_fullexam8",
+            "title": "Reading 4",
+            "text": "The Great Depression of the 1930s was a watershed moment in economic history, leading to the rise of Keynesian economics. Before this crisis, the prevailing view was classical economics, which posited that markets were self-correcting and required little government intervention. However, the persistence of high unemployment during the Depression challenged this notion. John Maynard Keynes argued that during economic downturns, aggregate demand could remain low indefinitely, necessitating government spending to stimulate the economy. This shift in thinking transformed the role of the state in managing national economies across the Western world."
+        },
+        {
+            "id": "p_read_59_fullexam8",
+            "title": "Reading 5",
+            "text": "Bioluminescence is the production and emission of light by a living organism. It occurs widely in marine vertebrates and invertebrates, as well as in some fungi and insects. The chemical reaction involves a light-emitting molecule, luciferin, and an enzyme, luciferase. This biological phenomenon serves various functions, including camouflage, attraction of mates, and deterrence of predators. For instance, the anglerfish uses a glowing lure to attract prey in the deep sea. Understanding the mechanisms of bioluminescence has also led to breakthroughs in medical imaging and biotechnology."
         }
     ],
     "questions": [
@@ -848,8 +858,8 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: The Great Depression of the 1930s was a watershed moment in economic history, leading to the rise of Keynesian economics. Before this crisis, the prevailing view was classical economics, which posited that markets were self-correcting and required little government intervention. However, the persistence of high unemployment during the Depression challenged this notion. John Maynard Keynes argued that during economic downturns, aggregate demand could remain low indefinitely, necessitating government spending to stimulate the economy. This shift in thinking transformed the role of the state in managing national economies across the Western world. What prompted the shift from classical to Keynesian economics?",
+            "passage_id": "p_read_55_fullexam8",
+            "question": "What prompted the shift from classical to Keynesian economics?",
             "options": {
                 "A": "The success of government spending during the 1920s.",
                 "B": "The failure of markets to self-correct during the Great Depression.",
@@ -862,8 +872,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: [Continued] According to Keynes, what is the solution to an economic downturn?",
+            "passage_id": "p_read_55_fullexam8",
+            "question": "[Continued] According to Keynes, what is the solution to an economic downturn?",
             "options": {
                 "A": "Allowing the market to reach equilibrium naturally.",
                 "B": "Reducing government intervention to zero.",
@@ -876,8 +886,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: [Continued] The term 'watershed moment' implies that the Great Depression was:",
+            "passage_id": "p_read_55_fullexam8",
+            "question": "[Continued] The term 'watershed moment' implies that the Great Depression was:",
             "options": {
                 "A": "A minor incident with few consequences.",
                 "B": "A period of significant rainfall and flooding.",
@@ -890,8 +900,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: [Continued] What did classical economists believe about markets?",
+            "passage_id": "p_read_55_fullexam8",
+            "question": "[Continued] What did classical economists believe about markets?",
             "options": {
                 "A": "They required constant state surveillance.",
                 "B": "They were inherently unstable and prone to collapse.",
@@ -904,8 +914,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Bioluminescence is the production and emission of light by a living organism. It occurs widely in marine vertebrates and invertebrates, as well as in some fungi and insects. The chemical reaction involves a light-emitting molecule, luciferin, and an enzyme, luciferase. This biological phenomenon serves various functions, including camouflage, attraction of mates, and deterrence of predators. For instance, the anglerfish uses a glowing lure to attract prey in the deep sea. Understanding the mechanisms of bioluminescence has also led to breakthroughs in medical imaging and biotechnology. How does the anglerfish utilize bioluminescence?",
+            "passage_id": "p_read_59_fullexam8",
+            "question": "How does the anglerfish utilize bioluminescence?",
             "options": {
                 "A": "To scare away larger predators.",
                 "B": "To communicate with other members of its species.",
@@ -918,8 +928,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: [Continued] What are the two primary chemical components involved in bioluminescence?",
+            "passage_id": "p_read_59_fullexam8",
+            "question": "[Continued] What are the two primary chemical components involved in bioluminescence?",
             "options": {
                 "A": "Oxygen and carbon dioxide.",
                 "B": "Luciferin and luciferase.",
@@ -932,8 +942,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: [Continued] According to the passage, the study of bioluminescence is beneficial for:",
+            "passage_id": "p_read_59_fullexam8",
+            "question": "[Continued] According to the passage, the study of bioluminescence is beneficial for:",
             "options": {
                 "A": "Improving deep-sea mining techniques.",
                 "B": "Advancing medical imaging and biotechnology.",
@@ -946,8 +956,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: [Continued] Which of the following is NOT mentioned as a function of bioluminescence?",
+            "passage_id": "p_read_59_fullexam8",
+            "question": "[Continued] Which of the following is NOT mentioned as a function of bioluminescence?",
             "options": {
                 "A": "Deterring predators.",
                 "B": "Attracting mates.",

@@ -63,54 +63,39 @@
     ],
     "passages": [
         {
-            "id": "p1",
-            "text": "Passage 1: The Anthropocene epoch is a proposed geological period dating from the commencement of significant human impact on Earth's geology and ecosystems. While the exact starting date remains a matter of academic dispute, many researchers point to the Industrial Revolution as the catalyst. However, others argue for the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrial activity. This era is characterized by the mass extinction of plant and animal species, pollution of the oceans, and the alteration of the atmosphere through greenhouse gas emissions. Geologists are currently scrutinizing stratigraphic evidence, such as plastic particles and radioactive isotopes from nuclear testing, to formally define this new epoch in the Earth's history."
-        },
-        {
-            "id": "p2",
-            "text": "Passage 1: The Anthropocene epoch is a proposed geological period... "
-        },
-        {
-            "id": "p3",
-            "text": "Passage 2: Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon allows the neurons in the brain to compensate for injury and disease and to adjust their activities in response to new situations or changes in their environment. For a long time, it was believed that the adult brain was a static organ; however, modern neuroscience has demonstrated that the brain remains malleable. Factors such as learning a new skill, environmental enrichment, and even psychological therapy can induce structural changes in the brain. This flexibility is fundamental to cognitive development and recovery from neurological trauma."
-        },
-        {
-            "id": "p4",
-            "text": "Passage 2: Neuroplasticity refers to the brain's ability... "
-        },
-        {
-            "id": "p5",
-            "text": "Passage 3: The concept of Soft Power, coined by Joseph Nye, describes the ability of a country to persuade others to do what it wants without force or coercion. Unlike Hard Power, which relies on military and economic might, Soft Power arises from the attractiveness of a country's culture, political ideals, and policies. When a nation's culture includes universal values and its policies promote interests that others share, its ability to influence without force is enhanced. However, Soft Power is often difficult to measure and its effects can take decades to manifest. In the digital age, the spread of information and cultural exports through social media has become a primary tool for exercising this form of influence."
-        },
-        {
-            "id": "p6",
-            "text": "Passage 3: The concept of Soft Power... "
-        },
-        {
-            "id": "p7",
-            "text": "Passage 4: Bioluminescence is the production and emission of light by a living organism. It is a form of chemiluminescence and occurs widely in marine vertebrates and invertebrates, as well as in some fungi and terrestrial insects. The chemical reaction involves a light-emitting molecule called luciferin and an enzyme called luciferase. In the deep ocean, where sunlight cannot penetrate, bioluminescence is essential for survival. It is used for various purposes including luring prey, deterring predators, and communication between members of the same species. For instance, the anglerfish uses a glowing lure to attract smaller fish, while certain squid species use light flashes to confuse attackers."
-        },
-        {
-            "id": "p8",
-            "text": "Passage 4: Bioluminescence is the production... "
-        },
-        {
-            "id": "p9",
-            "text": "Passage 5: The Industrial Revolution, which began in Britain in the late 18th century, transformed the world from an agrarian society to an industrial one. The shift was driven by technological innovations like the steam engine and the mechanization of textile production. While it led to unprecedented economic growth and the rise of the middle class, it also brought about significant social challenges. Urbanization occurred at an alarming rate, leading to overcrowded cities and poor living conditions for the working class. Child labor was rampant in factories and mines until legislative reforms were introduced in the 19th century. Despite these hardships, the era laid the foundation for the modern technological age."
-        },
-        {
-            "id": "p10",
-            "text": "Passage 5: The Industrial Revolution... "
-        },
-        {
             "id": "p_cloze_17_fullexam11",
             "title": "Cloze Test 17-21",
-            "text": "The Industrial Revolution was a period of profound social and economic change  (___)  began in Great Britain in the late 18th century. It marked the transition from agricultural societies to industrial ones, characterized by the  (___)  of steam power and new machinery.  (___) , this shift led to massive urbanization as people moved to cities for work. While it brought economic growth, it also caused significant  (___)  problems, including poor working conditions.  (___)  these challenges, the era laid the foundation for modern technology. Q17:"
+            "text": "CLOZE TEST 1: The Industrial Revolution was a period of profound social and economic change (___) began in Great Britain in the late 18th century. It marked the transition from agricultural societies to industrial ones, characterized by the (___) of steam power and new machinery. (___) , this shift led to massive urbanization as people moved to cities for work. While it brought economic growth, it also caused significant (___) problems, including poor working conditions. (___) these challenges, the era laid the foundation for modern technology. Q17:"
         },
         {
             "id": "p_cloze_22_fullexam11",
             "title": "Cloze Test 22-26",
-            "text": "Photosynthesis is the process  (___)  green plants transform light energy into chemical energy. During this process, plants use sunlight to convert water and carbon dioxide into oxygen and glucose. The  (___)  of oxygen is vital for the survival of aerobic organisms.  (___) , photosynthesis helps regulate the Earth's atmosphere by absorbing carbon dioxide.  (___)  human activities have increased CO2 levels, the role of forests has become even more critical. Scientists are now looking for ways to  (___)  this natural process to combat climate change. Q22:"
+            "text": "CLOZE TEST 2: Photosynthesis is the process (___) green plants transform light energy into chemical energy. During this process, plants use sunlight to convert water and carbon dioxide into oxygen and glucose. The (___) of oxygen is vital for the survival of aerobic organisms. (___) , photosynthesis helps regulate the Earth's atmosphere by absorbing carbon dioxide. (___) human activities have increased CO2 levels, the role of forests has become even more critical. Scientists are now looking for ways to (___) this natural process to combat climate change. Q22:"
+        },
+        {
+            "id": "p_read_43_fullexam11",
+            "title": "Reading unknown",
+            "text": ""
+        },
+        {
+            "id": "p_read_47_fullexam11",
+            "title": "Reading unknown",
+            "text": ""
+        },
+        {
+            "id": "p_read_51_fullexam11",
+            "title": "Reading unknown",
+            "text": "According to Joseph Nye's concept, how does Soft Power differ from Hard Power?"
+        },
+        {
+            "id": "p_read_55_fullexam11",
+            "title": "Reading unknown",
+            "text": "The example of the anglerfish illustrates how bioluminescence can be used for:"
+        },
+        {
+            "id": "p_read_59_fullexam11",
+            "title": "Reading unknown",
+            "text": ""
         }
     ],
     "questions": [
@@ -705,7 +690,7 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": "p1",
+            "passage_id": "p_read_43_fullexam11",
             "question": "According to the passage, what is the primary purpose of the current research being conducted by geologists?",
             "options": {
                 "A": "To reverse the environmental damage caused by the Industrial Revolution",
@@ -719,7 +704,7 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": "p2",
+            "passage_id": "p_read_43_fullexam11",
             "question": "What can be inferred from the passage regarding the start of the Anthropocene?",
             "options": {
                 "A": "There is a consensus among scientists that it began in the mid-20th century",
@@ -733,7 +718,7 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": "p2",
+            "passage_id": "p_read_43_fullexam11",
             "question": "The term 'Great Acceleration' refers to:",
             "options": {
                 "A": "The rapid evolution of new plant species in the 20th century",
@@ -747,7 +732,7 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": "p2",
+            "passage_id": "p_read_43_fullexam11",
             "question": "What kind of evidence are scientists looking for in the Earth's layers to justify the Anthropocene?",
             "options": {
                 "A": "Records of ancient volcanic eruptions",
@@ -761,7 +746,7 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": "p3",
+            "passage_id": "p_read_47_fullexam11",
             "question": "Which of the following best summarizes the main idea of the passage?",
             "options": {
                 "A": "The brain's structure is fixed once an individual reaches adulthood",
@@ -775,7 +760,7 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": "p4",
+            "passage_id": "p_read_47_fullexam11",
             "question": "According to the passage, the traditional view of the adult brain was that:",
             "options": {
                 "A": "It was highly adaptable to environmental changes",
@@ -789,7 +774,7 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": "p4",
+            "passage_id": "p_read_47_fullexam11",
             "question": "How does neuroplasticity assist the brain after an injury?",
             "options": {
                 "A": "By preventing any further neural connections from forming",
@@ -803,7 +788,7 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": "p4",
+            "passage_id": "p_read_47_fullexam11",
             "question": "Which of the following is NOT mentioned as a factor that can induce changes in the brain?",
             "options": {
                 "A": "Learning a new skill",
@@ -817,8 +802,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": "p5",
-            "question": "According to Joseph Nye's concept, how does Soft Power differ from Hard Power?",
+            "passage_id": "p_read_51_fullexam11",
+            "question": "",
             "options": {
                 "A": "Soft Power relies on economic sanctions while Hard Power uses military force",
                 "B": "Soft Power is used only by developing nations, whereas Hard Power is for superpowers",
@@ -831,7 +816,7 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": "p6",
+            "passage_id": "p_read_51_fullexam11",
             "question": "Which of the following is a source of Soft Power mentioned in the text?",
             "options": {
                 "A": "A large and well-funded military",
@@ -845,7 +830,7 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": "p6",
+            "passage_id": "p_read_51_fullexam11",
             "question": "One difficulty associated with Soft Power, as noted in the passage, is that:",
             "options": {
                 "A": "It is too expensive for most countries to maintain",
@@ -859,7 +844,7 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": "p6",
+            "passage_id": "p_read_51_fullexam11",
             "question": "What role does the digital age play in the exercise of Soft Power?",
             "options": {
                 "A": "It makes Soft Power obsolete due to cyber warfare",
@@ -873,7 +858,7 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": "p7",
+            "passage_id": "p_read_55_fullexam11",
             "question": "Bioluminescence occurs through a reaction between:",
             "options": {
                 "A": "Sunlight and chlorophyll in deep-sea plants",
@@ -887,7 +872,7 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": "p8",
+            "passage_id": "p_read_55_fullexam11",
             "question": "Why is bioluminescence particularly important in the deep ocean?",
             "options": {
                 "A": "Because the water temperature is too cold for other forms of energy",
@@ -901,7 +886,7 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": "p8",
+            "passage_id": "p_read_55_fullexam11",
             "question": "Which of the following is NOT a use of bioluminescence mentioned in the text?",
             "options": {
                 "A": "Attracting prey",
@@ -915,8 +900,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": "p8",
-            "question": "The example of the anglerfish illustrates how bioluminescence can be used for:",
+            "passage_id": "p_read_55_fullexam11",
+            "question": "",
             "options": {
                 "A": "Self-defense",
                 "B": "Finding a mate",
@@ -929,7 +914,7 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": "p9",
+            "passage_id": "p_read_59_fullexam11",
             "question": "What was the primary driver of the Industrial Revolution according to the passage?",
             "options": {
                 "A": "The discovery of new trade routes to Asia",
@@ -943,7 +928,7 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": "p10",
+            "passage_id": "p_read_59_fullexam11",
             "question": "Which of the following was a negative consequence of rapid urbanization during this period?",
             "options": {
                 "A": "A decrease in the global population",
@@ -957,7 +942,7 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": "p10",
+            "passage_id": "p_read_59_fullexam11",
             "question": "How did the government eventually address the issue of child labor?",
             "options": {
                 "A": "By encouraging more children to work in mines",
@@ -971,7 +956,7 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": "p10",
+            "passage_id": "p_read_59_fullexam11",
             "question": "What is the overall tone of the passage regarding the Industrial Revolution?",
             "options": {
                 "A": "Purely critical of the technological changes",

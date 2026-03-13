@@ -65,22 +65,37 @@
         {
             "id": "p_cloze_17_fullexam6",
             "title": "Cloze Test 17-21",
-            "text": "The Industrial Revolution was a period of global transition.  (___)  , it marked a shift from manual labor to machine-based manufacturing. This era  (___)  many technological advancements. Many people  (___)  from rural areas to cities for work. However, this growth also  (___)  various social issues. Working conditions were often  (___)  and dangerous for the laborers."
+            "text": "The Industrial Revolution was a period of global transition. (___) , it marked a shift from manual labor to machine-based manufacturing. This era (___) many technological advancements. Many people (___) from rural areas to cities for work. However, this growth also (___) various social issues. Working conditions were often (___) and dangerous for the laborers."
         },
         {
             "id": "p_cloze_22_fullexam6",
             "title": "Cloze Test 22-26",
-            "text": "Cognitive psychology explores how people think and process information.  (___)  , researchers study memory, perception, and problem-solving. This field  (___)  significantly to our understanding of the human mind. Experiments are conducted to  (___)  how mental processes influence behavior.  (___)  the complexity of the brain, new theories are constantly emerging. Such studies are  (___)  for developing treatments for cognitive disorders."
+            "text": "Cognitive psychology explores how people think and process information. (___) , researchers study memory, perception, and problem-solving. This field (___) significantly to our understanding of the human mind. Experiments are conducted to (___) how mental processes influence behavior. (___) the complexity of the brain, new theories are constantly emerging. Such studies are (___) for developing treatments for cognitive disorders."
         },
         {
             "id": "p_read_43_fullexam6",
-            "title": "Reading 43",
+            "title": "Reading 1",
             "text": "The transition from the Holocene to the Anthropocene marks a significant epochal shift characterized by human dominance over global environmental systems. While the Holocene provided a stable climate that allowed for the rise of agriculture and complex civilizations, the Anthropocene is defined by anthropogenic forcing—primarily through carbon emissions, deforestation, and plastic accumulation—that threatens to breach planetary boundaries. Critics argue whether this epoch should be officially recognized by the International Commission on Stratigraphy, citing the difficulty of pinpointing a precise start date, though many suggest the mid-20th century 'Great Acceleration' as the definitive marker."
         },
         {
             "id": "p_read_47_fullexam6",
-            "title": "Reading 47",
+            "title": "Reading 2",
             "text": "The 'Sturm und Drang' movement in late 18th-century German literature represented a reaction against the perceived constraints of Enlightenment rationalism. Writers such as Goethe and Schiller championed individual subjectivity and the 'genius' over universal rules of aesthetics. This period emphasized intense emotion and the sublime power of nature, often portraying protagonists driven by overwhelming passion rather than cool-headed logic. Although brief, the movement laid the essential groundwork for the subsequent Romantic era, which would further explore the complexities of the human psyche."
+        },
+        {
+            "id": "p_read_51_fullexam6",
+            "title": "Reading 3",
+            "text": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the traditional view that the adult brain is a static organ. Research indicates that neuroplasticity is driven by various factors, including environmental stimuli, learning, and even physical injury. When one part of the brain is damaged, other areas can sometimes compensate for the lost function by rerouting signals. However, this adaptability also means the brain can be negatively influenced by chronic stress or addictive behaviors, which 'wire' the brain in maladaptive ways."
+        },
+        {
+            "id": "p_read_55_fullexam6",
+            "title": "Reading 4",
+            "text": "The Silk Road was not a single thoroughfare but a network of trade routes connecting East Asia with the Mediterranean. Beyond the exchange of silk, spices, and precious metals, it served as a vital conduit for cultural, religious, and technological diffusion. Buddhism spread from India to China along these routes, while papermaking and gunpowder moved westward. However, the Silk Road was also a vector for disease; the Black Death is believed to have traveled via these trade networks to Europe in the 14th century. The decline of the Silk Road was eventually precipitated by the rise of maritime trade,"
+        },
+        {
+            "id": "p_read_59_fullexam6",
+            "title": "Reading 5",
+            "text": "Game Theory, a branch of mathematics developed by John von Neumann and Oskar Morgenstern, analyzes strategic interactions where the outcome for one participant depends on the actions of others. While initially applied to economics, it has become essential in political science, biology, and philosophy. One of its most famous models, the 'Prisoner's Dilemma,' demonstrates why two rational individuals might not cooperate, even if it appears in their best interest to do so. The theory assumes participants are rational actors seeking to maximize their utility, though behavioral economists often critique this for ignoring human psychology."
         }
     ],
     "questions": [
@@ -690,7 +705,7 @@
             "id": 44,
             "section_id": "reading",
             "passage_id": "p_read_43_fullexam6",
-            "question": "It can be inferred from the passage that the 'Great Acceleration' refers to:",
+            "question": "Many suggest the mid-20th century 'Great Acceleration' as the definitive marker. It can be inferred from the passage that the 'Great Acceleration' refers to:",
             "options": {
                 "A": "The rapid expansion of the International Commission on Stratigraphy.",
                 "B": "A period of decreased human impact on the environment.",
@@ -704,7 +719,7 @@
             "id": 45,
             "section_id": "reading",
             "passage_id": "p_read_43_fullexam6",
-            "question": "The transition from the Holocene to the Anthropocene marks a significant epochal shift... Why do some critics hesitate to officially recognize the Anthropocene?",
+            "question": "Why do some critics hesitate to officially recognize the Anthropocene?",
             "options": {
                 "A": "They believe human impact is too insignificant to warrant a new epoch.",
                 "B": "They disagree with the mid-20th century as the starting point.",
@@ -718,7 +733,7 @@
             "id": 46,
             "section_id": "reading",
             "passage_id": "p_read_43_fullexam6",
-            "question": "The transition from the Holocene to the Anthropocene marks a significant epochal shift... What is the author's primary purpose in this passage?",
+            "question": "What is the author's primary purpose in this passage?",
             "options": {
                 "A": "To advocate for stricter regulations on carbon emissions.",
                 "B": "To describe the characteristics and debate surrounding a new geological epoch.",
@@ -746,7 +761,7 @@
             "id": 48,
             "section_id": "reading",
             "passage_id": "p_read_47_fullexam6",
-            "question": "The 'Sturm und Drang' movement... How does the passage characterize the relationship between Sturm und Drang and Romanticism?",
+            "question": "How does the passage characterize the relationship between Sturm und Drang and Romanticism?",
             "options": {
                 "A": "Romanticism was a direct rejection of Sturm und Drang ideals.",
                 "B": "Sturm und Drang served as a precursor to the Romantic era.",
@@ -760,7 +775,7 @@
             "id": 49,
             "section_id": "reading",
             "passage_id": "p_read_47_fullexam6",
-            "question": "The 'Sturm und Drang' movement... According to the passage, protagonists in Sturm und Drang literature are typically:",
+            "question": "According to the passage, protagonists in Sturm und Drang literature are typically:",
             "options": {
                 "A": "Governed by societal norms and rational thinking.",
                 "B": "Indifferent to the power of nature and the sublime.",
@@ -774,7 +789,7 @@
             "id": 50,
             "section_id": "reading",
             "passage_id": "p_read_47_fullexam6",
-            "question": "The 'Sturm und Drang' movement... The word 'championed' in the passage is closest in meaning to:",
+            "question": "The word 'championed' in the passage is closest in meaning to:",
             "options": {
                 "A": "Defeated",
                 "B": "Advocated",
@@ -787,8 +802,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the traditional view that the adult brain is a static organ. Research indicates that neuroplasticity is driven by various factors, including environmental stimuli, learning, and even physical injury. When one part of the brain is damaged, other areas can sometimes compensate for the lost function by rerouting signals. However, this adaptability also means the brain can be negatively influenced by chronic stress or addictive behaviors, which 'wire' the brain in maladaptive ways. What is the central message regarding the adult brain in the passage?",
+            "passage_id": "p_read_51_fullexam6",
+            "question": "What is the central message regarding the adult brain in the passage?",
             "options": {
                 "A": "It is a fixed structure that cannot change after childhood.",
                 "B": "It possesses an inherent ability to adapt and rewire itself.",
@@ -801,8 +816,8 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: Neuroplasticity... According to the passage, how does the brain respond to damage in a specific area?",
+            "passage_id": "p_read_51_fullexam6",
+            "question": "According to the passage, how does the brain respond to damage in a specific area?",
             "options": {
                 "A": "It immediately ceases all neural activity to prevent further harm.",
                 "B": "Other regions may take over the functions of the damaged part.",
@@ -815,8 +830,8 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: Neuroplasticity... The passage suggests that neuroplasticity is a 'double-edged sword' because:",
+            "passage_id": "p_read_51_fullexam6",
+            "question": "The passage suggests that neuroplasticity is a 'double-edged sword' because:",
             "options": {
                 "A": "It only works for learning but fails during physical recovery.",
                 "B": "It can lead to both beneficial learning and harmful habits.",
@@ -829,8 +844,8 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: Neuroplasticity... Which of the following is NOT mentioned as a driver of neuroplasticity?",
+            "passage_id": "p_read_51_fullexam6",
+            "question": "Which of the following is NOT mentioned as a driver of neuroplasticity?",
             "options": {
                 "A": "Learning",
                 "B": "Environmental stimuli",
@@ -843,8 +858,8 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: The Silk Road was not a single thoroughfare but a network of trade routes connecting East Asia with the Mediterranean. Beyond the exchange of silk, spices, and precious metals, it served as a vital conduit for cultural, religious, and technological diffusion. Buddhism spread from India to China along these routes, while papermaking and gunpowder moved westward. However, the Silk Road was also a vector for disease; the Black Death is believed to have traveled via these trade networks to Europe in the 14th century. The decline of the Silk Road was eventually precipitated by the rise of maritime trade, which offered safer and faster alternatives. What does the passage suggest about the nature of the Silk Road?",
+            "passage_id": "p_read_55_fullexam6",
+            "question": "which offered safer and faster alternatives. What does the passage suggest about the nature of the Silk Road?",
             "options": {
                 "A": "It was a primary road used exclusively for the transport of silk.",
                 "B": "It facilitated the exchange of both goods and ideological concepts.",
@@ -857,8 +872,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: The Silk Road... According to the text, which technologies moved from East to West?",
+            "passage_id": "p_read_55_fullexam6",
+            "question": "According to the text, which technologies moved from East to West?",
             "options": {
                 "A": "Silk and spices",
                 "B": "Buddhism and religion",
@@ -871,8 +886,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: The Silk Road... What led to the eventual decrease in the importance of the Silk Road?",
+            "passage_id": "p_read_55_fullexam6",
+            "question": "What led to the eventual decrease in the importance of the Silk Road?",
             "options": {
                 "A": "The complete eradication of silk production in China.",
                 "B": "The outbreak of the Black Death in the 14th century.",
@@ -885,8 +900,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: The Silk Road... The author mentions the Black Death to illustrate that:",
+            "passage_id": "p_read_55_fullexam6",
+            "question": "The author mentions the Black Death to illustrate that:",
             "options": {
                 "A": "Trade routes had negative as well as positive consequences.",
                 "B": "The Silk Road was poorly managed by historical authorities.",
@@ -899,8 +914,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Game Theory, a branch of mathematics developed by John von Neumann and Oskar Morgenstern, analyzes strategic interactions where the outcome for one participant depends on the actions of others. While initially applied to economics, it has become essential in political science, biology, and philosophy. One of its most famous models, the 'Prisoner's Dilemma,' demonstrates why two rational individuals might not cooperate, even if it appears in their best interest to do so. The theory assumes participants are rational actors seeking to maximize their utility, though behavioral economists often critique this for ignoring human psychology. What is a fundamental premise of Game Theory as described in the passage?",
+            "passage_id": "p_read_59_fullexam6",
+            "question": "What is a fundamental premise of Game Theory as described in the passage?",
             "options": {
                 "A": "Participants always cooperate to achieve the best collective result.",
                 "B": "Outcomes are independent of the choices made by other participants.",
@@ -913,8 +928,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Game Theory... The 'Prisoner's Dilemma' is used to show that:",
+            "passage_id": "p_read_59_fullexam6",
+            "question": "The 'Prisoner's Dilemma' is used to show that:",
             "options": {
                 "A": "Cooperation is the natural state of human interaction.",
                 "B": "Rationality does not always lead to the most mutually beneficial outcome.",
@@ -927,8 +942,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Game Theory... Why do behavioral economists critique traditional Game Theory?",
+            "passage_id": "p_read_59_fullexam6",
+            "question": "Why do behavioral economists critique traditional Game Theory?",
             "options": {
                 "A": "Because it relies too heavily on biological models.",
                 "B": "Because it assumes humans always act with perfect rationality.",
@@ -941,8 +956,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Game Theory... According to the passage, the scope of Game Theory:",
+            "passage_id": "p_read_59_fullexam6",
+            "question": "According to the passage, the scope of Game Theory:",
             "options": {
                 "A": "Has remained strictly within the field of mathematics.",
                 "B": "Has expanded to include various disciplines beyond economics.",
