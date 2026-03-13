@@ -19,7 +19,12 @@ const FULL_EXAM_LIST = [
   { id: 'full12', label: 'Tam Deneme 12', file: '/exams/full/fullexam12.json' },
   { id: 'full13', label: 'Tam Deneme 13', file: '/exams/full/fullexam13.json' },
   { id: 'full14', label: 'Tam Deneme 14', file: '/exams/full/fullexam14.json' },
-  { id: 'full15', label: 'Tam Deneme 15', file: '/exams/full/fullexam15.json' }
+  { id: 'full15', label: 'Tam Deneme 15', file: '/exams/full/fullexam15.json' },
+  { id: 'full16', label: 'Tam Deneme 16', file: '/exams/full/fullexam16.json' },
+  { id: 'full17', label: 'Tam Deneme 17', file: '/exams/full/fullexam17.json' },
+  { id: 'full18', label: 'Tam Deneme 18', file: '/exams/full/fullexam18.json' },
+  { id: 'full19', label: 'Tam Deneme 19', file: '/exams/full/fullexam19.json' },
+  { id: 'full20', label: 'Tam Deneme 20', file: '/exams/full/fullexam20.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────
