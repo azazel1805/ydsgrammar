@@ -456,3 +456,29 @@ body {
         display: none !important;
     }
 }
+
+/* =========================================
+   CHATBOT SCROLLBAR & SCROLL FIX
+   ========================================= */
+#chatMessages {
+    scroll-behavior: smooth;
+    max-height: 100%;
+    overflow-y: auto !important;
+}
+
+#chatMessages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chatMessages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#chatMessages::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+#chatMessages::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+}

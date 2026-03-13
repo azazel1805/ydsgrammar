@@ -1,4 +1,4 @@
-document:addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     initChatbot();
 });
 
@@ -32,7 +32,9 @@ function initChatbot() {
         // Show Typing
         const typing = document.getElementById("typingIndicator");
         typing.classList.remove("hidden");
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        setTimeout(() => {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 50);
 
         try {
             const response = await fetch("/.netlify/functions/chatbot", {
@@ -83,7 +85,14 @@ function appendMessage(role, text) {
     `;
 
     container.appendChild(div);
-    container.scrollTop = container.scrollHeight;
+    
+    // Smooth scroll to bottom
+    setTimeout(() => {
+        container.scrollTo({
+            top: container.scrollHeight,
+            behavior: 'smooth'
+        });
+    }, 100);
 }
 
 function getChatHistory() {

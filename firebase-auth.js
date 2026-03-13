@@ -288,11 +288,12 @@ onAuthStateChanged(auth, (user) => {
       window.lockAnalyzerUI();
     }
 
-    // Force Login: Hide app, show login page
-    if (appWrapper) appWrapper.classList.add("hidden");
+    // SEO Friendly: Don't hide the app wrapper. Only hide login page by default.
+    // The login overlay will only show up when the user clicks a protected tab.
+    if (appWrapper) appWrapper.classList.remove("hidden");
     if (loginPage) {
-      loginPage.classList.remove("hidden");
-      loginPage.classList.add("flex"); // Ensure flex for centering
+        loginPage.classList.add("hidden");
+        loginPage.classList.remove("fixed", "inset-0", "flex");
     }
   }
 
@@ -310,7 +311,7 @@ window.openLoginModal = function () {
   const loginPage = document.getElementById("loginPage");
   if (loginPage) {
     loginPage.classList.remove("hidden");
-    loginPage.classList.add("fixed", "inset-0", "z-[300]"); // Ensure it's on top
+    loginPage.classList.add("fixed", "inset-0", "z-[300]", "flex"); // Ensure it's on top and centered
   }
 };
 

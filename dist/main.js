@@ -249,7 +249,7 @@ window.switchTab = function (tabName) {
         }
     }
 
-    const userTabs = ['forum', 'profile', 'vocabulary', 'wordpractice'];
+    const userTabs = ['profile'];
     const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams'];
     const adminTabs = ['admin'];
 
