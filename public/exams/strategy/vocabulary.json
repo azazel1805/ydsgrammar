@@ -1,29 +1,14 @@
 {
   "meta": {
-    "title": "Advanced Academic Vocabulary Assessment",
+    "title": "Master Vocabulary Strategy",
     "subtitle": "University Preparatory Level C1 proficiency",
     "total_questions": 50,
     "duration_minutes": 90
   },
   "sections": [
-    {
-      "id": "sec_1",
-      "label": "Contextual Vocabulary Mastery",
-      "from": 1,
-      "to": 20
-    },
-    {
-      "id": "sec_2",
-      "label": "Synonym Identification",
-      "from": 21,
-      "to": 35
-    },
-    {
-      "id": "sec_3",
-      "label": "Collocations and Phrases",
-      "from": 36,
-      "to": 50
-    }
+    { "id": "sec_1", "label": "Contextual Vocabulary", "from": 1, "to": 20 },
+    { "id": "sec_2", "label": "Synonyms", "from": 21, "to": 35 },
+    { "id": "sec_3", "label": "Collocations", "from": 36, "to": 50 }
   ],
   "passages": [],
   "questions": [
@@ -31,731 +16,701 @@
       "id": 1,
       "section_id": "sec_1",
       "question": "The researchers found that the results were _______, meaning they could not be replicated in subsequent trials.",
-      "options": {
-        "A": "ambiguous",
-        "B": "inconsistent",
-        "C": "tentative",
-        "D": "redundant",
-        "E": "conclusive"
-      },
+      "options": { "A": "ambiguous", "B": "inconsistent", "C": "tentative", "D": "redundant", "E": "conclusive" },
       "correct": "B",
-      "passage_id": null,
       "explanation": {
-        "tactic": "Cümledeki 'meaning they could not be replicated' (yani tekrar edilemediler) ifadesi, sonucun tutarlı olmadığını gösterir. 'Subsequent trials' ifadesi de zaman içindeki tutarsızlığı vurgular.",
-        "grammar": "Definition & Context Clues",
-        "vocabulary": ["Inconsistent (Tutarsız)", "Replicate (Kopyalamak/Tekrarlamak)", "Subsequent (Ardıl/Sonraki)"],
-        "trap": "Ambiguous (Belirsiz) kelimesi yanıltıcı olabilir ancak 'replicate' edilememe durumu doğrudan 'tutarsızlık' ile ilgilidir."
+        "logical_structure": "Cümledeki 'meaning' (yani/bu da şu anlama gelir ki) bağlacından sonra gelen 'could not be replicated' (aynı sonuç tekrar elde edilemedi) ifadesi anahtar noktadır.",
+        "tactic": "Adım 1: Boşluktan sonraki açıklamayı analiz et. 'Replicate' edilememek tutarsızlık belirtisidir. Adım 2: Zaman ifadesi olan 'subsequent' (sonraki) denemelerde farklı sonuçlar alındığını anla. Sonuç: 'Tutarsız' anlamına gelen 'inconsistent' doğru cevaptır.",
+        "elimination": "A (Ambiguous-Belirsiz) ve C (Tentative-Geçici/Kesin olmayan) çeldiricidir ancak 'tekrarlanamama' durumu doğrudan verinin kalitesiyle değil, tutarlılığıyla (inconsistent) ilgilidir. E (Conclusive) ise anlamca tam zıttır.",
+        "grammar": "Contextual Definition Clues",
+        "trap": "Belirsizlik (ambiguous) ile tutarsızlık (inconsistent) arasındaki farka dikkat edilmelidir; veri net olsa da tekrarlanamıyorsa tutarsızdır."
       }
     },
     {
       "id": 2,
       "section_id": "sec_1",
       "question": "Despite the initial setbacks, the team remained _______ in their pursuit of a sustainable energy solution.",
-      "options": {
-        "A": "resolute",
-        "B": "indifferent",
-        "C": "skeptical",
-        "D": "apprehensive",
-        "E": "vulnerable"
-      },
+      "options": { "A": "resolute", "B": "indifferent", "C": "skeptical", "D": "apprehensive", "E": "vulnerable" },
       "correct": "A",
-      "passage_id": null,
       "explanation": {
-        "tactic": "Despite (Rağmen) zıtlık bağlacı, 'setbacks' (aksilikler) ile 'pursuit' (peşinden gitme) arasındaki ilişkiyi kurar. Aksiliklere rağmen bir şeye devam etmek, 'resolute' (kararlı) olmayı gerektirir.",
-        "grammar": "Contrast Conjunctions (Despite)",
-        "vocabulary": ["Resolute (Kararlı)", "Setback (Aksilik/Gerileme)", "Pursuit (Arayış/Peşinden gitme)"],
-        "trap": "Skeptical (Şüpheci) kelimesi 'setback' sonrası mantıklı gelebilir ama 'pursuit' eylemine uymaz."
+        "logical_structure": "Cümlenin başındaki 'Despite' (rağmen) zıtlık bağlacı ve 'setbacks' (aksilikler) kelimesi cümlenin yönünü belirler.",
+        "tactic": "Adım 1: 'Despite breakthroughs/setbacks' yapısını gör. Aksiliklere rağmen takımın 'olumlu' bir tutum sergilediğini anla. Adım 2: 'In their pursuit' (arayışlarında/peşinde) ifadesine en uygun pozitif sıfatı seç. Sonuç: Kararlı anlamına gelen 'resolute' seçilmelidir.",
+        "elimination": "B (Indifferent-Kayıtsız) ve C (Skeptical-Şüpheci) cümlenin 'pursuit' (çaba) ruhuna aykırıdır. D (Apprehensive-Endişeli) ise aksilikler karşısında bir 'yenilgiyi' çağrıştırır, oysa cümlede hedef takibi devam ediyor.",
+        "grammar": "Contrast Patterns (Despite)",
+        "trap": "Skeptical, başarısızlık sonrası doğal bir tepki gibi görünse de 'remained' fiili bir duruşu temsil eder."
       }
     },
     {
       "id": 3,
       "section_id": "sec_1",
       "question": "The economic crisis had a _______ effect on small businesses, leading to widespread closures.",
-      "options": {
-        "A": "beneficial",
-        "B": "superficial",
-        "C": "detrimental",
-        "D": "negligible",
-        "E": "minimal"
-      },
+      "options": { "A": "beneficial", "B": "superficial", "C": "detrimental", "D": "negligible", "E": "minimal" },
       "correct": "C",
-      "passage_id": null,
       "explanation": {
-        "tactic": "'Economic crisis' (Ekonomik kriz) ve 'widespread closures' (yaygın kapanmalar) arasındaki sebep-sonuç ilişkisine bakın. Kapanmalara yol açan etki ancak 'detrimental' (zararlı) olabilir.",
-        "grammar": "Cause-Effect Adjectives",
-        "vocabulary": ["Detrimental (Zararlı)", "Widespread (Yaygın)", "Closure (Kapanış)"],
-        "trap": "Negligible (Göz ardı edilebilir) kelimesi krizin tam zıt etkisini anlatır."
+        "logical_structure": "Cümledeki 'leading to widespread closures' (yaygın kapanmalara yol açan) sonucu, cümlenin negatif bir sıfat gerektirdiğini netleştirir.",
+        "tactic": "Adım 1: Sebep-sonuç bağını kur: 'Economic crisis' (Olumsuz Sebep) -> 'Effect' (Boşluk) -> 'Closures' (Olumsuz Sonuç). Adım 2: Çok zararlı/yıkıcı anlamına gelen kelimeyi bul. Sonuç: 'Detrimental' doğru cevaptır.",
+        "elimination": "A (Beneficial) tam zıttır. B (Superficial), krizin etkisinin 'yüzeysel' olduğunu söyleyerek kapanma sonucunu açıklayamaz. D ve E şıkları krizin etkisinin çok az olduğunu savunduğu için elenir.",
+        "grammar": "Cause and Effect Relations",
+        "trap": "Negligible (göz ardı edilebilir) kelimesi teknik metinlerde 'etkisiz' anlamında çok çıkar, ancak burada somut bir yıkım (closures) vardır."
       }
     },
     {
       "id": 4,
       "section_id": "sec_1",
       "question": "The professor's lecture was so _______ that even students with no prior knowledge could understand the complex theories.",
-      "options": {
-        "A": "obscure",
-        "B": "lucid",
-        "C": "ambiguous",
-        "D": "convoluted",
-        "E": "perplexing"
-      },
+      "options": { "A": "obscure", "B": "lucid", "C": "ambiguous", "D": "convoluted", "E": "perplexing" },
       "correct": "B",
-      "passage_id": null,
       "explanation": {
-        "tactic": "'Even students with no prior knowledge could understand' ifadesi, dersin çok net ve anlaşılır olduğunu gösterir. Bu anlamı karşılayan kelime 'lucid' (berrak/açık) kelimesidir.",
-        "grammar": "Positive Concession (Even)",
-        "vocabulary": ["Lucid (Açık/Anlaşılır)", "Complex (Karmaşık)", "Prior knowledge (Ön bilgi)"],
-        "trap": "Obscure ve Perplexing, lucid kelimesinin tam zıttıdır."
+        "logical_structure": "'So ... that' (Öyle ... ki) yapısı ve 'understand the complex theories' (karmaşık teorileri anlamak) ifadesi anahtar yapılardır.",
+        "tactic": "Adım 1: 'Even with no prior knowledge' (hiç ön bilgi olmasa bile) ifadesinden dersin çok 'anlaşılır' olduğu sonucunu çıkar. Adım 2: 'Açık, net, anlaşılır' anlamına gelen 'lucid' kelimesini seç. Sonuç: B şıkkı doğrudur.",
+        "elimination": "A (Obscure), D (Convoluted) ve E (Perplexing) kelimelerinin tamamı 'karmaşık/anlaşılmaz' demektir ve birbirini eler. C (Ambiguous) ise 'belirsiz' demektir, anlatım için uygun değildir.",
+        "grammar": "Degree Adverbs (So...that)",
+        "trap": "Obscure (anlaşılması güç) kelimesi akademik metinlerde Lucid'in en güçlü çeldiricisidir."
       }
     },
     {
       "id": 5,
       "section_id": "sec_1",
       "question": "The government's decision to _______ the old law was met with widespread approval from human rights activists.",
-      "options": {
-        "A": "ratify",
-        "B": "enforce",
-        "C": "repeal",
-        "D": "uphold",
-        "E": "sanction"
-      },
+      "options": { "A": "ratify", "B": "enforce", "C": "repeal", "D": "uphold", "E": "sanction" },
       "correct": "C",
-      "passage_id": null,
       "explanation": {
-        "tactic": "'Old law' (Eski yasa) ve 'approval from activists' (aktivistlerin onayı) birleşince, yasanın kaldırıldığı (repeal) sonucuna ulaşıyoruz. Aktivistler genelde eski ve baskıcı yasaların iptalini isterler.",
-        "grammar": "Verb-Context Alignment",
-        "vocabulary": ["Repeal (Yürürlükten kaldırmak)", "Ratify (Onaylamak)", "Enforce (Uygulamak/Dayatmak)"],
-        "trap": "Ratify ve Uphold olumlu eylemlerdir ancak eski bir yasanın aktivistlerce 'iptali' daha büyük alkış alır."
+        "logical_structure": "'Original law' (Eski yasa) ve 'approval from activists' (aktivistlerin onayı) ifadeleri arasındaki mantıksal bağı kurun.",
+        "tactic": "Adım 1: Aktivistlerin neye 'onay' (approval) vereceğini düşün. Genelde kısıtlayıcı veya eski bir yasanın 'iptal edilmesi' onları mutlu eder. Adım 2: Yasayı yürürlükten kaldırmak anlamına gelen 'repeal' kelimesini bul. Sonuç: C doğrudur.",
+        "elimination": "A (Ratify) ve B (Enforce) yasayı güçlendirmek demektir. D (Uphold) yasayı savunmak/sürdürmektir. E (Sanction) ise yaptırım uygulamak demektir. Hiçbiri bir yasanın 'bitirilmesi' kadar büyük bir 'approval' (onay) yaratmaz.",
+        "grammar": "Verb-Noun Collocations",
+        "trap": "Ratify (onaylamak) olumlu bir kelime olduğu için 'approval' ile karıştırılabilir, ancak 'old law' (eski yasa) genelde 'kaldırılınca' onay alır."
       }
     },
     {
       "id": 6,
       "section_id": "sec_1",
       "question": "The satellite imagery provided _______ evidence of the rapid deforestation occurring in the Amazon.",
-      "options": {
-        "A": "circumstantial",
-        "B": "subjective",
-        "C": "empirical",
-        "D": "speculative",
-        "E": "hypothetical"
-      },
+      "options": { "A": "circumstantial", "B": "subjective", "C": "empirical", "D": "speculative", "E": "hypothetical" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Satellite imagery' (uydu görüntüleri) somut, gözlemlenebilir bir veri kaynağıdır.",
+        "tactic": "Adım 1: Verinin kaynağına bak (Satellite imagery). Bu bir gözlem/kanıt yöntemidir. Adım 2: Deney ve gözleme dayalı, somut veri anlamına gelen sıfatı seç. Sonuç: 'Empirical' doğru cevaptır.",
+        "elimination": "B (Subjective-Öznel), D (Speculative-Tahmini) ve E (Hypothetical-Varsayımsal) uydu görüntüsü gibi somut bir veriyle çelişir. A (Circumstantial-Dolaylı) ise kesinliği düşük kanıtlar için kullanılır.",
+        "grammar": "Evidence-Related Adjectives",
+        "trap": "Akademik sınavlarda 'evidence' kelimesi en çok 'empirical' ve 'compelling' (ikna edici) sıfatlarıyla eşleşir."
+      }
     },
     {
       "id": 7,
       "section_id": "sec_1",
       "question": "The new software is designed to _______ the workflow by automating repetitive tasks.",
-      "options": {
-        "A": "impede",
-        "B": "complicate",
-        "C": "streamline",
-        "D": "hinder",
-        "E": "obstruct"
-      },
+      "options": { "A": "impede", "B": "complicate", "C": "streamline", "D": "hinder", "E": "obstruct" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Automating repetitive tasks' (tekrarlayan işlerin otomatikleşmesi) iş akışını (workflow) nasıl etkiler?",
+        "tactic": "Adım 1: Otomasyonun amacını belirle (Verimlilik/Hız). Adım 2: İşleri kolaylaştırmak, daha verimli hale getirmek anlamına gelen 'streamline' fiilini seç. Sonuç: C doğrudur.",
+        "elimination": "A, B, D ve E şıkları 'zorlaştırmak, engellemek, tıkamak' gibi negatif anlamlara gelir. Bu kelimeler tek bir pozitif şık olan C'yi işaret eder.",
+        "grammar": "Problem-Solution Verbs",
+        "trap": "Streamline (akıcılaştırmak) kelimesi iş hayatı ve yazılım bağlamında YDS'nin favori kelimelerinden biridir."
+      }
     },
     {
       "id": 8,
       "section_id": "sec_1",
       "question": "Her _______ remarks about the project's feasibility were later proven correct when it failed to meet the deadline.",
-      "options": {
-        "A": "optimistic",
-        "B": "prophetic",
-        "C": "erroneous",
-        "D": "redundant",
-        "E": "trivial"
-      },
+      "options": { "A": "optimistic", "B": "prophetic", "C": "erroneous", "D": "redundant", "E": "trivial" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Later proven correct' (sonradan doğru olduğu kanıtlandı) ifadesi bizi bir 'önceden bilme' veya 'geleceği görme' anlamına götürür.",
+        "tactic": "Adım 1: 'Proven correct' (Doğruluğu kanıtlanmış) ve 'Later' (Sonradan) yapılarına bak. Adım 2: Kahince/Önceden bilen anlamına gelen 'prophetic' kelimesini seç.",
+        "elimination": "A (Optimistic-İyimser) olsaydı başarısızlık (failed) durumunda doğru çıkmazdı. C (Erroneous-Hatalı) olsaydı sonradan 'correct' olmazdı. D (Redundant-Gereksiz) ve E (Trivial-Önemsiz) ise cümlenin gidişatını etkileyen 'remark'lar olamaz.",
+        "grammar": "Time-Dependent Truth Clues",
+        "trap": "Optimistic kelimesi projenin başarısızlığıyla zıt düştüğü için güçlü bir elenecek şıktır."
+      }
     },
     {
       "id": 9,
       "section_id": "sec_1",
       "question": "The urban planning committee must _______ the needs of the residents with the environmental impact of the new highway.",
-      "options": {
-        "A": "reconcile",
-        "B": "neglect",
-        "C": "diverge",
-        "D": "disregard",
-        "E": "aggravate"
-      },
+      "options": { "A": "reconcile", "B": "neglect", "C": "diverge", "D": "disregard", "E": "aggravate" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "İki zıt durum var: 'Needs of residents' (Sakinlerin ihtiyaçları) ve 'Environmental impact' (Çevresel etki). Aradaki 'with' bağlacı denge kurma fiiline işaret eder.",
+        "tactic": "Adım 1: İki çatışan ucu (İhtiyaç vs Doğa) yönetmek gerektiğini anla. Adım 2: Uzlaştırmak veya aradaki dengeyi kurmak anlamına gelen 'reconcile' kelimesini kullan. Sonuç: A doğrudur.",
+        "elimination": "B, D (İhmal etmek) ve E (Kötüleştirmek) planlama komitesinin görevi olamaz. C (Diverge-Sapmak) ise 'with' ile bu anlamda kullanılmaz.",
+        "grammar": "Conflict Management Verbs",
+        "trap": "Reconcile ... with yapısı (arasında denge kurmak/uzlaştırmak) akademik İngilizcede kalıp bir kullanımdır."
+      }
     },
     {
       "id": 10,
       "section_id": "sec_1",
       "question": "The scarcity of resources led to _______ competition among the tribes in the region.",
-      "options": {
-        "A": "amiable",
-        "B": "moderate",
-        "C": "fierce",
-        "D": "sporadic",
-        "E": "nominal"
-      },
+      "options": { "A": "amiable", "B": "moderate", "C": "fierce", "D": "sporadic", "E": "nominal" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Scarcity of resources' (kaynak kıtlığı) ve 'led to' (yol açtı) sebep-sonuç ilişkisi.",
+        "tactic": "Adım 1: Ortada bir kıtlık varken rekabetin (competition) nasıl olacağını düşün. Adım 2: Sert, şiddetli anlamına gelen 'fierce' kelimesini seç. Sonuç: C doğrudur.",
+        "elimination": "A (Amiable-Dostça) ve B (Moderate-Ilımlı) kıtlık durumunda rekabet için beklenen sıfatlar değildir. D (Sporadic-Seyrek) ise rekabetin şiddetini değil sıklığını belirler, burada anlamı karşılamaz.",
+        "grammar": "Collocation: Fierce Competition",
+        "trap": "Fierce competition (çetin/sert rekabet) kalıplaşmış bir ifadedir ve YDS'de sıkça sorulur."
+      }
     },
     {
       "id": 11,
       "section_id": "sec_1",
       "question": "Many scholars argue that the Industrial Revolution was a _______ moment in human history.",
-      "options": {
-        "A": "pivotal",
-        "B": "trivial",
-        "C": "marginal",
-        "D": "redundant",
-        "E": "tangential"
-      },
+      "options": { "A": "pivotal", "B": "trivial", "C": "marginal", "D": "redundant", "E": "tangential" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "Sanayi Devrimi'nin (Industrial Revolution) tarihteki önemi üzerine bir değerlendirme yapılıyor.",
+        "tactic": "Adım 1: Sanayi Devrimi'nin insanlık için taşıdığı 'büyük önemi' hatırla. Adım 2: Hayati önem taşıyan, dönüm noktası olan anlamına gelen 'pivotal' kelimesini işaretle.",
+        "elimination": "B (Trivial-Önemsiz), C (Marginal-Kenarda kalan), D (Redundant-Fazlalık) ve E (Tangential-Dolaylı/Teğet geçen) kelimelerinin tamamı Sanayi Devrimi gibi büyük bir olayı tanımlamak için çok 'zayıf' veya yanlıştır.",
+        "grammar": "Academic Significance Adjectives",
+        "trap": "Pivotal, 'key' veya 'crucial' kelimelerinin en güçlü akademik eş anlamlısıdır."
+      }
     },
     {
       "id": 12,
       "section_id": "sec_1",
       "question": "The author's use of _______ language makes the novel difficult for casual readers to digest.",
-      "options": {
-        "A": "pedestrian",
-        "B": "arcane",
-        "C": "generic",
-        "D": "monotonous",
-        "E": "simplistic"
-      },
+      "options": { "A": "pedestrian", "B": "arcane", "C": "generic", "D": "monotonous", "E": "simplistic" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Difficult to digest' (anlaşılması zor) ve 'casual readers' (sıradan okuyucular) ifadeleri dilin niteliği hakkında ipucu verir.",
+        "tactic": "Adım 1: Sıradan okuyucunun zorlandığı bir dilin 'herkes tarafından bilinmeyen/gizemli' olması gerektiğini anla. Adım 2: 'Arcane' (gizli, anlaşılması güç, sadece sınırlı sayıda insan tarafından bilinen) kelimesini bul. Sonuç: B.",
+        "elimination": "A (Pedestrian-Sıradan) ve E (Simplistic-Aşırı basitleştirilmiş) okuyucuyu zorlamaz. C (Generic) ise genel/yaygın demektir, zorluk yaratmaz. D (Monotonous-Sıkıcı) ise zor değil, sadece sürükleyici olmayabilir.",
+        "grammar": "Adjectives for Specialized Knowledge",
+        "trap": "Pedestrian kelimesi yaya demek olsa da mecazi olarak 'sıradan/basit' (anlamı bilinmeyen bir çeldirici) olarak çok sorulur."
+      }
     },
     {
       "id": 13,
       "section_id": "sec_1",
       "question": "The sudden _______ in temperature caused the water pipes to burst throughout the city.",
-      "options": {
-        "A": "fluctuation",
-        "B": "stagnation",
-        "C": "equilibrium",
-        "D": "stability",
-        "E": "uniformity"
-      },
+      "options": { "A": "fluctuation", "B": "stagnation", "C": "equilibrium", "D": "stability", "E": "uniformity" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Sudden' (ani) ve 'caused ... to burst' (patlamaya neden oldu) ifadeleri bir değişim gerektirir.",
+        "tactic": "Adım 1: Boruların patlaması için ısının 'sabit durması' değil, aniden 'dalgalanması/değişmesi' gerekir. Adım 2: Dalgalanma anlamına gelen 'fluctuation' kelimesini seç.",
+        "elimination": "B (Stagnation-Durağanlık), C (Equilibrium-Denge), D (Stability-İstikrar) ve E (Uniformity-Tekdüzelik) hepsi 'değişmeme' durumunu anlatır. Değişimin olmadığı yerde 'sudden' bir patlama beklenmez.",
+        "grammar": "Change vs Stability Nouns",
+        "trap": "Stability olumlu bir kelime gibi görünse de patlama gibi bir felaketi açıklayamaz."
+      }
     },
     {
       "id": 14,
       "section_id": "sec_1",
       "question": "Because the evidence was _______, the jury was unable to reach a unanimous verdict.",
-      "options": {
-        "A": "compelling",
-        "B": "irrefutable",
-        "C": "conclusive",
-        "D": "inconclusive",
-        "E": "overwhelming"
-      },
+      "options": { "A": "compelling", "B": "irrefutable", "C": "conclusive", "D": "inconclusive", "E": "overwhelming" },
       "correct": "D",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Because' (çünkü) sebep bağlacı ve 'unable to reach a verdict' (karara varamama) sonucu.",
+        "tactic": "Adım 1: Karar verilemiyorsa kanıtın durumunu düşün (Kanıt yetersiz veya belirsizdir). Adım 2: Sonuç vermeyen, yetersiz anlamına gelen 'inconclusive' kelimesini seç. Sonuç: D.",
+        "elimination": "A (Compelling-İkna edici), B (Irrefutable-Tartışılmaz), C (Conclusive-Kesin) ve E (Overwhelming-Ezici/Çok fazla) şıkları jürinin karara varmasını kolaylaştırırdı. Sonucu negatif (unable) olduğu için kök kelime de negatif olmalı.",
+        "grammar": "Negative Context Clues",
+        "trap": "Compelling kelimesi kanıtlarla çok kullanılır ama jüriyi ikna eder, burada tersi bir durum var."
+      }
     },
     {
       "id": 15,
       "section_id": "sec_1",
       "question": "The CEO's _______ behavior during the crisis led to a loss of investor confidence.",
-      "options": {
-        "A": "erratic",
-        "B": "composed",
-        "C": "predictable",
-        "D": "steadfast",
-        "E": "consistent"
-      },
+      "options": { "A": "erratic", "B": "composed", "C": "predictable", "D": "steadfast", "E": "consistent" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Crisis' (Kriz) anındaki bir hareket ve bunun sonucunda 'loss of confidence' (güven kaybı) oluşması.",
+        "tactic": "Adım 1: Güven kaybına yol açan davranışın niteliğini bul (Dengesiz/Tutarsız bir davranış olmalı). Adım 2: 'Erratic' (dengesiz, tutarsız, kestirilemeyen) kelimesini işaretle.",
+        "elimination": "B (Composed-Sakin), C (Predictable-Öngörülebilir), D (Steadfast-Kararlı) ve E (Consistent-Tutarlı) şıkları yatırımcı güvenini artırırdı, sarsmazdı.",
+        "grammar": "Character Adjectives in Business Context",
+        "trap": "Erratic kelimesi hem hava durumunda (fluctuation) hem de insan davranışında (inconsistent) karşımıza çıkar."
+      }
     },
     {
       "id": 16,
       "section_id": "sec_1",
       "question": "The ruins of the ancient city are a _______ reminder of a once-powerful civilization.",
-      "options": {
-        "A": "fleeting",
-        "B": "poignant",
-        "C": "transient",
-        "D": "frivolous",
-        "E": "redundant"
-      },
+      "options": { "A": "fleeting", "B": "poignant", "C": "transient", "D": "frivolous", "E": "redundant" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Ancient city' (antik şehir), 'once-powerful' (bir zamanlar güçlü) ve 'reminder' (hatırlatıcı).",
+        "tactic": "Adım 1: Yıkılmış büyük bir medeniyete bakarken duyulan hissi düşün (Dokunaklı/Hüzünlü bir durum). Adım 2: 'Poignant' (dokunaklı, içe işleyen, hüzün verici) kelimesini seç.",
+        "elimination": "A (Fleeting) ve C (Transient) 'kalıcı olmayan/gelip geçici' demektir; oysa harabeler yüzyıllardır oradadır. D (Frivolous-Ciddiyetsiz) ve E (Redundant-Fazlalık) bu ciddi bağlama uymaz.",
+        "grammar": "Emotional Impact Adjectives",
+        "trap": "Harabeler kalıcı olduğu için gelip geçici (fleeting) şıkları en güçlü çeldiricidir ama anlam hissi (poignant) sorulmaktadır."
+      }
     },
     {
       "id": 17,
       "section_id": "sec_1",
       "question": "The scientific community remains _______ about the claims made by the controversial researcher.",
-      "options": {
-        "A": "enthusiastic",
-        "B": "indifferent",
-        "C": "skeptical",
-        "D": "convinced",
-        "E": "unbiased"
-      },
+      "options": { "A": "enthusiastic", "B": "indifferent", "C": "skeptical", "D": "convinced", "E": "unbiased" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Scientific community' (bilim dünyası) ve 'controversial claims' (tartışmalı iddialar).",
+        "tactic": "Adım 1: Bilim insanları genel olarak iddialara nasıl yaklaşır? Hele iddia 'tartışmalıysa' (controversial). Adım 2: Şüpheci yaklaşırlar, yani 'skeptical'. Sonuç: C.",
+        "elimination": "A (Enthusiastic-Hevesli) ve D (Convinced-İkna olmuş) 'controversial' bir duruma hemen verilmez. B (Indifferent-Kayıtsız) bilim dünyasının doğasına (araştırma merakı) aykırıdır.",
+        "grammar": "Scientific Attitude Adjectives",
+        "trap": "Unbiased (tarafsız) kelimesi olumlu bir bilimsel sıfattır ancak 'remains' fiili genelde iddiaya karşı bir 'duruş' (şüphe) gerektirir."
+      }
     },
     {
       "id": 18,
       "section_id": "sec_1",
       "question": "The expansion of the desert is a _______ threat to the agricultural productivity of the region.",
-      "options": {
-        "A": "dormant",
-        "B": "imminent",
-        "C": "remote",
-        "D": "latent",
-        "E": "negligible"
-      },
+      "options": { "A": "dormant", "B": "imminent", "C": "remote", "D": "latent", "E": "negligible" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Expansion of desert' (çölün genişlemesi) ve 'threat' (tehdit).",
+        "tactic": "Adım 1: Çöl genişliyorsa tehdit 'yakındadır/olmak üzeredir'. Adım 2: Eli kulağında, gerçekleşmesi yakın anlamına gelen 'imminent' kelimesini işaretle.",
+        "elimination": "A (Dormant-Uykuda/Aktif olmayan) ve D (Latent-Gizli kalmış) genişleme durumuna (aktif bir süreç) zıttır. C (Remote-Uzak) ve E (Negligible-Önemsiz) ise tehdidi ciddiye almayan kelimelerdir.",
+        "grammar": "Time-Sense Adjectives",
+        "trap": "Imminent ve Eminent (seçkin) kelimelerini birbirine karıştırmayın; burada zaman baskısı (yakın tehlike) var."
+      }
     },
     {
       "id": 19,
       "section_id": "sec_1",
       "question": "The artist's work is characterized by a _______ blend of traditional and modern styles.",
-      "options": {
-        "A": "homogeneous",
-        "B": "seamless",
-        "C": "disjointed",
-        "D": "monolithic",
-        "E": "erratic"
-      },
+      "options": { "A": "homogeneous", "B": "seamless", "C": "disjointed", "D": "monolithic", "E": "erratic" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Blend' (karışım/harman) ve 'traditional and modern' (geleneksel ve modern).",
+        "tactic": "Adım 1: İki farklı stilin iyi bir karışımı (blend) nasıl olur? Kusursuz ve ek yeri belli olmayan bir şekilde olur. Adım 2: 'Seamless' (pürüzsüz, dikişsiz, mükemmel şekilde birleşmiş) kelimesini bul.",
+        "elimination": "C (Disjointed-Kopuk/Uyumsuz) ve E (Erratic-Dengesiz) olumsuz kelimelerdir. A (Homogeneous) tek tip demektir, oysa elimizde iki farklı stil var. D (Monolithic) ise tek parça/değişmez demektir.",
+        "grammar": "Harmony and Fusion Adjectives",
+        "trap": "Homogeneous sıklıkla 'karışım' sonucu gibi görünse de akademik dilde 'blend' için 'seamless' kullanımı daha yaygındır."
+      }
     },
     {
       "id": 20,
       "section_id": "sec_1",
       "question": "The diplomat's _______ approach helped to de-escalate the tension between the two nations.",
-      "options": {
-        "A": "confrontational",
-        "B": "tactful",
-        "C": "abrasive",
-        "D": "reckless",
-        "E": "arrogant"
-      },
+      "options": { "A": "confrontational", "B": "tactful", "C": "abrasive", "D": "reckless", "E": "arrogant" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Diplomat's approach' (diplomatın yaklaşımı) ve 'de-escalate tension' (gerginliği düşürmek).",
+        "tactic": "Adım 1: Gerginliği düşürmek (de-escalate) için diplomatın nasıl olması gerektiğini düşün. Adım 2: Kibar, yerinde davranan, akıllıca (tactful) bir yaklaşım gerekir. Sonuç: B doğrudur.",
+        "elimination": "A (Confrontational-Çatışmacı), C (Abrasive-Kırıcı), D (Reckless-Onun-bunun önemsiz davrandığı) ve E (Arrogant-Kibirli) gerginliği artırırdı, düşürmezdi.",
+        "grammar": "Diplomatic/Behavioral Adjectives",
+        "trap": "Tactful (incelikli/anlayışlı) kelimesi 'diplomatic' ile eş anlamlı olarak en çok kullanılan kelimelerden biridir."
+      }
     },
     {
       "id": 21,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Augment'",
-      "options": {
-        "A": "Decrease",
-        "B": "Supplement",
-        "C": "Diminish",
-        "D": "Abridge",
-        "E": "Curtail"
-      },
+      "options": { "A": "Decrease", "B": "Supplement", "C": "Diminish", "D": "Abridge", "E": "Curtail" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Augment' fiili bir şeyi sayıca veya miktar olarak artırmak/desteklemek demektir.",
+        "tactic": "Adım 1: Augment = Increase/Boost. Adım 2: Benzer şekilde 'eklemek/takviye etmek' olan 'supplement' kelimesini seç.",
+        "elimination": "A, C, D ve E şıklarının tamamı 'azaltmak/kısaltmak' (Decrease, Diminish, Abridge, Curtail) anlamına gelir. Bu yüzden geri kalan tek pozitif şık cevaptır.",
+        "grammar": "Growth and Addition Synonyms",
+        "trap": "Abridge genelde kitaplar/metinler için kullanılır ama kökünde 'kısaltmak' vardır."
+      }
     },
     {
       "id": 22,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Meticulous'",
-      "options": {
-        "A": "Careless",
-        "B": "Scrupulous",
-        "C": "Haphazard",
-        "D": "Negligent",
-        "E": "Cursory"
-      },
+      "options": { "A": "Careless", "B": "Scrupulous", "C": "Haphazard", "D": "Negligent", "E": "Cursory" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Meticulous' bir işi en ufak ayrıntısına kadar titizlikle yapmak demektir.",
+        "tactic": "Adım 1: Meticulous = Detailed/Thorough/Careful. Adım 2: Aynı zamanda ahlaki veya iş disiplini açısından 'titiz/dikkatli' olan 'scrupulous' kelimesini bul.",
+        "elimination": "A (Careless), C (Haphazard-Gelişigüzel), D (Negligent-İhmalkar) ve E (Cursory-Yüzeysel) hepsi titizliğin zıttıdır.",
+        "grammar": "Diligence Adjectives",
+        "trap": "Cursory (yüzeysel) kelimesi meticulous için en büyük 'zıt anlam' çeldiricisidir."
+      }
     },
     {
       "id": 23,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Spurious'",
-      "options": {
-        "A": "Authentic",
-        "B": "Counterfeit",
-        "C": "Genuine",
-        "D": "Legitimate",
-        "E": "Valid"
-      },
+      "options": { "A": "Authentic", "B": "Counterfeit", "C": "Genuine", "D": "Legitimate", "E": "Valid" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Spurious' sahte, asılsız veya kurgu bir durumu temsil eder.",
+        "tactic": "Adım 1: Spurious = Fake/False. Adım 2: Sahte para veya ürünler için kullanılan 'counterfeit' kelimesini seç.",
+        "elimination": "A (Authentic), C (Genuine), D (Legitimate) ve E (Valid) şıklarının hepsi 'gerçek/geçerli' anlamına gelen olumlu kelimelerdir.",
+        "grammar": "Authenticity vs Deception",
+        "trap": "Legitimate (meşru) akademik sınavlarda gerçeklik için sıkça 'synonym' sorusu olarak gelir."
+      }
     },
     {
       "id": 24,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Mitigate'",
-      "options": {
-        "A": "Exacerbate",
-        "B": "Alleviate",
-        "C": "Aggravate",
-        "D": "Intensify",
-        "E": "Provoke"
-      },
+      "options": { "A": "Exacerbate", "B": "Alleviate", "C": "Aggravate", "D": "Intensify", "E": "Provoke" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Mitigate' bir acıyı, yükü veya problemi hafifletmek/azaltmak demektir.",
+        "tactic": "Adım 1: Mitigate = Reduce/Ease. Adım 2: Hafifletmek, dindirmek anlamına gelen 'alleviate' kelimesini bul. Sonuç: B.",
+        "elimination": "A (Exacerbate), C (Aggravate) ve D (Intensify) kelimelerinin tamamı 'kötüleştirmek/şiddetini artırmak' demektir. E (Provoke) ise kışkırtmaktır.",
+        "grammar": "Relief and Reduction Verbs",
+        "trap": "Exacerbate (kötüleştirmek) Mitigate'in tam zıt anlamlısı (antonym) olarak sınavlarda ikiz gibi verilir."
+      }
     },
     {
       "id": 25,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Inherent'",
-      "options": {
-        "A": "Acquired",
-        "B": "Extrinsic",
-        "C": "Innate",
-        "D": "Incidental",
-        "E": "Superficial"
-      },
+      "options": { "A": "Acquired", "B": "Extrinsic", "C": "Innate", "D": "Incidental", "E": "Superficial" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Inherent' bir şeyin özünde olan, doğuştan gelen veya ayrılmaz parçası olan özelliktir.",
+        "tactic": "Adım 1: Inherent = Natural/Built-in. Adım 2: Doğuştan gelen anlamına gelen 'innate' kelimesini işaretle.",
+        "elimination": "A (Acquired-Sonradan edinilen), B (Extrinsic-Dışsal) ve D (Incidental-Tesadüfi/İkincil) özündeki özellik değil, dışarıdan gelen durumları anlatır.",
+        "grammar": "Nature vs Nurture Adjectives",
+        "trap": "Extrinsic (dışsal) kelimesi intrinsic (özsel) kelimesinin zıttıdır, Inherent için de bir zıtlıktır."
+      }
     },
     {
       "id": 26,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Pragmatic'",
-      "options": {
-        "A": "Idealistic",
-        "B": "Practical",
-        "C": "Theoretical",
-        "D": "Visionary",
-        "E": "Unrealistic"
-      },
+      "options": { "A": "Idealistic", "B": "Practical", "C": "Theoretical", "D": "Visionary", "E": "Unrealistic" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Pragmatic' teoriye değil, uygulamaya/sonuca odaklı yaklaşımdır.",
+        "tactic": "Adım 1: Pragmatic = Result-oriented/Realistic. Adım 2: Uygulanabilir anlamına gelen 'practical' kelimesini bul.",
+        "elimination": "A (Idealistic), C (Theoretical), D (Visionary) ve E (Unrealistic) şıkları gerçeğe değil, fikirlere veya hayallere dayanır.",
+        "grammar": "Realism vs Theory",
+        "trap": "Idealistic, Pragmatic'in felsefi ve günlük hayattaki en büyük karşıt (antonym) kelimesidir."
+      }
     },
     {
       "id": 27,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Obsolete'",
-      "options": {
-        "A": "Contemporary",
-        "B": "Outdated",
-        "C": "Novel",
-        "D": "State-of-the-art",
-        "E": "Modern"
-      },
+      "options": { "A": "Contemporary", "B": "Outdated", "C": "Novel", "D": "State-of-the-art", "E": "Modern" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Obsolete' artık kullanılmayan, modası geçmiş veya yerine yenisi gelmiş demektir.",
+        "tactic": "Adım 1: Obsolete = Old-fashioned/Out of use. Adım 2: Tarihi geçmiş anlamına gelen 'outdated'ı seç.",
+        "elimination": "A (Contemporary-Çağdaş), C (Novel-Yeni/Özgün), D (State-of-the-art-Son teknoloji) ve E (Modern) hepsi güncel olanı savunur.",
+        "grammar": "Time/Usage Adjectives",
+        "trap": "Contemporary kelimesini 'modern' ile karıştırmayın; her iki kelime de Obsolete'in zıttıdır."
+      }
     },
     {
       "id": 28,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Pervasive'",
-      "options": {
-        "A": "Rare",
-        "B": "Widespread",
-        "C": "Localized",
-        "D": "Restricted",
-        "E": "Limited"
-      },
+      "options": { "A": "Rare", "B": "Widespread", "C": "Localized", "D": "Restricted", "E": "Limited" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Pervasive' her yere yayılmış, her yerde görülen demektir (örn: pervasive influence).",
+        "tactic": "Adım 1: Pervasive = Common/Present everywhere. Adım 2: Yaygın anlamına gelen 'widespread'ı işaretle.",
+        "elimination": "A (Rare-Nadir), C (Localized-Sınırlı/Yerel), D (Restricted) ve E (Limited) hepsi yaygınlığın zıttı olan 'azlık/sınırlılık' durumunu belirtir.",
+        "grammar": "Prevalence Adjectives",
+        "trap": "Localized (yerelleşmiş) akademik paragraf sorularında yaygınlığın tersi olarak sıkça karşımıza çıkar."
+      }
     },
     {
       "id": 29,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Ephemeral'",
-      "options": {
-        "A": "Permanent",
-        "B": "Lasting",
-        "C": "Fleeting",
-        "D": "Enduring",
-        "E": "Eternal"
-      },
+      "options": { "A": "Permanent", "B": "Lasting", "C": "Fleeting", "D": "Enduring", "E": "Eternal" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Ephemeral' ömrü çok kısa olan, çabuk geçen şeyler için kullanılır (örn: ephemeral joy).",
+        "tactic": "Adım 1: Ephemeral = Short-lived/Temporary. Adım 2: 'Göz açıp kapayıncaya kadar geçen' anlamına gelen 'fleeting'i seç.",
+        "elimination": "A (Permanent), B (Lasting), D (Enduring) ve E (Eternal) hepsi uzun süreli veya sonsuz (kalıcı) olanı temsil eder.",
+        "grammar": "Duration Adjectives",
+        "trap": "Enduring (dayanıklı/köklü) kelimesi ephemeral olanın en büyük zıtlarından biridir."
+      }
     },
     {
       "id": 30,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Adversity'",
-      "options": {
-        "A": "Prosperity",
-        "B": "Fortune",
-        "C": "Hardship",
-        "D": "Success",
-        "E": "Benefit"
-      },
+      "options": { "A": "Prosperity", "B": "Fortune", "C": "Hardship", "D": "Success", "E": "Benefit" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Adversity' hayattaki sıkıntılar, şanssızlıklar veya engeller demektir.",
+        "tactic": "Adım 1: Adversity = Misfortune/Trouble. Adım 2: Zorluk, meşakkat anlamına gelen 'hardship' kelimesini bul.",
+        "elimination": "A (Prosperity-Refah), B (Fortune-Şans/Zenginlik) ve D (Success-Başarı) bu kelimenin tam zıttı olumlu anlamlardır.",
+        "grammar": "Life Situation Nouns",
+        "trap": "Prosperity ve Hardship YDS eş anlam sorularında birbirinin antitezi olarak çok çıkar."
+      }
     },
     {
       "id": 31,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Profound'",
-      "options": {
-        "A": "Shallow",
-        "B": "Superficial",
-        "C": "Deep",
-        "D": "Trivial",
-        "E": "Slight"
-      },
+      "options": { "A": "Shallow", "B": "Superficial", "C": "Deep", "D": "Trivial", "E": "Slight" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Profound' derin bir anlam taşıyan veya etkisi çok büyük olan demektir.",
+        "tactic": "Adım 1: Profound impact = Big/Serious/Deep impact. Adım 2: 'Derin' anlamına gelen 'deep' kelimesini eşleştir.",
+        "elimination": "A (Shallow), B (Superficial) ve D (Trivial) 'yüzeysel/önemsiz' demektir ve bu kelimenin zıttıdır.",
+        "grammar": "Depth Adjectives",
+        "trap": "Superficial (yüzeysel) Profound için beklenen en klasik antonym (zıt anlamlı) cevabıdır."
+      }
     },
     {
       "id": 32,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Eloquent'",
-      "options": {
-        "A": "Inarticulate",
-        "B": "Articulate",
-        "C": "Silent",
-        "D": "Mumbling",
-        "E": "Dull"
-      },
+      "options": { "A": "Inarticulate", "B": "Articulate", "C": "Silent", "D": "Mumbling", "E": "Dull" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Eloquent' kendini çok güzel, etkili ve akıcı bir şekilde ifade eden kişi veya konuşmadır.",
+        "tactic": "Adım 1: Eloquent speaker = Skilled/Fluent/Clear. Adım 2: Kelimeleri düzgün bir şekilde döken, net konuşan anlamına gelen 'articulate'ı bul.",
+        "elimination": "A (Inarticulate) konuşamayan/tutuk demektir. D (Mumbling) ise mırıldanmak demektir, bu her ikisi de Hitabet sanatına (eloquence) aykırıdır.",
+        "grammar": "Communication Skill Adjectives",
+        "trap": "Dull (mat/sıkıcı) kelimesi etkili bir hitabetin (eloquence) tam zıttıdır."
+      }
     },
     {
       "id": 33,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Equivocal'",
-      "options": {
-        "A": "Clear",
-        "B": "Ambiguous",
-        "C": "Decisive",
-        "D": "Obvious",
-        "E": "Explicit"
-      },
+      "options": { "A": "Clear", "B": "Ambiguous", "C": "Decisive", "D": "Obvious", "E": "Explicit" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Equivocal' birden fazla anlama gelebilen, net olmayan, kafa karıştırıcı demektir.",
+        "tactic": "Adım 1: Equivocal = Vague/Unclear. Adım 2: Belirsiz, iki anlamlı anlamına gelen 'ambiguous' kelimesini seç.",
+        "elimination": "A (Clear), D (Obvious) ve E (Explicit-Net/Açık) şıkları 'belirginlik' anlatır ve Equivocal'ın zıttıdır.",
+        "grammar": "Clarity Adjectives",
+        "trap": "Explicit sıfatı genelde 'anlatım' için kullanılır ve Ambiguous'un zıttı olarak karşımıza çıkar."
+      }
     },
     {
       "id": 34,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Exemplary'",
-      "options": {
-        "A": "Mediocre",
-        "B": "Commendable",
-        "C": "Faulty",
-        "D": "Abysmal",
-        "E": "Poor"
-      },
+      "options": { "A": "Mediocre", "B": "Commendable", "C": "Faulty", "D": "Abysmal", "E": "Poor" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Exemplary' örnek teşkil edecek kadar iyi, kusursuz demektir (örn: exemplary behavior).",
+        "tactic": "Adım 1: Exemplary = Model/Perfect/Excellent. Adım 2: Övülmeye değer anlamına gelen 'commendable'ı bul.",
+        "elimination": "A (Mediocre-Vasat), C (Faulty-Hatalı) ve D (Abysmal-Berbat) kelimeleri 'örnek' olacak bir kaliteyi temsil etmez.",
+        "grammar": "Quality Adjectives",
+        "trap": "Mediocre akademik metinlerde 'sıradanlık' (olumsuz anlamda) belirtmek için çok sık kullanılır."
+      }
     },
     {
       "id": 35,
       "section_id": "sec_2",
       "question": "Choose the synonym for 'Fastidious'",
-      "options": {
-        "A": "Slovenly",
-        "B": "Choosy",
-        "C": "Indifferent",
-        "D": "Easygoing",
-        "E": "Careless"
-      },
+      "options": { "A": "Slovenly", "B": "Choosy", "C": "Indifferent", "D": "Easygoing", "E": "Careless" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Fastidious' detaya aşırı önem veren, zor beğenen, titiz demektir.",
+        "tactic": "Adım 1: Fastidious = Picky/Difficult to please. Adım 2: Seçici, zor beğenen anlamına gelen 'choosy'yi seç.",
+        "elimination": "A (Slovenly-Pasaklı/Düzensiz), D (Easygoing-Rahat) ve E (Careless) şıkları bu titizliğin tam tersidir.",
+        "grammar": "Preference Adjectives",
+        "trap": "Fastidious genelde temizlik veya hijyen titizliğiyle (meticulous) eşleşir."
+      }
     },
     {
       "id": 36,
       "section_id": "sec_3",
       "question": "It is essential to _______ into account the socio-economic factors when analyzing the data.",
-      "options": {
-        "A": "make",
-        "B": "give",
-        "C": "take",
-        "D": "put",
-        "E": "hold"
-      },
+      "options": { "A": "make", "B": "give", "C": "take", "D": "put", "E": "hold" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "Gramer analizi yerine 'Collocation' (kalıplaşmış ifade) analizi yapın: '--- into account'.",
+        "tactic": "Adım 1: Boşluktan sonraki 'into account' (hesaba katmak) yapısını gör. Adım 2: Bu yapıyla kullanılan tek fiil olan 'take' fiilini seç.",
+        "elimination": "Make into, Give into gibi kullanımlar olsa da 'account' kelimesiyle 'hesaba katmak' anlamını sadece 'take into account' verir.",
+        "grammar": "Fixed Collocations",
+        "trap": "Take into consideration / Take into account akademik İngilizcenin temelidir."
+      }
     },
     {
       "id": 37,
       "section_id": "sec_3",
       "question": "The company had to _______ the consequences of their failed marketing strategy.",
-      "options": {
-        "A": "face",
-        "B": "meet",
-        "C": "hear",
-        "D": "stand",
-        "E": "view"
-      },
+      "options": { "A": "face", "B": "meet", "C": "hear", "D": "stand", "E": "view" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'--- the consequences' (sonuçlarla yüzleşmek/katlanmak) kalıp kullanımı.",
+        "tactic": "Adım 1: Başarısızlık sonrası gelen sonuçlarla (consequences) ne yapılacağını düşün. Adım 2: 'Yüzleşmek' anlamına gelen 'face the consequences'ı seç.",
+        "elimination": "Meet ile 'meet requirements' denir. Stand ile 'stand the pressure' denir. Ancak 'sonuçlar' ile yüzleşilir.",
+        "grammar": "Consequence Verbs",
+        "trap": "Face (yüz) kelimesinin fiil hali 'yüzleşmek/karşılaşmak' anlamında çok yaygındır."
+      }
     },
     {
       "id": 38,
       "section_id": "sec_3",
       "question": "The report _______ emphasis on the need for immediate climate action.",
-      "options": {
-        "A": "lays",
-        "B": "gives",
-        "C": "places",
-        "D": "shows",
-        "E": "makes"
-      },
+      "options": { "A": "lays", "B": "gives", "C": "places", "D": "shows", "E": "makes" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'--- emphasis on' (vurgu yapmak) kalıbı.",
+        "tactic": "Adım 1: Emphasis kelimesinin hangi fiillerle 'vurgulamak' anlamında kullanıldığını hatırla. Adım 2: 'Place emphasis on' kalıbını uygula.",
+        "elimination": "Gives emphasis da (daha az yaygın olsa da) görülür ama akademik dilde standart 'place' veya 'put' emphasis şeklindedir.",
+        "grammar": "Noun-Verb Pairing (Emphasis)",
+        "trap": "Lays (lay emphasis) de bazen kullanılır ama YDS seviyesinde 'place' önceliklidir."
+      }
     },
     {
       "id": 39,
       "section_id": "sec_3",
       "question": "Genetic factors play a _______ role in determining an individual's susceptibility to certain diseases.",
-      "options": {
-        "A": "large",
-        "B": "crucial",
-        "C": "wide",
-        "D": "long",
-        "E": "high"
-      },
+      "options": { "A": "large", "B": "crucial", "C": "wide", "D": "long", "E": "high" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Play a ... role' (bir rol oynamak) yapısı ve tıp/genetik bağlamı.",
+        "tactic": "Adım 1: Hastalıkları belirlemede genlerin önemini vurgulayan sıfatı bul. Adım 2: 'Crucial role' (kritik/hayati rol) kalıbını tamamla.",
+        "elimination": "Large role denilebilir ama akademik 'önem' sıfatı (crucial, vital, pivotal) her zaman önceliklidir.",
+        "grammar": "Importance Adjectives",
+        "trap": "High role veya Wide role İngilizcede bu anlamda kullanılmaz."
+      }
     },
     {
       "id": 40,
       "section_id": "sec_3",
       "question": "The results of the study are _______ with the findings of previous research in the field.",
-      "options": {
-        "A": "equivalent",
-        "B": "consistent",
-        "C": "identical",
-        "D": "same",
-        "E": "parallel"
-      },
+      "options": { "A": "equivalent", "B": "consistent", "C": "identical", "D": "same", "E": "parallel" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'--- with the findings' (bulgularla uyumlu/tutarlı) yapısı.",
+        "tactic": "Adım 1: Yeni çalışmanın eski çalışmalarla çatışmadığını belirten kelimeyi bul. Adım 2: 'Consistent with' (ile tutarlı) yapısını seç.",
+        "elimination": "Same with diye bir kullanım olsa da akademik dilde veriler 'same' (aynı) değil, 'consistent' (tutarlı) olur. Identical ise 'birebir' kopya demektir, bilimde zordur.",
+        "grammar": "Comparison Adjectives",
+        "trap": "Equivalent 'eşit/değer' demektir, ancak akademik veriler arasındaki 'uyum' tutarlılık (consistency) ile anlatılır."
+      }
     },
     {
       "id": 41,
       "section_id": "sec_3",
       "question": "The project was delayed _______ to unforeseen technical difficulties.",
-      "options": {
-        "A": "because",
-        "B": "owing",
-        "C": "resulted",
-        "D": "since",
-        "E": "for"
-      },
+      "options": { "A": "because", "B": "owing", "C": "resulted", "D": "since", "E": "for" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "Boşluktan sonraki 'to' edatına dikkat edin.",
+        "tactic": "Adım 1: '--- to' yapısıyla neden belirten bağlacı hatırla. Adım 2: 'Owing to' (den dolayı) yapısını yerleştir.",
+        "elimination": "Because, since ve for kendinden sonra cümle veya isim alsa da 'to' ile kullanılmazlar (Because of deseydi olurdu).",
+        "grammar": "Prepositional Conjunctions",
+        "trap": "Owing, tek başına borçlanmak fiili olsa da 'to' ile 'neden' bildirir."
+      }
     },
     {
       "id": 42,
       "section_id": "sec_3",
       "question": "We need to _______ a distinction between these two very different concepts.",
-      "options": {
-        "A": "make",
-        "B": "do",
-        "C": "get",
-        "D": "find",
-        "E": "set"
-      },
+      "options": { "A": "make", "B": "do", "C": "get", "D": "find", "E": "set" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'--- a distinction' (ayrım yapmak) kalıbı.",
+        "tactic": "Adım 1: Distinction kelimesiyle hangi eylem fiili kullanılır hatırla. Adım 2: 'Make a distinction'ı seç.",
+        "elimination": "Do bir işi yapmaktır ama 'make' bir şeyi ortaya çıkarmak/yaratmak (ayrım gibi) anlamında kullanılır.",
+        "grammar": "Make vs Do Collocations",
+        "trap": "Set a distinction yerine genelde 'draw a distinction' veya 'make a distinction' denir."
+      }
     },
     {
       "id": 43,
       "section_id": "sec_3",
       "question": "The argument was based on the _______ that all humans are inherently rational.",
-      "options": {
-        "A": "assumption",
-        "B": "viewpoint",
-        "C": "opinion",
-        "D": "thought",
-        "E": "guess"
-      },
+      "options": { "A": "assumption", "B": "viewpoint", "C": "opinion", "D": "thought", "E": "guess" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Based on the ---' (bir şeye dayanan) ve akademik bir kuram.",
+        "tactic": "Adım 1: Kuramların dayandığı temel 'varsayımı' bulun. Adım 2: 'Assumption' (varsayım) kelimesini seç.",
+        "elimination": "Opinion (görüş) ve Thought (düşünce) daha öznel ve daha az yapısaldır. Guess (tahmin) ise akademik ciddiyetle bağdaşmaz.",
+        "grammar": "Academic Foundation Nouns",
+        "trap": "Assumption, bir argümanın ispatlanmamış ama kabul edilmiş başlangıç noktasıdır."
+      }
     },
     {
       "id": 44,
       "section_id": "sec_3",
       "question": "The manager _______ responsibility for the error and offered an apology.",
-      "options": {
-        "A": "gave",
-        "B": "took",
-        "C": "held",
-        "D": "made",
-        "E": "kept"
-      },
+      "options": { "A": "gave", "B": "took", "C": "held", "D": "made", "E": "kept" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'--- responsibility' (sorumluluk almak/üstlenmek).",
+        "tactic": "Adım 1: Sorumluluk kelimesiyle en sık kullanılan 'almak' fiilini hatırla. Adım 2: 'Take (took) responsibility' yapısını kullan.",
+        "elimination": "Gave responsibility (sorumluluk vermek) müdürün hatayı başkasına atması demek olurdu, oysa özür dileyen kendisi. Sorumluluğu üstlenen kendisidir (took).",
+        "grammar": "Responsibility Verbs",
+        "trap": "Assume responsibility de denilebilir ancak Take en yaygın günlük/iş karşılığıdır."
+      }
     },
     {
       "id": 45,
       "section_id": "sec_3",
       "question": "To a certain _______, the success of the project depends on the cooperation of all team members.",
-      "options": {
-        "A": "level",
-        "B": "extent",
-        "C": "amount",
-        "D": "degree",
-        "E": "range"
-      },
+      "options": { "A": "level", "B": "extent", "C": "amount", "D": "degree", "E": "range" },
       "correct": "B",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'To a certain ---' (bir dereceye kadar/bir ölçüde) kalıbı.",
+        "tactic": "Adım 1: Miktar veya derece belirten bu standart yapıyı hatırla. Adım 2: 'To a certain extent' seçeneğini işaretle.",
+        "elimination": "To a certain degree de doğrudur ancak YDS seviyesinde 'extent' bu kalıpta birincil tercihtir.",
+        "grammar": "Adverbs of Degree",
+        "trap": "Level kelimesi mertebe demektir ama ölçü (extent) kalıbı başkadır."
+      }
     },
     {
       "id": 46,
       "section_id": "sec_3",
       "question": "The new policy will _______ into effect starting next January.",
-      "options": {
-        "A": "come",
-        "B": "go",
-        "C": "take",
-        "D": "put",
-        "E": "run"
-      },
+      "options": { "A": "come", "B": "go", "C": "take", "D": "put", "E": "run" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'--- into effect' (yürürlüğe girmek) kalıbı.",
+        "tactic": "Adım 1: Bir kanunun/kuralın yürürlüğe girmesi için kullanılan standart fiili hatırla. Adım 2: 'Come into effect' yapısını seç.",
+        "elimination": "Take effect denilebilir ama 'into' varsa 'come into effect' veya 'put into effect' (birisi tarafından sokulmak) gerekir. Gelecek zaman (will) ile 'come' daha yaygındır.",
+        "grammar": "Fixed Legal/Policy Phrases",
+        "trap": "Take effect ile Come into effect arasındaki 'into' farkına dikkat!"
+      }
     },
     {
       "id": 47,
       "section_id": "sec_3",
       "question": "The evidence _______ doubt on the validity of the suspect's alibi.",
-      "options": {
-        "A": "threw",
-        "B": "gave",
-        "C": "cast",
-        "D": "put",
-        "E": "sent"
-      },
+      "options": { "A": "threw", "B": "gave", "C": "cast", "D": "put", "E": "sent" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'--- doubt on' (bir şey üzerine şüphe düşürmek).",
+        "tactic": "Adım 1: Şüphe gölgesi düşürmek/şüphe yaratmak anlamındaki fiili hatırla. Adım 2: 'Cast doubt on' kalıbını tamamla.",
+        "elimination": "Throw doubt denilebilir ama 'cast doubt' hukuk ve polis bağlamında %90 kullanılan ifadedir.",
+        "grammar": "Idiomatic Verb-Noun Pairings",
+        "trap": "Cast fiili burada 'atmak/fırlatmak' değil 'düşürmek/yansıtmak' (gölge gibi) anlamındadır."
+      }
     },
     {
       "id": 48,
       "section_id": "sec_3",
       "question": "The university _______ great importance on academic integrity and honesty.",
-      "options": {
-        "A": "puts",
-        "B": "gives",
-        "C": "attaches",
-        "D": "makes",
-        "E": "holds"
-      },
+      "options": { "A": "puts", "B": "gives", "C": "attaches", "D": "makes", "E": "holds" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Importance on' (bir şeye önem vermek) yapısı.",
+        "tactic": "Adım 1: Bir değer atfetmek, önem yüklemek anlamındaki fiili hatırla. Adım 2: 'Attach importance to/on' yapısını seç.",
+        "elimination": "Place importance on deseydi (puts) olurdu ama 'attach' üniversite gibi kurumların 'önem atfetmesi' için en şık kelimedir.",
+        "grammar": "Verbs of Significance",
+        "trap": "Puts importance da çok yakındır ancak 'great importance' ile 'attach' sıklıkla birlikte görülür (attach great importance to)."
+      }
     },
     {
       "id": 49,
       "section_id": "sec_3",
       "question": "The researchers reached a broad _______ on the cause of the phenomenon.",
-      "options": {
-        "A": "consensus",
-        "B": "agreement",
-        "C": "unison",
-        "D": "harmony",
-        "E": "accord"
-      },
+      "options": { "A": "consensus", "B": "agreement", "C": "unison", "D": "harmony", "E": "accord" },
       "correct": "A",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'Reached a broad ---' (geniş çaplı fikir birliğine varmak).",
+        "tactic": "Adım 1: Gruplar arası sağlanan 'uzlaşı/ortak karar' kelimesini bulun. Adım 2: Akademik uzlaşı anlamına gelen 'consensus' kelimesini seç.",
+        "elimination": "Agreement daha geneldir, consensus ise birçok farklı görüşün bir noktada toplanması (araştırmacı grupları gibi) için kullanılır.",
+        "grammar": "Group Decision Nouns",
+        "trap": "Consensus, tek bir 'agreement'tan ziyade bir grubun ortak fikrini (general agreement) temsil eder."
+      }
     },
     {
       "id": 50,
       "section_id": "sec_3",
       "question": "In the _______ of evidence, we cannot conclude that the treatment was effective.",
-      "options": {
-        "A": "lack",
-        "B": "missing",
-        "C": "absence",
-        "D": "shortage",
-        "E": "need"
-      },
+      "options": { "A": "lack", "B": "missing", "C": "absence", "D": "shortage", "E": "need" },
       "correct": "C",
-      "passage_id": null
+      "explanation": {
+        "logical_structure": "'In the --- of evidence' (kanıtın yokluğunda/olmaması durumunda).",
+        "tactic": "Adım 1: Bir şeyin sistemli bir şekilde orada olmaması durumunu bulun. Adım 2: 'In the absence of' (yokluğunda) kalıbını hatırla.",
+        "elimination": "In the lack of yanlış bir edat kullanımıdır (Lack of evidence denir ama 'in the ...' ile 'absence' kullanılır). Shortage kaynak yetersizliğidir.",
+        "grammar": "Prepositional Phrases (In the ... of)",
+        "trap": "Lack of vs In the absence of farkını edatlar (in/the) belirler."
+      }
     }
   ]
 }

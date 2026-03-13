@@ -82,8 +82,8 @@ function renderStrategyQuestion() {
                     <div class="absolute top-0 left-0 w-1 h-full bg-red-600"></div>
                     
                     <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                        <span class="p-2 bg-red-600 rounded-lg text-sm"><i class="fas fa-robot"></i></span>
-                        AI Strateji Analizi
+                        <span class="p-2 bg-red-600 rounded-lg text-sm"><i class="fas fa-star"></i></span>
+                        Master Strateji Analizi
                     </h3>
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -132,50 +132,13 @@ function renderStrategyQuestion() {
     `;
 }
 
-async function revealAnalysis() {
+function revealAnalysis() {
     const q = strategyQuestions[currentQuestionIndex];
     const panel = document.getElementById('analysisPanel');
     const btn = document.getElementById('showAnalysisBtn');
     
-    // If no pre-baked explanation, call AI
-    if (!q.explanation || !q.explanation.tactic) {
-        showLoader();
-        btn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> AI Analiz Ediyor...';
-        btn.classList.add('opacity-50', 'pointer-events-none');
-
-        try {
-            const questionText = `${q.question}\n\nOptions:\nA) ${q.options.A}\nB) ${q.options.B}\nC) ${q.options.C}\nD) ${q.options.D}\nE) ${q.options.E}`;
-            
-            const response = await fetch("/.netlify/functions/analyze", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ input: questionText })
-            });
-
-            const data = await response.json();
-            
-            if (data.question_analysis) {
-                // Map AI response to Strategy Lab format
-                q.explanation = {
-                    tactic: data.question_analysis.why_correct || "Adım adım yol haritası hazırlanıyor...",
-                    grammar: data.question_analysis.grammar_focus || "General Academic Grammar",
-                    logical_structure: data.question_analysis.logical_structure || "Cümle yapısı ve anahtar sözcükler.",
-                    elimination: data.yds_trap_engine.elimination_strategy || "Eleme stratejisi belirleniyor...",
-                    trap: data.yds_trap_engine.exam_tip,
-                    vocabulary: data.question_analysis.why_others_wrong ? [data.question_analysis.why_others_wrong[0]] : ["Academic"]
-                };
-                
-                // Re-render only the analysis part to show data
-                updateAnalysisUI(q);
-            }
-        } catch (error) {
-            console.error("AI Analysis failed:", error);
-            document.getElementById('tacticText').innerText = "AI analizi şu an yapılamadı. Lütfen daha sonra tekrar deneyin.";
-        } finally {
-            hideLoader();
-            btn.innerHTML = '<i class="fas fa-lightbulb mr-2"></i> Stratejik Analiz Hazır';
-        }
-    }
+    // No more real-time AI fetch. Data must be in the JSON.
+    updateAnalysisUI(q);
 
     panel.classList.remove('hidden');
     btn.classList.add('opacity-50', 'pointer-events-none');
@@ -191,11 +154,11 @@ function updateAnalysisUI(q) {
     const eliminationEl = document.getElementById('eliminationText');
     const trapEl = document.getElementById('trapText');
 
-    if (tacticEl) tacticEl.innerText = q.explanation.tactic;
-    if (grammarEl) grammarEl.innerText = q.explanation.grammar;
-    if (logicEl) logicEl.innerText = q.explanation.logical_structure || "Cümle geneline odaklanın.";
-    if (eliminationEl) eliminationEl.innerText = q.explanation.elimination || "Uyumsuz şıkları eleyin.";
-    if (trapEl) trapEl.innerText = q.explanation.trap || "Dikkatli okuma gerektiren bir soru.";
+    if (tacticEl) tacticEl.innerText = q.explanation?.tactic || "Bu soru için teknik analiz hazırlanıyor...";
+    if (grammarEl) grammarEl.innerText = q.explanation?.grammar || "Genel Akademik Yapı";
+    if (logicEl) logicEl.innerText = q.explanation?.logical_structure || "Cümle geneline ve anahtar kelimelere odaklanın.";
+    if (eliminationEl) eliminationEl.innerText = q.explanation?.elimination || "Uyumsuz ve yapısal olarak hatalı şıkları eleyin.";
+    if (trapEl) trapEl.innerText = q.explanation?.trap || "Dikkatli okuma gerektiren bir soru.";
 }
 
 function checkStrategyAnswer(selected) {
