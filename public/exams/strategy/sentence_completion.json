@@ -1,8 +1,749 @@
 {
   "meta": {
-    "title": "Sentence Completion Strategy Lab",
-    "subtitle": "Logical and Syntactical connection analysis",
-    "total_questions": 0
+    "title": "Advanced Academic Sentence Completion Exam",
+    "subtitle": "University Preparatory Proficiency Level (B2-C1)",
+    "total_questions": 50,
+    "duration_minutes": 90
   },
-  "questions": []
+  "sections": [
+    {
+      "id": "sc_1",
+      "label": "Academic Vocabulary & Grammar in Context",
+      "from": 1,
+      "to": 50
+    }
+  ],
+  "passages": [],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "sc_1",
+      "question": "Although the initial results of the clinical trial were promising, the researchers remained --- until a larger sample size could be analyzed.",
+      "options": {
+        "A": "exuberant",
+        "B": "cautious",
+        "C": "indifferent",
+        "D": "negligent",
+        "E": "unwavering"
+      },
+      "correct": "B",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Cümle 'Although' (Rağmen) zıtlık bağlacı ile başlıyor. 'Initial results were promising' (ilk sonuçlar umut vericiydi) ifadesine zıt olarak, araştırmacıların daha büyük bir örneklem analiz edilene kadar 'mesafeli/temkinli' durduğunu belirten 'cautious' kelimesi doğru cevaptır.",
+        "grammar": "Contrast Clauses (Although...)",
+        "vocabulary": ["Cautious (Temkinli/Tedbirli)", "Promising (Umut verici)", "Clinical trial (Klinik çalışma)"],
+        "trap": "Exuberant (Coşkulu) kelimesi 'promising' kısmına uyar ancak 'Although' bağlacının gerektirdiği zıtlığı sağlamaz."
+      }
+    },
+    {
+      "id": 2,
+      "section_id": "sc_1",
+      "question": "The urban planning committee decided to --- the old industrial district, transforming it into a vibrant hub for tech startups.",
+      "options": {
+        "A": "demolish",
+        "B": "deteriorate",
+        "C": "revitalize",
+        "D": "deplete",
+        "E": "stagnate"
+      },
+      "correct": "C",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Cümledeki 'transforming it into a vibrant hub' (onu canlı bir merkeze dönüştürmek) ifadesi, eski bölgenin 'yenilendiğini' veya 'canlandırıldığını' gösterir. Bu anlamı karşılayan kelime 'revitalize' (yeniden canlandırmak) fiilidir.",
+        "grammar": "Contextual Vocabulary (Transformative verbs)",
+        "vocabulary": ["Revitalize (Canlandırmak)", "Industrial district (Sanayi bölgesi)", "Vibrant (Canlı/Hareketli)"],
+        "trap": "Demolish (Yıkmak) kelimesi 'district' ile kullanılabilir ancak 'vibrant hub' sonucuna uygun değildir."
+      }
+    },
+    {
+      "id": 3,
+      "section_id": "sc_1",
+      "question": "Due to the --- of natural resources in the region, many local industries have been forced to relocate to neighboring provinces.",
+      "options": {
+        "A": "abundance",
+        "B": "scarcity",
+        "C": "redundancy",
+        "D": "fluctuation",
+        "E": "surplus"
+      },
+      "correct": "B",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "'Due to' (nedeniyle) sebep-sonuç bağlacı, şirketlerin neden 'relocate' (taşınmak) zorunda kaldığını açıklar. Kaynakların 'kıtlığı' (scarcity), bu taşınmanın en mantıklı nedenidir.",
+        "grammar": "Cause-Effect Phrases (Due to...)",
+        "vocabulary": ["Scarcity (Kıtlık/Yetersizlik)", "Relocate (Taşınmak/Yer değiştirmek)", "Abundance (Bolluk)"],
+        "trap": "Abundance (bolluk) ve Surplus (artı miktar) kelimeleri taşınma eyleminin sebebi olamaz."
+      }
+    },
+    {
+      "id": 4,
+      "section_id": "sc_1",
+      "question": "The speaker's argument was so --- that even those who had previously disagreed with his stance were convinced by the end of the seminar.",
+      "options": {
+        "A": "ambiguous",
+        "B": "compelling",
+        "C": "tenuous",
+        "D": "superficial",
+        "E": "obscure"
+      },
+      "correct": "B",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Cümle yapısı 'so ... that' (o kadar ... ki) sonucuna dayalıdır. Eskiden karşı çıkanların bile ikna olması (were convinced), argümanın çok 'etkileyici/ikna edici' (compelling) olduğunu gösterir.",
+        "grammar": "Result Clauses (So + adjective + that)",
+        "vocabulary": ["Compelling (Etkileyici/İkna edici)", "Stance (Tutum/Duruş)", "Disagree (Aynı fikirde olmamak)"],
+        "trap": "Ambiguous (Belirsiz) veya Tenuous (Zayıf) argümanlar insanları ikna etmez, aksine şüphe uyandırır."
+      }
+    },
+    {
+      "id": 5,
+      "section_id": "sc_1",
+      "question": "If the government had implemented stricter environmental regulations a decade ago, the current levels of pollution --- significantly lower.",
+      "options": {
+        "A": "will be",
+        "B": "are",
+        "C": "would have been",
+        "D": "had been",
+        "E": "were"
+      },
+      "correct": "C",
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Cümle 'If + had implemented' (had done) ile başlamıştır, bu da bizi 'Conditional Type 3' (geçmişteki hayali durum) yapısına götürür. Sonuç kısmında 'past modal' (would have been) kullanılmalıdır.",
+        "grammar": "Conditional Type 3 (Mixed/Past Unreal)",
+        "vocabulary": ["Implement (Uygulamak)", "Regulation (Düzenleme/Yönetmelik)", "Pollution (Kirlilik)"],
+        "trap": "A şıkkı (will be) gelecek zaman, E şıkkı (were) ise Type 2 için kullanılır."
+      }
+    },
+    {
+      "id": 6,
+      "section_id": "sc_1",
+      "question": "The archaeological team discovered a series of ancient manuscripts that provide --- evidence of a highly advanced civilization in the valley.",
+      "options": {
+        "A": "circumstantial",
+        "B": "inconclusive",
+        "C": "substantial",
+        "D": "trivial",
+        "E": "vague"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sc_1",
+      "question": "Modern architecture often emphasizes functionality and minimalism, --- traditional styles which frequently incorporate ornate decorations.",
+      "options": {
+        "A": "as opposed to",
+        "B": "in accordance with",
+        "C": "in addition to",
+        "D": "on account of",
+        "E": "regardless of"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "sc_1",
+      "question": "The CEO's decision to cut the research budget was met with --- from the engineering department, as they feared it would stifle innovation.",
+      "options": {
+        "A": "consensus",
+        "B": "indifference",
+        "C": "backlash",
+        "D": "approval",
+        "E": "submission"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 9,
+      "section_id": "sc_1",
+      "question": "Scientific theories are always subject to revision --- new data becomes available through more advanced observational technology.",
+      "options": {
+        "A": "as soon as",
+        "B": "even if",
+        "C": "whereas",
+        "D": "unless",
+        "E": "nonetheless"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 10,
+      "section_id": "sc_1",
+      "question": "Despite the complexity of the quantum mechanics lecture, the professor managed to make the concepts --- to the undergraduate students.",
+      "options": {
+        "A": "inaccessible",
+        "B": "intelligible",
+        "C": "formidable",
+        "D": "erroneous",
+        "E": "redundant"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 11,
+      "section_id": "sc_1",
+      "question": "The global demand for renewable energy sources has --- dramatically over the last few years as concerns about climate change grow.",
+      "options": {
+        "A": "diminished",
+        "B": "fluctuated",
+        "C": "surged",
+        "D": "stabilized",
+        "E": "ceased"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 12,
+      "section_id": "sc_1",
+      "question": "The legal team argued that the evidence presented by the prosecution was --- and should therefore be dismissed by the judge.",
+      "options": {
+        "A": "legitimate",
+        "B": "inadmissible",
+        "C": "consistent",
+        "D": "validated",
+        "E": "pertinent"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "sc_1",
+      "question": "The success of the mission depends --- on the precision of the calculations made by the ground control team.",
+      "options": {
+        "A": "exclusively",
+        "B": "incidentally",
+        "C": "superficially",
+        "D": "marginally",
+        "E": "randomly"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "sc_1",
+      "question": "Because the two substances have similar chemical properties, it is difficult to --- between them without sophisticated laboratory equipment.",
+      "options": {
+        "A": "correlate",
+        "B": "differentiate",
+        "C": "assimilate",
+        "D": "integrate",
+        "E": "replicate"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "sc_1",
+      "question": "Many economists believe that the current inflation rate is only --- and will return to normal levels once supply chain issues are resolved.",
+      "options": {
+        "A": "permanent",
+        "B": "transitory",
+        "C": "perpetual",
+        "D": "inherent",
+        "E": "fundamental"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "sc_1",
+      "question": "The findings of the study were --- by several independent research groups, lending further credibility to the original hypothesis.",
+      "options": {
+        "A": "contradicted",
+        "B": "corroborated",
+        "C": "discredited",
+        "D": "undermined",
+        "E": "neglected"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "sc_1",
+      "question": "In some cultures, silence is viewed as a sign of respect, --- in others, it may be interpreted as a lack of confidence or knowledge.",
+      "options": {
+        "A": "consequently",
+        "B": "furthermore",
+        "C": "whereas",
+        "D": "likewise",
+        "E": "hence"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "sc_1",
+      "question": "The sudden --- in stock prices caused widespread panic among investors, leading to a massive sell-off.",
+      "options": {
+        "A": "escalation",
+        "B": "plummet",
+        "C": "stability",
+        "D": "augmentation",
+        "E": "improvement"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "sc_1",
+      "question": "The curriculum is designed to --- students with the necessary skills to compete in the highly demanding global job market.",
+      "options": {
+        "A": "deprive",
+        "B": "equip",
+        "C": "hinder",
+        "D": "alienate",
+        "E": "exempt"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "sc_1",
+      "question": "The treaty was signed with the aim of promoting economic cooperation and --- long-standing political tensions between the two nations.",
+      "options": {
+        "A": "exacerbating",
+        "B": "alleviating",
+        "C": "provoking",
+        "D": "ignoring",
+        "E": "intensifying"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "sc_1",
+      "question": "Hardly --- the project when the funding was unexpectedly withdrawn, leaving the researchers in a difficult position.",
+      "options": {
+        "A": "they had started",
+        "B": "had they started",
+        "C": "they started",
+        "D": "they were starting",
+        "E": "did they start"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "sc_1",
+      "question": "The author's latest novel has been widely praised for its --- insights into the human condition and its evocative descriptions.",
+      "options": {
+        "A": "profound",
+        "B": "shallow",
+        "C": "negligible",
+        "D": "monotonous",
+        "E": "obsolete"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "sc_1",
+      "question": "The manager insisted that the report be finished by Friday, --- the fact that several team members were out on sick leave.",
+      "options": {
+        "A": "despite",
+        "B": "because of",
+        "C": "owing to",
+        "D": "regardless",
+        "E": "in light of"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "sc_1",
+      "question": "The use of artificial intelligence in healthcare is becoming more ---, with applications ranging from diagnostics to personalized treatment plans.",
+      "options": {
+        "A": "sparse",
+        "B": "prevalent",
+        "C": "uncommon",
+        "D": "localized",
+        "E": "isolated"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "sc_1",
+      "question": "It is essential for journalists to remain --- and avoid letting their personal biases influence their reporting of the news.",
+      "options": {
+        "A": "partisan",
+        "B": "subjective",
+        "C": "objective",
+        "D": "prejudiced",
+        "E": "biased"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "sc_1",
+      "question": "The company faces a --- challenge as it tries to compete with much larger multinational corporations that have more resources.",
+      "options": {
+        "A": "trivial",
+        "B": "formidable",
+        "C": "negligible",
+        "D": "insignificant",
+        "E": "manageable"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "sc_1",
+      "question": "--- of the high cost of the equipment, the laboratory decided to purchase it to ensure the accuracy of their experiments.",
+      "options": {
+        "A": "Notwithstanding",
+        "B": "On account of",
+        "C": "Even though",
+        "D": "In spite",
+        "E": "Because"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "sc_1",
+      "question": "The witness's testimony was --- with the evidence found at the crime scene, which led the jury to doubt his credibility.",
+      "options": {
+        "A": "consistent",
+        "B": "incompatible",
+        "C": "aligned",
+        "D": "comparable",
+        "E": "harmonious"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "sc_1",
+      "question": "The government's new policy is intended to --- investment in the technology sector by offering significant tax incentives.",
+      "options": {
+        "A": "discourage",
+        "B": "hamper",
+        "C": "stimulate",
+        "D": "constrain",
+        "E": "abolish"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "sc_1",
+      "question": "By the time the new regulations come into effect next year, most companies --- their manufacturing processes to meet the standards.",
+      "options": {
+        "A": "will adapt",
+        "B": "will have adapted",
+        "C": "have adapted",
+        "D": "adapted",
+        "E": "are adapting"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "sc_1",
+      "question": "The rapid growth of the city has led to --- traffic congestion, prompting the government to invest in better public transport.",
+      "options": {
+        "A": "sporadic",
+        "B": "chronic",
+        "C": "occasional",
+        "D": "minimal",
+        "E": "temporary"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "sc_1",
+      "question": "The researcher's hypothesis was based on the --- that the two variables were directly related, but the data showed no such correlation.",
+      "options": {
+        "A": "assumption",
+        "B": "denial",
+        "C": "proof",
+        "D": "certainty",
+        "E": "validation"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "sc_1",
+      "question": "The committee reached a --- after hours of intense debate, with everyone finally agreeing on the proposed budget.",
+      "options": {
+        "A": "disagreement",
+        "B": "consensus",
+        "C": "conflict",
+        "D": "deadlock",
+        "E": "dissent"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "sc_1",
+      "question": "Ethical considerations are --- to the development of new medical technologies, as they ensure the safety and rights of patients.",
+      "options": {
+        "A": "peripheral",
+        "B": "extraneous",
+        "C": "integral",
+        "D": "secondary",
+        "E": "irrelevant"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "sc_1",
+      "question": "The environmental impact of the new factory was deemed --- by the inspectors, so no additional mitigation measures were required.",
+      "options": {
+        "A": "significant",
+        "B": "catastrophic",
+        "C": "negligible",
+        "D": "considerable",
+        "E": "detrimental"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "sc_1",
+      "question": "The software update was designed to --- the performance of the operating system and fix several security vulnerabilities.",
+      "options": {
+        "A": "impair",
+        "B": "enhance",
+        "C": "diminish",
+        "D": "obstruct",
+        "E": "compromise"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "sc_1",
+      "question": "--- he had all the necessary qualifications, the candidate was not selected for the position due to his lack of relevant experience.",
+      "options": {
+        "A": "Despite",
+        "B": "In spite of",
+        "C": "Even though",
+        "D": "However",
+        "E": "Moreover"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "sc_1",
+      "question": "The biodiversity of the rainforest is being threatened by --- logging and the expansion of agricultural land.",
+      "options": {
+        "A": "sustainable",
+        "B": "indiscriminate",
+        "C": "selective",
+        "D": "regulated",
+        "E": "cautious"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "sc_1",
+      "question": "The professor provided a --- explanation of the theory, ensuring that all the key points were covered within the limited time.",
+      "options": {
+        "A": "verbose",
+        "B": "concise",
+        "C": "rambling",
+        "D": "lengthy",
+        "E": "circuitous"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "sc_1",
+      "question": "In the past, many diseases were thought to be caused by bad air, but we now know they are caused by --- like bacteria and viruses.",
+      "options": {
+        "A": "remedies",
+        "B": "pathogens",
+        "C": "vaccines",
+        "D": "antidotes",
+        "E": "inhibitors"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "sc_1",
+      "question": "If the team --- more time to prepare, they might have won the international competition.",
+      "options": {
+        "A": "had",
+        "B": "has had",
+        "C": "had had",
+        "D": "would have",
+        "E": "was having"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "sc_1",
+      "question": "The philosopher's works are known for their ---, making them difficult for anyone without a background in logic to understand.",
+      "options": {
+        "A": "lucidity",
+        "B": "simplicity",
+        "C": "complexity",
+        "D": "clarity",
+        "E": "transparency"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "sc_1",
+      "question": "The results of the survey suggest that there is a --- link between poverty and lack of access to quality education.",
+      "options": {
+        "A": "tenuous",
+        "B": "dubious",
+        "C": "robust",
+        "D": "fragile",
+        "E": "loose"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 44,
+      "section_id": "sc_1",
+      "question": "To be an effective leader, one must be able to --- authority while also being open to feedback from subordinates.",
+      "options": {
+        "A": "abdicate",
+        "B": "exercise",
+        "C": "relinquish",
+        "D": "forgo",
+        "E": "evade"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 45,
+      "section_id": "sc_1",
+      "question": "The expansion of the internet has --- the way people communicate and access information across the globe.",
+      "options": {
+        "A": "revolutionized",
+        "B": "stagnated",
+        "C": "hindered",
+        "D": "regressed",
+        "E": "reverted"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 46,
+      "section_id": "sc_1",
+      "question": "The city's infrastructure is no longer --- to handle the needs of its rapidly growing population.",
+      "options": {
+        "A": "adequate",
+        "B": "deficient",
+        "C": "scarce",
+        "D": "redundant",
+        "E": "obsolete"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 47,
+      "section_id": "sc_1",
+      "question": "--- the difficulties encountered during the first phase of the project, the team remained optimistic about the final outcome.",
+      "options": {
+        "A": "Notwithstanding",
+        "B": "Instead of",
+        "C": "In case of",
+        "D": "As for",
+        "E": "By means of"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 48,
+      "section_id": "sc_1",
+      "question": "The new law aims to --- the rights of consumers and ensure fair competition in the marketplace.",
+      "options": {
+        "A": "violate",
+        "B": "safeguard",
+        "C": "jeopardize",
+        "D": "undermine",
+        "E": "neglect"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 49,
+      "section_id": "sc_1",
+      "question": "Public speaking is a skill that can be --- through practice and exposure to different types of audiences.",
+      "options": {
+        "A": "inherited",
+        "B": "acquired",
+        "C": "discarded",
+        "D": "forgotten",
+        "E": "ignored"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 50,
+      "section_id": "sc_1",
+      "question": "The diplomat's --- approach to the negotiations helped to prevent a major international conflict.",
+      "options": {
+        "A": "confrontational",
+        "B": "conciliatory",
+        "C": "aggressive",
+        "D": "hostile",
+        "E": "belligerent"
+      },
+      "correct": "B",
+      "passage_id": null
+    }
+  ]
 }
