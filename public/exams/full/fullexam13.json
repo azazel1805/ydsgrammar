@@ -61,18 +61,7 @@
             "to": 80
         }
     ],
-    "passages": [
-        {
-            "id": "p_ex13_cloze_17",
-            "title": "Cloze Test 17",
-            "text": "In the realm of modern physics, the concept of quantum entanglement (11) ______ one of the most intriguing phenomena. It suggests that two particles can become so intertwined that the state of one (12) ______ influences the state of the other, regardless of the distance between them. Einstein famously referred to this as 'spooky action at a distance.' Recent experiments (13) ______ to validate this theory, demonstrating that information can appear to travel faster than light. (14) ______, this does not violate the theory of relativity because no usable information is actually transmitted. (15) ______ the complexities involved, scientists believe that harnessing this phenomenon could revolutionize computing. --- Blank 11: --- Blank 12: --- Blank 13: --- Blank 14: --- Blank 15:"
-        },
-        {
-            "id": "p_ex13_cloze_22",
-            "title": "Cloze Test 22",
-            "text": "The Industrial Revolution (16) ______ a major turning point in history, as it transitioned societies from agrarian economies to industrial ones. This shift (17) ______ the development of new manufacturing processes and the rise of the factory system. (18) ______ people flocked to cities in search of work, urban populations exploded, leading to overcrowded and unsanitary living conditions. (19) ______ the social challenges, the period also saw unprecedented technological advancements. Today, historians continue to debate (20) ______ the long-term benefits of the revolution outweighed its immediate human costs. --- Blank 16: --- Blank 17: --- Blank 18: --- Blank 19: --- Blank 20:"
-        }
-    ],
+    "passages": [],
     "questions": [
         {
             "id": 1,
@@ -301,7 +290,7 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_17",
+            "passage_id": null,
             "question": "In the realm of modern physics, the concept of quantum entanglement (11) ______ one of the most intriguing phenomena. It suggests that two particles can become so intertwined that the state of one (12) ______ influences the state of the other, regardless of the distance between them. Einstein famously referred to this as 'spooky action at a distance.' Recent experiments (13) ______ to validate this theory, demonstrating that information can appear to travel faster than light. (14) ______, this does not violate the theory of relativity because no usable information is actually transmitted. (15) ______ the complexities involved, scientists believe that harnessing this phenomenon could revolutionize computing. --- Blank 11:",
             "options": {
                 "A": "remains",
@@ -315,7 +304,7 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_17",
+            "passage_id": null,
             "question": "--- Blank 12:",
             "options": {
                 "A": "gradually",
@@ -329,7 +318,7 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_17",
+            "passage_id": null,
             "question": "--- Blank 13:",
             "options": {
                 "A": "had continued",
@@ -343,7 +332,7 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_17",
+            "passage_id": null,
             "question": "--- Blank 14:",
             "options": {
                 "A": "Therefore",
@@ -357,7 +346,7 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_17",
+            "passage_id": null,
             "question": "--- Blank 15:",
             "options": {
                 "A": "Because of",
@@ -371,7 +360,7 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_22",
+            "passage_id": null,
             "question": "The Industrial Revolution (16) ______ a major turning point in history, as it transitioned societies from agrarian economies to industrial ones. This shift (17) ______ the development of new manufacturing processes and the rise of the factory system. (18) ______ people flocked to cities in search of work, urban populations exploded, leading to overcrowded and unsanitary living conditions. (19) ______ the social challenges, the period also saw unprecedented technological advancements. Today, historians continue to debate (20) ______ the long-term benefits of the revolution outweighed its immediate human costs. --- Blank 16:",
             "options": {
                 "A": "marks",
@@ -385,7 +374,7 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_22",
+            "passage_id": null,
             "question": "--- Blank 17:",
             "options": {
                 "A": "was characterized by",
@@ -399,7 +388,7 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_22",
+            "passage_id": null,
             "question": "--- Blank 18:",
             "options": {
                 "A": "Since",
@@ -413,7 +402,7 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_22",
+            "passage_id": null,
             "question": "--- Blank 19:",
             "options": {
                 "A": "Regardless",
@@ -427,7 +416,7 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": "p_ex13_cloze_22",
+            "passage_id": null,
             "question": "--- Blank 20:",
             "options": {
                 "A": "whether",
@@ -665,8 +654,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "According to the passage, what is the primary difference between EMH and behavioral economics?",
+            "passage_id": null,
+            "question": "The rise of behavioral economics has fundamentally altered the landscape of modern financial theory. Historically, the efficient market hypothesis (EMH) posited that market participants act with perfect rationality, incorporating all available information into asset prices instantaneously. However, behavioral economists argue that cognitive biases, such as loss aversion and overconfidence, lead to systemic deviations from rational behavior. These anomalies suggest that markets are not always efficient, and psychological factors can create speculative bubbles and subsequent crashes. By integrating psychological insights into economic models, researchers aim to develop a more nuanced understanding of how individuals make financial decisions under uncertainty. According to the passage, what is the primary difference between EMH and behavioral economics?",
             "options": {
                 "A": "EMH focuses on psychological factors while behavioral economics ignores them.",
                 "B": "EMH assumes perfect rationality whereas behavioral economics considers cognitive biases.",
@@ -679,8 +668,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "What does the term 'anomalies' in the passage refer to?",
+            "passage_id": null,
+            "question": "[Text as above] What does the term 'anomalies' in the passage refer to?",
             "options": {
                 "A": "Consistent patterns of rational decision-making.",
                 "B": "Market behaviors that align perfectly with EMH predictions.",
@@ -693,8 +682,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "Based on the passage, speculative bubbles are often the result of:",
+            "passage_id": null,
+            "question": "[Text as above] Based on the passage, speculative bubbles are often the result of:",
             "options": {
                 "A": "The instantaneous incorporation of information into prices.",
                 "B": "Perfectly rational behavior among all market participants.",
@@ -707,8 +696,8 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "What is the ultimate goal of integrating psychology into economic models according to the text?",
+            "passage_id": null,
+            "question": "[Text as above] What is the ultimate goal of integrating psychology into economic models according to the text?",
             "options": {
                 "A": "To prove that markets are always efficient and predictable.",
                 "B": "To discourage individuals from making financial decisions.",
@@ -721,7 +710,7 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": "p_read_47",
+            "passage_id": null,
             "question": "Bioluminescence, the production of light by living organisms, is a widespread phenomenon in the deep ocean, where sunlight cannot penetrate. This biological light is produced through a chemical reaction involving a light-emitting molecule called luciferin and an enzyme called luciferase. Marine organisms use bioluminescence for a variety of purposes, including attracting prey, deterring predators, and communicating with potential mates. For instance, the anglerfish uses a glowing lure to entice smaller fish, while certain species of shrimp release bioluminescent clouds to confuse attackers. Despite its prevalence, the energetic cost of producing light is high, suggesting that the evolutionary benefits must be significant for these species to survive in the extreme conditions of the abyss. The passage mentions that bioluminescence in the deep sea is primarily used for:",
             "options": {
                 "A": "Photosynthesis in the absence of sunlight.",
@@ -735,8 +724,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": "p_read_47",
-            "question": "According to the text, what are the two main chemical components required for bioluminescence?",
+            "passage_id": null,
+            "question": "[Text as above] According to the text, what are the two main chemical components required for bioluminescence?",
             "options": {
                 "A": "Oxygen and hydrogen.",
                 "B": "Luciferin and luciferase.",
@@ -749,8 +738,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": "p_read_47",
-            "question": "What can be inferred about the evolutionary nature of bioluminescence?",
+            "passage_id": null,
+            "question": "[Text as above] What can be inferred about the evolutionary nature of bioluminescence?",
             "options": {
                 "A": "It is a redundant trait that provides no real advantage.",
                 "B": "The energy cost is so low that any organism can develop it.",
@@ -763,8 +752,8 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": "p_read_47",
-            "question": "Which example of defensive bioluminescence is provided in the passage?",
+            "passage_id": null,
+            "question": "[Text as above] Which example of defensive bioluminescence is provided in the passage?",
             "options": {
                 "A": "The anglerfish using a lure.",
                 "B": "Shrimp releasing glowing clouds.",
@@ -777,8 +766,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "Lütfen metne göre soruyu cevaplayınız.",
+            "passage_id": null,
+            "question": "The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. Almost every aspect of daily life was influenced in some way. Average income and population began to exhibit unprecedented sustained growth. In the two centuries following 1800, the world's average per capita income increased over tenfold, while the world's population increased over sixfold. In the words of Nobel Prize winner Robert E. Lucas, Jr., 'For the first time in history, the living standards of the masses of ordinary people have begun to undergo sustained growth.' However, this period also brought about significant social challenges, including poor working conditions, urbanization problems, and environmental degradation. The transition from agrarian economies to industrial ones redefined social structures and paved the way for the modern era. What does the author emphasize regarding the impact of the Industrial Revolution on living standards?",
             "options": {
                 "A": "Living standards remained stagnant for the working class.",
                 "B": "There was a decline in per capita income due to urbanization.",
@@ -791,8 +780,8 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "According to the passage, what happened to the global population after 1800?",
+            "passage_id": null,
+            "question": "[Text as above] According to the passage, what happened to the global population after 1800?",
             "options": {
                 "A": "It decreased by sixfold.",
                 "B": "It remained stable due to poor working conditions.",
@@ -805,8 +794,8 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "Which of the following is NOT mentioned as a challenge during the Industrial Revolution?",
+            "passage_id": null,
+            "question": "[Text as above] Which of the following is NOT mentioned as a challenge during the Industrial Revolution?",
             "options": {
                 "A": "Environmental degradation.",
                 "B": "Urbanization problems.",
@@ -819,8 +808,8 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "The transition mentioned in the final sentence refers to the shift from:",
+            "passage_id": null,
+            "question": "[Text as above] The transition mentioned in the final sentence refers to the shift from:",
             "options": {
                 "A": "Industrial to agrarian economies.",
                 "B": "Sustainable growth to environmental decay.",
@@ -833,8 +822,8 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "Lütfen metne göre soruyu cevaplayınız.",
+            "passage_id": null,
+            "question": "Artificial Intelligence (AI) has moved from the realm of science fiction to a core component of contemporary technology. One of its most promising branches is Machine Learning (ML), where algorithms are trained on vast datasets to identify patterns and make predictions. Unlike traditional software that follows rigid instructions, ML systems improve their performance as they are exposed to more data. This capability has led to breakthroughs in fields such as medical diagnosis, where AI can identify diseases from imaging with accuracy levels comparable to human experts. Nonetheless, the 'black box' nature of some AI models—where the reasoning behind a decision is not transparent—raises ethical concerns regarding accountability and bias. As AI becomes more integrated into society, ensuring that these systems are fair and explainable remains a critical challenge. What distinguishes Machine Learning from traditional software?",
             "options": {
                 "A": "ML requires less data to function effectively.",
                 "B": "ML follows fixed, pre-defined rules that never change.",
@@ -847,8 +836,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "Why does the author mention 'medical diagnosis' in the text?",
+            "passage_id": null,
+            "question": "[Text as above] Why does the author mention 'medical diagnosis' in the text?",
             "options": {
                 "A": "To argue that AI will replace all human doctors.",
                 "B": "To provide an example of a breakthrough achieved through AI.",
@@ -861,8 +850,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "What is the 'black box' problem referred to in the passage?",
+            "passage_id": null,
+            "question": "[Text as above] What is the 'black box' problem referred to in the passage?",
             "options": {
                 "A": "The physical casing used to protect AI hardware.",
                 "B": "The lack of transparency in how an AI model reaches a decision.",
@@ -875,8 +864,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "According to the passage, what is a primary ethical concern as AI integrates into society?",
+            "passage_id": null,
+            "question": "[Text as above] According to the passage, what is a primary ethical concern as AI integrates into society?",
             "options": {
                 "A": "The speed of data processing.",
                 "B": "The transition from science fiction to reality.",
@@ -889,8 +878,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "Based on the passage, soft power is fundamentally about:",
+            "passage_id": null,
+            "question": "The concept of 'Soft Power', coined by Joseph Nye in the late 1980s, describes the ability of a country to persuade others to do what it wants without force or coercion. While 'hard power' relies on military and economic might, soft power arises from the attractiveness of a country's culture, political ideals, and policies. In the age of globalization, the digital revolution has amplified the reach of soft power. For example, the global popularity of American films or the international appeal of Scandinavian social models can influence the perceptions and behaviors of people worldwide. However, soft power is difficult to measure and takes years to build. Critics argue that it is insufficient on its own to protect national interests in a world where hard power still plays a decisive role. Based on the passage, soft power is fundamentally about:",
             "options": {
                 "A": "Military strength and economic sanctions.",
                 "B": "Forcing other nations to comply with specific policies.",
@@ -903,8 +892,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "How has the digital revolution affected soft power?",
+            "passage_id": null,
+            "question": "[Text as above] How has the digital revolution affected soft power?",
             "options": {
                 "A": "It has made soft power obsolete.",
                 "B": "It has increased the global reach and influence of soft power.",
@@ -917,8 +906,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "What is one limitation of soft power mentioned by critics?",
+            "passage_id": null,
+            "question": "[Text as above] What is one limitation of soft power mentioned by critics?",
             "options": {
                 "A": "It is too easy to measure and manipulate.",
                 "B": "It relies too heavily on military coercion.",
@@ -931,8 +920,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "Who coined the term 'Soft Power'?",
+            "passage_id": null,
+            "question": "[Text as above] Who coined the term 'Soft Power'?",
             "options": {
                 "A": "Robert E. Lucas, Jr.",
                 "B": "Scandinavian leaders.",

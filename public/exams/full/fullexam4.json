@@ -63,14 +63,72 @@
     ],
     "passages": [
         {
-            "id": "p_ex4_cloze_17",
-            "title": "Cloze Test 17",
-            "text": "Paragraph 1: The Industrial Revolution was a period of profound social and economic change. (11) _____ the late 18th century, traditional agrarian societies began to transform into industrial ones. (11): Paragraph 1: This shift was driven (12) _____ by technological innovations like the steam engine. (12): Paragraph 1: (13) _____ these advancements increased productivity, they also led to poor working conditions. (13): Paragraph 1: Workers often had to endure long hours (14) _____ very low wages. (14): Paragraph 1: Consequently, labor unions emerged to (15) _____ the rights of the working class. (15):"
+            "id": "p1",
+            "text": "Passage: The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate. While proponents argue that radioactive isotopes from mid-20th century nuclear tests provide a clear 'golden spike,' critics maintain that human influence has been too asynchronous to define a single global boundary. The Great Acceleration of the 1950s, characterized by a surge in fossil fuel consumption and plastic production, is often cited as the definitive turning point. However, some archaeologists push the date back to the dawn of agriculture."
         },
         {
-            "id": "p_ex4_cloze_22",
-            "title": "Cloze Test 22",
-            "text": "Paragraph 2: Ethics in artificial intelligence is a growing field of study. As AI systems become more autonomous, the need for (16) _____ frameworks becomes critical. (16): Paragraph 2: One of the primary concerns is the (17) _____ of bias in machine learning algorithms. (17): Paragraph 2: These biases often stem from the data used to train the models, (18) _____ can reflect human prejudices. (18): Paragraph 2: Developers must ensure that AI applications are (19) _____ transparent and accountable. (19): Paragraph 2: (20) _____, the goal is to create technology that benefits society as a whole. (20):"
+            "id": "p2",
+            "text": "Passage: The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate. While proponents argue that radioactive isotopes from mid-20th century nuclear tests provide a clear 'golden spike,' critics maintain that human influence has been too asynchronous to define a single global boundary."
+        },
+        {
+            "id": "p3",
+            "text": "Passage: The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate."
+        },
+        {
+            "id": "p4",
+            "text": "Passage: Behavioral economics challenges the traditional 'homo economicus' model, which assumes individuals are perfectly rational and utility-maximizing. Instead, it introduces psychological insights to explain why people often make suboptimal choices. Concepts like 'loss aversion' suggest that the pain of losing is twice as powerful as the joy of gaining. Furthermore, 'nudging'—a concept popularized by Thaler and Sunstein—demonstrates how small changes in choice architecture can lead people toward better decisions without restricting their freedom."
+        },
+        {
+            "id": "p5",
+            "text": "Passage: Behavioral economics challenges the traditional 'homo economicus' model. Concepts like 'loss aversion' suggest that the pain of losing is twice as powerful as the joy of gaining."
+        },
+        {
+            "id": "p6",
+            "text": "Passage: Behavioral economics challenges the traditional 'homo economicus' model. 'Nudging' demonstrates how small changes in choice architecture can lead people toward better decisions."
+        },
+        {
+            "id": "p7",
+            "text": "Passage: Behavioral economics challenges the traditional 'homo economicus' model."
+        },
+        {
+            "id": "p8",
+            "text": "Passage: The preservation of indigenous languages is not merely a matter of cultural heritage but also of ecological knowledge. Many indigenous tongues contain specific terms for local flora, fauna, and weather patterns that have no direct equivalents in major global languages. When these languages die out, we lose centuries of accumulated environmental wisdom. Current efforts focus on digital archiving, yet critics argue that without active speakers and community use, a language becomes a 'museum piece' rather than a living medium of thought."
+        },
+        {
+            "id": "p9",
+            "text": "Passage: The preservation of indigenous languages is not merely a matter of cultural heritage. Critics argue that without active speakers, a language becomes a 'museum piece'."
+        },
+        {
+            "id": "p10",
+            "text": "Passage: The preservation of indigenous languages is not merely a matter of cultural heritage."
+        },
+        {
+            "id": "p11",
+            "text": "Passage: Dark matter remains one of the most elusive mysteries of modern astrophysics. Although it cannot be seen directly because it does not emit or absorb light, its presence is inferred from its gravitational effects on visible matter. Galaxies rotate at speeds that suggest they contain far more mass than can be accounted for by stars and gas alone. Various candidates for dark matter have been proposed, including Weakly Interacting Massive Particles (WIMPs). Despite decades of experimentation using underground detectors and the Large Hadron Collider, definitive proof of these particles remains absent."
+        },
+        {
+            "id": "p12",
+            "text": "Passage: Dark matter remains one of the most elusive mysteries. Galaxies rotate at speeds that suggest they contain far more mass than can be accounted for."
+        },
+        {
+            "id": "p13",
+            "text": "Passage: Dark matter remains one of the most elusive mysteries."
+        },
+        {
+            "id": "p14",
+            "text": "Passage: The Renaissance was not a sudden break with the Middle Ages but rather a gradual transformation of European thought. While the revival of Classical Greek and Roman texts was central, this period also saw significant advancements in anatomy and engineering inspired by Islamic scholars. Humanism, the intellectual movement of the era, emphasized individual potential and the study of the 'studia humanitatis'. This shift in focus from the divine to the human helped pave the way for the Scientific Revolution."
+        },
+        {
+            "id": "p15",
+            "text": "Passage: The Renaissance was not a sudden break. This period saw significant advancements inspired by Islamic scholars."
+        },
+        {
+            "id": "p16",
+            "text": "Passage: The Renaissance was not a sudden break. Humanism emphasized individual potential."
+        },
+        {
+            "id": "p17",
+            "text": "Passage: The Renaissance was not a sudden break."
         }
     ],
     "questions": [
@@ -301,7 +359,7 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_17",
+            "passage_id": null,
             "question": "Paragraph 1: The Industrial Revolution was a period of profound social and economic change. (11) _____ the late 18th century, traditional agrarian societies began to transform into industrial ones. (11):",
             "options": {
                 "A": "Since",
@@ -315,7 +373,7 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_17",
+            "passage_id": null,
             "question": "Paragraph 1: This shift was driven (12) _____ by technological innovations like the steam engine. (12):",
             "options": {
                 "A": "hardly",
@@ -329,7 +387,7 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_17",
+            "passage_id": null,
             "question": "Paragraph 1: (13) _____ these advancements increased productivity, they also led to poor working conditions. (13):",
             "options": {
                 "A": "Because",
@@ -343,7 +401,7 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_17",
+            "passage_id": null,
             "question": "Paragraph 1: Workers often had to endure long hours (14) _____ very low wages. (14):",
             "options": {
                 "A": "in exchange for",
@@ -357,7 +415,7 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_17",
+            "passage_id": null,
             "question": "Paragraph 1: Consequently, labor unions emerged to (15) _____ the rights of the working class. (15):",
             "options": {
                 "A": "violate",
@@ -371,7 +429,7 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_22",
+            "passage_id": null,
             "question": "Paragraph 2: Ethics in artificial intelligence is a growing field of study. As AI systems become more autonomous, the need for (16) _____ frameworks becomes critical. (16):",
             "options": {
                 "A": "ambiguous",
@@ -385,7 +443,7 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_22",
+            "passage_id": null,
             "question": "Paragraph 2: One of the primary concerns is the (17) _____ of bias in machine learning algorithms. (17):",
             "options": {
                 "A": "elimination",
@@ -399,7 +457,7 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_22",
+            "passage_id": null,
             "question": "Paragraph 2: These biases often stem from the data used to train the models, (18) _____ can reflect human prejudices. (18):",
             "options": {
                 "A": "what",
@@ -413,7 +471,7 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_22",
+            "passage_id": null,
             "question": "Paragraph 2: Developers must ensure that AI applications are (19) _____ transparent and accountable. (19):",
             "options": {
                 "A": "neither",
@@ -427,7 +485,7 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": "p_ex4_cloze_22",
+            "passage_id": null,
             "question": "Paragraph 2: (20) _____, the goal is to create technology that benefits society as a whole. (20):",
             "options": {
                 "A": "Otherwise",

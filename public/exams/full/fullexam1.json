@@ -63,14 +63,8 @@
     ],
     "passages": [
         {
-            "id": "p_ex1_cloze_17",
-            "title": "Cloze Test 17",
-            "text": "Deep-sea exploration remains one of the most challenging frontiers of modern science. The extreme pressure and cold temperatures (1)_____ the depths of the ocean make it difficult for humans to stay for long periods. Therefore, researchers rely (2)_____ sophisticated robotic submersibles to collect data. These machines (3)_____ to withstand the crushing force of the water while capturing high-resolution images. (4)_____ the difficulty of the mission, scientists have discovered numerous new species. This research is (5)_____ for understanding the biodiversity of our planet."
-        },
-        {
-            "id": "p_ex1_cloze_22",
-            "title": "Cloze Test 22",
-            "text": "The rise of social media has fundamentally (6)_____ how we communicate and consume information. While it offers a platform for global connection, it also poses risks (7)_____ misinformation and echo chambers. Users often find (8)_____ exposed to a narrow range of viewpoints. This phenomenon can lead to increased polarization (9)_____ society. (10)_____ , digital literacy is becoming an essential skill in the modern age."
+            "id": "p1",
+            "text": ""
         }
     ],
     "questions": [
@@ -301,7 +295,7 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_17",
+            "passage_id": null,
             "question": "(Cloze Test 1 - Part 1) Deep-sea exploration remains one of the most challenging frontiers of modern science. The extreme pressure and cold temperatures (1)_____ the depths of the ocean make it difficult for humans to stay for long periods.",
             "options": {
                 "A": "at",
@@ -315,7 +309,7 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_17",
+            "passage_id": null,
             "question": "(Cloze Test 1 - Part 2) Therefore, researchers rely (2)_____ sophisticated robotic submersibles to collect data.",
             "options": {
                 "A": "in",
@@ -329,7 +323,7 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_17",
+            "passage_id": null,
             "question": "(Cloze Test 1 - Part 3) These machines (3)_____ to withstand the crushing force of the water while capturing high-resolution images.",
             "options": {
                 "A": "designed",
@@ -343,7 +337,7 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_17",
+            "passage_id": null,
             "question": "(Cloze Test 1 - Part 4) (4)_____ the difficulty of the mission, scientists have discovered numerous new species.",
             "options": {
                 "A": "However",
@@ -357,7 +351,7 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_17",
+            "passage_id": null,
             "question": "(Cloze Test 1 - Part 5) This research is (5)_____ for understanding the biodiversity of our planet.",
             "options": {
                 "A": "futile",
@@ -371,7 +365,7 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_22",
+            "passage_id": null,
             "question": "(Cloze Test 2 - Part 1) The rise of social media has fundamentally (6)_____ how we communicate and consume information.",
             "options": {
                 "A": "altered",
@@ -385,7 +379,7 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_22",
+            "passage_id": null,
             "question": "(Cloze Test 2 - Part 2) While it offers a platform for global connection, it also poses risks (7)_____ misinformation and echo chambers.",
             "options": {
                 "A": "regarding",
@@ -399,7 +393,7 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_22",
+            "passage_id": null,
             "question": "(Cloze Test 2 - Part 3) Users often find (8)_____ exposed to a narrow range of viewpoints.",
             "options": {
                 "A": "them",
@@ -413,7 +407,7 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_22",
+            "passage_id": null,
             "question": "(Cloze Test 2 - Part 4) This phenomenon can lead to increased polarization (9)_____ society.",
             "options": {
                 "A": "among",
@@ -427,7 +421,7 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": "p_ex1_cloze_22",
+            "passage_id": null,
             "question": "(Cloze Test 2 - Part 5) (10)_____ , digital literacy is becoming an essential skill in the modern age.",
             "options": {
                 "A": "Consequently",
@@ -665,8 +659,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "According to the passage, what is one of the primary changes in modern urban environments?",
+            "passage_id": "p1",
+            "question": "The proliferation of digital surveillance technologies has fundamentally altered the paradigm of urban privacy. Cities once offered a degree of anonymity through their sheer scale and the fleeting nature of social interactions. However, the integration of facial recognition, ubiquitous CCTV, and the 'Internet of Things' has rendered the public sphere a zone of constant data harvesting. Proponents argue that such measures are essential for public safety and the efficient management of municipal resources, while critics warn of a 'chilling effect' on democratic expression and the erosion of individual autonomy. It is no longer possible to walk down a street without leaving a digital footprint that can be scrutinized by state or corporate actors. According to the passage, what is one of the primary changes in modern urban environments?",
             "options": {
                 "A": "The reduction of municipal resources for public safety.",
                 "B": "The total elimination of social interactions in public spaces.",
@@ -679,8 +673,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "According to the passage, proponents of surveillance technologies believe that:",
+            "passage_id": "p1",
+            "question": "Passage 1 (Cont.): According to the passage, proponents of surveillance technologies believe that:",
             "options": {
                 "A": "Privacy is an outdated concept in the modern era.",
                 "B": "Technology is the only way to ensure democratic expression.",
@@ -693,8 +687,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "What does the 'chilling effect' mentioned in the text refer to?",
+            "passage_id": "p1",
+            "question": "Passage 1 (Cont.): What does the 'chilling effect' mentioned in the text refer to?",
             "options": {
                 "A": "The physical cooling of urban areas due to high-tech infrastructure.",
                 "B": "The potential discouragement of people from exercising their rights.",
@@ -707,8 +701,8 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": "p_read_43",
-            "question": "Which of the following can be inferred about the author's stance on urban privacy?",
+            "passage_id": "p1",
+            "question": "Passage 1 (Cont.): Which of the following can be inferred about the author's stance on urban privacy?",
             "options": {
                 "A": "The author believes that urban privacy is more secure than ever before.",
                 "B": "The author suggests that technology has neutral effects on the public sphere.",
@@ -721,8 +715,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": "p_read_47",
-            "question": "Why is bioluminescence particularly common in the deep ocean?",
+            "passage_id": "p1",
+            "question": "Bioluminescence, the production of light by living organisms, is a widespread phenomenon in the deep ocean, where sunlight cannot penetrate. This biological light serves various functions, including attracting prey, deterring predators, and communicating with potential mates. For instance, the anglerfish uses a glowing lure to entice smaller fish, while certain jellyfish release a burst of light to startle attackers. Interestingly, the chemical reaction involved typically requires two components: a light-emitting molecule called luciferin and an enzyme called luciferase. This process is remarkably efficient, producing light with almost no heat loss, unlike human-made light sources. Why is bioluminescence particularly common in the deep ocean?",
             "options": {
                 "A": "Because there are more chemical reactions in cold water.",
                 "B": "Because the lack of sunlight makes biological light advantageous.",
@@ -735,8 +729,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": "p_read_47",
-            "question": "According to the text, how does the anglerfish utilize bioluminescence?",
+            "passage_id": "p1",
+            "question": "Passage 2 (Cont.): According to the text, how does the anglerfish utilize bioluminescence?",
             "options": {
                 "A": "To communicate with other species of fish.",
                 "B": "To frighten away potential predators.",
@@ -749,8 +743,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": "p_read_47",
-            "question": "What is the role of luciferase in the light-producing process?",
+            "passage_id": "p1",
+            "question": "Passage 2 (Cont.): What is the role of luciferase in the light-producing process?",
             "options": {
                 "A": "It acts as the primary light-emitting molecule.",
                 "B": "It absorbs heat to prevent the organism from burning.",
@@ -763,8 +757,8 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": "p_read_47",
-            "question": "One notable characteristic of bioluminescent light compared to artificial light is that:",
+            "passage_id": "p1",
+            "question": "Passage 2 (Cont.): One notable characteristic of bioluminescent light compared to artificial light is that:",
             "options": {
                 "A": "It is much brighter and can be seen from miles away.",
                 "B": "It requires constant exposure to sunlight to function.",
@@ -777,8 +771,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "Lütfen metne göre soruyu cevaplayınız.",
+            "passage_id": "p1",
+            "question": "The Industrial Revolution was not merely a period of technological advancement; it was a fundamental reorganization of human society. The transition from agrarian economies to industrial ones led to unprecedented urbanization, as workers migrated to cities to find employment in factories. This shift brought about significant improvements in productivity but also resulted in dire living conditions for the working class. Overcrowded tenements, lack of sanitation, and long working hours became the norm. Consequently, the 19th century saw the rise of labor unions and social reform movements aimed at mitigating the harsh realities of industrial life. These movements eventually paved the way for modern labor laws and the concept of the welfare state. What was the main driver of urbanization during the Industrial Revolution?",
             "options": {
                 "A": "The desire for better sanitation in rural areas.",
                 "B": "The migration of workers seeking factory employment.",
@@ -791,8 +785,8 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "Based on the passage, the living conditions of the working class were:",
+            "passage_id": "p1",
+            "question": "Passage 3 (Cont.): Based on the passage, the living conditions of the working class were:",
             "options": {
                 "A": "Improved by the increase in industrial productivity.",
                 "B": "Characterized by adequate housing and short working hours.",
@@ -805,8 +799,8 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "What was a direct consequence of the harsh realities faced by industrial workers?",
+            "passage_id": "p1",
+            "question": "Passage 3 (Cont.): What was a direct consequence of the harsh realities faced by industrial workers?",
             "options": {
                 "A": "A return to agrarian lifestyles and subsistence farming.",
                 "B": "The total abandonment of technological innovation.",
@@ -819,8 +813,8 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": "p_read_51",
-            "question": "The passage implies that modern labor laws:",
+            "passage_id": "p1",
+            "question": "Passage 3 (Cont.): The passage implies that modern labor laws:",
             "options": {
                 "A": "Were developed independently of the Industrial Revolution.",
                 "B": "Have their roots in 19th-century social reform movements.",
@@ -833,8 +827,8 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "Lütfen metne göre soruyu cevaplayınız.",
+            "passage_id": "p1",
+            "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. For a long time, it was believed that the brain's structure was relatively fixed after a certain age. However, research has demonstrated that the brain is dynamic and can change in response to learning, experience, and even injury. For example, when a person learns a new skill, such as playing an instrument, specific areas of the brain associated with that skill grow and become more efficient. Similarly, in cases of brain damage, other parts of the brain can sometimes compensate for the lost functions. This discovery has profound implications for rehabilitation and education, suggesting that the potential for cognitive growth is lifelong. What was the traditional view regarding the brain's structure?",
             "options": {
                 "A": "That it was constantly changing throughout adulthood.",
                 "B": "That it was fixed and unchangeable after a specific age.",
@@ -847,8 +841,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "According to the passage, neuroplasticity allows the brain to:",
+            "passage_id": "p1",
+            "question": "Passage 4 (Cont.): According to the passage, neuroplasticity allows the brain to:",
             "options": {
                 "A": "Recover from any injury without any lasting effects.",
                 "B": "Replace all damaged neurons with new ones immediately.",
@@ -861,8 +855,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "The example of playing an instrument is used to illustrate:",
+            "passage_id": "p1",
+            "question": "Passage 4 (Cont.): The example of playing an instrument is used to illustrate:",
             "options": {
                 "A": "How certain skills are more difficult to learn than others.",
                 "B": "The physical growth of brain areas related to a learned skill.",
@@ -875,8 +869,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": "p_read_55",
-            "question": "What is the significance of neuroplasticity for rehabilitation?",
+            "passage_id": "p1",
+            "question": "Passage 4 (Cont.): What is the significance of neuroplasticity for rehabilitation?",
             "options": {
                 "A": "It means that brain damage is always permanent and irreversible.",
                 "B": "It proves that only physical therapy can help recover lost functions.",
@@ -889,8 +883,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "Lütfen metne göre soruyu cevaplayınız.",
+            "passage_id": "p1",
+            "question": "The concept of 'sustainable development' seeks to balance economic growth with environmental protection and social equity. This approach recognizes that the Earth's resources are finite and that current consumption patterns may jeopardize the well-being of future generations. One key pillar of sustainability is the transition to renewable energy sources, such as solar and wind power, to reduce greenhouse gas emissions. Additionally, promoting circular economies—where waste is minimized and materials are recycled—is crucial. However, achieving global sustainability requires unprecedented cooperation between nations, as environmental issues like climate change do not respect political borders. Critics often argue that the transition is too costly, but proponents maintain that the long-term costs of inaction are far greater. What is a fundamental premise of sustainable development?",
             "options": {
                 "A": "Economic growth should always take precedence over the environment.",
                 "B": "The Earth's resources are infinite and can be exploited indefinitely.",
@@ -903,8 +897,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "According to the passage, why is international cooperation necessary?",
+            "passage_id": "p1",
+            "question": "Passage 5 (Cont.): According to the passage, why is international cooperation necessary?",
             "options": {
                 "A": "To ensure that all nations use the same currency for energy.",
                 "B": "Because environmental problems are not confined by national boundaries.",
@@ -917,8 +911,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "What does a 'circular economy' aim to achieve?",
+            "passage_id": "p1",
+            "question": "Passage 5 (Cont.): What does a 'circular economy' aim to achieve?",
             "options": {
                 "A": "A continuous cycle of economic inflation and deflation.",
                 "B": "The concentration of wealth within a specific group of people.",
@@ -931,8 +925,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": "p_read_59",
-            "question": "How do proponents of sustainability respond to the claim that the transition is too expensive?",
+            "passage_id": "p1",
+            "question": "Passage 5 (Cont.): How do proponents of sustainability respond to the claim that the transition is too expensive?",
             "options": {
                 "A": "By agreeing that the costs are indeed prohibitive for most nations.",
                 "B": "By suggesting that future generations should bear the financial burden.",

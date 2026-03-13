@@ -71,6 +71,16 @@
         {
             "id": "p1",
             "text": ""
+        },
+        {
+            "id": "p_auto_35",
+            "title": "Passage",
+            "text": "Passage: The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. It transitioned societies from agrarian economies to industrialized ones, characterized by the use of new machinery and the development of factories. This shift led to significant urban growth as people moved from the countryside to cities in search of work. While it brought about technological advancements and increased production, it also resulted in poor working conditions and social inequality. The long-term effects of the Industrial Revolution continue to shape the modern world, influencing everything from global trade to environmental issues."
+        },
+        {
+            "id": "p_auto_38",
+            "title": "Passage",
+            "text": "Passage: Biodiversity, the variety of life on Earth, is essential for the health of our planet. It provides ecosystem services such as pollination, water purification, and climate regulation. However, human activities, including habitat destruction, pollution, and climate change, are causing a rapid decline in biodiversity. This loss threatens the stability of ecosystems and the well-being of future generations. Conservation efforts, such as protecting natural habitats and promoting sustainable practices, are crucial to halting this decline. Protecting biodiversity is not just an environmental issue; it is a necessity for human survival."
         }
     ],
     "questions": [
@@ -553,8 +563,8 @@
         {
             "id": 35,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "Passage: The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. It transitioned societies from agrarian economies to industrialized ones, characterized by the use of new machinery and the development of factories. This shift led to significant urban growth as people moved from the countryside to cities in search of work. While it brought about technological advancements and increased production, it also resulted in poor working conditions and social inequality. The long-term effects of the Industrial Revolution continue to shape the modern world, influencing everything from global trade to environmental issues. \n\nQuestion: According to the passage, what was a primary characteristic of the Industrial Revolution?",
+            "passage_id": "p_auto_35",
+            "question": "Question: According to the passage, what was a primary characteristic of the Industrial Revolution?",
             "options": {
                 "A": "A shift from industrial to agrarian economies.",
                 "B": "The development of new machinery and factories.",
@@ -595,8 +605,8 @@
         {
             "id": 38,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "Passage: Biodiversity, the variety of life on Earth, is essential for the health of our planet. It provides ecosystem services such as pollination, water purification, and climate regulation. However, human activities, including habitat destruction, pollution, and climate change, are causing a rapid decline in biodiversity. This loss threatens the stability of ecosystems and the well-being of future generations. Conservation efforts, such as protecting natural habitats and promoting sustainable practices, are crucial to halting this decline. Protecting biodiversity is not just an environmental issue; it is a necessity for human survival. \n\nQuestion: Why is biodiversity considered essential according to the passage?",
+            "passage_id": "p_auto_38",
+            "question": "Question: Why is biodiversity considered essential according to the passage?",
             "options": {
                 "A": "Because it leads to habitat destruction.",
                 "B": "Because it provides critical ecosystem services.",
