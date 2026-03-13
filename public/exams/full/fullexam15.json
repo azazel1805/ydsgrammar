@@ -1,1208 +1,1187 @@
 {
-    "meta": {
-        "title": "YDS Tam Deneme 15",
-        "subtitle": "80 Soru - 180 Dakika",
-        "total_questions": 80,
-        "duration_minutes": 180
+  "meta": {
+    "title": "YDS Tam Deneme 15",
+    "subtitle": "80 Soru - 180 Dakika",
+    "total_questions": 80,
+    "duration_minutes": 180
+  },
+  "sections": [
+    {
+      "id": "vocab_gram",
+      "label": "Vocabulary & Grammar",
+      "from": 1,
+      "to": 16
     },
-    "sections": [
-        {
-            "id": "vocab_gram",
-            "label": "Vocabulary & Grammar",
-            "from": 1,
-            "to": 16
-        },
-        {
-            "id": "cloze",
-            "label": "Cloze Test",
-            "from": 17,
-            "to": 26
-        },
-        {
-            "id": "completion",
-            "label": "Sentence Completion",
-            "from": 27,
-            "to": 36
-        },
-        {
-            "id": "translation",
-            "label": "Translation",
-            "from": 37,
-            "to": 42
-        },
-        {
-            "id": "reading",
-            "label": "Reading Comprehension",
-            "from": 43,
-            "to": 62
-        },
-        {
-            "id": "dialogue",
-            "label": "Dialogue Completion",
-            "from": 63,
-            "to": 67
-        },
-        {
-            "id": "restatement",
-            "label": "Restatement (Closest Meaning)",
-            "from": 68,
-            "to": 71
-        },
-        {
-            "id": "para_comp",
-            "label": "Paragraph Completion",
-            "from": 72,
-            "to": 75
-        },
-        {
-            "id": "irrelevant",
-            "label": "Irrelevant Sentence",
-            "from": 76,
-            "to": 80
-        }
-    ],
-    "passages": [
-        {
-            "id": "p_cloze_17_fullexam15",
-            "title": "Cloze Test 17-21",
-            "text": "(I) The Industrial Revolution marked a major turning point in history,  (___)  almost every aspect of daily life. (II) It began in Great Britain in the late 18th century and  (___)  spread to other parts of the world. (III) This period saw the transition from manual labor  (___)  machine-based manufacturing. (IV)  (___) , urban populations exploded as people moved to cities for work. (V) This shift brought about both economic growth and social  (___)  Question 17:"
-        },
-        {
-            "id": "p_cloze_22_fullexam15",
-            "title": "Cloze Test 22-26",
-            "text": "(I) Photosynthesis is the process  (___)  green plants and some other organisms use sunlight to synthesize foods. (II) It  (___)  involves the green pigment chlorophyll and generates oxygen as a byproduct. (III) Without this process, life on Earth  (___)  as we know it. (IV) Plants absorb carbon dioxide from the atmosphere,  (___)  helps mitigate the greenhouse effect. (V)  (___) , protecting forests is crucial for maintaining planetary health. Question 22:"
-        },
-        {
-            "id": "p_read_43_fullexam15",
-            "title": "Reading 43",
-            "text": "The Anthropocene epoch, a proposed geological period dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense debate among stratigraphers. While some argue that the mid-20th century, with its surge in radioactive isotopes from nuclear testing, serves as the definitive starting point, others suggest the Industrial Revolution or even the dawn of agriculture. The primary challenge lies in identifying a 'golden spike'—a physical marker in the rock strata that universally signifies this transition. Regardless of its official designation, the concept underscores the unprecedented scale at which human activity now shapes planetary systems, from carbon cycles to biodiversity loss."
-        },
-        {
-            "id": "p_read_51_fullexam15",
-            "title": "Reading 51",
-            "text": "The Library of Alexandria, once the pinnacle of ancient knowledge, was not destroyed in a single cataclysmic event as popular myth suggests. Rather, its decline was a protracted process spanning centuries, caused by a combination of budget cuts, civil unrest, and changing political priorities. While Julius Caesar is often blamed for burning it during his Siege of Alexandria in 48 BC, the library likely survived in some form long after. Later conflicts, including the decree of Theodosius I against pagan temples and the Muslim conquest of Egypt, further contributed to its eventual disappearance. The loss of its scrolls represents one of the greatest cultural tragedies of the ancient world, yet much of its contents had already been lost to neglect before the final blow."
-        }
-    ],
-    "questions": [
-        {
-            "id": 1,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "The rapid _____ of urban areas often leads to the degradation of local ecosystems and a significant loss of biodiversity.",
-            "options": {
-                "A": "expansion",
-                "B": "rectification",
-                "C": "abolition",
-                "D": "prevalence",
-                "E": "consultation"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 2,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "The primary goal of the research was to _____ whether the new drug could effectively reduce symptoms without causing adverse side effects.",
-            "options": {
-                "A": "ascertain",
-                "B": "undermine",
-                "C": "neglect",
-                "D": "aggravate",
-                "E": "surrender"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 3,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "Due to the _____ nature of the evidence, the judge decided to postpone the trial until more concrete facts were available.",
-            "options": {
-                "A": "ambiguous",
-                "B": "lucid",
-                "C": "tangible",
-                "D": "profound",
-                "E": "relentless"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 4,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "The scientist's discovery was so _____ that it fundamentally changed our understanding of quantum physics.",
-            "options": {
-                "A": "revolutionary",
-                "B": "redundant",
-                "C": "superficial",
-                "D": "monotonous",
-                "E": "obsolete"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 5,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "The government has implemented several measures to _____ the economic impact of the ongoing pandemic on small businesses.",
-            "options": {
-                "A": "mitigate",
-                "B": "exacerbate",
-                "C": "instigate",
-                "D": "overlook",
-                "E": "endorse"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 6,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "Despite his _____ efforts to win the competition, he ultimately fell short of the top prize.",
-            "options": {
-                "A": "strenuous",
-                "B": "negligent",
-                "C": "apathetic",
-                "D": "sporadic",
-                "E": "futile"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 7,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "If the committee _____ the proposal earlier, the project _____ completed by now.",
-            "options": {
-                "A": "had approved / would have been",
-                "B": "approved / will be",
-                "C": "approves / would be",
-                "D": "has approved / is",
-                "E": "would approve / had been"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 8,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "Recent studies suggest that by the end of this century, many coastal cities _____ under water due to rising sea levels.",
-            "options": {
-                "A": "will be",
-                "B": "have been",
-                "C": "were",
-                "D": "are being",
-                "E": "had been"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 9,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "Not only _____ the environment, but it also poses a serious threat to human health in the long run.",
-            "options": {
-                "A": "does pollution damage",
-                "B": "pollution damages",
-                "C": "pollution damaged",
-                "D": "has pollution damaged",
-                "E": "is pollution damaging"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 10,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "The explorers, _____ journey across the Antarctic was filled with peril, managed to return safely to their base.",
-            "options": {
-                "A": "whose",
-                "B": "which",
-                "C": "whom",
-                "D": "where",
-                "E": "that"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 11,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "Hardly _____ the plane taken off _____ the pilot realized there was a technical malfunction in the engine.",
-            "options": {
-                "A": "had / when",
-                "B": "no sooner / than",
-                "C": "as / as",
-                "D": "so / that",
-                "E": "more / than"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 12,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "_____ the high cost of living in the city, many young professionals prefer to commute from the suburbs.",
-            "options": {
-                "A": "Despite",
-                "B": "Because",
-                "C": "Although",
-                "D": "Moreover",
-                "E": "Instead"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 13,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "The CEO insisted that the report _____ submitted to the board of directors by the end of the day.",
-            "options": {
-                "A": "be",
-                "B": "is",
-                "C": "was",
-                "D": "has been",
-                "E": "being"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 14,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "She is considered one of the most influential authors of the 21st century, _____ her novels have been translated into dozens of languages.",
-            "options": {
-                "A": "for",
-                "B": "yet",
-                "C": "but",
-                "D": "so",
-                "E": "nor"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 15,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "By the time the reinforcements arrived, the soldiers _____ the enemy's advance for several hours.",
-            "options": {
-                "A": "had been resisting",
-                "B": "have been resisting",
-                "C": "resisted",
-                "D": "are resisting",
-                "E": "will have resisted"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 16,
-            "section_id": "vocab_gram",
-            "passage_id": null,
-            "question": "The manager suggested _____ the meeting until next week to allow everyone enough time to prepare.",
-            "options": {
-                "A": "postponing",
-                "B": "to postpone",
-                "C": "postpone",
-                "D": "postponed",
-                "E": "having postponed"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 17,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_17_fullexam15",
-            "question": "Boşluk 17 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "influencing",
-                "B": "influenced",
-                "C": "influence",
-                "D": "to influence",
-                "E": "influences"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 18,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_17_fullexam15",
-            "question": "Boşluk 18 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "subsequently",
-                "B": "rarely",
-                "C": "abruptly",
-                "D": "formerly",
-                "E": "initially"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 19,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_17_fullexam15",
-            "question": "Boşluk 19 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "to",
-                "B": "with",
-                "C": "from",
-                "D": "by",
-                "E": "at"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 20,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_17_fullexam15",
-            "question": "Boşluk 20 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "Consequently",
-                "B": "However",
-                "C": "Nevertheless",
-                "D": "Otherwise",
-                "E": "Instead"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 21,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_17_fullexam15",
-            "question": "Boşluk 21 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "challenges",
-                "B": "benefits",
-                "C": "agreements",
-                "D": "solutions",
-                "E": "improvements"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 22,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_22_fullexam15",
-            "question": "Boşluk 22 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "whereby",
-                "B": "which",
-                "C": "where",
-                "D": "who",
-                "E": "whose"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 23,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_22_fullexam15",
-            "question": "Boşluk 23 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "primarily",
-                "B": "scarcely",
-                "C": "seldom",
-                "D": "vaguely",
-                "E": "casually"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 24,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_22_fullexam15",
-            "question": "Boşluk 24 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "would not exist",
-                "B": "will not exist",
-                "C": "did not exist",
-                "D": "does not exist",
-                "E": "had not existed"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 25,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_22_fullexam15",
-            "question": "Boşluk 25 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "which",
-                "B": "what",
-                "C": "that",
-                "D": "this",
-                "E": "it"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 26,
-            "section_id": "cloze",
-            "passage_id": "p_cloze_22_fullexam15",
-            "question": "Boşluk 26 için en uygun seçeneği bulun.",
-            "options": {
-                "A": "Therefore",
-                "B": "However",
-                "C": "Nevertheless",
-                "D": "Even so",
-                "E": "On the contrary"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 27,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "While the internet has revolutionized the way we communicate, _____.",
-            "options": {
-                "A": "it has also created new challenges regarding privacy and security",
-                "B": "it makes it much easier to find information on any topic",
-                "C": "everyone should have access to high-speed connections",
-                "D": "social media platforms are becoming increasingly popular",
-                "E": "digital literacy is essential for modern education"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 28,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "_____ that the company will have to reduce its workforce to remain profitable.",
-            "options": {
-                "A": "It is highly likely",
-                "B": "Despite the fact",
-                "C": "In order to ensure",
-                "D": "Although it is clear",
-                "E": "Provided that"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 29,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "The results of the study were inconclusive _____ the sample size was too small to represent the entire population.",
-            "options": {
-                "A": "because",
-                "B": "although",
-                "C": "even if",
-                "D": "unless",
-                "E": "provided"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 30,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "If we do not take immediate action to reduce carbon emissions, _____.",
-            "options": {
-                "A": "global temperatures will continue to rise at an alarming rate",
-                "B": "we might have protected the environment for future generations",
-                "C": "the effects of climate change had been avoided",
-                "D": "renewable energy sources are becoming more efficient",
-                "E": "it is possible to transition to a green economy"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 31,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "Hardly had the scientist published his findings _____.",
-            "options": {
-                "A": "when other researchers began to challenge his conclusions",
-                "B": "than he received a prestigious award for his work",
-                "C": "while the public started to take an interest in the topic",
-                "D": "as soon as the data was verified by his peers",
-                "E": "before the journal decided to retract the article"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 32,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "Despite the complexity of the task, _____.",
-            "options": {
-                "A": "the team managed to complete it ahead of schedule",
-                "B": "it was clear that they would never finish on time",
-                "C": "no one knew how to approach the problem correctly",
-                "D": "the resources provided were insufficient for the project",
-                "E": "they decided to give up after several failed attempts"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 33,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "Since the discovery of penicillin, _____.",
-            "options": {
-                "A": "millions of lives have been saved from bacterial infections",
-                "B": "doctors were able to treat previously fatal diseases",
-                "C": "it changed the course of modern medicine forever",
-                "D": "new antibiotics are being developed every year",
-                "E": "the threat of infectious diseases has been eliminated"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 34,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "No matter how hard he tried to explain his actions, _____.",
-            "options": {
-                "A": "his colleagues remained skeptical of his motives",
-                "B": "everyone agreed that he had made the right choice",
-                "C": "the situation was resolved without any further conflict",
-                "D": "he was able to convince the board of his innocence",
-                "E": "it was easy for them to understand his perspective"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 35,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "In light of the recent economic downturn, _____.",
-            "options": {
-                "A": "the government is considering a series of fiscal reforms",
-                "B": "the stock market has reached an all-time high",
-                "C": "consumer spending is expected to increase significantly",
-                "D": "many companies are expanding their operations globally",
-                "E": "the unemployment rate has reached its lowest level in years"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 36,
-            "section_id": "completion",
-            "passage_id": null,
-            "question": "_____ so that they could reach a consensus on the new policy.",
-            "options": {
-                "A": "The members of the committee discussed the issue for hours",
-                "B": "Although there were many differing opinions among them",
-                "C": "Since the deadline for the decision was approaching",
-                "D": "Even though the meeting had been cancelled at the last minute",
-                "E": "Unless they agree on the fundamental principles"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 37,
-            "section_id": "translation",
-            "passage_id": null,
-            "question": "Modern science has made it possible to treat many diseases that were once considered incurable.",
-            "options": {
-                "A": "Modern bilim, bir zamanlar tedavi edilemez kabul edilen birçok hastalığın tedavi edilmesini mümkün kılmıştır.",
-                "B": "Modern bilim sayesinde, eskiden tedavisi olmayan hastalıkların çoğu artık iyileştirilebilmektedir.",
-                "C": "Bir zamanlar çaresiz görülen hastalıklar, modern bilimin gelişmesiyle birlikte tedavi edilebilir hale gelmiştir.",
-                "D": "Modern bilim, geçmişte ölümcül olan birçok hastalığa karşı etkili çözümler üretmiştir.",
-                "E": "Tedavisi mümkün olmayan birçok hastalık, modern bilimin katkılarıyla ortadan kaldırılmıştır."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 38,
-            "section_id": "translation",
-            "passage_id": null,
-            "question": "Although the city is famous for its historical landmarks, it also offers a vibrant nightlife and modern shopping centers.",
-            "options": {
-                "A": "Şehir tarihi yapılarıyla ünlü olmasına rağmen, aynı zamanda canlı bir gece hayatı ve modern alışveriş merkezleri sunmaktadır.",
-                "B": "Şehir hem tarihi mekanları hem de modern alışveriş merkezleriyle turistlerin ilgisini çekmektedir.",
-                "C": "Tarihi eserleriyle tanınan bu şehir, gece hayatı ve modern çarşılarıyla da oldukça popülerdir.",
-                "D": "Şehir tarihi dokusunun yanı sıra, ziyaretçilerine hareketli bir gece hayatı ve modern imkanlar da sağlar.",
-                "E": "Tarihi yerleri kadar gece hayatı ve alışveriş merkezleri de bu şehrin önemli özellikleri arasındadır."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 39,
-            "section_id": "translation",
-            "passage_id": null,
-            "question": "The success of the project depends largely on the effective collaboration between the different departments.",
-            "options": {
-                "A": "Projenin başarısı büyük ölçüde farklı departmanlar arasındaki etkili iş birliğine bağlıdır.",
-                "B": "Farklı departmanlar birlikte çalışırsa proje başarılı bir şekilde tamamlanabilir.",
-                "C": "Projenin başarılı olması için departmanlar arası koordinasyonun sağlanması şarttır.",
-                "D": "Farklı birimlerin etkin bir şekilde iş birliği yapması projenin başarısını garantiler.",
-                "E": "Proje, ancak tüm departmanlar uyum içinde çalışırsa başarıya ulaşacaktır."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 40,
-            "section_id": "translation",
-            "passage_id": null,
-            "question": "Küresel ısınma, kutup buzullarının erimesine ve deniz seviyelerinin yükselmesine neden olmaktadır.",
-            "options": {
-                "A": "Global warming is causing the polar ice caps to melt and sea levels to rise.",
-                "B": "The melting of polar ice caps and rising sea levels are caused by global warming.",
-                "C": "Global warming leads to the melting of glaciers, which in turn raises sea levels.",
-                "D": "Due to global warming, the polar ice is melting and the oceans are expanding.",
-                "E": "If global warming continues, polar ice caps will melt and sea levels will rise."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 41,
-            "section_id": "translation",
-            "passage_id": null,
-            "question": "Yazarın son romanı, toplumsal adaletsizlik üzerine derin bir eleştiri sunmaktadır.",
-            "options": {
-                "A": "The author's latest novel offers a profound critique of social injustice.",
-                "B": "Social injustice is the main theme of the author's most recent novel.",
-                "C": "The latest novel by the author critiques social injustice in a profound way.",
-                "D": "In his last novel, the author deeply criticizes the injustice in society.",
-                "E": "The author has provided a deep analysis of social issues in his newest book."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 42,
-            "section_id": "translation",
-            "passage_id": null,
-            "question": "Eğitim sistemi, öğrencilerin eleştirel düşünme becerilerini geliştirmeyi amaçlamalıdır.",
-            "options": {
-                "A": "The education system should aim to develop students' critical thinking skills.",
-                "B": "Critical thinking skills must be the primary focus of the modern education system.",
-                "C": "The goal of education should be to encourage students to think critically.",
-                "D": "The education system needs to improve the way students analyze problems.",
-                "E": "Students should be taught how to think critically within the education system."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 43,
-            "section_id": "reading",
-            "passage_id": "p_read_43_fullexam15",
-            "question": "According to the passage, the 'golden spike' refers to:",
-            "options": {
-                "A": "A physical marker in geological layers used to define a period",
-                "B": "The moment the Industrial Revolution began in Europe",
-                "C": "A radioactive isotope found in nuclear waste",
-                "D": "The peak of human agricultural expansion",
-                "E": "A theoretical concept with no physical basis"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 44,
-            "section_id": "reading",
-            "passage_id": "p_read_43_fullexam15",
-            "question": "[Text as above] What is the main point of contention regarding the Anthropocene among scientists?",
-            "options": {
-                "A": "Whether humans have actually impacted the Earth's ecosystems",
-                "B": "The specific date and marker that defines its beginning",
-                "C": "If the Industrial Revolution was more harmful than nuclear testing",
-                "D": "The necessity of using radioactive isotopes for dating",
-                "E": "Whether biodiversity loss is a natural or human-driven process"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 45,
-            "section_id": "reading",
-            "passage_id": "p_read_43_fullexam15",
-            "question": "[Text as above] The author mentions 'radioactive isotopes' to:",
-            "options": {
-                "A": "Argue against the use of nuclear energy",
-                "B": "Provide an example of a potential marker for the new epoch",
-                "C": "Explain the cause of the Industrial Revolution",
-                "D": "Highlight the benefits of mid-20th century technology",
-                "E": "Suggest that the Anthropocene started thousands of years ago"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 46,
-            "section_id": "reading",
-            "passage_id": "p_read_43_fullexam15",
-            "question": "[Text as above] It can be inferred from the passage that the Anthropocene:",
-            "options": {
-                "A": "Is an officially recognized geological epoch by all scientific bodies",
-                "B": "Is characterized by human influence on global natural processes",
-                "C": "Began exactly at the same time as the dawn of agriculture",
-                "D": "Has had a minimal impact on the Earth's carbon cycles",
-                "E": "Will likely be replaced by a more stable geological period soon"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 47,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: Behavioral economics challenges the classical assumption of the 'homo economicus'—the perfectly rational actor who always makes decisions to maximize utility. Instead, it incorporates psychological insights to explain why individuals often act irrationally. Concepts such as loss aversion, where the pain of losing is psychologically twice as powerful as the pleasure of gaining, and the endowment effect, where people overvalue what they already own, provide a more nuanced understanding of market behavior. These 'heuristics' or mental shortcuts are often efficient but can lead to systematic biases. By understanding these biases, policymakers can design 'nudges' that steer people toward better choices without restricting their freedom. The concept of 'loss aversion' implies that:",
-            "options": {
-                "A": "People value gains and losses equally",
-                "B": "Losing something is more impactful than gaining something of equal value",
-                "C": "Gaining wealth is the primary motivator for all human behavior",
-                "D": "Investors are always rational when facing financial risks",
-                "E": "People prefer to take risks to achieve a gain"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 48,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: [Text as above] According to the passage, 'heuristics' are:",
-            "options": {
-                "A": "Logical fallacies that should always be avoided",
-                "B": "Mental shortcuts that can cause systematic biases",
-                "C": "The primary tools used by 'homo economicus'",
-                "D": "Strict regulations imposed by policymakers",
-                "E": "Mathematical models used to predict market trends"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 49,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: [Text as above] What is the purpose of a 'nudge' in the context of behavioral economics?",
-            "options": {
-                "A": "To force citizens to comply with strict economic laws",
-                "B": "To eliminate the psychological endowment effect entirely",
-                "C": "To influence behavior positively while maintaining personal choice",
-                "D": "To maximize the utility of the perfectly rational actor",
-                "E": "To punish individuals for making irrational decisions"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 50,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: [Text as above] The passage suggests that classical economic models:",
-            "options": {
-                "A": "Are more accurate than behavioral ones in predicting human behavior",
-                "B": "Reliably account for the psychological biases of individuals",
-                "C": "Assume that humans always act to maximize their own benefit",
-                "D": "Were developed to explain the endowment effect",
-                "E": "Focus primarily on the emotional state of the consumer"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 51,
-            "section_id": "reading",
-            "passage_id": "p_read_51_fullexam15",
-            "question": "What is the main argument regarding the destruction of the Library of Alexandria?",
-            "options": {
-                "A": "It was entirely the fault of Julius Caesar's military actions",
-                "B": "It occurred suddenly during a single fire in the first century BC",
-                "C": "It was a gradual process resulting from various socio-political factors",
-                "D": "The library was actually moved to another city before it could be destroyed",
-                "E": "Religious decrees were the sole cause of the library's downfall"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 52,
-            "section_id": "reading",
-            "passage_id": "p_read_51_fullexam15",
-            "question": "[Text as above] According to the text, what role did neglect play in the library's history?",
-            "options": {
-                "A": "It was the primary reason Julius Caesar decided to attack",
-                "B": "It led to the loss of many scrolls before the library finally closed",
-                "C": "It was a result of the library having too much funding",
-                "D": "It prevented the library from being built in the first place",
-                "E": "It encouraged the preservation of scrolls by private collectors"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 53,
-            "section_id": "reading",
-            "passage_id": "p_read_51_fullexam15",
-            "question": "[Text as above] The mention of 'Theodosius I' serves to:",
-            "options": {
-                "A": "Show that the library was protected by the Roman Empire",
-                "B": "Illustrate the religious tensions that contributed to the library's decline",
-                "C": "Explain why Julius Caesar was eventually exonerated",
-                "D": "Identify the person who rebuilt the library in the 4th century",
-                "E": "Highlight the scientific achievements of the late Roman period"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 54,
-            "section_id": "reading",
-            "passage_id": "p_read_51_fullexam15",
-            "question": "[Text as above] It can be inferred from the passage that:",
-            "options": {
-                "A": "The popular myth about the library is historically accurate",
-                "B": "The library's contents were insignificant by the time of the Muslim conquest",
-                "C": "Multiple historical figures and events are responsible for its loss",
-                "D": "The library's scrolls were all digitized before they were lost",
-                "E": "Alexandria was a peaceful city until the library was burned"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 55,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: Epigenetics refers to the study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence. Essentially, while the 'blueprint' of the DNA remains the same, external factors—such as diet, stress, and environmental toxins—can trigger chemical modifications that turn genes on or off. One of the most common mechanisms is DNA methylation. These changes can be passed down to future generations, meaning that the lifestyle choices of ancestors could potentially affect the health of their descendants. This field challenges the traditional view that our genetic destiny is fixed at birth, suggesting a dynamic interaction between nature and nurture. Epigenetics is defined as the study of:",
-            "options": {
-                "A": "Changes in the DNA sequence caused by mutations",
-                "B": "How environmental factors change gene activity without changing DNA",
-                "C": "The evolution of human behavior over millions of years",
-                "D": "The process of cloning organisms from genetic material",
-                "E": "The physical structure of chromosomes during cell division"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 56,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: [Text as above] According to the passage, DNA methylation is:",
-            "options": {
-                "A": "A harmful mutation caused by radiation",
-                "B": "A chemical modification that regulates gene expression",
-                "C": "The process of repairing damaged DNA sequences",
-                "D": "A method used to change an organism's species",
-                "E": "The only way environmental factors affect health"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 57,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: [Text as above] What is the implication of epigenetic changes being 'heritable'?",
-            "options": {
-                "A": "Lifestyle choices only affect the individual, not their children",
-                "B": "Genetic traits are determined solely by the DNA sequence",
-                "C": "The health of future generations can be influenced by their ancestors' environment",
-                "D": "Environmental toxins cannot be passed from parent to child",
-                "E": "Evolution happens much slower than previously thought"
-            },
-            "correct": "C"
-        },
-        {
-            "id": 58,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 4: [Text as above] The passage suggests that the relationship between nature and nurture is:",
-            "options": {
-                "A": "A strict dichotomy where nature is always more powerful",
-                "B": "A dynamic interaction where nurture can influence nature",
-                "C": "Irrelevant to the study of modern genetics",
-                "D": "Fixed at the moment of an organism's conception",
-                "E": "A concept that has been debunked by the discovery of DNA"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 59,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: The emergence of Abstract Expressionism in post-World War II New York marked a pivotal shift in the art world, moving its center from Paris to the United States. Artists like Jackson Pollock and Mark Rothko sought to express profound emotional and subconscious states through non-representational forms. Pollock's 'drip paintings' emphasized the physical act of painting itself, a technique known as action painting, while Rothko's 'color fields' utilized large expanses of color to evoke a sense of the sublime. Though criticized by some as chaotic or lacking skill, the movement was a response to the trauma of the war, seeking a new visual language that transcended traditional boundaries. Abstract Expressionism is characterized by:",
-            "options": {
-                "A": "A return to classical painting techniques and realism",
-                "B": "The use of non-representational forms to express emotion",
-                "C": "A focus on political propaganda following World War II",
-                "D": "The dominance of Paris as the center of the art world",
-                "E": "Strict adherence to the rules of perspective and anatomy"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 60,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: [Text as above] How did Jackson Pollock's style differ from traditional painting?",
-            "options": {
-                "A": "He used only primary colors in his expanses",
-                "B": "He focused on the physical process of applying paint",
-                "C": "He aimed to depict historical events accurately",
-                "D": "He rejected the use of canvas and oil paints",
-                "E": "He followed the instructions of his subconscious mind through realism"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 61,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: [Text as above] What was a major consequence of the Abstract Expressionist movement?",
-            "options": {
-                "A": "Paris became the undisputed capital of the art world",
-                "B": "The move of the art world's focus to New York City",
-                "C": "The total abandonment of color in modern art",
-                "D": "A decline in the popularity of emotional expression in art",
-                "E": "The rise of photography as the primary medium of art"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 62,
-            "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: [Text as above] The author suggests that Abstract Expressionism was:",
-            "options": {
-                "A": "A reaction to the psychological impact of World War II",
-                "B": "Widely praised by all critics from its inception",
-                "C": "Largely influenced by the scientific discoveries of the era",
-                "D": "A purely decorative art form with no deeper meaning",
-                "E": "Limited to the use of 'drip' techniques by all its artists"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 63,
-            "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Professor: The recent data on urban heat islands suggests we need more green infrastructure. \nStudent: ________ \nProfessor: Exactly. While parks are great, green roofs and walls provide insulation and manage stormwater simultaneously.",
-            "options": {
-                "A": "Are you saying that parks are the only solution we have?",
-                "B": "Do you mean that we should focus on vertical solutions as well?",
-                "C": "Why is the temperature in cities higher than in rural areas?",
-                "D": "Is it true that green infrastructure is too expensive to maintain?",
-                "E": "How does the urban heat island effect impact public health?"
-            },
-            "correct": "B"
-        },
-        {
-            "id": 64,
-            "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Interviewer: Your research focuses on the 'Great Filter' theory. Can you explain it simply? \nAstrophysicist: ________ \nInterviewer: So, it's essentially a hurdle that civilizations fail to clear, explaining why we haven't met any aliens.",
-            "options": {
-                "A": "It suggests that the universe is teeming with advanced life forms.",
-                "B": "It's the idea that there's a stage in evolution that is extremely difficult to surpass.",
-                "C": "I believe we have already passed the most difficult stage of development.",
-                "D": "The theory states that space travel is physically impossible for any species.",
-                "E": "It refers to the technological tools we use to filter cosmic signals."
-            },
-            "correct": "B"
-        },
-        {
-            "id": 65,
-            "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Librarian: We've noticed a decline in the borrowing of physical books lately. \nPatron: That's probably due to the rise of digital lending platforms. \nLibrarian: ________ \nPatron: True, but the convenience of e-books is hard to beat for the average reader.",
-            "options": {
-                "A": "We should consider closing the library's physical location then.",
-                "B": "Actually, our digital collection is even more popular than the physical one.",
-                "C": "However, many people still prefer the tactile experience of a real book.",
-                "D": "Do you think we should increase the fines for late returns?",
-                "E": "readers are quite expensive for most of our patrons to afford."
-            },
-            "correct": "C"
-        },
-        {
-            "id": 66,
-            "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Doctor: Your blood pressure is still high despite the medication. \nPatient: I've been trying to reduce my salt intake, but it's difficult. \nDoctor: ________ \nPatient: I didn't realize that. I'll start checking the labels more carefully.",
-            "options": {
-                "A": "You should try to exercise at least thirty minutes every day.",
-                "B": "Salt is the only factor that influences blood pressure levels.",
-                "C": "Many processed foods contain hidden sodium that you might not notice.",
-                "D": "I will double the dose of your current prescription immediately.",
-                "E": "High blood pressure is often a hereditary condition anyway."
-            },
-            "correct": "C"
-        },
-        {
-            "id": 67,
-            "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Journalist: Do you think AI will eventually replace human creative writers? \nAuthor: I believe AI can mimic style, but it lacks genuine lived experience. \nJournalist: ________ \nAuthor: Precisely. It can arrange words beautifully, but it doesn't 'feel' the grief or joy it describes.",
-            "options": {
-                "A": "So, it lacks the emotional depth that comes from being human?",
-                "B": "Can AI be programmed to understand human emotions better?",
-                "C": "Are you worried that your latest book will be compared to AI work?",
-                "D": "Is there a specific software that you use to help your writing?",
-                "E": "Will AI ever be able to write a full-length novel on its own?"
-            },
-            "correct": "A"
-        },
-        {
-            "id": 68,
-            "section_id": "restatement",
-            "passage_id": null,
-            "question": "The hypothesis was rejected not because the data was inaccurate, but because the methodology was fundamentally flawed.",
-            "options": {
-                "A": "The inaccurate data led to the rejection of the hypothesis despite the sound methodology.",
-                "B": "The hypothesis was dismissed because the way the study was conducted was incorrect, not due to wrong data.",
-                "C": "Both the data and the methodology were so flawed that the hypothesis had to be rejected.",
-                "D": "The methodology was corrected after the hypothesis was rejected due to inaccurate data.",
-                "E": "If the data had been accurate, the flawed methodology would not have resulted in rejection."
-            },
-            "correct": "B"
-        },
-        {
-            "id": 69,
-            "section_id": "restatement",
-            "passage_id": null,
-            "question": "Hardly had the new law been enacted when it met with fierce opposition from various civil rights groups.",
-            "options": {
-                "A": "Civil rights groups opposed the law long before it was officially enacted by the government.",
-                "B": "The new law was supported by most people until civil rights groups started to protest.",
-                "C": "As soon as the new law came into effect, it was strongly challenged by civil rights organizations.",
-                "D": "Because of the fierce opposition, the government decided not to enact the new law.",
-                "E": "The law was enacted despite the fact that civil rights groups had been opposing it for years."
-            },
-            "correct": "C"
-        },
-        {
-            "id": 70,
-            "section_id": "restatement",
-            "passage_id": null,
-            "question": "Unlike his predecessors, the new CEO prioritizes sustainable growth over short-term quarterly profits.",
-            "options": {
-                "A": "The new CEO is similar to previous ones in his focus on long-term sustainability.",
-                "B": "Previous CEOs cared more about immediate profits than the current CEO does.",
-                "C": "Short-term profits are more important than sustainability for the new CEO.",
-                "D": "The new CEO has the same priorities as the CEOs who came before him.",
-                "E": "Sustainable growth was the main focus of all CEOs before the current one."
-            },
-            "correct": "B"
-        },
-        {
-            "id": 71,
-            "section_id": "restatement",
-            "passage_id": null,
-            "question": "It is only through intensive reforestation efforts that we can hope to mitigate the effects of soil erosion in this region.",
-            "options": {
-                "A": "Soil erosion in this region will continue regardless of our reforestation efforts.",
-                "B": "Reforestation is one of many ways to stop soil erosion from happening.",
-                "C": "The only way to possibly reduce soil erosion here is by planting trees extensively.",
-                "D": "We hope to start reforestation after we find a solution for soil erosion.",
-                "E": "Intensive reforestation has already mitigated the effects of soil erosion in the region."
-            },
-            "correct": "C"
-        },
-        {
-            "id": 72,
-            "section_id": "para_comp",
-            "passage_id": null,
-            "question": "The concept of the 'uncanny valley' describes the eerie sensation people feel when they encounter humanoid robots. As a robot becomes more human-like, our emotional response becomes increasingly positive. ________ However, when the resemblance is nearly perfect but slightly 'off,' the response turns into one of strong revulsion.",
-            "options": {
-                "A": "This is why most people prefer robots that look like machines.",
-                "B": "The more a robot looks like a human, the more we trust it unconditionally.",
-                "C": "This trend continues until a point where the robot looks almost, but not quite, human.",
-                "D": "Scientists have yet to find a way to make robots look truly human.",
-                "E": "Robots are becoming more common in the healthcare and service industries."
-            },
-            "correct": "C"
-        },
-        {
-            "id": 73,
-            "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Renewable energy sources such as wind and solar are crucial for a low-carbon future. However, their intermittent nature poses a challenge for the stability of the power grid. ________ To address this, researchers are developing advanced battery systems and pumped hydro storage to ensure a steady supply of electricity.",
-            "options": {
-                "A": "Electricity prices are expected to drop as technology improves.",
-                "B": "Energy storage is therefore essential to balance supply and demand.",
-                "C": "Solar panels are becoming more efficient every year.",
-                "D": "Nuclear power remains a controversial alternative to renewables.",
-                "E": "Many countries are still dependent on coal for their energy needs."
-            },
-            "correct": "B"
-        },
-        {
-            "id": 74,
-            "section_id": "para_comp",
-            "passage_id": null,
-            "question": "In the world of literature, 'The Great Gatsby' is often cited as the definitive American novel. It explores themes of wealth, class, and the corruption of the American Dream during the Roaring Twenties. ________ Through the character of Jay Gatsby, Fitzgerald critiques a society obsessed with status and material success.",
-            "options": {
-                "A": "The novel was not very successful when it was first published.",
-                "B": "F. Scott Fitzgerald wrote the book while living in France.",
-                "C": "Its vivid depiction of the jazz age remains unparalleled in fiction.",
-                "D": "Most readers find the plot to be overly complicated and slow.",
-                "E": "The American Dream is a concept that appeals to people worldwide."
-            },
-            "correct": "C"
-        },
-        {
-            "id": 75,
-            "section_id": "para_comp",
-            "passage_id": null,
-            "question": "The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones. This mathematical pattern is not just a theoretical curiosity. ________ From the arrangement of leaves on a stem to the spiral of a galaxy, the sequence appears with startling frequency.",
-            "options": {
-                "A": "It was first discovered by an Italian mathematician in the 13th century.",
-                "B": "Computers use this sequence to solve complex encryption problems.",
-                "C": "It is found throughout the natural world in various forms.",
-                "D": "Many students find it difficult to understand the logic behind it.",
-                "E": "The sequence starts with zero and one, followed by one, two, and three."
-            },
-            "correct": "A"
-        },
-        {
-            "id": 76,
-            "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Dark matter is an invisible substance that makes up about 27% of the universe. (II) It does not emit, absorb, or reflect light, making it extremely difficult to detect directly. (III) Astronomers observe its presence through its gravitational effects on visible matter. (IV) The James Webb Space Telescope was launched to study the early universe in infrared. (V) Without dark matter, galaxies would likely fly apart rather than rotate as they do.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 77,
-            "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) The Renaissance was a period of great cultural and intellectual rebirth in Europe. (II) It began in Italy in the 14th century and later spread to the rest of the continent. (III) During this time, artists like Leonardo da Vinci and Michelangelo created their masterpieces. (IV) The Black Death had previously wiped out a significant portion of the European population. (V) This era also saw significant advancements in science, politics, and philosophy.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 78,
-            "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Photosynthesis is the process by which green plants use sunlight to synthesize nutrients. (II) It involves the conversion of carbon dioxide and water into glucose and oxygen. (III) Chlorophyll is the pigment responsible for capturing the light energy needed for this reaction. (IV) Some plants have adapted to live in desert environments with very little water. (V) This process is fundamental to life on Earth as it provides the primary source of energy for most organisms.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 79,
-            "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Globalization has led to increased economic integration and cultural exchange between nations. (II) It has allowed for the rapid spread of technology and information across borders. (III) However, it has also been criticized for contributing to wealth inequality and the loss of local traditions. (IV) Many people now travel abroad for vacation more frequently than in the past. (V) Proponents argue that it promotes peace by making countries more dependent on one another.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        },
-        {
-            "id": 80,
-            "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Cognitive Behavioral Therapy (CBT) is a common form of talk therapy used to treat anxiety and depression. (II) It focuses on identifying and changing negative thought patterns and behaviors. (III) Many therapists also use mindfulness techniques to help patients stay present. (IV) Sigmund Freud was the founder of psychoanalysis, which explores the unconscious mind. (V) CBT is generally considered to be a short-term, goal-oriented treatment approach.",
-            "options": {
-                "A": "I",
-                "B": "II",
-                "C": "III",
-                "D": "IV",
-                "E": "V"
-            },
-            "correct": "D"
-        }
-    ]
+    {
+      "id": "cloze",
+      "label": "Cloze Test",
+      "from": 17,
+      "to": 26
+    },
+    {
+      "id": "completion",
+      "label": "Sentence Completion",
+      "from": 27,
+      "to": 36
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 37,
+      "to": 42
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 43,
+      "to": 62
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 63,
+      "to": 67
+    },
+    {
+      "id": "restatement",
+      "label": "Restatement (Closest Meaning)",
+      "from": 68,
+      "to": 71
+    },
+    {
+      "id": "para_comp",
+      "label": "Paragraph Completion",
+      "from": 72,
+      "to": 75
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 76,
+      "to": 80
+    }
+  ],
+  "passages": [],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "The rapid _____ of urban areas often leads to the degradation of local ecosystems and a significant loss of biodiversity.",
+      "options": {
+        "A": "expansion",
+        "B": "rectification",
+        "C": "abolition",
+        "D": "prevalence",
+        "E": "consultation"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "The primary goal of the research was to _____ whether the new drug could effectively reduce symptoms without causing adverse side effects.",
+      "options": {
+        "A": "ascertain",
+        "B": "undermine",
+        "C": "neglect",
+        "D": "aggravate",
+        "E": "surrender"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "Due to the _____ nature of the evidence, the judge decided to postpone the trial until more concrete facts were available.",
+      "options": {
+        "A": "ambiguous",
+        "B": "lucid",
+        "C": "tangible",
+        "D": "profound",
+        "E": "relentless"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "The scientist's discovery was so _____ that it fundamentally changed our understanding of quantum physics.",
+      "options": {
+        "A": "revolutionary",
+        "B": "redundant",
+        "C": "superficial",
+        "D": "monotonous",
+        "E": "obsolete"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "The government has implemented several measures to _____ the economic impact of the ongoing pandemic on small businesses.",
+      "options": {
+        "A": "mitigate",
+        "B": "exacerbate",
+        "C": "instigate",
+        "D": "overlook",
+        "E": "endorse"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "Despite his _____ efforts to win the competition, he ultimately fell short of the top prize.",
+      "options": {
+        "A": "strenuous",
+        "B": "negligent",
+        "C": "apathetic",
+        "D": "sporadic",
+        "E": "futile"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "If the committee _____ the proposal earlier, the project _____ completed by now.",
+      "options": {
+        "A": "had approved / would have been",
+        "B": "approved / will be",
+        "C": "approves / would be",
+        "D": "has approved / is",
+        "E": "would approve / had been"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "Recent studies suggest that by the end of this century, many coastal cities _____ under water due to rising sea levels.",
+      "options": {
+        "A": "will be",
+        "B": "have been",
+        "C": "were",
+        "D": "are being",
+        "E": "had been"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "Not only _____ the environment, but it also poses a serious threat to human health in the long run.",
+      "options": {
+        "A": "does pollution damage",
+        "B": "pollution damages",
+        "C": "pollution damaged",
+        "D": "has pollution damaged",
+        "E": "is pollution damaging"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "The explorers, _____ journey across the Antarctic was filled with peril, managed to return safely to their base.",
+      "options": {
+        "A": "whose",
+        "B": "which",
+        "C": "whom",
+        "D": "where",
+        "E": "that"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 11,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "Hardly _____ the plane taken off _____ the pilot realized there was a technical malfunction in the engine.",
+      "options": {
+        "A": "had / when",
+        "B": "no sooner / than",
+        "C": "as / as",
+        "D": "so / that",
+        "E": "more / than"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 12,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "_____ the high cost of living in the city, many young professionals prefer to commute from the suburbs.",
+      "options": {
+        "A": "Despite",
+        "B": "Because",
+        "C": "Although",
+        "D": "Moreover",
+        "E": "Instead"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 13,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "The CEO insisted that the report _____ submitted to the board of directors by the end of the day.",
+      "options": {
+        "A": "be",
+        "B": "is",
+        "C": "was",
+        "D": "has been",
+        "E": "being"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 14,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "She is considered one of the most influential authors of the 21st century, _____ her novels have been translated into dozens of languages.",
+      "options": {
+        "A": "for",
+        "B": "yet",
+        "C": "but",
+        "D": "so",
+        "E": "nor"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 15,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "By the time the reinforcements arrived, the soldiers _____ the enemy's advance for several hours.",
+      "options": {
+        "A": "had been resisting",
+        "B": "have been resisting",
+        "C": "resisted",
+        "D": "are resisting",
+        "E": "will have resisted"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 16,
+      "section_id": "vocab_gram",
+      "passage_id": null,
+      "question": "The manager suggested _____ the meeting until next week to allow everyone enough time to prepare.",
+      "options": {
+        "A": "postponing",
+        "B": "to postpone",
+        "C": "postpone",
+        "D": "postponed",
+        "E": "having postponed"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 17,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "(I) The Industrial Revolution marked a major turning point in history, (17) _____ almost every aspect of daily life. (II) It began in Great Britain in the late 18th century and (18) _____ spread to other parts of the world. (III) This period saw the transition from manual labor (19) _____ machine-based manufacturing. (IV) (20) _____, urban populations exploded as people moved to cities for work. (V) This shift brought about both economic growth and social (21) _____. Question 17:",
+      "options": {
+        "A": "influencing",
+        "B": "influenced",
+        "C": "influence",
+        "D": "to influence",
+        "E": "influences"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 18:",
+      "options": {
+        "A": "subsequently",
+        "B": "rarely",
+        "C": "abruptly",
+        "D": "formerly",
+        "E": "initially"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 19,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 19:",
+      "options": {
+        "A": "to",
+        "B": "with",
+        "C": "from",
+        "D": "by",
+        "E": "at"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 20,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 20:",
+      "options": {
+        "A": "Consequently",
+        "B": "However",
+        "C": "Nevertheless",
+        "D": "Otherwise",
+        "E": "Instead"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 21,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 21:",
+      "options": {
+        "A": "challenges",
+        "B": "benefits",
+        "C": "agreements",
+        "D": "solutions",
+        "E": "improvements"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 22,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "(I) Photosynthesis is the process (22) _____ green plants and some other organisms use sunlight to synthesize foods. (II) It (23) _____ involves the green pigment chlorophyll and generates oxygen as a byproduct. (III) Without this process, life on Earth (24) _____ as we know it. (IV) Plants absorb carbon dioxide from the atmosphere, (25) _____ helps mitigate the greenhouse effect. (V) (26) _____, protecting forests is crucial for maintaining planetary health. Question 22:",
+      "options": {
+        "A": "whereby",
+        "B": "which",
+        "C": "where",
+        "D": "who",
+        "E": "whose"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 23,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 23:",
+      "options": {
+        "A": "primarily",
+        "B": "scarcely",
+        "C": "seldom",
+        "D": "vaguely",
+        "E": "casually"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 24,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 24:",
+      "options": {
+        "A": "would not exist",
+        "B": "will not exist",
+        "C": "did not exist",
+        "D": "does not exist",
+        "E": "had not existed"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 25,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 25:",
+      "options": {
+        "A": "which",
+        "B": "what",
+        "C": "that",
+        "D": "this",
+        "E": "it"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 26,
+      "section_id": "cloze",
+      "passage_id": null,
+      "question": "Question 26:",
+      "options": {
+        "A": "Therefore",
+        "B": "However",
+        "C": "Nevertheless",
+        "D": "Even so",
+        "E": "On the contrary"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 27,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "While the internet has revolutionized the way we communicate, _____.",
+      "options": {
+        "A": "it has also created new challenges regarding privacy and security",
+        "B": "it makes it much easier to find information on any topic",
+        "C": "everyone should have access to high-speed connections",
+        "D": "social media platforms are becoming increasingly popular",
+        "E": "digital literacy is essential for modern education"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 28,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "_____ that the company will have to reduce its workforce to remain profitable.",
+      "options": {
+        "A": "It is highly likely",
+        "B": "Despite the fact",
+        "C": "In order to ensure",
+        "D": "Although it is clear",
+        "E": "Provided that"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 29,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "The results of the study were inconclusive _____ the sample size was too small to represent the entire population.",
+      "options": {
+        "A": "because",
+        "B": "although",
+        "C": "even if",
+        "D": "unless",
+        "E": "provided"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 30,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "If we do not take immediate action to reduce carbon emissions, _____.",
+      "options": {
+        "A": "global temperatures will continue to rise at an alarming rate",
+        "B": "we might have protected the environment for future generations",
+        "C": "the effects of climate change had been avoided",
+        "D": "renewable energy sources are becoming more efficient",
+        "E": "it is possible to transition to a green economy"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 31,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "Hardly had the scientist published his findings _____.",
+      "options": {
+        "A": "when other researchers began to challenge his conclusions",
+        "B": "than he received a prestigious award for his work",
+        "C": "while the public started to take an interest in the topic",
+        "D": "as soon as the data was verified by his peers",
+        "E": "before the journal decided to retract the article"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 32,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "Despite the complexity of the task, _____.",
+      "options": {
+        "A": "the team managed to complete it ahead of schedule",
+        "B": "it was clear that they would never finish on time",
+        "C": "no one knew how to approach the problem correctly",
+        "D": "the resources provided were insufficient for the project",
+        "E": "they decided to give up after several failed attempts"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 33,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "Since the discovery of penicillin, _____.",
+      "options": {
+        "A": "millions of lives have been saved from bacterial infections",
+        "B": "doctors were able to treat previously fatal diseases",
+        "C": "it changed the course of modern medicine forever",
+        "D": "new antibiotics are being developed every year",
+        "E": "the threat of infectious diseases has been eliminated"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 34,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "No matter how hard he tried to explain his actions, _____.",
+      "options": {
+        "A": "his colleagues remained skeptical of his motives",
+        "B": "everyone agreed that he had made the right choice",
+        "C": "the situation was resolved without any further conflict",
+        "D": "he was able to convince the board of his innocence",
+        "E": "it was easy for them to understand his perspective"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 35,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "In light of the recent economic downturn, _____.",
+      "options": {
+        "A": "the government is considering a series of fiscal reforms",
+        "B": "the stock market has reached an all-time high",
+        "C": "consumer spending is expected to increase significantly",
+        "D": "many companies are expanding their operations globally",
+        "E": "the unemployment rate has reached its lowest level in years"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 36,
+      "section_id": "completion",
+      "passage_id": null,
+      "question": "_____ so that they could reach a consensus on the new policy.",
+      "options": {
+        "A": "The members of the committee discussed the issue for hours",
+        "B": "Although there were many differing opinions among them",
+        "C": "Since the deadline for the decision was approaching",
+        "D": "Even though the meeting had been cancelled at the last minute",
+        "E": "Unless they agree on the fundamental principles"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 37,
+      "section_id": "translation",
+      "passage_id": null,
+      "question": "Modern science has made it possible to treat many diseases that were once considered incurable.",
+      "options": {
+        "A": "Modern bilim, bir zamanlar tedavi edilemez kabul edilen birçok hastalığın tedavi edilmesini mümkün kılmıştır.",
+        "B": "Modern bilim sayesinde, eskiden tedavisi olmayan hastalıkların çoğu artık iyileştirilebilmektedir.",
+        "C": "Bir zamanlar çaresiz görülen hastalıklar, modern bilimin gelişmesiyle birlikte tedavi edilebilir hale gelmiştir.",
+        "D": "Modern bilim, geçmişte ölümcül olan birçok hastalığa karşı etkili çözümler üretmiştir.",
+        "E": "Tedavisi mümkün olmayan birçok hastalık, modern bilimin katkılarıyla ortadan kaldırılmıştır."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 38,
+      "section_id": "translation",
+      "passage_id": null,
+      "question": "Although the city is famous for its historical landmarks, it also offers a vibrant nightlife and modern shopping centers.",
+      "options": {
+        "A": "Şehir tarihi yapılarıyla ünlü olmasına rağmen, aynı zamanda canlı bir gece hayatı ve modern alışveriş merkezleri sunmaktadır.",
+        "B": "Şehir hem tarihi mekanları hem de modern alışveriş merkezleriyle turistlerin ilgisini çekmektedir.",
+        "C": "Tarihi eserleriyle tanınan bu şehir, gece hayatı ve modern çarşılarıyla da oldukça popülerdir.",
+        "D": "Şehir tarihi dokusunun yanı sıra, ziyaretçilerine hareketli bir gece hayatı ve modern imkanlar da sağlar.",
+        "E": "Tarihi yerleri kadar gece hayatı ve alışveriş merkezleri de bu şehrin önemli özellikleri arasındadır."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 39,
+      "section_id": "translation",
+      "passage_id": null,
+      "question": "The success of the project depends largely on the effective collaboration between the different departments.",
+      "options": {
+        "A": "Projenin başarısı büyük ölçüde farklı departmanlar arasındaki etkili iş birliğine bağlıdır.",
+        "B": "Farklı departmanlar birlikte çalışırsa proje başarılı bir şekilde tamamlanabilir.",
+        "C": "Projenin başarılı olması için departmanlar arası koordinasyonun sağlanması şarttır.",
+        "D": "Farklı birimlerin etkin bir şekilde iş birliği yapması projenin başarısını garantiler.",
+        "E": "Proje, ancak tüm departmanlar uyum içinde çalışırsa başarıya ulaşacaktır."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 40,
+      "section_id": "translation",
+      "passage_id": null,
+      "question": "Küresel ısınma, kutup buzullarının erimesine ve deniz seviyelerinin yükselmesine neden olmaktadır.",
+      "options": {
+        "A": "Global warming is causing the polar ice caps to melt and sea levels to rise.",
+        "B": "The melting of polar ice caps and rising sea levels are caused by global warming.",
+        "C": "Global warming leads to the melting of glaciers, which in turn raises sea levels.",
+        "D": "Due to global warming, the polar ice is melting and the oceans are expanding.",
+        "E": "If global warming continues, polar ice caps will melt and sea levels will rise."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 41,
+      "section_id": "translation",
+      "passage_id": null,
+      "question": "Yazarın son romanı, toplumsal adaletsizlik üzerine derin bir eleştiri sunmaktadır.",
+      "options": {
+        "A": "The author's latest novel offers a profound critique of social injustice.",
+        "B": "Social injustice is the main theme of the author's most recent novel.",
+        "C": "The latest novel by the author critiques social injustice in a profound way.",
+        "D": "In his last novel, the author deeply criticizes the injustice in society.",
+        "E": "The author has provided a deep analysis of social issues in his newest book."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 42,
+      "section_id": "translation",
+      "passage_id": null,
+      "question": "Eğitim sistemi, öğrencilerin eleştirel düşünme becerilerini geliştirmeyi amaçlamalıdır.",
+      "options": {
+        "A": "The education system should aim to develop students' critical thinking skills.",
+        "B": "Critical thinking skills must be the primary focus of the modern education system.",
+        "C": "The goal of education should be to encourage students to think critically.",
+        "D": "The education system needs to improve the way students analyze problems.",
+        "E": "Students should be taught how to think critically within the education system."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 43,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 1: The Anthropocene epoch, a proposed geological period dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense debate among stratigraphers. While some argue that the mid-20th century, with its surge in radioactive isotopes from nuclear testing, serves as the definitive starting point, others suggest the Industrial Revolution or even the dawn of agriculture. The primary challenge lies in identifying a 'golden spike'—a physical marker in the rock strata that universally signifies this transition. Regardless of its official designation, the concept underscores the unprecedented scale at which human activity now shapes planetary systems, from carbon cycles to biodiversity loss. According to the passage, the 'golden spike' refers to:",
+      "options": {
+        "A": "A physical marker in geological layers used to define a period",
+        "B": "The moment the Industrial Revolution began in Europe",
+        "C": "A radioactive isotope found in nuclear waste",
+        "D": "The peak of human agricultural expansion",
+        "E": "A theoretical concept with no physical basis"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 44,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 1: [Text as above] What is the main point of contention regarding the Anthropocene among scientists?",
+      "options": {
+        "A": "Whether humans have actually impacted the Earth's ecosystems",
+        "B": "The specific date and marker that defines its beginning",
+        "C": "If the Industrial Revolution was more harmful than nuclear testing",
+        "D": "The necessity of using radioactive isotopes for dating",
+        "E": "Whether biodiversity loss is a natural or human-driven process"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 45,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 1: [Text as above] The author mentions 'radioactive isotopes' to:",
+      "options": {
+        "A": "Argue against the use of nuclear energy",
+        "B": "Provide an example of a potential marker for the new epoch",
+        "C": "Explain the cause of the Industrial Revolution",
+        "D": "Highlight the benefits of mid-20th century technology",
+        "E": "Suggest that the Anthropocene started thousands of years ago"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 46,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 1: [Text as above] It can be inferred from the passage that the Anthropocene:",
+      "options": {
+        "A": "Is an officially recognized geological epoch by all scientific bodies",
+        "B": "Is characterized by human influence on global natural processes",
+        "C": "Began exactly at the same time as the dawn of agriculture",
+        "D": "Has had a minimal impact on the Earth's carbon cycles",
+        "E": "Will likely be replaced by a more stable geological period soon"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 47,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 2: Behavioral economics challenges the classical assumption of the 'homo economicus'—the perfectly rational actor who always makes decisions to maximize utility. Instead, it incorporates psychological insights to explain why individuals often act irrationally. Concepts such as loss aversion, where the pain of losing is psychologically twice as powerful as the pleasure of gaining, and the endowment effect, where people overvalue what they already own, provide a more nuanced understanding of market behavior. These 'heuristics' or mental shortcuts are often efficient but can lead to systematic biases. By understanding these biases, policymakers can design 'nudges' that steer people toward better choices without restricting their freedom. The concept of 'loss aversion' implies that:",
+      "options": {
+        "A": "People value gains and losses equally",
+        "B": "Losing something is more impactful than gaining something of equal value",
+        "C": "Gaining wealth is the primary motivator for all human behavior",
+        "D": "Investors are always rational when facing financial risks",
+        "E": "People prefer to take risks to achieve a gain"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 48,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 2: [Text as above] According to the passage, 'heuristics' are:",
+      "options": {
+        "A": "Logical fallacies that should always be avoided",
+        "B": "Mental shortcuts that can cause systematic biases",
+        "C": "The primary tools used by 'homo economicus'",
+        "D": "Strict regulations imposed by policymakers",
+        "E": "Mathematical models used to predict market trends"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 49,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 2: [Text as above] What is the purpose of a 'nudge' in the context of behavioral economics?",
+      "options": {
+        "A": "To force citizens to comply with strict economic laws",
+        "B": "To eliminate the psychological endowment effect entirely",
+        "C": "To influence behavior positively while maintaining personal choice",
+        "D": "To maximize the utility of the perfectly rational actor",
+        "E": "To punish individuals for making irrational decisions"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 50,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 2: [Text as above] The passage suggests that classical economic models:",
+      "options": {
+        "A": "Are more accurate than behavioral ones in predicting human behavior",
+        "B": "Reliably account for the psychological biases of individuals",
+        "C": "Assume that humans always act to maximize their own benefit",
+        "D": "Were developed to explain the endowment effect",
+        "E": "Focus primarily on the emotional state of the consumer"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 51,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 3: The Library of Alexandria, once the pinnacle of ancient knowledge, was not destroyed in a single cataclysmic event as popular myth suggests. Rather, its decline was a protracted process spanning centuries, caused by a combination of budget cuts, civil unrest, and changing political priorities. While Julius Caesar is often blamed for burning it during his Siege of Alexandria in 48 BC, the library likely survived in some form long after. Later conflicts, including the decree of Theodosius I against pagan temples and the Muslim conquest of Egypt, further contributed to its eventual disappearance. The loss of its scrolls represents one of the greatest cultural tragedies of the ancient world, yet much of its contents had already been lost to neglect before the final blow. What is the main argument regarding the destruction of the Library of Alexandria?",
+      "options": {
+        "A": "It was entirely the fault of Julius Caesar's military actions",
+        "B": "It occurred suddenly during a single fire in the first century BC",
+        "C": "It was a gradual process resulting from various socio-political factors",
+        "D": "The library was actually moved to another city before it could be destroyed",
+        "E": "Religious decrees were the sole cause of the library's downfall"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 52,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 3: [Text as above] According to the text, what role did neglect play in the library's history?",
+      "options": {
+        "A": "It was the primary reason Julius Caesar decided to attack",
+        "B": "It led to the loss of many scrolls before the library finally closed",
+        "C": "It was a result of the library having too much funding",
+        "D": "It prevented the library from being built in the first place",
+        "E": "It encouraged the preservation of scrolls by private collectors"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 53,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 3: [Text as above] The mention of 'Theodosius I' serves to:",
+      "options": {
+        "A": "Show that the library was protected by the Roman Empire",
+        "B": "Illustrate the religious tensions that contributed to the library's decline",
+        "C": "Explain why Julius Caesar was eventually exonerated",
+        "D": "Identify the person who rebuilt the library in the 4th century",
+        "E": "Highlight the scientific achievements of the late Roman period"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 54,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 3: [Text as above] It can be inferred from the passage that:",
+      "options": {
+        "A": "The popular myth about the library is historically accurate",
+        "B": "The library's contents were insignificant by the time of the Muslim conquest",
+        "C": "Multiple historical figures and events are responsible for its loss",
+        "D": "The library's scrolls were all digitized before they were lost",
+        "E": "Alexandria was a peaceful city until the library was burned"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 55,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 4: Epigenetics refers to the study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence. Essentially, while the 'blueprint' of the DNA remains the same, external factors—such as diet, stress, and environmental toxins—can trigger chemical modifications that turn genes on or off. One of the most common mechanisms is DNA methylation. These changes can be passed down to future generations, meaning that the lifestyle choices of ancestors could potentially affect the health of their descendants. This field challenges the traditional view that our genetic destiny is fixed at birth, suggesting a dynamic interaction between nature and nurture. Epigenetics is defined as the study of:",
+      "options": {
+        "A": "Changes in the DNA sequence caused by mutations",
+        "B": "How environmental factors change gene activity without changing DNA",
+        "C": "The evolution of human behavior over millions of years",
+        "D": "The process of cloning organisms from genetic material",
+        "E": "The physical structure of chromosomes during cell division"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 56,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 4: [Text as above] According to the passage, DNA methylation is:",
+      "options": {
+        "A": "A harmful mutation caused by radiation",
+        "B": "A chemical modification that regulates gene expression",
+        "C": "The process of repairing damaged DNA sequences",
+        "D": "A method used to change an organism's species",
+        "E": "The only way environmental factors affect health"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 57,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 4: [Text as above] What is the implication of epigenetic changes being 'heritable'?",
+      "options": {
+        "A": "Lifestyle choices only affect the individual, not their children",
+        "B": "Genetic traits are determined solely by the DNA sequence",
+        "C": "The health of future generations can be influenced by their ancestors' environment",
+        "D": "Environmental toxins cannot be passed from parent to child",
+        "E": "Evolution happens much slower than previously thought"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 58,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 4: [Text as above] The passage suggests that the relationship between nature and nurture is:",
+      "options": {
+        "A": "A strict dichotomy where nature is always more powerful",
+        "B": "A dynamic interaction where nurture can influence nature",
+        "C": "Irrelevant to the study of modern genetics",
+        "D": "Fixed at the moment of an organism's conception",
+        "E": "A concept that has been debunked by the discovery of DNA"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 59,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 5: The emergence of Abstract Expressionism in post-World War II New York marked a pivotal shift in the art world, moving its center from Paris to the United States. Artists like Jackson Pollock and Mark Rothko sought to express profound emotional and subconscious states through non-representational forms. Pollock's 'drip paintings' emphasized the physical act of painting itself, a technique known as action painting, while Rothko's 'color fields' utilized large expanses of color to evoke a sense of the sublime. Though criticized by some as chaotic or lacking skill, the movement was a response to the trauma of the war, seeking a new visual language that transcended traditional boundaries. Abstract Expressionism is characterized by:",
+      "options": {
+        "A": "A return to classical painting techniques and realism",
+        "B": "The use of non-representational forms to express emotion",
+        "C": "A focus on political propaganda following World War II",
+        "D": "The dominance of Paris as the center of the art world",
+        "E": "Strict adherence to the rules of perspective and anatomy"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 60,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 5: [Text as above] How did Jackson Pollock's style differ from traditional painting?",
+      "options": {
+        "A": "He used only primary colors in his expanses",
+        "B": "He focused on the physical process of applying paint",
+        "C": "He aimed to depict historical events accurately",
+        "D": "He rejected the use of canvas and oil paints",
+        "E": "He followed the instructions of his subconscious mind through realism"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 61,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 5: [Text as above] What was a major consequence of the Abstract Expressionist movement?",
+      "options": {
+        "A": "Paris became the undisputed capital of the art world",
+        "B": "The move of the art world's focus to New York City",
+        "C": "The total abandonment of color in modern art",
+        "D": "A decline in the popularity of emotional expression in art",
+        "E": "The rise of photography as the primary medium of art"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 62,
+      "section_id": "reading",
+      "passage_id": null,
+      "question": "Passage 5: [Text as above] The author suggests that Abstract Expressionism was:",
+      "options": {
+        "A": "A reaction to the psychological impact of World War II",
+        "B": "Widely praised by all critics from its inception",
+        "C": "Largely influenced by the scientific discoveries of the era",
+        "D": "A purely decorative art form with no deeper meaning",
+        "E": "Limited to the use of 'drip' techniques by all its artists"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 63,
+      "section_id": "dialogue",
+      "passage_id": null,
+      "question": "Professor: The recent data on urban heat islands suggests we need more green infrastructure. \nStudent: ________ \nProfessor: Exactly. While parks are great, green roofs and walls provide insulation and manage stormwater simultaneously.",
+      "options": {
+        "A": "Are you saying that parks are the only solution we have?",
+        "B": "Do you mean that we should focus on vertical solutions as well?",
+        "C": "Why is the temperature in cities higher than in rural areas?",
+        "D": "Is it true that green infrastructure is too expensive to maintain?",
+        "E": "How does the urban heat island effect impact public health?"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 64,
+      "section_id": "dialogue",
+      "passage_id": null,
+      "question": "Interviewer: Your research focuses on the 'Great Filter' theory. Can you explain it simply? \nAstrophysicist: ________ \nInterviewer: So, it's essentially a hurdle that civilizations fail to clear, explaining why we haven't met any aliens.",
+      "options": {
+        "A": "It suggests that the universe is teeming with advanced life forms.",
+        "B": "It's the idea that there's a stage in evolution that is extremely difficult to surpass.",
+        "C": "I believe we have already passed the most difficult stage of development.",
+        "D": "The theory states that space travel is physically impossible for any species.",
+        "E": "It refers to the technological tools we use to filter cosmic signals."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 65,
+      "section_id": "dialogue",
+      "passage_id": null,
+      "question": "Librarian: We've noticed a decline in the borrowing of physical books lately. \nPatron: That's probably due to the rise of digital lending platforms. \nLibrarian: ________ \nPatron: True, but the convenience of e-books is hard to beat for the average reader.",
+      "options": {
+        "A": "We should consider closing the library's physical location then.",
+        "B": "Actually, our digital collection is even more popular than the physical one.",
+        "C": "However, many people still prefer the tactile experience of a real book.",
+        "D": "Do you think we should increase the fines for late returns?",
+        "E": "readers are quite expensive for most of our patrons to afford."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 66,
+      "section_id": "dialogue",
+      "passage_id": null,
+      "question": "Doctor: Your blood pressure is still high despite the medication. \nPatient: I've been trying to reduce my salt intake, but it's difficult. \nDoctor: ________ \nPatient: I didn't realize that. I'll start checking the labels more carefully.",
+      "options": {
+        "A": "You should try to exercise at least thirty minutes every day.",
+        "B": "Salt is the only factor that influences blood pressure levels.",
+        "C": "Many processed foods contain hidden sodium that you might not notice.",
+        "D": "I will double the dose of your current prescription immediately.",
+        "E": "High blood pressure is often a hereditary condition anyway."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 67,
+      "section_id": "dialogue",
+      "passage_id": null,
+      "question": "Journalist: Do you think AI will eventually replace human creative writers? \nAuthor: I believe AI can mimic style, but it lacks genuine lived experience. \nJournalist: ________ \nAuthor: Precisely. It can arrange words beautifully, but it doesn't 'feel' the grief or joy it describes.",
+      "options": {
+        "A": "So, it lacks the emotional depth that comes from being human?",
+        "B": "Can AI be programmed to understand human emotions better?",
+        "C": "Are you worried that your latest book will be compared to AI work?",
+        "D": "Is there a specific software that you use to help your writing?",
+        "E": "Will AI ever be able to write a full-length novel on its own?"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 68,
+      "section_id": "restatement",
+      "passage_id": null,
+      "question": "The hypothesis was rejected not because the data was inaccurate, but because the methodology was fundamentally flawed.",
+      "options": {
+        "A": "The inaccurate data led to the rejection of the hypothesis despite the sound methodology.",
+        "B": "The hypothesis was dismissed because the way the study was conducted was incorrect, not due to wrong data.",
+        "C": "Both the data and the methodology were so flawed that the hypothesis had to be rejected.",
+        "D": "The methodology was corrected after the hypothesis was rejected due to inaccurate data.",
+        "E": "If the data had been accurate, the flawed methodology would not have resulted in rejection."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 69,
+      "section_id": "restatement",
+      "passage_id": null,
+      "question": "Hardly had the new law been enacted when it met with fierce opposition from various civil rights groups.",
+      "options": {
+        "A": "Civil rights groups opposed the law long before it was officially enacted by the government.",
+        "B": "The new law was supported by most people until civil rights groups started to protest.",
+        "C": "As soon as the new law came into effect, it was strongly challenged by civil rights organizations.",
+        "D": "Because of the fierce opposition, the government decided not to enact the new law.",
+        "E": "The law was enacted despite the fact that civil rights groups had been opposing it for years."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 70,
+      "section_id": "restatement",
+      "passage_id": null,
+      "question": "Unlike his predecessors, the new CEO prioritizes sustainable growth over short-term quarterly profits.",
+      "options": {
+        "A": "The new CEO is similar to previous ones in his focus on long-term sustainability.",
+        "B": "Previous CEOs cared more about immediate profits than the current CEO does.",
+        "C": "Short-term profits are more important than sustainability for the new CEO.",
+        "D": "The new CEO has the same priorities as the CEOs who came before him.",
+        "E": "Sustainable growth was the main focus of all CEOs before the current one."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 71,
+      "section_id": "restatement",
+      "passage_id": null,
+      "question": "It is only through intensive reforestation efforts that we can hope to mitigate the effects of soil erosion in this region.",
+      "options": {
+        "A": "Soil erosion in this region will continue regardless of our reforestation efforts.",
+        "B": "Reforestation is one of many ways to stop soil erosion from happening.",
+        "C": "The only way to possibly reduce soil erosion here is by planting trees extensively.",
+        "D": "We hope to start reforestation after we find a solution for soil erosion.",
+        "E": "Intensive reforestation has already mitigated the effects of soil erosion in the region."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 72,
+      "section_id": "para_comp",
+      "passage_id": null,
+      "question": "The concept of the 'uncanny valley' describes the eerie sensation people feel when they encounter humanoid robots. As a robot becomes more human-like, our emotional response becomes increasingly positive. ________ However, when the resemblance is nearly perfect but slightly 'off,' the response turns into one of strong revulsion.",
+      "options": {
+        "A": "This is why most people prefer robots that look like machines.",
+        "B": "The more a robot looks like a human, the more we trust it unconditionally.",
+        "C": "This trend continues until a point where the robot looks almost, but not quite, human.",
+        "D": "Scientists have yet to find a way to make robots look truly human.",
+        "E": "Robots are becoming more common in the healthcare and service industries."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 73,
+      "section_id": "para_comp",
+      "passage_id": null,
+      "question": "Renewable energy sources such as wind and solar are crucial for a low-carbon future. However, their intermittent nature poses a challenge for the stability of the power grid. ________ To address this, researchers are developing advanced battery systems and pumped hydro storage to ensure a steady supply of electricity.",
+      "options": {
+        "A": "Electricity prices are expected to drop as technology improves.",
+        "B": "Energy storage is therefore essential to balance supply and demand.",
+        "C": "Solar panels are becoming more efficient every year.",
+        "D": "Nuclear power remains a controversial alternative to renewables.",
+        "E": "Many countries are still dependent on coal for their energy needs."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 74,
+      "section_id": "para_comp",
+      "passage_id": null,
+      "question": "In the world of literature, 'The Great Gatsby' is often cited as the definitive American novel. It explores themes of wealth, class, and the corruption of the American Dream during the Roaring Twenties. ________ Through the character of Jay Gatsby, Fitzgerald critiques a society obsessed with status and material success.",
+      "options": {
+        "A": "The novel was not very successful when it was first published.",
+        "B": "F. Scott Fitzgerald wrote the book while living in France.",
+        "C": "Its vivid depiction of the jazz age remains unparalleled in fiction.",
+        "D": "Most readers find the plot to be overly complicated and slow.",
+        "E": "The American Dream is a concept that appeals to people worldwide."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 75,
+      "section_id": "para_comp",
+      "passage_id": null,
+      "question": "The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones. This mathematical pattern is not just a theoretical curiosity. ________ From the arrangement of leaves on a stem to the spiral of a galaxy, the sequence appears with startling frequency.",
+      "options": {
+        "A": "It was first discovered by an Italian mathematician in the 13th century.",
+        "B": "Computers use this sequence to solve complex encryption problems.",
+        "C": "It is found throughout the natural world in various forms.",
+        "D": "Many students find it difficult to understand the logic behind it.",
+        "E": "The sequence starts with zero and one, followed by one, two, and three."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 76,
+      "section_id": "irrelevant",
+      "passage_id": null,
+      "question": "(I) Dark matter is an invisible substance that makes up about 27% of the universe. (II) It does not emit, absorb, or reflect light, making it extremely difficult to detect directly. (III) Astronomers observe its presence through its gravitational effects on visible matter. (IV) The James Webb Space Telescope was launched to study the early universe in infrared. (V) Without dark matter, galaxies would likely fly apart rather than rotate as they do.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 77,
+      "section_id": "irrelevant",
+      "passage_id": null,
+      "question": "(I) The Renaissance was a period of great cultural and intellectual rebirth in Europe. (II) It began in Italy in the 14th century and later spread to the rest of the continent. (III) During this time, artists like Leonardo da Vinci and Michelangelo created their masterpieces. (IV) The Black Death had previously wiped out a significant portion of the European population. (V) This era also saw significant advancements in science, politics, and philosophy.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 78,
+      "section_id": "irrelevant",
+      "passage_id": null,
+      "question": "(I) Photosynthesis is the process by which green plants use sunlight to synthesize nutrients. (II) It involves the conversion of carbon dioxide and water into glucose and oxygen. (III) Chlorophyll is the pigment responsible for capturing the light energy needed for this reaction. (IV) Some plants have adapted to live in desert environments with very little water. (V) This process is fundamental to life on Earth as it provides the primary source of energy for most organisms.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 79,
+      "section_id": "irrelevant",
+      "passage_id": null,
+      "question": "(I) Globalization has led to increased economic integration and cultural exchange between nations. (II) It has allowed for the rapid spread of technology and information across borders. (III) However, it has also been criticized for contributing to wealth inequality and the loss of local traditions. (IV) Many people now travel abroad for vacation more frequently than in the past. (V) Proponents argue that it promotes peace by making countries more dependent on one another.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 80,
+      "section_id": "irrelevant",
+      "passage_id": null,
+      "question": "(I) Cognitive Behavioral Therapy (CBT) is a common form of talk therapy used to treat anxiety and depression. (II) It focuses on identifying and changing negative thought patterns and behaviors. (III) Many therapists also use mindfulness techniques to help patients stay present. (IV) Sigmund Freud was the founder of psychoanalysis, which explores the unconscious mind. (V) CBT is generally considered to be a short-term, goal-oriented treatment approach.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D"
+    }
+  ]
 }
