@@ -463,8 +463,15 @@ body {
 #chatbotWindow {
     height: 500px !important;
     max-height: 500px !important;
-    display: flex !important;
     flex-direction: column !important;
+}
+
+#chatbotWindow.hidden {
+    display: none !important;
+}
+
+#chatbotWindow.flex {
+    display: flex !important;
 }
 
 #chatMessages {
