@@ -39,7 +39,13 @@
         "E": "conclusive"
       },
       "correct": "B",
-      "passage_id": null
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Cümledeki 'meaning they could not be replicated' (yani tekrar edilemediler) ifadesi, sonucun tutarlı olmadığını gösterir. 'Subsequent trials' ifadesi de zaman içindeki tutarsızlığı vurgular.",
+        "grammar": "Definition & Context Clues",
+        "vocabulary": ["Inconsistent (Tutarsız)", "Replicate (Kopyalamak/Tekrarlamak)", "Subsequent (Ardıl/Sonraki)"],
+        "trap": "Ambiguous (Belirsiz) kelimesi yanıltıcı olabilir ancak 'replicate' edilememe durumu doğrudan 'tutarsızlık' ile ilgilidir."
+      }
     },
     {
       "id": 2,
@@ -53,7 +59,13 @@
         "E": "vulnerable"
       },
       "correct": "A",
-      "passage_id": null
+      "passage_id": null,
+      "explanation": {
+        "tactic": "Despite (Rağmen) zıtlık bağlacı, 'setbacks' (aksilikler) ile 'pursuit' (peşinden gitme) arasındaki ilişkiyi kurar. Aksiliklere rağmen bir şeye devam etmek, 'resolute' (kararlı) olmayı gerektirir.",
+        "grammar": "Contrast Conjunctions (Despite)",
+        "vocabulary": ["Resolute (Kararlı)", "Setback (Aksilik/Gerileme)", "Pursuit (Arayış/Peşinden gitme)"],
+        "trap": "Skeptical (Şüpheci) kelimesi 'setback' sonrası mantıklı gelebilir ama 'pursuit' eylemine uymaz."
+      }
     },
     {
       "id": 3,
@@ -67,7 +79,13 @@
         "E": "minimal"
       },
       "correct": "C",
-      "passage_id": null
+      "passage_id": null,
+      "explanation": {
+        "tactic": "'Economic crisis' (Ekonomik kriz) ve 'widespread closures' (yaygın kapanmalar) arasındaki sebep-sonuç ilişkisine bakın. Kapanmalara yol açan etki ancak 'detrimental' (zararlı) olabilir.",
+        "grammar": "Cause-Effect Adjectives",
+        "vocabulary": ["Detrimental (Zararlı)", "Widespread (Yaygın)", "Closure (Kapanış)"],
+        "trap": "Negligible (Göz ardı edilebilir) kelimesi krizin tam zıt etkisini anlatır."
+      }
     },
     {
       "id": 4,
@@ -81,7 +99,13 @@
         "E": "perplexing"
       },
       "correct": "B",
-      "passage_id": null
+      "passage_id": null,
+      "explanation": {
+        "tactic": "'Even students with no prior knowledge could understand' ifadesi, dersin çok net ve anlaşılır olduğunu gösterir. Bu anlamı karşılayan kelime 'lucid' (berrak/açık) kelimesidir.",
+        "grammar": "Positive Concession (Even)",
+        "vocabulary": ["Lucid (Açık/Anlaşılır)", "Complex (Karmaşık)", "Prior knowledge (Ön bilgi)"],
+        "trap": "Obscure ve Perplexing, lucid kelimesinin tam zıttıdır."
+      }
     },
     {
       "id": 5,
@@ -95,7 +119,13 @@
         "E": "sanction"
       },
       "correct": "C",
-      "passage_id": null
+      "passage_id": null,
+      "explanation": {
+        "tactic": "'Old law' (Eski yasa) ve 'approval from activists' (aktivistlerin onayı) birleşince, yasanın kaldırıldığı (repeal) sonucuna ulaşıyoruz. Aktivistler genelde eski ve baskıcı yasaların iptalini isterler.",
+        "grammar": "Verb-Context Alignment",
+        "vocabulary": ["Repeal (Yürürlükten kaldırmak)", "Ratify (Onaylamak)", "Enforce (Uygulamak/Dayatmak)"],
+        "trap": "Ratify ve Uphold olumlu eylemlerdir ancak eski bir yasanın aktivistlerce 'iptali' daha büyük alkış alır."
+      }
     },
     {
       "id": 6,
