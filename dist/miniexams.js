@@ -414,7 +414,7 @@ function meFinishConfirm() {
 }
 
 function meFinish() {
-  feStarted = false;
+  meStarted = false;
   clearInterval(meTimerRef);
   
   let correct = 0;
@@ -430,8 +430,15 @@ function meFinish() {
   document.getElementById('meResultScreen').classList.remove('hidden');
   
   // Update Streak/Stats
-  updateStreak();
-  saveExamStat('mini', correct, total);
+  if (typeof window.saveQuizScoreFirestore === "function") {
+    const pct = Math.round((correct / total) * 100);
+    const xp = correct * 10;
+    const topic = (meExamData && meExamData.meta) ? meExamData.meta.title : "Mini Exam";
+    window.saveQuizScoreFirestore(pct, xp, topic).then(() => {
+        if (typeof updateGamification === "function") updateGamification();
+        if (typeof initCharts === "function") setTimeout(initCharts, 1000);
+    }).catch(console.error);
+  }
 
   meRenderReview();
 }
