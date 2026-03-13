@@ -11,8 +11,12 @@
   ],
   "passages": [
     {
-      "id": "passage_1",
-      "text": "The concept of the Anthropocene suggests that we have entered a new geological epoch characterized by the dominant influence of human activity on the Earth's ecosystems and geology. While the Holocene epoch covers the last 11,700 years of Earth's history, proponents of the Anthropocene argue that the mid-20th century marked a distinct shift. This period, often referred to as the Great Acceleration, saw a dramatic increase in human population, carbon dioxide emissions, and plastic consumption. Critics, however, argue that formalizing this epoch is premature, as the geological record requires millions of years to stabilize. Furthermore, some sociologists suggest that the term Anthropocene unfairly blames all of humanity for the actions of industrialized nations, proposing Capitalocene as a more accurate alternative. Despite these debates, the term has gained significant traction in both scientific discourse and the humanities, serving as a powerful metaphor for the scale of environmental degradation."
+      "id": "passage_2",
+      "text": "Human memory is often compared to a video recording that can be played back to revisit past events. However, cognitive psychologists argue that this analogy is fundamentally flawed. Unlike a digital recording, memory is a reconstructive process. Every time we recall an event, our brains piece together fragments of information, which can be influenced by our current beliefs, expectations, and even suggestions from others. Over time, these reconstructions can lead to significant distortions, a phenomenon known as the misinformation effect. Studies have shown that even highly confident individuals can develop 'false memories' of events that never occurred. Therefore, relying solely on eyewitness testimony in legal settings has become a subject of intense scrutiny, as the malleability of human memory can lead to wrongful convictions."
+    },
+    {
+      "id": "passage_3",
+      "text": "The rise of renewable energy sources, such as solar and wind power, is often hailed as the ultimate solution to the global climate crisis. While these technologies have seen significant cost reductions and efficiency improvements over the last decade, their integration into existing power grids presents substantial technical challenges. The primary issue is intermittency; solar panels do not produce power at night, and wind turbines remain idle when there is no wind. To maintain a stable supply of electricity, governments must invest heavily in energy storage systems and smart grid infrastructure. Additionally, the transition requires a shift in policy and economic incentives, as traditional fossil fuel industries still receive considerable subsidies. Moving towards a zero-carbon future is therefore not just a technical hurdle but also a socio-political as well as economic transformation."
     }
   ],
   "questions": [
@@ -80,7 +84,49 @@
       }
     },
     {
-      "id": 11,
+      "id": 4,
+      "section_id": "RC_set1",
+      "question": "It can be inferred from the passage that the term Capitalocene:",
+      "options": {
+        "A": "Is widely accepted by all geologists",
+        "B": "Refers to a period of stability in the geological record",
+        "C": "Focuses on the specific role of industrial economic systems",
+        "D": "Is a synonym for the Holocene epoch",
+        "E": "Suggests that all humans are equally responsible for climate change"
+      },
+      "correct": "C",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Metindeki 'unfairly blames all of humanity for the actions of industrialized nations' ifadesi Capitalocene teriminin çıkış noktasıdır.",
+        "tactic": "Adım 1: 'Capitalocene' kelimesini bul. Adım 2: Sosyologların bu terimi neden önerdiğine bak (industrialsed nations vurgusu). Adım 3: Endüstriyel ekonomik sistemlerin rolüne odaklanan C şıkkını seç.",
+        "elimination": "E şıkkı pasajdaki 'unfairly blames all of humanity' eleştirisiyle zıt düşer. A şıkkındaki 'widely accepted' (yaygın kabul gören) ifadesi için metinde bir kanıt yoktur.",
+        "grammar": "Inference and Contextual Meaning",
+        "trap": "Inference sorularında metinde birebir geçmeyen ancak metinden çıkarılabilecek en yakın 'akademik özeti' bulmalısınız."
+      }
+    },
+    {
+      "id": 5,
+      "section_id": "RC_set1",
+      "question": "What is the author's primary purpose in writing this passage?",
+      "options": {
+        "A": "To prove that the Anthropocene is a scientifically valid epoch",
+        "B": "To discuss the history of the Holocene epoch in detail",
+        "C": "To provide an overview of the concept and debates surrounding the Anthropocene",
+        "D": "To criticize industrialized nations for environmental degradation",
+        "E": "To promote the use of solar and wind energy"
+      },
+      "correct": "C",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Metin hem tanım (concept) hem de eleştiriler ve alternatif görüşler (debates) üzerine kuruludur.",
+        "tactic": "Adım 1: Pasajın bütününe bak. Bir tarafı tutmak yerine konuyu ve tartışmaları aktarıyor. Adım 2: 'Overview' (genel bakış) ve 'debates' (tartışmalar) kelimelerini içeren C şıkkını işaretle.",
+        "elimination": "A şıkkı tek taraflıdır (ispatlama amacı gütmüyor). D şıkkı sadece bir detaydır. E şıkkı ise pasajda hiç yer almamaktadır.",
+        "grammar": "Author's Purpose / Main Idea",
+        "trap": "Soru metnin tamamını mı yoksa bir kısmını mı kapsıyor? 'Primary purpose' tüm metni kapsamalıdır."
+      }
+    },
+    {
+      "id": 6,
       "section_id": "RC_set1",
       "question": "The passage compares human memory to a video recording to:",
       "options": {
@@ -98,6 +144,90 @@
         "elimination": "A şıkkı benzerliği vurgular (yanlış). D şıkkı hafızanın değişmez (immutable) olduğunu söyler (metne göre hatalı).",
         "grammar": "Understanding Analogies and Contrasts",
         "trap": "Pasajda bir şey X'e benzetiliyorsa genelde farkını anlatmak içindir; 'Similarities' şıklarına hemen atlamayın."
+      }
+    },
+    {
+      "id": 7,
+      "section_id": "RC_set1",
+      "question": "According to passage 2, what is the 'misinformation effect'?",
+      "options": {
+        "A": "The inability to recall any events from childhood",
+        "B": "A process where memories become distorted over time",
+        "C": "The brain's ability to record events with 100% accuracy",
+        "D": "The effect of digital technology on cognitive functions",
+        "E": "A method used by psychologists to improve memory reliability"
+      },
+      "correct": "B",
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "'reconstructions can lead to significant distortions, a phenomenon known as...' tanımı bu terimi açıklar.",
+        "tactic": "Adım 1: 'Misinformation effect' terimini metinde bul. Adım 2: Hemen öncesindeki 'distortions' (bozulmalar/çarpıtmalar) kelimesine bak. Adım 3: 'Memories become distorted' diyen B şıkkını işaretle.",
+        "elimination": "C şıkkı metnin 'errors in memory' temasının tam zıttıdır. D şıkkı genel bir teknoloji yorumudur, pasajda bu kapsamda geçmez.",
+        "grammar": "Vocabulary in Context / Definition",
+        "trap": "Misinformation kelimesi sizi 'yalan haber' gibi güncel anlamlara götürebilir; pasajdaki 'memory distortion' bağlamında kalın."
+      }
+    },
+    {
+      "id": 8,
+      "section_id": "RC_set1",
+      "question": "What is the main concern regarding eyewitness testimony in legal settings?",
+      "options": {
+        "A": "Witnesses are often too afraid to speak in court",
+        "B": "Memory can be manipulated or distorted, potentially leading to errors in justice",
+        "C": "Psychologists are rarely allowed to testify",
+        "D": "Video recordings are preferred over human witnesses",
+        "E": "Judges do not understand the science of memory"
+      },
+      "correct": "B",
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "Hukuksal bağlam (legal settings) pasajın sonunda 'malleability (şekillendirilebilir/değişebilir olma) can lead to wrongful convictions' şeklinde verilmiştir.",
+        "tactic": "Adım 1: 'Legal settings' veya 'eyewitness' kelimelerini ara. Adım 2: Hafızanın 'malleability' (değişkenliği) ve 'wrongful convictions' (hatalı mahkumiyetler) arasındaki bağı kur. Adım 3: B şıkkını işaretle.",
+        "elimination": "A şıkkı (korku) metinde yer almaz. D şıkkı (tercih edilme) metinde bir karşılaştırma olarak verilse de asıl 'concern' (endişe) değildir.",
+        "grammar": "Passage Implications",
+        "trap": "EYEwitness kelimesi bazen 'gözlem' yeteneğiyle karıştırılır; burada kök sorun 'hafıza' kayıtlarının güvenilirliğidir."
+      }
+    },
+    {
+      "id": 9,
+      "section_id": "RC_set1",
+      "question": "In passage 3, the word 'intermittency' refers to:",
+      "options": {
+        "A": "The high cost of maintaining solar panels",
+        "B": "The irregular nature of energy production from renewable sources",
+        "C": "The inefficiency of traditional power grids",
+        "D": "The global demand for electricity during at night",
+        "E": "The technical difficulty of manufacturing wind turbines"
+      },
+      "correct": "B",
+      "passage_id": "passage_3",
+      "explanation": {
+        "logical_structure": "'Intermittency' kelimesinden sonra gelen noktalı virgül (;) ve 'solar panels do not produce power at night' örneği kelimeyi tanımlar.",
+        "tactic": "Adım 1: 'Intermittency' kelimesini pasajda bul. Adım 2: Örneklere bak (gece güneş yok, rüzgar yoksa enerji yok). Adım 3: 'Irregular' (düzensiz/aralıklı) kavramını karşılayan B şıkkını seç.",
+        "elimination": "A (Cost) ve E (Manufacturing) teknik/ekonomik zorluklardır ancak 'intermittency' sadece enerji akışının sürekliliğiyle ilgilidir.",
+        "grammar": "Contextual Definitions with Punctuation (Semicolons)",
+        "trap": "Intermittency, yenilenebilir enerji metinlerinin 1 numaralı teknik çözümleme kelimesidir."
+      }
+    },
+    {
+      "id": 10,
+      "section_id": "RC_set1",
+      "question": "According to passage 3, what is required for a successful transition to a zero-carbon future?",
+      "options": {
+        "A": "Solely focusing on making solar panels more efficient",
+        "B": "Exclusively providing more subsidies to fossil fuel industries",
+        "C": "A combination of technical infrastructure and socio-political shifts",
+        "D": "Waiting for the geological record to stabilize naturally",
+        "E": "Ignoring the environmental impact of electricity production"
+      },
+      "correct": "C",
+      "passage_id": "passage_3",
+      "explanation": {
+        "logical_structure": "Metnin son cümlesi 'not just a technical hurdle but also a socio-political as well as economic transformation' diyerek sentez yapar.",
+        "tactic": "Adım 1: 'Transition' ve 'zero-carbon' kısımlarını bul. Adım 2: 'Not only... but also' mantığını (technical + socio-political) kavra. Adım 3: 'Combination' diyen C şıkkını işaretle.",
+        "elimination": "A şıkkındaki 'solely' (sadece) kısıtlaması metindeki 'transformation' (dönüşüm) fikrine dardır. B şıkkı metne göre 'yapılmaması' gereken bir durumdur.",
+        "grammar": "Synthesizing Complex Sentences",
+        "trap": "Solely, Exclusively, Only gibi sınırlayıcı kelimeler içeren şıklar %90 yanlıştır."
       }
     }
   ]

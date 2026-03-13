@@ -91,6 +91,156 @@
         "grammar": "Past vs Present Context",
         "trap": "Stability (istikrar) kelimesiyle en iyi 'assured' (garanti altına alınmış) sıfatı uyum sağlar."
       }
+    },
+    {
+      "id": 6,
+      "section_id": "cloze_test_1",
+      "question": "(6)",
+      "options": { "A": "Furthermore", "B": "Instead", "C": "Otherwise", "D": "Nevertheless", "E": "In contrast" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Önceki cümlede gezegen sınırlarının zorlandığından bahsedildi, şimdi biyoçeşitlilik kaybı ekleniyor.",
+        "tactic": "Adım 1: İki cümle arasındaki ilişkiye bak. İkisi de negatif ve birbirini destekleyen (eklemeli) bilgiler. Adım 2: 'Dahası/Ayrıca' anlamına gelen 'Furthermore' bağlacını seç.",
+        "elimination": "B (Instead), D (Nevertheless) ve E (In contrast) zıttık veya alternatif bildirir. Burada anlamı ileri taşıyan bir ekleme (addition) gerekiyor.",
+        "grammar": "Additive Transitions",
+        "trap": "Furthermore ve Moreover birbirinin yerine kullanılabilir, ancak zıtlık bağlaçları burada anlam akışını bozar."
+      }
+    },
+    {
+      "id": 7,
+      "section_id": "cloze_test_1",
+      "question": "(7)",
+      "options": { "A": "shifts", "B": "absolves", "C": "integrates", "D": "overlooks", "E": "justifies" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Eleştirmenlerin görüşü: Sorumluluğu sanayileşmiş ülkelerden tüm insanlığa 'kaydırmak/yıkmak'.",
+        "tactic": "Adım 1: 'responsibility ... onto humanity' yapısını gör. Adım 2: Sorumluluğu bir yerden bir yere aktarmak anlamındaki 'Shift' fiilini seç.",
+        "elimination": "B (Absolves-Aklamak) ve D (Overlooks-Göz ardı etmek) cümlenin 'suçlama/sorumluluk' mantığına terstir. C (Integrates) ise sorumluluğu birleştirmek demektir, eleştiri bağlamına uymaz.",
+        "grammar": "Verb-Preposition: Shift ... onto",
+        "trap": "Shift ... onto yapısı, bir yükü veya suçu başkasına aktarmak anlamında çok yaygın kullanılır."
+      }
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test_1",
+      "question": "(8)",
+      "options": { "A": "Regardless", "B": "Therefore", "C": "Similarly", "D": "Initially", "E": "Specifically" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Eleştirilere rağmen (Regardless), kanıtlar yadsınamaz (undeniable).",
+        "tactic": "Adım 1: Önceki cümlede bir eleştiri/tartışma var. Bu cümlede 'undeniable' (inkar edilemez) deniyor. Adım 2: 'Tüm bunlara rağmen' anlamındaki 'Regardless' (veya Yet/However) yapısını ara.",
+        "elimination": "B (Therefore) ve C (Similarly) sebep-sonuç veya benzerlik kurar; oysa burada bir zıtlık/itiraz durumu var.",
+        "grammar": "Concessive Connectors",
+        "trap": "Regardless, 'ne olursa olsun/eleştirilere bakılmaksızın' anlamıyla metin bütünlüğünü sağlar."
+      }
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test_1",
+      "question": "(9)",
+      "options": { "A": "deposition", "B": "evolution", "C": "regression", "D": "suspension", "E": "translation" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Azotun toprakta birikmesi/çökmesi jeolojik bir iz bırakır.",
+        "tactic": "Adım 1: Jeolojik kanıt bağlamına bak. Adım 2: 'Nitrogen deposition' (azot birikimi/çökelmesi) teknik terimini belirle.",
+        "elimination": "B (Evolution) ve C (Regression) genel biyolojik veya istatistiksel terimlerdir; burada çevresel bir 'iz' (deposit) söz konusudur.",
+        "grammar": "Scientific Collocations",
+        "trap": "Deposition, hem 'ifade vermek' hem de jeolojik 'birikme' anlamına gelir; YDS fen metinlerinde jeolojik anlamı çıkar."
+      }
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test_1",
+      "question": "(10)",
+      "options": { "A": "address", "B": "avoid", "C": "aggravate", "D": "dismiss", "E": "neglect" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Küresel zorlukları (global challenges) çözmek/ele almak için bir yaklaşım gerekiyor.",
+        "tactic": "Adım 1: 'Challenges' (zorluklar) ile hangi fiilin kullanıldığını hatırla. Adım 2: Ele almak, üstesinden gelmeye çalışmak anlamındaki 'Address' fiilini seç.",
+        "elimination": "C (Aggravate-Kötüleştirmek) ve E (Neglect-İhmal etmek) çözüm arayışıyla (multidisciplinary approach) çelişir.",
+        "grammar": "Collocation: Address a challenge",
+        "trap": "Address kelimesinin 'adres' anlamı dışında 'bir sorunu ele almak' anlamı YDS'nin en sevdiği tuzaklardan biridir."
+      }
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test_1",
+      "question": "(11)",
+      "options": { "A": "contend", "B": "refute", "C": "disprove", "D": "ignore", "E": "suspect" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Akademisyenlerin bir iddiayı savunması veya öne sürmesi.",
+        "tactic": "Adım 1: Akademik iddia fiillerinden birini bul. Adım 2: 'Öne sürmek/iddia etmek' anlamına gelen 'Contend' kelimesini seç.",
+        "elimination": "B (Refute) ve C (Disprove) çürütmek demektir. Metin ise tehlikenin geri dönülemez olduğunu destekliyor (çürütmüyor).",
+        "grammar": "Academic Reporting Verbs",
+        "trap": "Contend, hem çekişmek hem de bir fikri savunmak (claim) anlamındadır."
+      }
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test_1",
+      "question": "(12)",
+      "options": { "A": "deleterious", "B": "miraculous", "C": "superficial", "D": "negligible", "E": "temporary" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "İklime olan zararlı etkilerin geri dönülemez (irreversible) olması.",
+        "tactic": "Adım 1: 'Effects' (etkiler) ismini niteleyecek bir sıfat bul. Adım 2: 'Irreversible' (geri dönülemez) ile uyumlu 'zararlı' anlamındaki 'Deleterious' kelimesini seç.",
+        "elimination": "B (Miraculous) pozitif, D (Negligible) ve E (Temporary) ise önemsiz/geçici demektir; bunlar iklim krizi bağlamına uymaz.",
+        "grammar": "Adjective-Noun Agreement",
+        "trap": "Deleterious, 'harmful' kelimesinin üst düzey akademik karşılığıdır."
+      }
+    },
+    {
+      "id": 13,
+      "section_id": "cloze_test_1",
+      "question": "(13)",
+      "options": { "A": "necessitates", "B": "prevents", "C": "obstructs", "D": "eliminates", "E": "contradicts" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Bu geçiş (transition), inovasyonu ve temel değişimi zorunlu kılıyor.",
+        "tactic": "Adım 1: Bir hedefe ulaşmak için ne gerektiğini belirtiyoruz. Adım 2: 'Gerekli kılmak/zorunlu kılmak' anlamına gelen 'Necessitates' fiilini seç.",
+        "elimination": "B (Prevents) ve C (Obstructs) engellemek demektir; geçiş inovasyonu engellemez, tam tersi talep eder.",
+        "grammar": "Requirement Verbs",
+        "trap": "Necessitates, 'require' fiilinin daha teknik bir versiyonudur."
+      }
+    },
+    {
+      "id": 14,
+      "section_id": "cloze_test_1",
+      "question": "(14)",
+      "options": { "A": "paradigm shift", "B": "random error", "C": "minor detail", "D": "temporary halt", "E": "gradual decline" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Toplumların değer yargılarında köklü bir değişim (shift).",
+        "tactic": "Adım 1: 'fundamental ____' yapısını gör. Adım 2: Köklü değişimleri anlatan 'paradigm shift' (paradigma değişimi) akademik kalıbını tamamla.",
+        "elimination": "B, C, D seçenekleri değişimin 'küçük' veya 'hatalı' olduğunu söyler; oysa metin köklü bir değişimden bahsediyor.",
+        "grammar": "Academic Collocations",
+        "trap": "Paradigm shift, toplumsal veya bilimsel büyük değişimler için kullanılan en prestijli kalıptır."
+      }
+    },
+    {
+      "id": 15,
+      "section_id": "cloze_test_1",
+      "question": "(15)",
+      "options": { "A": "consequences", "B": "intentions", "C": "precedents", "D": "incentives", "E": "pretexts" },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "logical_structure": "Bugünkü eylemlerimizin gelecekteki sonuçları (consequences) jeolojik kaydı belirleyecek.",
+        "tactic": "Adım 1: 'Actions' (eylemler) ve 'define the record' (kaydı belirlemek) arasındaki bağı kur. Adım 2: Eylemlerin 'sonuçları' anlamındaki 'Consequences' kelimesini seç.",
+        "elimination": "B (Intentions-Niyetler) kaydı belirlemez, eylemlerin sonucu belirler. D (Incentives-Teşvikler) ise bir şeyi yaptırmak için verilen ödüllerdir.",
+        "grammar": "Action-Outcome Relations",
+        "trap": "Consequences hem olumlu hem olumsuz olabilir, ancak burada jeolojik bir 'netice' anlamındadır."
+      }
     }
   ]
 }

@@ -71,7 +71,127 @@
       }
     },
     {
-      "id": 31,
+      "id": 5,
+      "section_id": "dialogue_set1",
+      "question": "Journalist: Many citizens are worried about the privacy implications of the new surveillance law. Minister: _________ Journalist: But how can you guarantee that this data won't be misused by future administrations?",
+      "options": {
+        "A": "The law is designed to enhance public safety, not to intrude on private lives.",
+        "B": "Privacy is a luxury that we can no longer afford in this digital age.",
+        "C": "We plan to implement even more cameras in city centers next year.",
+        "D": "The opposition party has been spreading false information about the bill.",
+        "E": "Citizens should be more concerned about cybercrime than surveillance."
+      },
+      "correct": "A",
+      "explanation": {
+        "logical_structure": "Gazetecinin 'But how can you guarantee...' itirazı, Bakanın öncesinde bir 'güvence' verdiğini gösterir.",
+        "tactic": "Adım 1: Boşluktan sonraki 'But' (Ama) bağlacına odaklan. Bakanın 'rahatlatıcı' bir şey söylediğini anla. Adım 2: Özel hayatın korunacağını savunan A şıkkını seç.",
+        "elimination": "B şıkkı çok serttir ve güvence vermez. C şıkkı endişeyi artırır. D şıkkı ise konuyu saptırır.",
+        "grammar": "Ministerial/Official Response Patterns",
+        "trap": "Resmi diyaloglarda yetkililer genelde 'niyet' (designed to...) üzerinden savunma yaparlar."
+      }
+    },
+    {
+      "id": 6,
+      "section_id": "dialogue_set1",
+      "question": "Archeologist A: This pottery style suggests a connection between these two island cultures. Archeologist B: _________ Archeologist A: You're right. We should wait for the radiocarbon dating results before making such a claim.",
+      "options": {
+        "A": "It's undeniable; the patterns are identical in every detail.",
+        "B": "But couldn't it simply be a case of independent evolution of similar styles?",
+        "C": "I've always believed that these two cultures traded extensively.",
+        "D": "The excavation has been delayed due to the heavy monsoon season.",
+        "E": "Where exactly did you find these specific ceramic fragments?"
+      },
+      "correct": "B",
+      "explanation": {
+        "logical_structure": "Archeologist A'nın 'You're right. We should wait...' (Haklısın, beklemeliyiz) cevabı, B'nin bir 'şüphe' belirttiğini gösterir.",
+        "tactic": "Adım 1: Son cümledeki 'bekleme ve kesin olmayan iddia' vurgusunu yakala. Adım 2: B'nin 'farklı bir ihtimal' sunduğu şıkkı bul. Sonuç: 'Independent evolution' ihtimali şıkkıdır.",
+        "elimination": "A şıkkı kesinlik bildirir (beklemeye gerek duymazdı). C, D, E ise bilimsel şüphe doğuracak nitelikte değildir.",
+        "grammar": "Scientific Skepticism in Dialogue",
+        "trap": "Bilimsel diyaloglarda 'Wait for results' cevabı geliyorsa, önceki söz mutlaka bir 'alternatif teori' veya 'şüphedir'."
+      }
+    },
+    {
+      "id": 7,
+      "section_id": "dialogue_set1",
+      "question": "Patient: I’ve been feeling extremely fatigued lately, even after a full night's sleep. Doctor: _________ Patient: Actually, no. I’ve been quite stressed at work, and my diet hasn't been great either.",
+      "options": {
+        "A": "Have you noticed any other symptoms like headaches or dizziness?",
+        "B": "Are you currently taking any supplements for your energy levels?",
+        "C": "Has there been any significant change in your exercise routine recently?",
+        "D": "Do you think your fatigue is related to a specific medical condition?",
+        "E": "Is this a common problem among your family members as well?"
+      },
+      "correct": "C",
+      "explanation": {
+        "logical_structure": "Hastanın 'Actually, no' (Aslında hayır) ve sonrasında stres/diyetten bahsetmesi, doktorun 'fiziksel bir aktivite/değişim' sorduğunu gösterir.",
+        "tactic": "Adım 1: Hastanın 'Hayır' dediği şeyi ve sonra 'Stres/Diyet' (alternatif sebepler) sunduğunu gör. Adım 2: Yaşam tarzıyla ilgili bir soru ara. Sonuç: C şıkkı.",
+        "elimination": "A ve B şıklarına 'Aslında hayır' diyerek stres/diyete geçmek pek doğal olmaz. C şıkkındaki 'egzersiz' sorusu, hastanın 'hayır, stres' cevabıyla tam örtüşür.",
+        "grammar": "Medical History Taking Patterns",
+        "trap": "Actually, no ifadesi genelde 'beklenen bir durumun olmadığını' anlatmak için kullanılır."
+      }
+    },
+    {
+      "id": 8,
+      "section_id": "dialogue_set1",
+      "question": "Emily: The play was decent, but the lead actor’s performance felt a bit forced. Mark: _________ Emily: I suppose you’re right. It was his professional debut, after all.",
+      "options": {
+        "A": "I agree; he clearly lacked the necessary emotional depth.",
+        "B": "To be fair, he might have been nervous performing in front of such a large crowd.",
+        "C": "The directing was even worse than the acting, in my opinion.",
+        "D": "Did you know that he studied at the Royal Academy of Dramatic Art?",
+        "E": "Maybe we should check the reviews in tomorrow's newspaper."
+      },
+      "correct": "B",
+      "explanation": {
+        "logical_structure": "Emily'nin 'I suppose you’re right' ve 'Professional debut' (ilk sahneye çıkış) demesi, Mark'ın bir 'mazeret' sunduğunu gösterir.",
+        "tactic": "Adım 1: Emily'nin 'Debut' (ilk çıkış) bilgisinden Mark'ın 'acemilik/heyecan' mazereti sunduğunu çıkar. Adım 2: 'To be fair... nervous' diyen B şıkkını seç.",
+        "elimination": "A şıkkı sadece eleştiriyi sertleştirir, mazeret sunmaz. D şıkkı ise eğitimi övür, bu da 'forcing' eleştirisiyle zıt düşer.",
+        "grammar": "Counter-Arguments / Defending a Point",
+        "trap": "Diyalogda bir eleştiriye 'To be fair' (Yiğidi öldür hakkını yeme / Haklılık payı var ki) ile başlanıyorsa genelde yumuşatıcı bir sebep sunulur."
+      }
+    },
+    {
+      "id": 9,
+      "section_id": "dialogue_set1",
+      "question": "Physics Professor: Many students find the concept of quantum entanglement counterintuitive. Assistant: _________ Physics Professor: Exactly. Our task is to find analogies that bridge that conceptual gap.",
+      "options": {
+        "A": "That's because it contradicts our everyday experience of reality.",
+        "B": "I think we should skip that chapter and focus on classical mechanics.",
+        "C": "The textbook we are using explains it quite clearly, don't you think?",
+        "D": "How many students actually failed the midterm exam last semester?",
+        "E": "Quantum physics has always been my favorite subject to teach."
+      },
+      "correct": "A",
+      "explanation": {
+        "logical_structure": "Profesörün 'Exactly' (Kesinlikle) demesi ve 'Analogies' (Benzetmeler) ihtiyacından bahsetmesi, asistanın 'neden zor olduğunu' açıkladığını gösterir.",
+        "tactic": "Adım 1: 'Counterintuitive' (sezgilere aykırı) kelimesinin nedenini ara. Adım 2: Günlük tecrübe ile çeliştiğini söyleyen A şıkkını seç.",
+        "elimination": "B şıkkı pes etmektir (akademik diyaloglarda pek olmaz). C şıkkı profesörle zıtlaşır. D ve E ise alakasızdır.",
+        "grammar": "Explanation and Agreement",
+        "trap": "Exactly onay kelimesi, boşluktaki cümlenin bir 'tespit/teşhis' olduğunu gösterir."
+      }
+    },
+    {
+      "id": 10,
+      "section_id": "dialogue_set1",
+      "question": "Tech Analyst: The company’s decision to open-source their AI model is quite surprising. Reporter: _________ Tech Analyst: True, but it also allows them to leverage the global developer community to fix bugs faster.",
+      "options": {
+        "A": "They probably want to dominate the market by making it free.",
+        "B": "Won't that give their competitors a significant advantage for free?",
+        "C": "Open-source software is generally more secure than proprietary ones.",
+        "D": "How much did they invest in the development of this model?",
+        "E": "The CEO mentioned this possibility in a tweet last year."
+      },
+      "correct": "B",
+      "explanation": {
+        "logical_structure": "Analistin 'True, but...' (Doğru, ama...) diyerek avantajdan bahsetmesi, muhabirin bir 'dezavantaj/risk' sorduğunu gösterir.",
+        "tactic": "Adım 1: Analistin 'But' sonrası 'avantaj' (fix bugs) dediğini gör. Adım 2: Öncesinde (boşlukta) bir 'risk/eleştiri' cümlesi ara. Sonuç: Rakip avantajı (competitors advantage) bir risktir.",
+        "elimination": "A şıkkı bir tahminidir ama risk içermez. C şıkkı direkt avantajdan bahseder (Analist 'True, but' diyemezdi).",
+        "grammar": "Risk-Benefit Analysis in Dialogue",
+        "trap": "True, but yapısı bir eleştiriyi kabul edip karşı argüman sunmak için kullanılır."
+      }
+    },
+    {
+      "id": 11,
       "section_id": "dialogue_set2",
       "question": "Professor: I noticed you missed the seminar on semiotics yesterday. Student: I apologize, Professor. I was dealing with a personal emergency. Professor: _________ Student: That would be very helpful. I will stop by during your consultation hours.",
       "options": {
