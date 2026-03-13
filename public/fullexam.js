@@ -19,8 +19,7 @@ const FULL_EXAM_LIST = [
   { id: 'full12', label: 'Tam Deneme 12', file: '/exams/full/fullexam12.json' },
   { id: 'full13', label: 'Tam Deneme 13', file: '/exams/full/fullexam13.json' },
   { id: 'full14', label: 'Tam Deneme 14', file: '/exams/full/fullexam14.json' },
-  { id: 'full15', label: 'Tam Deneme 15', file: '/exams/full/fullexam15.json' },
-  { id: 'full16', label: 'Tam Deneme 16', file: '/exams/full/fullexam16.json' }
+  { id: 'full15', label: 'Tam Deneme 15', file: '/exams/full/fullexam15.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────
