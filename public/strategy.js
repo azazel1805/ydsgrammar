@@ -7,7 +7,7 @@ let currentQuestionIndex = 0;
 
 async function loadCategory(category) {
     currentCategory = category;
-    const path = `public/exams/strategy/${category}.json`;
+    const path = `/exams/strategy/${category}.json`;
     
     showLoader();
     try {

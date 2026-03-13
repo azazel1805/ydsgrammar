@@ -78,18 +78,18 @@ const miniexamsHTML = `
 
   <div id="meStartScreen" class="space-y-12">
     <div class="space-y-10">
-      \${CATEGORICAL_MINI_LIST.map(cat => `
+      ${CATEGORICAL_MINI_LIST.map(cat => `
         <div>
           <div class="flex items-center gap-2 mb-4 text-slate-500 font-bold uppercase tracking-widest text-xs">
-            <i class="fas \${cat.icon} text-sm"></i>
-            <span>\${cat.category}</span>
+            <i class="fas ${cat.icon} text-sm"></i>
+            <span>${cat.category}</span>
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
-            \${cat.exams.map(e => `
-              <div onclick="meSelectExam('\${e.id}')" id="meCard-\${e.id}"
+            ${cat.exams.map(e => `
+              <div onclick="meSelectExam('${e.id}')" id="meCard-${e.id}"
                 class="me-exam-card cursor-pointer border border-slate-200 rounded-xl p-4 hover:border-red-300 hover:bg-red-50/30 transition-all text-center group">
-                <p class="text-sm font-bold text-slate-700 group-hover:text-red-800 mb-1">\${e.label}</p>
-                <p class="text-[10px] text-slate-400 font-medium uppercase tracking-tight">\${e.info}</p>
+                <p class="text-sm font-bold text-slate-700 group-hover:text-red-800 mb-1">${e.label}</p>
+                <p class="text-[10px] text-slate-400 font-medium uppercase tracking-tight">${e.info}</p>
               </div>
             `).join('')}
           </div>
