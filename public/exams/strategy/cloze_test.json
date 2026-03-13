@@ -32,11 +32,11 @@
     },
     {
       "id": "passage_2",
-      "text": "Artificial Intelligence (AI) has undergone a (16)____ transformation since its inception in the 1950s. Initially, researchers (17)____ on symbolic AI, which relied on hard-coded rules. However, this approach (18)____ to be insufficient for complex tasks like image recognition. The (19)____ of machine learning shifted the focus toward algorithms that could learn from data. By (20)____ vast amounts of information, these systems can now (21)____ patterns that were previously invisible to human analysts. (22)____, the rise of deep learning, inspired by the structure of the human brain, has further (23)____ the field. Despite these advancements, ethical (24)____ remain a primary concern. There is a fear that biased data could (25)____ existing social inequalities. Furthermore, the (26)____ nature of 'black box' algorithms makes it difficult to understand how certain decisions are (27)____. To mitigate these risks, many organizations are (28)____ for 'Explainable AI'. This movement (29)____ to make the decision-making process more transparent. Ultimately, the goal is to create systems that (30)____ human intelligence rather than replace it."
+      "text": "Artificial Intelligence (AI) has undergone a (16)____ transformation since its inception in the 1950s. Initially, researchers (17)____ on symbolic AI, which relied on hard-coded rules. However, this approach (18)____ to be insufficient for complex tasks like image recognition. The (19)____ of machine learning shifted the focus toward algorithms that could learn from data. By (20)____ vast amounts of information, these systems can now (21)____ patterns that were previously invisible to human analysts. (22)____, the rise of deep learning, inspired by the structure of the human brain, (23)____ the field even further. Despite these advancements, ethical (24)____ remain a primary concern. There is a fear that biased data could (25)____ existing social inequalities. Furthermore, the (26)____ nature of 'black box' algorithms makes it difficult to understand how certain decisions (27)____. To mitigate these risks, many organizations are (28)____ for 'Explainable AI'. This movement (29)____ to make the decision-making process more transparent. Ultimately, the goal is to create systems that (30)____ human intelligence rather than replace it."
     },
     {
       "id": "passage_3",
-      "text": "Understanding how students (31)____ knowledge is central to educational psychology. For decades, the behaviorist perspective (32)____ that learning was primarily a response to external stimuli. In (33)____, the constructivist theory suggests that learners (34)____ build their own understanding based on prior experiences. This shift has led to more (35)____ learning environments where students are encouraged to explore. One (36)____ factor in successful learning is metacognition, or the ability to (37)____ one's own thought processes. Students who possess high metacognitive skills are better at (38)____ goals and monitoring their progress. (39)____, motivation plays a (40)____ role in academic achievement. Intrinsic motivation, which (41)____ from an internal desire to learn, is generally more sustainable than extrinsic motivation. However, the (42)____ of modern classrooms often makes it difficult to foster such engagement. Teachers must (43)____ various instructional strategies to cater to diverse learning styles. (44)____, the use of technology in the classroom has (45)____ both opportunities and challenges. While digital tools can (46)____ collaboration, they can also serve as (47)____ if not managed properly. Research (48)____ that a balanced approach, combining traditional methods with digital (49)____, yields the best results. Educators must remain (50)____ to new findings in the field to optimize student outcomes."
+      "text": "Understanding how students (31)____ knowledge is central to educational psychology. For decades, the behaviorist perspective (32)____ that learning was primarily a response to external stimuli. In (33)____, the constructivist theory suggests that learners (34)____ build their own understanding based on prior experiences. This shift has led to more (35)____ learning environments where students are encouraged to explore. One (36)____ factor in successful learning is metacognition, or the ability to (37)____ one's own thought processes. Students who possess high metacognitive skills are better at (38)____ goals and monitoring their progress. (39)____, motivation plays a (40)____ role in academic achievement. Intrinsic motivation, which (41)____ from an internal desire to learn, is generally more sustainable than extrinsic motivation. However, the (42)____ of modern classrooms often makes it difficult to foster such engagement. Teachers must (43)____ various instructional strategies to cater to diverse learning styles. (44)____, the use of technology in the classroom (45)____ both opportunities and challenges. While digital tools can (46)____ collaboration, they can also serve as (47)____ if not managed properly. Research (48)____ that a balanced approach, combining traditional methods with digital (49)____, yields the best results. Educators must remain (50)____ to new findings in the field to optimize student outcomes."
     }
   ],
   "questions": [
@@ -89,18 +89,18 @@
       "options": {
         "A": "marked",
         "B": "has marked",
-        "C": "marking",
-        "D": "was marked",
-        "E": "marks"
+        "C": "marks",
+        "D": "is marking",
+        "E": "will mark"
       },
       "correct": "A",
       "passage_id": "passage_1",
       "explanation": {
-        "logical_structure": "'the mid-20th century' ifadesi geçmişte bitmiş net bir tarihtir.",
-        "tactic": "Adım 1: Zaman zarfını bul (20. yüzyılın ortası). Adım 2: Geçmişte kesin zaman belirten durumlarda sadece V2 (Past Simple) kullanıldığını hatırla. Sonuç: 'Marked'.",
-        "elimination": "B (has marked) Present Perfect'tir, kesin zamanla kullanılmaz. E (marks) geniş zamandır. D (was marked) ise pasiftir; yüzyıl pasif olmaz, o ana işaret eder.",
-        "grammar": "Past Simple Tense",
-        "trap": "Günümüze etkisi sürse bile spesifik tarih verildiği an Present Perfect (B) elenir."
+        "logical_structure": "Cümlede 'mid-20th century' ifadesi net bir zaman belirtecidir ve eylemin tamamlandığını gösterir.",
+        "tactic": "Adım 1: Zaman belirtecini bul ('mid-20th century'). Adım 2: Geçmişte tamamlanmış ve belirli bir zamanı olan eylemler için Simple Past Tense (V2) gerektiğini hatırla.",
+        "elimination": "B (Present Perfect) süreç bildirir; oysa burada net nokta zamanı var. C, D ve E şıkları gelecek veya şimdiki zaman bildirdiği için elenir.",
+        "grammar": "Simple Past Tense",
+        "trap": "Halen etkisi sürdüğü düşünülerek 'has marked' şıkkına gidilebilir, ancak 20. yy ortası geçmişte kalmış bir dönemdir."
       }
     },
     {
@@ -130,19 +130,19 @@
       "question": "(5)",
       "options": {
         "A": "assured",
-        "B": "endangered",
-        "C": "threatened",
-        "D": "diminished",
-        "E": "rejected"
+        "B": "were assuring",
+        "C": "had assured",
+        "D": "assure",
+        "E": "assuringly"
       },
       "correct": "A",
       "passage_id": "passage_1",
       "explanation": {
-        "logical_structure": "'that once ____ stability' (bir zamanlar istikrar sağlayan/koruyan) ifadesi geçmişteki olumlu durumu anlatır.",
-        "tactic": "Adım 1: 'Once' (bir zamanlar) belirtecine bak. Adım 2: İstikrarı 'sağlamak/garanti etmek' anlamına gelen 'assured' kelimesini seç.",
-        "elimination": "B (Endangered) ve C (Threatened) istikrarı tehlikeye atar; bu günümüzün sorunudur, oysa cümlede 'bir zamanlar' (once) olan durum soruluyor.",
-        "grammar": "Past vs Present Context",
-        "trap": "Stability (istikrar) kelimesiyle en iyi 'assured' (garanti altına alınmış) sıfatı uyum sağlar."
+        "logical_structure": "'Planetary boundaries that once ____ stability' yapısında 'once' (bir zamanlar) geçmişe işaret eder.",
+        "tactic": "Adım 1: 'once' anahtar kelimesini yakala. Adım 2: Relative Clause içinde geçmiş zaman (Simple Past) kullanımı gerektiğini anla.",
+        "elimination": "B (Past Continuous) süreç değil durum bildirir. C (Past Perfect) için 'daha geçmiş' bir durum yoktur. D ve E gramer olarak uymaz.",
+        "grammar": "Simple Past / Relative Clause",
+        "trap": "İstikrarı 'sağlamak' anlamında Simple Past en doğal seçimdir."
       }
     },
     {
@@ -298,19 +298,19 @@
       "question": "(13)",
       "options": {
         "A": "necessitates",
-        "B": "prevents",
-        "C": "obstructs",
-        "D": "eliminates",
-        "E": "contradicts"
+        "B": "is necessitating",
+        "C": "had necessitated",
+        "D": "must have necessitated",
+        "E": "should necessitate"
       },
       "correct": "A",
       "passage_id": "passage_1",
       "explanation": {
-        "logical_structure": "Bu geçiş (transition), inovasyonu ve temel değişimi zorunlu kılıyor.",
-        "tactic": "Adım 1: Bir hedefe ulaşmak için ne gerektiğini belirtiyoruz. Adım 2: 'Gerekli kılmak/zorunlu kılmak' anlamına gelen 'Necessitates' fiilini seç.",
-        "elimination": "B (Prevents) ve C (Obstructs) engellemek demektir; geçiş inovasyonu engellemez, tam tersi talep eder.",
-        "grammar": "Requirement Verbs",
-        "trap": "Necessitates, 'require' fiilinin daha teknik bir versiyonudur."
+        "logical_structure": "Genel bir zorunluluk ve durum tespiti yapıldığı için Simple Present Tense kullanımı uygundur.",
+        "tactic": "Adım 1: Cümlenin genel bir hüküm (statement of fact) taşıdığını gör. Adım 2: 'This transition necessitates...' (Bu geçiş gerektirir...) yapısını Simple Present olarak kullan.",
+        "elimination": "B (Continuous) geçici bir durum değildir. D (Modal Perfect) geçmişe yönelik tahmindir. E (Should) tavsiyedir, burada gereklilik gerçektir.",
+        "grammar": "Simple Present / Subject-Verb Agreement",
+        "trap": "Is necessitating (şimdilerde gereştiriyor) kulağa doğru gelebilir ama bilimsel saptamalar Simple Present ile yapılır."
       }
     },
     {
@@ -374,14 +374,21 @@
       "section_id": "cloze_test_2",
       "question": "(17)",
       "options": {
-        "A": "concentrated",
-        "B": "distributed",
-        "C": "dissipated",
-        "D": "diverged",
-        "E": "withdrawn"
+        "A": "focused",
+        "B": "have focused",
+        "C": "were focusing",
+        "D": "had been focusing",
+        "E": "focus"
       },
       "correct": "A",
-      "passage_id": "passage_2"
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "Paragrafın başında '1950s' ve 'Initially' (başlangıçta) ifadeleri geçmişte tamamlanmış bir dönemi anlatır.",
+        "tactic": "Adım 1: 'Initially' anahtarını yakala. Adım 2: Geçmişte belli bir noktadaki eylemi anlatmak için Simple Past (V2) kullan.",
+        "elimination": "B (Present Perfect) günümüze bağlanır ama olay bitti. D (Past Perfect Continuous) için başka bir geçmiş nokta vurgusu gerekir. E (Present) zaman hatasıdır.",
+        "grammar": "Simple Past Tense",
+        "trap": "Focusing olması için bir süreç vurgusu gerekirdi, oysa 'Initially' bir saptamadır."
+      }
     },
     {
       "id": 18,
@@ -389,13 +396,20 @@
       "question": "(18)",
       "options": {
         "A": "proved",
-        "B": "turned out",
-        "C": "seemed",
-        "D": "emerged",
-        "E": "appeared"
+        "B": "has proved",
+        "C": "had proved",
+        "D": "was proving",
+        "E": "would prove"
       },
-      "correct": "B",
-      "passage_id": "passage_2"
+      "correct": "A",
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "Yine başlangıçtaki (symbolic AI) yetersizliğin geçmişte anlaşıldığı anlatılmaktadır.",
+        "tactic": "Adım 1: Önceki cümleyle ('Initially') zaman uyumunu sağla. Adım 2: Durumun geçmişte belli olduğunu belirtmek için Simple Past seç.",
+        "elimination": "B (Has proved) şu anki bir durumu anlatır. E (Would prove) gelecekten bahseder, burada olay bitmiş.",
+        "grammar": "Tense Agreement",
+        "trap": "Was proving (kanıtlıyordu) devam eden bir eylem olmadığı için yanlıştır."
+      }
     },
     {
       "id": 19,
@@ -409,7 +423,14 @@
         "E": "omission"
       },
       "correct": "A",
-      "passage_id": "passage_2"
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "Machine learning'in (makine öğrenmesi) 'ortaya çıkışı' ile odağın değiştiği söyleniyor.",
+        "tactic": "Adım 1: 'The ____ of machine learning' tamlamasını gör. Adım 2: Olumlu bir gelişme ve 'geliş/başlangıç' anlamı taşıyan 'advent' kelimesini seç.",
+        "elimination": "B (Demise-Ölüm/Son), C (Departure-Ayrılış) ve D (Regression-Gerileme) kelimeleri negatif anlamlıdır.",
+        "grammar": "Vocabulary (Noun)",
+        "trap": "Departure kelimesi 'yeni bir başlangıç' gibi yanlış yorumlanabilir, ancak asıl anlamı ayrılmaktır."
+      }
     },
     {
       "id": 20,
@@ -458,14 +479,21 @@
       "section_id": "cloze_test_2",
       "question": "(23)",
       "options": {
-        "A": "revolutionized",
-        "B": "impeded",
-        "C": "diminished",
-        "D": "thwarted",
-        "E": "constrained"
+        "A": "has revolutionized",
+        "B": "revolutionized",
+        "C": "will revolutionize",
+        "D": "is revolutionizing",
+        "E": "had revolutionized"
       },
       "correct": "A",
-      "passage_id": "passage_2"
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "Derin öğrenmenin (deep learning) ortaya çıkışı ve alanı devrimsel bir şekilde değiştirmesi, etkisi günümüzde de süren bir olaydır.",
+        "tactic": "Adım 1: Eylemin geçmişte başlayıp günümüzde de 'en güncel hal' olduğunu fark et. Adım 2: Present Perfect (Has/Have V3) kullanarak etkinin sürdüğünü belirt.",
+        "elimination": "B (Simple Past) sadece bitmiş bir tarihi anlatır, oysa süreç hala 'even further' şeklinde devam ediyor. E (Past Perfect) zaman uyumuna aykırı.",
+        "grammar": "Present Perfect Tense",
+        "trap": "Is revolutionizing (devrim yapmaktadır) çekici gelse de devrim niteliğindeki olay gerçekleşmiş ve sonucu ortadadır."
+      }
     },
     {
       "id": 24,
@@ -514,14 +542,21 @@
       "section_id": "cloze_test_2",
       "question": "(27)",
       "options": {
-        "A": "reached",
-        "B": "concluded",
-        "C": "derived",
-        "D": "made",
-        "E": "formed"
+        "A": "are reached",
+        "B": "were reached",
+        "C": "reach",
+        "D": "have reached",
+        "E": "had been reached"
       },
-      "correct": "D",
-      "passage_id": "passage_2"
+      "correct": "A",
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "Algoritmaların kararlara nasıl 'vardığını/ulaştığını' anlatan edilgen (passive) bir yapı gerekmektedir.",
+        "tactic": "Adım 1: 'how decisions ____' yapısını gör. Karar kendi kendine ulaşmaz, karara varılır (passive). Adım 2: Genel geçer bir durumu anlattığı için Present Passive (am/is/are + V3) seç.",
+        "elimination": "C ve D etken (active) yapılardır. B (Past) genel değil, tekil bir geçmiş olayı anlatırdı.",
+        "grammar": "Passive Voice",
+        "trap": "Decisions özne gibi göründüğü için 'reach' (etken) seçilmesi en yaygın hatadır."
+      }
     },
     {
       "id": 28,
@@ -542,14 +577,21 @@
       "section_id": "cloze_test_2",
       "question": "(29)",
       "options": {
-        "A": "aims",
-        "B": "fails",
-        "C": "refuses",
-        "D": "hesitates",
-        "E": "objects"
+        "A": "strives",
+        "B": "is striving",
+        "C": "has strived",
+        "D": "strove",
+        "E": "to strive"
       },
       "correct": "A",
-      "passage_id": "passage_2"
+      "passage_id": "passage_2",
+      "explanation": {
+        "logical_structure": "Hareketi (movement) niteleyen genel bir çaba söz konusudur.",
+        "tactic": "Adım 1: 'This movement ____ to make...' yapısındaki genel ifadeyi gör. Adım 2: Simple Present kullanarak hareketin amacını niteleriz.",
+        "elimination": "B (Continuous) şu an süren geçici bir şey değildir. E (to-infinitive) yüklem olamaz.",
+        "grammar": "Simple Present",
+        "trap": "Aims gibi bir kelime yerine kullanılan 'strives' daha akademik ve yaygındır."
+      }
     },
     {
       "id": 30,
@@ -584,14 +626,21 @@
       "section_id": "cloze_test_3",
       "question": "(32)",
       "options": {
-        "A": "posited",
-        "B": "denied",
-        "C": "refuted",
-        "D": "questioned",
-        "E": "ignored"
+        "A": "held",
+        "B": "was holding",
+        "C": "has held",
+        "D": "holds",
+        "E": "would be holding"
       },
       "correct": "A",
-      "passage_id": "passage_3"
+      "passage_id": "passage_3",
+      "explanation": {
+        "logical_structure": "'For decades' ifadesi geçmişteki bir süreci veya dönemi anlatsa da cümlede sonrasında Present yapıya (suggests) geçilmiştir, bu da davranışçıların 'geçmişte' kaldığını vurgular.",
+        "tactic": "Adım 1: 'Behaviorist perspective' gibi artık eski kalmış bir ekolü fark et. Adım 2: Simple Past (held) kullanarak geçmişteki durumu anlat.",
+        "elimination": "C (Has held) günümüzde hala baskın olduğunu gösterirdi, oysa metne göre 'in contrast' diyerek yeni bir teoriye geçiliyor.",
+        "grammar": "Tense Choice / History of Science",
+        "trap": "'For decades' her zaman Present Perfect (Has held) gerektirmez; eğer o dönem kapandıysa Simple Past daha doğrudur."
+      }
     },
     {
       "id": 33,
@@ -710,14 +759,21 @@
       "section_id": "cloze_test_3",
       "question": "(41)",
       "options": {
-        "A": "stems",
-        "B": "ends",
-        "C": "deviates",
-        "D": "departs",
-        "E": "ceases"
+        "A": "derives",
+        "B": "is derived",
+        "C": "was derived",
+        "D": "deriving",
+        "E": "has derived"
       },
       "correct": "A",
-      "passage_id": "passage_3"
+      "passage_id": "passage_3",
+      "explanation": {
+        "logical_structure": "Öz (intrinsic) motivasyonun içsel bir arzudan 'kaynaklandığı' genel bir psikolojik gerçektir.",
+        "tactic": "Adım 1: Motivasyonun bir yerden 'stem from/derive from' (kaynaklanmak) eylemini gör. Adım 2: Bu etken (active) bir durumdur. Adım 3: Genel kural olduğu için Simple Present seç.",
+        "elimination": "B (Passive) yanlıştır çünkü motivasyon bir yerden türetilmez, kendi türer. D (Gerund) yüklem olamaz.",
+        "grammar": "Stative Verbs / Active Voice",
+        "trap": "Derive kelimesi 'türetmek' olarak bilindiği için edilgen yapı (is derived) yanıltıcı olabilir; ancak 'derive from' bir şeyden köken almak demektir."
+      }
     },
     {
       "id": 42,
@@ -766,14 +822,21 @@
       "section_id": "cloze_test_3",
       "question": "(45)",
       "options": {
-        "A": "presented",
-        "B": "eliminated",
-        "C": "reduced",
-        "D": "hidden",
-        "E": "obscured"
+        "A": "brought about",
+        "B": "has brought about",
+        "C": "had brought about",
+        "D": "was bringing about",
+        "E": "will be bringing about"
       },
-      "correct": "A",
-      "passage_id": "passage_3"
+      "correct": "B",
+      "passage_id": "passage_3",
+      "explanation": {
+        "logical_structure": "Teknolojinin kullanımı hala devam eden ve sonuçları mevcut olan bir durum yarattığı için Present Perfect uygundur.",
+        "tactic": "Adım 1: Parçanın sonundaki güncel durum tespitini gör. Adım 2: 'Has brought about' (beraberinde getirdi/yol açtı) diyerek güncelliği koru.",
+        "elimination": "A (Simple Past) geçmişte olup bitmişlik hissi verir, oysa sınıfta teknoloji hala dönüştürücü. C (Past Perfect) zaman uyumu dışıdır.",
+        "grammar": "Present Perfect / Phrasal Verbs",
+        "trap": "Has brought about kalıbı 'sebep oldu' (ve sonuçlar sürüyor) anlamı katar, bu yüzden B şıkkı en güçlüdür."
+      }
     },
     {
       "id": 46,
@@ -808,14 +871,21 @@
       "section_id": "cloze_test_3",
       "question": "(48)",
       "options": {
-        "A": "suggests",
-        "B": "refutes",
-        "C": "denies",
-        "D": "contradicts",
-        "E": "disproves"
+        "A": "has shown",
+        "B": "shows",
+        "C": "was showing",
+        "D": "had shown",
+        "E": "is shown"
       },
       "correct": "A",
-      "passage_id": "passage_3"
+      "passage_id": "passage_3",
+      "explanation": {
+        "logical_structure": "Araştırmaların (Research) bulgularını sunarken genellikle Present Perfect kullanılır çünkü bulgular hala geçerlidir.",
+        "tactic": "Adım 1: 'Research ____ that' kalıbını gör. Adım 2: Bilimsel literatürün son halini anlatmak için 'has shown' seç.",
+        "elimination": "B (Shows) da mümkün olsa da, YDS'de araştırma sonuçları genellikle 'Present Perfect' ile daha sık sorgulanır (güncelliği vurgulamak için). E (Edilgen) yapı araştırma öznesiyle uymaz.",
+        "grammar": "Reporting Research Findings",
+        "trap": "E seçeneği 'gösterilir' gibi edilgen olsa da, araştırmanın kendisi özne olduğunda fiil etken (active) olur."
+      }
     },
     {
       "id": 49,
