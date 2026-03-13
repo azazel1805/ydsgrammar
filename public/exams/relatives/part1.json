@@ -202,7 +202,8 @@
                 "D": "which",
                 "E": "where"
             },
-            "question": "Everyone at the meeting yesterday, ........... proved very constructive, showed their support for the new stadium."
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "E",
@@ -214,7 +215,8 @@
                 "D": "why/—",
                 "E": "which/which"
             },
-            "question": "20th June, Midsummer's day, ......... is the longest day of the year, is one of the days on ......... religious leaders called Druids meet and pray at ancient stone circles."
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "B",
@@ -226,7 +228,8 @@
                 "D": "which",
                 "E": "what"
             },
-            "question": "The town ........... the folk festival is taking place is usually a quiet resort."
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "C",
@@ -238,7 +241,8 @@
                 "D": "when",
                 "E": "that"
             },
-            "question": "Our hotel, ......... is a converted 17th century manor house, is very comfortable."
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "C",
@@ -250,7 +254,8 @@
                 "D": "which",
                 "E": "whose"
             },
-            "question": "As a celebrity .......... many children admire, it is important for her to act responsibly."
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "D",
@@ -262,7 +267,8 @@
                 "D": "which",
                 "E": "where"
             },
-            "question": "We always hold a family barbecue in our garden on Independence Day, ........ was on a Tuesday this year."
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "E",
@@ -274,7 +280,8 @@
                 "D": "where",
                 "E": "which 2"
             },
-            "question": "There is a place on the form .......... we are supposed to write comments in, but they haven't left enough room for us to write much at all."
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "E",
@@ -286,7 +293,8 @@
                 "D": "whom",
                 "E": "who"
             },
-            "question": "Gigi Fernandez, .......... was born in Porto Rico, won the Wimbledon Championship four times in the 1990s."
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "B",
@@ -298,7 +306,8 @@
                 "D": "which",
                 "E": "that"
             },
-            "question": "When I was at school, there was a girl in my class ........ skin was so sensitive that she couldn't expose her skin to the sun even with cream on."
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "A",
@@ -585,5 +594,16 @@
             "question": "Sandra, a short, frail girl, .......... neither captain wanted in his team, burst into tears."
         }
     ],
-    "passages": []
+    "passages": [
+        {
+            "id": "p_cloze_17_part1",
+            "title": "Cloze Test 17-21",
+            "text": "Everyone at the meeting yesterday, ........... proved very constructive, showed their support for the new stadium."
+        },
+        {
+            "id": "p_cloze_22_part1",
+            "title": "Cloze Test 22-26",
+            "text": "As a celebrity .......... many children admire, it is important for her to act responsibly."
+        }
+    ]
 }

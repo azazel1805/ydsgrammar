@@ -13,7 +13,18 @@
             "to": 54
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_sencomp1",
+            "title": "Cloze Test 17-21",
+            "text": "Not only does regular exercise improve physical health, ----."
+        },
+        {
+            "id": "p_cloze_22_sencomp1",
+            "title": "Cloze Test 22-26",
+            "text": "Although the novel was written over a century ago, ----."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Not only does regular exercise improve physical health, ----.",
+            "passage_id": "p_cloze_17_sencomp1",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "but it also plays a crucial role in enhancing mental well-being",
                 "B": "and it is recommended for people of all age groups and backgrounds",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- before the treaty could be officially ratified by all member states.",
+            "passage_id": "p_cloze_17_sencomp1",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Several diplomatic hurdles had to be overcome through intense negotiations",
                 "B": "The agreement aims to reduce carbon emissions by thirty percent",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Provided that the current trend of urbanization continues, ----.",
+            "passage_id": "p_cloze_17_sencomp1",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "more than two-thirds of the world population will live in cities by 2050",
                 "B": "rural areas are losing their young population to metropolitan centers",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Critics argue that the proposed tax law will burden the middle class, ----.",
+            "passage_id": "p_cloze_17_sencomp1",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "while proponents claim it will stimulate economic growth by rewarding investment",
                 "B": "the government has yet to release the full details of the legislation",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- as soon as the security breach was detected by the IT department.",
+            "passage_id": "p_cloze_17_sencomp1",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The company immediately shut down its servers to prevent data theft",
                 "B": "Cybersecurity has become a top priority for businesses worldwide",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Although the novel was written over a century ago, ----.",
+            "passage_id": "p_cloze_22_sencomp1",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "its themes of social injustice and human greed remain remarkably relevant",
                 "B": "it has been translated into more than fifty different languages",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- lest the fragile ecosystem of the island be permanently damaged.",
+            "passage_id": "p_cloze_22_sencomp1",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Tourism activities are strictly regulated by the local authorities",
                 "B": "The island is home to several endemic species of plants and animals",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "The success of the space mission depended largely on ----.",
+            "passage_id": "p_cloze_22_sencomp1",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "the precise coordination between ground control and the astronauts",
                 "B": "the development of new propulsion systems and fuel technologies",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- so that they can better understand the effects of long-term isolation on the human mind.",
+            "passage_id": "p_cloze_22_sencomp1",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Psychologists are conducting experiments in simulated space habitats",
                 "B": "The study of human behavior has evolved significantly over the years",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Even though the company has expanded its operations globally, ----.",
+            "passage_id": "p_cloze_22_sencomp1",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "it still maintains its headquarters in the small town where it was founded",
                 "B": "its profits have reached record levels during the last fiscal year",

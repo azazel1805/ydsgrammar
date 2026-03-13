@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_dia2",
+            "title": "Cloze Test 17-21",
+            "text": "Astronomer: The James Webb Space Telescope has allowed us to peer back to the very first galaxies formed after the Big Bang. \nScience Reporter: __________ \nAstronomer: It's because light from those distant objects has been stretched into infrared wavelengths by the expansion of the universe."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Astronomer: The James Webb Space Telescope has allowed us to peer back to the very first galaxies formed after the Big Bang. \nScience Reporter: __________ \nAstronomer: It's because light from those distant objects has been stretched into infrared wavelengths by the expansion of the universe.",
+            "passage_id": "p_cloze_17_dia2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Why is it better than the Hubble Telescope for this specific task?",
                 "B": "Is the telescope currently orbiting the Moon or the Earth?",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Environmentalist: Fast fashion is responsible for nearly 10% of global carbon emissions and massive water pollution. \nConsumer: __________ \nEnvironmentalist: It requires a shift toward quality over quantity and supporting brands with transparent supply chains.",
+            "passage_id": "p_cloze_17_dia2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Is it really that much worse than the airline industry?",
                 "B": "What can the average person do to mitigate this impact?",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Geneticist: CRISPR technology allows for highly precise editing of the genome, but the potential for 'off-target' effects remains. \nJournalist: __________ \nGeneticist: It means the system might inadvertently alter a different gene than the one intended, with unknown consequences.",
+            "passage_id": "p_cloze_17_dia2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Does this mean we can now cure all hereditary diseases?",
                 "B": "Could you elaborate on what exactly an 'off-target' effect is?",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Literary Critic: The protagonist's descent into madness is not a failure of character, but a rational response to an irrational society. \nReader: __________ \nLiterary Critic: Exactly. The author uses the internal chaos of the individual to mirror the external collapse of social norms.",
+            "passage_id": "p_cloze_17_dia2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I found the ending to be quite optimistic and uplifting.",
                 "B": "Are you saying the society is the real villain of the story?",

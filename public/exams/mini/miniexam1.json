@@ -75,6 +75,16 @@
         {
             "id": "p2",
             "text": "The Industrial Revolution, which began in Britain in the late 18th century, transformed human society from an agrarian-based economy to an industrial one. Key inventions like the steam engine and the power loom allowed for mass production, leading to the growth of cities as people moved from rural areas for factory work. This period also saw significant improvements in transportation and communication. However, it also brought about social challenges, including poor working conditions and environmental pollution. Despite these issues, the Industrial Revolution laid the necessary foundation for the modern technological world we live in today."
+        },
+        {
+            "id": "p_cloze_17_miniexam1",
+            "title": "Cloze Test 17-21",
+            "text": "Unless significant measures are taken to reduce carbon emissions, global temperatures will continue to rise uncontrollably."
+        },
+        {
+            "id": "p_cloze_22_miniexam1",
+            "title": "Cloze Test 22-26",
+            "text": "Journalist: Your latest book argues that economic growth does not always lead to an increase in societal happiness. Why is that? \nEconomist: ______ \nJournalist: It makes sense. Wealth distribution plays a crucial role."
         }
     ],
     "questions": [
@@ -289,7 +299,7 @@
         {
             "id": 17,
             "section_id": "paraphrase",
-            "question": "Unless significant measures are taken to reduce carbon emissions, global temperatures will continue to rise uncontrollably.",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "If we do not implement major steps to cut down on carbon emissions, the unchecked increase in global temperatures will persist.",
                 "B": "Global temperatures will rise uncontrollably even if we take significant measures to reduce carbon emissions.",
@@ -297,12 +307,13 @@
                 "D": "Only by taking significant measures can we ensure that global temperatures will rise uncontrollably.",
                 "E": "Global temperatures have continued to rise uncontrollably because no significant measures were taken to reduce carbon emissions."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam1"
         },
         {
             "id": 18,
             "section_id": "paraphrase",
-            "question": "The discovery of penicillin revolutionized medicine by providing a cure for bacterial infections that were previously fatal.",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Penicillin's discovery brought about a profound change in medicine, as it offered a treatment for formerly deadly bacterial infections.",
                 "B": "Medicine was completely changed when penicillin was discovered, though bacterial infections remained fatal.",
@@ -310,12 +321,13 @@
                 "D": "The discovery of penicillin provided a cure for bacterial infections, yet it failed to revolutionize medicine.",
                 "E": "Bacterial infections became fatal after the discovery of penicillin, which revolutionized medicine."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam1"
         },
         {
             "id": 19,
             "section_id": "paraphrase",
-            "question": "No other artist of his generation had as profound an impact on modern sculpture as Rodin did.",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Rodin's influence on modern sculpture was greater than that of any of his contemporaries.",
                 "B": "Rodin was one of the many artists of his generation who had a profound impact on modern sculpture.",
@@ -323,12 +335,13 @@
                 "D": "Rodin had a profound impact on modern sculpture, similar to other artists of his generation.",
                 "E": "Many artists of his generation had a more profound impact on modern sculpture than Rodin did."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam1"
         },
         {
             "id": 20,
             "section_id": "paraphrase",
-            "question": "The new policy is designed to alleviate poverty; nevertheless, critics argue it might inadvertently increase unemployment.",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Although the new policy aims to reduce poverty, detractors claim it could unintentionally cause a rise in unemployment.",
                 "B": "The new policy will definitely increase unemployment, despite its design to alleviate poverty.",
@@ -336,12 +349,13 @@
                 "D": "Because the new policy is designed to alleviate poverty, critics believe it will decrease unemployment.",
                 "E": "The new policy aims to increase unemployment unintentionally, which critics argue will alleviate poverty."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam1"
         },
         {
             "id": 21,
             "section_id": "dialogue",
-            "question": "Professor: The recent data suggests a significant correlation between sleep deprivation and cognitive decline in adolescents. \nStudent: ______ \nProfessor: Exactly. That's why pushing back school start times could be a viable intervention.",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "So, you're saying that teenagers who don't get enough sleep perform worse academically?",
                 "B": "Do you think adults suffer from the same cognitive decline?",
@@ -349,12 +363,13 @@
                 "D": "Are there any other factors that contribute to cognitive decline?",
                 "E": "Sleep deprivation is mostly caused by excessive screen time, right?"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam1"
         },
         {
             "id": 22,
             "section_id": "dialogue",
-            "question": "Journalist: Your latest book argues that economic growth does not always lead to an increase in societal happiness. Why is that? \nEconomist: ______ \nJournalist: It makes sense. Wealth distribution plays a crucial role.",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Because GDP fails to account for inequality and environmental degradation.",
                 "B": "Because economic growth is the only true measure of a nation's prosperity.",
@@ -362,12 +377,13 @@
                 "D": "Happiness is entirely subjective and cannot be measured by any standard.",
                 "E": "Societal happiness always increases when a country's economy grows rapidly."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam1"
         },
         {
             "id": 23,
             "section_id": "dialogue",
-            "question": "Researcher A: The results of our clinical trial are statistically significant, but the effect size is quite small. \nResearcher B: ______ \nResearcher A: I agree. We shouldn't overstate the practical implications of our findings.",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "That means the drug might not be as practically useful to patients as we hoped.",
                 "B": "We should immediately publish these findings and claim a major breakthrough.",
@@ -375,12 +391,13 @@
                 "D": "This proves that the trial was a complete failure and we should start over.",
                 "E": "I think we should alter the data to make the effect size look larger."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam1"
         },
         {
             "id": 24,
             "section_id": "dialogue",
-            "question": "Student: I'm having trouble understanding the concept of 'entropy' in thermodynamics. \nTeacher: ______ \nStudent: Oh, so it's a measure of disorder or randomness in a closed system?",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Think of it as the inevitable progression from order to disorder.",
                 "B": "It's essentially the total amount of energy conserved in a system.",
@@ -388,12 +405,13 @@
                 "D": "It describes how energy can be created out of nothing.",
                 "E": "Don't worry, it's not a very important concept for your exam."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam1"
         },
         {
             "id": 25,
             "section_id": "para_comp",
-            "question": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. Generally described as taking place from the 14th century to the 17th century, the Renaissance promoted the rediscovery of classical philosophy, literature, and art. ______. This shift in perspective profoundly influenced everything from painting to science.",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Humanism, a cultural movement that emphasized human potential and achievements, was at the heart of this era.",
                 "B": "The Middle Ages were often characterized by widespread famine, disease, and intellectual stagnation.",
@@ -401,12 +419,13 @@
                 "D": "Many classical texts were completely lost and never recovered during this time.",
                 "E": "Modern art movements often reject the strict rules established by Renaissance painters."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam1"
         },
         {
             "id": 26,
             "section_id": "para_comp",
-            "question": "Black holes are regions of space where gravity is so strong that nothing, not even light, can escape them. They are typically formed from the remnants of massive stars that collapse under their own gravity at the end of their life cycle. ______. As they consume more matter, their mass and gravitational pull increase proportionately.",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Once formed, a black hole can continue to grow by absorbing mass from its surroundings.",
                 "B": "Stars emit a tremendous amount of light and heat through nuclear fusion.",
@@ -414,7 +433,8 @@
                 "D": "Albert Einstein's theory of general relativity does not apply to black holes.",
                 "E": "Light travels at a speed of approximately 299,792 kilometers per second."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam1"
         },
         {
             "id": 27,

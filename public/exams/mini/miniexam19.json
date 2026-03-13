@@ -71,6 +71,16 @@
         {
             "id": "p1",
             "text": ""
+        },
+        {
+            "id": "p_cloze_17_miniexam19",
+            "title": "Cloze Test 17-21",
+            "text": "Unless the government intervenes immediately, the inflation rate will reach record highs by the end of the year."
+        },
+        {
+            "id": "p_cloze_22_miniexam19",
+            "title": "Cloze Test 22-26",
+            "text": "Susan: I'm struggling to choose between a degree in literature or linguistics. \nAcademic Advisor: Both are great, but they offer very different perspectives. \nSusan: ______ \nAcademic Advisor: Literature focuses on the artistic side, while linguistics is more scientific and analytical."
         }
     ],
     "questions": [
@@ -301,8 +311,8 @@
         {
             "id": 17,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "Unless the government intervenes immediately, the inflation rate will reach record highs by the end of the year.",
+            "passage_id": "p_cloze_17_miniexam19",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The inflation rate will stay low if the government acts quickly.",
                 "B": "If the government doesn't step in right away, inflation will be at an all-time high by year-end.",
@@ -315,8 +325,8 @@
         {
             "id": 18,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "Few people realize that the Sahara was once a lush green landscape with abundant wildlife.",
+            "passage_id": "p_cloze_17_miniexam19",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Many people know that the Sahara used to be green and full of animals.",
                 "B": "The Sahara is currently a green area but people don't realize it.",
@@ -329,8 +339,8 @@
         {
             "id": 19,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "The manager postponed the meeting until Friday because several team members were ill.",
+            "passage_id": "p_cloze_17_miniexam19",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The meeting was moved to Friday due to the illness of some staff.",
                 "B": "The manager ill-treated the team members during the Friday meeting.",
@@ -343,8 +353,8 @@
         {
             "id": 20,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "It is estimated that artificial intelligence will create more jobs than it destroys in the long run.",
+            "passage_id": "p_cloze_17_miniexam19",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "AI is expected to lead to a net increase in employment over time.",
                 "B": "AI will definitely destroy all current jobs in the future.",
@@ -357,8 +367,8 @@
         {
             "id": 21,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "John: Have you seen the latest report on urban heat islands? \nMark: Yes, it's quite alarming how much higher temperatures are in cities. \nJohn: ______ \nMark: Exactly. More trees and green roofs could make a significant difference.",
+            "passage_id": "p_cloze_17_miniexam19",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I think we should move to the countryside.",
                 "B": "It's mainly because of the lack of vegetation and the abundance of concrete.",
@@ -371,8 +381,8 @@
         {
             "id": 22,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Susan: I'm struggling to choose between a degree in literature or linguistics. \nAcademic Advisor: Both are great, but they offer very different perspectives. \nSusan: ______ \nAcademic Advisor: Literature focuses on the artistic side, while linguistics is more scientific and analytical.",
+            "passage_id": "p_cloze_22_miniexam19",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Can I study both at the same time?",
                 "B": "What do you mean by different perspectives?",
@@ -385,8 +395,8 @@
         {
             "id": 23,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Patient: I've been feeling very lethargic lately, even though I sleep well. \nDoctor: It could be due to a variety of factors, including your diet or iron levels. \nPatient: ______ \nDoctor: Then we should definitely run some blood tests to be sure.",
+            "passage_id": "p_cloze_22_miniexam19",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I eat very healthily and take vitamins.",
                 "B": "I've always been a tired person.",
@@ -399,8 +409,8 @@
         {
             "id": 24,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Tourist: Is it possible to see the entire museum in just one afternoon? \nGuide: To be honest, it's quite vast. You might have to rush. \nTourist: ______ \nGuide: In that case, I suggest focusing on the Egyptian and Renaissance wings.",
+            "passage_id": "p_cloze_22_miniexam19",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I have all the time in the world.",
                 "B": "I only want to see the highlights.",
@@ -413,8 +423,8 @@
         {
             "id": 25,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Genetic engineering has the potential to solve many global issues, from food security to genetic diseases. However, it also raises ethical concerns. ______. Critics worry about the long-term effects on biodiversity and the possibility of creating 'designer babies'.",
+            "passage_id": "p_cloze_22_miniexam19",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Scientists are excited about the new possibilities.",
                 "B": "The debate over its safety is still ongoing.",
@@ -427,8 +437,8 @@
         {
             "id": 26,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "In the world of finance, 'liquidity' refers to how quickly an asset can be converted into cash without affecting its market price. Cash is considered the most liquid asset. ______. Real estate, on the other hand, is relatively illiquid because it takes time to sell.",
+            "passage_id": "p_cloze_22_miniexam19",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Stocks and bonds are also highly liquid.",
                 "B": "Gold has always been a safe investment.",

@@ -13,7 +13,18 @@
             "to": 24
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_parap1",
+            "title": "Cloze Test 17-21",
+            "text": "Philosophy often addresses questions that, by their very nature, are incapable of being answered through empirical observation alone."
+        },
+        {
+            "id": "p_cloze_22_parap1",
+            "title": "Cloze Test 22-26",
+            "text": "Hardly had the new law been implemented when the public started protesting against its strict regulations."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Philosophy often addresses questions that, by their very nature, are incapable of being answered through empirical observation alone.",
+            "passage_id": "p_cloze_17_parap1",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Questions in philosophy are usually answered by combining empirical observation with logical reasoning.",
                 "B": "Empirical observation is the only way to find answers to the deep questions posed by philosophy.",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Urbanization has led to a significant decrease in the amount of arable land available for traditional farming practices.",
+            "passage_id": "p_cloze_17_parap1",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Traditional farming practices are becoming more popular as people move from cities back to rural areas.",
                 "B": "The growth of cities has caused a substantial reduction in the land that can be used for conventional agriculture.",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "The Treaty of Westphalia is frequently cited as the foundation of the modern international system of sovereign states.",
+            "passage_id": "p_cloze_17_parap1",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The modern system of independent nations is often said to have its origins in the Treaty of Westphalia.",
                 "B": "The Treaty of Westphalia was the last agreement made before the modern international system was established.",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "The playwright's latest work is a satirical critique of the socio-economic disparities prevalent in contemporary society.",
+            "passage_id": "p_cloze_17_parap1",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "In his new play, the author uses humor and irony to attack the wealth gaps found in today's world.",
                 "B": "The latest play is a serious documentary about how socio-economic status affects people's lives.",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "parap",
-            "passage_id": null,
-            "question": "The use of renewable energy sources has increased significantly as a result of rising concerns about climate change.",
+            "passage_id": "p_cloze_17_parap1",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Climate change concerns have led to a substantial growth in the utilization of renewable energy.",
                 "B": "The increase in renewable energy use is the main cause of concerns about climate change.",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "parap",
-            "passage_id": null,
-            "question": "Hardly had the new law been implemented when the public started protesting against its strict regulations.",
+            "passage_id": "p_cloze_22_parap1",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The public began to protest the strict regulations immediately after the new law came into effect.",
                 "B": "The new law was implemented despite the public's protests against its strict regulations.",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "parap",
-            "passage_id": null,
-            "question": "No sooner had the scientist published his findings than his theories were challenged by his peers.",
+            "passage_id": "p_cloze_22_parap1",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The scientist's theories were questioned by other experts immediately after he made his results public.",
                 "B": "Before the scientist published his results, his peers had already challenged his theories.",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "parap",
-            "passage_id": null,
-            "question": "It is widely believed that the discovery of fire was a turning point in human evolution.",
+            "passage_id": "p_cloze_22_parap1",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Many people think that the discovery of fire significantly changed the course of human development.",
                 "B": "The discovery of fire is the only reason why humans evolved the way they did.",

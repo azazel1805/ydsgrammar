@@ -71,6 +71,16 @@
         {
             "id": "p1",
             "text": ""
+        },
+        {
+            "id": "p_cloze_17_miniexam17",
+            "title": "Cloze Test 17-21",
+            "text": "The failure of the mission was attributed to a lack of communication between the ground crew and the astronauts."
+        },
+        {
+            "id": "p_cloze_22_miniexam17",
+            "title": "Cloze Test 22-26",
+            "text": "Mark: The new museum exhibit on ancient Mesopotamia is opening tomorrow. \nAlice: I've heard they've included some artifacts that have never been displayed before. \nMark: _____ \nAlice: Then we should definitely go early to avoid the crowds."
         }
     ],
     "questions": [
@@ -301,8 +311,8 @@
         {
             "id": 17,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "The failure of the mission was attributed to a lack of communication between the ground crew and the astronauts.",
+            "passage_id": "p_cloze_17_miniexam17",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The mission failed because the ground crew and the astronauts did not communicate effectively.",
                 "B": "A lack of communication caused the mission to be aborted by the astronauts.",
@@ -315,8 +325,8 @@
         {
             "id": 18,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "It is widely accepted that children who read for pleasure perform better academically than those who do not.",
+            "passage_id": "p_cloze_17_miniexam17",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Most people agree that children who enjoy reading books tend to be more successful in school.",
                 "B": "Academic performance is strictly related to the amount of time children spend reading for fun.",
@@ -329,8 +339,8 @@
         {
             "id": 19,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "Hardly had the announcement been made when the stock prices began to plummet.",
+            "passage_id": "p_cloze_17_miniexam17",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Stock prices started to fall sharply immediately after the announcement was made.",
                 "B": "The announcement was made only after the stock prices had already plummeted.",
@@ -343,8 +353,8 @@
         {
             "id": 20,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "The architect's design was so innovative that it completely redefined modern aesthetics.",
+            "passage_id": "p_cloze_17_miniexam17",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Modern aesthetics were transformed entirely by the architect's highly original design.",
                 "B": "The architect designed a building that followed the principles of modern aesthetics.",
@@ -357,8 +367,8 @@
         {
             "id": 21,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "John: Have you seen the latest report on renewable energy adoption rates? \nSarah: Yes, it seems that solar power is leading the way in many developing nations. \nJohn: _____ \nSarah: Absolutely, especially with the costs of photovoltaic cells dropping so significantly recently.",
+            "passage_id": "p_cloze_17_miniexam17",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "That's surprising, I thought wind energy would be more popular there.",
                 "B": "I wonder if this trend will continue in the next decade.",
@@ -371,8 +381,8 @@
         {
             "id": 22,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Mark: The new museum exhibit on ancient Mesopotamia is opening tomorrow. \nAlice: I've heard they've included some artifacts that have never been displayed before. \nMark: _____ \nAlice: Then we should definitely go early to avoid the crowds.",
+            "passage_id": "p_cloze_22_miniexam17",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I doubt they will be as interesting as the ones in the British Museum.",
                 "B": "That's what the curator mentioned in the interview last night.",
@@ -385,8 +395,8 @@
         {
             "id": 23,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Professor: Your thesis proposal is interesting, but you need to narrow down your research question. \nStudent: I see. It's currently too broad to cover in a single semester, isn't it? \nProfessor: _____ \nStudent: I'll focus specifically on the impact of social media on adolescent sleep patterns then.",
+            "passage_id": "p_cloze_22_miniexam17",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Yes, you should try to address all aspects of the topic.",
                 "B": "Exactly. You need a more specific focus to conduct a thorough analysis.",
@@ -399,8 +409,8 @@
         {
             "id": 24,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Waiter: Would you like to see the dessert menu, or can I bring you the check? \nCustomer: I'm quite full, but my friend might want something. \nFriend: _____ \nWaiter: Certainly, I'll bring the menu right away.",
+            "passage_id": "p_cloze_22_miniexam17",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I'll just have a cup of coffee, please.",
                 "B": "No, thank you. I couldn't eat another bite.",
@@ -413,8 +423,8 @@
         {
             "id": 25,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Renewable energy sources, such as solar and wind, are becoming increasingly cost-competitive with fossil fuels. Many countries are now setting ambitious targets to reach net-zero emissions by 2050. _____. This shift is driven by both environmental concerns and the declining cost of technology. Consequently, the global energy landscape is undergoing a profound transformation.",
+            "passage_id": "p_cloze_22_miniexam17",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The transition to green energy requires significant investment in infrastructure.",
                 "B": "Fossil fuel companies are lobbying against these new regulations.",
@@ -427,8 +437,8 @@
         {
             "id": 26,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "The Renaissance was a period of great cultural and intellectual ferment in Europe. It saw a resurgence of interest in the classical learning of Greece and Rome. _____. This movement, known as humanism, emphasized the potential and agency of human beings. Artists and scholars alike began to explore new ways of representing the world.",
+            "passage_id": "p_cloze_22_miniexam17",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The printing press played a crucial role in spreading these new ideas.",
                 "B": "Feudalism was the dominant social system during the Middle Ages.",

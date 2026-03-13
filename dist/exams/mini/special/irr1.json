@@ -13,7 +13,18 @@
             "to": 23
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_irr1",
+            "title": "Cloze Test 17-21",
+            "text": "(I) Graphene is a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice. (II) It is remarkably strong, lightweight, and an excellent conductor of heat and electricity. (III) Scientists believe it could revolutionize industries ranging from electronics to energy storage. (IV) Diamonds are another form of carbon, but their atoms are arranged in a three-dimensional crystal structure. (V) Its potential applications include flexible screens, faster computer chips, and more efficient solar cells."
+        },
+        {
+            "id": "p_cloze_22_irr1",
+            "title": "Cloze Test 22-26",
+            "text": "(1) Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods. (2) This process generally involves the green pigment chlorophyll and generates oxygen as a byproduct. (3) Most plants need water and carbon dioxide to perform photosynthesis effectively. (4) Animals, however, obtain their energy by consuming other organisms. (5) Without photosynthesis, there would be little oxygen in the atmosphere for life to exist."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Graphene is a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice. (II) It is remarkably strong, lightweight, and an excellent conductor of heat and electricity. (III) Scientists believe it could revolutionize industries ranging from electronics to energy storage. (IV) Diamonds are another form of carbon, but their atoms are arranged in a three-dimensional crystal structure. (V) Its potential applications include flexible screens, faster computer chips, and more efficient solar cells.",
+            "passage_id": "p_cloze_17_irr1",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Supply and demand is a fundamental economic model used to determine the price and quantity of goods in a market. (II) When demand for a product exceeds its supply, the price typically rises. (III) Conversely, if there is a surplus of a product and low demand, the price usually falls. (IV) Inflation is defined as a general increase in prices and a fall in the purchasing value of money. (V) The equilibrium point occurs where the quantity demanded equals the quantity supplied.",
+            "passage_id": "p_cloze_17_irr1",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. (II) This process allows the neurons in the brain to compensate for injury and disease. (III) It is also what enables us to learn new skills and adapt to new environments. (IV) The cerebellum is the part of the brain that is primarily responsible for motor control and balance. (V) Activities such as learning a musical instrument or a new language are known to enhance this flexibility.",
+            "passage_id": "p_cloze_17_irr1",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Renewable energy sources, such as solar and wind power, are essential for reducing carbon emissions. (II) Unlike fossil fuels, these sources are naturally replenished and produce little to no greenhouse gases. (III) The cost of installing solar panels has decreased significantly over the past decade. (IV) Nuclear power is another alternative, though it raises concerns regarding radioactive waste disposal. (V) Transitioning to these sustainable energy forms is a key component of global climate change mitigation strategies.",
+            "passage_id": "p_cloze_17_irr1",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "irr",
-            "passage_id": null,
-            "question": "(1) The Renaissance was a period of great cultural and artistic achievement in Europe. (2) It began in Italy in the 14th century and later spread to the rest of the continent. (3) During this time, many famous artists such as Leonardo da Vinci and Michelangelo produced their masterpieces. (4) The Industrial Revolution, on the other hand, brought about significant changes in manufacturing and technology. (5) The Renaissance also saw important advancements in science, philosophy, and exploration.",
+            "passage_id": "p_cloze_17_irr1",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(1)",
                 "B": "(2)",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "irr",
-            "passage_id": null,
-            "question": "(1) Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods. (2) This process generally involves the green pigment chlorophyll and generates oxygen as a byproduct. (3) Most plants need water and carbon dioxide to perform photosynthesis effectively. (4) Animals, however, obtain their energy by consuming other organisms. (5) Without photosynthesis, there would be little oxygen in the atmosphere for life to exist.",
+            "passage_id": "p_cloze_22_irr1",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(1)",
                 "B": "(2)",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "irr",
-            "passage_id": null,
-            "question": "(1) Global warming refers to the long-term rise in the average temperature of the Earth's climate system. (2) It is primarily caused by human activities such as the burning of fossil fuels and deforestation. (3) These activities release greenhouse gases into the atmosphere, which trap heat from the sun. (4) Solar energy is a renewable source of power that does not produce greenhouse gases. (5) The resulting increase in temperature has led to melting ice caps and rising sea levels.",
+            "passage_id": "p_cloze_22_irr1",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(1)",
                 "B": "(2)",

@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_trans5",
+            "title": "Cloze Test 17-21",
+            "text": "Many historians argue that the fall of the Roman Empire was not a single event but a gradual process influenced by internal decay and external invasions."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Many historians argue that the fall of the Roman Empire was not a single event but a gradual process influenced by internal decay and external invasions.",
+            "passage_id": "p_cloze_17_trans5",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Pek çok tarihçi, Roma İmparatorluğu'nun çöküşünün tek bir olay değil, içsel çürüme ve dış istilalardan etkilenen kademeli bir süreç olduğunu savunmaktadır.",
                 "B": "Roma İmparatorluğu'nun yıkılışının iç bozulma ve dış saldırılarla gerçekleşen uzun bir süreç olduğu tarihçilerin ortak görüşüdür.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Siyasi istikrarsızlık ve ekonomik krizler, genellikle gelişmekte olan ülkelerden gelişmiş ülkelere doğru beyin göçünü tetikleyen temel faktörlerdir.",
+            "passage_id": "p_cloze_17_trans5",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Political instability and economic crises are generally the primary factors that trigger brain drain from developing to developed countries.",
                 "B": "Brain drain from developing nations to developed ones is usually caused by factors such as economic crises and political instability.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "In response to the growing threat of cyberattacks, international organizations are working to establish global standards for cybersecurity.",
+            "passage_id": "p_cloze_17_trans5",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Siber saldırıların artan tehdidine yanıt olarak, uluslararası kuruluşlar siber güvenlik için küresel standartlar oluşturmaya çalışıyorlar.",
                 "B": "Artan siber saldırı tehdidi karşısında, uluslararası örgütler siber güvenlik standartlarını küresel düzeyde belirlemeye başladılar.",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Fosil yakıtlara olan bağımlılığımızı azaltmak, sadece çevresel bir gereklilik değil, aynı zamanda uzun vadeli bir ekonomik stratejidir.",
+            "passage_id": "p_cloze_17_trans5",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Reducing our dependence on fossil fuels is not only an environmental necessity but also a long-term economic strategy.",
                 "B": "To reduce reliance on fossil fuels is an economic strategy in the long run, besides being a necessity for the environment.",

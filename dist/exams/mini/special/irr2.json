@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_irr2",
+            "title": "Cloze Test 17-21",
+            "text": "(I) The Big Bang theory is the prevailing cosmological model for the observable universe from the earliest known periods. (II) It suggests that the universe began as a very hot, dense point and has been expanding ever since. (III) Astronomers have observed that distant galaxies are moving away from us, supporting this expansion. (IV) Black holes are regions of spacetime where gravity is so strong that nothing can escape. (V) Cosmic microwave background radiation is considered the afterglow of this initial explosion."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) The Big Bang theory is the prevailing cosmological model for the observable universe from the earliest known periods. (II) It suggests that the universe began as a very hot, dense point and has been expanding ever since. (III) Astronomers have observed that distant galaxies are moving away from us, supporting this expansion. (IV) Black holes are regions of spacetime where gravity is so strong that nothing can escape. (V) Cosmic microwave background radiation is considered the afterglow of this initial explosion.",
+            "passage_id": "p_cloze_17_irr2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Cybersecurity involves protecting systems, networks, and programs from digital attacks. (II) These attacks are usually aimed at accessing, changing, or destroying sensitive information. (III) Implementing effective measures is particularly challenging today because there are more devices than people. (IV) Many companies are now moving their data to cloud-based storage for better accessibility. (V) Therefore, a successful cybersecurity approach has multiple layers of protection spread across the computers and data.",
+            "passage_id": "p_cloze_17_irr2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Sustainable agriculture aims to meet society's present food needs without compromising the ability of future generations to meet theirs. (II) It integrates three main goals: environmental health, economic profitability, and social equity. (III) Techniques include crop rotation, integrated pest management, and the use of cover crops. (IV) Genetically modified organisms (GMOs) have been a subject of intense debate regarding food safety. (V) By focusing on soil health, these practices help maintain productivity over the long term.",
+            "passage_id": "p_cloze_17_irr2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "irrelevant",
-            "passage_id": null,
-            "question": "(I) Cognitive psychology is the scientific study of mental processes such as attention, language use, memory, and perception. (II) It emerged in the 1950s as a reaction to behaviorism, which focused only on observable actions. (III) Researchers in this field use experimental methods to infer internal mental states. (IV) Behavioral therapy is often used to treat phobias by gradually exposing patients to their fears. (V) This discipline has greatly influenced other areas like artificial intelligence and educational theory.",
+            "passage_id": "p_cloze_17_irr2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "(I)",
                 "B": "(II)",

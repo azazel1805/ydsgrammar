@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_trans3",
+            "title": "Cloze Test 17-21",
+            "text": "Genetik olarak modifiye edilmiş organizmaların kullanımı, potansiyel çevresel riskler ve insan sağlığı üzerindeki etkileri nedeniyle tartışmalı bir konu olmaya devam etmektedir."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Genetik olarak modifiye edilmiş organizmaların kullanımı, potansiyel çevresel riskler ve insan sağlığı üzerindeki etkileri nedeniyle tartışmalı bir konu olmaya devam etmektedir.",
+            "passage_id": "p_cloze_17_trans3",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The use of genetically modified organisms remains a controversial issue due to potential environmental risks and effects on human health.",
                 "B": "Genetically modified organisms are controversial because of their risks to the environment and human health.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Urbanization often leads to the 'heat island' effect, where cities experience significantly warmer temperatures than their surrounding rural areas.",
+            "passage_id": "p_cloze_17_trans3",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Şehirleşme genellikle, şehirlerin çevrelerindeki kırsal alanlardan önemli ölçüde daha sıcak sıcaklıklar yaşadığı 'ısı adası' etkisine yol açar.",
                 "B": "Şehirlerin kırsal alanlardan daha sıcak olması, şehirleşmenin neden olduğu 'ısı adası' etkisi olarak bilinir.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Yazılı iletişimin icadı, bilginin nesiller boyunca korunmasını ve aktarılmasını sağlayarak insanlık tarihinde bir dönüm noktası olmuştur.",
+            "passage_id": "p_cloze_17_trans3",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The invention of written communication was a turning point in human history, enabling information to be preserved and transmitted across generations.",
                 "B": "Information could be preserved and transmitted across generations thanks to the invention of written communication, a turning point.",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Sustainable architecture aims to minimize the negative environmental impact of buildings by efficiency and moderation in the use of materials and energy.",
+            "passage_id": "p_cloze_17_trans3",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Sürdürülebilir mimari, malzeme ve enerji kullanımında verimlilik ve ölçülülük yoluyla binaların olumsuz çevresel etkilerini en aza indirmeyi amaçlar.",
                 "B": "Binaların çevreye verdiği zararı azaltmak için sürdürülebilir mimari, enerji ve malzeme kullanımında verimliliği hedefler.",

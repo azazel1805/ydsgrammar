@@ -204,7 +204,8 @@
                 "D": "had",
                 "E": "could"
             },
-            "question": "I could have been more enthusiastic at the training scheme, you know, and so ......... you."
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "C",
@@ -216,7 +217,8 @@
                 "D": "did we",
                 "E": "hadn't it"
             },
-            "question": "We weren't given any homework for tonight, ........?"
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "D",
@@ -228,7 +230,8 @@
                 "D": "Neither have I",
                 "E": "But I haven't"
             },
-            "question": "A: I haven't felt very motivated at work since the new manager, who doesn't seem to be doing a very good job, started. B: .......... ."
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "A",
@@ -240,7 +243,8 @@
                 "D": "wasn't it",
                 "E": "is it"
             },
-            "question": "I think 'Erin Bronckovich' is showing at the cinema in Moda, .........?"
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "D",
@@ -252,7 +256,8 @@
                 "D": "not to stand/to find",
                 "E": "not standing/to be finding"
             },
-            "question": "The shop manager told the sales assistant ........ idle and ......... something useful to do."
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "C",
@@ -264,7 +269,8 @@
                 "D": "So we have",
                 "E": "Nor does it"
             },
-            "question": "A: Are we in Houston now? B: ............ . I'm tired of sitting on this bus. A: Me too, and we are. Look! The sign says Houston Central Bus Station."
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "A",
@@ -276,7 +282,8 @@
                 "D": "I hope so",
                 "E": "So will they"
             },
-            "question": "A: I hope the Sims won't be bringing their children to the wedding. B: .......... because Julia's mother usually baby-sits for them on such occasions."
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "A",
@@ -287,7 +294,8 @@
                 "D": "yet",
                 "E": "too"
             },
-            "question": "It is such a pity that Vicki and Dave can't meet us at the restaurant for lunch because Vicki has the flu. I was looking forward to it, and ........ were you, weren't you?"
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "B",
@@ -299,7 +307,8 @@
                 "D": "but I do",
                 "E": "and I don't either"
             },
-            "question": "In the evening my husband likes to watch films, ......... . I prefer documentaries, so we have bought a second television set."
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "C",
@@ -311,7 +320,8 @@
                 "D": "haven't you",
                 "E": "didn't you"
             },
-            "question": "You haven't heard from Bill since he left for India, ........?"
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "E",
@@ -578,5 +588,16 @@
             "question": "The council don't seem to appreciate ........ ."
         }
     ],
-    "passages": []
+    "passages": [
+        {
+            "id": "p_cloze_17_part1",
+            "title": "Cloze Test 17-21",
+            "text": "I could have been more enthusiastic at the training scheme, you know, and so ......... you."
+        },
+        {
+            "id": "p_cloze_22_part1",
+            "title": "Cloze Test 22-26",
+            "text": "A: Are we in Houston now? B: ............ . I'm tired of sitting on this bus. A: Me too, and we are. Look! The sign says Houston Central Bus Station."
+        }
+    ]
 }

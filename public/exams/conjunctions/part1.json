@@ -205,7 +205,8 @@
                 "D": "Both/and",
                 "E": "Neither/nor"
             },
-            "question": "....... does the course prepare teachers to teach English abroad, ....... it also instructs them on how to teach immigrants in the UK."
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "D",
@@ -217,7 +218,8 @@
                 "D": "Owing to",
                 "E": "Whereas"
             },
-            "question": "......... an engineering failure between Shrewsbury and Wellington, the train will be delayed."
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "B",
@@ -229,7 +231,8 @@
                 "D": "Even though",
                 "E": "Owing to"
             },
-            "question": "........ avoid a repetition of the fuel crisis in the UK, the government has been given special powers to insist that fuel companies deliver petrol and diesel."
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "C",
@@ -241,7 +244,8 @@
                 "D": "much/than",
                 "E": "neither/nor"
             },
-            "question": "Mandarin Chinese must be ........difficult ........ Arabic for Europeans to learn."
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "C",
@@ -253,7 +257,8 @@
                 "D": "but",
                 "E": "whenever 2"
             },
-            "question": "Swimmers in international competitions have to be careful not to dive into the water before the start signal is given, ......... doing so results in disqualification."
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_17_part1"
         },
         {
             "correct": "D",
@@ -265,7 +270,8 @@
                 "D": "since",
                 "E": "when"
             },
-            "question": "Barbara has been learning Japanese ........ she made friends with a Japanese girl at university."
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "D",
@@ -277,7 +283,8 @@
                 "D": "nevertheless",
                 "E": "even after"
             },
-            "question": "The hike wasn't as long as I had expected; ........ I had blisters on both heels."
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "A",
@@ -289,7 +296,8 @@
                 "D": "While",
                 "E": "Because"
             },
-            "question": "........ the highly competitive nature of the clothing trade in the UK, the department store has decided to close its UK branches."
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": null,
@@ -301,7 +309,8 @@
                 "D": "No matter",
                 "E": "By the time"
             },
-            "question": "........ the boss said to Paul, it seems to have upset him!"
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "E",
@@ -313,7 +322,8 @@
                 "D": "nevertheless",
                 "E": "on the contrary"
             },
-            "question": "I wasn't frustrated when my train was delayed by fifteen minutes; ......... I was glad that it allowed time for me to eat some breakfast."
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
+            "passage_id": "p_cloze_22_part1"
         },
         {
             "correct": "C",
@@ -638,5 +648,16 @@
             "question": ".......... she was taking the chicken out of the oven, her husband rang to inform her that he would be eating with his German business associates."
         }
     ],
-    "passages": []
+    "passages": [
+        {
+            "id": "p_cloze_17_part1",
+            "title": "Cloze Test 17-21",
+            "text": "....... does the course prepare teachers to teach English abroad, ....... it also instructs them on how to teach immigrants in the UK."
+        },
+        {
+            "id": "p_cloze_22_part1",
+            "title": "Cloze Test 22-26",
+            "text": "Barbara has been learning Japanese ........ she made friends with a Japanese girl at university."
+        }
+    ]
 }

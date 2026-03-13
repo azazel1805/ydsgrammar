@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_trans2",
+            "title": "Cloze Test 17-21",
+            "text": "Globalization has facilitated the exchange of goods and ideas across borders, but it has also exacerbated economic inequality within many developing nations."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Globalization has facilitated the exchange of goods and ideas across borders, but it has also exacerbated economic inequality within many developing nations.",
+            "passage_id": "p_cloze_17_trans2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Küreselleşme, sınırlar ötesinde mal ve fikir alışverişini kolaylaştırmış, ancak birçok gelişmekte olan ülkede ekonomik eşitsizliği de artırmıştır.",
                 "B": "Sınırlar arası ticaretin küreselleşme ile kolaylaşması, gelişmekte olan ülkelerdeki gelir adaletsizliğini daha da belirginleştirmiştir.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "The success of a clinical trial depends on the meticulous selection of participants and the rigorous monitoring of adverse reactions to the treatment.",
+            "passage_id": "p_cloze_17_trans2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Klinik bir araştırmanın başarısı, katılımcıların titizlikle seçilmesine ve tedaviye karşı olumsuz reaksiyonların sıkı bir şekilde izlenmesine bağlıdır.",
                 "B": "Katılımcıların özenle seçildiği ve yan etkilerin izlendiği klinik çalışmalar genellikle başarılı sonuçlar verir.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "While some scholars believe that technology alienates individuals from society, others argue that it creates new opportunities for meaningful social interaction.",
+            "passage_id": "p_cloze_17_trans2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Bazı akademisyenler teknolojinin bireyleri toplumdan yabancılaştırdığına inanırken, diğerleri teknolojinin anlamlı sosyal etkileşim için yeni fırsatlar yarattığını savunmaktadır.",
                 "B": "Teknolojinin toplumsal yabancılaşmaya yol açtığı fikri, onun yeni sosyal fırsatlar sunduğu argümanıyla çelişmektedir.",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "The literary movement known as Romanticism emerged as a reaction against the scientific rationalism and industrialization of the Enlightenment era.",
+            "passage_id": "p_cloze_17_trans2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Romantizm olarak bilinen edebi akım, Aydınlanma çağının bilimsel rasyonalizmine ve sanayileşmesine karşı bir tepki olarak ortaya çıkmıştır.",
                 "B": "Aydınlanma dönemindeki rasyonalizm ve sanayileşmeye tepki olarak doğan Romantizm, edebiyat dünyasını etkilemiştir.",

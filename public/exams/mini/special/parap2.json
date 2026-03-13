@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_parap2",
+            "title": "Cloze Test 17-21",
+            "text": "Neither the expansion of the urban area nor the increase in population accounts for the sudden rise in local crime rates."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Neither the expansion of the urban area nor the increase in population accounts for the sudden rise in local crime rates.",
+            "passage_id": "p_cloze_17_parap2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The increase in crime is due to both the growth of the city and the rising population.",
                 "B": "The sudden rise in crime cannot be explained by urban expansion or population growth.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "The discovery of the ancient manuscript shed new light on the daily lives of citizens during the Roman Empire.",
+            "passage_id": "p_cloze_17_parap2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The ancient manuscript confirmed what historians already knew about life in the Roman Empire.",
                 "B": "Our understanding of everyday life in the Roman Empire was improved by the finding of the old document.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Much as the critics praised the director's latest film, it failed to attract a large audience at the box office.",
+            "passage_id": "p_cloze_17_parap2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The film was a commercial success because the critics gave it such positive reviews.",
                 "B": "Despite the favorable reviews from critics, the director's newest movie did not perform well financially.",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Were it not for the depletion of the ozone layer, the incidence of skin cancer would likely be significantly lower.",
+            "passage_id": "p_cloze_17_parap2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Skin cancer rates are high because the ozone layer is being protected.",
                 "B": "The thinning of the ozone layer is a major factor in the current high rates of skin cancer.",

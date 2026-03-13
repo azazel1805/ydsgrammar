@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_clomean2",
+            "title": "Cloze Test 17-21",
+            "text": "The project was abandoned not because of a lack of funding, but because the technical challenges proved insurmountable."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "The project was abandoned not because of a lack of funding, but because the technical challenges proved insurmountable.",
+            "passage_id": "p_cloze_17_clomean2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The project failed because there was not enough money to overcome the various technical challenges.",
                 "B": "Even though they had enough money, the team had to stop the project due to unsolvable technical problems.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Hardly any other architect has had as much influence on the modern skyline as Le Corbusier.",
+            "passage_id": "p_cloze_17_clomean2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Le Corbusier is one of the few architects whose influence on the modern skyline is truly significant.",
                 "B": "Many architects have influenced the modern skyline, but Le Corbusier's work is the most famous.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Genetic factors are thought to play a role in the development of the disease, yet environmental triggers are also essential.",
+            "passage_id": "p_cloze_17_clomean2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The disease is caused only by environmental triggers, though genetic factors might also be involved.",
                 "B": "Both genetics and environmental triggers are believed to be necessary for the disease to develop.",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "The evidence against the defendant was so overwhelming that the jury reached a verdict in less than an hour.",
+            "passage_id": "p_cloze_17_clomean2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The jury took less than an hour to decide because there was a vast amount of evidence against the defendant.",
                 "B": "Although there was a lot of evidence, the jury still needed nearly an hour to find the defendant guilty.",

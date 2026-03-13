@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_read4",
+            "title": "Cloze Test 17-21",
+            "text": "The Great Gatsby, F. Scott Fitzgerald's magnum opus, explores themes of decadence, idealism, and resistance to change. Set in the Roaring Twenties, the novel serves as a critique of the American Dream, suggesting that the pursuit of wealth can lead to moral decay and disillusionment. Jay Gatsby's relentless quest for Daisy Buchanan represents an attempt to recreate a past that is inherently unreachable. Ultimately, the novel portrays a society stratified by social class, where the 'new money' of West Egg can never truly integrate with the 'old money' of East Egg. Gatsby's pursuit of Daisy is characterized in the text as:"
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "The Great Gatsby, F. Scott Fitzgerald's magnum opus, explores themes of decadence, idealism, and resistance to change. Set in the Roaring Twenties, the novel serves as a critique of the American Dream, suggesting that the pursuit of wealth can lead to moral decay and disillusionment. Jay Gatsby's relentless quest for Daisy Buchanan represents an attempt to recreate a past that is inherently unreachable. Ultimately, the novel portrays a society stratified by social class, where the 'new money' of West Egg can never truly integrate with the 'old money' of East Egg. Gatsby's pursuit of Daisy is characterized in the text as:",
+            "passage_id": "p_cloze_17_read4",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "A successful endeavor to move forward in life",
                 "B": "An effort to relive and restore a bygone era",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "The Great Gatsby, F. Scott Fitzgerald's magnum opus, explores themes of decadence, idealism, and resistance to change. Set in the Roaring Twenties, the novel serves as a critique of the American Dream, suggesting that the pursuit of wealth can lead to moral decay and disillusionment. Jay Gatsby's relentless quest for Daisy Buchanan represents an attempt to recreate a past that is inherently unreachable. Ultimately, the novel portrays a society stratified by social class, where the 'new money' of West Egg can never truly integrate with the 'old money' of East Egg. The distinction between 'West Egg' and 'East Egg' illustrates:",
+            "passage_id": "p_cloze_17_read4",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The geographic distance between the United States and Europe",
                 "B": "The divide between newly acquired wealth and established heritage",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Quantum entanglement is a physical phenomenon that occurs when pairs or groups of particles are generated or interact in ways such that the quantum state of each particle cannot be described independently of the others. Even when separated by vast distances, a change in the state of one particle is instantaneously reflected in the state of its entangled partner. This 'spooky action at a distance', as Albert Einstein famously called it, challenges our classical understanding of space and time. Today, entanglement is at the heart of emerging technologies such as quantum computing and cryptography. According to the text, quantum entanglement:",
+            "passage_id": "p_cloze_17_read4",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Is a concept that Einstein fully supported and explained",
                 "B": "Means particles behave independently regardless of their origin",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Quantum entanglement is a physical phenomenon that occurs when pairs or groups of particles are generated or interact in ways such that the quantum state of each particle cannot be described independently of the others. Even when separated by vast distances, a change in the state of one particle is instantaneously reflected in the state of its entangled partner. This 'spooky action at a distance', as Albert Einstein famously called it, challenges our classical understanding of space and time. Today, entanglement is at the heart of emerging technologies such as quantum computing and cryptography. Why is entanglement significant for modern technology?",
+            "passage_id": "p_cloze_17_read4",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It allows for the creation of faster-than-light travel for humans",
                 "B": "It is a foundational element for quantum computing and security",

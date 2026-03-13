@@ -13,7 +13,18 @@
             "to": 44
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_master_paracom",
+            "title": "Cloze Test 17-21",
+            "text": "In literature, the 'Stream of Consciousness' technique attempts to portray the point of view of an individual by giving the written equivalent of the character's thought processes. ---- This narrative style was popularized by authors such as Virginia Woolf and James Joyce in the early 20th century."
+        },
+        {
+            "id": "p_cloze_22_master_paracom",
+            "title": "Cloze Test 22-26",
+            "text": "Artificial intelligence is transforming the healthcare industry by providing tools for more accurate diagnoses and personalized treatments. For example, AI algorithms can analyze medical images with a precision that rivals human radiologists. ____ However, the integration of AI in healthcare also raises important ethical and privacy questions that must be addressed."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "In literature, the 'Stream of Consciousness' technique attempts to portray the point of view of an individual by giving the written equivalent of the character's thought processes. ---- This narrative style was popularized by authors such as Virginia Woolf and James Joyce in the early 20th century.",
+            "passage_id": "p_cloze_17_master_paracom",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It often lacks traditional punctuation and logical transitions between ideas.",
                 "B": "Modernist literature focused heavily on the fragmentation of the human experience.",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "The concept of 'Zero Waste' encourages the redesign of resource life cycles so that all products are reused. The goal is for no trash to be sent to landfills, incinerators, or the ocean. ---- This approach contrasts sharply with the traditional linear economy of 'take-make-dispose.'",
+            "passage_id": "p_cloze_17_master_paracom",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Plastic pollution is one of the most pressing issues of the twenty-first century.",
                 "B": "It focuses on waste prevention rather than just better waste management.",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "The Renaissance was a period of 'rebirth' in arts, science, and culture that began in Italy during the 14th century. It bridge the gap between the Middle Ages and modern history. ---- This period saw a renewed interest in the classical philosophy of Ancient Greece and Rome.",
+            "passage_id": "p_cloze_17_master_paracom",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The printing press played a crucial role in spreading these new ideas across Europe.",
                 "B": "Leonardo da Vinci is often considered the quintessential Renaissance man.",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. ---- One of its most famous principles is Heisenberg's Uncertainty Principle, which states that certain pairs of physical properties cannot be known simultaneously.",
+            "passage_id": "p_cloze_17_master_paracom",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Classical mechanics is sufficient for describing the motion of macroscopic objects.",
                 "B": "It introduced concepts that challenged the deterministic view of the universe.",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "paracom",
-            "passage_id": null,
-            "question": "The concept of sustainability has become increasingly important in modern business practices. Companies are now expected to consider not only their financial performance but also their impact on the environment and society. ____ This triple bottom line approach helps businesses build long-term value while contributing to a healthier planet.",
+            "passage_id": "p_cloze_17_master_paracom",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "This is often referred to as the 'triple bottom line' of people, planet, and profit.",
                 "B": "Many companies still prioritize short-term profits over environmental concerns.",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "paracom",
-            "passage_id": null,
-            "question": "Artificial intelligence is transforming the healthcare industry by providing tools for more accurate diagnoses and personalized treatments. For example, AI algorithms can analyze medical images with a precision that rivals human radiologists. ____ However, the integration of AI in healthcare also raises important ethical and privacy questions that must be addressed.",
+            "passage_id": "p_cloze_22_master_paracom",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Furthermore, AI can help predict patient outcomes and suggest preventive measures.",
                 "B": "Medical professionals are generally resistant to the introduction of AI technology.",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "paracom",
-            "passage_id": null,
-            "question": "The Great Depression was a severe worldwide economic downturn that took place mostly during the 1930s. It began after a major fall in stock prices in the United States, known as the Wall Street Crash of 1929. ____ The effects were felt globally, with unemployment rates skyrocketing and international trade plummeting.",
+            "passage_id": "p_cloze_22_master_paracom",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "This event triggered a decade of economic hardship for millions of people.",
                 "B": "The U.S. economy actually recovered quite quickly after the initial crash.",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "paracom",
-            "passage_id": null,
-            "question": "Urbanization is the process by which more and more people leave the countryside to live in cities. This trend is driven by various factors, including the search for better job opportunities and improved access to services. ____ However, rapid urbanization can also lead to problems such as overcrowding, pollution, and inadequate housing.",
+            "passage_id": "p_cloze_22_master_paracom",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "As a result, cities are becoming more diverse and economically vibrant.",
                 "B": "Rural areas are often more attractive to people because of the lower cost of living.",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Ancient Stoicism focused on the development of self-control and fortitude as a means of overcoming destructive emotions. ____. However, modern interpretations often reduce it to mere emotional suppression, ignoring its deeper psychological roots. In reality, it was a comprehensive philosophical framework aimed at achieving eudaimonia.",
+            "passage_id": "p_cloze_22_master_paracom",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "This ancient school of thought aimed at achieving inner peace through the exercise of virtue.",
                 "B": "Stoics believed that all people should live in isolation to avoid social corruption.",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "In the field of biology, symbiosis describes a close and long-term biological interaction between two different organisms. ____. This mutual reliance ensures survival in harsh environments where individual species might otherwise perish. Such relationships highlight the complexity of evolutionary adaptation.",
+            "passage_id": "p_cloze_22_master_paracom",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Predatory behavior is the most common form of interaction in the wild.",
                 "B": "One of the most well-known examples is the relationship between bees and flowers.",

@@ -13,7 +13,18 @@
             "to": 1039
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_master_karma",
+            "title": "Cloze Test 17-21",
+            "text": "The use of renewable energy sources has increased significantly as a result of rising concerns about climate change."
+        },
+        {
+            "id": "p_cloze_22_master_karma",
+            "title": "Cloze Test 22-26",
+            "text": "Journalist: Your latest book explores the impact of social media on teenage mental health. What was your most surprising finding? \nPsychologist: It was the fact that the negative effects are not universal; they depend heavily on how the platform is used. \nJournalist: ____ \nPsychologist: Exactly. Passive browsing seems much more harmful than active engagement."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "The use of renewable energy sources has increased significantly as a result of rising concerns about climate change.",
+            "passage_id": "p_cloze_17_master_karma",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Climate change concerns have led to a substantial growth in the utilization of renewable energy.",
                 "B": "The increase in renewable energy use is the main cause of concerns about climate change.",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "Hardly had the new law been implemented when the public started protesting against its strict regulations.",
+            "passage_id": "p_cloze_17_master_karma",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The public began to protest the strict regulations immediately after the new law came into effect.",
                 "B": "The new law was implemented despite the public's protests against its strict regulations.",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "No sooner had the scientist published his findings than his theories were challenged by his peers.",
+            "passage_id": "p_cloze_17_master_karma",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The scientist's theories were questioned by other experts immediately after he made his results public.",
                 "B": "Before the scientist published his results, his peers had already challenged his theories.",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "It is widely believed that the discovery of fire was a turning point in human evolution.",
+            "passage_id": "p_cloze_17_master_karma",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Many people think that the discovery of fire significantly changed the course of human development.",
                 "B": "The discovery of fire is the only reason why humans evolved the way they did.",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "Professor: Have you finalized the methodology for your thesis yet? \nStudent: Not quite. I'm still torn between qualitative and quantitative approaches. \nProfessor: ____ \nStudent: That makes sense. I'll focus on the specific research questions to see which one fits better.",
+            "passage_id": "p_cloze_17_master_karma",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Why don't you use both in a mixed-methods approach?",
                 "B": "The choice should depend on the nature of the data you intend to collect.",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "Journalist: Your latest book explores the impact of social media on teenage mental health. What was your most surprising finding? \nPsychologist: It was the fact that the negative effects are not universal; they depend heavily on how the platform is used. \nJournalist: ____ \nPsychologist: Exactly. Passive browsing seems much more harmful than active engagement.",
+            "passage_id": "p_cloze_22_master_karma",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "So, you mean that scrolling through feeds without interacting is the main problem?",
                 "B": "Do you think social media should be banned for teenagers?",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "Doctor: Your blood pressure is still higher than we'd like it to be. \nPatient: I've been trying to cut down on salt and exercise more, as you suggested. \nDoctor: ____ \nPatient: I suppose work has been quite demanding lately. I'll try to find ways to relax.",
+            "passage_id": "p_cloze_22_master_karma",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Are you sure you're following the diet correctly?",
                 "B": "Stress can also be a significant factor in hypertension.",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "Colleague A: I'm struggling to get my students to participate in class discussions. \nColleague B: Have you tried using smaller group activities before opening it up to the whole class? \nColleague A: ____ \nColleague B: It usually helps because students feel less intimidated in a smaller setting.",
+            "passage_id": "p_cloze_22_master_karma",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "No, I haven't. Do you think that would make a difference?",
                 "B": "Yes, I've tried that, but it didn't seem to work either.",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "The concept of sustainability has become increasingly important in modern business practices. Companies are now expected to consider not only their financial performance but also their impact on the environment and society. ____ This triple bottom line approach helps businesses build long-term value while contributing to a healthier planet.",
+            "passage_id": "p_cloze_22_master_karma",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "This is often referred to as the 'triple bottom line' of people, planet, and profit.",
                 "B": "Many companies still prioritize short-term profits over environmental concerns.",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "mixed",
-            "passage_id": null,
-            "question": "Artificial intelligence is transforming the healthcare industry by providing tools for more accurate diagnoses and personalized treatments. For example, AI algorithms can analyze medical images with a precision that rivals human radiologists. ____ However, the integration of AI in healthcare also raises important ethical and privacy questions that must be addressed.",
+            "passage_id": "p_cloze_22_master_karma",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Furthermore, AI can help predict patient outcomes and suggest preventive measures.",
                 "B": "Medical professionals are generally resistant to the introduction of AI technology.",

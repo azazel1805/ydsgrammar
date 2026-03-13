@@ -61,7 +61,38 @@
             "to": 80
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_fullexam10",
+            "title": "Cloze Test 17-21",
+            "text": "Paragraph 1: The Industrial Revolution  (___)  a turning point in history. It began in Britain and quickly spread  (___)  the world. This era saw the  (___)  of steam power.  (___)  , labor conditions were often harsh. Many workers  (___)  for twelve hours a day. Q17: Q18: Q19: Q20: Q21:"
+        },
+        {
+            "id": "p_cloze_22_fullexam10",
+            "title": "Cloze Test 22-26",
+            "text": "Paragraph 2: Psychologists often study  (___)  memory functions. One key area is  (___)  memory, which holds information briefly.  (___)  it is processed, it moves to long-term storage.  (___)  people struggle with this transition. Factors  (___)  stress can negatively impact recall. Q22: Q23: Q24: Q25: Q26:"
+        },
+        {
+            "id": "p_read_43_fullexam10",
+            "title": "Reading 43",
+            "text": "The Anthropocene epoch, a term coined to describe the period during which human activity has been the dominant influence on climate and the environment, remains a subject of intense stratigraphic debate. While proponents argue that the mid-20th century, marked by the Great Acceleration and radioactive isotopes from nuclear testing, serves as a definitive boundary, skeptics maintain that human impact is too asynchronous and diachronous to be confined to a single epoch."
+        },
+        {
+            "id": "p_read_51_fullexam10",
+            "title": "Reading 51",
+            "text": "The concept of 'soft power,' first introduced by Joseph Nye, refers to a nation's ability to influence others through attraction and persuasion rather than coercion or payment (hard power). Culture, political values, and foreign policies are the primary sources of soft power. In an era of globalization, the digital presence and cultural exports of a country can significantly enhance its international standing without the need for military intervention."
+        },
+        {
+            "id": "p_read_59_fullexam10",
+            "title": "Reading 59",
+            "text": "Behavioral economics challenges the classical economic assumption that individuals are 'rational actors' who always seek to maximize their utility. Instead, it incorporates insights from psychology to show that humans are prone to cognitive biases, such as loss aversion and the endowment effect. Loss aversion suggests that the pain of losing something is twice as powerful as the joy of gaining the same thing, leading to 'irrational' financial decisions."
+        },
+        {
+            "id": "p_read_47_fullexam10",
+            "title": "Reading 47",
+            "text": "Neuroplasticity, the brain's ability to reorganize itself by forming new neural connections throughout life, has revolutionized our understanding of recovery from traumatic brain injury (TBI). Previously, it was believed that the adult brain was a static organ. However, research into synaptic pruning and axonal sprouting shows that the brain can compensate for injury by adjusting its activities in response to new situations or changes in the environment."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -290,8 +321,8 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Paragraph 1: The Industrial Revolution (17)_____ a turning point in history. It began in Britain and quickly spread (18)_____ the world. This era saw the (19)_____ of steam power. (20)_____ , labor conditions were often harsh. Many workers (21)_____ for twelve hours a day. Q17:",
+            "passage_id": "p_cloze_17_fullexam10",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "marked",
                 "B": "had marked",
@@ -304,8 +335,8 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q18:",
+            "passage_id": "p_cloze_17_fullexam10",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "throughout",
                 "B": "between",
@@ -318,8 +349,8 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q19:",
+            "passage_id": "p_cloze_17_fullexam10",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "abolition",
                 "B": "adoption",
@@ -332,8 +363,8 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q20:",
+            "passage_id": "p_cloze_17_fullexam10",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "However",
                 "B": "Therefore",
@@ -346,8 +377,8 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q21:",
+            "passage_id": "p_cloze_17_fullexam10",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "had to work",
                 "B": "must work",
@@ -360,8 +391,8 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Paragraph 2: Psychologists often study (22)_____ memory functions. One key area is (23)_____ memory, which holds information briefly. (24)_____ it is processed, it moves to long-term storage. (25)_____ people struggle with this transition. Factors (26)_____ stress can negatively impact recall. Q22:",
+            "passage_id": "p_cloze_22_fullexam10",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "how",
                 "B": "why",
@@ -374,8 +405,8 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q23:",
+            "passage_id": "p_cloze_22_fullexam10",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "working",
                 "B": "worked",
@@ -388,8 +419,8 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q24:",
+            "passage_id": "p_cloze_22_fullexam10",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Once",
                 "B": "Unless",
@@ -402,8 +433,8 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q25:",
+            "passage_id": "p_cloze_22_fullexam10",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Some",
                 "B": "Each",
@@ -416,8 +447,8 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Q26:",
+            "passage_id": "p_cloze_22_fullexam10",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "such as",
                 "B": "as if",
@@ -654,8 +685,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 1: The Anthropocene epoch, a term coined to describe the period during which human activity has been the dominant influence on climate and the environment, remains a subject of intense stratigraphic debate. While proponents argue that the mid-20th century, marked by the Great Acceleration and radioactive isotopes from nuclear testing, serves as a definitive boundary, skeptics maintain that human impact is too asynchronous and diachronous to be confined to a single epoch. According to the passage, what is a primary point of contention regarding the Anthropocene?",
+            "passage_id": "p_read_43_fullexam10",
+            "question": "According to the passage, what is a primary point of contention regarding the Anthropocene?",
             "options": {
                 "A": "The specific chemical composition of nuclear isotopes",
                 "B": "Whether human impact is uniform enough to define a single stratigraphic boundary",
@@ -668,8 +699,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 1: The Anthropocene epoch... (Cont.) The term 'Great Acceleration' in the text refers to:",
+            "passage_id": "p_read_43_fullexam10",
+            "question": "The term 'Great Acceleration' in the text refers to:",
             "options": {
                 "A": "The rapid expansion of human population and industrial activity post-WWII",
                 "B": "The speed at which tectonic plates move",
@@ -682,8 +713,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 1: The Anthropocene epoch... (Cont.) It can be inferred from the passage that skeptics of the Anthropocene label believe:",
+            "passage_id": "p_read_43_fullexam10",
+            "question": "It can be inferred from the passage that skeptics of the Anthropocene label believe:",
             "options": {
                 "A": "Human activity has had no impact on the Earth's crust",
                 "B": "A single start date cannot accurately represent global environmental changes",
@@ -696,8 +727,8 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 1: The Anthropocene epoch... (Cont.) What is the author's tone regarding the definition of the Anthropocene?",
+            "passage_id": "p_read_43_fullexam10",
+            "question": "What is the author's tone regarding the definition of the Anthropocene?",
             "options": {
                 "A": "Highly dismissive and critical",
                 "B": "Purely emotional and biased",
@@ -710,8 +741,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: Neuroplasticity, the brain's ability to reorganize itself by forming new neural connections throughout life, has revolutionized our understanding of recovery from traumatic brain injury (TBI). Previously, it was believed that the adult brain was a static organ. However, research into synaptic pruning and axonal sprouting shows that the brain can compensate for injury by adjusting its activities in response to new situations or changes in the environment. Based on the passage, how has the perception of the adult brain changed?",
+            "passage_id": "p_read_47_fullexam10",
+            "question": "Based on the passage, how has the perception of the adult brain changed?",
             "options": {
                 "A": "It is now seen as more rigid than previously thought",
                 "B": "It is understood to be dynamic rather than static",
@@ -724,8 +755,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: Neuroplasticity... (Cont.) What does 'synaptic pruning' likely involve based on the context of brain reorganization?",
+            "passage_id": "p_read_47_fullexam10",
+            "question": "What does 'synaptic pruning' likely involve based on the context of brain reorganization?",
             "options": {
                 "A": "The strengthening of all existing memories",
                 "B": "The elimination of weaker neural connections to increase efficiency",
@@ -738,8 +769,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: Neuroplasticity... (Cont.) According to the text, the brain adjusts its activities:",
+            "passage_id": "p_read_47_fullexam10",
+            "question": "According to the text, the brain adjusts its activities:",
             "options": {
                 "A": "Only during sleep",
                 "B": "In response to environmental changes and new situations",
@@ -752,8 +783,8 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: Neuroplasticity... (Cont.) What is the main idea of the passage?",
+            "passage_id": "p_read_47_fullexam10",
+            "question": "What is the main idea of the passage?",
             "options": {
                 "A": "Traumatic brain injury is always permanent",
                 "B": "The brain's structure is fixed from birth",
@@ -766,8 +797,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: The concept of 'soft power,' first introduced by Joseph Nye, refers to a nation's ability to influence others through attraction and persuasion rather than coercion or payment (hard power). Culture, political values, and foreign policies are the primary sources of soft power. In an era of globalization, the digital presence and cultural exports of a country can significantly enhance its international standing without the need for military intervention. Which of the following is an example of 'hard power' as implied by the text?",
+            "passage_id": "p_read_51_fullexam10",
+            "question": "Which of the following is an example of 'hard power' as implied by the text?",
             "options": {
                 "A": "A global film festival",
                 "B": "Military intervention",
@@ -780,8 +811,8 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: The concept of 'soft power'... (Cont.) According to Joseph Nye, soft power is based on:",
+            "passage_id": "p_read_51_fullexam10",
+            "question": "According to Joseph Nye, soft power is based on:",
             "options": {
                 "A": "Economic sanctions and threats",
                 "B": "Attraction and persuasion",
@@ -794,8 +825,8 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: The concept of 'soft power'... (Cont.) How does globalization affect soft power?",
+            "passage_id": "p_read_51_fullexam10",
+            "question": "How does globalization affect soft power?",
             "options": {
                 "A": "It makes soft power irrelevant",
                 "B": "It limits a country's cultural reach",
@@ -808,8 +839,8 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 3: The concept of 'soft power'... (Cont.) What are the primary sources of soft power mentioned in the text?",
+            "passage_id": "p_read_51_fullexam10",
+            "question": "What are the primary sources of soft power mentioned in the text?",
             "options": {
                 "A": "Natural resources and gold reserves",
                 "B": "Culture, political values, and foreign policies",
@@ -878,8 +909,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Behavioral economics challenges the classical economic assumption that individuals are 'rational actors' who always seek to maximize their utility. Instead, it incorporates insights from psychology to show that humans are prone to cognitive biases, such as loss aversion and the endowment effect. Loss aversion suggests that the pain of losing something is twice as powerful as the joy of gaining the same thing, leading to 'irrational' financial decisions. What is the main difference between classical and behavioral economics?",
+            "passage_id": "p_read_59_fullexam10",
+            "question": "What is the main difference between classical and behavioral economics?",
             "options": {
                 "A": "Behavioral economics ignores psychology",
                 "B": "Classical economics assumes humans are always rational",
@@ -892,8 +923,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Behavioral economics... (Cont.) According to the passage, 'loss aversion' means:",
+            "passage_id": "p_read_59_fullexam10",
+            "question": "According to the passage, 'loss aversion' means:",
             "options": {
                 "A": "Gaining money is better than losing it",
                 "B": "People feel the impact of a loss more heavily than a gain",
@@ -906,8 +937,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Behavioral economics... (Cont.) What does the term 'utility' most likely mean in an economic context?",
+            "passage_id": "p_read_59_fullexam10",
+            "question": "What does the term 'utility' most likely mean in an economic context?",
             "options": {
                 "A": "The cost of electricity",
                 "B": "The satisfaction or benefit derived from a choice",
@@ -920,8 +951,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 5: Behavioral economics... (Cont.) Which cognitive bias is mentioned alongside loss aversion?",
+            "passage_id": "p_read_59_fullexam10",
+            "question": "Which cognitive bias is mentioned alongside loss aversion?",
             "options": {
                 "A": "The confirmation bias",
                 "B": "The endowment effect",

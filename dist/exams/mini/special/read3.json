@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_read3",
+            "title": "Cloze Test 17-21",
+            "text": "Passage: Epigenetics is the study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence. This means that environmental factors—such as diet, stress, and toxins—can switch genes 'on' or 'off'. These changes can sometimes be passed down to future generations, complicating our understanding of heredity. Question: How does epigenetics differ from traditional genetics?"
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage: Epigenetics is the study of heritable changes in gene expression that do not involve alterations to the underlying DNA sequence. This means that environmental factors—such as diet, stress, and toxins—can switch genes 'on' or 'off'. These changes can sometimes be passed down to future generations, complicating our understanding of heredity. Question: How does epigenetics differ from traditional genetics?",
+            "passage_id": "p_cloze_17_read3",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It only focuses on changes in the DNA sequence itself.",
                 "B": "It explores gene expression changes without changing the DNA sequence.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage: The concept of the 'Social Contract' suggests that individuals consent, either explicitly or implicitly, to surrender some of their freedoms to an authority in exchange for the protection of their remaining rights. Philosophers like Thomas Hobbes, John Locke, and Jean-Jacques Rousseau offered different interpretations of this relationship between the individual and the state. Question: According to the passage, what is the trade-off in a social contract?",
+            "passage_id": "p_cloze_17_read3",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Absolute freedom for total state control.",
                 "B": "Partial freedom for the protection of rights.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage: The Great Depression of the 1930s was a severe global economic downturn that began with the stock market crash in the United States. It led to mass unemployment, deflation, and a sharp decline in industrial production. The crisis prompted governments worldwide to take a more active role in managing the economy, leading to the rise of Keynesian economics. Question: What was one of the major economic consequences of the Great Depression mentioned in the text?",
+            "passage_id": "p_cloze_17_read3",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "A global increase in industrial production.",
                 "B": "Hyperinflation in the United States.",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage: Biomimicry is a discipline that seeks sustainable solutions to human challenges by emulating nature's time-tested patterns and strategies. For example, the design of high-speed trains has been modeled after the beak of the kingfisher to reduce noise and increase efficiency. By studying how organisms solve problems, engineers can create more efficient technologies. Question: What is the main goal of biomimicry according to the passage?",
+            "passage_id": "p_cloze_17_read3",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "To replace all natural systems with machines.",
                 "B": "To find solutions by imitating natural designs and processes.",

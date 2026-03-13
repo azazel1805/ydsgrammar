@@ -13,7 +13,18 @@
             "to": 50
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_vocab2",
+            "title": "Cloze Test 17-21",
+            "text": "The company had to ---- the merger after discovering significant financial discrepancies during the auditing process."
+        },
+        {
+            "id": "p_cloze_22_vocab2",
+            "title": "Cloze Test 22-26",
+            "text": "The teacher encouraged the students to ---- their arguments with evidence from primary sources."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The company had to ---- the merger after discovering significant financial discrepancies during the auditing process.",
+            "passage_id": "p_cloze_17_vocab2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "carry out",
                 "B": "call off",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "Her contributions to the field of quantum physics have been so ---- that she was awarded the Nobel Prize.",
+            "passage_id": "p_cloze_17_vocab2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "mediocre",
                 "B": "profound",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The software is highly ----, allowing users to customize almost every aspect of the interface to suit their needs.",
+            "passage_id": "p_cloze_17_vocab2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "rigid",
                 "B": "versatile",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The sudden ---- in stock prices caused widespread panic among investors who feared a total market collapse.",
+            "passage_id": "p_cloze_17_vocab2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "stability",
                 "B": "plummet",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "Social media platforms have a ---- influence on the way young people perceive themselves and the world around them.",
+            "passage_id": "p_cloze_17_vocab2",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "marginal",
                 "B": "pervasive",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The teacher encouraged the students to ---- their arguments with evidence from primary sources.",
+            "passage_id": "p_cloze_22_vocab2",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "contradict",
                 "B": "substantiate",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "It is widely accepted that healthy eating habits and regular exercise are ---- to maintaining a long life.",
+            "passage_id": "p_cloze_22_vocab2",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "detrimental",
                 "B": "conducive",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The city council had to ---- new regulations to control the noise pollution caused by the construction of the new highway.",
+            "passage_id": "p_cloze_22_vocab2",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "abolish",
                 "B": "implement",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The ancient ruins were ---- by the dense jungle, remaining undiscovered for hundreds of years.",
+            "passage_id": "p_cloze_22_vocab2",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "revealed",
                 "B": "concealed",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "Modern technology has rendered many traditional manufacturing methods ----, as machines can now do the work more efficiently.",
+            "passage_id": "p_cloze_22_vocab2",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "essential",
                 "B": "obsolete",

@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_trans4",
+            "title": "Cloze Test 17-21",
+            "text": "Nükleer enerjinin kullanımı, hem düşük karbon salınımı avantajı hem de güvenlik riskleri nedeniyle yoğun bir şekilde tartışılmaktadır."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Nükleer enerjinin kullanımı, hem düşük karbon salınımı avantajı hem de güvenlik riskleri nedeniyle yoğun bir şekilde tartışılmaktadır.",
+            "passage_id": "p_cloze_17_trans4",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The use of nuclear energy is intensely debated due to both its advantage of low carbon emissions and its safety risks.",
                 "B": "The safety risks of nuclear energy are debated as much as its advantage of providing low carbon emissions.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "While some experts argue that economic growth is essential for poverty reduction, others emphasize the importance of income equality.",
+            "passage_id": "p_cloze_17_trans4",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Bazı uzmanlar ekonomik büyümenin yoksulluğun azaltılması için elzem olduğunu savunurken, diğerleri gelir eşitliğinin önemini vurgulamaktadır.",
                 "B": "Ekonomik büyümenin yoksulluğu azalttığını düşünen uzmanların yanı sıra, gelir eşitliğinin daha önemli olduğunu savunanlar da vardır.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "The invention of the printing press in the 15th century facilitated the rapid spread of knowledge across Europe.",
+            "passage_id": "p_cloze_17_trans4",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "15. yüzyılda matbaanın icadı, bilginin Avrupa genelinde hızla yayılmasını kolaylaştırmıştır.",
                 "B": "Matbaanın 15. yüzyılda icat edilmesiyle birlikte, Avrupa'da bilgi çok daha hızlı bir şekilde yayılmaya başlamıştır.",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Modern tıp, genetik araştırmalar sayesinde daha önce tedavi edilemez olarak görülen birçok hastalığa çözüm bulmuştur.",
+            "passage_id": "p_cloze_17_trans4",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Modern medicine has found solutions to many diseases previously seen as incurable, thanks to genetic research.",
                 "B": "Many diseases that were once incurable are now being treated by modern medicine through genetic studies.",

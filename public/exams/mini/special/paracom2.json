@@ -13,7 +13,13 @@
             "to": 20
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_paracom2",
+            "title": "Cloze Test 17-21",
+            "text": "Catalysts are substances that increase the rate of a chemical reaction without being consumed in the process. ____. This efficiency makes them indispensable in industrial manufacturing, from fuel production to plastics. They lower the activation energy required for a reaction to occur."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +248,8 @@
         {
             "id": 17,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Catalysts are substances that increase the rate of a chemical reaction without being consumed in the process. ____. This efficiency makes them indispensable in industrial manufacturing, from fuel production to plastics. They lower the activation energy required for a reaction to occur.",
+            "passage_id": "p_cloze_17_paracom2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The reaction would eventually stop once all the reactants are converted.",
                 "B": "Most catalysts are made from expensive precious metals like platinum.",
@@ -256,8 +262,8 @@
         {
             "id": 18,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "International law governs the interactions between sovereign states and provides a framework for cooperation. ____. Without a centralized enforcement mechanism, compliance often relies on mutual interest and diplomatic pressure. This often leads to challenges in resolving global conflicts.",
+            "passage_id": "p_cloze_17_paracom2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The United Nations is the primary body responsible for maintaining world peace.",
                 "B": "Treaties are the most common source of international legal obligations.",
@@ -270,8 +276,8 @@
         {
             "id": 19,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Quantum entanglement occurs when particles become linked such that the state of one instantly influences the other, regardless of distance. ____. This phenomenon challenged Einstein's concept of local realism and remains a central mystery of physics. It suggests a level of interconnectedness previously thought impossible.",
+            "passage_id": "p_cloze_17_paracom2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Quantum computers use these properties to perform complex calculations.",
                 "B": "Albert Einstein famously referred to this as 'spooky action at a distance.'",
@@ -284,8 +290,8 @@
         {
             "id": 20,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Anthropologists study how cultures change over time through processes of adaptation, innovation, and diffusion. ____. Such exchanges lead to the synthesis of new traditions and the transformation of existing social structures. This field provides insights into the diversity of human experience.",
+            "passage_id": "p_cloze_17_paracom2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Cultural diffusion involves the spread of ideas and traits from one society to another.",
                 "B": "Biological anthropology focuses on the physical evolution of the human species.",

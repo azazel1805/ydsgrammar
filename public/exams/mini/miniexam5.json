@@ -75,6 +75,16 @@
         {
             "id": "p2",
             "text": "The Louvre Museum in Paris is the world's largest art museum and a historic monument in France. A central landmark of the city, it is located on the Right Bank of the Seine. Roughly 38,000 objects from prehistory to the 21st century are exhibited over an area of 72,735 square meters. The museum is housed in the Louvre Palace, originally built as the Louvre castle in the late 12th to 13th century. It is most famous for housing the Mona Lisa by Leonardo da Vinci, which attracts millions of visitors annually. The museum has expanded several times over the centuries, most notably with the addition of the glass pyramid in the courtyard in 1989."
+        },
+        {
+            "id": "p_cloze_17_miniexam5",
+            "title": "Cloze Test 17-21",
+            "text": "The team could have finished the project on time if they had been provided with adequate funding."
+        },
+        {
+            "id": "p_cloze_22_miniexam5",
+            "title": "Cloze Test 22-26",
+            "text": "Student: I'm having trouble understanding the concept of entropy in this system. \nProfessor: ______ \nStudent: Oh, so it's a measure of disorder or randomness rather than just heat loss."
         }
     ],
     "questions": [
@@ -289,7 +299,7 @@
         {
             "id": 17,
             "section_id": "paraphrase",
-            "question": "The team could have finished the project on time if they had been provided with adequate funding.",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Adequate funding would have enabled the team to complete the project on schedule.",
                 "B": "The team finished the project on time because they received adequate funding.",
@@ -297,12 +307,13 @@
                 "D": "The project was finished on time although the team lacked adequate funding.",
                 "E": "Without adequate funding, the team still managed to complete the project on time."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam5"
         },
         {
             "id": 18,
             "section_id": "paraphrase",
-            "question": "No sooner had the central bank announced the interest rate hike than the stock market plummeted.",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Immediately after the central bank declared an increase in interest rates, the stock market crashed.",
                 "B": "The stock market crashed before the central bank could announce the interest rate hike.",
@@ -310,12 +321,13 @@
                 "D": "The stock market plummeted, causing the central bank to announce an interest rate hike.",
                 "E": "As soon as the stock market crashed, the central bank announced an interest rate hike."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam5"
         },
         {
             "id": 19,
             "section_id": "paraphrase",
-            "question": "Despite the complexity of the theory, the professor explained it in a way that everyone could understand.",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The professor made the complex theory accessible to all through a clear explanation.",
                 "B": "The theory was so complex that the professor's explanation confused everyone.",
@@ -323,12 +335,13 @@
                 "D": "The professor's explanation was as complex as the theory itself, confusing everyone.",
                 "E": "Although the explanation was simple, the theory remained too complex for everyone."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam5"
         },
         {
             "id": 20,
             "section_id": "paraphrase",
-            "question": "It is widely believed that renewable energy is the only viable solution to climate change.",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Most people consider renewable energy to be the sole practical remedy for climate change.",
                 "B": "Few people think that renewable energy can solve the problem of climate change.",
@@ -336,12 +349,13 @@
                 "D": "Renewable energy is thought to be one of many viable solutions to climate change.",
                 "E": "It is undeniable that climate change is the main obstacle to renewable energy."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam5"
         },
         {
             "id": 21,
             "section_id": "dialogue",
-            "question": "Dr. Smith: The new clinical trial results are quite promising. \nDr. Jones: ______ \nDr. Smith: Yes, especially in patients who showed no response to conventional therapies.",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Did you notice any significant reduction in the tumor sizes?",
                 "B": "Are you referring to the side effects observed in the control group?",
@@ -349,12 +363,13 @@
                 "D": "Have they published the methodology in a peer-reviewed journal yet?",
                 "E": "Conventional therapies are still the most reliable option."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam5"
         },
         {
             "id": 22,
             "section_id": "dialogue",
-            "question": "Student: I'm having trouble understanding the concept of entropy in this system. \nProfessor: ______ \nStudent: Oh, so it's a measure of disorder or randomness rather than just heat loss.",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Think of it as the degree of uncertainty or chaos in a closed system.",
                 "B": "Entropy is essentially the amount of usable energy in the universe.",
@@ -362,12 +377,13 @@
                 "D": "It has nothing to do with thermodynamics, strictly speaking.",
                 "E": "Heat loss is the only important factor you need to calculate here."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam5"
         },
         {
             "id": 23,
             "section_id": "dialogue",
-            "question": "Manager: Our quarterly profits have dropped by 15%. We need to cut costs. \nAnalyst: ______ \nManager: That might be true, but we need an immediate solution to satisfy the shareholders.",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Perhaps we should look into increasing our marketing budget to drive sales.",
                 "B": "Cutting costs now could compromise our long-term R&D projects.",
@@ -375,12 +391,13 @@
                 "D": "The shareholders are completely unaware of this financial dip.",
                 "E": "We have already maximized our profit margins for this year."
             },
-            "correct": "B"
+            "correct": "B",
+            "passage_id": "p_cloze_22_miniexam5"
         },
         {
             "id": 24,
             "section_id": "dialogue",
-            "question": "Researcher: The archaeological dig revealed artifacts from a previously unknown civilization. \nColleague: ______ \nResearcher: Carbon dating places them around 4000 BCE, much older than the surrounding settlements.",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "How old are these findings estimated to be?",
                 "B": "Where exactly did you conduct the excavation?",
@@ -388,12 +405,13 @@
                 "D": "Why did this civilization collapse so suddenly?",
                 "E": "I doubt these artifacts are authentic."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam5"
         },
         {
             "id": 25,
             "section_id": "para_comp",
-            "question": "Photosynthesis is the process by which green plants transform light energy into chemical energy. ______ . These sugars then serve as the fundamental energy source for almost all other organisms on Earth, directly or indirectly. Without this process, life as we know it would cease to exist.",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "During this process, carbon dioxide and water are converted into oxygen and energy-rich sugars",
                 "B": "Plants also require specific soil nutrients to grow effectively",
@@ -401,12 +419,13 @@
                 "D": "Cellular respiration is the opposite process, occurring in animal cells",
                 "E": "Artificial photosynthesis is a promising new technology for renewable energy"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam5"
         },
         {
             "id": 26,
             "section_id": "para_comp",
-            "question": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. ______ . Thinkers, authors, statesmen, scientists, and artists in Europe thrived during this era, while global exploration opened up new lands and cultures to European commerce.",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It generally took place from the 14th century to the 17th century, promoting the rediscovery of classical philosophy and art",
                 "B": "The period was marked by devastating plagues that decimated the population",
@@ -414,7 +433,8 @@
                 "D": "Most historians argue that the Renaissance had little impact on scientific development",
                 "E": "The focus shifted entirely away from humanism towards strict religious dogma"
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam5"
         },
         {
             "id": 27,

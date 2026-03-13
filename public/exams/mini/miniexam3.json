@@ -75,6 +75,16 @@
         {
             "id": "p2",
             "text": "Artificial Intelligence (AI) is rapidly changing the landscape of education by providing personalized learning experiences for students. Adaptive software can analyze a student's performance in real-time and adjust the difficulty level of tasks accordingly. This allows students to learn at their own pace, ensuring they do not fall behind. Teachers can also use AI tools to automate grading and administrative work, giving them more time for individual instruction. However, some critics worry that an over-reliance on AI could diminish the human connection that is vital for effective teaching and emotional development in children."
+        },
+        {
+            "id": "p_cloze_17_miniexam3",
+            "title": "Cloze Test 17-21",
+            "text": "The sheer complexity of the human brain makes it exceedingly difficult for neuroscientists to fully map its neural pathways."
+        },
+        {
+            "id": "p_cloze_22_miniexam3",
+            "title": "Cloze Test 22-26",
+            "text": "Journalist: Your new book argues that the Roman Empire fell primarily due to internal economic instability. \nHistorian: ____ \nJournalist: So, you believe the barbarian invasions were merely the final blow to an already crumbling structure?"
         }
     ],
     "questions": [
@@ -289,7 +299,7 @@
         {
             "id": 17,
             "section_id": "paraphrase",
-            "question": "The sheer complexity of the human brain makes it exceedingly difficult for neuroscientists to fully map its neural pathways.",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Because the human brain is so immensely complex, neuroscientists find it extremely challenging to completely chart its neural connections.",
                 "B": "The human brain is complex, but neuroscientists have managed to map most of its neural pathways with great difficulty.",
@@ -297,12 +307,13 @@
                 "D": "Mapping the neural pathways of the human brain is entirely impossible for neuroscientists because of its inherent complexity.",
                 "E": "The complexity of the brain is the only reason why neuroscientists have abandoned mapping its neural networks."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam3"
         },
         {
             "id": 18,
             "section_id": "paraphrase",
-            "question": "Unless comprehensive measures are taken to curb deforestation, countless endemic species will face imminent extinction.",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "If extensive actions are not implemented to reduce forest clearing, numerous species native to those areas will soon die out.",
                 "B": "Comprehensive measures have been taken against deforestation, saving countless endemic species from extinction.",
@@ -310,12 +321,13 @@
                 "D": "Since deforestation was curbed through comprehensive measures, many endemic species avoided extinction.",
                 "E": "Countless endemic species have already gone extinct because comprehensive measures against deforestation failed."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam3"
         },
         {
             "id": 19,
             "section_id": "paraphrase",
-            "question": "Economic growth is inextricably linked to energy consumption, posing a dilemma for developing nations aiming to reduce carbon footprints.",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Developing nations face a difficult choice regarding reducing carbon emissions because their economic expansion is permanently tied to using energy.",
                 "B": "Developing nations have solved the dilemma of reducing their carbon footprints by completely separating economic growth from energy use.",
@@ -323,12 +335,13 @@
                 "D": "Since developing nations want to decrease their carbon footprints, they must entirely halt their economic growth and energy consumption.",
                 "E": "The link between economic growth and energy consumption is weak, making it easy for developing countries to lower carbon emissions."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam3"
         },
         {
             "id": 20,
             "section_id": "paraphrase",
-            "question": "It is widely acknowledged that regular physical exercise not only improves cardiovascular health but also significantly enhances cognitive function.",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "People generally accept that exercising regularly boosts both heart health and mental capabilities considerably.",
                 "B": "It is often claimed that physical exercise is the only way to improve both cardiovascular systems and brain function.",
@@ -336,12 +349,13 @@
                 "D": "Only recently has it been discovered that regular physical activity can enhance cognitive function as well as cardiovascular health.",
                 "E": "If you want to improve your cognitive function, it is widely acknowledged that you must prioritize cardiovascular health."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_17_miniexam3"
         },
         {
             "id": 21,
             "section_id": "dialogue",
-            "question": "Professor Hayes: The latest data indicates a severe decline in the bee population. \nDr. Simon: ____ \nProfessor Hayes: Indeed. If pollination rates drop further, agricultural yields will plummet.",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Are you suggesting we should invest more in artificial pollination technologies?",
                 "B": "That's alarming. The ecological and economic implications of this are staggering.",
@@ -349,12 +363,13 @@
                 "D": "Bees have always experienced cyclical population changes, haven't they?",
                 "E": "We should probably focus our research on other insect species instead."
             },
-            "correct": "B"
+            "correct": "B",
+            "passage_id": "p_cloze_17_miniexam3"
         },
         {
             "id": 22,
             "section_id": "dialogue",
-            "question": "Journalist: Your new book argues that the Roman Empire fell primarily due to internal economic instability. \nHistorian: ____ \nJournalist: So, you believe the barbarian invasions were merely the final blow to an already crumbling structure?",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Exactly. The excessive taxation and hyperinflation hollowed out the state from within long before the borders were breached.",
                 "B": "Not entirely. I still maintain that military defeats were the primary catalyst for the empire's ultimate collapse.",
@@ -362,12 +377,13 @@
                 "D": "It's a common misconception, but my research focuses more on the cultural shifts during late antiquity.",
                 "E": "Yes, the barbarian invasions were completely irrelevant to the actual fall of the empire."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam3"
         },
         {
             "id": 23,
             "section_id": "dialogue",
-            "question": "Project Manager: We are falling behind schedule on the software development phase. \nLead Developer: ____ \nProject Manager: I understand, but the client expects the beta version by next Friday. We might need to authorize overtime.",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The delay is mainly because we had to rewrite the legacy code to ensure security compliance.",
                 "B": "I think we are actually ahead of schedule if you look at the updated timeline.",
@@ -375,12 +391,13 @@
                 "D": "We don't have enough developers, so I suggest we hire a new team immediately.",
                 "E": "The design team hasn't provided the UI assets yet, so we are completely stuck."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam3"
         },
         {
             "id": 24,
             "section_id": "dialogue",
-            "question": "Student: I'm having trouble understanding the concept of 'opportunity cost' in this economics chapter. \nProfessor: ____ \nStudent: Oh, I see. So by choosing to study for this exam, the cost is the leisure time I gave up.",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It simply refers to the monetary price you pay for purchasing a specific good or service.",
                 "B": "Think of it as the value of the next best alternative that you forego when making a decision.",
@@ -388,12 +405,13 @@
                 "D": "Opportunity cost is the total amount of resources a company needs to manufacture a product.",
                 "E": "You should probably re-read the first three chapters; they cover the absolute basics."
             },
-            "correct": "B"
+            "correct": "B",
+            "passage_id": "p_cloze_22_miniexam3"
         },
         {
             "id": 25,
             "section_id": "para_comp",
-            "question": "Language acquisition in children is a remarkably rapid and complex process. By the age of three, most children have mastered the basic grammatical structures of their native tongue. ____. This innate capability suggests that the human brain is biologically hardwired for linguistic development from birth.",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "However, adults find it incredibly difficult to learn a second language with the same fluency.",
                 "B": "They can generate novel sentences they have never heard before, demonstrating an intuitive grasp of syntax.",
@@ -401,12 +419,13 @@
                 "D": "Many linguists argue that exposure to multiple languages early on can cause slight speech delays.",
                 "E": "Animal communication systems, in contrast, rely heavily on repetitive vocalizations and gestures."
             },
-            "correct": "B"
+            "correct": "B",
+            "passage_id": "p_cloze_22_miniexam3"
         },
         {
             "id": 26,
             "section_id": "para_comp",
-            "question": "The Renaissance was characterized by a profound revival of classical art and literature. Originating in Italy during the 14th century, this cultural movement emphasized humanism, shifting the focus from divine matters to human achievements. ____. Consequently, European society experienced a surge in scientific inquiry and artistic innovation that permanently altered the course of history.",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Scholars began to translate ancient Greek and Roman texts, rediscovering forgotten philosophical ideals.",
                 "B": "The bubonic plague had devastated Europe's population just decades prior to this cultural awakening.",
@@ -414,7 +433,8 @@
                 "D": "Economic trade with the Ottoman Empire introduced new spices and textiles to the Italian city-states.",
                 "E": "Many contemporary historians argue that the Renaissance was not a distinct historical period at all."
             },
-            "correct": "A"
+            "correct": "A",
+            "passage_id": "p_cloze_22_miniexam3"
         },
         {
             "id": 27,

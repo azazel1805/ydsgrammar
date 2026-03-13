@@ -13,7 +13,18 @@
             "to": 100
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_master_grammar",
+            "title": "Cloze Test 17-21",
+            "text": "The results of the study were ---- inconclusive ---- the researchers decided to conduct a follow-up experiment."
+        },
+        {
+            "id": "p_cloze_22_master_grammar",
+            "title": "Cloze Test 22-26",
+            "text": "The discovery of the new planet ---- questions about the possibility of life beyond our solar system."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The results of the study were ---- inconclusive ---- the researchers decided to conduct a follow-up experiment.",
+            "passage_id": "p_cloze_17_master_grammar",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "too / for",
                 "B": "so / that",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The company's failure to adapt to changing market conditions led to its eventual bankruptcy, ---- many employees lost their jobs.",
+            "passage_id": "p_cloze_17_master_grammar",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "whereby",
                 "B": "where",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "Not until the 19th century ---- the concept of germ theory begin to gain widespread acceptance in the medical community.",
+            "passage_id": "p_cloze_17_master_grammar",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "did",
                 "B": "had",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The hypothesis ---- by the young scientist was initially met with skepticism by the established academic community.",
+            "passage_id": "p_cloze_17_master_grammar",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "proposing",
                 "B": "proposed",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "By the end of the decade, the city ---- its public transportation system, making it one of the most efficient in the world.",
+            "passage_id": "p_cloze_17_master_grammar",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "will upgrade",
                 "B": "will have upgraded",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The discovery of the new planet ---- questions about the possibility of life beyond our solar system.",
+            "passage_id": "p_cloze_22_master_grammar",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "raised",
                 "B": "rose",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "---- the high cost of living in the city, many people are choosing to move to the suburbs.",
+            "passage_id": "p_cloze_22_master_grammar",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Due to",
                 "B": "In spite of",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The diplomat's remarks were ---- carefully worded ---- they avoided any direct confrontation with the opposing side.",
+            "passage_id": "p_cloze_22_master_grammar",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "so / that",
                 "B": "such / that",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "It was not until the invention of the printing press that books ---- accessible to the general public.",
+            "passage_id": "p_cloze_22_master_grammar",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "became",
                 "B": "had become",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The study revealed that students who participate in extracurricular activities ---- to perform better academically.",
+            "passage_id": "p_cloze_22_master_grammar",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "tend",
                 "B": "tended",

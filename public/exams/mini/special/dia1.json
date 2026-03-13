@@ -13,7 +13,18 @@
             "to": 24
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_dia1",
+            "title": "Cloze Test 17-21",
+            "text": "Geologist: The movement of tectonic plates is driven primarily by mantle convection.\nStudent: But I read somewhere that 'slab pull' is actually the dominant force.\nGeologist: ----\nStudent: I see. So the cooling, denser plate sinking into the mantle provides the most significant pull."
+        },
+        {
+            "id": "p_cloze_22_dia1",
+            "title": "Cloze Test 22-26",
+            "text": "Journalist: Your latest book explores the impact of social media on teenage mental health. What was your most surprising finding? \nPsychologist: It was the fact that the negative effects are not universal; they depend heavily on how the platform is used. \nJournalist: ____ \nPsychologist: Exactly. Passive browsing seems much more harmful than active engagement."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Geologist: The movement of tectonic plates is driven primarily by mantle convection.\nStudent: But I read somewhere that 'slab pull' is actually the dominant force.\nGeologist: ----\nStudent: I see. So the cooling, denser plate sinking into the mantle provides the most significant pull.",
+            "passage_id": "p_cloze_17_dia1",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "That is a common misconception; mantle convection is the main driver.",
                 "B": "Actually, current consensus agrees that slab pull is the primary mechanism.",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Engineer: The structural integrity of the bridge was compromised by unexpected resonance frequencies.\nManager: Was this not accounted for during the wind tunnel testing phase?\nEngineer: ----\nManager: Then we must revise our simulation parameters for all future projects.",
+            "passage_id": "p_cloze_17_dia1",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The wind speeds during the storm were far beyond the historical average.",
                 "B": "The testing focused on static loads rather than dynamic aerodynamic oscillations.",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Doctor: Your patient's symptoms are consistent with an autoimmune response, but the tests are inconclusive.\nResident: Could it be a localized inflammation rather than a systemic issue?\nDoctor: ----\nResident: Then we should proceed with a more comprehensive panel of antibody tests.",
+            "passage_id": "p_cloze_17_dia1",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The inflammation markers are indeed elevated, which points to a systemic problem.",
                 "B": "It's possible, but the involvement of multiple organ systems suggests otherwise.",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Ethicist: The development of autonomous weapons systems poses a 'responsibility gap' in international law.\nResearcher: Do you mean it's unclear who is liable when a machine commits a war crime?\nEthicist: ----\nResearcher: That is a terrifying prospect that necessitates a pre-emptive ban on such technology.",
+            "passage_id": "p_cloze_17_dia1",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The programmer, the commander, and the machine itself could all be held responsible.",
                 "B": "Exactly; if there is no human in the loop, the traditional legal framework collapses.",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "dia",
-            "passage_id": null,
-            "question": "Professor: Have you finalized the methodology for your thesis yet? \nStudent: Not quite. I'm still torn between qualitative and quantitative approaches. \nProfessor: ____ \nStudent: That makes sense. I'll focus on the specific research questions to see which one fits better.",
+            "passage_id": "p_cloze_17_dia1",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Why don't you use both in a mixed-methods approach?",
                 "B": "The choice should depend on the nature of the data you intend to collect.",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "dia",
-            "passage_id": null,
-            "question": "Journalist: Your latest book explores the impact of social media on teenage mental health. What was your most surprising finding? \nPsychologist: It was the fact that the negative effects are not universal; they depend heavily on how the platform is used. \nJournalist: ____ \nPsychologist: Exactly. Passive browsing seems much more harmful than active engagement.",
+            "passage_id": "p_cloze_22_dia1",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "So, you mean that scrolling through feeds without interacting is the main problem?",
                 "B": "Do you think social media should be banned for teenagers?",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "dia",
-            "passage_id": null,
-            "question": "Doctor: Your blood pressure is still higher than we'd like it to be. \nPatient: I've been trying to cut down on salt and exercise more, as you suggested. \nDoctor: ____ \nPatient: I suppose work has been quite demanding lately. I'll try to find ways to relax.",
+            "passage_id": "p_cloze_22_dia1",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Are you sure you're following the diet correctly?",
                 "B": "Stress can also be a significant factor in hypertension.",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "dia",
-            "passage_id": null,
-            "question": "Colleague A: I'm struggling to get my students to participate in class discussions. \nColleague B: Have you tried using smaller group activities before opening it up to the whole class? \nColleague A: ____ \nColleague B: It usually helps because students feel less intimidated in a smaller setting.",
+            "passage_id": "p_cloze_22_dia1",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "No, I haven't. Do you think that would make a difference?",
                 "B": "Yes, I've tried that, but it didn't seem to work either.",

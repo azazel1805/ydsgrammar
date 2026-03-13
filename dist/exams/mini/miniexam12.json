@@ -71,6 +71,16 @@
         {
             "id": "p1",
             "text": ""
+        },
+        {
+            "id": "p_cloze_17_miniexam12",
+            "title": "Cloze Test 17-21",
+            "text": "The manager postponed the meeting because some board members were unable to attend due to a flight delay."
+        },
+        {
+            "id": "p_cloze_22_miniexam12",
+            "title": "Cloze Test 22-26",
+            "text": "Student: Professor, could you explain the significance of the Enlightenment? \n Professor: Certainly. It was a movement that emphasized reason and individualism over tradition. \n Student: ______ \n Professor: Precisely. It laid the groundwork for modern democratic ideals and scientific inquiry."
         }
     ],
     "questions": [
@@ -301,8 +311,8 @@
         {
             "id": 17,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "The manager postponed the meeting because some board members were unable to attend due to a flight delay.",
+            "passage_id": "p_cloze_17_miniexam12",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Because of a flight delay, some board members could not come, so the manager put off the meeting.",
                 "B": "The meeting was held despite the fact that some board members were late because of their flight.",
@@ -315,8 +325,8 @@
         {
             "id": 18,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "Rarely has a scientific discovery had such an immediate and profound impact on our understanding of the universe.",
+            "passage_id": "p_cloze_17_miniexam12",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "This scientific discovery is one of the few that has instantly and deeply changed how we perceive the universe.",
                 "B": "Scientific discoveries usually take a long time to change our understanding of the universe.",
@@ -329,8 +339,8 @@
         {
             "id": 19,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "If it hadn't been for the timely intervention of the rescue team, the hikers wouldn't have survived the blizzard.",
+            "passage_id": "p_cloze_17_miniexam12",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The hikers survived the blizzard only because the rescue team intervened just in time.",
                 "B": "The rescue team arrived too late to save the hikers from the blizzard.",
@@ -343,8 +353,8 @@
         {
             "id": 20,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "Despite her extensive experience in the field, she found the new software difficult to master.",
+            "passage_id": "p_cloze_17_miniexam12",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Even though she had worked in the field for a long time, she struggled to learn how to use the new software.",
                 "B": "Her experience in the field helped her master the new software very quickly.",
@@ -357,8 +367,8 @@
         {
             "id": 21,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Mark: Have you seen the latest report on urban heat islands? \n Sarah: Yes, it claims that city temperatures are rising much faster than rural areas. \n Mark: ______ \n Sarah: Exactly. That's why urban planning must prioritize green spaces and reflective materials.",
+            "passage_id": "p_cloze_17_miniexam12",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I think it's mostly due to the lack of vegetation and the abundance of concrete.",
                 "B": "But rural areas are also experiencing record-breaking heatwaves.",
@@ -371,8 +381,8 @@
         {
             "id": 22,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Student: Professor, could you explain the significance of the Enlightenment? \n Professor: Certainly. It was a movement that emphasized reason and individualism over tradition. \n Student: ______ \n Professor: Precisely. It laid the groundwork for modern democratic ideals and scientific inquiry.",
+            "passage_id": "p_cloze_22_miniexam12",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "So, it basically challenged the absolute authority of the monarchy and the church?",
                 "B": "Was it mainly focused on artistic expression during the Renaissance?",
@@ -385,8 +395,8 @@
         {
             "id": 23,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "James: I'm considering investing in cryptocurrency, but I'm worried about the volatility. \n Linda: It's definitely a high-risk market. You could lose everything overnight. \n James: ______ \n Linda: That's a wise approach. Never invest more than you can afford to lose.",
+            "passage_id": "p_cloze_22_miniexam12",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "I might just start with a small amount to see how it goes.",
                 "B": "I'm sure the prices will only go up from now on.",
@@ -399,8 +409,8 @@
         {
             "id": 24,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Patient: Doctor, I've been feeling very fatigued lately regardless of how much I sleep. \n Doctor: There could be several reasons for that, such as anemia or a thyroid issue. \n Patient: ______ \n Doctor: We'll start with a full blood count and a metabolic panel to rule those out.",
+            "passage_id": "p_cloze_22_miniexam12",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Should I undergo some tests to find the underlying cause?",
                 "B": "I think I just need more caffeine in the morning.",
@@ -413,8 +423,8 @@
         {
             "id": 25,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "The concept of 'circular economy' aims to eliminate waste and the continual use of resources. Unlike the traditional linear economy, which follows a 'take-make-dispose' model, the circular economy focuses on resource productivity. ______. This approach not only saves the environment but also creates new business opportunities and jobs.",
+            "passage_id": "p_cloze_22_miniexam12",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It encourages the reuse, repair, and recycling of materials to extend their lifecycle.",
                 "B": "However, many industries are still reluctant to change their production methods.",
@@ -427,8 +437,8 @@
         {
             "id": 26,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Neuroscience has made huge leaps in understanding how the human brain processes emotions. We now know that the amygdala plays a crucial role in the fear response. ______. For instance, the prefrontal cortex helps regulate these emotions, allowing us to think rationally even when we are scared.",
+            "passage_id": "p_cloze_22_miniexam12",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "However, the brain is an interconnected network where no part acts entirely alone.",
                 "B": "Fear is one of the most basic survival instincts in all mammals.",

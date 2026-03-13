@@ -75,12 +75,17 @@
         {
             "id": "p_read_43_fullexam8",
             "title": "Reading 43",
-            "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. While"
+            "text": "the term is widely used in scientific and environmental discourse, there is still debate among geologists regarding its formal adoption. Proponents argue that the isotopic signals of nuclear testing and the ubiquity of plastic pollution constitute a distinct stratigraphic layer. However, critics suggest that the human influence, while profound, is too recent and heterogeneous to be categorized alongside periods lasting millions of years. This tension highlights the difficulty of reconciling human-scale history with geological time."
         },
         {
             "id": "p_read_51_fullexam8",
             "title": "Reading 51",
             "text": "The Drake Equation is a probabilistic argument used to estimate the number of active, communicative extraterrestrial civilizations in the Milky Way galaxy. Proposed by Frank Drake in 1961, the equation factors in variables such as the rate of star formation, the fraction of those stars with planets, and the length of time such civilizations might release detectable signals. While the equation provides a structured framework for the Search for Extraterrestrial Intelligence (SETI), it remains highly speculative because many of its parameters are currently unknowable. Consequently, it serves more as a tool to stimulate scientific curiosity than as a precise mathematical proof. Why is the Drake Equation considered speculative"
+        },
+        {
+            "id": "p_read_47_fullexam8",
+            "title": "Reading 47",
+            "text": "Stoicism, an ancient Greek school of philosophy, emphasizes the development of self-control and fortitude as a means of overcoming destructive emotions. It teaches that while we cannot control external events, we can control our reactions to them. This internal locus of control is central to achieving 'eudaimonia,' or flourishing. In modern psychology, many of these tenets have been integrated into Cognitive Behavioral Therapy (CBT), which encourages patients to identify and challenge irrational thought patterns. The enduring relevance of Stoicism suggests that the human struggle with emotional regulation transcends cultural and temporal boundaries."
         }
     ],
     "questions": [
@@ -676,7 +681,7 @@
             "id": 43,
             "section_id": "reading",
             "passage_id": "p_read_43_fullexam8",
-            "question": "the term is widely used in scientific and environmental discourse, there is still debate among geologists regarding its formal adoption. Proponents argue that the isotopic signals of nuclear testing and the ubiquity of plastic pollution constitute a distinct stratigraphic layer. However, critics suggest that the human influence, while profound, is too recent and heterogeneous to be categorized alongside periods lasting millions of years. This tension highlights the difficulty of reconciling human-scale history with geological time. According to the passage, what is the primary reason for the disagreement among geologists regarding the Anthropocene?",
+            "question": "According to the passage, what is the primary reason for the disagreement among geologists regarding the Anthropocene?",
             "options": {
                 "A": "The lack of evidence for plastic pollution in the stratigraphic record.",
                 "B": "The disparity between human temporal scales and geological epochs.",
@@ -731,8 +736,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: Stoicism, an ancient Greek school of philosophy, emphasizes the development of self-control and fortitude as a means of overcoming destructive emotions. It teaches that while we cannot control external events, we can control our reactions to them. This internal locus of control is central to achieving 'eudaimonia,' or flourishing. In modern psychology, many of these tenets have been integrated into Cognitive Behavioral Therapy (CBT), which encourages patients to identify and challenge irrational thought patterns. The enduring relevance of Stoicism suggests that the human struggle with emotional regulation transcends cultural and temporal boundaries. According to the text, what is the core mechanism of Stoic philosophy?",
+            "passage_id": "p_read_47_fullexam8",
+            "question": "According to the text, what is the core mechanism of Stoic philosophy?",
             "options": {
                 "A": "Achieving wealth and status through self-discipline.",
                 "B": "Changing external circumstances to suit one's needs.",
@@ -745,8 +750,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: [Continued] The author draws a connection between Stoicism and modern psychology by:",
+            "passage_id": "p_read_47_fullexam8",
+            "question": "[Continued] The author draws a connection between Stoicism and modern psychology by:",
             "options": {
                 "A": "Comparing ancient Greek rituals to modern therapeutic techniques.",
                 "B": "Highlighting the use of Stoic principles in Cognitive Behavioral Therapy.",
@@ -759,8 +764,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: [Continued] What does 'eudaimonia' represent in the context of the passage?",
+            "passage_id": "p_read_47_fullexam8",
+            "question": "[Continued] What does 'eudaimonia' represent in the context of the passage?",
             "options": {
                 "A": "A state of constant physical pleasure.",
                 "B": "A condition of human flourishing or well-being.",
@@ -773,8 +778,8 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage 2: [Continued] The passage suggests that the relevance of Stoicism:",
+            "passage_id": "p_read_47_fullexam8",
+            "question": "[Continued] The passage suggests that the relevance of Stoicism:",
             "options": {
                 "A": "Is limited to those living in chaotic environments.",
                 "B": "Has diminished with the advent of modern technology.",

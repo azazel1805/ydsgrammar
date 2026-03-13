@@ -71,6 +71,16 @@
         {
             "id": "p1",
             "text": ""
+        },
+        {
+            "id": "p_cloze_17_miniexam16",
+            "title": "Cloze Test 17-21",
+            "text": "The manager decided to postpone the meeting until next week because several key team members were unavailable."
+        },
+        {
+            "id": "p_cloze_22_miniexam16",
+            "title": "Cloze Test 22-26",
+            "text": "Doctor: Your blood tests show a high level of cholesterol, which increases your risk of heart disease. \n\n Patient: I see. I've been trying to eat healthy, but I guess it hasn't been enough. \n\n Doctor: ____ \n\n Patient: That sounds reasonable. I'll start incorporating those changes into my daily routine immediately."
         }
     ],
     "questions": [
@@ -301,8 +311,8 @@
         {
             "id": 17,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "The manager decided to postpone the meeting until next week because several key team members were unavailable.",
+            "passage_id": "p_cloze_17_miniexam16",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Due to the absence of some important staff, the meeting was rescheduled for the following week by the manager.",
                 "B": "The manager will cancel the meeting if the key team members cannot attend next week.",
@@ -315,8 +325,8 @@
         {
             "id": 18,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "Rarely has a scientific discovery had such an immediate and profound impact on our understanding of the universe.",
+            "passage_id": "p_cloze_17_miniexam16",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It is common for scientific discoveries to change how we see the universe quickly.",
                 "B": "Scientific discoveries usually take a long time to affect our understanding of the cosmos.",
@@ -329,8 +339,8 @@
         {
             "id": 19,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "If urban planners had accounted for the rapid population growth, the city's current traffic congestion could have been avoided.",
+            "passage_id": "p_cloze_17_miniexam16",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The city has traffic problems now because urban planners failed to foresee how quickly the population would grow.",
                 "B": "Urban planners are trying to solve the traffic problem by limiting the population growth in the city.",
@@ -343,8 +353,8 @@
         {
             "id": 20,
             "section_id": "paraphrase",
-            "passage_id": null,
-            "question": "Despite the harsh weather conditions, the mountaineers managed to reach the summit after five days of climbing.",
+            "passage_id": "p_cloze_17_miniexam16",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The mountaineers reached the top in five days, even though the weather was very bad.",
                 "B": "The climb took five days because the weather conditions were extremely harsh for the mountaineers.",
@@ -357,8 +367,8 @@
         {
             "id": 21,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Arthur: Have you seen the latest reports on the melting of the Arctic ice caps? \n\n Brenda: Yes, it's quite alarming. The rate of melting is much faster than previously predicted. \n\n Arthur: ____ \n\n Brenda: Exactly. This could lead to a significant rise in sea levels, threatening coastal cities worldwide.",
+            "passage_id": "p_cloze_17_miniexam16",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Do you think governments are doing enough to stop it?",
                 "B": "It seems our current climate models might need to be revised.",
@@ -371,8 +381,8 @@
         {
             "id": 22,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Doctor: Your blood tests show a high level of cholesterol, which increases your risk of heart disease. \n\n Patient: I see. I've been trying to eat healthy, but I guess it hasn't been enough. \n\n Doctor: ____ \n\n Patient: That sounds reasonable. I'll start incorporating those changes into my daily routine immediately.",
+            "passage_id": "p_cloze_22_miniexam16",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "You should consider taking medication if your diet doesn't improve.",
                 "B": "In addition to diet, regular physical activity is crucial for lowering cholesterol.",
@@ -385,8 +395,8 @@
         {
             "id": 23,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Interviewer: Your resume is impressive, but we're looking for someone with more leadership experience. \n\n Candidate: I understand. However, in my previous role, I frequently led project teams and mentored junior staff. \n\n Interviewer: ____ \n\n Candidate: Certainly. For instance, I spearheaded a team of five to develop a new software tool that improved our efficiency by 20%.",
+            "passage_id": "p_cloze_22_miniexam16",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "That's good to hear, but we need someone with a formal management title.",
                 "B": "Could you provide some specific examples of your leadership in those situations?",
@@ -399,8 +409,8 @@
         {
             "id": 24,
             "section_id": "dialogue",
-            "passage_id": null,
-            "question": "Student: Professor, I'm struggling to find enough primary sources for my research paper on the French Revolution. \n\n Professor: Have you tried looking through the digital archives of the National Library? \n\n Student: ____ \n\n Professor: In that case, I recommend visiting the university library's special collections department.",
+            "passage_id": "p_cloze_22_miniexam16",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Yes, but most of the documents there are in French, which I don't speak fluently.",
                 "B": "No, I didn't know they had a digital archive. I'll check it out today.",
@@ -413,8 +423,8 @@
         {
             "id": 25,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "The concept of sustainable development emerged in the late 20th century as a response to growing concerns about environmental degradation. ____. This definition emphasizes the need to balance economic growth with environmental protection and social equity. To achieve this, governments and organizations must adopt long-term strategies that minimize resource depletion.",
+            "passage_id": "p_cloze_22_miniexam16",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "It is often defined as development that meets the needs of the present without compromising the ability of future generations to meet their own needs.",
                 "B": "Many critics argue that sustainable development is an unattainable goal in a capitalist global economy.",
@@ -427,8 +437,8 @@
         {
             "id": 26,
             "section_id": "para_comp",
-            "passage_id": null,
-            "question": "Psychologists have long studied the effects of sleep deprivation on cognitive function. Research indicates that lack of sleep can impair attention, memory, and decision-making skills. ____. For example, staying awake for 24 hours can lead to a level of impairment comparable to that of alcohol intoxication.",
+            "passage_id": "p_cloze_22_miniexam16",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The recommended amount of sleep for an average adult is between seven and nine hours per night.",
                 "B": "Sleep disorders such as insomnia and sleep apnea are becoming increasingly common in modern society.",

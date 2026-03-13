@@ -13,7 +13,18 @@
             "to": 104
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_master_trans",
+            "title": "Cloze Test 17-21",
+            "text": "Linguists emphasize that language is not merely a communication tool but also a medium through which cultural values are transmitted."
+        },
+        {
+            "id": "p_cloze_22_master_trans",
+            "title": "Cloze Test 22-26",
+            "text": "Many scientists believe that the melting of polar ice caps is directly linked to the increase in greenhouse gas emissions."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Linguists emphasize that language is not merely a communication tool but also a medium through which cultural values are transmitted.",
+            "passage_id": "p_cloze_17_master_trans",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Dilbilimciler, dilin yalnızca bir iletişim aracı olmadığını, aynı zamanda kültürel değerlerin aktarıldığı bir ortam olduğunu vurgulamaktadır.",
                 "B": "Kültürel değerlerin aktarılmasını sağlayan dilin sadece iletişim için olmadığını dilbilimciler belirtmektedir.",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "The discovery of penicillin revolutionized medicine by providing an effective treatment for bacterial infections that were previously fatal.",
+            "passage_id": "p_cloze_17_master_trans",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Penisilin keşfi, daha önce ölümcül olan bakteriyel enfeksiyonlar için etkili bir tedavi sağlayarak tıpta devrim yaratmıştır.",
                 "B": "Daha önce tedavi edilemeyen bakteriyel enfeksiyonları iyileştiren penisilin, tıp dünyasında büyük bir değişim yapmıştır.",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Sustainable development requires a balance between economic growth, social equity, and environmental protection for future generations.",
+            "passage_id": "p_cloze_17_master_trans",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Sürdürülebilir kalkınma, gelecek nesiller için ekonomik büyüme, sosyal adalet ve çevre koruma arasında bir denge gerektirir.",
                 "B": "Gelecek nesillerin refahı için ekonomik, sosyal ve çevresel faktörlerin dengelenmesi sürdürülebilir kalkınmanın esasıdır.",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Advancements in telescope technology have enabled astronomers to observe distant galaxies that were previously invisible to the naked eye.",
+            "passage_id": "p_cloze_17_master_trans",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Teleskop teknolojisindeki ilerlemeler, gökbilimcilerin daha önce çıplak gözle görülmeyen uzak galaksileri gözlemlemesine olanak tanımıştır.",
                 "B": "Gökbilimciler, gelişen teleskoplar sayesinde önceden görülmesi imkansız olan uzak galaksileri artık inceleyebilmektedir.",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "trans",
-            "passage_id": null,
-            "question": "Sanayi Devrimi'nin sosyal yapı üzerindeki en belirgin etkisi, kırsal kesimden kentlere doğru gerçekleşen kitlesel göçtür.",
+            "passage_id": "p_cloze_17_master_trans",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The most prominent effect of the Industrial Revolution on the social structure is the mass migration from rural areas to cities.",
                 "B": "The Industrial Revolution caused a mass migration from rural areas to cities, affecting social structure significantly.",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "trans",
-            "passage_id": null,
-            "question": "Many scientists believe that the melting of polar ice caps is directly linked to the increase in greenhouse gas emissions.",
+            "passage_id": "p_cloze_22_master_trans",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Çoğu bilim insanı, kutup buzullarının erimesinin sera gazı emisyonlarındaki artışla doğrudan bağlantılı olduğuna inanmaktadır.",
                 "B": "Kutup buzullarının erimesi, birçok bilim insanına göre sera gazı emisyonlarının bir sonucudur.",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "trans",
-            "passage_id": null,
-            "question": "Eğitim sistemindeki reformlar, öğrencilerin sadece akademik başarılarını değil, aynı zamanda eleştirel düşünme becerilerini de geliştirmeyi amaçlamaktadır.",
+            "passage_id": "p_cloze_22_master_trans",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Reforms in the education system aim to improve not only students' academic success but also their critical thinking skills.",
                 "B": "The education system reforms focus on academic success and critical thinking skills of students.",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "trans",
-            "passage_id": null,
-            "question": "Despite its small size, the island nation has played a significant role in international trade for centuries.",
+            "passage_id": "p_cloze_22_master_trans",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Küçük boyutuna rağmen, ada ülkesi yüzyıllardır uluslararası ticarette önemli bir rol oynamıştır.",
                 "B": "Ada ülkesi küçük olmasına rağmen, yüzyıllardır uluslararası ticareti etkilemektedir.",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Quantum entanglement, a phenomenon where particles become interconnected such that the state of one instantly influences the other regardless of distance, challenges our classical understanding of space-time.",
+            "passage_id": "p_cloze_22_master_trans",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Kuantum dolanıklığı, parçacıkların birbirleriyle öyle bağlandığı bir fenomendir ki, mesafe ne olursa olsun birinin durumu diğerini anında etkileyerek klasik uzay-zaman anlayışımızı zorlar.",
                 "B": "Parçacıkların birbirine bağlandığı kuantum dolanıklığı, mesafeye bakılmaksızın birinin durumunun diğerini etkilemesiyle klasik uzay-zaman anlayışımızı tamamen değiştirmiştir.",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "translation",
-            "passage_id": null,
-            "question": "Despite the rapid advancements in renewable energy technologies, the global reliance on fossil fuels remains alarmingly high due to existing infrastructure and economic interests.",
+            "passage_id": "p_cloze_22_master_trans",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Yenilenebilir enerji teknolojilerindeki hızlı ilerlemelere rağmen, mevcut altyapı ve ekonomik çıkarlar nedeniyle fosil yakıtlara olan küresel bağımlılık endişe verici derecede yüksek kalmaya devam etmektedir.",
                 "B": "Yenilenebilir enerji teknolojileri hızla gelişse de, ekonomik çıkarlar ve yetersiz altyapı fosil yakıt kullanımını küresel ölçekte artırmaktadır.",

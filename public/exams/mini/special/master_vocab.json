@@ -13,7 +13,18 @@
             "to": 103
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_master_vocab",
+            "title": "Cloze Test 17-21",
+            "text": "The museum's collection includes several --- manuscripts that provide insight into medieval history."
+        },
+        {
+            "id": "p_cloze_22_master_vocab",
+            "title": "Cloze Test 22-26",
+            "text": "The theory remains --- until further empirical evidence can be gathered to support its claims."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The museum's collection includes several --- manuscripts that provide insight into medieval history.",
+            "passage_id": "p_cloze_17_master_vocab",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "contemporary",
                 "B": "valueless",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The patient showed a(n) --- improvement in health after the new medication was administered.",
+            "passage_id": "p_cloze_17_master_vocab",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "marginal",
                 "B": "marked",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The city council has proposed a plan to --- the old industrial district into a vibrant cultural hub.",
+            "passage_id": "p_cloze_17_master_vocab",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "demolish",
                 "B": "revitalize",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The speaker's --- remarks about the opposition party sparked a heated debate during the conference.",
+            "passage_id": "p_cloze_17_master_vocab",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "conciliatory",
                 "B": "inflammatory",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "Despite numerous setbacks, the team's --- spirit led them to complete the project ahead of schedule.",
+            "passage_id": "p_cloze_17_master_vocab",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "fragile",
                 "B": "indomitable",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The theory remains --- until further empirical evidence can be gathered to support its claims.",
+            "passage_id": "p_cloze_22_master_vocab",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "conclusive",
                 "B": "speculative",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "Artificial intelligence is expected to --- many industries by automating routine tasks and improving efficiency.",
+            "passage_id": "p_cloze_22_master_vocab",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "stagnate",
                 "B": "revolutionize",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The diplomat's primary role was to --- between the two factions and reach a peaceful settlement.",
+            "passage_id": "p_cloze_22_master_vocab",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "interfere",
                 "B": "mediate",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "Exposure to high levels of noise can have a --- effect on a person's hearing over time.",
+            "passage_id": "p_cloze_22_master_vocab",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "beneficial",
                 "B": "detrimental",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "vocab",
-            "passage_id": null,
-            "question": "The novel is known for its --- use of metaphor and symbolism to convey deep philosophical themes.",
+            "passage_id": "p_cloze_22_master_vocab",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "sparse",
                 "B": "intricate",

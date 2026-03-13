@@ -13,7 +13,18 @@
             "to": 50
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_cloze2",
+            "title": "Cloze Test 17-21",
+            "text": "Early researchers (17) ---- that machines could eventually simulate human intelligence. Today, AI systems are (18) ---- of performing complex tasks with high accuracy. However, the (19) ---- of bias in algorithms remains a significant hurdle. Experts suggest that AI should be developed (20) ---- ethical guidelines to ensure safety. Economic globalization has facilitated the (21) ---- of goods and services across borders."
+        },
+        {
+            "id": "p_cloze_22_cloze2",
+            "title": "Cloze Test 22-26",
+            "text": "This phenomenon has (22) ---- both opportunities and challenges for developing nations. (23) ---- some countries have flourished, others have struggled to compete. The reliance on international markets makes economies (24) ---- to global fluctuations. Policy makers need to address the income inequality (25) ---- by globalization. Cognitive psychology (26) ---- with the mental processes involved in gaining knowledge."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Early researchers (17) ---- that machines could eventually simulate human intelligence.",
+            "passage_id": "p_cloze_17_cloze2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "envisioned",
                 "B": "denied",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Today, AI systems are (18) ---- of performing complex tasks with high accuracy.",
+            "passage_id": "p_cloze_17_cloze2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "capable",
                 "B": "prone",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "However, the (19) ---- of bias in algorithms remains a significant hurdle.",
+            "passage_id": "p_cloze_17_cloze2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "presence",
                 "B": "absence",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Experts suggest that AI should be developed (20) ---- ethical guidelines to ensure safety.",
+            "passage_id": "p_cloze_17_cloze2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "in accordance with",
                 "B": "opposed to",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Economic globalization has facilitated the (21) ---- of goods and services across borders.",
+            "passage_id": "p_cloze_17_cloze2",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "flow",
                 "B": "stagnation",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "This phenomenon has (22) ---- both opportunities and challenges for developing nations.",
+            "passage_id": "p_cloze_22_cloze2",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "created",
                 "B": "destroyed",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "(23) ---- some countries have flourished, others have struggled to compete.",
+            "passage_id": "p_cloze_22_cloze2",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "While",
                 "B": "Unless",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "The reliance on international markets makes economies (24) ---- to global fluctuations.",
+            "passage_id": "p_cloze_22_cloze2",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "vulnerable",
                 "B": "immune",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Policy makers need to address the income inequality (25) ---- by globalization.",
+            "passage_id": "p_cloze_22_cloze2",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "exacerbated",
                 "B": "alleviated",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cognitive psychology (26) ---- with the mental processes involved in gaining knowledge.",
+            "passage_id": "p_cloze_22_cloze2",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "deals",
                 "B": "competes",

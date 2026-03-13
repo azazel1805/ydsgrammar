@@ -13,7 +13,18 @@
             "to": 23
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_clomean1",
+            "title": "Cloze Test 17-21",
+            "text": "In light of the recent findings, the theory that was once widely accepted must now be reconsidered."
+        },
+        {
+            "id": "p_cloze_22_clomean1",
+            "title": "Cloze Test 22-26",
+            "text": "Despite the widespread use of digital technology, traditional books continue to hold a special place in the hearts of many readers."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "In light of the recent findings, the theory that was once widely accepted must now be reconsidered.",
+            "passage_id": "p_cloze_17_clomean1",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The theory is still valid even though recent findings have suggested some minor changes.",
                 "B": "Recent discoveries have made it necessary to re-evaluate a theory that used to be generally agreed upon.",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "The primary objective of the educational reform is to bridge the gap between theoretical knowledge and practical application.",
+            "passage_id": "p_cloze_17_clomean1",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Educational reform aims mostly to show that theoretical knowledge is more important than practice.",
                 "B": "The main goal of the changes in education is to connect what is learned in theory with how it is used in practice.",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "While the city has made strides in public transportation, traffic congestion remains a major grievance for its residents.",
+            "passage_id": "p_cloze_17_clomean1",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Residents are happy with the improvements in public transport, but they still complain about traffic jams.",
                 "B": "The city's traffic problems have been solved thanks to the significant progress in public transportation.",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "closest",
-            "passage_id": null,
-            "question": "Few scholars would dispute the claim that the Renaissance was a turning point in European cultural history.",
+            "passage_id": "p_cloze_17_clomean1",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Most scholars agree that the Renaissance represented a significant shift in the culture of Europe.",
                 "B": "The Renaissance is considered a turning point by only a small number of European scholars.",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "clomean",
-            "passage_id": null,
-            "question": "It is essential that the experiment be conducted under strictly controlled conditions to ensure the validity of the results.",
+            "passage_id": "p_cloze_17_clomean1",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The experiment must be done in a very controlled environment so that the results are valid.",
                 "B": "Unless the experiment is conducted under controlled conditions, the results will definitely be invalid.",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "clomean",
-            "passage_id": null,
-            "question": "Despite the widespread use of digital technology, traditional books continue to hold a special place in the hearts of many readers.",
+            "passage_id": "p_cloze_22_clomean1",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Many readers still love traditional books, even though digital technology is very common.",
                 "B": "Digital technology has completely replaced traditional books for most readers today.",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "clomean",
-            "passage_id": null,
-            "question": "The new policy was so controversial that it led to a heated debate among the members of the committee.",
+            "passage_id": "p_cloze_22_clomean1",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The committee members argued intensely about the new policy because it was very controversial.",
                 "B": "Because the new policy was not controversial, the committee members agreed on it quickly.",

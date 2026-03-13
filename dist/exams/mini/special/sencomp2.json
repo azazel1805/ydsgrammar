@@ -13,7 +13,18 @@
             "to": 50
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_sencomp2",
+            "title": "Cloze Test 17-21",
+            "text": "By the time the reinforcements arrived at the front lines, ----."
+        },
+        {
+            "id": "p_cloze_22_sencomp2",
+            "title": "Cloze Test 22-26",
+            "text": "Unlike his predecessor, who was known for his conservative approach, ----."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "By the time the reinforcements arrived at the front lines, ----.",
+            "passage_id": "p_cloze_17_sencomp2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": " the battle had already been lost by the defending army",
                 "B": "they were well-equipped and ready for the upcoming offensive",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- so as to minimize the risks associated with the experimental surgery.",
+            "passage_id": "p_cloze_17_sencomp2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The surgeons meticulously reviewed the patient's medical history",
                 "B": "The hospital decided to increase the cost of the procedure",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Such was the intensity of the solar flare ----.",
+            "passage_id": "p_cloze_17_sencomp2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "that it disrupted satellite communications across the entire planet",
                 "B": "than any other event recorded in the history of astronomy",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Should the volcano erupt within the next few days, ----.",
+            "passage_id": "p_cloze_17_sencomp2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "the authorities will have to evacuate thousands of residents in the vicinity",
                 "B": "it had been dormant for several centuries without any signs of life",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- but the evidence found at the crime scene suggests otherwise.",
+            "passage_id": "p_cloze_17_sencomp2",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The suspect claimed that he was at home during the time of the robbery",
                 "B": "The police are convinced that they have arrested the right person",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Unlike his predecessor, who was known for his conservative approach, ----.",
+            "passage_id": "p_cloze_22_sencomp2",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "the new CEO is more inclined to take risks and innovate",
                 "B": "the company has seen a steady decline in its profits",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- because the linguistic diversity of the region is rapidly declining.",
+            "passage_id": "p_cloze_22_sencomp2",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Anthropologists are rushing to document the endangered languages",
                 "B": "Most people are becoming bilingual in the official language and their mother tongue",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Whether the increase in global temperatures is a natural cycle or human-induced ----.",
+            "passage_id": "p_cloze_22_sencomp2",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "is still a subject of intense debate among some scientists",
                 "B": "the consensus is that urgent action is needed to mitigate its effects",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "Not only did the explorer discover a new route to the East, ----.",
+            "passage_id": "p_cloze_22_sencomp2",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "but he also established several trading posts along the coast",
                 "B": "than he returned to his homeland as a national hero",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "sencomp",
-            "passage_id": null,
-            "question": "---- for fear that the sensitive information might fall into the hands of the enemy.",
+            "passage_id": "p_cloze_22_sencomp2",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "The military commander decided to encrypt all communication",
                 "B": "The journalists published the report without any redactions",

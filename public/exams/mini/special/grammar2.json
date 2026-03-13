@@ -13,7 +13,18 @@
             "to": 50
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_grammar2",
+            "title": "Cloze Test 17-21",
+            "text": "The participants in the study were asked to refrain ______ consuming caffeine for 24 hours before the cognitive testing began."
+        },
+        {
+            "id": "p_cloze_22_grammar2",
+            "title": "Cloze Test 22-26",
+            "text": "______ his lack of formal training in mathematics, the clerk managed to solve a problem that had baffled experts for years."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -242,8 +253,8 @@
         {
             "id": 17,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The participants in the study were asked to refrain ______ consuming caffeine for 24 hours before the cognitive testing began.",
+            "passage_id": "p_cloze_17_grammar2",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "with",
                 "B": "for",
@@ -256,8 +267,8 @@
         {
             "id": 18,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "Hardly ______ the plane touched down when the passengers were informed of the emergency protocol.",
+            "passage_id": "p_cloze_17_grammar2",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "did",
                 "B": "has",
@@ -270,8 +281,8 @@
         {
             "id": 19,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The professor insisted that every student ______ their thesis proposal by the end of the semester.",
+            "passage_id": "p_cloze_17_grammar2",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "submits",
                 "B": "submit",
@@ -284,8 +295,8 @@
         {
             "id": 20,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The theory of relativity, ______ by Albert Einstein, revolutionized our understanding of space and time.",
+            "passage_id": "p_cloze_17_grammar2",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "proposing",
                 "B": "having proposed",
@@ -298,8 +309,8 @@
         {
             "id": 21,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The government has decided to implement stricter laws ______ reducing the carbon footprint of the manufacturing sector.",
+            "passage_id": "p_cloze_17_grammar2",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "with a view to",
                 "B": "in case of",
@@ -312,8 +323,8 @@
         {
             "id": 22,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "______ his lack of formal training in mathematics, the clerk managed to solve a problem that had baffled experts for years.",
+            "passage_id": "p_cloze_22_grammar2",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "In addition to",
                 "B": "Because of",
@@ -326,8 +337,8 @@
         {
             "id": 23,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The researchers are looking for a candidate ______ expertise in both molecular biology and computer science.",
+            "passage_id": "p_cloze_22_grammar2",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "whose",
                 "B": "who",
@@ -340,8 +351,8 @@
         {
             "id": 24,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "The volcanic eruption was ______ powerful ______ it caused a global drop in temperature for several years.",
+            "passage_id": "p_cloze_22_grammar2",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "so / that",
                 "B": "such / that",
@@ -354,8 +365,8 @@
         {
             "id": 25,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "It is essential that the data ______ analyzed using the most up-to-date statistical software available.",
+            "passage_id": "p_cloze_22_grammar2",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "is",
                 "B": "be",
@@ -368,8 +379,8 @@
         {
             "id": 26,
             "section_id": "grammar",
-            "passage_id": null,
-            "question": "Should the experiment fail, the scientists ______ to revise their entire hypothesis from scratch.",
+            "passage_id": "p_cloze_22_grammar2",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "will have",
                 "B": "had",
