@@ -330,20 +330,24 @@ function feRenderQuestion() {
 
   if (isCloze) {
     // CLOZE RECONSTRUCTION:
-    // Look for previous/next questions in the same section to build the full text
-    // Usually cloze tests are in chunks of 5 (e.g., 17-21, 22-26)
-    let startIdx = feCurrentIdx;
-    while (startIdx > 0 && feExamData.questions[startIdx - 1].section_id === q.section_id) {
-        startIdx--;
+    // YDS Cloze tests are strictly 5 questions (17-21, 22-26)
+    // We find the block of 5 this question belongs to
+    let setStart = feCurrentIdx;
+    // Standard YDS start indices: 16 (Q17), 21 (Q22), 26 (Q27)...
+    // We iterate back to find the nearest such boundary or section start
+    while (setStart > 0 && 
+           feExamData.questions[setStart - 1].section_id === q.section_id && 
+           (setStart % 5 !== 1 || setStart < 16)) {
+        setStart--;
     }
-    // Limit to current group of 5 if possible, but YDS sections are often strictly 5 questions
-    // We'll take the first question in this section that HAS leading_text or a significant question body
+    
     let displayHtml = '';
     let foundText = false;
 
-    // Strategy 1: Look for leading_text in any question of this section
-    for (let i = startIdx; i < feExamData.questions.length && feExamData.questions[i].section_id === q.section_id; i++) {
+    // Strategy 1: Look for leading_text in this specific 5-question block
+    for (let i = setStart; i < setStart + 5 && i < feExamData.questions.length; i++) {
         const sq = feExamData.questions[i];
+        if (sq.section_id !== q.section_id) break;
         if (sq.leading_text) {
             displayHtml = sq.leading_text.replace(/\n/g, '<br>');
             foundText = true;
@@ -351,13 +355,16 @@ function feRenderQuestion() {
         }
     }
 
-    // Strategy 2: If no leading_text, join question fragments (common in some JSON exports)
+    // Strategy 2: If no leading_text, join question fragments from THIS BLOCK ONLY
     if (!foundText) {
         let fragments = [];
-        for (let i = startIdx; i < feExamData.questions.length && feExamData.questions[i].section_id === q.section_id; i++) {
+        for (let i = setStart; i < setStart + 5 && i < feExamData.questions.length; i++) {
             const sq = feExamData.questions[i];
-            // Clean up titles like "(Cloze Test 1 - Part 1)"
-            let cleanQ = sq.question.replace(/\(Cloze Test.*?\)/i, '').trim();
+            if (sq.section_id !== q.section_id) break;
+            // Clean up titles like "(Cloze Test 1 - Part 1)" or "(Paragraph 1: ...)"
+            let cleanQ = sq.question.replace(/\(Cloze Test.*?\)/i, '')
+                                   .replace(/\(Paragraph.*?\)/i, '')
+                                   .trim();
             fragments.push(cleanQ);
         }
         displayHtml = fragments.join(' ');
