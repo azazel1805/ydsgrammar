@@ -11,9 +11,11 @@ const forumHTML = `
             <h1 class="text-3xl font-bold text-slate-900" style="font-family: 'Playfair Display', serif;">YDS Tartışma Forumu</h1>
             <p class="text-slate-500 italic mt-1">Takıldığın konuları paylaş, toplulukla birlikte çözümle.</p>
         </div>
+        ${window.currentUser ? `
         <button onclick="openNewPostModal()" class="px-6 py-3 bg-red-800 text-white rounded-xl font-bold hover:bg-black transition-all shadow-lg flex items-center gap-2">
             <i class="fas fa-plus"></i> Soru Sor
         </button>
+        ` : ''}
     </div>
 
     <!-- Stats & Filters -->
@@ -109,6 +111,20 @@ function renderPosts(posts) {
     const container = document.getElementById("forumPostsContainer");
     if (!container) return;
 
+    // Refresh Header check - handle ask button visibility
+    const header = container.closest('.space-y-8')?.querySelector('.border-b.pb-6');
+    if (header) {
+        let btn = header.querySelector('button');
+        if (!window.currentUser && btn) btn.remove();
+        else if (window.currentUser && !btn) {
+            const newBtn = document.createElement('button');
+            newBtn.onclick = openNewPostModal;
+            newBtn.className = "px-6 py-3 bg-red-800 text-white rounded-xl font-bold hover:bg-black transition-all shadow-lg flex items-center gap-2";
+            newBtn.innerHTML = `<i class="fas fa-plus"></i> Soru Sor`;
+            header.appendChild(newBtn);
+        }
+    }
+
     if (posts.length === 0) {
         container.innerHTML = `
             <div class="bg-white p-12 rounded-2xl border border-dashed border-slate-200 text-center">
@@ -160,12 +176,18 @@ function renderPosts(posts) {
                         <!-- Individual comments here -->
                     </div>
                     
+                    ${window.currentUser ? `
                     <div class="flex gap-2">
                         <input id="input-comment-${post.id}" type="text" placeholder="Yorumun..." class="flex-1 px-4 py-2 rounded-lg bg-slate-50 border-none focus:ring-2 focus:ring-red-800 outline-none text-sm">
                         <button onclick="submitComment('${post.id}')" class="p-2 bg-red-800 text-white rounded-lg hover:bg-black transition-colors">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </div>
+                    ` : `
+                    <div class="bg-slate-50 p-3 rounded-lg text-center text-xs text-slate-400 italic font-medium">
+                        Yorum yazmak için lütfen <button onclick="window.openLoginModal()" class="text-red-800 font-bold hover:underline">giriş yapın</button>.
+                    </div>
+                    `}
                 </div>
             </div>
         </div>
