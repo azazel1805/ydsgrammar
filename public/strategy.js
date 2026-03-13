@@ -37,7 +37,7 @@ function renderStrategyQuestion() {
     
     // Clear previous state
     container.innerHTML = `
-        <div class="animate-in fade-in slide-in-from-bottom-4 duration-500 space-y-8">
+        <div class="animate-in fade-in slide-in-from-bottom-4 duration-500 space-y-8 bg-[#0a0a0c] p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-white/5">
             <!-- Navigation -->
             <div class="flex items-center justify-between text-slate-400 text-xs uppercase tracking-widest font-bold border-b border-white/5 pb-4">
                 <button onclick="backToCategories()" class="hover:text-white transition-colors flex items-center gap-2">
@@ -183,8 +183,10 @@ function renderStrategyCategories() {
     ];
 
     container.innerHTML = `
-        <div class="animate-in fade-in duration-700">
-            <div class="text-center space-y-4 mb-16">
+        <div class="animate-in fade-in duration-700 bg-[#0a0a0c] p-8 md:p-16 rounded-[3rem] shadow-2xl border border-white/5 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent opacity-30"></div>
+            
+            <div class="text-center space-y-4 mb-16 relative z-10">
                 <h2 class="text-4xl md:text-5xl font-black text-white" style="font-family: 'Playfair Display', serif;">Strategy Lab</h2>
                 <p class="text-slate-400 text-lg max-w-2xl mx-auto italic">
                     Sadece soru çözmeyin; sorunun arkasındaki mantığı ve YDS taktiklerini uzman AI analizi ile öğrenin.
