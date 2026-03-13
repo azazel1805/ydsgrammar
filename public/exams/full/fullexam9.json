@@ -64,31 +64,31 @@
     "passages": [
         {
             "id": "cloze_1",
-            "text": "The Industrial Revolution was a period of profound social and economic change. (11) ____  the late 18th century, traditional agrarian societies began to transform into industrial ones. (11):"
+            "text": "The Industrial Revolution was a period of profound social and economic change. (17) ____ the late 18th century, traditional agrarian societies began to transform into industrial ones. This transition was (18) ____ driven by technological innovations in textile production and steam power. (19) ____ it led to significant economic growth, it also created harsh living conditions for the working class. Workers often had to endure long hours (20) ____ low wages. Today, many historians (21) ____ for a more nuanced understanding of this era's social impact."
         },
         {
             "id": "cloze_2",
-            "text": "Ethics in artificial intelligence is a growing field of study. As AI systems become more autonomous, the need for (16) ____  frameworks becomes critical. (16):"
+            "text": "Ethics in artificial intelligence is a growing field of study. As AI systems become more autonomous, the need for (22) ____ frameworks becomes critical. The (23) ____ of bias in algorithms is a major concern (24) ____ developers must address. Ensuring that AI is (25) ____ transparent and accountable is essential (26) ____ it can be fully integrated into society."
         },
         {
             "id": "reading_1",
-            "text": "Passage: The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate. While proponents argue that radioactive isotopes from mid-20th century nuclear tests provide a clear 'golden spike,' critics maintain that human influence has been too asynchronous to define a single global boundary. The Great Acceleration of the 1950s, characterized by a surge in fossil fuel consumption and plastic production, is often cited as the definitive turning point. However, some archaeologists push the date back to the dawn of agriculture. Question:"
+            "text": "The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate. While proponents argue that radioactive isotopes from mid-20th century nuclear tests provide a clear 'golden spike,' critics maintain that human influence has been too asynchronous to define a single global boundary. The Great Acceleration of the 1950s, characterized by a surge in fossil fuel consumption and plastic production, is often cited as the definitive turning point. However, some archaeologists push the date back to the dawn of agriculture."
         },
         {
             "id": "reading_2",
-            "text": "Passage: Behavioral economics challenges the traditional 'homo economicus' model, which assumes individuals are perfectly rational and utility-maximizing. Instead, it introduces psychological insights to explain why people often make suboptimal choices. Concepts like 'loss aversion' suggest that the pain of losing is twice as powerful as the joy of gaining. Furthermore, 'nudging'—a concept popularized by Thaler and Sunstein—demonstrates how small changes in choice architecture can lead people toward better decisions without restricting their freedom. Question:"
+            "text": "Behavioral economics challenges the traditional 'homo economicus' model, which assumes individuals are perfectly rational and utility-maximizing. Instead, it introduces psychological insights to explain why people often make suboptimal choices. Concepts like 'loss aversion' suggest that the pain of losing is twice as powerful as the joy of gaining. Furthermore, 'nudging'—a concept popularized by Thaler and Sunstein—demonstrates how small changes in choice architecture can lead people toward better decisions without restricting their freedom. Behavioral economics challenges the traditional 'homo economicus' model."
         },
         {
             "id": "reading_3",
-            "text": "Passage: The preservation of indigenous languages is not merely a matter of cultural heritage but also of ecological knowledge. Many indigenous tongues contain specific terms for local flora, fauna, and weather patterns that have no direct equivalents in major global languages. When these languages die out, we lose centuries of accumulated environmental wisdom. Current efforts focus on digital archiving, yet critics argue that without active speakers and community use, a language becomes a 'museum piece' rather than a living medium of thought. Question: Why is the loss of indigenous languages considered a threat to ecology?"
+            "text": "The preservation of indigenous languages is not merely a matter of cultural heritage but also of ecological knowledge. Many indigenous tongues contain specific terms for local flora, fauna, and weather patterns that have no direct equivalents in major global languages. When these languages die out, we lose centuries of accumulated environmental wisdom. Current efforts focus on digital archiving, yet critics argue that without active speakers and community use, a language becomes a 'museum piece' rather than a living medium of thought. The preservation of indigenous languages is not merely a matter of cultural heritage. Critics argue that without active speakers, a language becomes a 'museum piece'."
         },
         {
             "id": "reading_4",
-            "text": "Passage: Dark matter remains one of the most elusive mysteries of modern astrophysics. Although it cannot be seen directly because it does not emit or absorb light, its presence is inferred from its gravitational effects on visible matter. Galaxies rotate at speeds that suggest they contain far more mass than can be accounted for by stars and gas alone. Various candidates for dark matter have been proposed, including Weakly Interacting Massive Particles (WIMPs). Despite decades of experimentation using underground detectors and the Large Hadron Collider, definitive proof of these particles remains absent. Question: How do scientists know dark matter exists if they cannot see it?"
+            "text": "Dark matter remains one of the most elusive mysteries of modern astrophysics. Although it cannot be seen directly because it does not emit or absorb light, its presence is inferred from its gravitational effects on visible matter. Galaxies rotate at speeds that suggest they contain far more mass than can be accounted for by stars and gas alone. Various candidates for dark matter have been proposed, including Weakly Interacting Massive Particles (WIMPs). Despite decades of experimentation using underground detectors and the Large Hadron Collider, definitive proof of these particles remains absent. Dark matter remains one of the most elusive mysteries. Galaxies rotate at speeds that suggest they contain far more mass than can be accounted for."
         },
         {
             "id": "reading_5",
-            "text": "Passage: The Renaissance was not a sudden break with the Middle Ages but rather a gradual transformation of European thought. While the revival of Classical Greek and Roman texts was central, this period also saw significant advancements in anatomy and engineering inspired by Islamic scholars. Humanism, the intellectual movement of the era, emphasized individual potential and the study of the 'studia humanitatis'. This shift in focus from the divine to the human helped pave the way for the Scientific Revolution. Question:"
+            "text": "The Renaissance was not a sudden break with the Middle Ages but rather a gradual transformation of European thought. While the revival of Classical Greek and Roman texts was central, this period also saw significant advancements in anatomy and engineering inspired by Islamic scholars. Humanism, the intellectual movement of the era, emphasized individual potential and the study of the 'studia humanitatis'. This shift in focus from the divine to the human helped pave the way for the Scientific Revolution. The Renaissance was not a sudden break. This period saw significant advancements inspired by Islamic scholars."
         }
     ],
     "questions": [
@@ -320,7 +320,7 @@
             "id": 17,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 17 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (17).",
             "options": {
                 "A": "Since",
                 "B": "Until",
@@ -334,7 +334,7 @@
             "id": 18,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 18 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (18).",
             "options": {
                 "A": "hardly",
                 "B": "mostly",
@@ -348,7 +348,7 @@
             "id": 19,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 19 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (19).",
             "options": {
                 "A": "Because",
                 "B": "If",
@@ -362,7 +362,7 @@
             "id": 20,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 20 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (20).",
             "options": {
                 "A": "in exchange for",
                 "B": "with respect to",
@@ -376,7 +376,7 @@
             "id": 21,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 21 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (21).",
             "options": {
                 "A": "violate",
                 "B": "advocate",
@@ -390,7 +390,7 @@
             "id": 22,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 22 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (22).",
             "options": {
                 "A": "ambiguous",
                 "B": "regulatory",
@@ -404,7 +404,7 @@
             "id": 23,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 23 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (23).",
             "options": {
                 "A": "elimination",
                 "B": "presence",
@@ -418,7 +418,7 @@
             "id": 24,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 24 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (24).",
             "options": {
                 "A": "what",
                 "B": "which",
@@ -432,7 +432,7 @@
             "id": 25,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 25 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (25).",
             "options": {
                 "A": "neither",
                 "B": "both",
@@ -446,7 +446,7 @@
             "id": 26,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 26 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (26).",
             "options": {
                 "A": "Otherwise",
                 "B": "Furthermore",
@@ -698,7 +698,7 @@
             "id": 44,
             "section_id": "reading",
             "passage_id": "reading_1",
-            "question": "Passage: The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate. While proponents argue that radioactive isotopes from mid-20th century nuclear tests provide a clear 'golden spike,' critics maintain that human influence has been too asynchronous to define a single global boundary. Question: What does the term 'golden spike' refer to in the context of the passage?",
+            "question": "What does the term 'golden spike' refer to in the context of the passage?",
             "options": {
                 "A": "A valuable mineral deposit found in geological layers",
                 "B": "A specific marker used to define the start of a geological period",
@@ -712,7 +712,7 @@
             "id": 45,
             "section_id": "reading",
             "passage_id": "reading_1",
-            "question": "Passage: The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate. Question: It can be inferred from the passage that the 'Great Acceleration'...",
+            "question": "It can be inferred from the passage that the 'Great Acceleration'...",
             "options": {
                 "A": "Was a period of slow technological transition",
                 "B": "Is preferred by archaeologists over agricultural markers",
@@ -726,7 +726,7 @@
             "id": 46,
             "section_id": "reading",
             "passage_id": "reading_1",
-            "question": "Passage: The anthropocene, a proposed epoch dating from the commencement of significant human impact on Earth's geology and ecosystems, remains a subject of intense stratigraphic debate. Question: The author's primary purpose in the passage is to...",
+            "question": "The author's primary purpose in the passage is to...",
             "options": {
                 "A": "Argue for a specific date for the start of the Anthropocene",
                 "B": "Critique the use of fossil fuels and plastic production",
@@ -754,7 +754,7 @@
             "id": 48,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "Passage: Behavioral economics challenges the traditional 'homo economicus' model. Concepts like 'loss aversion' suggest that the pain of losing is twice as powerful as the joy of gaining. Question: According to the passage, loss aversion implies that...",
+            "question": "According to the passage, loss aversion implies that...",
             "options": {
                 "A": "People are indifferent to gains and losses",
                 "B": "The psychological impact of a loss outweighs that of an equivalent gain",
@@ -768,7 +768,7 @@
             "id": 49,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "Passage: Behavioral economics challenges the traditional 'homo economicus' model. 'Nudging' demonstrates how small changes in choice architecture can lead people toward better decisions. Question: Based on the passage, 'nudging' is a method that...",
+            "question": "Based on the passage, 'nudging' is a method that...",
             "options": {
                 "A": "Forces people to make specific choices through legislation",
                 "B": "Eliminates all choices except for the most rational one",
@@ -782,7 +782,7 @@
             "id": 50,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "Passage: Behavioral economics challenges the traditional 'homo economicus' model. Question: Which of the following would be an example of the 'homo economicus' model mentioned in the text?",
+            "question": "Which of the following would be an example of the 'homo economicus' model mentioned in the text?",
             "options": {
                 "A": "An investor who keeps a losing stock because of emotional attachment",
                 "B": "A consumer who buys an expensive product because of a 'nudge'",
@@ -810,7 +810,7 @@
             "id": 52,
             "section_id": "reading",
             "passage_id": "reading_3",
-            "question": "Passage: The preservation of indigenous languages is not merely a matter of cultural heritage. Critics argue that without active speakers, a language becomes a 'museum piece'. Question: What is the main criticism of digital archiving mentioned in the text?",
+            "question": "What is the main criticism of digital archiving mentioned in the text?",
             "options": {
                 "A": "It is an ineffective way to store data",
                 "B": "It fails to keep the language alive as a functional tool",
@@ -824,7 +824,7 @@
             "id": 53,
             "section_id": "reading",
             "passage_id": "reading_3",
-            "question": "Passage: The preservation of indigenous languages is not merely a matter of cultural heritage. Question: The passage suggests that indigenous languages are...",
+            "question": "The passage suggests that indigenous languages are...",
             "options": {
                 "A": "Redundant in the modern scientific world",
                 "B": "Incompatible with digital technology",
@@ -838,7 +838,7 @@
             "id": 54,
             "section_id": "reading",
             "passage_id": "reading_3",
-            "question": "Passage: The preservation of indigenous languages is not merely a matter of cultural heritage. Question: Which word is closest in meaning to 'commencement' as used in the context of global changes (similar to style)?",
+            "question": "Which word is closest in meaning to 'commencement' as used in the context of global changes (similar to style)?",
             "options": {
                 "A": "Conclusion",
                 "B": "Inception",
@@ -866,7 +866,7 @@
             "id": 56,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "Passage: Dark matter remains one of the most elusive mysteries. Galaxies rotate at speeds that suggest they contain far more mass than can be accounted for. Question: The rotation of galaxies provides evidence for dark matter because...",
+            "question": "The rotation of galaxies provides evidence for dark matter because...",
             "options": {
                 "A": "They rotate slower than expected based on visible mass",
                 "B": "They rotate faster than the visible mass should allow",
@@ -880,7 +880,7 @@
             "id": 57,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "Passage: Dark matter remains one of the most elusive mysteries. Question: According to the passage, the search for WIMPs has so far...",
+            "question": "According to the passage, the search for WIMPs has so far...",
             "options": {
                 "A": "Confirmed that dark matter is made of light particles",
                 "B": "Been successful thanks to the Large Hadron Collider",
@@ -894,7 +894,7 @@
             "id": 58,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "Passage: Dark matter remains one of the most elusive mysteries. Question: Which of the following can be concluded from the passage?",
+            "question": "Which of the following can be concluded from the passage?",
             "options": {
                 "A": "Visible matter makes up the majority of the universe's mass",
                 "B": "Astrophysics has fully explained the nature of dark matter",
@@ -922,7 +922,7 @@
             "id": 60,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "Passage: The Renaissance was not a sudden break. This period saw significant advancements inspired by Islamic scholars. Question: What does the passage suggest about the sources of Renaissance knowledge?",
+            "question": "What does the passage suggest about the sources of Renaissance knowledge?",
             "options": {
                 "A": "They were exclusively limited to Latin and Greek texts",
                 "B": "They were entirely original and had no historical roots",
@@ -936,7 +936,7 @@
             "id": 61,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "Passage: The Renaissance was not a sudden break. Humanism emphasized individual potential. Question: Humanism is described in the passage as a movement that...",
+            "question": "Humanism is described in the passage as a movement that...",
             "options": {
                 "A": "Rejected the study of the humanities",
                 "B": "Prioritized the divine over the human experience",
@@ -950,7 +950,7 @@
             "id": 62,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "Passage: The Renaissance was not a sudden break. Question: The passage implies that the Scientific Revolution...",
+            "question": "The passage implies that the Scientific Revolution...",
             "options": {
                 "A": "Was hindered by the rise of Humanism",
                 "B": "Occurred before the Renaissance began",

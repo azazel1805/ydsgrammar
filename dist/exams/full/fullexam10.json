@@ -64,11 +64,11 @@
     "passages": [
         {
             "id": "cloze_1",
-            "text": "Text 1: The Industrial Revolution (1)____ a period of profound social and economic change. It (2)____ in Great Britain and quickly spread across Europe. (3)____ the transition to new manufacturing processes, many people moved from rural areas to cities. This urbanization (4)____ to overcrowded living conditions. However, it also (5)____ the groundwork for modern industrial society. Blank (1):"
+            "text": "The Industrial Revolution (17)____ a period of profound social and economic change. It (18)____ in Great Britain and quickly spread across Europe. (19)____ the transition to new manufacturing processes, many people moved from rural areas to cities. This urbanization (20)____ to overcrowded living conditions. However, it also (21)____ the groundwork for modern industrial society."
         },
         {
             "id": "cloze_2",
-            "text": "Text 2: Quantum mechanics is a (6)____ branch of physics that deals with the behavior of matter and energy at the atomic level. It (7)____ classical physics in several key ways. For instance, particles can exist in multiple states (8)____. This phenomenon is known as superposition. (9)____ the complexity of the subject, it has led to the development of many technologies, (10)____ lasers and transistors. Blank (6):"
+            "text": "Quantum mechanics is a (22)____ branch of physics that deals with the behavior of matter and energy at the atomic level. It (23)____ classical physics in several key ways. For instance, particles can exist in multiple states (24)____. This phenomenon is known as superposition. (25)____ the complexity of the subject, it has led to the development of many technologies, (26)____ lasers and transistors."
         },
         {
             "id": "reading_1",
@@ -76,7 +76,7 @@
         },
         {
             "id": "reading_2",
-            "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although the International Commission on Stratigraphy has not yet officially approved"
+            "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although the International Commission on Stratigraphy has not yet officially approved the term, many scientists use it to highlight the extent of human-induced climate change and biodiversity loss. The primary marker often cited for this period is the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it shifts the blame to all of humanity rather than specific economic systems. Nevertheless, the concept has gained significant traction in both scientific and humanities circles."
         },
         {
             "id": "reading_3",
@@ -84,7 +84,7 @@
         },
         {
             "id": "reading_4",
-            "text": "The concept of 'Deep Time' was developed in the 18th century by James Hutton, often called the father of modern geology. Before this, most people believed the Earth was only a few thousand years old,"
+            "text": "The concept of 'Deep Time' was developed in the 18th century by James Hutton, often called the father of modern geology. Before this, most people believed the Earth was only a few thousand years old, based on religious texts. Hutton observed geological processes like erosion and sedimentation and realized they occurred so slowly that the Earth must be millions, if not billions, of years old. This shift in perspective allowed Charles Darwin to conceptualize the long periods required for biological evolution. Deep Time fundamentally changed how humans perceive their place in the universe, reducing human history to a mere blink of an eye."
         },
         {
             "id": "reading_5",
@@ -320,7 +320,7 @@
             "id": 17,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 17 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (17).",
             "options": {
                 "A": "marks",
                 "B": "marked",
@@ -334,7 +334,7 @@
             "id": 18,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 18 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (18).",
             "options": {
                 "A": "commences",
                 "B": "commenced",
@@ -348,7 +348,7 @@
             "id": 19,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 19 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (19).",
             "options": {
                 "A": "Despite",
                 "B": "Instead of",
@@ -362,7 +362,7 @@
             "id": 20,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 20 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (20).",
             "options": {
                 "A": "led",
                 "B": "leads",
@@ -376,7 +376,7 @@
             "id": 21,
             "section_id": "cloze",
             "passage_id": "cloze_1",
-            "question": "Boşluk 21 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (21).",
             "options": {
                 "A": "lay",
                 "B": "laid",
@@ -390,7 +390,7 @@
             "id": 22,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 22 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (22).",
             "options": {
                 "A": "fundamental",
                 "B": "trivial",
@@ -404,7 +404,7 @@
             "id": 23,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 23 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (23).",
             "options": {
                 "A": "challenges",
                 "B": "challenging",
@@ -418,7 +418,7 @@
             "id": 24,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 24 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (24).",
             "options": {
                 "A": "simultaneously",
                 "B": "sequentially",
@@ -432,7 +432,7 @@
             "id": 25,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 25 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (25).",
             "options": {
                 "A": "Because",
                 "B": "Although",
@@ -446,7 +446,7 @@
             "id": 26,
             "section_id": "cloze",
             "passage_id": "cloze_2",
-            "question": "Boşluk 26 için en uygun seçeneği bulun.",
+            "question": "Choose the best option for blank (26).",
             "options": {
                 "A": "including",
                 "B": "excluding",
@@ -740,7 +740,7 @@
             "id": 47,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "the term, many scientists use it to highlight the extent of human-induced climate change and biodiversity loss. The primary marker often cited for this period is the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it shifts the blame to all of humanity rather than specific economic systems. Nevertheless, the concept has gained significant traction in both scientific and humanities circles. According to the passage, the term 'Anthropocene' ---.",
+            "question": "According to the passage , the term 'Anthropocene' ---.",
             "options": {
                 "A": "has been officially adopted by all geological commissions",
                 "B": "refers to a period before human influence became significant",
@@ -852,7 +852,7 @@
             "id": 55,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "based on religious texts. Hutton observed geological processes like erosion and sedimentation and realized they occurred so slowly that the Earth must be millions, if not billions, of years old. This shift in perspective allowed Charles Darwin to conceptualize the long periods required for biological evolution. Deep Time fundamentally changed how humans perceive their place in the universe, reducing human history to a mere blink of an eye. The passage suggests that before James Hutton's observations, ---.",
+            "question": "The passage suggests that before James Hutton's observations, ---.",
             "options": {
                 "A": "most people believed the Earth was extremely old",
                 "B": "geological processes were thought to be very fast",
