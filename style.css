@@ -460,11 +460,20 @@ body {
 /* =========================================
    CHATBOT SCROLLBAR & SCROLL FIX
    ========================================= */
+#chatbotWindow {
+    height: 500px !important;
+    max-height: 500px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
 #chatMessages {
     scroll-behavior: smooth;
-    flex: 1;
-    min-height: 0;
+    flex: 1 1 0% !important;
+    min-height: 0 !important;
     overflow-y: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 #chatMessages::-webkit-scrollbar {

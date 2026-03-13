@@ -69,8 +69,9 @@ function initChatbot() {
 
 function appendMessage(role, text) {
     const container = document.getElementById("chatMessages");
+    const typing = document.getElementById("typingIndicator");
     const div = document.createElement("div");
-    div.className = `flex ${role === "user" ? "justify-end" : "justify-start"}`;
+    div.className = `flex ${role === "user" ? "justify-end" : "justify-start"} w-full`;
 
     const isBot = role === "bot";
     const bg = isBot ? "bg-white border border-slate-100" : "bg-red-800 text-white";
@@ -80,11 +81,15 @@ function appendMessage(role, text) {
     div.innerHTML = `
         <div class="${bg} ${textColor} p-3 rounded-2xl ${rounded} max-w-[85%] shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
             ${isBot ? '<p class="text-[10px] font-bold mb-1 text-red-800 uppercase tracking-widest">Sınav Koçu</p>' : ""}
-            <p class="text-xs md:text-sm leading-relaxed whitespace-pre-wrap">${text}</p>
+            <p class="text-xs md:text-sm leading-relaxed whitespace-pre-wrap font-medium">${text}</p>
         </div>
     `;
 
-    container.appendChild(div);
+    if (typing) {
+        container.insertBefore(div, typing);
+    } else {
+        container.appendChild(div);
+    }
     
     // Smooth scroll to bottom
     setTimeout(() => {

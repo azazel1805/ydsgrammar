@@ -52,8 +52,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <script type="module" crossorigin src="./assets/index-jwsbdMvG.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CqfhVRsu.css">
+  <script type="module" crossorigin src="./assets/index-DZ63uszo.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-xt2YFWPg.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -652,23 +652,24 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
                   <i class="fas fa-times"></i>
               </button>
           </div>
-          <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-50/50">
+          <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-50/50 min-h-0">
               <div class="flex justify-start">
                   <div class="bg-white text-slate-800 p-3 rounded-2xl rounded-tl-none max-w-[85%] shadow-sm border border-slate-100">
                       <p class="text-[10px] font-bold mb-1 text-red-800 uppercase tracking-widest">Sınav Koçu</p>
                       <p class="text-xs md:text-sm leading-relaxed">Merhaba! Ben AI Sınav Koçun. YDSstratejileri, gramer veya kelimeler hakkında sana yardımcı olabilirim. Ne yapalım?</p>
                   </div>
               </div>
-          </div>
-          <!-- Typing Indicator -->
-          <div id="typingIndicator" class="hidden px-4 py-2 bg-slate-50/50 border-t border-slate-100">
-              <div class="flex items-center gap-2 text-slate-400 italic text-[10px]">
-                  <div class="flex gap-1">
-                      <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce"></span>
-                      <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce [animation-delay:0.2s]"></span>
-                      <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce [animation-delay:0.4s]"></span>
+              
+              <!-- Typing Indicator (Now inside messages) -->
+              <div id="typingIndicator" class="hidden">
+                  <div class="flex items-center gap-2 text-slate-400 italic text-[10px]">
+                      <div class="flex gap-1">
+                          <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce"></span>
+                          <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+                          <span class="w-1 h-1 bg-slate-300 rounded-full animate-bounce [animation-delay:0.4s]"></span>
+                      </div>
+                      Koç yazıyor...
                   </div>
-                  Koç yazıyor...
               </div>
           </div>
           <div class="p-3 bg-white border-t border-slate-100 flex-shrink-0">
