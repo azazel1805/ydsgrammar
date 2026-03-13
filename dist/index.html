@@ -267,6 +267,10 @@
             <button data-tab="wordpractice" onclick="switchTab('wordpractice')"
               class="tab-btn w-full text-left px-5 py-3 font-bold text-red-800 hover:bg-gray-50 hover:text-red-700 transition-colors">Kelime
               Çalışması</button>
+            <button data-tab="strategy" onclick="switchTab('strategy')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-red-800">
+              Strateji Laboratuvarı
+            </button>
           </div>
         </div>
 
@@ -345,11 +349,6 @@
                 onclick="switchTab('profile')">Profilde Kilidi Aç &rarr;</span>
             </div>
 
-            <button id="strategyNavBtn" data-tab="strategy" onclick="switchTab('strategy')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
-              <span>Strateji Laboratuvarı</span>
-              <i class="fas fa-crown text-yellow-500"></i>
-            </button>
             <button id="premiumNavBtn" data-tab="fullexam" onclick="switchTab('fullexam')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-red-800 hidden">
               Deneme Sınavları
@@ -446,6 +445,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               Taktikler</button>
             <button data-tab="wordpractice" onclick="switchTabAndClose('wordpractice')"
               class="drawer-btn font-bold text-red-800">Kelime Çalışması</button>
+            <button data-tab="strategy" onclick="switchTabAndClose('strategy')"
+              class="drawer-btn font-bold text-red-800">Strateji Laboratuvarı</button>
           </div>
         </div>
 
@@ -500,11 +501,6 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               <i class="fas fa-lock text-xs mr-2"></i> VIP Erişimi Kilitli
             </div>
 
-            <button id="strategyMobileBtn" data-tab="strategy" onclick="switchTabAndClose('strategy')"
-              class="drawer-btn font-bold text-red-800 flex items-center justify-between hidden">
-              <span>Strateji Laboratuvarı</span>
-              <i class="fas fa-crown text-yellow-500"></i>
-            </button>
             <button id="premiumMobileBtn" data-tab="fullexam" onclick="switchTabAndClose('fullexam')"
               class="drawer-btn font-bold text-red-800 hidden">Deneme Sınavları</button>
             <button id="miniexamsMobileBtn" data-tab="miniexams" onclick="switchTabAndClose('miniexams')"
