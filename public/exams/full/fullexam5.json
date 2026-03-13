@@ -63,8 +63,39 @@
     ],
     "passages": [
         {
-            "id": "p1",
-            "text": ""
+            "id": "p_cloze_17_fullexam5",
+            "title": "Cloze Test 17-21",
+            "text": "Text 1: The Industrial Revolution (___) a period of profound social and economic change. It (___) in Great Britain and quickly spread across Europe. (___) the transition to new manufacturing processes, many people moved from rural areas to cities. This urbanization (___) to overcrowded living conditions. However, it also (___) the groundwork for modern industrial society. Blank (___) :"
+        },
+        {
+            "id": "p_cloze_22_fullexam5",
+            "title": "Cloze Test 22-26",
+            "text": "Text 2: Quantum mechanics is a (___) branch of physics that deals with the behavior of matter and energy at the atomic level. It (___) classical physics in several key ways. For instance, particles can exist in multiple states (___) This phenomenon is known as superposition. (___) the complexity of the subject, it has led to the development of many technologies, (___) lasers and transistors. Blank (___) :"
+        },
+        {
+            "id": "p_read_43_fullexam5",
+            "title": "Reading unknown",
+            "text": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957, suggests that individuals have an inner drive to hold all their attitudes and beliefs in harmony and avoid disharmony. When there is an inconsistency between attitudes or behaviors, something must change to eliminate the dissonance. This often leads to 'rationalization,' where an individual justifies a behavior that contradicts their values. Modern neuroscience has begun to map the neural correlates of this phenomenon, identifying the anterior cingulate cortex as a primary region involved in conflict monitoring. While some critics argue that the theory is too subjective to be measured accurately, its applications in marketing and public health remain widespread."
+        },
+        {
+            "id": "p_read_47_fullexam5",
+            "title": "Reading unknown",
+            "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although the International Commission on Stratigraphy has not yet officially approved the term, many scientists use it to highlight the extent of human-induced climate change and biodiversity loss. The primary marker often cited for this period is the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it shifts the blame to all of humanity rather than specific economic systems. Nevertheless, the concept has gained significant traction in both scientific and humanities circles."
+        },
+        {
+            "id": "p_read_51_fullexam5",
+            "title": "Reading unknown",
+            "text": "The 'Silk Road' was not a single thoroughfare but a network of trade routes connecting the East and West. Facilitating the exchange of goods like silk, spices, and precious metals, it also served as a conduit for ideas, religions, and technologies. One of the most significant impacts of the Silk Road was the spread of Buddhism from India to China. However, the route was also responsible for the transmission of diseases, most notably the Black Death. With the rise of maritime trade in the 15th century, the overland routes saw a decline in importance. Today, the 'New Silk Road' project aims to revitalize these ancient connections through modern infrastructure."
+        },
+        {
+            "id": "p_read_55_fullexam5",
+            "title": "Reading unknown",
+            "text": "The concept of 'Deep Time' was developed in the 18th century by James Hutton, often called the father of modern geology. Before this, most people believed the Earth was only a few thousand years old,"
+        },
+        {
+            "id": "p_read_59_fullexam5",
+            "title": "Reading unknown",
+            "text": "Bioluminescence, the production and emission of light by a living organism, occurs widely in marine vertebrates and invertebrates, as well as in some fungi and insects. The chemical reaction involves a light-emitting molecule called luciferin and an enzyme called luciferase. In the deep ocean, where sunlight cannot penetrate, bioluminescence is used for a variety of purposes: attracting prey, finding mates, and deterring predators. Some species use 'counter-illumination' to camouflage themselves against the faint light from the surface. While terrestrial bioluminescence is rarer, the firefly remains the most famous example. Researchers are now exploring ways to use bioluminescent genes as 'biosensors' in medical research."
         }
     ],
     "questions": [
@@ -295,8 +326,8 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Text 1: The Industrial Revolution (1)____ a period of profound social and economic change. It (2)____ in Great Britain and quickly spread across Europe. (3)____ the transition to new manufacturing processes, many people moved from rural areas to cities. This urbanization (4)____ to overcrowded living conditions. However, it also (5)____ the groundwork for modern industrial society. Blank (1):",
+            "passage_id": "p_cloze_17_fullexam5",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "marks",
                 "B": "marked",
@@ -309,8 +340,8 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (2):",
+            "passage_id": "p_cloze_17_fullexam5",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "commences",
                 "B": "commenced",
@@ -323,8 +354,8 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (3):",
+            "passage_id": "p_cloze_17_fullexam5",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Despite",
                 "B": "Instead of",
@@ -337,8 +368,8 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (4):",
+            "passage_id": "p_cloze_17_fullexam5",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "led",
                 "B": "leads",
@@ -351,8 +382,8 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (5):",
+            "passage_id": "p_cloze_17_fullexam5",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "lay",
                 "B": "laid",
@@ -365,8 +396,8 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Text 2: Quantum mechanics is a (6)____ branch of physics that deals with the behavior of matter and energy at the atomic level. It (7)____ classical physics in several key ways. For instance, particles can exist in multiple states (8)____. This phenomenon is known as superposition. (9)____ the complexity of the subject, it has led to the development of many technologies, (10)____ lasers and transistors. Blank (6):",
+            "passage_id": "p_cloze_22_fullexam5",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "fundamental",
                 "B": "trivial",
@@ -379,8 +410,8 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (7):",
+            "passage_id": "p_cloze_22_fullexam5",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "challenges",
                 "B": "challenging",
@@ -393,8 +424,8 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (8):",
+            "passage_id": "p_cloze_22_fullexam5",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "simultaneously",
                 "B": "sequentially",
@@ -407,8 +438,8 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (9):",
+            "passage_id": "p_cloze_22_fullexam5",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Because",
                 "B": "Although",
@@ -421,8 +452,8 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Blank (10):",
+            "passage_id": "p_cloze_22_fullexam5",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "including",
                 "B": "excluding",
@@ -659,8 +690,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957, suggests that individuals have an inner drive to hold all their attitudes and beliefs in harmony and avoid disharmony. When there is an inconsistency between attitudes or behaviors, something must change to eliminate the dissonance. This often leads to 'rationalization,' where an individual justifies a behavior that contradicts their values. Modern neuroscience has begun to map the neural correlates of this phenomenon, identifying the anterior cingulate cortex as a primary region involved in conflict monitoring. While some critics argue that the theory is too subjective to be measured accurately, its applications in marketing and public health remain widespread. It can be inferred from the passage that cognitive dissonance ---.",
+            "passage_id": "p_read_43_fullexam5",
+            "question": "It can be inferred from the passage that cognitive dissonance ---.",
             "options": {
                 "A": "is a purely biological process with no psychological components",
                 "B": "results from a lack of harmony between one's beliefs and actions",
@@ -673,8 +704,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... According to the passage, the process of 'rationalization' serves to ---.",
+            "passage_id": "p_read_43_fullexam5",
+            "question": "According to the passage, the process of 'rationalization' serves to ---.",
             "options": {
                 "A": "increase the amount of psychological stress an individual feels",
                 "B": "provide a scientific explanation for neurological malfunctions",
@@ -687,8 +718,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... The author mentions the 'anterior cingulate cortex' to ---.",
+            "passage_id": "p_read_43_fullexam5",
+            "question": "The author mentions the 'anterior cingulate cortex' to ---.",
             "options": {
                 "A": "show that cognitive dissonance has physical manifestations in the brain",
                 "B": "prove that Festinger's theory was entirely incorrect",
@@ -701,8 +732,8 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The cognitive dissonance theory, first proposed by Leon Festinger in 1957... What is the primary criticism of the theory mentioned in the text?",
+            "passage_id": "p_read_43_fullexam5",
+            "question": "What is the primary criticism of the theory mentioned in the text?",
             "options": {
                 "A": "It is too reliant on marketing data.",
                 "B": "It fails to account for modern neuroscience.",
@@ -715,8 +746,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although the International Commission on Stratigraphy has not yet officially approved the term, many scientists use it to highlight the extent of human-induced climate change and biodiversity loss. The primary marker often cited for this period is the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it shifts the blame to all of humanity rather than specific economic systems. Nevertheless, the concept has gained significant traction in both scientific and humanities circles. According to the passage, the term 'Anthropocene' ---.",
+            "passage_id": "p_read_47_fullexam5",
+            "question": "According to the passage, the term 'Anthropocene' ---.",
             "options": {
                 "A": "has been officially adopted by all geological commissions",
                 "B": "refers to a period before human influence became significant",
@@ -729,8 +760,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The Anthropocene is a proposed geological epoch... What is mentioned as a 'primary marker' for the start of this epoch?",
+            "passage_id": "p_read_47_fullexam5",
+            "question": "What is mentioned as a 'primary marker' for the start of this epoch?",
             "options": {
                 "A": "The invention of the steam engine in the 18th century",
                 "B": "The mid-20th century's rapid industrial and population growth",
@@ -743,8 +774,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The Anthropocene is a proposed geological epoch... Some critics find the term problematic because they believe ---.",
+            "passage_id": "p_read_47_fullexam5",
+            "question": "Some critics find the term problematic because they believe ---.",
             "options": {
                 "A": "it does not place enough blame on the entire human race",
                 "B": "it overlooks the role of specific economic structures in environmental damage",
@@ -757,8 +788,8 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The Anthropocene is a proposed geological epoch... It can be inferred from the passage that the International Commission on Stratigraphy ---.",
+            "passage_id": "p_read_47_fullexam5",
+            "question": "It can be inferred from the passage that the International Commission on Stratigraphy ---.",
             "options": {
                 "A": "has the final authority on naming geological epochs",
                 "B": "is a branch of a marketing firm",
@@ -771,8 +802,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The 'Silk Road' was not a single thoroughfare but a network of trade routes connecting the East and West. Facilitating the exchange of goods like silk, spices, and precious metals, it also served as a conduit for ideas, religions, and technologies. One of the most significant impacts of the Silk Road was the spread of Buddhism from India to China. However, the route was also responsible for the transmission of diseases, most notably the Black Death. With the rise of maritime trade in the 15th century, the overland routes saw a decline in importance. Today, the 'New Silk Road' project aims to revitalize these ancient connections through modern infrastructure. According to the text, the Silk Road was ---.",
+            "passage_id": "p_read_51_fullexam5",
+            "question": "According to the text, the Silk Road was ---.",
             "options": {
                 "A": "a single paved road stretching across Asia",
                 "B": "primarily used for the transportation of spices only",
@@ -785,8 +816,8 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The 'Silk Road' was not a single thoroughfare... Which of the following is mentioned as a negative consequence of the Silk Road?",
+            "passage_id": "p_read_51_fullexam5",
+            "question": "Which of the following is mentioned as a negative consequence of the Silk Road?",
             "options": {
                 "A": "The spread of Buddhism to China",
                 "B": "The decline of maritime trade",
@@ -799,8 +830,8 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The 'Silk Road' was not a single thoroughfare... What led to the decreased significance of the overland Silk Road routes?",
+            "passage_id": "p_read_51_fullexam5",
+            "question": "What led to the decreased significance of the overland Silk Road routes?",
             "options": {
                 "A": "The complete eradication of silk production",
                 "B": "The total conversion of Asia to Buddhism",
@@ -813,8 +844,8 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The 'Silk Road' was not a single thoroughfare... The 'New Silk Road' mentioned in the passage refers to ---.",
+            "passage_id": "p_read_51_fullexam5",
+            "question": "The 'New Silk Road' mentioned in the passage refers to ---.",
             "options": {
                 "A": "a historical document found in India",
                 "B": "a contemporary initiative to rebuild trade links",
@@ -827,8 +858,8 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The concept of 'Deep Time' was developed in the 18th century by James Hutton, often called the father of modern geology. Before this, most people believed the Earth was only a few thousand years old, based on religious texts. Hutton observed geological processes like erosion and sedimentation and realized they occurred so slowly that the Earth must be millions, if not billions, of years old. This shift in perspective allowed Charles Darwin to conceptualize the long periods required for biological evolution. Deep Time fundamentally changed how humans perceive their place in the universe, reducing human history to a mere blink of an eye. The passage suggests that before James Hutton's observations, ---.",
+            "passage_id": "p_read_55_fullexam5",
+            "question": "based on religious texts. Hutton observed geological processes like erosion and sedimentation and realized they occurred so slowly that the Earth must be millions, if not billions, of years old. This shift in perspective allowed Charles Darwin to conceptualize the long periods required for biological evolution. Deep Time fundamentally changed how humans perceive their place in the universe, reducing human history to a mere blink of an eye. The passage suggests that before James Hutton's observations, ---.",
             "options": {
                 "A": "most people believed the Earth was extremely old",
                 "B": "geological processes were thought to be very fast",
@@ -841,8 +872,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The concept of 'Deep Time' was developed in the 18th century... How did Hutton's work influence Charles Darwin?",
+            "passage_id": "p_read_55_fullexam5",
+            "question": "How did Hutton's work influence Charles Darwin?",
             "options": {
                 "A": "It provided the chronological framework necessary for evolution.",
                 "B": "It proved that erosion was the cause of genetic mutations.",
@@ -855,8 +886,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The concept of 'Deep Time' was developed in the 18th century... The term 'Deep Time' refers to ---.",
+            "passage_id": "p_read_55_fullexam5",
+            "question": "The term 'Deep Time' refers to ---.",
             "options": {
                 "A": "the time it takes for a clock to stop working",
                 "B": "the immense span of geological history",
@@ -869,8 +900,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "The concept of 'Deep Time' was developed in the 18th century... In the context of the passage, 'a mere blink of an eye' illustrates ---.",
+            "passage_id": "p_read_55_fullexam5",
+            "question": "In the context of the passage, 'a mere blink of an eye' illustrates ---.",
             "options": {
                 "A": "the speed of geological erosion",
                 "B": "how long it took for Hutton to write his theory",
@@ -883,8 +914,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "Bioluminescence, the production and emission of light by a living organism, occurs widely in marine vertebrates and invertebrates, as well as in some fungi and insects. The chemical reaction involves a light-emitting molecule called luciferin and an enzyme called luciferase. In the deep ocean, where sunlight cannot penetrate, bioluminescence is used for a variety of purposes: attracting prey, finding mates, and deterring predators. Some species use 'counter-illumination' to camouflage themselves against the faint light from the surface. While terrestrial bioluminescence is rarer, the firefly remains the most famous example. Researchers are now exploring ways to use bioluminescent genes as 'biosensors' in medical research. According to the passage, the light in bioluminescence is produced by ---.",
+            "passage_id": "p_read_59_fullexam5",
+            "question": "According to the passage, the light in bioluminescence is produced by ---.",
             "options": {
                 "A": "absorbing sunlight during the day and releasing it at night",
                 "B": "a chemical reaction between luciferin and luciferase",
@@ -897,8 +928,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "Bioluminescence, the production and emission of light by a living organism... Why is bioluminescence particularly common in the deep ocean?",
+            "passage_id": "p_read_59_fullexam5",
+            "question": "Why is bioluminescence particularly common in the deep ocean?",
             "options": {
                 "A": "Because the water is warmer at great depths",
                 "B": "Due to the total absence of natural sunlight",
@@ -911,8 +942,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "Bioluminescence, the production and emission of light by a living organism... 'Counter-illumination' is a technique used by some organisms to ---.",
+            "passage_id": "p_read_59_fullexam5",
+            "question": "'Counter-illumination' is a technique used by some organisms to ---.",
             "options": {
                 "A": "scare away their mates",
                 "B": "increase their visibility to predators",
@@ -925,8 +956,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": "p1",
-            "question": "Bioluminescence, the production and emission of light by a living organism... The passage mentions that bioluminescent genes ---.",
+            "passage_id": "p_read_59_fullexam5",
+            "question": "The passage mentions that bioluminescent genes ---.",
             "options": {
                 "A": "are being used to develop new types of streetlights",
                 "B": "can only be found in fireflies and deep-sea fish",

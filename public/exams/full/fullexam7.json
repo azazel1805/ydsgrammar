@@ -61,7 +61,43 @@
             "to": 80
         }
     ],
-    "passages": [],
+    "passages": [
+        {
+            "id": "p_cloze_17_fullexam7",
+            "title": "Cloze Test 17-21",
+            "text": "Cloze Test 1: Industrialization has significantly altered the global climate. (___) the burning of fossil fuels, carbon dioxide levels have reached unprecedented heights. Scientists (___) that these levels will continue to rise unless drastic measures are taken. Many nations have pledged (___) their carbon footprints; (___) , the transition to green energy is proving to be slower than expected. This delay is (___) attributed to the high costs associated with new technology. Question (___) :"
+        },
+        {
+            "id": "p_cloze_22_fullexam7",
+            "title": "Cloze Test 22-26",
+            "text": "Cloze Test 2: The cognitive development of children is a complex process. (___) Jean Piaget, children pass through four distinct stages of mental growth. Each stage is (___) by unique ways of thinking and perceiving the world. For instance, in the sensorimotor stage, infants learn (___) sensory experiences and motor activities. It is essential for educators (___) these developmental milestones when designing curricula. Failing to do so (___) lead to ineffective teaching methods. Question (___) :"
+        },
+        {
+            "id": "p_read_43_fullexam7",
+            "title": "Reading 1",
+            "text": "The Anthropocene epoch, a proposed geological period dating from the commencement of significant human impact on Earth's geology and ecosystems, has sparked intense debate among scientists. Proponents argue that the mid-20th century, marked by the 'Great Acceleration' of industrial activity and nuclear testing, provides a distinct stratigraphic marker. Critics, however, contend that human influence has been incremental since the dawn of agriculture, making it difficult to pinpoint a single starting point. Despite the lack of formal ratification by the International Union of Geological Sciences, the term has gained widespread cultural and scientific currency, symbolizing the profound scale of anthropogenic change."
+        },
+        {
+            "id": "p_read_47_fullexam7",
+            "title": "Reading 2",
+            "text": "Quantum entanglement, a phenomenon Albert Einstein famously dismissed as 'spooky action at a distance,' involves particles becoming linked such that the state of one instantaneously influences the state of another, regardless of the distance separating them. Modern experiments have repeatedly validated this counterintuitive aspect of quantum mechanics, forming the basis for emerging technologies like quantum computing and cryptography. While classical physics dictates that information cannot travel faster than light, entanglement doesn't involve the transmission of a signal in the traditional sense, thereby sidestepping the cosmic speed limit. This fundamental mystery continues to challenge our understanding of space-time and locality."
+        },
+        {
+            "id": "p_read_51_fullexam7",
+            "title": "Reading 3",
+            "text": "The Library of Alexandria, once the pinnacle of Hellenistic scholarship, was not destroyed in a single cataclysmic event as popular myth suggests. Instead, it suffered a gradual decline over several centuries due to a combination of budget cuts, civil unrest, and changing political priorities. While the fire during Julius Caesar's siege in 48 BCE caused significant damage, the library continued to function in some capacity for centuries. Its eventual disappearance was more a result of neglect and the shifting of intellectual centers to cities like Constantinople and Rome. The loss of its vast collection remains one of history's greatest intellectual tragedies, symbolizing the fragility of human knowledge."
+        },
+        {
+            "id": "p_read_55_fullexam7",
+            "title": "Reading 4",
+            "text": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the former scientific consensus that the adult brain is a static organ. Research indicates that neuroplasticity is driven by learning, experience, and even recovery from injury. For instance, when one area of the brain is damaged, other parts can sometimes compensate by taking over its functions. However, this adaptability is a double-edged sword; negative experiences, such as chronic stress or trauma, can also rewire the brain in ways that contribute to anxiety and depression. Understanding neuroplasticity has revolutionized approaches to rehabilitation and mental health."
+        },
+        {
+            "id": "p_read_59_fullexam7",
+            "title": "Reading 5",
+            "text": "The emergence of Impressionism in the late 19th century was a radical departure from the rigid standards of the Académie des Beaux-Arts in Paris. Impressionists like Claude Monet and Pierre-Auguste Renoir sought to capture the fleeting effects of light and color rather than achieve photographic realism. They often worked 'en plein air'—outdoors—to observe the shifting atmosphere of the natural world. Initially, their work was met with harsh criticism; the term 'impressionist' was even coined as an insult by a journalist. Yet, their focus on subjective experience and innovative brushwork eventually paved the way for modern art, forever changing the trajectory of Western aesthetics."
+        }
+    ],
     "questions": [
         {
             "id": 1,
@@ -290,8 +326,8 @@
         {
             "id": 17,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 1: Industrialization has significantly altered the global climate. (1) ______ the burning of fossil fuels, carbon dioxide levels have reached unprecedented heights. Scientists (2) ______ that these levels will continue to rise unless drastic measures are taken. Many nations have pledged (3) ______ their carbon footprints; (4) ______, the transition to green energy is proving to be slower than expected. This delay is (5) ______ attributed to the high costs associated with new technology. Question (1):",
+            "passage_id": "p_cloze_17_fullexam7",
+            "question": "Boşluk 17 için en uygun seçeneği bulun.",
             "options": {
                 "A": "Because of",
                 "B": "Despite",
@@ -304,8 +340,8 @@
         {
             "id": 18,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 1: Question (2):",
+            "passage_id": "p_cloze_17_fullexam7",
+            "question": "Boşluk 18 için en uygun seçeneği bulun.",
             "options": {
                 "A": "predict",
                 "B": "predicted",
@@ -318,8 +354,8 @@
         {
             "id": 19,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 1: Question (3):",
+            "passage_id": "p_cloze_17_fullexam7",
+            "question": "Boşluk 19 için en uygun seçeneği bulun.",
             "options": {
                 "A": "to reduce",
                 "B": "reducing",
@@ -332,8 +368,8 @@
         {
             "id": 20,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 1: Question (4):",
+            "passage_id": "p_cloze_17_fullexam7",
+            "question": "Boşluk 20 için en uygun seçeneği bulun.",
             "options": {
                 "A": "however",
                 "B": "therefore",
@@ -346,8 +382,8 @@
         {
             "id": 21,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 1: Question (5):",
+            "passage_id": "p_cloze_17_fullexam7",
+            "question": "Boşluk 21 için en uygun seçeneği bulun.",
             "options": {
                 "A": "primarily",
                 "B": "hardly",
@@ -360,8 +396,8 @@
         {
             "id": 22,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 2: The cognitive development of children is a complex process. (6) ______ Jean Piaget, children pass through four distinct stages of mental growth. Each stage is (7) ______ by unique ways of thinking and perceiving the world. For instance, in the sensorimotor stage, infants learn (8) ______ sensory experiences and motor activities. It is essential for educators (9) ______ these developmental milestones when designing curricula. Failing to do so (10) ______ lead to ineffective teaching methods. Question (6):",
+            "passage_id": "p_cloze_22_fullexam7",
+            "question": "Boşluk 22 için en uygun seçeneği bulun.",
             "options": {
                 "A": "According to",
                 "B": "Regardless of",
@@ -374,8 +410,8 @@
         {
             "id": 23,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 2: Question (7):",
+            "passage_id": "p_cloze_22_fullexam7",
+            "question": "Boşluk 23 için en uygun seçeneği bulun.",
             "options": {
                 "A": "characterized",
                 "B": "characterizing",
@@ -388,8 +424,8 @@
         {
             "id": 24,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 2: Question (8):",
+            "passage_id": "p_cloze_22_fullexam7",
+            "question": "Boşluk 24 için en uygun seçeneği bulun.",
             "options": {
                 "A": "through",
                 "B": "about",
@@ -402,8 +438,8 @@
         {
             "id": 25,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 2: Question (9):",
+            "passage_id": "p_cloze_22_fullexam7",
+            "question": "Boşluk 25 için en uygun seçeneği bulun.",
             "options": {
                 "A": "to consider",
                 "B": "considering",
@@ -416,8 +452,8 @@
         {
             "id": 26,
             "section_id": "cloze",
-            "passage_id": null,
-            "question": "Cloze Test 2: Question (10):",
+            "passage_id": "p_cloze_22_fullexam7",
+            "question": "Boşluk 26 için en uygun seçeneği bulun.",
             "options": {
                 "A": "can",
                 "B": "must",
@@ -654,8 +690,8 @@
         {
             "id": 43,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 1: The Anthropocene epoch, a proposed geological period dating from the commencement of significant human impact on Earth's geology and ecosystems, has sparked intense debate among scientists. Proponents argue that the mid-20th century, marked by the 'Great Acceleration' of industrial activity and nuclear testing, provides a distinct stratigraphic marker. Critics, however, contend that human influence has been incremental since the dawn of agriculture, making it difficult to pinpoint a single starting point. Despite the lack of formal ratification by the International Union of Geological Sciences, the term has gained widespread cultural and scientific currency, symbolizing the profound scale of anthropogenic change. According to the passage, what is one of the primary reasons for the debate regarding the Anthropocene?",
+            "passage_id": "p_read_43_fullexam7",
+            "question": "According to the passage, what is one of the primary reasons for the debate regarding the Anthropocene?",
             "options": {
                 "A": "The complete lack of evidence for human impact on the geological record",
                 "B": "Disagreement over the specific chronological starting point of the epoch",
@@ -668,8 +704,8 @@
         {
             "id": 44,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 1: (Continued) What does the term 'Great Acceleration' refer to in the context of the Anthropocene?",
+            "passage_id": "p_read_43_fullexam7",
+            "question": "(Continued) What does the term 'Great Acceleration' refer to in the context of the Anthropocene?",
             "options": {
                 "A": "The rapid migration of early humans out of Africa during the Holocene",
                 "B": "The technological shift from bronze to iron tools in ancient civilizations",
@@ -682,8 +718,8 @@
         {
             "id": 45,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 1: (Continued) It can be inferred from the passage that the International Union of Geological Sciences:",
+            "passage_id": "p_read_43_fullexam7",
+            "question": "(Continued) It can be inferred from the passage that the International Union of Geological Sciences:",
             "options": {
                 "A": "Was the first organization to propose the term Anthropocene",
                 "B": "Has officially replaced the Holocene with the Anthropocene",
@@ -696,8 +732,8 @@
         {
             "id": 46,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 1: (Continued) The author uses the word 'currency' in the text to suggest that the term Anthropocene:",
+            "passage_id": "p_read_43_fullexam7",
+            "question": "(Continued) The author uses the word 'currency' in the text to suggest that the term Anthropocene:",
             "options": {
                 "A": "Has become a valuable financial asset for environmental researchers",
                 "B": "Is frequently used and widely accepted in various fields of study",
@@ -710,8 +746,8 @@
         {
             "id": 47,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 2: Quantum entanglement, a phenomenon Albert Einstein famously dismissed as 'spooky action at a distance,' involves particles becoming linked such that the state of one instantaneously influences the state of another, regardless of the distance separating them. Modern experiments have repeatedly validated this counterintuitive aspect of quantum mechanics, forming the basis for emerging technologies like quantum computing and cryptography. While classical physics dictates that information cannot travel faster than light, entanglement doesn't involve the transmission of a signal in the traditional sense, thereby sidestepping the cosmic speed limit. This fundamental mystery continues to challenge our understanding of space-time and locality. Why did Einstein refer to entanglement as 'spooky action at a distance'?",
+            "passage_id": "p_read_47_fullexam7",
+            "question": "Why did Einstein refer to entanglement as 'spooky action at a distance'?",
             "options": {
                 "A": "Because he believed particles were haunted by subatomic forces",
                 "B": "Because it seemed to violate the principle of locality and the speed of light",
@@ -724,8 +760,8 @@
         {
             "id": 48,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 2: (Continued) According to the passage, how does quantum entanglement relate to the 'cosmic speed limit'?",
+            "passage_id": "p_read_47_fullexam7",
+            "question": "(Continued) According to the passage, how does quantum entanglement relate to the 'cosmic speed limit'?",
             "options": {
                 "A": "It proves that light is much slower than previously calculated",
                 "B": "It allows for the traditional transmission of data faster than light",
@@ -738,8 +774,8 @@
         {
             "id": 49,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 2: (Continued) Which of the following is mentioned as a practical application of entanglement?",
+            "passage_id": "p_read_47_fullexam7",
+            "question": "(Continued) Which of the following is mentioned as a practical application of entanglement?",
             "options": {
                 "A": "Improving the fuel efficiency of internal combustion engines",
                 "B": "Developing new methods for interstellar space travel",
@@ -752,8 +788,8 @@
         {
             "id": 50,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 2: (Continued) What is the author's primary attitude toward quantum entanglement?",
+            "passage_id": "p_read_47_fullexam7",
+            "question": "(Continued) What is the author's primary attitude toward quantum entanglement?",
             "options": {
                 "A": "Skeptical and dismissive of its scientific validity",
                 "B": "Purely historical, focusing only on Einstein's early views",
@@ -766,8 +802,8 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 3: The Library of Alexandria, once the pinnacle of Hellenistic scholarship, was not destroyed in a single cataclysmic event as popular myth suggests. Instead, it suffered a gradual decline over several centuries due to a combination of budget cuts, civil unrest, and changing political priorities. While the fire during Julius Caesar's siege in 48 BCE caused significant damage, the library continued to function in some capacity for centuries. Its eventual disappearance was more a result of neglect and the shifting of intellectual centers to cities like Constantinople and Rome. The loss of its vast collection remains one of history's greatest intellectual tragedies, symbolizing the fragility of human knowledge. What is the main argument regarding the destruction of the Library of Alexandria?",
+            "passage_id": "p_read_51_fullexam7",
+            "question": "What is the main argument regarding the destruction of the Library of Alexandria?",
             "options": {
                 "A": "It was burned to the ground in a single night by Julius Caesar",
                 "B": "It was intentionally demolished to make room for Roman monuments",
@@ -780,8 +816,8 @@
         {
             "id": 52,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 3: (Continued) According to the passage, the fire in 48 BCE:",
+            "passage_id": "p_read_51_fullexam7",
+            "question": "(Continued) According to the passage, the fire in 48 BCE:",
             "options": {
                 "A": "Was the sole reason for the permanent closure of the library",
                 "B": "Had no impact whatsoever on the library's collection",
@@ -794,8 +830,8 @@
         {
             "id": 53,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 3: (Continued) Which of the following factors is NOT mentioned as a cause for the library's decline?",
+            "passage_id": "p_read_51_fullexam7",
+            "question": "(Continued) Which of the following factors is NOT mentioned as a cause for the library's decline?",
             "options": {
                 "A": "Budgetary constraints",
                 "B": "Civil unrest",
@@ -808,8 +844,8 @@
         {
             "id": 54,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 3: (Continued) The word 'pinnacle' as used in the text most nearly means:",
+            "passage_id": "p_read_51_fullexam7",
+            "question": "(Continued) The word 'pinnacle' as used in the text most nearly means:",
             "options": {
                 "A": "The architectural foundation",
                 "B": "The highest point or peak",
@@ -822,8 +858,8 @@
         {
             "id": 55,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 4: Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the former scientific consensus that the adult brain is a static organ. Research indicates that neuroplasticity is driven by learning, experience, and even recovery from injury. For instance, when one area of the brain is damaged, other parts can sometimes compensate by taking over its functions. However, this adaptability is a double-edged sword; negative experiences, such as chronic stress or trauma, can also rewire the brain in ways that contribute to anxiety and depression. Understanding neuroplasticity has revolutionized approaches to rehabilitation and mental health. What does the passage suggest about the 'former scientific consensus' regarding the brain?",
+            "passage_id": "p_read_55_fullexam7",
+            "question": "What does the passage suggest about the 'former scientific consensus' regarding the brain?",
             "options": {
                 "A": "It correctly identified the brain as a highly flexible organ",
                 "B": "It believed the brain's structure was fixed once adulthood was reached",
@@ -836,8 +872,8 @@
         {
             "id": 56,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 4: (Continued) How can neuroplasticity be considered a 'double-edged sword'?",
+            "passage_id": "p_read_55_fullexam7",
+            "question": "(Continued) How can neuroplasticity be considered a 'double-edged sword'?",
             "options": {
                 "A": "It allows for both physical and mental illnesses to be cured instantly",
                 "B": "It can lead to positive adaptation or harmful changes depending on the stimuli",
@@ -850,8 +886,8 @@
         {
             "id": 57,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 4: (Continued) According to the passage, neuroplasticity is beneficial for:",
+            "passage_id": "p_read_55_fullexam7",
+            "question": "(Continued) According to the passage, neuroplasticity is beneficial for:",
             "options": {
                 "A": "Reversing the natural aging process of the skin",
                 "B": "Recovering lost functions after a brain injury",
@@ -864,8 +900,8 @@
         {
             "id": 58,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 4: (Continued) What role does 'experience' play in neuroplasticity?",
+            "passage_id": "p_read_55_fullexam7",
+            "question": "(Continued) What role does 'experience' play in neuroplasticity?",
             "options": {
                 "A": "It is the primary factor that stops the brain from changing",
                 "B": "It acts as a catalyst for the brain to form new neural pathways",
@@ -878,8 +914,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 5: The emergence of Impressionism in the late 19th century was a radical departure from the rigid standards of the Académie des Beaux-Arts in Paris. Impressionists like Claude Monet and Pierre-Auguste Renoir sought to capture the fleeting effects of light and color rather than achieve photographic realism. They often worked 'en plein air'—outdoors—to observe the shifting atmosphere of the natural world. Initially, their work was met with harsh criticism; the term 'impressionist' was even coined as an insult by a journalist. Yet, their focus on subjective experience and innovative brushwork eventually paved the way for modern art, forever changing the trajectory of Western aesthetics. Why did Impressionists choose to work 'en plein air'?",
+            "passage_id": "p_read_59_fullexam7",
+            "question": "Why did Impressionists choose to work 'en plein air'?",
             "options": {
                 "A": "Because they could not afford to rent professional studio spaces",
                 "B": "To accurately capture the changing qualities of light in nature",
@@ -892,8 +928,8 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 5: (Continued) What was the initial reaction to Impressionism by the critics of the time?",
+            "passage_id": "p_read_59_fullexam7",
+            "question": "(Continued) What was the initial reaction to Impressionism by the critics of the time?",
             "options": {
                 "A": "It was immediately hailed as the greatest movement in art history",
                 "B": "It was ignored as it was seen as a minor hobby for amateurs",
@@ -906,8 +942,8 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 5: (Continued) How did Impressionism influence the future of art according to the passage?",
+            "passage_id": "p_read_59_fullexam7",
+            "question": "(Continued) How did Impressionism influence the future of art according to the passage?",
             "options": {
                 "A": "It led to a return to the techniques of the Renaissance",
                 "B": "It discouraged artists from painting outdoors in the future",
@@ -920,8 +956,8 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "PASSAGE 5: (Continued) What is the main contrast described in the passage?",
+            "passage_id": "p_read_59_fullexam7",
+            "question": "(Continued) What is the main contrast described in the passage?",
             "options": {
                 "A": "The difference between Monet's and Renoir's painting styles",
                 "B": "The struggle between traditional academic standards and new artistic visions",
