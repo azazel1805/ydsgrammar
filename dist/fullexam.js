@@ -431,24 +431,39 @@ function feRenderQuestion() {
   let qDisplay = q.question;
   if (isCloze) {
       qDisplay = `<b>SORU ${feCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
-  } else if (isReading) {
-      // Split the question if it contains the passage text
-      const splitTerms = [/According to the passage/i, /According to the text/i, /\?/];
-      for (let term of splitTerms) {
-          const parts = qDisplay.split(term);
-          if (parts.length > 1) {
-              // The question is usually the last part or contains the term
-              let questionPart = qDisplay.substring(qDisplay.search(term));
-              if (questionPart) {
-                  qDisplay = questionPart;
-                  break;
+  } else if (isReading && !passageBox.classList.contains('hidden')) {
+      // Look for the exact point where the question starts
+      // This regex identifies common YDS question starters
+      const questionStarterRegex = /\b(According to|It (?:can be|is) (?:inferred|stated|implied|suggested)|The author (?:mentions|suggests|argues|states|uses)|Which of the following|What is the (?:main|primary|reason)|In the passage|The term|One notable|Why is)\b/i;
+      
+      const match = qDisplay.match(questionStarterRegex);
+      if (match) {
+          // Take everything from the starter to the end
+          qDisplay = qDisplay.substring(match.index);
+      } else {
+          // Fallback: If no starter found, but there's a question mark, 
+          // take the last sentence before it.
+          const qMarkIdx = qDisplay.lastIndexOf('?');
+          if (qMarkIdx !== -1) {
+              const beforeQ = qDisplay.substring(0, qMarkIdx);
+              const lastPeriod = beforeQ.lastIndexOf('. ');
+              if (lastPeriod !== -1) {
+                  qDisplay = qDisplay.substring(lastPeriod + 1);
               }
           }
       }
-      // Ensure we don't start with "(Cont.):"
-      qDisplay = qDisplay.replace(/Passage\s+\d+.*?:/i, '').replace(/^\(Cont\.\):/i, '').trim();
-      // Capitalize first letter
-      qDisplay = qDisplay.charAt(0).toUpperCase() + qDisplay.slice(1);
+
+      // Final cleanup: remove residual labels and fix casing
+      qDisplay = qDisplay.replace(/Passage\s+\d+.*?:/i, '')
+                         .replace(/^\(Cont\.\):/i, '')
+                         .replace(/\[Text as above\]/i, '')
+                         .trim();
+      
+      if (qDisplay.length > 0) {
+          qDisplay = qDisplay.charAt(0).toUpperCase() + qDisplay.slice(1);
+      } else {
+          qDisplay = "Lütfen yukarıdaki metne göre soruyu cevaplayınız.";
+      }
   }
   document.getElementById('feQuestion').innerHTML = qDisplay.replace(/\n/g, '<br>');
 
