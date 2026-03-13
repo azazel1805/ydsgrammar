@@ -64,15 +64,15 @@
     "passages": [
         {
             "id": "cloze_1",
-            "text": "The evolution of the internet has (11) --- changed the way people communicate and access information. In the early 1990s, the internet was primarily a tool for academics and researchers. (12) ---, with the advent of user-friendly web browsers, it quickly became a global phenomenon. Today, billions of people (13) --- on the internet for everything from social networking to online banking. This shift (14) --- significant challenges regarding data privacy and security. Consequently, governments around the world (15) --- new regulations to protect users in the digital age. (Blank 11)"
+            "text": "The evolution of the internet has (17) ____ changed the way people communicate and access information. In the early 1990s, the internet was primarily a tool for academics and researchers. (18) ____, with the advent of user-friendly web browsers, it quickly became a global phenomenon. Today, billions of people (19) ____ on the internet for everything from social networking to online banking. This shift (20) ____ significant challenges regarding data privacy and security. Consequently, governments around the world (21) ____ new regulations to protect users in the digital age."
         },
         {
             "id": "cloze_2",
-            "text": "Quantum mechanics is a branch of physics that (16) --- the behavior of matter and energy at the atomic and subatomic levels. At these scales, the classical laws of physics (17) --- apply. Instead, particles exhibit properties such as wave-particle duality and entanglement. (18) --- these concepts are counterintuitive, they have been experimentally verified numerous times. The development of quantum mechanics has led to (19) --- technologies, including lasers and semiconductors. Understanding these principles (20) --- essential for the advancement of modern science. (Blank 16)"
+            "text": "Quantum mechanics is a branch of physics that (22) ____ the behavior of matter and energy at the atomic and subatomic levels. At these scales, the classical laws of physics (23) ____ apply. Instead, particles exhibit properties such as wave-particle duality and entanglement. (24) ____ these concepts are counterintuitive, they have been experimentally verified numerous times. The development of quantum mechanics has led to (25) ____ technologies, including lasers and semiconductors. Understanding these principles (26) ____ essential for the advancement of modern science."
         },
         {
             "id": "reading_1",
-            "text": "The Anthropocene epoch is a proposed geological period dating from the commencement of significant human impact on Earth's geology and ecosystems. While"
+            "text": "The Anthropocene epoch is a proposed geological period dating from the commencement of significant human impact on Earth's geology and ecosystems. While the term was coined in the 1980s, it gained momentum in 2000 through Paul Crutzen. Proponents argue that the isotopic signals of nuclear testing and the proliferation of plastic debris constitute a distinct stratigraphic layer. However, critics suggest that the impact of humanity is too brief in geological time to warrant a new epoch, preferring to see it as an intensification of the Holocene."
         },
         {
             "id": "reading_2",
@@ -88,7 +88,7 @@
         },
         {
             "id": "reading_5",
-            "text": "Behavioral economics combines insights from psychology and economics to investigate why people sometimes make irrational decisions. Standard economic theory assumes that individuals are 'rational actors' who maximize utility. However, behavioral economists like Daniel Kahneman have shown that cognitive biases, such as loss aversion and the endowment effect, often lead people to deviate from logic. For instance, people feel the pain of a loss more acutely than the joy of an equivalent gain. This field has significant implications for public policy and marketing. Behavioral economics differs from standard economic theory because it..."
+            "text": "Behavioral economics combines insights from psychology and economics to investigate why people sometimes make irrational decisions. Standard economic theory assumes that individuals are 'rational actors' who maximize utility. However, behavioral economists like Daniel Kahneman have shown that cognitive biases, such as loss aversion and the endowment effect, often lead people to deviate from logic. For instance, people feel the pain of a loss more acutely than the joy of an equivalent gain. This field has significant implications for public policy and marketing."
         }
     ],
     "questions": [
@@ -684,7 +684,7 @@
             "id": 43,
             "section_id": "reading",
             "passage_id": "reading_1",
-            "question": "the term was coined in the 1980s, it gained momentum in 2000 through Paul Crutzen. Proponents argue that the isotopic signals of nuclear testing and the proliferation of plastic debris constitute a distinct stratigraphic layer. However, critics suggest that the impact of humanity is too brief in geological time to warrant a new epoch, preferring to see it as an intensification of the Holocene. According to the passage, the primary argument for establishing the Anthropocene is based on...",
+            "question": "According to the passage, the primary argument for establishing the Anthropocene is based on...",
             "options": {
                 "A": "The invention of the steam engine in the late 18th century",
                 "B": "The measurable physical and chemical changes in the Earth's strata",
@@ -908,7 +908,7 @@
             "id": 59,
             "section_id": "reading",
             "passage_id": "reading_5",
-            "question": "",
+            "question": "Behavioral economics differs from standard economic theory because it...",
             "options": {
                 "A": "Ignores the role of psychology in finance",
                 "B": "Assumes that humans always act logically",
