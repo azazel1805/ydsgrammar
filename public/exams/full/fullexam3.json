@@ -64,11 +64,11 @@
     "passages": [
         {
             "id": "cloze_1",
-            "text": "In the realm of modern physics, the concept of quantum entanglement (11) ____  one of the most intriguing phenomena. It suggests that two particles can become so intertwined that the state of one (12) ____  influences the state of the other, regardless of the distance between them. Einstein famously referred to this as 'spooky action at a distance.' Recent experiments (13) ____  to validate this theory, demonstrating that information can appear to travel faster than light. (14) ____ , this does not violate the theory of relativity because no usable information is actually transmitted. (15) ____  the complexities involved, scientists believe that harnessing this phenomenon could revolutionize computing. --- Blank 11:"
+            "text": "In the realm of modern physics, the concept of quantum entanglement (17) ____ one of the most intriguing phenomena. It suggests that two particles can become so intertwined that the state of one (18) ____ influences the state of the other, regardless of the distance between them. Einstein famously referred to this as 'spooky action at a distance.' Recent experiments (19) ____ to validate this theory, demonstrating that information can appear to travel faster than light. (20) ____, this does not violate the theory of relativity because no usable information is actually transmitted. (21) ____ the complexities involved, scientists believe that harnessing this phenomenon could revolutionize computing."
         },
         {
             "id": "cloze_2",
-            "text": "The Industrial Revolution (16) ____  a major turning point in history, as it transitioned societies from agrarian economies to industrial ones. This shift (17) ____  the development of new manufacturing processes and the rise of the factory system. (18) ____  people flocked to cities in search of work, urban populations exploded, leading to overcrowded and unsanitary living conditions. (19) ____  the social challenges, the period also saw unprecedented technological advancements. Today, historians continue to debate (20) ____  the long-term benefits of the revolution outweighed its immediate human costs. --- Blank 16:"
+            "text": "The Industrial Revolution (22) ____ a major turning point in history, as it transitioned societies from agrarian economies to industrial ones. This shift (23) ____ the development of new manufacturing processes and the rise of the factory system. (24) ____ people flocked to cities in search of work, urban populations exploded, leading to overcrowded and unsanitary living conditions. (25) ____ the social challenges, the period also saw unprecedented technological advancements. Today, historians continue to debate (26) ____ the long-term benefits of the revolution outweighed its immediate human costs."
         },
         {
             "id": "reading_1",
@@ -80,11 +80,11 @@
         },
         {
             "id": "reading_3",
-            "text": "The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. Almost every aspect of daily life was influenced in some way. Average income and population began to exhibit unprecedented sustained growth. In the two centuries following 1800, the world's average per capita income increased over tenfold, while the world's population increased over sixfold. In the words of Nobel Prize winner Robert E. Lucas, Jr., 'For the first time in history, the living standards of the masses of ordinary people have begun to undergo sustained growth.' However, this period also brought about significant social challenges, including poor working conditions, urbanization problems, and environmental degradation. The transition from agrarian economies to industrial ones redefined social structures and paved the way for the modern era. What does"
+            "text": "The Industrial Revolution, which began in Britain in the late 18th century, marked a major turning point in history. Almost every aspect of daily life was influenced in some way. Average income and population began to exhibit unprecedented sustained growth. In the two centuries following 1800, the world's average per capita income increased over tenfold, while the world's population increased over sixfold. In the words of Nobel Prize winner Robert E. Lucas, Jr., 'For the first time in history, the living standards of the masses of ordinary people have begun to undergo sustained growth.' However, this period also brought about significant social challenges, including poor working conditions, urbanization problems, and environmental degradation. The transition from agrarian economies to industrial ones redefined social structures and paved the way for the modern era."
         },
         {
             "id": "reading_4",
-            "text": "Artificial Intelligence (AI) has moved from the realm of science fiction to a core component of contemporary technology. One of its most promising branches is Machine Learning (ML), where algorithms are trained on vast datasets to identify patterns and make predictions. Unlike traditional software that follows rigid instructions, ML systems improve their performance as they are exposed to more data. This capability has led to breakthroughs in fields such as medical diagnosis, where AI can identify diseases from imaging with accuracy levels comparable to human experts. Nonetheless, the 'black box' nature of some AI models—where the reasoning behind a decision is not transparent—raises ethical concerns regarding accountability and bias. As AI becomes more integrated into society, ensuring that these systems are fair and explainable remains a critical challenge. What distinguishes Machine Learning from traditional software?"
+            "text": "Artificial Intelligence (AI) has moved from the realm of science fiction to a core component of contemporary technology. One of its most promising branches is Machine Learning (ML), where algorithms are trained on vast datasets to identify patterns and make predictions. Unlike traditional software that follows rigid instructions, ML systems improve their performance as they are exposed to more data. This capability has led to breakthroughs in fields such as medical diagnosis, where AI can identify diseases from imaging with accuracy levels comparable to human experts. Nonetheless, the 'black box' nature of some AI models—where the reasoning behind a decision is not transparent—raises ethical concerns regarding accountability and bias. As AI becomes more integrated into society, ensuring that these systems are fair and explainable remains a critical challenge."
         },
         {
             "id": "reading_5",
@@ -740,7 +740,7 @@
             "id": 47,
             "section_id": "reading",
             "passage_id": "reading_2",
-            "question": "",
+            "question": "The passage mentions that bioluminescence in the deep sea is primarily used for:",
             "options": {
                 "A": "Photosynthesis in the absence of sunlight.",
                 "B": "Regulating the internal body temperature of marine life.",
@@ -795,8 +795,7 @@
         {
             "id": 51,
             "section_id": "reading",
-            "passage_id": "reading_3",
-            "question": "the author emphasize regarding the impact of the Industrial Revolution on living standards?",
+            "question": "What does the author emphasize regarding the impact of the Industrial Revolution on living standards?",
             "options": {
                 "A": "Living standards remained stagnant for the working class.",
                 "B": "There was a decline in per capita income due to urbanization.",
@@ -852,7 +851,7 @@
             "id": 55,
             "section_id": "reading",
             "passage_id": "reading_4",
-            "question": "",
+            "question": "What distinguishes Machine Learning from traditional software?",
             "options": {
                 "A": "ML requires less data to function effectively.",
                 "B": "ML follows fixed, pre-defined rules that never change.",
