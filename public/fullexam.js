@@ -376,55 +376,79 @@ function feRenderQuestion() {
     }
 
   } else if (isReading) {
-    // READING RECONSTRUCTION:
-    // Some JSONs have empty passages and put text in the first question.
-    const passage = q.passage_id ? feExamData.passages.find(p => p.id === q.passage_id) : null;
-    let passageText = (passage && passage.text) ? passage.text : '';
+    // ADVANCED READING RECONSTRUCTION:
+    // Some JSONs (like fullexam1) have broken passage_ids or empty passage objects.
+    // We rely on the "Passage X:" prefixes in the question text.
+    
+    // 1. Identify the current question's passage label (e.g., "Passage 1", "Passage 2")
+    const match = q.question.match(/Passage\s+(\d+)/i);
+    const currentPassageLabel = match ? match[0].toLowerCase() : null;
+    
+    let passageText = "";
 
-    if (!passageText && q.passage_id) {
-        // Find all questions with this passage_id
-        const pqs = feExamData.questions.filter(pq => pq.passage_id === q.passage_id);
-        // Look for one that doesn't start with "(Cont.)" or has the longest text
-        for (let pq of pqs) {
-            if (pq.question.includes('Passage') && !pq.question.includes('(Cont.)')) {
-                // Extract the passage part (before the actual question)
-                const parts = pq.question.split(/\bAccording to the passage\b/i);
-                if (parts.length > 1) passageText = parts[0].trim();
-                else passageText = pq.question.split('?')[0].trim(); // Fallback
-                break;
+    // 2. Find the full text for this passage label
+    if (currentPassageLabel) {
+        // Search all questions in this exam for this specific passage label
+        // We look for the one that has the longest text or a ":" after the label
+        for (let testQ of feExamData.questions) {
+            if (testQ.section_id === q.section_id && testQ.question.toLowerCase().includes(currentPassageLabel)) {
+                // Check if it looks like a full passage (long text with multiple sentences)
+                const parts = testQ.question.split(/According to the (?:passage|text)/i);
+                if (parts.length > 1 && parts[0].length > 100) {
+                    passageText = parts[0].trim();
+                    break;
+                }
+                // Fallback: check for ":" after label
+                const colonParts = testQ.question.split(/Passage\s+\d+:/i);
+                if (colonParts.length > 1 && colonParts[1].length > 100) {
+                    passageText = colonParts[1].split('?')[0].trim();
+                    // Re-add the label for context
+                    passageText = currentPassageLabel.toUpperCase() + ": " + passageText;
+                    break;
+                }
             }
         }
     }
 
+    // 3. Display if found
     if (passageText) {
-      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
-      passageBox.classList.remove('hidden');
-    } else if (passage) {
-      passTitle.textContent = passage.title || "Okuma Parçası";
-      readingNotice.classList.remove('hidden');
+        passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
+        passageBox.classList.remove('hidden');
+    } else {
+        // Last resort: Fallback to passage_id if our label-based search failed
+        const passage = q.passage_id ? feExamData.passages.find(p => p.id === q.passage_id) : null;
+        if (passage && passage.text) {
+            passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passage.text.replace(/\n/g, '<br>');
+            passageBox.classList.remove('hidden');
+        }
     }
   } else if (q.leading_text) {
     passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
     passageBox.classList.remove('hidden');
-  } else if (q.passage_id) {
-    const passage = feExamData.passages.find(p => p.id === q.passage_id);
-    if (passage && passage.text) {
-      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">DETAY METNİ</div>` + passage.text.replace(/\n/g, '<br>');
-      passageBox.classList.remove('hidden');
-    }
   }
 
-  // Question text cleaning for Reading
+  // QUESTION TEXT CLEANING
   let qDisplay = q.question;
   if (isCloze) {
       qDisplay = `<b>SORU ${feCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
   } else if (isReading) {
-      // Remove "Passage X: ..." or "Passage X (Cont.):" prefixes from the question itself
-      qDisplay = qDisplay.replace(/Passage\s+\d+.*?:/i, '').trim();
-      // If it starts with "According to the passage", capitalize it
-      if (qDisplay.toLowerCase().startsWith('according')) {
-          qDisplay = qDisplay.charAt(0).toUpperCase() + qDisplay.slice(1);
+      // Split the question if it contains the passage text
+      const splitTerms = [/According to the passage/i, /According to the text/i, /\?/];
+      for (let term of splitTerms) {
+          const parts = qDisplay.split(term);
+          if (parts.length > 1) {
+              // The question is usually the last part or contains the term
+              let questionPart = qDisplay.substring(qDisplay.search(term));
+              if (questionPart) {
+                  qDisplay = questionPart;
+                  break;
+              }
+          }
       }
+      // Ensure we don't start with "(Cont.):"
+      qDisplay = qDisplay.replace(/Passage\s+\d+.*?:/i, '').replace(/^\(Cont\.\):/i, '').trim();
+      // Capitalize first letter
+      qDisplay = qDisplay.charAt(0).toUpperCase() + qDisplay.slice(1);
   }
   document.getElementById('feQuestion').innerHTML = qDisplay.replace(/\n/g, '<br>');
 
