@@ -375,25 +375,56 @@ function feRenderQuestion() {
         passageBox.classList.remove('hidden');
     }
 
+  } else if (isReading) {
+    // READING RECONSTRUCTION:
+    // Some JSONs have empty passages and put text in the first question.
+    const passage = q.passage_id ? feExamData.passages.find(p => p.id === q.passage_id) : null;
+    let passageText = (passage && passage.text) ? passage.text : '';
+
+    if (!passageText && q.passage_id) {
+        // Find all questions with this passage_id
+        const pqs = feExamData.questions.filter(pq => pq.passage_id === q.passage_id);
+        // Look for one that doesn't start with "(Cont.)" or has the longest text
+        for (let pq of pqs) {
+            if (pq.question.includes('Passage') && !pq.question.includes('(Cont.)')) {
+                // Extract the passage part (before the actual question)
+                const parts = pq.question.split(/\bAccording to the passage\b/i);
+                if (parts.length > 1) passageText = parts[0].trim();
+                else passageText = pq.question.split('?')[0].trim(); // Fallback
+                break;
+            }
+        }
+    }
+
+    if (passageText) {
+      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passageText.replace(/\n/g, '<br>');
+      passageBox.classList.remove('hidden');
+    } else if (passage) {
+      passTitle.textContent = passage.title || "Okuma Parçası";
+      readingNotice.classList.remove('hidden');
+    }
   } else if (q.leading_text) {
     passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
     passageBox.classList.remove('hidden');
   } else if (q.passage_id) {
     const passage = feExamData.passages.find(p => p.id === q.passage_id);
     if (passage && passage.text) {
-      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">OKUMA PARÇASI</div>` + passage.text.replace(/\n/g, '<br>');
+      passageBox.innerHTML = `<div class="font-bold mb-2 text-blue-800 uppercase tracking-tighter text-xs">DETAY METNİ</div>` + passage.text.replace(/\n/g, '<br>');
       passageBox.classList.remove('hidden');
-    } else if (passage) {
-      passTitle.textContent = `"${passage.title}"`;
-      readingNotice.classList.remove('hidden');
     }
   }
 
-  // Question text
+  // Question text cleaning for Reading
   let qDisplay = q.question;
   if (isCloze) {
-      // Just show "Question X" or a short snippet for Cloze
       qDisplay = `<b>SORU ${feCurrentIdx + 1}:</b> Boşluk için en uygun seçeneği bulun.`;
+  } else if (isReading) {
+      // Remove "Passage X: ..." or "Passage X (Cont.):" prefixes from the question itself
+      qDisplay = qDisplay.replace(/Passage\s+\d+.*?:/i, '').trim();
+      // If it starts with "According to the passage", capitalize it
+      if (qDisplay.toLowerCase().startsWith('according')) {
+          qDisplay = qDisplay.charAt(0).toUpperCase() + qDisplay.slice(1);
+      }
   }
   document.getElementById('feQuestion').innerHTML = qDisplay.replace(/\n/g, '<br>');
 
