@@ -15,6 +15,16 @@
     ],
     "passages": [
         {
+            "id": "p_cloze_17_master_reading",
+            "title": "Cloze Test 17-21",
+            "text": "As artificial intelligence (AI) systems become increasingly integrated into the fabric of society, ethical considerations regarding their deployment have moved to the forefront of technological discourse. One of the primary concerns is algorithmic bias, which occurs when AI models inadvertently perpetuate or even amplify existing societal prejudices. Because these models are trained on historical data, any biases present in that data can be reflected in the AI's decision-making process, leading to discriminatory outcomes in areas such as hiring, lending, and law enforcement. Furthermore, the 'black box' nature of deep learning algorithms presents a challenge for transparency; it is often difficult for developers to explain why an AI reached a specific conclusion. This lack of accountability necessitates the establishment of robust regulatory frameworks to ensure that AI development remains aligned with human rights and egalitarian values. What is algorithmic bias, as described in the passage?"
+        },
+        {
+            "id": "p_cloze_22_master_reading",
+            "title": "Cloze Test 22-26",
+            "text": "The concept of 'The Sixth Extinction' refers to the ongoing extinction event during the Holocene epoch, which is characterized by the rapid loss of biodiversity on Earth. Unlike previous mass extinctions, which were caused by natural phenomena like asteroid impacts or volcanic activity, the current event is primarily driven by human activities. Habitat destruction, overexploitation of species, pollution, and climate change are all contributing factors. Scientists estimate that the current extinction rate is hundreds to thousands of times higher than the natural background rate. This loss of biodiversity has profound implications for ecosystems and human well-being, as it disrupts the services that nature provides, such as pollination, water purification, and climate regulation. Efforts to mitigate this crisis include habitat restoration, protected areas, and international agreements to reduce greenhouse gas emissions.\n\nWhat does the author suggest about the current rate of extinction compared to the past?"
+        },
+        {
             "id": "p_read_43_master_reading",
             "title": "Reading 43",
             "text": "Behavioral economics suggests that humans are not always rational actors. Instead, they are influenced by cognitive biases and heuristics. Nudge Theory, proposed by Thaler and Sunstein, utilizes these biases to influence behavior without restricting freedom of choice. For example, placing fruit at eye level in a cafeteria is a nudge that encourages healthier eating. Unlike mandates or bans, nudges are subtle and preserve individual autonomy. However, critics argue that nudging can be manipulative if the goals of the choice architect do not align with the individuals best interests."
@@ -27,17 +37,12 @@
         {
             "id": "p_read_51_master_reading",
             "title": "Reading 51",
-            "text": "Passage: Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the former scientific consensus that the adult brain is a static organ. Neuroplasticity allows neurons in the brain to compensate for injury and adjust their activities in response to new situations or changes in the environment. Question:"
+            "text": "Passage: Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the former scientific consensus that the adult brain is a static organ. Neuroplasticity allows neurons in the brain to compensate for injury and adjust their activities in response to new situations or changes in the environment. Question: The term 'neuroplasticity' as described"
         },
         {
-            "id": "p_cloze_17_master_reading",
-            "title": "Cloze Test 17-21",
-            "text": "As artificial intelligence (AI) systems become increasingly integrated into the fabric of society, ethical considerations regarding their deployment have moved to the forefront of technological discourse. One of the primary concerns is algorithmic bias, which occurs when AI models inadvertently perpetuate or even amplify existing societal prejudices. Because these models are trained on historical data, any biases present in that data can be reflected in the AI's decision-making process, leading to discriminatory outcomes in areas such as hiring, lending, and law enforcement. Furthermore, the 'black box' nature of deep learning algorithms presents a challenge for transparency; it is often difficult for developers to explain why an AI reached a specific conclusion. This lack of accountability necessitates the establishment of robust regulatory frameworks to ensure that AI development remains aligned with human rights and egalitarian values. What is algorithmic bias, as described in the passage?"
-        },
-        {
-            "id": "p_cloze_22_master_reading",
-            "title": "Cloze Test 22-26",
-            "text": "The concept of 'The Sixth Extinction' refers to the ongoing extinction event during the Holocene epoch, which is characterized by the rapid loss of biodiversity on Earth. Unlike previous mass extinctions, which were caused by natural phenomena like asteroid impacts or volcanic activity, the current event is primarily driven by human activities. Habitat destruction, overexploitation of species, pollution, and climate change are all contributing factors. Scientists estimate that the current extinction rate is hundreds to thousands of times higher than the natural background rate. This loss of biodiversity has profound implications for ecosystems and human well-being, as it disrupts the services that nature provides, such as pollination, water purification, and climate regulation. Efforts to mitigate this crisis include habitat restoration, protected areas, and international agreements to reduce greenhouse gas emissions.\n\nWhat does the author suggest about the current rate of extinction compared to the past?"
+            "id": "p_read_59_master_reading",
+            "title": "Reading 59",
+            "text": "Passage: The Industrial Revolution marked a major turning point in history, transitioning from hand production methods to machines. This shift led to unprecedented growth in population and average income. However, it also resulted in poor working conditions for the laboring class and significant environmental degradation. The long-term effects continue to shape the modern global economy. Question: What were the dual consequences of the Industrial Revolution mentioned"
         }
     ],
     "questions": [
@@ -681,7 +686,7 @@
             "id": 46,
             "section_id": "reading",
             "passage_id": "p_read_43_master_reading",
-            "question": "the term choice architect refer to in this context?",
+            "question": "What does the term choice architect refer to in this context?",
             "options": {
                 "A": "A person who designs the environment where decisions are made.",
                 "B": "A professional architect who builds cafeterias.",
@@ -751,7 +756,7 @@
             "id": 51,
             "section_id": "reading",
             "passage_id": "p_read_51_master_reading",
-            "question": "The term 'neuroplasticity' as described in the passage implies that the brain is:",
+            "question": "in the passage implies that the brain is:",
             "options": {
                 "A": "Fixed and unchangeable after adolescence.",
                 "B": "Capable of adapting and restructuring itself.",
@@ -862,8 +867,8 @@
         {
             "id": 59,
             "section_id": "reading",
-            "passage_id": null,
-            "question": "Passage: The Industrial Revolution marked a major turning point in history, transitioning from hand production methods to machines. This shift led to unprecedented growth in population and average income. However, it also resulted in poor working conditions for the laboring class and significant environmental degradation. The long-term effects continue to shape the modern global economy. Question: What were the dual consequences of the Industrial Revolution mentioned in the passage?",
+            "passage_id": "p_read_59_master_reading",
+            "question": "in the passage?",
             "options": {
                 "A": "Economic stagnation and environmental preservation.",
                 "B": "Technological regression and population decline.",
@@ -876,7 +881,7 @@
         {
             "id": 60,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_59_master_reading",
             "question": "Passage: Artificial Intelligence (AI) has the potential to revolutionize healthcare by improving diagnostic accuracy and personalizing treatment plans. By analyzing vast datasets, AI algorithms can identify patterns that may be invisible to the human eye. Nevertheless, concerns regarding data privacy and the ethical implications of autonomous decision-making in life-and-death situations persist. Question: What is one benefit of AI in the medical field according to the text?",
             "options": {
                 "A": "It eliminates the need for any human doctors.",
@@ -890,7 +895,7 @@
         {
             "id": 61,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_59_master_reading",
             "question": "Passage: The theory of plate tectonics explains the large-scale motion of the seven large plates and the movements of a larger number of smaller plates of the Earth's lithosphere. The point where two plates meet is called a plate boundary. These boundaries are associated with geological events such as earthquakes and the creation of topographic features like mountains and volcanoes. Question: What is the primary focus of the theory of plate tectonics?",
             "options": {
                 "A": "The chemical composition of the Earth's core.",
@@ -904,7 +909,7 @@
         {
             "id": 62,
             "section_id": "reading",
-            "passage_id": null,
+            "passage_id": "p_read_59_master_reading",
             "question": "Passage: Linguistic relativity, also known as the Sapir-Whorf hypothesis, suggests that the structure of a language affects its speakers' world view or cognition. Strong versions of the hypothesis argue that language determines thought, while weaker versions suggest it merely influences it. Critics argue that human thought is largely independent of specific linguistic structures. Question: What is the core argument of the Sapir-Whorf hypothesis?",
             "options": {
                 "A": "That all languages are identical in their structure.",
