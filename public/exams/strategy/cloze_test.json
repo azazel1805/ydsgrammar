@@ -1,8 +1,774 @@
 {
   "meta": {
-    "title": "Cloze Test Strategy Lab",
-    "subtitle": "Contextual accuracy and grammar in flow",
-    "total_questions": 0
+    "title": "Advanced Academic English Proficiency Exam",
+    "subtitle": "University Preparatory Level - B2/C1 Integrated Cloze and Contextual Analysis",
+    "total_questions": 50,
+    "duration_minutes": 90
   },
-  "questions": []
+  "sections": [
+    {
+      "id": "cloze_test_1",
+      "label": "Part I: Contextual Vocabulary and Grammar Cloze (The Anthropocene)",
+      "from": 1,
+      "to": 15
+    },
+    {
+      "id": "cloze_test_2",
+      "label": "Part II: Technical Cloze (The Evolution of Artificial Intelligence)",
+      "from": 16,
+      "to": 30
+    },
+    {
+      "id": "cloze_test_3",
+      "label": "Part III: Academic Discourse Cloze (The Psychology of Learning)",
+      "from": 31,
+      "to": 50
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage_1",
+      "text": "The term Anthropocene characterizes a new geological epoch (1)____ by the significant impact of human activities on Earth's ecosystems. While the exact starting point remains a matter of (2)____ among scientists, most agree that the mid-20th century (3)____ a profound shift. This period, often called the 'Great Acceleration,' saw (4)____ increases in population, carbon emissions, and plastic production. Consequently, the planetary boundaries that once (5)____ stability are now being pushed to their limits. (6)____, the loss of biodiversity has reached levels not seen since the last mass extinction. Critics of the term argue that it (7)____ the responsibility of a few industrialized nations onto humanity as a whole. (8)____, the geological evidence of human influence—from radioactive isotopes to nitrogen (9)____—is undeniable. In order to (10)____ these global challenges, a multidisciplinary approach is required. Scholars (11)____ that unless we transition to sustainable energy sources, the (12)____ effects on the climate will be irreversible. This transition (13)____ not only technological innovation but also a fundamental (14)____ in how societies value natural resources. The (15)____ of our actions today will define the geological record for millions of years to come."
+    },
+    {
+      "id": "passage_2",
+      "text": "Artificial Intelligence (AI) has undergone a (16)____ transformation since its inception in the 1950s. Initially, researchers (17)____ on symbolic AI, which relied on hard-coded rules. However, this approach (18)____ to be insufficient for complex tasks like image recognition. The (19)____ of machine learning shifted the focus toward algorithms that could learn from data. By (20)____ vast amounts of information, these systems can now (21)____ patterns that were previously invisible to human analysts. (22)____, the rise of deep learning, inspired by the structure of the human brain, has further (23)____ the field. Despite these advancements, ethical (24)____ remain a primary concern. There is a fear that biased data could (25)____ existing social inequalities. Furthermore, the (26)____ nature of 'black box' algorithms makes it difficult to understand how certain decisions are (27)____. To mitigate these risks, many organizations are (28)____ for 'Explainable AI'. This movement (29)____ to make the decision-making process more transparent. Ultimately, the goal is to create systems that (30)____ human intelligence rather than replace it."
+    },
+    {
+      "id": "passage_3",
+      "text": "Understanding how students (31)____ knowledge is central to educational psychology. For decades, the behaviorist perspective (32)____ that learning was primarily a response to external stimuli. In (33)____, the constructivist theory suggests that learners (34)____ build their own understanding based on prior experiences. This shift has led to more (35)____ learning environments where students are encouraged to explore. One (36)____ factor in successful learning is metacognition, or the ability to (37)____ one's own thought processes. Students who possess high metacognitive skills are better at (38)____ goals and monitoring their progress. (39)____, motivation plays a (40)____ role in academic achievement. Intrinsic motivation, which (41)____ from an internal desire to learn, is generally more sustainable than extrinsic motivation. However, the (42)____ of modern classrooms often makes it difficult to foster such engagement. Teachers must (43)____ various instructional strategies to cater to diverse learning styles. (44)____, the use of technology in the classroom has (45)____ both opportunities and challenges. While digital tools can (46)____ collaboration, they can also serve as (47)____ if not managed properly. Research (48)____ that a balanced approach, combining traditional methods with digital (49)____, yields the best results. Educators must remain (50)____ to new findings in the field to optimize student outcomes."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "cloze_test_1",
+      "question": "(1)",
+      "options": {
+        "A": "defined",
+        "B": "reproduced",
+        "C": "neglected",
+        "D": "dismissed",
+        "E": "contained"
+      },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "tactic": "Metinde 'characterizes' ve 'new geological epoch' ifadeleri geçiyor. Bir çağı veya dönemi niteleyen ana fiil 'define' (tanımlamak) olur. İnsan faaliyetlerinin etkisiyle 'tanımlanan' bir çağdan bahsediliyor.",
+        "grammar": "Passive voice in Relative Clauses (epoch which is defined by)",
+        "vocabulary": ["Defined (Tanımlanmış)", "Characterize (Nitelemek)", "Epoch (Çağ/Dönem)"],
+        "trap": "Reproduced (çoğaltılmış) veya Contained (içerilen) kelimeleri bilimsel bir çağı betimlemek için yeterince güçlü değildir."
+      }
+    },
+    {
+      "id": 2,
+      "section_id": "cloze_test_1",
+      "question": "(2)",
+      "options": {
+        "A": "consent",
+        "B": "contention",
+        "C": "conformity",
+        "D": "negligence",
+        "E": "approval"
+      },
+      "correct": "B",
+      "passage_id": "passage_1",
+      "explanation": {
+        "tactic": "'remains a matter of ____ among scientists' kalıbı, bilim insanları arasında hala tartışılan veya uzlaşılmayan bir konuyu anlatır. 'Contention' (tartışma/çekişme) bu akademik kalıba tam uyar.",
+        "grammar": "Noun-Collocation (Matter of contention)",
+        "vocabulary": ["Contention (Tartışma/Çekişme/İddia)", "Consent (Rıza)", "Conformity (Uygunluk)"],
+        "trap": "Consent ve Approval tam zıt anlamlıdır; eğer uzlaşma olsaydı 'most agree' ile başlayan sonraki cümle zıtlık bağlacı (While) gerektirmezdi."
+      }
+    },
+    {
+      "id": 3,
+      "section_id": "cloze_test_1",
+      "question": "(3)",
+      "options": {
+        "A": "marked",
+        "B": "has marked",
+        "C": "marking",
+        "D": "was marked",
+        "E": "marks"
+      },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "tactic": "Cümle 'the mid-20th century' diyerek geçmişte net bir zaman vermiştir. Bu yüzden Past Simple (V2) kullanmalıyız. 'Marked' (damga vurdu/işaret etti) bu tarihsel süreci anlatmak için uygundur.",
+        "grammar": "Past Simple Tense (Completed action in the past)",
+        "vocabulary": ["Mark (İşaretlemek/Damga vurmak)", "Profound (Derin/Kapsamlı)", "Shift (Değişim)"],
+        "trap": "Has marked (Present Perfect) seçilemez çünkü cümlenin başında spesifik bir zaman zarfı bulunmaktadır."
+      }
+    },
+    {
+      "id": 4,
+      "section_id": "cloze_test_1",
+      "question": "(4)",
+      "options": {
+        "A": "exponential",
+        "B": "marginal",
+        "C": "trivial",
+        "D": "minimal",
+        "E": "negligible"
+      },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "tactic": "'Great Acceleration' (Büyük Hızlanma) terimi, sayıların çok hızlı arttığını ifade eder. Akademik olarak bu tip devasa ve hızlı artışlar 'exponential' (üstel/çok hızlı) kelimesiyle nitelenir.",
+        "grammar": "Adjective usage in context",
+        "vocabulary": ["Exponential (Çok hızlı artan/Üstel)", "Marginal (Marjinal/Sınırlı)", "Trivial (Önemsiz)"],
+        "trap": "Marginal, Trivial ve Negligible kelimeleri 'hızlanma' ve 'artış' bağlamıyla tamamen zıt anlamlıdır."
+      }
+    },
+    {
+      "id": 5,
+      "section_id": "cloze_test_1",
+      "question": "(5)",
+      "options": {
+        "A": "assured",
+        "B": "endangered",
+        "C": "threatened",
+        "D": "diminished",
+        "E": "rejected"
+      },
+      "correct": "A",
+      "passage_id": "passage_1",
+      "explanation": {
+        "tactic": "Cümledeki 'that once ____ stability' (bir zamanlar istikrar sağlayan/garanti eden) ifadesi geçmişi, 'now being pushed' ise şimdiyi anlatıyor. Bir zamanlar var olan olumlu durumu 'assured' kelimesi sağlar.",
+        "grammar": "Past vs Present contrast in Relative Clauses",
+        "vocabulary": ["Assured (Garanti altına alınmış/Emin)", "stability (istikrar)", "Endangered (Tehlikeye atılmış)"],
+        "trap": "Endangered ve Threatened günümüzdeki durumu (limits being pushed) anlatır, 'once' (bir zamanlar) olan durumu değil."
+      }
+    },
+    {
+      "id": 6,
+      "section_id": "cloze_test_1",
+      "question": "(6)",
+      "options": {
+        "A": "Nevertheless",
+        "B": "Consequently",
+        "C": "Furthermore",
+        "D": "In contrast",
+        "E": "On the contrary"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 7,
+      "section_id": "cloze_test_1",
+      "question": "(7)",
+      "options": {
+        "A": "displaces",
+        "B": "absolves",
+        "C": "projects",
+        "D": "validates",
+        "E": "allocates"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test_1",
+      "question": "(8)",
+      "options": {
+        "A": "Hence",
+        "B": "Moreover",
+        "C": "Yet",
+        "D": "Thus",
+        "E": "Therefore"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test_1",
+      "question": "(9)",
+      "options": {
+        "A": "depletion",
+        "B": "enrichment",
+        "C": "fluctuation",
+        "D": "stability",
+        "E": "absence"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test_1",
+      "question": "(10)",
+      "options": {
+        "A": "address",
+        "B": "ignore",
+        "C": "facilitate",
+        "D": "aggravate",
+        "E": "circumvent"
+      },
+      "correct": "A",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test_1",
+      "question": "(11)",
+      "options": {
+        "A": "refute",
+        "B": "contend",
+        "C": "dismiss",
+        "D": "negate",
+        "E": "hesitate"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test_1",
+      "question": "(12)",
+      "options": {
+        "A": "detrimental",
+        "B": "beneficial",
+        "C": "salutary",
+        "D": "favorable",
+        "E": "harmless"
+      },
+      "correct": "A",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 13,
+      "section_id": "cloze_test_1",
+      "question": "(13)",
+      "options": {
+        "A": "necessitates",
+        "B": "eliminates",
+        "C": "reverses",
+        "D": "postpones",
+        "E": "avoids"
+      },
+      "correct": "A",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 14,
+      "section_id": "cloze_test_1",
+      "question": "(14)",
+      "options": {
+        "A": "paradigm shift",
+        "B": "minor adjustment",
+        "C": "regressive step",
+        "D": "stagnation",
+        "E": "maintenance"
+      },
+      "correct": "A",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 15,
+      "section_id": "cloze_test_1",
+      "question": "(15)",
+      "options": {
+        "A": "consequences",
+        "B": "origins",
+        "C": "precedents",
+        "D": "causes",
+        "E": "intentions"
+      },
+      "correct": "A",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 16,
+      "section_id": "cloze_test_2",
+      "question": "(16)",
+      "options": {
+        "A": "remarkable",
+        "B": "superficial",
+        "C": "tedious",
+        "D": "monotonous",
+        "E": "stagnant"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 17,
+      "section_id": "cloze_test_2",
+      "question": "(17)",
+      "options": {
+        "A": "concentrated",
+        "B": "distributed",
+        "C": "dissipated",
+        "D": "diverged",
+        "E": "withdrawn"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 18,
+      "section_id": "cloze_test_2",
+      "question": "(18)",
+      "options": {
+        "A": "proved",
+        "B": "turned out",
+        "C": "seemed",
+        "D": "emerged",
+        "E": "appeared"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 19,
+      "section_id": "cloze_test_2",
+      "question": "(19)",
+      "options": {
+        "A": "advent",
+        "B": "demise",
+        "C": "departure",
+        "D": "regression",
+        "E": "omission"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 20,
+      "section_id": "cloze_test_2",
+      "question": "(20)",
+      "options": {
+        "A": "analyzing",
+        "B": "ignoring",
+        "C": "discarding",
+        "D": "misinterpreting",
+        "E": "withholding"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 21,
+      "section_id": "cloze_test_2",
+      "question": "(21)",
+      "options": {
+        "A": "discern",
+        "B": "conceal",
+        "C": "obscure",
+        "D": "overlook",
+        "E": "disregard"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 22,
+      "section_id": "cloze_test_2",
+      "question": "(22)",
+      "options": {
+        "A": "Similarly",
+        "B": "Conversely",
+        "C": "Otherwise",
+        "D": "On the other hand",
+        "E": "Despite this"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 23,
+      "section_id": "cloze_test_2",
+      "question": "(23)",
+      "options": {
+        "A": "revolutionized",
+        "B": "impeded",
+        "C": "diminished",
+        "D": "thwarted",
+        "E": "constrained"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 24,
+      "section_id": "cloze_test_2",
+      "question": "(24)",
+      "options": {
+        "A": "considerations",
+        "B": "negligence",
+        "C": "omissions",
+        "D": "indifferences",
+        "E": "violations"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 25,
+      "section_id": "cloze_test_2",
+      "question": "(25)",
+      "options": {
+        "A": "perpetuate",
+        "B": "eradicate",
+        "C": "eliminate",
+        "D": "alleviate",
+        "E": "rectify"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 26,
+      "section_id": "cloze_test_2",
+      "question": "(26)",
+      "options": {
+        "A": "opaque",
+        "B": "transparent",
+        "C": "lucid",
+        "D": "clear",
+        "E": "explicit"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 27,
+      "section_id": "cloze_test_2",
+      "question": "(27)",
+      "options": {
+        "A": "reached",
+        "B": "concluded",
+        "C": "derived",
+        "D": "made",
+        "E": "formed"
+      },
+      "correct": "D",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 28,
+      "section_id": "cloze_test_2",
+      "question": "(28)",
+      "options": {
+        "A": "advocating",
+        "B": "opposing",
+        "C": "denying",
+        "D": "ignoring",
+        "E": "suppressing"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 29,
+      "section_id": "cloze_test_2",
+      "question": "(29)",
+      "options": {
+        "A": "aims",
+        "B": "fails",
+        "C": "refuses",
+        "D": "hesitates",
+        "E": "objects"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 30,
+      "section_id": "cloze_test_2",
+      "question": "(30)",
+      "options": {
+        "A": "augment",
+        "B": "deplete",
+        "C": "reduce",
+        "D": "undermine",
+        "E": "contradict"
+      },
+      "correct": "A",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 31,
+      "section_id": "cloze_test_3",
+      "question": "(31)",
+      "options": {
+        "A": "acquire",
+        "B": "relinquish",
+        "C": "discard",
+        "D": "forfeit",
+        "E": "lose"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 32,
+      "section_id": "cloze_test_3",
+      "question": "(32)",
+      "options": {
+        "A": "posited",
+        "B": "denied",
+        "C": "refuted",
+        "D": "questioned",
+        "E": "ignored"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 33,
+      "section_id": "cloze_test_3",
+      "question": "(33)",
+      "options": {
+        "A": "contrast",
+        "B": "addition",
+        "C": "summary",
+        "D": "conclusion",
+        "E": "fact"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 34,
+      "section_id": "cloze_test_3",
+      "question": "(34)",
+      "options": {
+        "A": "actively",
+        "B": "passively",
+        "C": "indifferently",
+        "D": "reluctantly",
+        "E": "accidentally"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 35,
+      "section_id": "cloze_test_3",
+      "question": "(35)",
+      "options": {
+        "A": "collaborative",
+        "B": "isolated",
+        "C": "restrictive",
+        "D": "monolithic",
+        "E": "rigid"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 36,
+      "section_id": "cloze_test_3",
+      "question": "(36)",
+      "options": {
+        "A": "pivotal",
+        "B": "insignificant",
+        "C": "trivial",
+        "D": "minor",
+        "E": "optional"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 37,
+      "section_id": "cloze_test_3",
+      "question": "(37)",
+      "options": {
+        "A": "regulate",
+        "B": "ignore",
+        "C": "disregard",
+        "D": "mismanage",
+        "E": "forget"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 38,
+      "section_id": "cloze_test_3",
+      "question": "(38)",
+      "options": {
+        "A": "setting",
+        "B": "avoiding",
+        "C": "abandoning",
+        "D": "neglecting",
+        "E": "doubting"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 39,
+      "section_id": "cloze_test_3",
+      "question": "(39)",
+      "options": {
+        "A": "Additionally",
+        "B": "Conversely",
+        "C": "However",
+        "D": "Nonetheless",
+        "E": "Instead"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 40,
+      "section_id": "cloze_test_3",
+      "question": "(40)",
+      "options": {
+        "A": "crucial",
+        "B": "peripheral",
+        "C": "negligible",
+        "D": "redundant",
+        "E": "secondary"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 41,
+      "section_id": "cloze_test_3",
+      "question": "(41)",
+      "options": {
+        "A": "stems",
+        "B": "ends",
+        "C": "deviates",
+        "D": "departs",
+        "E": "ceases"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 42,
+      "section_id": "cloze_test_3",
+      "question": "(42)",
+      "options": {
+        "A": "complexity",
+        "B": "simplicity",
+        "C": "uniformity",
+        "D": "stagnation",
+        "E": "brevity"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 43,
+      "section_id": "cloze_test_3",
+      "question": "(43)",
+      "options": {
+        "A": "employ",
+        "B": "reject",
+        "C": "discard",
+        "D": "ignore",
+        "E": "avoid"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 44,
+      "section_id": "cloze_test_3",
+      "question": "(44)",
+      "options": {
+        "A": "Moreover",
+        "B": "Nevertheless",
+        "C": "Otherwise",
+        "D": "Yet",
+        "E": "Despite"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 45,
+      "section_id": "cloze_test_3",
+      "question": "(45)",
+      "options": {
+        "A": "presented",
+        "B": "eliminated",
+        "C": "reduced",
+        "D": "hidden",
+        "E": "obscured"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 46,
+      "section_id": "cloze_test_3",
+      "question": "(46)",
+      "options": {
+        "A": "enhance",
+        "B": "hinder",
+        "C": "impede",
+        "D": "thwart",
+        "E": "obstruct"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 47,
+      "section_id": "cloze_test_3",
+      "question": "(47)",
+      "options": {
+        "A": "distractions",
+        "B": "assets",
+        "C": "benefits",
+        "D": "advantages",
+        "E": "incentives"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 48,
+      "section_id": "cloze_test_3",
+      "question": "(48)",
+      "options": {
+        "A": "suggests",
+        "B": "refutes",
+        "C": "denies",
+        "D": "contradicts",
+        "E": "disproves"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 49,
+      "section_id": "cloze_test_3",
+      "question": "(49)",
+      "options": {
+        "A": "resources",
+        "B": "obstacles",
+        "C": "barriers",
+        "D": "deficits",
+        "E": "hindrances"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    },
+    {
+      "id": 50,
+      "section_id": "cloze_test_3",
+      "question": "(50)",
+      "options": {
+        "A": "attentive",
+        "B": "oblivious",
+        "C": "indifferent",
+        "D": "unaware",
+        "E": "resistant"
+      },
+      "correct": "A",
+      "passage_id": "passage_3"
+    }
+  ]
 }
