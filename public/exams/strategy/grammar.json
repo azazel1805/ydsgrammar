@@ -6,9 +6,24 @@
     "duration_minutes": 90
   },
   "sections": [
-    { "id": "mcq_grammar", "label": "Advanced Structure and Tenses", "from": 1, "to": 20 },
-    { "id": "error_id", "label": "Error Recognition", "from": 21, "to": 35 },
-    { "id": "cloze_test", "label": "Contextual Grammar", "from": 36, "to": 50 }
+    {
+      "id": "mcq_grammar",
+      "label": "Advanced Structure and Tenses",
+      "from": 1,
+      "to": 20
+    },
+    {
+      "id": "error_id",
+      "label": "Error Recognition",
+      "from": 21,
+      "to": 35
+    },
+    {
+      "id": "cloze_test",
+      "label": "Contextual Grammar",
+      "from": 36,
+      "to": 50
+    }
   ],
   "passages": [
     {
@@ -121,7 +136,13 @@
       "id": 6,
       "section_id": "mcq_grammar",
       "question": "The university requires that every student ______ an ethics seminar during their first year of study.",
-      "options": { "A": "attends", "B": "attend", "C": "is attending", "D": "has attended", "E": "to attend" },
+      "options": {
+        "A": "attends",
+        "B": "attend",
+        "C": "is attending",
+        "D": "has attended",
+        "E": "to attend"
+      },
       "correct": "B",
       "explanation": {
         "logical_structure": "'Requires that' yapısı Subjunctive Mood (istek/gereklilik kipi) gerektirir.",
@@ -135,7 +156,13 @@
       "id": 7,
       "section_id": "mcq_grammar",
       "question": "The more stringent the environmental regulations become, ______ it is for small businesses to comply without subsidies.",
-      "options": { "A": "the most difficult", "B": "difficult", "C": "it is more difficult", "D": "the more difficult", "E": "much more difficult" },
+      "options": {
+        "A": "the most difficult",
+        "B": "difficult",
+        "C": "it is more difficult",
+        "D": "the more difficult",
+        "E": "much more difficult"
+      },
       "correct": "D",
       "explanation": {
         "logical_structure": "Cümle 'The more ...' kalıbı ile başlamaktadır; bu bir paralel artış/azalış yapısıdır.",
@@ -149,7 +176,13 @@
       "id": 8,
       "section_id": "mcq_grammar",
       "question": "The CEO, ______ leadership style was often criticized, managed to double the company's revenue in two years.",
-      "options": { "A": "who", "B": "whom", "C": "whose", "D": "that", "E": "which" },
+      "options": {
+        "A": "who",
+        "B": "whom",
+        "C": "whose",
+        "D": "that",
+        "E": "which"
+      },
       "correct": "C",
       "explanation": {
         "logical_structure": "'CEO' ve onun 'Leadership style'ı (liderlik stili) arasındaki 'aitlik' bağını bulun.",
@@ -163,7 +196,13 @@
       "id": 9,
       "section_id": "mcq_grammar",
       "question": "No sooner ______ the podium than the audience erupted into a standing ovation.",
-      "options": { "A": "had he approached", "B": "he had approached", "C": "did he approached", "D": "he approached", "E": "was he approaching" },
+      "options": {
+        "A": "had he approached",
+        "B": "he had approached",
+        "C": "did he approached",
+        "D": "he approached",
+        "E": "was he approaching"
+      },
       "correct": "A",
       "explanation": {
         "logical_structure": "'No sooner' zarfı cümle başında kullanılmış ve devamında 'than' bağlacı verilmiş.",
@@ -177,7 +216,13 @@
       "id": 10,
       "section_id": "mcq_grammar",
       "question": "I would rather you ______ the confidential documents via an encrypted server instead of standard email.",
-      "options": { "A": "send", "B": "to send", "C": "sending", "D": "sent", "E": "will send" },
+      "options": {
+        "A": "send",
+        "B": "to send",
+        "C": "sending",
+        "D": "sent",
+        "E": "will send"
+      },
       "correct": "D",
       "explanation": {
         "logical_structure": "'Would rather + Subject' yapısı mevcuttur.",
@@ -191,7 +236,13 @@
       "id": 11,
       "section_id": "mcq_grammar",
       "question": "The witness denied ______ the defendant near the crime scene on the night of the incident.",
-      "options": { "A": "to see", "B": "having seen", "C": "see", "D": "to have seen", "E": "be seeing" },
+      "options": {
+        "A": "to see",
+        "B": "having seen",
+        "C": "see",
+        "D": "to have seen",
+        "E": "be seeing"
+      },
       "correct": "B",
       "explanation": {
         "logical_structure": "'Deny' fiili kendisinden sonra Gerund (-ing) gerektirir.",
@@ -205,7 +256,13 @@
       "id": 12,
       "section_id": "mcq_grammar",
       "question": "Provided that the data ______ accurately, the software should generate the report within minutes.",
-      "options": { "A": "is input", "B": "inputs", "C": "will be input", "D": "is inputting", "E": "to be input" },
+      "options": {
+        "A": "is input",
+        "B": "inputs",
+        "C": "will be input",
+        "D": "is inputting",
+        "E": "to be input"
+      },
       "correct": "A",
       "explanation": {
         "logical_structure": "'Provided that' (Koşuluyla) bağlacı ve verinin 'girilmesi' (Pasif durum).",
@@ -219,7 +276,13 @@
       "id": 13,
       "section_id": "mcq_grammar",
       "question": "Despite ______ for several hours, the jury was unable to reach a unanimous verdict.",
-      "options": { "A": "deliberate", "B": "they deliberated", "C": "having deliberated", "D": "deliberation", "E": "of deliberating" },
+      "options": {
+        "A": "deliberate",
+        "B": "they deliberated",
+        "C": "having deliberated",
+        "D": "deliberation",
+        "E": "of deliberating"
+      },
       "correct": "C",
       "explanation": {
         "logical_structure": "'Despite' edatı kendisinden sonra bir isim veya ‘V-ing’ yapısı gerektirir.",
@@ -233,7 +296,13 @@
       "id": 14,
       "section_id": "mcq_grammar",
       "question": "It is essential that the patient ______ absolute bed rest for at least forty-eight hours.",
-      "options": { "A": "maintains", "B": "maintain", "C": "is maintaining", "D": "will maintain", "E": "to maintain" },
+      "options": {
+        "A": "maintains",
+        "B": "maintain",
+        "C": "is maintaining",
+        "D": "will maintain",
+        "E": "to maintain"
+      },
       "correct": "B",
       "explanation": {
         "logical_structure": "'It is essential that' yapısı bir gereklilik (Subjunctive Mood) bildirir.",
@@ -247,7 +316,13 @@
       "id": 15,
       "section_id": "mcq_grammar",
       "question": "The results of the survey were ______ disappointing that the marketing strategy had to be completely overhauled.",
-      "options": { "A": "such", "B": "so", "C": "too", "D": "very", "è": "enough" },
+      "options": {
+        "A": "such",
+        "B": "so",
+        "C": "too",
+        "D": "very",
+        "è": "enough"
+      },
       "correct": "B",
       "explanation": {
         "logical_structure": "'... disappointing that ...' yapısındaki derece belirleyiciyi bulun.",
@@ -261,7 +336,13 @@
       "id": 16,
       "section_id": "mcq_grammar",
       "question": "If the architect ______ more attention to the structural integrity, the building wouldn't have collapsed during the earthquake.",
-      "options": { "A": "paid", "B": "has paid", "C": "would have paid", "D": "had paid", "E": "was paying" },
+      "options": {
+        "A": "paid",
+        "B": "has paid",
+        "C": "would have paid",
+        "D": "had paid",
+        "E": "was paying"
+      },
       "correct": "D",
       "explanation": {
         "logical_structure": "Ana cümlede 'wouldn't have collapsed' (geçmişteki bir sonucun tersi) yapısı var.",
@@ -275,7 +356,13 @@
       "id": 17,
       "section_id": "mcq_grammar",
       "question": "Little ______ that the small start-up would eventually become a global tech giant.",
-      "options": { "A": "did they know", "B": "they knew", "C": "they did know", "D": "have they known", "E": "knowing" },
+      "options": {
+        "A": "did they know",
+        "B": "they knew",
+        "C": "they did know",
+        "D": "have they known",
+        "E": "knowing"
+      },
       "correct": "A",
       "explanation": {
         "logical_structure": "Cümlenin 'Little' gibi sınırlayıcı bir zarf ile başlaması devrik yapı gerektirir.",
@@ -289,7 +376,13 @@
       "id": 18,
       "section_id": "mcq_grammar",
       "question": "The scientist found it difficult to explain the phenomenon, ______ she had spent years studying it.",
-      "options": { "A": "because", "B": "even though", "C": "as if", "D": "unless", "E": "since" },
+      "options": {
+        "A": "because",
+        "B": "even though",
+        "C": "as if",
+        "D": "unless",
+        "E": "since"
+      },
       "correct": "B",
       "explanation": {
         "logical_structure": "'Difficult to explain' (açıklaması zor) ve 'spent years studying' (yıllarca çalışma) arasındaki zıtlığı görün.",
@@ -303,7 +396,13 @@
       "id": 19,
       "section_id": "mcq_grammar",
       "question": "Not until the late 19th century ______ to gain widespread recognition as a legitimate field of science.",
-      "options": { "A": "psychology began", "B": "did psychology begin", "C": "psychology did begin", "D": "began psychology", "E": "has psychology begun" },
+      "options": {
+        "A": "psychology began",
+        "B": "did psychology begin",
+        "C": "psychology did begin",
+        "D": "began psychology",
+        "E": "has psychology begun"
+      },
       "correct": "B",
       "explanation": {
         "logical_structure": "'Not until' ile başlayan yapılar ana cümlede devrik yapı gerektirir.",
@@ -317,7 +416,13 @@
       "id": 20,
       "section_id": "mcq_grammar",
       "question": "The committee members are looking forward to ______ the final decision at the upcoming board meeting.",
-      "options": { "A": "discuss", "B": "discussing", "C": "discussion", "D": "be discussed", "E": "having discussed" },
+      "options": {
+        "A": "discuss",
+        "B": "discussing",
+        "C": "discussion",
+        "D": "be discussed",
+        "E": "having discussed"
+      },
       "correct": "B",
       "explanation": {
         "logical_structure": "'Look forward to' kalıbındaki 'to' bir edattır (preposition).",
@@ -327,12 +432,462 @@
         "trap": "To + V1 (infinitive) alışkanlığı bu soruda 'discuss' (A) şıkkına düşürür."
       }
     },
-    { "id": 21, "section_id": "error_id", "question": "The newly (A) developed vaccine, (B) what was tested (C) extensively, proved to be (D) highly effective against the virus.", "options": { "A": "developed", "B": "what", "C": "extensively", "D": "highly" }, "correct": "B", "explanation": { "logical_structure": "Relative Clause (Niteleme Sıfatı) bağlacının kontrolü.", "tactic": "Adım 1: Virgül ile ayrılmış niteleme kısmına bak. Adım 2: Aşı (vaccine) bir nesnedir; nesneleri nitelemek için 'which' kullanılır. Adım 3: 'What' kelimesinin sıfat cümleciklerinde asla bu şekilde kullanılmayacağını hatırla.", "elimination": "A (zarf-sıfat uyumu), C (zarfın fiili nitelemesi) ve D (zarfın sıfatı nitelemesi) hepsi gramer olarak hatasızdır.", "grammar": "Relative Pronouns (Which vs What)", "trap": "What, bir ismi niteleyemez; sadece bir cümlecik veya bilinmeyen bir durumu temsil eder." } },
-    { "id": 22, "section_id": "error_id", "question": "If the manager (A) would have listened to the (B) employees' concerns, the (C) strike might have (D) been avoided.", "options": { "A": "would have listened", "B": "employees'", "C": "strike", "D": "been avoided" }, "correct": "A", "explanation": { "logical_structure": "If Clause (Koşul Cümlesi) içindeki zaman uyumu.", "tactic": "Adım 1: Cümlenin ikinci kısmına bak (might have been avoided - Type 3). Adım 2: 'If'li kısımda 'would' kullanılmayacağını hatırla. Adım 3: Buraya 'had listened' (Past Perfect) gelmesi gerekir.", "elimination": "B (çoğul aitlik), C (tekil isim) ve D (pasif yapı) hepsi kurala uygundur; hata sadece If içindeki 'would' kullanımıdır.", "grammar": "Conditional Tense Error", "trap": "Öğrenciler her iki tarafı da 'would have' yapmaya meyillidir; oysa If tarafı asla 'would' almaz." } },
-    { "id": 23, "section_id": "error_id", "question": "The (A) number of students (B) enrolling in the computer science (C) program have (D) increased significantly this year.", "options": { "A": "number", "B": "enrolling", "C": "program", "D": "have" }, "correct": "D", "explanation": { "logical_structure": "Subject-Verb Agreement (Özne-Fiil Uyumu) kontrolü.", "tactic": "Adım 1: Cümlenin asıl öznesini bul. 'Students' değil, 'The number of students' (Öğrenci sayısı). Adım 2: 'The number of' ile başlayan öznelerin TEKİL fiil aldığını hatırla. Adım 3: 'Have' yerine 'Has' gelmelidir.", "elimination": "A (doğru kullanım), B (sıfat fiil kısaltması), C (tekil isim) hepsi doğrudur. Hata fiilin çoğul çekimlenmesidir.", "grammar": "Number vs A number Agreement", "trap": "'A number of' çoğul, 'The number of' tekil fiil alır; bu ikisini karıştırmayın." } },
-    { "id": 24, "section_id": "error_id", "question": "(A) Despite it was (B) raining heavily, the (C) outdoor concert continued (D) as scheduled.", "options": { "A": "Despite", "B": "raining", "C": "outdoor", "D": "as scheduled" }, "correct": "A", "explanation": { "logical_structure": "Edat (Preposition) vs Bağlaç (Conjunction) farkı.", "tactic": "Adım 1: Boşluktan sonra gelen yapıya bak. 'It was raining' (Cümle). Adım 2: 'Despite'tan sonra cümle gelmeyeceğini, isim veya -ing geleceğini hatırla. Adım 3: Cümle başında 'Although' veya 'Even though' olmalıydı.", "elimination": "B şıkkı (past continuous), C şıkkı (sıfat), D şıkkı (kalıp ifade) hepsi yerinde kullanılmıştır.", "grammar": "Contrast Prepositions (Despite vs Although)", "trap": "Öğrenci anlama odaklandığı için 'rağmen' anlamını veren Despite'ı doğru sanır ama gramer yapısı farklıdır." } },
-    { "id": 25, "section_id": "error_id", "question": "The (A) information (B) provided in the brochure (C) were found to be (D) inaccurate by the investigators.", "options": { "A": "information", "B": "provided", "C": "were", "D": "inaccurate" }, "correct": "C", "explanation": { "logical_structure": "Uncountable Noun (Sayılmayan İsim) ve Fiil uyumu.", "tactic": "Adım 1: Özneye bak (Information). Adım 2: 'Information'ın sayılamayan bir isim olduğunu ve her zaman TEKİL fiil aldığını hatırla. Adım 3: 'Were' yerine 'Was' gelmelidir.", "elimination": "A (doğru isim), B (kısaltılmış sıfat cümlesi), D (sıfat) şıklarında hata yoktur.", "grammar": "Uncountable Nouns Agreement", "trap": "Information kelimesi çok fazla bilgi içerse de gramer olarak 'çoğul' (s takısı veya çoğul fiil) asla olamaz." } },
-    { "id": 36, "section_id": "cloze_test", "question": "Choose the best option for (36).", "options": { "A": "is", "B": "has been", "C": "was", "D": "being", "E": "had been" }, "correct": "B", "explanation": { "logical_structure": "Metindeki 'for decades' (on yıllardır) ifadesi zamanı belirler.", "tactic": "Adım 1: Cümlenin sonundaki zaman ifadesini bul (for decades). Adım 2: Geçmişten günümüze süren durumlar için Present Perfect (has been) seç. Sonuç: B.", "elimination": "A (is) şimdiki andır, 'for decades' demez. C (was) bitmiş bir geçmiş zamandır. E (had been) geçmişin geçmişidir, şu anki durumu anlatmaz.", "grammar": "Present Perfect Tense (For/Since)", "trap": "Sadece başlangıca bakıp 'is' diyebilirsiniz, cümleyi sonuna kadar okumak şarttır." } },
-    { "id": 41, "section_id": "cloze_test", "question": "Choose the best option for (41).", "options": { "A": "Moreover", "B": "Furthermore", "C": "However", "D": "Therefore", "E": "Similarly" }, "correct": "C", "explanation": { "logical_structure": "Önceki cümledeki (foster independence) olumlu hava ile buradaki (remains slow) olumsuz hava arasındaki zıtlık.", "tactic": "Adım 1: Bir önceki cümleyi oku (olumlu). Adım 2: Boşluğun olduğu cümleyi oku (olumsuz - kısıtlamalar var). Adım 3: 'Ancak' anlamına gelen zıtlık bağlacını seç. Sonuç: 'However'.", "elimination": "A ve B (Mevcudun üzerine ekleme), D (Sonuç bildirir), E (Benzerliği anlatır) şıklarının tamamı anlamca uyumsuzdur.", "grammar": "Sentence-level Transition Words", "trap": "Metin genelini okumadan bağlaç seçmek en sık yapılan hatadır." } }
+    {
+      "id": 21,
+      "section_id": "error_id",
+      "question": "The newly (A) developed vaccine, (B) what was tested (C) extensively, proved to be (D) highly effective against the virus.",
+      "options": {
+        "A": "developed",
+        "B": "what",
+        "C": "extensively",
+        "D": "highly"
+      },
+      "correct": "B",
+      "explanation": {
+        "logical_structure": "Relative Clause (Niteleme Sıfatı) bağlacının kontrolü.",
+        "tactic": "Adım 1: Virgül ile ayrılmış niteleme kısmına bak. Adım 2: Aşı (vaccine) bir nesnedir; nesneleri nitelemek için 'which' kullanılır. Adım 3: 'What' kelimesinin sıfat cümleciklerinde asla bu şekilde kullanılmayacağını hatırla.",
+        "elimination": "A (zarf-sıfat uyumu), C (zarfın fiili nitelemesi) ve D (zarfın sıfatı nitelemesi) hepsi gramer olarak hatasızdır.",
+        "grammar": "Relative Pronouns (Which vs What)",
+        "trap": "What, bir ismi niteleyemez; sadece bir cümlecik veya bilinmeyen bir durumu temsil eder."
+      }
+    },
+    {
+      "id": 22,
+      "section_id": "error_id",
+      "question": "If the manager (A) would have listened to the (B) employees' concerns, the (C) strike might have (D) been avoided.",
+      "options": {
+        "A": "would have listened",
+        "B": "employees'",
+        "C": "strike",
+        "D": "been avoided"
+      },
+      "correct": "A",
+      "explanation": {
+        "logical_structure": "If Clause (Koşul Cümlesi) içindeki zaman uyumu.",
+        "tactic": "Adım 1: Cümlenin ikinci kısmına bak (might have been avoided - Type 3). Adım 2: 'If'li kısımda 'would' kullanılmayacağını hatırla. Adım 3: Buraya 'had listened' (Past Perfect) gelmesi gerekir.",
+        "elimination": "B (çoğul aitlik), C (tekil isim) ve D (pasif yapı) hepsi kurala uygundur; hata sadece If içindeki 'would' kullanımıdır.",
+        "grammar": "Conditional Tense Error",
+        "trap": "Öğrenciler her iki tarafı da 'would have' yapmaya meyillidir; oysa If tarafı asla 'would' almaz."
+      }
+    },
+    {
+      "id": 23,
+      "section_id": "error_id",
+      "question": "The (A) number of students (B) enrolling in the computer science (C) program have (D) increased significantly this year.",
+      "options": {
+        "A": "number",
+        "B": "enrolling",
+        "C": "program",
+        "D": "have"
+      },
+      "correct": "D",
+      "explanation": {
+        "logical_structure": "Subject-Verb Agreement (Özne-Fiil Uyumu) kontrolü.",
+        "tactic": "Adım 1: Cümlenin asıl öznesini bul. 'Students' değil, 'The number of students' (Öğrenci sayısı). Adım 2: 'The number of' ile başlayan öznelerin TEKİL fiil aldığını hatırla. Adım 3: 'Have' yerine 'Has' gelmelidir.",
+        "elimination": "A (doğru kullanım), B (sıfat fiil kısaltması), C (tekil isim) hepsi doğrudur. Hata fiilin çoğul çekimlenmesidir.",
+        "grammar": "Number vs A number Agreement",
+        "trap": "'A number of' çoğul, 'The number of' tekil fiil alır; bu ikisini karıştırmayın."
+      }
+    },
+    {
+      "id": 24,
+      "section_id": "error_id",
+      "question": "(A) Despite it was (B) raining heavily, the (C) outdoor concert continued (D) as scheduled.",
+      "options": {
+        "A": "Despite",
+        "B": "raining",
+        "C": "outdoor",
+        "D": "as scheduled"
+      },
+      "correct": "A",
+      "explanation": {
+        "logical_structure": "Edat (Preposition) vs Bağlaç (Conjunction) farkı.",
+        "tactic": "Adım 1: Boşluktan sonra gelen yapıya bak. 'It was raining' (Cümle). Adım 2: 'Despite'tan sonra cümle gelmeyeceğini, isim veya -ing geleceğini hatırla. Adım 3: Cümle başında 'Although' veya 'Even though' olmalıydı.",
+        "elimination": "B şıkkı (past continuous), C şıkkı (sıfat), D şıkkı (kalıp ifade) hepsi yerinde kullanılmıştır.",
+        "grammar": "Contrast Prepositions (Despite vs Although)",
+        "trap": "Öğrenci anlama odaklandığı için 'rağmen' anlamını veren Despite'ı doğru sanır ama gramer yapısı farklıdır."
+      }
+    },
+    {
+      "id": 25,
+      "section_id": "error_id",
+      "question": "The (A) information (B) provided in the brochure (C) were found to be (D) inaccurate by the investigators.",
+      "options": {
+        "A": "information",
+        "B": "provided",
+        "C": "were",
+        "D": "inaccurate"
+      },
+      "correct": "C",
+      "explanation": {
+        "logical_structure": "Uncountable Noun (Sayılmayan İsim) ve Fiil uyumu.",
+        "tactic": "Adım 1: Özneye bak (Information). Adım 2: 'Information'ın sayılamayan bir isim olduğunu ve her zaman TEKİL fiil aldığını hatırla. Adım 3: 'Were' yerine 'Was' gelmelidir.",
+        "elimination": "A (doğru isim), B (kısaltılmış sıfat cümlesi), D (sıfat) şıklarında hata yoktur.",
+        "grammar": "Uncountable Nouns Agreement",
+        "trap": "Information kelimesi çok fazla bilgi içerse de gramer olarak 'çoğul' (s takısı veya çoğul fiil) asla olamaz."
+      }
+    },
+    {
+      "id": 36,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (36).",
+      "options": {
+        "A": "is",
+        "B": "has been",
+        "C": "was",
+        "D": "being",
+        "E": "had been"
+      },
+      "correct": "B",
+      "explanation": {
+        "logical_structure": "Metindeki 'for decades' (on yıllardır) ifadesi zamanı belirler.",
+        "tactic": "Adım 1: Cümlenin sonundaki zaman ifadesini bul (for decades). Adım 2: Geçmişten günümüze süren durumlar için Present Perfect (has been) seç. Sonuç: B.",
+        "elimination": "A (is) şimdiki andır, 'for decades' demez. C (was) bitmiş bir geçmiş zamandır. E (had been) geçmişin geçmişidir, şu anki durumu anlatmaz.",
+        "grammar": "Present Perfect Tense (For/Since)",
+        "trap": "Sadece başlangıca bakıp 'is' diyebilirsiniz, cümleyi sonuna kadar okumak şarttır."
+      }
+    },
+    {
+      "id": 41,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (41).",
+      "options": {
+        "A": "Moreover",
+        "B": "Furthermore",
+        "C": "However",
+        "D": "Therefore",
+        "E": "Similarly"
+      },
+      "correct": "C",
+      "explanation": {
+        "logical_structure": "Önceki cümledeki (foster independence) olumlu hava ile buradaki (remains slow) olumsuz hava arasındaki zıtlık.",
+        "tactic": "Adım 1: Bir önceki cümleyi oku (olumlu). Adım 2: Boşluğun olduğu cümleyi oku (olumsuz - kısıtlamalar var). Adım 3: 'Ancak' anlamına gelen zıtlık bağlacını seç. Sonuç: 'However'.",
+        "elimination": "A ve B (Mevcudun üzerine ekleme), D (Sonuç bildirir), E (Benzerliği anlatır) şıklarının tamamı anlamca uyumsuzdur.",
+        "grammar": "Sentence-level Transition Words",
+        "trap": "Metin genelini okumadan bağlaç seçmek en sık yapılan hatadır."
+      }
+    },
+    {
+      "id": 42,
+      "section_id": "error_id",
+      "question": "Neither the (A) lead researcher nor his (B) assistants (C) was aware of the (D) discrepancy in the data.",
+      "options": {
+        "A": "lead",
+        "B": "assistants",
+        "C": "was",
+        "D": "discrepancy",
+        "E": "No error"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "error_id",
+      "question": "I suggest (A) to consult a specialist (B) before making a (C) final decision on (D) the surgery.",
+      "options": {
+        "A": "to consult",
+        "B": "before",
+        "C": "final",
+        "D": "the surgery",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 44,
+      "section_id": "error_id",
+      "question": "The city (A) is known for (B) its beautiful parks, (C) which many tourists (D) visit them every year.",
+      "options": {
+        "A": "is known",
+        "B": "its",
+        "C": "which",
+        "D": "visit them",
+        "E": "No error"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 45,
+      "section_id": "error_id",
+      "question": "She (A) has been (B) working as a consultant (C) since three years (D) now.",
+      "options": {
+        "A": "has been",
+        "B": "working",
+        "C": "since",
+        "D": "now",
+        "E": "No error"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 46,
+      "section_id": "error_id",
+      "question": "Hardly (A) the speaker (B) had begun (C) when he was (D) interrupted by a heckler.",
+      "options": {
+        "A": "the speaker",
+        "B": "had begun",
+        "C": "when",
+        "D": "interrupted",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 47,
+      "section_id": "error_id",
+      "question": "The (A) most unique (B) feature of this (C) software is its ability to (D) translate languages in real-time.",
+      "options": {
+        "A": "most unique",
+        "B": "feature",
+        "C": "software",
+        "D": "translate",
+        "E": "No error"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 48,
+      "section_id": "error_id",
+      "question": "The (A) reason why he (B) failed the exam was (C) because he did not (D) study hard enough.",
+      "options": {
+        "A": "reason why",
+        "B": "failed",
+        "C": "because",
+        "D": "study",
+        "E": "No error"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 49,
+      "section_id": "error_id",
+      "question": "Each of the (A) candidates (B) were given ten minutes (C) to present (D) their proposals.",
+      "options": {
+        "A": "candidates",
+        "B": "were",
+        "C": "to present",
+        "D": "their",
+        "E": "No error"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 50,
+      "section_id": "error_id",
+      "question": "The (A) criteria for the scholarship (B) is very strict, (C) making it difficult (D) for most students to qualify.",
+      "options": {
+        "A": "criteria",
+        "B": "is",
+        "C": "making",
+        "D": "for most students",
+        "E": "No error"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 51,
+      "section_id": "error_id",
+      "question": "Not only (A) did the storm (B) damage the roof, but it (C) also flooded the (D) basement either.",
+      "options": {
+        "A": "did the storm",
+        "B": "damage",
+        "C": "also flooded",
+        "D": "basement either",
+        "E": "No error"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 52,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (37).",
+      "options": {
+        "A": "outweigh",
+        "B": "outweighs",
+        "C": "outweighing",
+        "D": "outweighed",
+        "E": "are outweighed"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 53,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (38).",
+      "options": {
+        "A": "acted",
+        "B": "has acted",
+        "C": "had acted",
+        "D": "would act",
+        "E": "was acting"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 54,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (39).",
+      "options": {
+        "A": "do",
+        "B": "does",
+        "C": "have",
+        "D": "did",
+        "E": "is"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 55,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (40).",
+      "options": {
+        "A": "develop",
+        "B": "are developing",
+        "C": "have been developing",
+        "D": "developed",
+        "E": "were developing"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 56,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (42).",
+      "options": {
+        "A": "works",
+        "B": "work",
+        "C": "worked",
+        "D": "working",
+        "E": "to work"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 57,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (43).",
+      "options": {
+        "A": "will make",
+        "B": "would make",
+        "C": "would have made",
+        "D": "had made",
+        "E": "might make"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 58,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (44).",
+      "options": {
+        "A": "cut",
+        "B": "cutting",
+        "C": "to cut",
+        "D": "be cut",
+        "E": "having cut"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 59,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (45).",
+      "options": {
+        "A": "will become",
+        "B": "becomes",
+        "C": "will have become",
+        "D": "is becoming",
+        "E": "became"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 60,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (46).",
+      "options": {
+        "A": "In spite",
+        "B": "Although",
+        "C": "Despite",
+        "D": "Even though",
+        "E": "Whereas"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 61,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (47).",
+      "options": {
+        "A": "too",
+        "B": "such",
+        "C": "so",
+        "D": "very",
+        "E": "quite"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 62,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (48).",
+      "options": {
+        "A": "Because",
+        "B": "While",
+        "C": "Since",
+        "D": "As",
+        "E": "If"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 63,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (49).",
+      "options": {
+        "A": "update",
+        "B": "updated",
+        "C": "to update",
+        "D": "updating",
+        "E": "have updated"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 64,
+      "section_id": "cloze_test",
+      "question": "Choose the best option for (50).",
+      "options": {
+        "A": "see",
+        "B": "seeing",
+        "C": "be seen",
+        "D": "have seen",
+        "E": "seen"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    }
   ]
 }

@@ -1,8 +1,608 @@
 {
   "meta": {
-    "title": "Restatement Strategy Lab",
-    "subtitle": "Paraphrasing and lexical equivalence techniques",
-    "total_questions": 0
+    "title": "Master Restatement Strategy",
+    "subtitle": "Advanced Restatement and Semantic Equivalence",
+    "total_questions": 40,
+    "duration_minutes": 60
   },
-  "questions": []
+  "sections": [
+    {
+      "id": "paraphrase_set1",
+      "label": "Academic Synthesis",
+      "from": 1,
+      "to": 20
+    },
+    {
+      "id": "paraphrase_set2",
+      "label": "Technical Transformations",
+      "from": 21,
+      "to": 40
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "paraphrase_set1",
+      "question": "Despite the significant increase in security measures, the frequency of data breaches has not diminished as expected.",
+      "options": {
+        "A": "Data breaches have become more frequent even though security protocols were enhanced.",
+        "B": "Security measures have failed to reduce data breaches, which continue to occur at the same rate despite the upgrades.",
+        "C": "The expectation that more security would result in fewer data breaches has not been realized.",
+        "D": "If security measures had not been increased, the number of data breaches would have been much higher than they are now.",
+        "E": "The rise in security protocols is the primary reason why data breaches have finally started to decrease."
+      },
+      "correct": "C",
+      "explanation": {
+        "logical_structure": "Cümledeki 'Despite' (zıtlık) ve 'not diminished as expected' (beklendiği gibi azalmadı) kısımları anahtar elemanlardır.",
+        "tactic": "Adım 1: Ana fikri çıkar (Önlemler arttı ama beklenen düşüş olmadı). Adım 2: 'Beklenti' (expectation) ve 'gerçekleşmemek' (not realized) kelimelerini içeren C şıkkını bul. Adım 3: 'Diminish' (azalmak) kelimesinin karşılığının 'result in fewer' olduğunu doğrula.",
+        "elimination": "A şıkkı ihlallerin 'arttığını' söyler (metinde artış değil, beklenen düşüşün olmaması vurgulanır). B şıkkı 'aynı oranda' (same rate) diyerek metinde olmayan bir kesinlik ekler. E şıkkı ise metnin tam tersini söyler.",
+        "grammar": "Restating Concessive Clauses",
+        "trap": "Sadece anlama bakmayın; orijinal cümledeki 'beklenti' (expected) vurgusunu taşımayan şıklar eksiktir."
+      }
+    },
+    {
+      "id": 2,
+      "section_id": "paraphrase_set1",
+      "question": "Had the researchers known about the potential side effects, they would never have proceeded with the clinical trials.",
+      "options": {
+        "A": "Researchers were aware of the side effects, yet they decided to continue the clinical trials regardless.",
+        "B": "The clinical trials were canceled because the researchers discovered the side effects just in time.",
+        "C": "The researchers proceeded with the trials only because they were unaware of the possible adverse effects.",
+        "D": "Even if the side effects had been known, the researchers would have likely continued the trials.",
+        "E": "Since the researchers knew about the side effects, they decided not to start the clinical trials."
+      },
+      "correct": "C",
+      "explanation": {
+        "logical_structure": "Cümle 'Had the researchers known...' (If they had known) yapısıyla bir Type 3 Conditional (geçmişte gerçekleşmemiş durum) kurar.",
+        "tactic": "Adım 1: Koşulu gerçeğe dönüştür (Bilselerdi yapmazlardı -> Demek ki Bilmiyorlardı ve Yaptılar). Adım 2: 'Unaware' (farkında olmayan) ve 'proceeded' (devam etti) kelimelerinin olduğu C şıkkını seç.",
+        "elimination": "A, B ve E şıkları araştırmacıların bildiğini veya testin iptal edildiğini söyler; oysa orijinal cümle 'bilselerdi yapmazlardı' diyerek aslında yaptıklarını ima eder.",
+        "grammar": "Conditional Sentences (Inversion Type 3)",
+        "trap": "Bu sorularda gizli If yapısını (Had they...) fark edememek Type 2 veya Type 1 ile karıştırmaya yol açar."
+      }
+    },
+    {
+      "id": 3,
+      "section_id": "paraphrase_set1",
+      "question": "It is not so much the lack of talent as the lack of perseverance that prevents most artists from achieving fame.",
+      "options": {
+        "A": "Artists who lack talent will never achieve fame, regardless of how hard they work or persevere.",
+        "B": "Success for artists depends more on their determination than on their inherent abilities.",
+        "C": "Both talent and perseverance are equally necessary for an artist to become famous in their field.",
+        "D": "Many artists are famous not because they are talented, but because they are extremely persistent.",
+        "E": "A lack of talent is the primary reason why most artists fail to gain recognition in the art world."
+      },
+      "correct": "B",
+      "explanation": {
+        "logical_structure": "'Not so much X as Y' (X'ten ziyade Y) kalıbı vurguyu Y üzerine koyar.",
+        "tactic": "Adım 1: Karşılaştırılan iki şeyi bul (Talent vs Perseverance). Adım 2: Hangisinin daha önemli olduğunu anla (Perseverance yani azim daha önemli). Adım 3: 'Depends more on determination' (azim/kararlılık) diyen B şıkkını seç.",
+        "elimination": "C şıkkı her ikisi de eşittir (equally) der (yanlış). E şıkkı yeteneği (talent) öne çıkarır (metne göre yanlış).",
+        "grammar": "Comparative Phrases (Not so much... as)",
+        "trap": "Vurgunun hangi taraf (yetenek mi azim mi) üzerinde olduğunu karıştırmayın; 'as'den sonra gelen kazanır."
+      }
+    },
+    {
+      "id": 29,
+      "section_id": "paraphrase_set2",
+      "question": "The use of artificial intelligence in recruitment has raised concerns regarding algorithmic bias and fairness.",
+      "options": {
+        "A": "Recruitment is now fairer thanks to the implementation of artificial intelligence and its algorithms.",
+        "B": "AI in hiring processes has sparked worries about potential prejudices and lack of objectivity in algorithms.",
+        "C": "Algorithmic bias is the main reason why companies are now refusing to use AI in their recruitment.",
+        "D": "Concerns about fairness have led to the complete removal of artificial intelligence from modern hiring.",
+        "E": "If AI were used more in recruitment, concerns about algorithmic bias would likely disappear."
+      },
+      "correct": "B",
+      "explanation": {
+        "logical_structure": "Konu: 'AI in recruitment'. Durum: 'Raised concerns' (endişeleri artırdı).",
+        "tactic": "Adım 1: 'Raised concerns' ifadesinin karşılığını bul (Sparked worries). Adım 2: 'Bias' (taraflılık) kelimesinin karşılığını bul (Prejudice). Adım 3: 'Recruitment' (işe alım) kelimesinin karşılığını bul (Hiring). Sonuç: B.",
+        "elimination": "A şıkkı olumludur (metne aykırı). C şıkkı 'refusing to use' (kullanmayı reddetme) diyerek aşırıya kaçar. D şıkkı 'complete removal' der, metinde sadece endişe (concern) vardır.",
+        "grammar": "Vocabulary Transformation (Synonyms)",
+        "trap": "Raised concerns (endişe yarattı) ifadesi ile 'Refusing to use' (tamamen bırakmak) arasındaki doz farkına dikkat edin."
+      }
+    },
+    {
+      "id": 30,
+      "section_id": "paraphrase_set1",
+      "question": "Hardly had the new environmental policy been implemented when several industrial giants filed a lawsuit against the government.",
+      "options": {
+        "A": "Industrial giants sued the government just before the new environmental policy was officially enacted.",
+        "B": "The government was sued by large companies immediately after the introduction of the new environmental regulations.",
+        "C": "The new environmental policy was delayed because many industries decided to take legal action.",
+        "D": "Several companies threatened to sue the government if the environmental policy was implemented.",
+        "E": "After the lawsuit was filed, the government decided to implement a new environmental policy."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "paraphrase_set1",
+      "question": "The findings of the study suggest that urban planning must prioritize public transport to alleviate traffic congestion effectively.",
+      "options": {
+        "A": "According to the study, traffic jams can only be solved if cities focus on improving their public transportation systems.",
+        "B": "The study concludes that urban planning has failed to address the issue of traffic congestion through public transport.",
+        "C": "Traffic congestion will be solved even if urban planners do not prioritize public transportation systems.",
+        "D": "Urban planning is the main cause of traffic congestion, according to the findings of the recent study.",
+        "E": "Public transport is more important than urban planning when it comes to solving the city's traffic issues."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "paraphrase_set1",
+      "question": "Only by diversifying its energy sources can the country ensure long-term economic stability and energy security.",
+      "options": {
+        "A": "The country’s energy security is guaranteed as long as it does not change its current energy sources.",
+        "B": "Diversifying energy sources is one of many ways the country can achieve economic stability.",
+        "C": "The country will achieve economic stability even if it relies on a single source of energy.",
+        "D": "The country cannot have a stable economy and secure energy unless it utilizes a variety of energy types.",
+        "E": "Economic stability is the only reason why the country is trying to diversify its energy sources."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "paraphrase_set1",
+      "question": "The more people rely on digital communication, the less they develop their face-to-face social skills.",
+      "options": {
+        "A": "Digital communication is helping people improve their interpersonal skills in real-life situations.",
+        "B": "A decrease in digital communication results in a lack of social skills in modern society.",
+        "C": "Social skills are developed through digital communication just as much as through personal contact.",
+        "D": "There is an inverse relationship between the use of digital tools for talking and the growth of in-person social abilities.",
+        "E": "People should stop using digital communication if they want to maintain their social status."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "paraphrase_set1",
+      "question": "In contrast to her predecessor, the new CEO is far more inclined to consult with the staff before making major decisions.",
+      "options": {
+        "A": "The previous CEO used to ask the staff for their opinions more often than the current one does.",
+        "B": "The new CEO prefers to make decisions independently, unlike the person who held the position before.",
+        "C": "Unlike the former CEO, the current one is much more likely to seek staff input for significant choices.",
+        "D": "Major decisions are now made by the staff instead of the CEO, which is a change from the past.",
+        "E": "Both the current and former CEOs have always valued the opinions of their staff members."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "paraphrase_set1",
+      "question": "Hardly any students managed to pass the final exam without attending the supplementary review sessions.",
+      "options": {
+        "A": "Most students who attended the review sessions failed the final exam anyway.",
+        "B": "Almost all students who were successful in the final exam had gone to the extra review classes.",
+        "C": "The review sessions were mandatory for all students who wanted to pass the final exam.",
+        "D": "Many students passed the exam despite not attending any of the supplementary sessions.",
+        "E": "The supplementary review sessions were not very helpful for the students who attended them."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "paraphrase_set1",
+      "question": "The extinction of certain species is inevitable unless we take immediate action to preserve their natural habitats.",
+      "options": {
+        "A": "Even if we protect their habitats, some species are still going to become extinct eventually.",
+        "B": "The only way to prevent some species from dying out is to act now to save where they live.",
+        "C": "Taking immediate action will not be enough to stop the extinction of most endangered species.",
+        "D": "Natural habitats are being destroyed so fast that species extinction has become unavoidable.",
+        "E": "Preserving natural habitats is a waste of time because species extinction is a natural process."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "paraphrase_set1",
+      "question": "Few people realize that the success of the project was due more to luck than to careful planning.",
+      "options": {
+        "A": "It is common knowledge that the project's success was the result of meticulous planning.",
+        "B": "Many people believe that luck played no role in the successful completion of the project.",
+        "C": "The project succeeded because the planning was much better than anybody had anticipated.",
+        "D": "Not many individuals are aware that the project turned out well thanks to fortune rather than strategy.",
+        "E": "Luck and planning were equally responsible for the positive outcome of the project."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "paraphrase_set1",
+      "question": "Provided that the weather remains stable, the construction of the bridge is expected to be finished by the end of the month.",
+      "options": {
+        "A": "The bridge will be completed at the end of the month even if the weather conditions change.",
+        "B": "Weather instability might cause the bridge construction to be completed earlier than expected.",
+        "C": "If the weather does not get worse, the bridge should be completed within the current month.",
+        "D": "The construction of the bridge has been delayed until the end of the month due to the weather.",
+        "E": "Since the weather is stable, the bridge will definitely be finished before the month ends."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "paraphrase_set1",
+      "question": "The manager's refusal to listen to his employees' grievances led to a total breakdown in workplace morale.",
+      "options": {
+        "A": "Workplace morale improved after the manager finally decided to address the employees' complaints.",
+        "B": "Because the manager ignored the employees' concerns, the atmosphere in the office became very poor.",
+        "C": "The employees stopped complaining because they knew the manager would not listen to them anyway.",
+        "D": "Despite the manager's best efforts to listen, the morale of the workplace continued to decline.",
+        "E": "A lack of morale among the staff was the reason why the manager refused to hear their grievances."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "paraphrase_set1",
+      "question": "While the internet has made information more accessible, it has also facilitated the spread of misinformation.",
+      "options": {
+        "A": "The internet is a better source of information than of misinformation, despite what some people think.",
+        "B": "Information is now easier to find, but the internet has also made it easier for false information to circulate.",
+        "C": "Misinformation has become a problem because people no longer use the internet to find facts.",
+        "D": "The accessibility of information on the internet has actually reduced the amount of misinformation.",
+        "E": "If the internet were not so accessible, there would be no misinformation in the world today."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "paraphrase_set1",
+      "question": "Most experts agree that the shift toward remote work is unlikely to be reversed in the near future.",
+      "options": {
+        "A": "Experts believe that people will soon return to working in offices as they did before the pandemic.",
+        "B": "There is a consensus among specialists that the trend of working from home is here to stay for a while.",
+        "C": "The shift toward remote work was a mistake that experts hope will be corrected very soon.",
+        "D": "Remote work is becoming less popular according to the majority of recent expert opinions.",
+        "E": "Unless experts change their minds, remote work will remain the only option for all employees."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "paraphrase_set1",
+      "question": "But for the quick intervention of the fire department, the entire building would have been destroyed.",
+      "options": {
+        "A": "The fire department arrived too late to save the building from being completely destroyed.",
+        "B": "If the fire department had not acted quickly, the fire would have ruined the whole building.",
+        "C": "The building was saved because the fire department was already present when the fire started.",
+        "D": "Even with the fire department's quick intervention, the building was still heavily damaged.",
+        "E": "The fire department's intervention was not fast enough to prevent the building from burning down."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "paraphrase_set1",
+      "question": "The university's reputation has been tarnished by the recent scandal involving the admission process.",
+      "options": {
+        "A": "The admission scandal has actually helped improve the university's public image.",
+        "B": "The university is now more famous because of the scandal related to its entrance procedures.",
+        "C": "The recent scandal concerning admissions has negatively affected the way the university is perceived.",
+        "D": "Despite the admission scandal, the university has managed to keep its excellent reputation.",
+        "E": "The scandal was caused by the university's reputation being too high for many applicants."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 44,
+      "section_id": "paraphrase_set1",
+      "question": "No sooner had the scientist published his theory than it was challenged by his colleagues in the field.",
+      "options": {
+        "A": "The scientist's theory was accepted by his peers as soon as it was published in a journal.",
+        "B": "Before the scientist could publish his theory, his colleagues had already expressed their doubts.",
+        "C": "The theory was challenged by other scientists immediately after it was made public.",
+        "D": "The scientist waited for his colleagues to challenge his theory before he finally published it.",
+        "E": "Many scientists challenged the theory because it was published too early."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 45,
+      "section_id": "paraphrase_set1",
+      "question": "The economic crisis was so severe that many small businesses were forced to declare bankruptcy.",
+      "options": {
+        "A": "Small businesses went bankrupt despite the fact that the economic crisis was not very serious.",
+        "B": "The severity of the economic situation resulted in the closure of numerous small-scale companies.",
+        "C": "Many small businesses managed to survive the economic crisis without filing for bankruptcy.",
+        "D": "If the economic crisis had been more severe, even more small businesses would have failed.",
+        "E": "Bankruptcy was the only way for small businesses to avoid the effects of the economic crisis."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 46,
+      "section_id": "paraphrase_set1",
+      "question": "Contrary to popular belief, excessive vitamin consumption can be detrimental to one's health.",
+      "options": {
+        "A": "Most people correctly believe that taking too many vitamins is bad for their health.",
+        "B": "It is widely thought that vitamins are harmful, but they are actually very beneficial.",
+        "C": "Although many think otherwise, taking an overabundance of vitamins can actually cause harm.",
+        "D": "Vitamins are only healthy if they are consumed in very large quantities every single day.",
+        "E": "Health problems are usually caused by a lack of vitamins rather than an excess of them."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 47,
+      "section_id": "paraphrase_set1",
+      "question": "Despite the initial setbacks, the research team managed to secure additional funding for the project.",
+      "options": {
+        "A": "The project failed to get funding because the research team faced too many initial setbacks.",
+        "B": "Although they encountered early difficulties, the researchers successfully obtained more financial support.",
+        "C": "The research team secured funding even though they did not face any setbacks at the beginning.",
+        "D": "In spite of the funding they secured, the research team still faced many setbacks during the project.",
+        "E": "The team managed to overcome setbacks only after they had secured additional funding for the project."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 48,
+      "section_id": "paraphrase_set1",
+      "question": "Rarely has the international community seen such a rapid decline in biodiversity as in the last decade.",
+      "options": {
+        "A": "Biodiversity has been declining rapidly for many decades according to the international community.",
+        "B": "The international community has seen many rapid declines in biodiversity before the last decade.",
+        "C": "The decrease in biodiversity over the past ten years is among the fastest the world has ever witnessed.",
+        "D": "The international community is not aware of the rapid decline in biodiversity that occurred ten years ago.",
+        "E": "Biodiversity declined more rapidly in the past than it has during the most recent decade."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 49,
+      "section_id": "paraphrase_set1",
+      "question": "It is widely believed that the transition to renewable energy is essential for mitigating the effects of climate change.",
+      "options": {
+        "A": "Many people think that climate change can only be stopped by avoiding renewable energy sources.",
+        "B": "The effects of climate change are widely believed to be the cause of the shift toward renewable energy.",
+        "C": "Switching to green energy is commonly seen as a necessary step in reducing the impact of global warming.",
+        "D": "Essential climate change mitigation is what leads to the widespread belief in renewable energy.",
+        "E": "There is a common belief that renewable energy has little to no effect on the progress of climate change."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 50,
+      "section_id": "paraphrase_set1",
+      "question": "Had the government implemented stricter regulations earlier, the economic crisis might have been less severe.",
+      "options": {
+        "A": "The government implemented strict regulations, but the economic crisis was still quite severe.",
+        "B": "The economic crisis was not severe because the government implemented regulations on time.",
+        "C": "Because the government failed to act sooner with tighter rules, the financial downturn was likely worse.",
+        "D": "The severity of the economic crisis led the government to implement stricter regulations eventually.",
+        "E": "If the economic crisis had been less severe, the government would not have needed to implement regulations."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 51,
+      "section_id": "paraphrase_set1",
+      "question": "Urbanization often leads to the loss of agricultural land, which in turn affects food security.",
+      "options": {
+        "A": "Food security is the primary reason why urbanization results in the loss of farming areas.",
+        "B": "The expansion of cities frequently results in reduced farming space, consequently impacting the food supply.",
+        "C": "When food security is threatened, people tend to move to urban areas and abandon their farms.",
+        "D": "Agricultural land loss is the only factor that determines the food security of an urban population.",
+        "E": "Urbanization and food security are unrelated processes that happen to occur at the same time."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 52,
+      "section_id": "paraphrase_set1",
+      "question": "The discovery of the new variant prompted health officials to reconsider their existing safety protocols.",
+      "options": {
+        "A": "Health officials ignored the new variant and kept their original safety protocols in place.",
+        "B": "Existing safety protocols were so effective that the new variant was discovered immediately.",
+        "C": "The identification of a new strain caused medical authorities to re-evaluate current safety measures.",
+        "D": "Health officials were already reconsidering their protocols before the new variant was even found.",
+        "E": "The new variant was discovered because health officials had changed their safety protocols."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 53,
+      "section_id": "paraphrase_set1",
+      "question": "No sooner had the company launched its product than its main competitor announced a similar innovation.",
+      "options": {
+        "A": "The competitor announced their innovation just before the company could launch its product.",
+        "B": "The company launched its product immediately after the competitor made their announcement.",
+        "C": "Immediately after the product's release, the primary rival company publicized a comparable invention.",
+        "D": "Both companies announced their innovations at exactly the same time to avoid competition.",
+        "E": "The company decided not to launch the product because the competitor had a better innovation."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 54,
+      "section_id": "paraphrase_set1",
+      "question": "The study suggests that there is a significant correlation between sleep deprivation and cognitive impairment.",
+      "options": {
+        "A": "According to the research, a lack of sleep is strongly linked to a decline in mental processing abilities.",
+        "B": "The study shows that cognitive impairment is what causes most people to suffer from sleep deprivation.",
+        "C": "There is no real evidence in the study to support a link between sleeping habits and brain function.",
+        "D": "Cognitive impairment can be cured by ensuring that sleep deprivation is avoided at all costs.",
+        "E": "The study implies that people with high cognitive abilities need significantly less sleep than others."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 55,
+      "section_id": "paraphrase_set1",
+      "question": "Unless the demand for electric vehicles increases, manufacturers are unlikely to lower their prices.",
+      "options": {
+        "A": "Manufacturers will lower their prices even if the demand for electric vehicles remains low.",
+        "B": "Electric vehicle prices will probably stay the same if there isn't a rise in consumer interest.",
+        "C": "High prices are the reason why there is such a low demand for electric vehicles today.",
+        "D": "As soon as manufacturers lower their prices, the demand for electric vehicles will increase.",
+        "E": "The lack of demand is caused by the fact that manufacturers refuse to lower their prices."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 56,
+      "section_id": "paraphrase_set1",
+      "question": "The witness's testimony was inconsistent with the evidence found at the crime scene.",
+      "options": {
+        "A": "What the witness said in court matched the physical evidence discovered by the police.",
+        "B": "The evidence at the crime scene was found because of the witness's consistent testimony.",
+        "C": "The account provided by the witness did not align with the facts gathered from the scene.",
+        "D": "The witness refused to give testimony because the evidence at the crime scene was too confusing.",
+        "E": "In spite of the evidence at the crime scene, the witness gave a very convincing testimony."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 57,
+      "section_id": "paraphrase_set1",
+      "question": "Despite being the most qualified candidate, he was not offered the executive position.",
+      "options": {
+        "A": "He was offered the executive position because he was more qualified than anyone else.",
+        "B": "Even though he had the best qualifications, the company did not give him the job.",
+        "C": "The executive position was given to him because his qualifications were simply unmatched.",
+        "D": "He turned down the executive position although he was the most suitable candidate for it.",
+        "E": "Since he was not the most qualified candidate, he was not surprised when he didn't get the job."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 58,
+      "section_id": "paraphrase_set1",
+      "question": "The complexity of the tax system makes it difficult for small business owners to remain compliant.",
+      "options": {
+        "A": "Small business owners find it easy to follow tax laws despite the complexity of the system.",
+        "B": "If the tax system were more complex, small business owners would find it easier to comply.",
+        "C": "The intricate nature of tax regulations poses a challenge for small businesses to follow the law.",
+        "D": "Remaining compliant is what makes the tax system so complex for small business owners.",
+        "E": "Small business owners often ignore the tax system because it is too simple for them."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 59,
+      "section_id": "paraphrase_set1",
+      "question": "The results of the experiment were so inconclusive that a second trial had to be conducted.",
+      "options": {
+        "A": "The first trial provided such clear data that there was no need for a second experiment.",
+        "B": "Because the initial findings lacked clarity, the researchers were required to repeat the test.",
+        "C": "A second trial was conducted to confirm the very successful results of the first experiment.",
+        "D": "The experiment was concluded after the first trial because the results were so definitive.",
+        "E": "Researchers conducted a second trial even though the results of the first were conclusive."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 60,
+      "section_id": "paraphrase_set1",
+      "question": "Due to the rise of remote work, many corporations are downsizing their physical office spaces.",
+      "options": {
+        "A": "Corporations are buying larger offices because more employees are working from home.",
+        "B": "Remote work is decreasing, so companies are forced to expand their office buildings.",
+        "C": "The trend of working from home has led many firms to reduce the size of their offices.",
+        "D": "Many corporations are moving to remote work because they cannot afford their current office space.",
+        "E": "Downsizing office spaces is what originally caused the rise in remote work opportunities."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 61,
+      "section_id": "paraphrase_set1",
+      "question": "Few people realize the extent to which plastic pollution affects marine ecosystems.",
+      "options": {
+        "A": "The majority of people are well aware of how much plastic harms life in the ocean.",
+        "B": "The impact of plastic waste on sea life is not understood by a large portion of the population.",
+        "C": "Plastic pollution only affects a small part of the marine ecosystem, as most people know.",
+        "D": "It is common knowledge that plastic pollution has a devastating effect on the oceans.",
+        "E": "People are starting to realize that marine ecosystems are actually improving despite plastic."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 62,
+      "section_id": "paraphrase_set1",
+      "question": "The curriculum was revised with a view to incorporating more practical skills for the students.",
+      "options": {
+        "A": "The curriculum was changed so that students could focus less on practical skills.",
+        "B": "In order to include more hands-on training, the educational program underwent revisions.",
+        "C": "Practical skills were removed from the curriculum during the most recent revision process.",
+        "D": "Students requested a revised curriculum because they already had enough practical skills.",
+        "E": "The revision of the curriculum made it harder for students to learn any practical skills."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 63,
+      "section_id": "paraphrase_set1",
+      "question": "Regardless of the outcome of the election, the country is likely to face significant social unrest.",
+      "options": {
+        "A": "The election results will determine whether or not the country faces social unrest.",
+        "B": "Social unrest can be avoided if the election results are favorable to the public.",
+        "C": "No matter who wins the vote, the nation will probably experience substantial public disorder.",
+        "D": "The country is facing social unrest because the outcome of the election is already known.",
+        "E": "Significant social unrest is the only thing that could change the outcome of the election."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 64,
+      "section_id": "paraphrase_set1",
+      "question": "The professor's lecture was so profound that it left the students questioning their own assumptions.",
+      "options": {
+        "A": "The students already questioned their assumptions before they heard the professor's lecture.",
+        "B": "The lecture was so simple that no one in the class felt the need to ask any questions.",
+        "C": "The deep insights of the professor's talk made the students re-examine their beliefs.",
+        "D": "The students' assumptions were confirmed by the profound nature of the professor's lecture.",
+        "E": "Because the lecture was so confusing, the students started to question the professor's knowledge."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 65,
+      "section_id": "paraphrase_set1",
+      "question": "The new law is intended to prevent companies from exploiting loopholes in the current tax code.",
+      "options": {
+        "A": "Companies are encouraged by the new law to find and use loopholes in the tax system.",
+        "B": "The purpose of the recent legislation is to stop firms from taking advantage of tax gaps.",
+        "C": "The current tax code is so perfect that the new law is actually unnecessary for companies.",
+        "D": "Exploiting loopholes is now legal for all companies under the regulations of the new law.",
+        "E": "The new law failed to prevent companies from using the loopholes they found in the tax code."
+      },
+      "correct": "B",
+      "passage_id": null
+    }
+  ]
 }

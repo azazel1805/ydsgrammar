@@ -6,8 +6,18 @@
     "duration_minutes": 90
   },
   "sections": [
-    { "id": "pc_set1", "label": "Science & Technology Flow", "from": 1, "to": 20 },
-    { "id": "pc_set2", "label": "History & Philosophy Coherence", "from": 21, "to": 40 }
+    {
+      "id": "pc_set1",
+      "label": "Science & Technology Flow",
+      "from": 1,
+      "to": 20
+    },
+    {
+      "id": "pc_set2",
+      "label": "History & Philosophy Coherence",
+      "from": 21,
+      "to": 40
+    }
   ],
   "questions": [
     {
@@ -69,6 +79,524 @@
         "grammar": "Functional Reasoning (How does it enter the chain?)",
         "trap": "Sadece 'plastik' kelimesinin geçmesi yetmez; zincirleme etkiyi (domino effect) başlatan fiili (ingest) bulun."
       }
+    },
+    {
+      "id": 32,
+      "section_id": "pc_set1",
+      "question": "Urbanization has led to the development of 'heat islands' in many major cities. Concrete and asphalt absorb more heat than natural landscapes, causing city temperatures to rise significantly higher than surrounding rural areas. _______. To combat this, urban planners are increasingly incorporating green roofs and parks into city designs.",
+      "options": {
+        "A": "Rural populations are declining as more people move to the city.",
+        "B": "This phenomenon can lead to increased energy consumption for cooling.",
+        "C": "Winter temperatures in cities are becoming more unpredictable.",
+        "D": "Public transportation is the most effective way to reduce traffic.",
+        "E": "Air pollution is a separate issue that does not affect temperature."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "pc_set1",
+      "question": "The concept of 'Social Proof' suggests that individuals look to the behavior of others to determine their own actions, especially in uncertain situations. In marketing, this is often utilized through customer testimonials and celebrity endorsements. _______. When potential buyers see others' satisfaction, their own hesitation tends to diminish.",
+      "options": {
+        "A": "Advertising budgets have increased steadily over the past few years.",
+        "B": "Social media platforms have changed the way we communicate daily.",
+        "C": "The psychological effect reinforces the credibility of a product.",
+        "D": "Most consumers prefer to buy products that are on sale.",
+        "E": "Individualism is highly valued in many Western cultures."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "pc_set1",
+      "question": "In the field of linguistics, the 'Critical Period Hypothesis' suggests there is an ideal window for language acquisition. During this time, the brain is particularly plastic and receptive to linguistic input. _______. However, while adults can become proficient, they rarely achieve the same level of native-like fluency as those who start young.",
+      "options": {
+        "A": "Bilingual children often perform better on cognitive tasks.",
+        "B": "If a child is not exposed to language during this period, acquisition becomes much harder.",
+        "C": "Learning a third language is generally easier than learning a second one.",
+        "D": "Grammar rules are the most difficult part of learning English.",
+        "E": "Many schools are now introducing foreign languages in kindergarten."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "pc_set1",
+      "question": "Artificial Intelligence is revolutionizing the healthcare industry by improving diagnostic accuracy. Machine learning algorithms can analyze medical images and data much faster than human doctors. _______. Despite these advancements, the human touch and ethical judgment of a physician remain irreplaceable.",
+      "options": {
+        "A": "Many hospitals are facing budget cuts due to the economic downturn.",
+        "B": "Robots are now performing most surgeries without any human oversight.",
+        "C": "This allows for the early detection of diseases like cancer.",
+        "D": "Medical school applications have reached an all-time high.",
+        "E": "Patients are often skeptical about the use of technology in medicine."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "pc_set1",
+      "question": "The Great Depression of the 1930s was a period of unprecedented economic hardship worldwide. It began with the stock market crash in the United States and quickly spread to other nations. _______. This led to widespread poverty and a fundamental shift in how governments manage their economies.",
+      "options": {
+        "A": "The industrial revolution had ended decades earlier.",
+        "B": "Unemployment rates soared, and global trade plummeted.",
+        "C": "Modern technology has made such a crisis impossible today.",
+        "D": "Agricultural production actually increased during this decade.",
+        "E": "Gold was the primary currency used for international trade."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "pc_set1",
+      "question": "Cybersecurity has become a top priority for corporations in the digital age. As more data is stored in the cloud, the risk of data breaches and cyberattacks grows. _______. Therefore, companies are investing heavily in encryption and multi-factor authentication systems.",
+      "options": {
+        "A": "Hackers are only interested in stealing personal photographs.",
+        "B": "Most employees prefer to work from home using their own devices.",
+        "C": "A single security lapse can result in massive financial losses and reputational damage.",
+        "D": "The internet was originally designed for military communication.",
+        "E": "Software updates are often ignored by the general public."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "pc_set1",
+      "question": "Behavioral economics challenges the traditional view that humans always make rational decisions. It incorporates insights from psychology to explain why people often act against their own best interests. _______. Understanding these patterns helps policymakers design better interventions.",
+      "options": {
+        "A": "Traditional economists believe that markets are always efficient.",
+        "B": "This field examines cognitive biases and emotional influences on choices.",
+        "C": "Mathematics is the foundation of all economic theories.",
+        "D": "Most people save enough money for their retirement.",
+        "E": "Supply and demand are the two most important factors in trade."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "pc_set1",
+      "question": "Sustainable agriculture aims to meet current food needs without compromising the ability of future generations to meet theirs. This involves practices like crop rotation and integrated pest management. _______. By protecting ecosystems, farmers can ensure long-term productivity and food security.",
+      "options": {
+        "A": "Chemical fertilizers are the most effective way to increase yield.",
+        "B": "The global population is expected to reach 10 billion by 2050.",
+        "C": "The primary goal is to maintain soil health and minimize environmental impact.",
+        "D": "Genetically modified organisms are banned in many countries.",
+        "E": "Traditional farming methods are being abandoned for industrial ones."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "pc_set1",
+      "question": "The 'Digital Divide' refers to the gap between those who have access to modern information technology and those who do not. This inequality exists both between developed and developing nations, and within specific communities. _______. Bridging this gap is essential for achieving global social and economic equity.",
+      "options": {
+        "A": "Computers are becoming cheaper every year due to mass production.",
+        "B": "Many people use smartphones for social media and entertainment.",
+        "C": "Lack of access limits opportunities for education, employment, and civic participation.",
+        "D": "Internet speeds vary significantly depending on the provider.",
+        "E": "Programming is a skill that is increasingly taught in primary schools."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "pc_set1",
+      "question": "Microplastics have become a pervasive environmental pollutant, found everywhere from the deepest oceans to the highest mountains. These tiny plastic particles are often ingested by marine life, entering the food chain. _______. Research is ongoing to determine the full extent of the risk to human health.",
+      "options": {
+        "A": "Plastic recycling is not as effective as people believe.",
+        "B": "There is growing concern that these toxins eventually reach humans.",
+        "C": "Ocean currents carry trash to very remote parts of the world.",
+        "D": "Bottled water is often cleaner than tap water in many regions.",
+        "E": "Fishing nets are a major source of large-scale plastic waste."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "pc_set1",
+      "question": "Remote work became a necessity during the global pandemic, but it has now become a permanent fixture for many companies. Employees often report a better work-life balance and reduced commuting stress. _______. As a result, many organizations are adopting a hybrid model to balance these needs.",
+      "options": {
+        "A": "Office rent in major cities has reached an all-time high.",
+        "B": "Working from home requires a high-speed internet connection.",
+        "C": "However, challenges like social isolation and difficulty in collaboration remain.",
+        "D": "Zoom and Microsoft Teams have seen a surge in users.",
+        "E": "Productivity levels are always higher in a traditional office setting."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "pc_set1",
+      "question": "The placebo effect is a fascinating psychological phenomenon where a patient experiences a real improvement in their condition after receiving a 'fake' treatment. This suggests that the mind plays a powerful role in the healing process. _______. Understanding this effect is vital for designing rigorous clinical trials.",
+      "options": {
+        "A": "New drugs must be tested against a placebo to prove their efficacy.",
+        "B": "Doctors should always tell their patients the truth about their medicine.",
+        "C": "Pain is purely a physical sensation that can be measured.",
+        "D": "Many people prefer natural remedies over pharmaceutical drugs.",
+        "E": "Alternative medicine is gaining popularity in Western societies."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 44,
+      "section_id": "pc_set1",
+      "question": "Gentrification is a process of urban renewal where lower-income neighborhoods are transformed by the arrival of wealthier residents. While this often leads to improved infrastructure and lower crime rates, it also has significant downsides. _______. This displacement can destroy the existing social fabric and culture of the area.",
+      "options": {
+        "A": "Property values in these areas usually remain stable for decades.",
+        "B": "New businesses, like high-end cafes, often open in these districts.",
+        "C": "Long-term residents are frequently forced out by rising rents and property taxes.",
+        "D": "Cities need to invest more in public transportation projects.",
+        "E": "The government provides subsidies for low-income housing."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 45,
+      "section_id": "pc_set1",
+      "question": "The concept of 'Emotional Intelligence' (EQ) has gained traction in the corporate world. Leaders with high EQ are better at managing stress, resolving conflicts, and motivating their teams. _______. Consequently, many companies now include EQ assessments in their hiring processes.",
+      "options": {
+        "A": "Technical skills are still the most important factor for promotion.",
+        "B": "IQ is the only reliable predictor of job performance.",
+        "C": "These interpersonal skills are often more valuable than technical expertise in leadership.",
+        "D": "Most employees feel that their managers lack empathy.",
+        "E": "Training programs for emotional intelligence are very expensive."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 46,
+      "section_id": "pc_set1",
+      "question": "Space exploration has long been the domain of national governments, but the private sector is now playing an increasingly prominent role. Companies like SpaceX and Blue Origin are developing reusable rockets to lower the cost of space travel. _______. This shift is opening up new possibilities for satellite deployment and even space tourism.",
+      "options": {
+        "A": "The moon landing in 1969 was a milestone for NASA.",
+        "B": "Mars is the most likely candidate for human colonization.",
+        "C": "Private investment is accelerating the pace of innovation in the industry.",
+        "D": "Astronomers are finding more Earth-like planets in distant galaxies.",
+        "E": "International law prohibits the ownership of celestial bodies."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 47,
+      "section_id": "pc_set1",
+      "question": "Standardized testing is a controversial topic in education. Proponents argue that it provides a consistent measure of student achievement across different schools. _______. Critics, on the other hand, contend that these tests narrow the curriculum and fail to capture creative thinking.",
+      "options": {
+        "A": "Students often experience high levels of anxiety before exams.",
+        "B": "It allows for data-driven decisions and accountability in the school system.",
+        "C": "Teachers are often judged based on their students' test scores.",
+        "D": "Finland has one of the best education systems in the world without such tests.",
+        "E": "Extracurricular activities are just as important as academic ones."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 48,
+      "section_id": "pc_set1",
+      "question": "The biodiversity of the Amazon rainforest is essential for the planet's health. It acts as a massive carbon sink, absorbing billions of tons of CO2 every year. _______. If deforestation continues at the current rate, the loss of these species and the impact on the climate could be irreversible.",
+      "options": {
+        "A": "Brazil is the largest country in South America.",
+        "B": "Many indigenous tribes have lived in the forest for centuries.",
+        "C": "It is also home to millions of unique species of plants and animals.",
+        "D": "Ecotourism is a growing industry in tropical regions.",
+        "E": "Soybean farming is a major driver of land clearing in the region."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 49,
+      "section_id": "pc_set1",
+      "question": "In history, the Silk Road was not a single path but a network of trade routes connecting the East and West. It facilitated the exchange of goods like silk, spices, and precious metals. _______. This interaction played a vital role in the development of civilizations across Eurasia.",
+      "options": {
+        "A": "Marco Polo is the most famous traveler of the Silk Road.",
+        "B": "The routes were often dangerous due to bandits and harsh terrain.",
+        "C": "More importantly, it served as a conduit for ideas, religions, and technologies.",
+        "D": "Maritime trade eventually replaced land routes in the 15th century.",
+        "E": "The Great Wall of China was built to protect against invasions."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 50,
+      "section_id": "pc_set1",
+      "question": "The Industrial Revolution was a period of major mechanization and innovation that began in Great Britain during the mid-18th century. _______. Consequently, this shift led to an unprecedented increase in production capacity and changed the socio-economic landscape of the world forever.",
+      "options": {
+        "A": "Agriculture remained the primary source of income for most families",
+        "B": "It transformed the economy from one based on agriculture to one based on manufacturing",
+        "C": "Many people preferred living in rural areas despite the lack of jobs",
+        "D": "Technological advancements were initially met with significant resistance by the government",
+        "E": "The process of industrialization was slow and had little impact on urban development"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 51,
+      "section_id": "pc_set1",
+      "question": "Cognitive psychology focuses on how people perceive, think, remember, and learn. As a field, it seeks to understand the internal processes of the human mind. _______. By studying these patterns, researchers can develop better educational tools and therapeutic interventions.",
+      "options": {
+        "A": "Environmental factors are the only variables that matter in behavior",
+        "B": "This branch of psychology ignores the biological basis of thought",
+        "C": "Specifically, it examines how information is processed and stored",
+        "D": "It is primarily concerned with social interactions in large groups",
+        "E": "Most cognitive psychologists work exclusively in clinical settings"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 52,
+      "section_id": "pc_set1",
+      "question": "Renewable energy sources such as solar and wind power are becoming increasingly cost-effective. Many countries are now investing heavily in these technologies to reduce their carbon footprint. _______. Therefore, the transition to green energy is not just an environmental necessity but also an economic opportunity.",
+      "options": {
+        "A": "Fossil fuels continue to be the cheapest energy source available",
+        "B": "Nuclear energy is often considered a non-renewable resource",
+        "C": "These investments are expected to create millions of new jobs globally",
+        "D": "Climate change is a phenomenon that some scientists still debate",
+        "E": "Solar panels require a lot of maintenance in tropical climates"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 53,
+      "section_id": "pc_set1",
+      "question": "In the realm of international relations, 'soft power' refers to the ability of a country to influence others through culture and values rather than coercion. _______. When a nation's culture is admired, it finds it easier to build alliances and achieve its foreign policy goals.",
+      "options": {
+        "A": "Military strength remains the most important factor in global politics",
+        "B": "Economic sanctions are the most common form of soft power",
+        "C": "This concept stands in contrast to 'hard power,' which involves military or economic force",
+        "D": "Soft power is generally ineffective in the modern digital age",
+        "E": "Most leaders prefer to use threats to get what they want"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 54,
+      "section_id": "pc_set1",
+      "question": "The Great Barrier Reef is the world's largest coral reef system, stretching over 2,300 kilometers. It hosts a diverse range of marine life, including thousands of species of fish and mollusks. _______. Scientists warn that without immediate action, this natural wonder could be lost within decades.",
+      "options": {
+        "A": "The reef is currently thriving due to increased water temperatures",
+        "B": "Tourism is the only threat to the survival of the coral",
+        "C": "However, it is facing severe threats from climate change and coral bleaching",
+        "D": "The Australian government has banned all fishing in the area",
+        "E": "Coral reefs are found in every ocean regardless of temperature"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 55,
+      "section_id": "pc_set1",
+      "question": "Artificial Intelligence (AI) has the potential to revolutionize the healthcare industry. By analyzing vast amounts of medical data, AI algorithms can identify patterns that may be invisible to the human eye. _______. This allows for earlier diagnosis and more personalized treatment plans for patients.",
+      "options": {
+        "A": "Medical professionals are largely being replaced by robots",
+        "B": "These systems can predict the onset of diseases with high accuracy",
+        "C": "Data privacy is no longer a concern in the medical field",
+        "D": "AI is mostly used for administrative tasks in hospitals",
+        "E": "The cost of AI technology is prohibitive for most clinics"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 56,
+      "section_id": "pc_set1",
+      "question": "Urbanization is the process by which more people move from rural areas to cities. This trend is driven by the search for better employment opportunities and improved access to services. _______. As a result, many cities are struggling to provide adequate housing and infrastructure.",
+      "options": {
+        "A": "Rural populations are actually increasing in most developed nations",
+        "B": "The rapid influx of people often outpaces the development of urban resources",
+        "C": "Urban living is generally considered less stressful than rural living",
+        "D": "Most people move back to the countryside after a few years",
+        "E": "Cities are becoming less crowded due to remote work trends"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 57,
+      "section_id": "pc_set1",
+      "question": "Sustainable architecture aims to minimize the negative environmental impact of buildings. This is achieved through efficiency and moderation in the use of materials, energy, and development space. _______. Ultimately, the goal is to create structures that coexist harmoniously with the natural environment.",
+      "options": {
+        "A": "Aesthetics are usually sacrificed for the sake of functionality",
+        "B": "Modern buildings are inherently sustainable without any modifications",
+        "C": "Architects often incorporate recycled materials and solar energy systems",
+        "D": "Traditional building methods are always more eco-friendly",
+        "E": "The cost of sustainable materials is decreasing rapidly"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 58,
+      "section_id": "pc_set1",
+      "question": "Language acquisition in children is a complex process that involves both innate biological factors and environmental stimulation. While infants are born with the capacity to learn any language, the specific language they acquire depends on their surroundings. _______. This suggests that there is a critical period for language development.",
+      "options": {
+        "A": "Children who are not exposed to language early on struggle to achieve fluency later",
+        "B": "Bilingualism is known to confuse young children's cognitive development",
+        "C": "Grammar is the least important part of learning a new language",
+        "D": "Adults learn new languages more quickly than children do",
+        "E": "The social environment has no impact on vocabulary growth"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 59,
+      "section_id": "pc_set1",
+      "question": "The concept of 'circular economy' focuses on eliminating waste and the continual use of resources. Unlike the traditional linear model of 'take-make-dispose,' it emphasizes reuse, repair, and recycling. _______. By closing the loop, businesses can reduce their environmental footprint while cutting costs.",
+      "options": {
+        "A": "Waste management is the responsibility of the consumer alone",
+        "B": "This approach encourages the creation of products with a short lifespan",
+        "C": "The primary goal is to keep products and materials in use for as long as possible",
+        "D": "Recycling is often more expensive than producing new materials",
+        "E": "Most companies are resistant to changing their production models"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 60,
+      "section_id": "pc_set1",
+      "question": "Globalization has led to increased cultural exchange and economic interdependence among nations. However, it has also sparked concerns about the loss of local traditions and identities. _______. Thus, the challenge for many societies is to embrace global connectivity while preserving their unique heritage.",
+      "options": {
+        "A": "Global trade has reached its peak and is now declining",
+        "B": "The spread of Western culture is often seen as a form of cultural homogenization",
+        "C": "Local languages are becoming more popular due to the internet",
+        "D": "Economic growth is always beneficial regardless of the social cost",
+        "E": "Isolationism is the most effective way to protect local culture"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 61,
+      "section_id": "pc_set1",
+      "question": "The human gut microbiome consists of trillions of microorganisms that play a crucial role in health. These bacteria aid in digestion, produce vitamins, and support the immune system. _______. Consequently, maintaining a diverse and balanced microbiome is essential for overall well-being.",
+      "options": {
+        "A": "Dietary habits have little effect on the composition of gut bacteria",
+        "B": "Antibiotics are the only way to improve gut health",
+        "C": "An imbalance in these microbes has been linked to various chronic diseases",
+        "D": "The microbiome is fixed at birth and does not change over time",
+        "E": "Most bacteria in the human body are harmful and cause infections"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 62,
+      "section_id": "pc_set1",
+      "question": "The philosophy of Existentialism emphasizes individual existence, freedom, and choice. It suggests that humans define their own meaning in life and try to make rational decisions despite existing in an irrational universe. _______. Therefore, individuals are entirely responsible for their own actions and the shape of their lives.",
+      "options": {
+        "A": "Meaning is predetermined by divine forces or biological destiny",
+        "B": "The universe provides a clear moral framework for everyone to follow",
+        "C": "According to existentialists, existence precedes essence",
+        "D": "Society is responsible for the failures of the individual",
+        "E": "Life is inherently meaningful and easy to understand"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 63,
+      "section_id": "pc_set1",
+      "question": "E-commerce has transformed the retail industry by allowing consumers to shop from the comfort of their homes. The convenience of 24/7 access and home delivery has shifted consumer behavior away from traditional brick-and-mortar stores. _______. As a result, many physical retailers are forced to integrate online services to stay competitive.",
+      "options": {
+        "A": "Physical stores are becoming more popular among younger generations",
+        "B": "Shipping costs are the main reason people avoid online shopping",
+        "C": "Online platforms offer a wider variety of products at lower prices",
+        "D": "Most people still prefer the tactile experience of shopping in person",
+        "E": "Digital security is the only barrier to the growth of e-commerce"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 64,
+      "section_id": "pc_set1",
+      "question": "Space exploration provides valuable insights into the origins of our solar system and the potential for life on other planets. Missions to Mars and the outer moons of Jupiter have revealed evidence of water and organic molecules. _______. This quest for knowledge continues to drive technological innovation on Earth.",
+      "options": {
+        "A": "Mars is currently the only planet capable of supporting human life",
+        "B": "The cost of space missions far outweighs their scientific benefits",
+        "C": "These discoveries suggest that Earth may not be the only habitable world",
+        "D": "NASA has officially ended its search for extraterrestrial intelligence",
+        "E": "Space travel will remain impossible for the foreseeable future"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 65,
+      "section_id": "pc_set1",
+      "question": "Public speaking is a skill that can be developed through practice and preparation. Many people experience anxiety when speaking in front of an audience, but various techniques can help manage this fear. _______. Over time, these strategies can build the confidence needed to deliver effective presentations.",
+      "options": {
+        "A": "Avoiding eye contact is the best way to reduce nervousness",
+        "B": "Visualizing success and focusing on breathing are common methods",
+        "C": "Most great orators are born with a natural talent for speaking",
+        "D": "Reading directly from a script is the most engaging way to speak",
+        "E": "The audience is usually looking for reasons to criticize the speaker"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 66,
+      "section_id": "pc_set1",
+      "question": "The digital divide refers to the gap between those who have access to modern information technology and those who do not. This disparity exists both between developed and developing nations and within individual countries. _______. To bridge this gap, governments must invest in both infrastructure and digital literacy.",
+      "options": {
+        "A": "Internet access is now considered a basic human right by the UN",
+        "B": "Technology is becoming more expensive and harder to access",
+        "C": "Lack of access to the internet limits opportunities for education and employment",
+        "D": "Most people choose not to use the internet for personal reasons",
+        "E": "The digital divide has been completely eliminated in the last decade"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 67,
+      "section_id": "pc_set1",
+      "question": "Biodiversity is essential for the stability and resilience of ecosystems. Different species perform specific roles, such as pollination, nutrient cycling, and pest control. _______. When a species goes extinct, it can trigger a domino effect that disrupts the entire ecological balance.",
+      "options": {
+        "A": "The loss of a single species has no impact on the larger environment",
+        "B": "Ecosystems are more productive when they have a wide variety of life",
+        "C": "Invasive species are necessary for maintaining local biodiversity",
+        "D": "Monoculture farming is the most sustainable way to produce food",
+        "E": "Extinction is a natural process that humans should not interfere with"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 68,
+      "section_id": "pc_set1",
+      "question": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. It promoted the rediscovery of classical philosophy, literature, and art. _______. This shift in thinking laid the groundwork for the modern age of science and individualism.",
+      "options": {
+        "A": "The Church increased its control over all scientific inquiries",
+        "B": "Humanism became the intellectual movement at the heart of this era",
+        "C": "Feudalism was strengthened as the dominant social system",
+        "D": "Artists began to move away from realism and focus on abstract forms",
+        "E": "The printing press was invented long after the Renaissance ended"
+      },
+      "correct": "B",
+      "passage_id": null
     }
   ]
 }

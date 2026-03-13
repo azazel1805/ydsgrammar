@@ -2,12 +2,22 @@
   "meta": {
     "title": "Master Dialogue Strategy",
     "subtitle": "Academic Discourse and Contextual Logic",
-    "total_questions": 40,
+    "total_questions": 46,
     "duration_minutes": 90
   },
   "sections": [
-    { "id": "dialogue_set1", "label": "Academic & Professional Dialogue", "from": 1, "to": 20 },
-    { "id": "dialogue_set2", "label": "Scientific & Social Discourse", "from": 21, "to": 40 }
+    {
+      "id": "dialogue_set1",
+      "label": "Academic & Professional Dialogue",
+      "from": 1,
+      "to": 20
+    },
+    {
+      "id": "dialogue_set2",
+      "label": "Scientific & Social Discourse",
+      "from": 21,
+      "to": 40
+    }
   ],
   "questions": [
     {
@@ -209,6 +219,510 @@
         "grammar": "Predicting Response based on Future Actions",
         "trap": "Görüşme saatleri (consultation hours) geçiyorsa teklif mutlaka 'yüz yüze' bir yardımdır."
       }
+    },
+    {
+      "id": 12,
+      "section_id": "dialogue_set1",
+      "question": "Professor: I noticed you didn't cite the primary source in your latest draft. Student: I thought citing the secondary source that quoted it was sufficient. Professor: _________",
+      "options": {
+        "A": "It is, as long as the quote is accurate.",
+        "B": "Primary sources are usually harder to find in the digital archive.",
+        "C": "You should always aim to consult the original work to avoid misinterpretation.",
+        "D": "The secondary source is actually more reputable in this specific case.",
+        "E": "I will give you a higher grade if you include more citations."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "dialogue_set1",
+      "question": "Researcher A: The data from the urban study seems to contradict the findings from the rural study. Researcher B: _________ Researcher A: You're right. We shouldn't compare them without accounting for those variables.",
+      "options": {
+        "A": "That's because the rural study was conducted ten years ago.",
+        "B": "We should probably just ignore the rural data for now.",
+        "C": "Could that be due to the differing socio-economic backgrounds of the participants?",
+        "D": "Urban planning is much more complex than rural development.",
+        "E": "The software we used for the analysis might have a glitch."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "dialogue_set1",
+      "question": "Student A: I find it hard to keep up with the lectures when the professor speaks so fast. Student B: _________ Student A: I’ve tried that, but I still miss the nuances of the discussion.",
+      "options": {
+        "A": "Maybe you should record the sessions and listen to them later.",
+        "B": "You should just ask him to slow down during the lecture.",
+        "C": "I think the lecture notes provided online are quite comprehensive.",
+        "D": "Why don't you sit in the front row to hear better?",
+        "E": "The textbook covers exactly what he talks about in class."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "dialogue_set1",
+      "question": "Librarian: I’m afraid this journal is for reference only and cannot be checked out. Student: _________ Librarian: You can use the scanner in the corner and send the pages to your email.",
+      "options": {
+        "A": "Is there any way I can borrow it just for the weekend?",
+        "B": "That's a shame. Is there a digital version available on the website?",
+        "C": "Can I at least take some photos of the relevant articles?",
+        "D": "How am I supposed to finish my research without this book?",
+        "E": "When will the journal be available for general circulation?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "dialogue_set1",
+      "question": "Interviewer: How do you handle conflict within a team environment? Candidate: _________ Interviewer: That’s a constructive approach. It ensures everyone feels heard.",
+      "options": {
+        "A": "I usually report the issue to my supervisor immediately.",
+        "B": "I prefer to work alone to avoid any potential disagreements.",
+        "C": "I try to facilitate an open discussion to identify the root cause of the tension.",
+        "D": "Conflicts are inevitable, so I just wait for them to blow over.",
+        "E": "I always stick to my point of view if I know I am right."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "dialogue_set1",
+      "question": "Advisor: You’ve met all the requirements for the major, but you still need three credits of a lab science. Student: _________ Advisor: Only if the course content overlaps significantly with our physics department’s syllabus.",
+      "options": {
+        "A": "Can I take a biology course instead of chemistry?",
+        "B": "Would the chemistry course I took at my previous university count?",
+        "C": "Is it possible to waive this requirement based on my internship?",
+        "D": "How many hours a week does the physics lab require?",
+        "E": "Are there any online lab options available this semester?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "dialogue_set1",
+      "question": "Economist A: Implementing a universal basic income could stimulate local economies. Economist B: _________ Economist A: True, but the long-term benefits might outweigh the initial fiscal strain.",
+      "options": {
+        "A": "It would certainly reduce the poverty rate significantly.",
+        "B": "Most people would spend the money on essential goods.",
+        "C": "The logistical challenge of distribution is often underestimated.",
+        "D": "However, the tax burden required to fund it could discourage investment.",
+        "E": "I agree that it is the most modern solution to wealth inequality."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "dialogue_set1",
+      "question": "Student: I'm worried that my thesis topic is too broad for a 10,000-word limit. Professor: _________ Student: That makes sense. I'll narrow my focus to the European market only.",
+      "options": {
+        "A": "You should probably increase the word count to 15,000.",
+        "B": "It is better to have too much information than too little.",
+        "C": "Why don't you try to refine your research question to a specific region?",
+        "D": "You can always use more appendices to save space in the main body.",
+        "E": "I think the topic is fine; you just need to write more concisely."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "dialogue_set1",
+      "question": "Host: Our guest tonight argues that social media is eroding our capacity for deep concentration. Guest: _________ Host: But surely, the ability to multi-task is a necessary skill in the digital age?",
+      "options": {
+        "A": "Not exactly; it actually helps us process information faster.",
+        "B": "Indeed, the constant stream of notifications fragments our attention span.",
+        "C": "I believe social media has many benefits for global communication.",
+        "D": "Actually, research shows that students are more focused than ever.",
+        "E": "It’s not just social media; television is also to blame."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue_set1",
+      "question": "Colleague A: I think we should postpone the product launch until the software bugs are fixed. Colleague B: _________ Colleague A: I agree. Our reputation is worth more than meeting a temporary deadline.",
+      "options": {
+        "A": "But our competitors are releasing a similar product next week.",
+        "B": "The marketing team has already spent the entire budget.",
+        "C": "If we launch now, we can just release a patch later.",
+        "D": "Releasing a faulty product could cause irreversible damage to our brand.",
+        "E": "The developers say they need at least another month."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue_set1",
+      "question": "Doctor: Your blood pressure is slightly elevated. Are you under a lot of stress lately? Patient: Yes, I’ve been working overtime to finish a project. Doctor: _________",
+      "options": {
+        "A": "You should definitely consider taking a few days off to recuperate.",
+        "B": "I will prescribe some medication to help you sleep better.",
+        "C": "High blood pressure is very common among people your age.",
+        "D": "Do you have any history of heart disease in your family?",
+        "E": "You need to cut down on caffeine and exercise more frequently."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue_set1",
+      "question": "Student: I'm not sure if I should take the internship or study abroad next semester. Career Counselor: _________ Student: Actually, the internship is with a multinational firm in London, so I could do both.",
+      "options": {
+        "A": "Studying abroad is a once-in-a-lifetime opportunity.",
+        "B": "Which one do you think will look better on your resume?",
+        "C": "Does the internship offer any financial compensation?",
+        "D": "Have you considered whether you can find a middle ground?",
+        "E": "What are the main goals you want to achieve before graduation?"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue_set1",
+      "question": "Architect: The client wants more natural light in the lobby, but we have structural limitations. Engineer: _________ Architect: That’s an innovative idea. It would bypass the load-bearing walls entirely.",
+      "options": {
+        "A": "We could simply install more high-efficiency LED lights.",
+        "B": "What if we incorporated a series of skylights into the roof design?",
+        "C": "I think the client needs to lower their expectations.",
+        "D": "Could we use transparent concrete for the exterior walls?",
+        "E": "We might need to redesign the entire foundation of the building."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "dialogue_set1",
+      "question": "Peer Reviewer: Your argument is persuasive, but you rely too heavily on anecdotal evidence. Writer: _________ Peer Reviewer: Adding some statistical data from recent surveys would certainly strengthen it.",
+      "options": {
+        "A": "I thought personal stories made the paper more engaging.",
+        "B": "How can I make the argument more objective?",
+        "C": "I will remove the anecdotes and replace them with more theory.",
+        "D": "The anecdotes are based on very reliable sources, though.",
+        "E": "Is the tone of the paper too informal for a journal?Plus"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "dialogue_set1",
+      "question": "Travel Agent: This package includes airfare, accommodation, and two guided tours. Customer: _________ Travel Agent: Certainly. We have a 'custom' option where you can select your own activities.",
+      "options": {
+        "A": "Is it possible to get a discount if I book for a group?",
+        "B": "Does the price include travel insurance and meals?",
+        "C": "Can I opt out of the tours and reduce the total cost?",
+        "D": "Which hotels are included in the accommodation list?",
+        "E": "I would like to extend the stay by an additional three days."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "dialogue_set1",
+      "question": "Environmentalist: The increase in carbon emissions is largely due to industrial expansion. Policy Maker: _________ Environmentalist: Precisely. We need to incentivize green energy without hindering growth.",
+      "options": {
+        "A": "We should shut down all factories that exceed the limit.",
+        "B": "However, we must balance environmental concerns with economic stability.",
+        "C": "The public doesn't seem to care much about the carbon footprint.",
+        "D": "Are there any alternative energy sources that are actually viable?",
+        "E": "The data suggests that transport is a bigger contributor than industry."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "dialogue_set1",
+      "question": "Student A: I can't believe I failed the midterm; I studied for three days straight. Student B: _________ Student A: You're right. I spent too much time memorizing dates instead of understanding the causes.",
+      "options": {
+        "A": "Maybe you should have studied for a whole week instead.",
+        "B": "The exam was exceptionally difficult for everyone, don't worry.",
+        "C": "It's not about how long you study, but how effectively you use your time.",
+        "D": "I can lend you my notes for the final exam if you want.",
+        "E": "You should ask the professor if you can do an extra credit assignment."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "dialogue_set1",
+      "question": "Researcher A: Our data suggests a significant correlation between sleep deprivation and cognitive decline. Researcher B: True, but correlation does not imply causation. Researcher A: _________ Researcher B: Exactly. We need a longitudinal study to confirm that.",
+      "options": {
+        "A": "We should disregard the findings until we have more participants.",
+        "B": "Are you suggesting that the methodology was inherently flawed?",
+        "C": "Of course, there might be underlying variables we haven't accounted for.",
+        "D": "I disagree; the statistical significance is too high to be coincidental.",
+        "E": "The participants were all within the same age demographic."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "dialogue_set1",
+      "question": "Student A: I'm struggling to narrow down my thesis topic for the history department. Student B: Why don't you focus on the socio-economic impact of the Industrial Revolution in Northern England? Student A: _________ Student B: In that case, maybe look into the cultural shifts in the Victorian Era instead.",
+      "options": {
+        "A": "That sounds like a fascinating area of research to explore.",
+        "B": "Actually, my supervisor already suggested that specific region.",
+        "C": "I've already written a paper on that for my undergraduate degree.",
+        "D": "I'm more interested in political history than economic trends.",
+        "E": "The library has a vast collection of resources on that topic."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "dialogue_set1",
+      "question": "Interviewer: How do you handle high-pressure situations in a collaborative environment? Candidate: I tend to prioritize tasks and maintain open communication with my team. Interviewer: _________ Candidate: I try to facilitate a brief meeting to realign our goals and redistribute the workload.",
+      "options": {
+        "A": "What do you do if a teammate is not meeting their deadlines?",
+        "B": "How would you react if the project's budget was suddenly cut?",
+        "C": "Could you provide an example of a time you failed to meet a goal?",
+        "D": "What is your preferred method for documenting project progress?",
+        "E": "Do you prefer working alone or as part of a large department?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "dialogue_set1",
+      "question": "Advisor: I see you've selected several high-level elective courses for next semester. Student: Yes, I want to challenge myself and broaden my academic horizons. Advisor: _________ Student: I see your point. I'll reconsider and perhaps swap one for a foundational course.",
+      "options": {
+        "A": "It's important to maintain a high GPA for your scholarship.",
+        "B": "That is a very ambitious goal; just ensure you don't overextend yourself.",
+        "C": "You are required to take at least two language courses this year.",
+        "D": "The registration deadline is tomorrow, so you must decide quickly.",
+        "E": "Most students find those specific courses to be quite manageable."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "dialogue_set1",
+      "question": "Tutor: Your essay on urban planning is well-researched, but the conclusion is a bit abrupt. Student: I ran out of time and couldn't synthesize the arguments effectively. Tutor: _________ Student: I will definitely do that. It should make the final argument much more persuasive.",
+      "options": {
+        "A": "You should have started the research process much earlier.",
+        "B": "Perhaps you can expand on the implications of the zoning laws.",
+        "C": "Try to link your final summary back to the thesis statement provided in the intro.",
+        "D": "The word count is already at the maximum limit allowed.",
+        "E": "Make sure to check your citations for any formatting errors."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "dialogue_set1",
+      "question": "Colleague A: I think we should adopt a more aggressive marketing strategy for the new software. Colleague B: _________ Colleague A: You're right. A steady, organic growth might be more sustainable in the long run.",
+      "options": {
+        "A": "We have plenty of budget left for a massive social media campaign.",
+        "B": "Our competitors are already using very aggressive tactics.",
+        "C": "I believe our current strategy is failing to reach the target audience.",
+        "D": "Don't you think that might alienate our existing conservative client base?",
+        "E": "The software is still in its beta testing phase, so it's too early."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "dialogue_set1",
+      "question": "Customer: I purchased this laptop last week, but the battery life is significantly shorter than advertised. Shop Assistant: I'm sorry to hear that. Have you been using high-performance settings? Customer: _________ Shop Assistant: Understood. In that case, let's run a diagnostic test to see if the battery is defective.",
+      "options": {
+        "A": "No, I've mostly been using it for basic word processing on power-saver mode.",
+        "B": "Yes, I always keep the screen brightness at the maximum level.",
+        "C": "I haven't had the chance to check the settings yet.",
+        "D": "The laptop is quite heavy, which makes it difficult to carry around.",
+        "E": "Is it possible to upgrade the RAM to improve the speed?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "dialogue_set1",
+      "question": "Librarian: I'm afraid the book you're looking for is currently checked out by another student. Student: That's unfortunate. I really need it for my presentation on Friday. Librarian: _________ Student: That would be perfect. I can use the electronic version in the meantime.",
+      "options": {
+        "A": "You can place a hold on it, but it might take two weeks to return.",
+        "B": "We have an e-book version available through the university portal.",
+        "C": "There are other books on the same topic in the 300 section.",
+        "D": "The student who has it usually returns their books late.",
+        "E": "Would you like to speak to the department head about this?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "dialogue_set1",
+      "question": "Dr. Miller: The results of the blood test indicate a slight iron deficiency. Patient: Is that why I've been feeling so lethargic lately? Dr. Miller: _________ Patient: I'll start making those changes immediately. Should I also take supplements?",
+      "options": {
+        "A": "It's a possibility, though we should rule out other factors as well.",
+        "B": "Iron deficiency is very common among people with your diet.",
+        "C": "Yes, it's a primary symptom. I recommend increasing your intake of leafy greens.",
+        "D": "You should get more sleep and try to reduce your stress levels.",
+        "E": "The lab results are not always 100% accurate, you know."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "dialogue_set1",
+      "question": "Manager: We need to decide on the venue for the annual conference by Friday. Employee: I've narrowed it down to the City Convention Center and the Grand Hotel. Manager: _________ Employee: True, but the Grand Hotel offers a much better catering package.",
+      "options": {
+        "A": "The City Convention Center has a much larger capacity for attendees.",
+        "B": "The Grand Hotel is more expensive than we originally budgeted for.",
+        "C": "I think we should look for a venue outside of the city center.",
+        "D": "Both venues are already fully booked for those dates.",
+        "E": "Let's go with the City Convention Center as it's closer to the office."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "dialogue_set1",
+      "question": "Student A: Do you think the professor will extend the deadline for the group project? Student B: _________ Student A: That's what I thought. We better get to work then.",
+      "options": {
+        "A": "He's usually very flexible if you have a valid excuse.",
+        "B": "I heard he's already granted an extension to the other group.",
+        "C": "Highly unlikely, given his strict adherence to the syllabus.",
+        "D": "The deadline is actually next month, so we have plenty of time.",
+        "E": "I'll go and ask him during the break if you want."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "dialogue_set1",
+      "question": "Tourist: Excuse me, is this the right bus for the National Museum? Local: Yes, but you'll need to get off at the fourth stop. Tourist: _________ Local: No, it's just a five-minute walk from the stop. You can't miss it.",
+      "options": {
+        "A": "How much is the fare for a single journey?",
+        "B": "Is it within walking distance from here?",
+        "C": "Is the museum open on Mondays?",
+        "D": "Will I need to take another bus after that?",
+        "E": "Is the stop clearly marked?"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "dialogue_set1",
+      "question": "Mentor: I've noticed you've been hesitant to share your ideas during our brainstorming sessions. Mentee: I guess I'm worried that my suggestions might be too unconventional. Mentor: _________ Mentee: Thank you. I'll try to be more vocal in our next meeting.",
+      "options": {
+        "A": "It's better to be safe than sorry when it comes to business.",
+        "B": "In this industry, unconventional thinking is often what leads to innovation.",
+        "C": "You should focus on more practical solutions for the time being.",
+        "D": "I agree, some of your ideas have been a bit off-target.",
+        "E": "The rest of the team is very experienced and might not agree."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "dialogue_set1",
+      "question": "Landlord: I received a complaint about noise coming from your apartment late last night. Tenant: Oh, I'm sorry. I had a few friends over for a study session. Landlord: _________ Tenant: I understand. I'll make sure it stays quiet after 10 PM from now on.",
+      "options": {
+        "A": "Studying is important, but you should do it at the library.",
+        "B": "The neighbors are very sensitive to any kind of noise.",
+        "C": "I'm glad you're taking your studies seriously.",
+        "D": "That's fine, but please keep the volume down during quiet hours.",
+        "E": "I'll have to charge you a fine if it happens again."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "dialogue_set1",
+      "question": "Peer Reviewer: I think your analysis of the data is solid, but your literature review is missing some key recent studies. Author: _________ Peer Reviewer: I can send you a list of the papers I'm referring to.",
+      "options": {
+        "A": "I tried to focus on the most influential works in the field.",
+        "B": "Which specific authors or publications do you think I should include?",
+        "C": "I believe the literature review is comprehensive enough as it is.",
+        "D": "The page limit prevented me from including more sources.",
+        "E": "I'll make sure to update the bibliography before submitting the final version."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 44,
+      "section_id": "dialogue_set1",
+      "question": "Travel Agent: The direct flight to Tokyo is quite expensive at this time of year. Customer: Is there a cheaper alternative, even if it takes longer? Travel Agent: _________ Customer: That sounds reasonable. I don't mind a few hours' layover if it saves me money.",
+      "options": {
+        "A": "You could fly via Seoul, which would reduce the cost by thirty percent.",
+        "B": "The prices are likely to drop if you wait until next month.",
+        "C": "There are no other flights available for those dates.",
+        "D": "Business class is currently on sale for the same price as economy.",
+        "E": "I recommend booking the direct flight to avoid any delays."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 45,
+      "section_id": "dialogue_set1",
+      "question": "Professor: Your presentation was excellent, but you seemed a bit nervous during the Q&A session. Student: I find it difficult to think on my feet when I'm under pressure. Professor: _________ Student: I'll try to do that next time. It should help me feel more prepared.",
+      "options": {
+        "A": "You should practice more in front of a mirror.",
+        "B": "It's helpful to anticipate potential questions and prepare answers in advance.",
+        "C": "Don't worry, everyone gets nervous when they're presenting.",
+        "D": "You should have just told the audience you didn't know the answer.",
+        "E": "The Q&A session is the most important part of the presentation."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 46,
+      "section_id": "dialogue_set1",
+      "question": "Colleague A: I'm really struggling with this new software update. Everything is in a different place. Colleague B: _________ Colleague A: That would be a lifesaver. When are you free?",
+      "options": {
+        "A": "I agree, the new interface is very confusing.",
+        "B": "The IT department is offering a training session next week.",
+        "C": "I've been using it for a few days now; I can show you the basics.",
+        "D": "You should just go back to using the old version.",
+        "E": "It's much faster than the previous version once you get used to it."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 47,
+      "section_id": "dialogue_set1",
+      "question": "Interviewer: Where do you see yourself in five years? Candidate: I hope to have taken on more leadership responsibilities within the company. Interviewer: _________ Candidate: I plan to complete a project management certification and seek out mentorship opportunities.",
+      "options": {
+        "A": "What specific steps do you plan to take to achieve that goal?",
+        "B": "That's a very ambitious goal for someone with your experience.",
+        "C": "We don't have many leadership positions available at the moment.",
+        "D": "Why do you want to be a leader instead of a specialist?",
+        "E": "How will you handle the increased workload and stress?"
+      },
+      "correct": "A",
+      "passage_id": null
     }
   ]
 }

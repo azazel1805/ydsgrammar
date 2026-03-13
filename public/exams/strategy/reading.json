@@ -2,12 +2,22 @@
   "meta": {
     "title": "Master Reading Strategy",
     "subtitle": "Advanced Academic Comprehension and Inference",
-    "total_questions": 40,
+    "total_questions": 46,
     "duration_minutes": 120
   },
   "sections": [
-    { "id": "RC_set1", "label": "Social Sciences & Psychology", "from": 1, "to": 20 },
-    { "id": "RC_set2", "label": "Environment & Digital Behavior", "from": 21, "to": 40 }
+    {
+      "id": "RC_set1",
+      "label": "Social Sciences & Psychology",
+      "from": 1,
+      "to": 20
+    },
+    {
+      "id": "RC_set2",
+      "label": "Environment & Digital Behavior",
+      "from": 21,
+      "to": 40
+    }
   ],
   "passages": [
     {
@@ -233,6 +243,510 @@
         "grammar": "Synthesizing Complex Sentences",
         "trap": "Solely, Exclusively, Only gibi sınırlayıcı kelimeler içeren şıklar %90 yanlıştır."
       }
+    },
+    {
+      "id": 11,
+      "section_id": "RC_set1",
+      "question": "The term Capitalocene is suggested by some sociologists because:",
+      "options": {
+        "A": "It sounds more scientific than Anthropocene",
+        "B": "It highlights the role of specific economic systems rather than humanity as a whole",
+        "C": "It focuses on the accumulation of natural capital",
+        "D": "It refers specifically to the use of currency in the mid-20th century",
+        "E": "It is a term used by geologists to describe rock formations"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 12,
+      "section_id": "RC_set1",
+      "question": "What is the author's tone regarding the Anthropocene in the final sentence?",
+      "options": {
+        "A": "Highly dismissive and critical",
+        "B": "Purely objective and detached",
+        "C": "Acknowledging its influence despite ongoing debate",
+        "D": "Aggressively advocating for its formalization",
+        "E": "Confused by the scientific terminology"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 13,
+      "section_id": "RC_set1",
+      "question": "Which of the following is NOT mentioned as a factor of the Great Acceleration?",
+      "options": {
+        "A": "Human population growth",
+        "B": "Plastic consumption",
+        "C": "Carbon dioxide emissions",
+        "D": "The stabilization of the geological record",
+        "E": "Mid-20th century shifts"
+      },
+      "correct": "D",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 14,
+      "section_id": "RC_set1",
+      "question": "The word traction in the passage most nearly means:",
+      "options": {
+        "A": "Physical grip",
+        "B": "Scientific proof",
+        "C": "Acceptance and popularity",
+        "D": "Mechanical force",
+        "E": "Disagreement"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 15,
+      "section_id": "RC_set1",
+      "question": "The passage suggests that the Holocene:",
+      "options": {
+        "A": "Began mid-20th century",
+        "B": "Is the epoch that preceded the proposed Anthropocene",
+        "C": "Is characterized by plastic pollution",
+        "D": "Has lasted for millions of years",
+        "E": "Was a period of extreme environmental degradation"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 16,
+      "section_id": "RC_set1",
+      "question": "The Anthropocene is described as a powerful metaphor because:",
+      "options": {
+        "A": "It accurately predicts the future of Earth",
+        "B": "It illustrates the massive scale of human-induced environmental changes",
+        "C": "It is a term used only by poets",
+        "D": "It replaces the need for geological evidence",
+        "E": "It proves that industrialized nations are not at fault"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 17,
+      "section_id": "RC_set1",
+      "question": "What can be inferred about the current status of the Anthropocene?",
+      "options": {
+        "A": "It is an officially recognized geological epoch",
+        "B": "It is a subject of interdisciplinary debate",
+        "C": "It has been rejected by all geologists",
+        "D": "It is only discussed by sociologists",
+        "E": "It ended in the mid-20th century"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 18,
+      "section_id": "RC_set1",
+      "question": "The misinformation effect occurs when:",
+      "options": {
+        "A": "A person intentionally lies about an event",
+        "B": "The brain fails to store any information about an event",
+        "C": "New, misleading information alters a person's memory of an event",
+        "D": "A witness refuses to answer questions",
+        "E": "A video recording of an event is lost"
+      },
+      "correct": "C",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 19,
+      "section_id": "RC_set1",
+      "question": "In Elizabeth Loftus's study, why did participants report seeing broken glass?",
+      "options": {
+        "A": "Because there was actually broken glass at the scene",
+        "B": "Because the word smashed suggested a high-intensity collision",
+        "C": "Because they were bribed to give false testimony",
+        "D": "Because they had poor eyesight",
+        "E": "Because the accident happened at night"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 20,
+      "section_id": "RC_set1",
+      "question": "According to the passage, the reliability of eyewitness testimony is:",
+      "options": {
+        "A": "Infallible if the witness is confident",
+        "B": "Enhanced by the use of leading questions",
+        "C": "Questionable due to the reconstructive nature of memory",
+        "D": "Higher for flashbulb memories than for everyday memories",
+        "E": "Only relevant in car accident cases"
+      },
+      "correct": "C",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 21,
+      "section_id": "RC_set1",
+      "question": "Flashbulb memories are described as:",
+      "options": {
+        "A": "Memories that are immune to distortion",
+        "B": "Vivid memories of significant events that are still prone to error",
+        "C": "Memories created by actual camera flashes",
+        "D": "Short-term memories that disappear quickly",
+        "E": "Memories that only occur in forensic contexts"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 22,
+      "section_id": "RC_set1",
+      "question": "The word fallibility in the first sentence refers to:",
+      "options": {
+        "A": "The strength of memory",
+        "B": "The tendency to make mistakes or be inaccurate",
+        "C": "The speed of memory retrieval",
+        "D": "The biological structure of the brain",
+        "E": "The ability to remember everything"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 23,
+      "section_id": "RC_set1",
+      "question": "What is a suggested application of this research?",
+      "options": {
+        "A": "Replacing human witnesses with AI",
+        "B": "Improving the way witnesses are interviewed in legal settings",
+        "C": "Encouraging witnesses to use more descriptive language",
+        "D": "Ignoring eyewitness testimony altogether",
+        "E": "Using video recordings to train the human brain"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 24,
+      "section_id": "RC_set1",
+      "question": "The passage implies that each time we retrieve a memory, it is:",
+      "options": {
+        "A": "Strengthened and made more accurate",
+        "B": "Potentially altered during the reconstruction process",
+        "C": "Deleted from the long-term storage",
+        "D": "Verified against a mental video recording",
+        "E": "Protected from the misinformation effect"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 25,
+      "section_id": "RC_set1",
+      "question": "What is the main idea of the second paragraph?",
+      "options": {
+        "A": "Elizabeth Loftus is the most famous psychologist",
+        "B": "Car accidents are difficult to remember",
+        "C": "Memory is easily influenced by external suggestions",
+        "D": "Smashed is a better word than hit",
+        "E": "Legal systems should not use psychologists"
+      },
+      "correct": "C",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 26,
+      "section_id": "RC_set1",
+      "question": "The tone of the passage can best be described as:",
+      "options": {
+        "A": "Argumentative and biased",
+        "B": "Informative and analytical",
+        "C": "Skeptical and dismissive",
+        "D": "Emotional and dramatic",
+        "E": "Casual and anecdotal"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 27,
+      "section_id": "RC_set1",
+      "question": "According to the passage, what is the primary cause of urban heat islands?",
+      "options": {
+        "A": "The lack of air conditioning in older metropolitan areas",
+        "B": "The replacement of natural landscapes with heat-absorbing materials",
+        "C": "The increase in volatile organic compounds at ground level",
+        "D": "Global shifts in meteorological patterns",
+        "E": "The economic constraints facing urban planners"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 28,
+      "section_id": "RC_set1",
+      "question": "The word 'stymied' in the passage is closest in meaning to:",
+      "options": {
+        "A": "Encouraged",
+        "B": "Facilitated",
+        "C": "Hindered",
+        "D": "Ignored",
+        "E": "Simplified"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 29,
+      "section_id": "RC_set1",
+      "question": "Which of the following is NOT mentioned as a consequence of the UHI effect?",
+      "options": {
+        "A": "Higher energy usage for cooling",
+        "B": "Increased intensity of heatwaves",
+        "C": "Higher risks to public health",
+        "D": "Decreased architectural diversity in cities",
+        "E": "Worsening of air pollution levels"
+      },
+      "correct": "D",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 30,
+      "section_id": "RC_set1",
+      "question": "What does the author suggest about 'cool roofs' and 'urban forests'?",
+      "options": {
+        "A": "They are the only solutions to air pollution",
+        "B": "They are easily implemented in older cities",
+        "C": "They represent strategies to reduce the UHI effect",
+        "D": "They are more expensive than traditional roofs",
+        "E": "They have little impact on thermal dynamics"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 31,
+      "section_id": "RC_set1",
+      "question": "The passage implies that the relationship between urban design and thermal dynamics is:",
+      "options": {
+        "A": "Insignificant for modern sustainability",
+        "B": "Completely understood by current architects",
+        "C": "Independent of local weather patterns",
+        "D": "Interconnected and crucial for future planning",
+        "E": "Primarily a concern for rural development"
+      },
+      "correct": "D",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 32,
+      "section_id": "RC_set1",
+      "question": "How does urban geometry affect air quality according to the text?",
+      "options": {
+        "A": "It helps disperse pollutants more quickly",
+        "B": "It eliminates volatile organic compounds",
+        "C": "It creates microclimates that trap pollutants",
+        "D": "It reduces the need for industrial activity",
+        "E": "It prevents the formation of heat islands"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 33,
+      "section_id": "RC_set1",
+      "question": "The author's tone regarding the implementation of mitigation strategies can best be described as:",
+      "options": {
+        "A": "Optimistic",
+        "B": "Indifferent",
+        "C": "Realistic regarding challenges",
+        "D": "Hostile",
+        "E": "Purely theoretical"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 34,
+      "section_id": "RC_set1",
+      "question": "In the context of the passage, 'metropolitan' refers to:",
+      "options": {
+        "A": "Rural farmlands",
+        "B": "Natural land covers",
+        "C": "Large city areas",
+        "D": "Weather stations",
+        "E": "Economic zones"
+      },
+      "correct": "C",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 35,
+      "section_id": "RC_set1",
+      "question": "What is one reason given for the difficulty in updating older cities?",
+      "options": {
+        "A": "Lack of interest from climatologists",
+        "B": "Existing architectural structures",
+        "C": "The absence of heatwaves in those areas",
+        "D": "High levels of volatile organic compounds",
+        "E": "The desire for more pavement"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 36,
+      "section_id": "RC_set1",
+      "question": "What is the main purpose of this passage?",
+      "options": {
+        "A": "To argue against the expansion of modern cities",
+        "B": "To explain the causes and effects of urban heat islands",
+        "C": "To promote the use of air conditioning in summer",
+        "D": "To compare rural and urban energy consumption",
+        "E": "To critique the work of urban planners"
+      },
+      "correct": "B",
+      "passage_id": "passage_1"
+    },
+    {
+      "id": 37,
+      "section_id": "RC_set1",
+      "question": "What does the 'proteus effect' primarily involve?",
+      "options": {
+        "A": "Changing one's physical appearance through surgery",
+        "B": "Internalizing the traits of a digital avatar",
+        "C": "The study of ancient Greek mythology",
+        "D": "Improving social skills through real-world practice",
+        "E": "The rejection of technology in social interactions"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 38,
+      "section_id": "RC_set1",
+      "question": "According to the passage, participants with taller avatars:",
+      "options": {
+        "A": "Were more likely to disclose personal secrets",
+        "B": "Exhibited less confidence than those with shorter avatars",
+        "C": "Negotiated with more assertiveness",
+        "D": "Avoided social interactions in virtual environments",
+        "E": "Became frustrated with the digital platform"
+      },
+      "correct": "C",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 39,
+      "section_id": "RC_set1",
+      "question": "The word 'fragmentation' in the final paragraph refers to:",
+      "options": {
+        "A": "The physical breaking of computer hardware",
+        "B": "The division of the self into different identities",
+        "C": "The improvement of digital graphics",
+        "D": "The expansion of virtual social networks",
+        "E": "The process of algorithmic assignment"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 40,
+      "section_id": "RC_set1",
+      "question": "Which field is NOT mentioned as potentially benefiting from the proteus effect?",
+      "options": {
+        "A": "Education",
+        "B": "Digital therapy",
+        "C": "Social media",
+        "D": "Manufacturing",
+        "E": "Psychology"
+      },
+      "correct": "D",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 41,
+      "section_id": "RC_set1",
+      "question": "The behavior changes described in the text:",
+      "options": {
+        "A": "Only happen to people with low self-esteem",
+        "B": "Occur regardless of a person's actual personality",
+        "C": "Are permanent and cannot be reversed",
+        "D": "Are limited to physical traits like height",
+        "E": "Depend entirely on the user's real-world height"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 42,
+      "section_id": "RC_set1",
+      "question": "What is a concern raised by critics in the passage?",
+      "options": {
+        "A": "Avatars are not realistic enough",
+        "B": "Digital environments are too expensive",
+        "C": "Developers might manipulate user perception",
+        "D": "The Greek gods are being misrepresented",
+        "E": "Users will stop using social media"
+      },
+      "correct": "C",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 43,
+      "section_id": "RC_set1",
+      "question": "The term 'internalize' as used in the text means:",
+      "options": {
+        "A": "To ignore external stimuli",
+        "B": "To adopt a trait as part of one's own character",
+        "C": "To share information with others",
+        "D": "To change the color of an avatar",
+        "E": "To move from a virtual to a physical space"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 44,
+      "section_id": "RC_set1",
+      "question": "What is the significance of the name 'Proteus' in this context?",
+      "options": {
+        "A": "He was the god of technology",
+        "B": "He was known for his ability to change form",
+        "C": "He was the first user of a virtual environment",
+        "D": "He represents the aggressive nature of avatars",
+        "E": "He was a famous ancient Greek psychologist"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 45,
+      "section_id": "RC_set1",
+      "question": "Which statement best summarizes the author's view on avatar-induced behavior?",
+      "options": {
+        "A": "It is a purely negative phenomenon",
+        "B": "It is a fascinating development with both potential and risks",
+        "C": "It is a myth that has no scientific basis",
+        "D": "It is only applicable to tall individuals",
+        "E": "It should be banned by platform developers"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
+    },
+    {
+      "id": 46,
+      "section_id": "RC_set1",
+      "question": "The passage suggests that the effects of using an avatar:",
+      "options": {
+        "A": "Are strictly confined to the virtual world",
+        "B": "Might eventually influence offline behavior",
+        "C": "Are more pronounced in older users",
+        "D": "Reduce the level of self-disclosure",
+        "E": "Make users more timid in negotiations"
+      },
+      "correct": "B",
+      "passage_id": "passage_2"
     }
   ]
 }

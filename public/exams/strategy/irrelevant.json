@@ -6,8 +6,18 @@
     "duration_minutes": 40
   },
   "sections": [
-    { "id": "irr_set1", "label": "Scientific & Technical Unity", "from": 1, "to": 20 },
-    { "id": "irr_set2", "label": "Historical & Social Coherence", "from": 21, "to": 40 }
+    {
+      "id": "irr_set1",
+      "label": "Scientific & Technical Unity",
+      "from": 1,
+      "to": 20
+    },
+    {
+      "id": "irr_set2",
+      "label": "Historical & Social Coherence",
+      "from": 21,
+      "to": 40
+    }
   ],
   "questions": [
     {
@@ -15,7 +25,11 @@
       "section_id": "irr_set1",
       "question": "(I) Quantum computing represents a paradigm shift in how information is processed using subatomic particles. (II) Traditional computers use bits, while quantum computers utilize qubits to perform complex calculations. (III) These qubits can exist in multiple states simultaneously due to superposition. (IV) Many tech companies are currently investing billions in artificial intelligence and machine learning. (V) This capability allows them to solve problems that are practically impossible for classical systems.",
       "options": {
-        "A": "I", "B": "II", "C": "III", "D": "IV", "E": "V"
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
       },
       "correct": "D",
       "explanation": {
@@ -31,7 +45,11 @@
       "section_id": "irr_set1",
       "question": "(I) Urbanization has led to the rapid expansion of cities across the globe. (II) This growth often results in the loss of fertile agricultural land and natural habitats. (III) Many urban planners are now prioritizing vertical farming to combat food insecurity. (IV) Agricultural subsidies are a controversial topic in international trade negotiations. (V) Consequently, sustainable urban design has become a necessity for future environmental stability.",
       "options": {
-        "A": "I", "B": "II", "C": "III", "D": "IV", "E": "V"
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
       },
       "correct": "D",
       "explanation": {
@@ -47,7 +65,11 @@
       "section_id": "irr_set1",
       "question": "(I) Ocean acidification is a direct consequence of increased carbon dioxide levels in the atmosphere. (II) When the ocean absorbs CO2, the pH level of the water drops, making it more acidic. (III) This change in chemistry poses a significant threat to marine life, particularly organisms with calcium carbonate shells. (IV) Overfishing is another major problem that impacts the biodiversity of our oceans. (V) As these shells weaken, the entire marine food web can be disrupted.",
       "options": {
-        "A": "I", "B": "II", "C": "III", "D": "IV", "E": "V"
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
       },
       "correct": "D",
       "explanation": {
@@ -57,6 +79,524 @@
         "grammar": "Chain of Events (Chemical process sequence)",
         "trap": "IV'te 'oceans' kelimesinin geçmesi onu ilgili yapmaz; paragrafın 'mikro' konusuna odaklanın."
       }
+    },
+    {
+      "id": 5,
+      "section_id": "irr_set1",
+      "question": "(I) The Renaissance was a period of profound cultural and artistic rebirth in Europe. (II) Figures like Leonardo da Vinci and Michelangelo revolutionized the way human anatomy was depicted. (III) During this time, the Gutenberg printing press facilitated the spread of new ideas. (IV) Leonardo da Vinci also spent considerable time studying the flight patterns of birds. (V) This technological advancement played a crucial role in the transition from the Middle Ages to modernity.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "irr_set1",
+      "question": "(I) The Industrial Revolution marked a major turning point in history, influencing almost every aspect of daily life. (II) It began in Great Britain and quickly spread to other parts of the world. (III) Steam power and mechanization allowed for mass production in factories. (IV) Modern workers often suffer from high levels of stress and burnout in the corporate world. (V) These developments led to an unprecedented rise in the standard of living for some segments of the population.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "irr_set1",
+      "question": "(I) Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. (II) This phenomenon allows neurons in the brain to compensate for injury and disease. (III) It was once believed that the brain's structure was fixed after a certain age in childhood. (IV) Physical exercise has been shown to improve cardiovascular health and reduce weight. (V) However, research now proves that environmental stimulation can lead to functional changes in the adult brain.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "irr_set1",
+      "question": "(I) Biodiversity is essential for maintaining the balance of ecosystems. (II) Different species provide various services, such as pollination, nutrient cycling, and water purification. (III) The extinction of a single species can have a cascading effect on the entire environment. (IV) Zoos are popular tourist attractions that generate significant revenue for local economies. (V) Therefore, conservation efforts are vital to protect these complex natural networks.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 9,
+      "section_id": "irr_set1",
+      "question": "(I) Microplastics are tiny plastic particles less than five millimeters in diameter. (II) They originate from the breakdown of larger plastic debris or are intentionally added to products like cosmetics. (III) These particles have been found in the remotest parts of the world, including the Arctic. (IV) Recycling programs in most cities are often inefficient and costly to maintain. (V) Because they do not easily biodegrade, they accumulate in the environment and enter the food chain.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 10,
+      "section_id": "irr_set1",
+      "question": "(I) Graphene is a single layer of carbon atoms arranged in a two-dimensional lattice. (II) It is known for its extraordinary strength and high electrical conductivity. (III) Scientists are exploring its potential use in flexible electronics and water filtration. (IV) Diamonds are also made of carbon but have a different atomic arrangement. (V) These properties make it one of the most promising materials for future technological applications.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 11,
+      "section_id": "irr_set1",
+      "question": "(I) The concept of emotional intelligence involves the ability to recognize and manage one's own emotions. (II) It also encompasses the capacity to understand and influence the emotions of others. (III) High emotional intelligence is often linked to better leadership skills and workplace performance. (IV) Intelligence quotient (IQ) tests have been used for decades to measure cognitive ability. (V) Developing these skills can lead to more effective communication and stronger relationships.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 12,
+      "section_id": "irr_set1",
+      "question": "(I) Sustainable architecture aims to minimize the negative environmental impact of buildings. (II) This is achieved through the use of energy-efficient systems and sustainable materials. (III) Architects often consider the orientation of the building to maximize natural light. (IV) Real estate prices in metropolitan areas have soared in recent years. (V) By reducing waste and consumption, these designs contribute to a healthier planet.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "irr_set1",
+      "question": "(I) Remote work has become increasingly common due to advancements in digital technology. (II) It offers employees greater flexibility and eliminates the need for daily commuting. (III) Many companies have reported an increase in productivity among their remote staff. (IV) Traffic congestion in large cities remains a significant source of air pollution. (V) However, it also presents challenges, such as maintaining team cohesion and preventing isolation.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "irr_set1",
+      "question": "(I) Social media platforms have fundamentally changed how people communicate and consume news. (II) Users can now share information instantaneously with a global audience. (III) This has led to the rise of citizen journalism and increased social activism. (IV) Smartphones are becoming more expensive as they incorporate sophisticated camera technology. (V) On the other hand, it has also facilitated the rapid spread of misinformation and fake news.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "irr_set1",
+      "question": "(I) Renewable energy sources like solar and wind are becoming more cost-competitive with fossil fuels. (II) Technological improvements have increased the efficiency of solar panels and turbines. (III) Global energy demand is expected to continue rising as developing nations industrialize. (IV) Natural gas is often seen as a bridge fuel between coal and renewables. (V) Transitioning to these green sources is essential for meeting climate targets.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "irr_set1",
+      "question": "(I) The James Webb Space Telescope is the most powerful observatory ever launched into space. (II) It is designed to observe the first stars and galaxies that formed in the early universe. (III) Its infrared capabilities allow it to see through thick clouds of cosmic dust. (IV) Astronomers have used ground-based telescopes for centuries to map the night sky. (V) Data from Webb is expected to answer fundamental questions about the history of the cosmos.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "irr_set1",
+      "question": "(I) Critical thinking involves the objective analysis and evaluation of an issue to form a judgment. (II) It is a key skill required in both academic and professional environments. (III) Students are encouraged to question assumptions and evaluate the evidence provided. (IV) Creative writing allows individuals to express their emotions and imagination. (V) By developing these analytical skills, one can make more informed and logical decisions.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "irr_set1",
+      "question": "(I) The Great Depression was a severe worldwide economic downturn in the 1930s. (II) It began after the stock market crash in the United States in October 1929. (III) High unemployment rates and poverty affected millions of people globally. (IV) The Roaring Twenties were characterized by cultural dynamism and social change. (V) Government interventions like the New Deal were implemented to stimulate recovery.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "irr_set1",
+      "question": "(I) Globalization has facilitated the international exchange of goods, services, and culture. (II) It has allowed many developing countries to enter the global market. (III) Multinational corporations benefit from lower production costs in certain regions. (IV) Learning a second language provides cognitive benefits and improves memory. (V) However, critics argue it can also lead to the erosion of local traditions and identities.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "irr_set1",
+      "question": "(I) The human microbiome consists of trillions of microorganisms living in and on our bodies. (II) These microbes play a vital role in digestion and the immune system. (III) Recent research suggests a link between gut health and mental well-being. (IV) Antibiotics are commonly prescribed to treat bacterial infections. (V) Maintaining a diverse microbiome is therefore essential for overall human health.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "irr_set1",
+      "question": "(I) Artificial Intelligence (AI) is transforming the healthcare industry by improving diagnostic accuracy. (II) Machine learning algorithms can analyze medical images to detect early signs of disease. (III) This technology helps doctors personalize treatment plans for individual patients. (IV) Medical school tuition has been increasing steadily over the last decade. (V) As a result, AI-driven tools are becoming indispensable in modern clinical practice.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "irr_set1",
+      "question": "(I) The Industrial Revolution marked a major turning point in history, influencing almost every aspect of daily life. (II) In particular, average income and population began to exhibit unprecedented sustained growth. (III) During this period, the transition from manual labor to machine-based manufacturing began in Great Britain. (IV) Many people believe that the Victorian era was the peak of British cultural influence. (V) Eventually, these technological advancements spread across Europe and North America, transforming global economies.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "irr_set1",
+      "question": "(I) Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms. (II) It is the foundation of all quantum physics including quantum chemistry and quantum field theory. (III) Classical physics, which existed before quantum mechanics, describes many aspects of nature at an ordinary scale. (IV) Albert Einstein's general relativity explains the law of gravitation and its relation to other forces of nature. (V) One of the most famous principles in this field is the Heisenberg Uncertainty Principle.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "irr_set1",
+      "question": "(I) Urbanization is the process through which cities grow, and higher percentages of the population come to live in the city. (II) This process is often driven by the search for better economic opportunities and modern infrastructure. (III) However, rapid urbanization can lead to significant environmental challenges, such as increased pollution. (IV) Rural areas often maintain traditional customs that are lost in modern city life. (V) Therefore, urban planning is essential to manage the resources and housing needed for growing populations.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "irr_set1",
+      "question": "(I) Cognitive psychology focuses on how people perceive, think, remember, and learn. (II) Researchers in this field study various mental processes, including attention and problem-solving. (III) The study of the brain's physical structure is known as neuroanatomy. (IV) By understanding these processes, psychologists can help individuals improve their memory or decision-making. (V) This branch of psychology has also contributed significantly to the development of artificial intelligence.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "irr_set1",
+      "question": "(I) Renewable energy sources, such as solar and wind power, are becoming increasingly vital in the fight against climate change. (II) Unlike fossil fuels, these sources do not emit large amounts of greenhouse gases. (III) The cost of solar panels has dropped significantly over the last decade, making them more accessible. (IV) Nuclear energy provides a constant power supply but remains controversial due to waste management issues. (V) Governments worldwide are now providing subsidies to encourage the transition to these cleaner energy alternatives.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "irr_set1",
+      "question": "(I) E-commerce has revolutionized the way consumers shop by providing convenience and a wider variety of choices. (II) Many retail stores have had to close down because they cannot compete with online prices. (III) Secure payment gateways are essential for protecting users' financial information during transactions. (IV) Most people still enjoy going to physical malls for social interaction and entertainment. (V) Furthermore, data analytics allow e-commerce platforms to personalize recommendations for each user.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "irr_set1",
+      "question": "(I) Sustainable architecture aims to minimize the negative environmental impact of buildings. (II) This is achieved through efficiency and moderation in the use of materials and energy. (III) Architects often use recycled materials and design buildings to maximize natural light. (IV) Modern skyscrapers are often criticized for their lack of aesthetic connection to the surrounding neighborhood. (V) By incorporating green roofs and solar panels, these structures reduce their carbon footprint.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "irr_set1",
+      "question": "(I) The Renaissance was a period of intense artistic and intellectual activity that began in Italy. (II) It marked the transition from the Middle Ages to modernity. (III) Leonardo da Vinci and Michelangelo are perhaps the most famous figures of this era. (IV) Italy is also known for its diverse culinary traditions and world-class wine. (V) The movement eventually spread throughout Europe, influencing science, philosophy, and literature.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "irr_set1",
+      "question": "(I) Artificial intelligence is being integrated into healthcare to improve diagnostic accuracy. (II) Algorithms can analyze medical images more quickly and often more precisely than humans. (III) Many medical students are now required to take ethics courses as part of their curriculum. (IV) This technology helps in identifying patterns in data that might be missed by clinical practitioners. (V) Consequently, AI-driven tools are becoming indispensable in modern hospitals.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "irr_set1",
+      "question": "(I) Biodiversity is crucial for maintaining the health and stability of ecosystems. (II) Each species plays a specific role, whether as a predator, prey, or decomposer. (III) When a species becomes extinct, it can cause a ripple effect that disrupts the entire food chain. (IV) National parks are popular tourist destinations that generate significant revenue. (V) Therefore, conservation efforts are necessary to protect endangered species and their habitats.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irr_set1",
+      "question": "(I) Language acquisition is a complex process that occurs naturally in children. (II) According to Noam Chomsky, humans are born with an innate capacity for language. (III) Bilingual children often show higher levels of cognitive flexibility compared to monolinguals. (IV) Learning a second language in adulthood usually requires formal instruction and significant effort. (V) This innate ability, often called the Language Acquisition Device, helps children master grammar quickly.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irr_set1",
+      "question": "(I) The Great Depression was a severe worldwide economic downturn that took place during the 1930s. (II) It began after the stock market crash on Wall Street in October 1929. (III) Many people lost their savings as banks failed across the United States. (IV) The 1920s, known as the Roaring Twenties, was a decade of economic prosperity and cultural change. (V) The depression led to mass unemployment and a sharp decline in international trade.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irr_set1",
+      "question": "(I) Microplastics are tiny plastic particles that have become a pervasive environmental pollutant. (II) They are often found in the oceans, where they are ingested by marine life. (III) Plastic bags were first introduced in the 1960s as a convenient alternative to paper. (IV) These particles can eventually enter the human food chain through seafood consumption. (V) Scientists are now researching the long-term health effects of microplastic exposure on humans.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "irr_set1",
+      "question": "(I) The human microbiome consists of trillions of microbes living in and on our bodies. (II) These microorganisms play a vital role in digestion and immune system function. (III) Antibiotics are drugs used to treat bacterial infections by killing the bacteria. (IV) An imbalance in the microbiome has been linked to various health issues, including obesity and allergies. (V) Maintaining a diverse diet rich in fiber can help promote a healthy microbial environment.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "irr_set1",
+      "question": "(I) Remote work has become increasingly common due to advancements in digital communication technology. (II) It allows employees to have more flexible schedules and eliminates daily commutes. (III) Many companies have reported an increase in productivity among their remote staff. (IV) Office spaces are usually located in central business districts to be accessible. (V) However, remote work can also lead to feelings of isolation and a lack of boundary between work and home.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "irr_set1",
+      "question": "(I) Space exploration has provided humanity with valuable knowledge about the solar system. (II) Missions to Mars aim to determine if the planet once supported life. (III) Satellites orbiting Earth are used for weather forecasting and global positioning systems. (IV) The cost of space missions is often criticized as being too high for taxpayers. (V) Astronomers have also discovered thousands of exoplanets orbiting distant stars.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "irr_set1",
+      "question": "(I) Classical music is known for its complex structures and use of orchestral instruments. (II) Composers like Bach and Mozart laid the groundwork for Western musical traditions. (III) High-quality headphones are necessary to appreciate the nuances of a symphony. (IV) This genre often emphasizes emotional depth and technical mastery. (V) Today, classical music continues to be performed in concert halls around the world.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "irr_set1",
+      "question": "(I) Philosophy encourages critical thinking and the questioning of fundamental beliefs. (II) It covers a wide range of topics, including ethics, logic, and metaphysics. (III) Socrates, a Greek philosopher, is famous for his method of inquiry through dialogue. (IV) Most university students prefer to major in subjects that offer direct career paths. (V) By studying philosophy, individuals can develop better analytical and argumentative skills.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "irr_set1",
+      "question": "(I) Globalization has led to increased cultural exchange and economic interdependence. (II) It allows for the rapid spread of ideas, technology, and products across borders. (III) Many people travel abroad annually to experience different cultures and cuisines. (IV) However, it can also lead to the loss of local traditions and cultural homogenization. (V) International organizations like the WTO play a role in regulating global trade.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "irr_set1",
+      "question": "(I) The greenhouse effect is a natural process that warms the Earth's surface. (II) When the sun's energy reaches the atmosphere, some of it is reflected and some is absorbed. (III) Greenhouse gases, like CO2 and methane, trap heat and keep the planet habitable. (IV) Venus is the hottest planet in our solar system due to its thick atmosphere. (V) However, human activities are increasing these gas levels, leading to global warming.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
     }
   ]
 }

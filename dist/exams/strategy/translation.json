@@ -6,10 +6,30 @@
     "duration_minutes": 90
   },
   "sections": [
-    { "id": "tr_en", "label": "TR to EN Translation", "from": 1, "to": 10 },
-    { "id": "en_tr", "label": "EN to TR Translation", "from": 11, "to": 20 },
-    { "id": "en_tr_2", "label": "EN to TR Translation Pt 2", "from": 21, "to": 30 },
-    { "id": "tr_en_2", "label": "TR to EN Translation Pt 2", "from": 31, "to": 40 }
+    {
+      "id": "tr_en",
+      "label": "TR to EN Translation",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "id": "en_tr",
+      "label": "EN to TR Translation",
+      "from": 11,
+      "to": 20
+    },
+    {
+      "id": "en_tr_2",
+      "label": "EN to TR Translation Pt 2",
+      "from": 21,
+      "to": 30
+    },
+    {
+      "id": "tr_en_2",
+      "label": "TR to EN Translation Pt 2",
+      "from": 31,
+      "to": 40
+    }
   ],
   "questions": [
     {
@@ -91,6 +111,510 @@
         "grammar": "Main Verb Extraction",
         "trap": "Raise kelimesi hem 'umutları artırmak' hem de 'soru/konu ortaya atmak' anlamında gelir. Bağlama göre doğru fiili bulun."
       }
+    },
+    {
+      "id": 12,
+      "section_id": "tr_en",
+      "question": "Bilim insanları, iklim değişikliğinin biyolojik çeşitlilik üzerindeki etkilerini hâlâ araştırmaktadır.",
+      "options": {
+        "A": "Scientists are still investigating the effects of climate change on biodiversity.",
+        "B": "The effects of climate change on biodiversity are being investigated by scientists.",
+        "C": "Climate change and its effects on biodiversity are still under investigation by scientists.",
+        "D": "Scientists have been investigating how climate change affects biodiversity for a long time.",
+        "E": "Investigation of climate change effects on biodiversity is still being done by scientists."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "tr_en",
+      "question": "Hükümet, enflasyonla mücadele etmek için bir dizi sıkı ekonomik önlem paketini yürürlüğe koydu.",
+      "options": {
+        "A": "The government has enacted a series of strict economic measures to combat inflation.",
+        "B": "A series of economic measures were put into practice by the government to fight inflation.",
+        "C": "In order to combat inflation, the government is putting into effect strict economic measures.",
+        "D": "To fight against inflation, the government should enact a series of strict economic measures.",
+        "E": "The government's new package of strict economic measures aims to reduce inflation."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "tr_en",
+      "question": "Şehirleşme oranındaki artış, altyapı yetersizliği ve çevre kirliliği gibi sorunları beraberinde getirmektedir.",
+      "options": {
+        "A": "The increase in the urbanization rate brings about problems such as inadequate infrastructure and environmental pollution.",
+        "B": "Increasing urbanization rates are responsible for infrastructure inadequacy and environmental pollution.",
+        "C": "Infrastructure problems and environmental pollution are results of the increasing urbanization rate.",
+        "D": "Problems like inadequate infrastructure and environmental pollution result from the urbanization rate.",
+        "E": "As the urbanization rate increases, infrastructure becomes inadequate and environment gets polluted."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "tr_en",
+      "question": "Pek çok psikolog, çocukluk dönemi deneyimlerinin yetişkinlikteki kişilik yapısını şekillendirdiğini savunmaktadır.",
+      "options": {
+        "A": "Many psychologists argue that childhood experiences shape the personality structure in adulthood.",
+        "B": "Childhood experiences are argued by many psychologists to shape adult personality.",
+        "C": "The personality structure in adulthood is shaped by childhood experiences according to psychologists.",
+        "D": "Psychologists claim that personality structure in adulthood depends on childhood experiences.",
+        "E": "Experiences during childhood shape the personality of an adult, which many psychologists agree on."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "tr_en",
+      "question": "Yapay zeka sistemleri, veri analizinde insanlardan çok daha hızlı ve hatasız sonuçlar verebilmektedir.",
+      "options": {
+        "A": "Artificial intelligence systems can provide results in data analysis much faster and more accurately than humans.",
+        "B": "Data analysis results can be provided by artificial intelligence systems faster and more accurately.",
+        "C": "Artificial intelligence is more capable than humans in providing fast and accurate data analysis results.",
+        "D": "Compared to humans, artificial intelligence systems analyze data faster and without any errors.",
+        "E": "The speed and accuracy of artificial intelligence systems in data analysis surpass those of humans."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "tr_en",
+      "question": "Eski uygarlıkların kalıntıları, o dönemin sosyal ve kültürel yapısı hakkında değerli bilgiler sunar.",
+      "options": {
+        "A": "The ruins of ancient civilizations provide valuable information about the social and cultural structure of that period.",
+        "B": "Valuable information regarding social and cultural structure is provided by the ruins of ancient civilizations.",
+        "C": "Ruins belonging to ancient civilizations show the social and cultural structures of those times.",
+        "D": "The social and cultural structure of the past is revealed through the ruins of ancient civilizations.",
+        "E": "Ancient civilizations' ruins are valuable because they provide information about social structures."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "tr_en",
+      "question": "Pandemi süreci, dijital dönüşümün iş dünyası için ne kadar kaçınılmaz olduğunu bir kez daha kanıtladı.",
+      "options": {
+        "A": "The pandemic process has once again proven how inevitable digital transformation is for the business world.",
+        "B": "How inevitable digital transformation is for the business world was proven during the pandemic process.",
+        "C": "The business world realized the inevitability of digital transformation once again during the pandemic.",
+        "D": "Digital transformation is inevitable for the business world, as the pandemic process has proven.",
+        "E": "The pandemic has proven once more that digital transformation in the business world is unavoidable."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "en_tr",
+      "question": "Despite the high costs involved, the space agency decided to proceed with the mission to Mars.",
+      "options": {
+        "A": "Yüksek maliyetlere rağmen, uzay ajansı Mars görevine devam etme kararı aldı.",
+        "B": "Uzay ajansı, maliyetler çok yüksek olmasına rağmen Mars'a gitmekten vazgeçmedi.",
+        "C": "Maliyetlerin yüksekliği, uzay ajansının Mars görevini sürdürme kararını etkilemedi.",
+        "D": "Mars görevinin maliyeti yüksek olsa da uzay ajansı bu görevi yerine getirecektir.",
+        "E": "Uzay ajansı, Mars görevini gerçekleştirmek için yüksek maliyetleri göze aldı."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "en_tr",
+      "question": "Globalization has led to an unprecedented increase in the exchange of ideas and cultural values.",
+      "options": {
+        "A": "Küreselleşme, fikir ve kültürel değerlerin değişiminde eşi benzeri görülmemiş bir artışa yol açmıştır.",
+        "B": "Fikirlerin ve kültürel değerlerin değişimi, küreselleşme sayesinde daha önce görülmemiş bir seviyeye ulaştı.",
+        "C": "Küreselleşme ile birlikte, kültürel değerler ve fikir alışverişi benzersiz bir hızla artmıştır.",
+        "D": "Daha önce hiç görülmemiş bir fikir ve kültür değişimi, küreselleşmenin temel bir sonucudur.",
+        "E": "Küreselleşmenin etkisiyle kültürel değerlerin ve fikirlerin paylaşımı hızla artış göstermiştir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "en_tr",
+      "question": "Sustainable agriculture is essential for meeting the food demands of a growing global population.",
+      "options": {
+        "A": "Sürdürülebilir tarım, artan dünya nüfusunun gıda taleplerini karşılamak için esastır.",
+        "B": "Artan dünya nüfusu için gıda üretimi ancak sürdürülebilir tarım yoluyla karşılanabilir.",
+        "C": "Dünya nüfusu arttıkça gıda ihtiyacını karşılamak için sürdürülebilir tarım zorunlu hale gelmektedir.",
+        "D": "Sürdürülebilir tarım uygulamaları, küresel nüfusun gıda ihtiyacını karşılamada önemli bir rol oynar.",
+        "E": "Gıda taleplerinin karşılanması, artan dünya nüfusu için sürdürülebilir tarıma bağlıdır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "en_tr",
+      "question": "Social media platforms have significantly altered the way individuals communicate and share information.",
+      "options": {
+        "A": "Sosyal medya platformları, bireylerin iletişim kurma ve bilgi paylaşma biçimini önemli ölçüde değiştirmiştir.",
+        "B": "Bireylerin iletişim ve bilgi paylaşımı yöntemleri, sosyal medya platformları nedeniyle çok değişti.",
+        "C": "Sosyal medyanın gelişimi, bireysel iletişim ve bilgi paylaşım tarzlarını büyük oranda etkilemiştir.",
+        "D": "İletişim ve bilgi paylaşımı, sosyal medya platformlarının etkisiyle yeni bir boyut kazanmıştır.",
+        "E": "Sosyal medya platformları sayesinde bireyler arasındaki bilgi paylaşımı ve iletişim hızlanmıştır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "en_tr",
+      "question": "Economic growth alone is not sufficient to ensure the overall well-being of a society.",
+      "options": {
+        "A": "Bir toplumun genel refahını sağlamak için ekonomik büyüme tek başına yeterli değildir.",
+        "B": "Ekonomik büyüme, toplumun refahını garanti altına alan tek faktör değildir.",
+        "C": "Sadece ekonomik büyüme ile bir toplumun genel refah seviyesini yükseltmek mümkün değildir.",
+        "D": "Toplumun refahı için ekonomik büyüme gerekse de bu tek başına yeterli olmayacaktır.",
+        "E": "Ekonomik büyüme sağlansa bile toplumun genel refahı tam olarak garanti edilemez."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "en_tr",
+      "question": "Psychological resilience helps individuals cope with stress and recover from traumatic experiences.",
+      "options": {
+        "A": "Psikolojik dayanıklılık, bireylerin stresle başa çıkmasına ve travmatik deneyimlerden sonra toparlanmasına yardımcı olur.",
+        "B": "Bireylerin stresle mücadele etmesi ve travmaları atlatması psikolojik dayanıklılık sayesinde olur.",
+        "C": "Psikolojik dayanıklılık, travmatik olaylar ve stres karşısında bireylere destek sağlayan bir unsurdur.",
+        "D": "Stresle başa çıkabilen bireyler, psikolojik dayanıklılıkları sayesinde travmaları daha kolay atlatırlar.",
+        "E": "Travmatik deneyimlerin etkisinden kurtulmak ve stresle savaşmak için psikolojik dayanıklılık şarttır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "en_tr",
+      "question": "The effectiveness of the laws depends on their consistent enforcement by the judicial authorities.",
+      "options": {
+        "A": "Yasaların etkinliği, yargı makamları tarafından tutarlı bir şekilde uygulanmalarına bağlıdır.",
+        "B": "Yargı makamları yasaları tutarlı uyguladığında, bu yasaların etkinliği artmaktadır.",
+        "C": "Yasaların ne kadar etkili olduğu, ancak yargı makamlarının uygulamalarıyla ölçülebilir.",
+        "D": "Yasaların yargı makamlarınca tutarlı şekilde uygulanması, yasaların geçerliliği için gereklidir.",
+        "E": "Yasalar, eğer yargı makamları tarafından kararlı bir şekilde uygulanırsa etkili olur."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "en_tr",
+      "question": "Urban green spaces play a crucial role in improving the air quality and public health of cities.",
+      "options": {
+        "A": "Kentsel yeşil alanlar, şehirlerin hava kalitesini ve halk sağlığını iyileştirmede hayati bir rol oynar.",
+        "B": "Şehirlerdeki hava kalitesi ve toplum sağlığı, kentsel yeşil alanların varlığına bağlıdır.",
+        "C": "Hava kalitesini iyileştirmek ve halk sağlığını korumak için şehirlerde yeşil alanlar artırılmalıdır.",
+        "D": "Kentsel yeşil alanların temel görevi, şehir havasını temizlemek ve sağlığı geliştirmektir.",
+        "E": "Şehirlerin hava kalitesinin ve halk sağlığının iyileşmesi, yeşil alanların korunmasıyla mümkündür."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "en_tr",
+      "question": "Language acquisition is a complex process influenced by both genetic factors and social environment.",
+      "options": {
+        "A": "Dil edinimi, hem genetik faktörlerden hem de sosyal çevreden etkilenen karmaşık bir süreçtir.",
+        "B": "Hem sosyal çevre hem de genetik etkenler dil ediniminin karmaşık sürecini belirler.",
+        "C": "Dil edinimi süreci karmaşıktır çünkü hem genetik hem de sosyal çevresel faktörler devrededir.",
+        "D": "Genetik faktörlerin yanı sıra sosyal çevre de dil edinimindeki karmaşık süreçte etkilidir.",
+        "E": "Dil öğrenmek, genetik ve çevresel faktörlerin etkileşimiyle gerçekleşen karmaşık bir iştir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "en_tr",
+      "question": "The implementation of renewable energy sources is not only an environmental necessity but also a strategic economic move for developing nations.",
+      "options": {
+        "A": "Yenilenebilir enerji kaynaklarının uygulanması gelişmekte olan uluslar için sadece çevresel bir zorunluluk değil, aynı zamanda stratejik bir ekonomik hamledir.",
+        "B": "Gelişmekte olan uluslar için yenilenebilir enerji kaynaklarını uygulamak hem çevresel bir gereklilik hem de ekonomik bir stratejidir.",
+        "C": "Çevresel zorunlulukların yanı sıra, yenilenebilir enerji kaynaklarının kullanımı gelişmekte olan ülkeler için ekonomik bir strateji haline gelmiştir.",
+        "D": "Yenilenebilir enerji kaynakları sadece çevresel nedenlerle değil, stratejik ekonomik hamleler yapmak için de geliştirilmelidir.",
+        "E": "Gelişmekte olan ülkeler için yenilenebilir enerji kaynaklarının uygulanması ekonomik bir hamleden ziyade çevresel bir zorunluluktur."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "en_tr",
+      "question": "Despite the advancements in artificial intelligence, human oversight remains crucial to ensure ethical standards are maintained in decision-making processes.",
+      "options": {
+        "A": "Yapay zekadaki ilerlemeler, karar verme süreçlerinde etik standartların korunması için insan gözetimini kaçınılmaz kılmaktadır.",
+        "B": "Yapay zekadaki ilerlemelere rağmen, karar verme süreçlerinde etik standartların korunmasını sağlamak için insan gözetimi hayati önemini korumaktadır.",
+        "C": "Karar verme süreçlerinde etik standartların sürdürülmesi için insan gözetimi yapay zekadaki gelişmelere rağmen devam etmelidir.",
+        "D": "Yapay zeka ilerlese bile, etik standartların karar verme süreçlerinde yer alması için insan denetimi gereklidir.",
+        "E": "İnsan gözetimi sayesinde yapay zeka ilerlemekte ve karar verme süreçlerinde etik standartlar sağlanmaktadır."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "en_tr",
+      "question": "Sociologists argue that urban migration is often driven by the pursuit of better educational opportunities and specialized healthcare services.",
+      "options": {
+        "A": "Sosyologlar, kentsel göçün genellikle daha iyi eğitim olanakları ve uzmanlaşmış sağlık hizmetleri arayışıyla tetiklendiğini savunmaktadır.",
+        "B": "Kentsel göçün temelinde eğitim olanakları ve sağlık hizmetlerinin yetersizliği olduğunu savunanlar sosyologlardır.",
+        "C": "Sosyologlara göre, kentsel göçün asıl nedeni insanların eğitim ve sağlık hizmetlerine olan aşırı ihtiyacıdır.",
+        "D": "Eğitim ve sağlık hizmetleri arayışı, sosyologların iddia ettiği gibi kentsel göçün en önemli sebepleridir.",
+        "E": "Sosyologlar, kentsel göçün daha iyi eğitim ve sağlık hizmetleri sayesinde arttığını ileri sürmektedirler."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "en_tr",
+      "question": "Cognitive behavioral therapy has proven to be highly effective in treating a wide range of psychological disorders, including anxiety and depression.",
+      "options": {
+        "A": "Anksiyete ve depresyon dahil birçok psikolojik bozukluğun tedavisinde bilişsel davranışçı terapi oldukça etkili olmuştur.",
+        "B": "Bilişsel davranışçı terapinin, anksiyete ve depresyon gibi geniş bir yelpazedeki psikolojik bozuklukların tedavisinde oldukça etkili olduğu kanıtlanmıştır.",
+        "C": "Psikolojik bozuklukların tedavisinde, özellikle anksiyete ve depresyonda, bilişsel davranışçı terapi çok etkilidir.",
+        "D": "Bilişsel davranışçı terapi sayesinde anksiyete ve depresyon gibi çeşitli psikolojik sorunlar tedavi edilebilmektedir.",
+        "E": "Anksiyete ve depresyonu tedavi etmek için kullanılan en etkili yöntemlerden biri bilişsel davranışçı terapidir."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "en_tr",
+      "question": "The discovery of liquid water on Mars would significantly increase the possibility of finding microbial life beyond Earth.",
+      "options": {
+        "A": "Mars'ta sıvı suyun keşfedilmesi, Dünya ötesinde mikrobiyal yaşam bulma olasılığını önemli ölçüde artıracaktır.",
+        "B": "Dünya dışındaki mikrobiyal yaşamın keşfi, Mars'ta sıvı suyun bulunmasına bağlıdır.",
+        "C": "Sıvı su Mars'ta keşfedilirse, mikrobiyal yaşam bulma ihtimali dünya genelinde artacaktır.",
+        "D": "Mars'ta sıvı su bulunması, dünya dışı yaşam formlarının araştırılmasını hızlandıracaktır.",
+        "E": "Mikrobiyal yaşamın Dünya dışında bulunma olasılığı, Mars'taki suyun keşfiyle kanıtlanmıştır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "en_tr",
+      "question": "Economic globalization facilitates the exchange of goods and services, yet it also exacerbates the wealth gap between developed and developing nations.",
+      "options": {
+        "A": "Ekonomik küreselleşme mal ve hizmet değişimini kolaylaştırsa da, gelişmiş ve gelişmekte olan uluslar arasındaki refah farkını da derinleştirmektedir.",
+        "B": "Mal ve hizmetlerin değişimi ekonomik küreselleşme ile kolaylaşmış, ancak bu durum zengin ve fakir ülkeler arasındaki uçurumu artırmıştır.",
+        "C": "Ekonomik küreselleşme, gelişmiş ülkeler ile gelişmekte olanlar arasındaki gelir adaletsizliğini artırmasına rağmen ticareti kolaylaştırır.",
+        "D": "Zengin ve fakir ülkeler arasındaki farkın artması, ekonomik küreselleşmenin mal ve hizmet değişimini kolaylaştırmasının bir sonucudur.",
+        "E": "Ekonomik küreselleşme mal ve hizmet değişimini kolaylaştırırken, gelişmiş ülkelerdeki refah seviyesini de artırmaktadır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "en_tr",
+      "question": "Modern architecture often prioritizes sustainability and energy efficiency over purely aesthetic considerations.",
+      "options": {
+        "A": "Modern mimari, sürdürülebilirlik ve enerji verimliliğini estetik kaygılardan daha çok önemsemektedir.",
+        "B": "Sürdürülebilirlik ve enerji verimliliği, modern mimaride estetik kaygıların önüne geçmiştir.",
+        "C": "Modern mimari, saf estetik mülahazalar yerine genellikle sürdürülebilirliği ve enerji verimliliğini öncelemektedir.",
+        "D": "Estetik kaygılardan ziyade, modern mimaride sürdürülebilirlik ve enerji verimliliği ön plandadır.",
+        "E": "Modern mimaride estetikten ziyade enerji tasarrufu ve sürdürülebilir tasarımlar tercih edilmektedir."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "en_tr",
+      "question": "The rise of digital media has transformed the way information is consumed, leading to a decline in traditional print journalism.",
+      "options": {
+        "A": "Dijital medyanın yükselişi bilginin tüketilme şeklini dönüştürerek geleneksel yazılı gazetecilikte bir düşüşe yol açmıştır.",
+        "B": "Geleneksel gazeteciliğin gerilemesi, dijital medyanın bilgi tüketimini değiştirmesinden kaynaklanmaktadır.",
+        "C": "Bilgi tüketiminin dönüşmesi ve geleneksel gazeteciliğin azalması dijital medyanın sonucudur.",
+        "D": "Dijital medyanın yükselmesiyle birlikte bilgi tüketimi değişmiş ve yazılı basın tamamen sona ermiştir.",
+        "E": "Geleneksel yazılı basın, dijital medyanın bilgi tüketim tarzını değiştirmesi nedeniyle önemini yitirmiştir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "en_tr",
+      "question": "Scholars believe that ancient civilizations possessed a profound understanding of astronomy, as evidenced by their complex calendar systems.",
+      "options": {
+        "A": "Bilim insanları, antik uygarlıkların takvim sistemlerine bakarak onların astronomi bildiklerini düşünmektedir.",
+        "B": "Karmaşık takvim sistemlerinin kanıtladığı üzere, akademisyenler antik uygarlıkların derin bir astronomi anlayışına sahip olduğuna inanmaktadırlar.",
+        "C": "Akademisyenlere göre antik uygarlıklar, karmaşık takvim sistemleri geliştirecek kadar astronomi biliyorlardı.",
+        "D": "Antik uygarlıkların astronomi bilgisi, günümüzdeki karmaşık takvim sistemlerinin temelini oluşturmuştur.",
+        "E": "Bilim insanları, antik toplumların takvim sistemlerinin onların astronomide ne kadar derinleştiğini gösterdiğine inanır."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "en_tr",
+      "question": "Although the experiment yielded unexpected results, the researchers decided to publish their findings to encourage further academic debate.",
+      "options": {
+        "A": "Deney beklenmedik sonuçlar vermesine rağmen, araştırmacılar daha fazla akademik tartışmayı teşvik etmek için bulgularını yayınlamaya karar verdiler.",
+        "B": "Araştırmacılar, deneyden bekledikleri sonuçları alamasalar da akademik tartışma yaratmak amacıyla makalelerini bastılar.",
+        "C": "Beklenmedik sonuçlar elde eden araştırmacılar, akademik tartışmaları canlandırmak için bu bulguları paylaşmak istediler.",
+        "D": "Deneyin sonuçları şaşırtıcı olsa da, araştırmacılar akademik dünyada tartışma başlatmak için bu sonuçları yayınladılar.",
+        "E": "Daha fazla akademik tartışma yapılabilmesi için, deneyin beklenmedik sonuçları araştırmacılar tarafından makale haline getirildi."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "tr_en",
+      "question": "Birçok uzman, küresel ısınmanın etkilerini hafifletmek için fosil yakıt tüketiminin acilen azaltılması gerektiğini savunmaktadır.",
+      "options": {
+        "A": "Many experts argue that fossil fuel consumption must be urgently reduced to mitigate the effects of global warming.",
+        "B": "Many experts think that global warming's effects will be reduced if fossil fuel consumption is stopped urgently.",
+        "C": "Fossil fuel consumption is reduced by many experts who want to mitigate the effects of global warming.",
+        "D": "According to experts, reducing fossil fuel consumption is the only way to stop the effects of global warming.",
+        "E": "Experts suggest that the urgent reduction of fossil fuels is necessary for global warming."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "tr_en",
+      "question": "Eğitim sistemindeki reformlar, öğrencilerin sadece ezber yapmasını değil, eleştirel düşünme becerilerini geliştirmesini de hedeflemelidir.",
+      "options": {
+        "A": "Reforms in the education system should aim at students not only memorizing but also developing critical thinking skills.",
+        "B": "Education system reforms must target students who do not memorize but think critically.",
+        "C": "The goal of education reforms is to make students develop critical thinking instead of memorization.",
+        "D": "Reforms in the education system should focus on developing critical thinking skills rather than just rote learning.",
+        "E": "Students should develop critical thinking skills and not memorize thanks to the reforms in the education system."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "tr_en",
+      "question": "Teknolojinin hızlı gelişimi, iş gücü piyasasında yeni becerilere olan talebi artırmış ve bazı geleneksel mesleklerin yok olmasına neden olmuştur.",
+      "options": {
+        "A": "The rapid development of technology has increased the demand for new skills in the labor market and caused some traditional professions to disappear.",
+        "B": "Because technology develops rapidly, the demand for new skills increases while traditional jobs are lost.",
+        "C": "The demand for new skills in the labor market and the disappearance of traditional jobs are results of technology.",
+        "D": "Rapidly developing technology increases skill demand in the labor market, so traditional professions disappear.",
+        "E": "Some traditional professions have disappeared because technology has developed and required new skills."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "tr_en",
+      "question": "Yeterli kanıt bulunamadığı için, bilim heyeti yeni ilacın geniş çaplı kullanımını onaylamayı reddetti.",
+      "options": {
+        "A": "The scientific committee refused to approve the wide-scale use of the new drug because sufficient evidence could not be found.",
+        "B": "Since there was no evidence, the wide-scale use of the drug was not approved by the scientific committee.",
+        "C": "The scientific committee did not approve the new drug because they found the evidence insufficient for use.",
+        "D": "Because of the lack of evidence, the scientific committee rejected the new drug's wide-scale production.",
+        "E": "The committee of scientists refused the new drug due to the fact that evidence was not enough for them."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "tr_en",
+      "question": "Sanayileşme süreci, toplumların ekonomik yapısını kökten değiştirmiş ve kırsal alanlardan şehirlere büyük bir göç dalgasına yol açmıştır.",
+      "options": {
+        "A": "The process of industrialization has fundamentally changed the economic structure of societies and led to a massive wave of migration from rural areas to cities.",
+        "B": "Industrialization changed the economy and caused people to migrate from villages to cities in waves.",
+        "C": "Because the economic structure changed during industrialization, a massive migration occurred from rural areas to cities.",
+        "D": "Societies' economic structures were changed by industrialization, leading to migration from rural parts to urban areas.",
+        "E": "The massive wave of migration from rural areas to cities was the main cause of the industrialization process."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "tr_en",
+      "question": "Psikologlar, çocukluk dönemindeki deneyimlerin bireyin yetişkinlikteki kişilik gelişimi üzerinde kalıcı bir etkisi olduğunu belirtmektedirler.",
+      "options": {
+        "A": "Psychologists state that experiences during childhood have a lasting effect on an individual's personality development in adulthood.",
+        "B": "Childhood experiences, according to psychologists, affect how an adult's personality develops permanently.",
+        "C": "Psychologists claim that personality development in adulthood is based on lasting childhood experiences.",
+        "D": "Experiences in childhood are stated by psychologists to be the main reason for adult personality development.",
+        "E": "The personality of an adult is permanently developed by childhood experiences as psychologists suggest."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 44,
+      "section_id": "tr_en",
+      "question": "Birleşmiş Milletler tarafından yayınlanan son rapor, dünya genelinde temiz suya erişimi olmayan insan sayısının hala endişe verici düzeyde olduğunu gösteriyor.",
+      "options": {
+        "A": "The latest report published by the United Nations shows that the number of people without access to clean water worldwide is still at an alarming level.",
+        "B": "The United Nations published a report showing that people who cannot reach clean water are at an alarming level.",
+        "C": "According to the UN report, the number of people lacking clean water globally is still very worrying.",
+        "D": "The number of people without clean water globally is alarming, as shown in the report by the United Nations.",
+        "E": "A recent report from the UN indicates that clean water access is still an alarming issue for many people."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 45,
+      "section_id": "tr_en",
+      "question": "Dillerin korunması, sadece kültürel mirasın sürdürülmesi için değil, aynı zamanda bilişsel çeşitliliğin devamı için de hayati önem taşır.",
+      "options": {
+        "A": "The preservation of languages is of vital importance not only for the maintenance of cultural heritage but also for the continuation of cognitive diversity.",
+        "B": "Preserving languages is vital because it maintains both cultural heritage and cognitive diversity.",
+        "C": "Language preservation is important for cultural heritage and also for cognitive diversity's continuation.",
+        "D": "To maintain cultural heritage and cognitive diversity, the preservation of languages is very vital.",
+        "E": "Both cultural heritage and cognitive diversity depend on the vital preservation of various languages."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 46,
+      "section_id": "tr_en",
+      "question": "Yapay zeka etiği üzerine yapılan tartışmalar, algoritmaların şeffaf ve hesap verebilir olması gerektiği fikri etrafında yoğunlaşmaktadır.",
+      "options": {
+        "A": "Discussions on artificial intelligence ethics center around the idea that algorithms should be transparent and accountable.",
+        "B": "AI ethics discussions are focused on the transparency and accountability of algorithms.",
+        "C": "The idea that algorithms must be transparent and accountable is the main point of AI ethics debates.",
+        "D": "Discussions regarding AI ethics are intensifying because algorithms need to be transparent and accountable.",
+        "E": "Debates on the ethics of AI focus mostly on making algorithms transparent and also accountable."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 47,
+      "section_id": "tr_en",
+      "question": "Hükümet, yerli üretimi teşvik etmek amacıyla küçük ölçekli işletmelere vergi indirimleri ve düşük faizli krediler sağlamayı planlıyor.",
+      "options": {
+        "A": "The government plans to provide tax breaks and low-interest loans to small-scale businesses in order to encourage domestic production.",
+        "B": "In order to encourage domestic production, small businesses will receive tax breaks and loans from the government.",
+        "C": "The government's plan to encourage domestic production involves giving loans and tax breaks to small-scale businesses.",
+        "D": "Tax breaks and low-interest loans are planned by the government to support small businesses and domestic production.",
+        "E": "Small-scale businesses will be provided with tax breaks by the government to stimulate domestic production levels."
+      },
+      "correct": "A",
+      "passage_id": null
     }
   ]
 }
