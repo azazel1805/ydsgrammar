@@ -122,72 +122,7 @@ function getYdtTacticsHTML() {
 `;
 }
 
-// ── YDT Score Calculator ──────────────────────────────────────────
-function getYdtCalcHTML() {
-  return /* html */`
-<div class="max-w-4xl mx-auto px-4 py-10">
-  <div class="bg-white rounded-[2rem] shadow-2xl border border-slate-100 overflow-hidden">
-    <div class="bg-gradient-to-r from-blue-700 to-indigo-800 p-10 text-white text-center">
-      <h2 class="text-3xl font-black mb-2" style="font-family:'Playfair Display',serif;">YKS-Dil Puan Hesaplayıcı</h2>
-      <p class="text-blue-100 opacity-80">TYT ve YDT netlerinizi girerek tahmini yerleştirme puanınızı hesaplayın.</p>
-    </div>
-    
-    <div class="p-10 grid md:grid-cols-2 gap-10">
-      <div class="space-y-6">
-        <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2">
-          <i class="fas fa-edit text-blue-600"></i> TYT Netleri
-        </h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="space-y-2">
-            <label class="text-xs font-bold text-slate-400 uppercase">Türkçe (40)</label>
-            <input type="number" id="calc-tr" value="30" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl p-3 focus:border-blue-500 outline-none transition-all">
-          </div>
-          <div class="space-y-2">
-            <label class="text-xs font-bold text-slate-400 uppercase">Sosyal (20)</label>
-            <input type="number" id="calc-soc" value="15" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl p-3 focus:border-blue-500 outline-none transition-all">
-          </div>
-          <div class="space-y-2">
-            <label class="text-xs font-bold text-slate-400 uppercase">Matematik (40)</label>
-            <input type="number" id="calc-mat" value="10" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl p-3 focus:border-blue-500 outline-none transition-all">
-          </div>
-          <div class="space-y-2">
-            <label class="text-xs font-bold text-slate-400 uppercase">Fen (20)</label>
-            <input type="number" id="calc-sci" value="5" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl p-3 focus:border-blue-500 outline-none transition-all">
-          </div>
-        </div>
-        
-        <div class="pt-6 border-t border-slate-50">
-          <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 mb-4">
-            <i class="fas fa-language text-blue-600"></i> YDT Neti
-          </h3>
-          <div class="space-y-2">
-            <label class="text-xs font-bold text-slate-400 uppercase">YDT İngilizce (80)</label>
-            <input type="number" id="calc-ydt" value="70" class="w-full bg-blue-50 border-2 border-blue-200 rounded-xl p-4 text-xl font-bold text-blue-900 focus:border-blue-500 outline-none transition-all">
-          </div>
-        </div>
 
-        <div class="pt-6">
-          <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 mb-4">
-            <i class="fas fa-graduation-cap text-blue-600"></i> OBP (Okul Puanı)
-          </h3>
-          <div class="space-y-2">
-            <label class="text-xs font-bold text-slate-400 uppercase">Diploma Notu (50-100)</label>
-            <input type="number" id="calc-obp" value="85" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl p-3 focus:border-blue-500 outline-none transition-all">
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-slate-50 rounded-3xl p-8 flex flex-col items-center justify-center text-center space-y-6">
-        <div class="text-slate-400 uppercase text-xs font-black tracking-widest">Tahmini Yerleştirme Puanı</div>
-        <div id="calc-result" class="text-7xl font-black text-blue-700 leading-none">---</div>
-        <div class="text-slate-500 text-sm max-w-[200px]">Bu puan 2023-2024 YKS katsayıları baz alınarak hesaplanmıştır.</div>
-        <button onclick="calculateYdtScore()" class="w-full py-5 bg-blue-700 text-white rounded-2xl font-black text-lg shadow-xl hover:bg-blue-800 hover:scale-[1.02] transition-all">HESAPLA</button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-}
 
 const YDT_VOCAB_DATA = [
   { w: "Ambiguous", m: "Belirsiz, iki anlamlı", e: "The ending of the movie was ambiguous." },
@@ -572,30 +507,8 @@ function filterYdtVocab() {
     });
 }
 
-// ── Calculation Logic ─────────────────────────────────────────────
-function calculateYdtScore() {
-  const tr = parseFloat(document.getElementById('calc-tr').value) || 0;
-  const soc = parseFloat(document.getElementById('calc-soc').value) || 0;
-  const mat = parseFloat(document.getElementById('calc-mat').value) || 0;
-  const sci = parseFloat(document.getElementById('calc-sci').value) || 0;
-  const ydt = parseFloat(document.getElementById('calc-ydt').value) || 0;
-  const obp = parseFloat(document.getElementById('calc-obp').value) || 0;
-
-  // Standart YKS-Dil Katsayıları (Yaklaşık)
-  // Ham Puan = (TYT Net Toplamı * 1.3) + (YDT Net * 3) + 100 (Taban)
-  // Yerleştirme Puanı = Ham Puan + (OBP * 0.6)
-  
-  const tytTotal = tr + soc + mat + sci;
-  const hamPuan = (tytTotal * 1.32) + (ydt * 3.0) + 100;
-  const yerlPuan = hamPuan + (obp * 0.6);
-
-  document.getElementById('calc-result').innerText = yerlPuan.toFixed(2);
-}
-
 // Global register functions
 window.ydtExamsHTML = getYdtSelectorHTML(YDT_EXAM_LIST, 'YDT Tam Denemeler');
 window.ydtTacticsHTML = getYdtTacticsHTML();
-window.ydtCalcHTML = getYdtCalcHTML();
 window.ydtVocabHTML = getYdtVocabHTML();
-window.calculateYdtScore = calculateYdtScore;
 window.YDT_EXAM_LIST = YDT_EXAM_LIST;
