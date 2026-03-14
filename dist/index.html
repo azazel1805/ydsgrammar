@@ -79,8 +79,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <script type="module" crossorigin src="./assets/index-BvljOark.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CBqK6WkQ.css">
+  <script type="module" crossorigin src="./assets/index-D3thcaUb.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bh9cD3DH.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -278,6 +278,18 @@
           </div>
         </div>
 
+        <!-- YDT Dropdown -->
+        <div class="relative group">
+          <button class="nav-drop-btn pb-4">YDT <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
+          <div
+            class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+            <button data-tab="ydt-exams" onclick="switchTab('ydt-exams')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">YDT Denemeleri</button>
+            <button data-tab="ydt-tactics" onclick="switchTab('ydt-tactics')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">YDT Taktikleri</button>
+          </div>
+        </div>
+
         <!-- Grammar Dropdown -->
         <div class="relative group">
           <button class="nav-drop-btn pb-4">Grammar <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
@@ -457,6 +469,14 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
         </div>
 
         <div>
+          <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">YDT</h3>
+          <div class="space-y-2 mb-4">
+            <button data-tab="ydt-exams" onclick="switchTabAndClose('ydt-exams')" class="drawer-btn">YDT Denemeleri</button>
+            <button data-tab="ydt-tactics" onclick="switchTabAndClose('ydt-tactics')" class="drawer-btn">YDT Taktikleri</button>
+          </div>
+        </div>
+
+        <div>
           <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">Grammar</h3>
           <div class="space-y-2 mb-4">
 
@@ -569,6 +589,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
           </section>
       </div>
       <div id="tab-freeexams" class="tab-content"></div>
+      <div id="tab-ydt-exams" class="tab-content"></div>
+      <div id="tab-ydt-tactics" class="tab-content"></div>
       <div id="tab-textdecon" class="tab-content hidden"></div>
       <div id="tab-admin" class="tab-content"></div>
     </div>
@@ -686,6 +708,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./textDeconstruction.js"></script>
     <script src="./wordPractice.js"></script>
     <script src="./admin.js"></script>
+    <script src="./ydt.js"></script>
     <script src="./main.js"></script>
 
 

@@ -259,7 +259,9 @@ async function feStartExam(btn) {
   const examId = btn.dataset.selectedId;
   if (!examId) return;
 
-  let exam = FULL_EXAM_LIST.find(e => e.id === examId) || FREE_EXAM_LIST.find(e => e.id === examId);
+  let exam = FULL_EXAM_LIST.find(e => e.id === examId) || 
+             FREE_EXAM_LIST.find(e => e.id === examId) || 
+             (typeof YDT_EXAM_LIST !== 'undefined' ? YDT_EXAM_LIST.find(e => e.id === examId) : null);
   if (!exam) {
     // Check miniexams if any
     if (typeof CATEGORICAL_MINI_LIST !== 'undefined') {

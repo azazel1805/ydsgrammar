@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-wordpractice", typeof wordPracticeHTML !== 'undefined' ? wordPracticeHTML : undefined);
     safeInject("tab-miniexams", typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : undefined);
     safeInject("tab-freeexams", typeof freeExamsHTML !== 'undefined' ? freeExamsHTML : undefined);
+    safeInject("tab-ydt-exams", typeof ydtExamsHTML !== 'undefined' ? ydtExamsHTML : undefined);
+    safeInject("tab-ydt-tactics", typeof ydtTacticsHTML !== 'undefined' ? ydtTacticsHTML : undefined);
     safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
@@ -364,6 +366,8 @@ function reinjectTabContent(tabName) {
         "fullexam": typeof fullExamHTML !== 'undefined' ? fullExamHTML : null,
         "freeexams": typeof freeExamsHTML !== 'undefined' ? freeExamsHTML : null,
         "miniexams": typeof miniexamsHTML !== 'undefined' ? miniexamsHTML : null,
+        "ydt-exams": typeof ydtExamsHTML !== 'undefined' ? ydtExamsHTML : null,
+        "ydt-tactics": typeof ydtTacticsHTML !== 'undefined' ? ydtTacticsHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -396,7 +400,9 @@ function updateSEO(tab) {
         "tenseguide": { title: "Tense Rehberi – Zamanlar ve Kullanımları", desc: "İngilizce zamanların YDS perspektifinden sadeleştirilmiş anlatımı." },
         "ifclauses": { title: "If Clauses (Koşul Cümleleri) – YDS Rehberi", desc: "Tüm type'lar ve devrik yapılar (inversion) ile koşul cümleleri." },
         "sentence": { title: "Sentence Corrector – Cümle Yapısı Analizi", desc: "Cümlelerdeki gramer hatalarını bulan yapay zeka destekli araç." },
-        "freeexams": { title: "Ücretsiz YDS Deneme Sınavları – yds.monster", desc: "80 soruluk ücretsiz tam YDS denemeleri ile kendinizi test edin." }
+        "freeexams": { title: "Ücretsiz YDS Deneme Sınavları – yds.monster", desc: "80 soruluk ücretsiz tam YDS denemeleri ile kendinizi test edin." },
+        "ydt-exams": { title: "YDT Deneme Sınavları – Güncel Müfredat", desc: "Üniversite sınavı (YKS-Dil) ayarında 80 soruluk YDT denemeleri." },
+        "ydt-tactics": { title: "YDT Taktikleri ve İngilizce Sınav Stratejileri", desc: "YDT sınavında netlerinizi artıracak taktikler ve soru çözüm teknikleri." }
     };
 
     const data = seoMap[tab] || { title: "yds.monster – YDS & YDT Master Encyclopedia", desc: "Kapsamlı YDS ve YDT hazırlık platformu." };
