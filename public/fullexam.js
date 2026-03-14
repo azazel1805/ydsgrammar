@@ -25,7 +25,12 @@ const FREE_EXAM_LIST = [
   { id: 'free2', label: 'Ücretsiz Deneme 2', file: '/exams/full/fullexam17.json' },
   { id: 'free3', label: 'Ücretsiz Deneme 3', file: '/exams/full/fullexam18.json' },
   { id: 'free4', label: 'Ücretsiz Deneme 4', file: '/exams/full/fullexam19.json' },
-  { id: 'free5', label: 'Ücretsiz Deneme 5', file: '/exams/full/fullexam20.json' }
+  { id: 'free5', label: 'Ücretsiz Deneme 5', file: '/exams/full/fullexam20.json' },
+  { id: 'free6', label: 'Ücretsiz Deneme 6', file: '/exams/full/fullexam21.json' },
+  { id: 'free7', label: 'Ücretsiz Deneme 7', file: '/exams/full/fullexam22.json' },
+  { id: 'free8', label: 'Ücretsiz Deneme 8', file: '/exams/full/fullexam23.json' },
+  { id: 'free9', label: 'Ücretsiz Deneme 9', file: '/exams/full/fullexam24.json' },
+  { id: 'free10', label: 'Ücretsiz Deneme 10', file: '/exams/full/fullexam25.json' }
 ];
 
 // ── State ────────────────────────────────────────────────────

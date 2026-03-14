@@ -1,0 +1,1222 @@
+{
+  "meta": {
+    "title": "YDS Practice Exam",
+    "subtitle": "Part 1 - 42 Questions",
+    "total_questions": 80,
+    "duration_minutes": 180
+  },
+  "sections": [
+    {
+      "id": "vocab",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 6
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar",
+      "from": 7,
+      "to": 16
+    },
+    {
+      "id": "cloze",
+      "label": "Cloze Test",
+      "from": 17,
+      "to": 26
+    },
+    {
+      "id": "sentence_comp",
+      "label": "Sentence Completion",
+      "from": 27,
+      "to": 36
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 37,
+      "to": 42
+    },
+    {
+      "id": "reading_comp",
+      "label": "Reading Comprehension",
+      "from": 43,
+      "to": 62
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 63,
+      "to": 67
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 68,
+      "to": 71
+    },
+    {
+      "id": "paragraph_comp",
+      "label": "Paragraph Completion",
+      "from": 72,
+      "to": 75
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 76,
+      "to": 80
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage_cloze_1",
+      "text": "The discovery of the Rosetta Stone in 1799 (17) --- a pivotal moment in the study of Ancient Egypt. Until then, scholars (18) --- to decipher the intricate hieroglyphs that adorned the walls of temples. The stone contained the same decree written in three scripts, which (19) --- Champollion to unlock the phonetic nature of the Egyptian writing system. Today, this artifact remains one of the most (20) --- objects in the British Museum. It continues to draw millions of visitors who are fascinated (21) --- its historical significance."
+    },
+    {
+      "id": "passage_cloze_2",
+      "text": "Climate change is significantly altering the distribution of marine species. As ocean temperatures rise, many fish populations are migrating towards the poles (22) --- cooler waters. This shift (23) --- profound impacts on local fisheries, which rely heavily on traditional catches. Furthermore, ocean acidification, a direct consequence of increased carbon dioxide absorption, (24) --- the survival of calcifying organisms like corals. If immediate action (25) ---, marine ecosystems could face irreversible damage. Researchers emphasize that mitigating emissions is the only viable solution (26) --- preserving aquatic biodiversity."
+    },
+    {
+      "id": "p1",
+      "text": "The advent of quantum computing promises to revolutionize cryptography. Traditional encryption methods rely on the computational difficulty of factoring large prime numbers, a task that would take classical computers millennia to complete. Quantum computers, however, utilize qubits that can exist in multiple states simultaneously, enabling them to solve complex algorithms exponentially faster. Consequently, the development of quantum-resistant cryptographic protocols has become a paramount concern for cybersecurity experts globally. While functional quantum computers capable of breaking current encryption are still years away, the theoretical framework necessitates immediate proactive measures to secure sensitive data against future vulnerabilities."
+    },
+    {
+      "id": "p2",
+      "text": "Neuroplasticity, the brain's ability to reorganize itself by forming new neural connections throughout life, challenges the long-held dogma that the adult brain is structurally immutable. Research indicates that learning new skills, recovering from brain injuries, and even adapting to psychological stress involve significant synaptic pruning and neurogenesis. Environmental enrichment and cognitive behavioral therapies leverage this adaptability, demonstrating that consistent mental stimulation can mitigate age-related cognitive decline. This dynamic view of the brain underscores the potential for lifelong learning and rehabilitation."
+    },
+    {
+      "id": "p3",
+      "text": "The transition to renewable energy sources is imperative for mitigating anthropogenic climate change, yet it presents substantial grid integration challenges. Solar and wind power are inherently intermittent, requiring robust energy storage solutions to ensure a stable supply. Lithium-ion batteries currently dominate the market, but concerns regarding resource scarcity and environmental impacts of mining have spurred research into alternative technologies like solid-state batteries and pumped hydro storage. A diversified approach to energy infrastructure is essential for achieving long-term sustainability and resilience."
+    },
+    {
+      "id": "p4",
+      "text": "In the realm of behavioral economics, the concept of bounded rationality posits that human decision-making is limited by cognitive constraints, time, and available information. Unlike the perfectly rational agents assumed in classical economic models, real individuals often rely on heuristics or mental shortcuts, which can lead to systematic cognitive biases. Thaler and Sunstein's nudge theory applies these insights, suggesting that subtle changes in choice architecture can significantly influence public behavior toward desirable outcomes without restricting freedom of choice."
+    },
+    {
+      "id": "p5",
+      "text": "The proliferation of microplastics in marine ecosystems constitutes a pervasive environmental crisis. These particles, typically less than five millimeters in length, originate from the degradation of larger plastic debris and the shedding of synthetic fibers. They are ingested by a diverse array of marine organisms, causing physical harm and acting as vectors for toxic chemical pollutants. The biomagnification of these toxins through the food web poses serious risks to both marine biodiversity and human health, necessitating comprehensive global policies to curtail plastic production and improve waste management."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocab",
+      "question": "The newly proposed policy has sparked a heated debate, as many experts argue that its economic benefits are highly ---.",
+      "options": {
+        "A": "indisputable",
+        "B": "ambiguous",
+        "C": "lucrative",
+        "D": "profound",
+        "E": "coherent"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocab",
+      "question": "Despite the team's relentless efforts to contain the virus, the outbreak spread with terrifying --- across the continent.",
+      "options": {
+        "A": "reluctance",
+        "B": "complacency",
+        "C": "rapidity",
+        "D": "fragility",
+        "E": "stagnation"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocab",
+      "question": "In order to successfully --- the complex legal regulations, international corporations often hire specialized consultancy firms.",
+      "options": {
+        "A": "navigate",
+        "B": "violate",
+        "C": "abolish",
+        "D": "deter",
+        "E": "conceal"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "vocab",
+      "question": "The archaeologists were thrilled to discover a well-preserved manuscript that could --- the mysteries of the ancient civilization.",
+      "options": {
+        "A": "obscure",
+        "B": "aggravate",
+        "C": "unravel",
+        "D": "forge",
+        "E": "repress"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "vocab",
+      "question": "Because the evidence presented during the trial was entirely ---, the jury had no choice but to acquit the defendant.",
+      "options": {
+        "A": "compelling",
+        "B": "circumstantial",
+        "C": "conclusive",
+        "D": "irrefutable",
+        "E": "unanimous"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "vocab",
+      "question": "The government has promised to --- strict measures to ensure that environmental standards are met by all industrial plants.",
+      "options": {
+        "A": "dismantle",
+        "B": "implement",
+        "C": "relinquish",
+        "D": "evade",
+        "E": "hinder"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "grammar",
+      "question": "If the researchers --- the data more carefully, they --- the anomaly in the climate patterns much earlier.",
+      "options": {
+        "A": "analyzed / would notice",
+        "B": "had analyzed / would have noticed",
+        "C": "analyze / will notice",
+        "D": "were analyzing / might notice",
+        "E": "have analyzed / could have noticed"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "grammar",
+      "question": "--- the advent of antibiotics, infectious diseases were the leading cause of mortality worldwide.",
+      "options": {
+        "A": "Prior to",
+        "B": "In spite of",
+        "C": "Due to",
+        "D": "As well as",
+        "E": "Regardless of"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 9,
+      "section_id": "grammar",
+      "question": "The committee insisted that the new regulations --- immediately to prevent further environmental degradation.",
+      "options": {
+        "A": "were enforced",
+        "B": "enforcing",
+        "C": "be enforced",
+        "D": "to be enforced",
+        "E": "have been enforced"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 10,
+      "section_id": "grammar",
+      "question": "By the time the rescue team --- the remote village, the floodwaters --- completely.",
+      "options": {
+        "A": "reaches / will recede",
+        "B": "reached / had receded",
+        "C": "has reached / receded",
+        "D": "was reaching / have receded",
+        "E": "reached / were receding"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 11,
+      "section_id": "grammar",
+      "question": "The professor is highly respected not only for his groundbreaking research --- for his dedication to mentoring young scholars.",
+      "options": {
+        "A": "but also",
+        "B": "and",
+        "C": "as well as",
+        "D": "yet",
+        "E": "or"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 12,
+      "section_id": "grammar",
+      "question": "Many indigenous languages are currently at risk of extinction, --- is a significant loss to human cultural heritage.",
+      "options": {
+        "A": "what",
+        "B": "that",
+        "C": "which",
+        "D": "where",
+        "E": "whose"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "grammar",
+      "question": "Scarcely --- the building when a massive explosion shattered the windows on the ground floor.",
+      "options": {
+        "A": "they had evacuated",
+        "B": "have they evacuated",
+        "C": "they evacuated",
+        "D": "had they evacuated",
+        "E": "did they evacuate"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "grammar",
+      "question": "--- you disagree with the management's decision, you must comply with the new company policy.",
+      "options": {
+        "A": "Since",
+        "B": "As though",
+        "C": "Even if",
+        "D": "Unless",
+        "E": "Provided that"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "grammar",
+      "question": "The novel is considered a masterpiece, primarily --- its profound exploration of human psychology.",
+      "options": {
+        "A": "in terms of",
+        "B": "on account of",
+        "C": "in contrast to",
+        "D": "with regard to",
+        "E": "in exchange for"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "grammar",
+      "question": "Students are required to submit their assignments by Friday; ---, a penalty will be applied to their final grades.",
+      "options": {
+        "A": "therefore",
+        "B": "otherwise",
+        "C": "furthermore",
+        "D": "nevertheless",
+        "E": "meanwhile"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (17).",
+      "options": {
+        "A": "marked",
+        "B": "marking",
+        "C": "was marked",
+        "D": "to mark",
+        "E": "marks"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze_1"
+    },
+    {
+      "id": 18,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (18).",
+      "options": {
+        "A": "struggle",
+        "B": "are struggling",
+        "C": "had struggled",
+        "D": "have struggled",
+        "E": "will struggle"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze_1"
+    },
+    {
+      "id": 19,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (19).",
+      "options": {
+        "A": "hindered",
+        "B": "forbade",
+        "C": "enabled",
+        "D": "prevented",
+        "E": "compelled"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze_1"
+    },
+    {
+      "id": 20,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (20).",
+      "options": {
+        "A": "obsolete",
+        "B": "celebrated",
+        "C": "redundant",
+        "D": "neglected",
+        "E": "controversial"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze_1"
+    },
+    {
+      "id": 21,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (21).",
+      "options": {
+        "A": "with",
+        "B": "by",
+        "C": "in",
+        "D": "on",
+        "E": "at"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze_1"
+    },
+    {
+      "id": 22,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (22).",
+      "options": {
+        "A": "in search of",
+        "B": "in spite of",
+        "C": "by means of",
+        "D": "in accordance with",
+        "E": "on behalf of"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze_2"
+    },
+    {
+      "id": 23,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (23).",
+      "options": {
+        "A": "is having",
+        "B": "had",
+        "C": "was having",
+        "D": "had had",
+        "E": "will have had"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze_2"
+    },
+    {
+      "id": 24,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (24).",
+      "options": {
+        "A": "sustains",
+        "B": "promotes",
+        "C": "threatens",
+        "D": "evaluates",
+        "E": "recovers"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze_2"
+    },
+    {
+      "id": 25,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (25).",
+      "options": {
+        "A": "was not taken",
+        "B": "is not taken",
+        "C": "will not be taken",
+        "D": "had not been taken",
+        "E": "would not take"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze_2"
+    },
+    {
+      "id": 26,
+      "section_id": "cloze",
+      "question": "Choose the correct option for blank (26).",
+      "options": {
+        "A": "towards",
+        "B": "against",
+        "C": "for",
+        "D": "over",
+        "E": "beyond"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze_2"
+    },
+    {
+      "id": 27,
+      "section_id": "sentence_comp",
+      "question": "Although the new software significantly improves operational efficiency, ---.",
+      "options": {
+        "A": "it was developed by a team of highly skilled programmers",
+        "B": "many employees find its interface counterintuitive and hard to learn",
+        "C": "the company has reported a massive increase in annual profits",
+        "D": "it is compatible with all existing hardware devices",
+        "E": "the transition process took much less time than anticipated"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "sentence_comp",
+      "question": "---, artificial intelligence is poised to revolutionize the healthcare industry.",
+      "options": {
+        "A": "Because traditional diagnostic methods are flawless",
+        "B": "By processing vast amounts of medical data with unprecedented speed",
+        "C": "Unless governments impose strict ethical regulations on technology",
+        "D": "Even though doctors entirely reject its applications",
+        "E": "While it requires no human oversight to function correctly"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "sentence_comp",
+      "question": "The global demand for renewable energy sources has surged in recent years ---.",
+      "options": {
+        "A": "since fossil fuels remain the cheapest option available",
+        "B": "as awareness of the devastating effects of climate change grows",
+        "C": "so that coal production can reach historical highs",
+        "D": "although governments have cut funding for green technologies",
+        "E": "before solar panels were invented in the 20th century"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "sentence_comp",
+      "question": "Unless radical measures are implemented to reduce deforestation, ---.",
+      "options": {
+        "A": "countless species will face the imminent threat of extinction",
+        "B": "the logging industry has experienced unprecedented growth",
+        "C": "urban expansion was successfully halted in developing nations",
+        "D": "the atmospheric carbon levels have stabilized over the decade",
+        "E": "local communities supported the preservation of their lands"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "sentence_comp",
+      "question": "--- how rigorously the clinical trials were conducted.",
+      "options": {
+        "A": "The pharmaceutical company was fined heavily",
+        "B": "The efficacy of the vaccine was widely questioned",
+        "C": "The researchers published their findings regardless of",
+        "D": "It remains to be seen",
+        "E": "The medical community universally praised"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "sentence_comp",
+      "question": "Given the volatility of the stock market, ---.",
+      "options": {
+        "A": "investors are advised to diversify their portfolios",
+        "B": "the central bank had lowered interest rates last year",
+        "C": "economic stability was guaranteed by the government",
+        "D": "many amateur traders made enormous profits without risk",
+        "E": "predicting future trends is a mathematically simple task"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "sentence_comp",
+      "question": "As long as there is an uninterrupted supply of raw materials, ---.",
+      "options": {
+        "A": "the factory had consistently met its production targets",
+        "B": "the manufacturing process will continue without delay",
+        "C": "workers staged a strike to demand better wages",
+        "D": "the quality of the final product was severely compromised",
+        "E": "international trade agreements have been renegotiated"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "sentence_comp",
+      "question": "---, which makes it an ideal material for constructing earthquake-resistant buildings.",
+      "options": {
+        "A": "Concrete is known to crack under extreme pressure",
+        "B": "Wood has been used in architecture for centuries",
+        "C": "Steel possesses exceptional tensile strength and flexibility",
+        "D": "Glass structures are aesthetically pleasing but fragile",
+        "E": "Brick masonry requires significant maintenance over time"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "sentence_comp",
+      "question": "While some historians view the French Revolution as a triumph of liberty, ---.",
+      "options": {
+        "A": "it successfully established a long-lasting democratic republic",
+        "B": "others emphasize the extreme violence and political instability it caused",
+        "C": "the monarchy was universally beloved by the peasant class",
+        "D": "the Enlightenment philosophers had laid its ideological groundwork",
+        "E": "it inspired similar uprisings across the European continent"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "sentence_comp",
+      "question": "--- because they offer a secure and decentralized way to conduct transactions.",
+      "options": {
+        "A": "Traditional banks are shutting down all their branches",
+        "B": "Cryptocurrencies have gained immense popularity worldwide",
+        "C": "Cash payments are becoming increasingly rare in modern society",
+        "D": "Governments have strictly prohibited the use of digital currencies",
+        "E": "The stock market crashed abruptly last Tuesday"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "translation",
+      "question": "The development of sustainable agricultural practices is crucial for ensuring food security in the face of rapid population growth.",
+      "options": {
+        "A": "Hızlı nüfus artışı karşısında gıda güvenliğini sağlamak için sürdürülebilir tarım uygulamalarının geliştirilmesi elzemdir.",
+        "B": "Gıda güvenliğini sağlamak amacıyla geliştirilen sürdürülebilir tarım uygulamaları, hızlı nüfus artışı nedeniyle çok önemlidir.",
+        "C": "Sürdürülebilir tarım uygulamaları geliştikçe, hızlı nüfus artışına rağmen gıda güvenliği sağlanabilir.",
+        "D": "Hızlı nüfus artışı, gıda güvenliğini sağlamak için sürdürülebilir tarım uygulamalarının geliştirilmesini zorunlu kılmaktadır.",
+        "E": "Gıda güvenliğinin sağlanması, hızlı nüfus artışına karşı sürdürülebilir tarım uygulamalarının geliştirilmesine bağlıdır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "translation",
+      "question": "Despite technological advancements, predicting earthquakes with absolute certainty remains a formidable challenge for seismologists.",
+      "options": {
+        "A": "Teknolojik gelişmelere rağmen, depremleri kesin bir şekilde tahmin etmek sismologlar için hala zorlu bir görevdir.",
+        "B": "Sismologların depremleri kesin olarak tahmin etmesi, teknolojik gelişmeler olsa bile oldukça zor bir iştir.",
+        "C": "Teknolojik ilerlemelere rağmen, depremleri mutlak bir kesinlikle tahmin etmek sismologlar için çetin bir zorluk olmaya devam etmektedir.",
+        "D": "Depremlerin mutlak kesinlikle tahmin edilememesi, teknolojik gelişmelere rağmen sismologlar için büyük bir sorundur.",
+        "E": "Teknolojik ilerlemeler, sismologların depremleri kesin olarak tahmin etmesindeki zorlukları ortadan kaldıramamıştır."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "translation",
+      "question": "Literature not only reflects the cultural values of a society but also shapes the perspectives of its future generations.",
+      "options": {
+        "A": "Edebiyat, toplumun kültürel değerlerini yansıtmanın yanı sıra, gelecek nesillerin nasıl düşüneceğini de belirler.",
+        "B": "Bir toplumun kültürel değerlerini yansıtan edebiyat, aynı zamanda gelecek nesillerin bakış açılarını da oluşturur.",
+        "C": "Edebiyat, sadece bir toplumun kültürel değerlerini yansıtmakla kalmaz, aynı zamanda onun gelecek nesillerinin bakış açılarını da şekillendirir.",
+        "D": "Edebiyatın bir toplumun kültürel değerlerini yansıtması, gelecek nesillerin bakış açılarını şekillendirmesini sağlar.",
+        "E": "Sadece kültürel değerleri yansıtmakla kalmayan edebiyat, toplumun gelecek nesillerinin bakış açısını değiştirir."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "translation",
+      "question": "Uyku eksikliği, sadece bilişsel işlevleri bozmakla kalmaz, aynı zamanda kronik hastalık riskini de artırır.",
+      "options": {
+        "A": "Lack of sleep impairs cognitive functions and significantly increases the risk of chronic diseases.",
+        "B": "Sleep deprivation not only impairs cognitive functions but also increases the risk of chronic disease.",
+        "C": "The risk of chronic disease is increased by sleep deprivation, which also impairs cognitive functions.",
+        "D": "Not only does lack of sleep disrupt cognitive functions, but it also causes chronic diseases.",
+        "E": "Sleep deprivation impairs cognitive functions as well as increasing the possibility of chronic disease."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "translation",
+      "question": "Yapay zeka etiği üzerine yapılan tartışmalar, teknolojinin hızla ilerlemesiyle birlikte daha da karmaşık bir hal almıştır.",
+      "options": {
+        "A": "The debates on artificial intelligence ethics have become even more complex with the rapid advancement of technology.",
+        "B": "With the rapid advancement of technology, the complexity of debates on artificial intelligence ethics has increased.",
+        "C": "Debates regarding artificial intelligence ethics are getting more complicated because technology is advancing rapidly.",
+        "D": "The rapid advancement of technology has made the debates on artificial intelligence ethics much more complex.",
+        "E": "As technology advances rapidly, the discussions about the ethics of artificial intelligence become more complex."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "translation",
+      "question": "Güneş enerjisi sistemlerinin kurulum maliyetleri son on yılda önemli ölçüde düşmüş olup, bu durum onları ev sahipleri için daha erişilebilir hale getirmiştir.",
+      "options": {
+        "A": "The installation costs of solar energy systems have dropped significantly in the last decade, making them more accessible to homeowners.",
+        "B": "Solar energy systems have become more accessible to homeowners because their installation costs have dropped significantly in the last decade.",
+        "C": "Because the installation costs of solar energy systems decreased in the past decade, they are now more accessible to homeowners.",
+        "D": "The drop in the installation costs of solar energy systems over the last decade has made them highly accessible for homeowners.",
+        "E": "The installation costs of solar energy systems have significantly decreased over the past decade, and this has made them more accessible to homeowners."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "reading_comp",
+      "question": "According to the passage, why are quantum computers considered a threat to traditional cryptography?",
+      "options": {
+        "A": "They can easily bypass passwords using artificial intelligence.",
+        "B": "They use qubits to factor large prime numbers exponentially faster than classical computers.",
+        "C": "They are already capable of breaking current encryption algorithms.",
+        "D": "They do not rely on prime numbers for data encryption.",
+        "E": "They destroy the physical hardware where data is stored."
+      },
+      "correct": "B",
+      "passage_id": "p1"
+    },
+    {
+      "id": 44,
+      "section_id": "reading_comp",
+      "question": "What is the primary concern of cybersecurity experts regarding quantum computing?",
+      "options": {
+        "A": "The high cost of developing quantum-resistant hardware.",
+        "B": "The immediate replacement of all classical computers globally.",
+        "C": "The need to develop cryptographic protocols that can withstand quantum attacks.",
+        "D": "The lack of funding for quantum research.",
+        "E": "The possibility that quantum computers will never become fully functional."
+      },
+      "correct": "C",
+      "passage_id": "p1"
+    },
+    {
+      "id": 45,
+      "section_id": "reading_comp",
+      "question": "Which of the following best describes the current state of functional quantum computers capable of breaking encryption?",
+      "options": {
+        "A": "They are widely available for commercial use.",
+        "B": "They are purely theoretical and impossible to build.",
+        "C": "They are still years away from realization.",
+        "D": "They have already rendered all classical encryption obsolete.",
+        "E": "They are currently being used by governments to secure data."
+      },
+      "correct": "C",
+      "passage_id": "p1"
+    },
+    {
+      "id": 46,
+      "section_id": "reading_comp",
+      "question": "The word 'proactive' in the passage is closest in meaning to:",
+      "options": {
+        "A": "Reactive",
+        "B": "Preventative",
+        "C": "Indifferent",
+        "D": "Retrospective",
+        "E": "Aggressive"
+      },
+      "correct": "B",
+      "passage_id": "p1"
+    },
+    {
+      "id": 47,
+      "section_id": "reading_comp",
+      "question": "The concept of neuroplasticity challenges which previously held scientific belief?",
+      "options": {
+        "A": "That the adult brain is structurally immutable.",
+        "B": "That environmental factors influence brain development.",
+        "C": "That children learn faster than adults.",
+        "D": "That synapses are the primary communicators in the brain.",
+        "E": "That cognitive behavioral therapies are effective."
+      },
+      "correct": "A",
+      "passage_id": "p2"
+    },
+    {
+      "id": 48,
+      "section_id": "reading_comp",
+      "question": "According to the passage, what can mitigate age-related cognitive decline?",
+      "options": {
+        "A": "Physical rest and reduced stress.",
+        "B": "Consistent mental stimulation and environmental enrichment.",
+        "C": "Avoiding new learning experiences to preserve existing neurons.",
+        "D": "Relying solely on pharmaceutical interventions.",
+        "E": "Preventing synaptic pruning entirely."
+      },
+      "correct": "B",
+      "passage_id": "p2"
+    },
+    {
+      "id": 49,
+      "section_id": "reading_comp",
+      "question": "What does 'synaptic pruning' refer to in the context of the passage?",
+      "options": {
+        "A": "The permanent loss of all brain functions.",
+        "B": "The surgical removal of damaged brain tissue.",
+        "C": "A natural process involved in learning and adapting.",
+        "D": "A negative consequence of psychological stress.",
+        "E": "The inability to form new neural connections."
+      },
+      "correct": "C",
+      "passage_id": "p2"
+    },
+    {
+      "id": 50,
+      "section_id": "reading_comp",
+      "question": "The primary purpose of the passage on neuroplasticity is to:",
+      "options": {
+        "A": "Argue against the use of cognitive behavioral therapies.",
+        "B": "Explain the mechanisms of brain injury recovery.",
+        "C": "Highlight the brain's lifelong capacity for structural and functional adaptation.",
+        "D": "Prove that aging inevitably leads to severe cognitive decline.",
+        "E": "Compare adult brains with those of children."
+      },
+      "correct": "C",
+      "passage_id": "p2"
+    },
+    {
+      "id": 51,
+      "section_id": "reading_comp",
+      "question": "Why are energy storage solutions critical for renewable energy integration?",
+      "options": {
+        "A": "Because solar and wind energy are inherently intermittent.",
+        "B": "Because renewable energy produces more power than the grid can handle.",
+        "C": "Because fossil fuels are becoming too expensive to mine.",
+        "D": "Because lithium-ion batteries are completely environmentally friendly.",
+        "E": "Because they decrease the total energy output of wind turbines."
+      },
+      "correct": "A",
+      "passage_id": "p3"
+    },
+    {
+      "id": 52,
+      "section_id": "reading_comp",
+      "question": "What is mentioned as a downside of lithium-ion batteries?",
+      "options": {
+        "A": "They cannot store energy for long periods.",
+        "B": "They are less efficient than traditional lead-acid batteries.",
+        "C": "Resource scarcity and the environmental impacts of mining.",
+        "D": "They are incompatible with wind energy systems.",
+        "E": "They require constant exposure to sunlight to function."
+      },
+      "correct": "C",
+      "passage_id": "p3"
+    },
+    {
+      "id": 53,
+      "section_id": "reading_comp",
+      "question": "Which alternative technologies to lithium-ion batteries are mentioned in the passage?",
+      "options": {
+        "A": "Geothermal energy and biomass.",
+        "B": "Solid-state batteries and pumped hydro storage.",
+        "C": "Nuclear fusion and hydrogen fuel cells.",
+        "D": "Natural gas and clean coal.",
+        "E": "Solar panels and wind turbines."
+      },
+      "correct": "B",
+      "passage_id": "p3"
+    },
+    {
+      "id": 54,
+      "section_id": "reading_comp",
+      "question": "The author's attitude towards the transition to renewable energy can best be described as:",
+      "options": {
+        "A": "Pessimistic and doubtful",
+        "B": "Indifferent and objective",
+        "C": "Supportive but aware of the challenges",
+        "D": "Overly optimistic and unrealistic",
+        "E": "Dismissive of the current efforts"
+      },
+      "correct": "C",
+      "passage_id": "p3"
+    },
+    {
+      "id": 55,
+      "section_id": "reading_comp",
+      "question": "How does bounded rationality differ from classical economic models?",
+      "options": {
+        "A": "It assumes individuals have access to perfect information.",
+        "B": "It posits that human decision-making is limited by cognitive constraints.",
+        "C": "It argues that time does not affect economic choices.",
+        "D": "It relies entirely on mathematical formulas to predict behavior.",
+        "E": "It suggests that all human actions are completely irrational."
+      },
+      "correct": "B",
+      "passage_id": "p4"
+    },
+    {
+      "id": 56,
+      "section_id": "reading_comp",
+      "question": "According to the passage, what are 'heuristics'?",
+      "options": {
+        "A": "Perfectly rational economic decisions.",
+        "B": "Mental shortcuts used in decision-making.",
+        "C": "Complex mathematical models of human behavior.",
+        "D": "Strict laws governing market dynamics.",
+        "E": "The physical constraints of time and space."
+      },
+      "correct": "B",
+      "passage_id": "p4"
+    },
+    {
+      "id": 57,
+      "section_id": "reading_comp",
+      "question": "What is the goal of 'nudge theory' as proposed by Thaler and Sunstein?",
+      "options": {
+        "A": "To forcefully dictate public behavior through legislation.",
+        "B": "To eliminate all cognitive biases in individuals.",
+        "C": "To influence behavior toward desirable outcomes through subtle changes in choice architecture.",
+        "D": "To restrict the freedom of choice for consumers.",
+        "E": "To prove that classical economics is entirely correct."
+      },
+      "correct": "C",
+      "passage_id": "p4"
+    },
+    {
+      "id": 58,
+      "section_id": "reading_comp",
+      "question": "Which of the following would be an example of a 'nudge'?",
+      "options": {
+        "A": "Banning the sale of sugary drinks entirely.",
+        "B": "Taxing unhealthy foods at an extremely high rate.",
+        "C": "Placing healthy snacks at eye level in a cafeteria to encourage better choices.",
+        "D": "Fining individuals who do not recycle.",
+        "E": "Making it illegal to use plastic bags."
+      },
+      "correct": "C",
+      "passage_id": "p4"
+    },
+    {
+      "id": 59,
+      "section_id": "reading_comp",
+      "question": "Where do microplastics primarily originate from, according to the passage?",
+      "options": {
+        "A": "Natural biological processes in the ocean.",
+        "B": "The degradation of larger plastic debris and the shedding of synthetic fibers.",
+        "C": "Chemical reactions between salt water and marine life.",
+        "D": "Direct manufacturing of microscopic plastic particles for scientific research.",
+        "E": "The decomposition of organic matter in coral reefs."
+      },
+      "correct": "B",
+      "passage_id": "p5"
+    },
+    {
+      "id": 60,
+      "section_id": "reading_comp",
+      "question": "What is one of the severe consequences of marine organisms ingesting microplastics?",
+      "options": {
+        "A": "They become resistant to natural predators.",
+        "B": "They act as vectors for toxic chemical pollutants.",
+        "C": "They experience rapid evolutionary mutations.",
+        "D": "They produce more oxygen for the ecosystem.",
+        "E": "They migrate to entirely different oceanic regions."
+      },
+      "correct": "B",
+      "passage_id": "p5"
+    },
+    {
+      "id": 61,
+      "section_id": "reading_comp",
+      "question": "What does the term 'biomagnification' refer to in the context of the passage?",
+      "options": {
+        "A": "The physical growth of marine animals due to plastic consumption.",
+        "B": "The increasing concentration of toxic chemicals as they move up the food web.",
+        "C": "The rapid reproduction rates of microorganisms on plastic surfaces.",
+        "D": "The expansion of plastic waste patches in the ocean.",
+        "E": "The visual enhancement of microplastics under a microscope."
+      },
+      "correct": "B",
+      "passage_id": "p5"
+    },
+    {
+      "id": 62,
+      "section_id": "reading_comp",
+      "question": "The passage suggests that solving the microplastic crisis requires:",
+      "options": {
+        "A": "Local initiatives focusing solely on beach cleanups.",
+        "B": "Replacing all marine life with synthetic alternatives.",
+        "C": "Comprehensive global policies to curtail plastic production and improve waste management.",
+        "D": "Ignoring the problem until natural degradation occurs.",
+        "E": "Encouraging the consumption of smaller fish species."
+      },
+      "correct": "C",
+      "passage_id": "p5"
+    },
+    {
+      "id": 63,
+      "section_id": "dialogue",
+      "question": "Professor: The recent data shows a significant anomaly in the atmospheric pressure readings. \nStudent: ________ \nProfessor: Indeed, but we must first rule out any instrumental calibration errors before drawing conclusions.",
+      "options": {
+        "A": "Could this imply a sudden shift in the jet stream patterns we were studying?",
+        "B": "I think the barometer is completely broken and needs replacement.",
+        "C": "Atmospheric pressure is usually measured in millibars, right?",
+        "D": "Why did we even bother collecting this data if it is wrong?",
+        "E": "I will just delete the anomalous data points to clean up the graph."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 64,
+      "section_id": "dialogue",
+      "question": "Interviewer: Your resume highlights your experience with agile methodologies. How did you handle scope creep in your last project? \nCandidate: ________ \nInterviewer: That proactive approach to communication is exactly what we need here.",
+      "options": {
+        "A": "I usually ignored it because the client always knows best.",
+        "B": "We implemented strict change-request protocols and kept stakeholders informed of cost and timeline impacts.",
+        "C": "Scope creep is a myth; projects always finish on time if you work hard enough.",
+        "D": "I quit the project because the management was too demanding.",
+        "E": "Agile methodologies do not really deal with project scope, so it was not an issue."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 65,
+      "section_id": "dialogue",
+      "question": "Patient: I've been experiencing persistent migraines for the past three weeks, and over-the-counter painkillers aren't helping. \nDoctor: ________ \nPatient: Yes, I recently started a highly stressful new job, which might be a contributing factor.",
+      "options": {
+        "A": "Have you tried drinking more water and getting enough sleep?",
+        "B": "Migraines are quite common; you just have to get used to them.",
+        "C": "Have there been any major changes in your lifestyle or stress levels lately?",
+        "D": "I will prescribe a stronger medication right away without any further tests.",
+        "E": "Are you sure it's a migraine and not just a regular headache?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 66,
+      "section_id": "dialogue",
+      "question": "Colleague A: I feel like the proposed marketing strategy heavily underestimates the intelligence of our target demographic. \nColleague B: ________ \nColleague A: Exactly! If we oversimplify the message, we risk alienating the very professionals we aim to attract.",
+      "options": {
+        "A": "I completely agree; the tone comes across as condescending rather than informative.",
+        "B": "I think the marketing team did a fantastic job with the colorful graphics.",
+        "C": "Our target demographic does not read the brochures anyway.",
+        "D": "We should definitely make the language even simpler.",
+        "E": "I disagree; most people prefer not to think too much when buying software."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 67,
+      "section_id": "dialogue",
+      "question": "Historian: The industrial revolution fundamentally altered the socio-economic fabric of 19th-century Europe. \nJournalist: ________ \nHistorian: Primarily through rapid urbanization and the consequent shift from agrarian lifestyles to factory-based wage labor.",
+      "options": {
+        "A": "When exactly did the industrial revolution end?",
+        "B": "In what specific ways did these profound societal changes manifest?",
+        "C": "Do you think technology is moving too fast today?",
+        "D": "Who invented the steam engine?",
+        "E": "Why did Europe experience this before other continents?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 68,
+      "section_id": "closest_meaning",
+      "question": "Although the economic sanctions were intended to destabilize the regime, they inadvertently united the populace against external interference.",
+      "options": {
+        "A": "The regime fell because the economic sanctions successfully turned the citizens against their leaders.",
+        "B": "Despite being designed to weaken the government, the economic penalties accidentally caused the citizens to bond together against foreign intervention.",
+        "C": "The economic sanctions were planned to unite the people, and they succeeded in overthrowing the destabilized regime.",
+        "D": "Foreign interference was necessary to destabilize the regime because economic sanctions failed to unite the populace.",
+        "E": "The populace was destabilized by the economic sanctions, which allowed external forces to overthrow the regime."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 69,
+      "section_id": "closest_meaning",
+      "question": "The sheer volume of empirical evidence supporting the theory renders any further debate on its fundamental validity practically obsolete.",
+      "options": {
+        "A": "Because the theory lacks empirical evidence, ongoing debate about its validity is absolutely necessary.",
+        "B": "The theory is so complex that the massive amount of evidence makes it impossible to debate its core principles.",
+        "C": "There is such a massive amount of observational proof for the theory that arguing over its basic truth is now essentially pointless.",
+        "D": "Debating the theory is obsolete because no one understands the sheer volume of empirical evidence.",
+        "E": "Further debate on the theory is required to validate the sheer volume of empirical data collected."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 70,
+      "section_id": "closest_meaning",
+      "question": "Unless comprehensive mitigation strategies are implemented immediately, the coastal city will face irreversible infrastructural damage from rising sea levels.",
+      "options": {
+        "A": "If extensive preventative measures are not put into action right away, the rising ocean levels will cause permanent structural harm to the coastal city.",
+        "B": "The coastal city has already suffered irreversible damage from rising sea levels because mitigation strategies were delayed.",
+        "C": "Implementing comprehensive mitigation strategies will ensure that the coastal city never experiences rising sea levels.",
+        "D": "The coastal city is safe from infrastructural damage as long as rising sea levels are mitigated eventually.",
+        "E": "Rising sea levels have caused the immediate implementation of mitigation strategies to repair irreversible damage."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 71,
+      "section_id": "closest_meaning",
+      "question": "He would have accepted the prestigious academic fellowship had it not required him to relocate internationally for three years.",
+      "options": {
+        "A": "He accepted the prestigious academic fellowship because he wanted to move abroad for three years.",
+        "B": "Moving internationally for three years was the main reason he applied for the prestigious academic fellowship.",
+        "C": "He turned down the esteemed academic fellowship solely because it demanded that he move to another country for a three-year period.",
+        "D": "He will accept the fellowship if they reduce the international relocation requirement to less than three years.",
+        "E": "The fellowship was not prestigious enough to convince him to relocate internationally for three years."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 72,
+      "section_id": "paragraph_comp",
+      "question": "The concept of artificial intelligence (AI) has evolved dramatically since its inception in the mid-20th century. Initially, AI research focused on symbolic logic and rule-based systems, which struggled with ambiguity and complex real-world data. ________. Today, these data-driven approaches power everything from natural language processing to autonomous vehicles, demonstrating a remarkable capacity for pattern recognition.",
+      "options": {
+        "A": "However, the invention of the internet made rule-based systems obsolete overnight.",
+        "B": "Consequently, many researchers abandoned AI entirely in the 1980s due to lack of funding.",
+        "C": "The breakthrough came with the advent of machine learning and neural networks, which allow computers to learn from massive datasets.",
+        "D": "Symbolic logic remains the primary method used in modern smartphone applications.",
+        "E": "Hardware limitations meant that computers were too large to be practical for everyday consumers."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 73,
+      "section_id": "paragraph_comp",
+      "question": "Urban green spaces, such as parks and community gardens, provide significant psychological and physiological benefits to city dwellers. Exposure to nature has been empirically linked to reduced cortisol levels, lowered blood pressure, and alleviated symptoms of anxiety. ________. Furthermore, these areas mitigate the urban heat island effect and improve local air quality, contributing to overall public health.",
+      "options": {
+        "A": "Therefore, urban planners should prioritize building more shopping malls to boost the economy.",
+        "B": "In addition to these individual health benefits, green spaces foster social cohesion by providing communal areas for interaction.",
+        "C": "Unfortunately, maintaining these parks is often too expensive for municipal governments to justify.",
+        "D": "Many city dwellers, however, prefer staying indoors to play video games or watch television.",
+        "E": "The construction of skyscrapers has entirely eliminated the possibility of green spaces in modern metropolises."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 74,
+      "section_id": "paragraph_comp",
+      "question": "The deciphering of the Rosetta Stone in 1822 by Jean-Francois Champollion was a watershed moment in the field of Egyptology. For centuries, Egyptian hieroglyphs had remained an enigmatic script, completely incomprehensible to modern scholars. ________. This crucial key unlocked the written history of an entire civilization, allowing researchers to read ancient texts and inscriptions.",
+      "options": {
+        "A": "Champollion was immediately awarded a Nobel Prize for his groundbreaking linguistic research.",
+        "B": "The stone featured a decree inscribed in three different scripts: Ancient Egyptian hieroglyphs, Demotic script, and Ancient Greek.",
+        "C": "Many historians believed that the hieroglyphs were purely decorative and contained no actual linguistic meaning.",
+        "D": "The artifact was unfortunately destroyed during transport to the British Museum shortly after its discovery.",
+        "E": "Ancient Greek was a dead language that nobody in the 19th century knew how to read either."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 75,
+      "section_id": "paragraph_comp",
+      "question": "Antibiotic resistance is widely recognized as one of the most pressing global public health threats of the 21st century. The overuse and misuse of antibiotics in both human medicine and agriculture have accelerated the evolutionary process of bacteria. ________. If this trend continues unchecked, common infections and minor injuries could once again become life-threatening.",
+      "options": {
+        "A": "As a result, many pharmaceutical companies have completely stopped researching infectious diseases.",
+        "B": "Fortunately, bacteria mutate very slowly, giving scientists plenty of time to develop new drugs.",
+        "C": "Consequently, strains of 'superbugs' have emerged that are immune to previously effective medical treatments.",
+        "D": "Antibiotics are actually entirely ineffective against viral infections like the common cold.",
+        "E": "Most agricultural practices have now completely banned the use of any medical interventions for livestock."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 76,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Great Wall of China is not a single continuous wall but a series of fortifications built by various dynasties. (II) These structures were primarily constructed to protect the Chinese states and empires against raids and invasions from nomadic groups. (III) Marco Polo, the famous Venetian traveler, surprisingly never mentioned the Great Wall in his writings. (IV) In addition to defense, the wall allowed for the regulation of trade along the Silk Road. (V) It also facilitated the collection of duties on goods transported along these crucial trading routes.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 77,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Sleep is a complex biological process essential for maintaining cognitive function and physical health. (II) During the REM (Rapid Eye Movement) stage, the brain is highly active, and vivid dreaming occurs. (III) Many people enjoy drinking a warm cup of chamomile tea before going to bed. (IV) This stage is crucial for memory consolidation and emotional regulation. (V) Conversely, deep non-REM sleep is vital for physical restoration and tissue repair.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 78,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Cryptocurrency relies on blockchain technology to maintain a decentralized and secure ledger of transactions. (II) Traditional fiat currencies are regulated by central banks, which can adjust interest rates to manage inflation. (III) In a blockchain, each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. (IV) This design makes the data highly resistant to modification or hacking. (V) Consequently, users can transfer digital assets directly to one another without the need for a financial intermediary.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 79,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Gothic architectural style flourished in Europe during the High and Late Middle Ages. (II) It is characterized by the use of the pointed arch, the ribbed vault, and the flying buttress. (III) These structural innovations allowed for the construction of much taller buildings with vast, awe-inspiring interiors. (IV) Modern skyscrapers predominantly use steel frames and large glass panels for their exterior walls. (V) Furthermore, these techniques enabled the incorporation of massive stained-glass windows, flooding the cathedrals with light.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 80,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The phenomenon of bioluminescence in marine life serves various vital ecological functions. (II) Many deep-sea predators use glowing lures to attract unsuspecting prey in the pitch-black depths. (III) Other species emit flashes of light to startle predators or to attract mates. (IV) The deepest part of the ocean is the Mariana Trench, located in the western Pacific. (V) Camouflage is yet another use, as some squids use light emission on their undersides to blend in with the faint light from the surface.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    }
+  ]
+}
