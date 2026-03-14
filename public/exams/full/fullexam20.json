@@ -7,31 +7,31 @@
   },
   "sections": [
     {
-      "id": "VOC",
+      "id": "vocabulary",
       "label": "Vocabulary",
       "from": 1,
       "to": 6
     },
     {
-      "id": "GRA",
+      "id": "grammar",
       "label": "Grammar",
       "from": 7,
       "to": 16
     },
     {
-      "id": "CLO",
+      "id": "cloze_test",
       "label": "Cloze Test",
       "from": 17,
       "to": 26
     },
     {
-      "id": "SC",
+      "id": "sentence_completion",
       "label": "Sentence Completion",
       "from": 27,
       "to": 36
     },
     {
-      "id": "TRA",
+      "id": "translation",
       "label": "Translation",
       "from": 37,
       "to": 42
@@ -55,13 +55,13 @@
       "to": 71
     },
     {
-      "id": "paragraph_comp",
+      "id": "paragraph_completion",
       "label": "Paragraph Completion",
       "from": 72,
       "to": 75
     },
     {
-      "id": "irrelevant",
+      "id": "irrelevant_sentence",
       "label": "Irrelevant Sentence",
       "from": 76,
       "to": 80
@@ -100,7 +100,7 @@
   "questions": [
     {
       "id": 1,
-      "section_id": "VOC",
+      "section_id": "vocabulary",
       "question": "The researcher's findings were so ---- that they fundamentally altered the scientific community's understanding of cellular regeneration.",
       "options": {
         "A": "redundant",
@@ -114,7 +114,7 @@
     },
     {
       "id": 2,
-      "section_id": "VOC",
+      "section_id": "vocabulary",
       "question": "In an era of rapid globalization, it is crucial for diplomats to ---- cultural differences to prevent international misunderstandings.",
       "options": {
         "A": "aggravate",
@@ -128,7 +128,7 @@
     },
     {
       "id": 3,
-      "section_id": "VOC",
+      "section_id": "vocabulary",
       "question": "Despite several warnings from the fiscal committee, the CEO decided to ---- with the risky merger, which ultimately led to the firm's bankruptcy.",
       "options": {
         "A": "proceed",
@@ -142,7 +142,7 @@
     },
     {
       "id": 4,
-      "section_id": "VOC",
+      "section_id": "vocabulary",
       "question": "The sudden ---- of the stock market caught many investors off guard, leading to widespread financial panic.",
       "options": {
         "A": "fluctuation",
@@ -156,7 +156,7 @@
     },
     {
       "id": 5,
-      "section_id": "VOC",
+      "section_id": "vocabulary",
       "question": "The ancient manuscript was so fragile that the museum curator had to handle it with ---- care to avoid any further deterioration.",
       "options": {
         "A": "negligible",
@@ -170,7 +170,7 @@
     },
     {
       "id": 6,
-      "section_id": "VOC",
+      "section_id": "vocabulary",
       "question": "Environmental activists argue that the government's response to the climate crisis has been ---- inadequate, given the urgency of the situation.",
       "options": {
         "A": "woefully",
@@ -184,7 +184,7 @@
     },
     {
       "id": 7,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "By the time the new policy ---- into effect next year, the economic landscape ---- significantly due to the ongoing reforms.",
       "options": {
         "A": "comes / will have changed",
@@ -198,7 +198,7 @@
     },
     {
       "id": 8,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "The architect ---- to design the skyscraper years ago, but the project was stalled due to a lack of funding.",
       "options": {
         "A": "should be commissioned",
@@ -212,7 +212,7 @@
     },
     {
       "id": 9,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "Not only ---- the committee reject the initial proposal, but they also suggested a complete overhaul of the department.",
       "options": {
         "A": "was",
@@ -226,7 +226,7 @@
     },
     {
       "id": 10,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "The results of the study indicate that ---- students spend more time in the library, ---- likely they are to achieve higher grades.",
       "options": {
         "A": "much / as",
@@ -240,7 +240,7 @@
     },
     {
       "id": 11,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "The professor suggested that the student ---- the thesis one more time before final submission to the dean.",
       "options": {
         "A": "revised",
@@ -254,7 +254,7 @@
     },
     {
       "id": 12,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "The historical archives contain documents ---- back to the 14th century, many of which are still being translated.",
       "options": {
         "A": "dating",
@@ -268,7 +268,7 @@
     },
     {
       "id": 13,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "Rarely ---- such a breathtaking performance been witnessed in the history of the national theater.",
       "options": {
         "A": "has",
@@ -282,7 +282,7 @@
     },
     {
       "id": 14,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "Had the scientists known about the potential side effects, they ---- the clinical trials much earlier.",
       "options": {
         "A": "would suspend",
@@ -296,7 +296,7 @@
     },
     {
       "id": 15,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "The manager is looking for someone ---- expertise in renewable energy is well-documented in academic journals.",
       "options": {
         "A": "who",
@@ -310,7 +310,7 @@
     },
     {
       "id": 16,
-      "section_id": "GRA",
+      "section_id": "grammar",
       "question": "We need to find a solution to the problem of urban sprawl, ---- the city's infrastructure will soon be overwhelmed.",
       "options": {
         "A": "unless",
@@ -324,7 +324,7 @@
     },
     {
       "id": 17,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(17) ----",
       "options": {
         "A": "Despite",
@@ -338,7 +338,7 @@
     },
     {
       "id": 18,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(18) ----",
       "options": {
         "A": "diminish",
@@ -352,7 +352,7 @@
     },
     {
       "id": 19,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(19) ----",
       "options": {
         "A": "referring",
@@ -366,7 +366,7 @@
     },
     {
       "id": 20,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(20) ----",
       "options": {
         "A": "Moreover",
@@ -380,7 +380,7 @@
     },
     {
       "id": 21,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(21) ----",
       "options": {
         "A": "with",
@@ -394,7 +394,7 @@
     },
     {
       "id": 22,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(22) ----",
       "options": {
         "A": "Thinking",
@@ -408,7 +408,7 @@
     },
     {
       "id": 23,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(23) ----",
       "options": {
         "A": "consisted",
@@ -422,7 +422,7 @@
     },
     {
       "id": 24,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(24) ----",
       "options": {
         "A": "estimate",
@@ -436,7 +436,7 @@
     },
     {
       "id": 25,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(25) ----",
       "options": {
         "A": "challenges",
@@ -450,7 +450,7 @@
     },
     {
       "id": 26,
-      "section_id": "CLO",
+      "section_id": "cloze_test",
       "question": "(26) ----",
       "options": {
         "A": "than",
@@ -464,7 +464,7 @@
     },
     {
       "id": 27,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "Although the solar panels are initially expensive to install, ----.",
       "options": {
         "A": "they generate significant savings on energy bills over time",
@@ -478,7 +478,7 @@
     },
     {
       "id": 28,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "Unless the international community takes immediate action to reduce carbon emissions, ----.",
       "options": {
         "A": "the targets set in the Paris Agreement were met",
@@ -492,7 +492,7 @@
     },
     {
       "id": 29,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "---- that many traditional crafts are at risk of disappearing forever.",
       "options": {
         "A": "The rapid pace of technological advancement means",
@@ -506,7 +506,7 @@
     },
     {
       "id": 30,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "Even though the detective had very little evidence to go on, ----.",
       "options": {
         "A": "he was unable to identify the primary suspect",
@@ -520,7 +520,7 @@
     },
     {
       "id": 31,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "In light of the recent data breach, the company has decided to ----.",
       "options": {
         "A": "implement much stricter cybersecurity protocols",
@@ -534,7 +534,7 @@
     },
     {
       "id": 32,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "Just as exercise is essential for physical health, ----.",
       "options": {
         "A": "a balanced diet is also very important",
@@ -548,7 +548,7 @@
     },
     {
       "id": 33,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "The more we learn about the complexities of the human brain, ----.",
       "options": {
         "A": "it is easier to treat neurological disorders",
@@ -562,7 +562,7 @@
     },
     {
       "id": 34,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "Despite the fact that the two countries share a common language, ----.",
       "options": {
         "A": "they have developed very different cultural identities",
@@ -576,7 +576,7 @@
     },
     {
       "id": 35,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "Given the high rate of inflation, it is hardly surprising that ----.",
       "options": {
         "A": "the purchasing power of the average consumer has declined",
@@ -590,7 +590,7 @@
     },
     {
       "id": 36,
-      "section_id": "SC",
+      "section_id": "sentence_completion",
       "question": "No matter how hard the team practiced for the championship, ----.",
       "options": {
         "A": "they were confident that they would win the trophy",
@@ -604,7 +604,7 @@
     },
     {
       "id": 37,
-      "section_id": "TRA",
+      "section_id": "translation",
       "question": "The discovery of new vaccines has not only saved millions of lives but also paved the way for a more resilient global health system.",
       "options": {
         "A": "Yeni aşıların keşfi sadece milyonlarca hayat kurtarmakla kalmamış, aynı zamanda daha dirençli bir küresel sağlık sisteminin yolunu açmıştır.",
@@ -618,7 +618,7 @@
     },
     {
       "id": 38,
-      "section_id": "TRA",
+      "section_id": "translation",
       "question": "Economic indicators suggest that unless internal demand is stimulated, the recovery process might take longer than anticipated.",
       "options": {
         "A": "İç talep canlandırılmadığı sürece ekonomik göstergeler iyileşme sürecinin beklenenden uzun süreceğini göstermektedir.",
@@ -632,7 +632,7 @@
     },
     {
       "id": 39,
-      "section_id": "TRA",
+      "section_id": "translation",
       "question": "The transition to renewable energy sources is considered a vital step in mitigating the adverse effects of global climate change.",
       "options": {
         "A": "Yenilenebilir enerji kaynaklarına geçiş, küresel iklim değişikliğinin olumsuz etkilerini hafifletmede hayati bir adım olarak görülmektedir.",
@@ -646,7 +646,7 @@
     },
     {
       "id": 40,
-      "section_id": "TRA",
+      "section_id": "translation",
       "question": "Son yıllarda yapılan araştırmalar, düzenli uykunun bilişsel fonksiyonlar ve genel sağlık üzerinde sanılandan daha büyük bir etkisi olduğunu göstermektedir.",
       "options": {
         "A": "Research in recent years shows that regular sleep has a greater impact on cognitive functions and overall health than previously thought.",
@@ -660,7 +660,7 @@
     },
     {
       "id": 41,
-      "section_id": "TRA",
+      "section_id": "translation",
       "question": "Birçok bilim insanı, Mars'ta suyun bulunmasının sadece gezegenin geçmişini aydınlatmakla kalmayıp aynı zamanda gelecekteki insan kolonileri için umut verici olduğunu savunmaktadır.",
       "options": {
         "A": "Many scientists argue that finding water on Mars not only sheds light on the planet's past but is also promising for future human colonies.",
@@ -674,7 +674,7 @@
     },
     {
       "id": 42,
-      "section_id": "TRA",
+      "section_id": "translation",
       "question": "Sanayi Devrimi, sadece üretim yöntemlerini değiştirmekle kalmamış, aynı zamanda toplumsal yapıda ve yaşam standartlarında köklü değişimlere yol açmıştır.",
       "options": {
         "A": "The Industrial Revolution changed production methods and led to fundamental changes in social structure and living standards.",
@@ -1094,7 +1094,7 @@
     },
     {
       "id": 72,
-      "section_id": "paragraph_comp",
+      "section_id": "paragraph_completion",
       "question": "The concept of 'Blue Zones' refers to geographic areas where people live significantly longer lives than the global average. Researchers have identified several such zones, including Okinawa in Japan and Sardinia in Italy. ---- This commonality suggests that longevity is not merely a matter of genetics but is heavily influenced by lifestyle and environment.",
       "options": {
         "A": "Modern medicine has played a minor role in these specific regions.",
@@ -1108,7 +1108,7 @@
     },
     {
       "id": 73,
-      "section_id": "paragraph_comp",
+      "section_id": "paragraph_completion",
       "question": "In the early 20th century, the discovery of penicillin by Alexander Fleming revolutionized medicine. Before this, even a minor infection could prove fatal. ---- However, the overprescription of antibiotics in recent decades has led to the emergence of drug-resistant bacteria, posing a new threat to global health.",
       "options": {
         "A": "Fleming's discovery was initially ignored by the medical community.",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 74,
-      "section_id": "paragraph_comp",
+      "section_id": "paragraph_completion",
       "question": "Cryptocurrencies have gained immense popularity as an alternative to traditional fiat currencies. Proponents argue that they offer greater security and decentralization. ---- Volatility and the potential for illegal activities are frequently cited by those who advocate for stricter government oversight of the crypto market.",
       "options": {
         "A": "On the other hand, critics point to their extreme price fluctuations and lack of regulation.",
@@ -1136,7 +1136,7 @@
     },
     {
       "id": 75,
-      "section_id": "paragraph_comp",
+      "section_id": "paragraph_completion",
       "question": "Psychologists have long studied the 'placebo effect,' where a patient experiences a real improvement in their condition after receiving a treatment with no therapeutic value. ---- This suggests that the mind plays a crucial role in the healing process, potentially triggering the body's own internal pharmacy.",
       "options": {
         "A": "Most doctors refuse to use placebos because they believe it is unethical.",
@@ -1150,7 +1150,7 @@
     },
     {
       "id": 76,
-      "section_id": "irrelevant",
+      "section_id": "irrelevant_sentence",
       "question": "(I) The Renaissance was a fervent period of European cultural, artistic, political and economic 'rebirth' following the Middle Ages. (II) Usually described as taking place from the 14th century to the 17th century, the Renaissance promoted the rediscovery of classical philosophy, literature and art. (III) Some of the greatest thinkers, authors, statesmen, scientists and artists in human history thrived during this era. (IV) The Black Death had previously killed nearly one-third of the population in Europe. (V) This period is also credited with bridging the gap between the Middle Ages and modern-day civilization.",
       "options": {
         "A": "I",
@@ -1164,7 +1164,7 @@
     },
     {
       "id": 77,
-      "section_id": "irrelevant",
+      "section_id": "irrelevant_sentence",
       "question": "(I) Biodiversity is essential for the processes that support all life on Earth, including humans. (II) Without a wide range of animals, plants and microorganisms, we cannot have the healthy ecosystems that we rely on. (III) Many people enjoy visiting national parks to see rare wildlife in their natural habitats. (IV) These ecosystems provide us with the air we breathe and the food we eat. (V) However, human activities like deforestation and pollution are currently causing a rapid decline in global biodiversity.",
       "options": {
         "A": "I",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 78,
-      "section_id": "irrelevant",
+      "section_id": "irrelevant_sentence",
       "question": "(I) Graphene is a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice. (II) Since its discovery, it has been hailed as a 'wonder material' due to its exceptional strength and conductivity. (III) It is about 200 times stronger than steel and conducts electricity better than copper. (IV) Carbon is a versatile element that can be found in all known life forms. (V) Potential applications for graphene range from flexible electronics to advanced water filtration systems.",
       "options": {
         "A": "I",
@@ -1192,7 +1192,7 @@
     },
     {
       "id": 79,
-      "section_id": "irrelevant",
+      "section_id": "irrelevant_sentence",
       "question": "(I) Remote work has become increasingly common following the global pandemic. (II) Many employees appreciate the flexibility and the lack of a daily commute. (III) Companies have also found that they can reduce overhead costs by maintaining smaller physical offices. (IV) Public transportation systems in major cities have seen a significant decrease in revenue recently. (V) Despite these benefits, some workers struggle with the isolation and the blurring of boundaries between professional and personal life.",
       "options": {
         "A": "I",
@@ -1206,7 +1206,7 @@
     },
     {
       "id": 80,
-      "section_id": "irrelevant",
+      "section_id": "irrelevant_sentence",
       "question": "(I) The James Webb Space Telescope (JWST) is designed to solve mysteries in our solar system and beyond. (II) It is the largest and most powerful space telescope ever built by NASA. (III) The telescope's primary mirror consists of 18 hexagonal segments made of gold-plated beryllium. (IV) Astronomy has always been a popular subject among high school students. (V) With its infrared capabilities, JWST can peer through cosmic dust clouds to see the first stars and galaxies forming.",
       "options": {
         "A": "I",
