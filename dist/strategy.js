@@ -191,6 +191,8 @@ function nextStrategyQuestion() {
     if (currentQuestionIndex < strategyQuestions.length - 1) {
         currentQuestionIndex++;
         renderStrategyQuestion();
+        const container = document.getElementById('strategy');
+        if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
 
@@ -198,6 +200,8 @@ function previousStrategyQuestion() {
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         renderStrategyQuestion();
+        const container = document.getElementById('strategy');
+        if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
 

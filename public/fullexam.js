@@ -304,6 +304,9 @@ async function feStartExam(btn) {
   feRenderQGrid();
   feRenderQuestion();
   feStartTimer();
+
+  const container = document.getElementById('globalFullExamContainer');
+  if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // ─── Timer ───────────────────────────────────────────────────
@@ -427,14 +430,22 @@ function feNavQuestion(delta) {
   const newIdx = feCurrentIdx + delta;
   if (newIdx < 0 || newIdx >= feExamData.questions.length) return;
   feCurrentIdx = newIdx;
-  feRenderQuestion();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  
+  if (!feStarted) feRenderReviewQuestion();
+  else feRenderQuestion();
+
+  const container = document.getElementById('globalFullExamContainer');
+  if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function feJumpQuestion(idx) {
   feCurrentIdx = idx;
-  feRenderQuestion();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  
+  if (!feStarted) feRenderReviewQuestion();
+  else feRenderQuestion();
+
+  const container = document.getElementById('globalFullExamContainer');
+  if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function feRenderQGrid() {
@@ -556,6 +567,9 @@ function feReviewAnswers() {
   document.getElementById('feResultScreen').classList.add('hidden');
   document.getElementById('feExamScreen').classList.remove('hidden');
   feRenderReviewQuestion();
+
+  const container = document.getElementById('globalFullExamContainer');
+  if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function feRenderReviewQuestion() {

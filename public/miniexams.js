@@ -324,6 +324,10 @@ async function meStartExam() {
     meRenderQuestion();
     meStartTimer();
 
+    // Scroll to container
+    const container = document.getElementById('tab-miniexams');
+    if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
   } catch (err) {
     console.error(err);
     alert('Sınav yüklenirken hata oluştu.');
@@ -354,6 +358,10 @@ function meNavQuestion(delta) {
   if (newIdx >= 0 && newIdx < meExamData.questions.length) {
     meCurrentIdx = newIdx;
     meRenderQuestion();
+    
+    // Scroll to container
+    const container = document.getElementById('tab-miniexams');
+    if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
 
