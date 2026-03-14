@@ -253,7 +253,7 @@ function calculateYdtScore() {
 
 // Global register functions
 window.ydtExamsHTML = getYdtSelectorHTML(YDT_EXAM_LIST, 'YDT Tam Denemeler');
-window.ydtTacticsHTML = ydtTacticsHTML;
+window.ydtTacticsHTML = getYdtTacticsHTML();
 window.ydtCalcHTML = getYdtCalcHTML();
 window.ydtVocabHTML = getYdtVocabHTML();
 window.calculateYdtScore = calculateYdtScore;
