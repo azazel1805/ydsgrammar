@@ -11,9 +11,18 @@ const YDT_EXAM_LIST = [
 ];
 
 const YDT_TACTICS = [
-  { title: "YDT Nedir?", status: "Genel Bakış", content: "YDT (Yabancı Dil Testi), üniversite sınavının (YKS) dil oturumudur. 80 sorudan oluşur ve 120 dakikadır." },
-  { title: "Soru Dağılımı", status: "Sınav Yapısı", content: "Kelime (5), Gramer (10), Cloze Test (5), Cümle Tamamlama (8), Çeviri (12), Okuma Parçası (15), Diyalog (5), Anlamca En Yakın (5), Durum Soruları (5), Paragraf Tamamlama (5), Anlamı Bozan (5)." },
-  { title: "Zaman Yönetimi", status: "Strateji", content: "YDS'den farklı olarak 120 dakikadır. Çeviri ve Diyalog gibi kolay bölümlerden zaman artırıp Okuma parçalarına ayırmak kritiktir." }
+  { title: "Kelime Soruları", status: "Trick: Collocations", content: "Sadece kelime anlamı yetmez. Kelimenin yanına aldığı edata (preposition) veya hangi fiille kullanıldığına (collocation) bakın. Örneğin 'influence' kelimesi 'on' ile, 'depend' kelimesi 'on' ile kullanılır." },
+  { title: "Gramer & Tense", status: "Trick: Zaman Zarfları", content: "Tense sorularında mutlaka zaman zarflarına (ago, since, by the time) odaklanın. Eğer 'for 10 years' varsa ve cümle hala devam ediyorsa Present Perfect önceliklidir." },
+  { title: "Bağlaçlar", status: "Trick: +/- Dengesi", content: "Zıtlık bağlaçlarında (but, although, however) cümlenin bir tarafı olumluysa diğer tarafı olumsuz olmalıdır. Sebep-sonuç bağlaçlarında ise anlam akışı aynı yöndedir." },
+  { title: "Cümle Tamamlama", status: "Trick: Referans Kelimeler", content: "Yan cümle ile ana cümle arasındaki 'they, this, such, those' gibi referans kelimelere dikkat edin. Boşluktaki özne, ana cümledeki bir unsura mutlaka işaret etmelidir." },
+  { title: "Cloze Test", status: "Trick: Bütünsel Bakış", content: "Boşlukları tek tek değil, paragrafın tamamını anlayarak çözün. Özellikle bağlaç boşluklarında, boşluktan önceki ve sonraki cümleler arasındaki mantıksal ilişkiyi kurun." },
+  { title: "Çeviri Soruları", status: "Trick: Ana Fiil (Yüklem)", content: "Cümlenin ana fiilini bulun. Türkçe-İngilizce çeviride yüklem sonda, İngilizce'de ise genellikle özneden hemen sonradır. Bu eşleşme seçeneklerin %90'ını eler." },
+  { title: "Okuma Parçaları", status: "Trick: Zıtlık Odaklı", content: "Parçada 'but, however, yet, nevertheless' gibi zıtlık bağlaçlarından sonra gelen cümleler genellikle soru cevabıdır. Ayrıca 'most, only, never' gibi iddialı ifadeler içeren seçeneklere temkinli yaklaşın." },
+  { title: "Diyalog Tamamlama", status: "Trick: Duygu Tonu", content: "Boşluktan bir önceki ve bir sonraki cümleye bakın. Cevap seçeneğindeki duygu tonu (şaşkınlık, onaylama, itiraz) diyalogla uyumlu olmalı. 'Actually' veya 'By the way' gibi geçişlere dikkat." },
+  { title: "Anlamca En Yakın", status: "Trick: Miktar Zarfları", content: "Cümledeki zarflara (only, rarely, always, almost) ve miktar belirleyicilere dikkat edin. Orijinal cümlede 'nadiren' diyorsa, şıklarda 'hiçbir zaman' diyen seçeneği eleyin." },
+  { title: "Durum Soruları", status: "Trick: Sosyal Statü", content: "Kiminle konuştuğunuza (arkadaş, patron, garson) bakın. Dilin tonu (resmi/samimi) belirleyicidir. Ayrıca 'en nazik olanı' değil, 'duruma en uygun olanı' seçin." },
+  { title: "Paragraf Tamamlama", status: "Trick: Özne Takibi", content: "Boşluktan önceki cümlede geçen bir özne veya kavramın, boşluktan sonraki cümlede nasıl devam ettiğini (it, they, this) izleyin. Akışı bozan ani konu değişikliklerinden kaçının." },
+  { title: "Anlamı Bozan Cümle", status: "Trick: Kapsam Hatası", content: "Paragrafın genel konusundan sapan veya aynı konuyu çok farklı bir boyuttan ele alan (örneğin genel eğitimden bahsedilirken aniden okulun boyasına geçilmesi) cümleyi bulun." }
 ];
 
 // ── HTML Templates ───────────────────────────────────────────
