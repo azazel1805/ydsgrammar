@@ -79,8 +79,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <script type="module" crossorigin src="./assets/index-D3thcaUb.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Bh9cD3DH.css">
+  <script type="module" crossorigin src="./assets/index-DxbLQI2w.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Spx4jS6D.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -287,6 +287,10 @@
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">YDT Denemeleri</button>
             <button data-tab="ydt-tactics" onclick="switchTab('ydt-tactics')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">YDT Taktikleri</button>
+            <button data-tab="ydt-calc" onclick="switchTab('ydt-calc')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-blue-700 transition-colors font-bold text-blue-800">YKS-Dil Puan Hesapla</button>
+            <button data-tab="ydt-vocab" onclick="switchTab('ydt-vocab')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-blue-700 transition-colors font-bold text-orange-600">YDT Kelime Listesi</button>
           </div>
         </div>
 
@@ -473,6 +477,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
           <div class="space-y-2 mb-4">
             <button data-tab="ydt-exams" onclick="switchTabAndClose('ydt-exams')" class="drawer-btn">YDT Denemeleri</button>
             <button data-tab="ydt-tactics" onclick="switchTabAndClose('ydt-tactics')" class="drawer-btn">YDT Taktikleri</button>
+            <button data-tab="ydt-calc" onclick="switchTabAndClose('ydt-calc')" class="drawer-btn font-bold text-blue-700">Puan Hesapla</button>
+            <button data-tab="ydt-vocab" onclick="switchTabAndClose('ydt-vocab')" class="drawer-btn font-bold text-orange-600">Önemli Kelimeler</button>
           </div>
         </div>
 
@@ -591,6 +597,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-freeexams" class="tab-content"></div>
       <div id="tab-ydt-exams" class="tab-content"></div>
       <div id="tab-ydt-tactics" class="tab-content"></div>
+      <div id="tab-ydt-calc" class="tab-content"></div>
+      <div id="tab-ydt-vocab" class="tab-content"></div>
       <div id="tab-textdecon" class="tab-content hidden"></div>
       <div id="tab-admin" class="tab-content"></div>
     </div>
