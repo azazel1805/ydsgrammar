@@ -467,6 +467,49 @@ const YDT_VOCAB_DATA = [
   { w: "Widespread", m: "Yaygın", e: "The disease is widespread." }
 ];
 
+const YDT_GRAMMAR_SHEETS = [
+  {
+    title: "Tense Uyumu (Zaman Uyumu)",
+    icon: "fa-clock",
+    color: "blue",
+    content: [
+      { subtitle: "Temel Kural", text: "Ana cümle 'Present' ise yan cümle 'Present' veya 'Future' olabilir. Ana cümle 'Past' ise yan cümle de 'Past' olmalıdır." },
+      { subtitle: "İstisna", text: "General truths (Genel doğrular) her zaman Simple Present ile ifade edilir." },
+      { subtitle: "İpucu", text: "Since + V2 kuralını unutmayın: 'Since'li cümle V2 (Past), ana cümle Present Perfect olur." }
+    ]
+  },
+  {
+    title: "If Clauses (Koşul Cümleleri)",
+    icon: "fa-code-branch",
+    color: "emerald",
+    content: [
+      { subtitle: "Type 0 & 1", text: "Gerçek ve olası durumlar. If + Present, ... Present/Will." },
+      { subtitle: "Type 2", text: "Hayali/Mevcut durumun zıttı. If + Past (V2), ... Would + V1." },
+      { subtitle: "Type 3", text: "Geçmişteki pişmanlıklar. If + Past Perfect (Had V3), ... Would Have V3." }
+    ]
+  },
+  {
+    title: "Bağlaçlar (Conjunctions)",
+    icon: "fa-link",
+    color: "purple",
+    content: [
+      { subtitle: "Zıtlık (Contrast)", text: "Although, Though, Even though (+ Cümle) | Despite, In spite of (+ Isım/Ving)" },
+      { subtitle: "Sebep (Reason)", text: "Because, Since, As (+ Cümle) | Because of, Due to, Thanks to (+ Isım)" },
+      { subtitle: "Sonuç (Result)", text: "Therefore, Thus, Hence, As a result (+ Cümle)" }
+    ]
+  },
+  {
+    title: "Relative Clauses",
+    icon: "fa-user-tag",
+    color: "amber",
+    content: [
+      { subtitle: "Who / Whom", text: "İnsanlar için kullanılır. Who (Özne), Whom (Nesne)." },
+      { subtitle: "Which / That", text: "Nesneler ve hayvanlar için kullanılır. That her ikisinin yerine geçebilir." },
+      { subtitle: "Whose", text: "Aitlik bildirir. İsim + Whose + İsim yapısı aranır." }
+    ]
+  }
+];
+
 // ── YDT Vocab List ────────────────────────────────────────────────
 function getYdtVocabHTML() {
   return /* html */`
@@ -507,8 +550,54 @@ function filterYdtVocab() {
     });
 }
 
+function getYdtGrammarHTML() {
+  return /* html */`
+<div class="max-w-6xl mx-auto px-4 py-10">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-black text-slate-900 mb-2" style="font-family:'Playfair Display',serif;">YDT Gramer Özetleri</h2>
+    <p class="text-slate-500">Sınavda en çok karıştırılan konular için hızlı referans kartları.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    ${YDT_GRAMMAR_SHEETS.map(sheet => `
+      <div class="bg-white rounded-[2.5rem] p-8 shadow-sm border border-slate-100 hover:shadow-xl transition-all relative overflow-hidden group">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-${sheet.color}-50 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
+        
+        <div class="relative z-10">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="w-14 h-14 rounded-2xl bg-${sheet.color}-600 flex items-center justify-center text-white shadow-lg shadow-${sheet.color}-900/20">
+              <i class="fas ${sheet.icon} text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-black text-slate-800">${sheet.title}</h3>
+          </div>
+
+          <div class="space-y-6">
+            ${sheet.content.map(c => `
+              <div class="border-l-4 border-${sheet.color}-200 pl-4">
+                <p class="text-[10px] font-bold text-${sheet.color}-600 uppercase tracking-widest mb-1">${c.subtitle}</p>
+                <p class="text-slate-600 text-sm leading-relaxed">${c.text}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    `).join('')}
+  </div>
+
+  <div class="mt-16 text-center">
+    <div class="inline-block p-1 rounded-2xl bg-slate-100">
+      <div class="bg-white px-8 py-4 rounded-xl shadow-sm border border-slate-200">
+        <p class="text-slate-500 text-sm italic">"Daha detaylı konu anlatımı için üst menüdeki <b>Grammar</b> bölümünü ziyaret edebilirsiniz."</p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+}
+
 // Global register functions
 window.ydtExamsHTML = getYdtSelectorHTML(YDT_EXAM_LIST, 'YDT Tam Denemeler');
 window.ydtTacticsHTML = getYdtTacticsHTML();
 window.ydtVocabHTML = getYdtVocabHTML();
+window.ydtGrammarHTML = getYdtGrammarHTML();
 window.YDT_EXAM_LIST = YDT_EXAM_LIST;

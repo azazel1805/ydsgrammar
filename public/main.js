@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-ydt-exams", typeof ydtExamsHTML !== 'undefined' ? ydtExamsHTML : undefined);
     safeInject("tab-ydt-tactics", typeof ydtTacticsHTML !== 'undefined' ? ydtTacticsHTML : undefined);
     safeInject("tab-ydt-vocab", typeof ydtVocabHTML !== 'undefined' ? ydtVocabHTML : undefined);
+    safeInject("tab-ydt-grammar", typeof ydtGrammarHTML !== 'undefined' ? ydtGrammarHTML : undefined);
     safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
@@ -370,6 +371,7 @@ function reinjectTabContent(tabName) {
         "ydt-exams": typeof ydtExamsHTML !== 'undefined' ? ydtExamsHTML : null,
         "ydt-tactics": typeof ydtTacticsHTML !== 'undefined' ? ydtTacticsHTML : null,
         "ydt-vocab": typeof ydtVocabHTML !== 'undefined' ? ydtVocabHTML : null,
+        "ydt-grammar": typeof ydtGrammarHTML !== 'undefined' ? ydtGrammarHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -405,7 +407,8 @@ function updateSEO(tab) {
         "freeexams": { title: "Ücretsiz YDS Deneme Sınavları – yds.monster", desc: "80 soruluk ücretsiz tam YDS denemeleri ile kendinizi test edin." },
         "ydt-exams": { title: "YDT Deneme Sınavları – Güncel Müfredat", desc: "Üniversite sınavı (YKS-Dil) ayarında 80 soruluk YDT denemeleri." },
         "ydt-tactics": { title: "YDT Taktikleri ve İngilizce Sınav Stratejileri", desc: "YDT sınavında netlerinizi artıracak taktikler ve soru çözüm teknikleri." },
-        "ydt-vocab": { title: "Önemli YDT Kelime Listesi – Akademik İngilizce", desc: "YDT sınavında en sık çıkan 500+ akademik kelime ve kullanım örnekleri." }
+        "ydt-vocab": { title: "Önemli YDT Kelime Listesi – Akademik İngilizce", desc: "YDT sınavında en sık çıkan 500+ akademik kelime ve kullanım örnekleri." },
+        "ydt-grammar": { title: "YDT Gramer Özetleri – Hızlı Hazırlık Kartları", desc: "YDT sınavında en çok çıkan gramer konularının özet tabloları ve ipuçları." }
     };
 
     const data = seoMap[tab] || { title: "yds.monster – YDS & YDT Master Encyclopedia", desc: "Kapsamlı YDS ve YDT hazırlık platformu." };
