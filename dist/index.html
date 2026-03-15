@@ -79,8 +79,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <script type="module" crossorigin src="./assets/index-DKu34OqC.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-QoAtKh18.css">
+  <script type="module" crossorigin src="./assets/index-TVyRc0IE.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-9Ux0VWH9.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -274,6 +274,10 @@
             <button data-tab="freeexams" onclick="switchTab('freeexams')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-green-700">
               <i class="fas fa-gift mr-1"></i> Ücretsiz Denemeler
+            </button>
+            <button data-tab="focused-exams" onclick="switchTab('focused-exams')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-indigo-700 transition-colors font-bold text-indigo-700">
+              <i class="fas fa-bullseye mr-1 text-indigo-500"></i> Odaklı Denemeler
             </button>
           </div>
         </div>
@@ -484,6 +488,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               class="drawer-btn font-bold text-red-800">Strateji Laboratuvarı</button>
             <button data-tab="freeexams" onclick="switchTabAndClose('freeexams')"
               class="drawer-btn font-bold text-green-700">Ücretsiz Denemeler</button>
+            <button data-tab="focused-exams" onclick="switchTabAndClose('focused-exams')"
+              class="drawer-btn font-bold text-indigo-700">Odaklı Denemeler</button>
           </div>
         </div>
 
@@ -596,6 +602,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-profile" class="tab-content"></div>
       <div id="tab-vocabulary" class="tab-content"></div>
       <div id="tab-miniexams" class="tab-content"></div>
+      <div id="tab-focused-exams" class="tab-content"></div>
       <div id="tab-fullexam" class="tab-content"></div>
       <div id="tab-tacticguide" class="tab-content"></div>
       <div id="tab-tacticalpanels" class="tab-content"></div>
@@ -729,7 +736,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./dashboard.js"></script>
     <script src="./vocabulary.js"></script>
     <script src="./miniexams.js"></script>
-    <script src="./fullexam.js"></script>
+  <script src="./focused-exams.js"></script>
+  <script src="./fullexam.js"></script>
     <script src="./tacticguide.js"></script>
     <script src="./tenseguide.js"></script>
     <script src="./tacticalpanels.js"></script>

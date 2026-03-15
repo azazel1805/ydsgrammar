@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-phrasal", typeof phrasalHTML !== 'undefined' ? phrasalHTML : undefined);
     safeInject("tab-aireading", typeof aiReadingHTML !== 'undefined' ? aiReadingHTML : undefined);
     safeInject("tab-tutor-exam", typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : undefined);
+    safeInject("tab-focused-exams", typeof focusedExamsHTML !== 'undefined' ? focusedExamsHTML : undefined);
     safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
@@ -71,6 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (typeof injectMiniExamHTML === "function") {
         injectMiniExamHTML();
+    }
+
+    if (typeof initFocusedExams === "function") {
+        initFocusedExams();
     }
 
     if (typeof initTutorExam === "function") {
