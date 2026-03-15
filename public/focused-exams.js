@@ -356,11 +356,28 @@ function foRenderQuestion() {
     }
 
     const btn = document.createElement('button');
-    btn.className = `w-full p-5 rounded-2xl border-2 text-left transition-all font-semibold ${borderClass}`;
-    btn.innerHTML = `<span class="inline-block w-8 h-8 rounded-lg ${badgeClass} flex items-center justify-center mr-4 text-xs group-hover:bg-indigo-600 group-hover:text-white">${key}</span> ${applyHighlights(q.options[key])}`;
+    btn.className = `group w-full p-5 rounded-2xl border-2 text-left transition-all font-semibold relative overflow-hidden ${borderClass}`;
+    
+    // Check if we should show synonym lookup
+    const isVocab = q.section_id && q.section_id.toLowerCase().includes('vocab');
+    
+    btn.innerHTML = `
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <span class="inline-block w-8 h-8 rounded-lg ${badgeClass} flex items-center justify-center mr-4 text-xs group-hover:bg-indigo-600 group-hover:text-white transition-colors">${key}</span> 
+          <span class="${isVocab ? 'cursor-help hover:text-indigo-600 border-b border-transparent hover:border-indigo-300' : ''}" 
+                onclick="${isVocab ? `foShowSynonym('${q.options[key].replace(/'/g, "\\'")}', event, '${q.id}-${key}')` : ''}">
+            ${applyHighlights(q.options[key])}
+          </span>
+        </div>
+        <div id="syn-${q.id}-${key}" class="hidden text-xs text-indigo-500 font-bold bg-indigo-50 px-3 py-1 rounded-full animate-in zoom-in duration-300"></div>
+      </div>
+    `;
     
     if (!foReviewMode) {
-        btn.onclick = () => {
+        btn.onclick = (e) => {
+          // Prevent selection if user clicked the word for synonym
+          if (e.target.closest('[onclick*="foShowSynonym"]')) return;
           foAnswers[q.id] = key;
           foRenderQuestion();
           foUpdateNav();
@@ -416,6 +433,34 @@ function applyHighlights(text) {
 function toggleFocusType(type) {
   activeHighlights[type] = !activeHighlights[type];
   foRenderQuestion();
+}
+
+async function foShowSynonym(word, event, targetId) {
+  if (event) event.stopPropagation();
+  const target = document.getElementById(`syn-${targetId}`);
+  if (!target) return;
+
+  // Toggle if already visible
+  if (!target.classList.contains('hidden')) {
+    target.classList.add('hidden');
+    return;
+  }
+
+  target.innerText = '...';
+  target.classList.remove('hidden');
+
+  try {
+    const res = await fetch(`https://api.datamuse.com/words?rel_syn=${word.toLowerCase().trim()}&max=1`);
+    const data = await res.json();
+    if (data && data.length > 0) {
+      target.innerText = `≈ ${data[0].word}`;
+    } else {
+      target.innerText = 'No synonym found';
+      setTimeout(() => target.classList.add('hidden'), 2000);
+    }
+  } catch (err) {
+    target.classList.add('hidden');
+  }
 }
 
 function foUpdateNav() {
