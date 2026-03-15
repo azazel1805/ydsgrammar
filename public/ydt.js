@@ -11,18 +11,21 @@ const YDT_EXAM_LIST = [
 ];
 
 const YDT_TACTICS = [
-  { title: "Kelime Soruları", status: "Trick: Collocations", content: "Sadece kelime anlamı yetmez. Kelimenin yanına aldığı edata (preposition) veya hangi fiille kullanıldığına (collocation) bakın. Örneğin 'influence' kelimesi 'on' ile, 'depend' kelimesi 'on' ile kullanılır." },
-  { title: "Gramer & Tense", status: "Trick: Zaman Zarfları", content: "Tense sorularında mutlaka zaman zarflarına (ago, since, by the time) odaklanın. Eğer 'for 10 years' varsa ve cümle hala devam ediyorsa Present Perfect önceliklidir." },
-  { title: "Bağlaçlar", status: "Trick: +/- Dengesi", content: "Zıtlık bağlaçlarında (but, although, however) cümlenin bir tarafı olumluysa diğer tarafı olumsuz olmalıdır. Sebep-sonuç bağlaçlarında ise anlam akışı aynı yöndedir." },
-  { title: "Cümle Tamamlama", status: "Trick: Referans Kelimeler", content: "Yan cümle ile ana cümle arasındaki 'they, this, such, those' gibi referans kelimelere dikkat edin. Boşluktaki özne, ana cümledeki bir unsura mutlaka işaret etmelidir." },
-  { title: "Cloze Test", status: "Trick: Bütünsel Bakış", content: "Boşlukları tek tek değil, paragrafın tamamını anlayarak çözün. Özellikle bağlaç boşluklarında, boşluktan önceki ve sonraki cümleler arasındaki mantıksal ilişkiyi kurun." },
-  { title: "Çeviri Soruları", status: "Trick: Ana Fiil (Yüklem)", content: "Cümlenin ana fiilini bulun. Türkçe-İngilizce çeviride yüklem sonda, İngilizce'de ise genellikle özneden hemen sonradır. Bu eşleşme seçeneklerin %90'ını eler." },
-  { title: "Okuma Parçaları", status: "Trick: Zıtlık Odaklı", content: "Parçada 'but, however, yet, nevertheless' gibi zıtlık bağlaçlarından sonra gelen cümleler genellikle soru cevabıdır. Ayrıca 'most, only, never' gibi iddialı ifadeler içeren seçeneklere temkinli yaklaşın." },
-  { title: "Diyalog Tamamlama", status: "Trick: Duygu Tonu", content: "Boşluktan bir önceki ve bir sonraki cümleye bakın. Cevap seçeneğindeki duygu tonu (şaşkınlık, onaylama, itiraz) diyalogla uyumlu olmalı. 'Actually' veya 'By the way' gibi geçişlere dikkat." },
-  { title: "Anlamca En Yakın", status: "Trick: Miktar Zarfları", content: "Cümledeki zarflara (only, rarely, always, almost) ve miktar belirleyicilere dikkat edin. Orijinal cümlede 'nadiren' diyorsa, şıklarda 'hiçbir zaman' diyen seçeneği eleyin." },
-  { title: "Durum Soruları", status: "Trick: Sosyal Statü", content: "Kiminle konuştuğunuza (arkadaş, patron, garson) bakın. Dilin tonu (resmi/samimi) belirleyicidir. Ayrıca 'en nazik olanı' değil, 'duruma en uygun olanı' seçin." },
-  { title: "Paragraf Tamamlama", status: "Trick: Özne Takibi", content: "Boşluktan önceki cümlede geçen bir özne veya kavramın, boşluktan sonraki cümlede nasıl devam ettiğini (it, they, this) izleyin. Akışı bozan ani konu değişikliklerinden kaçının." },
-  { title: "Anlamı Bozan Cümle", status: "Trick: Kapsam Hatası", content: "Paragrafın genel konusundan sapan veya aynı konuyu çok farklı bir boyuttan ele alan (örneğin genel eğitimden bahsedilirken aniden okulun boyasına geçilmesi) cümleyi bulun." }
+  { title: "Zaman Yönetimi", status: "Kritik: 120 Dakika", icon: "fa-stopwatch", content: "80 soruyu 120 dakikada bitirmek için: Kelime/Gramer (15 dk), Okuma Parçaları (45 dk), Diğer Bölümler (60 dk) şeklinde plan yapın. En çok vakit alan okuma parçalarını sona bırakmayın." },
+  { title: "Kelime Soruları", status: "Trick: Collocations", icon: "fa-font", content: "Sadece kelime anlamı yetmez. Kelimenin yanına aldığı edata (preposition) veya hangi fiille kullanıldığına (collocation) bakın. Örneğin 'influence' kelimesi 'on' ile, 'depend' kelimesi 'on' ile kullanılır." },
+  { title: "Gramer & Tense", status: "Trick: Zaman Zarfları", icon: "fa-history", content: "Tense sorularında mutlaka zaman zarflarına (ago, since, by the time) odaklanın. Eğer 'for 10 years' varsa ve cümle hala devam ediyorsa Present Perfect önceliklidir." },
+  { title: "Bağlaçlar", status: "Trick: +/- Dengesi", icon: "fa-project-diagram", content: "Zıtlık bağlaçlarında (but, although, however) cümlenin bir tarafı olumluysa diğer tarafı olumsuz olmalıdır. Sebep-sonuç bağlaçlarında ise anlam akışı aynı yöndedir." },
+  { title: "Cümle Tamamlama", status: "Trick: Referans Kelimeler", icon: "fa-align-left", content: "Yan cümle ile ana cümle arasındaki 'they, this, such, those' gibi referans kelimelere dikkat edin. Boşluktaki özne, ana cümledeki bir unsura mutlaka işaret etmelidir." },
+  { title: "Çeviri Soruları", status: "Trick: Ana Fiil (Yüklem)", icon: "fa-language", content: "Cümlenin ana fiilini bulun. Türkçe-İngilizce çeviride yüklem sonda, İngilizce'de ise genellikle özneden hemen sonradır. Bu eşleşme seçeneklerin %90'ını eler." },
+  { title: "Okuma Parçaları", status: "Trick: Zıtlık Odaklı", icon: "fa-book-open", content: "Parçada 'but, however, yet, nevertheless' gibi zıtlık bağlaçlarından sonra gelen cümleler genellikle soru cevabıdır. Ayrıca 'most, only, never' gibi iddialı ifadeler içeren seçeneklere temkinli yaklaşın." },
+  { title: "Gizli Olumsuzlar", status: "Trick: Anlama Dikkat", icon: "fa-exclamation-triangle", content: "Cümlede 'not' olmasa bile 'hardly, seldom, rarely, scarcely' gibi kelimeler cümleyi olumsuz yapar. Bu kelimeleri gördüğünüzde 'değil / yoktur' anlamı yüklemeyi unutmayın." },
+  { title: "Diyalog Tamamlama", status: "Trick: Duygu Tonu", icon: "fa-comments", content: "Boşluktan bir önceki ve bir sonraki cümleye bakın. Cevap seçeneğindeki duygu tonu (şaşkınlık, onaylama, itiraz) diyalogla uyumlu olmalı. 'Actually' veya 'By the way' gibi geçişlere dikkat." },
+  { title: "Anlamca En Yakın", status: "Trick: Miktar Zarfları", icon: "fa-equals", content: "Cümledeki zarflara (only, rarely, always, almost) ve miktar belirleyicilere dikkat edin. Orijinal cümlede 'nadiren' diyorsa, şıklarda 'hiçbir zaman' diyen seçeneği eleyin." },
+  { title: "Durum Soruları", status: "Trick: Sosyal Statü", icon: "fa-user-friends", content: "Kiminle konuştuğunuza (arkadaş, patron, garson) bakın. Dilin tonu (resmi/samimi) belirleyicidir. Ayrıca 'en nazik olanı' değil, 'duruma en uygun olanı' seçin." },
+  { title: "Paragraf Tamamlama", status: "Trick: Özne Takibi", icon: "fa-paragraph", content: "Boşluktan önceki cümlede geçen bir özne veya kavramın, boşluktan sonraki cümlede nasıl devam ettiğini (it, they, this) izleyin. Akışı bozan ani konu değişikliklerinden kaçının." },
+  { title: "Anlamı Bozan Cümle", status: "Trick: Kapsam Hatası", icon: "fa-unlink", content: "Paragrafın genel konusundan sapan veya aynı konuyu çok farklı bir boyuttan ele alan (örneğin genel eğitimden bahsedilirken aniden okulun boyasına geçilmesi) cümleyi bulun." },
+  { title: "Şık Eleme", status: "Trick: İkiz Şıklar", icon: "fa-copy", content: "Birbirine anlamca tamamen özdeş iki şık varsa (örneğin 'Because' ve 'As' bağlaçları arasında fark yoksa), ikisi de cevap olamaz. Bu tür şıkları direkt eleyebilirsiniz." },
+  { title: "Büyük Resim", status: "Trick: Paragraf Başlıkları", icon: "fa-eye", content: "Okuma parçalarında her paragrafın yanına çok kısa (1-2 kelime) özetler yazın. Bu, sorulara geri döndüğünüzde cevabın hangi paragrafta olduğunu anında bulmanızı sağlar." }
 ];
 
 // ── HTML Templates ───────────────────────────────────────────
@@ -101,8 +104,11 @@ function getYdtTacticsHTML() {
 
   <div class="grid md:grid-cols-3 gap-6">
     ${YDT_TACTICS.map(t => `
-      <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border-t-4 border-t-blue-600">
-        <div class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-4">${t.status}</div>
+      <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border-t-4 border-t-blue-600 group">
+        <div class="flex items-center justify-between mb-4">
+          <div class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">${t.status}</div>
+          <i class="fas ${t.icon} text-slate-300 group-hover:text-blue-500 transition-colors"></i>
+        </div>
         <h3 class="text-xl font-bold text-slate-800 mb-4">${t.title}</h3>
         <p class="text-slate-600 text-sm leading-relaxed">${t.content}</p>
       </div>
@@ -469,23 +475,23 @@ const YDT_VOCAB_DATA = [
 
 const YDT_GRAMMAR_SHEETS = [
   {
-    title: "Tense Uyumu (Zaman Uyumu)",
+    title: "Tense Uyumu (Zaman)",
     icon: "fa-clock",
     color: "blue",
     content: [
       { subtitle: "Temel Kural", text: "Ana cümle 'Present' ise yan cümle 'Present' veya 'Future' olabilir. Ana cümle 'Past' ise yan cümle de 'Past' olmalıdır." },
-      { subtitle: "İstisna", text: "General truths (Genel doğrular) her zaman Simple Present ile ifade edilir." },
-      { subtitle: "İpucu", text: "Since + V2 kuralını unutmayın: 'Since'li cümle V2 (Past), ana cümle Present Perfect olur." }
+      { subtitle: "Since Kuralı", text: "Since + V2 (Past), ana cümle Present Perfect (Have/Has V3) olur." },
+      { subtitle: "By the time", text: "By the time + V2, ana cümle Had V3; By the time + V1, ana cümle Will Have V3 olur." }
     ]
   },
   {
-    title: "If Clauses (Koşul Cümleleri)",
+    title: "If Clauses (Koşul)",
     icon: "fa-code-branch",
     color: "emerald",
     content: [
-      { subtitle: "Type 0 & 1", text: "Gerçek ve olası durumlar. If + Present, ... Present/Will." },
+      { subtitle: "Type 1", text: "Gerçek ve olası durumlar. If + Present, ... Will + V1." },
       { subtitle: "Type 2", text: "Hayali/Mevcut durumun zıttı. If + Past (V2), ... Would + V1." },
-      { subtitle: "Type 3", text: "Geçmişteki pişmanlıklar. If + Past Perfect (Had V3), ... Would Have V3." }
+      { subtitle: "Type 3", text: "Geçmişteki pişmanlıklar. If + Past Perfect, ... Would Have V3." }
     ]
   },
   {
@@ -493,9 +499,29 @@ const YDT_GRAMMAR_SHEETS = [
     icon: "fa-link",
     color: "purple",
     content: [
-      { subtitle: "Zıtlık (Contrast)", text: "Although, Though, Even though (+ Cümle) | Despite, In spite of (+ Isım/Ving)" },
-      { subtitle: "Sebep (Reason)", text: "Because, Since, As (+ Cümle) | Because of, Due to, Thanks to (+ Isım)" },
-      { subtitle: "Sonuç (Result)", text: "Therefore, Thus, Hence, As a result (+ Cümle)" }
+      { subtitle: "Zıtlık", text: "Although/Though (+ Cümle) | Despite/In spite of (+ İsim)" },
+      { subtitle: "Sebep", text: "Because/Since/As (+ Cümle) | Due to/Because of (+ İsim)" },
+      { subtitle: "Paralel", text: "Not only... but also | Either... or | Neither... nor" }
+    ]
+  },
+  {
+    title: "Passive & Causative",
+    icon: "fa-hands-helping",
+    color: "rose",
+    content: [
+      { subtitle: "Passive", text: "Be + V3 yapısı. Eylemi yapan değil, eylemden etkilenen öznedir." },
+      { subtitle: "Causative", text: "Have someone do sth | Get someone to do sth | Have/Get sth done." },
+      { subtitle: "İpucu", text: "Cümlede 'by' varsa veya özne eylemi yapamıyorsa Passive arayın." }
+    ]
+  },
+  {
+    title: "Modals (Kipler)",
+    icon: "fa-magic",
+    color: "cyan",
+    content: [
+      { subtitle: "Zorunluluk", text: "Must / Have to (Zorunluluk) | Should / Ought to (Tavsiye)" },
+      { subtitle: "İhtimal", text: "May / Might / Could (Düşük ihtimal) | Must have V3 (Güçlü tahmin)" },
+      { subtitle: "Past Modals", text: "Should have V3 (Yapmalıydı ama yapmadı) | Needn't have V3 (Gerek yoktu ama yaptı)." }
     ]
   },
   {
@@ -503,11 +529,42 @@ const YDT_GRAMMAR_SHEETS = [
     icon: "fa-user-tag",
     color: "amber",
     content: [
-      { subtitle: "Who / Whom", text: "İnsanlar için kullanılır. Who (Özne), Whom (Nesne)." },
-      { subtitle: "Which / That", text: "Nesneler ve hayvanlar için kullanılır. That her ikisinin yerine geçebilir." },
-      { subtitle: "Whose", text: "Aitlik bildirir. İsim + Whose + İsim yapısı aranır." }
+      { subtitle: "Who/Which", text: "Who (İnsan) | Which (Nesne) | That (Her ikisi -virgülsüz-)" },
+      { subtitle: "Whose", text: "Aitlik bildirir. 'The boy whose father is a doctor'." },
+      { subtitle: "Wh- Prep", text: "In which = Where | On which = When | For which = Why." }
+    ]
+  },
+  {
+    title: "Gerund & Infinitive",
+    icon: "fa-list-ol",
+    color: "indigo",
+    content: [
+      { subtitle: "Gerund (-ing)", text: "Enjoy, admit, avoid gibi fiillerden sonra ve edatlardan (in, on, at) sonra gelir." },
+      { subtitle: "Infinitive (to V1)", text: "Decide, want, hope gibi fiillerden sonra ve sıfatlardan (happy to) sonra gelir." },
+      { subtitle: "Farklı Anlam", text: "Remember to do (yapmayı unutma) | Remember doing (yaptığını hatırla)." }
+    ]
+  },
+  {
+    title: "Noun Clauses",
+    icon: "fa-comment-dots",
+    color: "orange",
+    content: [
+      { subtitle: "That / Whether", text: "That (Gerçeklik bildirir) | Whether/If (-ıp -madığı, belirsizlik)." },
+      { subtitle: "Question Words", text: "What, how, where gibi kelimelerle soru sırası değil, düz cümle sırası kullanılır." },
+      { subtitle: "The fact that", text: "Edatlardan sonra 'that' gelmez, 'the fact that' kalıbı kullanılır." }
     ]
   }
+];
+
+const YDT_CONFUSED_WORDS = [
+  { w1: "Affect", m1: "Etkilemek (Fiil)", w2: "Effect", m2: "Etki (İsim)" },
+  { w1: "Beside", m1: "Yanında (Konum)", w2: "Besides", m2: "Ayrıca, -den başka" },
+  { w1: "Stationary", m1: "Hareketsiz", w2: "Stationery", m2: "Kırtasiye malzemesi" },
+  { w1: "Principal", m1: "Asıl, müdür", w2: "Principle", m2: "Prensip, ilke" },
+  { w1: "Compliment", m1: "İltifat etmek", w2: "Complement", m2: "Tamamlamak" },
+  { w1: "Industrial", m1: "Sanayi ile ilgili", w2: "Industrious", m2: "Çalışkan, gayretli" },
+  { w1: "Informative", m1: "Bilgi verici", w2: "Informed", m2: "Bilgili, haberli" },
+  { w1: "Successive", m1: "Ardışık, birbirini izleyen", w2: "Successful", m2: "Başarılı" }
 ];
 
 // ── YDT Vocab List ────────────────────────────────────────────────
@@ -558,7 +615,7 @@ function getYdtGrammarHTML() {
     <p class="text-slate-500">Sınavda en çok karıştırılan konular için hızlı referans kartları.</p>
   </div>
 
-  <div class="grid md:grid-cols-2 gap-8">
+  <div class="grid md:grid-cols-2 gap-8 mb-16">
     ${YDT_GRAMMAR_SHEETS.map(sheet => `
       <div class="bg-white rounded-[2.5rem] p-8 shadow-sm border border-slate-100 hover:shadow-xl transition-all relative overflow-hidden group">
         <div class="absolute top-0 right-0 w-32 h-32 bg-${sheet.color}-50 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
@@ -582,6 +639,40 @@ function getYdtGrammarHTML() {
         </div>
       </div>
     `).join('')}
+  </div>
+
+  <!-- Frequently Confused Words Section -->
+  <div class="bg-slate-900 rounded-[3rem] p-10 md:p-16 relative overflow-hidden">
+    <div class="absolute top-0 right-0 p-10 opacity-10">
+        <i class="fas fa-random text-[15rem] text-white rotate-12"></i>
+    </div>
+    
+    <div class="relative z-10">
+        <div class="mb-12">
+            <h3 class="text-3xl font-black text-white mb-2" style="font-family:'Playfair Display',serif;">Sık Karıştırılan Kelimeler</h3>
+            <p class="text-slate-400">YDT'de birbirine çok benzeyen ve kafa karıştıran kelimeler arasındaki farklar.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            ${YDT_CONFUSED_WORDS.map(pair => `
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <span class="text-orange-400 font-bold text-lg block">${pair.w1}</span>
+                            <span class="text-slate-400 text-xs">${pair.m1}</span>
+                        </div>
+                        <div class="border-t border-white/5 py-2 flex items-center justify-center">
+                            <i class="fas fa-exchange-alt text-slate-600 text-xs"></i>
+                        </div>
+                        <div>
+                            <span class="text-cyan-400 font-bold text-lg block">${pair.w2}</span>
+                            <span class="text-slate-400 text-xs">${pair.m2}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    </div>
   </div>
 
   <div class="mt-16 text-center">
