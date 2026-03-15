@@ -430,6 +430,49 @@ function foUpdateNav() {
   });
 }
 
+function getVisualSearchTerm(word) {
+  const map = {
+    'exacerbate': 'worsen',
+    'mitigate': 'relief',
+    'sustainability': 'nature',
+    'sustainably': 'nature',
+    'unprecedented': 'unusual',
+    'deteriorate': 'broken',
+    'deterioration': 'ruins',
+    'postpone': 'delay',
+    'implement': 'worker',
+    'mandatory': 'rule',
+    'neglect': 'trash',
+    'negligence': 'accident',
+    'abundance': 'plenty',
+    'scarcity': 'empty',
+    'profound': 'deep',
+    'controversial': 'protest',
+    'consensus': 'agreement',
+    'adversary': 'enemy',
+    'alleviate': 'medicine',
+    'accelerate': 'fast',
+    'finalize': 'done',
+    'substantial': 'large',
+    'inconclusive': 'mystery',
+    'obsolete': 'old',
+    'foster': 'help',
+    'irreversible': 'broken',
+    'biodiversity': 'jungle',
+    'phenomena': 'nebula',
+    'milestone': 'road',
+    'integrity': 'shaking hands',
+    'radically': 'extreme',
+    'radical': 'extreme',
+    'root': 'base',
+    'dependence': 'chain',
+    'dependency': 'chain',
+    'lasting': 'eternal'
+  };
+  const lower = word.toLowerCase().trim();
+  return map[lower] || lower;
+}
+
 async function fetchUnsplashImage(word, qId) {
   if (foLastImgQuestionId === qId) return; 
   foLastImgQuestionId = qId;
@@ -441,9 +484,10 @@ async function fetchUnsplashImage(word, qId) {
   // Reset content and show loader
   content.innerHTML = `<div class="w-full h-full animate-pulse flex items-center justify-center text-slate-300 bg-slate-100"><i class="fas fa-image text-4xl"></i></div>`;
 
+  const searchTerm = getVisualSearchTerm(word);
   const accessKey = '0uDnN1Zl1YFXRG3vHAKgEZoTakXkCg65RV3LtgXiNcM';
   try {
-    const res = await fetch(`https://api.unsplash.com/search/photos?query=${word}&per_page=1&client_id=${accessKey}`);
+    const res = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(searchTerm)}&per_page=1&client_id=${accessKey}`);
     const data = await res.json();
     if (data.results && data.results[0]) {
       container.classList.remove('hidden');
