@@ -76,7 +76,7 @@ const tutorExamHTML = `
                     <button onclick="teFinishConfirm()" class="text-xs font-bold text-slate-400 hover:text-red-800 uppercase tracking-widest transition-colors">Sınavı Kapat</button>
                 </div>
 
-                <div id="tePassageBox" class="hidden bg-blue-50 border-l-4 border-blue-400 rounded-[2rem] p-8 mb-6 text-slate-700 leading-relaxed text-sm max-h-[300px] overflow-y-auto"></div>
+                <div id="tePassageBox" class="hidden bg-blue-50/50 border-l-4 border-blue-400 rounded-3xl p-8 mb-6 text-slate-700 leading-relaxed text-sm max-h-[400px] overflow-y-auto shadow-sm"></div>
                 
                 <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 md:p-12 shadow-sm">
                     <div id="teQuestion" class="text-xl font-bold text-slate-800 mb-8 leading-relaxed"></div>
@@ -366,12 +366,26 @@ function teRenderQuestion() {
   // Passage
   passageBox.classList.add('hidden');
   let pText = "";
+  let pLabel = "METİN / PARAGRAF";
+  
+  // Detect Label
+  const examId = window.selectedTutorExamId;
+  if (examId === 'mini_cloze') pLabel = "CLOZE TEST PARÇASI";
+  else if (examId === 'mini_read') pLabel = "OKUMA PARÇASI";
+  else if (q.passage_id) pLabel = "OKUMA PARÇASI";
+
   if (q.passage_id) {
     const p = teExamData.passages.find(p => p.id === q.passage_id);
     if (p) pText = p.text;
   }
+  
   if (pText || q.leading_text) {
-    passageBox.innerHTML = (pText || q.leading_text).replace(/\n/g, '<br>');
+    passageBox.innerHTML = `
+        <div class="mb-4">
+            <span class="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] bg-blue-100/50 px-3 py-1 rounded-full">${pLabel}</span>
+        </div>
+        <div class="text-slate-700 leading-loose">${(pText || q.leading_text).replace(/\n/g, '<br>')}</div>
+    `;
     passageBox.classList.remove('hidden');
   }
 
