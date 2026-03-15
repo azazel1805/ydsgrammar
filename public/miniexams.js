@@ -146,8 +146,8 @@ const miniexamsHTML = `
     </div>
 
     <div class="flex-1 min-w-0">
-      <div id="meSectionLabel" class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 mb-4 text-sm text-slate-600 font-medium"></div>
-      <div id="mePassageBox" class="hidden bg-blue-50 border-l-4 border-blue-400 rounded-xl p-5 mb-4 text-sm text-slate-700 leading-relaxed overflow-y-auto max-h-60"></div>
+      <div id="meSectionLabel" class="hidden bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 mb-4 text-sm text-slate-600 font-medium"></div>
+      <div id="mePassageBox" class="hidden bg-blue-50/50 border-l-4 border-blue-400 rounded-3xl p-8 mb-6 text-slate-700 leading-relaxed text-sm max-h-[400px] overflow-y-auto shadow-sm"></div>
       
       <div id="meQuestion" class="font-semibold text-slate-800 text-base md:text-lg leading-relaxed mb-6"></div>
       <div id="meOptions" class="space-y-3"></div>
@@ -264,6 +264,7 @@ async function meStartExam() {
 
   let exam = findExamById(examId);
   if (!exam) return;
+  window.currentMiniExamId = examId;
 
   try {
     const res = await fetch(`${exam.file}?v=${new Date().getTime()}`);
@@ -274,28 +275,55 @@ async function meStartExam() {
     let isFixed = exam.id.startsWith('mini_fixed');
     
     if (!isFixed) {
-        // Dynamic: need to group to preserve context
+        // Dynamic: need smarter grouping to preserve context
         let groups = [];
-        if (examId === 'mini_cloze') {
-            // Group by 5s for Cloze
-            for (let i = 0; i < processedQuestions.length; i += 5) {
-                groups.push(processedQuestions.slice(i, i + 5));
-            }
-        } else if (examId === 'mini_read') {
-            // Group by common passage prefix or passage_id
-            let tempGroups = {};
-            processedQuestions.forEach(q => {
-                let key = q.passage_id || q.question.substring(0, 100);
-                if (!tempGroups[key]) tempGroups[key] = [];
-                tempGroups[key].push(q);
-            });
-            groups = Object.values(tempGroups);
-        } else {
-            // Others: single question sets
-            groups = processedQuestions.map(q => [q]);
-        }
+        let currentGroup = [];
+        let lastPid = undefined;
 
-        // Shuffle groups and pick
+        processedQuestions.forEach(q => {
+            let pid = q.passage_id;
+            let shouldStartNew = false;
+
+            if (pid !== lastPid) {
+                shouldStartNew = true;
+            } else if (pid === null && currentGroup.length >= 5) {
+                shouldStartNew = true;
+            }
+
+            if (shouldStartNew && currentGroup.length > 0) {
+                groups.push(currentGroup);
+                currentGroup = [];
+            }
+            currentGroup.push(q);
+            lastPid = pid;
+        });
+        if (currentGroup.length > 0) groups.push(currentGroup);
+
+        // Process each group to unify context and merge snippets
+        groups.forEach(group => {
+            let groupLead = "";
+            let groupPid = null;
+
+            group.forEach(gq => {
+                if (gq.passage_id) groupPid = gq.passage_id;
+                if (gq.leading_text) groupLead = gq.leading_text;
+            });
+
+            // Merge Fragments for Cloze
+            if ((examId === 'mini_cloze' || group[0].section_id === 'cloze') && !groupPid && !groupLead) {
+                let textFragments = group
+                    .map(gq => gq.question)
+                    .filter(txt => !txt.startsWith("Boşluk ") && !txt.includes("için en uygun seçeneği bulun"));
+                if (textFragments.length > 0) groupLead = textFragments.join(" ");
+            }
+
+            group.forEach(gq => {
+                if (groupPid && !gq.passage_id) gq.passage_id = groupPid;
+                if (groupLead && !gq.leading_text) gq.leading_text = groupLead;
+            });
+        });
+
+        // Shuffle and Pick
         groups.sort(() => 0.5 - Math.random());
         let selectedQuestions = [];
         for (let group of groups) {
@@ -377,16 +405,26 @@ function meRenderQuestion() {
   // Passage Logic
   passageBox.classList.add('hidden');
   let passageText = "";
+  let pLabel = "METİN / PARAGRAF";
+
+  const examId = window.currentMiniExamId;
+  if (examId === 'mini_cloze') pLabel = "CLOZE TEST PARÇASI";
+  else if (examId === 'mini_read') pLabel = "OKUMA PARÇASI";
+  else if (q.passage_id) pLabel = "OKUMA PARÇASI";
+
   if (q.passage_id) {
       const p = meExamData.passages.find(p => p.id === q.passage_id);
       if (p) passageText = p.text;
   }
   
-  if (passageText) {
-      passageBox.innerHTML = passageText.replace(/\n/g, '<br>');
-      passageBox.classList.remove('hidden');
-  } else if (q.leading_text) {
-      passageBox.innerHTML = q.leading_text.replace(/\n/g, '<br>');
+  const lead = q.leading_text || passageText;
+  if (lead) {
+      passageBox.innerHTML = `
+        <div class="mb-4">
+            <span class="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] bg-blue-100/50 px-3 py-1 rounded-full">${pLabel}</span>
+        </div>
+        <div class="text-slate-700 leading-loose">${lead.replace(/\n/g, '<br>')}</div>
+      `;
       passageBox.classList.remove('hidden');
   }
 
