@@ -274,56 +274,68 @@ async function meStartExam() {
     let processedQuestions = fullData.questions;
     let isFixed = exam.id.startsWith('mini_fixed');
     
+    // Smarter Grouping for ALL exams (to unify context/cloze/reading)
+    let groups = [];
+    let currentGroup = [];
+    let lastPid = undefined;
+
+    processedQuestions.forEach(q => {
+        let pid = q.passage_id;
+        let shouldStartNew = false;
+        
+        // Patterns to detect if this is a Cloze question even without metadata
+        const isClozeQ = q.question.includes('(Blank ') || q.question.includes('Boşluk ') || q.question.startsWith('(');
+
+        if (pid !== lastPid) {
+            shouldStartNew = true;
+        } else if (pid === null && currentGroup.length >= 5) {
+            shouldStartNew = true;
+        }
+
+        if (shouldStartNew && currentGroup.length > 0) {
+            groups.push(currentGroup);
+            currentGroup = [];
+        }
+        currentGroup.push(q);
+        lastPid = pid;
+    });
+    if (currentGroup.length > 0) groups.push(currentGroup);
+
+    // Context Unification and Fragment Merging
+    groups.forEach(group => {
+        let groupLead = "";
+        let groupPid = null;
+
+        group.forEach(gq => {
+            if (gq.passage_id) groupPid = gq.passage_id;
+            if (gq.leading_text) groupLead = gq.leading_text;
+        });
+
+        // Detect if this group looks like a Cloze test
+        const isClozeGroup = group.some(gq => 
+            gq.section_id === 'cloze' || 
+            gq.question.includes('Boşluk ') || 
+            gq.question.includes('(Blank ')
+        );
+
+        if (isClozeGroup && !groupPid && !groupLead) {
+            let textFragments = group
+                .map(gq => gq.question)
+                .filter(txt => !txt.startsWith("Boşluk ") && !txt.includes("için en uygun seçeneği bulun") && !txt.startsWith("(Blank "));
+            
+            if (textFragments.length > 0) {
+                groupLead = textFragments.join(" ");
+            }
+        }
+
+        group.forEach(gq => {
+            if (groupPid && !gq.passage_id) gq.passage_id = groupPid;
+            if (groupLead && !gq.leading_text) gq.leading_text = groupLead;
+        });
+    });
+
     if (!isFixed) {
-        // Dynamic: need smarter grouping to preserve context
-        let groups = [];
-        let currentGroup = [];
-        let lastPid = undefined;
-
-        processedQuestions.forEach(q => {
-            let pid = q.passage_id;
-            let shouldStartNew = false;
-
-            if (pid !== lastPid) {
-                shouldStartNew = true;
-            } else if (pid === null && currentGroup.length >= 5) {
-                shouldStartNew = true;
-            }
-
-            if (shouldStartNew && currentGroup.length > 0) {
-                groups.push(currentGroup);
-                currentGroup = [];
-            }
-            currentGroup.push(q);
-            lastPid = pid;
-        });
-        if (currentGroup.length > 0) groups.push(currentGroup);
-
-        // Process each group to unify context and merge snippets
-        groups.forEach(group => {
-            let groupLead = "";
-            let groupPid = null;
-
-            group.forEach(gq => {
-                if (gq.passage_id) groupPid = gq.passage_id;
-                if (gq.leading_text) groupLead = gq.leading_text;
-            });
-
-            // Merge Fragments for Cloze
-            if ((examId === 'mini_cloze' || group[0].section_id === 'cloze') && !groupPid && !groupLead) {
-                let textFragments = group
-                    .map(gq => gq.question)
-                    .filter(txt => !txt.startsWith("Boşluk ") && !txt.includes("için en uygun seçeneği bulun"));
-                if (textFragments.length > 0) groupLead = textFragments.join(" ");
-            }
-
-            group.forEach(gq => {
-                if (groupPid && !gq.passage_id) gq.passage_id = groupPid;
-                if (groupLead && !gq.leading_text) gq.leading_text = groupLead;
-            });
-        });
-
-        // Shuffle and Pick
+        // Shuffle and Pick for dynamic exams
         groups.sort(() => 0.5 - Math.random());
         let selectedQuestions = [];
         for (let group of groups) {
@@ -332,7 +344,8 @@ async function meStartExam() {
         }
         processedQuestions = selectedQuestions;
     } else {
-        // Fixed exams: just slice to count if necessary
+        // For fixed exams, just flatten the groups back to maintain original order
+        processedQuestions = groups.flat();
     }
 
     meExamData = {

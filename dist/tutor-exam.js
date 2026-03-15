@@ -264,64 +264,65 @@ async function teStartExam() {
     
     let processedQuestions = fullData.questions;
 
-    // If categorical, shuffle and take subset with smarter GROUPING logic
+    // Smarter Grouping for ALL exams (Tutor Mode - Full or Cat)
+    let groups = [];
+    let currentGroup = [];
+    let lastPid = undefined;
+
+    processedQuestions.forEach(q => {
+        let pid = q.passage_id;
+        let shouldStartNew = false;
+
+        if (pid !== lastPid) {
+            shouldStartNew = true;
+        } else if (pid === null && currentGroup.length >= 5) {
+            shouldStartNew = true;
+        }
+
+        if (shouldStartNew && currentGroup.length > 0) {
+            groups.push(currentGroup);
+            currentGroup = [];
+        }
+        currentGroup.push(q);
+        lastPid = pid;
+    });
+    if (currentGroup.length > 0) groups.push(currentGroup);
+
+    // Context Unification and Fragment Merging
+    groups.forEach(group => {
+        let groupLead = "";
+        let groupPid = null;
+
+        group.forEach(gq => {
+            if (gq.passage_id) groupPid = gq.passage_id;
+            if (gq.leading_text) groupLead = gq.leading_text;
+        });
+
+        // Detect if this group looks like a Cloze test
+        const isClozeGroup = group.some(gq => 
+            gq.section_id === 'cloze' || 
+            gq.question.includes('Boşluk ') || 
+            gq.question.includes('(Blank ')
+        );
+
+        if (isClozeGroup && !groupPid && !groupLead) {
+            let textFragments = group
+                .map(gq => gq.question)
+                .filter(txt => !txt.startsWith("Boşluk ") && !txt.includes("için en uygun seçeneği bulun") && !txt.startsWith("(Blank "));
+            
+            if (textFragments.length > 0) {
+                groupLead = textFragments.join(" ");
+            }
+        }
+
+        group.forEach(gq => {
+            if (groupPid && !gq.passage_id) gq.passage_id = groupPid;
+            if (groupLead && !gq.leading_text) gq.leading_text = groupLead;
+        });
+    });
+
     if (type === 'cat' && !id.startsWith('mini_fixed')) {
-        let groups = [];
-        let currentGroup = [];
-        let lastPid = undefined;
-
-        processedQuestions.forEach(q => {
-            let pid = q.passage_id;
-            let shouldStartNew = false;
-
-            // Start new group if passage_id changes OR we hit the 5-question limit for null-pid blocks
-            if (pid !== lastPid) {
-                shouldStartNew = true;
-            } else if (pid === null && currentGroup.length >= 5) {
-                // For null pids, we assume blocks of 5 are a set (Cloze/Paragraph)
-                shouldStartNew = true;
-            }
-
-            if (shouldStartNew && currentGroup.length > 0) {
-                groups.push(currentGroup);
-                currentGroup = [];
-            }
-
-            currentGroup.push(q);
-            lastPid = pid;
-        });
-        if (currentGroup.length > 0) groups.push(currentGroup);
-
-        // Process each group to unify context and merge snippets
-        groups.forEach(group => {
-            let groupLead = "";
-            let groupPid = null;
-
-            // 1. Find existing passage/lead
-            group.forEach(gq => {
-                if (gq.passage_id) groupPid = gq.passage_id;
-                if (gq.leading_text) groupLead = gq.leading_text;
-            });
-
-            // 2. Special merge for fragmented Cloze tests (where text is in 'question' fields)
-            if ((id === 'mini_cloze' || group[0].section_id === 'cloze') && !groupPid && !groupLead) {
-                let textFragments = group
-                    .map(gq => gq.question)
-                    .filter(txt => !txt.startsWith("Boşluk ") && !txt.includes("için en uygun seçeneği bulun"));
-                
-                if (textFragments.length > 0) {
-                    groupLead = textFragments.join(" ");
-                }
-            }
-
-            // 3. Propagate to all members
-            group.forEach(gq => {
-                if (groupPid && !gq.passage_id) gq.passage_id = groupPid;
-                if (groupLead && !gq.leading_text) gq.leading_text = groupLead;
-            });
-        });
-
-        // Shuffle groups and pick until we hit the count
+        // Shuffle and take subset for dynamic categorical exams
         groups.sort(() => 0.5 - Math.random());
         let selectedQuestions = [];
         for (let group of groups) {
@@ -329,6 +330,9 @@ async function teStartExam() {
             selectedQuestions.push(...group);
         }
         processedQuestions = selectedQuestions;
+    } else {
+        // Fixed or Full: maintain order
+        processedQuestions = groups.flat();
     }
 
     teExamData = {
