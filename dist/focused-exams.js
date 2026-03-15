@@ -23,7 +23,7 @@ const FOCUS_CATEGORIES = {
     label: 'Edilgen Yapı (Passive)',
     color: 'bg-blue-200 text-blue-900 border-blue-300',
     patterns: [
-        /\b(is|am|are|was|were|be|been|being)\s+([a-z]+ed|known|seen|found|made|taken|given|built|shown|kept|told|written|done|gone|broken|set)\b/gi
+        /\b(is|am|are|was|were|be|been|being)(\s+[a-z]+)?\s+([a-z]+ed|known|seen|found|made|taken|given|built|shown|kept|told|written|done|gone|broken|set|understood|held|meant|led|bought|brought|caught|thought|felt|said|read|paid|met|lost|won)\b/gi
     ]
   },
   tenses: {
@@ -133,7 +133,7 @@ const focusedExamsHTML = `
           <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-2 mb-8">
             ${Object.keys(FOCUS_CATEGORIES).map(k => `
               <label class="flex items-center justify-between p-2 lg:p-3 rounded-xl bg-slate-800/50 border border-slate-700 cursor-pointer hover:bg-slate-800 transition-colors">
-                <span class="text-[10px] lg:text-xs font-semibold text-slate-300 capitalize">${k}</span>
+                <span class="text-[10px] lg:text-xs font-semibold text-slate-300">${FOCUS_CATEGORIES[k].label}</span>
                 <input type="checkbox" checked onchange="toggleFocusType('${k}')" class="w-4 h-4 accent-indigo-500">
               </label>
             `).join('')}
