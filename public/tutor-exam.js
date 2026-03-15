@@ -270,7 +270,15 @@ async function teStartExam() {
         if (id === 'mini_cloze') {
             // Group by 5s for Cloze
             for (let i = 0; i < processedQuestions.length; i += 5) {
-                groups.push(processedQuestions.slice(i, i + 5));
+                let group = processedQuestions.slice(i, i + 5);
+                // Propagate passage/leading_text to all in group
+                let lead = group[0].leading_text;
+                let pid = group[0].passage_id;
+                group.forEach(q => {
+                    if (!q.leading_text) q.leading_text = lead;
+                    if (!q.passage_id) q.passage_id = pid;
+                });
+                groups.push(group);
             }
         } else if (id === 'mini_read') {
             // Group by passage_id
@@ -280,7 +288,16 @@ async function teStartExam() {
                 if (!tempGroups[key]) tempGroups[key] = [];
                 tempGroups[key].push(q);
             });
-            groups = Object.values(tempGroups);
+            // Propagate for each group
+            Object.values(tempGroups).forEach(group => {
+                let lead = group[0].leading_text;
+                let pid = group[0].passage_id;
+                group.forEach(q => {
+                    if (!q.leading_text) q.leading_text = lead;
+                    if (!q.passage_id) q.passage_id = pid;
+                });
+                groups.push(group);
+            });
         } else {
             // Single question sets
             groups = processedQuestions.map(q => [q]);
