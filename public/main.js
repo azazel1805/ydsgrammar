@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-ydt-grammar", typeof ydtGrammarHTML !== 'undefined' ? ydtGrammarHTML : undefined);
     safeInject("tab-phrasal", typeof phrasalHTML !== 'undefined' ? phrasalHTML : undefined);
     safeInject("tab-aireading", typeof aiReadingHTML !== 'undefined' ? aiReadingHTML : undefined);
+    safeInject("tab-tutor-exam", typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : undefined);
     safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
@@ -70,6 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (typeof injectMiniExamHTML === "function") {
         injectMiniExamHTML();
+    }
+
+    if (typeof initTutorExam === "function") {
+        initTutorExam();
     }
 
     if (typeof initTacticGuide === "function") {
@@ -376,6 +381,7 @@ function reinjectTabContent(tabName) {
         "ydt-grammar": typeof ydtGrammarHTML !== 'undefined' ? ydtGrammarHTML : null,
         "phrasal": typeof phrasalHTML !== 'undefined' ? phrasalHTML : null,
         "aireading": typeof aiReadingHTML !== 'undefined' ? aiReadingHTML : null,
+        "tutor-exam": typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -414,7 +420,8 @@ function updateSEO(tab) {
         "ydt-vocab": { title: "Önemli YDT Kelime Listesi – Akademik İngilizce", desc: "YDT sınavında en sık çıkan 500+ akademik kelime ve kullanım örnekleri." },
         "ydt-grammar": { title: "YDT Gramer Özetleri – Hızlı Hazırlık Kartları", desc: "YDT sınavında en çok çıkan gramer konularının özet tabloları ve ipuçları." },
         "phrasal": { title: "Phrasal Verb Dictionary – YDS & YDT Premium", desc: "En sık çıkan 50+ Phrasal Verb ve interaktif kartlar." },
-        "aireading": { title: "AI Reading Lab – Özgün Okuma Parçası Üretici", desc: "Seviyenize uygun akademik okuma parçaları hazırlayan yapay zeka laboratuvarı." }
+        "aireading": { title: "AI Reading Lab – Özgün Okuma Parçası Üretici", desc: "Seviyenize uygun akademik okuma parçaları hazırlayan yapay zeka laboratuvarı." },
+        "tutor-exam": { title: "AI Guided Exam – Yapay Zeka Koçlu Deneme", desc: "AI koçunuzla birlikte soru bazlı, açıklamalı deneme çözme modu." }
     };
 
     const data = seoMap[tab] || { title: "yds.monster – YDS & YDT Master Encyclopedia", desc: "Kapsamlı YDS ve YDT hazırlık platformu." };
@@ -646,9 +653,9 @@ window.toggleModalTactics = function () {
 window.lockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn"
     ];
 
     navButtons.forEach(id => {
@@ -665,9 +672,9 @@ window.lockAnalyzerUI = function () {
 window.unlockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn"
     ];
 
     navButtons.forEach(id => {

@@ -377,6 +377,11 @@
               <span>Mini Sınavlar</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
+            <button id="tutorNavBtn" data-tab="tutor-exam" onclick="switchTab('tutor-exam')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
+              <span>AI Tutor Denemeleri</span>
+              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
+            </button>
             <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Soru
               Analizörü</button>
@@ -549,6 +554,11 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               <span>Mini Sınavlar (Özel)</span>
               <i class="fas fa-crown text-yellow-500 text-xs"></i>
             </button>
+            <button id="tutorMobileBtn" data-tab="tutor-exam" onclick="switchTabAndClose('tutor-exam')"
+              class="drawer-btn flex items-center justify-between hidden font-bold text-red-800">
+              <span>AI Tutor Denemeleri</span>
+              <i class="fas fa-crown text-yellow-500 text-xs"></i>
+            </button>
             <button id="analyzerMobileBtn" data-tab="analyzer" onclick="switchTabAndClose('analyzer')"
               class="drawer-btn hidden">Soru Analizörü</button>
             <button id="textDeconMobileBtn" data-tab="textdecon" onclick="switchTabAndClose('textdecon')"
@@ -622,6 +632,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-admin" class="tab-content"></div>
       <div id="tab-phrasal" class="tab-content"></div>
       <div id="tab-aireading" class="tab-content"></div>
+      <div id="tab-tutor-exam" class="tab-content"></div>
     </div>
 
     <!-- GLOBAL FULL EXAM ENGINE -->
@@ -741,6 +752,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/ydt.js"></script>
     <script src="/phrasal.js"></script>
     <script src="/aireading.js"></script>
+    <script src="/tutor-exam.js"></script>
     <script src="/main.js"></script>
 
 
