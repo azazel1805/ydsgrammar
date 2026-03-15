@@ -264,10 +264,36 @@ async function teStartExam() {
     
     let processedQuestions = fullData.questions;
 
-    // If categorical, shuffle and take subset
+    // If categorical, shuffle and take subset with GROUPING logic
     if (type === 'cat' && !id.startsWith('mini_fixed')) {
-        processedQuestions.sort(() => 0.5 - Math.random());
-        processedQuestions = processedQuestions.slice(0, count);
+        let groups = [];
+        if (id === 'mini_cloze') {
+            // Group by 5s for Cloze
+            for (let i = 0; i < processedQuestions.length; i += 5) {
+                groups.push(processedQuestions.slice(i, i + 5));
+            }
+        } else if (id === 'mini_read') {
+            // Group by passage_id
+            let tempGroups = {};
+            processedQuestions.forEach(q => {
+                let key = q.passage_id || q.question.substring(0, 100);
+                if (!tempGroups[key]) tempGroups[key] = [];
+                tempGroups[key].push(q);
+            });
+            groups = Object.values(tempGroups);
+        } else {
+            // Single question sets
+            groups = processedQuestions.map(q => [q]);
+        }
+
+        // Shuffle groups and pick until we hit the count
+        groups.sort(() => 0.5 - Math.random());
+        let selectedQuestions = [];
+        for (let group of groups) {
+            if (selectedQuestions.length >= count) break;
+            selectedQuestions.push(...group);
+        }
+        processedQuestions = selectedQuestions;
     }
 
     teExamData = {
