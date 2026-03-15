@@ -17,7 +17,7 @@
       id: `mini_easy_${i + 1}`,
       label: `Kolay Mini YDS ${i + 1}`,
       file: `/exams/mini/easy/mini_easy_${i + 1}.json`,
-      info: '20 Soru Sabit'
+      info: '40 Soru Sabit'
     }))
   },
   {
@@ -27,7 +27,7 @@
       id: `mini_medium_${i + 1}`,
       label: `Orta Mini YDS ${i + 1}`,
       file: `/exams/mini/medium/mini_medium_${i + 1}.json`,
-      info: '20 Soru Sabit'
+      info: '40 Soru Sabit'
     }))
   },
   {
@@ -37,7 +37,7 @@
       id: `mini_hard_${i + 1}`,
       label: `Zor Mini YDS ${i + 1}`,
       file: `/exams/mini/hard/mini_hard_${i + 1}.json`,
-      info: '20 Soru Sabit'
+      info: '40 Soru Sabit'
     }))
   }
 ];
