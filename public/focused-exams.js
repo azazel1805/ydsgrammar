@@ -154,28 +154,13 @@ const focusedExamsHTML = `
     </div>
 
     <!-- MAIN CONTENT: QUESTION & PASSAGE -->
-    <div class="order-1 lg:order-2 lg:col-span-9 bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col overflow-hidden min-h-[400px] relative">
+    <div class="order-1 lg:order-2 lg:col-span-9 bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col overflow-hidden min-h-[400px]">
        <div id="foSectionHeader" class="px-5 lg:px-8 py-3 lg:py-4 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
-          <div class="flex items-center gap-4">
-            <span id="foSectionTitle" class="text-[9px] lg:text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
-            <button onclick="foShowMonsterTip()" class="group flex items-center gap-2 bg-white border border-indigo-100 px-3 py-1.5 rounded-full shadow-sm hover:shadow-md transition-all">
-              <img src="/icons/monster-mini.png" class="w-5 h-5 group-hover:scale-110 transition-transform" onerror="this.src='https://cdn-icons-png.flaticon.com/512/1083/1083733.png'">
-              <span class="text-[10px] font-bold text-indigo-600">Monster Tip</span>
-            </button>
-          </div>
+          <span id="foSectionTitle" class="text-[9px] lg:text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
           <div class="flex gap-2">
             <button onclick="foNavQuestion(-1)" class="w-7 h-7 lg:w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-left text-[10px] mr-0.5"></i></button>
             <button onclick="foNavQuestion(1)" class="w-7 h-7 lg:w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-right text-[10px] ml-0.5"></i></button>
           </div>
-       </div>
-
-       <!-- Tip Overlay -->
-       <div id="foTipOverlay" class="hidden absolute top-16 left-8 right-8 z-20 bg-indigo-900 text-white p-6 rounded-3xl shadow-2xl border border-indigo-700/50 animate-in slide-in-from-top-4 duration-300">
-          <div class="flex justify-between items-start mb-2">
-            <p class="text-[10px] font-black uppercase tracking-tighter text-indigo-300">Strateji Rehberi</p>
-            <button onclick="foHideTip()" class="text-indigo-400 hover:text-white"><i class="fas fa-times"></i></button>
-          </div>
-          <p id="foTipContent" class="text-sm font-medium leading-relaxed italic">...</p>
        </div>
        
        <div class="flex-1 lg:overflow-y-auto p-5 lg:p-10 custom-scrollbar">
@@ -364,9 +349,6 @@ function foRenderQuestion() {
 
   // Question Text with Highlights & Interactive Words
   questionText.innerHTML = foClickableText(q.question);
-  
-  // Close any open tips
-  foHideTip();
 
   // Vocabulary Image Logic
   const isVocab = q.section_id && q.section_id.toLowerCase().includes('vocab');
@@ -565,32 +547,6 @@ function foCloseWordModal() {
   modal.classList.remove('flex');
 }
 
-function foShowMonsterTip() {
-  const q = foExamData.questions[foCurrentIdx];
-  const tipOverlay = document.getElementById('foTipOverlay');
-  const tipContent = document.getElementById('foTipContent');
-  
-  let tip = "Bu soru için bağlamdan ve ipuçlarından faydalanmayı unutma!";
-  
-  // Grammar Category Logic
-  if (q.section_id.includes('vocab')) {
-    tip = "Monster Tip: Kelime sorularında cümlenin genel 'tonuna' bak. 'Despite' veya 'Although' varsa mutlaka zıt karakterli bir sonuç/kelime ara!";
-  } else if (q.question.toLowerCase().includes('is') || q.question.toLowerCase().includes('was')) {
-    tip = "Monster Tip: 'To be' yardımcı fiilini ve V3 halini gördün mü? Bu bir Passive (Edilgen) yapı olabilir. İşi yapanı değil, işten etkileneni bul!";
-  } else if (q.question.toLowerCase().includes('however') || q.question.toLowerCase().includes('but')) {
-    tip = "Monster Tip: 'However' bir bariyerdir! Öncesi olumluysa sonrası olumsuzdur. Anlam akışındaki bu kırılmayı şıklarda yakala.";
-  } else {
-    tip = "Monster Tip: Zaman uyumuna (Tense Agreement) dikkat et. Cümle geçmişle başladıysa (e.g. was, did), genellikle geçmişle devam eder.";
-  }
-
-  tipContent.innerText = tip;
-  tipOverlay.classList.remove('hidden');
-}
-
-function foHideTip() {
-  const tipOverlay = document.getElementById('foTipOverlay');
-  if (tipOverlay) tipOverlay.classList.add('hidden');
-}
 
 function foUpdateNav() {
   const nav = document.getElementById('foQuestionNav');
