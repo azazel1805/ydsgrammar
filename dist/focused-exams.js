@@ -101,7 +101,11 @@ const focusedExamsHTML = `
          </li>
          <li class="flex gap-3">
            <span class="w-6 h-6 rounded-full bg-indigo-200 flex items-center justify-center text-xs shrink-0">3</span>
-           <span><b>Görsel Hafıza:</b> Kelime sorularında cevaplara uygun görseller anlık olarak yüklenir.</span>
+           <span><b>Görsel Hafıza:</b> Kelime sorularında kavramlara uygun görseller anlık olarak yüklenir.</span>
+         </li>
+         <li class="flex gap-3">
+           <span class="w-6 h-6 rounded-full bg-indigo-200 flex items-center justify-center text-xs shrink-0">4</span>
+           <span><b>Eş Anlamlı (Synonym):</b> Kelime sorularında şıklardaki kelimelerin üzerine tıklayarak anında eş anlamlılarını görebilirsiniz.</span>
          </li>
        </ul>
        <div class="mt-8 pt-8 border-t border-indigo-200/50">
