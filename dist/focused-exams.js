@@ -42,6 +42,7 @@ let foTimerRef = null;
 let foSecondsLeft = 0;
 let foStarted = false;
 let foCurrentIdx = 0;
+let foReviewMode = false;
 let activeHighlights = { conjunctions: true, passives: true, tenses: true };
 
 // UI Templates
@@ -188,7 +189,10 @@ const focusedExamsHTML = `
              <div class="bg-white/10 p-4 rounded-2xl"><p class="text-[10px] uppercase font-bold opacity-50 mb-1">Yanlış</p><p id="foResWrong" class="text-3xl font-black">--</p></div>
              <div class="bg-white/10 p-4 rounded-2xl"><p class="text-[10px] uppercase font-bold opacity-50 mb-1">Başarı %</p><p id="foResScore" class="text-3xl font-black">--</p></div>
           </div>
-          <button onclick="foReset()" class="px-10 py-4 bg-white text-indigo-900 rounded-2xl font-black uppercase text-sm tracking-widest hover:scale-105 transition-all">Geri Dön</button>
+          <div class="flex flex-wrap justify-center gap-4">
+             <button onclick="foReset()" class="px-10 py-4 bg-white text-indigo-900 rounded-2xl font-black uppercase text-sm tracking-widest hover:scale-105 transition-all">Geri Dön</button>
+             <button id="foReviewBtn" onclick="foStartReview()" class="px-10 py-4 bg-indigo-500 text-white rounded-2xl font-black uppercase text-sm tracking-widest hover:scale-105 transition-all">Cevapları İncele</button>
+          </div>
        </div>
     </div>
   </div>
@@ -230,6 +234,7 @@ function foStart() {
   foCurrentIdx = 0;
   foSecondsLeft = (foExamData.meta.duration_minutes || 180) * 60;
   foStarted = true;
+  foReviewMode = false;
 
   document.getElementById('foStartScreen').classList.add('hidden');
   document.getElementById('foResultScreen').classList.add('hidden');
@@ -250,13 +255,15 @@ function foStartTimer() {
     }
     const m = Math.floor(foSecondsLeft / 60);
     const s = foSecondsLeft % 60;
-    document.getElementById('foTimer').textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    const timerEl = document.getElementById('foTimer');
+    if (timerEl) timerEl.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
   }, 1000);
 }
 
 function foReset() {
   if (foTimerRef) clearInterval(foTimerRef);
   foStarted = false;
+  foReviewMode = false;
   foExamData = null;
   document.getElementById('foStartScreen')?.classList.remove('hidden');
   document.getElementById('foExamScreen')?.classList.add('hidden');
@@ -279,6 +286,7 @@ function foJump(idx) {
 }
 
 function foRenderQuestion() {
+  if (!foExamData) return;
   const q = foExamData.questions[foCurrentIdx];
   const qNumEl = document.getElementById('foQNum');
   const passagePane = document.getElementById('foPassagePane');
@@ -287,8 +295,8 @@ function foRenderQuestion() {
   const foOptions = document.getElementById('foOptions');
   const vocabImage = document.getElementById('foVocabImage');
 
-  qNumEl.textContent = `${foCurrentIdx + 1}/${foExamData.questions.length}`;
-  sectionTitle.textContent = q.section_id.toUpperCase().replace('_',' ');
+  if (qNumEl) qNumEl.textContent = `${foCurrentIdx + 1}/${foExamData.questions.length}`;
+  if (sectionTitle) sectionTitle.textContent = q.section_id.toUpperCase().replace('_',' ');
 
   // Passage Display
   if (q.passage_id) {
@@ -317,16 +325,63 @@ function foRenderQuestion() {
   // Options
   foOptions.innerHTML = '';
   Object.keys(q.options).forEach(key => {
+    const isSelected = foAnswers[q.id] === key;
+    const isCorrect = q.correct === key;
+    
+    let borderClass = 'border-slate-100 hover:border-indigo-100 hover:bg-slate-50 text-slate-700';
+    let badgeClass = 'bg-slate-100 text-slate-500';
+
+    if (foReviewMode) {
+        if (isCorrect) {
+            borderClass = 'border-green-500 bg-green-50 text-green-900 ring-4 ring-green-100';
+            badgeClass = 'bg-green-600 text-white';
+        } else if (isSelected && !isCorrect) {
+            borderClass = 'border-red-500 bg-red-50 text-red-900';
+            badgeClass = 'bg-red-600 text-white';
+        }
+    } else if (isSelected) {
+        borderClass = 'border-indigo-600 bg-indigo-50 text-indigo-900';
+        badgeClass = 'bg-indigo-600 text-white';
+    }
+
     const btn = document.createElement('button');
-    btn.className = `w-full p-5 rounded-2xl border-2 text-left transition-all font-semibold ${foAnswers[q.id] === key ? 'border-indigo-600 bg-indigo-50 text-indigo-900' : 'border-slate-100 hover:border-indigo-100 hover:bg-slate-50 text-slate-700'}`;
-    btn.innerHTML = `<span class="inline-block w-8 h-8 rounded-lg ${foAnswers[q.id] === key ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-500'} flex items-center justify-center mr-4 text-xs group-hover:bg-indigo-600 group-hover:text-white">${key}</span> ${applyHighlights(q.options[key])}`;
-    btn.onclick = () => {
-      foAnswers[q.id] = key;
-      foRenderQuestion();
-      foUpdateNav();
-    };
+    btn.className = `w-full p-5 rounded-2xl border-2 text-left transition-all font-semibold ${borderClass}`;
+    btn.innerHTML = `<span class="inline-block w-8 h-8 rounded-lg ${badgeClass} flex items-center justify-center mr-4 text-xs group-hover:bg-indigo-600 group-hover:text-white">${key}</span> ${applyHighlights(q.options[key])}`;
+    
+    if (!foReviewMode) {
+        btn.onclick = () => {
+          foAnswers[q.id] = key;
+          foRenderQuestion();
+          foUpdateNav();
+        };
+    }
     foOptions.appendChild(btn);
   });
+
+  // Review Info
+  if (foReviewMode) {
+    const infoBox = document.createElement('div');
+    infoBox.className = "mt-6 p-5 rounded-2xl bg-slate-900 text-white shadow-xl animate-in slide-in-from-bottom-2 duration-300";
+    const isCorrect = foAnswers[q.id] === q.correct;
+    infoBox.innerHTML = `
+      <div class="flex items-center justify-between">
+         <div class="flex items-center gap-3">
+           <div class="w-10 h-10 rounded-full ${isCorrect ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'} flex items-center justify-center">
+             <i class="fas ${isCorrect ? 'fa-check' : 'fa-times'}"></i>
+           </div>
+           <div>
+             <p class="font-bold text-base">${isCorrect ? 'Doğru!' : 'Hatalı Cevap'}</p>
+             <p class="text-xs opacity-60">${isCorrect ? 'Harika gidiyorsun.' : 'Bir dahaki sefere daha dikkatli ol.'}</p>
+           </div>
+         </div>
+         <div class="text-right">
+           <p class="text-[10px] uppercase font-bold opacity-40">Doğru Şık</p>
+           <p class="text-2xl font-black text-indigo-400">${q.correct}</p>
+         </div>
+      </div>
+    `;
+    foOptions.appendChild(infoBox);
+  }
 }
 
 function applyHighlights(text) {
@@ -405,6 +460,13 @@ function foFinish() {
   document.getElementById('foResultScreen').classList.remove('hidden');
 }
 
+function foStartReview() {
+  foReviewMode = true;
+  document.getElementById('foResultScreen').classList.add('hidden');
+  document.getElementById('foExamScreen').classList.remove('hidden');
+  foJump(0);
+}
+
 // Global Exports
 window.foSelectExam = foSelectExam;
 window.foNavQuestion = foNavQuestion;
@@ -413,3 +475,4 @@ window.foReset = foReset;
 window.foJump = foJump;
 window.toggleFocusType = toggleFocusType;
 window.initFocusedExams = initFocusedExams;
+window.foStartReview = foStartReview;
