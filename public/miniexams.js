@@ -273,33 +273,31 @@ async function meStartExam() {
     // Grouping Logic
     let processedQuestions = fullData.questions;
     let isFixed = exam.id.startsWith('mini_fixed');
-    // Smarter Grouping for ALL exams (to unify context/cloze/reading)
+    // Smarter Grouping for ALL exams
     let groups = [];
     let currentGroup = [];
     let lastPid = undefined;
+    let lastIsCloze = false;
 
     const isClozeQ = (q) => /[\(\[]?Blank \d+[\)\]]?|Boşluk \d+|\(\d+\)|\d+\)/.test(q.question) || q.section_id === 'cloze';
 
     processedQuestions.forEach(q => {
         let pid = q.passage_id;
+        let isCloze = isClozeQ(q);
         let shouldStartNew = false;
         
         if (pid !== lastPid) {
             shouldStartNew = true;
         } else if (pid === null) {
-            // Both are null PIDs. Check if they form a Cloze set.
-            let currentIsCloze = isClozeQ(q);
-            if (!currentIsCloze) {
-                // Standalone question
+            // Both are null PIDs. 
+            if (isCloze !== lastIsCloze) {
                 shouldStartNew = true;
-            } else {
-                // Current is Cloze. Check if previous was also Cloze.
-                if (currentGroup.length > 0) {
-                    let prevQ = currentGroup[currentGroup.length - 1];
-                    if (!isClozeQ(prevQ) || currentGroup.length >= 5) {
-                        shouldStartNew = true;
-                    }
-                }
+            } else if (!isCloze) {
+                // Standalone questions always start new group
+                shouldStartNew = true;
+            } else if (currentGroup.length >= 5) {
+                // Max 5 for a Cloze set
+                shouldStartNew = true;
             }
         }
 
@@ -309,6 +307,7 @@ async function meStartExam() {
         }
         currentGroup.push(q);
         lastPid = pid;
+        lastIsCloze = isCloze;
     });
     if (currentGroup.length > 0) groups.push(currentGroup);
 
@@ -322,10 +321,9 @@ async function meStartExam() {
             if (gq.leading_text) groupLead = gq.leading_text;
         });
 
-        // Detect if this group is a Cloze set
-        const isClozeGroup = group.some(gq => isClozeQ(gq));
+        const isCSet = group.length > 1 && group.every(gq => isClozeQ(gq));
 
-        if (isClozeGroup && !groupPid && !groupLead) {
+        if (isCSet && !groupPid && !groupLead) {
             let textFragments = group
                 .map(gq => gq.question)
                 .filter(txt => {
@@ -339,10 +337,12 @@ async function meStartExam() {
             }
         }
 
-        group.forEach(gq => {
-            if (groupPid && !gq.passage_id) gq.passage_id = groupPid;
-            if (groupLead && !gq.leading_text) gq.leading_text = groupLead;
-        });
+        if (groupPid || groupLead) {
+            group.forEach(gq => {
+                if (groupPid && !gq.passage_id) gq.passage_id = groupPid;
+                if (groupLead && !gq.leading_text) gq.leading_text = groupLead;
+            });
+        }
     });
 
     if (!isFixed) {
@@ -355,7 +355,6 @@ async function meStartExam() {
         }
         processedQuestions = selectedQuestions;
     } else {
-        // For fixed exams, maintain original order
         processedQuestions = groups.flat();
     }
 
