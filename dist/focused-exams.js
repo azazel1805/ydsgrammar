@@ -118,66 +118,66 @@ const focusedExamsHTML = `
     </div>
   </div>
 
-  <div id="foExamScreen" class="hidden grid lg:grid-cols-12 gap-8 h-[calc(100vh-250px)]">
+  <div id="foExamScreen" class="hidden grid lg:grid-cols-12 gap-6 lg:gap-8 lg:h-[calc(100vh-250px)]">
     <!-- LEFT SIDEBAR: NAV & FOCUS CONTROLS -->
-    <div class="lg:col-span-3 space-y-6 overflow-y-auto pr-2 custom-scrollbar">
-       <div class="bg-slate-900 rounded-3xl p-6 text-white shadow-xl">
+    <div class="order-2 lg:order-1 lg:col-span-3 space-y-6 lg:overflow-y-auto pr-0 lg:pr-2 custom-scrollbar">
+       <div class="bg-slate-900 rounded-3xl p-5 lg:p-6 text-white shadow-xl">
           <div class="flex items-center justify-between mb-6">
-            <span id="foQNum" class="text-2xl font-black">1/80</span>
-            <div class="bg-red-800/20 text-red-400 px-3 py-1 rounded-lg text-xs font-bold border border-red-800/30">
+            <span id="foQNum" class="text-xl lg:text-2xl font-black">1/80</span>
+            <div class="bg-red-800/20 text-red-400 px-3 py-1 rounded-lg text-[10px] lg:text-xs font-bold border border-red-800/30">
               <i class="fas fa-clock mr-1"></i> <span id="foTimer">180:00</span>
             </div>
           </div>
           
           <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-3">Odak Filtreleri</p>
-          <div class="space-y-2 mb-8">
+          <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-2 mb-8">
             ${Object.keys(FOCUS_CATEGORIES).map(k => `
-              <label class="flex items-center justify-between p-3 rounded-xl bg-slate-800/50 border border-slate-700 cursor-pointer hover:bg-slate-800 transition-colors">
-                <span class="text-xs font-semibold text-slate-300">${FOCUS_CATEGORIES[k].label}</span>
+              <label class="flex items-center justify-between p-2 lg:p-3 rounded-xl bg-slate-800/50 border border-slate-700 cursor-pointer hover:bg-slate-800 transition-colors">
+                <span class="text-[10px] lg:text-xs font-semibold text-slate-300 capitalize">${k}</span>
                 <input type="checkbox" checked onchange="toggleFocusType('${k}')" class="w-4 h-4 accent-indigo-500">
               </label>
             `).join('')}
           </div>
 
-          <button onclick="foFinishConfirm()" class="w-full py-4 bg-red-800 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-red-700 transition-all">
+          <button onclick="foFinishConfirm()" class="w-full py-3 lg:py-4 bg-red-800 text-white rounded-2xl font-black text-xs lg:text-sm uppercase tracking-widest hover:bg-red-700 transition-all">
             Sınavı Bitir
           </button>
        </div>
 
-       <div id="foQuestionNav" class="grid grid-cols-5 gap-2">
+       <div id="foQuestionNav" class="grid grid-cols-10 lg:grid-cols-5 gap-1.5 lg:gap-2">
          <!-- Question Map injected here -->
        </div>
     </div>
 
     <!-- MAIN CONTENT: QUESTION & PASSAGE -->
-    <div class="lg:col-span-9 bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col overflow-hidden">
-       <div id="foSectionHeader" class="px-8 py-4 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
-          <span id="foSectionTitle" class="text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
+    <div class="order-1 lg:order-2 lg:col-span-9 bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col overflow-hidden min-h-[400px]">
+       <div id="foSectionHeader" class="px-5 lg:px-8 py-3 lg:py-4 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
+          <span id="foSectionTitle" class="text-[9px] lg:text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
           <div class="flex gap-2">
-            <button onclick="foNavQuestion(-1)" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-left text-xs"></i></button>
-            <button onclick="foNavQuestion(1)" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-right text-xs"></i></button>
+            <button onclick="foNavQuestion(-1)" class="w-7 h-7 lg:w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-left text-[10px] mr-0.5"></i></button>
+            <button onclick="foNavQuestion(1)" class="w-7 h-7 lg:w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-right text-[10px] ml-0.5"></i></button>
           </div>
        </div>
        
-       <div class="flex-1 overflow-y-auto p-10 custom-scrollbar">
-          <div id="foContentArea" class="flex flex-col md:flex-row gap-10">
-             <div id="foPassagePane" class="hidden md:w-1/2 bg-blue-50/30 p-8 rounded-3xl border border-blue-100/50 text-slate-700 leading-relaxed text-sm overflow-y-auto max-h-[500px]">
+       <div class="flex-1 lg:overflow-y-auto p-5 lg:p-10 custom-scrollbar">
+          <div id="foContentArea" class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+             <div id="foPassagePane" class="hidden lg:w-1/2 bg-blue-50/30 p-5 lg:p-8 rounded-2xl lg:rounded-3xl border border-blue-100/50 text-slate-700 leading-relaxed text-sm overflow-y-auto max-h-[300px] lg:max-h-[500px]">
              </div>
-             <div id="foQuestionPane" class="flex-1 space-y-8">
-                <div id="foVocabImage" class="hidden mb-8">
-                  <div class="max-w-md mx-auto relative group">
-                    <div class="w-full h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 relative">
+             <div id="foQuestionPane" class="flex-1 space-y-6 lg:space-y-8">
+                <div id="foVocabImage" class="hidden mb-6 lg:mb-8">
+                  <div class="max-w-xs lg:max-w-md mx-auto relative group">
+                    <div class="w-full h-48 lg:h-64 rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl border-4 border-white bg-slate-100 relative">
                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent pointer-events-none"></div>
                        <div id="foVocabImageContent" class="w-full h-full"> 
                          <div class="w-full h-full animate-pulse flex items-center justify-center text-slate-300">
-                           <i class="fas fa-image text-4xl"></i>
+                           <i class="fas fa-image text-3xl lg:text-4xl"></i>
                          </div>
                        </div>
                     </div>
                   </div>
                 </div>
-                <h3 id="foQuestionText" class="text-xl font-bold text-slate-800 leading-tight">...</h3>
-                <div id="foOptions" class="space-y-3">
+                <h3 id="foQuestionText" class="text-lg lg:text-xl font-bold text-slate-800 leading-tight">...</h3>
+                <div id="foOptions" class="space-y-2.5 lg:space-y-3">
                    <!-- Options here -->
                 </div>
              </div>
