@@ -156,11 +156,26 @@ const focusedExamsHTML = `
     <!-- MAIN CONTENT: QUESTION & PASSAGE -->
     <div class="order-1 lg:order-2 lg:col-span-9 bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col overflow-hidden min-h-[400px]">
        <div id="foSectionHeader" class="px-5 lg:px-8 py-3 lg:py-4 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
-          <span id="foSectionTitle" class="text-[9px] lg:text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
+          <div class="flex items-center gap-4">
+            <span id="foSectionTitle" class="text-[9px] lg:text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
+            <button onclick="foShowMonsterTip()" class="group flex items-center gap-2 bg-white border border-indigo-100 px-3 py-1.5 rounded-full shadow-sm hover:shadow-md transition-all">
+              <img src="/icons/monster-mini.png" class="w-5 h-5 group-hover:scale-110 transition-transform" onerror="this.src='https://cdn-icons-png.flaticon.com/512/1083/1083733.png'">
+              <span class="text-[10px] font-bold text-indigo-600">Monster Tip</span>
+            </button>
+          </div>
           <div class="flex gap-2">
             <button onclick="foNavQuestion(-1)" class="w-7 h-7 lg:w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-left text-[10px] mr-0.5"></i></button>
             <button onclick="foNavQuestion(1)" class="w-7 h-7 lg:w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-100"><i class="fas fa-chevron-right text-[10px] ml-0.5"></i></button>
           </div>
+       </div>
+
+       <!-- Tip Overlay -->
+       <div id="foTipOverlay" class="hidden absolute top-16 left-8 right-8 z-20 bg-indigo-900 text-white p-6 rounded-3xl shadow-2xl border border-indigo-700/50 animate-in slide-in-from-top-4 duration-300">
+          <div class="flex justify-between items-start mb-2">
+            <p class="text-[10px] font-black uppercase tracking-tighter text-indigo-300">Strateji Rehberi</p>
+            <button onclick="foHideTip()" class="text-indigo-400 hover:text-white"><i class="fas fa-times"></i></button>
+          </div>
+          <p id="foTipContent" class="text-sm font-medium leading-relaxed italic">...</p>
        </div>
        
        <div class="flex-1 lg:overflow-y-auto p-5 lg:p-10 custom-scrollbar">
@@ -208,6 +223,28 @@ const focusedExamsHTML = `
           </div>
        </div>
     </div>
+  </div>
+
+  <div id="foWordModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-[200] p-4 overflow-y-auto">
+      <div class="bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+          <div class="p-8 lg:p-10 text-black">
+              <div class="flex justify-between items-start mb-8">
+                  <div>
+                      <h2 id="foModalWord" class="text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter italic">WORD</h2>
+                      <p id="foModalIpa" class="text-slate-400 font-mono mt-2 text-sm">// ... //</p>
+                  </div>
+                  <button onclick="foCloseWordModal()" class="w-10 h-10 lg:w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all">
+                      <i class="fas fa-times"></i>
+                  </button>
+              </div>
+              <div id="foModalContent" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
+                  <!-- Word info cards injected here -->
+              </div>
+              <div class="mt-8">
+                  <button onclick="foCloseWordModal()" class="w-full px-8 py-4 bg-slate-100 text-slate-600 font-black rounded-2xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">KAPAT</button>
+              </div>
+          </div>
+      </div>
   </div>
 </div>
 <style>
@@ -316,7 +353,7 @@ function foRenderQuestion() {
   if (q.passage_id) {
     const passage = foExamData.passages.find(p => p.id === q.passage_id);
     if (passage) {
-      passagePane.innerHTML = applyHighlights(passage.text);
+      passagePane.innerHTML = foClickableText(passage.text);
       passagePane.classList.remove('hidden');
     } else {
       passagePane.classList.add('hidden');
@@ -325,8 +362,11 @@ function foRenderQuestion() {
     passagePane.classList.add('hidden');
   }
 
-  // Question Text with Highlights
-  questionText.innerHTML = applyHighlights(q.question);
+  // Question Text with Highlights & Interactive Words
+  questionText.innerHTML = foClickableText(q.question);
+  
+  // Close any open tips
+  foHideTip();
 
   // Vocabulary Image Logic
   const isVocab = q.section_id && q.section_id.toLowerCase().includes('vocab');
@@ -465,6 +505,91 @@ async function foShowSynonym(word, event, targetId) {
   } catch (err) {
     target.classList.add('hidden');
   }
+}
+
+function foClickableText(text) {
+  if (!text) return "";
+  
+  // First apply semantic highlights
+  let highlighted = applyHighlights(text);
+  
+  // Then wrap words in clickable spans, being careful not to break the HTML tags we just added
+  const parts = highlighted.split(/(<[^>]+>|[\s,.!?;:()"]+)/);
+  return parts.map(part => {
+    if (part.startsWith('<') || /[\s,.!?;:()"]+/.test(part)) return part;
+    if (part.trim().length === 0) return part;
+    return `<span onclick="foShowWordDetails('${part.replace(/'/g, "\\'")}')" class="cursor-pointer hover:bg-yellow-200/50 hover:text-slate-900 rounded transition-colors">${part}</span>`;
+  }).join('');
+}
+
+async function foShowWordDetails(word) {
+  const modal = document.getElementById('foWordModal');
+  const wordEl = document.getElementById('foModalWord');
+  const ipaEl = document.getElementById('foModalIpa');
+  const contentEl = document.getElementById('foModalContent');
+  
+  wordEl.innerText = word;
+  ipaEl.innerText = "Sözlük aranıyor...";
+  contentEl.innerHTML = '<div class="flex justify-center p-12"><i class="fas fa-spinner fa-spin text-3xl text-indigo-500"></i></div>';
+  
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  
+  try {
+    // Attempt local API or Dictionary API
+    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+    if (res.ok) {
+        const data = await res.json();
+        const first = data[0];
+        ipaEl.innerText = first.phonetic || '// ... //';
+        
+        contentEl.innerHTML = first.meanings.map(m => `
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <p class="text-[10px] uppercase font-black text-indigo-500 mb-2">${m.partOfSpeech}</p>
+            <p class="text-slate-800 font-medium italic mb-2">${m.definitions[0].definition}</p>
+            ${m.definitions[0].example ? `<p class="text-xs text-slate-500 bg-white p-3 rounded-xl border border-slate-100 mt-3 italic">"${m.definitions[0].example}"</p>` : ''}
+          </div>
+        `).join('');
+    } else {
+       ipaEl.innerText = "";
+       contentEl.innerHTML = `<div class="p-8 text-center text-slate-400 italic">Sözlük verisi bulunamadı, ancak bu kelime kritik olabilir.</div>`;
+    }
+  } catch(e) {
+    contentEl.innerHTML = "Bir hata oluştu.";
+  }
+}
+
+function foCloseWordModal() {
+  const modal = document.getElementById('foWordModal');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+}
+
+function foShowMonsterTip() {
+  const q = foExamData.questions[foCurrentIdx];
+  const tipOverlay = document.getElementById('foTipOverlay');
+  const tipContent = document.getElementById('foTipContent');
+  
+  let tip = "Bu soru için bağlamdan ve ipuçlarından faydalanmayı unutma!";
+  
+  // Grammar Category Logic
+  if (q.section_id.includes('vocab')) {
+    tip = "Monster Tip: Kelime sorularında cümlenin genel 'tonuna' bak. 'Despite' veya 'Although' varsa mutlaka zıt karakterli bir sonuç/kelime ara!";
+  } else if (q.question.toLowerCase().includes('is') || q.question.toLowerCase().includes('was')) {
+    tip = "Monster Tip: 'To be' yardımcı fiilini ve V3 halini gördün mü? Bu bir Passive (Edilgen) yapı olabilir. İşi yapanı değil, işten etkileneni bul!";
+  } else if (q.question.toLowerCase().includes('however') || q.question.toLowerCase().includes('but')) {
+    tip = "Monster Tip: 'However' bir bariyerdir! Öncesi olumluysa sonrası olumsuzdur. Anlam akışındaki bu kırılmayı şıklarda yakala.";
+  } else {
+    tip = "Monster Tip: Zaman uyumuna (Tense Agreement) dikkat et. Cümle geçmişle başladıysa (e.g. was, did), genellikle geçmişle devam eder.";
+  }
+
+  tipContent.innerText = tip;
+  tipOverlay.classList.remove('hidden');
+}
+
+function foHideTip() {
+  const tipOverlay = document.getElementById('foTipOverlay');
+  if (tipOverlay) tipOverlay.classList.add('hidden');
 }
 
 function foUpdateNav() {
