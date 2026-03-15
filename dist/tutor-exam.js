@@ -264,19 +264,34 @@ async function teStartExam() {
     
     let processedQuestions = fullData.questions;
 
-    // Smarter Grouping for ALL exams (Tutor Mode - Full or Cat)
+    // Smarter Grouping for ALL exams (Tutor Mode)
     let groups = [];
     let currentGroup = [];
     let lastPid = undefined;
 
+    const isClozeQ = (q) => /[\(\[]?Blank \d+[\)\]]?|Boşluk \d+|\(\d+\)|\d+\)/.test(q.question) || q.section_id === 'cloze';
+
     processedQuestions.forEach(q => {
         let pid = q.passage_id;
         let shouldStartNew = false;
-
+        
         if (pid !== lastPid) {
             shouldStartNew = true;
-        } else if (pid === null && currentGroup.length >= 5) {
-            shouldStartNew = true;
+        } else if (pid === null) {
+            // Both are null PIDs. Check if they form a Cloze set.
+            let currentIsCloze = isClozeQ(q);
+            if (!currentIsCloze) {
+                // Standalone question
+                shouldStartNew = true;
+            } else {
+                // Current is Cloze. Check if previous was also Cloze.
+                if (currentGroup.length > 0) {
+                    let prevQ = currentGroup[currentGroup.length - 1];
+                    if (!isClozeQ(prevQ) || currentGroup.length >= 5) {
+                        shouldStartNew = true;
+                    }
+                }
+            }
         }
 
         if (shouldStartNew && currentGroup.length > 0) {
@@ -298,17 +313,17 @@ async function teStartExam() {
             if (gq.leading_text) groupLead = gq.leading_text;
         });
 
-        // Detect if this group looks like a Cloze test
-        const isClozeGroup = group.some(gq => 
-            gq.section_id === 'cloze' || 
-            gq.question.includes('Boşluk ') || 
-            gq.question.includes('(Blank ')
-        );
+        // Detect if this group is a Cloze set
+        const isClozeGroup = group.some(gq => isClozeQ(gq));
 
         if (isClozeGroup && !groupPid && !groupLead) {
             let textFragments = group
                 .map(gq => gq.question)
-                .filter(txt => !txt.startsWith("Boşluk ") && !txt.includes("için en uygun seçeneği bulun") && !txt.startsWith("(Blank "));
+                .filter(txt => {
+                    const isInstruction = /en uygun seçeneği bulun|best option for blank|Choose the best/i.test(txt);
+                    const isBlankOnly = /^Boşluk \d+|^Blank \d+|^[\(\[]?\d+[\)\]]? \-\-\-\-/i.test(txt);
+                    return !isInstruction && !isBlankOnly;
+                });
             
             if (textFragments.length > 0) {
                 groupLead = textFragments.join(" ");
@@ -331,7 +346,6 @@ async function teStartExam() {
         }
         processedQuestions = selectedQuestions;
     } else {
-        // Fixed or Full: maintain order
         processedQuestions = groups.flat();
     }
 

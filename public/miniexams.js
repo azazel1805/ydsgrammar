@@ -273,23 +273,34 @@ async function meStartExam() {
     // Grouping Logic
     let processedQuestions = fullData.questions;
     let isFixed = exam.id.startsWith('mini_fixed');
-    
     // Smarter Grouping for ALL exams (to unify context/cloze/reading)
     let groups = [];
     let currentGroup = [];
     let lastPid = undefined;
 
+    const isClozeQ = (q) => /[\(\[]?Blank \d+[\)\]]?|Boşluk \d+|\(\d+\)|\d+\)/.test(q.question) || q.section_id === 'cloze';
+
     processedQuestions.forEach(q => {
         let pid = q.passage_id;
         let shouldStartNew = false;
         
-        // Patterns to detect if this is a Cloze question even without metadata
-        const isClozeQ = q.question.includes('(Blank ') || q.question.includes('Boşluk ') || q.question.startsWith('(');
-
         if (pid !== lastPid) {
             shouldStartNew = true;
-        } else if (pid === null && currentGroup.length >= 5) {
-            shouldStartNew = true;
+        } else if (pid === null) {
+            // Both are null PIDs. Check if they form a Cloze set.
+            let currentIsCloze = isClozeQ(q);
+            if (!currentIsCloze) {
+                // Standalone question
+                shouldStartNew = true;
+            } else {
+                // Current is Cloze. Check if previous was also Cloze.
+                if (currentGroup.length > 0) {
+                    let prevQ = currentGroup[currentGroup.length - 1];
+                    if (!isClozeQ(prevQ) || currentGroup.length >= 5) {
+                        shouldStartNew = true;
+                    }
+                }
+            }
         }
 
         if (shouldStartNew && currentGroup.length > 0) {
@@ -311,17 +322,17 @@ async function meStartExam() {
             if (gq.leading_text) groupLead = gq.leading_text;
         });
 
-        // Detect if this group looks like a Cloze test
-        const isClozeGroup = group.some(gq => 
-            gq.section_id === 'cloze' || 
-            gq.question.includes('Boşluk ') || 
-            gq.question.includes('(Blank ')
-        );
+        // Detect if this group is a Cloze set
+        const isClozeGroup = group.some(gq => isClozeQ(gq));
 
         if (isClozeGroup && !groupPid && !groupLead) {
             let textFragments = group
                 .map(gq => gq.question)
-                .filter(txt => !txt.startsWith("Boşluk ") && !txt.includes("için en uygun seçeneği bulun") && !txt.startsWith("(Blank "));
+                .filter(txt => {
+                    const isInstruction = /en uygun seçeneği bulun|best option for blank|Choose the best/i.test(txt);
+                    const isBlankOnly = /^Boşluk \d+|^Blank \d+|^[\(\[]?\d+[\)\]]? \-\-\-\-/i.test(txt);
+                    return !isInstruction && !isBlankOnly;
+                });
             
             if (textFragments.length > 0) {
                 groupLead = textFragments.join(" ");
@@ -344,7 +355,7 @@ async function meStartExam() {
         }
         processedQuestions = selectedQuestions;
     } else {
-        // For fixed exams, just flatten the groups back to maintain original order
+        // For fixed exams, maintain original order
         processedQuestions = groups.flat();
     }
 
