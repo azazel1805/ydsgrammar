@@ -325,7 +325,8 @@ function foRenderQuestion() {
   questionText.innerHTML = applyHighlights(q.question);
 
   // Vocabulary Image Logic
-  if (q.section_id === 'vocabulary' && foCurrentIdx < 10) {
+  const isVocab = q.section_id && q.section_id.toLowerCase().includes('vocab');
+  if (isVocab) {
     vocabImage.classList.remove('hidden');
     fetchUnsplashImage(q.correct_word || q.options[q.correct], q.id);
   } else {
@@ -467,7 +468,87 @@ function getVisualSearchTerm(word) {
     'root': 'base',
     'dependence': 'chain',
     'dependency': 'chain',
-    'lasting': 'eternal'
+    'lasting': 'eternal',
+    'ultimately': 'finish line',
+    'compelling': 'powerful',
+    'ambiguous': 'confused',
+    'prevalent': 'common',
+    'negligible': 'small',
+    'vague': 'fog',
+    'aggravate': 'volcano',
+    'jeopardize': 'danger',
+    'adversely': 'bad weather',
+    'scarcely': 'empty desert',
+    'strategic': 'chess',
+    'trivial': 'small object',
+    'reluctantly': 'hesitate',
+    'reluctant': 'hesitate',
+    'precisely': 'arrow target',
+    'inherently': 'organic',
+    'subsequent': 'stairs',
+    'verify': 'check mark',
+    'modify': 'tools',
+    'clarify': 'light bulb',
+    'assess': 'grading',
+    'enhance': 'sparkle',
+    'advocate': 'megaphone',
+    'bias': 'scale',
+    'coherent': 'puzzle',
+    'decline': 'graph down',
+    'discrete': 'separate',
+    'fluctuate': 'waves',
+    'inhibit': 'shield',
+    'persist': 'marathon',
+    'robust': 'mountain',
+    'versatile': 'swiss knife',
+    'widespread': 'map',
+    'initially': 'start line',
+    'intervention': 'helping hand',
+    'exhaustion': 'tired',
+    'entirely': 'full circle',
+    'approximately': 'calculator',
+    'considerable': 'huge',
+    'indispensable': 'heart',
+    'irrelevant': 'trash can',
+    'reliable': 'locked safe',
+    'vaguely': 'mist',
+    'partially': 'slice',
+    'eventually': 'finish line',
+    'finally': 'finish line',
+    'commence': 'start rocket',
+    'launch': 'rocket',
+    'abandon': 'deserted',
+    'yield': 'harvest',
+    'utility': 'tools',
+    'vulnerable': 'fragile',
+    'utilize': 'use',
+    'uphold': 'pillar',
+    'undergo': 'process',
+    'transform': 'butterfly',
+    'thrive': 'healthy plant',
+    'suspend': 'pause',
+    'surveillance': 'camera',
+    'surplus': 'extra',
+    'stimulate': 'brain spark',
+    'scrutinize': 'magnifying glass',
+    'rupture': 'crack',
+    'rigid': 'stone',
+    'restrain': 'rope',
+    'resilient': 'spring',
+    'reconcile': 'handshake',
+    'random': 'dice',
+    'prosper': 'gold',
+    'prohibit': 'stop sign',
+    'preclude': 'block',
+    'perceive': 'eye',
+    'paradigm': 'model',
+    'obstacle': 'wall',
+    'nurture': 'baby plant',
+    'noteworthy': 'star',
+    'norm': 'average',
+    'mutate': 'alien',
+    'manifest': 'show',
+    'lucrative': 'money bag'
   };
   const lower = word.toLowerCase().trim();
   return map[lower] || lower;
@@ -481,19 +562,28 @@ async function fetchUnsplashImage(word, qId) {
   const content = document.getElementById('foVocabImageContent');
   if (!content || !container) return;
 
-  // Reset content and show loader
+  // Show loader while fetching
   content.innerHTML = `<div class="w-full h-full animate-pulse flex items-center justify-center text-slate-300 bg-slate-100"><i class="fas fa-image text-4xl"></i></div>`;
 
   const searchTerm = getVisualSearchTerm(word);
   const accessKey = '0uDnN1Zl1YFXRG3vHAKgEZoTakXkCg65RV3LtgXiNcM';
+  
   try {
-    const res = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(searchTerm)}&per_page=1&client_id=${accessKey}`);
-    const data = await res.json();
+    // 1. Attempt with simplified synonym
+    let res = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(searchTerm)}&per_page=1&client_id=${accessKey}`);
+    let data = await res.json();
+
+    // 2. Fallback to original word if simplified search failed
+    if ((!data.results || data.results.length === 0) && searchTerm !== word.toLowerCase().trim()) {
+      res = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(word)}&per_page=1&client_id=${accessKey}`);
+      data = await res.json();
+    }
+
     if (data.results && data.results[0]) {
       container.classList.remove('hidden');
       content.innerHTML = `<img src="${data.results[0].urls.regular}" class="w-full h-full object-cover animate-in fade-in duration-500" />`;
     } else {
-      // No results found, hide the container entirely
+      // Both attempts failed
       container.classList.add('hidden');
     }
   } catch (err) {
