@@ -3,7 +3,8 @@
    ============================================================ */
 
 const FOCUSED_EXAM_LIST = [
-  { id: 'focused1', label: 'Odaklı Deneme 1', file: '/exams/focused/focused1.json' }
+  { id: 'focused1', label: 'Odaklı Deneme 1', file: '/exams/focused/focused1.json' },
+  { id: 'focused2', label: 'Odaklı Deneme 2', file: '/exams/focused/focused2.json' }
 ];
 
 // Highlight Categories & Regex Patterns
