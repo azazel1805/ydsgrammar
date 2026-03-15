@@ -33,6 +33,14 @@ const FREE_EXAM_LIST = [
   { id: 'free10', label: 'Ücretsiz Deneme 10', file: '/exams/full/fullexam25.json' }
 ];
 
+const FREE_MINI_EXAM_LIST = [
+  { id: 'fmini1', label: 'Ücretsiz Mini 1', file: '/exams/mini/freemini1.json' },
+  { id: 'fmini2', label: 'Ücretsiz Mini 2', file: '/exams/mini/freemini2.json' },
+  { id: 'fmini3', label: 'Ücretsiz Mini 3', file: '/exams/mini/freemini3.json' },
+  { id: 'fmini4', label: 'Ücretsiz Mini 4', file: '/exams/mini/freemini4.json' },
+  { id: 'fmini5', label: 'Ücretsiz Mini 5', file: '/exams/mini/freemini5.json' }
+];
+
 // ── State ────────────────────────────────────────────────────
 let feExamData = null;
 let feAnswers = {};          // { questionId: 'A' }
@@ -43,12 +51,15 @@ let feCurrentIdx = 0;
 
 // ── HTML Templates ───────────────────────────────────────────
 
-function getSelectorHTML(list, title, isPremium) {
+function getSelectorHTML(sections, title, isPremium) {
   const icon = isPremium ? 'fa-crown text-yellow-500' : 'fa-gift text-green-500';
   const headerLabel = isPremium ? 'Premium Deneme Merkezi' : 'Ücretsiz Deneme Merkezi';
   const gradient = isPremium ? 'from-red-800 to-red-900' : 'from-green-700 to-green-800';
   const badgeClass = isPremium ? 'bg-red-800' : 'bg-green-700';
   const startBtnGradient = isPremium ? 'from-red-800 to-red-700 shadow-red-900/40' : 'from-green-700 to-green-600 shadow-green-900/40';
+
+  // If sections is a simple list, normalize it to categorical format
+  let categoricalSections = (Array.isArray(sections) && sections.length > 0 && sections[0].list) ? sections : [{ title: title, list: sections, qCount: 80, duration: 180 }];
 
   return /* html */`
 <div class="max-w-5xl mx-auto px-4 py-10">
@@ -58,17 +69,18 @@ function getSelectorHTML(list, title, isPremium) {
       <span class="font-bold text-lg tracking-wide" style="font-family:'Playfair Display',serif;">${headerLabel}</span>
     </div>
     <h2 class="text-3xl font-extrabold text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">${title}</h2>
-    <p class="text-slate-500 text-sm">YDS zorluk seviyesinde, 80 soruluk tam denemeler.</p>
+    <p class="text-slate-500 text-sm">YDS ve YDT zorluk seviyesinde denemeler.</p>
   </div>
 
   <div class="space-y-12">
+    ${categoricalSections.map(sec => `
     <section>
       <div class="flex items-center gap-3 mb-6">
         <div class="h-8 w-1 ${badgeClass} rounded-full"></div>
-        <h3 class="text-xl font-bold text-slate-800">${title} (80 Soru)</h3>
+        <h3 class="text-xl font-bold text-slate-800">${sec.title} (${sec.qCount} Soru)</h3>
       </div>
       <div class="grid md:grid-cols-2 gap-4">
-        ${list.map(e => `
+        ${sec.list.map(e => `
           <div onclick="feSelectExam('${e.id}', this)" id="feCard-${e.id}"
             class="fe-exam-card cursor-pointer border-2 border-slate-200 rounded-2xl p-6 hover:border-red-300 hover:shadow-lg transition-all group relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -79,7 +91,7 @@ function getSelectorHTML(list, title, isPremium) {
                 </div>
                 <div>
                   <p class="font-bold text-slate-800 text-lg">${e.label}</p>
-                  <p class="text-xs text-slate-400 font-semibold tracking-wide">80 SORU · 180 DAKİKA</p>
+                  <p class="text-xs text-slate-400 font-semibold tracking-wide">${sec.qCount} SORU · ${sec.duration} DAKİKA</p>
                 </div>
               </div>
               <div class="flex gap-2 flex-wrap text-xs text-slate-500">
@@ -90,6 +102,7 @@ function getSelectorHTML(list, title, isPremium) {
           </div>`).join('')}
       </div>
     </section>
+    `).join('')}
 
     <div class="feSelectedInfo hidden bg-slate-900 border border-slate-800 rounded-2xl p-6 flex items-start gap-4 shadow-2xl">
       <div class="w-12 h-12 rounded-full ${badgeClass} flex items-center justify-center shrink-0">
@@ -211,7 +224,10 @@ const engineHTML = /* html */`
 `;
 
 const fullExamHTML = getSelectorHTML(FULL_EXAM_LIST, 'Özel Hazırlanmış Deneme Sınavları', true);
-const freeExamsHTML = getSelectorHTML(FREE_EXAM_LIST, 'Ücretsiz Deneme Sınavları', false);
+const freeExamsHTML = getSelectorHTML([
+  { title: 'Full Denemeler', list: FREE_EXAM_LIST, qCount: 80, duration: 180 },
+  { title: 'Mini Denemeler', list: FREE_MINI_EXAM_LIST, qCount: 40, duration: 90 }
+], 'Ücretsiz Deneme Sınavları', false);
 
 // ─── Init ────────────────────────────────────────────────────
 function initFullExam() {
@@ -266,6 +282,7 @@ async function feStartExam(btn) {
 
   let exam = FULL_EXAM_LIST.find(e => e.id === examId) || 
              FREE_EXAM_LIST.find(e => e.id === examId) || 
+             FREE_MINI_EXAM_LIST.find(e => e.id === examId) || 
              (typeof YDT_EXAM_LIST !== 'undefined' ? YDT_EXAM_LIST.find(e => e.id === examId) : null);
   if (!exam) {
     // Check miniexams if any

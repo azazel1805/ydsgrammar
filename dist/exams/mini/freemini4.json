@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue_completion",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Industrial Revolution was not merely a technological shift (8) ---- a profound socio-economic transformation. It (9) ---- the fundamental structures of European society, replacing agrarian traditions with urban lifestyles. While some historians (10) ---- the era as a period of unprecedented progress, others emphasize the (11) ---- living conditions of the working class. Regardless of one's stance, it is (12) ---- that this era laid the groundwork for modern capitalism."
+    },
+    {
+      "id": "reading_1",
+      "text": "The concept of 'biodiversity' encompasses the variety of all life on Earth. Currently, anthropogenic activities are accelerating extinction rates at an alarming pace. Habitat destruction remains the primary driver of this loss, particularly in tropical rainforests where specialized species cannot adapt to sudden changes. Conservationists argue that protecting ecosystem services is vital not only for wildlife but for human survival, as we rely on these systems for clean air and water."
+    },
+    {
+      "id": "reading_2",
+      "text": "In the digital age, the phenomenon of 'echo chambers' has become a significant concern for democratic discourse. Algorithms on social media platforms prioritize engagement, often feeding users content that aligns with their existing beliefs. This reinforcement of cognitive bias can lead to increased political polarization. To mitigate this effect, digital literacy programs must teach individuals how to seek out diverse perspectives and evaluate the credibility of varied information sources."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The newly proposed environmental regulations are expected to have a(n) ---- effect on the reduction of carbon emissions in the next decade.",
+      "options": {
+        "A": "negligible",
+        "B": "substantial",
+        "C": "infrequent",
+        "D": "redundant",
+        "E": "vague"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "The archaeological team managed to ---- the ancient ruins after months of careful excavation in the remote desert region.",
+      "options": {
+        "A": "unearth",
+        "B": "conceal",
+        "C": "demolish",
+        "D": "neglect",
+        "E": "postpone"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Despite the evidence, the spokesperson remained ---- in her denial of any involvement in the financial scandal.",
+      "options": {
+        "A": "ambiguous",
+        "B": "steadfast",
+        "C": "indecisive",
+        "D": "transient",
+        "E": "susceptible"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "Although the global economy is showing signs of recovery, ----.",
+      "options": {
+        "A": "many developing nations are still struggling with high inflation rates",
+        "B": "investors have never been more confident about the stock market",
+        "C": "unemployment has reached its lowest point in the last fifty years",
+        "D": "because the industrial output has increased significantly",
+        "E": "this will lead to a decrease in international trade barriers"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "---- that the first inhabitants of the Americas arrived via a land bridge from Asia.",
+      "options": {
+        "A": "Recent genetic studies have confirmed",
+        "B": "Unless we find more archaeological evidence",
+        "C": "The reason why they migrated is still unknown",
+        "D": "Despite the lack of geographical data",
+        "E": "Whether they used boats or not"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "The researcher decided to extend the study for another year ----.",
+      "options": {
+        "A": "so that she could gather more comprehensive longitudinal data",
+        "B": "even if the initial results were already conclusive",
+        "C": "because the funding had been withdrawn by the university",
+        "D": "in case the participants refused to answer the survey",
+        "E": "before the project had even started properly"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "Whereas traditional medicine focuses on treating specific symptoms, ----.",
+      "options": {
+        "A": "holistic approaches aim to address the health of the whole person",
+        "B": "modern doctors are increasingly using pharmaceutical drugs",
+        "C": "it is often criticized for being too expensive for the public",
+        "D": "the history of medical science dates back to ancient Greece",
+        "E": "most patients prefer a quick fix to their health problems"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 8.",
+      "options": {
+        "A": "but",
+        "B": "yet",
+        "C": "but also",
+        "D": "or",
+        "E": "and"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 9.",
+      "options": {
+        "A": "redefined",
+        "B": "rejected",
+        "C": "resigned",
+        "D": "restrained",
+        "E": "repealed"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 10.",
+      "options": {
+        "A": "extol",
+        "B": "ignore",
+        "C": "suspect",
+        "D": "disregard",
+        "E": "diminish"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 11.",
+      "options": {
+        "A": "deplorable",
+        "B": "luxurious",
+        "C": "adequate",
+        "D": "superficial",
+        "E": "temporary"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 12.",
+      "options": {
+        "A": "undeniable",
+        "B": "doubtful",
+        "C": "trivial",
+        "D": "ambivalent",
+        "E": "disputable"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Teknolojideki hızlı gelişmeler, eğitim sistemlerinin öğrencileri geleceğin iş dünyasına hazırlama şeklini temelden değiştirmektedir.",
+      "options": {
+        "A": "Rapid advances in technology are fundamentally changing the way education systems prepare students for the future business world.",
+        "B": "The way education systems prepare students for the future has changed due to rapid technological advances.",
+        "C": "Education systems must change their way of preparing students for the business world because of technology.",
+        "D": "Technology is changing so rapidly that education systems can no longer prepare students for the future.",
+        "E": "The future of the business world depends on how education systems adapt to technological advances."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Fosil yakıtların aşırı kullanımı sadece çevresel bozulmaya yol açmakla kalmıyor, aynı zamanda halk sağlığını da ciddi şekilde tehdit ediyor.",
+      "options": {
+        "A": "Using fossil fuels excessively leads to environmental degradation and health problems.",
+        "B": "The excessive use of fossil fuels not only leads to environmental degradation but also seriously threatens public health.",
+        "C": "Public health and the environment are both threatened by the use of fossil fuels.",
+        "D": "Fossil fuels are used so much that they threaten the environment and public health at the same time.",
+        "E": "Not only the environment but also public health is damaged when we use fossil fuels excessively."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Many scientists believe that artificial intelligence will eventually surpass human intelligence in most cognitive tasks.",
+      "options": {
+        "A": "Birçok bilim insanı, yapay zekanın sonunda çoğu bilişsel görevde insan zekasını geride bırakacağına inanıyor.",
+        "B": "Yapay zekanın insan zekasını çoğu alanda geçeceği düşüncesi birçok bilim insanı tarafından desteklenmektedir.",
+        "C": "Çoğu bilim insanına göre yapay zeka ve insan zekası bilişsel görevlerde bir gün yarışacaktır.",
+        "D": "Yapay zekanın bilişsel görevlerde insanı geçmesi bilim dünyasında tartışılan bir konudur.",
+        "E": "Bilim insanlarının çoğu, yapay zekanın insan zekasıyla aynı seviyeye geleceğine inanmaktadır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "Although the government has taken several measures to reduce poverty, the income gap continues to widen.",
+      "options": {
+        "A": "Hükümet yoksulluğu azaltmak için önlemler alsa da gelir adaletsizliği artmaya devam ediyor.",
+        "B": "Hükümet yoksulluğu azaltmak için çeşitli önlemler almasına rağmen, gelir uçurumu büyümeye devam ediyor.",
+        "C": "Gelir uçurumu büyüdüğü için hükümet yoksulluğu azaltmak adına yeni önlemler almıştır.",
+        "D": "Yoksulluğun azaltılması için hükümet tarafından alınan önlemler gelir uçurumunu kapatmaya yetmedi.",
+        "E": "Hükümetin önlemlerine rağmen yoksulluk ve gelir uçurumu arasındaki ilişki devam etmektedir."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "If the company hadn't invested in new technology, it would have lost its competitive edge.",
+      "options": {
+        "A": "The company kept its competitive advantage because it made an investment in new technology.",
+        "B": "The company lost its competitive edge despite investing in new technology.",
+        "C": "Investing in new technology didn't help the company maintain its competitive position.",
+        "D": "The company would lose its competitive edge even if it invested in new technology.",
+        "E": "Because the company didn't invest in new technology, it is no longer competitive."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "Rarely has a discovery in physics had such an immediate impact on other scientific disciplines.",
+      "options": {
+        "A": "This physics discovery had a very quick effect on other branches of science, which is unusual.",
+        "B": "Physics discoveries usually have a slow impact on other scientific fields.",
+        "C": "Most discoveries in physics never impact other disciplines as much as this one.",
+        "D": "Other scientific disciplines were not affected by this physics discovery until recently.",
+        "E": "It is rare for any scientific discipline to be impacted by discoveries in physics."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "The manager postponed the meeting until next Monday due to a sudden conflict in his schedule.",
+      "options": {
+        "A": "The meeting was moved to next Monday because the manager had an unexpected scheduling issue.",
+        "B": "The manager wanted to have the meeting on Monday regardless of his busy schedule.",
+        "C": "Next Monday's meeting was cancelled because the manager had a conflict.",
+        "D": "Because the manager had a conflict, he decided not to attend the meeting next Monday.",
+        "E": "A sudden conflict prevented the manager from attending the meeting until next Monday."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "It was not until the end of the 19th century that psychologists began to study the human mind scientifically.",
+      "options": {
+        "A": "The scientific study of the human mind by psychologists only started late in the 19th century.",
+        "B": "Psychologists have been studying the human mind scientifically since before the 19th century.",
+        "C": "At the end of the 19th century, psychologists stopped studying the human mind scientifically.",
+        "D": "Scientific methods were used to study the mind long before the 19th century ended.",
+        "E": "The human mind was not an interest for psychologists until the beginning of the 19th century."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue_completion",
+      "question": "Professor: The midterm results were quite disappointing for most of the class.\nStudent: ----\nProfessor: I believe the main issue was a lack of focus on the primary sources.",
+      "options": {
+        "A": "What do you think was the reason for this poor performance?",
+        "B": "When will you be returning the graded papers?",
+        "C": "I thought the exam was quite easy actually.",
+        "D": "Can we have a retake next week?",
+        "E": "How many students actually passed the test?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue_completion",
+      "question": "Journalist: How has the pandemic changed the future of remote work?\nExpert: ----\nJournalist: So, you're saying it's no longer just an option but a requirement for some?",
+      "options": {
+        "A": "It has accelerated a trend that was already underway for many companies.",
+        "B": "Most people still prefer to go to the office every day.",
+        "C": "I think the pandemic didn't have much of an impact on working habits.",
+        "D": "Remote work is only possible for those in the IT sector.",
+        "E": "There are many disadvantages to working from home."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue_completion",
+      "question": "A: Have you heard about the new discovery in the Amazon?\nB: ----\nA: Exactly, it suggests that the region was more populated than we previously thought.",
+      "options": {
+        "A": "Are you talking about the massive urban network found under the canopy?",
+        "B": "I didn't know there were any forests left in that area.",
+        "C": "Was it about a new species of birds?",
+        "D": "I am not interested in archaeology or history.",
+        "E": "Who led the expedition to the Amazon?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue_completion",
+      "question": "Client: I'm worried about the security of my data on your cloud platform.\nProvider: ----\nClient: That sounds reassuring, but what about unauthorized access?",
+      "options": {
+        "A": "We use end-to-end encryption and multi-factor authentication for all accounts.",
+        "B": "Data security is not our primary concern at the moment.",
+        "C": "You should use a different service if you are worried.",
+        "D": "Most users don't care about their data security.",
+        "E": "We are planning to update our security protocols next year."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Dark matter is one of the greatest mysteries of modern astrophysics. ----. Although it cannot be seen directly, its presence is inferred from its gravitational effects on visible matter, such as stars and galaxies. Without dark matter, galaxies would likely fly apart as they rotate.",
+      "options": {
+        "A": "It accounts for approximately 85% of the matter in the universe",
+        "B": "The sun is the center of our solar system",
+        "C": "NASA is planning a mission to Mars next year",
+        "D": "Black holes are regions of space where gravity is very strong",
+        "E": "Telescopes have become much more powerful recently"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "Urbanization is a global trend that involves the migration of people from rural areas to cities. ----. These include increased economic opportunities and better access to education. However, it also brings challenges like overcrowding and pollution.",
+      "options": {
+        "A": "This shift is driven by several factors",
+        "B": "Cities are becoming smaller every year",
+        "C": "Agriculture remains the main source of income for many",
+        "D": "Urban planning is a relatively new field",
+        "E": "Many people prefer the quiet life of the countryside"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "The Renaissance was a period of great cultural and intellectual growth in Europe. ----. Figures like Leonardo da Vinci and Michelangelo redefined art and science. This era paved the way for the Enlightenment and the modern age.",
+      "options": {
+        "A": "It began in Italy in the 14th century",
+        "B": "The Middle Ages were characterized by feudalism",
+        "C": "Industrialization changed the way goods were produced",
+        "D": "Printing press was invented during this time",
+        "E": "Many wars were fought over religious differences"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Plastic pollution is a critical environmental issue. ----. Over time, these plastics break down into microplastics, which enter the food chain through marine life. Efforts to reduce single-use plastics are essential to combat this problem.",
+      "options": {
+        "A": "Millions of tons of plastic waste end up in the oceans every year",
+        "B": "Recycling is the only way to save the planet",
+        "C": "Plastic is a very versatile material used in many industries",
+        "D": "The discovery of plastic changed the manufacturing world",
+        "E": "Some countries have already banned plastic bags"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "The findings of the study were so controversial that they were initially rejected by the scientific community.",
+      "options": {
+        "A": "Because the study's results were disputed, scientists did not accept them at first.",
+        "B": "The scientific community eventually accepted the controversial findings of the study.",
+        "C": "The study was rejected because its findings were not scientific enough.",
+        "D": "Scientists were interested in the study despite its controversial nature.",
+        "E": "No one in the scientific community believed the findings were controversial."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "Only by working together can we hope to solve the complex problems of climate change.",
+      "options": {
+        "A": "We can only solve climate change's difficult issues through cooperation.",
+        "B": "Working together is one of the many ways to solve climate change.",
+        "C": "Climate change is too complex to be solved even if we work together.",
+        "D": "Solving climate change requires us to work separately on different issues.",
+        "E": "We hope that working together will eventually lead to a solution."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "The new law will come into effect as soon as the president signs it.",
+      "options": {
+        "A": "The law will be implemented immediately after the president's signature.",
+        "B": "The president has already signed the law, so it is now in effect.",
+        "C": "The president must sign the law before it can be discussed in parliament.",
+        "D": "Even if the president signs it, the law might not come into effect.",
+        "E": "The law will be effective until the president signs a new one."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Solar energy is a renewable source of power that is becoming increasingly popular. (II) It harnesses the energy from the sun using photovoltaic cells. (III) Fossil fuels, on the other hand, are finite and contribute to global warming. (IV) These cells convert sunlight directly into electricity. (V) The cost of installing solar panels has dropped significantly in recent years.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Exercise is essential for maintaining physical and mental health. (II) It helps reduce the risk of chronic diseases such as heart disease and diabetes. (III) Many people find it difficult to stick to a regular workout routine. (IV) Additionally, physical activity is known to improve mood and reduce stress. (V) Even a short daily walk can provide significant health benefits.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Great Wall of China is one of the most impressive architectural feats in history. (II) It was built over several centuries to protect the Chinese Empire from invasions. (III) China is also known for its rapid economic growth in the 21st century. (IV) The wall stretches over 13,000 miles across various terrains. (V) Today, it is a UNESCO World Heritage site and a major tourist attraction.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, what is the main cause of biodiversity loss?",
+      "options": {
+        "A": "Climate change",
+        "B": "Habitat destruction",
+        "C": "Pollution",
+        "D": "Overpopulation",
+        "E": "Invasive species"
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading_comprehension",
+      "question": "Why is protecting ecosystem services considered vital for humans?",
+      "options": {
+        "A": "Because it creates more jobs in conservation",
+        "B": "Because humans depend on them for essential resources like clean air",
+        "C": "Because it prevents all animal species from going extinct",
+        "D": "Because it stops the expansion of tropical rainforests",
+        "E": "Because it is the only way to stop anthropogenic activities"
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading_comprehension",
+      "question": "What is the author's tone regarding the current extinction rates?",
+      "options": {
+        "A": "Indifferent",
+        "B": "Optimistic",
+        "C": "Alarmed",
+        "D": "Skeptical",
+        "E": "Nostalgic"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading_comprehension",
+      "question": "How do social media algorithms contribute to 'echo chambers'?",
+      "options": {
+        "A": "By deleting controversial content",
+        "B": "By showing users content that matches their existing beliefs",
+        "C": "By forcing users to follow diverse political accounts",
+        "D": "By limiting the time users spend on the platform",
+        "E": "By promoting educational literacy programs"
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading_comprehension",
+      "question": "What is a potential consequence of the reinforcement of cognitive bias mentioned in the text?",
+      "options": {
+        "A": "Increased digital literacy",
+        "B": "Better democratic discourse",
+        "C": "Increased political polarization",
+        "D": "A more informed electorate",
+        "E": "Reduced social media usage"
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading_comprehension",
+      "question": "What solution does the author suggest to combat the 'echo chamber' effect?",
+      "options": {
+        "A": "Banning social media algorithms",
+        "B": "Implementing digital literacy programs",
+        "C": "Encouraging more engagement on social media",
+        "D": "Restricting internet access to adults only",
+        "E": "Closing down biased news websites"
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    }
+  ]
+}

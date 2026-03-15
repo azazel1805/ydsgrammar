@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue_completion",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage_cloze",
+      "text": "The rapid advancement of artificial intelligence (AI) has (8)---- traditional industries, leading to a profound shift in the global labor market. While some experts argue that automation will (9)---- lead to mass unemployment, others suggest that new roles will be created. The (10)---- of this transformation depends on how quickly educational systems can adapt. Governments must (11)---- policies that promote lifelong learning. (12)----, the digital divide between developed and developing nations could widen if access to AI technology remains unequal."
+    },
+    {
+      "id": "reading_1",
+      "text": "The Holocene epoch, which began approximately 11,700 years ago, has been characterized by a relatively stable climate that allowed human civilizations to flourish. However, recent evidence suggests that we have entered a new geological period: the Anthropocene. This era is defined by the significant impact of human activities on Earth's ecosystems and geology. From the massive increase in carbon dioxide emissions to the widespread presence of plastic waste, the human footprint is now indelible in the stratigraphic record."
+    },
+    {
+      "id": "reading_2",
+      "text": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the long-held belief that the adult brain is a static organ. Research indicates that learning a new skill, such as playing a musical instrument or speaking a foreign language, can induce structural changes in the motor and auditory cortex. This adaptability is crucial not only for cognitive development but also for recovery after brain injuries."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The researchers found a ---- correlation between the two variables, suggesting that one directly influences the other.",
+      "options": {
+        "A": "negligible",
+        "B": "spurious",
+        "C": "pronounced",
+        "D": "fleeting",
+        "E": "redundant"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "Despite the complexity of the issue, the spokesperson managed to ---- the main points clearly to the audience.",
+      "options": {
+        "A": "elucidate",
+        "B": "obfuscate",
+        "C": "relinquish",
+        "D": "scrutinize",
+        "E": "undermine"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "The government’s new fiscal policy was designed to ---- the effects of the economic recession.",
+      "options": {
+        "A": "aggravate",
+        "B": "mitigate",
+        "C": "deteriorate",
+        "D": "instigate",
+        "E": "precipitate"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "While the theory of evolution is widely accepted in the scientific community, ----.",
+      "options": {
+        "A": "it has been proven beyond any doubt by geneticists",
+        "B": "some nuances regarding the speed of adaptation are still debated",
+        "C": "Charles Darwin remains the most famous biologist in history",
+        "D": "the fossil record provides ample evidence for natural selection",
+        "E": "educational curricula have integrated it for many decades"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "---- so that they can remain competitive in an increasingly globalized economy.",
+      "options": {
+        "A": "Multinational corporations are downsizing their overseas operations",
+        "B": "Local businesses must adopt digital marketing strategies",
+        "C": "The government ignored the plight of small-scale farmers",
+        "D": "Technological progress is often met with public skepticism",
+        "E": "Labor unions have traditionally resisted automation"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Unless the international community takes immediate action to reduce carbon emissions, ----.",
+      "options": {
+        "A": "the Paris Agreement would have been a success",
+        "B": "renewable energy sources are becoming more affordable",
+        "C": "global temperatures are projected to rise to catastrophic levels",
+        "D": "the biodiversity of the oceans has been preserved",
+        "E": "environmental activists had warned about the consequences"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "Although the study had a small sample size, ----.",
+      "options": {
+        "A": "the participants were not representative of the population",
+        "B": "it failed to provide any significant insights",
+        "C": "the findings were consistent with previous large-scale research",
+        "D": "researchers had to discard most of the data collected",
+        "E": "it was published in a low-impact academic journal"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 8.",
+      "options": {
+        "A": "disrupted",
+        "B": "sustained",
+        "C": "neglected",
+        "D": "abandoned",
+        "E": "simulated"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 9.",
+      "options": {
+        "A": "inevitably",
+        "B": "scarcely",
+        "C": "vaguely",
+        "D": "hesitantly",
+        "E": "marginally"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 10.",
+      "options": {
+        "A": "outcome",
+        "B": "remnant",
+        "C": "hardship",
+        "D": "origin",
+        "E": "resistance"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 11.",
+      "options": {
+        "A": "implement",
+        "B": "repeal",
+        "C": "ignore",
+        "D": "suspend",
+        "E": "obstruct"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 12.",
+      "options": {
+        "A": "Otherwise",
+        "B": "Therefore",
+        "C": "Similarly",
+        "D": "However",
+        "E": "Moreover"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Son araştırmalar, düzenli egzersizin sadece fiziksel sağlığı iyileştirmekle kalmayıp aynı zamanda bilişsel fonksiyonları da artırdığını göstermektedir.",
+      "options": {
+        "A": "Recent research shows that regular exercise improves physical health as well as cognitive functions.",
+        "B": "Research has shown that physical health and cognitive functions are both improved by regular exercise.",
+        "C": "Recent research shows that regular exercise not only improves physical health but also enhances cognitive functions.",
+        "D": "Cognitive functions are enhanced by regular exercise, which also improves physical health according to research.",
+        "E": "Regular exercise is known to improve both physical and cognitive functions according to recent studies."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Ekonomik krizden kaçınmak için hükümetin harcamaları azaltması ve vergi reformlarını uygulaması gerekmektedir.",
+      "options": {
+        "A": "The government must reduce spending and implement tax reforms to avoid an economic crisis.",
+        "B": "Spending must be reduced and tax reforms implemented by the government for avoiding economic crisis.",
+        "C": "Avoiding the economic crisis depends on the government's reduction of spending and tax reforms.",
+        "D": "To avoid an economic crisis, the government should have reduced spending and tax reforms.",
+        "E": "The government had to reduce spending and implement tax reforms so that the crisis is avoided."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Many scientists believe that the melting of glaciers is a direct consequence of human-induced climate change.",
+      "options": {
+        "A": "Birçok bilim insanı, buzulların erimesinin insan kaynaklı iklim değişikliğinin doğrudan bir sonucu olduğuna inanmaktadır.",
+        "B": "Buzulların erimesinin iklim değişikliğinin bir sonucu olduğuna birçok bilim insanı inanıyor.",
+        "C": "İnsan kaynaklı iklim değişikliği sonucunda buzulların eridiğine birçok bilim insanı inanmaktadır.",
+        "D": "Bilim insanlarının çoğu, buzulların erimesini doğrudan iklim değişikliğine bağlamaktadır.",
+        "E": "Buzulların erimesi, bilim insanlarına göre insan kaynaklı iklim değişikliğinin bir sonucudur."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "The invention of the printing press in the 15th century revolutionized the way information was disseminated.",
+      "options": {
+        "A": "15. yüzyılda matbaanın icadı, bilginin yayılma şeklini devrim niteliğinde değiştirdi.",
+        "B": "Matbaa 15. yüzyılda icat edildiğinde bilginin yayılması tamamen değişmişti.",
+        "C": "Bilginin yayılma şekli, 15. yüzyıldaki matbaa icadıyla devrim kazandı.",
+        "D": "15. yüzyılda bilginin yayılmasını sağlayan en önemli icat matbaadır.",
+        "E": "Matbaanın icadı sayesinde 15. yüzyılda bilgi yayılımı devrimsel bir sürece girdi."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "Hardly had the meeting started when the fire alarm went off.",
+      "options": {
+        "A": "The meeting started because the fire alarm went off.",
+        "B": "The fire alarm went off just as the meeting was beginning.",
+        "C": "The meeting was already over when the fire alarm rang.",
+        "D": "The fire alarm rang before the meeting could even start.",
+        "E": "The meeting was postponed due to the fire alarm."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "It is possible that the witness confused the suspect with someone else.",
+      "options": {
+        "A": "The witness must have confused the suspect with another person.",
+        "B": "The witness might have mistaken the suspect for someone else.",
+        "C": "The witness surely confused the suspect with someone else.",
+        "D": "It is certain that the witness confused the suspect.",
+        "E": "The witness could not have identified the suspect correctly."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "Unless we receive the payment by Friday, we will be forced to cancel the order.",
+      "options": {
+        "A": "We will cancel the order if the payment doesn't arrive by Friday.",
+        "B": "We received the payment on Friday, so the order wasn't cancelled.",
+        "C": "If the payment arrives by Friday, we will still cancel the order.",
+        "D": "The order was cancelled because the payment was late.",
+        "E": "We might cancel the order even if we get the payment on Friday."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Success in the exam depends not only on hard work but also on effective time management.",
+      "options": {
+        "A": "Hard work is more important than time management for exam success.",
+        "B": "You can succeed in the exam just by managing your time well.",
+        "C": "Both diligent study and managing time well are necessary for passing the exam.",
+        "D": "If you work hard, you don't need to worry about time management.",
+        "E": "Time management is the only key to success in this exam."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue_completion",
+      "question": "John: Have you finished the report for the board meeting?\nMary: Not yet, I'm still analyzing the latest data.\nJohn: ----\nMary: I know, but I want to make sure the figures are accurate.",
+      "options": {
+        "A": "The meeting has been cancelled anyway.",
+        "B": "You should take your time; there's no rush.",
+        "C": "But the deadline is in two hours!",
+        "D": "I can help you with the data analysis.",
+        "E": "The board members don't care about the data."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue_completion",
+      "question": "Doctor: Your blood pressure is quite high. Are you under a lot of stress?\nPatient: Yes, my job has been very demanding lately.\nDoctor: ----\nPatient: I'll try, but it's easier said than done.",
+      "options": {
+        "A": "You should consider taking a vacation.",
+        "B": "I will prescribe some medication immediately.",
+        "C": "You need to find ways to relax and reduce your workload.",
+        "D": "High blood pressure is a very common condition.",
+        "E": "When was the last time you exercised?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue_completion",
+      "question": "Alice: Do you think electric cars will completely replace petrol cars soon?\nTom: ----\nAlice: Why is that?\nTom: Because the charging infrastructure is still quite limited in many regions.",
+      "options": {
+        "A": "Yes, it is already happening in many countries.",
+        "B": "I doubt it will happen within the next decade.",
+        "C": "Electric cars are much better for the environment.",
+        "D": "I've just bought an electric car myself.",
+        "E": "Technology is advancing faster than we expected."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue_completion",
+      "question": "Clerk: Can I help you find something?\nCustomer: Yes, I'm looking for a book on Renaissance art.\nClerk: ----\nCustomer: Thank you, I'll head over there now.",
+      "options": {
+        "A": "We are currently out of stock on that subject.",
+        "B": "Renaissance art is a very popular topic these days.",
+        "C": "You can find those in the history section on the second floor.",
+        "D": "Do you prefer hardcover or paperback editions?",
+        "E": "The author of that book is coming for a signing next week."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Renewable energy sources, such as wind and solar power, are essential for reducing our carbon footprint. ----. Furthermore, they provide a sustainable alternative to fossil fuels, which are finite and polluting. As technology improves, the cost of these energy sources continues to decrease.",
+      "options": {
+        "A": "Fossil fuels are still the primary source of energy worldwide.",
+        "B": "They help mitigate the effects of global warming by emitting fewer greenhouse gases.",
+        "C": "Nuclear energy is another controversial alternative to traditional power.",
+        "D": "Many countries are still heavily dependent on coal for electricity.",
+        "E": "The installation of solar panels can be quite expensive for homeowners."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "The Great Depression was a severe worldwide economic depression that took place mostly during the 1930s. ----. It had devastating effects in both rich and poor countries. Personal income, tax revenue, profits, and prices dropped, while international trade plunged by more than 50%.",
+      "options": {
+        "A": "It began after a major fall in stock prices in the United States.",
+        "B": "World War II eventually helped end the economic crisis.",
+        "C": "Economists still debate the exact causes of the depression.",
+        "D": "Agricultural prices fell by about 60% during this period.",
+        "E": "The recovery started at different times in various countries."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "In the field of psychology, the 'nature vs. nurture' debate explores the influence of heredity and environment on human development. ----. For instance, while a person might have a genetic predisposition for a certain trait, their upbringing and environment play a crucial role in whether that trait is expressed.",
+      "options": {
+        "A": "Most modern psychologists believe that both factors interact closely.",
+        "B": "Genetics is the sole determinant of human behavior according to some.",
+        "C": "The environment has no impact on a person's intelligence.",
+        "D": "Twin studies are often used to support the nature argument.",
+        "E": "The debate has been resolved in favor of nurture in recent years."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Sustainable architecture aims to minimize the negative environmental impact of buildings. ----. This includes using recycled materials, implementing energy-efficient systems, and choosing locations that preserve local ecosystems.",
+      "options": {
+        "A": "Modern skyscrapers are often criticized for their energy consumption.",
+        "B": "It achieves this through efficiency and moderation in the use of materials.",
+        "C": "Architects are now focusing more on aesthetic appeal than function.",
+        "D": "Urban planning is a completely different field from architecture.",
+        "E": "Many old buildings are being demolished to make way for new ones."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "The manager's decision was based on the assumption that the market would grow.",
+      "options": {
+        "A": "The manager decided to grow the market himself.",
+        "B": "The manager made a decision because he believed the market would expand.",
+        "C": "The market grew because of the manager's decision.",
+        "D": "The manager's decision caused the market to stop growing.",
+        "E": "The manager was unsure if the market would grow when he decided."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "Few people realized the significance of the discovery at the time.",
+      "options": {
+        "A": "Everyone knew how important the discovery was immediately.",
+        "B": "The importance of the discovery was not understood by many people then.",
+        "C": "Many people exaggerated the importance of the discovery.",
+        "D": "The discovery was not significant until much later.",
+        "E": "Only the researchers understood the value of the discovery."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "She would have passed the exam if she had studied harder.",
+      "options": {
+        "A": "She passed the exam because she studied very hard.",
+        "B": "She didn't study hard enough, so she failed the exam.",
+        "C": "She studied hard, but she still didn't pass the exam.",
+        "D": "She is studying hard now to pass the exam next time.",
+        "E": "If she passes the exam, it will be because she studied hard."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Silk Road was an ancient network of trade routes that connected the East and West. (II) It was central to cultural interaction between the regions for many centuries. (III) Marco Polo is perhaps the most famous traveler of this route. (IV) Modern transportation has made trade much faster today. (V) In addition to goods, the Silk Road facilitated the exchange of ideas, religions, and technologies.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Photosynthesis is the process by which green plants make their own food. (II) It requires sunlight, water, and carbon dioxide to function. (III) Chlorophyll is the pigment that absorbs light energy for this process. (IV) Some plants can grow in very low-light conditions. (V) The end products of photosynthesis are glucose and oxygen.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Renaissance was a period of great cultural and artistic change in Europe. (II) It began in Italy in the 14th century and spread across the continent. (III) Leonardo da Vinci and Michelangelo were two of the most influential artists of the time. (IV) The Industrial Revolution later changed the way goods were manufactured. (V) During this era, there was a renewed interest in the classical philosophy of Greece and Rome.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, what defines the Anthropocene?",
+      "options": {
+        "A": "A period of extreme climatic stability.",
+        "B": "The beginning of human civilization 11,700 years ago.",
+        "C": "The significant impact of human activities on Earth's ecosystems.",
+        "D": "The natural decrease in carbon dioxide levels.",
+        "E": "The absence of stratigraphic records."
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading_comprehension",
+      "question": "Which of the following is mentioned as a 'human footprint' in the text?",
+      "options": {
+        "A": "The development of the Holocene epoch.",
+        "B": "The flourishing of early human civilizations.",
+        "C": "The presence of plastic waste.",
+        "D": "The stability of the global climate.",
+        "E": "The study of ancient geological periods."
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading_comprehension",
+      "question": "What can be inferred about the Holocene from the passage?",
+      "options": {
+        "A": "It was a period of constant geological upheaval.",
+        "B": "It provided the conditions necessary for human societies to develop.",
+        "C": "It is still ongoing despite human activities.",
+        "D": "It was characterized by high levels of plastic pollution.",
+        "E": "It is the era where carbon emissions first peaked."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading_comprehension",
+      "question": "What does the term 'neuroplasticity' imply about the brain?",
+      "options": {
+        "A": "The brain's structure is fixed after childhood.",
+        "B": "It is unable to form new connections after an injury.",
+        "C": "It is a dynamic organ that can adapt and change.",
+        "D": "Learning new skills has no effect on brain anatomy.",
+        "E": "Only young brains are capable of learning languages."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, how can one induce structural changes in the brain?",
+      "options": {
+        "A": "By maintaining a static lifestyle.",
+        "B": "By avoiding auditory and motor tasks.",
+        "C": "By learning new skills like playing an instrument.",
+        "D": "By relying only on existing neural connections.",
+        "E": "By ignoring cognitive development exercises."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading_comprehension",
+      "question": "Why is neuroplasticity considered important for brain injuries?",
+      "options": {
+        "A": "It prevents any damage from occurring in the first place.",
+        "B": "It allows the brain to reorganize and recover lost functions.",
+        "C": "It makes the brain resistant to any form of external trauma.",
+        "D": "It ensures that the auditory cortex remains unchanged.",
+        "E": "It limits the formation of new neural connections during recovery."
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "VOC",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "SENT_COMP",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "CLOZE",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "TRANS",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "PARA",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "DIAL",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "PAR_COMP",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "CLOSE_MEAN",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "IRREL",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "READING",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The concept of sustainable development has undergone significant evolution since its inception. Initially, it was perceived (8) --- as an environmental concern. However, contemporary frameworks now (9) --- economic and social dimensions into the core definition. This shift reflects an increasing (10) --- of the interconnectedness between global markets and ecosystem health. Governments are (11) --- to implement policies that do not compromise the needs of future generations. Failure to do so could lead to (12) --- consequences for biodiversity and human welfare alike."
+    },
+    {
+      "id": "read_1",
+      "text": "Quantum computing represents a paradigm shift in computational theory. Unlike classical bits, which exist as either zeros or ones, qubits leverage the principles of superposition and entanglement. This allows quantum processors to perform complex calculations at speeds unattainable by even the most powerful supercomputers today. However, the technology is still in its nascent stages, facing significant hurdles such as decoherence and error rates. Researchers are currently focusing on developing 'fault-tolerant' systems to ensure reliability."
+    },
+    {
+      "id": "read_2",
+      "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. While the exact starting date is debated, many scientists point to the Industrial Revolution or the mid-20th century 'Great Acceleration'. This era is characterized by mass extinctions, altered biogeochemical cycles, and climate change. Critics of the term argue that it oversimplifies the diverse roles of different human societies, but its use in scientific literature continues to proliferate."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "VOC",
+      "question": "The researchers found that the new drug had a(n) --- effect on the progression of the disease, slowing it down significantly.",
+      "options": {
+        "A": "adversarial",
+        "B": "negligible",
+        "C": "profound",
+        "D": "superficial",
+        "E": "tentative"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "VOC",
+      "question": "In many urban areas, the infrastructure is so --- that it can no longer support the rapidly growing population.",
+      "options": {
+        "A": "obsolete",
+        "B": "resilient",
+        "C": "versatile",
+        "D": "robust",
+        "E": "intricate"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "VOC",
+      "question": "The diplomat handled the delicate situation with great ---, ensuring that no offense was taken by either party.",
+      "options": {
+        "A": "indifference",
+        "B": "finesse",
+        "C": "arrogance",
+        "D": "negligence",
+        "E": "hostility"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "SENT_COMP",
+      "question": "Although the initial results of the study were promising, ---.",
+      "options": {
+        "A": "they confirmed the hypothesis of the researchers",
+        "B": "subsequent trials failed to replicate the same outcome",
+        "C": "the funding for the project was increased immediately",
+        "D": "most participants reported a significant improvement",
+        "E": "it was published in a prestigious medical journal"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "SENT_COMP",
+      "question": "--- unless the government takes immediate action to regulate carbon emissions.",
+      "options": {
+        "A": "Global temperatures will continue to rise",
+        "B": "The environment has improved significantly",
+        "C": "Renewable energy sources are becoming cheaper",
+        "D": "International treaties were signed last year",
+        "E": "Many species would have been saved"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "SENT_COMP",
+      "question": "Due to the complexity of the legal framework, ---.",
+      "options": {
+        "A": "it is easy for laypeople to understand",
+        "B": "the judge dismissed the case without any reason",
+        "C": "many small businesses struggle to remain compliant",
+        "D": "the law was repealed only a week after it passed",
+        "E": "lawyers are no longer needed for such cases"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "SENT_COMP",
+      "question": "Ever since the new CEO took over the company, ---.",
+      "options": {
+        "A": "profits had been declining for several years",
+        "B": "employee morale has seen a remarkable boost",
+        "C": "the headquarters were moved to another city",
+        "D": "they would have expanded into Asian markets",
+        "E": "no one can predict the future of the industry"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "CLOZE",
+      "question": "Choose the best option for blank (8).",
+      "options": {
+        "A": "exclusively",
+        "B": "randomly",
+        "C": "briefly",
+        "D": "vaguely",
+        "E": "excessively"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "CLOZE",
+      "question": "Choose the best option for blank (9).",
+      "options": {
+        "A": "exclude",
+        "B": "integrate",
+        "C": "diminish",
+        "D": "postpone",
+        "E": "contradict"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "CLOZE",
+      "question": "Choose the best option for blank (10).",
+      "options": {
+        "A": "ignorance",
+        "B": "denial",
+        "C": "awareness",
+        "D": "resistance",
+        "E": "suspicion"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "CLOZE",
+      "question": "Choose the best option for blank (11).",
+      "options": {
+        "A": "reluctant",
+        "B": "compelled",
+        "C": "forbidden",
+        "D": "hesitant",
+        "E": "indifferent"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "CLOZE",
+      "question": "Choose the best option for blank (12).",
+      "options": {
+        "A": "beneficial",
+        "B": "irreversible",
+        "C": "trivial",
+        "D": "temporary",
+        "E": "auspicious"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "TRANS",
+      "question": "Many historians argue that the fall of the Roman Empire was not a single event but a long process of decline.",
+      "options": {
+        "A": "Pek çok tarihçi Roma İmparatorluğu'nun çöküşünün tek bir olay değil, uzun bir gerileme süreci olduğunu savunmaktadır.",
+        "B": "Roma İmparatorluğu'nun çöküşü pek çok tarihçiye göre uzun bir süreçtir ve tek bir olayla açıklanamaz.",
+        "C": "Tarihçilerin çoğu Roma İmparatorluğu'nun düşüşünü tek bir nedene değil, uzun süreli bir gerilemeye bağlar.",
+        "D": "Roma İmparatorluğu'nun yıkılışının uzun bir süreç olduğu fikri çoğu tarihçi tarafından kabul edilmektedir.",
+        "E": "Tek bir olaydan ziyade uzun bir gerileme süreci, Roma İmparatorluğu'nun sonunu hazırlamıştır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "TRANS",
+      "question": "Yapay zeka teknolojileri geliştikçe, iş gücü piyasasındaki talepler de köklü bir değişim geçirmektedir.",
+      "options": {
+        "A": "As artificial intelligence technologies evolve, demands in the labor market are also undergoing a radical change.",
+        "B": "The labor market changes whenever artificial intelligence technologies improve significantly.",
+        "C": "Demands in the workforce are changing because artificial intelligence technologies have evolved.",
+        "D": "With the evolution of AI, the labor market is starting to see some minor changes in demand.",
+        "E": "Artificial intelligence is changing the labor market demands in a very rootless way."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "TRANS",
+      "question": "The discovery of penicillin revolutionized medicine by providing an effective treatment for bacterial infections.",
+      "options": {
+        "A": "Penisilinin keşfi, bakteriyel enfeksiyonlar için etkili bir tedavi sunarak tıpta devrim yaratmıştır.",
+        "B": "Tıp dünyasındaki devrim, bakteriyel enfeksiyonlara karşı etkili olan penisilinin keşfiyle başladı.",
+        "C": "Bakteriyel enfeksiyonları tedavi eden penisilin, tıp tarihinde büyük bir devrim olarak görülür.",
+        "D": "Penisilin keşfedildiğinde, bakteriyel enfeksiyonların tedavisinde yeni bir tıp çağı açılmıştır.",
+        "E": "Etkili bir tedavi olan penisilin, tıp alanındaki en büyük devrimlerden biri olarak kabul edilir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "TRANS",
+      "question": "Eğitim sistemindeki reformlar, öğrencilerin yaratıcılığını teşvik etmeyi amaçlamalıdır.",
+      "options": {
+        "A": "Reforms in the education system should aim to encourage students' creativity.",
+        "B": "Student creativity is the main goal of reforms in the educational system.",
+        "C": "Education systems must be reformed to show how creative students can be.",
+        "D": "Encouraging creativity is why the education system needs to be reformed.",
+        "E": "The aim of the education system is to reform the creativity of students."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "PARA",
+      "question": "Barely had the film started when the power went out.",
+      "options": {
+        "A": "The film had already finished when the power went out.",
+        "B": "The power went out just as the film was beginning.",
+        "C": "The film started after the power had gone out.",
+        "D": "The power went out because the film started.",
+        "E": "There was no power during the entire film."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "PARA",
+      "question": "If it hadn't been for your help, I wouldn't have finished the project on time.",
+      "options": {
+        "A": "I finished the project on time despite your help.",
+        "B": "I couldn't finish the project on time even with your help.",
+        "C": "Your help was necessary for me to finish the project on time.",
+        "D": "I finished the project on time without any help from you.",
+        "E": "You helped me, but I still didn't finish the project on time."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "PARA",
+      "question": "The new policy is so controversial that it is unlikely to be implemented this year.",
+      "options": {
+        "A": "The policy will definitely be implemented despite the controversy.",
+        "B": "Because the policy is controversial, it might be implemented next year.",
+        "C": "The controversy surrounding the new policy makes its implementation this year improbable.",
+        "D": "The implementation of the policy depends on how controversial it is.",
+        "E": "The policy was implemented this year because it was not controversial."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "PARA",
+      "question": "Success in learning a language is largely dependent on the learner's motivation.",
+      "options": {
+        "A": "Motivation is the only factor that ensures success in language learning.",
+        "B": "How motivated a learner is plays a major role in their success in learning a language.",
+        "C": "Successful language learners are usually more motivated than others.",
+        "D": "Without motivation, it is impossible for a learner to succeed in any language.",
+        "E": "Language learning success determines how motivated a student will be."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "DIAL",
+      "question": "Amy: Have you seen the latest report on urban heat islands?\nTom: No, what does it say?\nAmy: ---\nTom: That makes sense. We should prioritize planting more trees.",
+      "options": {
+        "A": "It says that rural areas are actually getting colder than before.",
+        "B": "It claims that building materials in cities trap heat, making them warmer than rural surroundings.",
+        "C": "It suggests that air conditioning is the only way to solve the problem.",
+        "D": "The report was actually lost in the mail, so I haven't read it either.",
+        "E": "It states that cities are the best places to live during the winter."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "DIAL",
+      "question": "Professor: Your thesis on cognitive biases is quite impressive.\nStudent: Thank you. I put a lot of work into the methodology.\nProfessor: ---\nStudent: I will definitely look into those additional sources to strengthen it further.",
+      "options": {
+        "A": "I think you should change your entire topic to something else.",
+        "B": "However, you might want to expand your literature review a bit.",
+        "C": "It was the worst paper I have read this semester.",
+        "D": "The methodology was actually the weakest part of your work.",
+        "E": "Do you think cognitive biases are real?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "DIAL",
+      "question": "Jane: I'm thinking of switching to a plant-based diet.\nMark: That's a big change. What's the main reason?\nJane: ---\nMark: I agree; reducing our carbon footprint is becoming more critical every day.",
+      "options": {
+        "A": "I just want to try new recipes for fun.",
+        "B": "My doctor told me I need to eat more protein.",
+        "C": "I'm concerned about the environmental impact of industrial meat production.",
+        "D": "Meat has become too expensive for my budget.",
+        "E": "I've always hated the taste of vegetables."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "DIAL",
+      "question": "Reporter: How will the new trade agreement affect local farmers?\nOfficial: It aims to provide them with better access to international markets.\nReporter: ---\nOfficial: We have established a subsidy program to mitigate that risk.",
+      "options": {
+        "A": "Will they be able to export their goods easily?",
+        "B": "But won't it also expose them to fierce competition from abroad?",
+        "C": "Most farmers are happy with the current situation.",
+        "D": "Is there any reason to worry about the international markets?",
+        "E": "How many farmers are currently working in the country?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "PAR_COMP",
+      "question": "The Renaissance was a period of intense cultural and artistic growth in Europe. It began in Italy and eventually spread to other parts of the continent. ---. This era produced some of the most famous artists and thinkers in history, such as Leonardo da Vinci and Michelangelo.",
+      "options": {
+        "A": "Economic decline during this period led to less art being produced.",
+        "B": "It was characterized by a renewed interest in the classical philosophy of Greece and Rome.",
+        "C": "The Middle Ages were far more important for the development of modern science.",
+        "D": "Most people at the time were uninterested in art and literature.",
+        "E": "Italy was not the only place where the Renaissance took place."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "PAR_COMP",
+      "question": "Modern psychology has moved away from early Freudian theories. Today, the field relies more on empirical evidence and neurological studies. ---. This allows for more effective and measurable treatment options for mental health disorders.",
+      "options": {
+        "A": "Freud's ideas are still the only ones taught in universities.",
+        "B": "Cognitive-behavioral therapy is one of the most widely used evidence-based approaches.",
+        "C": "Dreams are still considered the primary way to understand the subconscious.",
+        "D": "Psychologists no longer believe that the brain has anything to do with behavior.",
+        "E": "The history of psychology is not relevant to modern practice."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "PAR_COMP",
+      "question": "Cybersecurity has become a top priority for businesses in the digital age. As more data is stored online, the risk of data breaches increases significantly. ---. Therefore, companies are investing heavily in advanced encryption and employee training.",
+      "options": {
+        "A": "Hackers are becoming less sophisticated as time goes on.",
+        "B": "A single security flaw can lead to massive financial losses and loss of customer trust.",
+        "C": "Most companies prefer to keep their data on physical paper instead.",
+        "D": "Internet security is no longer a concern for modern enterprises.",
+        "E": "Social media is the only place where data breaches occur."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "PAR_COMP",
+      "question": "The Great Wall of China is one of the most impressive architectural feats in history. It was built over several centuries to protect the empire from nomadic invasions. ---. Today, it stands as a symbol of China's historical strength and persistence.",
+      "options": {
+        "A": "It is the only man-made structure visible from the moon.",
+        "B": "The wall consists of various sections made of stone, brick, and tamped earth.",
+        "C": "Most of the wall was destroyed during the last century.",
+        "D": "It was built primarily for tourism purposes in ancient times.",
+        "E": "The wall is only a few kilometers long in total."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "CLOSE_MEAN",
+      "question": "The manager didn't approve the proposal because it lacked a detailed budget plan.",
+      "options": {
+        "A": "The proposal was rejected by the manager due to the absence of a comprehensive budget.",
+        "B": "The manager would have approved the proposal even without a budget plan.",
+        "C": "The budget plan was detailed, but the manager still rejected the proposal.",
+        "D": "The manager liked the proposal, but he forgot to check the budget plan.",
+        "E": "If the budget plan had been shorter, the manager might have approved it."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "CLOSE_MEAN",
+      "question": "It is rare for a solar eclipse to be visible from this part of the world.",
+      "options": {
+        "A": "A solar eclipse is never seen in this specific region.",
+        "B": "We see solar eclipses here more often than in other places.",
+        "C": "One can seldom witness a solar eclipse in this geographic area.",
+        "D": "Solar eclipses are the most common celestial events here.",
+        "E": "Everyone in this part of the world saw the solar eclipse."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "CLOSE_MEAN",
+      "question": "Despite being talented, he didn't win the competition.",
+      "options": {
+        "A": "He won the competition because he was very talented.",
+        "B": "His talent was not enough for him to secure a victory in the contest.",
+        "C": "He would have won the competition if he had been more talented.",
+        "D": "The competition was won by someone who was less talented than him.",
+        "E": "He didn't enter the competition because he wasn't talented enough."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "IRREL",
+      "question": "(I) Fossil fuels are the primary source of energy for most of the world today. (II) They include coal, oil, and natural gas. (III) Solar energy is a renewable alternative that is gaining popularity. (IV) However, burning these fuels releases large amounts of carbon dioxide into the atmosphere. (V) This process is the leading cause of global global warming.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "IRREL",
+      "question": "(I) Dolphins are known for their high intelligence and social behavior. (II) They use a complex system of clicks and whistles to communicate. (III) Many people enjoy going to water parks to see them perform. (IV) Studies have shown that they can even recognize themselves in mirrors. (V) This level of self-awareness is rare in the animal kingdom.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "IRREL",
+      "question": "(I) The printing press was invented by Johannes Gutenberg in the 15th century. (II) This invention made it possible to produce books quickly and cheaply. (III) Before the press, books had to be copied by hand, which was a slow process. (IV) Gutenberg was born in Mainz, Germany. (V) Consequently, literacy rates began to rise across Europe as information became more accessible.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "READING",
+      "question": "According to the passage, what is a primary difference between classical bits and qubits?",
+      "options": {
+        "A": "Classical bits are faster than qubits.",
+        "B": "Qubits can exist in multiple states simultaneously due to superposition.",
+        "C": "Classical bits are used in quantum processors.",
+        "D": "Qubits are only used in supercomputers.",
+        "E": "There is no difference between them."
+      },
+      "correct": "B",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 36,
+      "section_id": "READING",
+      "question": "The passage mentions that quantum technology currently faces challenges such as ---.",
+      "options": {
+        "A": "lack of interest from researchers",
+        "B": "being too expensive for governments",
+        "C": "decoherence and error rates",
+        "D": "the inability to perform complex calculations",
+        "E": "the lack of classical computers"
+      },
+      "correct": "C",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 37,
+      "section_id": "READING",
+      "question": "What is the goal of developing 'fault-tolerant' systems in quantum computing?",
+      "options": {
+        "A": "To make classical computers obsolete.",
+        "B": "To ensure the reliability of quantum calculations.",
+        "C": "To increase the heat of the processors.",
+        "D": "To replace qubits with classical bits.",
+        "E": "To reduce the speed of the calculations."
+      },
+      "correct": "B",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 38,
+      "section_id": "READING",
+      "question": "What is the 'Anthropocene' according to the passage?",
+      "options": {
+        "A": "A period before humans existed on Earth.",
+        "B": "A proposed geological epoch defined by human impact.",
+        "C": "A time when biogeochemical cycles were stable.",
+        "D": "The era of the first dinosaurs.",
+        "E": "A literary term used only by critics."
+      },
+      "correct": "B",
+      "passage_id": "read_2"
+    },
+    {
+      "id": 39,
+      "section_id": "READING",
+      "question": "Why do some critics object to the term 'Anthropocene'?",
+      "options": {
+        "A": "They believe humans have had no impact on the Earth.",
+        "B": "They argue it oversimplifies the different roles of various human societies.",
+        "C": "They think the Industrial Revolution never happened.",
+        "D": "They believe the Earth's geology cannot be changed.",
+        "E": "They prefer the term 'Industrial Epoch'."
+      },
+      "correct": "B",
+      "passage_id": "read_2"
+    },
+    {
+      "id": 40,
+      "section_id": "READING",
+      "question": "The passage suggests that the starting date of the Anthropocene ---.",
+      "options": {
+        "A": "is exactly known to be 1950",
+        "B": "is a subject of ongoing debate among scientists",
+        "C": "is agreed upon by all critics",
+        "D": "predates the existence of human beings",
+        "E": "is no longer relevant to scientific literature"
+      },
+      "correct": "B",
+      "passage_id": "read_2"
+    }
+  ]
+}

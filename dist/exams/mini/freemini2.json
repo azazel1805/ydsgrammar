@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions High-Level Academic English",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue_completion",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_p1",
+      "text": "The rapid advancement of artificial intelligence has (8) ---- concerns regarding the future of human labor. While some argue that automation will create new opportunities, others fear it will (9) ---- existing social inequalities. Historically, technological shifts have required workers to (10) ---- new skills, yet the current pace of change is (11) ----. Therefore, policymakers must intervene (12) ---- to ensure a just transition for the global workforce."
+    },
+    {
+      "id": "reading_1",
+      "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although the exact start date remains a subject of intense academic debate, most researchers point to the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. This era is characterized by the pervasive presence of plastic, high levels of nitrogen and phosphorus in soils due to fertilizers, and the global distribution of radioactive isotopes from nuclear testing. Proponents argue that these changes are permanent and will be detectable in the geological record for millions of years."
+    },
+    {
+      "id": "reading_2",
+      "text": "Linguistic relativity, often known as the Sapir-Whorf hypothesis, suggests that the structure of a language affects its speakers' world view or cognition. Strong versions of the theory, which posit that language determines thought, have largely been discredited in favor of weaker versions. These weaker versions suggest that language merely influences certain cognitive processes, such as memory or categorization. For instance, speakers of languages that use cardinal directions (North, South) rather than relative terms (Left, Right) tend to have a much more acute sense of spatial orientation."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The findings of the research were so ---- that they fundamentally altered the scientific community's understanding of cellular regeneration.",
+      "options": {
+        "A": "negligible",
+        "B": "profound",
+        "C": "redundant",
+        "D": "transient",
+        "E": "ambiguous"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "The government has decided to ---- new regulations to curb the rising levels of carbon emissions in the industrial sector.",
+      "options": {
+        "A": "implement",
+        "B": "refute",
+        "C": "scrutinize",
+        "D": "undermine",
+        "E": "diminish"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Despite the evidence presented by the prosecution, the jury remained ---- about the defendant's involvement in the conspiracy.",
+      "options": {
+        "A": "persistent",
+        "B": "skeptical",
+        "C": "vigilant",
+        "D": "consistent",
+        "E": "unanimous"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "Although the new economic policy was designed to reduce inflation, ----.",
+      "options": {
+        "A": "it has led to a significant increase in the cost of living",
+        "B": "prices have remained stable throughout the fiscal year",
+        "C": "the central bank has successfully achieved its targets",
+        "D": "investors are increasingly confident in the local market",
+        "E": "it will be implemented by the end of the next quarter"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "Because the archaeological site was located in an extremely remote region, ----.",
+      "options": {
+        "A": "it attracted thousands of tourists every summer",
+        "B": "the researchers had to rely on heavy local infrastructure",
+        "C": "logistical challenges delayed the excavation for several months",
+        "D": "many artifacts were easily transported to city museums",
+        "E": "the local population was well-versed in its historical value"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Unless the international community takes immediate action to protect biodiversity, ----.",
+      "options": {
+        "A": "many endangered species will likely face extinction",
+        "B": "the ecosystem has recovered from previous damage",
+        "C": "conservation efforts have been remarkably successful",
+        "D": "pollution levels would have decreased significantly",
+        "E": "natural habitats are being restored by local NGOs"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "---- that the early civilizations in Mesopotamia developed complex irrigation systems.",
+      "options": {
+        "A": "It is widely accepted by most historians",
+        "B": "The discovery of ancient pottery suggests",
+        "C": "Archaeologists are still searching for proof",
+        "D": "Climate change was the primary reason",
+        "E": "Trade routes were established much later"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 8.",
+      "options": {
+        "A": "alleviated",
+        "B": "exacerbated",
+        "C": "precipitated",
+        "D": "discarded",
+        "E": "verified"
+      },
+      "correct": "C",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 9.",
+      "options": {
+        "A": "perpetuate",
+        "B": "mitigate",
+        "C": "reconcile",
+        "D": "facilitate",
+        "E": "compensate"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 10.",
+      "options": {
+        "A": "acquire",
+        "B": "forfeit",
+        "C": "simulate",
+        "D": "relinquish",
+        "E": "obstruct"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 11.",
+      "options": {
+        "A": "precedent",
+        "B": "unprecedented",
+        "C": "predictable",
+        "D": "stagnant",
+        "E": "marginal"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 12.",
+      "options": {
+        "A": "incidentally",
+        "B": "proactively",
+        "C": "passively",
+        "D": "sparingly",
+        "E": "initially"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Deri endüstrisinin çevre üzerindeki etkisi, kimyasal atıkların su kaynaklarını kirletmesi nedeniyle son yıllarda yoğun bir şekilde eleştirilmektedir.",
+      "options": {
+        "A": "The environmental impact of the leather industry has been heavily criticized in recent years because chemical wastes contaminate water resources.",
+        "B": "Because chemical wastes contaminated water resources, the leather industry was criticized for its environmental impact.",
+        "C": "Water resources are being polluted by chemical wastes, so the leather industry is criticized heavily.",
+        "D": "The leather industry, which pollutes water resources, has been criticized recently for its impact on the environment.",
+        "E": "Recent criticisms of the leather industry focus mainly on how chemical wastes affect the environment."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Modern tıp, genetik araştırmalar sayesinde hastalıkların teşhisinde büyük ilerlemeler kaydetmiştir.",
+      "options": {
+        "A": "Modern medicine has made great strides in diagnosing diseases thanks to genetic research.",
+        "B": "Diagnosing diseases is now easier for modern medicine because of genetics.",
+        "C": "Great advances in modern medicine are the result of diagnostic research into genetics.",
+        "D": "Thanks to modern medicine, genetics has made great progress in diagnosing diseases.",
+        "E": "Modern medicine and genetic research have together improved the diagnosis of diseases."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "The discovery of graphene has paved the way for more efficient and flexible electronic devices.",
+      "options": {
+        "A": "Grafenin keşfi, daha verimli ve esnek elektronik cihazların yolunu açmıştır.",
+        "B": "Daha verimli ve esnek elektronik cihazlar grafenin keşfiyle mümkün olmuştur.",
+        "C": "Grafen keşfedildiğinde, esnek ve verimli elektronik cihazlar üretilmeye başlandı.",
+        "D": "Elektronik cihazların daha verimli ve esnek olmasını sağlayan şey grafenin keşfidir.",
+        "E": "Verimli ve esnek elektronik cihazlar için grafenin keşfedilmesi gerekiyordu."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "Urbanization is a global phenomenon that significantly alters the demographic structure of developing countries.",
+      "options": {
+        "A": "Kentleşme, gelişmekte olan ülkelerin demografik yapısını önemli ölçüde değiştiren küresel bir fenomendir.",
+        "B": "Gelişmekte olan ülkelerin demografik yapısı, küresel bir fenomen olan kentleşme ile değişmektedir.",
+        "C": "Kentleşme küresel bir fenomen olduğu için gelişmekte olan ülkelerin demografik yapısı değişir.",
+        "D": "Demografik yapıyı değiştiren kentleşme, gelişmekte olan ülkeler için küresel bir olaydır.",
+        "E": "Küresel bir fenomen olan kentleşme, gelişmekte olan ülkelerde demografiyi etkiler."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "Hardly had the meeting started when the fire alarm went off, causing immediate panic.",
+      "options": {
+        "A": "The fire alarm went off just as the meeting was beginning, and everyone panicked instantly.",
+        "B": "Everyone panicked because the fire alarm went off before the meeting even started.",
+        "C": "The meeting had been going on for a while when the fire alarm caused a panic.",
+        "D": "If the fire alarm hadn't gone off at the start of the meeting, no one would have panicked.",
+        "E": "The meeting started after the fire alarm went off and caused panic."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "It was not until the 19th century that scientists began to understand the true nature of atoms.",
+      "options": {
+        "A": "Scientists knew about the nature of atoms before the 19th century.",
+        "B": "The true nature of atoms remained unknown to scientists until the 19th century.",
+        "C": "In the 19th century, scientists finally finished their research on atoms.",
+        "D": "The 19th century was the most important era for the study of atoms.",
+        "E": "Scientists only started to study atoms during the 19th century."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "The manager is of the opinion that the project should be postponed due to budget constraints.",
+      "options": {
+        "A": "The manager thinks the project must be cancelled because there is no budget.",
+        "B": "According to the manager, the project needs to be delayed because of limited funds.",
+        "C": "The manager believes the project will be finished on time despite the budget.",
+        "D": "The project is delayed, but the manager thinks the budget is sufficient.",
+        "E": "Budget constraints are the only reason why the manager wants the project to continue."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Had I known about the traffic jam, I would have taken the train instead.",
+      "options": {
+        "A": "I took the train because I knew there was a traffic jam.",
+        "B": "I didn't take the train because I wasn't aware of the traffic jam.",
+        "C": "I would have taken the train even if I had known about the traffic.",
+        "D": "The traffic jam was so bad that I had to take the train.",
+        "E": "I knew about the traffic jam, so I didn't take my car."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue_completion",
+      "question": "Speaker A: Do you think virtual reality will ever replace physical travel?\nSpeaker B: ----\nSpeaker A: I agree. The sensory experience of actually being there is irreplaceable.",
+      "options": {
+        "A": "It already has for many people.",
+        "B": "It's a possibility in the distant future.",
+        "C": "Hardly. It can simulate visuals, but not the authentic atmosphere.",
+        "D": "Travel agencies are investing heavily in VR technology.",
+        "E": "I prefer reading books about different cultures."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue_completion",
+      "question": "Speaker A: The new renewable energy bill was passed yesterday.\nSpeaker B: ----\nSpeaker A: Exactly. It's a significant step toward reducing our carbon footprint.",
+      "options": {
+        "A": "Why was it rejected by the parliament?",
+        "B": "That's great news for the environment, isn't it?",
+        "C": "How much will it cost the taxpayers?",
+        "D": "I don't think it will make any difference.",
+        "E": "Who was the main sponsor of the bill?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue_completion",
+      "question": "Speaker A: How do you handle the pressure of these high-stakes exams?\nSpeaker B: ----\nSpeaker A: That sounds like a healthy way to maintain your focus.",
+      "options": {
+        "A": "I usually ignore the deadlines until the last minute.",
+        "B": "I try to balance my study sessions with regular exercise.",
+        "C": "The exams are not as difficult as people say.",
+        "D": "I haven't started studying yet.",
+        "E": "Most students feel the same way."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue_completion",
+      "question": "Speaker A: Why are so many people migrating to urban areas these days?\nSpeaker B: ----\nSpeaker A: So, it's primarily an economic decision then.",
+      "options": {
+        "A": "Because cities are more polluted than the countryside.",
+        "B": "Mostly for better job prospects and higher living standards.",
+        "C": "Rural areas are becoming more popular for retirement.",
+        "D": "Modern technology allows people to work from anywhere.",
+        "E": "Governments are encouraging people to stay in villages."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Sustainable architecture aims to minimize the negative environmental impact of buildings. This is achieved through efficiency and moderation in the use of materials, energy, and development space. ----. For example, using solar panels and recycled materials has become a standard practice in modern green building design.",
+      "options": {
+        "A": "However, these methods are often too expensive for developing nations.",
+        "B": "It also involves a conscious approach to energy and ecological conservation.",
+        "C": "Architects are now more interested in aesthetic appeal than sustainability.",
+        "D": "Old buildings are being demolished to make way for new parks.",
+        "E": "The history of architecture is full of unsustainable practices."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "Emotional intelligence is the ability to perceive, control, and evaluate emotions. Some researchers suggest that emotional intelligence can be learned and strengthened, while others claim it's an inborn characteristic. ----. Regardless of its origin, it plays a crucial role in professional success.",
+      "options": {
+        "A": "Most people don't care about their emotions at work.",
+        "B": "This debate continues to shape psychological studies today.",
+        "C": "IQ tests are still the best way to measure intelligence.",
+        "D": "Emotions are often seen as a distraction in the workplace.",
+        "E": "Learning new languages can improve your memory."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "The Renaissance was a fervent period of European cultural, artistic, political, and economic 'rebirth' following the Middle Ages. ----. It promoted the rediscovery of classical philosophy, literature, and art. Some of the greatest thinkers, authors, and artists in human history thrived during this era.",
+      "options": {
+        "A": "It took place roughly from the 14th century to the 17th century.",
+        "B": "The Middle Ages were characterized by the absence of scientific progress.",
+        "C": "Many wars were fought during this time across the continent.",
+        "D": "Industrialization changed the way people lived in the 19th century.",
+        "E": "Religion remained the only focus of the artistic community."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Ocean acidification is often called 'the other carbon dioxide problem'. As the ocean absorbs CO2 from the atmosphere, its pH level decreases, making the water more acidic. ----. This process makes it difficult for these organisms to build and maintain their shells.",
+      "options": {
+        "A": "Fisheries are not affected by this change in the water.",
+        "B": "This has a devastating effect on marine life, especially calcifying organisms.",
+        "C": "The ocean's temperature is also rising due to global warming.",
+        "D": "Marine biologists are studying the migration patterns of whales.",
+        "E": "Carbon dioxide is essential for the growth of underwater plants."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "The committee's decision was based on the premise that all employees should be treated equally.",
+      "options": {
+        "A": "The committee decided that all employees must receive the same salary.",
+        "B": "The committee acted on the principle of equal treatment for all staff.",
+        "C": "The employees demanded that the committee treat them fairly.",
+        "D": "Equality was the only thing the committee discussed during the meeting.",
+        "E": "The decision was made because the employees were already equal."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "It is highly probable that the new vaccine will be available by next spring.",
+      "options": {
+        "A": "The new vaccine might be ready, but it's not certain yet.",
+        "B": "There's a strong chance the new vaccine will be out by next spring.",
+        "C": "The vaccine must be available before the end of the spring season.",
+        "D": "Scientists are working hard to finish the vaccine by next spring.",
+        "E": "Next spring is the latest date for the vaccine's release."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "Few people realized the significance of the discovery at the time it was made.",
+      "options": {
+        "A": "Nobody knew that the discovery was important when it happened.",
+        "B": "The discovery was so important that everyone noticed it immediately.",
+        "C": "Only a small number of people understood how important the discovery was initially.",
+        "D": "The significance of the discovery was realized many years later.",
+        "E": "Many people were interested in the discovery right from the start."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Solar energy is one of the most promising sources of renewable energy today. (II) It harnesses the power of the sun to generate electricity through photovoltaic cells. (III) Fossil fuels, however, are still the primary source of energy in many countries. (IV) Advances in technology have significantly reduced the cost of solar panels. (V) Consequently, more households are now opting for solar power installations.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Great Wall of China is a series of fortifications built across the historical northern borders of China. (II) It was constructed to protect the Chinese states against various nomadic groups. (III) The wall is also a major tourist attraction, drawing millions of visitors each year. (IV) Several walls were built from as early as the 7th century BC. (V) Chinese cuisine is famous worldwide for its diverse flavors and techniques.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "E",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Quantum mechanics is a fundamental theory in physics that describes the physical properties of nature at the scale of atoms. (II) It is the foundation of all quantum physics including quantum chemistry and quantum technology. (III) Classical physics, which was dominant before the 20th century, cannot explain many of these phenomena. (IV) Albert Einstein won the Nobel Prize for his explanation of the photoelectric effect. (V) This theory has led to the development of transistors and lasers.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, what is the 'Great Acceleration' associated with?",
+      "options": {
+        "A": "The discovery of nuclear energy in the early 20th century.",
+        "B": "The rapid increase in population and industrial activities.",
+        "C": "The first time plastic was used in manufacturing.",
+        "D": "A period of geological stability before human intervention.",
+        "E": "The debate over the start date of the Anthropocene."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading_comprehension",
+      "question": "Which of the following is NOT mentioned as a characteristic of the Anthropocene?",
+      "options": {
+        "A": "Radioactive isotopes from nuclear tests.",
+        "B": "High levels of nitrogen in the soil.",
+        "C": "The widespread presence of plastics.",
+        "D": "The extinction of all marine life.",
+        "E": "Human impact on the Earth's ecosystems."
+      },
+      "correct": "D",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading_comprehension",
+      "question": "What is the main argument of the proponents of the Anthropocene epoch?",
+      "options": {
+        "A": "Human impact is only temporary and will soon disappear.",
+        "B": "The geological record will show human-induced changes for millions of years.",
+        "C": "Industrialization has had a purely positive effect on the planet.",
+        "D": "The epoch should have started much earlier than the 20th century.",
+        "E": "Fertilizers are the primary cause of global warming."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading_comprehension",
+      "question": "What does the 'strong version' of the Sapir-Whorf hypothesis claim?",
+      "options": {
+        "A": "Language has no effect on how people think.",
+        "B": "Thought processes are entirely determined by language.",
+        "C": "Language only influences memory and categorization.",
+        "D": "Cardinal directions are better than relative terms.",
+        "E": "Cognition is the same across all human cultures."
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, how do researchers currently view the Sapir-Whorf hypothesis?",
+      "options": {
+        "A": "The strong version is widely accepted as the truth.",
+        "B": "Both strong and weak versions have been completely discredited.",
+        "C": "The weak version, which suggests an influence on cognition, is more accepted.",
+        "D": "Linguistic relativity is no longer a subject of interest in linguistics.",
+        "E": "Language is seen as the only factor in spatial orientation."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading_comprehension",
+      "question": "The example of 'cardinal directions' is used to illustrate that ----.",
+      "options": {
+        "A": "some languages are superior to others in describing space",
+        "B": "language can influence a speaker's sense of spatial orientation",
+        "C": "relative terms like Left and Right are more accurate",
+        "D": "all humans have an innate sense of North and South",
+        "E": "memory is the most important part of the Sapir-Whorf hypothesis"
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    }
+  ]
+}
