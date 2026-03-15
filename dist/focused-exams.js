@@ -44,6 +44,7 @@ let foSecondsLeft = 0;
 let foStarted = false;
 let foCurrentIdx = 0;
 let foReviewMode = false;
+let foLastImgQuestionId = null;
 let activeHighlights = { conjunctions: true, passives: true, tenses: true };
 
 // UI Templates
@@ -273,6 +274,7 @@ function foReset() {
   if (foTimerRef) clearInterval(foTimerRef);
   foStarted = false;
   foReviewMode = false;
+  foLastImgQuestionId = null;
   foExamData = null;
   document.getElementById('foStartScreen')?.classList.remove('hidden');
   document.getElementById('foExamScreen')?.classList.add('hidden');
@@ -326,7 +328,7 @@ function foRenderQuestion() {
   // Vocabulary Image Logic
   if (q.section_id === 'vocabulary' && foCurrentIdx < 10) {
     vocabImage.classList.remove('hidden');
-    fetchUnsplashImage(q.correct_word || q.options[q.correct]);
+    fetchUnsplashImage(q.correct_word || q.options[q.correct], q.id);
   } else {
     vocabImage.classList.add('hidden');
   }
@@ -429,7 +431,10 @@ function foUpdateNav() {
   });
 }
 
-async function fetchUnsplashImage(word) {
+async function fetchUnsplashImage(word, qId) {
+  if (foLastImgQuestionId === qId) return; 
+  foLastImgQuestionId = qId;
+
   const content = document.getElementById('foVocabImageContent');
   if (!content) return;
   const accessKey = '0uDnN1Zl1YFXRG3vHAKgEZoTakXkCg65RV3LtgXiNcM';
@@ -437,7 +442,7 @@ async function fetchUnsplashImage(word) {
     const res = await fetch(`https://api.unsplash.com/search/photos?query=${word}&per_page=1&client_id=${accessKey}`);
     const data = await res.json();
     if (data.results && data.results[0]) {
-      content.innerHTML = `<img src="${data.results[0].urls.regular}" class="w-full h-full object-cover transition-opacity duration-700 opacity-0" onload="this.classList.remove('opacity-0')" />`;
+      content.innerHTML = `<img src="${data.results[0].urls.regular}" class="w-full h-full object-cover animate-in fade-in duration-500" />`;
     } else {
       content.innerHTML = `<div class="w-full h-full flex items-center justify-center text-slate-300 bg-slate-100"><i class="fas fa-image text-3xl"></i></div>`;
     }
