@@ -336,7 +336,7 @@ async function teStartExam() {
         }
     });
 
-    if (type === 'cat' && !id.startsWith('mini_fixed')) {
+    if (type === 'cat' && !id.startsWith('mini_fixed') && !id.startsWith('mini_easy') && !id.startsWith('mini_medium') && !id.startsWith('mini_hard')) {
         // Shuffle and take subset for dynamic categorical exams
         groups.sort(() => 0.5 - Math.random());
         let selectedQuestions = [];

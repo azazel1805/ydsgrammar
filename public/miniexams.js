@@ -5,9 +5,9 @@
     category: 'Kelime & Gramer',
     icon: 'fa-font',
     exams: [
-      { id: 'mini_vocab', label: 'Kelime Soruları', file: '/exams/mini/special/master_vocab.json', info: 'Seçilebilir Soru Sayısı' },
-      { id: 'mini_grammar', label: 'Gramer Soruları', file: '/exams/mini/special/master_grammar.json', info: 'Seçilebilir Soru Sayısı' },
-      { id: 'mini_cloze', label: 'Cloze Test', file: '/exams/mini/special/master_cloze.json', info: 'Seçilebilir Soru Sayısı' },
+      { id: 'mini_vocab', label: 'Kelime Soruları', file: '/exams/mini/special/master_vocab.json', info: '40 Soru (Dinamik)' },
+      { id: 'mini_grammar', label: 'Gramer Soruları', file: '/exams/mini/special/master_grammar.json', info: '40 Soru (Dinamik)' },
+      { id: 'mini_cloze', label: 'Cloze Test', file: '/exams/mini/special/master_cloze.json', info: '40 Soru (Dinamik)' },
     ]
   },
   {
@@ -83,38 +83,12 @@ const miniexamsHTML = `
       `).join('')}
     </div>
 
-    <div id="meSelectedInfo" class="hidden bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl">
-      <div class="flex flex-col md:flex-row items-center gap-6">
-          <div id="meCountSettings" class="flex-1 text-center md:text-left">
-            <p class="font-bold text-white text-lg mb-2">Kaç soru çözmek istersiniz?</p>
-            <div class="flex items-center justify-center md:justify-start gap-4">
-                <button onclick="updateMeCount(-5)" class="w-10 h-10 rounded-full bg-slate-800 text-white hover:bg-red-800 transition-colors">-</button>
-                <input type="number" id="meQuestionCount" value="20" min="5" max="100" class="w-20 bg-slate-800 border-2 border-slate-700 text-white text-center font-bold text-xl py-2 rounded-xl focus:border-red-800 outline-none">
-                <button onclick="updateMeCount(5)" class="w-10 h-10 rounded-full bg-slate-800 text-white hover:bg-red-800 transition-colors">+</button>
-            </div>
-            <p id="meMaxInfo" class="text-[10px] text-slate-500 uppercase font-bold mt-2">Maksimum Soru: --</p>
-          </div>
-      </div>
-      
-      <div id="meFixedInfo" class="hidden flex items-start gap-4">
-        <div class="w-12 h-12 rounded-full bg-red-800 flex items-center justify-center shrink-0">
-          <i class="fas fa-check-circle text-white text-xl"></i>
-        </div>
-        <div>
-          <p class="font-bold text-white text-lg mb-1">Sabit Deneme Seçildi</p>
-          <p class="text-slate-400 text-sm leading-relaxed">Bu deneme orijinal 40 soruluk settir. Soru sırası ve sayısı sabittir.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex justify-center pb-10">
-      <button id="meStartBtn" onclick="meStartExam()" disabled
-        class="px-12 py-5 bg-gradient-to-r from-red-800 to-red-700 text-white rounded-2xl font-black text-xl shadow-2xl shadow-red-900/40 hover:shadow-red-900/60 hover:scale-105 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed">
-        SINAVI BAŞLAT
-      </button>
+    <!-- Selection area removed as per user request (Direct Start) -->
+    <div id="meSelectedInfo" class="hidden">
+        <button id="meStartBtn" class="hidden" data-selected-id=""></button>
+        <input type="hidden" id="meQuestionCount" value="40">
     </div>
   </div>
-
 
   <div id="meExamScreen" class="hidden">
     <!-- Exam Interface (similar to fullexam) -->
@@ -195,44 +169,12 @@ function injectMiniExamHTML() {
   if (container) container.innerHTML = miniexamsHTML;
 }
 
-function updateMeCount(delta) {
-    const input = document.getElementById('meQuestionCount');
-    if (input) {
-        input.value = Math.max(5, Math.min(100, parseInt(input.value) + delta));
-    }
-}
-
 async function meSelectExam(id) {
-  document.querySelectorAll('.me-exam-card').forEach(c => c.classList.remove('border-red-300', 'bg-red-50/30'));
-  const card = document.getElementById(`meCard-${id}`);
-  if (card) card.classList.add('border-red-300', 'bg-red-50/30');
-  
-  const exam = findExamById(id);
-  const isFixed = id.startsWith('mini_fixed');
-
-  if (exam) {
-      if (isFixed) {
-          document.getElementById('meCountSettings').classList.add('hidden');
-          document.getElementById('meFixedInfo').classList.remove('hidden');
-      } else {
-          document.getElementById('meCountSettings').classList.remove('hidden');
-          document.getElementById('meFixedInfo').classList.add('hidden');
-          try {
-              const res = await fetch(`${exam.file}?v=${new Date().getTime()}`);
-              const temp = await res.json();
-              const totalQ = temp.questions.length;
-              document.getElementById('meMaxInfo').textContent = `Maksimum Soru: ${totalQ}`;
-              document.getElementById('meQuestionCount').max = totalQ;
-              if (parseInt(document.getElementById('meQuestionCount').value) > totalQ) {
-                  document.getElementById('meQuestionCount').value = totalQ;
-              }
-          } catch (e) {}
-      }
+  const btn = document.getElementById('meStartBtn');
+  if (btn) {
+    btn.dataset.selectedId = id;
+    meStartExam();
   }
-
-  document.getElementById('meSelectedInfo').classList.remove('hidden');
-  document.getElementById('meStartBtn').disabled = false;
-  document.getElementById('meStartBtn').dataset.selectedId = id;
 }
 
 function findExamById(id) {
@@ -258,7 +200,7 @@ async function meStartExam() {
     
     // Grouping Logic
     let processedQuestions = fullData.questions;
-    let isFixed = exam.id.startsWith('mini_fixed');
+    let isFixed = exam.id.startsWith('mini_fixed') || exam.id.startsWith('mini_easy') || exam.id.startsWith('mini_medium') || exam.id.startsWith('mini_hard') || exam.id.startsWith('freemini');
     // Smarter Grouping for ALL exams
     let groups = [];
     let currentGroup = [];
@@ -332,15 +274,16 @@ async function meStartExam() {
     });
 
     if (!isFixed) {
-        // Shuffle and Pick for dynamic exams
+        // Dynamic sets (Vocab, Grammar etc.): Shuffle and pick exactly 40
         groups.sort(() => 0.5 - Math.random());
         let selectedQuestions = [];
         for (let group of groups) {
-            if (selectedQuestions.length >= count) break;
+            if (selectedQuestions.length >= 40) break;
             selectedQuestions.push(...group);
         }
         processedQuestions = selectedQuestions;
     } else {
+        // Fixed sets: Maintain natural JSON order (Easy/Medium/Hard)
         processedQuestions = groups.flat();
     }
 
