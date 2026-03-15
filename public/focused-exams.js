@@ -166,7 +166,6 @@ const focusedExamsHTML = `
              <div id="foQuestionPane" class="flex-1 space-y-8">
                 <div id="foVocabImage" class="hidden mb-8">
                   <div class="max-w-md mx-auto relative group">
-                    <div class="absolute -top-3 -right-3 bg-yellow-500 text-slate-900 text-[10px] font-black px-3 py-1 rounded-full shadow-lg z-10 transform rotate-3">GÖRSEL İPUCU</div>
                     <div class="w-full h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 relative">
                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent pointer-events-none"></div>
                        <div id="foVocabImageContent" class="w-full h-full"> 
@@ -435,20 +434,27 @@ async function fetchUnsplashImage(word, qId) {
   if (foLastImgQuestionId === qId) return; 
   foLastImgQuestionId = qId;
 
+  const container = document.getElementById('foVocabImage');
   const content = document.getElementById('foVocabImageContent');
-  if (!content) return;
+  if (!content || !container) return;
+
+  // Reset content and show loader
+  content.innerHTML = `<div class="w-full h-full animate-pulse flex items-center justify-center text-slate-300 bg-slate-100"><i class="fas fa-image text-4xl"></i></div>`;
+
   const accessKey = '0uDnN1Zl1YFXRG3vHAKgEZoTakXkCg65RV3LtgXiNcM';
   try {
     const res = await fetch(`https://api.unsplash.com/search/photos?query=${word}&per_page=1&client_id=${accessKey}`);
     const data = await res.json();
     if (data.results && data.results[0]) {
+      container.classList.remove('hidden');
       content.innerHTML = `<img src="${data.results[0].urls.regular}" class="w-full h-full object-cover animate-in fade-in duration-500" />`;
     } else {
-      content.innerHTML = `<div class="w-full h-full flex items-center justify-center text-slate-300 bg-slate-100"><i class="fas fa-image text-3xl"></i></div>`;
+      // No results found, hide the container entirely
+      container.classList.add('hidden');
     }
   } catch (err) {
     console.error("Image error:", err);
-    content.innerHTML = `<div class="w-full h-full flex items-center justify-center text-slate-300 bg-slate-100"><i class="fas fa-exclamation-triangle text-3xl"></i></div>`;
+    container.classList.add('hidden');
   }
 }
 
