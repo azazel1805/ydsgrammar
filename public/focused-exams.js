@@ -154,7 +154,7 @@ const focusedExamsHTML = `
     </div>
 
     <!-- MAIN CONTENT: QUESTION & PASSAGE -->
-    <div class="order-1 lg:order-2 lg:col-span-9 bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col overflow-hidden min-h-[400px]">
+    <div class="order-1 lg:order-2 lg:col-span-9 bg-white rounded-3xl border border-slate-100 shadow-sm flex flex-col overflow-hidden min-h-[400px] relative">
        <div id="foSectionHeader" class="px-5 lg:px-8 py-3 lg:py-4 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
           <div class="flex items-center gap-4">
             <span id="foSectionTitle" class="text-[9px] lg:text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
