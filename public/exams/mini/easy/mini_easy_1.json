@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue_completion",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage_cloze",
+      "text": "The rapid development of artificial intelligence has (8)---- changed many sectors. Many experts believe that machines will soon (9)---- human capability in processing complex data sets. However, there are significant ethical (10)---- that need to be addressed before full integration. (11)---- companies ignore these risks, they might face legal consequences. Most researchers are now (12)---- focusing on safety protocols to prevent future issues."
+    },
+    {
+      "id": "passage_reading_1",
+      "text": "Renewable energy sources such as solar and wind power are becoming increasingly important as the world seeks to reduce carbon emissions. While these sources are cleaner than fossil fuels, their intermittent nature presents a challenge for power grids. Energy storage systems, like lithium-ion batteries, are essential to provide a steady supply of electricity when the sun is not shining or the wind is not blowing."
+    },
+    {
+      "id": "passage_reading_2",
+      "text": "The Industrial Revolution, which began in Britain in the late 18th century, transformed the world from an agrarian society to an industrial one. It introduced new manufacturing processes and the use of steam power. While it led to economic growth and urbanization, it also resulted in poor working conditions and environmental pollution. Today, we continue to deal with the long-term impacts of this shift on our global climate."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The researchers found a ---- link between sleep deprivation and cognitive decline.",
+      "options": {
+        "A": "vague",
+        "B": "significant",
+        "C": "random",
+        "D": "trivial",
+        "E": "hostile"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "The government decided to ---- new policies to encourage the use of public transportation.",
+      "options": {
+        "A": "implement",
+        "B": "abandon",
+        "C": "distort",
+        "D": "predict",
+        "E": "postpone"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Due to the global pandemic, many local businesses were forced to ---- their operations temporarily.",
+      "options": {
+        "A": "expand",
+        "B": "sustain",
+        "C": "suspend",
+        "D": "celebrate",
+        "E": "initiate"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "Although the experiment was carefully designed, ----.",
+      "options": {
+        "A": "the results were surprisingly accurate",
+        "B": "the team received a large grant for it",
+        "C": "some unforeseen variables influenced the outcome",
+        "D": "everyone agreed with the final conclusion",
+        "E": "it was published in a prestigious journal"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "Since the demand for renewable energy is rising, ----.",
+      "options": {
+        "A": "fossil fuels are becoming cheaper",
+        "B": "governments are investing more in green technology",
+        "C": "pollution levels have reached an all-time high",
+        "D": "scientists have stopped researching solar panels",
+        "E": "the global temperature has decreased significantly"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "---- because they provide a cost-effective way to reach a global audience.",
+      "options": {
+        "A": "Traditional newspapers are losing popularity",
+        "B": "Social media platforms are essential for modern marketing",
+        "C": "Hardcover books are still preferred by many",
+        "D": "Television advertisements are very expensive",
+        "E": "Radio stations have a limited range of listeners"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "Unless the city improves its infrastructure, ----.",
+      "options": {
+        "A": "traffic congestion will continue to worsen",
+        "B": "public transport will become more efficient",
+        "C": "the population will likely increase",
+        "D": "investors will be more interested in the area",
+        "E": "tourism will reach record numbers"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "(8)",
+      "options": {
+        "A": "gradually",
+        "B": "fundamentally",
+        "C": "scarcely",
+        "D": "initially",
+        "E": "reluctantly"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "(9)",
+      "options": {
+        "A": "surpass",
+        "B": "underestimate",
+        "C": "resemble",
+        "D": "calculate",
+        "E": "ignore"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "(10)",
+      "options": {
+        "A": "advantages",
+        "B": "concerns",
+        "C": "profits",
+        "D": "solutions",
+        "E": "agreements"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "(11)",
+      "options": {
+        "A": "If",
+        "B": "Because",
+        "C": "Unless",
+        "D": "Whether",
+        "E": "Even though"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "(12)",
+      "options": {
+        "A": "deliberately",
+        "B": "randomly",
+        "C": "accidentally",
+        "D": "primarily",
+        "E": "vaguely"
+      },
+      "correct": "D",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Teknolojideki hızlı değişimler, modern iş dünyasının yapısını kökten değiştirmiştir.",
+      "options": {
+        "A": "Rapid changes in technology have fundamentally altered the structure of the modern business world.",
+        "B": "The structure of business has changed because of technology.",
+        "C": "Modern business worlds are changing rapidly due to new technology.",
+        "D": "Technology has been changing the business structure for a long time.",
+        "E": "It is the rapid change in technology that defines modern business."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Many people believe that learning a second language improves brain function.",
+      "options": {
+        "A": "Birçok insan ikinci bir dil öğrenmenin beyin fonksiyonlarını geliştirdiğine inanmaktadır.",
+        "B": "İkinci dil öğrenmek beyin için faydalıdır diyenler vardır.",
+        "C": "Beyin fonksiyonlarını geliştirmek için ikinci bir dil öğrenmek gerekir.",
+        "D": "İnsanlar beyinlerini geliştirmek için dil öğrenmeye inanırlar.",
+        "E": "İkinci dil öğrenenlerin beyin fonksiyonları daha hızlı çalışır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Küresel ısınma ile mücadele etmek için ülkelerin birlikte çalışması zorunludur.",
+      "options": {
+        "A": "Global warming is a problem that countries should solve.",
+        "B": "Countries must work together to fight global warming.",
+        "C": "It is mandatory for countries to cooperate in order to combat global warming.",
+        "D": "Working together is the only way to stop global warming.",
+        "E": "Countries are working together because of global warming."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "The survey results indicate that social media usage among teenagers is on the rise.",
+      "options": {
+        "A": "Anket sonuçları gençler arasında sosyal medya kullanımının arttığını gösteriyor.",
+        "B": "Gençlerin sosyal medya kullanması anket sonuçlarına yansımıştır.",
+        "C": "Sosyal medya kullanımı gençler arasında her geçen gün artmaktadır.",
+        "D": "Anketler sosyal medyanın gençler üzerindeki etkisini göstermektedir.",
+        "E": "Gençler arasında artan sosyal medya kullanımı ankete konu oldu."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "It was not until the end of the century that the new law was finally passed.",
+      "options": {
+        "A": "The new law was passed right at the beginning of the century.",
+        "B": "The new law was passed only after the century had ended.",
+        "C": "The law was passed just before the century came to an end.",
+        "D": "The century ended without the law being passed.",
+        "E": "The law was finally passed at the end of the century, not before."
+      },
+      "correct": "E",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "Hardly had the meeting started when the fire alarm went off.",
+      "options": {
+        "A": "The meeting started after the fire alarm went off.",
+        "B": "The fire alarm rang just as the meeting began.",
+        "C": "The meeting was cancelled because of the fire alarm.",
+        "D": "The fire alarm went off before the meeting could start.",
+        "E": "The meeting and the fire alarm happened at different times."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "In spite of his lack of experience, he was promoted to manager.",
+      "options": {
+        "A": "He became manager because he was very experienced.",
+        "B": "He was not promoted to manager due to his inexperience.",
+        "C": "Although he didn't have much experience, he got the manager position.",
+        "D": "He wanted to be a manager despite having no experience.",
+        "E": "His experience was the main reason for his promotion."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "She would rather stay at home than go to the cinema tonight.",
+      "options": {
+        "A": "She prefers staying home to going to the movies tonight.",
+        "B": "She wants to go to the cinema instead of staying home.",
+        "C": "She might stay home or go to the cinema tonight.",
+        "D": "She doesn't want to stay at home tonight.",
+        "E": "Going to the cinema is better than staying at home for her."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue_completion",
+      "question": "James: Do you think remote work is here to stay? \nSarah: ---- \nJames: I agree, the flexibility it offers is hard to give up.",
+      "options": {
+        "A": "I don't think anyone likes working from home.",
+        "B": "It is likely to remain popular for many industries.",
+        "C": "Companies are forcing everyone back to the office.",
+        "D": "I prefer working in a traditional office environment.",
+        "E": "The internet connection at my house is very slow."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue_completion",
+      "question": "Patient: I've been feeling very tired lately. \nDoctor: ---- \nPatient: About six hours, but I wake up frequently.",
+      "options": {
+        "A": "What have you been eating recently?",
+        "B": "Do you exercise regularly?",
+        "C": "How many hours of sleep do you get on average?",
+        "D": "Are you feeling stressed at work?",
+        "E": "When did these symptoms first start?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue_completion",
+      "question": "Interviewer: What is your greatest strength? \nCandidate: ---- \nInterviewer: That's a vital skill for this project management role.",
+      "options": {
+        "A": "I am not very good at meeting deadlines.",
+        "B": "I have a degree in mechanical engineering.",
+        "C": "I am excellent at organizing tasks and leading teams.",
+        "D": "I usually prefer working alone in a quiet room.",
+        "E": "I have worked in this industry for two years."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue_completion",
+      "question": "Student: Could you explain this math problem again? \nTeacher: ---- \nStudent: Oh, I see where I made the mistake now!",
+      "options": {
+        "A": "You should have studied harder for the test.",
+        "B": "Math is a very difficult subject for everyone.",
+        "C": "Sure, let's look at the steps one by one.",
+        "D": "I already explained it twice in class.",
+        "E": "The answer is written on the back of the book."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Economic growth is often measured by Gross Domestic Product (GDP). ----. However, many economists argue that GDP does not account for the well-being of citizens or environmental health. Therefore, alternative metrics are being developed.",
+      "options": {
+        "A": "It calculates the total value of goods and services produced.",
+        "B": "The stock market is also an important indicator.",
+        "C": "Inflation can negatively affect the purchasing power.",
+        "D": "Most people do not understand how GDP is calculated.",
+        "E": "Governments always try to increase their GDP every year."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "The Great Wall of China is one of the most impressive structures in the world. ----. It was built over several centuries to protect the Chinese states from invasions. Today, it is a major tourist attraction and a UNESCO World Heritage site.",
+      "options": {
+        "A": "It is the only man-made structure visible from space.",
+        "B": "Many people died during its construction.",
+        "C": "It stretches over 13,000 miles across northern China.",
+        "D": "The wall was made of stone, brick, and tampered earth.",
+        "E": "The Ming Dynasty added the most famous sections."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "Healthy eating is essential for maintaining a strong immune system. ----. On the other hand, consuming too much sugar and processed food can lead to chronic diseases. Balance is key to a long and healthy life.",
+      "options": {
+        "A": "Fast food is becoming more popular among teenagers.",
+        "B": "Vitamin C is found in many citrus fruits.",
+        "C": "A diet rich in vegetables and fruits provides vital nutrients.",
+        "D": "Cooking at home is usually cheaper than eating out.",
+        "E": "Many people find it difficult to stick to a strict diet."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Urbanization has led to the rapid growth of cities across the globe. ----. This concentration of people allows for better access to education and healthcare. Yet, it also causes problems like overcrowding and pollution.",
+      "options": {
+        "A": "Many people are moving back to rural areas for peace.",
+        "B": "Cities offer more job opportunities and cultural activities.",
+        "C": "The cost of living in urban centers is very high.",
+        "D": "Traffic is a major issue in most modern metropolises.",
+        "E": "Public transportation is more efficient in large cities."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "It is probable that the meeting will be postponed due to the heavy snow.",
+      "options": {
+        "A": "The meeting was definitely cancelled because of the snow.",
+        "B": "The meeting might be delayed because it is snowing heavily.",
+        "C": "The snow will not affect the timing of the meeting.",
+        "D": "They had to move the meeting to a different location.",
+        "E": "The heavy snow made it impossible to attend the meeting."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "Few students managed to pass the exam because it was exceptionally difficult.",
+      "options": {
+        "A": "The exam was so easy that almost everyone passed.",
+        "B": "Because the exam was very hard, only a small number of students passed.",
+        "C": "Many students passed the exam despite its difficulty.",
+        "D": "The exam was difficult, but the students were well-prepared.",
+        "E": "No one could pass the exam because it was too hard."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "You are not allowed to use your mobile phones during the lecture.",
+      "options": {
+        "A": "You should turn off your phones if they ring.",
+        "B": "Using mobile phones is forbidden while the lecture is in progress.",
+        "C": "You can use your phones only for taking notes.",
+        "D": "The lecturer doesn't like it when students use phones.",
+        "E": "Mobile phones must be kept on silent mode."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Antarctica is the coldest and windiest continent on Earth. (II) It is almost entirely covered by a thick ice sheet. (III) Many scientists travel there to study climate change. (IV) Penguins are the most famous inhabitants of this icy region. (V) Tropical rainforests are known for their high biodiversity.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "E",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Reading books helps to improve one's vocabulary and comprehension skills. (II) It also reduces stress by providing an escape from reality. (III) Many people prefer watching movies to reading books these days. (IV) Regular reading is linked to better academic performance. (V) Furthermore, it stimulates the brain and prevents cognitive decline.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Solar energy is a clean and renewable source of power. (II) It uses photovoltaic cells to convert sunlight into electricity. (III) Coal mining is a dangerous job that causes many health problems. (IV) The cost of solar panels has decreased significantly in recent years. (V) This makes solar energy more accessible to homeowners.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, why are energy storage systems necessary?",
+      "options": {
+        "A": "Because solar and wind energy are always available.",
+        "B": "To reduce the cost of fossil fuels.",
+        "C": "To provide electricity when renewable sources are not active.",
+        "D": "To increase carbon emissions in the atmosphere.",
+        "E": "To replace lithium-ion batteries in the future."
+      },
+      "correct": "C",
+      "passage_id": "passage_reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading_comprehension",
+      "question": "What is the main challenge of renewable energy mentioned in the text?",
+      "options": {
+        "A": "They are more expensive than fossil fuels.",
+        "B": "Their intermittent nature.",
+        "C": "They cause more pollution than oil.",
+        "D": "The lack of technology to use them.",
+        "E": "Governments do not support them."
+      },
+      "correct": "B",
+      "passage_id": "passage_reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading_comprehension",
+      "question": "The passage implies that renewable energy ----.",
+      "options": {
+        "A": "is the primary cause of carbon emissions",
+        "B": "is not a reliable source for power grids without storage",
+        "C": "will completely replace fossil fuels next year",
+        "D": "is only useful in sunny countries",
+        "E": "does not require any technological investment"
+      },
+      "correct": "B",
+      "passage_id": "passage_reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading_comprehension",
+      "question": "Where did the Industrial Revolution begin?",
+      "options": {
+        "A": "In the United States",
+        "B": "In Britain",
+        "C": "In China",
+        "D": "In Germany",
+        "E": "In France"
+      },
+      "correct": "B",
+      "passage_id": "passage_reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, what was one of the negative effects of the Industrial Revolution?",
+      "options": {
+        "A": "Economic growth",
+        "B": "Urbanization",
+        "C": "Environmental pollution",
+        "D": "The use of steam power",
+        "E": "New manufacturing processes"
+      },
+      "correct": "C",
+      "passage_id": "passage_reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading_comprehension",
+      "question": "What does the author suggest about the Industrial Revolution today?",
+      "options": {
+        "A": "Its effects have completely disappeared.",
+        "B": "It only benefited the British economy.",
+        "C": "We are still dealing with its long-term climatic impacts.",
+        "D": "It was a purely positive event in history.",
+        "E": "It prevented the world from becoming an industrial society."
+      },
+      "correct": "C",
+      "passage_id": "passage_reading_2"
+    }
+  ]
+}

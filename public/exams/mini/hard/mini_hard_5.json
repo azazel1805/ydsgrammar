@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Neolithic Revolution was a pivotal transition in human history. (8) ---- hunting and gathering to agriculture allowed for the establishment of permanent settlements. This shift (9) ---- a significant increase in population density. However, it also (10) ---- new challenges, such as the spread of infectious diseases. Archeological evidence (11) ---- that this transition was not a sudden event but a gradual process. Today, scholars continue to debate (12) ---- the environmental or social factors were the primary drivers of this change."
+    },
+    {
+      "id": "reading_1",
+      "text": "The concept of 'Neuroplasticity' refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon challenges the long-held belief that the adult brain is a static organ. Research indicates that neuroplasticity is influenced by both genetic factors and environmental stimuli, including learning and physical exercise. While the brain's adaptability is most prominent during childhood, significant changes can still occur in adulthood in response to cognitive challenges or injury recovery. Understanding these mechanisms has profound implications for treating neurological disorders."
+    },
+    {
+      "id": "reading_2",
+      "text": "The Enlightenment was an intellectual movement that dominated the world of ideas in Europe during the 17th and 18th centuries. It emphasized reason, individualism, and skepticism of traditional authority. Thinkers like Voltaire and Rousseau advocated for freedom of speech and the separation of church and state. The movement laid the philosophical groundwork for the American and French Revolutions. Despite its focus on rationality, the Enlightenment also faced criticism for neglecting the emotional and spiritual dimensions of human existence, leading to the rise of Romanticism."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The sudden surge in global temperatures has led to a ---- reduction in Arctic ice levels, worrying many climate scientists.",
+      "options": {
+        "A": "negligible",
+        "B": "precipitous",
+        "C": "superficial",
+        "D": "redundant",
+        "E": "tentative"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "Despite the high levels of economic growth, the benefits failed to ---- to the lower segments of the population.",
+      "options": {
+        "A": "trickle down",
+        "B": "back up",
+        "C": "call off",
+        "D": "take over",
+        "E": "look into"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "The researcher provided a ---- account of the experiment, leaving no detail overlooked for the peer review committee.",
+      "options": {
+        "A": "vague",
+        "B": "meticulous",
+        "C": "haphazard",
+        "D": "biased",
+        "E": "scanty"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "----, the government has decided to implement stricter regulations on carbon emissions.",
+      "options": {
+        "A": "Because the previous policies were highly successful",
+        "B": "In spite of the growing concerns about global warming",
+        "C": "In order to align with international environmental standards",
+        "D": "As if there were no scientific evidence of pollution",
+        "E": "Although the economy is currently in a deep recession"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "The bridge collapsed during the earthquake ----.",
+      "options": {
+        "A": "unless the engineers had used high-quality steel",
+        "B": "due to a combination of design flaws and seismic intensity",
+        "C": "so that the traffic could be redirected more efficiently",
+        "D": "even though it was built according to the latest standards",
+        "E": "as long as the local authorities maintain the structure"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Scientists are still trying to determine ----.",
+      "options": {
+        "A": "that the universe is expanding at an accelerating rate",
+        "B": "whether there is liquid water beneath the surface of Mars",
+        "C": "because the data gathered by the rover was insufficient",
+        "D": "in case of a future mission to the outer planets",
+        "E": "which the latest findings have been published in a journal"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "No sooner had the artist finished his masterpiece ----.",
+      "options": {
+        "A": "than he was invited to exhibit it at the national gallery",
+        "B": "when the critics started to praise his unique style",
+        "C": "as he decided to take a long break from painting",
+        "D": "while the museum was being renovated for the summer",
+        "E": "before he could find a buyer interested in modern art"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 8.",
+      "options": {
+        "A": "Moving",
+        "B": "Switching",
+        "C": "Departing",
+        "D": "Descending",
+        "E": "Converting"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 9.",
+      "options": {
+        "A": "resulted in",
+        "B": "stemmed from",
+        "C": "brought about",
+        "D": "gave up",
+        "E": "kept off"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 10.",
+      "options": {
+        "A": "precipitated",
+        "B": "mitigated",
+        "C": "eliminated",
+        "D": "overlooked",
+        "E": "underestimated"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 11.",
+      "options": {
+        "A": "suggests",
+        "B": "refutes",
+        "C": "denies",
+        "D": "contradicts",
+        "E": "ignores"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 12.",
+      "options": {
+        "A": "whether",
+        "B": "how",
+        "C": "what",
+        "D": "where",
+        "E": "that"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Modern teknoloji, insanlar arasındaki iletişimi kolaylaştırmış olsa da, derin sosyal izolasyon riskini de beraberinde getirmektedir.",
+      "options": {
+        "A": "Modern technology has facilitated communication between people, but it also brings the risk of deep social isolation.",
+        "B": "Although modern technology has made communication between people easier, it also brings with it the risk of deep social isolation.",
+        "C": "While technology facilitates communication, social isolation is still a major risk for many people today.",
+        "D": "Even though technology facilitates communication, it cannot prevent the risk of social isolation in modern society.",
+        "E": "Modern technology makes communication easier, yet it also carries the potential for profound social isolation."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Yapay zeka sistemlerinin etik kullanımı, günümüzde bilim insanları ve politika yapıcılar arasında hararetli bir tartışma konusudur.",
+      "options": {
+        "A": "The ethical use of artificial intelligence systems is a topic of heated debate among scientists and policymakers today.",
+        "B": "Scientists and policymakers are debating whether artificial intelligence systems can be used ethically today.",
+        "C": "The debate on how to use artificial intelligence ethically is growing among scientists and policymakers.",
+        "D": "Today, scientists and policymakers argue that artificial intelligence systems must be used ethically.",
+        "E": "How artificial intelligence systems are used ethically is a major concern for scientists and policymakers."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Due to the increasing demand for renewable energy, many countries are investing heavily in wind and solar power projects.",
+      "options": {
+        "A": "Yenilenebilir enerjiye olan talebin artmasıyla birlikte, birçok ülke rüzgar ve güneş enerjisi projelerine yatırım yapıyor.",
+        "B": "Birçok ülke, rüzgar ve güneş enerjisi projelerine, yenilenebilir enerjiye olan artan talep nedeniyle büyük yatırımlar yapıyor.",
+        "C": "Yenilenebilir enerjiye yönelik artan talep nedeniyle, birçok ülke rüzgar ve güneş enerjisi projelerine yoğun yatırım yapmaktadır.",
+        "D": "Rüzgar ve güneş enerjisi projeleri, yenilenebilir enerjiye olan talebin artması sonucu birçok ülkede teşvik edilmektedir.",
+        "E": "Artan yenilenebilir enerji talebi, birçok ülkeyi rüzgar ve güneş enerjisi alanında yatırım yapmaya zorlamaktadır."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "It is widely believed that the loss of biodiversity poses a significant threat to the stability of global ecosystems.",
+      "options": {
+        "A": "Biyoçeşitlilik kaybının küresel ekosistemlerin istikrarına yönelik önemli bir tehdit oluşturduğuna yaygın olarak inanılmaktadır.",
+        "B": "Küresel ekosistemlerin istikrarı, biyoçeşitlilik kaybı nedeniyle ciddi bir tehdit altındadır ve bu durum bilinmektedir.",
+        "C": "Yaygın bir inanışa göre, biyoçeşitlilik kaybı küresel ekosistemlerin istikrarını bozabilecek bir tehdittir.",
+        "D": "Biyoçeşitlilik kaybının oluşturduğu tehdit, küresel ekosistemlerin istikrarı için yaygın olarak kabul edilmektedir.",
+        "E": "Küresel ekosistemlerin istikrarına yönelik en büyük tehdidin biyoçeşitlilik kaybı olduğu düşünülmektedir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "Hardly any other invention has had as much impact on human life as the steam engine during the Industrial Revolution.",
+      "options": {
+        "A": "The steam engine was one of the many inventions that impacted human life during the Industrial Revolution.",
+        "B": "Few inventions have influenced human life as significantly as the steam engine did during the Industrial Revolution.",
+        "C": "During the Industrial Revolution, the steam engine was the only invention that had a major impact on human life.",
+        "D": "The impact of the steam engine on human life during the Industrial Revolution was less than other inventions.",
+        "E": "Human life was changed more by other inventions than by the steam engine during the Industrial Revolution."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "If it hadn't been for the timely intervention of the medical team, the patient might not have survived the surgery.",
+      "options": {
+        "A": "The patient survived the surgery because the medical team intervened at the right time.",
+        "B": "The medical team intervened too late, but the patient still survived the surgery.",
+        "C": "The surgery was so successful that the medical team didn't need to intervene at all.",
+        "D": "Despite the medical team's intervention, the patient's survival was still in doubt.",
+        "E": "The patient could have survived even if the medical team had not intervened on time."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "No matter how hard he tried, he couldn't convince his colleagues to support his proposal.",
+      "options": {
+        "A": "He didn't try hard enough, so his colleagues didn't support his proposal.",
+        "B": "His proposal was supported by his colleagues despite his lack of effort.",
+        "C": "Regardless of his efforts, his colleagues remained unpersuaded by his proposal.",
+        "D": "His colleagues supported his proposal because they saw how hard he was trying.",
+        "E": "He tried so hard that eventually his colleagues had no choice but to support him."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Students are required to submit their assignments by Friday at the latest to avoid any penalty.",
+      "options": {
+        "A": "Assignments submitted after Friday will be accepted but with a small penalty.",
+        "B": "Students can submit their assignments anytime until Friday if they want a higher grade.",
+        "C": "To prevent a penalty, assignments must be turned in no later than Friday.",
+        "D": "Friday is the earliest possible day for students to submit their assignments.",
+        "E": "Assignments should be submitted on Friday, but earlier submissions are also penalized."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Alice: Do you think remote work will remain the norm after the pandemic?\nBob: ----\nAlice: Why is that?\nBob: Because many companies have seen an increase in productivity and a reduction in overhead costs.",
+      "options": {
+        "A": "I believe it will gradually disappear as things return to normal.",
+        "B": "It's highly likely that it will continue in some capacity.",
+        "C": "Most employees prefer working from a traditional office environment.",
+        "D": "Technological infrastructure is not yet ready for such a major shift.",
+        "E": "It depends on the specific industry and the nature of the work."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "James: Have you seen the latest report on urban pollution levels?\nSarah: No, is it as bad as they predicted?\nJames: ----\nSarah: That's disappointing. I thought the new traffic regulations would have helped.",
+      "options": {
+        "A": "Actually, it's even worse than the previous year's figures.",
+        "B": "It shows a significant improvement in air quality across the city.",
+        "C": "The report suggests that the situation is finally under control.",
+        "D": "I haven't had a chance to read the full document yet.",
+        "E": "Pollution levels have remained stable despite the increase in cars."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Patient: I've been feeling quite fatigued lately, even after a full night's sleep.\nDoctor: ----\nPatient: Not really, but I have been under a lot of pressure at work recently.\nDoctor: Stress can often manifest as physical exhaustion.",
+      "options": {
+        "A": "Have you noticed any other symptoms like headaches or dizziness?",
+        "B": "How many hours of sleep do you get on average every night?",
+        "C": "Are you taking any medication or supplements at the moment?",
+        "D": "Do you think your diet might be lacking in essential nutrients?",
+        "E": "Have you been experiencing any unusual pain or discomfort?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "Professor: The deadline for the research project is approaching fast.\nStudent: I'm aware, but I'm struggling to find reliable sources for the historical analysis.\nProfessor: ----\nStudent: That would be very helpful, thank you.",
+      "options": {
+        "A": "You should have started your research much earlier in the semester.",
+        "B": "The university library has an extensive digital archive you can use.",
+        "C": "Maybe you should change your topic to something more accessible.",
+        "D": "I can grant you an extension if you provide a valid reason.",
+        "E": "Make sure to cite all your sources correctly to avoid plagiarism."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "In the realm of architecture, sustainability has become a primary concern. Designers are increasingly using eco-friendly materials and energy-efficient systems to minimize the environmental footprint of buildings. ----. For instance, green roofs and solar panels are now common features in modern construction projects.",
+      "options": {
+        "A": "This trend is driven by both ethical considerations and economic benefits.",
+        "B": "Traditional building methods are still preferred in many parts of the world.",
+        "C": "The cost of sustainable materials is often higher than conventional ones.",
+        "D": "Architects are also focusing on the aesthetic appeal of their structures.",
+        "E": "Urban planning requires a different approach than individual building design."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "The rise of the internet has revolutionized the way we consume information. In the past, people relied on newspapers and television for news. ----. However, this ease of access has also led to the proliferation of misinformation and fake news.",
+      "options": {
+        "A": "Journalism has undergone significant changes in the digital age.",
+        "B": "Today, anyone with a smartphone can access news from around the world instantly.",
+        "C": "Many traditional media outlets are struggling to survive in the new landscape.",
+        "D": "Social media platforms have become the primary source of news for young people.",
+        "E": "The credibility of online information is often questioned by experts."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "Language is not just a tool for communication; it is also a reflection of culture and identity. Every language carries the history and values of the people who speak it. ----. When a language dies, a unique way of understanding the world is lost forever.",
+      "options": {
+        "A": "Learning a new language can open up many opportunities for personal growth.",
+        "B": "English has become the global lingua franca in business and science.",
+        "C": "Therefore, the extinction of a language is a significant loss to humanity.",
+        "D": "Some languages are more complex than others in terms of grammar and syntax.",
+        "E": "Translation is a difficult task that requires a deep understanding of both cultures."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Artificial intelligence is increasingly being used in the healthcare sector to improve diagnosis and treatment. AI algorithms can analyze medical images with a level of precision that sometimes exceeds human capabilities. ----. Despite these benefits, there are concerns about the privacy and security of patient data.",
+      "options": {
+        "A": "Moreover, AI can help doctors identify potential health risks before they become serious.",
+        "B": "The use of AI in medicine is still in its early stages of development.",
+        "C": "Many healthcare professionals are worried about being replaced by machines.",
+        "D": "Patients are often reluctant to trust a diagnosis made by a computer program.",
+        "E": "The cost of implementing AI technology in hospitals is prohibitively high."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "The committee's decision to cancel the project was based on the lack of sufficient funding.",
+      "options": {
+        "A": "The project was cancelled because the committee didn't have enough money for it.",
+        "B": "The committee decided to cancel the project although they had plenty of funding.",
+        "C": "If the project had more funding, the committee would still have cancelled it.",
+        "D": "The lack of funding was only one of the reasons why the project was cancelled.",
+        "E": "The committee would have cancelled the project even if there was enough money."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "It is unlikely that the two parties will reach an agreement before the end of the week.",
+      "options": {
+        "A": "The two parties will definitely reach an agreement by the end of the week.",
+        "B": "There is a small chance that an agreement will be reached by the weekend.",
+        "C": "The two parties are expected to agree on most issues before the week is over.",
+        "D": "It is probable that an agreement will be made before the week ends.",
+        "E": "The parties have already reached an agreement earlier this week."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "She wouldn't have been late if she had caught the earlier train.",
+      "options": {
+        "A": "She caught the earlier train and arrived on time.",
+        "B": "She was late because she missed the earlier train.",
+        "C": "Even if she had caught the earlier train, she would still have been late.",
+        "D": "She didn't catch the earlier train, but she still arrived on time.",
+        "E": "She was late, but it wasn't because she missed the earlier train."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Solar energy is one of the most promising sources of renewable energy. (II) It is clean, abundant, and becoming increasingly cost-effective. (III) Many countries are now investing in large-scale solar farms. (IV) Fossil fuels, on the other hand, are the primary cause of global warming. (V) Technological advancements in solar panels have significantly increased their efficiency.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Roman Empire was one of the most powerful civilizations in history. (II) At its peak, it controlled vast territories across Europe, Africa, and Asia. (III) The Romans were known for their engineering feats, such as roads and aqueducts. (IV) Modern Italian cuisine is famous for its pasta and pizza dishes. (V) However, internal conflicts and external invasions eventually led to its decline.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Reading books is a great way to expand one's knowledge and vocabulary. (II) It also helps to improve critical thinking and analytical skills. (III) Many people prefer watching movies to reading books because it is more entertaining. (IV) Furthermore, reading can reduce stress and improve mental well-being. (V) In short, books are an invaluable resource for personal development.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, neuroplasticity ----.",
+      "options": {
+        "A": "is a process that only happens during early childhood",
+        "B": "proves that the adult brain cannot change or adapt",
+        "C": "allows the brain to form new connections throughout life",
+        "D": "is solely determined by the person's genetic makeup",
+        "E": "has no relevance to the treatment of neurological disorders"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading_comprehension",
+      "question": "The author mentions 'learning and physical exercise' to ----.",
+      "options": {
+        "A": "illustrate environmental factors that influence neuroplasticity",
+        "B": "argue that the brain's adaptability is limited by genetics",
+        "C": "suggest that they are the only ways to improve brain health",
+        "D": "show why the adult brain is considered a static organ",
+        "E": "explain the causes of neurological disorders in adults"
+      },
+      "correct": "A",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading_comprehension",
+      "question": "It can be inferred from the passage that ----.",
+      "options": {
+        "A": "the adult brain is much more adaptable than the childhood brain",
+        "B": "neuroplasticity is a relatively new and unproven concept",
+        "C": "brain adaptability can play a role in recovering from an injury",
+        "D": "cognitive challenges have no impact on the neural connections",
+        "E": "scientists have always believed that the brain is dynamic"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading_comprehension",
+      "question": "What was a primary focus of the Enlightenment movement?",
+      "options": {
+        "A": "Emphasizing the importance of emotional and spiritual values",
+        "B": "Supporting traditional authority and the power of the church",
+        "C": "Advocating for reason, individualism, and skepticism",
+        "D": "Promoting the ideals of the Romanticism movement",
+        "E": "Rejecting the philosophical groundwork of the revolutions"
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading_comprehension",
+      "question": "The Enlightenment movement is said to have ----.",
+      "options": {
+        "A": "been completely ignored by thinkers like Voltaire and Rousseau",
+        "B": "provided the foundation for major political revolutions",
+        "C": "avoided any criticism regarding its focus on rationality",
+        "D": "originated in the American and French Revolutions",
+        "E": "focused primarily on the spiritual dimensions of human life"
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, Romanticism arose as a response to ----.",
+      "options": {
+        "A": "the successful implementation of Enlightenment ideals",
+        "B": "the excessive focus on reason and neglect of emotions in the Enlightenment",
+        "C": "the rise of traditional authority and the power of the church",
+        "D": "the separation of church and state in Europe",
+        "E": "the political stability brought about by the revolutions"
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    }
+  ]
+}

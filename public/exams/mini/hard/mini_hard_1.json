@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "voc",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sc",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "trans",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "para",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dial",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "pc",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "cm",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irr",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "rc",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "p_cloze",
+      "text": "The concept of sustainable development has undergone (8)---- transformations since its inception. Initially focused on ecological preservation, it now (9)---- a broader range of socio-economic objectives. Policymakers are increasingly (10)---- that environmental health is inextricably linked to economic stability. (11)----, investments in renewable energy are no longer seen as optional but as essential. This paradigm shift requires (12)---- cooperation among nations to mitigate the effects of global warming."
+    },
+    {
+      "id": "p_rc1",
+      "text": "The Great Oxidation Event, which occurred approximately 2.4 billion years ago, remains one of the most significant milestones in Earth's history. Before this period, the atmosphere was predominantly composed of methane and carbon dioxide, with virtually no free oxygen. The emergence of cyanobacteria, which produced oxygen through photosynthesis, eventually led to the saturation of 'sinks' such as iron-rich rocks. Once these sinks were filled, oxygen began to accumulate in the atmosphere, enabling the evolution of complex multicellular life. However, this transition was not without its casualties, as many anaerobic organisms perished in what is often called the first mass extinction."
+    },
+    {
+      "id": "p_rc2",
+      "text": "Neuroplasticity, the brain's ability to reorganize itself by forming new neural connections throughout life, has revolutionized our understanding of neurology. Previously, it was believed that the adult brain was a static organ with a fixed number of neurons that would inevitably decline with age. Current research demonstrates that sensory experiences, learning, and even emotional states can physically alter the brain's structure. This adaptability is particularly evident in the recovery process following a stroke, where healthy areas of the brain can sometimes compensate for damaged regions. Despite these advances, the extent to which neuroplasticity can be harnessed for clinical therapies remains a subject of intense investigation."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "voc",
+      "question": "The archaeological findings provided ---- evidence that the ancient civilization possessed advanced knowledge of hydraulics.",
+      "options": {
+        "A": "ambiguous",
+        "B": "compelling",
+        "C": "redundant",
+        "D": "negligible",
+        "E": "fleeting"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "voc",
+      "question": "Despite the complexity of the negotiations, the diplomat managed to ---- a compromise that satisfied both parties.",
+      "options": {
+        "A": "alleviate",
+        "B": "undermine",
+        "C": "orchestrate",
+        "D": "jeopardize",
+        "E": "relinquish"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "voc",
+      "question": "The recent surge in inflation has had a ---- effect on the purchasing power of middle-income households.",
+      "options": {
+        "A": "detrimental",
+        "B": "beneficial",
+        "C": "superficial",
+        "D": "lucrative",
+        "E": "neutral"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sc",
+      "question": "----, the researchers decided to conduct a follow-up study to verify their initial findings.",
+      "options": {
+        "A": "Since the results were conclusive and final",
+        "B": "Given the unexpected anomalies in the data",
+        "C": "Because the funding for the project had been exhausted",
+        "D": "Although the methodology was widely accepted",
+        "E": "As if the experiment had never taken place"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sc",
+      "question": "The urban population continues to grow at an unprecedented rate ----.",
+      "options": {
+        "A": "even though rural areas are becoming more industrialized",
+        "B": "which has led to a significant decrease in housing demand",
+        "C": "whereas the city's infrastructure remains largely unchanged",
+        "D": "because the government discouraged migration to the cities",
+        "E": "so that the natural environment is being restored"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sc",
+      "question": "----, it is essential to consider the ethical implications of genetic engineering.",
+      "options": {
+        "A": "Before any large-scale implementation of the technology occurs",
+        "B": "Despite the fact that the project was cancelled years ago",
+        "C": "Unless the scientists ignore the potential risks involved",
+        "D": "So that the public is kept in the dark about the progress",
+        "E": "As long as the benefits outweigh the costs in the short term"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sc",
+      "question": "Many historians argue that the fall of the empire was not a sudden event ----.",
+      "options": {
+        "A": "rather it was the result of centuries of internal decay",
+        "B": "but it happened overnight due to a single invasion",
+        "C": "because the economy was at its absolute peak",
+        "D": "although the military was stronger than ever before",
+        "E": "so the citizens were completely unaware of any trouble"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze",
+      "question": "Choose the correct word for blank 8.",
+      "options": {
+        "A": "marginal",
+        "B": "profound",
+        "C": "temporary",
+        "D": "stagnant",
+        "E": "trivial"
+      },
+      "correct": "B",
+      "passage_id": "p_cloze"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze",
+      "question": "Choose the correct word for blank 9.",
+      "options": {
+        "A": "encompasses",
+        "B": "disregards",
+        "C": "eliminates",
+        "D": "reverses",
+        "E": "contradicts"
+      },
+      "correct": "A",
+      "passage_id": "p_cloze"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze",
+      "question": "Choose the correct word for blank 10.",
+      "options": {
+        "A": "doubtful",
+        "B": "aware",
+        "C": "indifferent",
+        "D": "reluctant",
+        "E": "skeptical"
+      },
+      "correct": "B",
+      "passage_id": "p_cloze"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze",
+      "question": "Choose the correct word for blank 11.",
+      "options": {
+        "A": "However",
+        "B": "Nevertheless",
+        "C": "Consequently",
+        "D": "Otherwise",
+        "E": "Conversely"
+      },
+      "correct": "C",
+      "passage_id": "p_cloze"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze",
+      "question": "Choose the correct word for blank 12.",
+      "options": {
+        "A": "unprecedented",
+        "B": "intermittent",
+        "C": "fragmented",
+        "D": "superficial",
+        "E": "obsolete"
+      },
+      "correct": "A",
+      "passage_id": "p_cloze"
+    },
+    {
+      "id": 13,
+      "section_id": "trans",
+      "question": "Bilim insanları, okyanus sıcaklıklarındaki artışın mercan resifleri üzerindeki etkisini hala araştırmaktadırlar.",
+      "options": {
+        "A": "Scientists have already finished researching the impact of rising ocean temperatures on coral reefs.",
+        "B": "The impact of rising ocean temperatures on coral reefs is being researched by scientists for a long time.",
+        "C": "Scientists are still investigating the effect of the increase in ocean temperatures on coral reefs.",
+        "D": "Increased ocean temperatures are causing scientists to investigate the destruction of coral reefs.",
+        "E": "Scientists will investigate the relationship between ocean temperatures and coral reefs soon."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "trans",
+      "question": "The industrial revolution not only changed production methods but also reshaped the social structure of the 19th century.",
+      "options": {
+        "A": "Sanayi devrimi sadece üretim yöntemlerini değiştirmekle kalmamış, aynı zamanda 19. yüzyılın sosyal yapısını da yeniden şekillendirmiştir.",
+        "B": "19. yüzyılda üretim yöntemleri ve sosyal yapı sanayi devrimi ile tamamen değişmiştir.",
+        "C": "Sanayi devrimi üretim yöntemlerini değiştirdiği için 19. yüzyılın sosyal yapısı da şekillenmiştir.",
+        "D": "19. yüzyılın sosyal yapısını şekillendiren en önemli unsur sanayi devriminin üretim yöntemleridir.",
+        "E": "Sanayi devrimi hem üretim yöntemlerini hem de 19. yüzyılın sosyal yapısını değiştiren tek faktördür."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "trans",
+      "question": "Yapay zeka teknolojileri geliştikçe, iş gücü piyasasındaki talep edilen beceriler de köklü bir değişim geçirmektedir.",
+      "options": {
+        "A": "AI technologies are changing because the skills demanded in the labor market are evolving.",
+        "B": "As artificial intelligence technologies develop, the skills demanded in the labor market are undergoing a radical change.",
+        "C": "The labor market requires new skills as long as artificial intelligence continues to grow.",
+        "D": "Radical changes in the labor market have led to the development of artificial intelligence technologies.",
+        "E": "Development of AI technologies will eventually change all the skills needed in the labor market."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "trans",
+      "question": "While the economic crisis affected many countries, some emerging markets managed to maintain their growth rates.",
+      "options": {
+        "A": "Ekonomik kriz pek çok ülkeyi etkilemesine rağmen, bazı gelişmekte olan piyasalar büyüme oranlarını korumayı başardı.",
+        "B": "Gelişmekte olan piyasalar büyüme oranlarını korudu çünkü ekonomik kriz onları etkilemedi.",
+        "C": "Pek çok ülke ekonomik krizden etkilendi fakat gelişmekte olan piyasalar büyüme gösteremedi.",
+        "D": "Büyüme oranlarını koruyan gelişmekte olan piyasalar sayesinde ekonomik kriz önlenmiş oldu.",
+        "E": "Bazı ülkeler ekonomik krize rağmen büyüme oranlarını artırmak için çok çaba sarf etti."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "para",
+      "question": "Hardly had the new regulation been implemented when a series of protests erupted across the country.",
+      "options": {
+        "A": "The protests started shortly after the new regulation was put into effect.",
+        "B": "The new regulation was implemented because of the protests across the country.",
+        "C": "Protests erupted even before the government could implement the new regulation.",
+        "D": "Despite the protests, the new regulation was successfully implemented.",
+        "E": "The country-wide protests were ignored until the new regulation was cancelled."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "para",
+      "question": "It was not until the late 20th century that the harmful effects of asbestos were fully understood.",
+      "options": {
+        "A": "Asbestos was known to be harmful throughout the 20th century.",
+        "B": "The full understanding of asbestos's dangers occurred only in the latter part of the 20th century.",
+        "C": "Before the late 20th century, asbestos was considered to be completely safe.",
+        "D": "By the end of the 20th century, people had stopped using asbestos due to its effects.",
+        "E": "The dangers of asbestos were discovered in the early 20th century but ignored."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "para",
+      "question": "The CEO is unlikely to approve the project unless a detailed risk assessment is provided.",
+      "options": {
+        "A": "The CEO will approve the project even if there is no risk assessment.",
+        "B": "If a detailed risk assessment is given, the CEO will definitely approve the project.",
+        "C": "The project's approval by the CEO depends on the provision of a detailed risk assessment.",
+        "D": "The CEO has already rejected the project because the risk assessment was not detailed.",
+        "E": "A detailed risk assessment is the only thing the CEO needs to start the project."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "para",
+      "question": "If it hadn't been for the timely intervention of the rescue team, the situation would have turned into a disaster.",
+      "options": {
+        "A": "The rescue team arrived too late to prevent the disaster.",
+        "B": "The situation became a disaster despite the rescue team's efforts.",
+        "C": "The rescue team's prompt action prevented the situation from becoming a disaster.",
+        "D": "Even without the rescue team, the disaster could have been avoided.",
+        "E": "The disaster occurred because the rescue team was not prepared."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dial",
+      "question": "James: Are you coming to the seminar on quantum computing tomorrow? / Sarah: I'd like to, but I have a deadline to meet. / James: ---- / Sarah: That's true. I'll see if I can finish my report tonight.",
+      "options": {
+        "A": "What a shame, I was looking forward to it.",
+        "B": "You should really consider coming; the keynote speaker is world-renowned.",
+        "C": "I'm sure your boss won't mind if you're a bit late.",
+        "D": "Quantum computing is a bit over my head anyway.",
+        "E": "I'll take some notes for you if you can't make it."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dial",
+      "question": "Dr. Aris: The data suggests that the new drug is quite effective in treating hypertension. / Researcher: ---- / Dr. Aris: You're right. We need a larger sample size to confirm these preliminary results.",
+      "options": {
+        "A": "I think the drug is too expensive for most patients.",
+        "B": "Have we considered the potential side effects on the liver?",
+        "C": "The results are indeed promising and should be published immediately.",
+        "D": "However, the study was only conducted on a very small group of individuals.",
+        "E": "I disagree; the data is completely inconsistent with our previous studies."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dial",
+      "question": "Mary: I'm thinking of switching my major to Philosophy. / Father: Philosophy? What kind of career can you have with that? / Mary: ---- / Father: Well, as long as you have a plan, I support your decision.",
+      "options": {
+        "A": "I just want to learn more about the meaning of life.",
+        "B": "Many philosophy graduates go into law, ethics, or even high-level management.",
+        "C": "It's easier than studying engineering, that's for sure.",
+        "D": "I don't care about money; I just want to be happy.",
+        "E": "Philosophy is the foundation of all modern sciences."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dial",
+      "question": "Tourist: Excuse me, is this the right way to the National Museum? / Local: Yes, just keep walking straight for two blocks and turn left. / Tourist: ---- / Local: Not at all. It's only about a five-minute walk from here.",
+      "options": {
+        "A": "Is it open on Sundays?",
+        "B": "Is there a bus that goes there?",
+        "C": "Thank you, I hope it's not too far.",
+        "D": "Do I need to buy a ticket in advance?",
+        "E": "Is the museum worth visiting?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "pc",
+      "question": "The concept of 'emotional intelligence' gained popularity in the 1990s. ----. It includes skills such as empathy, self-regulation, and social awareness. Research has shown that individuals with high emotional intelligence often perform better in leadership roles.",
+      "options": {
+        "A": "It refers to the ability to recognize and manage one's own emotions and the emotions of others.",
+        "B": "Many people believe that IQ is the only measure of success in life.",
+        "C": "The term was first coined by researchers in the early 20th century.",
+        "D": "Emotional intelligence is not something that can be learned or improved.",
+        "E": "However, some psychologists still doubt its scientific validity."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "pc",
+      "question": "Renewable energy sources, such as solar and wind power, are becoming increasingly cost-competitive with fossil fuels. ----. Governments around the world are providing subsidies to encourage the transition to green energy. As a result, the share of renewables in the global energy mix is steadily rising.",
+      "options": {
+        "A": "Fossil fuels are still the most reliable source of energy for many countries.",
+        "B": "This shift is driven by both technological advancements and environmental concerns.",
+        "C": "Nuclear energy is often overlooked in discussions about climate change.",
+        "D": "The initial cost of installing solar panels is still prohibitively high for many.",
+        "E": "Energy consumption is expected to double in the next twenty years."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "pc",
+      "question": "The Silk Road was not a single path but a network of trade routes connecting the East and West. ----. Beyond goods, it facilitated the exchange of ideas, religions, and technologies between diverse cultures. This cultural diffusion had a lasting impact on the development of civilizations in Asia and Europe.",
+      "options": {
+        "A": "Marco Polo is the most famous traveler to have documented his journey.",
+        "B": "It was primarily used for the transportation of silk from China to Rome.",
+        "C": "Many merchants faced great dangers from bandits and harsh weather conditions.",
+        "D": "The routes spanned thousands of miles across deserts and mountain ranges.",
+        "E": "It was named by a German geographer in the 19th century."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "pc",
+      "question": "In recent years, remote work has transitioned from a niche benefit to a mainstream employment model. ----. Employees appreciate the flexibility and the lack of a commute. However, employers often worry about maintaining company culture and ensuring productivity in a virtual environment.",
+      "options": {
+        "A": "Most people still prefer the traditional office setting for social reasons.",
+        "B": "This change was largely accelerated by the global pandemic.",
+        "C": "High-speed internet is not available in many rural areas.",
+        "D": "Remote workers are generally more stressed than office workers.",
+        "E": "Technology has made it impossible to separate work from personal life."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "cm",
+      "question": "Hardly anyone expected the underdog team to win the championship.",
+      "options": {
+        "A": "Everyone was sure that the underdog team would lose.",
+        "B": "Almost nobody anticipated that the underdog team would emerge as the champion.",
+        "C": "The underdog team's victory was predicted by a few experts.",
+        "D": "No one was surprised when the underdog team won the title.",
+        "E": "The underdog team was the favorite to win from the beginning."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "cm",
+      "question": "The more you practice a new language, the more fluent you will become.",
+      "options": {
+        "A": "Fluency in a language is only possible with years of practice.",
+        "B": "Practicing a language does not always guarantee fluency.",
+        "C": "Your level of fluency in a new language is directly related to how much you practice.",
+        "D": "If you want to be fluent, you should move to a country where the language is spoken.",
+        "E": "You will become fluent even if you don't practice very often."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "cm",
+      "question": "She was so exhausted that she fell asleep as soon as her head hit the pillow.",
+      "options": {
+        "A": "She fell asleep immediately because she was extremely tired.",
+        "B": "She was tired, but it took her a while to fall asleep.",
+        "C": "She went to bed early because she had a long day.",
+        "D": "She couldn't sleep despite being very exhausted.",
+        "E": "The pillow was so comfortable that she fell asleep instantly."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irr",
+      "question": "(I) The Renaissance was a period of great cultural and artistic achievement in Europe. (II) It began in Italy in the 14th century and later spread to the rest of the continent. (III) During this time, there was a renewed interest in the classical learning of Greece and Rome. (IV) Modern technology has changed the way we appreciate art today. (V) Famous artists like Leonardo da Vinci and Michelangelo produced their masterpieces during this era.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irr",
+      "question": "(I) Photosynthesis is the process by which green plants make their own food. (II) They use sunlight, water, and carbon dioxide to produce glucose and oxygen. (III) This process takes place in the chloroplasts, which contain a green pigment called chlorophyll. (IV) Some animals also hibernate during the winter to save energy. (V) Without photosynthesis, there would be no oxygen for humans and animals to breathe.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irr",
+      "question": "(I) Globalization has led to increased economic integration among countries. (II) It has also facilitated the rapid spread of information and culture. (III) However, it has been criticized for contributing to income inequality. (IV) Many people enjoy traveling to exotic locations for their holidays. (V) Furthermore, globalization has raised concerns about the loss of local traditions.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "rc",
+      "question": "According to the passage, why was the Great Oxidation Event a turning point?",
+      "options": {
+        "A": "It caused the extinction of all life forms on Earth.",
+        "B": "It led to the atmosphere being filled with methane.",
+        "C": "It allowed for the development of complex multicellular life.",
+        "D": "It prevented cyanobacteria from performing photosynthesis.",
+        "E": "It turned iron-rich rocks into the primary source of oxygen."
+      },
+      "correct": "C",
+      "passage_id": "p_rc1"
+    },
+    {
+      "id": 36,
+      "section_id": "rc",
+      "question": "What can be inferred about anaerobic organisms from the passage?",
+      "options": {
+        "A": "They were the primary producers of oxygen 2.4 billion years ago.",
+        "B": "They thrived in an oxygen-rich environment.",
+        "C": "They were unable to survive in the presence of free oxygen.",
+        "D": "They evolved into complex multicellular organisms.",
+        "E": "They were responsible for filling the 'sinks' in the Earth's crust."
+      },
+      "correct": "C",
+      "passage_id": "p_rc1"
+    },
+    {
+      "id": 37,
+      "section_id": "rc",
+      "question": "The passage states that before the Great Oxidation Event, the Earth's atmosphere ----.",
+      "options": {
+        "A": "was rich in iron and other minerals",
+        "B": "contained high levels of free oxygen",
+        "C": "lacked oxygen and was mostly methane and carbon dioxide",
+        "D": "supported a wide variety of multicellular life",
+        "E": "was protected by a thick layer of ozone"
+      },
+      "correct": "C",
+      "passage_id": "p_rc1"
+    },
+    {
+      "id": 38,
+      "section_id": "rc",
+      "question": "Which of the following is TRUE about neuroplasticity according to the passage?",
+      "options": {
+        "A": "It is only possible during childhood and stops in adulthood.",
+        "B": "It confirms that the number of neurons in the brain is fixed.",
+        "C": "It allows the brain to change its structure based on experiences.",
+        "D": "It has fully explained how to cure strokes completely.",
+        "E": "It is an emotional state rather than a physical process."
+      },
+      "correct": "C",
+      "passage_id": "p_rc2"
+    },
+    {
+      "id": 39,
+      "section_id": "rc",
+      "question": "The word 'harnessed' in the passage is closest in meaning to ----.",
+      "options": {
+        "A": "ignored",
+        "B": "utilized",
+        "C": "restricted",
+        "D": "abandoned",
+        "E": "discovered"
+      },
+      "correct": "B",
+      "passage_id": "p_rc2"
+    },
+    {
+      "id": 40,
+      "section_id": "rc",
+      "question": "What is the author's tone regarding the future of neuroplasticity in clinical therapies?",
+      "options": {
+        "A": "Pessimistic and dismissive",
+        "B": "Certain and celebratory",
+        "C": "Cautious and investigative",
+        "D": "Indifferent and bored",
+        "E": "Hostile and critical"
+      },
+      "correct": "C",
+      "passage_id": "p_rc2"
+    }
+  ]
+}

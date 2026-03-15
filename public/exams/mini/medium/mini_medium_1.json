@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "VOC",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "SENT",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "CLOZE",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "TRANS",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "PARA",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "DIAL",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "PC",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "CM",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "IRR",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "READING",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "CLOZE_1",
+      "text": "The concept of sustainable development has gained significant traction in recent years. (8) ----, many corporations are now integrating environmental goals into their core strategies. This shift is not merely (9) ----; it stems from a realization that long-term profitability depends on the health of the planet. (10) ---- such initiatives, some critics argue that the progress is too slow to mitigate the effects of climate change. They believe that unless governments (11) ---- stricter regulations, the corporate world will continue to prioritize profit over sustainability. Nevertheless, the trend (12) ---- to grow as consumers demand more transparency."
+    },
+    {
+      "id": "READ_1",
+      "text": "The Renaissance was a fervent period of European cultural, artistic, political and economic rebirth following the Middle Ages. Generally described as taking place from the 14th century to the 17th century, the Renaissance promoted the rediscovery of classical philosophy, literature and art. Some of the greatest thinkers, authors, statesmen, scientists and artists in human history thrived during this era, while global exploration opened up new lands and cultures to European commerce. The Renaissance is credited with bridging the gap between the Middle Ages and modern-day civilization."
+    },
+    {
+      "id": "READ_2",
+      "text": "Graphene is a one-atom-thick layer of carbon atoms arranged in a hexagonal lattice. It is the building block of Graphite, but graphene is a remarkable material on its own with a multitude of astonishing properties. Despite being the thinnest material known to man, it is also about 200 times stronger than steel. Moreover, graphene is an excellent conductor of heat and electricity and has interesting light absorption abilities. It is truly a material that could change the world, with unlimited potential for integration in almost any industry."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "VOC",
+      "question": "The archaeological findings provided ---- evidence that the ancient civilization had advanced knowledge of astronomy.",
+      "options": {
+        "A": "ambiguous",
+        "B": "compelling",
+        "C": "negligible",
+        "D": "fragile",
+        "E": "erratic"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "VOC",
+      "question": "The new economic policy was designed to ---- the gap between the wealthy and the impoverished segments of society.",
+      "options": {
+        "A": "widen",
+        "B": "diminish",
+        "C": "bridge",
+        "D": "ignore",
+        "E": "exacerbate"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "VOC",
+      "question": "Due to the heavy rainfall, the river water level rose ----, causing concerns among the local residents about potential flooding.",
+      "options": {
+        "A": "gradually",
+        "B": "marginally",
+        "C": "substantially",
+        "D": "rarely",
+        "E": "vaguely"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "SENT",
+      "question": "While some researchers argue that artificial intelligence will replace human jobs, ----.",
+      "options": {
+        "A": "it is already being used in many industrial sectors",
+        "B": "others maintain that it will create entirely new categories of employment",
+        "C": "machines are capable of processing data much faster than humans",
+        "D": "the development of AI has been a primary focus of technology companies",
+        "E": "automation has been a part of the manufacturing process for decades"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "SENT",
+      "question": "---- since the early 20th century, the city has undergone a complete transformation.",
+      "options": {
+        "A": "Because it was a small fishing village",
+        "B": "Although it was once the capital of the empire",
+        "C": "Having been a major industrial hub",
+        "D": "As if the population had decreased",
+        "E": "Even though it remains a popular tourist destination"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "SENT",
+      "question": "The vaccine was distributed globally as soon as ----.",
+      "options": {
+        "A": "the clinical trials had been completed successfully",
+        "B": "it was being tested in various laboratories",
+        "C": "scientists are still working on its effectiveness",
+        "D": "the pandemic had already reached its peak",
+        "E": "no one knew about its long-term effects"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "SENT",
+      "question": "Even if we reduce our carbon footprint significantly, ----.",
+      "options": {
+        "A": "the planet would have recovered much faster",
+        "B": "global temperatures will likely continue to rise for several decades",
+        "C": "renewable energy sources are becoming cheaper",
+        "D": "environmentalists have been warning us for years",
+        "E": "international agreements are necessary for success"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "CLOZE",
+      "question": "Choose the best option to fill in the blank (8).",
+      "options": {
+        "A": "However",
+        "B": "Consequently",
+        "C": "Instead",
+        "D": "Otherwise",
+        "E": "On the contrary"
+      },
+      "correct": "B",
+      "passage_id": "CLOZE_1"
+    },
+    {
+      "id": 9,
+      "section_id": "CLOZE",
+      "question": "Choose the best option to fill in the blank (9).",
+      "options": {
+        "A": "superficial",
+        "B": "mandatory",
+        "C": "redundant",
+        "D": "tedious",
+        "E": "infinite"
+      },
+      "correct": "A",
+      "passage_id": "CLOZE_1"
+    },
+    {
+      "id": 10,
+      "section_id": "CLOZE",
+      "question": "Choose the best option to fill in the blank (10).",
+      "options": {
+        "A": "In spite of",
+        "B": "Because of",
+        "C": "Despite",
+        "D": "Regardless of",
+        "E": "Contrary to"
+      },
+      "correct": "C",
+      "passage_id": "CLOZE_1"
+    },
+    {
+      "id": 11,
+      "section_id": "CLOZE",
+      "question": "Choose the best option to fill in the blank (11).",
+      "options": {
+        "A": "impose",
+        "B": "exempt",
+        "C": "violate",
+        "D": "repeal",
+        "E": "neglect"
+      },
+      "correct": "A",
+      "passage_id": "CLOZE_1"
+    },
+    {
+      "id": 12,
+      "section_id": "CLOZE",
+      "question": "Choose the best option to fill in the blank (12).",
+      "options": {
+        "A": "ceases",
+        "B": "fails",
+        "C": "continues",
+        "D": "refuses",
+        "E": "hesitates"
+      },
+      "correct": "C",
+      "passage_id": "CLOZE_1"
+    },
+    {
+      "id": 13,
+      "section_id": "TRANS",
+      "question": "Küresel ısınmanın etkilerini azaltmak için fosil yakıt kullanımını derhal bırakmamız gerekmektedir.",
+      "options": {
+        "A": "We should stop using fossil fuels to reduce the effects of global warming.",
+        "B": "In order to mitigate the effects of global warming, we must immediately stop using fossil fuels.",
+        "C": "Global warming effects can only be reduced if we quit fossil fuels right now.",
+        "D": "To decrease global warming, it is necessary that we reduce fossil fuel consumption.",
+        "E": "Stopping the use of fossil fuels is the only way to mitigate global warming."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "TRANS",
+      "question": "Many people believe that reading books is more beneficial for cognitive development than watching television.",
+      "options": {
+        "A": "Birçok insan kitap okumanın bilişsel gelişim için televizyon izlemekten daha faydalı olduğuna inanmaktadır.",
+        "B": "Kitap okumanın televizyondan daha yararlı olduğu birçok kişi tarafından bilinir.",
+        "C": "Televizyon izlemek yerine kitap okumak bilişsel gelişim için daha önemlidir.",
+        "D": "İnsanların çoğu bilişsel gelişim için kitap okumayı televizyona tercih eder.",
+        "E": "Bilişsel gelişim için kitap okumak, televizyon izlemekten daha faydalıdır diye düşünülür."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "TRANS",
+      "question": "Modern tıp, genetik araştırmalar sayesinde pek çok kalıtsal hastalığın tedavisinde devrim yaratmıştır.",
+      "options": {
+        "A": "Modern medicine has revolutionized the treatment of many hereditary diseases thanks to genetic research.",
+        "B": "Genetic research is the reason why modern medicine treats hereditary diseases.",
+        "C": "Many hereditary diseases are being treated by modern medicine and genetic research.",
+        "D": "Through genetic research, many diseases have been cured in modern medicine.",
+        "E": "The revolution in modern medicine is due to the research on hereditary diseases."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "TRANS",
+      "question": "Although the results of the experiment were inconclusive, they provided valuable insights for future studies.",
+      "options": {
+        "A": "Deneyin sonuçları yetersiz olsa da gelecekteki çalışmalar için değerli ipuçları sağladı.",
+        "B": "Deney sonuçsuz kalmasına rağmen, gelecek çalışmalar için değerli bilgiler sundu.",
+        "C": "Sonuçlar kesin olmasa da deney gelecek çalışmalar için çok önemliydi.",
+        "D": "Gelecekteki çalışmalar için değerli olan bu deneyin sonuçları henüz kesinleşmedi.",
+        "E": "Deneyin sonuçları yetersiz olduğu için gelecek çalışmalara ışık tutamadı."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "PARA",
+      "question": "It is possible that the flight was cancelled due to the heavy storm.",
+      "options": {
+        "A": "The flight must have been cancelled because of the storm.",
+        "B": "The flight might have been cancelled because of the heavy storm.",
+        "C": "The storm definitely caused the flight to be cancelled.",
+        "D": "They should have cancelled the flight because of the storm.",
+        "E": "The flight could not be cancelled despite the storm."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "PARA",
+      "question": "You are not allowed to enter the laboratory without wearing a protective suit.",
+      "options": {
+        "A": "You must wear a protective suit to enter the laboratory.",
+        "B": "You can enter the laboratory if you want to wear a suit.",
+        "C": "Wearing a protective suit is optional in the laboratory.",
+        "D": "You should not enter the laboratory even if you have a suit.",
+        "E": "Entering the laboratory is forbidden for everyone."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "PARA",
+      "question": "She was so exhausted that she fell asleep as soon as her head touched the pillow.",
+      "options": {
+        "A": "She fell asleep quickly because she was very tired.",
+        "B": "She was too tired to fall asleep immediately.",
+        "C": "As soon as she lay down, she felt very exhausted.",
+        "D": "The pillow was so soft that she fell asleep instantly.",
+        "E": "She was extremely tired, so she slept until morning."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "PARA",
+      "question": "Hardly had the meeting started when the electricity went out.",
+      "options": {
+        "A": "The electricity went out just before the meeting started.",
+        "B": "The meeting started after the electricity went out.",
+        "C": "The electricity went out as soon as the meeting began.",
+        "D": "The meeting was interrupted because of the power cut.",
+        "E": "When the electricity went out, the meeting was almost over."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "DIAL",
+      "question": "Mark: Have you seen the latest documentary on space exploration? \nJane: Not yet. Is it worth watching? \nMark: ---- \nJane: That sounds interesting. I'll check it out tonight.",
+      "options": {
+        "A": "I didn't like it much, actually.",
+        "B": "Absolutely! It provides some amazing footage of Mars.",
+        "C": "I haven't watched it either.",
+        "D": "It is quite long and boring.",
+        "E": "Space exploration is a waste of money."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "DIAL",
+      "question": "Teacher: Why haven't you finished your assignment yet? \nStudent: ---- \nTeacher: That is no excuse. You should have started earlier.",
+      "options": {
+        "A": "I finished it yesterday, sir.",
+        "B": "I found the topic very easy to research.",
+        "C": "I've been dealing with some personal issues lately.",
+        "D": "I really enjoyed doing the project.",
+        "E": "The library was closed for the holidays."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "DIAL",
+      "question": "Doctor: How have you been feeling since we changed your medication? \nPatient: Much better, but I still have some headaches in the morning. \nDoctor: ---- \nPatient: Okay, I will try that and let you know.",
+      "options": {
+        "A": "That's normal, don't worry about it.",
+        "B": "We might need to adjust the dosage slightly.",
+        "C": "I think you should stop taking the medicine.",
+        "D": "Headaches are not related to this drug.",
+        "E": "You should drink more coffee in the morning."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "DIAL",
+      "question": "Alice: Do you think the city's new recycling program will be successful? \nBob: I'm not sure. It depends on how much the residents participate. \nAlice: ---- \nBob: Exactly. Education is the key to making it work.",
+      "options": {
+        "A": "Most people don't care about the environment.",
+        "B": "The city needs to provide more recycling bins.",
+        "C": "Public awareness campaigns might help increase participation.",
+        "D": "Recycling is too expensive for the municipality.",
+        "E": "I prefer to throw everything in the same bin."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "PC",
+      "question": "Psychology is the scientific study of the mind and behavior. It is a multifaceted discipline and includes many sub-fields of study. ----. In addition, it is closely linked to other fields like biology and sociology.",
+      "options": {
+        "A": "Psychologists work in hospitals and schools",
+        "B": "It explores topics such as human development, sports, and health",
+        "C": "The history of psychology dates back to ancient Greece",
+        "D": "Mental health is an important part of overall well-being",
+        "E": "Many people find psychology to be a fascinating subject"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "PC",
+      "question": "Renewable energy sources are becoming increasingly popular. Solar and wind power are at the forefront of this movement. ----. However, the initial cost of installation remains a challenge for many households.",
+      "options": {
+        "A": "They provide a clean alternative to fossil fuels",
+        "B": "Fossil fuels are still the dominant source of energy",
+        "C": "Global warming is a serious threat to our planet",
+        "D": "Nuclear energy is also a low-carbon option",
+        "E": "Governments are providing subsidies for green energy"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "PC",
+      "question": "The Great Wall of China is one of the most impressive architectural feats in history. Stretching over 13,000 miles, it was built to protect the Chinese empire from invasions. ----. Today, it stands as a symbol of China's historical strength.",
+      "options": {
+        "A": "It was built using various materials like stone and brick",
+        "B": "Many tourists visit the wall every year",
+        "C": "The wall was not built all at once but over several centuries",
+        "D": "It is visible from space according to some myths",
+        "E": "China has a very long and rich history"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "PC",
+      "question": "Digital transformation is reshaping the way businesses operate. By integrating technology into all areas of a business, companies can improve efficiency. ----. This shift also requires a change in organizational culture.",
+      "options": {
+        "A": "It fundamentally changes how they deliver value to customers",
+        "B": "Many employees are afraid of losing their jobs to AI",
+        "C": "Cybersecurity is a major concern for digital businesses",
+        "D": "Technology is evolving faster than ever before",
+        "E": "Social media is a powerful tool for marketing"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "CM",
+      "question": "It was not until the 19th century that scientists began to understand the nature of bacteria.",
+      "options": {
+        "A": "Scientists understood bacteria well before the 19th century.",
+        "B": "The 19th century marked the beginning of scientific understanding regarding bacteria.",
+        "C": "Bacteria were only discovered during the 19th century.",
+        "D": "By the end of the 19th century, everything about bacteria was known.",
+        "E": "The nature of bacteria was a mystery until the 20th century."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "CM",
+      "question": "If I had known you were coming, I would have prepared a nice dinner.",
+      "options": {
+        "A": "I knew you were coming, so I prepared a dinner.",
+        "B": "I didn't prepare a nice dinner because I didn't know you were coming.",
+        "C": "I am preparing a dinner now because you have arrived.",
+        "D": "You should have told me you were coming for dinner.",
+        "E": "I didn't know you were coming, but I still prepared dinner."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "CM",
+      "question": "The more you practice, the more fluent you will become in a foreign language.",
+      "options": {
+        "A": "Practicing a foreign language is difficult for most people.",
+        "B": "Fluency in a foreign language depends on how much you practice.",
+        "C": "You should practice every day to speak a language.",
+        "D": "Fluency is not always guaranteed by practice alone.",
+        "E": "If you don't practice, you will never learn a language."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "IRR",
+      "question": "(I) Coffee is one of the most popular beverages in the world. (II) It is made from roasted coffee beans. (III) Brazil is the largest producer of coffee globally. (IV) Tea is also a very common drink in many cultures. (V) Many people rely on its caffeine content to stay alert.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "IRR",
+      "question": "(I) The internet has revolutionized the way we communicate. (II) Social media platforms allow us to connect with people instantly. (III) However, excessive use of technology can lead to health problems. (IV) Sending letters was the primary method of long-distance communication in the past. (V) High-speed internet is now available in most parts of the world.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "IRR",
+      "question": "(I) Mars is often called the Red Planet because of its iron-rich soil. (II) Scientists have been searching for signs of life on Mars for decades. (III) It has two small moons named Phobos and Deimos. (IV) Venus is actually the hottest planet in our solar system. (V) Recent missions have provided high-resolution images of its surface.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "READING",
+      "question": "According to the passage, the Renaissance is characterized by ----.",
+      "options": {
+        "A": "a decline in artistic and political interest",
+        "B": "the total rejection of classical philosophy",
+        "C": "a rebirth of culture and art after the Middle Ages",
+        "D": "the isolation of European commerce from the world",
+        "E": "the end of global exploration and discovery"
+      },
+      "correct": "C",
+      "passage_id": "READ_1"
+    },
+    {
+      "id": 36,
+      "section_id": "READING",
+      "question": "It can be inferred from the passage that during the Renaissance ----.",
+      "options": {
+        "A": "there was a lack of significant thinkers and authors",
+        "B": "Europe became more connected to other parts of the world",
+        "C": "science and art were considered less important than politics",
+        "D": "the gap between the Middle Ages and modern times widened",
+        "E": "classical literature was largely ignored"
+      },
+      "correct": "B",
+      "passage_id": "READ_1"
+    },
+    {
+      "id": 37,
+      "section_id": "READING",
+      "question": "What is the main role credited to the Renaissance in the passage?",
+      "options": {
+        "A": "Ending the influence of classical philosophy",
+        "B": "Preventing the start of modern-day civilization",
+        "C": "Acting as a bridge between the Middle Ages and the modern era",
+        "D": "Limiting the economic growth of European nations",
+        "E": "Focusing solely on religious developments"
+      },
+      "correct": "C",
+      "passage_id": "READ_1"
+    },
+    {
+      "id": 38,
+      "section_id": "READING",
+      "question": "The passage states that graphene is remarkable because ----.",
+      "options": {
+        "A": "it is much weaker than steel",
+        "B": "it consists of thick layers of carbon",
+        "C": "it is the thinnest material but extremely strong",
+        "D": "it cannot conduct electricity or heat",
+        "E": "it is only used in the graphite industry"
+      },
+      "correct": "C",
+      "passage_id": "READ_2"
+    },
+    {
+      "id": 39,
+      "section_id": "READING",
+      "question": "Which of the following is NOT mentioned as a property of graphene?",
+      "options": {
+        "A": "Electrical conductivity",
+        "B": "Light absorption",
+        "C": "Extreme strength",
+        "D": "Heat conduction",
+        "E": "High cost of production"
+      },
+      "correct": "E",
+      "passage_id": "READ_2"
+    },
+    {
+      "id": 40,
+      "section_id": "READING",
+      "question": "The author's attitude towards graphene can be described as ----.",
+      "options": {
+        "A": "skeptical",
+        "B": "indifferent",
+        "C": "enthusiastic",
+        "D": "critical",
+        "E": "cautious"
+      },
+      "correct": "C",
+      "passage_id": "READ_2"
+    }
+  ]
+}

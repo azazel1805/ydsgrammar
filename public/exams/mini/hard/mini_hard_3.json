@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Anthropocene defines a new geological epoch where human activity has become the (8)---- driver of environmental change. Scientists argue that the (9)---- of industrialization has led to irreversible shifts in climate patterns. (10)---- many nations have pledged to reduce carbon footprints, the results remain (11)----. It is imperative that we (12)---- innovative technologies to mitigate further ecological degradation."
+    },
+    {
+      "id": "reading_1",
+      "text": "The rapid expansion of artificial intelligence (AI) has sparked a global debate regarding its ethical implications. Proponents argue that AI can optimize resource management and medical diagnostics, potentially saving millions of lives. However, critics warn of the 'black box' problem, where the decision-making processes of neural networks remain opaque even to their creators. This lack of transparency poses a significant challenge for accountability in sectors like autonomous driving and criminal justice. Furthermore, the socio-economic impact of automation on the global workforce cannot be overlooked, as traditional labor roles are being phased out in favor of algorithmic efficiency."
+    },
+    {
+      "id": "reading_2",
+      "text": "The decline of the Mayan civilization remains one of history's most intriguing enigmas. Recent archaeological findings suggest that a combination of prolonged droughts and deforestation played a pivotal role in their collapse. The Maya relied heavily on sophisticated agricultural systems, yet these were highly vulnerable to climatic shifts. As the water supply dwindled, social cohesion began to erode, leading to internal warfare and the eventual abandonment of major urban centers. While some smaller communities persisted, the grandeur of the classic Maya period was never fully recovered."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The newly implemented fiscal policy was designed to ---- the effects of the recent economic recession.",
+      "options": {
+        "A": "aggravate",
+        "B": "alleviate",
+        "C": "contemplate",
+        "D": "reiterate",
+        "E": "undermine"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "The researcher provided a ---- explanation for the anomalous results, ensuring that every variable was accounted for.",
+      "options": {
+        "A": "perfunctory",
+        "B": "lucid",
+        "C": "negligible",
+        "D": "frivolous",
+        "E": "precarious"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "The CEO's decision to merge the two departments was met with ---- resistance from the senior management team.",
+      "options": {
+        "A": "formidable",
+        "B": "faint",
+        "C": "trivial",
+        "D": "intermittent",
+        "E": "scanty"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "----, the government has decided to increase funding for public transportation.",
+      "options": {
+        "A": "In spite of the budget deficit",
+        "B": "Because the roads are empty",
+        "C": "Unless people stop driving",
+        "D": "Since fossil fuels are becoming cheaper",
+        "E": "Although the project was cancelled"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "Archaeologists are still uncovering artifacts ----.",
+      "options": {
+        "A": "where the ancient city once stood",
+        "B": "which had been destroyed by fire",
+        "C": "as if they knew the history",
+        "D": "so that they can preserve them",
+        "E": "that provide insight into Neolithic life"
+      },
+      "correct": "E",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Hardly had the meeting started ----.",
+      "options": {
+        "A": "than the fire alarm went off",
+        "B": "when the power suddenly failed",
+        "C": "then the manager walked in",
+        "D": "as the participants were talking",
+        "E": "while the presentation was ready"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "While the internet has revolutionized communication, ----.",
+      "options": {
+        "A": "it has also facilitated the spread of misinformation",
+        "B": "it is a very fast way to send messages",
+        "C": "everyone should have access to it",
+        "D": "because it connects people globally",
+        "E": "it was invented several decades ago"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (8).",
+      "options": {
+        "A": "marginal",
+        "B": "dominant",
+        "C": "incidental",
+        "D": "subordinate",
+        "E": "unlikely"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (9).",
+      "options": {
+        "A": "inception",
+        "B": "suspension",
+        "C": "onset",
+        "D": "conclusion",
+        "E": "recession"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (10).",
+      "options": {
+        "A": "Therefore",
+        "B": "However",
+        "C": "Although",
+        "D": "Moreover",
+        "E": "Consequently"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (11).",
+      "options": {
+        "A": "sufficient",
+        "B": "overwhelming",
+        "C": "inadequate",
+        "D": "conclusive",
+        "E": "remarkable"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (12).",
+      "options": {
+        "A": "discard",
+        "B": "hinder",
+        "C": "harness",
+        "D": "evade",
+        "E": "neglect"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Küresel ısınmanın etkileri her geçen gün daha belirgin hale gelse de, birçok ülke hala somut adımlar atmaktan kaçınıyor.",
+      "options": {
+        "A": "Although the effects of global warming are becoming more evident every day, many countries still avoid taking concrete steps.",
+        "B": "Even if global warming is obvious, countries are not taking any steps at all.",
+        "C": "Since the effects of global warming are clear, many nations are finally taking action.",
+        "D": "Global warming is becoming evident, so countries must take concrete steps immediately.",
+        "E": "Despite the evidence of global warming, some countries are unable to take steps."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Scientific research indicates that a balanced diet and regular exercise are essential for a healthy life.",
+      "options": {
+        "A": "Bilimsel araştırmalar, dengeli bir diyet ve düzenli egzersizin sağlıklı bir yaşam için vazgeçilmez olduğunu göstermektedir.",
+        "B": "Dengeli diyet ve egzersiz yapmanın sağlıklı yaşamın sırrı olduğu bilimsel olarak kanıtlanmıştır.",
+        "C": "Sağlıklı bir yaşam için düzenli egzersiz ve dengeli beslenmenin gerekliliği araştırmalarla ortaya konmuştur.",
+        "D": "Bilim insanları sağlıklı yaşam için diyet ve egzersizin önemini vurgulamaktadır.",
+        "E": "Araştırmalara göre sağlıklı yaşamak isteyenler dengeli beslenmeli ve spor yapmalıdır."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Modern tıp, genetik mühendisliği sayesinde daha önce tedavi edilemez kabul edilen hastalıkları iyileştirebilmektedir.",
+      "options": {
+        "A": "Modern medicine can cure diseases previously considered incurable, thanks to genetic engineering.",
+        "B": "Genetic engineering helps modern medicine treat many diseases today.",
+        "C": "Incurable diseases are now being treated by modern medicine and genetics.",
+        "D": "Modern medicine has found cures for diseases through engineering.",
+        "E": "Thanks to genetics, modern medicine can now identify incurable diseases."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "The rise of digital banking has significantly reduced the need for physical bank branches.",
+      "options": {
+        "A": "Dijital bankacılığın yükselişi, fiziksel banka şubelerine olan ihtiyacı önemli ölçüde azaltmıştır.",
+        "B": "Fiziksel bankalar, dijital bankacılığın gelişmesiyle birlikte kapanmaya başlamıştır.",
+        "C": "Dijital bankacılık sayesinde fiziksel şubelere artık hiç ihtiyaç kalmamıştır.",
+        "D": "Banka şubelerinin azalmasının temel sebebi dijital bankacılık sistemleridir.",
+        "E": "Dijitalleşen bankacılık sektörü, fiziksel şubelerin önemini tamamen yitirmesine neden olmuştur."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "Few people realized the potential impact of the internet when it was first introduced.",
+      "options": {
+        "A": "The internet's future influence was underestimated by most people at its inception.",
+        "B": "Nobody knew that the internet would become so popular in the future.",
+        "C": "Only a few experts were able to predict how the internet would work.",
+        "D": "When the internet started, many people were aware of its power.",
+        "E": "The internet was introduced to people who did not understand technology."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "It is not until you travel abroad that you truly appreciate your own culture.",
+      "options": {
+        "A": "Traveling abroad is the only way to learn about different cultures.",
+        "B": "You only begin to value your own culture after you have visited other countries.",
+        "C": "Your culture is more important than the cultures of other nations.",
+        "D": "People who travel abroad often forget their own cultural roots.",
+        "E": "Appreciating your own culture makes traveling to other countries easier."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "Unless the weather improves, the outdoor concert will have to be postponed.",
+      "options": {
+        "A": "The concert will take place even if it rains tomorrow.",
+        "B": "If the weather does not get better, we will have to delay the concert.",
+        "C": "The outdoor concert was cancelled because of the bad weather.",
+        "D": "Better weather is needed for the concert to be held indoors.",
+        "E": "We are waiting for the weather to improve before we announce the concert."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Contrary to popular belief, camels do not store water in their humps.",
+      "options": {
+        "A": "Most people correctly believe that camels store fat in their humps.",
+        "B": "It is a common misconception that camels use their humps to store water.",
+        "C": "Camels need water even though they have humps on their backs.",
+        "D": "People used to think that camels did not need water at all.",
+        "E": "The humps of a camel are actually used for storing extra water for long trips."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Jane: I'm considering taking an online course in data science. \nMark: That's a great idea, but it requires a lot of self-discipline. \nJane: ---- \nMark: Exactly. Without a fixed schedule, it's easy to fall behind.",
+      "options": {
+        "A": "I'm not sure if I have enough time for it.",
+        "B": "I've always been good at managing my own time.",
+        "C": "Do you think the certificates are recognized by employers?",
+        "D": "I agree; you really need to be motivated to keep up with the lessons.",
+        "E": "Data science is a very difficult subject to master."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "Professor: The deadline for the research proposal is next Monday. \nStudent: Is there any chance for an extension? \nProfessor: ---- \nStudent: Thank you, I'll make sure to submit it by then.",
+      "options": {
+        "A": "No, I'm afraid the system closes on Sunday night.",
+        "B": "I can give you until Wednesday, but no later.",
+        "C": "Why didn't you start earlier?",
+        "D": "The syllabus clearly states the deadlines.",
+        "E": "Everyone else has already finished their work."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Alice: Have you seen the new exhibition at the Modern Art Museum? \nBob: Not yet. I heard it's quite controversial. \nAlice: ---- \nBob: In that case, I should definitely go and see it for myself.",
+      "options": {
+        "A": "I didn't like it much, to be honest.",
+        "B": "Yes, it challenges traditional notions of beauty.",
+        "C": "It's closed on Mondays and Tuesdays.",
+        "D": "The museum is located in the city center.",
+        "E": "I think you would find it very boring."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "Interviewer: Why do you want to work for our company? \nCandidate: I've always admired your commitment to sustainability. \nInterviewer: ---- \nCandidate: I believe my background in environmental law would be a great asset to your team.",
+      "options": {
+        "A": "How much salary do you expect to receive?",
+        "B": "How do you think you can contribute to our goals?",
+        "C": "What are your weaknesses as a professional?",
+        "D": "Where did you hear about this job opening?",
+        "E": "Can you work under pressure and meet deadlines?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Renewable energy sources, such as solar and wind, are becoming increasingly cost-effective. (----). Furthermore, many governments are providing incentives for businesses to adopt green energy. As a result, the transition away from fossil fuels is accelerating globally.",
+      "options": {
+        "A": "Fossil fuels are still the primary source of energy in many regions.",
+        "B": "Technological advancements have significantly lowered the production costs of solar panels.",
+        "C": "Nuclear energy remains a controversial alternative to coal.",
+        "D": "Energy consumption is expected to double in the next twenty years.",
+        "E": "Electric vehicles are also gaining popularity among consumers."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "The concept of emotional intelligence (EI) has gained traction in the corporate world. (----). Leaders with high EI are better equipped to handle stress and foster a collaborative environment. Consequently, many companies now prioritize EI over technical skills during the hiring process.",
+      "options": {
+        "A": "It refers to the ability to recognize and manage one's own emotions and those of others.",
+        "B": "Technical skills are still necessary for most engineering jobs.",
+        "C": "Many employees feel that they are overworked and underpaid.",
+        "D": "Emotional intelligence can be measured using standardized tests.",
+        "E": "Some psychologists argue that EI is more important than IQ."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "Sustainable urban planning is essential for the future of megacities. (----). For instance, green roofs and urban forests can help mitigate the heat island effect. Additionally, efficient public transport reduces carbon emissions and improves the quality of life for residents.",
+      "options": {
+        "A": "Cities are becoming more crowded every year.",
+        "B": "Many people are moving from rural areas to urban centers.",
+        "C": "It involves designing cities that are environmentally friendly and socially inclusive.",
+        "D": "Traffic congestion is a major problem in modern cities.",
+        "E": "Building more skyscrapers is not the solution to housing shortages."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "The study of linguistics explores the structure and evolution of human languages. (----). By analyzing these patterns, linguists can trace the historical migrations of different populations. This research provides valuable insights into the shared heritage of humanity.",
+      "options": {
+        "A": "Learning a second language can improve cognitive functions.",
+        "B": "It examines how sounds, words, and sentences are formed across different cultures.",
+        "C": "English has become the global lingua franca of science and business.",
+        "D": "Many languages are currently at risk of extinction.",
+        "E": "Grammar rules vary significantly from one language to another."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "The professor's lecture was so convoluted that most students failed to grasp the core arguments.",
+      "options": {
+        "A": "The students did not understand the main points because the lecture was too complex.",
+        "B": "The lecture was very interesting, but the students were not paying attention.",
+        "C": "The professor explained the core arguments clearly, but the students were confused.",
+        "D": "Most students failed the exam because the lecture was not related to the topic.",
+        "E": "The lecture was short, yet it covered all the important details of the subject."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "Hardly any students showed up for the seminar due to the heavy snowfall.",
+      "options": {
+        "A": "Only a few students attended the seminar because it was snowing heavily.",
+        "B": "Many students arrived late for the seminar because of the snow.",
+        "C": "The seminar was cancelled because no students could make it through the snow.",
+        "D": "The snow did not stop the students from attending the seminar.",
+        "E": "Because of the heavy snowfall, the seminar was moved to another day."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "She wouldn't have passed the exam if she hadn't studied consistently throughout the semester.",
+      "options": {
+        "A": "She passed the exam although she didn't study much during the semester.",
+        "B": "If she had studied more, she would have received a better grade.",
+        "C": "She failed the exam because she only started studying at the last minute.",
+        "D": "Her success in the exam was the result of her regular study habits.",
+        "E": "She studied hard for the exam, but she still couldn't pass it."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant",
+      "question": "(I) The Renaissance was a period of great cultural and artistic achievement in Europe. (II) It began in Italy in the 14th century and spread to the rest of the continent. (III) Many famous artists, such as Leonardo da Vinci and Michelangelo, emerged during this time. (IV) Modern technology has changed the way we appreciate classical art. (V) The movement emphasized humanism and the study of classical antiquity.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant",
+      "question": "(I) Vitamin D is essential for maintaining healthy bones and teeth. (II) It helps the body absorb calcium from the diet. (III) Most people get enough Vitamin D from sunlight exposure. (IV) Excessive intake of sugar can lead to various health problems like obesity. (V) Deficiency in this vitamin can result in conditions like rickets in children.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant",
+      "question": "(I) Space exploration has led to numerous technological breakthroughs. (II) Satellites are now used for communication, weather forecasting, and navigation. (III) The cost of launching a rocket into space has decreased significantly in recent years. (IV) Astronomers have discovered thousands of exoplanets in our galaxy. (V) NASA's primary goal in the 1960s was to land a man on the moon.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading",
+      "question": "According to the passage, what is the 'black box' problem in AI?",
+      "options": {
+        "A": "The high cost of developing neural networks.",
+        "B": "The difficulty in understanding how AI reaches its decisions.",
+        "C": "The physical size of the hardware required for AI.",
+        "D": "The ethical concerns regarding robot rights.",
+        "E": "The lack of data available for training algorithms."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading",
+      "question": "The author suggests that the use of AI in autonomous driving ----.",
+      "options": {
+        "A": "is already perfectly safe and reliable",
+        "B": "will eliminate all traffic accidents",
+        "C": "raises concerns about who is responsible for its actions",
+        "D": "is more transparent than in medical diagnostics",
+        "E": "is mainly hindered by socio-economic factors"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading",
+      "question": "What can be inferred from the passage regarding the global workforce?",
+      "options": {
+        "A": "Automation will create more jobs than it destroys.",
+        "B": "Traditional roles are safe because AI cannot perform manual labor.",
+        "C": "The shift toward efficiency is threatening conventional employment.",
+        "D": "Only workers in the technology sector will be affected by AI.",
+        "E": "AI will primarily benefit the global workforce by reducing hours."
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading",
+      "question": "Based on the passage, what were the contributing factors to the Maya's collapse?",
+      "options": {
+        "A": "Overpopulation and foreign invasions.",
+        "B": "A volcanic eruption and subsequent famine.",
+        "C": "Climatic changes and environmental degradation.",
+        "D": "The loss of their trade routes to the north.",
+        "E": "A sudden plague that wiped out the urban centers."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading",
+      "question": "The passage implies that the Maya's social structure ----.",
+      "options": {
+        "A": "was strengthened by the prolonged droughts",
+        "B": "remained intact despite the environmental challenges",
+        "C": "broke down as resources became scarce",
+        "D": "was primarily based on military conquest",
+        "E": "was more resilient in large cities than in small communities"
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading",
+      "question": "Which of the following is TRUE about the Maya civilization according to the text?",
+      "options": {
+        "A": "They had no knowledge of irrigation or agriculture.",
+        "B": "The classic period's glory was restored by smaller communities.",
+        "C": "Environmental factors had no impact on their urban centers.",
+        "D": "Their agricultural systems were not robust enough to withstand drought.",
+        "E": "Archaeologists have completely solved the mystery of their decline."
+      },
+      "correct": "D",
+      "passage_id": "reading_2"
+    }
+  ]
+}

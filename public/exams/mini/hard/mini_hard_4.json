@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocab",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sent_comp",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "para_comp",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "close_mean",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Neolithic Revolution, the critical transition from foraging to farming, remains a subject of intense academic debate. While early theories suggested it was a sudden (8) ---- in human history, more recent archaeological evidence indicates a much more (9) ---- process. This shift (10) ---- not only changes in diet but also profound transformations in social structure. (11) ----, the move toward sedentary life allowed for the accumulation of private property, leading to the (12) ---- of hierarchical social systems."
+    },
+    {
+      "id": "read_1",
+      "text": "The advent of CRISPR-Cas9 technology has revolutionized genetic engineering, providing a tool for precise genomic modifications. This mechanism, derived from a natural defense system in bacteria, allows researchers to 'cut and paste' DNA sequences with unprecedented accuracy. Despite its potential to cure genetic disorders, the ethical implications remain contentious. Critics argue that the ability to edit the human germline could lead to 'designer babies,' widening the gap between socioeconomic classes. Furthermore, the possibility of unintended 'off-target' effects poses significant risks to biological integrity. Thus, the international scientific community continues to grapple with establishing a regulatory framework that balances innovation with bioethical considerations."
+    },
+    {
+      "id": "read_2",
+      "text": "The Industrial Revolution in the 19th century was not merely a period of technological advancement but a fundamental reconfiguration of human existence. As agrarian societies transformed into industrial powerhouses, the urban landscape underwent a radical metamorphosis. Rapid urbanization led to the emergence of sprawling metropolises, often characterized by overcrowded tenements and poor sanitation. However, these cities also became crucibles of intellectual and cultural exchange, fostering movements like Romanticism and Realism. The tension between the harsh realities of factory life and the idealistic visions of reformists defined the social discourse of the era. Understanding this duality is essential for analyzing the long-term impact of industrialization on modern societal structures."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocab",
+      "question": "The widespread adoption of renewable energy sources is ---- for mitigating the catastrophic effects of climate change.",
+      "options": {
+        "A": "redundant",
+        "B": "indispensable",
+        "C": "negligible",
+        "D": "transient",
+        "E": "ambiguous"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocab",
+      "question": "The detective was able to ---- the suspect's involvement in the crime after analyzing the digital footprints left on the encrypted server.",
+      "options": {
+        "A": "ascertain",
+        "B": "disregard",
+        "C": "conceal",
+        "D": "alleviate",
+        "E": "obstruct"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocab",
+      "question": "Scientific progress often occurs through the ---- of existing theories when new, contradictory evidence comes to light.",
+      "options": {
+        "A": "reinforcement",
+        "B": "authentication",
+        "C": "refutation",
+        "D": "integration",
+        "E": "validation"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sent_comp",
+      "question": "While the internet has democratized access to information, ----.",
+      "options": {
+        "A": "it has also facilitated the rapid spread of misinformation",
+        "B": "more people are able to learn new skills online than ever before",
+        "C": "educational institutions have embraced digital learning platforms",
+        "D": "information has become a commodity in the modern economy",
+        "E": "the cost of data has decreased significantly in recent years"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sent_comp",
+      "question": "----, the government has decided to implement stricter environmental regulations on industrial emissions.",
+      "options": {
+        "A": "Since the economy is currently experiencing a period of growth",
+        "B": "Unless there is a significant decrease in global temperatures",
+        "C": "In view of the alarming increase in air pollution levels",
+        "D": "Although the local residents are satisfied with current conditions",
+        "E": "Because industrial companies have requested more subsidies"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sent_comp",
+      "question": "It is widely believed that artificial intelligence will fundamentally change the job market ----.",
+      "options": {
+        "A": "as if it were a temporary trend with no lasting impact",
+        "B": "by automating routine tasks and creating new roles",
+        "C": "because most employees are resistant to technological change",
+        "D": "in spite of the lack of investment in research and development",
+        "E": "until the technology becomes too expensive to maintain"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sent_comp",
+      "question": "Hardly had the new law been enacted ----.",
+      "options": {
+        "A": "than several organizations started to protest against it",
+        "B": "when the public realized its potential benefits",
+        "C": "while the politicians were celebrating its passage",
+        "D": "after the economic crisis had already begun",
+        "E": "before it was replaced by a more comprehensive version"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze",
+      "question": "Choose the best option for blank 8.",
+      "options": {
+        "A": "upheaval",
+        "B": "stagnation",
+        "C": "withdrawal",
+        "D": "regression",
+        "E": "coincidence"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze",
+      "question": "Choose the best option for blank 9.",
+      "options": {
+        "A": "sporadic",
+        "B": "instantaneous",
+        "C": "gradual",
+        "D": "random",
+        "E": "abrupt"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze",
+      "question": "Choose the best option for blank 10.",
+      "options": {
+        "A": "averted",
+        "B": "entailed",
+        "C": "postponed",
+        "D": "deteriorated",
+        "E": "counteracted"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze",
+      "question": "Choose the best option for blank 11.",
+      "options": {
+        "A": "Nevertheless",
+        "B": "Similarly",
+        "C": "Otherwise",
+        "D": "Moreover",
+        "E": "On the contrary"
+      },
+      "correct": "D",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze",
+      "question": "Choose the best option for blank 12.",
+      "options": {
+        "A": "emergence",
+        "B": "abolition",
+        "C": "diminution",
+        "D": "exclusion",
+        "E": "restoration"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Yapay zeka sistemleri, veri analizinde insan yeteneklerini aşsa da, etik yargılama gerektiren konularda hala yetersiz kalmaktadır.",
+      "options": {
+        "A": "AI systems surpass human capabilities in data analysis but remain insufficient in matters requiring ethical judgment.",
+        "B": "Even if AI systems are better than humans at data analysis, they never succeed in ethical judgment.",
+        "C": "While AI systems excel at data analysis, they are not yet capable of making any ethical decisions.",
+        "D": "AI systems are better than humans in data analysis; however, ethical judgment is still a human domain.",
+        "E": "Although AI systems analyze data faster than humans, ethical judgment remains a problem for them."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Antik Yunan filozofları, evrenin temel yapısını anlamak için gözlemden ziyade mantıksal akıl yürütmeye güvenmişlerdir.",
+      "options": {
+        "A": "Ancient Greek philosophers trusted logical reasoning more than observation to understand the basic structure of the universe.",
+        "B": "To understand the universe, ancient Greek philosophers used observation instead of logical reasoning.",
+        "C": "The basic structure of the universe was understood by ancient Greek philosophers through observation and logic.",
+        "D": "Ancient Greek philosophers relied on logical reasoning rather than observation to understand the fundamental structure of the universe.",
+        "E": "Logical reasoning was the only way for ancient Greek philosophers to understand the structure of the universe."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Despite the harsh climatic conditions, several species of plants have managed to adapt to the desert environment.",
+      "options": {
+        "A": "Sert iklim koşulları sebebiyle, birkaç bitki türü çöl ortamına uyum sağlamak zorunda kalmıştır.",
+        "B": "Sert iklim koşullarına rağmen, birkaç bitki türü çöl ortamına uyum sağlamayı başarmıştır.",
+        "C": "Çöl ortamındaki sert iklim koşulları, bitki türlerinin uyum sağlamasını zorlaştırmaktadır.",
+        "D": "Bazı bitki türleri çöl ortamına uyum sağlasa da, sert iklim koşulları hala bir sorundur.",
+        "E": "Birkaç bitki türünün çöl ortamına uyum sağlaması, sert iklim koşullarına bağlıdır."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "The discovery of gravity not only changed our understanding of physics but also paved the way for modern space exploration.",
+      "options": {
+        "A": "Yerçekiminin keşfi sadece fizik anlayışımızı değiştirmekle kalmadı, aynı zamanda modern uzay keşfinin yolunu açtı.",
+        "B": "Yerçekimi keşfedildiğinde fizik anlayışımız değişti ve modern uzay araştırmaları başladı.",
+        "C": "Modern uzay keşfi, yerçekiminin keşfi ve fizik anlayışımızın değişmesi sayesinde mümkün olmuştur.",
+        "D": "Yerçekimi keşfedilmeseydi, ne fizik anlayışımız değişirdi ne de uzay keşfi mümkün olurdu.",
+        "E": "Fizik anlayışımızı değiştiren yerçekimi keşfi, modern uzay keşfinin temelini oluşturmuştur."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "It is not until the end of the 19th century that the concept of psychology as a separate scientific discipline began to emerge.",
+      "options": {
+        "A": "Psychology emerged as a distinct science only towards the close of the 19th century.",
+        "B": "The 19th century saw the end of psychology as a scientific discipline.",
+        "C": "Before the 19th century, psychology was already considered a separate science.",
+        "D": "By the end of the 19th century, psychology had already become a very popular field.",
+        "E": "Psychology and other sciences began to emerge simultaneously in the late 19th century."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "Had the researchers known about the potential side effects, they would have stopped the trial immediately.",
+      "options": {
+        "A": "The researchers stopped the trial because they found out about the side effects.",
+        "B": "The trial continued because the researchers were unaware of the possible side effects.",
+        "C": "Although they knew the side effects, researchers decided to continue the trial.",
+        "D": "The side effects were so severe that the trial had to be stopped by the researchers.",
+        "E": "The researchers didn't know the side effects, so they couldn't stop the trial."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "Success in academic writing depends more on logical organization than on the complexity of vocabulary.",
+      "options": {
+        "A": "Complex vocabulary is more important than logical organization in academic writing.",
+        "B": "Academic writing requires both complex vocabulary and logical organization to be successful.",
+        "C": "Logical organization is a more critical factor for successful academic writing than using complex words.",
+        "D": "If you use complex vocabulary, logical organization becomes less important in writing.",
+        "E": "Neither logical organization nor complex vocabulary guarantees success in academic writing."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Contrary to popular belief, the Great Wall of China is not visible from the moon with the naked eye.",
+      "options": {
+        "A": "Many people believe the Great Wall is visible from the moon, but this is not true.",
+        "B": "It is a popular fact that you can see the Great Wall of China from outer space.",
+        "C": "The Great Wall of China can only be seen from the moon using special equipment.",
+        "D": "The belief that the Great Wall is visible from the moon is shared by only a few people.",
+        "E": "You can see the Great Wall from the moon, which is a common but mistaken belief."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Student: Professor, I'm struggling with the concept of quantum entanglement. \n Professor: It is indeed counterintuitive. Think of it as two particles being linked regardless of distance. \n Student: ---- \n Professor: Exactly. A change in the state of one instantly influences the other.",
+      "options": {
+        "A": "So, they communicate through radio waves?",
+        "B": "Does that mean what happens to one affects the other immediately?",
+        "C": "Why did Einstein call it 'spooky action at a distance'?",
+        "D": "Is it possible to use this for faster-than-light travel?",
+        "E": "I think I need to read more about classical physics first."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "Journalist: Do you think urban farming can truly solve global food insecurity? \n Expert: Not entirely, but it is a significant part of the solution. \n Journalist: ---- \n Expert: For instance, it reduces the carbon footprint associated with transporting food from rural areas.",
+      "options": {
+        "A": "What are the main disadvantages of this method?",
+        "B": "How much does it cost to start an urban farm?",
+        "C": "Can you elaborate on how it contributes to sustainability?",
+        "D": "Is it better than traditional farming in terms of yield?",
+        "E": "Who is responsible for managing these urban spaces?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Alice: I’ve been reading about the impact of social media on mental health. \n Bob: It seems like a double-edged sword, doesn’t it? \n Alice: ---- \n Bob: True, but the constant comparison with others can lead to anxiety and depression.",
+      "options": {
+        "A": "I agree, it's completely useless for young people.",
+        "B": "What do you mean by double-edged sword?",
+        "C": "On one hand, it keeps people connected and informed.",
+        "D": "I think social media should be banned for children.",
+        "E": "Most researchers don't see any link between them."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "Manager: We need to increase our productivity without hiring new staff. \n Consultant: Have you considered implementing more automated workflows? \n Manager: ---- \n Consultant: Initially, yes, but the long-term savings and efficiency gains are substantial.",
+      "options": {
+        "A": "But wouldn't that be very expensive to set up?",
+        "B": "Our employees are already very efficient with their tasks.",
+        "C": "Will that require us to fire some of our current employees?",
+        "D": "How long will it take to train the staff on new software?",
+        "E": "Is there any other way to achieve our goals?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "para_comp",
+      "question": "The concept of 'soft power' refers to a country's ability to influence others through attraction rather than coercion. ----. This includes a nation's culture, political ideals, and policies. When these are seen as legitimate and moral in the eyes of others, a country's soft power is enhanced.",
+      "options": {
+        "A": "Hard power, by contrast, relies on military and economic strength.",
+        "B": "It is often more difficult to measure than traditional military power.",
+        "C": "Joseph Nye, who coined the term, argues it is vital for modern diplomacy.",
+        "D": "It arises from the attractiveness of a country's culture and political values.",
+        "E": "Many nations today are investing heavily in their military capabilities."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "para_comp",
+      "question": "Ocean acidification is a direct consequence of increased carbon dioxide levels in the atmosphere. ----. This process lowers the pH of the water, making it more acidic. This acidity makes it difficult for marine organisms like corals and shellfish to build their shells and skeletons.",
+      "options": {
+        "A": "Marine life is highly sensitive to changes in water temperature.",
+        "B": "As the oceans absorb more CO2, a chemical reaction occurs.",
+        "C": "Global warming also contributes to the melting of polar ice caps.",
+        "D": "The fishing industry is severely affected by these ecological changes.",
+        "E": "Reducing carbon emissions is the only way to save the oceans."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "para_comp",
+      "question": "In the field of linguistics, the Sapir-Whorf hypothesis suggests that the language one speaks influences their perception of the world. ----. For instance, if a language has multiple words for different shades of blue, its speakers may be more adept at distinguishing those colors than speakers of a language with only one word for blue.",
+      "options": {
+        "A": "Language is a tool for communication between different cultures.",
+        "B": "This idea remains controversial among modern cognitive scientists.",
+        "C": "Essentially, the structure of a language shapes the speaker's thoughts.",
+        "D": "Many people learn second languages to expand their career opportunities.",
+        "E": "Grammar and syntax are the building blocks of any linguistic system."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "para_comp",
+      "question": "Bioarchaeology involves the study of human remains from archaeological sites to understand past populations. ----. By analyzing bones and teeth, researchers can reconstruct ancient diets, identify diseases, and even track migratory patterns. This provides a more nuanced view of history than written records alone.",
+      "options": {
+        "A": "It combines methods from archaeology and biological anthropology.",
+        "B": "Carbon dating is the most common method used to date artifacts.",
+        "C": "Museums often display skeletons to educate the general public.",
+        "D": "The study of ancient tools is also a branch of archaeology.",
+        "E": "Genetic testing has become cheaper and more accessible recently."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "close_mean",
+      "question": "The extinction of the dinosaurs was likely caused by a massive asteroid impact that triggered global climate changes.",
+      "options": {
+        "A": "Dinosaurs probably died out because a huge asteroid hit the Earth, causing the world's climate to change.",
+        "B": "A massive asteroid impact was the only reason why dinosaurs became extinct in the past.",
+        "C": "Climate change caused by an asteroid impact was not the main reason for dinosaur extinction.",
+        "D": "If an asteroid hadn't hit the Earth, dinosaurs would not have gone extinct due to climate change.",
+        "E": "The global climate changed after the dinosaurs went extinct because of an asteroid impact."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "close_mean",
+      "question": "Rarely do we encounter a scientific discovery that completely shifts our perspective on the universe.",
+      "options": {
+        "A": "Scientific discoveries often change the way we look at the universe.",
+        "B": "It is quite common to find new scientific theories that change our worldview.",
+        "C": "We seldom come across a scientific finding that totally changes how we see the universe.",
+        "D": "Most scientific discoveries have no real impact on our perspective of the world.",
+        "E": "Whenever a discovery is made, our perspective on the universe changes entirely."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "close_mean",
+      "question": "Despite being an ancient city, Rome has a very efficient and modern public transportation system.",
+      "options": {
+        "A": "Rome's public transport system is modern because the city itself is not very old.",
+        "B": "Although Rome is a city with a long history, its public transport is effective and up-to-date.",
+        "C": "Since Rome is an ancient city, its public transportation system is quite outdated.",
+        "D": "The efficiency of Rome's transport system is due to its ancient architectural layout.",
+        "E": "Rome has an old public transport system, but it is surprisingly very efficient."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant",
+      "question": "(I) The Renaissance was a period of great cultural and intellectual achievement in Europe. (II) It marked the transition from the Middle Ages to modernity. (III) Many artists and thinkers of this time were inspired by classical Greek and Roman culture. (IV) Modern technology has changed the way we study history today. (V) Leonardo da Vinci and Michelangelo are among the most famous figures of this era.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant",
+      "question": "(I) Solar panels convert sunlight directly into electricity using the photovoltaic effect. (II) This technology has become significantly more affordable in recent years. (III) Many homeowners are now installing solar systems to reduce their energy bills. (IV) Coal remains one of the most widely used sources of energy globally. (V) Governments are also offering incentives to encourage the adoption of solar energy.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant",
+      "question": "(I) Effective time management is crucial for academic success. (II) Students who plan their schedules tend to perform better in exams. (III) Procrastination, on the other hand, often leads to increased stress and lower grades. (IV) University libraries offer a wide range of digital and print resources. (V) Setting clear goals and priorities can help students manage their workload more efficiently.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading",
+      "question": "According to the passage, the CRISPR-Cas9 technology ----.",
+      "options": {
+        "A": "was invented by scientists from scratch in a laboratory",
+        "B": "is primarily used to track socioeconomic differences",
+        "C": "originates from a natural immunity mechanism in bacteria",
+        "D": "is currently only used to create 'designer babies'",
+        "E": "has no risks regarding biological integrity"
+      },
+      "correct": "C",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading",
+      "question": "What is one of the ethical concerns mentioned regarding human germline editing?",
+      "options": {
+        "A": "It could make genetic engineering technologies too expensive for anyone.",
+        "B": "It might exacerbate existing social and economic inequalities.",
+        "C": "It is not effective enough to cure any genetic disorders.",
+        "D": "It was developed from bacteria rather than human cells.",
+        "E": "The international community refuses to discuss regulatory frameworks."
+      },
+      "correct": "B",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading",
+      "question": "The passage implies that for CRISPR-Cas9 to be used safely, ----.",
+      "options": {
+        "A": "socioeconomic classes must be completely abolished",
+        "B": "off-target effects should be completely ignored by researchers",
+        "C": "a balance between progress and ethical rules must be established",
+        "D": "scientists should stop using natural defense systems from bacteria",
+        "E": "innovation must be prioritized over all bioethical considerations"
+      },
+      "correct": "C",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading",
+      "question": "The author of the passage states that the Industrial Revolution ----.",
+      "options": {
+        "A": "was limited only to advancements in technology and machinery",
+        "B": "resulted in a decline in intellectual and cultural activities",
+        "C": "completely changed the fundamental way people lived their lives",
+        "D": "improved sanitation and housing in urban areas immediately",
+        "E": "prevented the emergence of movements like Romanticism"
+      },
+      "correct": "C",
+      "passage_id": "read_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading",
+      "question": "Which of the following was a negative consequence of rapid urbanization during this period?",
+      "options": {
+        "A": "The emergence of intellectual and cultural exchange",
+        "B": "The development of sprawling metropolises",
+        "C": "Idealistic visions of reformists",
+        "D": "Overcrowded housing and poor sanitary conditions",
+        "E": "The rise of Realism and Romanticism in arts"
+      },
+      "correct": "D",
+      "passage_id": "read_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading",
+      "question": "What does the 'duality' mentioned in the final sentence refer to?",
+      "options": {
+        "A": "The difference between the 18th and 19th centuries",
+        "B": "The conflict between factory workers and factory owners",
+        "C": "The contrast between urban and rural living conditions",
+        "D": "The co-existence of harsh life conditions and intellectual/cultural growth",
+        "E": "The transition from agrarian societies to industrial powerhouses"
+      },
+      "correct": "D",
+      "passage_id": "read_2"
+    }
+  ]
+}

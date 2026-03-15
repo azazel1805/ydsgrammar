@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "voc",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sc",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "ct",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "tr",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "para",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dc",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "pc",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "cm",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "is",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "rc",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Industrial Revolution marked a major turning point in history. (8) ---- almost every aspect of daily life was influenced in some way. In particular, average income and population began to exhibit (9) ---- unprecedented sustained growth. Some economists say that the major impact (10) ---- the Industrial Revolution was that the standard of living for the general population began to increase consistently (11) ---- the first time in history, although others have said that it did not begin to (12) ---- improve until the late 19th century."
+    },
+    {
+      "id": "read_1",
+      "text": "Renewable energy resources, such as solar and wind power, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, these sources do not emit greenhouse gases during operation. However, the transition is not without challenges. The intermittent nature of solar and wind energy requires advanced storage solutions like large-scale battery systems. Moreover, the initial cost of infrastructure can be high, though prices have dropped significantly over the last decade. Many countries are now setting ambitious targets to reach net-zero emissions by 2050."
+    },
+    {
+      "id": "read_2",
+      "text": "The human brain is an incredibly complex organ that serves as the center of the nervous system. While it only accounts for about 2 percent of a person's body weight, it consumes approximately 20 percent of the body's energy. Recent studies in neuroscience have highlighted the brain's plasticity, which is its ability to reorganize itself by forming new neural connections throughout life. This discovery has changed the way we understand recovery from brain injuries and the process of learning new skills in adulthood."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "voc",
+      "question": "The development of sustainable energy sources is ---- for reducing our carbon footprint.",
+      "options": {
+        "A": "redundant",
+        "B": "crucial",
+        "C": "negligible",
+        "D": "vague",
+        "E": "hostile"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "voc",
+      "question": "The government has decided to ---- new regulations to protect endangered species.",
+      "options": {
+        "A": "implement",
+        "B": "abolish",
+        "C": "ignore",
+        "D": "contaminate",
+        "E": "withdraw"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "voc",
+      "question": "Scientists were surprised by the ---- of the virus to the new vaccine.",
+      "options": {
+        "A": "similarity",
+        "B": "resistance",
+        "C": "compliance",
+        "D": "affection",
+        "E": "surrender"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sc",
+      "question": "While the internet has made information more accessible, ----.",
+      "options": {
+        "A": "it has also led to the spread of misinformation",
+        "B": "everyone has a smartphone nowadays",
+        "C": "libraries are becoming more popular than ever",
+        "D": "it was invented several decades ago",
+        "E": "because digital literacy is very important"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sc",
+      "question": "Although the experiment yielded interesting results, ----.",
+      "options": {
+        "A": "the scientists were very happy with the outcome",
+        "B": "it was funded by a private organization",
+        "C": "it failed to provide a definitive answer to the research question",
+        "D": "the laboratory was equipped with the latest technology",
+        "E": "they decided to publish it in a prestigious journal"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sc",
+      "question": "----, global temperatures continue to rise at an alarming rate.",
+      "options": {
+        "A": "Because people are using more renewable energy",
+        "B": "Despite international efforts to reduce carbon emissions",
+        "C": "Since the industrial revolution began",
+        "D": "Whenever a new climate policy is introduced",
+        "E": "As long as we protect the rainforests"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sc",
+      "question": "Children who grow up in bilingual households ----.",
+      "options": {
+        "A": "often find it difficult to speak any language",
+        "B": "usually develop better cognitive flexibility",
+        "C": "is likely to travel more in the future",
+        "D": "has been studied by many psychologists",
+        "E": "would have preferred to learn only one language"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "ct",
+      "question": "Choose the best option for blank 8.",
+      "options": {
+        "A": "However",
+        "B": "Therefore",
+        "C": "Otherwise",
+        "D": "Instead",
+        "E": "Moreover"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "ct",
+      "question": "Choose the best option for blank 9.",
+      "options": {
+        "A": "an",
+        "B": "a",
+        "C": "the",
+        "D": "any",
+        "E": "some"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "ct",
+      "question": "Choose the best option for blank 10.",
+      "options": {
+        "A": "with",
+        "B": "by",
+        "C": "of",
+        "D": "at",
+        "E": "to"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "ct",
+      "question": "Choose the best option for blank 11.",
+      "options": {
+        "A": "for",
+        "B": "since",
+        "C": "during",
+        "D": "within",
+        "E": "until"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "ct",
+      "question": "Choose the best option for blank 12.",
+      "options": {
+        "A": "meaningfully",
+        "B": "meaningful",
+        "C": "meaning",
+        "D": "meant",
+        "E": "mean"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "tr",
+      "question": "Son araştırmalar, düzenli egzersizin sadece fiziksel sağlığı değil, aynı zamanda ruh sağlığını da iyileştirdiğini göstermektedir.",
+      "options": {
+        "A": "Recent research shows that regular exercise improves not only physical health but also mental health.",
+        "B": "Physical health is as important as mental health according to recent research on exercise.",
+        "C": "Regular exercise is shown by research to be good for physical and mental health.",
+        "D": "Research recently proved that exercising regularly improves mental health more than physical health.",
+        "E": "Not only physical but also mental health is improved by exercise in recent studies."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "tr",
+      "question": "Teknoloji ilerledikçe, yapay zeka günlük hayatımızın ayrılmaz bir parçası haline geliyor.",
+      "options": {
+        "A": "Artificial intelligence is part of our life because technology advances.",
+        "B": "As technology advances, artificial intelligence is becoming an integral part of our daily lives.",
+        "C": "Our daily lives are changed by artificial intelligence and technology.",
+        "D": "Technology and artificial intelligence are becoming part of our daily lives.",
+        "E": "When technology advances, artificial intelligence will be an integral part of life."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "tr",
+      "question": "Many scientists believe that the discovery of liquid water on Mars is a significant step toward finding extraterrestrial life.",
+      "options": {
+        "A": "Birçok bilim insanı, Mars'ta sıvı suyun keşfinin dünya dışı yaşamı bulma yolunda önemli bir adım olduğuna inanmaktadır.",
+        "B": "Mars'ta su bulunması, bilim insanlarına göre dünya dışı yaşamın kanıtıdır.",
+        "C": "Dünya dışı yaşamı bulmak için Mars'ta sıvı su keşfeden bilim insanları vardır.",
+        "D": "Bilim insanlarının çoğu, Mars'taki suyun yaşam için bir adım olduğunu düşünüyor.",
+        "E": "Mars'ta sıvı su keşfedildiğinde, bilim insanları dünya dışı yaşamı bulacaklarına inandılar."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "tr",
+      "question": "Although the museum was closed for renovations, visitors were allowed to see the outdoor sculptures.",
+      "options": {
+        "A": "Müze tadilat için kapalıydı ama dışarıdaki heykeller görülebiliyordu.",
+        "B": "Ziyaretçiler dışarıdaki heykelleri gördüler çünkü müze tadilattaydı.",
+        "C": "Müze tadilat nedeniyle kapalı olmasına rağmen, ziyaretçilerin dış mekan heykellerini görmelerine izin verildi.",
+        "D": "Ziyaretçilerin dışarıdaki heykelleri görmesine izin verilmesi için müze kapatıldı.",
+        "E": "Müze kapalıyken bile bazı ziyaretçiler dışarıdaki heykelleri görmeyi başardı."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "para",
+      "question": "She didn't pass the exam because she didn't study hard enough.",
+      "options": {
+        "A": "If she had studied harder, she would have passed the exam.",
+        "B": "She passed the exam even though she didn't study.",
+        "C": "Studying hard was not enough for her to pass the exam.",
+        "D": "She studied very hard but she still failed the exam.",
+        "E": "She failed the exam because it was too difficult for her."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "para",
+      "question": "It is compulsory for all students to attend the orientation program.",
+      "options": {
+        "A": "Students may attend the orientation program if they want.",
+        "B": "All students must attend the orientation program.",
+        "C": "The orientation program is recommended for all students.",
+        "D": "Students don't have to attend the orientation program.",
+        "E": "Only new students should attend the orientation program."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "para",
+      "question": "Hardly anyone expected the underdog team to win the championship.",
+      "options": {
+        "A": "Everyone was sure the underdog team would win.",
+        "B": "Almost nobody thought the underdog team would be the champions.",
+        "C": "The underdog team was expected to win by a few people.",
+        "D": "The championship was won by the team no one liked.",
+        "E": "It was impossible for the underdog team to win."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "para",
+      "question": "The manager postponed the meeting until next Tuesday.",
+      "options": {
+        "A": "The meeting was cancelled by the manager.",
+        "B": "The manager decided to have the meeting before Tuesday.",
+        "C": "The meeting will take place on Tuesday instead of the original date.",
+        "D": "The manager arrived late for the Tuesday meeting.",
+        "E": "Next Tuesday is not a suitable time for the meeting."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dc",
+      "question": "Alice: Have you seen the new documentary about space exploration?\nBob: Not yet. Is it worth watching?\nAlice: ----\nBob: Then I'll definitely check it out tonight.",
+      "options": {
+        "A": "I think it's a bit boring to be honest.",
+        "B": "Yes, it provides amazing insights into recent Mars missions.",
+        "C": "I don't really like documentaries.",
+        "D": "It was shown on TV last night.",
+        "E": "Space exploration is a very expensive field."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dc",
+      "question": "Doctor: How long have you been feeling this way?\nPatient: For about three days now.\nDoctor: ----\nPatient: Yes, especially in the evenings.",
+      "options": {
+        "A": "What did you eat yesterday?",
+        "B": "Do you have any other symptoms like a fever?",
+        "C": "You should take some rest.",
+        "D": "Have you seen any other doctors?",
+        "E": "I will prescribe some medicine for you."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dc",
+      "question": "Interviewer: Why do you want to work for our company?\nCandidate: I've always admired your commitment to innovation.\nInterviewer: ----\nCandidate: I have five years of experience in software development.",
+      "options": {
+        "A": "That's good to hear. What are your qualifications?",
+        "B": "When can you start working?",
+        "C": "We are looking for someone younger.",
+        "D": "What is your expected salary?",
+        "E": "Do you have any questions for us?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dc",
+      "question": "Tom: Do you think electric cars will replace petrol cars soon?\nJerry: It seems likely, given the environmental concerns.\nTom: ----\nJerry: That's true, charging stations are still quite rare in some areas.",
+      "options": {
+        "A": "I already bought an electric car.",
+        "B": "But the infrastructure still needs a lot of improvement.",
+        "C": "Petrol prices are going down anyway.",
+        "D": "Electric cars are much faster.",
+        "E": "I don't think climate change is real."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "pc",
+      "question": "Deforestation is a major environmental issue. It leads to the loss of habitat for millions of species. ----. This contributes significantly to global warming.",
+      "options": {
+        "A": "Furthermore, trees play a vital role in absorbing carbon dioxide",
+        "B": "Some people enjoy hiking in the forest",
+        "C": "Planting trees is a popular hobby",
+        "D": "Forests are often found in tropical regions",
+        "E": "Wood is used for making furniture"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "pc",
+      "question": "Nutritionists often recommend a balanced diet. This means eating a variety of foods in the right proportions. ----. For example, a diet too high in sugar can lead to obesity and diabetes.",
+      "options": {
+        "A": "Exercising is also very important for health",
+        "B": "Consuming too much of one type of food can be harmful",
+        "C": "Cooking at home is cheaper than eating out",
+        "D": "Water is essential for all life forms",
+        "E": "Vegetables are usually green"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "pc",
+      "question": "The internet has revolutionized the way we communicate. We can now send messages across the world in seconds. ----. However, this convenience also comes with risks like cybercrime.",
+      "options": {
+        "A": "Online shopping has become very popular",
+        "B": "Video calls allow us to see people far away",
+        "C": "Email is a common form of communication",
+        "D": "It has made staying in touch much easier than before",
+        "E": "Many people use social media every day"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "pc",
+      "question": "Urbanization is the process where more people move from rural areas to cities. ----. This can lead to problems like overcrowding and increased pollution.",
+      "options": {
+        "A": "Cities offer more job opportunities and better services",
+        "B": "Farming is the main activity in rural areas",
+        "C": "Public transport is very efficient in cities",
+        "D": "Many people enjoy the quiet life of the countryside",
+        "E": "Building more parks can improve city life"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "cm",
+      "question": "The result of the study was quite unexpected.",
+      "options": {
+        "A": "The study's outcome was very surprising.",
+        "B": "The study didn't have any results.",
+        "C": "Everyone knew what the result would be.",
+        "D": "The study was conducted very quickly.",
+        "E": "The results were very expected."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "cm",
+      "question": "He barely managed to catch the train.",
+      "options": {
+        "A": "He missed the train by a few seconds.",
+        "B": "He had a lot of time before the train left.",
+        "C": "He almost missed the train.",
+        "D": "He didn't want to catch the train.",
+        "E": "The train was very crowded."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "cm",
+      "question": "It's vital to follow the instructions carefully.",
+      "options": {
+        "A": "You don't need to read the instructions.",
+        "B": "Following the instructions is very important.",
+        "C": "The instructions are too complicated.",
+        "D": "You can follow the instructions if you want.",
+        "E": "The instructions are not necessary."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "is",
+      "question": "(I) Solar energy is a clean and renewable source of power. (II) It is harnessed using solar panels that convert sunlight into electricity. (III) Solar panels can be installed on rooftops or in large solar farms. (IV) Coal is still used in many power plants around the world. (V) The cost of solar technology has decreased significantly in recent years.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "is",
+      "question": "(I) Learning a second language has many cognitive benefits. (II) It can improve memory and problem-solving skills. (III) Many people travel to foreign countries for vacation. (IV) Bilingual individuals often have a better understanding of different cultures. (V) Studies show it can even delay the onset of dementia.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "is",
+      "question": "(I) The Great Wall of China is one of the most famous landmarks in the world. (II) It was built over several centuries to protect against invasions. (III) Visitors from all over the globe come to see its impressive structure. (IV) Chinese cuisine is known for its diverse flavors and ingredients. (V) It stretches for thousands of miles across northern China.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "rc",
+      "question": "According to the passage, why is the intermittent nature of solar and wind energy a problem?",
+      "options": {
+        "A": "Because they are too expensive to produce.",
+        "B": "Because they emit greenhouse gases.",
+        "C": "Because they require advanced storage solutions.",
+        "D": "Because they are not renewable.",
+        "E": "Because they are only available in certain countries."
+      },
+      "correct": "C",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 36,
+      "section_id": "rc",
+      "question": "What has happened to the price of renewable energy infrastructure over the last decade?",
+      "options": {
+        "A": "It has remained the same.",
+        "B": "It has increased slightly.",
+        "C": "It has dropped significantly.",
+        "D": "It has become unaffordable.",
+        "E": "It has doubled in price."
+      },
+      "correct": "C",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 37,
+      "section_id": "rc",
+      "question": "What is the main goal mentioned in the passage for the year 2050?",
+      "options": {
+        "A": "To ban all fossil fuels.",
+        "B": "To reach net-zero emissions.",
+        "C": "To build more solar farms.",
+        "D": "To reduce energy consumption by 50%.",
+        "E": "To replace all cars with electric ones."
+      },
+      "correct": "B",
+      "passage_id": "read_1"
+    },
+    {
+      "id": 38,
+      "section_id": "rc",
+      "question": "What percentage of the body's energy does the brain consume?",
+      "options": {
+        "A": "2 percent",
+        "B": "10 percent",
+        "C": "20 percent",
+        "D": "50 percent",
+        "E": "80 percent"
+      },
+      "correct": "C",
+      "passage_id": "read_2"
+    },
+    {
+      "id": 39,
+      "section_id": "rc",
+      "question": "According to the passage, what is 'brain plasticity'?",
+      "options": {
+        "A": "The brain's ability to store energy.",
+        "B": "The weight of the brain relative to the body.",
+        "C": "The brain's ability to form new neural connections.",
+        "D": "The speed at which the brain processes information.",
+        "E": "The physical hardness of the brain tissue."
+      },
+      "correct": "C",
+      "passage_id": "read_2"
+    },
+    {
+      "id": 40,
+      "section_id": "rc",
+      "question": "How has the discovery of brain plasticity affected our understanding of learning?",
+      "options": {
+        "A": "It has shown that adults cannot learn new skills.",
+        "B": "It has changed the way we understand learning in adulthood.",
+        "C": "It has proven that learning is only possible for children.",
+        "D": "It has shown that learning is not related to the brain.",
+        "E": "It has made learning more difficult for brain injury patients."
+      },
+      "correct": "B",
+      "passage_id": "read_2"
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocab",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_comp",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "para_comp",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_p",
+      "text": "The Industrial Revolution marked a major turning point in history. Almost every aspect of daily life was (8) --- in some way. For instance, average income and population began to exhibit (9) --- sustained growth. Some economists say that the (10) --- of the Industrial Revolution is the most important event in the history of humanity (11) --- the domestication of animals and plants. This transition included going from hand production methods (12) --- machines."
+    },
+    {
+      "id": "reading_1",
+      "text": "The Great Barrier Reef is the world's largest coral reef system, composed of over 2,900 individual reefs and 900 islands. It is located in the Coral Sea, off the coast of Queensland, Australia. The reef is so large that it can be seen from outer space and is the world's biggest single structure made by living organisms. However, climate change is the greatest threat to the reef's health. Rising ocean temperatures cause coral bleaching, which occurs when corals expel the algae living in their tissues, turning them white and making them more susceptible to disease."
+    },
+    {
+      "id": "reading_2",
+      "text": "Cognitive psychology is the scientific study of mental processes such as attention, language use, memory, perception, problem solving, and creativity. Much of the work derived from cognitive psychology has been integrated into various other modern disciplines of psychological study. The discipline was revitalized in the mid-20th century as a response to behaviorism, which scholars argued neglected the internal processes of the mind. Digital technology and the metaphor of the computer as a processor of information further influenced this shift."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocab",
+      "question": "The manager decided to --- the meeting because several key members were unable to attend.",
+      "options": {
+        "A": "postpone",
+        "B": "accelerate",
+        "C": "maintain",
+        "D": "conduct",
+        "E": "summarize"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocab",
+      "question": "Technological advancements have played a --- role in the evolution of modern medicine.",
+      "options": {
+        "A": "vague",
+        "B": "negligible",
+        "C": "crucial",
+        "D": "hostile",
+        "E": "redundant"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocab",
+      "question": "The scientist's theories were initially met with ---, but they were later proven correct through rigorous experimentation.",
+      "options": {
+        "A": "approval",
+        "B": "skepticism",
+        "C": "enthusiasm",
+        "D": "clarity",
+        "E": "indifference"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_comp",
+      "question": "Although the company faced severe financial difficulties last year, ---.",
+      "options": {
+        "A": "it has managed to report a significant profit this quarter",
+        "B": "it decided to declare bankruptcy immediately",
+        "C": "the employees were all given a large bonus",
+        "D": "no one expected the situation to improve",
+        "E": "the market was already in a state of decline"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_comp",
+      "question": "---, the city council has decided to implement a new recycling program.",
+      "options": {
+        "A": "Because the residents ignored previous environmental warnings",
+        "B": "In order to reduce the amount of waste sent to landfills",
+        "C": "Despite the lack of interest from the local community",
+        "D": "Even if the costs are higher than expected",
+        "E": "As if the pollution levels were not already high enough"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_comp",
+      "question": "Researchers are still trying to understand ---.",
+      "options": {
+        "A": "that the brain processes information so quickly",
+        "B": "what causes some species to migrate across oceans",
+        "C": "whether if the data is accurate or not",
+        "D": "how much did the experiment cost to complete",
+        "E": "whenever the results will be published in a journal"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_comp",
+      "question": "Rarely --- such a beautiful lunar eclipse in this part of the world.",
+      "options": {
+        "A": "we see",
+        "B": "we have seen",
+        "C": "do we see",
+        "D": "we are seeing",
+        "E": "have we to see"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze",
+      "question": "(8) ---",
+      "options": {
+        "A": "influenced",
+        "B": "neglected",
+        "C": "rejected",
+        "D": "disturbed",
+        "E": "prevented"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze",
+      "question": "(9) ---",
+      "options": {
+        "A": "unprecedented",
+        "B": "limited",
+        "C": "accidental",
+        "D": "temporary",
+        "E": "external"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze",
+      "question": "(10) ---",
+      "options": {
+        "A": "impact",
+        "B": "burden",
+        "C": "decrease",
+        "D": "mystery",
+        "E": "failure"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze",
+      "question": "(11) ---",
+      "options": {
+        "A": "since",
+        "B": "until",
+        "C": "because",
+        "D": "unless",
+        "E": "while"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze",
+      "question": "(12) ---",
+      "options": {
+        "A": "to",
+        "B": "by",
+        "C": "from",
+        "D": "with",
+        "E": "in"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Modern teknoloji, insanların birbirleriyle iletişim kurma biçimini kökten değiştirmiştir.",
+      "options": {
+        "A": "Modern technology is changing how people communicate with each other.",
+        "B": "The way people communicate has been changed by modern technology.",
+        "C": "Modern technology has radically changed the way people communicate with each other.",
+        "D": "People communicate in a different way thanks to modern technology.",
+        "E": "How people communicate with each other is a result of modern technology."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Dünya genelinde yenilenebilir enerji kaynaklarına olan talep hızla artmaktadır.",
+      "options": {
+        "A": "The demand for renewable energy sources is increasing rapidly worldwide.",
+        "B": "Renewable energy sources are being demanded more all over the world.",
+        "C": "Worldwide, there is a rapid demand for energy sources that are renewable.",
+        "D": "Demand for renewable energy sources has increased fast across the world.",
+        "E": "People around the world want more renewable energy sources."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "The discovery of DNA's structure opened a new era in biological research.",
+      "options": {
+        "A": "DNA yapısının keşfi, biyolojik araştırmalarda yeni bir dönem açtı.",
+        "B": "Biyolojik araştırmalar, DNA yapısının keşfiyle yeni bir döneme girdi.",
+        "C": "DNA yapısı keşfedildiğinde biyolojik araştırmalar için yeni bir dönem başladı.",
+        "D": "Yeni bir biyolojik araştırma dönemi, DNA yapısının keşfedilmesini sağladı.",
+        "E": "DNA yapısının keşfedilmesiyle biyolojik araştırmalar hız kazandı."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "Unless we take immediate action, the effects of global warming will become irreversible.",
+      "options": {
+        "A": "Hemen harekete geçmezsek, küresel ısınmanın etkileri geri döndürülemez hale gelecek.",
+        "B": "Küresel ısınmanın etkileri geri döndürülemez olduğu için harekete geçmeliyiz.",
+        "C": "Hemen harekete geçilse bile küresel ısınmanın etkileri önlenemez.",
+        "D": "Küresel ısınma geri döndürülemez hale gelmeden önce harekete geçilmeliydi.",
+        "E": "Eğer önlem alırsak küresel ısınmanın etkilerini geri döndürebiliriz."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "Hardly anyone expected the team to win the championship this year.",
+      "options": {
+        "A": "Everyone was sure the team would lose the championship.",
+        "B": "Very few people thought the team would be successful in the championship.",
+        "C": "The team won the championship even though they didn't expect to.",
+        "D": "Nobody in the team believed they could win the championship.",
+        "E": "Only a few people were surprised when the team won the championship."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "It is obligatory for all students to submit their assignments by Friday afternoon.",
+      "options": {
+        "A": "Students may submit their assignments on Friday if they wish.",
+        "B": "All students must hand in their work no later than Friday afternoon.",
+        "C": "Friday afternoon is the best time for students to submit assignments.",
+        "D": "Assignments submitted after Friday will not be accepted by the teacher.",
+        "E": "Students should try to finish their assignments before Friday."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "I would have visited you if I had known you were in the hospital.",
+      "options": {
+        "A": "I knew you were in the hospital, but I didn't have time to visit.",
+        "B": "I didn't visit you because I was unaware of your hospitalization.",
+        "C": "If I visit you, it is because I know you are in the hospital.",
+        "D": "I wanted to visit you in the hospital but I forgot.",
+        "E": "I will visit you as soon as I learn which hospital you are in."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Despite the heavy rain, the outdoor concert was not cancelled.",
+      "options": {
+        "A": "The outdoor concert took place even though it was raining heavily.",
+        "B": "Because of the heavy rain, they had to cancel the outdoor concert.",
+        "C": "The rain was so heavy that the concert had to be held indoors.",
+        "D": "The concert was cancelled because the rain was too heavy.",
+        "E": "They didn't cancel the concert until the rain started to get heavy."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Alice: Have you decided where to go for your summer vacation? \nBob: I'm still torn between Italy and Greece. \nAlice: --- \nBob: That's a good point. I'll check the flight prices tonight.",
+      "options": {
+        "A": "Why don't you go to Spain instead?",
+        "B": "Both are beautiful, but Italy might be more expensive this time of year.",
+        "C": "I think you should stay home and save money.",
+        "D": "Greece is much hotter than Italy in July.",
+        "E": "Have you ever been to Rome before?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "Teacher: Don't forget that your projects are due next Monday. \nStudent: Is there any chance we could get an extension? \nTeacher: --- \nStudent: Thank you so much! That extra two days will really help.",
+      "options": {
+        "A": "No, the deadline is fixed and cannot be changed.",
+        "B": "I'll give you until Wednesday, but that's the absolute limit.",
+        "C": "Why didn't you start your project earlier?",
+        "D": "Everyone else has already finished their work.",
+        "E": "You should ask the school principal for that."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Customer: I bought this laptop yesterday, but the screen is flickering. \nClerk: I'm sorry to hear that. Do you have your receipt? \nCustomer: --- \nClerk: Perfect. In that case, we can offer you a full refund or a replacement.",
+      "options": {
+        "A": "No, I think I lost it on the way here.",
+        "B": "Yes, I have it right here in my wallet.",
+        "C": "Can't you just fix it for me now?",
+        "D": "The screen was fine when I first opened it.",
+        "E": "I don't need a receipt for a faulty product."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "James: Are you coming to the party tonight? \nSarah: I'd love to, but I have to study for my finals. \nJames: --- \nSarah: You're right. I'll come for an hour just to clear my head.",
+      "options": {
+        "A": "That's a shame. Good luck with your exams.",
+        "B": "Come on! You need a break or you'll burn out.",
+        "C": "I'm also studying, so I won't be going either.",
+        "D": "The party is going to be really loud anyway.",
+        "E": "Which subject are you studying for?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "para_comp",
+      "question": "Exercise is essential for maintaining a healthy lifestyle. It strengthens the heart, improves circulation, and helps control weight. ---. Therefore, incorporating even a small amount of physical activity into your daily routine can have long-term benefits.",
+      "options": {
+        "A": "Furthermore, regular exercise has been shown to reduce stress and anxiety.",
+        "B": "However, many people find it difficult to find time for the gym.",
+        "C": "Some people prefer running while others like swimming.",
+        "D": "Diet is also a very important factor in staying healthy.",
+        "E": "Most doctors recommend at least thirty minutes of exercise a day."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "para_comp",
+      "question": "The Arctic is warming twice as fast as the rest of the planet. This rapid melting of sea ice is threatening the survival of polar bears. ---. Scientists warn that if current trends continue, the Arctic could be ice-free in the summer within decades.",
+      "options": {
+        "A": "Polar bears use the ice as a platform to hunt for seals.",
+        "B": "Tourism in the Arctic has increased in recent years.",
+        "C": "Other animals in the region are also being affected by the change.",
+        "D": "Many countries are trying to claim the resources under the ice.",
+        "E": "The local people have lived there for thousands of years."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "para_comp",
+      "question": "Artificial Intelligence is no longer just a concept from science fiction. It is already being used in many areas of our lives, from virtual assistants to self-driving cars. ---. As AI continues to evolve, it will likely transform the job market in ways we cannot yet fully predict.",
+      "options": {
+        "A": "Many movies depict AI as a threat to humanity.",
+        "B": "It helps businesses analyze large amounts of data efficiently.",
+        "C": "The history of AI dates back to the 1950s.",
+        "D": "Computer science students are eager to learn about AI.",
+        "E": "AI can also be used to generate creative art and music."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "para_comp",
+      "question": "Traditional bookstores are facing a tough challenge from online retailers. Many people now prefer the convenience of ordering books from home. ---. This allows them to remain relevant in a digital age.",
+      "options": {
+        "A": "E-books are becoming more popular than physical books.",
+        "B": "To compete, some bookstores are offering coffee and hosting community events.",
+        "C": "Online shopping is often cheaper than buying in a store.",
+        "D": "Some bookstores have had to close down permanently.",
+        "E": "Authors often go on tours to promote their new books."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "The results of the study were consistent with previous research in the field.",
+      "options": {
+        "A": "The study contradicted what was already known in the field.",
+        "B": "The study's findings matched earlier research conducted in the same area.",
+        "C": "The research was inconsistent and produced confusing results.",
+        "D": "Previous research was much more accurate than this new study.",
+        "E": "The results were so different that they surprised the researchers."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "It is unlikely that the economy will recover before the end of the year.",
+      "options": {
+        "A": "The economy will definitely recover by the end of the year.",
+        "B": "There is a small chance that the economy might improve soon.",
+        "C": "The economy is expected to get worse until next year.",
+        "D": "It's not probable for the economy to bounce back within this year.",
+        "E": "Everyone is waiting for the economy to recover at the end of the year."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "She didn't realize how much the trip would cost until she started booking the flights.",
+      "options": {
+        "A": "She knew the trip would be expensive before she booked the flights.",
+        "B": "Booking the flights made her aware of the high cost of the trip.",
+        "C": "She couldn't afford the flights so she cancelled the trip.",
+        "D": "The trip cost more than she had originally planned.",
+        "E": "She was surprised by the cost of the flights but she booked them anyway."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant",
+      "question": "(I) Solar energy is a clean and renewable source of power. (II) It works by converting sunlight into electricity using photovoltaic cells. (III) Coal and oil are still the primary sources of energy in many countries. (IV) Many homeowners are now installing solar panels on their roofs to save on energy costs. (V) This shift helps reduce carbon emissions and dependency on fossil fuels.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant",
+      "question": "(I) Coffee is one of the most popular beverages in the world. (II) It is made from the roasted seeds of the Coffea plant. (III) Most people drink it to feel more awake and focused. (IV) Tea is also a popular choice for those who want a hot drink. (V) However, excessive caffeine consumption can lead to jitteriness and sleep problems.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant",
+      "question": "(I) The Great Wall of China is a series of fortifications built across the historical northern borders of China. (II) It was constructed over several centuries to protect against invasions. (III) Today, it is a major tourist attraction and a symbol of Chinese history. (IV) China has the largest population in the world. (V) Portions of the wall have been restored to preserve its historical significance.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading",
+      "question": "According to the passage, why is the Great Barrier Reef unique?",
+      "options": {
+        "A": "It is the only reef system in the Coral Sea.",
+        "B": "It is the largest single structure created by living things.",
+        "C": "It is made up of exactly 2,900 islands.",
+        "D": "It is the only place where coral bleaching occurs.",
+        "E": "It can only be seen from the coast of Queensland."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading",
+      "question": "The passage states that coral bleaching is caused by ---.",
+      "options": {
+        "A": "an increase in ocean temperatures",
+        "B": "the presence of too many living organisms",
+        "C": "a lack of algae in the surrounding water",
+        "D": "disease spreading from outer space",
+        "E": "the movement of the reef system"
+      },
+      "correct": "A",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading",
+      "question": "What is the primary threat to the reef mentioned in the text?",
+      "options": {
+        "A": "Over-tourism",
+        "B": "Pollution from Australia",
+        "C": "Climate change",
+        "D": "The growth of new islands",
+        "E": "Scientific research"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading",
+      "question": "What led to the revitalization of cognitive psychology in the 20th century?",
+      "options": {
+        "A": "A new interest in behaviorism",
+        "B": "A response to the limitations of behaviorism",
+        "C": "The invention of the first digital computer",
+        "D": "The study of creativity and art",
+        "E": "A decline in other modern psychological disciplines"
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading",
+      "question": "Which of the following is NOT mentioned as a focus of cognitive psychology?",
+      "options": {
+        "A": "Memory",
+        "B": "Perception",
+        "C": "Social interactions",
+        "D": "Attention",
+        "E": "Problem solving"
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading",
+      "question": "How did digital technology influence cognitive psychology according to the text?",
+      "options": {
+        "A": "It provided a metaphor for the mind as an information processor.",
+        "B": "It allowed psychologists to stop studying mental processes.",
+        "C": "It made behaviorism more popular among scholars.",
+        "D": "It focused the study on the hardware of the brain.",
+        "E": "It replaced the need for scientific study in psychology."
+      },
+      "correct": "A",
+      "passage_id": "reading_2"
+    }
+  ]
+}

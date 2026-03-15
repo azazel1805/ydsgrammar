@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "Advanced Academic Proficiency Test",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue_completion",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_p1",
+      "text": "The rapid advancement of artificial intelligence has sparked a global debate regarding ethical governance. (8) --- the potential benefits of AI in healthcare and logistics are undeniable, many experts remain (9) --- about the long-term implications of autonomous systems. These systems often operate using 'black box' algorithms that (10) --- human understanding, making it difficult to assign accountability when errors occur. Governments are currently (11) --- to create frameworks that ensure transparency. (12) ---, without international cooperation, these local regulations may prove insufficient in a borderless digital economy."
+    },
+    {
+      "id": "reading_1",
+      "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. While the exact start date remains a subject of intense scientific scrutiny, many researchers point to the mid-20th century as a definitive turning point. This period, often called the 'Great Acceleration,' saw a dramatic spike in population, industrial activity, and the use of plastics. Critics of the term argue that 'humanity' as a whole is not responsible; rather, the industrialised nations of the Global North bear the brunt of the historical culpability for carbon emissions."
+    },
+    {
+      "id": "reading_2",
+      "text": "The neuroplasticity of the adult brain was once considered a scientific impossibility. For decades, the prevailing dogma held that the brain's circuitry became fixed shortly after adolescence. However, recent longitudinal studies have demonstrated that the brain remains capable of reorganization throughout the lifespan. Activities such as learning a new language or mastering a musical instrument have been shown to induce structural changes in the gray matter. This discovery has profound implications for the treatment of stroke victims and patients suffering from neurodegenerative diseases, as it suggests that rehabilitation can effectively rewire damaged neural pathways."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The newly implemented environmental regulations were so --- that several smaller factories had to shut down completely.",
+      "options": {
+        "A": "stringent",
+        "B": "negligible",
+        "C": "lenient",
+        "D": "equivocal",
+        "E": "redundant"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "Historians often argue that the fall of the empire was --- by a combination of internal corruption and external invasions.",
+      "options": {
+        "A": "curbed",
+        "B": "precipitated",
+        "C": "thwarted",
+        "D": "diverted",
+        "E": "scrutinized"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "The professor's lecture was so --- that even the students who were unfamiliar with the topic could follow the complex arguments easily.",
+      "options": {
+        "A": "convoluted",
+        "B": "lucid",
+        "C": "ambiguous",
+        "D": "opaque",
+        "E": "pedantic"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "---, the city council decided to postpone the construction of the new subway line.",
+      "options": {
+        "A": "Since the initial budget had been underestimated by nearly forty percent",
+        "B": "Even if the public demand for better transportation was increasing",
+        "C": "As long as the environmental impact report remains positive",
+        "D": "While the mayor was confident about the timeline of the project",
+        "E": "Despite the fact that the engineers had completed the blueprints"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "Rarely have we seen such a rapid transformation in a nation's economy ---.",
+      "options": {
+        "A": "unless the government implements radical reforms immediately",
+        "B": "as we have witnessed in Southeast Asia over the last decade",
+        "C": "where the majority of the population lives in rural areas",
+        "D": "which led to a significant decrease in the standard of living",
+        "E": "because the international trade agreements were cancelled"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Despite the abundance of natural resources in the region, ---.",
+      "options": {
+        "A": "the country is one of the leading exporters of rare minerals",
+        "B": "investors are eager to fund new mining operations there",
+        "C": "the local population still struggles with extreme poverty",
+        "D": "it has become a hub for industrial development recently",
+        "E": "the government has managed to pay off all its foreign debts"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "The findings of the study were highly controversial, ---.",
+      "options": {
+        "A": "so every scientist in the field agreed with the results",
+        "B": "because they were based on a very large and diverse sample",
+        "C": "prompting a series of debates among the academic community",
+        "D": "although the methodology used was standard and widely accepted",
+        "E": "which means the hypothesis was proven beyond any doubt"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (8).",
+      "options": {
+        "A": "While",
+        "B": "Because",
+        "C": "If",
+        "D": "Since",
+        "E": "Provided"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (9).",
+      "options": {
+        "A": "indifferent",
+        "B": "enthusiastic",
+        "C": "apprehensive",
+        "D": "oblivious",
+        "E": "content"
+      },
+      "correct": "C",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (10).",
+      "options": {
+        "A": "defy",
+        "B": "facilitate",
+        "C": "embrace",
+        "D": "clarify",
+        "E": "sustain"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (11).",
+      "options": {
+        "A": "striving",
+        "B": "refusing",
+        "C": "ceasing",
+        "D": "hesitating",
+        "E": "overlooking"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (12).",
+      "options": {
+        "A": "Consequently",
+        "B": "However",
+        "C": "Moreover",
+        "D": "For example",
+        "E": "Similarly"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Modern tıp, genetik mühendisliğindeki gelişmeler sayesinde daha önce tedavi edilemez olarak görülen hastalıkların üstesinden gelmeye başlamıştır.",
+      "options": {
+        "A": "Modern medicine has started to overcome diseases previously seen as incurable, thanks to advances in genetic engineering.",
+        "B": "Genetic engineering and modern medicine work together to treat diseases that were once thought to be incurable.",
+        "C": "Incurable diseases are being treated today because modern medicine has advanced in the field of genetic engineering.",
+        "D": "Thanks to modern medicine, advances in genetic engineering are now helping to cure many diseases.",
+        "E": "The reason why incurable diseases are now being treated is the rapid development of modern genetic engineering."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Fosil yakıtların kullanımını azaltmak sadece iklim değişikliğini yavaşlatmakla kalmayacak, aynı zamanda hava kalitesini de önemli ölçüde artıracaktır.",
+      "options": {
+        "A": "Reducing the use of fossil fuels will both slow down climate change and improve air quality significantly.",
+        "B": "Reducing the use of fossil fuels will not only slow down climate change but also significantly improve air quality.",
+        "C": "Climate change can be slowed down and air quality can be improved by reducing the use of fossil fuels.",
+        "D": "If we reduce fossil fuel use, we will slow down climate change and air quality will improve.",
+        "E": "Air quality is improved and climate change is slowed down whenever the use of fossil fuels is reduced."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Although the government has taken several measures to reduce inflation, the results have not been as effective as expected.",
+      "options": {
+        "A": "Hükümet enflasyonu düşürmek için birçok önlem alsa da sonuçlar beklendiği kadar etkili olmamıştır.",
+        "B": "Hükümetin enflasyonu düşürmek için aldığı önlemler beklenmedik şekilde etkisiz kalmıştır.",
+        "C": "Enflasyonun düşürülmesi için hükümet tarafından alınan önlemler maalesef işe yaramamıştır.",
+        "D": "Beklenen sonuçların alınamaması, hükümetin enflasyonu düşürmek için aldığı önlemlerin yetersizliğindendir.",
+        "E": "Hükümet birçok önlem almasına rağmen enflasyon beklenen düzeyde düşürülememiştir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "The discovery of liquid water on Mars has led scientists to believe that the planet might have once hosted life.",
+      "options": {
+        "A": "Mars'ta sıvı suyun keşfi, bilim insanlarını gezegenin bir zamanlar yaşama ev sahipliği yapmış olabileceğine inanmaya sevk etti.",
+        "B": "Bilim insanları Mars'ta sıvı su bulunca, gezegende hayat olduğuna dair güçlü kanıtlar elde ettiler.",
+        "C": "Mars'ın bir zamanlar yaşama ev sahipliği yaptığına inanan bilim insanları, orada sıvı su keşfettiler.",
+        "D": "Sıvı suyun keşfedilmesiyle birlikte bilim insanları Mars'ta hayat olup olmadığını araştırmaya başladılar.",
+        "E": "Mars'ta su bulunması, bilim dünyasında gezegenin geçmişi hakkında büyük bir merak uyandırdı."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "Hardly anyone expected the team to win the championship after their disastrous start to the season.",
+      "options": {
+        "A": "Almost no one thought the team would be champions given how poorly they began the season.",
+        "B": "The team's championship win was expected by everyone despite the bad start they had.",
+        "C": "No one was surprised that the team won the championship because they started the season well.",
+        "D": "The team had a disastrous season and therefore failed to win the championship as expected.",
+        "E": "In spite of the championship, the team's start to the season was considered a total disaster."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "It is not so much the content of the speech as the way it was delivered that impressed the audience.",
+      "options": {
+        "A": "The audience was impressed by the speech's content rather than the speaker's performance.",
+        "B": "The delivery of the speech was more impressive to the audience than the actual content itself.",
+        "C": "Both the content and the delivery of the speech were equally impressive to the listeners.",
+        "D": "The audience was not impressed by the speech because the delivery was very poor.",
+        "E": "The speech was impressive because the content was much better than the delivery."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "Success in this field is contingent upon one's ability to adapt to technological changes quickly.",
+      "options": {
+        "A": "Technological changes are the main reason why people fail in this particular field.",
+        "B": "If you want to be successful in this field, you must be able to adjust to new technologies rapidly.",
+        "C": "Success is possible in this field even if you cannot adapt to the latest technological trends.",
+        "D": "Adapting to technology is one of the many ways to achieve success in this professional area.",
+        "E": "The rapid pace of technology makes it almost impossible to succeed in this field."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Should you require further assistance, do not hesitate to contact our customer service department.",
+      "options": {
+        "A": "You must contact customer service immediately if you want to get any assistance.",
+        "B": "If you need more help, you are welcome to get in touch with our customer service team.",
+        "C": "Our customer service department will contact you if they think you need further assistance.",
+        "D": "You didn't hesitate to call customer service when you required assistance previously.",
+        "E": "Contacting customer service is the only way to resolve your problems with our products."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue_completion",
+      "question": "Doctor: Have you been taking the medication as prescribed? \nPatient: Yes, but I haven't noticed any significant improvement yet. \nDoctor: --- \nPatient: Oh, I see. Then I'll continue for another week.",
+      "options": {
+        "A": "Maybe we should try a different approach since this isn't working.",
+        "B": "It often takes a few weeks for the full effects to become apparent.",
+        "C": "I suspect you might be allergic to one of the ingredients.",
+        "D": "The pharmacy might have given you the wrong dosage by mistake.",
+        "E": "You should stop taking it immediately if you feel no difference."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue_completion",
+      "question": "Manager: We need to increase our production capacity by next quarter. \nEngineer: That will require significant investment in new machinery. \nManager: --- \nEngineer: In that case, we might have to optimize our current processes instead.",
+      "options": {
+        "A": "We have plenty of funds available for this expansion.",
+        "B": "Unfortunately, the board has just rejected our budget request.",
+        "C": "I think the machines we have are already quite efficient.",
+        "D": "The new machinery will arrive within the next few days.",
+        "E": "Can you estimate how much the new equipment will cost?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue_completion",
+      "question": "Alice: Did you see the documentary about deep-sea exploration? \nBob: Yes, it was fascinating to see those creatures living in total darkness. \nAlice: --- \nBob: Exactly. It makes you wonder what else is hidden in the depths.",
+      "options": {
+        "A": "I think the moon landing was much more impressive than that.",
+        "B": "It's incredible how life can adapt to such extreme environments.",
+        "C": "I prefer watching documentaries about historical events instead.",
+        "D": "The camera quality was actually quite poor during the underwater scenes.",
+        "E": "Most of those creatures have already been studied by scientists."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue_completion",
+      "question": "Student: I'm struggling with the conclusion of my research paper. \nTutor: Have you tried restating your thesis in a new way? \nStudent: --- \nTutor: Then try focusing on the broader implications of your findings.",
+      "options": {
+        "A": "Yes, I did that, but it still feels like I'm just repeating myself.",
+        "B": "I haven't even finished the introduction yet, to be honest.",
+        "C": "I think the thesis statement is the easiest part of the essay.",
+        "D": "Should I include new data in the conclusion to make it stronger?",
+        "E": "My teacher said I don't need a conclusion for this assignment."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Renewable energy sources, such as solar and wind, are becoming increasingly cost-effective. ---. For instance, in many parts of the world, building new renewable energy plants is now cheaper than continuing to operate existing coal-fired power plants. This economic shift is driving a global transition toward cleaner energy.",
+      "options": {
+        "A": "Technological advancements have played a crucial role in reducing costs.",
+        "B": "Fossil fuels are still the most reliable source of energy for many.",
+        "C": "Governments are hesitant to invest in wind turbines due to noise.",
+        "D": "Nuclear energy remains the most efficient alternative to coal.",
+        "E": "Solar panels are difficult to recycle once they reach the end of their life."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "In the realm of psychology, the concept of 'flow' refers to a state of complete immersion in an activity. ---. During this state, people often lose track of time and experience a sense of heightened focus and enjoyment. It is commonly associated with creative pursuits and athletic performance.",
+      "options": {
+        "A": "Most people find it very difficult to concentrate on a single task.",
+        "B": "It was first identified by the psychologist Mihaly Csikszentmihalyi.",
+        "C": "Stress is known to be a major barrier to achieving peak performance.",
+        "D": "Many office environments are designed to prevent such immersion.",
+        "E": "The study of human happiness has been a topic of interest for centuries."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "Archaeologists have discovered ancient ruins that suggest a highly sophisticated civilization once thrived in the Amazon rainforest. ---. These findings challenge the long-held belief that the Amazon was a pristine wilderness before European arrival. Instead, it appears to have been a densely populated landscape.",
+      "options": {
+        "A": "The jungle environment makes it very difficult to preserve organic materials.",
+        "B": "These structures include complex road networks and large urban centers.",
+        "C": "Early explorers often told exaggerated stories about cities made of gold.",
+        "D": "Deforestation is currently revealing many previously hidden sites.",
+        "E": "The indigenous people of the Amazon have a rich oral history."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "The rise of e-commerce has fundamentally changed the retail landscape. ---. Many traditional brick-and-mortar stores are struggling to compete with the convenience and lower prices offered by online platforms. As a result, many shopping malls are being repurposed for other uses.",
+      "options": {
+        "A": "Cybersecurity remains a major concern for online shoppers.",
+        "B": "However, some consumers still prefer the physical shopping experience.",
+        "C": "This shift has led to the closure of thousands of physical storefronts.",
+        "D": "Online advertising is now more effective than television commercials.",
+        "E": "Logistics companies are hiring more drivers to meet the demand."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "It is not until you travel abroad that you realize how much you value your own culture.",
+      "options": {
+        "A": "Traveling abroad is the only way to truly understand other cultures.",
+        "B": "You only begin to appreciate your own culture once you have visited other countries.",
+        "C": "If you value your own culture, you should avoid traveling to foreign lands.",
+        "D": "People who travel abroad often forget the importance of their own traditions.",
+        "E": "Your culture is more valuable than any other culture you might encounter abroad."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "The results of the experiment were so unexpected that the researchers decided to repeat it.",
+      "options": {
+        "A": "The researchers repeated the experiment because they didn't trust the initial findings.",
+        "B": "Because the outcome was surprising, the scientists chose to perform the study again.",
+        "C": "The unexpected results meant that the experiment was a complete failure.",
+        "D": "Researchers often repeat experiments even when the results are as expected.",
+        "E": "Repeat experiments are necessary only when the first one produces no data."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "Hardly a day goes by without some news regarding the decline of the global economy.",
+      "options": {
+        "A": "Every day, there is almost always some news about the worsening world economy.",
+        "B": "The global economy is declining so fast that news cannot keep up with it.",
+        "C": "We hear news about the global economy only once or twice a week.",
+        "D": "It is rare to see any news about the economy in the daily newspapers.",
+        "E": "The economy is improving, but the news reports say the opposite every day."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Genetic modification of crops has been a subject of intense debate for decades. (II) Proponents argue that it can help solve world hunger by increasing yields. (III) Organic farming, on the other hand, avoids the use of synthetic pesticides. (IV) However, critics express concerns about the potential long-term effects on human health. (V) There are also fears that modified genes could escape into the wild and disrupt ecosystems.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Renaissance was a period of great cultural and intellectual achievement in Europe. (II) It began in Italy in the 14th century and later spread to the rest of the continent. (III) During this time, there was a renewed interest in the classical art and literature of Greece and Rome. (IV) The Industrial Revolution, which started in Britain, changed the way goods were produced. (V) Major figures like Leonardo da Vinci and Michelangelo emerged during this era.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Regular exercise is essential for maintaining a healthy cardiovascular system. (II) It helps to lower blood pressure and reduce the risk of heart disease. (III) Many people find it difficult to stick to a consistent workout routine. (IV) In addition, physical activity can improve mental health by reducing anxiety and depression. (V) Walking, swimming, and cycling are all excellent forms of aerobic exercise.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, what is the 'Great Acceleration'?",
+      "options": {
+        "A": "A period characterized by a rapid increase in human influence on the planet.",
+        "B": "A geological epoch that ended in the mid-20th century.",
+        "C": "The time it takes for carbon emissions to affect the atmosphere.",
+        "D": "A scientific theory that refutes the concept of the Anthropocene.",
+        "E": "The speed at which industrialised nations developed their economies."
+      },
+      "correct": "A",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading_comprehension",
+      "question": "What is one of the criticisms mentioned regarding the term 'Anthropocene'?",
+      "options": {
+        "A": "It fails to account for the impact of plastic waste in the oceans.",
+        "B": "It suggests that all of humanity is equally responsible for environmental changes.",
+        "C": "It does not have a definitive start date recognized by all scientists.",
+        "D": "It focuses too much on the geological aspects rather than biological ones.",
+        "E": "It ignores the contributions of the Global North to industrialization."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading_comprehension",
+      "question": "The author's attitude toward the Anthropocene can be described as ---.",
+      "options": {
+        "A": "Dismissive",
+        "B": "Objective",
+        "C": "Sarcastic",
+        "D": "Biased",
+        "E": "Indifferent"
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading_comprehension",
+      "question": "What does the passage say about the traditional view of the adult brain?",
+      "options": {
+        "A": "It was believed to be unchangeable after a certain age.",
+        "B": "It was thought to be more flexible than the child's brain.",
+        "C": "It was always known to be capable of rewiring itself.",
+        "D": "Scientists believed it could only learn new languages in old age.",
+        "E": "It was considered to be independent of the gray matter."
+      },
+      "correct": "A",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading_comprehension",
+      "question": "Which of the following can be inferred from the passage about learning new skills?",
+      "options": {
+        "A": "It is only effective if started during early childhood.",
+        "B": "It can lead to physical changes in the brain's structure.",
+        "C": "It is the only way to prevent neurodegenerative diseases.",
+        "D": "It has no impact on the brain's circuitry after adolescence.",
+        "E": "It is less effective than medical rehabilitation for stroke victims."
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading_comprehension",
+      "question": "The discovery of neuroplasticity is significant because ---.",
+      "options": {
+        "A": "It proves that the brain stops developing after the age of eighteen.",
+        "B": "It offers hope for new types of medical treatments and recovery.",
+        "C": "It shows that learning a musical instrument is purely a mental exercise.",
+        "D": "It confirms the long-standing dogma of fixed brain circuitry.",
+        "E": "It eliminates the need for physical therapy after a stroke."
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    }
+  ]
+}

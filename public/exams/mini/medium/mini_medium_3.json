@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions - Academic English Proficiency",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Restatement",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue_completion",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant_sentence",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading_comprehension",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_p1",
+      "text": "The rapid advancement of artificial intelligence (AI) has (8)---- various industries, leading to significant changes in the workforce. While some experts argue that AI will (9)---- many traditional roles, others believe it will create new opportunities that we cannot yet conceive. (10)----, the transition period might be difficult for those without digital literacy. To mitigate the negative effects, governments must (11)---- educational reforms. (12)----, investing in lifelong learning is crucial for economic stability."
+    },
+    {
+      "id": "reading_p1",
+      "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. Although not yet officially recognized by the International Union of Geological Sciences, the term has gained immense popularity in scientific discourse. Proponents argue that human activities, particularly industrialization and the burning of fossil fuels, have altered the planet's atmospheric composition and biodiversity to such an extent that a new epoch is justified. However, critics suggest that the timeframe is too short compared to other geological eras."
+    },
+    {
+      "id": "reading_p2",
+      "text": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon allows the neurons in the brain to compensate for injury and disease and to adjust their activities in response to new situations or changes in their environment. For a long time, it was believed that the brain's structure was relatively immutable after a certain age. However, modern research demonstrates that even the adult brain remains remarkably plastic, capable of significant functional and structural changes through learning and experience."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The scientific community is still debating the ---- of the new findings regarding deep-sea ecosystems.",
+      "options": {
+        "A": "validity",
+        "B": "obstacle",
+        "C": "suspicion",
+        "D": "detriment",
+        "E": "prejudice"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "In order to prevent the spread of the virus, the authorities had to ---- strict travel restrictions across the borders.",
+      "options": {
+        "A": "postpone",
+        "B": "implement",
+        "C": "undermine",
+        "D": "resemble",
+        "E": "neglect"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Economic growth in developing nations is ---- linked to the stability of global trade markets.",
+      "options": {
+        "A": "vaguely",
+        "B": "adversely",
+        "C": "intrinsically",
+        "D": "randomly",
+        "E": "superficially"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "While renewable energy sources are becoming more efficient, ----.",
+      "options": {
+        "A": "they still cannot fully meet the global energy demand alone",
+        "B": "because fossil fuels are much cheaper to extract",
+        "C": "so that the environment can be protected effectively",
+        "D": "which led to a decrease in the cost of solar panels",
+        "E": "as long as the sun continues to shine every day"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "---- that the first pyramids were built as tombs for the Egyptian pharaohs.",
+      "options": {
+        "A": "Despite the fact",
+        "B": "It is widely accepted",
+        "C": "Since historians discovered",
+        "D": "Whatever researchers believe",
+        "E": "By the time archaeologists found"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Unless the government takes immediate action to curb inflation, ----.",
+      "options": {
+        "A": "the purchasing power of the citizens will continue to drop",
+        "B": "investors would have been more confident in the market",
+        "C": "which is why many people are losing their jobs",
+        "D": "economic stability had been achieved long ago",
+        "E": "prices might have remained steady for a while"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "Because the sample size was too small to represent the whole population, ----.",
+      "options": {
+        "A": "the researchers decided to publish the results immediately",
+        "B": "it provided a very accurate description of the demographic",
+        "C": "the study's conclusions were deemed statistically insignificant",
+        "D": "further studies will be redundant in this specific field",
+        "E": "participants were very enthusiastic about the interview"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Find the correct word for blank (8).",
+      "options": {
+        "A": "transformed",
+        "B": "terminated",
+        "C": "hindered",
+        "D": "abandoned",
+        "E": "ignored"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Find the correct word for blank (9).",
+      "options": {
+        "A": "sustain",
+        "B": "displace",
+        "C": "encourage",
+        "D": "reinforce",
+        "E": "clarify"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Find the correct word for blank (10).",
+      "options": {
+        "A": "Therefore",
+        "B": "However",
+        "C": "Otherwise",
+        "D": "Similarly",
+        "E": "For example"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Find the correct word for blank (11).",
+      "options": {
+        "A": "look into",
+        "B": "give up",
+        "C": "carry out",
+        "D": "take after",
+        "E": "keep off"
+      },
+      "correct": "C",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Find the correct word for blank (12).",
+      "options": {
+        "A": "In conclusion",
+        "B": "On the contrary",
+        "C": "Even so",
+        "D": "Despite",
+        "E": "Instead"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Modern tıp, genetik araştırmalar sayesinde hastalıkların teşhisinde büyük adımlar atmıştır.",
+      "options": {
+        "A": "Thanks to genetic research, modern medicine has made great strides in the diagnosis of diseases.",
+        "B": "Modern medicine diagnoses diseases because it uses genetic research effectively.",
+        "C": "Great strides in medicine are being made through the diagnosis of genetic diseases.",
+        "D": "Genetic research is the reason why modern medicine can diagnose all diseases.",
+        "E": "The diagnosis of diseases in modern medicine depends solely on genetic research."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Many historical artifacts were damaged during the war because they were not properly protected.",
+      "options": {
+        "A": "Savaş sırasında birçok tarihi eser, iyi korunmadıkları için zarar gördü.",
+        "B": "Savaş boyunca tarihi eserlerin çoğu korunmadığı halde zarar görmedi.",
+        "C": "Tarihi eserlerin zarar görmesinin tek sebebi savaşın şiddetiydi.",
+        "D": "İyi korunsalar bile birçok tarihi eser savaşta zarar görebilirdi.",
+        "E": "Birçok tarihi eser savaştan sonra düzgün bir şekilde korunmaya başlandı."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "İklim değişikliği ile mücadele etmek için küresel bir işbirliği şarttır.",
+      "options": {
+        "A": "Global cooperation is essential to combat climate change.",
+        "B": "Climate change can only be stopped by global efforts.",
+        "C": "Global cooperation is one way to fight climate change.",
+        "D": "To fight climate change, we need local and global actions.",
+        "E": "Global cooperation was necessary for climate change in the past."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "The rise of the internet has fundamentally changed the way people access information.",
+      "options": {
+        "A": "İnternetin yükselişi, insanların bilgiye erişim şeklini temelden değiştirmiştir.",
+        "B": "İnternet sayesinde insanlar bilgiye daha hızlı erişebilmektedir.",
+        "C": "İnsanların bilgiye erişimi internetin ortaya çıkmasıyla başlamıştır.",
+        "D": "İnternet, bilgiye erişim yöntemlerini değiştiren tek faktördür.",
+        "E": "Bilgiye erişim şekli internetin yaygınlaşmasıyla biraz değişmiştir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "The team would have won the match if the captain had not been injured.",
+      "options": {
+        "A": "The team won the match despite the captain's injury.",
+        "B": "Because the captain was injured, the team failed to win the match.",
+        "C": "The captain's injury did not prevent the team from winning.",
+        "D": "The team lost the match even though the captain played well.",
+        "E": "If the team wins, it is usually because the captain is not injured."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "Few students managed to pass the exam, as the questions were exceptionally difficult.",
+      "options": {
+        "A": "The exam was so hard that almost no one could pass it.",
+        "B": "Many students passed the exam despite the difficult questions.",
+        "C": "If the questions had been easier, more students would have failed.",
+        "D": "The questions were easy enough for most students to pass.",
+        "E": "Only a small number of students failed the exam because it was hard."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "No sooner had I reached the station than the train departed.",
+      "options": {
+        "A": "The train had already left when I arrived at the station.",
+        "B": "I arrived at the station just as the train was leaving.",
+        "C": "I missed the train because I was late to the station.",
+        "D": "The train waited for me to arrive at the station.",
+        "E": "I reached the station long after the train departed."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "It is compulsory for all visitors to wear a mask inside the museum.",
+      "options": {
+        "A": "Visitors may wear a mask if they want to inside the museum.",
+        "B": "Visitors don't have to wear a mask inside the museum.",
+        "C": "Every visitor must wear a mask within the museum premises.",
+        "D": "Wearing a mask is recommended but not required in the museum.",
+        "E": "Only some visitors are asked to wear masks in the museum."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue_completion",
+      "question": "Amy: Did you hear about the new project proposal?\nBob: ----\nAmy: Exactly. It's too expensive and the timeline is unrealistic.",
+      "options": {
+        "A": "Yes, I think it's the best idea we've had so far.",
+        "B": "No, I haven't had a chance to look at it yet.",
+        "C": "Yes, but I have some serious concerns about it.",
+        "D": "I heard it was already approved by the board.",
+        "E": "The manager said it would be very easy to finish."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue_completion",
+      "question": "Teacher: Why is biodiversity so important for an ecosystem?\nStudent: ----\nTeacher: Correct. It ensures that the ecosystem can recover from disasters.",
+      "options": {
+        "A": "Because it makes the landscape look more beautiful.",
+        "B": "It provides a variety of genetic resources and stability.",
+        "C": "Actually, biodiversity is not that important for survival.",
+        "D": "Because scientists enjoy studying different species.",
+        "E": "It helps humans build more cities in rural areas."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue_completion",
+      "question": "Patient: I've been feeling very tired lately despite sleeping well.\nDoctor: ----\nPatient: No, I usually just have a sandwich at my desk.",
+      "options": {
+        "A": "How many hours do you sleep every night?",
+        "B": "Do you exercise regularly during the week?",
+        "C": "Do you have a balanced diet and regular meals?",
+        "D": "Are you taking any medication for your tiredness?",
+        "E": "When did you first notice these symptoms?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue_completion",
+      "question": "Interviewer: Where do you see yourself in five years?\nCandidate: ----\nInterviewer: That's an ambitious goal. We value growth here.",
+      "options": {
+        "A": "I hope to be leading a team in this department.",
+        "B": "I am not sure what I will be doing tomorrow.",
+        "C": "I would like to retire and travel the world.",
+        "D": "I will probably be in the same position as now.",
+        "E": "I want to move to another country for a vacation."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Urbanization is a global trend that shows no signs of slowing down. (----). These cities offer better job opportunities, education, and healthcare. However, they also face challenges such as pollution and overcrowding.",
+      "options": {
+        "A": "Farming is still the main source of income in many countries.",
+        "B": "More than half of the world's population now lives in cities.",
+        "C": "Small towns are becoming more popular among young people.",
+        "D": "The government is trying to encourage people to move back to villages.",
+        "E": "Architects prefer designing buildings in rural areas."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "The Renaissance was a period of great cultural and artistic change in Europe. (----). Thinkers began to emphasize human potential and achievements rather than just religious dogma. This shift led to remarkable progress in science and philosophy.",
+      "options": {
+        "A": "It was primarily a time of economic depression and war.",
+        "B": "The Middle Ages were much more focused on individual rights.",
+        "C": "At its heart was the intellectual movement known as humanism.",
+        "D": "Most artists at the time were not interested in the human form.",
+        "E": "The printing press had not been invented yet during this era."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "Water scarcity is one of the most pressing issues of the 21st century. (----). Without access to clean water, sustainable development is impossible. We must find innovative ways to conserve and recycle our water resources.",
+      "options": {
+        "A": "Oceans cover about 70 percent of the Earth's surface.",
+        "B": "Swimming is a very popular sport in many coastal regions.",
+        "C": "Many people use more water than they actually need at home.",
+        "D": "It affects every continent and hinders economic growth.",
+        "E": "Bottled water is often more expensive than tap water."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Psychologists have long studied the effects of social media on mental health. (----). Constant comparison with others' 'perfect' lives can lead to feelings of inadequacy. Therefore, it is important to use these platforms mindfully.",
+      "options": {
+        "A": "Social media helps people stay connected with their old friends.",
+        "B": "Most people enjoy sharing their travel photos online.",
+        "C": "Some studies suggest a link between high usage and anxiety.",
+        "D": "Technological gadgets are becoming cheaper every year.",
+        "E": "Internet speed is increasing rapidly in developing countries."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "He was so exhausted that he fell asleep as soon as his head touched the pillow.",
+      "options": {
+        "A": "He was tired, but he couldn't sleep because of the pillow.",
+        "B": "He fell asleep quickly because he was extremely tired.",
+        "C": "Even though he was exhausted, it took him a while to sleep.",
+        "D": "He slept for a long time because he was very tired.",
+        "E": "He tried to stay awake despite his extreme exhaustion."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "The earthquake caused extensive damage to the city's infrastructure.",
+      "options": {
+        "A": "The city's infrastructure was barely affected by the earthquake.",
+        "B": "The earthquake was minor, so the city remained intact.",
+        "C": "A lot of damage was done to the city's basic systems by the quake.",
+        "D": "The city had already been damaged before the earthquake occurred.",
+        "E": "Only a few buildings were destroyed during the earthquake."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "Rarely do we see such a talented musician at such a young age.",
+      "options": {
+        "A": "It is common to find young musicians with great talent.",
+        "B": "We often see talented musicians who are very young.",
+        "C": "It is unusual to encounter such a gifted young musician.",
+        "D": "Young musicians are usually more talented than older ones.",
+        "E": "The musician was talented, but not very young."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Solar energy is a clean and renewable source of power. (II) It harnesses the energy from the sun using photovoltaic cells. (III) Coal mining is still a major industry in some parts of the world. (IV) This technology has become significantly cheaper over the last decade. (V) As a result, many households are now installing solar panels.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) The Great Wall of China is one of the most impressive architectural feats. (II) It was built over several centuries to protect against invasions. (III) Visitors can walk along various sections of the wall today. (IV) Chinese cuisine is famous for its diverse flavors and ingredients. (V) It remains a symbol of China's historical strength and persistence.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant_sentence",
+      "question": "(I) Regular exercise has numerous benefits for physical health. (II) It helps maintain a healthy weight and reduces the risk of heart disease. (III) Exercise also releases endorphins, which can improve mood. (IV) Many people prefer watching sports on television rather than playing them. (V) Furthermore, it can improve the quality of sleep and increase energy levels.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading_comprehension",
+      "question": "According to the passage, the term 'Anthropocene' ----.",
+      "options": {
+        "A": "is already an officially recognized geological epoch",
+        "B": "has been ignored by the scientific community",
+        "C": "refers to the era of significant human impact on Earth",
+        "D": "was coined by the International Union of Geological Sciences",
+        "E": "describes a time before industrialization began"
+      },
+      "correct": "C",
+      "passage_id": "reading_p1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading_comprehension",
+      "question": "What is one reason proponents give for justifying the Anthropocene?",
+      "options": {
+        "A": "The burning of fossil fuels has changed the atmosphere.",
+        "B": "The Earth's biodiversity has increased significantly.",
+        "C": "The timeframe of human impact is longer than other epochs.",
+        "D": "Natural disasters have shaped the planet more than humans.",
+        "E": "Geological eras are usually very short in duration."
+      },
+      "correct": "A",
+      "passage_id": "reading_p1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading_comprehension",
+      "question": "What is the main criticism of the Anthropocene proposal mentioned in the text?",
+      "options": {
+        "A": "Human impact on the Earth is not significant enough.",
+        "B": "The period of human impact is too brief for a geological epoch.",
+        "C": "Industrialization has not actually affected the biodiversity.",
+        "D": "The International Union of Geological Sciences is too slow to decide.",
+        "E": "The term is only used by non-scientists."
+      },
+      "correct": "B",
+      "passage_id": "reading_p1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading_comprehension",
+      "question": "The passage defines neuroplasticity as ----.",
+      "options": {
+        "A": "the brain's inability to change after childhood",
+        "B": "the process of neurons dying due to old age",
+        "C": "the brain's capacity to reorganize itself and form new connections",
+        "D": "a disease that affects the nervous system of adults",
+        "E": "the structural rigidity of the human brain"
+      },
+      "correct": "C",
+      "passage_id": "reading_p2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading_comprehension",
+      "question": "According to the text, what was the long-held belief about the brain?",
+      "options": {
+        "A": "It was always capable of changing its structure.",
+        "B": "Its structure became fixed and unchangeable after a certain age.",
+        "C": "Neurons could never compensate for any type of injury.",
+        "D": "Adults could learn much faster than children.",
+        "E": "The environment had no effect on brain activity."
+      },
+      "correct": "B",
+      "passage_id": "reading_p2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading_comprehension",
+      "question": "Modern research findings indicate that ----.",
+      "options": {
+        "A": "only the brains of young children are plastic",
+        "B": "learning and experience do not affect brain structure",
+        "C": "the adult brain is capable of significant changes",
+        "D": "the brain stops forming new connections after age 25",
+        "E": "functional changes are impossible in diseased brains"
+      },
+      "correct": "C",
+      "passage_id": "reading_p2"
+    }
+  ]
+}

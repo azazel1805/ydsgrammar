@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Industrial Revolution was a period of profound transformation. It (8) ---- the transition to new manufacturing processes in Europe and the United States. This era (9) ---- a shift from hand production methods to machines. (10) ---- the economic growth was unprecedented, the social impact was also significant. Many workers (11) ---- harsh conditions in urban centers. Therefore, it is essential to (12) ---- the multifaceted nature of this historical epoch."
+    },
+    {
+      "id": "reading_1",
+      "text": "The discovery of exoplanets has revolutionized our understanding of the universe. For decades, the existence of planets orbiting stars other than our Sun was a matter of speculation. However, with the advent of advanced telescopes like Kepler, thousands of such planets have been identified. Scientists are particularly interested in the 'habitable zone,' the region around a star where conditions might allow for liquid water. While finding a 'Second Earth' remains elusive, the diversity of planetary systems discovered so far suggests that our solar system may not be as typical as once believed."
+    },
+    {
+      "id": "reading_2",
+      "text": "Cognitive dissonance is a psychological phenomenon that occurs when an individual holds two or more contradictory beliefs or values. This inconsistency leads to feelings of discomfort, which motivates the person to resolve the conflict. People often justify their behavior or change their attitudes to regain mental equilibrium. For instance, a smoker who knows that smoking is harmful might convince themselves that the health risks are exaggerated. Understanding cognitive dissonance helps explain why people often resist new information that challenges their existing worldview."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The government is trying to find a ---- solution to the economic crisis that will satisfy all stakeholders.",
+      "options": {
+        "A": "volatile",
+        "B": "feasible",
+        "C": "redundant",
+        "D": "negligible",
+        "E": "vague"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "The use of renewable energy sources has increased ---- over the last decade due to environmental concerns.",
+      "options": {
+        "A": "incidentally",
+        "B": "precariously",
+        "C": "significantly",
+        "D": "adversely",
+        "E": "marginally"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Recent archeological findings ---- the theory that ancient civilizations had advanced knowledge of astronomy.",
+      "options": {
+        "A": "undermine",
+        "B": "refute",
+        "C": "corroborate",
+        "D": "abandon",
+        "E": "distort"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "Although the new policy was intended to reduce urban traffic, ----.",
+      "options": {
+        "A": "it has led to a noticeable increase in carbon emissions",
+        "B": "the city council has already approved the budget",
+        "C": "public transport is becoming more expensive",
+        "D": "most commuters prefer using their own vehicles",
+        "E": "it failed to address the lack of parking spaces"
+      },
+      "correct": "E",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "Unless we take immediate action to protect endangered species, ----.",
+      "options": {
+        "A": "biodiversity would have been preserved",
+        "B": "many of them will face extinction within years",
+        "C": "conservation efforts were successful",
+        "D": "the ecosystem remains balanced",
+        "E": "natural habitats are being restored"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Owing to the rapid advancements in artificial intelligence, ----.",
+      "options": {
+        "A": "traditional job roles are being redefined",
+        "B": "it was difficult to predict the future",
+        "C": "manual labor is still the primary focus",
+        "D": "technology has no impact on education",
+        "E": "computers were less efficient in the past"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "---- that the early pyramids were built using a sophisticated system of ramps and pulleys.",
+      "options": {
+        "A": "Archeologists have long suspected",
+        "B": "The evidence was insufficient",
+        "C": "Historians will be surprised",
+        "D": "It is widely believed",
+        "E": "Research had shown"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Select the best option for blank 8.",
+      "options": {
+        "A": "marked",
+        "B": "ceased",
+        "C": "prevented",
+        "D": "delayed",
+        "E": "neglected"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Select the best option for blank 9.",
+      "options": {
+        "A": "involved",
+        "B": "rejected",
+        "C": "ignored",
+        "D": "withdrew",
+        "E": "denied"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Select the best option for blank 10.",
+      "options": {
+        "A": "Despite",
+        "B": "Since",
+        "C": "While",
+        "D": "Because",
+        "E": "Therefore"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Select the best option for blank 11.",
+      "options": {
+        "A": "endured",
+        "B": "escaped",
+        "C": "enjoyed",
+        "D": "avoided",
+        "E": "prohibited"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Select the best option for blank 12.",
+      "options": {
+        "A": "acknowledge",
+        "B": "contradict",
+        "C": "diminish",
+        "D": "overlook",
+        "E": "abolish"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Bilim insanları, iklim değişikliğinin deniz seviyeleri üzerindeki etkisini hala tam olarak anlayabilmiş değiller.",
+      "options": {
+        "A": "Scientists still do not fully understand the impact of climate change on sea levels.",
+        "B": "The impact of climate change on sea levels is fully understood by scientists.",
+        "C": "Scientists have fully understood how climate change affects sea levels.",
+        "D": "Climate change and its impact on sea levels are being studied by scientists.",
+        "E": "Scientists are trying to understand the effects of climate change on sea levels."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "The rise of social media has fundamentally altered the way people communicate and share information.",
+      "options": {
+        "A": "Sosyal medyanın yükselişi, insanların iletişim kurma ve bilgi paylaşma biçimini kökten değiştirdi.",
+        "B": "İnsanlar sosyal medya sayesinde daha kolay iletişim kurmaya ve bilgi paylaşmaya başladılar.",
+        "C": "Sosyal medya, bilgi paylaşımı ve iletişim üzerinde büyük bir etkiye sahiptir.",
+        "D": "Bilgi paylaşma ve iletişim biçimi sosyal medyanın gelişimiyle değişmektedir.",
+        "E": "Sosyal medyanın gelişimi, iletişimi ve bilgi paylaşımını etkileyen ana faktördür."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Eğitim sistemindeki reformlar, öğrencilerin yaratıcılığını teşvik etmeyi amaçlamaktadır.",
+      "options": {
+        "A": "Reforms in the education system aim to encourage students' creativity.",
+        "B": "The education system needs reforms to encourage creativity in students.",
+        "C": "Students' creativity is the main focus of the reforms in education.",
+        "D": "Educational reforms are designed to improve student performance.",
+        "E": "To encourage creativity, the education system must be reformed."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "Despite the challenges, the researchers managed to complete the project on time.",
+      "options": {
+        "A": "Zorluklara rağmen, araştırmacılar projeyi zamanında tamamlamayı başardılar.",
+        "B": "Araştırmacılar zorluklarla karşılaşsalar da projeyi bitirdiler.",
+        "C": "Projeyi zamanında bitirmek için araştırmacılar birçok zorlukla savaştılar.",
+        "D": "Zorluklar olmasaydı, araştırmacılar projeyi daha erken bitirebilirdi.",
+        "E": "Araştırmacılar projeyi zamanında bitirmek için büyük çaba sarf ettiler."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "It is likely that the drought will lead to a decrease in agricultural production this year.",
+      "options": {
+        "A": "Agricultural production will definitely fall because of the drought.",
+        "B": "The drought is expected to cause a drop in crop yields this year.",
+        "C": "There might be a drought if agricultural production decreases.",
+        "D": "This year's drought was caused by a lack of agricultural planning.",
+        "E": "A decrease in agricultural production is necessary to avoid drought."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "No sooner had the meeting started than the fire alarm went off.",
+      "options": {
+        "A": "The meeting started right after the fire alarm rang.",
+        "B": "The fire alarm rang just as the meeting was beginning.",
+        "C": "The meeting was interrupted by a fire alarm before it could start.",
+        "D": "As soon as the fire alarm stopped, the meeting began.",
+        "E": "The fire alarm went off because the meeting had started."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "You should have informed us about the changes in the schedule earlier.",
+      "options": {
+        "A": "It would have been better if you had told us about the schedule changes sooner.",
+        "B": "You informed us about the changes in the schedule just in time.",
+        "C": "We were informed about the schedule changes earlier than expected.",
+        "D": "Please inform us about any future schedule changes as soon as possible.",
+        "E": "The schedule was changed without any prior notice to us."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "Hardly anyone believed that the small startup would become a global giant.",
+      "options": {
+        "A": "Everyone was sure the startup would be successful globally.",
+        "B": "Few people expected the small company to achieve such worldwide success.",
+        "C": "The startup became a global giant despite everyone's expectations.",
+        "D": "No one was surprised when the startup became a global giant.",
+        "E": "It was common knowledge that the startup would grow into a large company."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Jane: I've been reading about the benefits of a plant-based diet. \nMark: It seems to be gaining a lot of popularity lately. \nJane: ---- \nMark: Exactly. It's not just about personal health anymore.",
+      "options": {
+        "A": "I think it's just a passing fad.",
+        "B": "Yes, but many people still prefer eating meat.",
+        "C": "True, and many people are also concerned about the environmental impact of meat production.",
+        "D": "I'm not sure if I could ever give up cheese.",
+        "E": "What are some of the health benefits you mentioned?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "Professor: Your thesis proposal on renewable energy is quite ambitious. \nStudent: Thank you, I've spent a lot of time researching it. \nProfessor: ---- \nStudent: I see your point. I'll focus more on solar energy in urban areas.",
+      "options": {
+        "A": "It's perfect as it is; don't change anything.",
+        "B": "However, you might want to narrow down your scope to a specific region.",
+        "C": "Why did you choose this topic in the first place?",
+        "D": "I don't think you have enough data for this study.",
+        "E": "The deadline for submission is next week."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Interviewer: What do you consider to be your greatest professional achievement? \nCandidate: ---- \nInterviewer: That's impressive. How did you manage such a large-scale project?",
+      "options": {
+        "A": "I'm still looking for my first job.",
+        "B": "I once led a team that successfully implemented a new software system across the entire company.",
+        "C": "I think I work well with others in a team environment.",
+        "D": "I'm hoping to learn more about project management here.",
+        "E": "My greatest achievement is yet to come."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "Customer: I'm looking for a laptop that's both powerful and lightweight. \nSalesperson: We have several models that fit that description. \nCustomer: ---- \nSalesperson: In that case, I'd recommend the Ultrabook Pro. It's designed for professionals on the go.",
+      "options": {
+        "A": "Price is not an issue for me.",
+        "B": "I mainly use it for gaming and video editing.",
+        "C": "I need something with a very long battery life for traveling.",
+        "D": "Which one is the cheapest model you have?",
+        "E": "Can I get a discount if I buy two?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Renewable energy is becoming increasingly important as the world seeks to reduce its reliance on fossil fuels. Solar, wind, and hydroelectric power offer cleaner alternatives that produce fewer greenhouse gas emissions. ----. Governments around the world are investing heavily in these technologies to meet climate goals.",
+      "options": {
+        "A": "Fossil fuels are still the most reliable source of energy.",
+        "B": "Furthermore, the cost of renewable energy has dropped significantly in recent years.",
+        "C": "Nuclear power remains a controversial topic in many countries.",
+        "D": "The transition to green energy will take several decades.",
+        "E": "Energy consumption is expected to double by 2050."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "The concept of emotional intelligence has gained widespread recognition in the workplace. It involves the ability to perceive, understand, and manage one's own emotions as well as those of others. ----. Research shows that employees with high emotional intelligence are more likely to be successful and effective leaders.",
+      "options": {
+        "A": "IQ is still considered the best predictor of job performance.",
+        "B": "Many companies are now offering training programs to develop these skills.",
+        "C": "Emotional intelligence is often confused with being overly sensitive.",
+        "D": "Technical skills are more important than soft skills in many industries.",
+        "E": "The term was first coined by psychologists in the early 1990s."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "Urbanization is a global trend that is transforming societies. As more people move to cities in search of better opportunities, urban areas are expanding at an unprecedented rate. ----. Issues such as housing shortages, traffic congestion, and pollution must be addressed to ensure sustainable growth.",
+      "options": {
+        "A": "Rural areas are being abandoned by the younger generation.",
+        "B": "This rapid growth presents both opportunities and challenges for city planners.",
+        "C": "Cities are becoming more multicultural and diverse.",
+        "D": "The quality of life in urban centers is generally higher than in rural areas.",
+        "E": "Public transportation is the backbone of any modern city."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Artificial intelligence is no longer just a concept of science fiction; it is now an integral part of our daily lives. From virtual assistants to personalized recommendations on streaming platforms, AI technology is everywhere. ----. As AI continues to evolve, its impact on society will only grow stronger.",
+      "options": {
+        "A": "Many people are concerned about the ethical implications of AI.",
+        "B": "The development of AI started in the mid-20th century.",
+        "C": "It is also being used in healthcare to improve diagnosis and treatment.",
+        "D": "AI will eventually replace most human jobs.",
+        "E": "Computers are becoming smarter every year."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "Hardly any students passed the exam due to its unexpected difficulty.",
+      "options": {
+        "A": "Most students failed the exam because it was surprisingly hard.",
+        "B": "The exam was so easy that almost everyone passed it.",
+        "C": "A few students managed to pass the exam despite the difficulty.",
+        "D": "The exam was difficult, but the students were well-prepared.",
+        "E": "No one was able to pass the exam because it was too difficult."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "The company would have avoided bankruptcy if they had managed their finances more carefully.",
+      "options": {
+        "A": "The company went bankrupt because they didn't manage their finances well.",
+        "B": "Even with careful financial management, the company would have gone bankrupt.",
+        "C": "The company's bankruptcy was inevitable despite their financial management.",
+        "D": "Careful financial management helped the company avoid bankruptcy.",
+        "E": "The company is bankrupt now because of a lack of financial planning."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "In spite of his lack of experience, he was promoted to manager.",
+      "options": {
+        "A": "He was promoted to manager because he was very experienced.",
+        "B": "He became manager although he didn't have much experience.",
+        "C": "His lack of experience prevented him from becoming a manager.",
+        "D": "He was promoted to manager to gain more experience.",
+        "E": "Because he lacked experience, he couldn't be a manager."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant",
+      "question": "(I) Genetic engineering has the potential to solve many global problems. (II) For instance, it can be used to create crops that are resistant to pests and drought. (III) Farmers have been using traditional breeding methods for centuries. (IV) It could also lead to breakthroughs in treating genetic diseases. (V) However, the technology also raises significant ethical concerns.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant",
+      "question": "(I) The Great Wall of China is one of the most impressive architectural feats in history. (II) It was built over several centuries to protect the Chinese Empire from invasions. (III) Modern tourism has brought many visitors to the wall in recent years. (IV) Stretching over 13,000 miles, it is made of various materials like stone, brick, and wood. (V) Its construction required the labor of hundreds of thousands of workers.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant",
+      "question": "(I) Ocean acidification is a direct result of increased carbon dioxide levels in the atmosphere. (II) As the oceans absorb more CO2, the water becomes more acidic. (III) This change in chemistry can have devastating effects on marine life, especially coral reefs. (IV) Fishing is a major industry in many coastal communities around the world. (V) Shellfish also struggle to build their shells in more acidic waters.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading",
+      "question": "According to the passage, why are scientists interested in the 'habitable zone'?",
+      "options": {
+        "A": "It is the only place where exoplanets can be found.",
+        "B": "It might have the right conditions for liquid water to exist.",
+        "C": "It is the region closest to our Sun.",
+        "D": "It is where most advanced telescopes are located.",
+        "E": "It proves that our solar system is unique."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading",
+      "question": "What did the discovery of exoplanets reveal about our solar system?",
+      "options": {
+        "A": "It is the only system with habitable planets.",
+        "B": "It is much older than other planetary systems.",
+        "C": "It may not be as typical as previously thought.",
+        "D": "It is the center of the universe.",
+        "E": "It is exactly like every other planetary system."
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading",
+      "question": "Which of the following is true about exoplanets according to the text?",
+      "options": {
+        "A": "Their existence was proven long before the Kepler telescope.",
+        "B": "Finding a 'Second Earth' has been an easy task for scientists.",
+        "C": "Advanced technology has played a crucial role in their discovery.",
+        "D": "They only orbit stars that are similar to our Sun.",
+        "E": "Liquid water has been found on most of them."
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading",
+      "question": "What causes the feeling of discomfort in cognitive dissonance?",
+      "options": {
+        "A": "A lack of information about a particular subject.",
+        "B": "Holding contradictory beliefs or values at the same time.",
+        "C": "Being challenged by someone with a different worldview.",
+        "D": "The inability to change one's behavior in a difficult situation.",
+        "E": "A lack of mental equilibrium due to stress."
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading",
+      "question": "How might a smoker resolve cognitive dissonance according to the passage?",
+      "options": {
+        "A": "By quitting smoking immediately.",
+        "B": "By ignoring all information about health risks.",
+        "C": "By convincing themselves that the risks are not that high.",
+        "D": "By seeking professional help for their addiction.",
+        "E": "By changing their lifestyle completely."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading",
+      "question": "What is one of the broader implications of understanding cognitive dissonance?",
+      "options": {
+        "A": "It helps in developing new psychological treatments.",
+        "B": "It explains why people are often resistant to new and challenging information.",
+        "C": "It shows that people are always rational in their decision-making.",
+        "D": "It proves that human behavior is entirely predictable.",
+        "E": "It encourages people to hold more contradictory beliefs."
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    }
+  ]
+}

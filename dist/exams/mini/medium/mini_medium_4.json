@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions - Advanced Proficiency",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "voc",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sent_comp",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "trans",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "para_phrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "para_comp",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "close_mean",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrel",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "p1",
+      "text": "The Industrial Revolution marked a major turning point in history; almost every aspect of daily life was influenced in some way. In particular, average income and population began to exhibit unprecedented sustained growth. Some economists say that the major impact of the Industrial Revolution was that the standard of living for the general population began to increase consistently for the first time in history, although others have said that it did not begin to meaningfully improve until the late 19th and 20th centuries."
+    },
+    {
+      "id": "p2",
+      "text": "The discovery of exoplanets has revolutionized our understanding of the universe. For decades, astronomers believed that solar systems like ours were common, but it was not until the 1990s that the first definitive evidence of a planet orbiting another sun-like star was found. Today, thousands of such planets have been identified, ranging from gas giants larger than Jupiter to rocky planets similar in size to Earth. The ultimate goal is to find a planet within the 'habitable zone' where liquid water might exist."
+    },
+    {
+      "id": "cloze_p1",
+      "text": "Archaeologists have recently discovered a site that could redefine our understanding of early human migration. The remains (8)---- in the cave suggest that humans settled in the region much earlier than (9)---- thought. Scientists are now (10)---- the chemical composition of the tools found at the site. (11)---- the harsh climate of the era, these early humans managed to survive by (12)---- innovative hunting techniques."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "voc",
+      "question": "The government has implemented a series of reforms to ---- the economic crisis and restore investor confidence.",
+      "options": {
+        "A": "alleviate",
+        "B": "aggravate",
+        "C": "deteriorate",
+        "D": "jeopardize",
+        "E": "undermine"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "voc",
+      "question": "The researchers provided ---- evidence to support their hypothesis that climate change affects migration patterns.",
+      "options": {
+        "A": "vague",
+        "B": "compelling",
+        "C": "negligible",
+        "D": "ambiguous",
+        "E": "scarce"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "voc",
+      "question": "Despite the initial setbacks, the project was ---- completed ahead of schedule due to the team's dedication.",
+      "options": {
+        "A": "reluctantly",
+        "B": "hazardously",
+        "C": "successfully",
+        "D": "adversely",
+        "E": "temporarily"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sent_comp",
+      "question": "Although the new policy was designed to reduce traffic congestion, ----.",
+      "options": {
+        "A": "it has led to a significant increase in public transport use",
+        "B": "it failed to address the underlying infrastructure issues",
+        "C": "commuters are very happy with the shorter travel times",
+        "D": "the city council will implement it next year",
+        "E": "because of the high cost of fuel in the country"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sent_comp",
+      "question": "---- that the ancient ruins were once part of a thriving maritime civilization.",
+      "options": {
+        "A": "The archaeologists were surprised to find",
+        "B": "Having studied the historical documents",
+        "C": "It is widely believed by most historians",
+        "D": "Despite the lack of physical evidence",
+        "E": "Not only the location of the site but also"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sent_comp",
+      "question": "Unless the global community takes immediate action to lower carbon emissions, ----.",
+      "options": {
+        "A": "the environment would have been protected",
+        "B": "irreversible damage to the ecosystem is inevitable",
+        "C": "renewable energy sources were not popular",
+        "D": "scientists have discovered new ways to trap carbon",
+        "E": "the temperature has remained stable for years"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sent_comp",
+      "question": "Genetic engineering has the potential to cure many diseases, ----.",
+      "options": {
+        "A": "so it is a very old field of study",
+        "B": "yet it raises significant ethical concerns",
+        "C": "because the DNA was not discovered yet",
+        "D": "which means humans are already immortal",
+        "E": "since it was banned by the international law"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze",
+      "question": "Question (8) in Cloze Test:",
+      "options": {
+        "A": "finding",
+        "B": "found",
+        "C": "having found",
+        "D": "to find",
+        "E": "find"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze",
+      "question": "Question (9) in Cloze Test:",
+      "options": {
+        "A": "previously",
+        "B": "gradually",
+        "C": "mutually",
+        "D": "scarcely",
+        "E": "fluently"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze",
+      "question": "Question (10) in Cloze Test:",
+      "options": {
+        "A": "ignoring",
+        "B": "examining",
+        "C": "distorting",
+        "D": "neglecting",
+        "E": "opposing"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze",
+      "question": "Question (11) in Cloze Test:",
+      "options": {
+        "A": "In spite of",
+        "B": "Because of",
+        "C": "As a result",
+        "D": "In addition to",
+        "E": "Rather than"
+      },
+      "correct": "A",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze",
+      "question": "Question (12) in Cloze Test:",
+      "options": {
+        "A": "avoiding",
+        "B": "employing",
+        "C": "demolishing",
+        "D": "withdrawing",
+        "E": "suspending"
+      },
+      "correct": "B",
+      "passage_id": "cloze_p1"
+    },
+    {
+      "id": 13,
+      "section_id": "trans",
+      "question": "Modern tıp, hastalıkların teşhisinde yapay zekayı kullanarak hata payını en aza indirmeyi hedeflemektedir.",
+      "options": {
+        "A": "Modern medicine aims to minimize the margin of error by using artificial intelligence in the diagnosis of diseases.",
+        "B": "Using artificial intelligence, modern medicine has minimized the errors in diagnosing diseases.",
+        "C": "The goal of modern medicine is to eliminate errors in disease diagnosis through artificial intelligence.",
+        "D": "Artificial intelligence is used by modern medicine to reduce errors during the diagnosis process.",
+        "E": "Modern medicine and artificial intelligence work together to minimize the margin of error in diagnosis."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "trans",
+      "question": "Renewable energy sources are becoming increasingly popular as countries seek to reduce their dependence on fossil fuels.",
+      "options": {
+        "A": "Ülkeler fosil yakıtlara olan bağımlılıklarını azaltmaya çalıştıkça, yenilenebilir enerji kaynakları giderek daha popüler hale geliyor.",
+        "B": "Yenilenebilir enerji kaynakları popülerleştiği için ülkeler fosil yakıtlardan vazgeçmeye başladılar.",
+        "C": "Fosil yakıt bağımlılığını azaltmak isteyen ülkeler için yenilenebilir enerji kaynakları tek seçenektir.",
+        "D": "Giderek popülerleşen yenilenebilir enerji kaynakları, ülkelerin fosil yakıt bağımlılığını sona erdirecektir.",
+        "E": "Ülkelerin fosil yakıtlara olan bağımlılığı azaldıkça yenilenebilir enerji kaynakları daha çok tercih edilecektir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "trans",
+      "question": "The development of the internet has fundamentally changed the way people access and share information.",
+      "options": {
+        "A": "İnternet geliştikçe insanların bilgiye erişim ve paylaşım yolları da temelden değişti.",
+        "B": "İnternetin gelişimi, insanların bilgiye erişme ve bilgiyi paylaşma biçimini temelden değiştirmiştir.",
+        "C": "İnsanların bilgiye erişimi ve paylaşımı internetin gelişimi sayesinde tamamen farklı bir hal almıştır.",
+        "D": "Bilgi paylaşımı ve erişimi internetin gelişmesiyle birlikte çok daha kolay bir hale gelmiştir.",
+        "E": "İnternetin sunduğu imkanlar insanların bilgiye ulaşma ve bilgiyi yayma yöntemlerini değiştirmiştir."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "trans",
+      "question": "Eğitim sistemindeki reformlar, öğrencilerin yaratıcı düşünme becerilerini geliştirmeyi amaçlamalıdır.",
+      "options": {
+        "A": "Reforms in the education system should aim to improve students' creative thinking skills.",
+        "B": "The education system needs reforms that will focus on the students' creativity.",
+        "C": "Developing creative thinking skills is the main goal of the reforms in the education system.",
+        "D": "Students should be encouraged to think creatively through reforms in the education system.",
+        "E": "Reforms intended for the education system aim at developing the students' creative skills."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "para_phrase",
+      "question": "Hardly anyone expected the team to win the championship after their poor start to the season.",
+      "options": {
+        "A": "Almost no one thought the team would become champions given how badly they began the season.",
+        "B": "No one believed the team could win the championship even if they started the season well.",
+        "C": "The team's championship win was expected by everyone despite their poor performance.",
+        "D": "Since they started the season so poorly, the team did not expect to win the championship.",
+        "E": "It was impossible for the team to win the championship because of their bad start."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "para_phrase",
+      "question": "The manager cancelled the meeting because not enough members were able to attend.",
+      "options": {
+        "A": "The meeting was held despite the fact that few members attended.",
+        "B": "Due to the low expected attendance, the manager decided to call off the meeting.",
+        "C": "The manager wanted more members to attend the meeting, so he changed the time.",
+        "D": "If more members had attended, the manager would not have cancelled the meeting.",
+        "E": "The meeting was cancelled by the manager as he was unable to attend himself."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "para_phrase",
+      "question": "She wouldn't have failed the exam if she had studied more consistently throughout the semester.",
+      "options": {
+        "A": "She failed the exam because she did not study regularly during the term.",
+        "B": "Even though she studied hard, she still failed the exam.",
+        "C": "She passed the exam although she did not study as much as she should have.",
+        "D": "If she studies more consistently next semester, she will pass her exams.",
+        "E": "Studying consistently throughout the semester does not guarantee passing the exam."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "para_phrase",
+      "question": "Few scientific discoveries have had as much impact on society as the invention of the steam engine.",
+      "options": {
+        "A": "The steam engine is one of the most influential scientific discoveries in history.",
+        "B": "Many scientific discoveries have influenced society more than the steam engine.",
+        "C": "Society was not impacted by scientific discoveries until the steam engine was invented.",
+        "D": "The invention of the steam engine had no real impact on scientific progress.",
+        "E": "No other discovery has ever reached the level of impact that the steam engine had."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Sarah: Have you finished the report for the marketing department yet? \n Mark: ---- \n Sarah: That's a relief. We need to submit it by noon.",
+      "options": {
+        "A": "I haven't even started it yet.",
+        "B": "Yes, I sent it to them five minutes ago.",
+        "C": "The marketing department is on the second floor.",
+        "D": "I think I need more time to gather the data.",
+        "E": "Who is responsible for the final check?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "James: Do you think electric cars will completely replace petrol cars in the near future? \n Linda: ---- \n James: I agree. The infrastructure for charging is still quite limited in many areas.",
+      "options": {
+        "A": "I believe they are already more popular than petrol cars.",
+        "B": "It seems unlikely given the current challenges with battery technology and charging stations.",
+        "C": "Electric cars are much better for the environment than petrol ones.",
+        "D": "Most car manufacturers are moving towards electric models now.",
+        "E": "The price of petrol is increasing every day."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Professor: Your thesis proposal is quite interesting, but it lacks a clear methodology. \n Student: ---- \n Professor: That would be helpful. Let's meet again next Tuesday to discuss the updates.",
+      "options": {
+        "A": "I'm sorry, I don't think I can find a better topic.",
+        "B": "I will revise that section and provide more details on how I will conduct the research.",
+        "C": "I thought the methodology was the strongest part of my proposal.",
+        "D": "Can I submit the proposal without a methodology section?",
+        "E": "Why is the methodology so important in academic writing?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "Travel Agent: Would you prefer a window or an aisle seat for your flight to Tokyo? \n Customer: ---- \n Travel Agent: Certainly. I'll place you in 14C, which is an aisle seat.",
+      "options": {
+        "A": "I don't really care where I sit.",
+        "B": "I'd prefer an aisle seat so I can move around more easily.",
+        "C": "Is there a meal service on this flight?",
+        "D": "The window seat offers a great view, doesn't it?",
+        "E": "How long does the flight to Tokyo take?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "para_comp",
+      "question": "Artificial intelligence is no longer a concept of the far future. Today, it is integrated into various sectors such as healthcare, finance, and transportation. ----. For instance, AI algorithms can now diagnose diseases with higher accuracy than some human doctors.",
+      "options": {
+        "A": "However, many people are still afraid of robots taking over.",
+        "B": "Its applications are becoming more sophisticated every day.",
+        "C": "History shows that technology always changes the job market.",
+        "D": "Many universities are now offering degrees in computer science.",
+        "E": "The cost of AI technology is still too high for small businesses."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "para_comp",
+      "question": "Sustainable architecture aims to minimize the negative environmental impact of buildings. This is achieved through efficiency and moderation in the use of materials, energy, and development space. ----. By doing so, architects can create structures that are both functional and eco-friendly.",
+      "options": {
+        "A": "Most modern buildings are constructed using steel and glass.",
+        "B": "Urban planning is a completely different field of study.",
+        "C": "The main focus is to use renewable resources and reduce waste.",
+        "D": "Ancient buildings were not designed with sustainability in mind.",
+        "E": "Architects often struggle with the high costs of green materials."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "para_comp",
+      "question": "The Great Barrier Reef is the world's largest coral reef system. It supports a wide diversity of life and was selected as a World Heritage Site in 1981. ----. Rising ocean temperatures and pollution are causing significant damage to this delicate ecosystem.",
+      "options": {
+        "A": "It is located in the Coral Sea, off the coast of Queensland, Australia.",
+        "B": "Tourism provides a lot of income for the local people in the region.",
+        "C": "However, it is currently facing unprecedented threats due to climate change.",
+        "D": "Scuba diving is a popular activity for visitors to the reef.",
+        "E": "Many different species of fish can be found living in the coral."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "para_comp",
+      "question": "Psychology is the scientific study of the mind and behavior. It is a multifaceted discipline and includes many sub-fields of study. ----. Each of these areas seeks to understand different aspects of how humans think and act.",
+      "options": {
+        "A": "These include areas such as human development, social behavior, and cognitive processes.",
+        "B": "Sigmund Freud is often considered the father of modern psychoanalysis.",
+        "C": "Many people confuse psychology with psychiatry, which is a medical specialty.",
+        "D": "Studying psychology requires a lot of reading and critical thinking.",
+        "E": "Clinical psychologists work in hospitals to help patients with mental disorders."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "close_mean",
+      "question": "It is essential that we find a solution to the problem as soon as possible.",
+      "options": {
+        "A": "We might find a solution to the problem eventually.",
+        "B": "Finding a solution to the problem immediately is of great importance.",
+        "C": "A solution to the problem will probably be found soon.",
+        "D": "It is not very important to solve the problem right away.",
+        "E": "We should have found a solution to the problem a long time ago."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "close_mean",
+      "question": "The company's success is largely due to its innovative marketing strategies.",
+      "options": {
+        "A": "The company succeeded because it spent a lot of money on advertising.",
+        "B": "Innovative marketing strategies played a major role in the company's success.",
+        "C": "Without its marketing strategies, the company would still be successful.",
+        "D": "The company's marketing strategies were not as successful as expected.",
+        "E": "The company is successful, but its marketing strategies are quite old-fashioned."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "close_mean",
+      "question": "I would rather stay at home than go to the cinema tonight.",
+      "options": {
+        "A": "I prefer staying at home to going to the cinema tonight.",
+        "B": "I will go to the cinema even if I want to stay at home.",
+        "C": "I don't want to stay at home, so let's go to the cinema.",
+        "D": "I would like to go to the cinema but I have to stay at home.",
+        "E": "Going to the cinema is better than staying at home tonight."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrel",
+      "question": "(I) Solar energy is a clean and renewable source of energy. (II) It is harnessed using solar panels that convert sunlight into electricity. (III) Many people find the installation costs of solar panels to be quite high. (IV) Fossil fuels, on the other hand, release harmful greenhouse gases when burned. (V) Despite the initial cost, solar energy can save money in the long run.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrel",
+      "question": "(I) The Renaissance was a period of great cultural and artistic achievement in Europe. (II) It began in Italy in the 14th century and later spread to the rest of the continent. (III) Leonardo da Vinci and Michelangelo were two of the most famous artists of this era. (IV) The Industrial Revolution led to the growth of cities and factories. (V) During the Renaissance, there was also a renewed interest in the classical learning of Greece and Rome.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrel",
+      "question": "(I) Regular exercise has numerous benefits for physical health. (II) It can help to reduce the risk of chronic diseases such as heart disease and diabetes. (III) Additionally, exercise is known to improve mental health by reducing stress and anxiety. (IV) Some people prefer to exercise in a gym, while others like outdoor activities. (V) It is important to choose a type of exercise that you enjoy so that you can stay motivated.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "IV",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading",
+      "question": "According to the passage, the Industrial Revolution ----.",
+      "options": {
+        "A": "had no impact on the daily lives of ordinary people",
+        "B": "was a period of consistent economic decline",
+        "C": "is considered a major turning point in human history",
+        "D": "only affected the population in the 20th century",
+        "E": "led to a decrease in the average income of workers"
+      },
+      "correct": "C",
+      "passage_id": "p1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading",
+      "question": "It can be inferred from the passage that economists ----.",
+      "options": {
+        "A": "all agree on when the standard of living began to improve",
+        "B": "have different views regarding the timing of the Revolution's positive impact",
+        "C": "believe the Industrial Revolution was a failure",
+        "D": "think that the population growth was a negative outcome",
+        "E": "disagree that income increased during the 19th century"
+      },
+      "correct": "B",
+      "passage_id": "p1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading",
+      "question": "What is the primary topic of the passage?",
+      "options": {
+        "A": "The history of 20th-century economic growth",
+        "B": "The negative effects of the Industrial Revolution",
+        "C": "A general overview of the Industrial Revolution's impact",
+        "D": "The population explosion in the late 19th century",
+        "E": "The difference between various schools of economic thought"
+      },
+      "correct": "C",
+      "passage_id": "p1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading",
+      "question": "According to the passage, when was the first definitive evidence of an exoplanet found?",
+      "options": {
+        "A": "In the early 19th century",
+        "B": "In the 1990s",
+        "C": "Decades before the 1990s",
+        "D": "Only in the last few years",
+        "E": "When Jupiter was first discovered"
+      },
+      "correct": "B",
+      "passage_id": "p2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading",
+      "question": "The passage states that the identified exoplanets ----.",
+      "options": {
+        "A": "are all the same size as Earth",
+        "B": "are mostly made of liquid water",
+        "C": "vary significantly in size and composition",
+        "D": "are all located within the 'habitable zone'",
+        "E": "cannot be larger than the planet Jupiter"
+      },
+      "correct": "C",
+      "passage_id": "p2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading",
+      "question": "What is described as the 'ultimate goal' in exoplanet research?",
+      "options": {
+        "A": "To find a planet that orbits a sun-like star",
+        "B": "To identify thousands of gas giants",
+        "C": "To find a planet where liquid water could potentially exist",
+        "D": "To prove that our solar system is the only one",
+        "E": "To travel to the nearest rocky planet"
+      },
+      "correct": "C",
+      "passage_id": "p2"
+    }
+  ]
+}

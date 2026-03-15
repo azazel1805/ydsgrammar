@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Industrial Revolution marked a major turning point in history. Almost every aspect of daily life was (8) --- in some way. In particular, average income and population began to exhibit unprecedented (9) --- growth. Some economists say that the major impact (10) --- that the standard of living for the general population began to increase consistently for the first time in history, (11) --- others say that it did not begin to meaningfully improve until the late 19th and 20th centuries. At the same time, the transition (12) --- a shift from hand production methods to machines."
+    },
+    {
+      "id": "reading_1",
+      "text": "The discovery of penicillin by Alexander Fleming in 1928 changed the course of medicine forever. Before antibiotics, even a small scratch could lead to a fatal infection. Fleming noticed that a mold called Penicillium notatum had contaminated one of his Petri dishes and was killing the bacteria around it. However, it took several more years for researchers like Howard Florey and Ernst Chain to develop a way to mass-produce the drug. By World War II, penicillin was being used to save thousands of soldiers' lives."
+    },
+    {
+      "id": "reading_2",
+      "text": "Renewable energy sources, such as solar and wind power, are becoming increasingly vital as the world faces the challenges of climate change. Unlike fossil fuels, which release carbon dioxide into the atmosphere, renewable sources produce little to no greenhouse gases during operation. Despite their benefits, the transition to green energy is not without obstacles. The primary issue is intermittency; the sun does not always shine, and the wind does not always blow. Therefore, developing efficient battery storage systems is essential for a sustainable future."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The sudden increase in oil prices has had a/an --- impact on the global economy, leading to higher transportation costs.",
+      "options": {
+        "A": "negligible",
+        "B": "significant",
+        "C": "artificial",
+        "D": "redundant",
+        "E": "vague"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "Scientists are working hard to --- the causes of the new virus to prevent a future pandemic.",
+      "options": {
+        "A": "identify",
+        "B": "ignore",
+        "C": "cancel",
+        "D": "postpone",
+        "E": "estimate"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Due to the heavy rain, the football match was --- until next weekend.",
+      "options": {
+        "A": "called off",
+        "B": "put off",
+        "C": "broken out",
+        "D": "taken up",
+        "E": "given in"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "Although the patient showed some signs of improvement yesterday, ---.",
+      "options": {
+        "A": "the doctors are very happy with the results",
+        "B": "he will be discharged from the hospital today",
+        "C": "his condition suddenly worsened this morning",
+        "D": "medicine has advanced greatly in recent years",
+        "E": "he has been exercising regularly for a month"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "--- because they offer more flexibility and lower costs for students.",
+      "options": {
+        "A": "Traditional universities are still popular",
+        "B": "Online education programs are gaining popularity",
+        "C": "Many students prefer to study in a library",
+        "D": "Textbooks are becoming more expensive every year",
+        "E": "Campus life is an essential part of college"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Unless the government takes immediate action to reduce carbon emissions, ---.",
+      "options": {
+        "A": "global warming will continue to threaten the planet",
+        "B": "people have started using electric cars more",
+        "C": "environmentalists were happy with the new law",
+        "D": "the sea levels had already risen significantly",
+        "E": "renewable energy is not a new concept"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "While some people enjoy living in big cities for the opportunities they provide, ---.",
+      "options": {
+        "A": "cities are often crowded and noisy",
+        "B": "they never want to move to the countryside",
+        "C": "others find the fast-paced lifestyle quite stressful",
+        "D": "modern technology makes urban life easier",
+        "E": "jobs are easier to find in metropolitan areas"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 8.",
+      "options": {
+        "A": "influenced",
+        "B": "ignored",
+        "C": "destroyed",
+        "D": "measured",
+        "E": "survived"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 9.",
+      "options": {
+        "A": "sustainable",
+        "B": "gradual",
+        "C": "sustained",
+        "D": "limited",
+        "E": "temporary"
+      },
+      "correct": "C",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 10.",
+      "options": {
+        "A": "is",
+        "B": "was",
+        "C": "has been",
+        "D": "had been",
+        "E": "would be"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 11.",
+      "options": {
+        "A": "therefore",
+        "B": "moreover",
+        "C": "as long as",
+        "D": "whereas",
+        "E": "unless"
+      },
+      "correct": "D",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank 12.",
+      "options": {
+        "A": "involved",
+        "B": "involving",
+        "C": "to involve",
+        "D": "having involved",
+        "E": "to be involved"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Eğitim, bir bireyin sadece bilgi düzeyini artırmakla kalmaz, aynı zamanda onun eleştirel düşünme yeteneğini de geliştirir.",
+      "options": {
+        "A": "Education increases the knowledge level of an individual and critical thinking.",
+        "B": "Education not only increases an individual's knowledge level but also improves their critical thinking ability.",
+        "C": "To improve critical thinking, an individual must receive a good education.",
+        "D": "Critical thinking is as important as the level of knowledge in education.",
+        "E": "An individual's knowledge and critical thinking are improved by education."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Many historical artifacts were damaged during the war because they were not properly protected.",
+      "options": {
+        "A": "Savaş sırasında birçok tarihi eser, uygun şekilde korunmadığı için zarar gördü.",
+        "B": "Tarihi eserlerin çoğu savaşta zarar gördü çünkü korunmaları imkansızdı.",
+        "C": "Savaşta zarar gören tarihi eserlerin çoğu yeterince korunmamıştı.",
+        "D": "Birçok tarihi eser korunmasına rağmen savaş sırasında zarar görmekten kurtulamadı.",
+        "E": "Uygun koruma olmasaydı, savaşta daha fazla tarihi eser zarar görecekti."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Teknolojideki hızlı gelişmeler, iletişim kurma şeklimizi tamamen değiştirdi.",
+      "options": {
+        "A": "The rapid developments in technology have completely changed the way we communicate.",
+        "B": "Communication has changed completely due to the development of technology.",
+        "C": "Rapid technology has changed our ways of communication entirely.",
+        "D": "We communicate differently now because of technology developments.",
+        "E": "Technology is changing so rapidly that communication is also changing."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "It is estimated that the world population will reach 9 billion by the year 2050.",
+      "options": {
+        "A": "2050 yılına kadar dünya nüfusunun 9 milyara ulaşacağı tahmin ediliyor.",
+        "B": "Dünya nüfusunun 2050'de 9 milyar olacağı kesinleşti.",
+        "C": "Tahminlere göre 2050 yılında dünya nüfusu tam 9 milyar olacak.",
+        "D": "Dünya nüfusu 2050'ye kadar 9 milyara yaklaşabilir.",
+        "E": "2050 yılında 9 milyar insanın dünyada yaşayacağı öngörülüyor."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "He was so tired that he fell asleep as soon as his head touched the pillow.",
+      "options": {
+        "A": "He fell asleep immediately after lying down because of his extreme exhaustion.",
+        "B": "He was tired, yet it took him a while to fall asleep on the pillow.",
+        "C": "Touching the pillow made him feel very tired and sleepy.",
+        "D": "Even though he was tired, he couldn't sleep when he went to bed.",
+        "E": "He went to sleep because he had nothing else to do."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "Hardly anyone expected the team to win the championship this year.",
+      "options": {
+        "A": "Everyone was sure the team would win the championship.",
+        "B": "The team's championship win was a surprise to almost everyone.",
+        "C": "The team worked hard to win the championship this year.",
+        "D": "Few people were disappointed when the team won.",
+        "E": "No one believed the team would even participate in the championship."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "If I had known you were in town, I would have invited you to dinner.",
+      "options": {
+        "A": "I didn't know you were in town, so I didn't invite you to dinner.",
+        "B": "I invited you to dinner because I knew you were in town.",
+        "C": "I knew you were here, but I forgot to invite you to dinner.",
+        "D": "You should have told me you were in town for dinner.",
+        "E": "Even if I had known you were here, I wouldn't have invited you."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "The manager cancelled the meeting because several members were absent.",
+      "options": {
+        "A": "The meeting was held despite the absence of several members.",
+        "B": "Because of the lack of many members, the meeting was called off by the manager.",
+        "C": "The manager wanted to meet only the absent members.",
+        "D": "The members were absent because the manager cancelled the meeting.",
+        "E": "Only a few members attended the meeting organized by the manager."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Amy: Did you hear that the library is closing for renovations? \nBob: Really? --- \nAmy: For at least three months, according to the announcement.",
+      "options": {
+        "A": "Where is the library located?",
+        "B": "How long will it be closed?",
+        "C": "Why are they doing that?",
+        "D": "Who told you that news?",
+        "E": "Can I borrow some books today?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "Mark: I'm thinking of buying a new laptop for my graphic design work. \nSarah: --- \nMark: Actually, I need something with a very powerful processor and a high-resolution screen.",
+      "options": {
+        "A": "Do you prefer Mac or Windows?",
+        "B": "What features are you looking for specifically?",
+        "C": "Laptops are very expensive these days.",
+        "D": "I can lend you mine if you want.",
+        "E": "Where will you buy it from?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Jane: Have you finished the report for the manager yet? \nTom: --- \nJane: Well, you'd better hurry up because the deadline is tomorrow morning.",
+      "options": {
+        "A": "Yes, I sent it an hour ago.",
+        "B": "The manager is a very nice person.",
+        "C": "I'm still working on the final section.",
+        "D": "I don't think I will go to the meeting.",
+        "E": "Reports are usually very boring."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "Kevin: How was your trip to Italy? \nLisa: It was amazing! The food and the architecture were incredible. \nKevin: --- \nLisa: Yes, Rome was my favorite, but Florence was also beautiful.",
+      "options": {
+        "A": "Did you visit many cities while you were there?",
+        "B": "Was the weather good during your stay?",
+        "C": "How much did the flight tickets cost?",
+        "D": "I have never been to Europe before.",
+        "E": "Did you take a lot of photos?"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Tourism is a major source of income for many countries around the world. It creates jobs in hotels, restaurants, and transportation. ---. For instance, too many tourists can lead to environmental degradation and the loss of local culture.",
+      "options": {
+        "A": "However, it can also have some negative impacts on the local environment",
+        "B": "Therefore, governments should encourage more people to travel",
+        "C": "Tourism is expected to grow even more in the coming years",
+        "D": "Most tourists prefer to visit historical sites and museums",
+        "E": "Italy and France are the most visited countries in the world"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "Sleep is essential for our physical and mental health. During sleep, our bodies repair tissues and our brains process information from the day. ---. Chronic sleep deprivation can lead to serious health problems such as heart disease and obesity.",
+      "options": {
+        "A": "Many people enjoy drinking coffee in the morning",
+        "B": "Lack of sleep, on the other hand, can have detrimental effects",
+        "C": "Dreams are a mysterious part of the sleeping process",
+        "D": "Some people need more sleep than others to feel rested",
+        "E": "Setting a regular sleep schedule is a good habit"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "The Great Wall of China is one of the most impressive architectural feats in human history. It stretches over 13,000 miles across northern China. ---. It was also used for border control and the regulation of trade along the Silk Road.",
+      "options": {
+        "A": "It was originally built as a defense against invasions",
+        "B": "Modern tourists love to hike along its various sections",
+        "C": "The wall is visible from space according to some myths",
+        "D": "Many workers lost their lives during its construction",
+        "E": "Chinese history is full of interesting dynasties"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "Artificial Intelligence is rapidly changing the way we live and work. From voice assistants to self-driving cars, AI applications are becoming more common. ---. Some worry about job displacement, while others are concerned about privacy and ethics.",
+      "options": {
+        "A": "AI can analyze large amounts of data much faster than humans",
+        "B": "But this technology also brings several challenges and concerns",
+        "C": "Many companies are investing heavily in AI research",
+        "D": "Computer science is a popular field of study today",
+        "E": "AI is not a new concept, but it has advanced recently"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "It is not necessary for you to bring your own laptop to the workshop.",
+      "options": {
+        "A": "You must not bring your laptop to the workshop.",
+        "B": "You don't have to bring your laptop to the workshop.",
+        "C": "You shouldn't have brought your laptop to the workshop.",
+        "D": "You can bring your laptop if you want to.",
+        "E": "It is forbidden to use laptops during the workshop."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "Hardly had the movie started when the power went out.",
+      "options": {
+        "A": "The movie started after the power went out.",
+        "B": "The power went out just as the movie was beginning.",
+        "C": "The movie had been playing for a long time when the power failed.",
+        "D": "The power didn't go out until the movie ended.",
+        "E": "As soon as the power went out, the movie started."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "The company's profits have doubled compared to last year.",
+      "options": {
+        "A": "The company made twice as much profit this year as last year.",
+        "B": "Last year's profits were higher than this year's.",
+        "C": "The company's profits haven't changed since last year.",
+        "D": "The company is expected to double its profits next year.",
+        "E": "The profit increase was not as much as expected."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant",
+      "question": "(I) Solar energy is one of the cleanest forms of energy available. (II) It is harvested using photovoltaic cells that convert sunlight into electricity. (III) Fossil fuels, however, contribute significantly to air pollution. (IV) These cells can be installed on rooftops or in large solar farms. (V) Once installed, they require very little maintenance and have no fuel costs.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant",
+      "question": "(I) Reading books is a great way to improve your vocabulary and language skills. (II) It also helps to reduce stress and improve concentration. (III) Many people prefer watching movies to reading books. (IV) Furthermore, reading exposes you to different cultures and perspectives. (V) In short, it is a habit that offers numerous benefits for personal growth.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant",
+      "question": "(I) The Mediterranean diet is often cited as one of the healthiest in the world. (II) It emphasizes eating fruits, vegetables, whole grains, and healthy fats. (III) Olive oil is the primary source of fat in this diet. (IV) Some people find it difficult to exercise regularly due to their busy schedules. (V) Studies have shown that this diet can reduce the risk of heart disease.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading",
+      "question": "According to the passage, what did Alexander Fleming notice in his Petri dish?",
+      "options": {
+        "A": "A new type of bacteria that was very strong.",
+        "B": "That the dish was completely clean and sterile.",
+        "C": "A mold that was preventing the growth of bacteria.",
+        "D": "That the bacteria were multiplying very quickly.",
+        "E": "A chemical reaction that he couldn't explain."
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading",
+      "question": "Why did it take several more years after the discovery to use penicillin as a drug?",
+      "options": {
+        "A": "Because Fleming didn't think the discovery was important.",
+        "B": "Because it was difficult to find a way to produce it in large quantities.",
+        "C": "Because the government banned the use of antibiotics.",
+        "D": "Because soldiers did not want to use a new medicine.",
+        "E": "Because other researchers were trying to stop the project."
+      },
+      "correct": "B",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading",
+      "question": "What is the main significance of penicillin mentioned in the text?",
+      "options": {
+        "A": "It was the first medicine ever discovered.",
+        "B": "It was discovered by accident in a lab.",
+        "C": "It saved many lives during World War II by treating infections.",
+        "D": "It is only effective against minor scratches.",
+        "E": "It was developed by a large team of scientists in 1928."
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading",
+      "question": "What is the primary advantage of renewable energy over fossil fuels according to the text?",
+      "options": {
+        "A": "Renewable energy is much cheaper to produce.",
+        "B": "Renewable sources are easier to access in all countries.",
+        "C": "They release very little to no greenhouse gases.",
+        "D": "They do not require any maintenance or technology.",
+        "E": "Fossil fuels are running out very quickly."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading",
+      "question": "What does the term 'intermittency' refer to in the passage?",
+      "options": {
+        "A": "The high cost of solar panels and wind turbines.",
+        "B": "The fact that renewable energy sources are not always available.",
+        "C": "The pollution caused by manufacturing batteries.",
+        "D": "The difficulty of transporting energy over long distances.",
+        "E": "The limited number of places where wind is strong."
+      },
+      "correct": "B",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading",
+      "question": "What is mentioned as a necessary requirement for a sustainable energy future?",
+      "options": {
+        "A": "Building more fossil fuel power plants as a backup.",
+        "B": "Reducing the global consumption of electricity.",
+        "C": "Developing efficient systems to store energy in batteries.",
+        "D": "Relying only on solar power instead of wind.",
+        "E": "Finding more fossil fuel reserves under the ocean."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    }
+  ]
+}

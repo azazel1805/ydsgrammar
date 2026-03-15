@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "paraphrase",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "paragraph_completion",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "closest_meaning",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "reading",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_passage",
+      "text": "In the last decade, the global shift towards renewable energy sources has become more (8) ---- than ever before. Many nations are now (9) ---- substantial portions of their budgets to wind and solar infrastructure. While some critics argue that these sources are (10) ---- due to weather dependency, engineers are developing advanced battery systems to mitigate this issue. (11) ----, the cost of solar panels has plummeted, making it a viable option for developing countries. If this trend continues, we may see a (12) ---- reduction in carbon emissions by 2050."
+    },
+    {
+      "id": "reading_1",
+      "text": "The concept of 'Deep Time' was first popularized by 18th-century geologist James Hutton, who argued that the Earth’s age was far greater than the few thousand years suggested by religious texts. By observing the slow processes of erosion and sedimentation, Hutton realized that for such layers of rock to form, millions of years must have elapsed. This discovery laid the foundation for modern geology and influenced Charles Darwin's theories on evolution, as it provided the necessary timeframe for gradual biological changes to occur. However, at the time, his ideas were met with significant skepticism from both the scientific community and the general public."
+    },
+    {
+      "id": "reading_2",
+      "text": "Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. This phenomenon allows the neurons in the brain to compensate for injury and disease and to adjust their activities in response to new situations or to changes in their environment. For instance, if one hemisphere of the brain is damaged, the other may take over some of its functions. Moreover, learning a new skill or language can physically alter the brain's structure. Recent studies suggest that even in old age, the brain remains capable of significant adaptation, challenging the long-held belief that the adult brain is a static organ."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The archaeological discovery provided ---- evidence that the ancient civilization possessed advanced knowledge of astronomy.",
+      "options": {
+        "A": "ambiguous",
+        "B": "compelling",
+        "C": "negligible",
+        "D": "fragile",
+        "E": "hazardous"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "In order to ---- the growing demand for clean water, the city council has decided to invest in a new desalination plant.",
+      "options": {
+        "A": "aggravate",
+        "B": "diminish",
+        "C": "accommodate",
+        "D": "postpone",
+        "E": "overlook"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Despite his initial hesitation, the CEO finally ---- to the board's demands for a more transparent financial report.",
+      "options": {
+        "A": "resigned",
+        "B": "yielded",
+        "C": "resisted",
+        "D": "objected",
+        "E": "appealed"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sentence_completion",
+      "question": "Although the committee members agreed on the ultimate goal of the project, ----.",
+      "options": {
+        "A": "the budget was more than sufficient to cover all costs",
+        "B": "they could not reach a consensus on the methods to be employed",
+        "C": "everybody was happy with the final outcome of the meeting",
+        "D": "the timeline was shortened to ensure early completion",
+        "E": "the project was hailed as a great success by the public"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sentence_completion",
+      "question": "---- so that the researchers could observe the long-term effects of the medication.",
+      "options": {
+        "A": "The study was terminated earlier than planned",
+        "B": "The participants were monitored closely for five years",
+        "C": "The results were published in a prestigious journal",
+        "D": "The data was analyzed using a new software",
+        "E": "The experiment focused on short-term reactions"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sentence_completion",
+      "question": "Unless the government implements stricter environmental regulations, ----.",
+      "options": {
+        "A": "the air quality in urban areas will continue to deteriorate",
+        "B": "the industrial growth will reach unprecedented levels",
+        "C": "international trade agreements will be signed immediately",
+        "D": "renewable energy sources will become more affordable",
+        "E": "the local wildlife populations will surely flourish"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sentence_completion",
+      "question": "Digital technologies have transformed the way we communicate, ----.",
+      "options": {
+        "A": "which had little impact on traditional media",
+        "B": "but the basic human need for interaction remains unchanged",
+        "C": "since people prefer writing letters to sending emails",
+        "D": "even if the internet was not widely available back then",
+        "E": "so that nobody needs to talk to each other anymore"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (8).",
+      "options": {
+        "A": "obscure",
+        "B": "pronounced",
+        "C": "trivial",
+        "D": "redundant",
+        "E": "vague"
+      },
+      "correct": "B",
+      "passage_id": "cloze_passage"
+    },
+    {
+      "id": 9,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (9).",
+      "options": {
+        "A": "allocating",
+        "B": "depleting",
+        "C": "withdrawing",
+        "D": "ignoring",
+        "E": "dismissing"
+      },
+      "correct": "A",
+      "passage_id": "cloze_passage"
+    },
+    {
+      "id": 10,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (10).",
+      "options": {
+        "A": "reliable",
+        "B": "intermittent",
+        "C": "consistent",
+        "D": "perpetual",
+        "E": "ubiquitous"
+      },
+      "correct": "B",
+      "passage_id": "cloze_passage"
+    },
+    {
+      "id": 11,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (11).",
+      "options": {
+        "A": "On the contrary",
+        "B": "In addition",
+        "C": "Nevertheless",
+        "D": "Otherwise",
+        "E": "Despite this"
+      },
+      "correct": "B",
+      "passage_id": "cloze_passage"
+    },
+    {
+      "id": 12,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (12).",
+      "options": {
+        "A": "marginal",
+        "B": "substantial",
+        "C": "superficial",
+        "D": "minimal",
+        "E": "temporary"
+      },
+      "correct": "B",
+      "passage_id": "cloze_passage"
+    },
+    {
+      "id": 13,
+      "section_id": "translation",
+      "question": "Sanayi Devrimi sadece üretim yöntemlerini değiştirmekle kalmamış, aynı zamanda toplumun sosyal yapısını da kökten dönüştürmüştür.",
+      "options": {
+        "A": "The Industrial Revolution changed production methods and the social structure of society.",
+        "B": "Not only did the Industrial Revolution change production methods, but it also radically transformed the social structure of society.",
+        "C": "The social structure of society was changed by the Industrial Revolution as much as production methods.",
+        "D": "The Industrial Revolution transformed production methods while keeping the social structure of society intact.",
+        "E": "The Industrial Revolution was responsible for the change in production methods and social life."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "translation",
+      "question": "Many researchers believe that artificial intelligence will eventually surpass human cognitive abilities in most complex tasks.",
+      "options": {
+        "A": "Yapay zekanın insan bilişsel yeteneklerini karmaşık görevlerde geçeceğine inanan birçok araştırmacı vardır.",
+        "B": "Pek çok araştırmacı, yapay zekanın çoğu karmaşık görevde en sonunda insan bilişsel yeteneklerini aşacağına inanmaktadır.",
+        "C": "Araştırmacıların çoğu, yapay zekanın karmaşık görevlerde insan zekasını geçebileceğini düşünmektedir.",
+        "D": "Yapay zekanın insan yeteneklerini aşması, birçok araştırmacıya göre karmaşık görevlerde gerçekleşecektir.",
+        "E": "Birçok araştırmacı yapay zekanın karmaşık görevlerde insan zekasından üstün olduğunu kanıtlamıştır."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "translation",
+      "question": "Küresel ısınma ile mücadele etmek için fosil yakıtlara olan bağımlılığımızı azaltmalı ve sürdürülebilir enerjiye geçmeliyiz.",
+      "options": {
+        "A": "We must reduce our reliance on fossil fuels and transition to sustainable energy to combat global warming.",
+        "B": "Reducing fossil fuels and moving to sustainable energy is the only way to stop global warming.",
+        "C": "To fight global warming, the government should invest in sustainable energy instead of fossil fuels.",
+        "D": "Global warming can be fought by reducing our need for fossil fuels and sustainable energy.",
+        "E": "Sustainable energy is the best way to reduce fossil fuel dependency in the fight against global warming."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "translation",
+      "question": "The widespread use of smartphones has led to a significant decrease in the average person's attention span.",
+      "options": {
+        "A": "Akıllı telefon kullanımı arttıkça insanların dikkat süreleri de önemli ölçüde azalmaktadır.",
+        "B": "Akıllı telefonların yaygın kullanımı, ortalama bir insanın dikkat süresinde önemli bir azalmaya yol açmıştır.",
+        "C": "Ortalama bir insanın dikkat süresinin kısalması, akıllı telefon kullanımının bir sonucudur.",
+        "D": "Akıllı telefonlar yaygınlaştığı için insanların dikkat süreleri eskiye göre çok daha düşüktür.",
+        "E": "Dikkat süresindeki azalma, özellikle akıllı telefonları yaygın olarak kullanan insanlarda görülür."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "paraphrase",
+      "question": "Despite the complexity of the subject, the professor explained it in a way that everyone could understand.",
+      "options": {
+        "A": "The subject was so complex that the professor had a hard time explaining it to the students.",
+        "B": "The professor made the complex subject accessible to everyone through his explanation.",
+        "C": "Everyone understood the subject because the professor avoided the complex parts.",
+        "D": "Even though it was complex, the professor's explanation was still too difficult for some.",
+        "E": "The professor explained the subject simply, but it remained complex for the audience."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "paraphrase",
+      "question": "Hardly had the meeting started when the fire alarm went off, causing immediate panic.",
+      "options": {
+        "A": "The fire alarm went off just after the meeting had begun, which led to instant panic.",
+        "B": "The meeting was about to start when the fire alarm caused everyone to panic.",
+        "C": "When the fire alarm rang, the meeting had already been going on for a while.",
+        "D": "The panic during the meeting was caused by a fire alarm that rang before it started.",
+        "E": "As soon as the fire alarm rang, the meeting was canceled to avoid panic."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "paraphrase",
+      "question": "It is only through rigorous exercise and a balanced diet that one can maintain a healthy lifestyle.",
+      "options": {
+        "A": "A healthy lifestyle depends solely on doing exercise and eating well.",
+        "B": "Rigorous exercise is more important than a balanced diet for a healthy life.",
+        "C": "Maintaining a healthy lifestyle requires both intense exercise and a balanced diet.",
+        "D": "One can be healthy without exercise if they follow a balanced diet strictly.",
+        "E": "Exercise and diet are some of the ways to achieve a healthy lifestyle."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "paraphrase",
+      "question": "The new law regarding data privacy is expected to have a profound impact on how tech companies operate.",
+      "options": {
+        "A": "Tech companies will have to change their operations completely due to the new data privacy law.",
+        "B": "The new law on data privacy will likely affect tech companies' operations significantly.",
+        "C": "It is predicted that tech companies will ignore the new law on data privacy.",
+        "D": "Data privacy is so important that new laws are being made for tech companies.",
+        "E": "The operations of tech companies have led to the creation of a new data privacy law."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dialogue",
+      "question": "Tom: Have you seen the latest report on urban heat islands?\nSarah: Yes, it’s alarming how much warmer cities are compared to rural areas.\nTom: ----\nSarah: Exactly. We need more green spaces and reflective materials on buildings.",
+      "options": {
+        "A": "I think the rural areas are becoming more populated now.",
+        "B": "The report suggests that this trend will reverse in the future.",
+        "C": "It’s mostly due to the lack of vegetation and the abundance of concrete.",
+        "D": "Do you think people will move back to the countryside?",
+        "E": "I prefer the climate in the city because it is warmer in winter."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dialogue",
+      "question": "Doctor: Your test results indicate a slight vitamin D deficiency.\nPatient: That's surprising. I spend quite a lot of time outdoors.\nDoctor: ----\nPatient: I see. I'll make sure to get more direct exposure or take supplements.",
+      "options": {
+        "A": "You should probably stop using sunscreen altogether.",
+        "B": "However, if you're always covered or it's winter, your body might not produce enough.",
+        "C": "Vitamin D is also found in many fruits and vegetables.",
+        "D": "It is very common for people in this region to have this issue.",
+        "E": "Maybe you should spend more time in the office instead."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dialogue",
+      "question": "Interviewer: What do you consider your greatest professional achievement?\nCandidate: I led a team that developed a more efficient algorithm for data processing.\nInterviewer: ----\nCandidate: It reduced the processing time by nearly 40 percent.",
+      "options": {
+        "A": "How many people were on your team?",
+        "B": "Did you enjoy working on that project?",
+        "C": "What kind of impact did that have on the company's operations?",
+        "D": "Is that the only algorithm you have developed?",
+        "E": "Why did you choose to work in data processing?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dialogue",
+      "question": "Mark: I've been thinking about learning a new language, maybe Japanese.\nJane: That sounds challenging. The writing system is quite complex.\nMark: ----\nJane: In that case, you should definitely go for it. It's a fascinating culture.",
+      "options": {
+        "A": "I've heard that it's actually easier than it looks.",
+        "B": "Maybe I should try something easier like Spanish.",
+        "C": "I'm aware, but I'm really motivated by my interest in their history.",
+        "D": "I don't think I have enough time for such a commitment.",
+        "E": "Is Japanese the only language spoken in Japan?"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "paragraph_completion",
+      "question": "Psychologists have long studied the effects of social media on adolescent mental health. ----. Some studies suggest a correlation between high usage and increased rates of anxiety. However, other researchers argue that social media can provide essential support networks for marginalized youth. Therefore, the relationship appears to be multifaceted and dependent on individual usage patterns.",
+      "options": {
+        "A": "Most teenagers use social media to communicate with their friends.",
+        "B": "The results of these studies have been somewhat inconsistent.",
+        "C": "Social media platforms are designed to be addictive.",
+        "D": "Parents should monitor their children's online activities closely.",
+        "E": "Cyberbullying is a major concern for many online platforms."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "paragraph_completion",
+      "question": "The Great Barrier Reef is the world's largest coral reef system. ----. Rising ocean temperatures cause coral bleaching, which can lead to the death of these vital organisms. Efforts are being made to protect the reef through conservation programs and international climate agreements. If these efforts fail, the loss of biodiversity would be catastrophic.",
+      "options": {
+        "A": "It is located in the Coral Sea, off the coast of Australia.",
+        "B": "Tourism is a major source of income for the local economy.",
+        "C": "However, it is currently facing unprecedented threats from climate change.",
+        "D": "Many species of fish depend on the reef for their survival.",
+        "E": "Divers from all over the world visit the reef every year."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "paragraph_completion",
+      "question": "Economics is often referred to as the 'dismal science.' ----. For example, it helps us understand how resources are allocated and how markets function. By studying economics, policymakers can make more informed decisions regarding public welfare and economic growth. Thus, its practical applications are far from dismal.",
+      "options": {
+        "A": "This is because it often deals with limited resources and difficult choices.",
+        "B": "The term was coined by Thomas Carlyle in the 19th century.",
+        "C": "Despite this nickname, it provides crucial insights into human behavior.",
+        "D": "Many students find economics to be a very difficult subject.",
+        "E": "The global economy is currently facing many challenges."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "paragraph_completion",
+      "question": "In the field of architecture, sustainability has moved from being a niche concern to a primary objective. ----. This includes the use of recycled materials, energy-efficient heating systems, and green roofs. Architects are now challenged to create buildings that are not only aesthetically pleasing but also environmentally responsible.",
+      "options": {
+        "A": "Modern buildings are often made of glass and steel.",
+        "B": "Sustainable design focuses on minimizing the environmental impact of structures.",
+        "C": "Many famous architects are known for their unique styles.",
+        "D": "The history of architecture dates back thousands of years.",
+        "E": "Urban planning is essential for the development of modern cities."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "closest_meaning",
+      "question": "Hardly any other invention has had as much impact on modern life as the internal combustion engine.",
+      "options": {
+        "A": "The internal combustion engine is just one of many inventions that changed modern life.",
+        "B": "Few inventions have influenced modern life more than the internal combustion engine.",
+        "C": "Modern life was completely different before the invention of the internal combustion engine.",
+        "D": "The internal combustion engine had a greater impact on life in the past than it does now.",
+        "E": "No other invention has had any impact on modern life except the internal combustion engine."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "closest_meaning",
+      "question": "The manager wouldn't have authorized the payment if he hadn't been sure of the project's success.",
+      "options": {
+        "A": "The manager authorized the payment because he was certain the project would succeed.",
+        "B": "Even though the project was successful, the manager refused to authorize the payment.",
+        "C": "The manager was unsure about the project, yet he authorized the payment anyway.",
+        "D": "The project's success was guaranteed after the manager authorized the payment.",
+        "E": "The manager didn't authorize the payment as he had doubts about the project."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "closest_meaning",
+      "question": "It is quite likely that the company will go bankrupt unless it finds new investors soon.",
+      "options": {
+        "A": "The company will definitely go bankrupt if it doesn't find new investors.",
+        "B": "Finding new investors is the only way to save the company from bankruptcy.",
+        "C": "There is a strong possibility of the company failing if no new investors are found.",
+        "D": "The company has already gone bankrupt because it couldn't find any investors.",
+        "E": "New investors are looking for a company that is not about to go bankrupt."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "irrelevant",
+      "question": "(I) The Silk Road was a network of trade routes connecting the East and West. (II) It was central to the cultural interaction between regions for many centuries. (III) Marco Polo is perhaps the most famous traveler of this route. (IV) Today, modern transportation has replaced traditional trade routes. (V) In addition to goods, it facilitated the exchange of ideas, religions, and technologies.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "irrelevant",
+      "question": "(I) Photosynthesis is the process by which green plants make their own food. (II) They use sunlight to convert water and carbon dioxide into oxygen and glucose. (III) This process occurs mainly in the leaves of the plant. (IV) Some plants can grow in very low light conditions. (V) Without photosynthesis, life on Earth as we know it would be impossible.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "irrelevant",
+      "question": "(I) Artificial Intelligence is being used to improve healthcare in many ways. (II) AI algorithms can analyze medical images with high accuracy. (III) Some people are worried about the loss of jobs due to automation. (IV) It also helps in predicting patient outcomes and personalizing treatments. (V) These advancements lead to more efficient and effective medical care.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "reading",
+      "question": "According to the passage, James Hutton's observation of erosion and sedimentation led him to conclude that ----.",
+      "options": {
+        "A": "the Earth was only a few thousand years old",
+        "B": "religious texts were the most accurate source of geological history",
+        "C": "the Earth's age was significantly older than previously believed",
+        "D": "biological evolution happened much faster than geology",
+        "E": "rock layers were formed by sudden catastrophic events"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 36,
+      "section_id": "reading",
+      "question": "It can be inferred from the passage that the concept of 'Deep Time' ----.",
+      "options": {
+        "A": "was immediately accepted by the 18th-century scientific community",
+        "B": "had no influence on other scientific fields like biology",
+        "C": "was based on the study of geological processes over long periods",
+        "D": "disproved Darwin's theory of evolution",
+        "E": "was first discovered by Charles Darwin during his travels"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 37,
+      "section_id": "reading",
+      "question": "The author mentions the skepticism Hutton faced to emphasize that ----.",
+      "options": {
+        "A": "his theories were scientifically flawed at the time",
+        "B": "he was not a well-known figure in the 18th century",
+        "C": "his ideas challenged the prevailing beliefs of his era",
+        "D": "he had failed to provide enough evidence for his claims",
+        "E": "modern geology has since proven his ideas to be wrong"
+      },
+      "correct": "C",
+      "passage_id": "reading_1"
+    },
+    {
+      "id": 38,
+      "section_id": "reading",
+      "question": "According to the passage, neuroplasticity allows the brain to ----.",
+      "options": {
+        "A": "remain static and unchanged throughout an individual's life",
+        "B": "stop functioning after a serious injury or disease",
+        "C": "repair damaged neurons by itself without any external help",
+        "D": "reorganize its connections to adapt to new situations or injuries",
+        "E": "develop only during childhood and stop in adulthood"
+      },
+      "correct": "D",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 39,
+      "section_id": "reading",
+      "question": "The example of one hemisphere taking over the functions of a damaged one is used to show ----.",
+      "options": {
+        "A": "the brain's compensatory mechanisms",
+        "B": "the limitations of the human brain",
+        "C": "the dangers of brain injuries",
+        "D": "the importance of learning a new language",
+        "E": "how the brain's structure is fixed from birth"
+      },
+      "correct": "A",
+      "passage_id": "reading_2"
+    },
+    {
+      "id": 40,
+      "section_id": "reading",
+      "question": "What is the main finding of recent studies mentioned in the passage?",
+      "options": {
+        "A": "The adult brain is a static and unchanging organ.",
+        "B": "Older people cannot learn new skills as effectively as younger people.",
+        "C": "The brain maintains its ability to adapt even as people get older.",
+        "D": "Damage to the brain is always permanent and irreversible.",
+        "E": "Learning a new language has no effect on brain structure."
+      },
+      "correct": "C",
+      "passage_id": "reading_2"
+    }
+  ]
+}

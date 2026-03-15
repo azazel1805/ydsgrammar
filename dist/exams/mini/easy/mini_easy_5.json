@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "title": "YDS Mini Exam",
+    "subtitle": "40 Questions Practice Test",
+    "total_questions": 40,
+    "duration_minutes": 90
+  },
+  "sections": [
+    {
+      "id": "voc",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "id": "sc",
+      "label": "Sentence Completion",
+      "from": 4,
+      "to": 7
+    },
+    {
+      "id": "ct",
+      "label": "Cloze Test",
+      "from": 8,
+      "to": 12
+    },
+    {
+      "id": "tr",
+      "label": "Translation",
+      "from": 13,
+      "to": 16
+    },
+    {
+      "id": "ph",
+      "label": "Paraphrase",
+      "from": 17,
+      "to": 20
+    },
+    {
+      "id": "dc",
+      "label": "Dialogue Completion",
+      "from": 21,
+      "to": 24
+    },
+    {
+      "id": "pc",
+      "label": "Paragraph Completion",
+      "from": 25,
+      "to": 28
+    },
+    {
+      "id": "cm",
+      "label": "Closest Meaning",
+      "from": 29,
+      "to": 31
+    },
+    {
+      "id": "ir",
+      "label": "Irrelevant Sentence",
+      "from": 32,
+      "to": 34
+    },
+    {
+      "id": "rc",
+      "label": "Reading Comprehension",
+      "from": 35,
+      "to": 40
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage_cloze",
+      "text": "The rapid development of artificial intelligence (AI) has (8)---- changed various industries. While some experts believe that AI will (9)---- many job roles, others argue that it will create new opportunities for specialized labor. To stay competitive, companies must invest (10)---- training programs for their employees. (11)----, governments need to establish clear regulations to ensure the ethical use of technology. If we ignore these (12)----, the digital divide between nations could widen significantly."
+    },
+    {
+      "id": "passage_rc1",
+      "text": "The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system. It is composed of over 2,900 individual reefs and 900 islands stretching for over 2,300 kilometers. However, this natural wonder is currently facing unprecedented threats due to rising sea temperatures and ocean acidification. These factors cause coral bleaching, a process where corals lose their vibrant colors and become vulnerable to disease. Environmentalists are urging for immediate global action to reduce carbon emissions to protect this fragile ecosystem."
+    },
+    {
+      "id": "passage_rc2",
+      "text": "Psychological resilience refers to an individual's ability to adapt to adversity and bounce back from difficult life experiences. It is not a fixed trait that people either have or do not have; rather, it involves behaviors, thoughts, and actions that can be learned and developed in anyone. Factors such as a positive outlook, strong social support systems, and effective problem-solving skills contribute to building resilience. Research shows that resilient people are more likely to maintain physical health and mental well-being even when facing high levels of stress."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "voc",
+      "question": "The manager's decision to cut costs was widely ---- as it led to significant improvements in the company's annual budget.",
+      "options": {
+        "A": "ignored",
+        "B": "praised",
+        "C": "resented",
+        "D": "postponed",
+        "E": "avoided"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "voc",
+      "question": "Many developing countries are working hard to ---- poverty by improving access to education and healthcare.",
+      "options": {
+        "A": "increase",
+        "B": "examine",
+        "C": "eradicate",
+        "D": "predict",
+        "E": "tolerate"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "voc",
+      "question": "The scientist provided ---- evidence to support her hypothesis during the international conference.",
+      "options": {
+        "A": "vague",
+        "B": "hostile",
+        "C": "negligible",
+        "D": "compelling",
+        "E": "fictional"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "sc",
+      "question": "Although the team practiced every day for the championship, ----.",
+      "options": {
+        "A": "they were confident about winning the gold medal",
+        "B": "their coach was satisfied with their progress",
+        "C": "they ultimately failed to qualify for the final round",
+        "D": "the weather conditions were perfect for the game",
+        "E": "it was a great opportunity for them to show their skills"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "sc",
+      "question": "Scientists are still investigating the long-term effects of microplastics ----.",
+      "options": {
+        "A": "which was found in the Pacific Ocean years ago",
+        "B": "because they have found no evidence of pollution",
+        "C": "whenever they go to the laboratory for research",
+        "D": "since they are increasingly present in the food chain",
+        "E": "unless the government bans plastic production entirely"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "sc",
+      "question": "---- that the new tax reforms will help reduce the economic inequality in the country.",
+      "options": {
+        "A": "Experts have been arguing for years",
+        "B": "The population decreased so rapidly",
+        "C": "In spite of the high inflation rates",
+        "D": "Before the financial crisis occurred",
+        "E": "Whether the government decides to act"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "sc",
+      "question": "Unless the local authorities take immediate action to repair the dam, ----.",
+      "options": {
+        "A": "the villagers would have felt much safer",
+        "B": "it has been standing there for decades",
+        "C": "there is a serious risk of flooding in the valley",
+        "D": "the construction project was finished on time",
+        "E": "water levels are expected to drop significantly"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "ct",
+      "question": "Find the best option for blank (8).",
+      "options": {
+        "A": "fundamentally",
+        "B": "accidentally",
+        "C": "scarcely",
+        "D": "doubtfully",
+        "E": "initially"
+      },
+      "correct": "A",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 9,
+      "section_id": "ct",
+      "question": "Find the best option for blank (9).",
+      "options": {
+        "A": "protect",
+        "B": "displace",
+        "C": "hire",
+        "D": "promote",
+        "E": "maintain"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 10,
+      "section_id": "ct",
+      "question": "Find the best option for blank (10).",
+      "options": {
+        "A": "at",
+        "B": "on",
+        "C": "in",
+        "D": "to",
+        "E": "for"
+      },
+      "correct": "C",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 11,
+      "section_id": "ct",
+      "question": "Find the best option for blank (11).",
+      "options": {
+        "A": "Instead",
+        "B": "However",
+        "C": "Otherwise",
+        "D": "Furthermore",
+        "E": "Nevertheless"
+      },
+      "correct": "D",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 12,
+      "section_id": "ct",
+      "question": "Find the best option for blank (12).",
+      "options": {
+        "A": "achievements",
+        "B": "challenges",
+        "C": "solutions",
+        "D": "advantages",
+        "E": "preferences"
+      },
+      "correct": "B",
+      "passage_id": "passage_cloze"
+    },
+    {
+      "id": 13,
+      "section_id": "tr",
+      "question": "Yenilenebilir enerji kaynaklarına yatırım yapmak, sadece çevreyi korumakla kalmaz, aynı zamanda enerji maliyetlerini de düşürür.",
+      "options": {
+        "A": "Investing in renewable energy sources not only protects the environment but also reduces energy costs.",
+        "B": "While protecting the environment, renewable energy sources also help to decrease energy costs.",
+        "C": "Energy costs can be reduced by investing in renewable energy and protecting the environment.",
+        "D": "To protect the environment and reduce costs, we should invest in renewable energy sources.",
+        "E": "If we invest in renewable energy, we can protect the environment and reduce energy costs."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "tr",
+      "question": "The discovery of DNA's structure in 1953 paved the way for modern genetics and biotechnology.",
+      "options": {
+        "A": "DNA'nın yapısının 1953'teki keşfi, modern genetik ve biyoteknoloji için yolu temizledi.",
+        "B": "Modern genetik ve biyoteknoloji, 1953 yılında DNA'nın yapısının keşfedilmesiyle başladı.",
+        "C": "DNA'nın yapısının 1953'te keşfedilmesi, modern genetik ve biyoteknolojinin önünü açtı.",
+        "D": "1953'te DNA keşfedildiğinde, modern genetik ve biyoteknoloji çoktan gelişmişti.",
+        "E": "Modern genetik ve biyoteknolojiye giden yol, 1953'te DNA'nın bulunmasıyla sonuçlandı."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "tr",
+      "question": "Küresel ısınma nedeniyle kutuplardaki buzullar tahmin edilenden çok daha hızlı bir şekilde eriyor.",
+      "options": {
+        "A": "Global warming causes the glaciers at the poles to melt faster than anyone expected.",
+        "B": "Glaciers at the poles are melting much faster than predicted due to global warming.",
+        "C": "Because of global warming, the poles are losing their ice much more quickly than before.",
+        "D": "The melting of glaciers at the poles is a result of global warming and it is very fast.",
+        "E": "Due to global warming, we predict that the glaciers at the poles will melt quickly."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "tr",
+      "question": "Effective communication is essential for maintaining healthy relationships in both personal and professional life.",
+      "options": {
+        "A": "Hem kişisel hem de mesleki yaşamda sağlıklı ilişkiler sürdürmek için etkili iletişim şarttır.",
+        "B": "Kişisel ve profesyonel hayatta iletişim kurmak sağlıklı ilişkiler için çok önemlidir.",
+        "C": "Etkili iletişim sayesinde hem özel hem de iş hayatımızda sağlıklı bağlar kurabiliriz.",
+        "D": "Sağlıklı ilişkilerin temeli, hem iş hem de özel hayatta etkili bir iletişim kurmaktır.",
+        "E": "Hem mesleki hem de kişisel hayatta ilişkileri sağlıklı tutan şey etkili iletişimdir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "ph",
+      "question": "Despite the high price of the ticket, the concert hall was completely full.",
+      "options": {
+        "A": "The concert hall was full because the ticket prices were not very high.",
+        "B": "Even though the tickets were expensive, every seat in the concert hall was taken.",
+        "C": "The tickets were so expensive that the concert hall was almost empty.",
+        "D": "If the tickets hadn't been so expensive, the concert hall would have been fuller.",
+        "E": "The concert hall was empty although the tickets were sold at a high price."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 18,
+      "section_id": "ph",
+      "question": "You are not allowed to use your mobile phones during the examination.",
+      "options": {
+        "A": "You can use your mobile phones only if the exam is over.",
+        "B": "Mobile phones must be turned off but can stay on the desk during the exam.",
+        "C": "The use of mobile phones is prohibited while the exam is in progress.",
+        "D": "Unless you have permission, you should not use your phone in the exam.",
+        "E": "It is recommended that you leave your mobile phones outside the exam room."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 19,
+      "section_id": "ph",
+      "question": "Hardly anyone attended the seminar because it was not well-advertised.",
+      "options": {
+        "A": "The seminar was attended by many people despite the lack of advertising.",
+        "B": "Since the seminar was advertised everywhere, a lot of people attended it.",
+        "C": "If the seminar had been promoted better, more people might have come.",
+        "D": "Because of the poor advertising, almost no one came to the seminar.",
+        "E": "No one was able to attend the seminar even though it was well-advertised."
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 20,
+      "section_id": "ph",
+      "question": "It is likely that the economy will recover by the end of the year.",
+      "options": {
+        "A": "The economy will definitely improve before the year ends.",
+        "B": "There is a possibility that the economy will get worse by the end of the year.",
+        "C": "The economic recovery is expected to happen by the time the year concludes.",
+        "D": "It is impossible for the economy to recover until next year.",
+        "E": "We are sure that the economy has already recovered this year."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 21,
+      "section_id": "dc",
+      "question": "Mary: Are you coming to the history lecture this afternoon? \nTom: ---- \nMary: Why not? It's supposed to be very interesting. \nTom: I have to finish my term paper by tomorrow morning.",
+      "options": {
+        "A": "Yes, I wouldn't miss it for anything.",
+        "B": "I'm not sure yet, let me check my schedule.",
+        "C": "I'm afraid I won't be able to make it.",
+        "D": "The professor is really good, isn't he?",
+        "E": "I've already attended that lecture last week."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 22,
+      "section_id": "dc",
+      "question": "Patient: I've been having these headaches for three days now. \nDoctor: ---- \nPatient: Mostly in the morning, right after I wake up. \nDoctor: I see. Let's do some tests to find the cause.",
+      "options": {
+        "A": "Do you have any other symptoms like a fever?",
+        "B": "When exactly do they usually occur during the day?",
+        "C": "How long have you been living in this city?",
+        "D": "Are you taking any medication for the pain?",
+        "E": "Have you tried sleeping more at night?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 23,
+      "section_id": "dc",
+      "question": "Interviewer: Why do you want to work for our company? \nApplicant: ---- \nInterviewer: That's a good reason. We value innovation and growth here.",
+      "options": {
+        "A": "I am currently unemployed and I need a job quickly.",
+        "B": "Your company has a great reputation for professional development.",
+        "C": "My previous boss was very difficult to work with.",
+        "D": "I live very close to the office, so it's convenient.",
+        "E": "I don't really know much about your company's history."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 24,
+      "section_id": "dc",
+      "question": "Amy: Did you see the documentary about space exploration? \nJohn: No, I missed it. Was it worth watching? \nAamy: ---- \nJohn: Then I'll definitely look for it on the internet.",
+      "options": {
+        "A": "It was quite boring and too long to be honest.",
+        "B": "I think you should wait for the next episode.",
+        "C": "Yes, it provided some very fascinating new insights.",
+        "D": "Space is a topic that doesn't interest me much.",
+        "E": "The narrator had a very annoying voice."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 25,
+      "section_id": "pc",
+      "question": "The industrial revolution marked a major turning point in history. ----. Almost every aspect of daily life was influenced in some way. For example, the average income and population began to exhibit unprecedented sustained growth.",
+      "options": {
+        "A": "It began in Great Britain in the late 18th century",
+        "B": "People preferred to live in rural areas at that time",
+        "C": "Hand production methods were still very popular",
+        "D": "Many people were against the use of new machines",
+        "E": "Agriculture remained the most important sector"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 26,
+      "section_id": "pc",
+      "question": "In many cultures, the owl is seen as a symbol of wisdom and knowledge. ----. In some ancient traditions, they were even thought to be messengers of the underworld. This contrast shows how differently the same animal can be perceived.",
+      "options": {
+        "A": "Owls have excellent night vision and hearing",
+        "B": "However, in others, it is associated with bad luck or death",
+        "C": "They are birds of prey that hunt small mammals",
+        "D": "Most owls are nocturnal, meaning they are active at night",
+        "E": "Protecting owl habitats is crucial for biodiversity"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 27,
+      "section_id": "pc",
+      "question": "Eating a balanced diet is essential for maintaining a healthy lifestyle. ----. These nutrients provide the energy needed for daily activities and support the immune system. Without them, the body cannot function at its best.",
+      "options": {
+        "A": "Fast food is often high in calories and unhealthy fats",
+        "B": "It involves consuming a variety of fruits, vegetables, and proteins",
+        "C": "Many people find it difficult to cook at home every day",
+        "D": "Drinking enough water is also part of being healthy",
+        "E": "Exercise is just as important as what you eat"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "pc",
+      "question": "Remote work has become increasingly common in recent years. ----. Employees can save time on commuting and enjoy a better work-life balance. At the same time, employers can reduce office expenses and access a wider talent pool.",
+      "options": {
+        "A": "Some people find it lonely to work from home",
+        "B": "Technical issues can sometimes disrupt the workflow",
+        "C": "This shift has been beneficial for both workers and companies",
+        "D": "Not all jobs are suitable for working remotely",
+        "E": "Internet speed is a major factor in remote work"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "cm",
+      "question": "Choose the closest meaning: The teacher didn't allow the students to use calculators during the math test.",
+      "options": {
+        "A": "The students were permitted to use calculators in the test.",
+        "B": "The math test was so easy that no one needed a calculator.",
+        "C": "Calculators were forbidden for the students throughout the math exam.",
+        "D": "The teacher told the students that they could use calculators if they wanted.",
+        "E": "The students forgot to bring their calculators to the math test."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "cm",
+      "question": "Choose the closest meaning: It is quite common for people to feel nervous before a job interview.",
+      "options": {
+        "A": "Few people get anxious when they have a job interview.",
+        "B": "Feeling stressed before a job interview is a frequent experience.",
+        "C": "Job interviews are the only reason why people feel nervous.",
+        "D": "You should not be nervous if you are prepared for the interview.",
+        "E": "Everyone feels exactly the same during a job interview."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "cm",
+      "question": "Choose the closest meaning: I would have called you if I had known you were in town.",
+      "options": {
+        "A": "I knew you were in town, but I didn't want to call you.",
+        "B": "I didn't call you because I wasn't aware of your presence in town.",
+        "C": "I will call you as soon as I find out you are in town.",
+        "D": "I called you although I didn't know you were in town.",
+        "E": "Please call me when you arrive in town next time."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "ir",
+      "question": "(I) Solar energy is one of the most promising sources of clean energy. (II) It is harvested from the sun's rays using photovoltaic panels. (III) These panels can be installed on rooftops or in large solar farms. (IV) Fossil fuels like coal and oil are still widely used today. (V) As technology improves, the cost of producing solar energy continues to fall.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "ir",
+      "question": "(I) Coffee is one of the most popular beverages in the world. (II) Many people drink it to stay alert and focused during the day. (III) Tea is also a very common drink in many different cultures. (IV) The caffeine in coffee is what provides this stimulating effect. (V) However, excessive consumption can lead to restlessness and sleep problems.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "ir",
+      "question": "(I) Venice is a unique city built on a group of 118 small islands. (II) It is famous for its beautiful canals and historic architecture. (III) The city attracts millions of tourists from all over the world every year. (IV) Most tourists prefer to travel by plane when going abroad. (V) However, Venice is also facing serious challenges due to rising sea levels.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "rc",
+      "question": "According to the passage, what is the Great Barrier Reef composed of?",
+      "options": {
+        "A": "Only 900 individual islands and no coral reefs.",
+        "B": "Over 2,900 individual reefs and 900 islands.",
+        "C": "One single massive coral reef stretching for 2,300 km.",
+        "D": "Mainly endangered fish species and sea plants.",
+        "E": "Artificial structures built by environmentalists."
+      },
+      "correct": "B",
+      "passage_id": "passage_rc1"
+    },
+    {
+      "id": 36,
+      "section_id": "rc",
+      "question": "What does 'coral bleaching' refer to in the text?",
+      "options": {
+        "A": "The growth of new corals in warmer waters.",
+        "B": "A method used by scientists to clean the ocean floor.",
+        "C": "The process where corals lose color and become prone to disease.",
+        "D": "The natural reproduction cycle of the coral reefs.",
+        "E": "A way to protect the reef from carbon emissions."
+      },
+      "correct": "C",
+      "passage_id": "passage_rc1"
+    },
+    {
+      "id": 37,
+      "section_id": "rc",
+      "question": "What is the main concern of environmentalists mentioned in the passage?",
+      "options": {
+        "A": "The increasing number of tourists visiting the islands.",
+        "B": "The lack of islands in the Great Barrier Reef system.",
+        "C": "Finding new coral species in the Australian coast.",
+        "D": "Reducing carbon emissions to save the fragile ecosystem.",
+        "E": "Building more reefs to prevent ocean acidification."
+      },
+      "correct": "D",
+      "passage_id": "passage_rc1"
+    },
+    {
+      "id": 38,
+      "section_id": "rc",
+      "question": "According to the passage, resilience is ----.",
+      "options": {
+        "A": "a fixed personality trait that cannot be changed",
+        "B": "something that only people with high stress levels have",
+        "C": "the ability to adapt and recover from difficult times",
+        "D": "a biological feature inherited from parents",
+        "E": "only related to physical health, not mental health"
+      },
+      "correct": "C",
+      "passage_id": "passage_rc2"
+    },
+    {
+      "id": 39,
+      "section_id": "rc",
+      "question": "Which of the following is NOT mentioned as a factor contributing to resilience?",
+      "options": {
+        "A": "A positive outlook on life",
+        "B": "Strong social support systems",
+        "C": "Effective problem-solving skills",
+        "D": "Having a high-paying job",
+        "E": "Behaviors that can be learned"
+      },
+      "correct": "D",
+      "passage_id": "passage_rc2"
+    },
+    {
+      "id": 40,
+      "section_id": "rc",
+      "question": "What does the research show about resilient people?",
+      "options": {
+        "A": "They never experience stress in their lives.",
+        "B": "They are more likely to stay healthy under stress.",
+        "C": "They avoid difficult life experiences at all costs.",
+        "D": "They do not need any social support from others.",
+        "E": "They have a fixed way of thinking that never changes."
+      },
+      "correct": "B",
+      "passage_id": "passage_rc2"
+    }
+  ]
+}
