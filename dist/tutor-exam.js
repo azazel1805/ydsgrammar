@@ -19,16 +19,21 @@ const tutorExamHTML = `
             <span class="font-bold tracking-widest text-sm uppercase">AI Rehberli Deneme (Premium)</span>
         </div>
         <h2 class="text-4xl font-black text-slate-900 mb-6" style="font-family:'Playfair Display',serif;">Tutor Mode: Yapay Zeka ile Birlikte Çöz</h2>
-        <p class="text-slate-500 max-w-2xl mx-auto">Seçtiğiniz bir denemeyi AI koçunuzla birlikte çözün. Her soruda takıldığınızda yardım isteyebilir, hatalarınızın anlık analizini alabilirsiniz.</p>
+        <p class="text-slate-500 max-w-2xl mx-auto">İster tam deneme, ister spesifik soru tipleri seçerek AI koçunuzla birlikte çalışın.</p>
     </div>
 
     <div id="teStartScreen">
-        <!-- Reusing FULL_EXAM_LIST for selection -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" id="teSelectionGrid">
-            <!-- Exam cards will be injected here -->
+        <!-- Tabs for Full vs Categorical -->
+        <div class="flex justify-center gap-4 mb-10">
+            <button onclick="teSwitchSource('categorical')" id="teSource-cat" class="te-source-btn px-6 py-2 rounded-xl font-bold transition-all bg-red-800 text-white shadow-lg">Soru Tipine Göre</button>
+            <button onclick="teSwitchSource('full')" id="teSource-full" class="te-source-btn px-6 py-2 rounded-xl font-bold transition-all bg-white border border-slate-200 text-slate-600 hover:bg-slate-50">Tam Denemeler</button>
         </div>
 
-        <div id="teSelectedInfo" class="hidden bg-white border border-slate-100 rounded-[2.5rem] p-10 shadow-sm mb-10">
+        <div id="teSelectionGrid" class="space-y-10">
+            <!-- Content will be injected here -->
+        </div>
+
+        <div id="teSelectedInfo" class="hidden bg-white border border-slate-100 rounded-[2.5rem] p-10 shadow-sm mb-10 mt-10">
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="w-20 h-20 rounded-full bg-red-800 flex items-center justify-center shrink-0 shadow-lg">
                     <i class="fas fa-robot text-white text-3xl"></i>
@@ -36,8 +41,18 @@ const tutorExamHTML = `
                 <div class="flex-1 text-center md:text-left">
                     <h3 class="text-2xl font-bold text-slate-800 mb-2">AI Koçunuz Hazır!</h3>
                     <p class="text-slate-500 mb-6">Bu modda her soru için 90 saniyeniz olacak. AI'dan ipucu alabilir veya yanlış yaptığınızda anında açıklama isteyebilirsiniz.</p>
+                    
+                    <div id="teCountSetting" class="mb-6 hidden">
+                        <p class="font-bold text-slate-700 mb-3">Soru Sayısı:</p>
+                        <div class="flex items-center justify-center md:justify-start gap-4">
+                            <button onclick="teUpdateCount(-5)" class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 hover:bg-red-800 hover:text-white transition-all font-bold">-</button>
+                            <input type="number" id="teQuestionCount" value="15" min="5" max="40" class="w-20 bg-slate-50 border-2 border-slate-100 text-slate-800 text-center font-bold text-xl py-2 rounded-xl focus:border-red-800 outline-none">
+                            <button onclick="teUpdateCount(5)" class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 hover:bg-red-800 hover:text-white transition-all font-bold">+</button>
+                        </div>
+                    </div>
+
                     <button onclick="teStartExam()" class="px-12 py-4 bg-red-800 text-white rounded-2xl font-black text-lg shadow-xl hover:bg-black transition-all">
-                        EĞİTİMLİ SINAVI BAŞLAT
+                        REHBERLİ SINAVI BAŞLAT
                     </button>
                 </div>
             </div>
@@ -143,51 +158,124 @@ function initTutorExam() {
   const container = document.getElementById('tab-tutor-exam');
   if (container) {
     container.innerHTML = tutorExamHTML;
-    renderTutorSelection();
+    teSwitchSource('categorical');
   }
 }
 
-function renderTutorSelection() {
+window.teSwitchSource = function(type) {
+  document.querySelectorAll('.te-source-btn').forEach(btn => {
+    btn.classList.remove('bg-red-800', 'text-white', 'shadow-lg');
+    btn.classList.add('bg-white', 'border', 'border-slate-200', 'text-slate-600');
+  });
+  
+  const active = type === 'categorical' ? 'teSource-cat' : 'teSource-full';
+  const el = document.getElementById(active);
+  el.classList.add('bg-red-800', 'text-white', 'shadow-lg');
+  el.classList.remove('bg-white', 'border', 'border-slate-200', 'text-slate-600');
+  
+  renderTutorSelection(type);
+  document.getElementById('teSelectedInfo').classList.add('hidden');
+}
+
+function renderTutorSelection(type) {
   const grid = document.getElementById('teSelectionGrid');
   if (!grid) return;
   
-  // Mix FULL_EXAM_LIST and YDT_EXAM_LIST if available
-  const list = [...(window.FULL_EXAM_LIST || []), ...(window.YDT_EXAM_LIST || [])];
-  
-  grid.innerHTML = list.map(exam => `
-    <div onclick="teSelectExam('${exam.id}', this)" class="te-card group cursor-pointer bg-white border border-slate-100 p-6 rounded-[2rem] hover:border-red-500 hover:shadow-xl transition-all relative overflow-hidden">
-        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-            <i class="fas fa-file-alt text-6xl"></i>
-        </div>
-        <div class="relative z-10">
-            <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center mb-4 group-hover:bg-red-50 transition-colors">
-                <i class="fas fa-scroll text-slate-400 group-hover:text-red-600"></i>
+  if (type === 'full') {
+    const list = [...(window.FULL_EXAM_LIST || []), ...(window.YDT_EXAM_LIST || [])];
+    grid.innerHTML = `
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        ${list.map(exam => `
+          <div onclick="teSelectExam('${exam.id}', this, 'full')" class="te-card group cursor-pointer bg-white border border-slate-100 p-6 rounded-[2rem] hover:border-red-500 hover:shadow-xl transition-all">
+              <h4 class="font-black text-slate-800 mb-1">${exam.label}</h4>
+              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">80 Soru • Karma</p>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else {
+    // Categorical from CATEGORICAL_MINI_LIST
+    if (typeof CATEGORICAL_MINI_LIST === 'undefined') return;
+    grid.innerHTML = CATEGORICAL_MINI_LIST.map(cat => `
+      <div>
+        <h5 class="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+            <i class="fas ${cat.icon} text-red-800"></i> ${cat.category}
+        </h5>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          ${cat.exams.map(e => `
+            <div onclick="teSelectExam('${e.id}', this, 'cat')" class="te-card cursor-pointer border border-slate-200 rounded-2xl p-4 hover:border-red-500 hover:bg-red-50/10 transition-all text-center group">
+              <p class="text-sm font-bold text-slate-700 group-hover:text-red-800">${e.label}</p>
             </div>
-            <h4 class="font-black text-slate-800 mb-1">${exam.label}</h4>
-            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">80 Soru • Karma</p>
+          `).join('')}
         </div>
-    </div>
-  `).join('');
+      </div>
+    `).join('');
+  }
 }
 
-function teSelectExam(id, card) {
+window.teUpdateCount = function(delta) {
+    const input = document.getElementById('teQuestionCount');
+    if (input) {
+        input.value = Math.max(5, Math.min(60, parseInt(input.value) + delta));
+    }
+}
+
+function teSelectExam(id, card, type) {
   document.querySelectorAll('.te-card').forEach(c => c.classList.remove('border-red-500', 'bg-red-50/10'));
   card.classList.add('border-red-500', 'bg-red-50/10');
   
-  document.getElementById('teSelectedInfo').classList.remove('hidden');
-  document.getElementById('teSelectedInfo').scrollIntoView({ behavior: 'smooth' });
+  const info = document.getElementById('teSelectedInfo');
+  const countSet = document.getElementById('teCountSetting');
+
+  info.classList.remove('hidden');
+  if (type === 'cat') {
+      countSet.classList.remove('hidden');
+  } else {
+      countSet.classList.add('hidden');
+  }
   
+  info.scrollIntoView({ behavior: 'smooth', block: 'center' });
   window.selectedTutorExamId = id;
+  window.selectedTutorType = type;
 }
 
 async function teStartExam() {
   const id = window.selectedTutorExamId;
-  const exam = (window.FULL_EXAM_LIST || []).find(e => e.id === id) || (window.YDT_EXAM_LIST || []).find(e => e.id === id);
+  const type = window.selectedTutorType;
+  const count = parseInt(document.getElementById('teQuestionCount').value) || 15;
+
+  let exam = null;
+  if (type === 'full') {
+      exam = (window.FULL_EXAM_LIST || []).find(e => e.id === id) || (window.YDT_EXAM_LIST || []).find(e => e.id === id);
+  } else {
+      if (typeof CATEGORICAL_MINI_LIST !== 'undefined') {
+          for (const cat of CATEGORICAL_MINI_LIST) {
+              exam = cat.exams.find(e => e.id === id);
+              if (exam) break;
+          }
+      }
+  }
+
   if (!exam) return;
 
   try {
     const res = await fetch(exam.file + "?v=" + new Date().getTime());
-    teExamData = await res.json();
+    const fullData = await res.json();
+    
+    let processedQuestions = fullData.questions;
+
+    // If categorical, shuffle and take subset
+    if (type === 'cat' && !id.startsWith('mini_fixed')) {
+        processedQuestions.sort(() => 0.5 - Math.random());
+        processedQuestions = processedQuestions.slice(0, count);
+    }
+
+    teExamData = {
+        meta: fullData.meta || { title: exam.label },
+        passages: fullData.passages || [],
+        questions: processedQuestions
+    };
+
     teCurrentIdx = 0;
     teAnswers = {};
     teIsExplaining = false;
@@ -198,7 +286,6 @@ async function teStartExam() {
     teRenderQuestion();
     teStartQuestionTimer();
     
-    // Scroll top
     window.scrollTo({ top: 0, behavior: 'smooth' });
   } catch (err) {
     console.error(err);
