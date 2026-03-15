@@ -11,35 +11,34 @@
     ]
   },
   {
-    category: 'Okuma & Anlama',
-    icon: 'fa-book-open',
-    exams: [
-      { id: 'mini_read', label: 'Okuma Parçaları', file: '/exams/mini/special/master_reading.json', info: 'Seçilebilir Soru Sayısı' },
-    ]
+    category: 'Kolay Seviye Mini YDS',
+    icon: 'fa-leaf',
+    exams: Array.from({ length: 5 }, (_, i) => ({
+      id: `mini_easy_${i + 1}`,
+      label: `Kolay Mini YDS ${i + 1}`,
+      file: `/exams/mini/easy/mini_easy_${i + 1}.json`,
+      info: '20 Soru Sabit'
+    }))
   },
   {
-    category: 'Cümle & Paragraf',
-    icon: 'fa-align-left',
-    exams: [
-      { id: 'mini_sencomp', label: 'Cümle Tamamlama', file: '/exams/mini/special/master_sencomp.json', info: 'Seçilebilir Soru Sayısı' },
-      { id: 'mini_paracom', label: 'Paragraf Tamamlama', file: '/exams/mini/special/master_paracom.json', info: 'Seçilebilir Soru Sayısı' },
-    ]
+    category: 'Orta Seviye Mini YDS',
+    icon: 'fa-mountain',
+    exams: Array.from({ length: 5 }, (_, i) => ({
+      id: `mini_medium_${i + 1}`,
+      label: `Orta Mini YDS ${i + 1}`,
+      file: `/exams/mini/medium/mini_medium_${i + 1}.json`,
+      info: '20 Soru Sabit'
+    }))
   },
   {
-    category: 'Anlam & Akış',
-    icon: 'fa-exchange-alt',
-    exams: [
-      { id: 'mini_clomean', label: 'Yakın Anlam / Yakın Anlam', file: '/exams/mini/special/master_clomean.json', info: 'Seçilebilir Soru Sayısı' },
-      { id: 'mini_irr', label: 'Bozan Cümle', file: '/exams/mini/special/master_irr.json', info: 'Seçilebilir Soru Sayısı' },
-    ]
-  },
-  {
-    category: 'Çeviri & Diyalog',
-    icon: 'fa-language',
-    exams: [
-      { id: 'mini_trans', label: 'Çeviri Soruları', file: '/exams/mini/special/master_trans.json', info: 'Seçilebilir Soru Sayısı' },
-      { id: 'mini_dia', label: 'Diyalog Tamamlama', file: '/exams/mini/special/master_dia.json', info: 'Seçilebilir Soru Sayısı' },
-    ]
+    category: 'Zor Seviye Mini YDS',
+    icon: 'fa-fire',
+    exams: Array.from({ length: 5 }, (_, i) => ({
+      id: `mini_hard_${i + 1}`,
+      label: `Zor Mini YDS ${i + 1}`,
+      file: `/exams/mini/hard/mini_hard_${i + 1}.json`,
+      info: '20 Soru Sabit'
+    }))
   }
 ];
 
