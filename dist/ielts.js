@@ -15,7 +15,7 @@ const ieltsSpeakingHTML = "Loading...";
 async function initIELTS() {
     if (!currentIELTSExam) {
         try {
-            const response = await fetch('/public/data/ielts/exam1.json');
+            const response = await fetch('/data/ielts/exam1.json');
             currentIELTSExam = await response.json();
             console.log("IELTS Exam Data Loaded:", currentIELTSExam);
         } catch (error) {
