@@ -85,6 +85,12 @@ function getSelectorHTML(sections, title, isPremium) {
             class="fe-exam-card cursor-pointer border-2 border-slate-200 rounded-2xl p-6 hover:border-red-300 hover:shadow-lg transition-all group relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <div class="relative z-10">
+              ${isPremium ? `
+              <button onclick="event.stopPropagation(); feDownloadPDF('${e.id}')" 
+                class="absolute top-0 right-0 p-2.5 bg-white border border-slate-100 rounded-xl text-red-800 hover:bg-red-800 hover:text-white transition-all shadow-sm z-20 group/pdf" 
+                title="PDF Olarak İndir">
+                <i class="fas fa-file-pdf"></i>
+              </button>` : ''}
               <div class="flex items-center gap-3 mb-3">
                 <div class="w-12 h-12 rounded-xl ${badgeClass} flex items-center justify-center text-white shadow-lg">
                   <i class="fas fa-file-alt text-lg"></i>
@@ -676,6 +682,169 @@ function feResetExam() {
     c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50', 'border-green-500', 'bg-green-50'));
 }
 
+// ─── PDF Generation ──────────────────────────────────────────
+async function feDownloadPDF(id) {
+  let exam = FULL_EXAM_LIST.find(e => e.id === id);
+  if (!exam) return;
+
+  const btn = event.currentTarget;
+  const originalIcon = btn.innerHTML;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch(`${exam.file}?v=${new Date().getTime()}`);
+    const data = await res.json();
+
+    const printWindow = window.open('', '_blank');
+    let html = `
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>${data.meta.title} - yds.monster</title>
+        <meta charset="UTF-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+            body { font-family: 'Lora', serif; padding: 40px; color: #1a1a1a; line-height: 1.6; background: #fff; }
+            .header { text-align: center; border-bottom: 3px solid #991b1b; padding-bottom: 20px; margin-bottom: 40px; }
+            .logo { font-family: 'Playfair Display', serif; font-size: 28px; color: #991b1b; font-weight: bold; }
+            .exam-title { font-size: 22px; font-weight: bold; margin-top: 10px; color: #000; }
+            .meta { font-size: 13px; color: #666; margin-top: 8px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+            
+            .content { columns: 1; column-gap: 40px; }
+            
+            .section-title { 
+                background: #f1f5f9; 
+                border-left: 5px solid #991b1b; 
+                padding: 12px 15px; 
+                font-weight: bold; 
+                margin: 40px 0 20px 0; 
+                page-break-after: avoid;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+            
+            .passage { 
+                background: #f8fafc; 
+                padding: 25px; 
+                border: 1px solid #e2e8f0;
+                border-radius: 4px; 
+                margin-bottom: 25px; 
+                font-size: 14px; 
+                line-height: 1.8;
+                page-break-inside: avoid;
+                text-align: justify;
+            }
+            .passage-title { font-weight: bold; color: #991b1b; margin-bottom: 10px; font-size: 12px; }
+
+            .question-item { margin-bottom: 30px; page-break-inside: avoid; border-bottom: 1px dashed #eee; padding-bottom: 15px; }
+            .q-text { font-weight: bold; margin-bottom: 12px; font-size: 15px; }
+            
+            .options { display: block; }
+            .option { font-size: 14px; margin-bottom: 6px; display: flex; gap: 10px; }
+            .opt-key { font-weight: bold; min-width: 20px; }
+
+            .answer-key-section { page-break-before: always; border-top: 2px solid #000; margin-top: 50px; padding-top: 30px; }
+            .answer-key-title { font-family: 'Playfair Display', serif; font-size: 24px; text-align: center; margin-bottom: 30px; }
+            .answer-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 10px; text-align: center; font-size: 12px; }
+            .answer-item { border: 1px solid #ddd; padding: 5px; }
+            .answer-item b { color: #991b1b; }
+
+            .footer { margin-top: 60px; text-align: center; font-size: 11px; color: #666; border-top: 1px solid #eee; padding-top: 20px; font-style: italic; }
+            
+            @media print {
+                @page { margin: 1cm; }
+                body { padding: 0; }
+                .section-title { -webkit-print-color-adjust: exact; }
+            }
+        </style>
+    </head>
+    <body onafterprint="window.close()">
+        <div class="header">
+            <div class="logo">yds.monster</div>
+            <div class="exam-title">${data.meta.title}</div>
+            <div class="meta">${data.meta.total_questions} SORU | ${data.meta.duration_minutes} DAKİKA | ÖZÜN YDS FORMATI</div>
+        </div>
+        
+        <div class="content">
+            ${data.sections.map(section => {
+              const questions = data.questions.filter(q => q.section_id === section.id);
+              return `
+                    <div class="section-title">${section.label} (Sorular ${section.from} - ${section.to})</div>
+                    ${questions.map((q, qIndex) => {
+                      let passageHtml = "";
+                      if (q.passage_id) {
+                        const prevQ = questions[qIndex - 1];
+                        if (!prevQ || prevQ.passage_id !== q.passage_id) {
+                          const passage = data.passages.find(p => p.id === q.passage_id);
+                          if (passage) {
+                            passageHtml = `
+                                            <div class="passage">
+                                                <div class="passage-title">OKUMA PARÇASI / CLOZE TEST</div>
+                                                ${passage.text.replace(/\n/g, '<br>')}
+                                            </div>`;
+                          }
+                        }
+                      }
+
+                      return `
+                            ${passageHtml}
+                            <div class="question-item">
+                                <div class="q-text">${q.id}. ${q.question ? q.question.replace(/\n/g, '<br>') : "Boşluk için en uygun seçeneği bulunuz."}</div>
+                                <div class="options">
+                                    ${Object.entries(q.options).map(([key, val]) => `
+                                        <div class="option">
+                                            <span class="opt-key">${key})</span>
+                                            <span>${val}</span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                `;
+            }).join('')}
+        </div>
+
+        <div class="answer-key-section">
+            <div class="answer-key-title">CEVAP ANAHTARI</div>
+            <div class="answer-grid">
+                ${data.questions.map(q => `
+                    <div class="answer-item">
+                        <span>${q.id}</span><br>
+                        <b>${q.correct}</b>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+        
+        <div class="footer">
+            Bu döküman yds.monster platformu tarafından Premium üyelerimize özel otomatik olarak oluşturulmuştur.<br>
+            Ticari amaçla çoğaltılması ve paylaşılması yasaktır. &copy; 2026 yds.monster
+        </div>
+        
+        <script>
+            window.onload = function() {
+                setTimeout(() => {
+                    window.print();
+                }, 1000);
+            }
+        </script>
+    </body>
+    </html>
+    `;
+    printWindow.document.write(html);
+    printWindow.document.close();
+
+  } catch (err) {
+    console.error(err);
+    alert('PDF oluşturulurken bir hata oluştu.');
+  } finally {
+    btn.innerHTML = originalIcon;
+    btn.disabled = false;
+  }
+}
+
 // Make everything global
 window.initFullExam = initFullExam;
 window.feSelectExam = feSelectExam;
@@ -686,3 +855,4 @@ window.feFinishConfirm = feFinishConfirm;
 window.feReviewAnswers = feReviewAnswers;
 window.feResetExam = feResetExam;
 window.feSelectAnswer = feSelectAnswer;
+window.feDownloadPDF = feDownloadPDF;
