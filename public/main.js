@@ -408,6 +408,11 @@ function reinjectTabContent(tabName) {
         const el = document.getElementById('tab-' + tabName);
         if (el) el.innerHTML = content;
     }
+
+    // Handle IELTS dynamic content
+    if (tabName.startsWith('ielts-') && typeof renderIELTSModule === 'function') {
+        renderIELTSModule(tabName);
+    }
 }
 
 /* ==========================================

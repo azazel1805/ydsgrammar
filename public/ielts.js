@@ -1,10 +1,71 @@
 /* =====================================================
-   IELTS MODULES & DATA
+   IELTS MODULES & DATA ENGINE
    ===================================================== */
 
-const ieltsOverviewHTML = `
+let currentIELTSExam = null;
+
+// Global placeholders for main.js mapping
+const ieltsOverviewHTML = "Loading...";
+const ieltsReadingHTML = "Loading...";
+const ieltsListeningHTML = "Loading...";
+const ieltsWritingHTML = "Loading...";
+const ieltsSpeakingHTML = "Loading...";
+
+// Initialize on first load
+async function initIELTS() {
+    if (!currentIELTSExam) {
+        try {
+            const response = await fetch('/public/data/ielts/exam1.json');
+            currentIELTSExam = await response.json();
+            console.log("IELTS Exam Data Loaded:", currentIELTSExam);
+        } catch (error) {
+            console.error("Error loading IELTS data:", error);
+        }
+    }
+}
+
+// Wrap switchTab to ensure data is loaded
+window.goToIELTS = async function(subTab) {
+    await initIELTS();
+    if (typeof switchTab === 'function') {
+        switchTab(subTab);
+        renderIELTSModule(subTab);
+    }
+}
+
+async function renderIELTSModule(tabName) {
+    if (!currentIELTSExam) {
+        await initIELTS();
+    }
+    if (!currentIELTSExam) return;
+
+    const containerId = 'tab-' + tabName;
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    switch(tabName) {
+        case 'ielts-overview':
+            container.innerHTML = getIELTSOverviewHTML();
+            break;
+        case 'ielts-reading':
+            container.innerHTML = getIELTSReadingHTML();
+            break;
+        case 'ielts-listening':
+            container.innerHTML = getIELTSListeningHTML();
+            break;
+        case 'ielts-writing':
+            container.innerHTML = getIELTSWritingHTML();
+            break;
+        case 'ielts-speaking':
+            container.innerHTML = getIELTSSpeakingHTML();
+            break;
+    }
+}
+
+function getIELTSOverviewHTML() {
+    return `
 <div class="max-w-6xl mx-auto px-4 py-12">
-    <!-- Action Bar (Print) -->
+    <!-- Action Bar -->
     <div class="flex justify-end mb-8 no-print">
         <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-2xl font-bold hover:bg-red-800 transition-all shadow-xl active:scale-95">
             <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
@@ -30,7 +91,7 @@ const ieltsOverviewHTML = `
             </div>
             <h3 class="text-xl font-bold mb-3">Reading</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Skimming, Scanning ve anahtar kelime takibi ile 60 dakikada 3 makale yönetimi.</p>
-            <button onclick="switchTab('ielts-reading')" class="text-blue-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+            <button onclick="goToIELTS('ielts-reading')" class="text-blue-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
                 İncele <i class="fas fa-arrow-right text-xs"></i>
             </button>
         </div>
@@ -41,7 +102,7 @@ const ieltsOverviewHTML = `
             </div>
             <h3 class="text-xl font-bold mb-3">Listening</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">4 farklı bölüm, 40 soru. Aksanlar, dikkat dağıtıcılar ve boşluk doldurma taktikleri.</p>
-            <button onclick="switchTab('ielts-listening')" class="text-purple-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+            <button onclick="goToIELTS('ielts-listening')" class="text-purple-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
                 İncele <i class="fas fa-arrow-right text-xs"></i>
             </button>
         </div>
@@ -52,7 +113,7 @@ const ieltsOverviewHTML = `
             </div>
             <h3 class="text-xl font-bold mb-3">Writing</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Task 1 Grafik ve Task 2 Essay için puan kazandıran yapılar ve bağlaçlar.</p>
-            <button onclick="switchTab('ielts-writing')" class="text-orange-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+            <button onclick="goToIELTS('ielts-writing')" class="text-orange-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
                 İncele <i class="fas fa-arrow-right text-xs"></i>
             </button>
         </div>
@@ -63,299 +124,362 @@ const ieltsOverviewHTML = `
             </div>
             <h3 class="text-xl font-bold mb-3">Speaking</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Birebir mülakat simülasyonları, akıcılık geliştirme ve Part 2 stratejileri.</p>
-            <button onclick="switchTab('ielts-speaking')" class="text-green-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+            <button onclick="goToIELTS('ielts-speaking')" class="text-green-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
                 İncele <i class="fas fa-arrow-right text-xs"></i>
             </button>
         </div>
     </div>
 
-    <!-- Stats & Scale -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-        <div class="lg:col-span-2 bg-slate-900 rounded-[3rem] p-8 md:p-12 text-white overflow-hidden relative">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 blur-[100px] rounded-full"></div>
-            <div class="relative z-10">
-                <h2 class="text-3xl font-bold mb-6">Neden IELTS?</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-4">
-                            <div class="bg-white/10 p-3 rounded-xl text-indigo-400">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Akademik Kabul</h4>
-                                <p class="text-xs text-slate-400">Dünya çapında 11.000'den fazla kurum tarafından kabul edilir.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="bg-white/10 p-3 rounded-xl text-indigo-400">
-                                <i class="fas fa-passport"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Göçmenlik</h4>
-                                <p class="text-xs text-slate-400">Avustralya, Kanada ve İngiltere göçmenlik başvurularında altın standart.</p>
-                            </div>
-                        </div>
+    <!-- Info Section -->
+    <div class="bg-slate-900 rounded-[3rem] p-8 md:p-12 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 blur-[100px] rounded-full"></div>
+        <div class="relative z-10 flex flex-col md:flex-row items-center gap-10">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-4">Hazırlık Süreci Başlıyor</h2>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    IELTS altyapımız şu an inşa aşamasındadır. Çok yakında her modül için yapay zeka destekli pratik araçları, 
+                    essay değerlendirme sistemi ve gerçek zamanlı konuşma simülasyonları eklenecektir.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl text-xs">
+                        <i class="fas fa-check text-green-500"></i> Akademik & Genel Modül
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-4">
-                            <div class="bg-white/10 p-3 rounded-xl text-indigo-400">
-                                <i class="fas fa-laptop"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Kağıt veya Bilgisayar</h4>
-                                <p class="text-xs text-slate-400">Kendi tercih ettiğiniz formatta sınava girme esnekliği.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="bg-white/10 p-3 rounded-xl text-indigo-400">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Hızlı Sonuç</h4>
-                                <p class="text-xs text-slate-400">Bilgisayarlı sınavda 3-5 gün içinde puanınızı öğrenin.</p>
-                            </div>
-                        </div>
+                    <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl text-xs">
+                        <i class="fas fa-check text-green-500"></i> AI Essay Analizi
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl text-xs">
+                        <i class="fas fa-check text-green-500"></i> Bant Skoru Tahmini
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="bg-white border border-slate-100 p-8 rounded-[3rem] shadow-xl flex flex-col justify-center text-center">
-            <div class="text-sm uppercase tracking-[0.2em] font-black text-slate-400 mb-2">Hedef Bant</div>
-            <div class="text-8xl font-black text-indigo-600 mb-4">8.0</div>
-            <p class="text-slate-500 text-sm leading-relaxed italic">"Eksper kullanıcı seviyesine gidiş yolculuğunuz burada başlar."</p>
+            <div class="w-full md:w-1/3 text-center">
+                <div class="text-6xl font-black text-indigo-500 mb-2">8.0</div>
+                <div class="text-xs uppercase tracking-widest text-slate-500 font-bold">Hedef Bant Skoru</div>
+            </div>
         </div>
     </div>
 </div>
 `;
+}
 
-const ieltsReadingHTML = `
+function getIELTSReadingHTML() {
+    if (!currentIELTSExam) return "Yükleniyor...";
+    
+    let html = `
 <div class="max-w-6xl mx-auto px-4 py-12">
     <div class="mb-12">
         <button onclick="switchTab('ielts-overview')" class="text-indigo-600 font-bold mb-4 flex items-center gap-2">
             <i class="fas fa-arrow-left text-xs"></i> IELTS Overview
         </button>
-        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Reading Stratejileri</h1>
+        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Reading Practice</h1>
         <p class="text-slate-600">60 Dakika | 40 Soru | 3 Pasaj</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg">
-            <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4">
-                <i class="fas fa-bolt"></i>
-            </div>
-            <h4 class="font-bold mb-2">Skimming</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Metnin ana fikrini anlamak için hızlıca göz atma tekniği. Başlıklar ve ilk cümlelere odaklanın.</p>
-        </div>
-        <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg">
-            <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4">
-                <i class="fas fa-search"></i>
-            </div>
-            <h4 class="font-bold mb-2">Scanning</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Tarihler, isimler veya özel terimler gibi belirli bilgileri metin içinde arama tekniği.</p>
-        </div>
-        <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg">
-            <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4">
-                <i class="fas fa-key"></i>
-            </div>
-            <h4 class="font-bold mb-2">Keyword Matching</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Sorudaki anahtar kelimelerin metindeki eş anlamlılarını (synonyms) bulma yeteneği.</p>
-        </div>
-    </div>
+    <div class="space-y-16">`;
 
-    <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200">
-        <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
-            <i class="fas fa-list-check text-indigo-600"></i> En Yaygın Soru Tipleri
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="bg-white p-4 rounded-2xl flex items-center gap-4">
-                <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-600 text-xs">01</span>
-                <span class="font-medium text-slate-800">True / False / Not Given</span>
+    currentIELTSExam.modules.reading.forEach(passage => {
+        html += `
+        <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] overflow-hidden">
+            <div class="bg-indigo-600 p-8 text-white">
+                <h3 class="text-2xl font-bold">${passage.title}</h3>
+                <p class="text-indigo-100 text-sm mt-2 italic">Reading Passage ${passage.passageId}</p>
             </div>
-            <div class="bg-white p-4 rounded-2xl flex items-center gap-4">
-                <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-600 text-xs">02</span>
-                <span class="font-medium text-slate-800">Matching Headings</span>
-            </div>
-            <div class="bg-white p-4 rounded-2xl flex items-center gap-4">
-                <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-600 text-xs">03</span>
-                <span class="font-medium text-slate-800">Multiple Choice</span>
-            </div>
-            <div class="bg-white p-4 rounded-2xl flex items-center gap-4">
-                <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-600 text-xs">04</span>
-                <span class="font-medium text-slate-800">Sentence Completion</span>
+            <div class="p-8 md:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Passage text -->
+                    <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed text-sm">
+                        ${passage.content.split('\n\n').map(p => `<p class="mb-4">${p}</p>`).join('')}
+                    </div>
+                    <!-- Questions -->
+                    <div class="space-y-8">
+                        <h4 class="text-lg font-bold text-slate-900 border-b pb-4">Questions</h4>
+                        ${passage.questions.map(q => `
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                                <p class="font-bold text-slate-800 mb-4">${q.id}. ${q.question}</p>
+                                <div class="grid gap-2">
+                                    ${q.options.map(opt => `
+                                        <button class="w-full text-left p-3 rounded-xl border border-slate-200 bg-white hover:border-indigo-500 transition-all text-xs font-medium"
+                                            onclick="checkIELTSAnswer(this, '${q.answer}', '${q.explanation}')">
+                                            ${opt}
+                                        </button>
+                                    `).join('')}
+                                </div>
+                                <div class="feedback hidden mt-4 p-4 rounded-xl text-xs"></div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-`;
+        `;
+    });
 
-const ieltsWritingHTML = `
+    html += `</div></div>`;
+    return html;
+}
+
+function getIELTSListeningHTML() {
+    if (!currentIELTSExam) return "Yükleniyor...";
+    
+    let html = `
 <div class="max-w-6xl mx-auto px-4 py-12">
     <div class="mb-12">
         <button onclick="switchTab('ielts-overview')" class="text-indigo-600 font-bold mb-4 flex items-center gap-2">
             <i class="fas fa-arrow-left text-xs"></i> IELTS Overview
         </button>
-        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Writing Rehberi</h1>
-        <p class="text-slate-600">60 Dakika | 2 Task | Akademik & Genel</p>
+        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Listening Practice</h1>
+        <p class="text-slate-600">30 Dakika | 4 Bölüm | 40 Soru</p>
     </div>
 
-    <div class="space-y-8">
-        <!-- Task 1 -->
-        <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] overflow-hidden">
-            <div class="bg-orange-500 p-6 text-white flex justify-between items-center">
-                <h3 class="text-xl font-bold italic">TASK 1 (Minimum 150 Kelime)</h3>
-                <span class="bg-white/20 px-3 py-1 rounded-full text-xs">20 Dakika Önerilir</span>
-            </div>
-            <div class="p-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div>
-                        <h4 class="font-bold text-slate-900 mb-3 underline">Akademik: Veri Analizi</h4>
-                        <p class="text-sm text-slate-500 mb-4 italic">Harita, Grafik, Tablo veya Süreç anlatımı.</p>
-                        <ul class="text-xs space-y-2 text-slate-600">
-                            <li><i class="fas fa-check text-green-500 mr-2"></i> <b>Introduction:</b> Soruyu başka kelimelerle ifade edin (paraphrase).</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i> <b>Overview:</b> En belirgin 2-3 trendi / ana özelliği belirtin.</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i> <b>Details:</b> Verileri karşılaştırarak detaylandırın.</li>
-                        </ul>
+    <div class="space-y-12">`;
+
+    currentIELTSExam.modules.listening.forEach(section => {
+        html += `
+        <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] p-8">
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="w-full md:w-1/3">
+                    <div class="bg-indigo-900 rounded-3xl p-6 text-white mb-6">
+                        <h3 class="text-xl font-bold mb-2">Section ${section.section}</h3>
+                        <p class="text-indigo-300 text-xs italic mb-8">Ses dosyasını dinleyin ve soruları yanıtlayın.</p>
+                        <div class="flex justify-center">
+                            <button onclick="playSoundFromTranscript(this)" data-text="${section.transcript.replace(/"/g, '&quot;')}" 
+                                class="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                                <i class="fas fa-play text-2xl"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 mb-3 underline">Genel: Mektup Yazımı</h4>
-                        <p class="text-sm text-slate-500 mb-4 italic">Resmi, Yarı-Resmi veya Gayri-Resmi mektuplar.</p>
-                        <ul class="text-xs space-y-2 text-slate-600">
-                            <li><i class="fas fa-check text-green-500 mr-2"></i> <b>Salutation:</b> Uygun hitapla başlayın.</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i> <b>Purpose:</b> Neden yazdığınızı netleştirin.</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i> <b>Points:</b> Verilen 3 maddeyi de mutlaka kapsayın.</li>
-                        </ul>
+                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                      <h4 class="text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Transcript (Gizli)</h4>
+                      <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] text-indigo-600 font-bold">Transkripti Göster/Gizle</button>
+                      <div class="hidden mt-4 text-[10px] text-slate-500 leading-relaxed italic">
+                        ${section.transcript.split('\n').map(l => `<p class="mb-2">${l}</p>`).join('')}
+                      </div>
                     </div>
                 </div>
+                <div class="flex-1 space-y-6">
+                    ${section.questions.map(q => `
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                            <p class="font-bold text-slate-800 mb-4">${q.id}. ${q.question}</p>
+                            <input type="text" class="w-full p-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                                placeholder="Cevabınızı yazın..." onkeydown="if(event.key === 'Enter') checkIELTSInputAnswer(this, '${q.answer}', '${q.explanation}')">
+                            <div class="feedback hidden mt-4 p-4 rounded-xl text-xs"></div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+        `;
+    });
+
+    html += `</div></div>`;
+    return html;
+}
+
+function getIELTSWritingHTML() {
+    if (!currentIELTSExam) return "Yükleniyor...";
+    const { writing } = currentIELTSExam.modules;
+    
+    return `
+<div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="mb-12">
+        <button onclick="switchTab('ielts-overview')" class="text-indigo-600 font-bold mb-4 flex items-center gap-2">
+            <i class="fas fa-arrow-left text-xs"></i> IELTS Overview
+        </button>
+        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Writing Practice</h1>
+        <p class="text-slate-600">60 Dakika | 2 Task</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <!-- Task 1 -->
+        <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] p-8">
+            <div class="flex items-center gap-2 mb-6">
+                <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Task 1</span>
+                <span class="text-slate-400 text-[10px]">Min 150 Kelime</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-6 italic">${writing.task1.prompt}</h3>
+            <textarea class="w-full h-64 p-6 bg-slate-50 rounded-3xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm leading-relaxed mb-6" 
+                placeholder="Buraya yazmaya başlayın..."></textarea>
+            
+            <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold text-sm shadow-xl">Model Cevabı Gör</button>
+            <div class="hidden mt-6 p-8 bg-indigo-50 rounded-[2rem] border border-indigo-100 italic text-slate-700 text-sm leading-relaxed">
+                <h4 class="font-bold mb-4 text-indigo-900 not-italic">Sample Answer (Band 8.5+)</h4>
+                ${writing.task1.model_answer.split('\n\n').map(p => `<p class="mb-4">${p}</p>`).join('')}
             </div>
         </div>
 
         <!-- Task 2 -->
-        <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] overflow-hidden">
-            <div class="bg-indigo-600 p-6 text-white flex justify-between items-center">
-                <h3 class="text-xl font-bold italic">TASK 2 (Minimum 250 Kelime)</h3>
-                <span class="bg-white/20 px-3 py-1 rounded-full text-xs">40 Dakika Önerilir</span>
+        <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] p-8">
+            <div class="flex items-center gap-2 mb-6">
+                <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Task 2</span>
+                <span class="text-slate-400 text-[10px]">Min 250 Kelime</span>
             </div>
-            <div class="p-8">
-                <h4 class="font-bold text-slate-900 mb-4 underline">Essay Yapısı</h4>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-                        <div class="font-black text-indigo-600 mb-2">01</div>
-                        <h5 class="font-bold text-xs mb-1">Introduction</h5>
-                        <p class="text-[10px] text-slate-500">Paraphrase + Thesis Statement.</p>
-                    </div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-                        <div class="font-black text-indigo-600 mb-2">02</div>
-                        <h5 class="font-bold text-xs mb-1">Body Paragraph 1</h5>
-                        <p class="text-[10px] text-slate-500">First main idea + Evidence.</p>
-                    </div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-                        <div class="font-black text-indigo-600 mb-2">03</div>
-                        <h5 class="font-bold text-xs mb-1">Body Paragraph 2</h5>
-                        <p class="text-[10px] text-slate-500">Second main idea + Examples.</p>
-                    </div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-                        <div class="font-black text-indigo-600 mb-2">04</div>
-                        <h5 class="font-bold text-xs mb-1">Conclusion</h5>
-                        <p class="text-[10px] text-slate-500">Summary of main points + Final thought.</p>
-                    </div>
-                </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-6 italic">${writing.task2.prompt}</h3>
+            <textarea class="w-full h-64 p-6 bg-slate-50 rounded-3xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm leading-relaxed mb-6" 
+                placeholder="Buraya yazmaya başlayın..."></textarea>
+            
+            <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold text-sm shadow-xl">Model Cevabı Gör</button>
+            <div class="hidden mt-6 p-8 bg-indigo-50 rounded-[2rem] border border-indigo-100 italic text-slate-700 text-sm leading-relaxed">
+                <h4 class="font-bold mb-4 text-indigo-900 not-italic">Sample Answer (Band 8.5+)</h4>
+                ${writing.task2.model_answer.split('\n\n').map(p => `<p class="mb-4">${p}</p>`).join('')}
             </div>
         </div>
     </div>
 </div>
 `;
+}
 
-const ieltsListeningHTML = `
+function getIELTSSpeakingHTML() {
+    if (!currentIELTSExam) return "Yükleniyor...";
+    const { speaking } = currentIELTSExam.modules;
+
+    return `
 <div class="max-w-6xl mx-auto px-4 py-12">
     <div class="mb-12">
         <button onclick="switchTab('ielts-overview')" class="text-indigo-600 font-bold mb-4 flex items-center gap-2">
             <i class="fas fa-arrow-left text-xs"></i> IELTS Overview
         </button>
-        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Listening İpuçları</h1>
-        <p class="text-slate-600">30 Dakika (+10 dk Transfer) | 4 Bölüm | 40 Soru</p>
+        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Speaking Practice</h1>
+        <p class="text-slate-600">11-14 Dakika | 3 Bölüm</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div class="bg-indigo-900 text-white p-8 rounded-[2.5rem] relative overflow-hidden group">
-            <div class="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-125 transition-transform">
-                <i class="fas fa-headphones text-9xl"></i>
+    <div class="space-y-12">
+        <!-- Part 1 -->
+        <div class="bg-white border border-slate-100 shadow-xl rounded-[3rem] p-10">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-black">1</div>
+                <div>
+                    <h3 class="font-bold text-lg">Part 1: Introduction & General</h3>
+                    <p class="text-xs text-slate-400 italic">Tanıdık konularda kısa yanıtlar verin.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-bold mb-4">Sınav Yapısı</h3>
-            <ul class="space-y-4 text-sm text-indigo-200">
-                <li><b class="text-white">Section 1:</b> Günlük hayattan iki kişi arası diyalog (örn: rezervasyon).</li>
-                <li><b class="text-white">Section 2:</b> Günlük hayattan monolog (örn: müze rehberi).</li>
-                <li><b class="text-white">Section 3:</b> Eğitim ortamında 2-4 kişi arası tartışma.</li>
-                <li><b class="text-white">Section 4:</b> Akademik konulu ders/monolog.</li>
-            </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                ${speaking.part1.map(q => `
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 flex items-center gap-4">
+                        <button onclick="speakIELTSQuestion('${q}')" class="w-10 h-10 bg-white shadow-sm rounded-xl flex items-center justify-center text-indigo-600 hover:scale-110 transition-transform">
+                            <i class="fas fa-volume-up text-xs"></i>
+                        </button>
+                        <p class="text-sm font-medium text-slate-700">${q}</p>
+                    </div>
+                `).join('')}
+            </div>
         </div>
-        <div class="bg-white border border-slate-100 shadow-xl p-8 rounded-[2.5rem]">
-            <h3 class="text-xl font-bold mb-6 italic">Monster Tips 🔥</h3>
-            <div class="space-y-6">
-                <div class="flex gap-4">
-                    <div class="bg-red-50 text-red-600 p-2 rounded-lg h-fit"><i class="fas fa-spell-check text-xs"></i></div>
-                    <div>
-                        <h5 class="font-bold text-sm">Spelling Dikkat!</h5>
-                        <p class="text-[11px] text-slate-500">Yanlış harf kullanımı soruyu tamamen yakar. İsimleri kodlarken (spelling) dikkatli dinleyin.</p>
+
+        <!-- Part 2 -->
+        <div class="bg-indigo-900 text-white border border-slate-100 shadow-2xl rounded-[3rem] p-10 relative overflow-hidden">
+            <div class="absolute -right-20 -top-20 w-80 h-80 bg-white/5 rounded-full blur-[100px]"></div>
+            <div class="relative z-10 flex flex-col md:flex-row gap-12">
+                <div class="flex-1">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 bg-white/10 text-white rounded-2xl flex items-center justify-center text-xl font-black">2</div>
+                        <h3 class="font-bold text-lg text-white">Part 2: The Long Turn (Cue Card)</h3>
+                    </div>
+                    <div class="bg-white/10 p-8 rounded-[2rem] border border-white/10 shadow-inner">
+                        <h4 class="text-xl font-bold mb-6 italic text-indigo-200">"${speaking.part2.cue_card}"</h4>
+                        <p class="text-xs uppercase tracking-[0.2em] font-black opacity-50 mb-4">You should say:</p>
+                        <ul class="space-y-3">
+                            ${speaking.part2.bullet_points.map(bp => `
+                                <li class="flex items-center gap-3 text-sm">
+                                    <i class="fas fa-chevron-right text-[10px] text-indigo-400"></i> ${bp}
+                                </li>
+                            `).join('')}
+                        </ul>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="bg-red-50 text-red-600 p-2 rounded-lg h-fit"><i class="fas fa-hand-pointer text-xs"></i></div>
-                    <div>
-                        <h5 class="font-bold text-sm">Distractors (Tuzaklar)</h5>
-                        <p class="text-[11px] text-slate-500">Konuşmacı önce bir şey söyleyip sonra "Aslında hayır..." diyerek düzeltebilir. Son ana kadar bekleyin.</p>
-                    </div>
+                <div class="w-full md:w-1/3 flex flex-col justify-center items-center text-center">
+                    <div class="text-5xl font-black text-indigo-400 mb-2">2:00</div>
+                    <p class="text-xs text-indigo-200 italic mb-8">Hazır olduğunuzda başlatın ve kesintisiz konuşun.</p>
+                    <button class="w-20 h-20 bg-white text-indigo-900 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform font-bold">START</button>
                 </div>
-                <div class="flex gap-4">
-                    <div class="bg-red-50 text-red-600 p-2 rounded-lg h-fit"><i class="fas fa-clock text-xs"></i></div>
-                    <div>
-                        <h5 class="font-bold text-sm">Ön Okuma (Prediction)</h5>
-                        <p class="text-[11px] text-slate-500">Ses kaydı başlamadan önceki boşlukta soruları okuyun ve boşluğa gelmesi muhtemel kelime türünü (isim, sayı, tarih) tahmin edin.</p>
-                    </div>
+            </div>
+        </div>
+
+        <!-- Part 3 -->
+        <div class="bg-white border border-slate-100 shadow-xl rounded-[3rem] p-10">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-black">3</div>
+                <div>
+                    <h3 class="font-bold text-lg">Part 3: Two-Way Discussion</h3>
+                    <p class="text-xs text-slate-400 italic">Daha soyut ve geniş perspektifli sorular.</p>
                 </div>
+            </div>
+            <div class="space-y-4">
+                ${speaking.part3.map(q => `
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 flex items-center gap-4">
+                        <button onclick="speakIELTSQuestion('${q}')" class="w-10 h-10 bg-white shadow-sm rounded-xl flex items-center justify-center text-indigo-600 hover:scale-110 transition-transform">
+                            <i class="fas fa-volume-up text-xs"></i>
+                        </button>
+                        <p class="text-sm font-medium text-slate-700">${q}</p>
+                    </div>
+                `).join('')}
             </div>
         </div>
     </div>
 </div>
 `;
+}
 
-const ieltsSpeakingHTML = `
-<div class="max-w-6xl mx-auto px-4 py-12">
-    <div class="mb-12">
-        <button onclick="switchTab('ielts-overview')" class="text-indigo-600 font-bold mb-4 flex items-center gap-2">
-            <i class="fas fa-arrow-left text-xs"></i> IELTS Overview
-        </button>
-        <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">IELTS Speaking Mülakatı</h1>
-        <p class="text-slate-600">11 - 14 Dakika | 3 Bölüm | Birebir Canlı</p>
-    </div>
+// Interactivity Functions
+window.checkIELTSAnswer = function(btn, correctAns, explanation) {
+    const parent = btn.parentElement;
+    const allBtns = parent.querySelectorAll('button');
+    const feedback = parent.nextElementSibling;
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-8 border border-slate-100 rounded-3xl shadow-lg relative h-fit">
-            <div class="text-4xl font-black text-indigo-50/50 absolute top-4 right-6">PART 1</div>
-            <h4 class="font-bold text-indigo-900 mb-4">Introduction & General</h4>
-            <p class="text-xs text-slate-500 leading-relaxed italic mb-4">Hakkında, işin, okulun veya hobilerin gibi tanıdık konularda kısa sorular.</p>
-            <div class="bg-slate-50 p-4 rounded-xl text-[10px] text-slate-600 font-medium">
-                "Örnek: Do you prefer to study in the morning or in the evening?"
-            </div>
-        </div>
+    allBtns.forEach(b => {
+        b.disabled = true;
+        if (b.innerText.trim() === correctAns || (b.innerText.trim().startsWith(correctAns))) {
+            b.classList.add('bg-green-500', 'text-white', 'border-green-500');
+        } else if (b === btn) {
+            b.classList.add('bg-red-500', 'text-white', 'border-red-500');
+        }
+    });
 
-        <div class="bg-indigo-600 p-8 border border-indigo-700 rounded-3xl shadow-xl relative text-white">
-            <div class="text-4xl font-black text-white/10 absolute top-4 right-6">PART 2</div>
-            <h4 class="font-bold mb-4">The Long Turn (Cue Card)</h4>
-            <p class="text-xs text-indigo-100 leading-relaxed italic mb-6">Size bir konu kartı verilir. 1 dakika hazırlık süresinden sonra 2 dakika boyunca bu konuda konuşmanız istenir.</p>
-            <div class="bg-white/10 p-4 rounded-xl text-[10px] space-y-2">
-                <p class="font-bold uppercase tracking-widest text-[8px] opacity-60">Monster Stratejisi:</p>
-                <p>Notlarınızı sadece anahtar kelimelerle alın. Bir hikaye anlatıyormuş gibi akıcı olun.</p>
-            </div>
-        </div>
+    feedback.classList.remove('hidden');
+    feedback.classList.add('bg-indigo-50', 'text-indigo-900', 'border', 'border-indigo-100');
+    feedback.innerHTML = `<strong>Açıklama:</strong> ${explanation}`;
+}
 
-        <div class="bg-white p-8 border border-slate-100 rounded-3xl shadow-lg relative h-fit">
-            <div class="text-4xl font-black text-indigo-50/50 absolute top-4 right-6">PART 3</div>
-            <h4 class="font-bold text-indigo-900 mb-4">Two-Way Discussion</h4>
-            <p class="text-xs text-slate-500 leading-relaxed italic mb-4">Part 2 konusuyla ilgili daha soyut ve karmaşık tartışma soruları.</p>
-            <div class="bg-slate-50 p-4 rounded-xl text-[10px] text-slate-600 font-medium">
-                "Örnek: Why do you think some people prefer to live in urban areas instead of rural ones?"
-            </div>
-        </div>
-    </div>
-</div>
-`;
+window.checkIELTSInputAnswer = function(input, correctAns, explanation) {
+    const val = input.value.trim().toLowerCase();
+    const result = correctAns.toLowerCase();
+    const feedback = input.nextElementSibling;
+
+    input.disabled = true;
+    if (val === result) {
+        input.classList.add('bg-green-500', 'text-white', 'border-green-500');
+    } else {
+        input.classList.add('bg-red-500', 'text-white', 'border-red-500');
+        input.value = `${val} (Doğru: ${correctAns})`;
+    }
+
+    feedback.classList.remove('hidden');
+    feedback.classList.add('bg-indigo-50', 'text-indigo-900', 'border', 'border-indigo-100');
+    feedback.innerHTML = `<strong>Açıklama:</strong> ${explanation}`;
+}
+
+window.playSoundFromTranscript = function(btn) {
+    const text = btn.getAttribute('data-text');
+    if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+    } else {
+        alert("Üzgünüz, tarayıcınız seslendirme özelliğini desteklemiyor.");
+    }
+}
+
+window.speakIELTSQuestion = function(text) {
+    if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-GB';
+        window.speechSynthesis.speak(utterance);
+    }
+}
+
+// Ensure first page renders on load if user is already on ielts tab
+document.addEventListener('DOMContentLoaded', () => {
+  const activeTab = document.querySelector('.tab-content.active');
+  if(activeTab && activeTab.id.startsWith('tab-ielts')) {
+    initIELTS().then(() => renderIELTSModule(activeTab.id.replace('tab-', '')));
+  }
+});

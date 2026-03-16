@@ -1,0 +1,832 @@
+{
+  "examType": "IELTS-Academic",
+  "modules": {
+    "reading": [
+      {
+        "passageId": 1,
+        "title": "The Dawn of Algorithmic Decision-Making",
+        "content": "For most of human history, decision-making has been an inherently human prerogative. From the allocation of resources to the adjudication of disputes, choices were made by people. However, the 21st century has witnessed a paradigm shift with the advent of Artificial Intelligence (AI). Early computational machines were essentially advanced calculators, strictly executing programmed instructions to perform mathematical tasks. They possessed no autonomy. Today, AI systems driven by machine learning algorithms evaluate immense datasets, identify obscure patterns, and generate predictive models that often surpass human analytical capabilities. Consequently, algorithms are increasingly entrusted with decisions that significantly impact human lives, such as determining loan eligibility, screening job applicants, and even predicting criminal recidivism.\n\nProponents argue that AI decision-making enhances efficiency and eliminates human cognitive biases, such as fatigue or emotional prejudice. For instance, in the financial sector, algorithmic trading systems execute transactions in milliseconds based on objective market indicators, bypassing the irrational exuberance or panic that plagues human traders. Nevertheless, this delegation of authority raises critical questions regarding human autonomy. When an algorithm dictates which news articles a person reads, which products they buy, and which routes they travel, the individual's sphere of independent choice implicitly shrinks. Some sociologists warn of 'algorithmic determinism,' a state wherein human futures are shaped almost entirely by predictive models, reducing people to mere data points rather than active agents of their own destiny. As we embrace the convenience of AI, we must critically assess whether we are inadvertently trading our autonomy for efficiency.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "Early computational machines were capable of making independent decisions regarding human disputes.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "False",
+            "explanation": "The text states early machines were essentially advanced calculators with no autonomy.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 2,
+            "question": "Modern AI systems rely on machine learning algorithms to identify patterns in large datasets.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "True",
+            "explanation": "The passage explicitly notes that AI systems driven by machine learning evaluate immense datasets and identify obscure patterns.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 3,
+            "question": "AI systems are currently used by the judiciary to determine the exact length of prison sentences.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "Not Given",
+            "explanation": "The text mentions predicting criminal recidivism but does not state AI determines the exact length of prison sentences.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 4,
+            "question": "One advantage of AI in finance is its immunity to emotional reactions.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "True",
+            "explanation": "The text states algorithmic trading bypasses irrational exuberance or panic.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 5,
+            "question": "Sociologists believe that 'algorithmic determinism' will ultimately lead to a utopian society.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "Not Given",
+            "explanation": "Sociologists warn about algorithmic determinism, but there is no mention of a utopian society.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 6,
+            "question": "According to the passage, the integration of AI into decision-making reduces a person's sphere of independent choice.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "True",
+            "explanation": "The text states that when algorithms dictate choices, the individual's sphere of independent choice implicitly shrinks.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 7,
+            "question": "What were early computers primarily used for?",
+            "options": [
+              "A. Advanced decision making",
+              "B. Mathematical computation tasks",
+              "C. Emotional prejudice analysis",
+              "D. Predicting recidivism"
+            ],
+            "answer": "B. Mathematical computation tasks",
+            "explanation": "The text states they were essentially advanced calculators executing programmed instructions to perform mathematical tasks.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 8,
+            "question": "What do modern AI systems generate that often surpass human analytical capabilities?",
+            "options": [
+              "A. Emotional intelligence",
+              "B. Human disputes",
+              "C. Predictive models",
+              "D. Financial crises"
+            ],
+            "answer": "C. Predictive models",
+            "explanation": "AI generates predictive models that often surpass human analytical capabilities.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 9,
+            "question": "What human flaw is eliminated by AI according to its proponents?",
+            "options": [
+              "A. Efficiency",
+              "B. Independent choice",
+              "C. Algorithmic determinism",
+              "D. Cognitive biases"
+            ],
+            "answer": "D. Cognitive biases",
+            "explanation": "Proponents argue that AI eliminates human cognitive biases such as fatigue or emotional prejudice.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 10,
+            "question": "Which of the following is NOT mentioned as an area where algorithms are entrusted with decisions?",
+            "options": [
+              "A. Loan eligibility",
+              "B. Job applicant screening",
+              "C. Climate change prediction",
+              "D. Predicting criminal recidivism"
+            ],
+            "answer": "C. Climate change prediction",
+            "explanation": "Climate change is not mentioned in the text as one of the areas.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 11,
+            "question": "The term 'algorithmic determinism' suggests that humans are reduced to:",
+            "options": [
+              "A. Advanced calculators",
+              "B. Mere data points",
+              "C. Active agents",
+              "D. Financial traders"
+            ],
+            "answer": "B. Mere data points",
+            "explanation": "Sociologists warn that it reduces people to mere data points rather than active agents.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 12,
+            "question": "In the financial sector, AI trading systems execute transactions in:",
+            "options": [
+              "A. Minutes",
+              "B. Milliseconds",
+              "C. Hours",
+              "D. Days"
+            ],
+            "answer": "B. Milliseconds",
+            "explanation": "The text states trading systems execute transactions in milliseconds.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 13,
+            "question": "The passage suggests that society is currently trading its autonomy for:",
+            "options": [
+              "A. Financial wealth",
+              "B. Emotional stability",
+              "C. Efficiency",
+              "D. Data privacy"
+            ],
+            "answer": "C. Efficiency",
+            "explanation": "The concluding sentence asks whether we are inadvertently trading our autonomy for efficiency.",
+            "type": "Multiple Choice"
+          }
+        ]
+      },
+      {
+        "passageId": 2,
+        "title": "AI in Medical Diagnostics: A Question of Autonomy",
+        "content": "The integration of Artificial Intelligence into healthcare represents a profound technological leap, particularly in the realm of medical diagnostics. Deep learning algorithms are now capable of analyzing medical imaging—such as X-rays, MRIs, and CT scans—with an accuracy that frequently matches or exceeds that of experienced radiologists. For example, AI systems have demonstrated remarkable proficiency in detecting early-stage melanomas and subtle anomalies in breast tissue that might elude the human eye.\n\nWhile the clinical benefits are undeniable, this technological reliance introduces significant concerns regarding the autonomy of medical professionals. Traditionally, doctors have relied on a synthesis of empirical knowledge, clinical experience, and intuition to formulate diagnoses. As diagnostic algorithms become increasingly sophisticated, there is a growing trend of physicians deferring to machine-generated conclusions. This phenomenon, often termed 'automation bias,' occurs when humans place uncritical trust in automated systems, disregarding their own judgment or contradictory clinical evidence.\n\nThe ethical implications of diminished physician autonomy are profound. If a doctor disagrees with an AI recommendation, they face a complex dilemma. Overruling the AI and being wrong could expose them to severe malpractice liability, as the algorithmic recommendation might be considered the 'standard of care.' Conversely, accepting the AI's conclusion against their own clinical judgment compromises their professional autonomy and ethical duty to the patient. This shifts the locus of decision-making from the human practitioner to the opaque 'black box' of the algorithm. Critics argue that while AI is an invaluable diagnostic tool, it must remain subordinate to human oversight. Maintaining medical autonomy requires structural safeguards ensuring that algorithms serve to augment, rather than replace, the nuanced, empathetic, and context-aware decision-making inherent in the doctor-patient relationship.",
+        "questions": [
+          {
+            "id": 14,
+            "question": "AI algorithms are currently used to analyze which of the following?",
+            "options": [
+              "A. Patient dietary habits",
+              "B. Medical imaging like MRIs",
+              "C. Hospital administration costs",
+              "D. Doctor work hours"
+            ],
+            "answer": "B. Medical imaging like MRIs",
+            "explanation": "The text specifies that algorithms analyze medical imaging such as X-rays, MRIs, and CT scans.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 15,
+            "question": "The accuracy of AI in analyzing medical images is often lower than that of experienced radiologists.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "False",
+            "explanation": "The text states AI accuracy frequently matches or exceeds that of experienced radiologists.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 16,
+            "question": "AI systems are exceptionally good at detecting early-stage melanomas.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "True",
+            "explanation": "The passage explicitly notes remarkable proficiency in detecting early-stage melanomas.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 17,
+            "question": "Most patients prefer AI diagnoses over human diagnoses.",
+            "options": [
+              "True",
+              "False",
+              "Not Given"
+            ],
+            "answer": "Not Given",
+            "explanation": "The text discusses doctor autonomy, but patient preferences regarding AI vs human diagnosis are not mentioned.",
+            "type": "True/False/Not Given"
+          },
+          {
+            "id": 18,
+            "question": "What is 'automation bias' as described in the passage?",
+            "options": [
+              "A. When machines make errors in diagnosis",
+              "B. When humans place uncritical trust in automated systems",
+              "C. When AI systems reject human input",
+              "D. When hospitals replace doctors with robots"
+            ],
+            "answer": "B. When humans place uncritical trust in automated systems",
+            "explanation": "Automation bias occurs when humans place uncritical trust in automated systems, disregarding their own judgment.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 19,
+            "question": "Traditionally, which of the following was NOT relied upon by doctors to formulate diagnoses?",
+            "options": [
+              "A. Empirical knowledge",
+              "B. Clinical experience",
+              "C. Predictive machine models",
+              "D. Intuition"
+            ],
+            "answer": "C. Predictive machine models",
+            "explanation": "Traditionally, doctors relied on empirical knowledge, clinical experience, and intuition.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 20,
+            "question": "What risk does a doctor face if they incorrectly overrule an AI recommendation?",
+            "options": [
+              "A. Loss of their medical license immediately",
+              "B. Severe malpractice liability",
+              "C. Demotion to a junior role",
+              "D. Increased insurance premiums"
+            ],
+            "answer": "B. Severe malpractice liability",
+            "explanation": "The text says overruling the AI and being wrong could expose them to severe malpractice liability.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 21,
+            "question": "If a doctor accepts an AI conclusion that contradicts their own judgment, what is compromised?",
+            "options": [
+              "A. Hospital efficiency",
+              "B. Patient data privacy",
+              "C. Professional autonomy and ethical duty",
+              "D. The algorithm's accuracy"
+            ],
+            "answer": "C. Professional autonomy and ethical duty",
+            "explanation": "Accepting the AI's conclusion against their judgment compromises professional autonomy and ethical duty.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 22,
+            "question": "The phrase 'black box' in the text refers to:",
+            "options": [
+              "A. Medical imaging machines",
+              "B. The opaque nature of algorithmic decision-making",
+              "C. The legal system for malpractice",
+              "D. A tool used by experienced radiologists"
+            ],
+            "answer": "B. The opaque nature of algorithmic decision-making",
+            "explanation": "The text refers to the opaque 'black box' of the algorithm, representing its non-transparent decision process.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 23,
+            "question": "Critics argue that AI in healthcare must remain:",
+            "options": [
+              "A. Independent of humans",
+              "B. Subordinate to human oversight",
+              "C. The primary standard of care",
+              "D. Strictly regulated by the government"
+            ],
+            "answer": "B. Subordinate to human oversight",
+            "explanation": "Critics argue that AI must remain subordinate to human oversight.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 24,
+            "question": "According to the passage, maintaining medical autonomy requires:",
+            "options": [
+              "A. Banning AI in hospitals",
+              "B. Structural safeguards",
+              "C. Cheaper diagnostic tools",
+              "D. More medical students"
+            ],
+            "answer": "B. Structural safeguards",
+            "explanation": "Maintaining medical autonomy requires structural safeguards ensuring algorithms augment humans.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 25,
+            "question": "Human decision-making in the doctor-patient relationship is described as all of the following EXCEPT:",
+            "options": [
+              "A. Nuanced",
+              "B. Empathetic",
+              "C. Context-aware",
+              "D. Infallible"
+            ],
+            "answer": "D. Infallible",
+            "explanation": "The text describes it as nuanced, empathetic, and context-aware. It does not claim it is infallible.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 26,
+            "question": "What is the main theme of the passage?",
+            "options": [
+              "A. The history of X-ray technology",
+              "B. How to code medical algorithms",
+              "C. The tension between AI diagnostics and physician autonomy",
+              "D. The financial cost of medical AI"
+            ],
+            "answer": "C. The tension between AI diagnostics and physician autonomy",
+            "explanation": "The passage focuses on the benefits of AI in medicine juxtaposed with the threat to doctor autonomy.",
+            "type": "Multiple Choice"
+          }
+        ]
+      },
+      {
+        "passageId": 3,
+        "title": "The Philosophical Dilemma of Delegating Choice",
+        "content": "As artificial intelligence permeates the infrastructure of modern society, the philosophical ramifications of delegating choice to machines have come under intense academic scrutiny. Historically, the capacity to make choices—often termed 'agency'—has been considered the defining characteristic of human consciousness and moral responsibility. The Enlightenment philosopher Immanuel Kant argued that human dignity is intrinsically linked to autonomy, the ability of individuals to govern themselves through reason. However, the rise of autonomous systems challenges this anthropocentric view, as algorithms begin to execute decisions that possess profound moral weight.\n\nConsider the development of autonomous vehicles (AVs). The algorithms governing AVs are programmed to optimize safety, yet they will inevitably encounter unavoidable collision scenarios. In these micro-seconds, the algorithm must 'decide' whether to prioritize the safety of the vehicle's occupants or that of pedestrians. This is a modern iteration of the classic 'Trolley Problem' in ethics. By outsourcing this decision to a pre-programmed algorithm, humanity is essentially codifying ethical frameworks into software. Dr. Elena Rostova, a prominent ethicist, asserts that 'when we allow machines to make moral choices, we are not eliminating human bias; we are merely freezing the biases of the original programmers into a permanent digital architecture.'\n\nFurthermore, the gradual erosion of daily decision-making impacts human cognitive resilience. Psychologists warn of a 'deskilling' effect, wherein the continuous reliance on AI for navigation, financial planning, and social interaction diminishes the individual's inherent capacity to evaluate risks and make independent choices. If a person relies entirely on algorithmic curation for their worldview, their agency is subtly manipulated by the opaque corporate interests underlying the technology. Consequently, preserving human autonomy in the 21st century is not merely a technical challenge, but a profound philosophical imperative. It demands the cultivation of 'algorithmic literacy' among the public and the imposition of strict ethical guidelines on AI developers, ensuring that technology serves as an instrument of human empowerment rather than an agent of subjugation.",
+        "questions": [
+          {
+            "id": 27,
+            "question": "Historically, the capacity to make choices has been viewed as a defining characteristic of human consciousness.",
+            "options": [
+              "Yes",
+              "No",
+              "Not Given"
+            ],
+            "answer": "Yes",
+            "explanation": "The text states that agency (capacity to make choices) has been considered the defining characteristic of human consciousness.",
+            "type": "Yes/No/Not Given"
+          },
+          {
+            "id": 28,
+            "question": "Immanuel Kant believed that human dignity is unrelated to the ability to govern oneself.",
+            "options": [
+              "Yes",
+              "No",
+              "Not Given"
+            ],
+            "answer": "No",
+            "explanation": "Kant argued that human dignity is intrinsically linked to autonomy (the ability to govern oneself).",
+            "type": "Yes/No/Not Given"
+          },
+          {
+            "id": 29,
+            "question": "Autonomous vehicles are completely immune to unavoidable collision scenarios.",
+            "options": [
+              "Yes",
+              "No",
+              "Not Given"
+            ],
+            "answer": "No",
+            "explanation": "The text explicitly states that AVs will inevitably encounter unavoidable collision scenarios.",
+            "type": "Yes/No/Not Given"
+          },
+          {
+            "id": 30,
+            "question": "The public is generally opposed to the use of autonomous vehicles.",
+            "options": [
+              "Yes",
+              "No",
+              "Not Given"
+            ],
+            "answer": "Not Given",
+            "explanation": "The passage discusses the ethics of AVs but does not mention public opinion on their use.",
+            "type": "Yes/No/Not Given"
+          },
+          {
+            "id": 31,
+            "question": "According to Dr. Elena Rostova, machines eliminate human bias when making moral choices.",
+            "options": [
+              "Yes",
+              "No",
+              "Not Given"
+            ],
+            "answer": "No",
+            "explanation": "Rostova asserts that we are NOT eliminating human bias, merely freezing the biases of the programmers.",
+            "type": "Yes/No/Not Given"
+          },
+          {
+            "id": 32,
+            "question": "Relying on AI for navigation and financial planning can lead to cognitive 'deskilling'.",
+            "options": [
+              "Yes",
+              "No",
+              "Not Given"
+            ],
+            "answer": "Yes",
+            "explanation": "Psychologists warn of a deskilling effect due to continuous reliance on AI for these tasks.",
+            "type": "Yes/No/Not Given"
+          },
+          {
+            "id": 33,
+            "question": "What philosophical problem is modernized by autonomous vehicle collision programming?",
+            "options": [
+              "A. Occam's Razor",
+              "B. The Trolley Problem",
+              "C. The Prisoner's Dilemma",
+              "D. Schrödinger's Cat"
+            ],
+            "answer": "B. The Trolley Problem",
+            "explanation": "The text refers to AV collision scenarios as a modern iteration of the classic 'Trolley Problem'.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 34,
+            "question": "Whose biases are permanently codified into software according to the passage?",
+            "options": [
+              "A. The government's",
+              "B. The occupants of the vehicle",
+              "C. The original programmers",
+              "D. The ethical philosophers"
+            ],
+            "answer": "C. The original programmers",
+            "explanation": "Rostova mentions 'freezing the biases of the original programmers'.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 35,
+            "question": "If a person's worldview is entirely curated by algorithms, their agency is manipulated by:",
+            "options": [
+              "A. Opaque corporate interests",
+              "B. Government propaganda",
+              "C. Academic researchers",
+              "D. Their own peers"
+            ],
+            "answer": "A. Opaque corporate interests",
+            "explanation": "The text notes that agency is subtly manipulated by the opaque corporate interests underlying the technology.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 36,
+            "question": "What must be cultivated among the public to preserve human autonomy?",
+            "options": [
+              "A. Programming skills",
+              "B. Algorithmic literacy",
+              "C. Financial planning",
+              "D. Resistance to technology"
+            ],
+            "answer": "B. Algorithmic literacy",
+            "explanation": "The passage demands the cultivation of 'algorithmic literacy' among the public.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 37,
+            "question": "What is the primary consequence of cognitive 'deskilling'?",
+            "options": [
+              "A. Inability to read or write",
+              "B. Increased reliance on family members",
+              "C. Diminished capacity to evaluate risks and make independent choices",
+              "D. Loss of memory"
+            ],
+            "answer": "C. Diminished capacity to evaluate risks and make independent choices",
+            "explanation": "Deskilling diminishes the individual's inherent capacity to evaluate risks and make independent choices.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 38,
+            "question": "How does the author view the challenge of preserving human autonomy?",
+            "options": [
+              "A. It is an impossible task.",
+              "B. It is primarily a technical bug to fix.",
+              "C. It is a profound philosophical imperative.",
+              "D. It is only relevant to programmers."
+            ],
+            "answer": "C. It is a profound philosophical imperative.",
+            "explanation": "The text states preserving autonomy is not merely a technical challenge, but a profound philosophical imperative.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 39,
+            "question": "The word 'anthropocentric' in the first paragraph likely means:",
+            "options": [
+              "A. Machine-centered",
+              "B. Human-centered",
+              "C. Ethics-centered",
+              "D. Nature-centered"
+            ],
+            "answer": "B. Human-centered",
+            "explanation": "Anthropocentric refers to viewing humans as the central or most important entity, challenged by autonomous systems.",
+            "type": "Multiple Choice"
+          },
+          {
+            "id": 40,
+            "question": "According to the final sentence, technology should serve as:",
+            "options": [
+              "A. An agent of subjugation",
+              "B. A replacement for humanity",
+              "C. An instrument of human empowerment",
+              "D. A permanent digital architecture"
+            ],
+            "answer": "C. An instrument of human empowerment",
+            "explanation": "The text concludes that technology should serve as an instrument of human empowerment rather than an agent of subjugation.",
+            "type": "Multiple Choice"
+          }
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "section": 1,
+        "transcript": "CLERK: Hello, welcome to the Registration Desk for the 'AI and Modern Society' Conference. How can I help you?\nSTUDENT: Hi, I'd like to register for the conference. I believe there's a student discount?\nCLERK: Yes, absolutely. I just need to take down some of your details. Could I have your first and last name, please?\nSTUDENT: Sure, it's Thomas Arrington. That's A-R-R-I-N-G-T-O-N.\nCLERK: Thank you, Thomas. And which university are you currently attending?\nSTUDENT: I'm at Westcliff University, studying computer science.\nCLERK: Great. Now, for the student rate, the registration fee is usually $150, but with your student ID, it comes down to $75. Will you be paying by card or cash?\nSTUDENT: I'll pay by card. Here you go.\nCLERK: Thank you. Now, the conference runs for three days. On the first day, Friday, we have the keynote speech. Have you chosen which workshop you want to attend on Saturday morning? We have 'Machine Learning Basics' and 'AI Ethics'.\nSTUDENT: I'll definitely take the 'AI Ethics' workshop. I'm very interested in human autonomy.\nCLERK: Excellent choice. It's held in the Harrison Building, Room 402. Let me just write that down for your itinerary. Now, regarding meals, we provide lunch on Saturday. Do you have any dietary restrictions?\nSTUDENT: Yes, I am vegetarian.\nCLERK: Noted. Also, we are organizing a networking dinner on Saturday evening at 7:00 PM. It costs an extra $20. Would you like to attend?\nSTUDENT: Oh, yes please. It sounds like a good chance to meet industry professionals.\nCLERK: Perfect. I'll add that to your total. Finally, we'll send your digital ticket and information pack via email. Can you give me your email address?\nSTUDENT: It's t.arrington@westcliff.edu.\nCLERK: All set. Here is your badge. Enjoy the conference!",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the student's last name?",
+            "answer": "Arrington",
+            "explanation": "The student spells his last name A-R-R-I-N-G-T-O-N."
+          },
+          {
+            "id": 2,
+            "question": "Which university does the student attend?",
+            "answer": "Westcliff",
+            "explanation": "He mentions he is at Westcliff University."
+          },
+          {
+            "id": 3,
+            "question": "How much is the discounted student registration fee in dollars?",
+            "answer": "75",
+            "explanation": "The clerk states that with a student ID, the fee comes down to $75."
+          },
+          {
+            "id": 4,
+            "question": "How will the student pay for the registration?",
+            "answer": "card",
+            "explanation": "The student says 'I'll pay by card.'"
+          },
+          {
+            "id": 5,
+            "question": "Which workshop does the student choose to attend on Saturday morning?",
+            "answer": "AI Ethics",
+            "explanation": "He explicitly chooses the 'AI Ethics' workshop."
+          },
+          {
+            "id": 6,
+            "question": "In which building is the workshop being held?",
+            "answer": "Harrison",
+            "explanation": "The clerk states it's in the Harrison Building."
+          },
+          {
+            "id": 7,
+            "question": "What dietary requirement does the student have?",
+            "answer": "vegetarian",
+            "explanation": "The student states 'I am vegetarian.'"
+          },
+          {
+            "id": 8,
+            "question": "What extra event will the student attend on Saturday evening?",
+            "answer": "networking dinner",
+            "explanation": "The clerk offers a networking dinner, which the student accepts."
+          },
+          {
+            "id": 9,
+            "question": "How much does the extra event cost in dollars?",
+            "answer": "20",
+            "explanation": "The clerk mentions it costs an extra $20."
+          },
+          {
+            "id": 10,
+            "question": "How will the digital ticket be sent to the student?",
+            "answer": "email",
+            "explanation": "The clerk says they will send the digital ticket via email."
+          }
+        ]
+      },
+      {
+        "section": 2,
+        "transcript": "GUIDE: Welcome everyone to the NeoTech Smart City Exhibition Center. My name is Sarah, and I'll be your audio guide today. We are currently standing in the Main Foyer. This facility showcases how AI integrates into urban living, making decisions to improve efficiency and human comfort.\n\nNow, let's look at the map on your screens. From the Main Foyer, if you walk straight ahead down the central corridor, the first room on your left is the 'Smart Grid' exhibit. This demonstrates how AI balances our city's electricity usage automatically. Right across from the Smart Grid room, on the right side of the corridor, is the 'Automated Transit' hall. Here you can see models of driverless buses that update their routes in real-time based on traffic algorithms.\n\nMoving further down the central corridor, just past the transit hall, you'll reach a small circular atrium. If you take the path branching off to the right from the atrium, you will arrive at the 'Healthcare Hub'. This exhibit explores automated diagnostic machines used in local clinics. Alternatively, if you branch off to the left from the atrium, you'll find the 'Smart Agriculture' dome, showing how AI manages urban vertical farming.\n\nFinally, at the very end of the central corridor, past the atrium, is our main attraction: the 'Central AI Brain'. This massive interactive display shows the core processing unit of the city. Before we move on, I want to emphasize that all the AI systems you see here are designed to assist, not control. The city council retains override capabilities for all critical infrastructure to ensure human autonomy is preserved. Please, take ten minutes to explore these rooms, and then we will gather at the café located just behind the Main Foyer.",
+        "questions": [
+          {
+            "id": 11,
+            "question": "Where is the group currently standing at the beginning of the tour?",
+            "answer": "Main Foyer",
+            "explanation": "The guide says, 'We are currently standing in the Main Foyer.'"
+          },
+          {
+            "id": 12,
+            "question": "Which exhibit is the first room on the left down the central corridor?",
+            "answer": "Smart Grid",
+            "explanation": "The guide says the first room on the left is the 'Smart Grid' exhibit."
+          },
+          {
+            "id": 13,
+            "question": "What exhibit is located directly across from the Smart Grid room?",
+            "answer": "Automated Transit",
+            "explanation": "Right across from the Smart Grid room, on the right side, is the Automated Transit hall."
+          },
+          {
+            "id": 14,
+            "question": "Where does the path branching off to the right from the circular atrium lead?",
+            "answer": "Healthcare Hub",
+            "explanation": "Taking the path branching off to the right from the atrium leads to the Healthcare Hub."
+          },
+          {
+            "id": 15,
+            "question": "Which exhibit shows AI managing urban vertical farming?",
+            "answer": "Smart Agriculture",
+            "explanation": "Branching left from the atrium leads to the Smart Agriculture dome, showing vertical farming."
+          },
+          {
+            "id": 16,
+            "question": "What is located at the very end of the central corridor?",
+            "answer": "Central AI Brain",
+            "explanation": "At the very end of the corridor is the 'Central AI Brain'."
+          },
+          {
+            "id": 17,
+            "question": "Who retains override capabilities for the city's critical infrastructure?",
+            "answer": "city council",
+            "explanation": "The guide states the city council retains override capabilities."
+          },
+          {
+            "id": 18,
+            "question": "The primary goal of the AI systems in the city is to ______ rather than control.",
+            "answer": "assist",
+            "explanation": "The guide emphasizes the AI systems are designed to assist, not control."
+          },
+          {
+            "id": 19,
+            "question": "How long does the guide give the group to explore the rooms?",
+            "answer": "ten minutes",
+            "explanation": "She asks them to take ten minutes to explore."
+          },
+          {
+            "id": 20,
+            "question": "Where will the group gather after exploring?",
+            "answer": "café",
+            "explanation": "They will gather at the café located behind the Main Foyer."
+          }
+        ]
+      },
+      {
+        "section": 3,
+        "transcript": "JOHN: Hi Sarah, how is the research for our joint presentation going? The topic is AI and human decision-making, right?\nSARAH: Hey John. Yes, it's going well. I've been focusing specifically on how people interact with algorithm-based recommendation systems, like on streaming services or online shopping.\nJOHN: That's interesting. I've been looking at the professional side, mostly AI in recruitment. Did you know that over 70% of large corporations now use AI to screen resumes?\nSARAH: Wow, that's high. I suppose it saves human resources a lot of time. But doesn't that raise issues with bias? If the algorithm is trained on past hiring data, it might just repeat previous prejudices.\nJOHN: Exactly! That's the main argument I'm writing about. The AI doesn't know what fairness is; it just looks for statistical patterns. If a company historically hired mostly men for a role, the AI might downgrade female applicants.\nSARAH: We should definitely include that in the presentation. It ties perfectly into my section. I found a study showing that when people rely on AI for daily choices—like what movies to watch or news to read—they actually experience a decrease in critical thinking. It's called 'cognitive offloading.'\nJOHN: Cognitive offloading... I like that term. It means we stop using our brains to evaluate options because the machine does it for us.\nSARAH: Right. The user assumes the algorithm knows best. We should create a slide comparing your recruitment example with my daily life example. It shows that AI affects autonomy on both a macro, corporate level and a micro, personal level.\nJOHN: Good idea. Let's draft the slides tomorrow. Should we meet at the library or the student union?\nSARAH: The library is too quiet for us to discuss freely. Let's meet at the student union at 3 PM.\nJOHN: Perfect. I'll bring my laptop and the data charts I found.",
+        "questions": [
+          {
+            "id": 21,
+            "question": "What specific area of AI interaction has Sarah been researching?",
+            "answer": "recommendation systems",
+            "explanation": "Sarah mentions she focuses on algorithm-based recommendation systems."
+          },
+          {
+            "id": 22,
+            "question": "According to John, what percentage of large corporations use AI to screen resumes?",
+            "answer": "over 70%",
+            "explanation": "John explicitly states that over 70% of large corporations now use AI."
+          },
+          {
+            "id": 23,
+            "question": "What major issue does Sarah suggest might occur with AI in recruitment?",
+            "answer": "bias",
+            "explanation": "Sarah asks 'But doesn't that raise issues with bias?'"
+          },
+          {
+            "id": 24,
+            "question": "What is the term for relying on machines for daily choices, leading to a decrease in critical thinking?",
+            "answer": "cognitive offloading",
+            "explanation": "Sarah mentions a study showing a decrease in critical thinking, called 'cognitive offloading'."
+          },
+          {
+            "id": 25,
+            "question": "How does John define 'cognitive offloading' in his own words?",
+            "answer": "stop using our brains",
+            "explanation": "John says 'It means we stop using our brains to evaluate options'."
+          },
+          {
+            "id": 26,
+            "question": "What does Sarah's example represent compared to John's macro corporate level?",
+            "answer": "micro, personal level",
+            "explanation": "Sarah contrasts the corporate level with the micro, personal level."
+          },
+          {
+            "id": 27,
+            "question": "When do John and Sarah agree to draft the presentation slides?",
+            "answer": "tomorrow",
+            "explanation": "John says 'Let's draft the slides tomorrow' and Sarah agrees."
+          },
+          {
+            "id": 28,
+            "question": "Why does Sarah prefer not to meet at the library?",
+            "answer": "too quiet",
+            "explanation": "Sarah says 'The library is too quiet for us to discuss freely.'"
+          },
+          {
+            "id": 29,
+            "question": "Where will John and Sarah meet for their discussion?",
+            "answer": "student union",
+            "explanation": "They agree to meet at the student union."
+          },
+          {
+            "id": 30,
+            "question": "What time is their scheduled meeting?",
+            "answer": "3 PM",
+            "explanation": "Sarah suggests 'Let's meet at the student union at 3 PM.'"
+          }
+        ]
+      },
+      {
+        "section": 4,
+        "transcript": "LECTURER: Good morning, class. Today we conclude our module on Technology and Psychology by examining the phenomenon of 'Algorithmic Authority'. In the 21st century, the rapid integration of AI into decision-making processes has profoundly shifted human behavior. \n\nLet's start with a definition. Algorithmic Authority is the trust that humans place in computer-generated algorithms to resolve complex problems. A classic example is GPS navigation. Ten years ago, if a driver felt a suggested route was incorrect, they would rely on their spatial memory or a paper map. Today, psychological studies indicate a phenomenon known as 'automation complacency'. Even when physical road signs contradict the GPS, drivers overwhelmingly follow the GPS, sometimes leading them into dangerous situations, like driving into a lake.\n\nWhy does this happen? Firstly, algorithms offer an illusion of objectivity. Because machines don't have emotions, we assume they are infallible. However, as we've discussed previously, algorithms are created by humans and trained on human data, which means they inherit human flaws. Secondly, decision fatigue plays a massive role. Modern life is saturated with choices. From selecting a health insurance plan to choosing a restaurant, the brain expends significant energy evaluating options. Outsourcing decisions to AI relieves this psychological burden.\n\nThe long-term impact on human autonomy is concerning. When we consistently defer to algorithms, we risk a gradual atrophy of our moral and practical judgment. If an algorithm dictates who receives a bank loan, the loan officer no longer engages their empathetic judgment or evaluates contextual nuances. The solution isn't to reject AI—that would be a regression. Instead, we must design systems that practice 'human-in-the-loop' processing. This means the AI provides data-driven recommendations, but a human must actively review and authorize the final decision. This maintains our autonomy while leveraging the computational power of the machine.",
+        "questions": [
+          {
+            "id": 31,
+            "question": "What is the topic of the final lecture in the module?",
+            "answer": "Algorithmic Authority",
+            "explanation": "The lecturer introduces the topic as 'Algorithmic Authority'."
+          },
+          {
+            "id": 32,
+            "question": "What term is used to describe drivers blindly following GPS over physical signs?",
+            "answer": "automation complacency",
+            "explanation": "The lecturer calls this phenomenon 'automation complacency'."
+          },
+          {
+            "id": 33,
+            "question": "Because machines lack emotions, humans often falsely assume they are ________.",
+            "answer": "infallible",
+            "explanation": "The lecturer says, 'Because machines don't have emotions, we assume they are infallible.'"
+          },
+          {
+            "id": 34,
+            "question": "What psychological concept explains why humans prefer outsourcing choices due to being overwhelmed?",
+            "answer": "decision fatigue",
+            "explanation": "The lecturer explains that 'decision fatigue' plays a massive role."
+          },
+          {
+            "id": 35,
+            "question": "What do algorithms inherit because they are trained on human data?",
+            "answer": "human flaws",
+            "explanation": "Algorithms inherit human flaws because they are created by humans."
+          },
+          {
+            "id": 36,
+            "question": "Consistently deferring to algorithms risks the atrophy of our moral and ________ judgment.",
+            "answer": "practical",
+            "explanation": "The lecture states we risk 'a gradual atrophy of our moral and practical judgment.'"
+          },
+          {
+            "id": 37,
+            "question": "In the bank loan example, what does the loan officer fail to engage?",
+            "answer": "empathetic judgment",
+            "explanation": "The loan officer 'no longer engages their empathetic judgment'."
+          },
+          {
+            "id": 38,
+            "question": "The lecturer argues that rejecting AI entirely would be a ________.",
+            "answer": "regression",
+            "explanation": "He explicitly states, 'The solution isn't to reject AI—that would be a regression.'"
+          },
+          {
+            "id": 39,
+            "question": "What processing design involves humans reviewing AI recommendations?",
+            "answer": "human-in-the-loop",
+            "explanation": "The system design recommended is 'human-in-the-loop' processing."
+          },
+          {
+            "id": 40,
+            "question": "Under the recommended design, what must a human actively do to the final decision?",
+            "answer": "authorize",
+            "explanation": "A human must 'actively review and authorize the final decision.'"
+          }
+        ]
+      }
+    ],
+    "writing": {
+      "task1": {
+        "prompt": "The line graph below shows the percentage of operational decisions made by Artificial Intelligence in three major sectors (Finance, Healthcare, and Transportation) in the UK from 2010 to 2025 (projected). Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "model_answer": "The line graph illustrates the proportion of operational decisions executed by Artificial Intelligence across three UK industries—Finance, Healthcare, and Transportation—over a 15-year period, beginning in 2010 and projecting into 2025.\n\nOverall, it is evident that all three sectors have experienced an upward trend in AI integration. Finance has consistently maintained the highest reliance on AI throughout the period, while Healthcare, despite starting at the lowest point, is projected to undergo the most rapid acceleration in recent years.\n\nIn 2010, the Finance sector already saw 30% of its decisions managed by AI. This figure grew steadily, reaching approximately 55% by 2020, and is projected to peak at 70% by 2025. Transportation began at a lower base of 15% in 2010. It saw moderate, consistent growth, surpassing Healthcare early on and reaching 40% in 2020. However, its growth rate is expected to plateau slightly, ending at around 45% in 2025.\n\nConversely, Healthcare showed the lowest initial adoption, with a mere 5% of decisions made by AI in 2010. This percentage remained relatively stagnant until 2015 (10%). After 2015, the sector experienced a dramatic surge, overtaking Transportation by 2023, and is forecast to reach 60% by the end of the period, securing its place as the second most AI-reliant sector behind Finance."
+      },
+      "task2": {
+        "prompt": "Some people believe that relying on Artificial Intelligence to make daily decisions for us will eventually lead to a loss of human independence. To what extent do you agree or disagree with this statement?",
+        "model_answer": "In recent years, the integration of Artificial Intelligence (AI) into daily life has accelerated unprecedentedly. From predictive text to personalized media consumption and automated financial planning, algorithms increasingly dictate human choices. Consequently, many argue that this growing reliance will ultimately erode human independence. I largely agree with this perspective, as over-reliance on AI diminishes critical thinking and inadvertently subjects individuals to corporate manipulation, though it is acknowledged that AI offers undeniable conveniences.\n\nThe primary reason AI threatens human autonomy is the phenomenon of cognitive deskilling. Decision-making is a psychological muscle; it requires regular exercise to remain robust. When humans consistently outsource mundane choices—such as navigation, diet planning, and news curation—to algorithms, they gradually lose the capacity to evaluate risks and weigh options independently. Over time, this convenience breeds complacency. For instance, studies on GPS reliance show that drivers frequently ignore physical road signs in favor of algorithmic directions, demonstrating a concerning suspension of independent geographical reasoning. \n\nFurthermore, delegating choices to AI invariably means adopting the biases and objectives of the software developers. Algorithms are rarely neutral; they are designed to maximize engagement, profit, or efficiency. When an individual relies on AI to recommend news articles or political content, their worldview is curated by an opaque entity. This subtle manipulation significantly curtails intellectual independence, as the individual becomes a passive consumer of algorithmic outputs rather than an active seeker of knowledge.\n\nHowever, it would be reductive to ignore the benefits of AI. In professional spheres, delegating complex data analysis to AI frees humans to focus on creative and empathetic tasks. Yet, in the context of daily personal decisions, the line between assistance and control is easily blurred. \n\nIn conclusion, while AI undoubtedly streamlines daily tasks and improves efficiency, the widespread delegation of personal decision-making poses a severe threat to human independence. To preserve our autonomy, society must cultivate a conscious approach to technology, ensuring we use AI as an informative tool rather than an absolute authority."
+      }
+    },
+    "speaking": {
+      "part1": [
+        "Do you use any apps or software to help you organize your day?",
+        "How do you usually decide what movie to watch or music to listen to?",
+        "Do you think life was easier before smartphones and smart devices?",
+        "How often do you rely on GPS or map applications when traveling to a new place?"
+      ],
+      "part2": {
+        "cue_card": "Describe a time when a computer, app, or Artificial Intelligence helped you make an important decision.",
+        "bullet_points": [
+          "What the decision was",
+          "What app or software you used",
+          "How the technology helped you decide",
+          "And explain how you felt about the final decision."
+        ]
+      },
+      "part3": [
+        "Do you think humans are becoming too dependent on technology for everyday problem-solving?",
+        "In what types of jobs do you think Artificial Intelligence will eventually replace human decision-making?",
+        "Some argue that machines cannot make moral or ethical decisions. Do you agree?",
+        "How can society ensure that technology continues to benefit us without taking away our independence?"
+      ]
+    }
+  }
+}
