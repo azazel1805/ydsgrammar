@@ -231,37 +231,6 @@ const focusedExamsHTML = `
     </div>
   </div>
 
-  <div id="foWordModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-[200] p-4 overflow-y-auto">
-      <div class="bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
-          <div class="p-8 lg:p-10 text-black">
-              <div class="flex justify-between items-start mb-8">
-                  <div>
-                      <h2 id="foModalWord" class="text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter italic">WORD</h2>
-                      <p id="foModalIpa" class="text-slate-400 font-mono mt-2 text-sm">// ... //</p>
-                  </div>
-                  <button onclick="foCloseWordModal()" class="w-10 h-10 lg:w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all">
-                      <i class="fas fa-times"></i>
-                  </button>
-              </div>
-              <div id="foModalContent" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
-                  <!-- Word info cards injected here -->
-              </div>
-              <div class="mt-8">
-                  <button onclick="foCloseWordModal()" class="w-full px-8 py-4 bg-slate-100 text-slate-600 font-black rounded-2xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">KAPAT</button>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Image Modal -->
-  <div id="foImageModal" class="fixed inset-0 bg-black/90 backdrop-blur-md hidden items-center justify-center z-[300] p-4" onclick="foCloseImageModal()">
-      <div class="relative max-w-4xl w-full">
-          <button onclick="foCloseImageModal()" class="absolute -top-12 right-0 text-white text-3xl hover:text-red-500 transition-colors">
-              <i class="fas fa-times"></i>
-          </button>
-          <img id="foModalFullImage" src="" class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white/10 animate-in zoom-in duration-300">
-      </div>
-  </div>
 </div>
 <style>
   .fo-highlight { border-bottom: 2px solid; padding-bottom: 2px; }
@@ -542,31 +511,67 @@ async function foShowWordDetails(word) {
   const ipaEl = document.getElementById('foModalIpa');
   const contentEl = document.getElementById('foModalContent');
   
+  if (!modal) {
+      // If modal is not in DOM (first-time fail-safe), we can't show it.
+      // But we will inject it globally later.
+      console.warn("foWordModal not found in DOM.");
+      return;
+  }
+
   wordEl.innerText = word;
-  ipaEl.innerText = "Sözlük aranıyor...";
+  ipaEl.innerText = "Yükleniyor...";
   contentEl.innerHTML = '<div class="flex justify-center p-12"><i class="fas fa-spinner fa-spin text-3xl text-indigo-500"></i></div>';
   
   modal.classList.remove('hidden');
   modal.classList.add('flex');
   
   try {
-    // Attempt local API or Dictionary API
-    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
-    if (res.ok) {
-        const data = await res.json();
-        const first = data[0];
+    // 1. NLP Analiz (Turkish Translation) - "nlp yi kullan" isteği için
+    const nlpPromise = fetch(`/.netlify/functions/nlpAnalyze`, {
+        method: "POST",
+        body: JSON.stringify({ text: word })
+    }).then(res => res.json()).catch(() => ({}));
+
+    // 2. Dictionary API (English Definitions)
+    const dictPromise = fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`)
+        .then(res => res.ok ? res.json() : null).catch(() => null);
+
+    const [nlpData, dictData] = await Promise.all([nlpPromise, dictPromise]);
+
+    let html = "";
+    
+    // Add Turkish Translation Header if available
+    if (nlpData && nlpData.translation) {
+        html += `
+            <div class="bg-emerald-50 p-6 rounded-[2rem] border border-emerald-100 mb-6 flex items-center gap-4 animate-in slide-in-from-top-2 duration-500">
+                <div class="w-12 h-12 bg-emerald-500 text-white rounded-2xl flex items-center justify-center text-xl shadow-lg shadow-emerald-200">
+                    <i class="fas fa-language"></i>
+                </div>
+                <div>
+                   <p class="text-[10px] font-black text-emerald-600 uppercase tracking-widest">Türkçe Karşılık</p>
+                   <p class="text-2xl font-black text-emerald-900 tracking-tight italic">${nlpData.translation}</p>
+                </div>
+            </div>
+        `;
+    }
+
+    if (dictData && dictData.length > 0) {
+        const first = dictData[0];
         ipaEl.innerText = first.phonetic || '// ... //';
         
-        contentEl.innerHTML = first.meanings.map(m => `
-          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
-            <p class="text-[10px] uppercase font-black text-indigo-500 mb-2">${m.partOfSpeech}</p>
-            <p class="text-slate-800 font-medium italic mb-2">${m.definitions[0].definition}</p>
-            ${m.definitions[0].example ? `<p class="text-xs text-slate-500 bg-white p-3 rounded-xl border border-slate-100 mt-3 italic">"${m.definitions[0].example}"</p>` : ''}
+        html += first.meanings.map(m => `
+          <div class="bg-slate-50 p-6 rounded-[2rem] border border-slate-100 mb-4">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-[9px] font-black text-slate-400 uppercase tracking-widest">${m.partOfSpeech}</span>
+            </div>
+            <p class="text-slate-800 font-medium leading-relaxed">${m.definitions[0].definition}</p>
+            ${m.definitions[0].example ? `<div class="mt-4 p-4 bg-white/60 rounded-xl border border-dashed border-slate-200 text-xs text-slate-500 italic">"${m.definitions[0].example}"</div>` : ''}
           </div>
         `).join('');
+        contentEl.innerHTML = html;
     } else {
        ipaEl.innerText = "";
-       contentEl.innerHTML = `<div class="p-8 text-center text-slate-400 italic">Sözlük verisi bulunamadı, ancak bu kelime kritik olabilir.</div>`;
+       contentEl.innerHTML = html + `<div class="p-8 text-center text-slate-400 italic">İngilizce tanımlar bulunamadı, ancak Türkçe karşılığı yukarıda görebilirsiniz.</div>`;
     }
   } catch(e) {
     contentEl.innerHTML = "Bir hata oluştu.";
