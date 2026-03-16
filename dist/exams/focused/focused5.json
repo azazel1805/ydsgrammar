@@ -7,7 +7,7 @@
   },
   "sections": [
     {
-      "id": "vocab",
+      "id": "vocabulary",
       "label": "Vocabulary",
       "from": 1,
       "to": 6
@@ -19,7 +19,7 @@
       "to": 16
     },
     {
-      "id": "cloze",
+      "id": "cloze_test",
       "label": "Cloze Test",
       "from": 17,
       "to": 26
@@ -37,31 +37,31 @@
       "to": 42
     },
     {
-      "id": "RC",
+      "id": "reading_comp",
       "label": "Reading Comprehension",
       "from": 43,
       "to": 62
     },
     {
-      "id": "DC",
+      "id": "dialogue",
       "label": "Dialogue Completion",
       "from": 63,
       "to": 67
     },
     {
-      "id": "CM",
+      "id": "paraphrase",
       "label": "Closest Meaning",
       "from": 68,
       "to": 71
     },
     {
-      "id": "PC",
+      "id": "para_completion",
       "label": "Paragraph Completion",
       "from": 72,
       "to": 75
     },
     {
-      "id": "IS",
+      "id": "irrelevant",
       "label": "Irrelevant Sentence",
       "from": 76,
       "to": 80
@@ -100,7 +100,7 @@
   "questions": [
     {
       "id": 1,
-      "section_id": "vocab",
+      "section_id": "vocabulary",
       "question": "The constant fluctuations in the stock market can have a ---- effect on small-scale investors who lack financial cushions.",
       "options": {
         "A": "negligible",
@@ -114,7 +114,7 @@
     },
     {
       "id": 2,
-      "section_id": "vocab",
+      "section_id": "vocabulary",
       "question": "The scientific community was surprised when the researcher's findings failed to ---- the previously established theory.",
       "options": {
         "A": "corroborate",
@@ -128,7 +128,7 @@
     },
     {
       "id": 3,
-      "section_id": "vocab",
+      "section_id": "vocabulary",
       "question": "Despite the evidence, the suspect continued to ---- deny any involvement in the corporate espionage case.",
       "options": {
         "A": "vaguely",
@@ -142,7 +142,7 @@
     },
     {
       "id": 4,
-      "section_id": "vocab",
+      "section_id": "vocabulary",
       "question": "The government has decided to ---- new regulations to curb the rising levels of urban air pollution.",
       "options": {
         "A": "implement",
@@ -156,7 +156,7 @@
     },
     {
       "id": 5,
-      "section_id": "vocab",
+      "section_id": "vocabulary",
       "question": "The unexpected ---- of the ancient manuscript provided historians with invaluable insights into the daily life of the Roman Empire.",
       "options": {
         "A": "depletion",
@@ -170,7 +170,7 @@
     },
     {
       "id": 6,
-      "section_id": "vocab",
+      "section_id": "vocabulary",
       "question": "A good leader should be able to ---- responsibilities among team members to ensure maximum efficiency.",
       "options": {
         "A": "accumulate",
@@ -324,8 +324,8 @@
     },
     {
       "id": 17,
-      "section_id": "cloze",
-      "question": "17",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 17.",
       "options": {
         "A": "Because",
         "B": "Although",
@@ -338,8 +338,8 @@
     },
     {
       "id": 18,
-      "section_id": "cloze",
-      "question": "18",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 18.",
       "options": {
         "A": "irrevocably",
         "B": "casually",
@@ -352,8 +352,8 @@
     },
     {
       "id": 19,
-      "section_id": "cloze",
-      "question": "19",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 19.",
       "options": {
         "A": "attributed",
         "B": "contributed",
@@ -366,8 +366,8 @@
     },
     {
       "id": 20,
-      "section_id": "cloze",
-      "question": "20",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 20.",
       "options": {
         "A": "adopt",
         "B": "refuse",
@@ -380,8 +380,8 @@
     },
     {
       "id": 21,
-      "section_id": "cloze",
-      "question": "21",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 21.",
       "options": {
         "A": "irreversible",
         "B": "temporary",
@@ -394,8 +394,8 @@
     },
     {
       "id": 22,
-      "section_id": "cloze",
-      "question": "22",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 22.",
       "options": {
         "A": "retains",
         "B": "relaxes",
@@ -408,8 +408,8 @@
     },
     {
       "id": 23,
-      "section_id": "cloze",
-      "question": "23",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 23.",
       "options": {
         "A": "By",
         "B": "In",
@@ -422,8 +422,8 @@
     },
     {
       "id": 24,
-      "section_id": "cloze",
-      "question": "24",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 24.",
       "options": {
         "A": "While",
         "B": "So",
@@ -436,8 +436,8 @@
     },
     {
       "id": 25,
-      "section_id": "cloze",
-      "question": "25",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 25.",
       "options": {
         "A": "elaborate",
         "B": "vague",
@@ -450,8 +450,8 @@
     },
     {
       "id": 26,
-      "section_id": "cloze",
-      "question": "26",
+      "section_id": "cloze_test",
+      "question": "Choose the best option for blank 26.",
       "options": {
         "A": "leads to",
         "B": "looks for",
@@ -688,7 +688,7 @@
     },
     {
       "id": 43,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "According to the passage, the primary distinction between nudges and mandates is that nudges ---.",
       "options": {
         "A": "rely on heavy economic penalties to ensure compliance",
@@ -702,7 +702,7 @@
     },
     {
       "id": 44,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The author mentions the 'healthy snacks' example to ---.",
       "options": {
         "A": "illustrate how cognitive biases are always harmful",
@@ -716,7 +716,7 @@
     },
     {
       "id": 45,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "What is the main criticism of nudging mentioned in the passage?",
       "options": {
         "A": "It is too expensive for most governments to implement.",
@@ -730,7 +730,7 @@
     },
     {
       "id": 46,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "It can be inferred from the passage that the 'mechanism' of nudging ---.",
       "options": {
         "A": "is based on the assumption that humans always act rationally",
@@ -744,7 +744,7 @@
     },
     {
       "id": 47,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The passage states that the structural innovations of Gothic architecture ---.",
       "options": {
         "A": "were primarily intended to make buildings look like fortresses",
@@ -758,7 +758,7 @@
     },
     {
       "id": 48,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The term 'theology of light' refers to the idea that ---.",
       "options": {
         "A": "stained glass was only used to hide structural flaws",
@@ -772,7 +772,7 @@
     },
     {
       "id": 49,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "How did Gothic architecture differ from Romanesque style?",
       "options": {
         "A": "It prioritized heavy, defensive wall structures.",
@@ -786,7 +786,7 @@
     },
     {
       "id": 50,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The word 'ethereal' in the passage is closest in meaning to ---.",
       "options": {
         "A": "heavy and grounded",
@@ -800,7 +800,7 @@
     },
     {
       "id": 51,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "According to the passage, the Anthropocene is defined by ---.",
       "options": {
         "A": "the natural geological cycles of the Earth",
@@ -814,7 +814,7 @@
     },
     {
       "id": 52,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "One of the arguments for setting the start of the Anthropocene in the mid-20th century is ---.",
       "options": {
         "A": "the invention of the steam engine",
@@ -828,7 +828,7 @@
     },
     {
       "id": 53,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The author uses the phrase 'Great Acceleration' to describe ---.",
       "options": {
         "A": "the rapid movement of tectonic plates",
@@ -842,7 +842,7 @@
     },
     {
       "id": 54,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "What is the author's tone regarding human impact on the Earth?",
       "options": {
         "A": "Indifferent and dismissive",
@@ -856,7 +856,7 @@
     },
     {
       "id": 55,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The phenomenon of quantum entanglement suggests that ---.",
       "options": {
         "A": "particles can only interact if they are touching",
@@ -870,7 +870,7 @@
     },
     {
       "id": 56,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "Why did Einstein use the phrase 'spooky action at a distance'?",
       "options": {
         "A": "To support the findings of quantum mechanics",
@@ -884,7 +884,7 @@
     },
     {
       "id": 57,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "Which of the following is TRUE about quantum entanglement based on the text?",
       "options": {
         "A": "It has remained a purely theoretical concept with no evidence.",
@@ -898,7 +898,7 @@
     },
     {
       "id": 58,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The passage suggests that entanglement will be particularly important for ---.",
       "options": {
         "A": "improving classical radio transmissions",
@@ -912,7 +912,7 @@
     },
     {
       "id": 59,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "According to the passage, epigenetics differs from traditional genetics because it ---.",
       "options": {
         "A": "changes the actual sequence of DNA",
@@ -926,7 +926,7 @@
     },
     {
       "id": 60,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The term 'tags' in the context of epigenetics refers to ---.",
       "options": {
         "A": "physical labels used in laboratories to identify genes",
@@ -940,7 +940,7 @@
     },
     {
       "id": 61,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The passage suggests that an individual's health can be influenced by ---.",
       "options": {
         "A": "only their own genetic code at birth",
@@ -954,7 +954,7 @@
     },
     {
       "id": 62,
-      "section_id": "RC",
+      "section_id": "reading_comp",
       "question": "The research on epigenetic inheritance implies that ---.",
       "options": {
         "A": "nature and nurture are entirely separate and unrelated",
@@ -968,7 +968,7 @@
     },
     {
       "id": 63,
-      "section_id": "DC",
+      "section_id": "dialogue",
       "question": "James: Do you think the remote work trend will survive the end of the pandemic? \nSarah: --- \nJames: Why is that? I would have thought the lack of face-to-face interaction would be a dealbreaker. \nSarah: On the contrary, many companies have reported higher productivity and lower overhead costs.",
       "options": {
         "A": "I doubt it; most managers want their employees back in the office.",
@@ -982,7 +982,7 @@
     },
     {
       "id": 64,
-      "section_id": "DC",
+      "section_id": "dialogue",
       "question": "Professor: The results of your experiment are quite unexpected. Have you checked the calibration of the sensors? \nStudent: Yes, I've checked them twice, and everything seems to be in order. \nProfessor: --- \nStudent: That's my next step. I'll also look into whether the ambient temperature could have affected the readings.",
       "options": {
         "A": "Then you should probably rewrite the entire thesis.",
@@ -996,7 +996,7 @@
     },
     {
       "id": 65,
-      "section_id": "DC",
+      "section_id": "dialogue",
       "question": "Clara: Have you read that new article about the impact of microplastics on marine life? \nMark: Yes, it's quite alarming how they've infiltrated almost every level of the food chain. \nClara: --- \nMark: Exactly. It's not just a problem for the oceans; it eventually comes back to us.",
       "options": {
         "A": "I think the article was a bit too optimistic about the future.",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 66,
-      "section_id": "DC",
+      "section_id": "dialogue",
       "question": "Interviewer: Your resume is impressive, but you don't have much experience in project management. \nCandidate: --- \nInterviewer: That's a fair point. Leadership in a volunteer setting often requires the same skill set as in a corporate one.",
       "options": {
         "A": "I'm sure I can learn everything in just a few days.",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 67,
-      "section_id": "DC",
+      "section_id": "dialogue",
       "question": "Kevin: I'm considering investing in cryptocurrency, but the volatility is making me nervous. \nLinda: --- \nKevin: That makes sense. I should only put in what I'm prepared to lose.",
       "options": {
         "A": "You should definitely put all your savings into it right now.",
@@ -1038,7 +1038,7 @@
     },
     {
       "id": 68,
-      "section_id": "CM",
+      "section_id": "paraphrase",
       "question": "Despite the widespread belief that vitamin C can prevent the common cold, scientific evidence suggests it only slightly reduces the duration of the illness.",
       "options": {
         "A": "Vitamin C is universally accepted as a cure for the common cold, although it takes a long time to work.",
@@ -1052,7 +1052,7 @@
     },
     {
       "id": 69,
-      "section_id": "CM",
+      "section_id": "paraphrase",
       "question": "The rapid urbanization of the late 20th century led to significant environmental degradation in many developing nations.",
       "options": {
         "A": "Developing nations suffered environmentally because they grew their cities too quickly during the late 1900s.",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": 70,
-      "section_id": "CM",
+      "section_id": "paraphrase",
       "question": "Hardly had the new law been implemented when various civil rights groups began to challenge its constitutionality in court.",
       "options": {
         "A": "The new law was implemented only after civil rights groups confirmed it was constitutional.",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 71,
-      "section_id": "CM",
+      "section_id": "paraphrase",
       "question": "The success of the mission was contingent upon the seamless integration of the various software modules developed by different teams.",
       "options": {
         "A": "The mission failed because the software modules from different teams could not be integrated.",
@@ -1094,7 +1094,7 @@
     },
     {
       "id": 72,
-      "section_id": "PC",
+      "section_id": "para_completion",
       "question": "The concept of 'soft power', coined by Joseph Nye, refers to a country's ability to influence others through attraction rather than coercion. --- This includes things like popular culture, political values, and foreign policies that are seen as legitimate. In contrast, 'hard power' involves military force or economic sanctions.",
       "options": {
         "A": "Military strength remains the most important factor in international relations.",
@@ -1108,7 +1108,7 @@
     },
     {
       "id": 73,
-      "section_id": "PC",
+      "section_id": "para_completion",
       "question": "Artificial Intelligence is increasingly being used in the field of medicine to assist in diagnosing diseases. --- For instance, AI algorithms can analyze medical images with a level of precision that sometimes exceeds human experts. This technology allows for earlier detection of conditions like cancer, potentially saving many lives.",
       "options": {
         "A": "However, many doctors are still skeptical about the use of computers in clinics.",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 74,
-      "section_id": "PC",
+      "section_id": "para_completion",
       "question": "Bees play a crucial role in our ecosystem as primary pollinators for a vast array of crops. --- This phenomenon, known as Colony Collapse Disorder, threatens global food security. Scientists are urgently investigating causes ranging from pesticide use to climate change.",
       "options": {
         "A": "Honey production has reached an all-time high in recent years.",
@@ -1136,7 +1136,7 @@
     },
     {
       "id": 75,
-      "section_id": "PC",
+      "section_id": "para_completion",
       "question": "The Great Library of Alexandria was one of the largest and most significant libraries of the ancient world. --- It served as a major center for scholarship from its founding in the 3rd century BC until the Roman conquest of Egypt. Many of the greatest thinkers of the era studied there.",
       "options": {
         "A": "It was eventually destroyed, resulting in the loss of countless ancient texts.",
@@ -1150,7 +1150,7 @@
     },
     {
       "id": 76,
-      "section_id": "IS",
+      "section_id": "irrelevant",
       "question": "(I) Renewable energy sources, such as solar and wind power, are essential for reducing our carbon footprint. (II) Fossil fuels have been the primary energy source for the global economy since the Industrial Revolution. (III) These sustainable options provide a cleaner alternative to traditional energy production. (IV) Moreover, the cost of installing solar panels has decreased significantly over the last decade. (V) Governments are now offering incentives to encourage homeowners to adopt these green technologies.",
       "options": {
         "A": "I",
@@ -1164,7 +1164,7 @@
     },
     {
       "id": 77,
-      "section_id": "IS",
+      "section_id": "irrelevant",
       "question": "(I) The Renaissance was a period of intense cultural, artistic, and scientific rebirth in Europe. (II) It began in Italy during the 14th century and later spread to the rest of the continent. (III) Figures like Leonardo da Vinci and Michelangelo epitomized the era's focus on humanism and creativity. (IV) The Black Death, which occurred earlier, had a devastating impact on the European population. (V) This movement fundamentally changed how people viewed their place in the world.",
       "options": {
         "A": "I",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 78,
-      "section_id": "IS",
+      "section_id": "irrelevant",
       "question": "(I) Photosynthesis is the process by which green plants use sunlight to synthesize nutrients from carbon dioxide and water. (II) This process generally involves the green pigment chlorophyll and generates oxygen as a byproduct. (III) Without photosynthesis, the Earth's atmosphere would lack the oxygen necessary for most life forms. (IV) Some deep-sea organisms rely on chemosynthesis rather than sunlight for energy. (V) Therefore, the health of global forests is vital for maintaining the balance of gases in the air.",
       "options": {
         "A": "I",
@@ -1192,7 +1192,7 @@
     },
     {
       "id": 79,
-      "section_id": "IS",
+      "section_id": "irrelevant",
       "question": "(I) In literature, a 'distopia' is an imagined society that is dehumanizing and as unpleasant as possible. (II) Famous examples include George Orwell's 1984 and Aldous Huxley's Brave New World. (III) These novels often serve as warnings about the potential dangers of totalitarianism or technological overreach. (IV) Utopian literature, on the other hand, describes an ideal and perfect society. (V) Most readers find the dark themes of dystopian fiction to be a reflection of contemporary social anxieties.",
       "options": {
         "A": "I",
@@ -1206,7 +1206,7 @@
     },
     {
       "id": 80,
-      "section_id": "IS",
+      "section_id": "irrelevant",
       "question": "(I) Urban heat islands occur when cities replace natural land cover with dense concentrations of pavement and buildings. (II) These surfaces absorb and retain heat, leading to higher temperatures in urban areas compared to the surrounding countryside. (III) Planting trees and creating green roofs can help mitigate this effect. (IV) Many people move to cities in search of better employment opportunities and healthcare. (V) This temperature difference is most noticeable at night when the stored heat is slowly released into the air.",
       "options": {
         "A": "I",

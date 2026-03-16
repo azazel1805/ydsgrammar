@@ -293,6 +293,7 @@ async function foSelectExam(id) {
 function foStart() {
   foAnswers = {};
   foCurrentIdx = 0;
+  foLastImgQuestionId = null;
   foSecondsLeft = (foExamData.meta.duration_minutes || 180) * 60;
   foStarted = true;
   foReviewMode = false;
