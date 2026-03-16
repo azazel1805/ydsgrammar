@@ -1,16 +1,14 @@
 
 let premiumExercisesData = [
     {
-        id: '1b',
-        title: 'Personal Qualities',
+        id: 'ex1',
+        title: 'Personality & Qualities',
         level: 'B1-B2',
         description: 'Read about personality traits and match them with their definitions.',
         passage: `
-            <p class="mb-4">"Winning is the most important thing for me. I've always been <b class="text-red-700">competitive</b>, so I love my job. I think I'm a <b class="text-red-700">good leader</b>. It's important that all the players know what they're doing and it's my job to tell them. The decisions I make are important for the whole team, so I can't be <b class="text-red-700">indecisive</b>."</p>
-            
-            <p class="mb-4">"I have classes of 80 to 100 children so I have to be <b class="text-red-700">hard-working</b>. I do my best, because education is so important for the children. You need to be a <b class="text-red-700">good communicator</b> in my job, so that you can get the children interested in what they have to learn. Often, we don't have very many resources, so we also need to be creative and be able to <b class="text-red-700">think outside the box</b>."</p>
-            
-            <p class="mb-4">"I'm a <b class="text-red-700">risk taker</b>, so starting my own business wasn't difficult for me. I've always been very <b class="text-red-700">motivated</b> and <b class="text-red-700">ambitious</b>. I start work at 4.30 a.m. every day. I don't enjoy sleep. You can't afford to be lazy if you want to make money."</p>
+            Winning is the most important thing for me. I've always been <b class="text-red-700">competitive</b>, so I love my job. I think I'm a <b class="text-red-700">good leader</b>. It's important that all the players know what they're doing and it's my job to tell them. The decisions I make are important for the whole team, so I can't be <b class="text-red-700">indecisive</b>.
+            I have classes of 80 to 100 children so I have to be <b class="text-red-700">hard-working</b>. I do my best, because education is so important for the children. You need to be a <b class="text-red-700">good communicator</b> in my job, so that you can get the children interested in what they have to learn. Often, we don't have very many resources, so we also need to be creative and be able to <b class="text-red-700">think outside the box</b>.
+            I'm a <b class="text-red-700">risk taker</b>, so starting my own business wasn't difficult for me. I've always been very <b class="text-red-700">motivated</b> and <b class="text-red-700">ambitious</b>. I start work at 4.30 a.m. every day. I don't enjoy sleep. You can't afford to be lazy if you want to make money.
         `,
         definitions: [
             { id: 1, text: "work with a lot of effort", answer: "hard-working" },
@@ -22,6 +20,176 @@ let premiumExercisesData = [
             { id: 7, text: "person who does things which are dangerous", answer: "risk taker" },
             { id: 8, text: "person who has the qualities to manage a group of people", answer: "good leader" },
             { id: 9, text: "person who can express ideas or feelings clearly to others", answer: "good communicator" }
+        ]
+    },
+    {
+        id: 'ex2',
+        title: 'Environmental Challenges',
+        level: 'B2-C1',
+        description: 'Focus on climate change terminology and ecological impacts.',
+        passage: `
+            The rapid <b class="text-red-700">deterioration</b> of our planet's ecosystem is a major concern. Scientist warn that the <b class="text-red-700">depletion</b> of natural resources will lead to an <b class="text-red-700">unprecedented</b> crisis. We must focus on <b class="text-red-700">sustainability</b> to ensure a future for the next generation. Governments need to <b class="text-red-700">implement</b> stricter laws against pollution. The <b class="text-red-700">vulnerability</b> of low-lying coastal areas to rising sea levels is a direct result of global warming. Many species face <b class="text-red-700">extinction</b> due to habitat loss. We need <b class="text-red-700">innovative</b> solutions to <b class="text-red-700">mitigate</b> these risks.
+        `,
+        definitions: [
+            { id: 1, text: "the process of becoming progressively worse", answer: "deterioration" },
+            { id: 2, text: "reduction in the number or quantity of something", answer: "depletion" },
+            { id: 3, text: "never done or known before", answer: "unprecedented" },
+            { id: 4, text: "the ability to be maintained at a certain rate or level", answer: "sustainability" },
+            { id: 5, text: "put a decision, plan, or agreement into effect", answer: "implement" },
+            { id: 6, text: "the quality or state of being exposed to the possibility of being attacked or harmed", answer: "vulnerability" },
+            { id: 7, text: "the state or process of a species, family, or larger group being or becoming extinct", answer: "extinction" },
+            { id: 8, text: "featuring new methods; advanced and original", answer: "innovative" },
+            { id: 9, text: "make less severe, serious, or painful", answer: "mitigate" }
+        ]
+    },
+    {
+        id: 'ex3',
+        title: 'Technology & AI',
+        level: 'B2-C1',
+        description: 'Matching exercise for modern tech and automation vocabulary.',
+        passage: `
+            The <b class="text-red-700">emergence</b> of artificial intelligence has revolutionized many industries. <b class="text-red-700">Automation</b> is replacing manual labor in many factories. However, there are <b class="text-red-700">ethical</b> concerns regarding privacy and security. AI systems are designed to <b class="text-red-700">simulate</b> human intelligence. They can <b class="text-red-700">analyze</b> vast amounts of data in seconds. The <b class="text-red-700">versatility</b> of these machines makes them useful in fields from medicine to finance. Some fear that AI will eventually <b class="text-red-700">surpass</b> human capabilities. It is <b class="text-red-700">imperative</b> that we develop regulations to control its growth.
+        `,
+        definitions: [
+            { id: 1, text: "the process of coming into view or becoming exposed after being concealed", answer: "emergence" },
+            { id: 2, text: "the use of largely automatic equipment in a system of manufacturing or other production process", answer: "automation" },
+            { id: 3, text: "relating to moral principles or the branch of knowledge dealing with these", answer: "ethical" },
+            { id: 4, text: "imitate the appearance or character of", answer: "simulate" },
+            { id: 5, text: "examine methodically and in detail the constitution or structure of something", answer: "analyze" },
+            { id: 6, text: "ability to adapt or be adapted to many different functions or activities", answer: "versatility" },
+            { id: 7, text: "be greater than; exceed", answer: "surpass" },
+            { id: 8, text: "of vital importance; crucial", answer: "imperative" }
+        ]
+    },
+    {
+        id: 'ex4',
+        title: 'Health & Lifespan',
+        level: 'B1-B2',
+        description: 'Explore words related to well-being, nutrition, and medical science.',
+        passage: `
+            A healthy lifestyle is <b class="text-red-700">essential</b> for a long life. Proper <b class="text-red-700">nutrition</b> provides the body with the necessary fuel. Regular exercise help to <b class="text-red-700">enhance</b> muscle strength. We should avoid a <b class="text-red-700">sedentary</b> lifestyle which can lead to obesity. Modern medicine has significantly increased life <b class="text-red-700">expectancy</b>. Genetic <b class="text-red-700">predisposition</b> can affect our health, but lifestyle choices are often more important. We must be <b class="text-red-700">consistent</b> in our healthy habits. Preventive care is better than treating <b class="text-red-700">chronic</b> diseases later.
+        `,
+        definitions: [
+            { id: 1, text: "extremely important; absolutely necessary", answer: "essential" },
+            { id: 2, text: "the process of providing or obtaining the food necessary for health and growth", answer: "nutrition" },
+            { id: 3, text: "intensify, increase, or further improve the quality, value, or extent of", answer: "enhance" },
+            { id: 4, text: "tending to spend much time seated; somewhat inactive", answer: "sedentary" },
+            { id: 5, text: "the state of thinking or hoping that something, especially something pleasant, will happen or be the case", answer: "expectancy" },
+            { id: 6, text: "a liability or tendency to suffer from a particular condition", answer: "predisposition" },
+            { id: 7, text: "acting or done in the same way over time, especially so as to be fair or accurate", answer: "consistent" },
+            { id: 8, text: "persisting for a long time or constantly recurring", answer: "chronic" }
+        ]
+    },
+    {
+        id: 'ex5',
+        title: 'History & Archaeology',
+        level: 'B2',
+        description: 'Vocabulary for describing ancient civilizations and historical findings.',
+        passage: `
+            Archaeologists work to <b class="text-red-700">uncover</b> the secrets of the past. They study <b class="text-red-700">artifacts</b> to understand how ancient people lived. The <b class="text-red-700">preservation</b> of these sites is crucial for historical research. Many civilizations left behind <b class="text-red-700">monumental</b> structures that still stand today. The <b class="text-red-700">legacy</b> of these cultures continues to influence our world. Historians <b class="text-red-700">interpret</b> found evidence to reconstruct the timeline of events. Sometimes, they find objects of <b class="text-red-700">obscure</b> origin that baffle experts.
+        `,
+        definitions: [
+            { id: 1, text: "remove a cover or mask from", answer: "uncover" },
+            { id: 2, text: "an object made by a human being, typically one of cultural or historical interest", answer: "artifacts" },
+            { id: 3, text: "the action of preserving something", answer: "preservation" },
+            { id: 4, text: "great in importance, extent, or size", answer: "monumental" },
+            { id: 5, text: "something left or handed down by a predecessor", answer: "legacy" },
+            { id: 6, text: "explain the meaning of information, words, or actions", answer: "interpret" },
+            { id: 7, text: "not discovered or known about; uncertain", answer: "obscure" }
+        ]
+    },
+    {
+        id: 'ex6',
+        title: 'Business & Economy',
+        level: 'C1',
+        description: 'Advanced business English and economic terminology matching.',
+        passage: `
+            Companies must <b class="text-red-700">diversify</b> their investments to minimize risk. Market <b class="text-red-700">fluctuations</b> can impact profit margins. A <b class="text-red-700">lucrative</b> deal can change the future of a small business. Entrepreneurs need to be <b class="text-red-700">resilient</b> in the face of failure. Effective <b class="text-red-700">management</b> is the key to corporate success. We are seeing a <b class="text-red-700">shift</b> towards digital currencies. Large <b class="text-red-700">conglomerates</b> often dominate the global market. Economic <b class="text-red-700">stagnation</b> is a threat to national stability.
+        `,
+        definitions: [
+            { id: 1, text: "make or become more diverse or varied", answer: "diversify" },
+            { id: 2, text: "an irregular rising and falling in number or amount; a variation", answer: "fluctuations" },
+            { id: 3, text: "producing a great deal of profit", answer: "lucrative" },
+            { id: 4, text: "able to withstand or recover quickly from difficult conditions", answer: "resilient" },
+            { id: 5, text: "the process of dealing with or controlling things or people", answer: "management" },
+            { id: 6, text: "a slight change in position, direction, or tendency", answer: "shift" },
+            { id: 7, text: "a number of different things or parts that are put or grouped together to form a whole but remain distinct entities", answer: "conglomerates" },
+            { id: 8, text: "the state of not flowing or moving; lack of activity, growth, or development", answer: "stagnation" }
+        ]
+    },
+    {
+        id: 'ex7',
+        title: 'Education & Learning',
+        level: 'B1-B2',
+        description: 'Academic words for school, learning styles, and cognitive development.',
+        passage: `
+            Education is a <b class="text-red-700">lifelong</b> process. Students should be encouraged to be <b class="text-red-700">inquisitive</b> and ask questions. Critical thinking is a <b class="text-red-700">vital</b> skill in the modern world. Teachers aim to <b class="text-red-700">facilitate</b> the learning process. Classroom <b class="text-red-700">dynamics</b> can vary depending on the group of students. A <b class="text-red-700">comprehensive</b> curriculum covers all necessary topics. Continuous <b class="text-red-700">assessment</b> helps track progress. Motivation is a key <b class="text-red-700">factor</b> in academic achievement.
+        `,
+        definitions: [
+            { id: 1, text: "lasting or remaining in a particular state throughout a person's life", answer: "lifelong" },
+            { id: 2, text: "curious or inquiring", answer: "inquisitive" },
+            { id: 3, text: "absolutely necessary or important; essential", answer: "vital" },
+            { id: 4, text: "make an action or process easy or easier", answer: "facilitate" },
+            { id: 5, text: "the forces or properties which stimulate growth, development, or change within a system or process", answer: "dynamics" },
+            { id: 6, text: "complete; including all or nearly all elements or aspects of something", answer: "comprehensive" },
+            { id: 7, text: "the evaluation or estimation of the nature, quality, or ability of someone or something", answer: "assessment" },
+            { id: 8, text: "a circumstance, fact, or influence that contributes to a result or outcome", answer: "factor" }
+        ]
+    },
+    {
+        id: 'ex8',
+        title: 'Space & Astronomy',
+        level: 'B2',
+        description: 'Explore words used to describe the cosmos and space exploration.',
+        passage: `
+            The <b class="text-red-700">vastness</b> of the universe is hard to imagine. Astronomers use telescopes to <b class="text-red-700">observe</b> distant galaxies. The <b class="text-red-700">exploration</b> of Mars is a major goal for NASA. Satellite technology is <b class="text-red-700">integral</b> to modern communication. Some planets have <b class="text-red-700">extreme</b> environments where life as we know it cannot exist. Black holes possess an <b class="text-red-700">immense</b> gravitational pull. Scientists seek to <b class="text-red-700">decipher</b> the signals from outer space.
+        `,
+        definitions: [
+            { id: 1, text: "the quality of being very large in size or amount", answer: "vastness" },
+            { id: 2, text: "notice or perceive something and register it as being significant", answer: "observe" },
+            { id: 3, text: "the action of traveling in or through an unfamiliar area in order to learn about it", answer: "exploration" },
+            { id: 4, text: "necessary to make a whole complete; essential or fundamental", answer: "integral" },
+            { id: 5, text: "reaching a high or the highest degree; very great", answer: "extreme" },
+            { id: 6, text: "extremely large or great, especially in scale or degree", answer: "immense" },
+            { id: 7, text: "succeed in understanding, interpreting, or identifying something", answer: "decipher" }
+        ]
+    },
+    {
+        id: 'ex9',
+        title: 'Art & Psychology',
+        level: 'B2-C1',
+        description: 'Match terms related to artistic expression and human perception.',
+        passage: `
+            Art is a form of <b class="text-red-700">individual</b> expression. Our <b class="text-red-700">perception</b> can be influenced by cultural background. Abstract art often uses <b class="text-red-700">subjective</b> imagery. Artists strive to <b class="text-red-700">evoke</b> strong emotions in their audience. The <b class="text-red-700">aesthetic</b> appeal of a work depends on various factors. Creative <b class="text-red-700">endeavors</b> require patience and dedication. Some masterpieces have a <b class="text-red-700">profound</b> impact on society. Art can be a tool for <b class="text-red-700">introspection</b>.
+        `,
+        definitions: [
+            { id: 1, text: "single; separate", answer: "individual" },
+            { id: 2, text: "the ability to see, hear, or become aware of something through the senses", answer: "perception" },
+            { id: 3, text: "based on or influenced by personal feelings, tastes, or opinions", answer: "subjective" },
+            { id: 4, text: "bring or recall to the conscious mind", answer: "evoke" },
+            { id: 5, text: "concerned with beauty or the appreciation of beauty", answer: "aesthetic" },
+            { id: 6, text: "an attempt to achieve a goal", answer: "endeavors" },
+            { id: 7, text: "very great or intense", answer: "profound" },
+            { id: 8, text: "the examination or observation of one's own mental and emotional processes", answer: "introspection" }
+        ]
+    },
+    {
+        id: 'ex10',
+        title: 'Communication & Society',
+        level: 'B1-B2',
+        description: 'Vocabulary for social interaction and societal structures.',
+        passage: `
+            Effective communication is <b class="text-red-700">crucial</b> in a globalized society. Language is a <b class="text-red-700">barrier</b> that can be overcome with education. Social <b class="text-red-700">norms</b> guide our behavior in public. We must be <b class="text-red-700">respectful</b> of diverse opinions. Information spreads rapidly through <b class="text-red-700">digital</b> platforms. Public <b class="text-red-700">discourse</b> is necessary for a healthy democracy. We should <b class="text-red-700">collaborate</b> to solve global problems. Empathy is a <b class="text-red-700">fundamental</b> part of human connection.
+        `,
+        definitions: [
+            { id: 1, text: "decisive or critical, especially in the success or failure of something", answer: "crucial" },
+            { id: 2, text: "a circumstance or obstacle that keeps people or things apart or prevents communication or progress", answer: "barrier" },
+            { id: 3, text: "something that is usual, typical, or standard", answer: "norms" },
+            { id: 4, text: "feeling or showing deference and respect", answer: "respectful" },
+            { id: 5, text: "involving or relating to the use of computer technology", answer: "digital" },
+            { id: 6, text: "written or spoken communication or debate", answer: "discourse" },
+            { id: 7, text: "work jointly on an activity, especially to produce or create something", answer: "collaborate" },
+            { id: 8, text: "forming a necessary base or core; of central importance", answer: "fundamental" }
         ]
     }
 ];
@@ -89,7 +257,7 @@ function getPremiumExercisesHTML() {
                 <div onclick="loadPremiumExercise('${ex.id}')" class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-red-200 transition-all cursor-pointer group relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-red-50 rounded-bl-full -mr-12 -mt-12 group-hover:bg-red-100 transition-colors"></div>
                     <span class="inline-block px-3 py-1 bg-red-50 text-red-700 text-[10px] font-black rounded-full mb-4 uppercase tracking-wider">${ex.level}</span>
-                    <h3 class="text-2xl font-black text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">${ex.id.toUpperCase()} ${ex.title}</h3>
+                    <h3 class="text-2xl font-black text-slate-800 mb-2" style="font-family:'Playfair Display',serif;">${ex.title}</h3>
                     <p class="text-slate-500 text-sm mb-6">${ex.description}</p>
                     <div class="flex items-center text-red-700 font-bold text-sm">
                         <span>Hemen Başla</span>
