@@ -98,8 +98,11 @@ function getAiReadingHTML() {
                 <div id="aiModalContent" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
                     <!-- Word info cards injected here -->
                 </div>
-                <div class="mt-8">
-                    <button onclick="closeAiWordModal()" class="w-full px-8 py-4 bg-slate-100 text-slate-600 font-black rounded-2xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">KAPAT</button>
+                <div class="mt-8 grid grid-cols-2 gap-4">
+                    <button id="aiSaveWordBtn" class="flex-1 px-8 py-4 bg-red-800 text-white font-black rounded-2xl hover:bg-black transition-all uppercase tracking-widest text-xs flex items-center justify-center gap-2">
+                        <i class="far fa-star"></i> Not Al (Kaydet)
+                    </button>
+                    <button onclick="closeAiWordModal()" class="flex-1 px-8 py-4 bg-slate-100 text-slate-600 font-black rounded-2xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">KAPAT</button>
                 </div>
             </div>
         </div>
@@ -257,7 +260,7 @@ function aiMakeClickable(text) {
     return parts.map(part => {
         if (/[\s,.!?;:()"]+/.test(part)) return part;
         if (part.trim().length === 0) return part;
-        return `<span onclick="showAiWordDetails('${part.replace(/'/g, "\\'")}')" class="cursor-pointer hover:bg-purple-100 hover:text-purple-900 rounded transition-colors underline decoration-purple-100 underline-offset-4">${part}</span>`;
+        return `<span onclick="window.showAiWordDetails('${part.replace(/'/g, "\\'")}')" class="cursor-pointer hover:bg-purple-100 hover:text-purple-900 rounded transition-colors underline decoration-purple-100 underline-offset-4">${part}</span>`;
     }).join('');
 }
 
@@ -277,27 +280,95 @@ async function showAiWordDetails(word) {
     modal.classList.add('flex');
     
     try {
+        // Update Save Button State
+        const saveBtn = document.getElementById('aiSaveWordBtn');
+        const isAlreadySaved = typeof window.savedWordSet !== 'undefined' && window.savedWordSet.has(word);
+        
+        saveBtn.innerHTML = isAlreadySaved ? '<i class="fas fa-star text-yellow-500"></i> Kaydedildi' : '<i class="far fa-star"></i> Not Al (Kaydet)';
+        saveBtn.onclick = () => window.toggleAiWordSave(word, saveBtn);
+
+        // Fetch English Meanings
         const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+        
+        // Fetch Turkish Meaning (NLP Analyze)
+        let turkishMeaning = null;
+        try {
+            const trRes = await fetch("/.netlify/functions/nlpAnalyze", {
+                method: "POST",
+                body: JSON.stringify({ text: word })
+            });
+            const trData = await trRes.json();
+            turkishMeaning = trData.translation;
+        } catch(e) { console.error("TR Translate fail", e); }
+
         if (res.ok) {
             const data = await res.json();
             const first = data[0];
             ipaEl.innerText = first.phonetic || '// ... //';
             
-            contentEl.innerHTML = first.meanings.map(m => `
+            let html = "";
+            
+            // Add Turkish Highlight if available
+            if (turkishMeaning) {
+                html += `
+                <div class="bg-red-50 p-5 rounded-2xl border border-red-100 mb-4">
+                    <p class="text-[10px] uppercase font-black text-red-800 mb-1">TÜRKÇE ANLAMI</p>
+                    <p class="text-xl font-bold text-red-900">${turkishMeaning}</p>
+                </div>`;
+            }
+
+            html += first.meanings.map(m => `
               <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
                 <p class="text-[10px] uppercase font-black text-purple-500 mb-2">${m.partOfSpeech}</p>
                 <p class="text-slate-800 font-medium italic mb-2">${m.definitions[0].definition}</p>
                 ${m.definitions[0].example ? `<p class="text-xs text-slate-500 bg-white p-3 rounded-xl border border-slate-100 mt-3 italic">"${m.definitions[0].example}"</p>` : ''}
               </div>
             `).join('');
+            
+            contentEl.innerHTML = html;
         } else {
            ipaEl.innerText = "";
-           contentEl.innerHTML = `<div class="p-8 text-center text-slate-400 italic">Sözlük verisi bulunamadı, ancak bu kelime kritik olabilir.</div>`;
+           contentEl.innerHTML = `
+                ${turkishMeaning ? `
+                <div class="bg-red-50 p-5 rounded-2xl border border-red-100 mb-4">
+                    <p class="text-[10px] uppercase font-black text-red-800 mb-1">TÜRKÇE ANLAMI</p>
+                    <p class="text-xl font-bold text-red-900">${turkishMeaning}</p>
+                </div>` : ''}
+                <div class="p-8 text-center text-slate-400 italic">Detaylı sözlük verisi bulunamadı.</div>
+           `;
         }
     } catch(e) {
         contentEl.innerHTML = "Bir hata oluştu.";
     }
 }
+
+window.toggleAiWordSave = async function(word, btn) {
+    if (!window.currentUser) {
+        if (typeof window.openLoginModal === "function") window.openLoginModal();
+        return;
+    }
+
+    try {
+        const isSaved = typeof window.savedWordSet !== 'undefined' && window.savedWordSet.has(word);
+        
+        if (isSaved) {
+            await window.deleteWordFirestore(word);
+            if (typeof window.savedWordSet !== 'undefined') window.savedWordSet.delete(word);
+            btn.innerHTML = '<i class="far fa-star"></i> Not Al (Kaydet)';
+        } else {
+            const data = {
+                word: word,
+                source: "ai_reading",
+                timestamp: new Date().getTime()
+            };
+            await window.saveWordFirestore(data);
+            if (typeof window.savedWordSet !== 'undefined') window.savedWordSet.add(word);
+            btn.innerHTML = '<i class="fas fa-star text-yellow-500"></i> Kaydedildi';
+        }
+    } catch (err) {
+        console.error("Save error:", err);
+    }
+};
 
 window.closeAiWordModal = function() {
     const modal = document.getElementById('aiWordModal');
