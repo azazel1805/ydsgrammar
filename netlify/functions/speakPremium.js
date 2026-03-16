@@ -5,7 +5,7 @@ export const handler = async (event) => {
     }
 
     try {
-        const { text, voice = "en-US-Standard-C" } = JSON.parse(event.body);
+        const { text, voice = "en-US-Standard-C", lang = "en-US" } = JSON.parse(event.body);
         const apiKey = process.env.GOOGLE_NLP_API_KEY;
 
         if (!text) return { statusCode: 400, body: JSON.stringify({ error: "No text" }) };
@@ -18,7 +18,7 @@ export const handler = async (event) => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 input: { text },
-                voice: { languageCode: "en-US", name: voice },
+                voice: { languageCode: lang, name: voice },
                 audioConfig: { audioEncoding: "MP3" }
             })
         });
