@@ -271,9 +271,7 @@
             <button data-tab="tacticalpanels" onclick="switchTab('tacticalpanels')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Hızlı
               Taktikler</button>
-            <button data-tab="wordpractice" onclick="switchTab('wordpractice')"
-              class="tab-btn w-full text-left px-5 py-3 font-bold text-red-800 hover:bg-gray-50 hover:text-red-700 transition-colors">Kelime
-              Çalışması</button>
+            <!-- Word Practice moved to Premium -->
             <button data-tab="strategy" onclick="switchTab('strategy')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-red-800">
               Strateji Laboratuvarı
@@ -427,6 +425,11 @@
               <span>Interaktif Alıştırmalar</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
+            <button id="wordpracticeNavBtn" data-tab="wordpractice" onclick="switchTab('wordpractice')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
+              <span>Kelime Çalışması (AI)</span>
+              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
+            </button>
           </div>
         </div>
 
@@ -498,8 +501,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               Rehberi</button>
             <button data-tab="tacticalpanels" onclick="switchTabAndClose('tacticalpanels')" class="drawer-btn">Hızlı
               Taktikler</button>
-            <button data-tab="wordpractice" onclick="switchTabAndClose('wordpractice')"
-              class="drawer-btn font-bold text-red-800">Kelime Çalışması</button>
+            <!-- Word Practice moved to Premium -->
             <button data-tab="strategy" onclick="switchTabAndClose('strategy')"
               class="drawer-btn font-bold text-red-800">Strateji Laboratuvarı</button>
             <button data-tab="freeexams" onclick="switchTabAndClose('freeexams')"
@@ -609,6 +611,11 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button id="premiumExercisesMobileBtn" data-tab="premium-exercises" onclick="switchTabAndClose('premium-exercises')"
               class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
               <span>Interaktif Alıştırmalar</span>
+              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
+            </button>
+            <button id="wordpracticeMobileBtn" data-tab="wordpractice" onclick="switchTabAndClose('wordpractice')"
+              class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
+              <span>Kelime Çalışması (AI)</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
           </div>

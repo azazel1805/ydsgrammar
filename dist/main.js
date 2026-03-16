@@ -673,9 +673,9 @@ window.toggleModalTactics = function () {
 window.lockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "wordpracticeNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "wordpracticeMobileBtn"
     ];
 
     navButtons.forEach(id => {
@@ -692,9 +692,9 @@ window.lockAnalyzerUI = function () {
 window.unlockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "wordpracticeNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "wordpracticeMobileBtn"
     ];
 
     navButtons.forEach(id => {
