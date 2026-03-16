@@ -157,12 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         switchTab('dashboard');
     }
 
-    // Hidden IELTS Access
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('admin') === 'true' || localStorage.getItem('ieltsAdmin') === 'true') {
-        document.querySelectorAll('.ielts-nav').forEach(el => el.classList.remove('hidden'));
-        localStorage.setItem('ieltsAdmin', 'true');
-    }
+    // URL based tab landing logic remains above
 });
 
 /* ==========================================
@@ -407,6 +402,7 @@ function reinjectTabContent(tabName) {
         "ielts-listening": typeof ieltsListeningHTML !== 'undefined' ? ieltsListeningHTML : null,
         "ielts-writing": typeof ieltsWritingHTML !== 'undefined' ? ieltsWritingHTML : null,
         "ielts-speaking": typeof ieltsSpeakingHTML !== 'undefined' ? ieltsSpeakingHTML : null,
+        "ielts-exams": typeof ieltsExamsHTML !== 'undefined' ? ieltsExamsHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -440,6 +436,7 @@ function updateSEO(tab) {
         "relative": { title: "Relative Clauses – YDS Sıfat Cümlecikleri", desc: "Who, which, that gibi yapıların karmaşık cümlelerdeki tespiti." },
         "profile": { title: "Profilim – YDS İstatistiklerim", desc: "Kaydettiğiniz kelimeler ve kişisel çalışma verileriniz." },
         "miniexams": { title: "Mini Denemeler – YDS Konu Quizleri", desc: "Konu konu ayrılmış 10 soruluk hızlı YDS mini denemeleri." },
+        "ielts-exams": { title: "IELTS Denemeler – Online Practice Tests", desc: "Gerçek IELTS formatında Reading, Listening, Writing ve Speaking denemeleri." },
         "fullexam": { title: "Mini Deneme Sınavları – 40 Sorulu YDS / YDT Denemeler", desc: "40 soruluk, 90 dakikalık süreli ve cevap açıklamalı mini YDS denemeleri." },
         "tenseguide": { title: "Tense Rehberi – Zamanlar ve Kullanımları", desc: "İngilizce zamanların YDS perspektifinden sadeleştirilmiş anlatımı." },
         "ifclauses": { title: "If Clauses (Koşul Cümleleri) – YDS Rehberi", desc: "Tüm type'lar ve devrik yapılar (inversion) ile koşul cümleleri." },
@@ -692,9 +689,9 @@ window.toggleModalTactics = function () {
 window.lockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "ieltsExamsNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "ieltsExamsMobileBtn"
     ];
 
     navButtons.forEach(id => {
@@ -711,9 +708,9 @@ window.lockAnalyzerUI = function () {
 window.unlockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "ieltsExamsNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "ieltsExamsMobileBtn"
     ];
 
     navButtons.forEach(id => {

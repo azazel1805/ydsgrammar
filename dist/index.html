@@ -79,8 +79,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <script type="module" crossorigin src="./assets/index-D4QyMh79.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BS3mylOH.css">
+  <script type="module" crossorigin src="./assets/index-AIytKKN8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DAfgb_mB.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -306,8 +306,8 @@
           </div>
         </div>
 
-        <!-- IELTS Dropdown (Hidden initially) -->
-        <div class="relative group hidden ielts-nav">
+        <!-- IELTS Dropdown (Public) -->
+        <div class="relative group ielts-nav">
           <button class="nav-drop-btn pb-4">IELTS <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
           <div
             class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 rounded-2xl overflow-hidden">
@@ -319,6 +319,8 @@
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Listening</button>
             <button data-tab="ielts-writing" onclick="switchTab('ielts-writing')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Writing</button>
+            <button data-tab="ielts-speaking" onclick="switchTab('ielts-speaking')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Speaking</button>
             <button data-tab="ielts-speaking" onclick="switchTab('ielts-speaking')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Speaking</button>
           </div>
@@ -445,6 +447,11 @@
               <span>Interaktif Alıştırmalar</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
+            <button id="ieltsExamsNavBtn" data-tab="ielts-exams" onclick="switchTab('ielts-exams')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-indigo-700">
+              <span>IELTS Denemeler</span>
+              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
+            </button>
           </div>
         </div>
 
@@ -537,7 +544,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
           </div>
         </div>
 
-        <div class="hidden ielts-nav">
+        <div class="ielts-nav">
           <h3 class="text-indigo-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">IELTS</h3>
           <div class="space-y-2 mb-4">
             <button data-tab="ielts-overview" onclick="switchTabAndClose('ielts-overview')" class="drawer-btn font-bold text-indigo-700">IELTS Rehberi</button>
@@ -639,6 +646,11 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               <span>Interaktif Alıştırmalar</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
+            <button id="ieltsExamsMobileBtn" data-tab="ielts-exams" onclick="switchTabAndClose('ielts-exams')"
+              class="drawer-btn hidden font-bold text-indigo-800 flex items-center justify-between">
+              <span>IELTS Denemeler</span>
+              <i class="fas fa-crown text-yellow-500 text-xs"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -679,6 +691,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-ielts-listening" class="tab-content"></div>
       <div id="tab-ielts-writing" class="tab-content"></div>
       <div id="tab-ielts-speaking" class="tab-content"></div>
+      <div id="tab-ielts-exams" class="tab-content"></div>
       <div id="tab-analyzer" class="tab-content hidden"></div>
       <div id="tab-testlab" class="tab-content hidden"></div>
       <div id="tab-restatement" class="tab-content hidden"></div>
