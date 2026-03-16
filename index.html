@@ -300,51 +300,49 @@
           </div>
         </div>
 
-        <!-- Grammar Dropdown -->
+        <!-- Grammar Mega Menu -->
         <div class="relative group">
           <button class="nav-drop-btn pb-4">Grammar <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
           <div
-            class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+            class="absolute left-0 top-full mt-0 hidden group-hover:flex bg-white border border-gray-100 shadow-2xl z-50 min-w-[650px] p-6 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 rounded-2xl">
+            
+            <div class="grid grid-cols-3 gap-8 w-full">
+              <!-- Group 1: Basics -->
+              <div>
+                <h4 class="text-[10px] font-black text-red-800 uppercase tracking-widest mb-4 border-b border-red-50 pb-2">Zamanlar & Temeller</h4>
+                <div class="flex flex-col gap-1">
+                  <button data-tab="tenseguide" onclick="switchTab('tenseguide')" class="tab-btn-mega">Tense Rehberi</button>
+                  <button data-tab="tenseagreement" onclick="switchTab('tenseagreement')" class="tab-btn-mega">Tense Uyumu</button>
+                  <button data-tab="modals" onclick="switchTab('modals')" class="tab-btn-mega">Modals (Kipler)</button>
+                  <button data-tab="articles" onclick="switchTab('articles')" class="tab-btn-mega">Articles</button>
+                </div>
+              </div>
 
-            <button data-tab="modals" onclick="switchTab('modals')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Modals
-              (Kipler)</button>
-            <button data-tab="conjunctions" onclick="switchTab('conjunctions')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Bağlaçlar</button>
-            <button data-tab="prepositions" onclick="switchTab('prepositions')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Edatlar</button>
-            <button data-tab="passive" onclick="switchTab('passive')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Edilgen
-              Yapı</button>
-            <button data-tab="relative" onclick="switchTab('relative')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Sıfat
-              Cümleleri</button>
-            <button data-tab="quantifiers" onclick="switchTab('quantifiers')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Miktar /
-              İsimler</button>
-            <button data-tab="noun" onclick="switchTab('noun')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">İsim
-              Cümleleri</button>
-            <div class="border-t border-gray-100 my-1"></div>
-            <button data-tab="tenseagreement" onclick="switchTab('tenseagreement')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Tense
-              Uyumu</button>
-            <button data-tab="tenseguide" onclick="switchTab('tenseguide')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Tense
-              Rehberi</button>
-            <button data-tab="ifclauses" onclick="switchTab('ifclauses')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">If
-              Clauses Rehberi</button>
-            <button data-tab="reportedspeech" onclick="switchTab('reportedspeech')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Reported
-              Speech</button>
-            <button data-tab="gerunds" onclick="switchTab('gerunds')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Gerunds &
-              Inf.</button>
-            <button data-tab="reductions" onclick="switchTab('reductions')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Kısaltmalar (Reduced Clauses)</button>
-            <button data-tab="articles" onclick="switchTab('articles')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Articles</button>
+              <!-- Group 2: Clauses -->
+              <div>
+                <h4 class="text-[10px] font-black text-red-800 uppercase tracking-widest mb-4 border-b border-red-50 pb-2">Cümle Yapıları</h4>
+                <div class="flex flex-col gap-1">
+                  <button data-tab="relative" onclick="switchTab('relative')" class="tab-btn-mega">Sıfat Cümleleri</button>
+                  <button data-tab="noun" onclick="switchTab('noun')" class="tab-btn-mega">İsim Cümleleri</button>
+                  <button data-tab="ifclauses" onclick="switchTab('ifclauses')" class="tab-btn-mega">If Clauses Rehberi</button>
+                  <button data-tab="reportedspeech" onclick="switchTab('reportedspeech')" class="tab-btn-mega">Reported Speech</button>
+                  <button data-tab="reductions" onclick="switchTab('reductions')" class="tab-btn-mega">Kısaltmalar (Reduced)</button>
+                </div>
+              </div>
+
+              <!-- Group 3: Advanced -->
+              <div>
+                <h4 class="text-[10px] font-black text-red-800 uppercase tracking-widest mb-4 border-b border-red-50 pb-2">Bağlaçlar & Diğer</h4>
+                <div class="flex flex-col gap-1">
+                  <button data-tab="conjunctions" onclick="switchTab('conjunctions')" class="tab-btn-mega">Bağlaçlar</button>
+                  <button data-tab="prepositions" onclick="switchTab('prepositions')" class="tab-btn-mega">Edatlar</button>
+                  <button data-tab="gerunds" onclick="switchTab('gerunds')" class="tab-btn-mega">Gerunds & Inf.</button>
+                  <button data-tab="passive" onclick="switchTab('passive')" class="tab-btn-mega">Edilgen Yapı</button>
+                  <button data-tab="quantifiers" onclick="switchTab('quantifiers')" class="tab-btn-mega">Miktar / İsimler</button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -511,38 +509,45 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button data-tab="ydt-exams" onclick="switchTabAndClose('ydt-exams')" class="drawer-btn">YDT Denemeleri</button>
             <button data-tab="ydt-tactics" onclick="switchTabAndClose('ydt-tactics')" class="drawer-btn">YDT Taktikleri</button>
             <button data-tab="ydt-grammar" onclick="switchTabAndClose('ydt-grammar')" class="drawer-btn font-bold text-blue-700">YDT Gramer Özetleri</button>
-            <button data-tab="ydt-vocab" onclick="switchTabAndClose('ydt-vocab')" class="drawer-btn font-bold text-orange-600">Önemli Kelimeler</button>
+            <button data-tab="ydt-vocab" onclick="swi        <div>
+          <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">Grammar</h3>
+          <div class="space-y-4 mb-4">
+            
+            <div class="pl-2">
+              <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">Zamanlar & Temeller</p>
+              <div class="space-y-1">
+                <button data-tab="tenseguide" onclick="switchTabAndClose('tenseguide')" class="drawer-btn">Tense Rehberi</button>
+                <button data-tab="tenseagreement" onclick="switchTabAndClose('tenseagreement')" class="drawer-btn">Tense Uyumu</button>
+                <button data-tab="modals" onclick="switchTabAndClose('modals')" class="drawer-btn">Modals (Kipler)</button>
+                <button data-tab="articles" onclick="switchTabAndClose('articles')" class="drawer-btn">Articles</button>
+              </div>
+            </div>
+
+            <div class="pl-2">
+              <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">Cümle Yapıları</p>
+              <div class="space-y-1">
+                <button data-tab="relative" onclick="switchTabAndClose('relative')" class="drawer-btn">Relative Clause</button>
+                <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause</button>
+                <button data-tab="ifclauses" onclick="switchTabAndClose('ifclauses')" class="drawer-btn">If Clauses</button>
+                <button data-tab="reportedspeech" onclick="switchTabAndClose('reportedspeech')" class="drawer-btn">Reported Speech</button>
+                <button data-tab="reductions" onclick="switchTabAndClose('reductions')" class="drawer-btn">Kısaltmalar</button>
+              </div>
+            </div>
+
+            <div class="pl-2">
+              <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">Bağlaçlar & Diğer</p>
+              <div class="space-y-1">
+                <button data-tab="conjunctions" onclick="switchTabAndClose('conjunctions')" class="drawer-btn">Bağlaçlar</button>
+                <button data-tab="prepositions" onclick="switchTabAndClose('prepositions')" class="drawer-btn">Edatlar</button>
+                <button data-tab="gerunds" onclick="switchTabAndClose('gerunds')" class="drawer-btn">Gerunds & Inf.</button>
+                <button data-tab="passive" onclick="switchTabAndClose('passive')" class="drawer-btn">Edilgen Yapı</button>
+                <button data-tab="quantifiers" onclick="switchTabAndClose('quantifiers')" class="drawer-btn">Miktar / İsimler</button>
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <div>
-          <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">Grammar</h3>
-          <div class="space-y-2 mb-4">
-
-            <button data-tab="modals" onclick="switchTabAndClose('modals')" class="drawer-btn">Modals (Kipler)</button>
-            <button data-tab="conjunctions" onclick="switchTabAndClose('conjunctions')"
-              class="drawer-btn">Bağlaçlar</button>
-            <button data-tab="prepositions" onclick="switchTabAndClose('prepositions')"
-              class="drawer-btn">Edatlar</button>
-            <button data-tab="passive" onclick="switchTabAndClose('passive')" class="drawer-btn">Edilgen Yapı</button>
-            <button data-tab="relative" onclick="switchTabAndClose('relative')" class="drawer-btn">Relative Clause
-              (Sıfat Cümlesi)</button>
-            <button data-tab="noun" onclick="switchTabAndClose('noun')" class="drawer-btn">Noun Clause (İsim
-              Cümlesi)</button>
-            <button data-tab="quantifiers" onclick="switchTabAndClose('quantifiers')" class="drawer-btn">Miktar /
-              İsimler</button>
-            <div class="border-t border-gray-100 my-1"></div>
-            <button data-tab="tenseagreement" onclick="switchTabAndClose('tenseagreement')" class="drawer-btn">Tense
-              Uyumu</button>
-            <button data-tab="tenseguide" onclick="switchTabAndClose('tenseguide')" class="drawer-btn">Tense
-              Rehberi</button>
-            <button data-tab="ifclauses" onclick="switchTabAndClose('ifclauses')" class="drawer-btn">If Clauses
-              Rehberi</button>
-            <button data-tab="reportedspeech" onclick="switchTabAndClose('reportedspeech')" class="drawer-btn">Reported
-              Speech</button>
-            <button data-tab="gerunds" onclick="switchTabAndClose('gerunds')" class="drawer-btn">Gerunds & Inf.</button>
-            <button data-tab="reductions" onclick="switchTabAndClose('reductions')" class="drawer-btn">Kısaltmalar (Reductions)</button>
-            <button data-tab="articles" onclick="switchTabAndClose('articles')" class="drawer-btn">Articles</button>
+       <button data-tab="articles" onclick="switchTabAndClose('articles')" class="drawer-btn">Articles</button>
           </div>
         </div>
 

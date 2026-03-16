@@ -187,6 +187,29 @@ body {
     border-left: 2px solid #b91c1c;
 }
 
+.tab-btn-mega {
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #4b5563;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.tab-btn-mega:hover {
+    background: #fef2f2;
+    color: #b91c1c;
+    padding-left: 16px;
+}
+
+.tab-btn-mega.active {
+    background: #b91c1c;
+    color: white;
+    font-weight: 700;
+}
+
 .tab-content {
     display: none;
     animation: fadeIn 0.4s ease;
