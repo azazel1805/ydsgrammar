@@ -7,7 +7,12 @@ const FOCUSED_EXAM_LIST = [
   { id: 'focused2', label: 'Odaklı Deneme 2', file: '/exams/focused/focused2.json' },
   { id: 'focused3', label: 'Odaklı Deneme 3', file: '/exams/focused/focused3.json' },
   { id: 'focused4', label: 'Odaklı Deneme 4', file: '/exams/focused/focused4.json' },
-  { id: 'focused5', label: 'Odaklı Deneme 5', file: '/exams/focused/focused5.json' }
+  { id: 'focused5', label: 'Odaklı Deneme 5', file: '/exams/focused/focused5.json' },
+  { id: 'focused6', label: 'Odaklı Deneme 6', file: '/exams/focused/focused6.json' },
+  { id: 'focused7', label: 'Odaklı Deneme 7', file: '/exams/focused/focused7.json' },
+  { id: 'focused8', label: 'Odaklı Deneme 8', file: '/exams/focused/focused8.json' },
+  { id: 'focused9', label: 'Odaklı Deneme 9', file: '/exams/focused/focused9.json' },
+  { id: 'focused10', label: 'Odaklı Deneme 10', file: '/exams/focused/focused10.json' }
 ];
 
 // Highlight Categories & Regex Patterns
