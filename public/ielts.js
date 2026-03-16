@@ -198,20 +198,23 @@ function getIELTSReadingStrategyHTML() {
             </div>
         </div>
         
-        <div class="space-y-6">
-            <div class="bg-slate-900 text-white p-8 rounded-[2.5rem] shadow-xl">
-                <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-indigo-400">Soru Türleri</h4>
-                <ul class="text-sm space-y-3 opacity-80">
+            <div class="bg-indigo-900 text-white p-8 rounded-[2.5rem] shadow-xl">
+                <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-indigo-400">Roadmap to Band 7+</h4>
+                <ul class="text-xs space-y-3 opacity-80 leading-relaxed">
+                    <li><i class="fas fa-check-circle mr-2 text-indigo-400"></i> <strong>Speed Reading:</strong> Her gün en az 15 dakika akademik makale okuyun.</li>
+                    <li><i class="fas fa-check-circle mr-2 text-indigo-400"></i> <strong>Keyword Mapping:</strong> Sorudaki kelimenin metindeki eş anlamlısını bulma pratiği yapın.</li>
+                    <li><i class="fas fa-check-circle mr-2 text-indigo-400"></i> <strong>Time Allocation:</strong> 1. parça 15dk, 2. parça 20dk, 3. parça 25dk.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm">
+                <h4 class="font-bold mb-4 uppercase text-[10px] tracking-widest text-slate-400">Soru Türleri</h4>
+                <ul class="text-[11px] space-y-2 text-slate-500 font-medium">
                     <li>• True / False / Not Given</li>
                     <li>• Matching Headings</li>
                     <li>• Multiple Choice</li>
-                    <li>• Summary Completion</li>
-                    <li>• Sentence Completion</li>
+                    <li>• Summary / Sentence Completion</li>
                 </ul>
             </div>
-            <button onclick="switchTab('ielts-exams')" class="w-full py-6 bg-indigo-600 text-white rounded-[2rem] font-bold shadow-2xl hover:bg-indigo-700 transition-all">
-                Deneme Sınavına Git <i class="fas fa-arrow-right ml-2"></i>
-            </button>
         </div>
     </div>
 </div>
@@ -227,20 +230,33 @@ function getIELTSListeningStrategyHTML() {
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-xl">
-            <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+        <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-xl space-y-4">
+            <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl">
                 <i class="fas fa-clock"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4">Ön Okuma (Prediction)</h3>
+            <h3 class="text-xl font-bold">Ön Okuma (Prediction)</h3>
             <p class="text-slate-600 text-sm leading-relaxed">Ses kaydı başlamadan önceki 30 saniyeyi soruları okumak ve boşluğa gelecek kelimenin türünü (isim, sayı, sıfat vb.) tahmin etmek için kullanın.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-xl">
-            <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+        <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-xl space-y-4">
+            <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center text-xl">
                 <i class="fas fa-filter"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4">Distractors (Dikkat Dağıtıcılar)</h3>
+            <h3 class="text-xl font-bold">Distractors (Dikkat Dağıtıcılar)</h3>
             <p class="text-slate-600 text-sm leading-relaxed">Konuşmacı genelde bir bilgi verir ve hemen ardından "but" veya "actually" diyerek bunu düzeltir. İlk duyduğunuz cevaba hemen atlamayın.</p>
+        </div>
+
+        <div class="bg-indigo-900 text-white p-10 rounded-[3rem] shadow-xl md:col-span-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="space-y-4">
+                    <h4 class="text-lg font-bold text-indigo-300 italic">Advanced Tip: Spelling & Plurals</h4>
+                    <p class="text-sm text-indigo-100/70">IELTS Listening'de en çok puan kaybettiren hatalar eksik 's' takısı veya yanlış hecelemedir. Kelimenin tekil mi çoğul mu olduğunu bağlamdan (context) çıkarın.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-bold text-indigo-300 italic">Note-taking Skills</h4>
+                    <p class="text-sm text-indigo-100/70">Duyduğunuz her şeyi değil, sadece anahtar bilgileri (isimler, numaralar, koordinatlar) not alın. Kısaltmalar kullanmaya alışın (örn: 'approx' for 'approximately').</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -255,32 +271,38 @@ function getIELTSWritingStrategyHTML() {
         <p class="text-orange-600 font-bold uppercase tracking-widest text-xs">Task 1 (Rapor) & Task 2 (Essay)</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
         <div class="bg-white border-2 border-slate-50 p-8 rounded-[2.5rem] shadow-sm">
             <div class="flex justify-between items-center mb-6">
                 <h3 class="text-xl font-bold text-slate-800">Task 1: Academic</h3>
                 <span class="bg-slate-100 px-3 py-1 rounded-full text-[10px] font-bold">20 Min</span>
             </div>
             <p class="text-sm text-slate-500 mb-8 leading-relaxed">Grafik, tablo veya süreç diyagramlarını analiz etmeniz istenir. En önemli kural: Kendi yorumunuzu katmayın, sadece veriyi aktarın.</p>
-            <div class="space-y-3">
-                 <div class="p-4 bg-slate-50 rounded-2xl flex items-center gap-4">
-                    <div class="w-8 h-8 bg-white border border-slate-100 rounded-lg flex items-center justify-center text-xs font-bold italic">Int</div>
-                    <span class="text-xs font-medium text-slate-700">Giriş & Overview (Özet)</span>
+            <div class="grid grid-cols-2 gap-3">
+                 <div class="p-4 bg-slate-50 rounded-2xl">
+                    <span class="text-[10px] font-bold text-slate-400 block mb-1">STRATEGY</span>
+                    <p class="text-xs text-slate-700">Trendleri bulun (increase, decrease, plateau).</p>
                  </div>
-                 <div class="p-4 bg-slate-50 rounded-2xl flex items-center gap-4">
-                    <div class="w-8 h-8 bg-white border border-slate-100 rounded-lg flex items-center justify-center text-xs font-bold italic">Det</div>
-                    <span class="text-xs font-medium text-slate-700">Detaylı Veri Analizi</span>
+                 <div class="p-4 bg-slate-50 rounded-2xl">
+                    <span class="text-[10px] font-bold text-slate-400 block mb-1">STRUCTURE</span>
+                    <p class="text-xs text-slate-700">Intro + Overview + 2 Detail Paragraphs.</p>
                  </div>
             </div>
         </div>
 
-        <div class="bg-slate-900 text-white p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
-            <h3 class="text-xl font-bold mb-6">Task 2: Essay</h3>
-            <p class="text-slate-400 text-sm mb-8 leading-relaxed">Bir argüman veya problem üzerine 250 kelimelik akademik essay yazmanız beklenir. Puanın %60'ı buradan gelir.</p>
-            <ul class="text-xs space-y-4">
-                <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Clear progression</li>
-                <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Lexical resource (Variety)</li>
-                <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Cohesion & Coherence</li>
+        <div class="bg-slate-900 text-white p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden flex flex-col justify-between">
+            <div>
+                <h3 class="text-xl font-bold mb-6 italic underline decoration-indigo-500 underline-offset-8">Task 2: Academic Essay</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">250 kelimelik bir akademik makale. Puanın %60'ı buradan gelir. "Linking words" kullanımı skorunuzu belirler.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 bg-white/10 rounded-lg text-[10px] text-indigo-300">Furthermore</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-lg text-[10px] text-indigo-300">Consequently</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-lg text-[10px] text-indigo-300">In contrast</span>
+                </div>
+            </div>
+            <ul class="text-[11px] space-y-2 opacity-80">
+                <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Task Response (Cevabın tam olması)</li>
+                <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Lexical Resource (Kelime Çeşitliliği)</li>
             </ul>
         </div>
     </div>
@@ -295,20 +317,32 @@ function getIELTSSpeakingStrategyHTML() {
         <h1 class="text-4xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">Speaking Simülasyonu</h1>
     </div>
 
-    <div class="bg-green-50/50 p-10 rounded-[3rem] border border-green-100 mb-12">
+    <div class="bg-white border border-slate-100 p-10 rounded-[3rem] shadow-xl mb-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div>
-                <h4 class="font-bold text-green-800 mb-2">Part 1</h4>
-                <p class="text-slate-500 text-xs leading-relaxed italic">Isınma turu. Ev, iş, hobiler hakkında kısa ve doğal yanıtlar.</p>
+            <div class="space-y-4">
+                <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold">1</div>
+                <h4 class="font-bold text-slate-800">Part 1: Interview</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Kendiniz, aileniz ve hobileriniz gibi genel konularda 4-5 dakika süren kısa cevaplı sorular.</p>
             </div>
-            <div>
-                <h4 class="font-bold text-green-800 mb-2">Part 2</h4>
-                <p class="text-slate-500 text-xs leading-relaxed italic">Cue Card. Size verilen konu üzerine 2 dakika kesintisiz konuşma.</p>
+            <div class="space-y-4">
+                <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold">2</div>
+                <h4 class="font-bold text-slate-800">Part 2: Long Turn</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Verilen bir konu (Cue Card) hakkında 1 dakika hazırlık sonrası 2 dakika kesintisiz konuşma.</p>
             </div>
-            <div>
-                <h4 class="font-bold text-green-800 mb-2">Part 3</h4>
-                <p class="text-slate-500 text-xs leading-relaxed italic">Derin tartışma. Part 2'deki konunun daha soyut ve genel boyutları.</p>
+            <div class="space-y-4">
+                <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold">3</div>
+                <h4 class="font-bold text-slate-800">Part 3: Discussion</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Part 2'deki konunun daha soyut ve genel halleri üzerine sınav görevlisiyle tartışma.</p>
             </div>
+        </div>
+    </div>
+
+    <div class="bg-indigo-600 text-white p-10 rounded-[3rem] shadow-2xl relative overflow-hidden">
+        <h3 class="text-xl font-bold mb-6">Expert Speaking Tip: Fluency over Accuracy</h3>
+        <p class="text-indigo-100 text-sm leading-relaxed mb-6">IELTS konuşma sınavında mükemmel dilbilgisi değil, akıcılık (fluency) puan toplar. Hata yapmaktan korkmayın, duraksamadan anlatmaya devam edin. Boşlukları doldurmak için 'fillers' kullanın (örn: 'Well, that's an interesting question...').</p>
+        <div class="flex gap-4">
+            <span class="px-4 py-2 bg-white/10 rounded-2xl text-[10px] font-bold">No hesitation</span>
+            <span class="px-4 py-2 bg-white/10 rounded-2xl text-[10px] font-bold">Natural intonation</span>
         </div>
     </div>
 </div>
