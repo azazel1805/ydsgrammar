@@ -495,12 +495,6 @@
                       <span class="desc">Eş anlamlı cümle laboratuvarı</span>
                     </div>
                   </button>
-                  <button id="chatbotNavBtn" onclick="toggleChatbotWindow()" class="premium-nav-item hidden">
-                    <div class="flex flex-col">
-                      <span class="title">AI Sınav Koçu</span>
-                      <span class="desc">Birebir yapay zeka desteği</span>
-                    </div>
-                  </button>
                 </div>
               </div>
 
@@ -735,8 +729,14 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               class="drawer-btn hidden">Metin Analizi</button>
             <button id="restatementMobileBtn" data-tab="restatement" onclick="switchTabAndClose('restatement')"
               class="drawer-btn hidden">Restatement Studio</button>
-            <button id="chatbotMobileBtn" onclick="toggleChatbotWindow(); closeDrawer();"
-              class="drawer-btn hidden">AI Sınav Koçu</button>
+
+            <div class="py-2 border-t border-slate-50 mt-2"></div>
+
+            <button id="wordpracticeMobileBtn" data-tab="wordpractice" onclick="switchTabAndClose('wordpractice')"
+              class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
+              <span>Kelime Çalışması (AI)</span>
+              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
+            </button>
             <button id="phrasalMobileBtn" data-tab="phrasal" onclick="switchTabAndClose('phrasal')"
               class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
               <span>Phrasal Dictionary</span>
@@ -750,11 +750,6 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             <button id="premiumExercisesMobileBtn" data-tab="premium-exercises" onclick="switchTabAndClose('premium-exercises')"
               class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
               <span>Interaktif Alıştırmalar</span>
-              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
-            </button>
-            <button id="wordpracticeMobileBtn" data-tab="wordpractice" onclick="switchTabAndClose('wordpractice')"
-              class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
-              <span>Kelime Çalışması (AI)</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
           </div>
