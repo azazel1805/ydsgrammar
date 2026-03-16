@@ -373,65 +373,74 @@
           <button class="nav-drop-btn pb-4">Premium <i
               class="fas fa-crown text-xs ml-1 text-yellow-500 opacity-70"></i></button>
           <div
-            class="absolute right-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[220px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+            class="absolute right-0 top-full mt-0 hidden group-hover:flex bg-white border border-gray-100 shadow-2xl z-50 min-w-[700px] p-6 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 rounded-2xl">
+            
+            <div class="grid grid-cols-3 gap-8 w-full">
+              <!-- Group 1: Sınav Merkezi -->
+              <div>
+                <h4 class="text-[10px] font-black text-indigo-800 uppercase tracking-widest mb-4 border-b border-indigo-50 pb-2 flex items-center gap-2">
+                  <i class="fas fa-file-signature text-indigo-500"></i> Sınav Merkezi
+                </h4>
+                <div class="flex flex-col gap-1">
+                  <button id="premiumNavBtn" data-tab="fullexam" onclick="switchTab('fullexam')" class="tab-btn-mega font-bold text-red-800 hidden">Fullexam Denemeler</button>
+                  <button id="miniexamsNavBtn" data-tab="miniexams" onclick="switchTab('miniexams')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
+                    <span>Mini Sınavlar</span>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  </button>
+                  <button id="tutorNavBtn" data-tab="tutor-exam" onclick="switchTab('tutor-exam')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
+                    <span>AI Tutor Sınavları</span>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  </button>
+                </div>
+              </div>
 
-            <div class="aiToolsLocked px-5 py-4 text-sm text-gray-400 italic font-medium">
-              <i class="fas fa-lock text-xs mr-2 relative -top-[1px]"></i> VIP Erişimi Kilitli.<br><span
-                class="text-xs text-red-800 ml-4 not-italic font-bold cursor-pointer"
-                onclick="switchTab('profile')">Profilde Kilidi Aç &rarr;</span>
+              <!-- Group 2: AI Analiz Lab -->
+              <div>
+                <h4 class="text-[10px] font-black text-indigo-800 uppercase tracking-widest mb-4 border-b border-indigo-50 pb-2 flex items-center gap-2">
+                  <i class="fas fa-microscope text-indigo-500"></i> AI Analiz Lab
+                </h4>
+                <div class="flex flex-col gap-1">
+                  <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')" class="tab-btn-mega hidden">Soru Analizörü</button>
+                  <button id="testlabNavBtn" data-tab="testlab" onclick="switchTab('testlab')" class="tab-btn-mega hidden">Cümle Çözümleyici</button>
+                  <button id="paragraphNavBtn" data-tab="paragraph" onclick="switchTab('paragraph')" class="tab-btn-mega hidden">Paragraf Analizi</button>
+                  <button id="textDeconNavBtn" data-tab="textdecon" onclick="switchTab('textdecon')" class="tab-btn-mega hidden">Metin Analizi</button>
+                  <button id="restatementNavBtn" data-tab="restatement" onclick="switchTab('restatement')" class="tab-btn-mega hidden">Restatement Studio</button>
+                </div>
+              </div>
+
+              <!-- Group 3: İleri Pratik -->
+              <div>
+                <h4 class="text-[10px] font-black text-indigo-800 uppercase tracking-widest mb-4 border-b border-indigo-50 pb-2 flex items-center gap-2">
+                  <i class="fas fa-brain text-indigo-500"></i> İleri Düzey Pratik
+                </h4>
+                <div class="flex flex-col gap-1">
+                  <button id="wordpracticeNavBtn" data-tab="wordpractice" onclick="switchTab('wordpractice')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
+                    <span>Kelime Çalışması (AI)</span>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  </button>
+                  <button id="aireadingNavBtn" data-tab="aireading" onclick="switchTab('aireading')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
+                    <span>AI Reading Lab</span>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  </button>
+                  <button id="phrasalNavBtn" data-tab="phrasal" onclick="switchTab('phrasal')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
+                    <span>Phrasal Master</span>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  </button>
+                  <button id="premiumExercisesNavBtn" data-tab="premium-exercises" onclick="switchTab('premium-exercises')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
+                    <span>Interaktif Alıştırma</span>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <button id="premiumNavBtn" data-tab="fullexam" onclick="switchTab('fullexam')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors font-bold text-red-800 hidden">
-              Deneme Sınavları
-            </button>
-            <button id="miniexamsNavBtn" data-tab="miniexams" onclick="switchTab('miniexams')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
-              <span>Mini Sınavlar</span>
-              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
-            </button>
-            <button id="tutorNavBtn" data-tab="tutor-exam" onclick="switchTab('tutor-exam')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
-              <span>AI Tutor Denemeleri</span>
-              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
-            </button>
-            <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Soru
-              Analizörü</button>
-            <button id="testlabNavBtn" data-tab="testlab" onclick="switchTab('testlab')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Cümle
-              Çözümleyici</button>
-            <button id="restatementNavBtn" data-tab="restatement" onclick="switchTab('restatement')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Restatement
-              (Yeniden Yazım)</button>
-            <button id="paragraphNavBtn" data-tab="paragraph" onclick="switchTab('paragraph')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Paragraf
-              Analizi</button>
-            <button id="textDeconNavBtn" data-tab="textdecon" onclick="switchTab('textdecon')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors hidden">Metin
-              Analizi</button>
-            <button id="phrasalNavBtn" data-tab="phrasal" onclick="switchTab('phrasal')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
-              <span>Phrasal Dictionary</span>
-              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
-            </button>
-            <button id="aireadingNavBtn" data-tab="aireading" onclick="switchTab('aireading')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
-              <span>AI Reading Lab</span>
-              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
-            </button>
-            <button id="premiumExercisesNavBtn" data-tab="premium-exercises" onclick="switchTab('premium-exercises')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
-              <span>Interaktif Alıştırmalar</span>
-              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
-            </button>
-            <button id="wordpracticeNavBtn" data-tab="wordpractice" onclick="switchTab('wordpractice')"
-              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
-              <span>Kelime Çalışması (AI)</span>
-              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
-            </button>
+            <div class="aiToolsLocked mt-6 pt-6 border-t border-slate-50 text-sm text-gray-400 italic font-medium">
+              <i class="fas fa-lock text-xs mr-2 relative -top-[1px]"></i> VIP Erişimi Kilitli.<br>
+              <span class="text-xs text-red-800 ml-4 not-italic font-bold cursor-pointer hover:underline" onclick="switchTab('profile')">Profilde Kilidi Aç &rarr;</span>
+            </div>
           </div>
         </div>
+
 
         <!-- Profile Tab (Standalone) -->
         <div class="relative group">
