@@ -394,6 +394,7 @@ function reinjectTabContent(tabName) {
         "aireading": typeof aiReadingHTML !== 'undefined' ? aiReadingHTML : null,
         "tutor-exam": typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : null,
         "premium-exercises": typeof premiumExercisesHTML !== 'undefined' ? premiumExercisesHTML : null,
+        "reductions": typeof reductionsHTML !== 'undefined' ? reductionsHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -436,6 +437,7 @@ function updateSEO(tab) {
         "aireading": { title: "AI Reading Lab – Özgün Okuma Parçası Üretici", desc: "Seviyenize uygun akademik okuma parçaları hazırlayan yapay zeka laboratuvarı." },
         "tutor-exam": { title: "AI Guided Exam – Yapay Zeka Koçlu Deneme", desc: "AI koçunuzla birlikte soru bazlı, açıklamalı deneme çözme modu." },
         "premium-exercises": { title: "Premium İnteraktif Alıştırmalar – YDS Kelime Lab", desc: "Okuma parçası üzerinden kelime eşleştirme ve interaktif dil alıştırmaları." },
+        "reductions": { title: "Kısaltmalar (Reduced Clauses) – YDS & YDT Gramer", desc: "Sıfat ve zarf cümleciklerinde aktif/pasif kısaltma kuralları ve örnekler." },
         "admin": { title: "Admin Panel", desc: "Sistem yönetimi." }
     };
 
