@@ -50,52 +50,94 @@ const PHRASAL_VERBS_DATA = [
 function getPhrasalHTML() {
   return `
   <div class="max-w-6xl mx-auto px-4 py-12">
-    <div class="text-center mb-16">
-      <div class="inline-flex items-center gap-3 bg-gradient-to-r from-red-800 to-red-900 text-white px-6 py-2.5 rounded-2xl shadow-xl mb-6">
-        <i class="fas fa-crown text-yellow-500 animate-pulse"></i>
-        <span class="font-bold tracking-widest text-sm uppercase">VIP Kelime Laboratuvarı</span>
+    <!-- Header Section -->
+    <div class="text-center mb-16 relative">
+      <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-64 h-64 bg-red-50 rounded-full blur-3xl opacity-50 -z-10"></div>
+      
+      <div class="inline-flex items-center gap-3 bg-gradient-to-r from-red-800 to-red-900 text-white px-6 py-2.5 rounded-2xl shadow-xl mb-6 scale-hover transition-transform duration-500">
+        <i class="fas fa-book-sparkles text-yellow-400"></i>
+        <span class="font-bold tracking-widest text-sm uppercase">AI Kelime Motoru</span>
       </div>
-      <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6" style="font-family:'Playfair Display',serif;">Phrasal Verbs Dictionary</h2>
-      <p class="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">Sınavlarda en çok çıkan phrasal verb'leri örnek cümleleri ve Türkçe karşılıkları ile interaktif olarak keşfedin.</p>
+      
+      <h2 class="text-5xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight" style="font-family:'Playfair Display',serif;">
+        Phrasal <span class="text-red-800">Dictionary</span>
+      </h2>
+      <p class="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium">
+        Bir fiil girin, tüm edat kombinasyonlarını ve anlamlarını <span class="text-red-800 font-bold italic underline decoration-red-200">YDS/YDT odağında</span> anında listeleyelim.
+      </p>
     </div>
 
-    <div class="mb-10 flex flex-wrap justify-center gap-3">
-        <button onclick="filterPhrasal('all')" class="phrasal-filter-btn px-6 py-2 rounded-full border border-slate-200 font-bold text-sm bg-slate-900 text-white shadow-lg transition-all">Hepsi</button>
-        ${[...new Set(PHRASAL_VERBS_DATA.map(p => p.category))].map(cat => `
-            <button onclick="filterPhrasal('${cat}')" class="phrasal-filter-btn px-6 py-2 rounded-full border border-slate-200 font-bold text-sm text-slate-600 hover:bg-slate-50 transition-all">${cat}</button>
-        `).join('')}
-    </div>
-
-    <div id="phrasalGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      ${PHRASAL_VERBS_DATA.map((p, idx) => `
-        <div class="phrasal-card group perspective-1000" data-category="${p.category}">
-          <div class="phrasal-card-inner relative w-full h-64 transition-transform duration-700 preserve-3d cursor-pointer hover:rotate-y-180" onclick="this.classList.toggle('rotate-y-180')">
-            <!-- Front Face -->
-            <div class="absolute inset-0 backface-hidden bg-white border border-slate-100 rounded-[2rem] p-8 shadow-sm group-hover:shadow-xl transition-all flex flex-col items-center justify-center text-center">
-              <span class="text-[10px] font-black text-red-600 uppercase tracking-widest mb-4 opacity-60">${p.category}</span>
-              <h3 class="text-2xl font-black text-slate-800 mb-2">${p.phrasal}</h3>
-              <div class="w-10 h-1 bg-red-100 rounded-full"></div>
-              <p class="mt-6 text-slate-400 text-xs italic">Tıklayarak Anlamını Gör</p>
-            </div>
-            <!-- Back Face -->
-            <div class="absolute inset-0 backface-hidden bg-slate-900 rounded-[2rem] p-8 shadow-xl rotate-y-180 flex flex-col justify-center">
-              <div class="mb-4">
-                <span class="text-xs font-bold text-red-400 uppercase tracking-tighter">ANLAM</span>
-                <p class="text-xl font-bold text-white">${p.meaning}</p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-white/10">
-                <span class="text-xs font-bold text-cyan-400 uppercase tracking-tighter">ÖRNEK</span>
-                <p class="text-sm italic text-slate-300 leading-relaxed">"${p.example}"</p>
-              </div>
-            </div>
-          </div>
+    <!-- Search Section -->
+    <div class="max-w-3xl mx-auto mb-16 relative">
+      <div class="group relative bg-white rounded-[2.5rem] p-2 shadow-2xl shadow-red-900/10 border border-slate-100 focus-within:ring-4 focus-within:ring-red-50 transition-all duration-500">
+        <div class="flex items-center px-6 py-4">
+          <i class="fas fa-search text-slate-300 text-xl mr-4 group-focus-within:text-red-800 transition-colors"></i>
+          <input type="text" id="phrasalSearchInput" 
+            placeholder="Örn: Get, Take, Set, Look..." 
+            class="flex-1 text-xl font-bold text-slate-800 bg-transparent border-none outline-none placeholder:text-slate-300"
+            onkeydown="if(event.key==='Enter') searchPhrasalAI()">
+          <button onclick="searchPhrasalAI()" 
+            id="phrasalSearchBtn"
+            class="ml-4 px-8 py-4 bg-red-800 text-white rounded-3xl font-black text-sm uppercase tracking-widest hover:bg-black hover:scale-105 active:scale-95 transition-all shadow-lg shadow-red-900/20 flex items-center gap-2">
+            <span>KEŞFET</span>
+            <i class="fas fa-bolt text-yellow-400"></i>
+          </button>
         </div>
-      `).join('')}
+      </div>
+      
+      <div class="flex flex-wrap justify-center gap-2 mt-6">
+        <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest py-2 px-3">Hızlı Aramalar:</span>
+        ${['Get', 'Take', 'Look', 'Put', 'Bring', 'Go'].map(v => `
+          <button onclick="document.getElementById('phrasalSearchInput').value='${v}'; searchPhrasalAI();" 
+            class="px-4 py-1.5 bg-slate-50 border border-slate-100 rounded-full text-[10px] font-bold text-slate-600 hover:bg-red-50 hover:text-red-800 hover:border-red-100 transition-all">
+            ${v}
+          </button>
+        `).join('')}
+      </div>
     </div>
 
-    <div class="mt-16 text-center">
-        <div class="p-8 bg-slate-50 rounded-[3rem] border border-slate-100 inline-block">
-            <p class="text-slate-500 font-medium italic">"Phrasal verbs çalışırken kelimeleri tek tek değil, cümle içindeki bağlamıyla öğrenmek kalıcılığı %80 artırır."</p>
+    <!-- Results Section -->
+    <div id="phrasalResultsArea" class="space-y-12">
+        <!-- Static List for initial view -->
+        <div class="flex items-center gap-4 mb-10">
+          <div class="h-8 w-1.5 bg-red-800 rounded-full"></div>
+          <h3 class="text-2xl font-black text-slate-800" style="font-family:'Playfair Display',serif;">Popüler Phrasal Verb'ler</h3>
+        </div>
+        
+        <div id="phrasalGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          ${PHRASAL_VERBS_DATA.slice(0, 15).map((p, idx) => `
+            <div class="phrasal-card group perspective-1000">
+              <div class="phrasal-card-inner relative w-full h-72 transition-transform duration-700 preserve-3d cursor-pointer hover:rotate-y-180" onclick="this.classList.toggle('rotate-y-180')">
+                <!-- Front Face -->
+                <div class="absolute inset-0 backface-hidden bg-white border border-slate-100 rounded-[2.5rem] p-10 shadow-sm group-hover:shadow-2xl group-hover:-translate-y-2 transition-all duration-500 flex flex-col items-center justify-center text-center">
+                  <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-red-800 mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-feather-pointed text-2xl"></i>
+                  </div>
+                  <h3 class="text-2xl font-black text-slate-900 mb-2">${p.phrasal}</h3>
+                  <p class="text-[10px] font-black text-slate-300 uppercase tracking-widest">${p.category}</p>
+                </div>
+                <!-- Back Face -->
+                <div class="absolute inset-0 backface-hidden bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl rotate-y-180 flex flex-col justify-center border-4 border-red-800/10 underline-offset-4">
+                  <div class="mb-5">
+                    <p class="text-[10px] font-black text-red-400 uppercase tracking-widest mb-2">TÜRKÇE ANLAMI</p>
+                    <p class="text-xl font-bold text-white leading-tight">${p.meaning}</p>
+                  </div>
+                  <div class="pt-5 border-t border-white/10">
+                    <p class="text-sm italic text-slate-400 leading-relaxed font-serif">"${p.example}"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+    </div>
+
+    <div class="mt-24 text-center">
+        <div class="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 inline-block max-w-2xl relative overflow-hidden group">
+            <i class="fas fa-quote-right absolute -right-4 -bottom-4 text-9xl text-slate-100 -z-10"></i>
+            <p class="text-slate-700 font-bold italic text-lg leading-relaxed">
+              "YDS/YDT sınavlarında phrasal verb'ler sadece anlam sorusu olarak değil, okuma parçalarının anahtarını çözmek için de hayati önem taşır."
+            </p>
         </div>
     </div>
   </div>
@@ -105,32 +147,144 @@ function getPhrasalHTML() {
     .backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
     .preserve-3d { transform-style: preserve-3d; }
     .rotate-y-180 { transform: rotateY(180deg); }
-    .rotate-y-180-back { transform: rotateY(180deg); }
+    .scale-hover:hover { transform: translateX(0) scale(1.05); }
+    
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-result { animation: slideUp 0.5s ease forwards; }
   </style>
   `;
 }
 
-window.filterPhrasal = function(category) {
-    const cards = document.querySelectorAll('.phrasal-card');
-    const btns = document.querySelectorAll('.phrasal-filter-btn');
+async function searchPhrasalAI() {
+  const input = document.getElementById('phrasalSearchInput');
+  const verb = input.value.trim();
+  const btn = document.getElementById('phrasalSearchBtn');
+  const resultsArea = document.getElementById('phrasalResultsArea');
+
+  if (!verb) {
+    alert("Lütfen araştırmak istediğiniz ana fiili girin.");
+    return;
+  }
+
+  btn.disabled = true;
+  btn.innerHTML = `<i class="fas fa-spinner fa-spin mr-2"></i> ANALİZ EDİLİYOR...`;
+  
+  // Show Loading Skeleton
+  resultsArea.innerHTML = `
+    <div class="flex flex-col items-center py-20 animate-pulse">
+        <div class="w-20 h-20 bg-slate-100 rounded-full mb-6"></div>
+        <div class="h-4 w-48 bg-slate-100 rounded mb-4"></div>
+        <div class="h-3 w-32 bg-slate-50 rounded"></div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-16 px-4">
+            ${Array(6).fill(0).map(() => `
+                <div class="h-72 bg-slate-50 rounded-[2.5rem] border border-slate-100"></div>
+            `).join('')}
+        </div>
+    </div>
+  `;
+
+  try {
+    const res = await fetch("/.netlify/functions/phrasal-ai", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ verb })
+    });
     
-    btns.forEach(btn => {
-        if (btn.innerText.toLowerCase() === category.toLowerCase() || (category === 'all' && btn.innerText === 'Hepsi')) {
-            btn.classList.add('bg-slate-900', 'text-white', 'shadow-lg');
-            btn.classList.remove('text-slate-600');
-        } else {
-            btn.classList.remove('bg-slate-900', 'text-white', 'shadow-lg');
-            btn.classList.add('text-slate-600');
-        }
-    });
+    if (!res.ok) throw new Error("AI hatası");
+    
+    const data = await res.json();
+    renderPhrasalAIResults(verb, data);
+  } catch (err) {
+    resultsArea.innerHTML = `
+      <div class="text-center py-20 bg-red-50 rounded-[3rem] border border-red-100 px-8">
+        <i class="fas fa-exclamation-triangle text-4xl text-red-500 mb-4"></i>
+        <p class="text-red-900 font-bold text-xl">Bir şeyler ters gitti.</p>
+        <p class="text-red-700 mt-2 text-sm italic">Hata: ${err.message}. Lütfen biraz sonra tekrar deneyin.</p>
+        <button onclick="location.reload()" class="mt-6 px-6 py-2 bg-red-800 text-white rounded-xl font-bold">Tekrar Dene</button>
+      </div>
+    `;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = `<span>KEŞFET</span> <i class="fas fa-bolt text-yellow-400"></i>`;
+  }
+}
 
-    cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-            card.classList.remove('hidden');
-        } else {
-            card.classList.add('hidden');
-        }
-    });
-};
+function renderPhrasalAIResults(rootVerb, items) {
+  const resultsArea = document.getElementById('phrasalResultsArea');
+  
+  if (!items || items.length === 0) {
+    resultsArea.innerHTML = `<p class="text-center py-20 text-slate-400 italic">"${rootVerb}" fiili için phrasal verb bulunamadı.</p>`;
+    return;
+  }
 
+  resultsArea.innerHTML = `
+    <div class="animate-result">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm">
+            <div class="flex items-center gap-6">
+                <div class="w-20 h-20 bg-red-800 text-white rounded-3xl flex items-center justify-center text-4xl font-black shadow-xl shadow-red-900/20">
+                    ${rootVerb[0].toUpperCase()}
+                </div>
+                <div>
+                    <h3 class="text-3xl font-black text-slate-900 uppercase tracking-tight">${rootVerb} Phrasal Hub</h3>
+                    <p class="text-slate-400 font-bold text-xs uppercase tracking-widest mt-1">${items.length} ÖZEL KOMBİNASYON BULUNDU</p>
+                </div>
+            </div>
+            <button onclick="switchTab('phrasal');" class="text-slate-400 hover:text-red-800 font-bold text-xs uppercase underline underline-offset-8">Geri Dön</button>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            ${items.map((item, idx) => `
+                <div class="phrasal-card group perspective-1000" style="animation-delay: ${idx * 0.1}s">
+                    <div class="phrasal-card-inner relative w-full h-[400px] transition-transform duration-700 preserve-3d cursor-pointer hover:rotate-y-180" onclick="this.classList.toggle('rotate-y-180')">
+                        <!-- Front Face -->
+                        <div class="absolute inset-0 backface-hidden bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm group-hover:shadow-2xl transition-all duration-500 flex flex-col">
+                            <div class="mb-6 flex justify-between items-start">
+                                <span class="bg-red-50 text-red-800 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-tighter">PHRASAL VERB</span>
+                                <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-300">
+                                    <i class="fas fa-ellipsis-v text-xs"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-black text-slate-900 mb-6 group-hover:text-red-800 transition-colors">${item.phrasal}</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">TÜRKÇE ANLAMI</p>
+                                    <p class="text-slate-700 font-bold leading-tight">${item.meaning_tr}</p>
+                                </div>
+                                <div>
+                                    <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">ENGLISH DEF.</p>
+                                    <p class="text-slate-500 text-sm leading-tight italic font-serif">${item.meaning_en}</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-6 flex items-center gap-2 text-[10px] font-black text-red-800/40">
+                                <i class="fas fa-hand-pointer animate-bounce"></i>
+                                DETAYLAR İÇİN TIKLA
+                            </div>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="absolute inset-0 backface-hidden bg-slate-900 rounded-[2.5rem] p-8 shadow-2xl rotate-y-180 flex flex-col border-4 border-red-800/10">
+                            <div class="mb-6">
+                                <p class="text-[10px] font-black text-cyan-400 uppercase tracking-widest mb-3">EXAMPLE SENTENCE</p>
+                                <p class="text-lg italic text-white leading-relaxed font-serif">"${item.example}"</p>
+                            </div>
+                            <div class="mt-auto bg-white/5 p-5 rounded-2xl border border-white/10">
+                                <p class="text-[10px] font-black text-yellow-500 uppercase tracking-widest mb-2 flex items-center gap-2">
+                                    <i class="fas fa-lightbulb"></i> STRATEJİ & NOT
+                                </p>
+                                <p class="text-slate-400 text-sm leading-relaxed">${item.usage_note}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    </div>
+  `;
+}
+
+// Global Exports
+window.searchPhrasalAI = searchPhrasalAI;
 window.phrasalHTML = getPhrasalHTML();
+
