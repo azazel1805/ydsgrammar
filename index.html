@@ -494,6 +494,12 @@
                       <span class="desc">Eş anlamlı cümle laboratuvarı</span>
                     </div>
                   </button>
+                  <button id="chatbotNavBtn" onclick="toggleChatbotWindow()" class="premium-nav-item hidden">
+                    <div class="flex flex-col">
+                      <span class="title">AI Sınav Koçu</span>
+                      <span class="desc">Birebir yapay zeka desteği</span>
+                    </div>
+                  </button>
                 </div>
               </div>
 
@@ -720,8 +726,16 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
             </button>
             <button id="analyzerMobileBtn" data-tab="analyzer" onclick="switchTabAndClose('analyzer')"
               class="drawer-btn hidden">Soru Analizörü</button>
+            <button id="testlabMobileBtn" data-tab="testlab" onclick="switchTabAndClose('testlab')"
+              class="drawer-btn hidden">Cümle Çözümleyici</button>
+            <button id="paragraphMobileBtn" data-tab="paragraph" onclick="switchTabAndClose('paragraph')"
+              class="drawer-btn hidden">Paragraf Analizi</button>
             <button id="textDeconMobileBtn" data-tab="textdecon" onclick="switchTabAndClose('textdecon')"
               class="drawer-btn hidden">Metin Analizi</button>
+            <button id="restatementMobileBtn" data-tab="restatement" onclick="switchTabAndClose('restatement')"
+              class="drawer-btn hidden">Restatement Studio</button>
+            <button id="chatbotMobileBtn" onclick="toggleChatbotWindow(); closeDrawer();"
+              class="drawer-btn hidden">AI Sınav Koçu</button>
             <button id="phrasalMobileBtn" data-tab="phrasal" onclick="switchTabAndClose('phrasal')"
               class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
               <span>Phrasal Dictionary</span>
