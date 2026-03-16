@@ -559,34 +559,49 @@ window.playCloudTTS = async function(btn) {
     const originalIcon = btn.innerHTML;
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
 
-    // Split text into lines for dialog parsing
-    const lines = fullText.split('\n').filter(l => l.trim().length > 0);
+    // Advanced dialog parsing (works with or without newlines)
+    let segments = [];
+    const speakerRegex = /([A-Z][a-z0-9\s]{1,20}):\s/g; // Matches "Name: "
+    let match;
+    let lastIndex = 0;
+
+    while ((match = speakerRegex.exec(fullText)) !== null) {
+        if (segments.length > 0) {
+            segments[segments.length - 1].text = fullText.substring(lastIndex, match.index).trim();
+        } else if (match.index > 0) {
+            // Introductory text or SFX before first speaker
+            segments.push({ speaker: "narrator", text: fullText.substring(0, match.index).trim() });
+        }
+        segments.push({ speaker: match[1].trim().toLowerCase(), text: "" });
+        lastIndex = match.index + match[0].length;
+    }
+
+    if (segments.length > 0) {
+        segments[segments.length - 1].text = fullText.substring(lastIndex).trim();
+    } else {
+        // No speaker tags found, treat as one narrator block
+        segments.push({ speaker: "narrator", text: fullText });
+    }
 
     try {
-        for (const line of lines) {
-            // Check for speaker tags (e.g., "Man: ", "Woman: ")
-            const match = line.match(/^([a-z0-9\s]+):\s*(.*)/i);
-            let textToSpeak = line;
-            let voiceName = "en-GB-Standard-B"; // Default: British Male
+        for (const seg of segments) {
+            if (!seg.text) continue;
 
-            if (match) {
-                const speaker = match[1].toLowerCase();
-                textToSpeak = match[2]; // Don't read the speaker's name (metadata)
-                
-                // Voice mapping based on role
-                if (speaker.includes('woman') || speaker.includes('girl') || speaker.includes('female')) {
-                    voiceName = "en-GB-Standard-A"; // British Female
-                } else if (speaker.includes('narrator')) {
-                    voiceName = "en-GB-Standard-C"; // British Neutral/Alternative
-                }
+            let voiceName = "en-GB-Standard-B"; // Default: Male
+            const spk = seg.speaker;
+
+            // Voice mapping
+            if (spk.includes('woman') || spk.includes('girl') || spk.includes('female') || spk.includes('sarah') || spk.includes('receptionist') || spk.includes('emma')) {
+                voiceName = "en-GB-Standard-A"; // Female
+            } else if (spk.includes('narrator') || spk.includes('ranger') || spk.includes('announcer')) {
+                voiceName = "en-GB-Standard-C"; // Alternative/Neutral
             }
 
-            // Attempt Premium TTS via Netlify proxy
             const response = await fetch('/.netlify/functions/speakPremium', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 
-                    text: textToSpeak,
+                    text: seg.text,
                     voice: voiceName,
                     lang: "en-GB"
                 })
@@ -596,29 +611,21 @@ window.playCloudTTS = async function(btn) {
 
             if (data.audioContent) {
                 const audio = new Audio(`data:audio/mp3;base64,${data.audioContent}`);
-                // Wait for segment to finish before reading next line
                 await new Promise(res => {
                     audio.onended = res;
+                    audio.onerror = res;
                     audio.play();
                 });
             } else {
-                throw new Error("TTS segment failed");
+                throw new Error("Segment failed");
             }
         }
     } catch (e) {
-        console.warn("Multi-voice TTS failed, falling back to basic reader:", e);
-        // Fallback to simple sequential reading of chunks
-        try {
-            const chunks = fullText.match(/.{1,200}/g) || [fullText];
-            for (const chunk of chunks) {
-                const audio = new Audio(`https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(chunk)}&tl=en&client=tw-ob`);
-                await new Promise(resolve => { audio.onended = resolve; audio.play(); });
-            }
-        } catch (err) {
-            const utterance = new SpeechSynthesisUtterance(fullText);
-            utterance.lang = 'en-GB'; 
-            window.speechSynthesis.speak(utterance);
-        }
+        console.warn("Advanced TTS failed, falling back:", e);
+        // Basic fallback
+        const utterance = new SpeechSynthesisUtterance(fullText);
+        utterance.lang = 'en-GB';
+        window.speechSynthesis.speak(utterance);
     } finally {
         btn.innerHTML = originalIcon;
     }
