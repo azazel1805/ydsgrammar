@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-ydt-grammar", typeof ydtGrammarHTML !== 'undefined' ? ydtGrammarHTML : undefined);
     safeInject("tab-phrasal", typeof phrasalHTML !== 'undefined' ? phrasalHTML : undefined);
     safeInject("tab-aireading", typeof aiReadingHTML !== 'undefined' ? aiReadingHTML : undefined);
+    safeInject("tab-calendar", typeof calendarHTML !== 'undefined' ? calendarHTML : undefined);
     safeInject("tab-tutor-exam", typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : undefined);
     safeInject("tab-focused-exams", typeof focusedExamsHTML !== 'undefined' ? focusedExamsHTML : undefined);
     safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
@@ -348,6 +349,10 @@ window.switchTab = function (tabName) {
         window.initStrategyLab();
     }
 
+    if (tabName === "calendar" && typeof window.initCalendar === "function") {
+        window.initCalendar();
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
@@ -385,6 +390,7 @@ function reinjectTabContent(tabName) {
         "ydt-vocab": typeof ydtVocabHTML !== 'undefined' ? ydtVocabHTML : null,
         "ydt-grammar": typeof ydtGrammarHTML !== 'undefined' ? ydtGrammarHTML : null,
         "phrasal": typeof phrasalHTML !== 'undefined' ? phrasalHTML : null,
+        "calendar": typeof calendarHTML !== 'undefined' ? calendarHTML : null,
         "aireading": typeof aiReadingHTML !== 'undefined' ? aiReadingHTML : null,
         "tutor-exam": typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
@@ -425,6 +431,7 @@ function updateSEO(tab) {
         "ydt-vocab": { title: "Önemli YDT Kelime Listesi – Akademik İngilizce", desc: "YDT sınavında en sık çıkan 500+ akademik kelime ve kullanım örnekleri." },
         "ydt-grammar": { title: "YDT Gramer Özetleri – Hızlı Hazırlık Kartları", desc: "YDT sınavında en çok çıkan gramer konularının özet tabloları ve ipuçları." },
         "phrasal": { title: "Phrasal Verb Dictionary – YDS & YDT Premium", desc: "En sık çıkan 50+ Phrasal Verb ve interaktif kartlar." },
+        "calendar": { title: "2026 Sınav Takvimi – YDS, YÖKDİL, YDT Tarihleri", desc: "2026 yılı ÖSYM yabancı dil sınav takvimi, başvuru ve sonuç tarihleri." },
         "aireading": { title: "AI Reading Lab – Özgün Okuma Parçası Üretici", desc: "Seviyenize uygun akademik okuma parçaları hazırlayan yapay zeka laboratuvarı." },
         "tutor-exam": { title: "AI Guided Exam – Yapay Zeka Koçlu Deneme", desc: "AI koçunuzla birlikte soru bazlı, açıklamalı deneme çözme modu." }
     };

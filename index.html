@@ -350,6 +350,8 @@
             class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
             <button data-tab="dictionary" onclick="switchTab('dictionary')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Sözlük</button>
+            <button data-tab="calendar" onclick="switchTab('calendar')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Sınav Takvimi 2026</button>
             <button data-tab="sentence" onclick="switchTab('sentence')"
               class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors">Cümle
               Düzeltici</button>
@@ -475,6 +477,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
           <div class="space-y-2 mb-4">
             <button data-tab="dashboard" onclick="switchTabAndClose('dashboard')" class="drawer-btn">Panel</button>
             <button data-tab="forum" onclick="switchTabAndClose('forum')" class="drawer-btn">Forum (Soru Sor)</button>
+            <button data-tab="calendar" onclick="switchTabAndClose('calendar')" class="drawer-btn font-bold text-red-800">Sınav Takvimi 2026</button>
             <button data-tab="reading" onclick="switchTabAndClose('reading')" class="drawer-btn">Okuma</button>
             <button data-tab="vocabulary" onclick="switchTabAndClose('vocabulary')" class="drawer-btn">Kelime</button>
             <button data-tab="tacticguide" onclick="switchTabAndClose('tacticguide')" class="drawer-btn">Taktik
@@ -597,6 +600,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-relative" class="tab-content"></div>
       <div id="tab-quantifiers" class="tab-content"></div>
       <div id="tab-noun" class="tab-content"></div>
+      <div id="tab-calendar" class="tab-content"></div>
       <div id="tab-sentence" class="tab-content"></div>
       <div id="tab-profile" class="tab-content"></div>
       <div id="tab-vocabulary" class="tab-content"></div>
@@ -720,6 +724,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/modals.js"></script>
 
     <script src="/conjunctions.js"></script>
+    <script src="/calendar.js"></script>
     <script src="/dictionary.js"></script>
     <script src="/prepositions-data.js"></script>
     <script src="/prepositions.js"></script>
