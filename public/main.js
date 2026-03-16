@@ -268,7 +268,7 @@ window.switchTab = function (tabName) {
     }
 
     const userTabs = ['profile'];
-    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams'];
+    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams', 'premium-exercises'];
     const adminTabs = ['admin'];
 
     // Level 1: Must be logged in
@@ -393,6 +393,7 @@ function reinjectTabContent(tabName) {
         "calendar": typeof calendarHTML !== 'undefined' ? calendarHTML : null,
         "aireading": typeof aiReadingHTML !== 'undefined' ? aiReadingHTML : null,
         "tutor-exam": typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : null,
+        "premium-exercises": typeof premiumExercisesHTML !== 'undefined' ? premiumExercisesHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -431,9 +432,11 @@ function updateSEO(tab) {
         "ydt-vocab": { title: "Önemli YDT Kelime Listesi – Akademik İngilizce", desc: "YDT sınavında en sık çıkan 500+ akademik kelime ve kullanım örnekleri." },
         "ydt-grammar": { title: "YDT Gramer Özetleri – Hızlı Hazırlık Kartları", desc: "YDT sınavında en çok çıkan gramer konularının özet tabloları ve ipuçları." },
         "phrasal": { title: "Phrasal Verb Dictionary – YDS & YDT Premium", desc: "En sık çıkan 50+ Phrasal Verb ve interaktif kartlar." },
-        "calendar": { title: "2026 Sınav Takvimi – YDS, YÖKDİL, YDT Tarihleri", desc: "2026 yılı ÖSYM yabancı dil sınav takvimi, başvuru ve sonuç tarihleri." },
+        "calendar": { title: "YDS & YDT 2026 Sınav Takvimi", desc: "ÖSYM YDS ve YDT sınav tarihleri, başvuru ve sonuç açıklanma günleri." },
         "aireading": { title: "AI Reading Lab – Özgün Okuma Parçası Üretici", desc: "Seviyenize uygun akademik okuma parçaları hazırlayan yapay zeka laboratuvarı." },
-        "tutor-exam": { title: "AI Guided Exam – Yapay Zeka Koçlu Deneme", desc: "AI koçunuzla birlikte soru bazlı, açıklamalı deneme çözme modu." }
+        "tutor-exam": { title: "AI Guided Exam – Yapay Zeka Koçlu Deneme", desc: "AI koçunuzla birlikte soru bazlı, açıklamalı deneme çözme modu." },
+        "premium-exercises": { title: "Premium İnteraktif Alıştırmalar – YDS Kelime Lab", desc: "Okuma parçası üzerinden kelime eşleştirme ve interaktif dil alıştırmaları." },
+        "admin": { title: "Admin Panel", desc: "Sistem yönetimi." }
     };
 
     const data = seoMap[tab] || { title: "yds.monster – YDS & YDT Master Encyclopedia", desc: "Kapsamlı YDS ve YDT hazırlık platformu." };
@@ -665,9 +668,9 @@ window.toggleModalTactics = function () {
 window.lockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn"
     ];
 
     navButtons.forEach(id => {
@@ -684,9 +687,9 @@ window.lockAnalyzerUI = function () {
 window.unlockAnalyzerUI = function () {
     const navButtons = [
         "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn",
+        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn",
         "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn"
+        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn"
     ];
 
     navButtons.forEach(id => {

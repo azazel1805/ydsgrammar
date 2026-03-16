@@ -79,8 +79,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <script type="module" crossorigin src="./assets/index-CSCAwKIO.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Cc-r2JOi.css">
+  <script type="module" crossorigin src="./assets/index-BSKzgtmB.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BvVzPcJs.css">
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -414,6 +414,11 @@
               <span>AI Reading Lab</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
+            <button id="premiumExercisesNavBtn" data-tab="premium-exercises" onclick="switchTab('premium-exercises')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 hover:text-red-700 transition-colors flex items-center justify-between group hidden font-bold text-red-800">
+              <span>Interaktif Alıştırmalar</span>
+              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
+            </button>
           </div>
         </div>
 
@@ -583,6 +588,11 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               <span>AI Reading Lab</span>
               <i class="fas fa-crown text-[10px] text-yellow-500"></i>
             </button>
+            <button id="premiumExercisesMobileBtn" data-tab="premium-exercises" onclick="switchTabAndClose('premium-exercises')"
+              class="drawer-btn hidden font-bold text-red-800 flex items-center justify-between">
+              <span>Interaktif Alıştırmalar</span>
+              <i class="fas fa-crown text-[10px] text-yellow-500"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -645,6 +655,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-phrasal" class="tab-content"></div>
       <div id="tab-aireading" class="tab-content"></div>
       <div id="tab-tutor-exam" class="tab-content"></div>
+      <div id="tab-premium-exercises" class="tab-content"></div>
     </div>
 
     <!-- GLOBAL FULL EXAM ENGINE -->
@@ -766,6 +777,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="./phrasal.js"></script>
     <script src="./aireading.js"></script>
     <script src="./tutor-exam.js"></script>
+    <script src="./premium-exercises.js"></script>
     <script src="./main.js"></script>
 
 
