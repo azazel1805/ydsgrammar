@@ -325,13 +325,14 @@ function renderClickableWords(sentence) {
 }
 
 function handleWPWordClick(e, word) {
-    e.stopPropagation();
-    // Use the global dictionary if available
-    if (typeof searchDictionaryWord === "function") {
-        switchTab('dictionary');
-        setTimeout(() => searchDictionaryWord(word), 300);
+    if (e) e.stopPropagation();
+    
+    // Check if global modal or local modal exists
+    if (typeof foShowWordDetails === "function") {
+        foShowWordDetails(word);
     } else {
-        alert(word + " için sözlük bulunamadı.");
+        // Fallback or internal Word Practice Modal logic
+        alert("Sözlük: " + word);
     }
 }
 
