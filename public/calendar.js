@@ -1,10 +1,50 @@
 
 const EXAM_EVENTS = [
-    { date: "2026-03-07", label: "YÖKDİL/1", title: "YÖKDİL 1. Oturum", type: "yokdil", desc: "Yükseköğretim Kurumları Yabancı Dil Sınavı", results: "2026-03-24" },
-    { date: "2026-04-05", label: "YDS/1", title: "YDS 1. Oturum", type: "yds", desc: "Yabancı Dil Bilgisi Seviye Tespit Sınavı", results: "2026-04-30" },
-    { date: "2026-06-14", label: "YDT", title: "YKS YDT", type: "ydt", desc: "Yükseköğretim Kurumları Sınavı - Yabancı Dil Testi", results: "2026-07-16" },
-    { date: "2026-08-23", label: "YÖKDİL/2", title: "YÖKDİL 2. Oturum", type: "yokdil", desc: "Yükseköğretim Kurumları Yabancı Dil Sınavı", results: "2026-09-08" },
-    { date: "2026-11-21", label: "YDS/2", title: "YDS 2. Oturum", type: "yds", desc: "Yabancı Dil Bilgisi Seviye Tespit Sınavı", results: "2026-12-09" }
+    { 
+        date: "2026-03-07", 
+        label: "YÖKDİL/1", 
+        title: "YÖKDİL 1. Oturum", 
+        type: "yokdil", 
+        desc: "Yükseköğretim Kurumları Yabancı Dil Sınavı", 
+        results: "2026-03-24",
+        applyWindow: "21.01.2026 - 29.01.2026"
+    },
+    { 
+        date: "2026-04-05", 
+        label: "YDS/1", 
+        title: "YDS 1. Oturum", 
+        type: "yds", 
+        desc: "Yabancı Dil Bilgisi Seviye Tespit Sınavı", 
+        results: "2026-04-30",
+        applyWindow: "10.02.2026 - 18.02.2026"
+    },
+    { 
+        date: "2026-06-14", 
+        label: "YDT", 
+        title: "YKS YDT", 
+        type: "ydt", 
+        desc: "Yükseköğretim Kurumları Sınavı - Yabancı Dil Testi", 
+        results: "2026-07-16",
+        applyWindow: "01.03.2026 - 21.03.2026"
+    },
+    { 
+        date: "2026-08-23", 
+        label: "YÖKDİL/2", 
+        title: "YÖKDİL 2. Oturum", 
+        type: "yokdil", 
+        desc: "Yükseköğretim Kurumları Yabancı Dil Sınavı", 
+        results: "2026-09-08",
+        applyWindow: "01.07.2026 - 10.07.2026"
+    },
+    { 
+        date: "2026-11-21", 
+        label: "YDS/2", 
+        title: "YDS 2. Oturum", 
+        type: "yds", 
+        desc: "Yabancı Dil Bilgisi Seviye Tespit Sınavı", 
+        results: "2026-12-09",
+        applyWindow: "25.09.2026 - 05.10.2026"
+    }
 ];
 
 const calendarHTML = `
@@ -242,21 +282,29 @@ function showEventDetail(exam, dateStr) {
                 ${exam.type.toUpperCase()} OTURUMU
             </div>
             <h4 class="text-3xl font-black mb-4 leading-tight">${exam.title}</h4>
-            <p class="text-slate-400 text-sm leading-relaxed mb-10 font-medium">${exam.desc}</p>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">${exam.desc}</p>
             
-            <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
                 <div class="bg-white/5 p-4 rounded-2xl border border-white/10 group hover:bg-white/10 transition-colors">
-                    <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-2">Sınav Tarihi</p>
-                    <p class="text-lg font-bold">${new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long' }).format(new Date(exam.date))}</p>
-                    <p class="text-[10px] text-slate-400">Pazar, 10:15</p>
+                    <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">Sınav Tarihi</p>
+                    <div class="flex items-center justify-between">
+                        <p class="text-lg font-bold">${new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(exam.date))}</p>
+                        <span class="text-[10px] bg-red-800 px-2 py-0.5 rounded text-white font-bold">10:15</span>
+                    </div>
                 </div>
+
                 <div class="bg-white/5 p-4 rounded-2xl border border-white/10 group hover:bg-white/10 transition-colors">
-                    <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-2">Sonuç Tarihi</p>
-                    <p class="text-lg font-bold text-green-400">${new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long' }).format(new Date(exam.results))}</p>
+                    <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">Başvuru Tarihleri</p>
+                    <p class="text-lg font-bold text-yellow-500">${exam.applyWindow}</p>
+                </div>
+
+                <div class="bg-white/5 p-4 rounded-2xl border border-white/10 group hover:bg-white/10 transition-colors">
+                    <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">Sonuç Açıklanma</p>
+                    <p class="text-lg font-bold text-green-400">${new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(exam.results))}</p>
                 </div>
             </div>
 
-            <button onclick="switchTab('tacticguide')" class="w-full mt-10 py-4 bg-red-800 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-xl shadow-red-900/40 hover:bg-white hover:text-black transition-all">
+            <button onclick="switchTab('tacticguide')" class="w-full mt-8 py-4 bg-red-800 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-xl shadow-red-900/40 hover:bg-white hover:text-black transition-all">
                 STRATEJİLERİ İNCELE
             </button>
         </div>
