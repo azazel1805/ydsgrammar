@@ -300,6 +300,24 @@
           </div>
         </div>
 
+        <!-- IELTS Dropdown -->
+        <div class="relative group">
+          <button class="nav-drop-btn pb-4">IELTS <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
+          <div
+            class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-white border border-gray-100 shadow-2xl z-50 min-w-[200px] py-2 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 rounded-2xl overflow-hidden">
+            <button data-tab="ielts-overview" onclick="switchTab('ielts-overview')"
+              class="tab-btn w-full text-left px-5 py-3 font-bold text-indigo-700 hover:bg-gray-50 transition-colors border-l-2 border-indigo-700">IELTS Rehberi</button>
+            <button data-tab="ielts-reading" onclick="switchTab('ielts-reading')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Reading</button>
+            <button data-tab="ielts-listening" onclick="switchTab('ielts-listening')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Listening</button>
+            <button data-tab="ielts-writing" onclick="switchTab('ielts-writing')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Writing</button>
+            <button data-tab="ielts-speaking" onclick="switchTab('ielts-speaking')"
+              class="tab-btn w-full text-left px-5 py-3 hover:bg-gray-50 transition-colors">Speaking</button>
+          </div>
+        </div>
+
         <!-- Grammar Mega Menu -->
         <div class="relative group">
           <button class="nav-drop-btn pb-4">Grammar <i class="fas fa-chevron-down text-xs ml-1 opacity-50"></i></button>
@@ -514,6 +532,28 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
         </div>
 
         <div>
+          <h3 class="text-indigo-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">IELTS</h3>
+          <div class="space-y-2 mb-4">
+            <button data-tab="ielts-overview" onclick="switchTabAndClose('ielts-overview')" class="drawer-btn font-bold text-indigo-700">IELTS Rehberi</button>
+            <button data-tab="ielts-reading" onclick="switchTabAndClose('ielts-reading')" class="drawer-btn">Reading</button>
+            <button data-tab="ielts-listening" onclick="switchTabAndClose('ielts-listening')" class="drawer-btn">Listening</button>
+            <button data-tab="ielts-writing" onclick="switchTabAndClose('ielts-writing')" class="drawer-btn">Writing</button>
+            <button data-tab="ielts-speaking" onclick="switchTabAndClose('ielts-speaking')" class="drawer-btn">Speaking</button>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-indigo-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">IELTS</h3>
+          <div class="space-y-2 mb-4">
+            <button data-tab="ielts-overview" onclick="switchTabAndClose('ielts-overview')" class="drawer-btn font-bold text-indigo-700">IELTS Rehberi</button>
+            <button data-tab="ielts-reading" onclick="switchTabAndClose('ielts-reading')" class="drawer-btn">Reading</button>
+            <button data-tab="ielts-listening" onclick="switchTabAndClose('ielts-listening')" class="drawer-btn">Listening</button>
+            <button data-tab="ielts-writing" onclick="switchTabAndClose('ielts-writing')" class="drawer-btn">Writing</button>
+            <button data-tab="ielts-speaking" onclick="switchTabAndClose('ielts-speaking')" class="drawer-btn">Speaking</button>
+          </div>
+        </div>
+
+        <div>
           <h3 class="text-red-800 font-bold mb-2 mt-6 uppercase tracking-widest text-xs">Grammar</h3>
           <div class="space-y-4 mb-4">
             
@@ -639,6 +679,11 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-gerunds" class="tab-content"></div>
       <div id="tab-articles" class="tab-content"></div>
       <div id="tab-reductions" class="tab-content"></div>
+      <div id="tab-ielts-overview" class="tab-content"></div>
+      <div id="tab-ielts-reading" class="tab-content"></div>
+      <div id="tab-ielts-listening" class="tab-content"></div>
+      <div id="tab-ielts-writing" class="tab-content"></div>
+      <div id="tab-ielts-speaking" class="tab-content"></div>
       <div id="tab-analyzer" class="tab-content hidden"></div>
       <div id="tab-testlab" class="tab-content hidden"></div>
       <div id="tab-restatement" class="tab-content hidden"></div>
@@ -775,6 +820,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/reportedspeech.js"></script>
     <script src="/gerunds.js"></script>
     <script src="/reductions.js"></script>
+    <script src="/ielts.js"></script>
     <script src="/articles.js"></script>
     <script src="/notifications.js"></script>
     <script src="/forum.js"></script>

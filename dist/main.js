@@ -395,6 +395,11 @@ function reinjectTabContent(tabName) {
         "tutor-exam": typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : null,
         "premium-exercises": typeof premiumExercisesHTML !== 'undefined' ? premiumExercisesHTML : null,
         "reductions": typeof reductionsHTML !== 'undefined' ? reductionsHTML : null,
+        "ielts-overview": typeof ieltsOverviewHTML !== 'undefined' ? ieltsOverviewHTML : null,
+        "ielts-reading": typeof ieltsReadingHTML !== 'undefined' ? ieltsReadingHTML : null,
+        "ielts-listening": typeof ieltsListeningHTML !== 'undefined' ? ieltsListeningHTML : null,
+        "ielts-writing": typeof ieltsWritingHTML !== 'undefined' ? ieltsWritingHTML : null,
+        "ielts-speaking": typeof ieltsSpeakingHTML !== 'undefined' ? ieltsSpeakingHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -438,6 +443,11 @@ function updateSEO(tab) {
         "tutor-exam": { title: "AI Guided Exam – Yapay Zeka Koçlu Deneme", desc: "AI koçunuzla birlikte soru bazlı, açıklamalı deneme çözme modu." },
         "premium-exercises": { title: "Premium İnteraktif Alıştırmalar – YDS Kelime Lab", desc: "Okuma parçası üzerinden kelime eşleştirme ve interaktif dil alıştırmaları." },
         "reductions": { title: "Kısaltmalar (Reduced Clauses) – YDS & YDT Gramer", desc: "Sıfat ve zarf cümleciklerinde aktif/pasif kısaltma kuralları ve örnekler." },
+        "ielts-overview": { title: "IELTS Hazırlık Merkezi – Akademik & Genel Modüller", desc: "IELTS sınavı için stratejik rehber, Speaking, Writing, Reading ve Listening modülleri." },
+        "ielts-reading": { title: "IELTS Reading (Okuma) – Stratejiler ve Soru Tipleri", desc: "IELTS okuma bölümü için teknikler ve örnek çalışmalar." },
+        "ielts-listening": { title: "IELTS Listening (Dinleme) – Dinleme Pratikleri", desc: "IELTS dinleme sınavı için aksan çalışmaları ve ipuçları." },
+        "ielts-writing": { title: "IELTS Writing (Yazma) – Essay Şablonları & Teknikleri", desc: "IELTS Writing Task 1 ve Task 2 için akademik yazma rehberi." },
+        "ielts-speaking": { title: "IELTS Speaking (Konuşma) – Mülakat Teknikleri", desc: "IELTS konuşma mülakatı için pratik ipuçları ve cue card çalışmaları." },
         "admin": { title: "Admin Panel", desc: "Sistem yönetimi." }
     };
 
