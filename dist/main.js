@@ -156,6 +156,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Default to dashboard
         switchTab('dashboard');
     }
+
+    // Hidden IELTS Access
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('admin') === 'true' || localStorage.getItem('ieltsAdmin') === 'true') {
+        document.querySelectorAll('.ielts-nav').forEach(el => el.classList.remove('hidden'));
+        localStorage.setItem('ieltsAdmin', 'true');
+    }
 });
 
 /* ==========================================
