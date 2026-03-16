@@ -247,6 +247,16 @@ const focusedExamsHTML = `
           </div>
       </div>
   </div>
+
+  <!-- Image Modal -->
+  <div id="foImageModal" class="fixed inset-0 bg-black/90 backdrop-blur-md hidden items-center justify-center z-[300] p-4" onclick="foCloseImageModal()">
+      <div class="relative max-w-4xl w-full">
+          <button onclick="foCloseImageModal()" class="absolute -top-12 right-0 text-white text-3xl hover:text-red-500 transition-colors">
+              <i class="fas fa-times"></i>
+          </button>
+          <img id="foModalFullImage" src="" class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white/10 animate-in zoom-in duration-300">
+      </div>
+  </div>
 </div>
 <style>
   .fo-highlight { border-bottom: 2px solid; padding-bottom: 2px; }
@@ -563,6 +573,20 @@ function foCloseWordModal() {
   modal.classList.remove('flex');
 }
 
+window.foOpenImageModal = function(url) {
+    const modal = document.getElementById('foImageModal');
+    const img = document.getElementById('foModalFullImage');
+    if (!modal || !img) return;
+    img.src = url;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+};
+
+window.foCloseImageModal = function() {
+    const modal = document.getElementById('foImageModal');
+    if (modal) modal.classList.add('hidden');
+};
+
 
 function foUpdateNav() {
   const nav = document.getElementById('foQuestionNav');
@@ -726,8 +750,9 @@ async function fetchUnsplashImage(word, qId) {
     }
 
     if (data.results && data.results[0]) {
+      const imgUrl = data.results[0].urls.regular;
       container.classList.remove('hidden');
-      content.innerHTML = `<img src="${data.results[0].urls.regular}" class="w-full h-full object-cover animate-in fade-in duration-500" />`;
+      content.innerHTML = `<img src="${imgUrl}" onclick="window.foOpenImageModal('${imgUrl}')" class="w-full h-full object-cover animate-in fade-in duration-500 cursor-zoom-in hover:scale-105 transition-transform" />`;
     } else {
       // Both attempts failed
       container.classList.add('hidden');
