@@ -206,14 +206,24 @@ function getIELTSReadingStrategyHTML() {
                     <li><i class="fas fa-check-circle mr-2 text-indigo-400"></i> <strong>Time Allocation:</strong> 1. parça 15dk, 2. parça 20dk, 3. parça 25dk.</li>
                 </ul>
             </div>
-            <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm">
-                <h4 class="font-bold mb-4 uppercase text-[10px] tracking-widest text-slate-400">Soru Türleri</h4>
-                <ul class="text-[11px] space-y-2 text-slate-500 font-medium">
-                    <li>• True / False / Not Given</li>
-                    <li>• Matching Headings</li>
-                    <li>• Multiple Choice</li>
-                    <li>• Summary / Sentence Completion</li>
-                </ul>
+            <div class="bg-white p-6 rounded-[2.5rem] border border-slate-100 shadow-sm overflow-hidden">
+                <h4 class="font-bold mb-4 uppercase text-[10px] tracking-widest text-slate-400">14 IELTS Reading Question Types</h4>
+                <div class="grid grid-cols-1 gap-1 text-[10px] text-slate-500 font-medium h-96 overflow-y-auto pr-2 custom-scrollbar">
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>1. Matching Headings:</strong> Başlıkları paragraflarla eşleştirme.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>2. T/F/NG & Y/N/NG:</strong> Bilginin doğruluğunu veya yazarın görüşünü onaylama.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>3. Matching Paragraph Info:</strong> Spesifik bilgiyi hangi paragrafta olduğunu bulma.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>4. Summary Completion:</strong> Metne göre özeti tamamlama.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>5. Sentence Completion:</strong> Verilen cümleleri metindeki kelimelerle tamamlama.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>6. Multiple Choice:</strong> Çoktan seçmeli sorular (A, B, C, D).</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>7. List Selection:</strong> Uzun bir listeden doğru seçenekleri seçme.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>8. Choosing a Title:</strong> Tüm metin için en uygun başlığı seçme.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>9. Classification:</strong> Bilgiyi kategorilere ayırma (Matching Features).</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>10. Matching Sentence Endings:</strong> Cümle yarımlarını doğru sonlarla eşleştirme.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>11. Table Completion:</strong> Tablodaki boşlukları metne göre doldurma.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>12. Flow Chart Completion:</strong> Süreç haritasını (akış şeması) tamamlama.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>13. Diagram Completion:</strong> Diyagram üzerindeki etiketleri doldurma.</div>
+                    <div class="p-2 hover:bg-slate-50 rounded-lg"><strong>14. Short Answer:</strong> Metindeki detaylara göre kısa cevap verme.</div>
+                </div>
             </div>
         </div>
     </div>

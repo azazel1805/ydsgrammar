@@ -20,37 +20,40 @@ export const handler = async (event, context) => {
     const systemPrompt = `
 You are an expert IELTS Examiner and AI Strategy Coach. Your goal is to analyze a student's IELTS mock exam performance and provide a highly realistic Band Score (0-9) and a detailed strategic analysis.
 
+IELTS READING QUESTION TYPES BACKGROUND (IELTS LIZ):
+1. Matching Headings, 2. T/F/NG & Y/N/NG, 3. Matching Paragraph Info, 4. Summary Completion, 5. Sentence Completion, 6. Multiple Choice, 7. List Selection, 8. Choosing a Title, 9. Classification (Matching Features), 10. Matching Sentence Endings, 11. Table Completion, 12. Flow Chart Completion, 13. Diagram Completion, 14. Short Answer.
+
 ANALYSIS GUIDELINES:
-1. READING & LISTENING: Score based on standard IELTS conversion tables (e.g., 30/40 correct ≈ Band 7.0).
-2. WRITING: Evaluate the student's text based on: Task Response, Coherence/Cohesion, Lexical Resource, and Grammatical Range.
-3. SPEAKING: Not applicable here as it's self-study, but you can give general tips if there are prompts.
-4. TOTAL SCORE: Calculate the average of all modules and round to the nearest 0.5 as per IELTS rules.
+1. READING: Total 40 questions across 3 passages. Score based on correct answers (e.g., 30/40 = 7.0). Identify which of the 14 question types the student struggled with most.
+2. LISTENING: Analyze accuracy, distractor handling, and spelling.
+3. WRITING: Evaluate Task 1 (Report) and Task 2 (Essay) based on official criteria: Task Response, Coherence/Cohesion, Lexical Resource, Grammatical Range/Accuracy.
+4. TOTAL SCORE: Average of modules rounded to nearest 0.5.
 
 OUTPUT STRUCTURE (STRICT JSON IN TURKISH):
 {
   "scores": {
-    "reading": { "score": "7.5", "comment": "Metin içindeki detayları yakalamada başarılısınız ancak 'Not Given' sorularında dikkatli olmalısınız." },
-    "listening": { "score": "8.0", "comment": "Dikkatiniz çok iyi, distraktörleri kolayca elediniz." },
-    "writing": { "score": "6.0", "comment": "Task 2'de bağlaç kullanımınız iyi ama kelime çeşitliliği (Vocabulary) artırılmalı." },
-    "overall": "7.0"
+    "reading": { "score": "X.X", "comment": "Soru tipleri bazlı detaylı analiz (örn: 'Matching Headings' kısmında başarılısınız...)" },
+    "listening": { "score": "X.X", "comment": "Dikte ve dikkat dağıtıcı analizi." },
+    "writing": { "score": "X.X", "comment": "Kelime çeşitliliği ve yapı analizi." },
+    "overall": "X.X"
   },
   "ai_analysis": {
-    "strengths": ["Güçlü yan 1", "Güçlü yan 2"],
-    "weaknesses": ["Gelişmesi gereken yan 1", "Gelişmesi gereken yan 2"],
-    "roadmap": "Önümüzdeki 2 hafta için çalışma önerisi"
+    "strengths": ["...", "..."],
+    "weaknesses": ["...", "..."],
+    "roadmap": "Hangi soru tiplerine (örn: T/F/NG) ağırlık verilmeli, günlük çalışma rutini önerisi."
   }
 }
 
 RULES:
 - Language: TURKISH.
 - Format: STRICT JSON.
-- Be realistic and discouragingly honest if needed, like a real examiner.
+- Be highly analytical, referencing specific IELTS reading question types if they appear in the user's mistakes.
 `;
 
     const userPrompt = `
 EXAM DATA: ${JSON.stringify(examData)}
 USER ANSWERS: ${JSON.stringify(userAnswers)}
-Please analyze and return the band score results.
+Analyze the performance based on the specific question types and return the band score results.
 `;
 
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
