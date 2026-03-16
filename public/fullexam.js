@@ -705,7 +705,23 @@ async function feDownloadPDF(id) {
         <meta charset="UTF-8">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
-            body { font-family: 'Lora', serif; padding: 40px; color: #1a1a1a; line-height: 1.6; background: #fff; }
+            body { font-family: 'Lora', serif; padding: 40px; color: #1a1a1a; line-height: 1.6; background: #fff; position: relative; }
+            
+            /* Watermark */
+            body::before {
+                content: 'yds.monster';
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 150px;
+                color: rgba(153, 27, 27, 0.03);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+                font-family: 'Playfair Display', serif;
+            }
+
             .header { text-align: center; border-bottom: 3px solid #991b1b; padding-bottom: 20px; margin-bottom: 40px; }
             .logo { font-family: 'Playfair Display', serif; font-size: 28px; color: #991b1b; font-weight: bold; }
             .exam-title { font-size: 22px; font-weight: bold; margin-top: 10px; color: #000; }
@@ -733,6 +749,7 @@ async function feDownloadPDF(id) {
                 font-size: 14px; 
                 line-height: 1.8;
                 page-break-inside: avoid;
+                page-break-before: always; /* Force new page for passages */
                 text-align: justify;
             }
             .passage-title { font-weight: bold; color: #991b1b; margin-bottom: 10px; font-size: 12px; }
@@ -763,7 +780,7 @@ async function feDownloadPDF(id) {
         <div class="header">
             <div class="logo">yds.monster</div>
             <div class="exam-title">${data.meta.title}</div>
-            <div class="meta">${data.meta.total_questions} SORU | ${data.meta.duration_minutes} DAKİKA | ÖZÜN YDS FORMATI</div>
+            <div class="meta">${data.meta.total_questions} SORU | ${data.meta.duration_minutes} DAKİKA | ÖZGÜN DENEME SINAVI</div>
         </div>
         
         <div class="content">
