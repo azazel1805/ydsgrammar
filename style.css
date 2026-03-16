@@ -344,6 +344,23 @@ body {
     font-weight: 600;
 }
 
+/* Watermark */
+.print-watermark {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.03);
+    z-index: -1;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 /* =============================
    PRINT & PDF OPTIMIZATION
 ============================= */
@@ -454,6 +471,13 @@ body {
 
     .fa-chevron-down {
         display: none !important;
+    }
+
+    /* Watermark for print */
+    .print-watermark {
+        display: block !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
 
