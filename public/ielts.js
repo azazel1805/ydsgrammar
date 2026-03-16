@@ -4,6 +4,11 @@
 
 let currentIELTSExam = null;
 let zenModeActive = false;
+let ieltsUserAnswers = {
+    reading: {}, // { qId: { user: "", correct: "", isCorrect: bool } }
+    listening: {},
+    writing: { task1: "", task2: "" }
+};
 
 // Global placeholders for main.js mapping
 const ieltsOverviewHTML = "Loading...";
@@ -398,7 +403,7 @@ function getIELTSReadingExamHTML() {
                                 <div class="grid gap-2">
                                     ${q.options.map(opt => `
                                         <button class="w-full text-left p-3 rounded-xl border border-slate-200 bg-white hover:border-indigo-500 transition-all text-xs font-medium"
-                                            onclick="checkIELTSAnswer(this, '${q.answer.replace(/'/g, "\\'")}', '${q.explanation.replace(/'/g, "\\'")}')">
+                                            onclick="checkIELTSAnswer(this, '${q.id}', '${q.answer.replace(/'/g, "\\'")}', '${q.explanation.replace(/'/g, "\\'")}')">
                                             ${opt}
                                         </button>
                                     `).join('')}
@@ -447,7 +452,7 @@ function getIELTSListeningExamHTML() {
                         <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                             <p class="font-bold text-slate-800 mb-4">${q.id}. ${q.question}</p>
                             <input type="text" class="w-full p-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
-                                placeholder="Cevabınızı yazın..." onkeydown="if(event.key === 'Enter') checkIELTSInputAnswer(this, '${q.answer}', '${q.explanation.replace(/'/g, "\\'")}')">
+                                placeholder="Cevabınızı yazın..." onkeydown="if(event.key === 'Enter') checkIELTSInputAnswer(this, '${q.id}', '${q.answer}', '${q.explanation.replace(/'/g, "\\'")}')">
                             <div class="feedback hidden mt-4 p-4 rounded-xl text-xs"></div>
                         </div>
                     `).join('')}
@@ -473,13 +478,13 @@ function getIELTSWritingExamHTML() {
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] p-8">
             <h3 class="text-xl font-bold text-slate-900 mb-6 italic">${writing.task1.prompt}</h3>
-            <textarea class="w-full h-64 p-6 bg-slate-50 rounded-3xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm" placeholder="Buraya yazın..."></textarea>
+            <textarea id="ieltsWriting1" class="w-full h-64 p-6 bg-slate-50 rounded-3xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm" placeholder="Buraya yazın..." onchange="ieltsUserAnswers.writing.task1 = this.value"></textarea>
             <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full mt-4 py-4 bg-slate-900 text-white rounded-2xl font-bold">Model Cevabı Gör</button>
             <div class="hidden mt-6 p-8 bg-indigo-50 rounded-[2rem] text-sm leading-relaxed">${writing.task1.model_answer}</div>
         </div>
         <div class="bg-white border border-slate-100 shadow-xl rounded-[2.5rem] p-8">
             <h3 class="text-xl font-bold text-slate-900 mb-6 italic">${writing.task2.prompt}</h3>
-            <textarea class="w-full h-64 p-6 bg-slate-50 rounded-3xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Buraya yazın..."></textarea>
+            <textarea id="ieltsWriting2" class="w-full h-64 p-6 bg-slate-50 rounded-3xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Buraya yazın..." onchange="ieltsUserAnswers.writing.task2 = this.value"></textarea>
             <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full mt-4 py-4 bg-slate-900 text-white rounded-2xl font-bold">Model Cevabı Gör</button>
             <div class="hidden mt-6 p-8 bg-indigo-50 rounded-[2rem] text-sm leading-relaxed">${writing.task2.model_answer}</div>
         </div>
@@ -510,8 +515,8 @@ function getIELTSSpeakingExamHTML() {
             </div>
         </div>
         <div class="text-center pb-20">
-            <button onclick="toggleZenMode(false); switchTab('ielts-exams')" class="bg-green-600 text-white px-10 py-5 rounded-3xl font-black shadow-2xl hover:bg-green-700 transition-all">
-                Sınavı Bitir ve Sonuçları Gör
+            <button onclick="finishIELTSExam()" class="bg-indigo-600 text-white px-10 py-5 rounded-3xl font-black shadow-2xl hover:bg-slate-900 transition-all flex items-center gap-3 mx-auto">
+                <i class="fas fa-brain"></i> AI ile Analiz Et ve Puanla
             </button>
         </div>
     </div>
@@ -521,10 +526,15 @@ function getIELTSSpeakingExamHTML() {
 
 // ── UTILITIES (Answer Checking, TTS) ───────────────────────────
 
-window.checkIELTSAnswer = function(btn, correctAns, explanation) {
+window.checkIELTSAnswer = function(btn, qId, correctAns, explanation) {
     const parent = btn.parentElement;
     const allBtns = parent.querySelectorAll('button');
     const feedback = parent.nextElementSibling;
+    const userChoice = btn.innerText.trim();
+    const isCorrect = userChoice === correctAns || userChoice.startsWith(correctAns);
+
+    ieltsUserAnswers.reading[qId] = { user: userChoice, correct: correctAns, isCorrect: isCorrect };
+
     allBtns.forEach(b => {
         b.disabled = true;
         if (b.innerText.trim() === correctAns || (b.innerText.trim().startsWith(correctAns))) {
@@ -538,12 +548,16 @@ window.checkIELTSAnswer = function(btn, correctAns, explanation) {
     feedback.className = "mt-4 p-4 rounded-xl text-xs bg-indigo-50 text-indigo-900 border border-indigo-100";
 }
 
-window.checkIELTSInputAnswer = function(input, correctAns, explanation) {
+window.checkIELTSInputAnswer = function(input, qId, correctAns, explanation) {
     const val = input.value.trim().toLowerCase();
     const result = correctAns.toLowerCase();
+    const isCorrect = val === result;
     const feedback = input.nextElementSibling;
+
+    ieltsUserAnswers.listening[qId] = { user: val, correct: correctAns, isCorrect: isCorrect };
+
     input.disabled = true;
-    if (val === result) {
+    if (isCorrect) {
         input.classList.add('bg-green-500', 'text-white', 'border-green-500');
     } else {
         input.classList.add('bg-red-500', 'text-white', 'border-red-500');
@@ -552,6 +566,114 @@ window.checkIELTSInputAnswer = function(input, correctAns, explanation) {
     feedback.classList.remove('hidden');
     feedback.innerHTML = `<strong>Açıklama:</strong> ${explanation}`;
     feedback.className = "mt-4 p-4 rounded-xl text-xs bg-indigo-50 text-indigo-900 border border-indigo-100";
+}
+
+window.finishIELTSExam = async function() {
+    toggleZenMode(false);
+    switchTab('ielts-exams');
+    const container = document.getElementById('tab-ielts-exams');
+    
+    container.innerHTML = `
+    <div class="max-w-4xl mx-auto px-4 py-20 text-center space-y-8">
+        <div class="inline-block p-10 bg-white rounded-[3rem] shadow-2xl">
+            <div class="animate-bounce mb-6">
+                <i class="fas fa-brain text-6xl text-indigo-600"></i>
+            </div>
+            <h2 class="text-3xl font-black text-slate-900 mb-4">AI Sınavınızı İnceliyor...</h2>
+            <p class="text-slate-500 italic">Writing becerileriniz, Listening hassasiyetiniz ve Reading analiziniz gerçekçi bir IELTS skoru için hesaplanıyor.</p>
+        </div>
+    </div>`;
+
+    try {
+        const response = await fetch('/.netlify/functions/analyzeIELTS', {
+            method: 'POST',
+            body: JSON.stringify({
+                examData: currentIELTSExam,
+                userAnswers: ieltsUserAnswers
+            })
+        });
+        const results = await response.json();
+        renderIELTSResults(results);
+    } catch (e) {
+        console.error("IELTS Analysis failed:", e);
+        container.innerHTML = `<div class="p-20 text-center text-red-600">Analiz sırasında bir hata oluştu.</div>`;
+    }
+}
+
+function renderIELTSResults(data) {
+    const container = document.getElementById('tab-ielts-exams');
+    const { scores, ai_analysis } = data;
+    
+    container.innerHTML = `
+    <div class="max-w-6xl mx-auto px-4 py-12 space-y-12 animate-in fade-in duration-1000">
+        <!-- Main Score -->
+        <div class="bg-indigo-900 rounded-[3rem] p-12 text-white shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-20 -top-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="text-center md:text-left space-y-4">
+                    <span class="text-indigo-300 font-bold uppercase tracking-widest text-xs">Estimated Overall Score</span>
+                    <h2 class="text-7xl font-black italic">Band ${scores.overall}</h2>
+                    <p class="text-indigo-100 text-lg opacity-80 max-w-md">Gerçek bir IELTS sınav görevlisinin gözünden AI destekli performans analizi.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    ${['reading', 'listening', 'writing'].map(m => `
+                        <div class="bg-white/10 p-6 rounded-3xl border border-white/10 text-center">
+                            <div class="text-2xl font-black">${scores[m].score}</div>
+                            <div class="text-[10px] uppercase font-bold opacity-60">${m}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Deep Dive -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-xl space-y-8">
+                <h3 class="text-2xl font-bold flex items-center gap-3 text-slate-900 border-b pb-4">
+                    <i class="fas fa-microscope text-indigo-500"></i> Modül Analizleri
+                </h3>
+                <div class="space-y-6">
+                    ${['reading', 'listening', 'writing'].map(m => `
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center px-1">
+                                <span class="font-bold text-slate-800 uppercase text-xs tracking-widest">${m}</span>
+                                <span class="text-indigo-600 font-bold">Band ${scores[m].score}</span>
+                            </div>
+                            <p class="bg-slate-50 p-4 rounded-2xl text-sm italic text-slate-600">${scores[m].comment}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-indigo-50 p-10 rounded-[3rem] border border-indigo-100 shadow-sm space-y-6">
+                    <h3 class="text-2xl font-bold text-indigo-900">Yol Haritası</h3>
+                    <p class="text-indigo-900/70 leading-relaxed italic">${ai_analysis.roadmap}</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-lg grid grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest">Güçlü Yanlar</span>
+                        <ul class="text-xs space-y-2 text-slate-600">
+                            ${ai_analysis.strengths.map(s => `<li>• ${s}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <span class="text-[10px] font-bold text-red-600 uppercase tracking-widest">Gelişim Alanları</span>
+                        <ul class="text-xs space-y-2 text-slate-600">
+                            ${ai_analysis.weaknesses.map(w => `<li>• ${w}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <button onclick="window.location.reload()" class="bg-slate-900 text-white px-10 py-5 rounded-3xl font-black hover:bg-black transition-all">
+                Yeni Bir Sınava Başla
+            </button>
+        </div>
+    </div>`;
 }
 
 window.playCloudTTS = async function(btn) {
