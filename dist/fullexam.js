@@ -679,7 +679,7 @@ function feResetExam() {
   });
   document.querySelectorAll('.feSelectedInfo').forEach(info => info.classList.add('hidden'));
   document.querySelectorAll('.fe-exam-card').forEach(c =>
-    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50', 'border-green-500', 'bg-green-50'));
+    c.classList.remove('border-red-500', 'shadow-lg', 'bg-red-50', 'border-red-300', 'bg-red-50/30', 'border-green-500', 'bg-green-50'));
 }
 
 // ─── PDF Generation ──────────────────────────────────────────
@@ -708,18 +708,18 @@ async function feDownloadPDF(id) {
             body { font-family: 'Lora', serif; padding: 40px; color: #1a1a1a; line-height: 1.6; background: #fff; position: relative; }
             
             /* Watermark */
-            body::before {
-                content: 'yds.monster';
+            .watermark {
                 position: fixed;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%) rotate(-45deg);
                 font-size: 150px;
-                color: rgba(153, 27, 27, 0.03);
+                color: rgba(153, 27, 27, 0.05);
                 z-index: -1;
                 pointer-events: none;
                 white-space: nowrap;
                 font-family: 'Playfair Display', serif;
+                text-align: center;
             }
 
             .header { text-align: center; border-bottom: 3px solid #991b1b; padding-bottom: 20px; margin-bottom: 40px; }
@@ -727,7 +727,7 @@ async function feDownloadPDF(id) {
             .exam-title { font-size: 22px; font-weight: bold; margin-top: 10px; color: #000; }
             .meta { font-size: 13px; color: #666; margin-top: 8px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
             
-            .content { columns: 1; column-gap: 40px; }
+            .content { display: block; }
             
             .section-title { 
                 background: #f1f5f9; 
@@ -735,9 +735,15 @@ async function feDownloadPDF(id) {
                 padding: 12px 15px; 
                 font-weight: bold; 
                 margin: 40px 0 20px 0; 
-                page-break-after: avoid;
                 font-size: 16px;
                 text-transform: uppercase;
+                page-break-before: always;
+                break-before: page;
+            }
+            .section-title:first-of-type {
+                page-break-before: avoid !important;
+                break-before: avoid !important;
+                margin-top: 0;
             }
             
             .passage { 
@@ -749,19 +755,25 @@ async function feDownloadPDF(id) {
                 font-size: 14px; 
                 line-height: 1.8;
                 page-break-inside: avoid;
-                page-break-before: always; /* Force new page for passages */
+                page-break-before: always;
+                break-before: page;
                 text-align: justify;
             }
-            .passage-title { font-weight: bold; color: #991b1b; margin-bottom: 10px; font-size: 12px; }
+            .section-title + .passage {
+                page-break-before: avoid !important;
+                break-before: avoid !important;
+            }
+            
+            .passage-title { font-weight: bold; color: #991b1b; margin-bottom: 15px; font-size: 13px; text-transform: uppercase; }
 
-            .question-item { margin-bottom: 30px; page-break-inside: avoid; border-bottom: 1px dashed #eee; padding-bottom: 15px; }
+            .question-item { margin-bottom: 30px; page-break-inside: avoid; border-bottom: 1px dashed #eee; padding-bottom: 15px; display: block; }
             .q-text { font-weight: bold; margin-bottom: 12px; font-size: 15px; }
             
             .options { display: block; }
             .option { font-size: 14px; margin-bottom: 6px; display: flex; gap: 10px; }
             .opt-key { font-weight: bold; min-width: 20px; }
 
-            .answer-key-section { page-break-before: always; border-top: 2px solid #000; margin-top: 50px; padding-top: 30px; }
+            .answer-key-section { page-break-before: always; break-before: page; border-top: 2px solid #000; margin-top: 50px; padding-top: 30px; }
             .answer-key-title { font-family: 'Playfair Display', serif; font-size: 24px; text-align: center; margin-bottom: 30px; }
             .answer-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 10px; text-align: center; font-size: 12px; }
             .answer-item { border: 1px solid #ddd; padding: 5px; }
@@ -772,11 +784,12 @@ async function feDownloadPDF(id) {
             @media print {
                 @page { margin: 1cm; }
                 body { padding: 0; }
-                .section-title { -webkit-print-color-adjust: exact; }
+                .section-title, .passage { -webkit-print-color-adjust: exact; }
             }
         </style>
     </head>
     <body onafterprint="window.close()">
+        <div class="watermark">yds.monster</div>
         <div class="header">
             <div class="logo">yds.monster</div>
             <div class="exam-title">${data.meta.title}</div>
