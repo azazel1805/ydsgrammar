@@ -438,6 +438,63 @@ function checkWPAnswer(selected, btn) {
         feedback.className = "p-10 rounded-[2.5rem] border border-rose-100 bg-rose-50/40 animate-in fade-in slide-in-from-top-4";
     }
 
+    const isVip = window.currentUser?.email === "onurtosuner@gmail.com" || localStorage.getItem("analyzer_access") === "true";
+    const fullSentence = currentWPQuestion.template.replace(/_+/g, `<b class="text-indigo-600">${currentWPQuestion.correct}</b>`);
+    const plainSentence = currentWPQuestion.template.replace(/_+/g, currentWPQuestion.correct);
+
+    fText.innerHTML = `
+        <div class="flex flex-col gap-6">
+            <!-- Word Info -->
+            <div class="flex items-center gap-4 bg-white/60 p-5 rounded-[2rem] border border-white shadow-sm">
+                <div class="w-12 h-12 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fas fa-spell-check"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Kelime Anlamı</p>
+                    <div class="flex items-center gap-2">
+                        <span class="font-black text-slate-900 text-xl tracking-tight">${currentWPQuestion.correct}</span>
+                        <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded uppercase">${currentWPQuestion.pos}</span>
+                    </div>
+                    <p id="wp-word-meaning" class="text-slate-600 font-medium">${currentWPQuestion.meaning || "Çeviri hazırlanıyor..."}</p>
+                </div>
+            </div>
+
+            <!-- Full Sentence Translation (PREMIUM) -->
+            <div class="space-y-3">
+                <div class="flex items-center justify-between px-2">
+                    <p class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Cümle Analizi & Çeviri</p>
+                    ${!isVip ? '<span class="text-[9px] font-black bg-indigo-600 text-white px-2 py-0.5 rounded-full shadow-lg shadow-indigo-200 uppercase tracking-widest"><i class="fas fa-lock mr-1"></i> Premium</span>' : ''}
+                </div>
+                
+                <div class="bg-indigo-900/5 border border-indigo-100 rounded-[2.5rem] p-8 space-y-4 relative overflow-hidden group">
+                    <p class="text-slate-800 font-medium text-lg leading-relaxed italic" style="font-family: 'Lora', serif;">
+                        "${fullSentence}"
+                    </p>
+                    
+                    <div id="wp-sentence-translation-box" class="pt-4 border-t border-indigo-100/50 relative">
+                        ${isVip ? `
+                            <p id="wp-sentence-meaning" class="text-indigo-900 font-bold text-sm leading-relaxed animate-in fade-in slide-in-from-top-2 duration-700">
+                                <i class="fas fa-spinner fa-spin mr-2 opacity-50"></i> AI Çeviri hazırlanıyor...
+                            </p>
+                        ` : `
+                            <div class="relative">
+                                <p class="text-slate-400 font-medium text-sm blur-sm select-none">
+                                    Bu cümlenin tam çevirisi ve akademik analizi sadece premium üyelerimiz içindir.
+                                </p>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <button onclick="switchTab('profile')" class="px-6 py-2 bg-indigo-600 text-white text-[10px] font-black rounded-full hover:bg-indigo-700 transition-all uppercase tracking-widest shadow-xl shadow-indigo-200">
+                                        Hemen VIP Ol
+                                    </button>
+                                </div>
+                            </div>
+                        `}
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Fetch word meaning if missing
     if (!currentWPQuestion.meaning) {
         fetch(`/.netlify/functions/nlpAnalyze`, {
             method: "POST",
@@ -447,20 +504,33 @@ function checkWPAnswer(selected, btn) {
             .then(data => {
                 if (data.translation) {
                     currentWPQuestion.meaning = data.translation;
-                    const meaningEl = document.querySelector("#wp-feedback-text p");
+                    const meaningEl = document.getElementById("wp-word-meaning");
                     if (meaningEl) meaningEl.innerText = data.translation;
                 }
             })
             .catch(() => { });
     }
 
-    fText.innerHTML = `
-        <div class="flex flex-col gap-2">
-            <span class="font-black text-slate-900 text-2xl">${currentWPQuestion.correct}</span>
-            <span class="text-slate-500 uppercase tracking-widest text-[10px] font-bold">${currentWPQuestion.pos}</span>
-            <p class="text-slate-700 font-medium bg-white/50 p-4 rounded-xl border border-slate-100 mt-2">${currentWPQuestion.meaning || "Çeviri hazırlanıyor..."}</p>
-        </div>
-    `;
+    // Fetch sentence meaning if VIP
+    if (isVip) {
+        fetch(`/.netlify/functions/nlpAnalyze`, {
+            method: "POST",
+            body: JSON.stringify({ text: plainSentence })
+        })
+            .then(res => res.json())
+            .then(data => {
+                const sMeaningEl = document.getElementById("wp-sentence-meaning");
+                if (sMeaningEl && data.translation) {
+                    sMeaningEl.innerHTML = `<i class="fas fa-language text-indigo-400 mr-2"></i> ${data.translation}`;
+                } else if (sMeaningEl) {
+                    sMeaningEl.innerText = "Çeviri şu an yapılamıyor.";
+                }
+            })
+            .catch(() => {
+                const sMeaningEl = document.getElementById("wp-sentence-meaning");
+                if (sMeaningEl) sMeaningEl.innerText = "Bağlantı hatası.";
+            });
+    }
 
     updateWPStats();
 
