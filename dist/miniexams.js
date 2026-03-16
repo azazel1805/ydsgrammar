@@ -1,6 +1,7 @@
 /* ============================================================
    miniexams.js  –  Categorical YDS Mini Exam Hub
-   ============================================================ */const CATEGORICAL_MINI_LIST = [
+   ============================================================ */
+const CATEGORICAL_MINI_LIST = [
   {
     category: 'Kelime & Gramer',
     icon: 'fa-font',
@@ -72,7 +73,7 @@ const miniexamsHTML = `
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
             ${cat.exams.map(e => `
-              <div onclick="meSelectExam('${e.id}')" id="meCard-${e.id}"
+              <div onclick="window.meSelectExam('${e.id}')" id="meCard-${e.id}"
                 class="me-exam-card cursor-pointer border border-slate-200 rounded-xl p-4 hover:border-red-300 hover:bg-red-50/30 transition-all text-center group">
                 <p class="text-sm font-bold text-slate-700 group-hover:text-red-800 mb-1">${e.label}</p>
                 <p class="text-[10px] text-slate-400 font-medium uppercase tracking-tight">${e.info}</p>
@@ -101,7 +102,7 @@ const miniexamsHTML = `
           <i class="fas fa-clock text-xs text-red-400"></i>
           <span id="meTimer">00:00</span>
         </div>
-        <button onclick="meFinishConfirm()" class="bg-red-800 text-white text-xs font-bold px-4 py-2 rounded-xl">Bitir</button>
+        <button onclick="window.meFinishConfirm()" class="bg-red-800 text-white text-xs font-bold px-4 py-2 rounded-xl">Bitir</button>
       </div>
     </div>
 
@@ -113,10 +114,10 @@ const miniexamsHTML = `
       <div id="meOptions" class="space-y-3"></div>
 
       <div class="flex justify-between mt-8">
-        <button onclick="meNavQuestion(-1)" class="flex items-center gap-2 px-5 py-3 border border-slate-300 rounded-xl text-slate-600 hover:bg-slate-50 font-medium font-sans">
+        <button onclick="window.meNavQuestion(-1)" class="flex items-center gap-2 px-5 py-3 border border-slate-300 rounded-xl text-slate-600 hover:bg-slate-50 font-medium font-sans">
           <i class="fas fa-arrow-left text-sm"></i> Önceki
         </button>
-        <button onclick="meNavQuestion(1)" class="flex items-center gap-2 px-5 py-3 bg-slate-900 text-white rounded-xl font-medium hover:bg-slate-700 transition-colors font-sans">
+        <button onclick="window.meNavQuestion(1)" class="flex items-center gap-2 px-5 py-3 bg-slate-900 text-white rounded-xl font-medium hover:bg-slate-700 transition-colors font-sans">
           Sonraki <i class="fas fa-arrow-right text-sm"></i>
         </button>
       </div>
@@ -150,7 +151,7 @@ const miniexamsHTML = `
           <div class="p-8">
             <div class="flex items-center justify-between mb-8">
               <h4 class="text-xl font-bold text-slate-800">Soru Detayları</h4>
-              <button onclick="meResetExam()" class="px-6 py-2 bg-slate-900 text-white rounded-xl font-bold text-sm hover:bg-red-800 transition-colors">Yeni Sınav Başlat</button>
+              <button onclick="window.meResetExam()" class="px-6 py-2 bg-slate-900 text-white rounded-xl font-bold text-sm hover:bg-red-800 transition-colors">Yeni Sınav Başlat</button>
             </div>
             
             <div id="meReviewList" class="space-y-6">
@@ -161,21 +162,20 @@ const miniexamsHTML = `
       </div>
   </div>
 </div>
-
 `;
 
-function injectMiniExamHTML() {
+window.injectMiniExamHTML = function() {
   const container = document.getElementById('tab-miniexams');
   if (container) container.innerHTML = miniexamsHTML;
-}
+};
 
-async function meSelectExam(id) {
+window.meSelectExam = async function(id) {
   const btn = document.getElementById('meStartBtn');
   if (btn) {
     btn.dataset.selectedId = id;
-    meStartExam();
+    window.meStartExam();
   }
-}
+};
 
 function findExamById(id) {
     for (const cat of CATEGORICAL_MINI_LIST) {
@@ -185,7 +185,7 @@ function findExamById(id) {
     return null;
 }
 
-async function meStartExam() {
+window.meStartExam = async function() {
   const btn = document.getElementById('meStartBtn');
   const examId = btn.dataset.selectedId;
   const count = parseInt(document.getElementById('meQuestionCount').value) || 20;
@@ -201,7 +201,7 @@ async function meStartExam() {
     // Grouping Logic
     let processedQuestions = fullData.questions;
     let isFixed = exam.id.startsWith('mini_fixed') || exam.id.startsWith('mini_easy') || exam.id.startsWith('mini_medium') || exam.id.startsWith('mini_hard') || exam.id.startsWith('freemini');
-    // Smarter Grouping for ALL exams
+    
     let groups = [];
     let currentGroup = [];
     let lastPid = undefined;
@@ -217,14 +217,11 @@ async function meStartExam() {
         if (pid !== lastPid) {
             shouldStartNew = true;
         } else if (pid === null) {
-            // Both are null PIDs. 
             if (isCloze !== lastIsCloze) {
                 shouldStartNew = true;
             } else if (!isCloze) {
-                // Standalone questions always start new group
                 shouldStartNew = true;
             } else if (currentGroup.length >= 5) {
-                // Max 5 for a Cloze set
                 shouldStartNew = true;
             }
         }
@@ -239,7 +236,6 @@ async function meStartExam() {
     });
     if (currentGroup.length > 0) groups.push(currentGroup);
 
-    // Context Unification and Fragment Merging
     groups.forEach(group => {
         let groupLead = "";
         let groupPid = null;
@@ -274,7 +270,6 @@ async function meStartExam() {
     });
 
     if (!isFixed) {
-        // Dynamic sets (Vocab, Grammar etc.): Shuffle and pick exactly 40
         groups.sort(() => 0.5 - Math.random());
         let selectedQuestions = [];
         for (let group of groups) {
@@ -283,7 +278,6 @@ async function meStartExam() {
         }
         processedQuestions = selectedQuestions;
     } else {
-        // Fixed sets: Maintain natural JSON order (Easy/Medium/Hard)
         processedQuestions = groups.flat();
     }
 
@@ -301,10 +295,9 @@ async function meStartExam() {
     document.getElementById('meStartScreen').classList.add('hidden');
     document.getElementById('meExamScreen').classList.remove('hidden');
 
-    meRenderQuestion();
-    meStartTimer();
+    window.meRenderQuestion();
+    window.meStartTimer();
 
-    // Scroll to container
     const container = document.getElementById('tab-miniexams');
     if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -312,137 +305,150 @@ async function meStartExam() {
     console.error(err);
     alert('Sınav yüklenirken hata oluştu.');
   }
-}
+};
 
-function meStartTimer() {
+window.meStartTimer = function() {
   if (meTimerRef) clearInterval(meTimerRef);
   meTimerRef = setInterval(() => {
     meSecondsLeft--;
-    meUpdateTimerDisplay();
+    window.meUpdateTimerDisplay();
     if (meSecondsLeft <= 0) {
       clearInterval(meTimerRef);
-      meFinish();
+      window.meFinish();
     }
   }, 1000);
-}
+};
 
-function meUpdateTimerDisplay() {
+window.meUpdateTimerDisplay = function() {
   const m = Math.floor(meSecondsLeft / 60);
   const s = meSecondsLeft % 60;
   const el = document.getElementById('meTimer');
   if (el) el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-}
+};
 
-function meNavQuestion(delta) {
+window.meNavQuestion = function(delta) {
   const newIdx = meCurrentIdx + delta;
-  if (newIdx >= 0 && newIdx < meExamData.questions.length) {
+  if (newIdx >= 0 && meExamData && newIdx < meExamData.questions.length) {
     meCurrentIdx = newIdx;
-    meRenderQuestion();
+    window.meRenderQuestion();
     
-    // Scroll to container
     const container = document.getElementById('tab-miniexams');
     if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-}
+};
 
-function meRenderQuestion() {
+window.meRenderQuestion = function() {
+  if (!meExamData) return;
   const q = meExamData.questions[meCurrentIdx];
   const qNum = document.getElementById('meQNum');
   const passageBox = document.getElementById('mePassageBox');
   const qText = document.getElementById('meQuestion');
   const optBox = document.getElementById('meOptions');
 
-  qNum.textContent = `${meCurrentIdx + 1} / ${meExamData.questions.length}`;
+  if (qNum) qNum.textContent = `${meCurrentIdx + 1} / ${meExamData.questions.length}`;
   
-  // Passage Logic
-  passageBox.classList.add('hidden');
-  let passageText = "";
-  let pLabel = "METİN / PARAGRAF";
+  if (passageBox) {
+    passageBox.classList.add('hidden');
+    let passageText = "";
+    let pLabel = "METİN / PARAGRAF";
 
-  const examId = window.currentMiniExamId;
-  if (examId === 'mini_cloze') pLabel = "CLOZE TEST PARÇASI";
-  else if (examId === 'mini_read') pLabel = "OKUMA PARÇASI";
-  else if (q.passage_id) pLabel = "OKUMA PARÇASI";
+    const examId = window.currentMiniExamId;
+    if (examId === 'mini_cloze') pLabel = "CLOZE TEST PARÇASI";
+    else if (examId === 'mini_read') pLabel = "OKUMA PARÇASI";
+    else if (q.passage_id) pLabel = "OKUMA PARÇASI";
 
-  if (q.passage_id) {
-      const p = meExamData.passages.find(p => p.id === q.passage_id);
-      if (p) passageText = p.text;
+    if (q.passage_id) {
+        const p = meExamData.passages.find(p => p.id === q.passage_id);
+        if (p) passageText = p.text;
+    }
+    
+    const lead = q.leading_text || passageText;
+    if (lead) {
+        passageBox.innerHTML = `
+          <div class="mb-4">
+              <span class="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] bg-blue-100/50 px-3 py-1 rounded-full">${pLabel}</span>
+          </div>
+          <div class="text-slate-700 leading-loose">${lead.replace(/\n/g, '<br>')}</div>
+        `;
+        passageBox.classList.remove('hidden');
+    }
   }
-  
-  const lead = q.leading_text || passageText;
-  if (lead) {
-      passageBox.innerHTML = `
-        <div class="mb-4">
-            <span class="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] bg-blue-100/50 px-3 py-1 rounded-full">${pLabel}</span>
-        </div>
-        <div class="text-slate-700 leading-loose">${lead.replace(/\n/g, '<br>')}</div>
+
+  if (qText) qText.innerHTML = q.question.replace(/\n/g, '<br>');
+
+  if (optBox) {
+    optBox.innerHTML = '';
+    Object.entries(q.options).forEach(([key, val]) => {
+      const isSelected = meAnswers[meCurrentIdx] === key;
+      const btn = document.createElement('button');
+      btn.className = `w-full text-left p-4 rounded-xl border-2 transition-all flex items-center gap-4 group ${
+        isSelected ? 'border-red-800 bg-red-50' : 'border-slate-100 hover:border-red-200 hover:bg-slate-50'
+      }`;
+      btn.onclick = () => {
+        meAnswers[meCurrentIdx] = key;
+        window.meRenderQuestion();
+      };
+      btn.innerHTML = `
+        <div class="w-8 h-8 rounded-lg border-2 flex items-center justify-center font-bold shrink-0 ${
+          isSelected ? 'bg-red-800 border-red-800 text-white' : 'border-slate-200 text-slate-400 group-hover:border-red-300'
+        }">${key}</div>
+        <span class="text-slate-700 font-medium">${val}</span>
       `;
-      passageBox.classList.remove('hidden');
+      optBox.appendChild(btn);
+    });
   }
+};
 
-  // Question Text
-  qText.innerHTML = q.question.replace(/\n/g, '<br>');
-
-  // Options
-  optBox.innerHTML = '';
-  Object.entries(q.options).forEach(([key, val]) => {
-    const isSelected = meAnswers[meCurrentIdx] === key;
-    const btn = document.createElement('button');
-    btn.className = `w-full text-left p-4 rounded-xl border-2 transition-all flex items-center gap-4 group ${
-      isSelected ? 'border-red-800 bg-red-50' : 'border-slate-100 hover:border-red-200 hover:bg-slate-50'
-    }`;
-    btn.onclick = () => {
-      meAnswers[meCurrentIdx] = key;
-      meRenderQuestion();
-    };
-    btn.innerHTML = `
-      <div class="w-8 h-8 rounded-lg border-2 flex items-center justify-center font-bold shrink-0 ${
-        isSelected ? 'bg-red-800 border-red-800 text-white' : 'border-slate-200 text-slate-400 group-hover:border-red-300'
-      }">${key}</div>
-      <span class="text-slate-700 font-medium">${val}</span>
-    `;
-    optBox.appendChild(btn);
-  });
-}
-
-function meFinishConfirm() {
+window.meFinishConfirm = function() {
   if (confirm('Sınavı bitirmek istediğinize emin misiniz?')) {
-    meFinish();
+    window.meFinish();
   }
-}
+};
 
-function meFinish() {
-  meStarted = false;
-  clearInterval(meTimerRef);
-  
-  let correct = 0;
-  meExamData.questions.forEach((q, idx) => {
-    if (meAnswers[idx] === q.correct) correct++;
-  });
+window.meFinish = function() {
+  try {
+    meStarted = false;
+    clearInterval(meTimerRef);
+    
+    if (!meExamData) return;
 
-  const total = meExamData.questions.length;
-  document.getElementById('resCorrect').textContent = correct;
-  document.getElementById('resWrong').textContent = total - correct;
-  
-  document.getElementById('meExamScreen').classList.add('hidden');
-  document.getElementById('meResultScreen').classList.remove('hidden');
-  
-  // Update Streak/Stats
-  if (typeof window.saveQuizScoreFirestore === "function") {
-    const pct = Math.round((correct / total) * 100);
-    const xp = correct * 10;
-    const topic = (meExamData && meExamData.meta) ? meExamData.meta.title : "Mini Exam";
-    window.saveQuizScoreFirestore(pct, xp, topic).then(() => {
-        if (typeof updateGamification === "function") updateGamification();
-        if (typeof initCharts === "function") setTimeout(initCharts, 1000);
-    }).catch(console.error);
+    let correct = 0;
+    meExamData.questions.forEach((q, idx) => {
+      if (meAnswers[idx] === q.correct) correct++;
+    });
+
+    const total = meExamData.questions.length;
+    
+    const resCorrectEl = document.getElementById('resCorrect');
+    const resWrongEl = document.getElementById('resWrong');
+    if (resCorrectEl) resCorrectEl.textContent = correct;
+    if (resWrongEl) resWrongEl.textContent = total - correct;
+    
+    const examScreen = document.getElementById('meExamScreen');
+    const resultScreen = document.getElementById('meResultScreen');
+    if (examScreen) examScreen.classList.add('hidden');
+    if (resultScreen) resultScreen.classList.remove('hidden');
+    
+    // Update Streak/Stats
+    if (typeof window.saveQuizScoreFirestore === "function") {
+      const pct = Math.round((correct / total) * 100);
+      const xp = correct * 10;
+      const topic = (meExamData && meExamData.meta) ? meExamData.meta.title : "Mini Exam";
+      window.saveQuizScoreFirestore(pct, xp, topic).then(() => {
+          if (typeof updateGamification === "function") updateGamification();
+          if (typeof initCharts === "function") setTimeout(initCharts, 1000);
+      }).catch(console.error);
+    }
+
+    window.meRenderReview();
+  } catch (err) {
+    console.error("Error in meFinish:", err);
   }
+};
 
-  meRenderReview();
-}
-
-function meRenderReview() {
+window.meRenderReview = function() {
   const list = document.getElementById('meReviewList');
+  if (!list || !meExamData) return;
   list.innerHTML = '';
   
   meExamData.questions.forEach((q, idx) => {
@@ -471,14 +477,19 @@ function meRenderReview() {
     `;
     list.appendChild(div);
   });
-}
+};
 
-function meResetExam() {
+window.meResetExam = function() {
   meStarted = false;
   meExamData = null;
   meAnswers = {};
-  document.getElementById('meResultScreen').classList.add('hidden');
-  document.getElementById('meStartScreen').classList.remove('hidden');
-  document.getElementById('meSelectedInfo').classList.add('hidden');
-  document.getElementById('meStartBtn').disabled = true;
-}
+  const resScreen = document.getElementById('meResultScreen');
+  const startScreen = document.getElementById('meStartScreen');
+  const selInfo = document.getElementById('meSelectedInfo');
+  const startBtn = document.getElementById('meStartBtn');
+
+  if (resScreen) resScreen.classList.add('hidden');
+  if (startScreen) startScreen.classList.remove('hidden');
+  if (selInfo) selInfo.classList.add('hidden');
+  if (startBtn) startBtn.disabled = true;
+};
