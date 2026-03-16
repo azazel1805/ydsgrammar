@@ -166,6 +166,41 @@
     body.zen-mode .no-zen { display: none !important; }
     body.zen-mode .exam-full-page { position: fixed; inset: 0; background: #fafafa; z-index: 9999; overflow-y: auto; padding: 0; }
     body.zen-mode .tab-content { margin-top: 0 !important; }
+
+    /* Premium Mega Menu Enhancement */
+    .premium-mega-glow {
+      box-shadow: 0 0 50px rgba(79, 70, 229, 0.1), 0 0 100px rgba(234, 179, 8, 0.05);
+    }
+    .premium-nav-item {
+      width: 100%;
+      text-align: left;
+      padding: 12px 16px;
+      border-radius: 12px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid transparent;
+    }
+    .premium-nav-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+      transform: translateX(4px);
+    }
+    .premium-nav-item .title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #f8fafc;
+      display: block;
+    }
+    .premium-nav-item .desc {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      font-style: italic;
+    }
+    .premium-nav-item:hover .title {
+      color: #fbbf24;
+    }
   </style>
 
   <!-- APP WRAPPER -->
@@ -370,73 +405,152 @@
 
         <!-- AI Tools Dropdown -->
         <div class="relative group">
-          <button class="nav-drop-btn pb-4">Premium <i
-              class="fas fa-crown text-xs ml-1 text-yellow-500 opacity-70"></i></button>
-          <div
-            class="absolute right-0 top-full mt-0 hidden group-hover:flex bg-white border border-gray-100 shadow-2xl z-50 min-w-[700px] p-6 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 rounded-2xl">
+          <button class="nav-drop-btn pb-4 flex items-center gap-1.5 group/btn">
+            <span class="relative">
+              Premium
+              <span class="absolute -top-1 -right-4 flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500 shadow-[0_0_8px_rgba(234,179,8,0.8)]"></span>
+              </span>
+            </span>
+          </button>
+          
+          <div class="absolute right-0 top-full mt-0 hidden group-hover:flex bg-slate-950/95 backdrop-blur-2xl border-t-2 border-yellow-500/50 shadow-[0_30px_100px_-20px_rgba(0,0,0,0.5)] z-50 min-w-[780px] p-8 transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 rounded-b-3xl overflow-hidden premium-mega-glow">
             
-            <div class="grid grid-cols-3 gap-8 w-full">
+            <!-- Animated background accent -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-yellow-500/5 rounded-full blur-[80px] pointer-events-none"></div>
+
+            <div class="grid grid-cols-3 gap-10 w-full relative z-10">
               <!-- Group 1: Sınav Merkezi -->
-              <div>
-                <h4 class="text-[10px] font-black text-indigo-800 uppercase tracking-widest mb-4 border-b border-indigo-50 pb-2 flex items-center gap-2">
-                  <i class="fas fa-file-signature text-indigo-500"></i> Sınav Merkezi
-                </h4>
-                <div class="flex flex-col gap-1">
-                  <button id="premiumNavBtn" data-tab="fullexam" onclick="switchTab('fullexam')" class="tab-btn-mega font-bold text-red-800 hidden">Fullexam Denemeler</button>
-                  <button id="miniexamsNavBtn" data-tab="miniexams" onclick="switchTab('miniexams')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
-                    <span>Mini Sınavlar</span>
-                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+              <div class="space-y-6">
+                <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
+                  <div class="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20">
+                    <i class="fas fa-file-signature text-sm"></i>
+                  </div>
+                  <h4 class="text-[11px] font-black text-slate-100 uppercase tracking-[0.2em]">Sınav Merkezi</h4>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <button id="premiumNavBtn" data-tab="fullexam" onclick="switchTab('fullexam')" class="premium-nav-item hidden">
+                    <div class="flex flex-col">
+                      <span class="title">Fullexam Denemeler</span>
+                      <span class="desc">Gerçek sınav provası</span>
+                    </div>
                   </button>
-                  <button id="tutorNavBtn" data-tab="tutor-exam" onclick="switchTab('tutor-exam')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
-                    <span>AI Tutor Sınavları</span>
-                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  <button id="miniexamsNavBtn" data-tab="miniexams" onclick="switchTab('miniexams')" class="premium-nav-item hidden group/item">
+                    <div class="flex flex-col">
+                      <span class="title">Mini Monster Sınavlar</span>
+                      <span class="desc">Hızlı ve odaklı testler</span>
+                    </div>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover/item:opacity-100"></i>
+                  </button>
+                  <button id="tutorNavBtn" data-tab="tutor-exam" onclick="switchTab('tutor-exam')" class="premium-nav-item hidden group/item">
+                    <div class="flex flex-col">
+                      <span class="title">AI Tutor Sınavları</span>
+                      <span class="desc">Akıllı asistan eşliğinde</span>
+                    </div>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover/item:opacity-100"></i>
                   </button>
                 </div>
               </div>
 
               <!-- Group 2: AI Analiz Lab -->
-              <div>
-                <h4 class="text-[10px] font-black text-indigo-800 uppercase tracking-widest mb-4 border-b border-indigo-50 pb-2 flex items-center gap-2">
-                  <i class="fas fa-microscope text-indigo-500"></i> AI Analiz Lab
-                </h4>
-                <div class="flex flex-col gap-1">
-                  <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')" class="tab-btn-mega hidden">Soru Analizörü</button>
-                  <button id="testlabNavBtn" data-tab="testlab" onclick="switchTab('testlab')" class="tab-btn-mega hidden">Cümle Çözümleyici</button>
-                  <button id="paragraphNavBtn" data-tab="paragraph" onclick="switchTab('paragraph')" class="tab-btn-mega hidden">Paragraf Analizi</button>
-                  <button id="textDeconNavBtn" data-tab="textdecon" onclick="switchTab('textdecon')" class="tab-btn-mega hidden">Metin Analizi</button>
-                  <button id="restatementNavBtn" data-tab="restatement" onclick="switchTab('restatement')" class="tab-btn-mega hidden">Restatement Studio</button>
+              <div class="space-y-6">
+                <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20">
+                    <i class="fas fa-microscope text-sm"></i>
+                  </div>
+                  <h4 class="text-[11px] font-black text-slate-100 uppercase tracking-[0.2em]">AI Analiz Lab</h4>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <button id="analyzerNavBtn" data-tab="analyzer" onclick="switchTab('analyzer')" class="premium-nav-item hidden">
+                    <div class="flex flex-col">
+                      <span class="title">Soru Analizörü</span>
+                      <span class="desc">Cevapları AI ile incele</span>
+                    </div>
+                  </button>
+                  <button id="testlabNavBtn" data-tab="testlab" onclick="switchTab('testlab')" class="premium-nav-item hidden">
+                    <div class="flex flex-col">
+                      <span class="title">Cümle Çözümleyici</span>
+                      <span class="desc">Derinlemesine sentaks analizi</span>
+                    </div>
+                  </button>
+                  <button id="paragraphNavBtn" data-tab="paragraph" onclick="switchTab('paragraph')" class="premium-nav-item hidden">
+                    <div class="flex flex-col">
+                      <span class="title">Paragraf Analizi</span>
+                      <span class="desc">Akademik okuma rehberi</span>
+                    </div>
+                  </button>
+                  <button id="textDeconNavBtn" data-tab="textdecon" onclick="switchTab('textdecon')" class="premium-nav-item hidden">
+                    <div class="flex flex-col">
+                      <span class="title">Metin Analizi</span>
+                      <span class="desc">Akıllı metin parçalama</span>
+                    </div>
+                  </button>
+                  <button id="restatementNavBtn" data-tab="restatement" onclick="switchTab('restatement')" class="premium-nav-item hidden">
+                    <div class="flex flex-col">
+                      <span class="title">Restatement Studio</span>
+                      <span class="desc">Eş anlamlı cümle laboratuvarı</span>
+                    </div>
+                  </button>
                 </div>
               </div>
 
               <!-- Group 3: İleri Pratik -->
-              <div>
-                <h4 class="text-[10px] font-black text-indigo-800 uppercase tracking-widest mb-4 border-b border-indigo-50 pb-2 flex items-center gap-2">
-                  <i class="fas fa-brain text-indigo-500"></i> İleri Düzey Pratik
-                </h4>
-                <div class="flex flex-col gap-1">
-                  <button id="wordpracticeNavBtn" data-tab="wordpractice" onclick="switchTab('wordpractice')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
-                    <span>Kelime Çalışması (AI)</span>
-                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+              <div class="space-y-6">
+                <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
+                  <div class="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-400 border border-orange-500/20">
+                    <i class="fas fa-brain text-sm"></i>
+                  </div>
+                  <h4 class="text-[11px] font-black text-slate-100 uppercase tracking-[0.2em]">İleri Pratik</h4>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <button id="wordpracticeNavBtn" data-tab="wordpractice" onclick="switchTab('wordpractice')" class="premium-nav-item hidden group/item">
+                    <div class="flex flex-col">
+                      <span class="title">Kelime Çalışması (AI)</span>
+                      <span class="desc">Bağlamsal interaktif öğrenme</span>
+                    </div>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover/item:opacity-100"></i>
                   </button>
-                  <button id="aireadingNavBtn" data-tab="aireading" onclick="switchTab('aireading')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
-                    <span>AI Reading Lab</span>
-                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  <button id="aireadingNavBtn" data-tab="aireading" onclick="switchTab('aireading')" class="premium-nav-item hidden group/item">
+                    <div class="flex flex-col">
+                      <span class="title">AI Reading Lab</span>
+                      <span class="desc">Akıllı okuma analizleri</span>
+                    </div>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover/item:opacity-100"></i>
                   </button>
-                  <button id="phrasalNavBtn" data-tab="phrasal" onclick="switchTab('phrasal')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
-                    <span>Phrasal Master</span>
-                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  <button id="phrasalNavBtn" data-tab="phrasal" onclick="switchTab('phrasal')" class="premium-nav-item hidden group/item">
+                    <div class="flex flex-col">
+                      <span class="title">Phrasal Master</span>
+                      <span class="desc">Öbeğe dayalı sözlük</span>
+                    </div>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover/item:opacity-100"></i>
                   </button>
-                  <button id="premiumExercisesNavBtn" data-tab="premium-exercises" onclick="switchTab('premium-exercises')" class="tab-btn-mega flex items-center justify-between group hidden font-bold text-red-800">
-                    <span>Interaktif Alıştırma</span>
-                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover:opacity-100"></i>
+                  <button id="premiumExercisesNavBtn" data-tab="premium-exercises" onclick="switchTab('premium-exercises')" class="premium-nav-item hidden group/item">
+                    <div class="flex flex-col">
+                      <span class="title">Interaktif Alıştırma</span>
+                      <span class="desc">Kişiselleştirilmiş drill çalışması</span>
+                    </div>
+                    <i class="fas fa-crown text-[10px] text-yellow-500 opacity-50 group-hover/item:opacity-100"></i>
                   </button>
                 </div>
               </div>
             </div>
 
-            <div class="aiToolsLocked mt-6 pt-6 border-t border-slate-50 text-sm text-gray-400 italic font-medium">
-              <i class="fas fa-lock text-xs mr-2 relative -top-[1px]"></i> VIP Erişimi Kilitli.<br>
-              <span class="text-xs text-red-800 ml-4 not-italic font-bold cursor-pointer hover:underline" onclick="switchTab('profile')">Profilde Kilidi Aç &rarr;</span>
+            <!-- Footer locking message inside the mega menu -->
+            <div class="aiToolsLocked mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-500 border border-yellow-500/20 shadow-[0_0_15px_rgba(234,179,8,0.1)]">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold text-slate-100">VIP Erişimi Gereklidir</p>
+                  <p class="text-[10px] text-slate-400 italic">Bu gelişmiş özellikler şu an hesabınızda kilitli.</p>
+                </div>
+              </div>
+              <button onclick="switchTab('profile')" class="px-6 py-2.5 bg-yellow-600 hover:bg-yellow-500 text-white text-[10px] font-black rounded-xl transition-all shadow-xl shadow-yellow-900/40 uppercase tracking-widest">
+                Şimdi Kilidi Aç <i class="fas fa-arrow-right ml-2 text-[8px]"></i>
+              </button>
             </div>
           </div>
         </div>
