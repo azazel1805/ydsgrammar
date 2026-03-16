@@ -4,7 +4,10 @@
 
 const FOCUSED_EXAM_LIST = [
   { id: 'focused1', label: 'Odaklı Deneme 1', file: '/exams/focused/focused1.json' },
-  { id: 'focused2', label: 'Odaklı Deneme 2', file: '/exams/focused/focused2.json' }
+  { id: 'focused2', label: 'Odaklı Deneme 2', file: '/exams/focused/focused2.json' },
+  { id: 'focused3', label: 'Odaklı Deneme 3', file: '/exams/focused/focused3.json' },
+  { id: 'focused4', label: 'Odaklı Deneme 4', file: '/exams/focused/focused4.json' },
+  { id: 'focused5', label: 'Odaklı Deneme 5', file: '/exams/focused/focused5.json' }
 ];
 
 // Highlight Categories & Regex Patterns
@@ -13,10 +16,23 @@ const FOCUS_CATEGORIES = {
     label: 'Bağlaçlar',
     color: 'bg-orange-200 text-orange-900 border-orange-300',
     patterns: [
-      /\b(although|though|even though|while|whereas|but|however|nevertheless|nonetheless|despite|in spite of|notwithstanding)\b/gi, // Concessive
-      /\b(because|since|as|for|because of|due to|owing to|on account of|thanks to|so|therefore|thus|hence|consequently|as a result)\b/gi, // Causal/Result
-      /\b(and|moreover|furthermore|in addition|besides|also|not only|but also)\b/gi, // Additive
-      /\b(if|unless|provided that|providing that|as long as|so long as|in case|whether)\b/gi // Conditional
+      // 1. Concessive / Adversative / Contrast (zıtlık - beklenenin tersine rağmen)
+      /\b(although|though|even though|while|whereas|but|however|nevertheless|nonetheless|yet|still|despite|in spite of|notwithstanding|albeit|on the other hand|conversely|instead|rather|by contrast|on the contrary|admittedly|granted that)\b/gi,
+
+      // 2. Causal / Reason / Result (neden-sonuç)
+      /\b(because|since|as|for|because of|due to|owing to|on account of|thanks to|so|therefore|thus|hence|consequently|as a result|accordingly|as a consequence|for this reason|that is why|in consequence|thereby|henceforth)\b/gi,
+
+      // 3. Additive / Addition / Similarity (ekleme, benzerlik)
+      /\b(and|moreover|furthermore|in addition|besides|also|not only|but also|as well as|likewise|similarly|equally|again|coupled with|together with|along with|further|what is more|on top of that)\b/gi,
+
+      // 4. Conditional (koşul)
+      /\b(if|unless|provided that|providing that|as long as|so long as|in case|whether|on condition that|supposing|suppose|given that|assuming that|in the event that|only if|even if)\b/gi,
+
+      // 5. Temporal / Sequence / Time (zamanlama, sıralama)
+      /\b(before|after|then|next|afterwards|subsequently|previously|earlier|later|meanwhile|simultaneously|at the same time|finally|eventually|first|second|third|lastly|soon|immediately|until|since|as soon as|once|whenever|while|during|in the meantime)\b/gi,
+
+      // 6. Comparison / Similarity (karşılaştırma - benzerlik vurgusu)
+      /\b(like|as|similar to|comparable to|in comparison with|in the same way|manner|fashion|equally|likewise|correspondingly|analogously|just as|in like manner)\b/gi
     ]
   },
   passives: {

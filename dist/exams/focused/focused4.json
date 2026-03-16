@@ -1,0 +1,1222 @@
+{
+  "meta": {
+    "title": "YDS Practice Exam",
+    "subtitle": "42 Questions",
+    "total_questions": 80,
+    "duration_minutes": 180
+  },
+  "sections": [
+    {
+      "id": "vocabulary",
+      "label": "Vocabulary",
+      "from": 1,
+      "to": 6
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar",
+      "from": 7,
+      "to": 16
+    },
+    {
+      "id": "cloze_test",
+      "label": "Cloze Test",
+      "from": 17,
+      "to": 26
+    },
+    {
+      "id": "sentence_completion",
+      "label": "Sentence Completion",
+      "from": 27,
+      "to": 36
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "from": 37,
+      "to": 42
+    },
+    {
+      "id": "reading_comp",
+      "label": "Reading Comprehension",
+      "from": 43,
+      "to": 62
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue Completion",
+      "from": 63,
+      "to": 67
+    },
+    {
+      "id": "paraphrase",
+      "label": "Closest Meaning",
+      "from": 68,
+      "to": 71
+    },
+    {
+      "id": "para_completion",
+      "label": "Paragraph Completion",
+      "from": 72,
+      "to": 75
+    },
+    {
+      "id": "irrelevant",
+      "label": "Irrelevant Sentence",
+      "from": 76,
+      "to": 80
+    }
+  ],
+  "passages": [
+    {
+      "id": "cloze_1",
+      "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. (17) --- the term has not yet been officially adopted by the International Union of Geological Sciences, it is widely used in scientific discourse. Proponents argue that the industrial revolution (18) --- a turning point, marking the moment when human activity began to (19) --- natural processes. Critics, however, suggest that the impact of early agriculture (20) --- more significance. Regardless of its official status, the concept (21) --- our understanding of the environmental crisis."
+    },
+    {
+      "id": "cloze_2",
+      "text": "Quantum computing represents a paradigm shift in how information is processed. Unlike classical bits, which are either zero or one, qubits can exist in a state of superposition. This (22) --- enables quantum computers to perform complex calculations at speeds (23) --- for traditional hardware. Many researchers believe that this technology will eventually (24) --- cryptography and materials science. However, maintaining the stability of qubits remains a (25) --- challenge. Current prototypes are extremely sensitive to external noise, (26) --- requires sophisticated cooling systems."
+    },
+    {
+      "id": "pass_1",
+      "text": "The advent of quantum computing represents a paradigm shift in computational theory, promising to solve problems that are currently intractable for classical supercomputers. Unlike classical bits, which represent either a zero or a one, quantum bits, or qubits, can exist in a superposition of states. This allows quantum computers to perform massive parallel calculations. However, the fragility of qubits, susceptible to environmental noise and decoherence, remains a significant hurdle. Researchers are currently exploring various error-correction codes and topological stabilizers to maintain quantum state integrity over longer durations."
+    },
+    {
+      "id": "pass_2",
+      "text": "The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems. While the exact starting date is debated, many scientists point to the mid-20th century, coinciding with the 'Great Acceleration' of population growth and industrialization. Critics of the term argue that it oversimplifies the diverse impacts of different human societies. Nonetheless, the stratigraphic evidence of plastic pollution, carbon isotopes from nuclear testing, and nitrogen from fertilizers suggests a distinct boundary in the geological record."
+    },
+    {
+      "id": "pass_3",
+      "text": "In the realm of cognitive linguistics, the Sapir-Whorf hypothesis suggests that the structure of a language influences its speakers' worldview or cognition. The 'strong' version, linguistic determinism, posits that language determines thought entirely, while the 'weak' version, linguistic relativity, suggests that language merely shapes perception. Contemporary research often leans toward the weak version, finding that while language doesn't prevent us from thinking certain thoughts, it can make certain distinctions more salient or easier to process in memory."
+    },
+    {
+      "id": "pass_4",
+      "text": "The decline of biodiversity in coral reefs is often attributed to ocean acidification and rising sea temperatures. As the ocean absorbs more atmospheric carbon dioxide, its pH level drops, making it difficult for calcifying organisms like corals to build their skeletons. This process, known as bleaching, occurs when corals expel the symbiotic algae living in their tissues. Without these algae, the corals lose their primary food source and become vulnerable to disease and death, threatening the entire marine food web that relies on these ecosystems."
+    },
+    {
+      "id": "pass_5",
+      "text": "Urban planning in the 21st century has shifted focus toward 'the 15-minute city' concept, which aims to improve quality of life by ensuring essential services are within a short walk or bike ride from home. This model seeks to reduce carbon emissions by minimizing the need for private vehicle use. However, implementing this in historically car-dependent cities requires massive infrastructure overhauls and faces resistance from residents concerned about gentrification or restricted movement. Successful implementation requires balancing ecological goals with social equity."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": "vocabulary",
+      "question": "The sudden economic downturn led to a sharp --- in consumer spending, causing many retail businesses to struggle.",
+      "options": {
+        "A": "contraction",
+        "B": "enhancement",
+        "C": "fluctuation",
+        "D": "reconciliation",
+        "E": "inclination"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 2,
+      "section_id": "vocabulary",
+      "question": "The researcher provided --- evidence to support her hypothesis, making it difficult for the committee to reject her findings.",
+      "options": {
+        "A": "ambiguous",
+        "B": "compelling",
+        "C": "superficial",
+        "D": "precarious",
+        "E": "negligible"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 3,
+      "section_id": "vocabulary",
+      "question": "Environmentalists argue that the government must --- stricter regulations to prevent further habitat destruction in the Amazon.",
+      "options": {
+        "A": "waive",
+        "B": "overlook",
+        "C": "implement",
+        "D": "undermine",
+        "E": "dismiss"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 4,
+      "section_id": "vocabulary",
+      "question": "Despite the team's efforts, the project was --- due to a lack of funding and insufficient logistical support.",
+      "options": {
+        "A": "sustained",
+        "B": "facilitated",
+        "C": "thrived",
+        "D": "aborted",
+        "E": "refined"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 5,
+      "section_id": "vocabulary",
+      "question": "The diplomatic relations between the two countries have become increasingly --- following the recent border dispute.",
+      "options": {
+        "A": "strained",
+        "B": "affable",
+        "C": "cordial",
+        "D": "resilient",
+        "E": "versatile"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 6,
+      "section_id": "vocabulary",
+      "question": "The author's use of --- metaphors allows the reader to visualize the complex emotional landscape of the protagonist.",
+      "options": {
+        "A": "vivid",
+        "B": "opaque",
+        "C": "sparse",
+        "D": "mundane",
+        "E": "generic"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 7,
+      "section_id": "grammar",
+      "question": "By the time the new policy --- into effect next month, many small businesses --- their operations to meet the requirements.",
+      "options": {
+        "A": "comes / will have adjusted",
+        "B": "came / had adjusted",
+        "C": "will come / are adjusting",
+        "D": "is coming / will adjust",
+        "E": "has come / would adjust"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 8,
+      "section_id": "grammar",
+      "question": "Scientists are concerned --- the rate at which the polar ice caps are melting, as it is largely attributed --- human activity.",
+      "options": {
+        "A": "for / with",
+        "B": "about / to",
+        "C": "on / for",
+        "D": "in / by",
+        "E": "with / from"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 9,
+      "section_id": "grammar",
+      "question": "If the architect --- more attention to the structural integrity of the bridge, the collapse --- prevented.",
+      "options": {
+        "A": "paid / could be",
+        "B": "had paid / could have been",
+        "C": "would pay / was",
+        "D": "pays / would have been",
+        "E": "has paid / might be"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 10,
+      "section_id": "grammar",
+      "question": "--- had the surgeon completed the delicate operation than the patient began to show signs of rapid recovery.",
+      "options": {
+        "A": "Hardly",
+        "B": "Scarcely",
+        "C": "No sooner",
+        "D": "Barely",
+        "E": "Only when"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 11,
+      "section_id": "grammar",
+      "question": "The manager insisted that the report --- submitted by Friday afternoon, regardless of the workload.",
+      "options": {
+        "A": "is",
+        "B": "be",
+        "C": "was",
+        "D": "will be",
+        "E": "has been"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 12,
+      "section_id": "grammar",
+      "question": "The antique vase, --- was discovered in an archaeological dig in Greece, is estimated to be over two thousand years old.",
+      "options": {
+        "A": "that",
+        "B": "where",
+        "C": "which",
+        "D": "whose",
+        "E": "whom"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 13,
+      "section_id": "grammar",
+      "question": "Archaeologists are still trying to determine --- the ancient civilization disappeared so suddenly.",
+      "options": {
+        "A": "what",
+        "B": "which",
+        "C": "how",
+        "D": "who",
+        "E": "whose"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 14,
+      "section_id": "grammar",
+      "question": "She works --- a dedicated professional that she often stays late to ensure everything is perfect.",
+      "options": {
+        "A": "so",
+        "B": "such",
+        "C": "very",
+        "D": "more",
+        "E": "too"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 15,
+      "section_id": "grammar",
+      "question": "--- the rain was heavy, the match continued until the final whistle blew.",
+      "options": {
+        "A": "In spite of",
+        "B": "Although",
+        "C": "Despite",
+        "D": "Since",
+        "E": "Because"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 16,
+      "section_id": "grammar",
+      "question": "The students --- the exam results for weeks, but the teacher only posted them this morning.",
+      "options": {
+        "A": "have been awaiting",
+        "B": "had been awaiting",
+        "C": "are awaiting",
+        "D": "were awaited",
+        "E": "will await"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 17,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (17).",
+      "options": {
+        "A": "Because",
+        "B": "Although",
+        "C": "Unless",
+        "D": "Since",
+        "E": "If"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 18,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (18).",
+      "options": {
+        "A": "constitutes",
+        "B": "constituted",
+        "C": "will constitute",
+        "D": "is constituting",
+        "E": "has constituted"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 19,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (19).",
+      "options": {
+        "A": "overshadow",
+        "B": "simulate",
+        "C": "replicate",
+        "D": "initiate",
+        "E": "alleviate"
+      },
+      "correct": "A",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 20,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (20).",
+      "options": {
+        "A": "carries",
+        "B": "might carry",
+        "C": "would carry",
+        "D": "had carried",
+        "E": "carries"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 21,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (21).",
+      "options": {
+        "A": "had transformed",
+        "B": "has transformed",
+        "C": "transforms",
+        "D": "is transforming",
+        "E": "will transform"
+      },
+      "correct": "B",
+      "passage_id": "cloze_1"
+    },
+    {
+      "id": 22,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (22).",
+      "options": {
+        "A": "limitation",
+        "B": "capability",
+        "C": "deterrent",
+        "D": "reversal",
+        "E": "omission"
+      },
+      "correct": "B",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 23,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (23).",
+      "options": {
+        "A": "unattainable",
+        "B": "predictable",
+        "C": "negligible",
+        "D": "compatible",
+        "E": "redundant"
+      },
+      "correct": "A",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 24,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (24).",
+      "options": {
+        "A": "revolutionize",
+        "B": "stagnate",
+        "C": "jeopardize",
+        "D": "preclude",
+        "E": "obliterate"
+      },
+      "correct": "A",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 25,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (25).",
+      "options": {
+        "A": "formidable",
+        "B": "trivial",
+        "C": "peripheral",
+        "D": "fleeting",
+        "E": "minimal"
+      },
+      "correct": "A",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 26,
+      "section_id": "cloze_test",
+      "question": "Choose the best word for blank (26).",
+      "options": {
+        "A": "where",
+        "B": "which",
+        "C": "that",
+        "D": "when",
+        "E": "how"
+      },
+      "correct": "B",
+      "passage_id": "cloze_2"
+    },
+    {
+      "id": 27,
+      "section_id": "sentence_completion",
+      "question": "Even though the government has introduced new tax incentives for clean energy companies, ---.",
+      "options": {
+        "A": "the transition away from fossil fuels remains slower than expected",
+        "B": "they are likely to increase their investments in solar power",
+        "C": "it has led to a significant decrease in carbon emissions",
+        "D": "many businesses have already moved their headquarters abroad",
+        "E": "renewable energy is now the cheapest source of power globally"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 28,
+      "section_id": "sentence_completion",
+      "question": "Scientists are still investigating the long-term effects of microplastics ---.",
+      "options": {
+        "A": "as they are found in almost every ecosystem on the planet",
+        "B": "because they have no impact on human health",
+        "C": "since the study was completed many years ago",
+        "D": "whenever the plastic waste is properly recycled",
+        "E": "although the problem of pollution has been resolved"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 29,
+      "section_id": "sentence_completion",
+      "question": "--- that the early civilizations in Mesopotamia developed complex irrigation systems.",
+      "options": {
+        "A": "Historians generally agree",
+        "B": "While it was widely known",
+        "C": "Despite the lack of evidence",
+        "D": "If the researchers find any artifacts",
+        "E": "Until the discovery of new tablets"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 30,
+      "section_id": "sentence_completion",
+      "question": "Not only did the Industrial Revolution change the way goods were produced, ---.",
+      "options": {
+        "A": "but it also fundamentally altered the social structure of urban areas",
+        "B": "however it did not affect the lives of the working class",
+        "C": "instead it focused entirely on agricultural improvements",
+        "D": "so that people could live in rural areas comfortably",
+        "E": "as a result of the decline in international trade"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 31,
+      "section_id": "sentence_completion",
+      "question": "Provided that the data is collected accurately and analyzed thoroughly, ---.",
+      "options": {
+        "A": "the results of the experiment will be highly reliable",
+        "B": "the hypothesis would have been proven wrong",
+        "C": "no one would have believed the conclusion",
+        "D": "it was difficult to justify the research costs",
+        "E": "there is no need for further investigations"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 32,
+      "section_id": "sentence_completion",
+      "question": "While some argue that artificial intelligence will replace human workers, ---.",
+      "options": {
+        "A": "others believe it will create new opportunities for collaboration",
+        "B": "it has already become the most important technology today",
+        "C": "it is certain that machines cannot learn on their own",
+        "D": "businesses are investing heavily in automated systems",
+        "E": "it will lead to a decrease in global productivity"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 33,
+      "section_id": "sentence_completion",
+      "question": "The manager decided to postpone the meeting ---.",
+      "options": {
+        "A": "so that all stakeholders could attend",
+        "B": "although everyone was already in the room",
+        "C": "because the project had been completed on time",
+        "D": "unless there was a critical issue to discuss",
+        "E": "whenever the schedule was already full"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 34,
+      "section_id": "sentence_completion",
+      "question": "The university has decided to increase its tuition fees, ---.",
+      "options": {
+        "A": "which has sparked widespread protests among the students",
+        "B": "although it has more than enough financial resources",
+        "C": "since the number of applicants has decreased recently",
+        "D": "because the quality of education has remained the same",
+        "E": "in case the government provides more subsidies"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 35,
+      "section_id": "sentence_completion",
+      "question": "No matter how much effort you put into the preparation, ---.",
+      "options": {
+        "A": "there will always be some unforeseen challenges",
+        "B": "you would have succeeded in the competition",
+        "C": "it was easy to finish the task on time",
+        "D": "the result was exactly what we expected",
+        "E": "everything went according to the plan"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 36,
+      "section_id": "sentence_completion",
+      "question": "The treaty was signed in order to ---.",
+      "options": {
+        "A": "establish a framework for long-term peace in the region",
+        "B": "because the two countries had been at war for decades",
+        "C": "although the terms were not favorable for either side",
+        "D": "unless the international community intervenes",
+        "E": "even if the border dispute was not resolved"
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 37,
+      "section_id": "translation",
+      "question": "The development of sustainable energy sources is crucial not only for environmental protection but also for long-term economic stability.",
+      "options": {
+        "A": "Sürdürülebilir enerji kaynaklarının geliştirilmesi sadece çevrenin korunması için değil, aynı zamanda uzun vadeli ekonomik istikrar için de çok önemlidir.",
+        "B": "Sürdürülebilir enerji kaynakları hem çevreyi korumak hem de ekonomiyi istikrarlı hale getirmek amacıyla geliştirilmektedir.",
+        "C": "Ekonomik istikrarın ve çevrenin korunması için sürdürülebilir enerji kaynaklarının geliştirilmesi zorunludur.",
+        "D": "Çevrenin korunması kadar ekonomik istikrar için de sürdürülebilir enerji kaynaklarının geliştirilmesi gerekmektedir.",
+        "E": "Sürdürülebilir enerji kaynakları geliştirilmedikçe ne çevre korunabilir ne de ekonomik istikrar sağlanabilir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 38,
+      "section_id": "translation",
+      "question": "Many psychologists suggest that early childhood experiences play a fundamental role in shaping an individual's personality in later life.",
+      "options": {
+        "A": "Pek çok psikolog, erken çocukluk deneyimlerinin bireyin sonraki yaşamındaki kişiliğini şekillendirmede temel bir rol oynadığını ileri sürmektedir.",
+        "B": "Bireyin kişiliğinin şekillenmesinde çocukluk deneyimlerinin önemi pek çok psikolog tarafından kabul edilmektedir.",
+        "C": "Psikologlara göre, çocukluk dönemindeki deneyimler bireyin ilerideki kişiliğini doğrudan etkileyen temel unsurlardır.",
+        "D": "Erken çocukluk deneyimleri, bireyin sonraki yaşamında kişiliğini şekillendiren en önemli faktörlerden biridir.",
+        "E": "Birçok psikolog, bireyin kişiliğinin temel olarak erken çocukluk döneminde şekillenmeye başladığını iddia eder."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 39,
+      "section_id": "translation",
+      "question": "Although the new law aims to reduce plastic waste, experts argue that it does not provide enough incentives for recycling companies.",
+      "options": {
+        "A": "Yeni yasa plastik atıkları azaltmayı amaçlasa da uzmanlar, bu yasanın geri dönüşüm şirketleri için yeterli teşvik sağlamadığını savunuyor.",
+        "B": "Uzmanlar, plastik atıkları azaltmayı hedefleyen yeni yasanın geri dönüşüm şirketlerini teşvik etmede yetersiz kaldığını belirtiyor.",
+        "C": "Plastik atıkların azaltılması hedeflense de uzmanlara göre yeni yasa geri dönüşüm şirketlerine hiçbir avantaj sunmuyor.",
+        "D": "Yeni yasanın amacı plastik atıkları azaltmaktır, ancak geri dönüşüm şirketleri bu yasadan yeterince faydalanamamaktadır.",
+        "E": "Geri dönüşüm şirketleri için yeterli teşvik içermeyen bu yeni yasa, plastik atıkları azaltma konusunda başarısız olabilir."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 40,
+      "section_id": "translation",
+      "question": "Eğitim sistemindeki reformlar, öğrencilerin sadece akademik başarılarını değil, aynı zamanda eleştirel düşünme becerilerini de geliştirmeyi hedeflemelidir.",
+      "options": {
+        "A": "Reforms in the education system should aim to develop not only students' academic success but also their critical thinking skills.",
+        "B": "The main goal of education reforms is to improve both academic performance and critical thinking abilities of students.",
+        "C": "Academic success and critical thinking skills should be the primary focus of any reform in the education system.",
+        "D": "Education reforms must target students' critical thinking skills alongside their academic achievements.",
+        "E": "To develop critical thinking skills, the education system needs reforms that also focus on academic success."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 41,
+      "section_id": "translation",
+      "question": "Son yıllarda yapılan araştırmalar, düzenli egzersiz yapmanın zihinsel sağlık üzerinde olumlu etkileri olduğunu kanıtlamıştır.",
+      "options": {
+        "A": "Research conducted in recent years has proven that regular exercise has positive effects on mental health.",
+        "B": "Recent studies show that doing exercise regularly is beneficial for protecting mental health.",
+        "C": "It has been proven by research in recent years that regular exercise can improve mental health.",
+        "D": "Regular exercise is known to have positive impacts on mental health according to recent research.",
+        "E": "The link between regular exercise and mental health has been proven by many studies recently."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 42,
+      "section_id": "translation",
+      "question": "Teknolojinin hızla ilerlemesiyle birlikte, geleneksel iş modelleri yerini dijital platformlara bırakmaya başlamıştır.",
+      "options": {
+        "A": "With the rapid advancement of technology, traditional business models have begun to give way to digital platforms.",
+        "B": "As technology advances rapidly, digital platforms are replacing traditional business models everywhere.",
+        "C": "Traditional business models are being replaced by digital platforms due to the rapid progress in technology.",
+        "D": "The rapid development of technology has forced traditional business models to change into digital platforms.",
+        "E": "Digital platforms have started to replace traditional business models as a result of technological progress."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 43,
+      "section_id": "reading_comp",
+      "question": "According to the passage on quantum computing, what is the primary advantage of qubits over classical bits?",
+      "options": {
+        "A": "They are more stable and less susceptible to noise.",
+        "B": "They can exist in multiple states simultaneously through superposition.",
+        "C": "They are easier to manufacture using existing silicon technology.",
+        "D": "They eliminate the need for error-correction codes.",
+        "E": "They operate at much higher temperatures than classical bits."
+      },
+      "correct": "B",
+      "passage_id": "pass_1"
+    },
+    {
+      "id": 44,
+      "section_id": "reading_comp",
+      "question": "What does the term 'decoherence' refer to in the context of the first passage?",
+      "options": {
+        "A": "The process of upgrading classical supercomputers.",
+        "B": "The synchronization of multiple quantum computers.",
+        "C": "The loss of the quantum state due to environmental interference.",
+        "D": "The successful implementation of error-correction codes.",
+        "E": "The transition from a zero state to a one state in a classical bit."
+      },
+      "correct": "C",
+      "passage_id": "pass_1"
+    },
+    {
+      "id": 45,
+      "section_id": "reading_comp",
+      "question": "Which of the following can be inferred about the current state of quantum computing?",
+      "options": {
+        "A": "It has already replaced classical supercomputing in most industries.",
+        "B": "It is currently hindered by the physical instability of its core components.",
+        "C": "It is no longer a subject of intense research due to cost constraints.",
+        "D": "Environmental noise has been completely eliminated by topological stabilizers.",
+        "E": "It is primarily used for solving simple mathematical problems."
+      },
+      "correct": "B",
+      "passage_id": "pass_1"
+    },
+    {
+      "id": 46,
+      "section_id": "reading_comp",
+      "question": "The author's attitude towards quantum computing can best be described as:",
+      "options": {
+        "A": "Skeptical and dismissive of its potential.",
+        "B": "Exclusively focused on its military applications.",
+        "C": "Acknowledging both its potential and its current limitations.",
+        "D": "Critical of the funding allocated to quantum research.",
+        "E": "Indifferent to the technical hurdles mentioned."
+      },
+      "correct": "C",
+      "passage_id": "pass_1"
+    },
+    {
+      "id": 47,
+      "section_id": "reading_comp",
+      "question": "According to the passage on the Anthropocene, what happened during the 'Great Acceleration'?",
+      "options": {
+        "A": "The Earth's rotation speed increased slightly.",
+        "B": "There was a rapid increase in human population and industrial activity.",
+        "C": "The first geological epoch was officially recorded.",
+        "D": "Nuclear testing was banned worldwide.",
+        "E": "Plastic pollution was completely eradicated."
+      },
+      "correct": "B",
+      "passage_id": "pass_2"
+    },
+    {
+      "id": 48,
+      "section_id": "reading_comp",
+      "question": "Why do some critics oppose the use of the term 'Anthropocene'?",
+      "options": {
+        "A": "They believe that humans have had no impact on the environment.",
+        "B": "They think the stratigraphic record is too clear to need a new name.",
+        "C": "They argue it fails to account for the varying degrees of impact among different cultures.",
+        "D": "They claim that the mid-20th century is too early for such a designation.",
+        "E": "They prefer to use terms related to nitrogen fertilizers only."
+      },
+      "correct": "C",
+      "passage_id": "pass_2"
+    },
+    {
+      "id": 49,
+      "section_id": "reading_comp",
+      "question": "Which evidence is cited as a marker for the Anthropocene's boundary?",
+      "options": {
+        "A": "Ancient volcanic eruptions.",
+        "B": "The extinction of the dinosaurs.",
+        "C": "The presence of isotopes from nuclear testing in rock layers.",
+        "D": "The natural migration patterns of animals.",
+        "E": "Fluctuations in the Earth's magnetic field."
+      },
+      "correct": "C",
+      "passage_id": "pass_2"
+    },
+    {
+      "id": 50,
+      "section_id": "reading_comp",
+      "question": "The passage suggests that the Anthropocene is:",
+      "options": {
+        "A": "An officially accepted period by all geological organizations.",
+        "B": "A period defined by the absence of human interference.",
+        "C": "A proposed time frame marked by human-driven changes to the planet.",
+        "D": "A purely political term with no scientific basis.",
+        "E": "The first epoch in the history of the Earth."
+      },
+      "correct": "C",
+      "passage_id": "pass_2"
+    },
+    {
+      "id": 51,
+      "section_id": "reading_comp",
+      "question": "What is the difference between linguistic determinism and linguistic relativity?",
+      "options": {
+        "A": "Determinism suggests language only influences perception, while relativity says it dictates thought.",
+        "B": "Relativity is the 'strong' version, while determinism is the 'weak' version.",
+        "C": "Determinism claims language dictates thought, while relativity says it merely influences it.",
+        "D": "There is no difference; both terms are used interchangeably.",
+        "E": "Relativity focuses on grammar, while determinism focuses on vocabulary."
+      },
+      "correct": "C",
+      "passage_id": "pass_3"
+    },
+    {
+      "id": 52,
+      "section_id": "reading_comp",
+      "question": "What does contemporary research generally conclude about the Sapir-Whorf hypothesis?",
+      "options": {
+        "A": "It has been entirely debunked as a myth.",
+        "B": "The strong version is the most accurate representation of cognition.",
+        "C": "Language can affect the ease with which we process certain information.",
+        "D": "Speakers of different languages have identical worldviews.",
+        "E": "Cognition is entirely independent of language structure."
+      },
+      "correct": "C",
+      "passage_id": "pass_3"
+    },
+    {
+      "id": 53,
+      "section_id": "reading_comp",
+      "question": "According to the third passage, language can make certain distinctions more 'salient'. This means:",
+      "options": {
+        "A": "Harder to notice.",
+        "B": "More prominent or noticeable.",
+        "C": "Scientifically proven.",
+        "D": "Grammatically incorrect.",
+        "E": "Culturally insensitive."
+      },
+      "correct": "B",
+      "passage_id": "pass_3"
+    },
+    {
+      "id": 54,
+      "section_id": "reading_comp",
+      "question": "Which of the following would be an example of linguistic relativity?",
+      "options": {
+        "A": "Being unable to see a color because your language lacks a word for it.",
+        "B": "Thinking about time linearly because your language uses spatial metaphors for it.",
+        "C": "All humans having the same biological capacity for language.",
+        "D": "Learning a second language to improve job prospects.",
+        "E": "The evolution of slang in urban environments."
+      },
+      "correct": "B",
+      "passage_id": "pass_3"
+    },
+    {
+      "id": 55,
+      "section_id": "reading_comp",
+      "question": "What is the primary cause of coral bleaching mentioned in the passage?",
+      "options": {
+        "A": "Overfishing in tropical waters.",
+        "B": "The expulsion of symbiotic algae due to environmental stress.",
+        "C": "The physical destruction of reefs by anchors.",
+        "D": "A decrease in the salt content of the ocean.",
+        "E": "The overpopulation of predatory fish."
+      },
+      "correct": "B",
+      "passage_id": "pass_4"
+    },
+    {
+      "id": 56,
+      "section_id": "reading_comp",
+      "question": "How does ocean acidification affect calcifying organisms?",
+      "options": {
+        "A": "It increases their growth rate significantly.",
+        "B": "It makes it harder for them to form their skeletal structures.",
+        "C": "It provides them with more nutrients.",
+        "D": "It encourages the growth of more algae.",
+        "E": "It has no effect on their physical development."
+      },
+      "correct": "B",
+      "passage_id": "pass_4"
+    },
+    {
+      "id": 57,
+      "section_id": "reading_comp",
+      "question": "According to the fourth passage, why are corals dependent on algae?",
+      "options": {
+        "A": "The algae protect them from predators.",
+        "B": "The algae are their main source of food.",
+        "C": "The algae help them regulate the ocean's pH.",
+        "D": "The algae provide the calcium needed for skeletons.",
+        "E": "The algae allow them to survive in cold water."
+      },
+      "correct": "B",
+      "passage_id": "pass_4"
+    },
+    {
+      "id": 58,
+      "section_id": "reading_comp",
+      "question": "What is the broader consequence of coral reef decline?",
+      "options": {
+        "A": "An increase in global shipping routes.",
+        "B": "A threat to the entire marine food web.",
+        "C": "Cooler ocean temperatures.",
+        "D": "Reduction in atmospheric carbon dioxide.",
+        "E": "The expansion of land-based agriculture."
+      },
+      "correct": "B",
+      "passage_id": "pass_4"
+    },
+    {
+      "id": 59,
+      "section_id": "reading_comp",
+      "question": "The main goal of the '15-minute city' is to:",
+      "options": {
+        "A": "Ensure all cities are the same size.",
+        "B": "Limit the amount of time people spend at work.",
+        "C": "Make essential services accessible without cars.",
+        "D": "Increase the speed of public transportation.",
+        "E": "Build more highways for faster commuting."
+      },
+      "correct": "C",
+      "passage_id": "pass_5"
+    },
+    {
+      "id": 60,
+      "section_id": "reading_comp",
+      "question": "Why might some residents resist the '15-minute city' model?",
+      "options": {
+        "A": "They believe it will increase carbon emissions.",
+        "B": "They are concerned about potential gentrification.",
+        "C": "They want to increase their reliance on private vehicles.",
+        "D": "They think it will make essential services harder to reach.",
+        "E": "They prefer living in industrial zones."
+      },
+      "correct": "B",
+      "passage_id": "pass_5"
+    },
+    {
+      "id": 61,
+      "section_id": "reading_comp",
+      "question": "According to the passage, implementing this urban model in car-dependent cities:",
+      "options": {
+        "A": "Is impossible due to legal restrictions.",
+        "B": "Requires very little change to existing roads.",
+        "C": "Needs significant changes to infrastructure.",
+        "D": "Has already been achieved in most US cities.",
+        "E": "Is primarily a problem for rural areas."
+      },
+      "correct": "C",
+      "passage_id": "pass_5"
+    },
+    {
+      "id": 62,
+      "section_id": "reading_comp",
+      "question": "The text implies that a successful '15-minute city' must consider:",
+      "options": {
+        "A": "Only the environmental benefits.",
+        "B": "Only the economic profits for developers.",
+        "C": "Both ecological goals and social fairness.",
+        "D": "The exclusion of all bicycles from city centers.",
+        "E": "Prioritizing parking spaces over green areas."
+      },
+      "correct": "C",
+      "passage_id": "pass_5"
+    },
+    {
+      "id": 63,
+      "section_id": "dialogue",
+      "question": "Professor: The peer review process is fundamental to scientific integrity.\nStudent: But doesn't it also slow down the dissemination of urgent research?\nProfessor: ----\nStudent: I see. So it's a trade-off between speed and reliability.",
+      "options": {
+        "A": "Most journals are now moving to an open-access model.",
+        "B": "It does, but it ensures that errors are caught before they reach the public.",
+        "C": "Reviewers are often not paid for their time, which is unfair.",
+        "D": "You should submit your paper as soon as possible.",
+        "E": "Science is always changing, regardless of the review process."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 64,
+      "section_id": "dialogue",
+      "question": "Architect: We should incorporate more biophilic design elements into the new office.\nClient: You mean like adding more plants?\nArchitect: ----\nClient: Ah, so it's about a deeper connection to nature through light and materials too.",
+      "options": {
+        "A": "No, I think plants are too difficult to maintain indoors.",
+        "B": "Yes, but it also includes natural lighting, ventilation, and organic shapes.",
+        "C": "The budget doesn't allow for any extra greenery.",
+        "D": "Biophilic design is actually a very old concept from the 1970s.",
+        "E": "We are going to use only synthetic materials for this project."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 65,
+      "section_id": "dialogue",
+      "question": "Journalist: How do you respond to claims that your company's algorithm is biased?\nCEO: We take these concerns seriously and are auditing our datasets.\nJournalist: ----\nCEO: Exactly, which is why we are now diversifying our engineering team.",
+      "options": {
+        "A": "Do you think the algorithm is actually working correctly?",
+        "B": "But auditing alone might not address the lack of diversity in the development phase.",
+        "C": "The data is proprietary, so we cannot share it with you.",
+        "D": "Most users are happy with the results they get.",
+        "E": "Why did you choose this specific algorithm in the first place?"
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 66,
+      "section_id": "dialogue",
+      "question": "Economist A: Implementing a Universal Basic Income could stimulate local economies.\nEconomist B: Perhaps, but the risk of hyperinflation cannot be ignored.\nEconomist A: ----\nEconomist B: That depends on whether the supply of goods can keep up with the increased demand.",
+      "options": {
+        "A": "Inflation is only a problem in developing nations.",
+        "B": "But wouldn't the increased purchasing power offset the rise in prices?",
+        "C": "UBI is the only way to solve the problem of automation.",
+        "D": "Many people would stop working if they received free money.",
+        "E": "The taxes required to fund it would be far too high."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 67,
+      "section_id": "dialogue",
+      "question": "Patient: I've been feeling extremely fatigued despite sleeping eight hours a night.\nDoctor: It could be many things, from a vitamin deficiency to sleep apnea.\nPatient: ----\nDoctor: We'll start with a full blood panel to rule out the most common causes.",
+      "options": {
+        "A": "I've already tried drinking more coffee, but it doesn't help.",
+        "B": "Should we run some tests to narrow it down?",
+        "C": "My brother had the same problem last year.",
+        "D": "Is it possible that I am just getting older?",
+        "E": "I prefer not to take any medication if possible."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 68,
+      "section_id": "paraphrase",
+      "question": "Hardly had the new regulation been implemented when the industry leaders began to protest against its stringent requirements.",
+      "options": {
+        "A": "Industry leaders protested the regulation even before it was officially implemented.",
+        "B": "As soon as the strict new regulation was put into effect, leaders in the industry started their opposition.",
+        "C": "The regulation was so strict that industry leaders refused to implement it.",
+        "D": "Despite the protests of industry leaders, the regulation was implemented quite quickly.",
+        "E": "The industry leaders were consulted before the stringent regulation was implemented."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 69,
+      "section_id": "paraphrase",
+      "question": "If the government had invested more in renewable energy a decade ago, the current energy crisis would not be so severe.",
+      "options": {
+        "A": "The current energy crisis is severe because the government failed to invest enough in renewables ten years ago.",
+        "B": "The government is finally investing in renewable energy to solve the severe energy crisis.",
+        "C": "Ten years ago, the government predicted that the energy crisis would become this severe.",
+        "D": "The energy crisis would be worse today if the government hadn't invested in renewables a decade ago.",
+        "E": "Investing in renewable energy ten years ago was the only way to avoid any energy crisis."
+      },
+      "correct": "A",
+      "passage_id": null
+    },
+    {
+      "id": 70,
+      "section_id": "paraphrase",
+      "question": "It is not so much the content of the lecture that matters as the way the professor engages with the students.",
+      "options": {
+        "A": "Both the content and the professor's engagement are equally important for the students.",
+        "B": "The professor's interaction with the students is more important than the actual material being taught.",
+        "C": "The content of the lecture is what matters most, regardless of the professor's style.",
+        "D": "Students care more about the lecture content than how the professor treats them.",
+        "E": "A professor who cannot engage students should not be allowed to choose the lecture content."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 71,
+      "section_id": "paraphrase",
+      "question": "The scarcity of clean water in the region is primarily due to prolonged droughts exacerbated by poor infrastructure management.",
+      "options": {
+        "A": "Poor infrastructure is the only reason why there is no clean water in the region during droughts.",
+        "B": "If the infrastructure were better, the droughts would not cause any water scarcity in the region.",
+        "C": "The lack of clean water stems from long periods of no rain, made worse by the ineffective handling of infrastructure.",
+        "D": "The region's infrastructure was destroyed by the prolonged droughts, leading to a water crisis.",
+        "E": "Managing infrastructure is the primary way to prevent droughts from affecting the water supply."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 72,
+      "section_id": "para_completion",
+      "question": "In history, the printing press is often cited as the catalyst for the Reformation. By allowing for the mass production of books, it broke the monopoly of the elite over knowledge. ----. Consequently, literacy rates began to climb, and new ideas spread across Europe at an unprecedented pace.",
+      "options": {
+        "A": "The Catholic Church was the main patron of the arts during this period.",
+        "B": "Bibles and political pamphlets became accessible to the common person for the first time.",
+        "C": "Many people still preferred handwritten manuscripts for their aesthetic value.",
+        "D": "The invention of the steam engine would later have a similar impact on industry.",
+        "E": "Most printers were located in major trade hubs like Venice and Antwerp."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 73,
+      "section_id": "para_completion",
+      "question": "Dark matter remains one of the greatest mysteries in modern astrophysics. Although it cannot be seen directly, its presence is inferred from its gravitational effects on visible matter. ----. Without it, galaxies would likely fly apart rather than rotate in the organized fashion we observe.",
+      "options": {
+        "A": "The Hubble Space Telescope has provided many images of distant nebulae.",
+        "B": "It is estimated to make up about 85% of the matter in the universe.",
+        "C": "Einstein's theory of relativity revolutionized our understanding of gravity.",
+        "D": "Black holes also exert a strong gravitational pull on surrounding stars.",
+        "E": "NASA is planning new missions to explore the surface of Mars."
+      },
+      "correct": "B",
+      "passage_id": null
+    },
+    {
+      "id": 74,
+      "section_id": "para_completion",
+      "question": "The concept of 'nudge theory' suggests that subtle policy shifts can significantly influence human behavior without restricting choice. For instance, placing healthy snacks at eye level in a cafeteria encourages better eating habits. ----. In this way, governments can improve public health or savings rates without resorting to bans.",
+      "options": {
+        "A": "However, some critics argue that this is a form of psychological manipulation.",
+        "B": "The theory was popularized by Nobel laureate Richard Thaler.",
+        "C": "Similarly, automatically enrolling employees in pension plans increases participation.",
+        "D": "Many people find it difficult to stick to a strict diet during the holidays.",
+        "E": "A ban on sugary drinks is a much more direct way to improve health."
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 75,
+      "section_id": "para_completion",
+      "question": "Deep-sea exploration is often compared to space exploration because of the extreme conditions involved. Both environments require specialized equipment to withstand high pressure or vacuum. ----. Yet, we have more detailed maps of the Moon's surface than of our own ocean floor.",
+      "options": {
+        "A": "The ocean covers more than 70 percent of the Earth's surface.",
+        "B": "Astronauts must undergo rigorous training before going into orbit.",
+        "C": "Submersibles are used to study hydrothermal vents and unique marine life.",
+        "D": "The costs associated with these missions are often cited as a barrier.",
+        "E": "Furthermore, both remain largely unexplored frontiers for humanity."
+      },
+      "correct": "E",
+      "passage_id": null
+    },
+    {
+      "id": 76,
+      "section_id": "irrelevant",
+      "question": "(I) Genetic engineering has the potential to cure hereditary diseases by editing faulty DNA. (II) CRISPR-Cas9 is a popular tool that allows scientists to cut and paste genes with precision. (III) Many people believe that organic farming is the only way to save the planet. (IV) However, ethical concerns regarding 'designer babies' have sparked international debate. (V) Regulatory frameworks are being developed to ensure these technologies are used responsibly.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "C",
+      "passage_id": null
+    },
+    {
+      "id": 77,
+      "section_id": "irrelevant",
+      "question": "(I) The Renaissance was a period of intense cultural and artistic rebirth in Europe. (II) It began in Italy and eventually spread to the rest of the continent. (III) Leonardo da Vinci and Michelangelo are often considered the quintessential figures of this era. (IV) The Industrial Revolution later changed the way goods were manufactured. (V) Their work emphasized humanism and the study of classical antiquity.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 78,
+      "section_id": "irrelevant",
+      "question": "(I) Photosynthesis is the process by which green plants convert sunlight into chemical energy. (II) During this process, carbon dioxide is absorbed and oxygen is released. (III) This is essential for maintaining the oxygen levels in the Earth's atmosphere. (IV) Some plants have adapted to live in desert environments by storing water. (V) Without this biological mechanism, most life forms on Earth could not survive.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 79,
+      "section_id": "irrelevant",
+      "question": "(I) Behavioral economics combines insights from psychology and economics to explain human decision-making. (II) It challenges the traditional view that humans always act rationally to maximize utility. (III) For example, the 'endowment effect' shows that people value things more just because they own them. (IV) Standard economic models are still taught in most introductory university courses. (V) These deviations from rationality suggest that market outcomes are not always efficient.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    },
+    {
+      "id": 80,
+      "section_id": "irrelevant",
+      "question": "(I) The Great Wall of China is one of the most impressive architectural feats in human history. (II) It was built over several centuries to protect the Chinese Empire from nomadic invasions. (III) Modern tourists can visit various restored sections of the wall near Beijing. (IV) Silk was the primary commodity traded along the ancient Silk Road connecting East and West. (V) The total length of the wall, including all its branches, spans thousands of miles.",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V"
+      },
+      "correct": "D",
+      "passage_id": null
+    }
+  ]
+}
