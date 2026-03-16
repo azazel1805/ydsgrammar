@@ -62,6 +62,13 @@ const REDUCTION_CHEATSHEET = [
 function getReductionsHTML() {
   return /* html */`
 <div class="max-w-6xl mx-auto px-4 py-12">
+  <!-- Action Bar (Print) -->
+  <div class="flex justify-end mb-8 no-print">
+      <button onclick="window.print()" class="print-btn flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-2xl font-bold hover:bg-red-800 transition-all shadow-xl active:scale-95">
+          <i class="fas fa-file-pdf"></i> PDF İndir / Yazdır
+      </button>
+  </div>
+
   <div class="text-center mb-16">
     <div class="inline-flex items-center gap-3 bg-red-50 text-red-700 px-5 py-2 rounded-full text-sm font-bold mb-4 border border-red-100 uppercase tracking-widest">
       <i class="fas fa-scissors"></i> Clause Reductions
