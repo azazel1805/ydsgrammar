@@ -82,6 +82,28 @@ function getAiReadingHTML() {
       </div>
     </div>
 
+    <!-- Word Modal (Copied from focused-exams for stability) -->
+    <div id="aiWordModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-[200] p-4 overflow-y-auto">
+        <div class="bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+            <div class="p-8 lg:p-10 text-black">
+                <div class="flex justify-between items-start mb-8">
+                    <div>
+                        <h2 id="aiModalWord" class="text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter italic">WORD</h2>
+                        <p id="aiModalIpa" class="text-slate-400 font-mono mt-2 text-sm">// ... //</p>
+                    </div>
+                    <button onclick="closeAiWordModal()" class="w-10 h-10 lg:w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div id="aiModalContent" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
+                    <!-- Word info cards injected here -->
+                </div>
+                <div class="mt-8">
+                    <button onclick="closeAiWordModal()" class="w-full px-8 py-4 bg-slate-100 text-slate-600 font-black rounded-2xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">KAPAT</button>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
   `;
 }
@@ -128,7 +150,9 @@ window.generateAiReading = async function() {
 
         // Render UI
         document.getElementById('passageTitle').textContent = data.title;
-        document.getElementById('passageBody').innerHTML = data.passage.split("\n").map(p => `<p class="mb-4">${p}</p>`).join("");
+        // Render UI
+        document.getElementById('passageTitle').textContent = data.title;
+        document.getElementById('passageBody').innerHTML = data.passage.split("\n").map(p => `<p class="mb-4">${aiMakeClickable(p)}</p>`).join("");
         
         renderAiQuestions(data.questions);
 
@@ -225,3 +249,62 @@ window.finishAiReading = function() {
 };
 
 window.aiReadingHTML = getAiReadingHTML();
+
+// Interactive Word Logic
+function aiMakeClickable(text) {
+    if (!text) return "";
+    const parts = text.split(/([\s,.!?;:()"]+)/);
+    return parts.map(part => {
+        if (/[\s,.!?;:()"]+/.test(part)) return part;
+        if (part.trim().length === 0) return part;
+        return `<span onclick="showAiWordDetails('${part.replace(/'/g, "\\'")}')" class="cursor-pointer hover:bg-purple-100 hover:text-purple-900 rounded transition-colors underline decoration-purple-100 underline-offset-4">${part}</span>`;
+    }).join('');
+}
+
+async function showAiWordDetails(word) {
+    const modal = document.getElementById('aiWordModal');
+    const wordEl = document.getElementById('aiModalWord');
+    const ipaEl = document.getElementById('aiModalIpa');
+    const contentEl = document.getElementById('aiModalContent');
+    
+    if (!modal) return;
+
+    wordEl.innerText = word;
+    ipaEl.innerText = "Sözlük aranıyor...";
+    contentEl.innerHTML = '<div class="flex justify-center p-12"><i class="fas fa-spinner fa-spin text-3xl text-purple-500"></i></div>';
+    
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    
+    try {
+        const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+        if (res.ok) {
+            const data = await res.json();
+            const first = data[0];
+            ipaEl.innerText = first.phonetic || '// ... //';
+            
+            contentEl.innerHTML = first.meanings.map(m => `
+              <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                <p class="text-[10px] uppercase font-black text-purple-500 mb-2">${m.partOfSpeech}</p>
+                <p class="text-slate-800 font-medium italic mb-2">${m.definitions[0].definition}</p>
+                ${m.definitions[0].example ? `<p class="text-xs text-slate-500 bg-white p-3 rounded-xl border border-slate-100 mt-3 italic">"${m.definitions[0].example}"</p>` : ''}
+              </div>
+            `).join('');
+        } else {
+           ipaEl.innerText = "";
+           contentEl.innerHTML = `<div class="p-8 text-center text-slate-400 italic">Sözlük verisi bulunamadı, ancak bu kelime kritik olabilir.</div>`;
+        }
+    } catch(e) {
+        contentEl.innerHTML = "Bir hata oluştu.";
+    }
+}
+
+window.closeAiWordModal = function() {
+    const modal = document.getElementById('aiWordModal');
+    if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+};
+
+window.showAiWordDetails = showAiWordDetails;
