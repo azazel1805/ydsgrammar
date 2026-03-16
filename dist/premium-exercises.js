@@ -26,6 +26,8 @@ let premiumExercisesData = [
     }
 ];
 
+let currentExercise = null;
+
 function getPremiumExercisesHTML() {
     return `
     <div class="max-w-6xl mx-auto px-4 py-12">
@@ -38,7 +40,51 @@ function getPremiumExercisesHTML() {
             <p class="text-slate-500 max-w-2xl mx-auto italic font-medium">Metin bazlı kelime çalışmaları ve eşleştirme alıştırmaları ile dil becerilerinizi geliştirin.</p>
         </div>
 
+        <!-- AI Setup Section -->
+        <div id="exerciseAISetup" class="bg-white border border-slate-100 rounded-[2.5rem] p-8 md:p-10 shadow-sm mb-12">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-10 h-10 rounded-xl bg-red-800 flex items-center justify-center text-white">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800">AI Alıştırma Oluşturucu</h3>
+                    <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Herhangi bir konuda eşleştirme egzersizi üretin</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-3 ml-1">KONU BAŞLIĞI</label>
+                    <input type="text" id="exAiTopic" placeholder="Örn: Artificial Intelligence, Tourism, Climate Change..." 
+                           class="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl px-6 py-4 font-bold text-slate-800 focus:border-red-600 outline-none transition-all appearance-none">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-3 ml-1">SEVİYE</label>
+                    <select id="exAiDiff" class="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl px-6 py-4 font-bold text-slate-800 focus:border-red-600 outline-none transition-all appearance-none cursor-pointer">
+                        <option value="YDT">YDT Seviyesi (Intermediate)</option>
+                        <option value="YDS">YDS Seviyesi (Advanced)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="flex justify-center">
+                <button onclick="generateAiExercise()" id="exGenerateBtn" class="px-10 py-4 bg-slate-900 text-white rounded-2xl font-black text-sm shadow-xl hover:bg-red-900 transition-all flex items-center gap-3 group">
+                    <span>OLAĞANÜSTÜ ALIŞTIRMA ÜRET</span>
+                    <i class="fas fa-sparkles text-yellow-400 group-hover:rotate-12 transition-transform"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="exLoading" class="hidden py-20 text-center animate-in fade-in duration-300">
+            <div class="w-16 h-16 border-4 border-red-100 border-t-red-800 rounded-full animate-spin mx-auto mb-6"></div>
+            <p class="font-serif italic text-slate-500 animate-pulse">Yapay zeka metni dokuyor ve kelime alıştırmasını tasarlıyor...</p>
+        </div>
+
         <div id="exerciseList" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="md:col-span-2 lg:col-span-3 mb-4">
+                <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest border-b border-slate-100 pb-2">Hazır Koleksiyon</h4>
+            </div>
             ${premiumExercisesData.map(ex => `
                 <div onclick="loadPremiumExercise('${ex.id}')" class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-red-200 transition-all cursor-pointer group relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-red-50 rounded-bl-full -mr-12 -mt-12 group-hover:bg-red-100 transition-colors"></div>
@@ -60,25 +106,69 @@ function getPremiumExercisesHTML() {
     `;
 }
 
+window.generateAiExercise = async function() {
+    const topic = document.getElementById('exAiTopic').value.trim();
+    const difficulty = document.getElementById('exAiDiff').value;
+    const setup = document.getElementById('exerciseAISetup');
+    const loading = document.getElementById('exLoading');
+    const list = document.getElementById('exerciseList');
+    const btn = document.getElementById('exGenerateBtn');
+
+    if (!topic) {
+        alert("Lütfen bir konu başlığı giriniz.");
+        return;
+    }
+
+    setup.classList.add('hidden');
+    list.classList.add('hidden');
+    loading.classList.remove('hidden');
+
+    try {
+        const res = await fetch("/.netlify/functions/generate-premium-exercise", {
+            method: "POST",
+            body: JSON.stringify({ topic, difficulty })
+        });
+
+        if (!res.ok) throw new Error("AI Generation failed");
+
+        const data = await res.json();
+        renderExerciseStage(data, difficulty);
+        
+    } catch (err) {
+        console.error(err);
+        alert("Alıştırma üretilirken bir hata oluştu. Lütfen tekrar deneyin.");
+        setup.classList.remove('hidden');
+        list.classList.remove('hidden');
+    } finally {
+        loading.classList.add('hidden');
+    }
+};
+
 window.loadPremiumExercise = function(id) {
     const ex = premiumExercisesData.find(e => e.id === id);
     if (!ex) return;
+    renderExerciseStage(ex, ex.level);
+};
 
+function renderExerciseStage(ex, level) {
+    currentExercise = ex;
     const list = document.getElementById('exerciseList');
     const stage = document.getElementById('exerciseStage');
+    const setup = document.getElementById('exerciseAISetup');
 
     list.classList.add('hidden');
+    setup.classList.add('hidden');
     stage.classList.remove('hidden');
 
     stage.innerHTML = `
         <div class="mb-8 flex items-center justify-between">
             <button onclick="backToExerciseList()" class="flex items-center gap-2 text-slate-500 hover:text-red-700 font-bold transition-colors">
                 <i class="fas fa-arrow-left"></i>
-                <span>Tüm Alıştırmalar</span>
+                <span>Geri Dön</span>
             </button>
             <div class="text-right">
                 <h3 class="text-2xl font-black text-slate-900" style="font-family:'Playfair Display',serif;">${ex.title}</h3>
-                <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">${ex.level} Vocabulary Study</p>
+                <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">${level} Vocabulary Matching</p>
             </div>
         </div>
 
@@ -87,15 +177,15 @@ window.loadPremiumExercise = function(id) {
             <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 md:p-12 shadow-sm min-h-[400px]">
                 <div class="flex items-center gap-3 mb-8">
                     <span class="w-10 h-10 rounded-2xl bg-red-800 text-white flex items-center justify-center font-black">A</span>
-                    <p class="text-lg font-bold text-slate-800 italic">Read about the qualities people need to do their jobs.</p>
+                    <p class="text-lg font-bold text-slate-800 italic">Read the passage below and note the highlighted words.</p>
                 </div>
                 <div class="text-slate-700 leading-loose text-lg space-y-6 font-medium selection:bg-red-100 italic" style="font-family: 'Lora', serif;">
-                    ${ex.passage}
+                    ${ex.passage.includes('<p>') ? ex.passage : ex.passage.split('\n').map(p => `<p class="mb-4">${p}</p>`).join('')}
                 </div>
                 
                 <div class="mt-12 p-6 bg-slate-50 rounded-3xl border border-slate-100">
                     <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">HOT TIP 🔥</p>
-                    <p class="text-sm text-slate-600">Metindeki <b class="text-red-800">koyu renkli</b> kelimelere dikkat edin. Bunlar sağ taraftaki tanımlarla eşleşecek anahtar kelimelerdir.</p>
+                    <p class="text-sm text-slate-600">Metindeki <b class="text-red-800">renkli</b> kelimeler sağ taraftaki tanımlarla eşleşecek anahtar kelimelerdir. İmla hatalarına dikkat edin!</p>
                 </div>
             </div>
 
@@ -104,7 +194,7 @@ window.loadPremiumExercise = function(id) {
                 <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 md:p-10 shadow-sm relative overflow-hidden">
                     <div class="flex items-center gap-3 mb-8">
                         <span class="w-10 h-10 rounded-2xl bg-indigo-900 text-white flex items-center justify-center font-black">B</span>
-                        <p class="text-lg font-bold text-slate-800 italic">Match the words and phrases in <b class="text-red-700">bold</b> above with the definitions 1–${ex.definitions.length}.</p>
+                        <p class="text-lg font-bold text-slate-800 italic">Match the highlighted words with the definitions 1–${ex.definitions.length}.</p>
                     </div>
 
                     <div class="space-y-4">
@@ -115,7 +205,7 @@ window.loadPremiumExercise = function(id) {
                                 <div class="relative min-w-[180px]">
                                     <input type="text" 
                                            id="ex-input-${def.id}" 
-                                           data-answer="${def.answer}"
+                                           data-answer="${def.answer.replace(/[<b><\/b>]/g, '')}"
                                            autocomplete="off"
                                            placeholder="..."
                                            class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl px-4 py-2 font-bold text-slate-800 focus:border-red-600 outline-none transition-all placeholder:text-slate-300">
@@ -128,17 +218,16 @@ window.loadPremiumExercise = function(id) {
                     </div>
 
                     <div class="mt-10 pt-8 border-t border-slate-100 flex gap-4">
-                        <button onclick="checkPremiumExercise('${ex.id}')" class="flex-1 py-4 bg-slate-900 text-white rounded-2xl font-black text-lg shadow-xl hover:bg-red-900 transition-all flex items-center justify-center gap-3">
+                        <button onclick="checkPremiumExercise()" class="flex-1 py-4 bg-slate-900 text-white rounded-2xl font-black text-lg shadow-xl hover:bg-red-900 transition-all flex items-center justify-center gap-3">
                             <i class="fas fa-check-double"></i>
                             KONTROL ET
                         </button>
-                        <button onclick="showExerciseAnswers('${ex.id}')" class="px-6 py-4 bg-slate-100 text-slate-400 rounded-2xl font-black text-sm hover:text-slate-600 transition-all">
+                        <button onclick="showExerciseAnswers()" class="px-6 py-4 bg-slate-100 text-slate-400 rounded-2xl font-black text-sm hover:text-slate-600 transition-all">
                             CEVAPLAR
                         </button>
                     </div>
                 </div>
 
-                <!-- Summary Status -->
                 <div id="exerciseResult" class="hidden bg-emerald-600 rounded-3xl p-8 text-white shadow-xl animate-in zoom-in duration-300">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -153,24 +242,28 @@ window.loadPremiumExercise = function(id) {
             </div>
         </div>
     `;
-};
+    stage.scrollIntoView({ behavior: 'smooth' });
+}
 
 window.backToExerciseList = function() {
     document.getElementById('exerciseList').classList.remove('hidden');
+    document.getElementById('exerciseAISetup').classList.remove('hidden');
     document.getElementById('exerciseStage').classList.add('hidden');
     document.getElementById('exerciseResult').classList.add('hidden');
 };
 
-window.checkPremiumExercise = function(id) {
-    const ex = premiumExercisesData.find(e => e.id === id);
+window.checkPremiumExercise = function() {
+    const ex = currentExercise;
+    if (!ex) return;
+    
     let allCorrect = true;
     let score = 0;
 
     ex.definitions.forEach(def => {
         const input = document.getElementById(`ex-input-${def.id}`);
         const feedback = document.getElementById(`feedback-${def.id}`);
-        const userValue = input.value.trim().toLowerCase();
-        const correctAnswer = def.answer.toLowerCase();
+        const userValue = input.value.trim().toLowerCase().replace(/[.,!?;:]/g, '');
+        const correctAnswer = def.answer.toLowerCase().replace(/[<b><\/b>]/g, '').trim();
 
         if (userValue === correctAnswer) {
             input.classList.remove('border-red-500', 'border-slate-200');
@@ -192,7 +285,7 @@ window.checkPremiumExercise = function(id) {
         }
     });
 
-    if (allCorrect) {
+    if (allCorrect && score > 0) {
         document.getElementById('exerciseResult').classList.remove('hidden');
         if (typeof window.saveQuizScoreFirestore === "function") {
             window.saveQuizScoreFirestore(100, 150, `Premium Exercise: ${ex.title}`);
@@ -200,11 +293,12 @@ window.checkPremiumExercise = function(id) {
     }
 };
 
-window.showExerciseAnswers = function(id) {
-    const ex = premiumExercisesData.find(e => e.id === id);
+window.showExerciseAnswers = function() {
+    const ex = currentExercise;
+    if (!ex) return;
     ex.definitions.forEach(def => {
         const input = document.getElementById(`ex-input-${def.id}`);
-        input.value = def.answer;
+        input.value = def.answer.replace(/[<b><\/b>]/g, '');
     });
 };
 
