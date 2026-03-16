@@ -107,23 +107,26 @@ function getPhrasalHTML() {
         <div id="phrasalGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           ${PHRASAL_VERBS_DATA.slice(0, 15).map((p, idx) => `
             <div class="phrasal-card group perspective-1000">
-              <div class="phrasal-card-inner relative w-full h-72 transition-transform duration-700 preserve-3d cursor-pointer hover:rotate-y-180" onclick="this.classList.toggle('rotate-y-180')">
+              <div class="phrasal-card-inner relative w-full h-80 transition-transform duration-700 preserve-3d cursor-pointer hover:rotate-y-180" onclick="this.classList.toggle('rotate-y-180')">
                 <!-- Front Face -->
-                <div class="absolute inset-0 backface-hidden bg-white border border-slate-100 rounded-[2.5rem] p-10 shadow-sm group-hover:shadow-2xl group-hover:-translate-y-2 transition-all duration-500 flex flex-col items-center justify-center text-center">
-                  <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-red-800 mb-6 group-hover:scale-110 transition-transform">
-                    <i class="fas fa-feather-pointed text-2xl"></i>
+                <div class="absolute inset-0 backface-hidden bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm group-hover:shadow-2xl group-hover:-translate-y-2 transition-all duration-500 flex flex-col items-center justify-center text-center">
+                  <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center text-red-800 mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-feather-pointed text-xl"></i>
                   </div>
                   <h3 class="text-2xl font-black text-slate-900 mb-2">${p.phrasal}</h3>
-                  <p class="text-[10px] font-black text-slate-300 uppercase tracking-widest">${p.category}</p>
+                  <p class="text-red-800 font-bold text-sm mb-3">${p.meaning}</p>
+                  <p class="text-[9px] font-black text-slate-300 uppercase tracking-widest">${p.category}</p>
+                  <div class="mt-4 text-[10px] text-slate-400 italic">Detaylar için tıkla</div>
                 </div>
                 <!-- Back Face -->
-                <div class="absolute inset-0 backface-hidden bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl rotate-y-180 flex flex-col justify-center border-4 border-red-800/10 underline-offset-4">
-                  <div class="mb-5">
+                <div class="absolute inset-0 backface-hidden bg-slate-900 rounded-[2.5rem] p-8 shadow-2xl rotate-y-180 flex flex-col justify-center border-4 border-red-800/10">
+                  <div class="mb-5 text-center">
                     <p class="text-[10px] font-black text-red-400 uppercase tracking-widest mb-2">TÜRKÇE ANLAMI</p>
                     <p class="text-xl font-bold text-white leading-tight">${p.meaning}</p>
                   </div>
-                  <div class="pt-5 border-t border-white/10">
-                    <p class="text-sm italic text-slate-400 leading-relaxed font-serif">"${p.example}"</p>
+                  <div class="pt-5 border-t border-white/10 text-center">
+                    <p class="text-[10px] font-black text-red-400 uppercase tracking-widest mb-2">ÖRNEK CÜMLE</p>
+                    <p class="text-sm italic text-slate-300 leading-relaxed font-serif">"${p.example}"</p>
                   </div>
                 </div>
               </div>
@@ -236,9 +239,12 @@ function renderPhrasalAIResults(rootVerb, items) {
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            ${items.map((item, idx) => `
+            ${items.map((item, idx) => {
+                const tr = item.meaning_tr || item.meaning || item.tr || "Anlam bulunamadı";
+                const en = item.meaning_en || item.en_def || item.definition || "Definition not found";
+                return `
                 <div class="phrasal-card group perspective-1000" style="animation-delay: ${idx * 0.1}s">
-                    <div class="phrasal-card-inner relative w-full h-[400px] transition-transform duration-700 preserve-3d cursor-pointer hover:rotate-y-180" onclick="this.classList.toggle('rotate-y-180')">
+                    <div class="phrasal-card-inner relative w-full h-[450px] transition-transform duration-700 preserve-3d cursor-pointer hover:rotate-y-180" onclick="this.classList.toggle('rotate-y-180')">
                         <!-- Front Face -->
                         <div class="absolute inset-0 backface-hidden bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm group-hover:shadow-2xl transition-all duration-500 flex flex-col">
                             <div class="mb-6 flex justify-between items-start">
@@ -251,11 +257,11 @@ function renderPhrasalAIResults(rootVerb, items) {
                             <div class="space-y-4">
                                 <div>
                                     <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">TÜRKÇE ANLAMI</p>
-                                    <p class="text-slate-700 font-bold leading-tight">${item.meaning_tr}</p>
+                                    <p class="text-red-800 font-bold text-lg leading-tight">${tr}</p>
                                 </div>
                                 <div>
                                     <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">ENGLISH DEF.</p>
-                                    <p class="text-slate-500 text-sm leading-tight italic font-serif">${item.meaning_en}</p>
+                                    <p class="text-slate-500 text-sm leading-tight italic font-serif">${en}</p>
                                 </div>
                             </div>
                             <div class="mt-auto pt-6 flex items-center gap-2 text-[10px] font-black text-red-800/40">
@@ -266,7 +272,7 @@ function renderPhrasalAIResults(rootVerb, items) {
                         <!-- Back Face -->
                         <div class="absolute inset-0 backface-hidden bg-slate-900 rounded-[2.5rem] p-8 shadow-2xl rotate-y-180 flex flex-col border-4 border-red-800/10">
                             <div class="mb-6">
-                                <p class="text-[10px] font-black text-cyan-400 uppercase tracking-widest mb-3">EXAMPLE SENTENCE</p>
+                                <p class="text-[10px] font-black text-red-400 uppercase tracking-widest mb-3">EXAMPLE SENTENCE</p>
                                 <p class="text-lg italic text-white leading-relaxed font-serif">"${item.example}"</p>
                             </div>
                             <div class="mt-auto bg-white/5 p-5 rounded-2xl border border-white/10">
@@ -278,7 +284,7 @@ function renderPhrasalAIResults(rootVerb, items) {
                         </div>
                     </div>
                 </div>
-            `).join('')}
+            `}).join('')}
         </div>
     </div>
   `;
