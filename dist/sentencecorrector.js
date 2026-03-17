@@ -157,7 +157,7 @@ window.checkWithMonsterAI = async function() {
     statusText.innerText = "Monster AI Devrede...";
 
     try {
-        const response = await fetch('/.netlify/functions/gemini-sentence-check', {
+        const response = await fetch('/.netlify/functions/openai-sentence-check', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text })
