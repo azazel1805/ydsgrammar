@@ -1,7 +1,7 @@
 // Trigger Deploy: 2026-03-12 22:20
 /* ==========================================
- GLOBAL VARIABLES (Quiz)
-========================================== */
+  GLOBAL VARIABLES (Quiz)
+ ========================================== */
 
 let allItems = [];
 let quizSet = [];
@@ -10,8 +10,8 @@ let currentQ = 0;
 let score = 0;
 
 /* ==========================================
- DOM READY
-========================================== */
+  DOM READY
+ ========================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -165,8 +165,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ==========================================
- QUIZ DATA SCRAPER
-========================================== */
+  QUIZ DATA SCRAPER
+ ========================================== */
 
 window.loadQuizData = function () {
     allItems = [];
@@ -253,12 +253,12 @@ window.loadQuizData = function () {
 };
 
 /* ==========================================
- TAB SYSTEM
-========================================== */
+  TAB SYSTEM
+ ========================================== */
 
 window.switchTab = function (tabName) {
     const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams', 'premium-exercises', 'aireading', 'tutor-exam', 'wordpractice', 'phrasal'];
-    const adminTabs = ['admin'];
+    const adminTabs = ['admin', 'premium-pricing'];
 
     // Level 1: Premium Tabs requirement
     if (premiumTabs.includes(tabName)) {
@@ -280,7 +280,7 @@ window.switchTab = function (tabName) {
     // Level 3: Admin only
     if (adminTabs.includes(tabName)) {
         const isAdmin = ["onurtosuner@gmail.com", "hasanonurtosuner@gmail.com"].includes(window.currentUser?.email);
-        if (!isAdmin) {
+        if (!isAdmin && tabName === 'admin') {
             alert("Bu sayfaya erişim yetkiniz yok.");
             switchTab('dashboard');
             return;
@@ -395,6 +395,7 @@ function reinjectTabContent(tabName) {
         "tutor-exam": typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : null,
         "premium-exercises": typeof premiumExercisesHTML !== 'undefined' ? premiumExercisesHTML : null,
         "reductions": typeof reductionsHTML !== 'undefined' ? reductionsHTML : null,
+        "premium-pricing": typeof premiumPricingHTML !== 'undefined' ? premiumPricingHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -407,8 +408,8 @@ function reinjectTabContent(tabName) {
 }
 
 /* ==========================================
- DYNAMIC SEO & HEADERS
-========================================== */
+  DYNAMIC SEO & HEADERS
+ ========================================== */
 
 function updateSEO(tab) {
     const seoMap = {
@@ -439,6 +440,7 @@ function updateSEO(tab) {
         "tutor-exam": { title: "AI Guided Exam – Yapay Zeka Koçlu Deneme", desc: "AI koçunuzla birlikte soru bazlı, açıklamalı deneme çözme modu." },
         "premium-exercises": { title: "Premium İnteraktif Alıştırmalar – YDS Kelime Lab", desc: "Okuma parçası üzerinden kelime eşleştirme ve interaktif dil alıştırmaları." },
         "reductions": { title: "Kısaltmalar (Reduced Clauses) – YDS & YDT Gramer", desc: "Sıfat ve zarf cümleciklerinde aktif/pasif kısaltma kuralları ve örnekler." },
+        "premium-pricing": { title: "Premium VIP – YDS Monster", desc: "Monster VIP ayrıcalıklarını keşfedin ve hedefinize ulaşın." },
         "admin": { title: "Admin Panel", desc: "Sistem yönetimi." }
     };
 
@@ -452,8 +454,8 @@ function updateSEO(tab) {
 }
 
 /* ==========================================
- QUIZ ENGINE
-========================================== */
+  QUIZ ENGINE
+ ========================================== */
 
 window.openQuiz = function () {
     const modal = document.getElementById('quizModal');
@@ -637,8 +639,8 @@ function showResult() {
 }
 
 /* ==========================================
- DRAWER HELPERS
-========================================== */
+  DRAWER HELPERS
+ ========================================== */
 
 window.closeDrawer = function () {
     const drawer = document.getElementById("mobileDrawer");
@@ -653,8 +655,8 @@ window.closeDrawer = function () {
 
 
 /* ==========================================
- TACTIC TOGGLES
-========================================== */
+  TACTIC TOGGLES
+ ========================================== */
 
 window.toggleModalTactics = function () {
     const content = document.getElementById("modalTacticContent");
@@ -665,8 +667,8 @@ window.toggleModalTactics = function () {
 };
 
 /* ==========================================
- LOCK / UNLOCK AI TOOLS UI
-========================================== */
+  LOCK / UNLOCK AI TOOLS UI
+ ========================================== */
 
 window.lockAnalyzerUI = function () {
     // We don't hide the buttons anymore, so users can see Premium features
@@ -688,8 +690,8 @@ window.unlockAnalyzerUI = function () {
 };
 
 /* ==========================================
- SYNTAX ABBREVIATIONS
-========================================== */
+  SYNTAX ABBREVIATIONS
+ ========================================== */
 
 window.SYNTAX_TERMS = {
     "NP": "Noun Phrase (İsim Öbeği)",
@@ -728,8 +730,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ==========================================
- SEARCH / FILTER LOGIC
-========================================== */
+  SEARCH / FILTER LOGIC
+ ========================================== */
 
 window.filterTab = function (input) {
     const filter = input.value.toUpperCase();
@@ -749,12 +751,7 @@ window.filterTab = function (input) {
         }
     });
 };
+
 window.goToPremiumPricing = function() {
-    window.switchTab('profile');
-    setTimeout(() => {
-        const pSec = document.getElementById('premiumSection');
-        if (pSec) {
-            pSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }, 400);
+    window.switchTab('premium-pricing');
 };

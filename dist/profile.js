@@ -1,6 +1,6 @@
 /* =========================================
    PROFILE TAB - MODERN & LITERARY DESIGN
- ========================================= */
+  ========================================= */
 
 const profileHTML = `
 <div id="profileMainContainer" class="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700 block" style="display: block !important; opacity: 1 !important; visibility: visible !important;">
@@ -83,7 +83,7 @@ const profileHTML = `
 
             <div class="flex gap-2 relative">
                 <input id="analyzerCodeInput" type="password" placeholder="Kodunuzu buraya yazın..." 
-                    class="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 transition-all">
+                    class="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 transition-all font-mono">
                 <button onclick="checkAnalyzerAccess(document.getElementById('analyzerCodeInput').value)"
                     class="px-6 py-3 bg-red-800 hover:bg-red-700 text-white rounded-xl font-bold transition-all active:scale-95">
                     Aç
@@ -104,113 +104,6 @@ const profileHTML = `
                     <p class="text-2xl font-bold text-slate-800" id="profileStreak">...</p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Premium Advantages / Shopier Section -->
-    <div id="premiumSection" class="bg-gradient-to-br from-slate-50 to-white rounded-[3rem] p-10 border border-slate-200 shadow-xl overflow-hidden relative">
-        <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
-            <i class="fas fa-crown text-[15rem]"></i>
-        </div>
-
-        <div class="text-center space-y-4 mb-12 relative">
-            <h2 class="text-4xl font-extrabold text-slate-900" style="font-family: 'Playfair Display', serif;">YDS Monster <span class="text-red-800">Premium</span></h2>
-            <p class="text-slate-500 max-w-xl mx-auto italic">Tüm engelleri kaldırın, yapay zeka desteğiyle hedefinize ışık hızında ulaşın.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 relative">
-            <!-- Feature 1 -->
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-red-50 text-red-700 rounded-2xl flex items-center justify-center mb-4">
-                    <i class="fas fa-robot text-xl"></i>
-                </div>
-                <h4 class="font-bold text-slate-900 mb-2">AI Sınav Koçu</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">7/24 soru sorabileceğiniz, size özel strateji geliştiren mentorunuz.</p>
-            </div>
-            <!-- Feature 2 -->
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-blue-50 text-blue-700 rounded-2xl flex items-center justify-center mb-4">
-                    <i class="fas fa-microscope text-xl"></i>
-                </div>
-                <h4 class="font-bold text-slate-900 mb-2">Gelişmiş Analiz Araçları</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">Cümle analizci, soru çözücü ve restatement motoru ile derinlemesine öğrenme.</p>
-            </div>
-            <!-- Feature 3 -->
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-purple-50 text-purple-700 rounded-2xl flex items-center justify-center mb-4">
-                    <i class="fas fa-file-alt text-xl"></i>
-                </div>
-                <h4 class="font-bold text-slate-900 mb-2">Full Denemeler</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">Tam kapsamlı, açıklamalı ve süreli deneme sınavlarıyla gerçek sınav deneyimi.</p>
-            </div>
-        </div>
-
-        <!-- Pricing Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto pb-8">
-            <!-- Monthly -->
-            <div class="bg-white rounded-[2.5rem] p-6 border border-slate-200 shadow-sm flex flex-col items-center space-y-6 hover:scale-[1.02] transition-transform cursor-pointer relative overflow-hidden border-2 border-slate-100">
-                <div class="text-center">
-                    <h5 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Aylık Erişim</h5>
-                    <div class="flex items-baseline gap-1 justify-center">
-                        <span class="text-3xl font-bold text-slate-900">₺250</span>
-                        <span class="text-xs text-slate-400">/ay</span>
-                    </div>
-                </div>
-                <ul class="w-full space-y-2 text-[10px] text-slate-600">
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Tüm AI Araçları Dahil</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınav Koçu Mentorluğu</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınırsız Soru Analizi</li>
-                </ul>
-                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45165102')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
-                    Hemen Başla
-                </button>
-            </div>
-
-            <!-- 3 Months - Recommended -->
-            <div class="bg-white rounded-[2.5rem] p-6 border-2 border-red-800 shadow-xl flex flex-col items-center space-y-6 scale-105 hover:scale-[1.07] transition-transform cursor-pointer relative overflow-hidden group">
-                <div class="absolute top-0 right-0 bg-red-800 text-white px-3 py-1 rounded-bl-xl text-[8px] font-bold uppercase tracking-tighter">
-                    En Popüler
-                </div>
-                <div class="text-center">
-                    <h5 class="text-[10px] font-bold text-red-800 uppercase tracking-widest mb-1">Sezonluk (3 Ay)</h5>
-                    <div class="flex items-baseline gap-1 justify-center">
-                        <span class="text-3xl font-bold text-slate-900">₺600</span>
-                        <span class="text-xs text-slate-400">/paket</span>
-                    </div>
-                </div>
-                <ul class="w-full space-y-2 text-[10px] text-slate-600">
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Aylığa göre %20 Tasarruf</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Full Deneme Havuzu</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Öncelikli Destek</li>
-                </ul>
-                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45165102')" class="w-full py-3 bg-red-800 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-xl shadow-red-900/20 active:scale-95">
-                    Hemen Başla
-                </button>
-            </div>
-
-            <!-- Yearly -->
-            <div class="bg-white rounded-[2.5rem] p-6 border border-slate-200 shadow-sm flex flex-col items-center space-y-6 hover:scale-[1.02] transition-transform cursor-pointer relative overflow-hidden border-2 border-slate-100">
-                <div class="text-center">
-                    <h5 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Yıllık (Master)</h5>
-                    <div class="flex items-baseline gap-1 justify-center">
-                        <span class="text-3xl font-bold text-slate-900">₺1500</span>
-                        <span class="text-xs text-slate-400">/yıl</span>
-                    </div>
-                </div>
-                <ul class="w-full space-y-2 text-[10px] text-slate-600">
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> En İyi Fiyat Garantisi</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-star text-amber-500"></i> Tüm Gelecek Özellikler</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Sınırsız Arşiv Erişimi</li>
-                </ul>
-                <button onclick="startShopierPayment('https://www.shopier.com/onurtosuner/45165102')" class="w-full py-3 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-lg active:scale-95">
-                    Hemen Başla
-                </button>
-            </div>
-        </div>
-
-        <div class="mt-12 text-center text-[10px] text-slate-400 uppercase tracking-widest font-semibold flex items-center justify-center gap-6">
-            <span class="flex items-center gap-2"><i class="fas fa-shield-alt text-emerald-500"></i> Güvenli Ödeme (Shopier)</span>
-            <span class="flex items-center gap-2"><i class="fas fa-bolt text-yellow-500"></i> Anında Aktivasyon</span>
         </div>
     </div>
 
@@ -254,22 +147,54 @@ const profileHTML = `
 </style>
 `;
 
+const profileLoginHTML = `
+<div class="max-w-xl mx-auto py-20 px-8 text-center bg-white rounded-[3rem] border border-slate-100 shadow-2xl animate-in fade-in zoom-in duration-500 mt-20">
+    <div class="w-24 h-24 bg-red-50 text-red-800 rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+        <i class="fas fa-user-circle text-5xl"></i>
+    </div>
+    <h1 class="text-3xl font-black text-slate-900 mb-4" style="font-family: 'Playfair Display', serif;">Monster Profilim</h1>
+    <p class="text-slate-500 mb-10 leading-relaxed font-medium italic">Gelişim istatistiklerini görmek, kelimelerini kaydetmek ve VIP avantajlarından yararlanmak için lütfen giriş yapın.</p>
+    <button onclick="window.openLoginModal()" class="w-full py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-red-800 transition-all shadow-xl shadow-slate-900/10 active:scale-95">
+        <i class="fas fa-sign-in-alt mr-2"></i> Hemen Giriş Yap
+    </button>
+</div>
+`;
+
 /* =========================================
    CORE LOGIC - RENDER & AUTH
- ========================================= */
+  ========================================= */
 
 function observeAuthForProfile() {
+    // Show content initially
+    const container = document.getElementById("tab-profile");
+    if (container && !window.currentUser) {
+       container.innerHTML = profileLoginHTML;
+    }
+
     const interval = setInterval(() => {
         if (window.currentUser) {
-            console.log("Profile observer: User ready, rendering...");
             clearInterval(interval);
             renderProfile();
         }
     }, 500);
 }
 
+function showProfileLogin() {
+    const container = document.getElementById("tab-profile");
+    if (container) {
+        container.innerHTML = profileLoginHTML;
+    }
+}
+
 async function renderProfile() {
     console.log("renderProfile() triggered");
+    
+    // First, restore the full profile HTML if it was replaced by login screen
+    const container = document.getElementById("tab-profile");
+    if (container) {
+        container.innerHTML = profileHTML;
+    }
+
     const nameDisplay = document.getElementById("profileNameDisplay");
     const emailDisplay = document.getElementById("profileEmailDisplay");
     const initialsDisplay = document.getElementById("profileInitials");
@@ -295,7 +220,8 @@ async function renderProfile() {
         vipBadge.classList.remove("hidden");
         
         // Show expiration date if we can find it in Firestore
-        window.firebaseExports.getDoc(window.firebaseExports.doc(window.firebaseExports.db, "users", window.currentUser.uid)).then(docSnap => {
+        try {
+            const docSnap = await window.firebaseExports.getDoc(window.firebaseExports.doc(window.firebaseExports.db, "users", window.currentUser.uid));
             if (docSnap.exists()) {
                 const data = docSnap.data();
                 if (data.premiumUntil) {
@@ -304,24 +230,18 @@ async function renderProfile() {
                     vipBadge.innerText = `VIP (Bitiş: ${dateStr})`;
                 }
             }
-        });
+        } catch (e) {
+            console.error("Error fetching expiry:", e);
+        }
     }
 
     // Sync gamification stats if available
     if (window.userStats) {
-        document.getElementById("profileXP") && (document.getElementById("profileXP").innerText = window.userStats.xp + ' XP');
-        document.getElementById("profileStreak") && (document.getElementById("profileStreak").innerText = window.userStats.streak + ' Gün');
+        if (document.getElementById("profileXP")) document.getElementById("profileXP").innerText = window.userStats.xp + ' XP';
+        if (document.getElementById("profileStreak")) document.getElementById("profileStreak").innerText = window.userStats.streak + ' Gün';
     }
 
-    console.log("Checking premiumSection visibility...");
-    const premiumSec = document.getElementById("premiumSection");
-    if (premiumSec) {
-        premiumSec.classList.remove("hidden");
-        console.log("premiumSection found and forced visible.");
-    } else {
-        console.warn("premiumSection NOT found in DOM!");
-    }
-
+    // Load dynamic data
     await renderProfileSavedWords();
     await renderProfileNotes();
 
@@ -342,7 +262,7 @@ async function renderProfile() {
 
 /* =========================================
    PROFILE EDIT FUNCTIONS
- ========================================= */
+  ========================================= */
 
 window.openProfileEditModal = function () {
     const modal = document.getElementById("profileEditModal");
@@ -393,32 +313,25 @@ window.handleProfileUpdate = async function () {
 
 /* =========================================
    SAVED WORDS LOGIC
- ========================================= */
+  ========================================= */
 
 async function renderProfileSavedWords() {
     console.log("renderProfileSavedWords() triggered");
     const container = document.getElementById("profileNotebookList");
     const countBadge = document.getElementById("savedWordsCount");
-    if (!container) {
-        console.warn("profileNotebookList container not found");
-        return;
-    }
+    if (!container) return;
 
     try {
         const words = await window.getSavedWordsFirestore();
-        console.log("Firestore words fetched:", words.length);
         container.innerHTML = "";
-        countBadge.innerText = words.length;
 
-        if (!words || words.length === 0) {
-            container.innerHTML = `
-                <div class="text-center py-10 opacity-30">
-                    <i class="fas fa-book-open text-4xl mb-2"></i>
-                    <p class="text-xs font-bold uppercase tracking-widest">Defter Henüz Boş</p>
-                </div>
-            `;
+        if (words.length === 0) {
+            container.innerHTML = "<div class='text-center py-10 opacity-30 italic text-sm text-slate-400'>Henüz kelime kaydetmediniz.</div>";
+            countBadge && (countBadge.innerText = "0");
             return;
         }
+
+        countBadge && (countBadge.innerText = words.length);
 
         words.forEach(item => {
             const div = document.createElement("div");
@@ -449,7 +362,7 @@ async function renderProfileSavedWords() {
 
 /* =========================================
    NOTES LOGIC
- ========================================= */
+  ========================================= */
 
 window.addNoteFromProfile = async function () {
     const input = document.getElementById("noteInput");
@@ -509,7 +422,7 @@ async function renderProfileNotes() {
 
 /* =========================================
    PREMIUM & SHOPIER HELPERS
- ========================================= */
+  ========================================= */
 
 window.startShopierPayment = function (url) {
     if (!window.currentUser) {
@@ -517,9 +430,6 @@ window.startShopierPayment = function (url) {
         if (typeof window.openLoginModal === "function") window.openLoginModal();
         return;
     }
-
-    // Shopier direct links don't pre-fill email easily via URL params 
-    // without API integration, but we'll remind the user to use their registered email.
     
     const confirmMsg = `Satın alma sayfasına yönlendiriliyorsunuz.\n\nÖNEMLİ: VIP erişiminizin otomatik aktif olması için ödeme sayfasında "${window.currentUser.email}" e-posta adresinizi kullanmayı unutmayın.`;
     
@@ -535,6 +445,7 @@ async function checkAnalyzerAccess(code) {
     }
     if (!window.currentUser || !window.currentUser.email) {
         alert("Lütfen önce giriş yapın.");
+        window.openLoginModal();
         return;
     }
     try {
@@ -562,10 +473,15 @@ async function checkAnalyzerAccess(code) {
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("tab-profile");
     if (container) {
-        container.innerHTML = profileHTML;
-        observeAuthForProfile();
+        // Initial render based on auth state
+        if (window.currentUser) {
+            container.innerHTML = profileHTML;
+            renderProfile();
+        } else {
+            container.innerHTML = profileLoginHTML;
+            observeAuthForProfile();
+        }
     }
-    // AI access check removed from here, handled centrally in firebase-auth.js
 });
 
 window.forceProfileRender = function () {
