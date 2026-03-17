@@ -80,6 +80,12 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   <meta name="robots" content="index, follow" />
+  
+  <!-- PDF.js Integration -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  </script>
 </head>
 
 <body class="bg-[#fafafa] text-black transition-colors duration-300 min-h-screen" style="font-family: 'Lora', serif;">
@@ -494,6 +500,13 @@
                       <span class="desc">Eş anlamlı cümle laboratuvarı</span>
                     </div>
                   </button>
+                  <button id="pdfexamNavBtn" data-tab="pdfexam" onclick="switchTab('pdfexam')" class="premium-nav-item hidden group/item">
+                    <div class="flex flex-col">
+                      <span class="title">AI PDF Exam Lab</span>
+                      <span class="desc">PDF'den anında sınav üret</span>
+                    </div>
+                    <i class="fas fa-magic text-[10px] text-indigo-500 opacity-0 group-hover/item:opacity-100 transition-opacity"></i>
+                  </button>
                 </div>
               </div>
 
@@ -728,6 +741,8 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
               class="drawer-btn hidden">Metin Analizi</button>
             <button id="restatementMobileBtn" data-tab="restatement" onclick="switchTabAndClose('restatement')"
               class="drawer-btn hidden">Restatement Studio</button>
+            <button id="pdfexamMobileBtn" data-tab="pdfexam" onclick="switchTabAndClose('pdfexam')"
+              class="drawer-btn hidden font-bold text-indigo-700">AI PDF Exam Lab 🪄</button>
 
             <div class="py-2 border-t border-slate-50 mt-2"></div>
 
@@ -790,6 +805,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
       <div id="tab-testlab" class="tab-content hidden"></div>
       <div id="tab-restatement" class="tab-content hidden"></div>
       <div id="tab-paragraph" class="tab-content hidden"></div>
+      <div id="tab-pdfexam" class="tab-content hidden"></div>
       <div id="tab-strategy" class="tab-content hidden">
           <!-- Strategy Lab Content -->
           <section id="strategy" class="animate-in fade-in duration-700 p-4 md:p-8">
@@ -972,6 +988,7 @@ z-50 p-6 space-y-4 overflow-y-auto overscroll-contain">
     <script src="/aireading.js"></script>
     <script src="/tutor-exam.js"></script>
     <script src="/premium-exercises.js"></script>
+    <script src="/pdfexam.js"></script>
     <script src="/main.js"></script>
 
 

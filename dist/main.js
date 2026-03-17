@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     safeInject("tab-calendar", typeof calendarHTML !== 'undefined' ? calendarHTML : undefined);
     safeInject("tab-tutor-exam", typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : undefined);
     safeInject("tab-focused-exams", typeof focusedExamsHTML !== 'undefined' ? focusedExamsHTML : undefined);
+    safeInject("tab-pdfexam", typeof pdfexamHTML !== 'undefined' ? pdfexamHTML : undefined);
     safeInject("tab-admin", typeof adminHTML !== 'undefined' ? adminHTML : undefined);
 
     if (typeof initSentenceCorrector === "function") {
@@ -89,6 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (typeof initTacticGuide === "function") {
         initTacticGuide();
+    }
+
+    if (typeof injectPdfExamHTML === "function") {
+        injectPdfExamHTML();
     }
 
     if (typeof initTenseGuide2 === "function") {
@@ -274,7 +279,7 @@ window.switchTab = function (tabName) {
     }
 
     const userTabs = ['profile'];
-    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams', 'premium-exercises'];
+    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'pdfexam', 'fullexam', 'miniexams', 'premium-exercises'];
     const adminTabs = ['admin'];
 
     // Level 1: Must be logged in
@@ -401,6 +406,7 @@ function reinjectTabContent(tabName) {
         "tutor-exam": typeof tutorExamHTML !== 'undefined' ? tutorExamHTML : null,
         "premium-exercises": typeof premiumExercisesHTML !== 'undefined' ? premiumExercisesHTML : null,
         "reductions": typeof reductionsHTML !== 'undefined' ? reductionsHTML : null,
+        "pdfexam": typeof pdfexamHTML !== 'undefined' ? pdfexamHTML : null,
         "admin": typeof adminHTML !== 'undefined' ? adminHTML : null
     };
 
@@ -676,9 +682,9 @@ window.toggleModalTactics = function () {
 
 window.lockAnalyzerUI = function () {
     const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "pdfexamNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
         "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "wordpracticeNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "pdfexamMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
         "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "wordpracticeMobileBtn"
     ];
 
@@ -695,9 +701,9 @@ window.lockAnalyzerUI = function () {
 
 window.unlockAnalyzerUI = function () {
     const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
+        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "pdfexamNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
         "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "wordpracticeNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
+        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "pdfexamMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
         "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "wordpracticeMobileBtn"
     ];
 
