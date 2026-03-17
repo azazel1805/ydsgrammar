@@ -157,22 +157,22 @@ const focusedExamsHTML = `
   </div>
 
   <div id="foExamScreen" class="hidden grid lg:grid-cols-12 gap-4 lg:h-[calc(100vh-180px)]">
-    <!-- SIDEPANEL: COMPACT -->
-    <div class="lg:col-span-1 order-2 lg:order-1 lg:flex flex-col gap-3 py-2">
-       <div id="foQuestionNav" class="grid grid-cols-10 lg:grid-cols-2 gap-1.5 p-2 bg-white border border-slate-200 rounded-2xl lg:overflow-y-auto custom-scrollbar flex-1 shadow-sm">
+    <!-- SIDEPANEL: COMPACT BUT WIDER -->
+    <div class="lg:col-span-2 order-2 lg:order-1 flex flex-col gap-2 py-0">
+       <div id="foQuestionNav" class="grid grid-cols-8 lg:grid-cols-3 gap-1 p-2 bg-white border border-slate-200 rounded-2xl lg:overflow-y-auto custom-scrollbar flex-1 shadow-sm h-full">
          <!-- Question Dots -->
        </div>
     </div>
 
     <!-- MAIN CONTEXT -->
-    <div class="lg:col-span-11 order-1 lg:order-2 grid lg:grid-cols-12 gap-4 h-full">
+    <div class="lg:col-span-10 order-1 lg:order-2 grid lg:grid-cols-12 gap-4 h-full">
        <!-- LEFT: PASSAGE (if exists) -->
        <div id="foPassagePane" class="hidden lg:col-span-5 bg-indigo-50/20 border border-slate-200 rounded-3xl p-6 lg:p-8 overflow-y-auto leading-relaxed text-sm lg:text-base text-slate-700 custom-scrollbar shadow-sm">
           <!-- Passage text -->
        </div>
 
        <!-- RIGHT: QUESTION -->
-       <div id="foQuestionContainer" class="lg:col-span-12 flex flex-col bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm relative">
+       <div id="foQuestionContainer" class="lg:col-span-7 flex flex-col bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm relative">
           <div class="px-6 py-3 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
              <div class="flex items-center gap-2">
                 <span id="foSectionTitle" class="text-[10px] font-black text-slate-400 uppercase tracking-widest">VOCABULARY</span>
@@ -257,9 +257,29 @@ const focusedExamsHTML = `
   .custom-scrollbar::-webkit-scrollbar { width: 6px; }
   .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
   .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
-  .fo-nav-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; cursor: pointer; border: 1px solid #e2e8f0; transition: all 0.2s; }
-  .fo-nav-dot.answered { background: #4f46e5; border-color: #4f46e5; }
-  .fo-nav-dot.current { background: #ef4444; border-color: #ef4444; transform: scale(1.5); }
+  .fo-nav-dot { 
+    width: 100%;
+    aspect-ratio: 1/1; 
+    border-radius: 6px; 
+    background: #f8fafc; 
+    border: 1px solid #e2e8f0; 
+    cursor: pointer; 
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    font-weight: 800;
+    color: #94a3b8;
+    line-height: 1;
+  }
+  .fo-nav-dot:hover { border-color: #cbd5e1; transform: translateY(-1px); background: white; }
+  .fo-nav-dot.answered { background: #e0e7ff; border-color: #c7d2fe; color: #4338ca; }
+  .fo-nav-dot.current { background: #4338ca; border-color: #4338ca; color: white; box-shadow: 0 4px 10px rgba(67, 56, 202, 0.3); transform: scale(1.05); z-index: 10; }
+  
+  /* Hidden checkbox effect for filters */
+  label input:not(:checked) + span { opacity: 0.4; text-decoration: line-through; }
+  label input:checked + span { opacity: 1; text-decoration: none; }
 </style>
 `;
 
