@@ -13,14 +13,14 @@ export const handler = async (event) => {
 
   try {
     const { text } = JSON.parse(event.body);
-    const apiKey = process.env.GOOGLE_AI_API_KEY;
+    const apiKey = process.env.OPENAI_API_KEY;
 
     if (!text) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: "No text provided" }) };
     }
 
     if (!apiKey) {
-      return { statusCode: 500, headers, body: JSON.stringify({ error: "Gemini API Key not configured" }) };
+      return { statusCode: 500, headers, body: JSON.stringify({ error: "OpenAI API Key not configured" }) };
     }
 
     const systemPrompt = `You are a YDS/YDT/YÖKDİL expert English teacher. 
@@ -35,38 +35,34 @@ export const handler = async (event) => {
       "score": 0-100 (Academic quality score)
     }`;
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-
-    const response = await fetch(url, {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Authorization": `Bearer ${apiKey}`,
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
-        contents: [{
-          parts: [{
-            text: `${systemPrompt}\n\nSentence to analyze: "${text}"`
-          }]
-        }],
-        generationConfig: {
-          temperature: 0.4,
-          topP: 1,
-          topK: 32,
-          maxOutputTokens: 1024,
-        }
+        model: "gpt-4o-mini",
+        temperature: 0.4,
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: `Analyze this sentence: "${text}"` }
+        ]
       })
     });
 
     const data = await response.json();
-    const content = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    const content = data.choices?.[0]?.message?.content;
 
     if (!content) {
       return { 
         statusCode: 500, 
         headers, 
-        body: JSON.stringify({ error: "AI returned empty content", raw: data }) 
+        body: JSON.stringify({ error: "AI returned empty content" }) 
       };
     }
 
-    // Clean JSON if Gemini adds markdown blocks
+    // Clean JSON if OpenAI adds markdown blocks
     const cleanJson = content.replace(/```json/g, "").replace(/```/g, "").trim();
 
     return {
