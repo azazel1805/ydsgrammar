@@ -257,23 +257,7 @@ window.loadQuizData = function () {
 ========================================== */
 
 window.switchTab = function (tabName) {
-    document.querySelectorAll('.tab-content')
-        .forEach(el => el.classList.remove('active'));
-
-    document.querySelectorAll('.tab-btn, .drawer-btn')
-        .forEach(btn => btn.classList.remove('active'));
-
-    const target = document.getElementById('tab-' + tabName);
-    if (target) {
-        target.classList.add('active');
-        // If content is empty (due to race condition or error), try re-injecting
-        if (target.innerHTML.trim() === "" || target.innerHTML.includes("undefined")) {
-            console.warn("Tab content empty, re-injecting:", tabName);
-            reinjectTabContent(tabName);
-        }
-    }
-
-    const userTabs = ['profile'];
+    const userTabs = ['profile', 'dashboard'];
     const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams', 'premium-exercises'];
     const adminTabs = ['admin'];
 
@@ -306,6 +290,22 @@ window.switchTab = function (tabName) {
             alert("Bu sayfaya erişim yetkiniz yok.");
             switchTab('dashboard');
             return;
+        }
+    }
+
+    document.querySelectorAll('.tab-content')
+        .forEach(el => el.classList.remove('active'));
+
+    document.querySelectorAll('.tab-btn, .drawer-btn')
+        .forEach(btn => btn.classList.remove('active'));
+
+    const target = document.getElementById('tab-' + tabName);
+    if (target) {
+        target.classList.add('active');
+        // If content is empty (due to race condition or error), try re-injecting
+        if (target.innerHTML.trim() === "" || target.innerHTML.includes("undefined")) {
+            console.warn("Tab content empty, re-injecting:", tabName);
+            reinjectTabContent(tabName);
         }
     }
 

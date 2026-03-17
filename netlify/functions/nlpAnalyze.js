@@ -1,7 +1,17 @@
 
 export const handler = async (event) => {
+    const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "POST, OPTIONS"
+    };
+
+    if (event.httpMethod === "OPTIONS") {
+        return { statusCode: 200, headers, body: "" };
+    }
+
     if (event.httpMethod !== "POST") {
-        return { statusCode: 405, body: "Method Not Allowed" };
+        return { statusCode: 405, headers, body: "Method Not Allowed" };
     }
 
     try {
@@ -9,11 +19,11 @@ export const handler = async (event) => {
         const apiKey = process.env.GOOGLE_NLP_API_KEY;
 
         if (!text) {
-            return { statusCode: 400, body: JSON.stringify({ error: "No text provided" }) };
+            return { statusCode: 400, headers, body: JSON.stringify({ error: "No text provided" }) };
         }
 
         if (!apiKey) {
-            return { statusCode: 500, body: JSON.stringify({ error: "Google API Key not configured" }) };
+            return { statusCode: 500, headers, body: JSON.stringify({ error: "Google API Key not configured" }) };
         }
 
         // 1. Google Cloud NLP Syntax Analysis
@@ -80,6 +90,7 @@ export const handler = async (event) => {
     } catch (error) {
         return {
             statusCode: 500,
+            headers,
             body: JSON.stringify({ error: error.message })
         };
     }

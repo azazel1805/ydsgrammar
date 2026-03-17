@@ -220,8 +220,9 @@ onAuthStateChanged(auth, (user) => {
 
   if (user) {
     window.currentUser = user;
-    if (loginPage) loginPage.classList.add("hidden");
+    if (typeof window.closeLoginModal === "function") window.closeLoginModal();
     if (appWrapper) appWrapper.classList.remove("hidden");
+    document.body.style.overflow = "auto";
 
     // 🔥 Real-time VIP Check: Query Firestore to see current role
     getDoc(doc(db, "users", user.uid)).then(userDoc => {
@@ -288,13 +289,14 @@ onAuthStateChanged(auth, (user) => {
       window.lockAnalyzerUI();
     }
 
-    // SEO Friendly: Don't hide the app wrapper. Only hide login page by default.
-    // The login overlay will only show up when the user clicks a protected tab.
+    // "Other things open" architecture:
+    // We don't hide the app wrapper. The login modal will show up only when needed.
     if (appWrapper) appWrapper.classList.remove("hidden");
     if (loginPage) {
         loginPage.classList.add("hidden");
         loginPage.classList.remove("fixed", "inset-0", "flex");
     }
+    document.body.style.overflow = "auto";
   }
 
   if (typeof window.forceProfileRender === "function") {
@@ -309,15 +311,30 @@ onAuthStateChanged(auth, (user) => {
 
 window.openLoginModal = function () {
   const loginPage = document.getElementById("loginPage");
+  const appWrapper = document.getElementById("appWrapper");
   if (loginPage) {
     loginPage.classList.remove("hidden");
-    loginPage.classList.add("fixed", "inset-0", "z-[300]", "flex"); // Ensure it's on top and centered
+    loginPage.classList.add("fixed", "inset-0", "z-[9999]", "flex"); 
+    document.body.style.overflow = "hidden"; // Lock scroll
+    
+    // If we're showing the login modal, we might want to hide the app content
+    // behind it IF it's a critical section like Dashboard
+    const currentHash = window.location.hash;
+    if (currentHash === "#dashboard" || currentHash === "#profile") {
+        if (appWrapper) appWrapper.classList.add("hidden");
+    }
   }
 };
 
 window.closeLoginModal = function () {
   const loginPage = document.getElementById("loginPage");
-  if (loginPage) loginPage.classList.add("hidden");
+  const appWrapper = document.getElementById("appWrapper");
+  if (loginPage) {
+    loginPage.classList.add("hidden");
+    loginPage.classList.remove("fixed", "inset-0", "flex");
+    document.body.style.overflow = "auto"; // Unlock scroll
+    if (appWrapper) appWrapper.classList.remove("hidden");
+  }
 };
 
 
