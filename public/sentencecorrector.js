@@ -53,7 +53,7 @@ function initSentenceCorrector() {
             const data = await response.json();
 
             checkBtn.disabled = false;
-            checkBtn.innerHTML = '<span>CÜMLEYİ ANALİZ ET</span> <i class="fas fa-microchip animate-pulse text-cyan-400"></i>';
+            checkBtn.innerHTML = '<span>HIZLI ANALİZ (Hataları Bul)</span> <i class="fas fa-bolt text-cyan-400"></i>';
 
             if (!data.matches.length) {
                 statusText.innerText = "Hata Bulunmadı";
@@ -64,7 +64,7 @@ function initSentenceCorrector() {
                             <i class="fas fa-check-double text-2xl"></i>
                         </div>
                         <h3 class="text-slate-900 font-black text-lg mb-2">Harika! Hata bulunmadı.</h3>
-                        <p class="text-slate-400 text-sm font-medium leading-relaxed">Cümleniz dilbilgisi kurallarına uygun görünüyor.</p>
+                        <p class="text-slate-400 text-sm font-medium leading-relaxed">Cümleniz dilbilgisi kurallarına uygun görünüyor. Daha derin bir analiz için Monster AI'ı deneyebilirsiniz.</p>
                     </div>`;
                 correctedArea.classList.add("hidden");
                 return;
@@ -118,7 +118,7 @@ function initSentenceCorrector() {
 
         } catch (err) {
             checkBtn.disabled = false;
-            checkBtn.innerHTML = '<span>CÜMLEYİ ANALİZ ET</span> <i class="fas fa-microchip animate-pulse text-cyan-400"></i>';
+            checkBtn.innerHTML = '<span>HIZLI ANALİZ (Hataları Bul)</span> <i class="fas fa-bolt text-cyan-400"></i>';
             statusText.innerText = "Bağlantı Hatası";
             correctionsBox.innerHTML = `
                 <div class="p-8 text-center text-rose-500 font-bold bg-rose-50 rounded-2xl border border-rose-100">
@@ -132,6 +132,65 @@ function initSentenceCorrector() {
     input.addEventListener("input", debouncedCheck);
     checkBtn.addEventListener("click", checkSentence);
 }
+
+// ==========================================
+// MONSTER AI CHECK (Gemini Entegrasyonu)
+// ==========================================
+window.checkWithMonsterAI = async function() {
+    const input = document.getElementById("scInput");
+    const aiBtn = document.getElementById("scAiCheck");
+    const aiResult = document.getElementById("scAiResult");
+    const aiExplanation = document.getElementById("scAiExplanation");
+    const correctedArea = document.getElementById("scCorrectedArea");
+    const correctedText = document.getElementById("scCorrectedText");
+    const scoreBar = document.getElementById("scScoreBar");
+    const scoreValue = document.getElementById("scScoreValue");
+    const statusText = document.getElementById("scStatusText");
+
+    const text = input?.value.trim();
+    if (!text) return alert("Analiz için bir cümle giriniz.");
+
+    // Loading State
+    const originalBtn = aiBtn.innerHTML;
+    aiBtn.disabled = true;
+    aiBtn.innerHTML = '<i class="fas fa-brain fa-spin"></i> MONSTER AI DÜŞÜNÜYOR...';
+    statusText.innerText = "Monster AI Devrede...";
+
+    try {
+        const response = await fetch('/.netlify/functions/gemini-sentence-check', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text })
+        });
+
+        if (!response.ok) throw new Error("AI Analiz servisi şu an meşgul.");
+
+        const data = await response.json();
+        
+        // UI Update
+        aiResult.classList.remove("hidden");
+        aiExplanation.innerText = data.explanation || "Analiz başarılı.";
+        
+        if (data.score) {
+            scoreBar.style.width = `${data.score}%`;
+            scoreValue.innerText = `${data.score} / 100`;
+        }
+
+        if (data.corrected) {
+            correctedArea.classList.remove("hidden");
+            correctedText.innerText = data.corrected;
+        }
+
+        statusText.innerText = "AI Analizi Tamamlandı";
+
+    } catch (err) {
+        console.error(err);
+        alert(err.message);
+    } finally {
+        aiBtn.disabled = false;
+        aiBtn.innerHTML = originalBtn;
+    }
+};
 
 // Global Copy Helper
 window.copyCorrectedText = function() {
@@ -162,6 +221,11 @@ window.resetSentenceCorrector = function() {
     if (statusText) statusText.innerText = "Analiz Hazır";
     if (scSummary) scSummary.innerHTML = "";
     if (correctedArea) correctedArea.classList.add("hidden");
+    const aiResult = document.getElementById("scAiResult");
+    const aiExplanation = document.getElementById("scAiExplanation");
+    if (aiResult) aiResult.classList.add("hidden");
+    if (aiExplanation) aiExplanation.innerText = "";
+    
     if (correctionsBox) {
         correctionsBox.innerHTML = `
             <div class="flex flex-col items-center justify-center p-12 text-center opacity-30">

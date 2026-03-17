@@ -44,8 +44,14 @@ const sentenceCorrectorHTML = `
                 </div>
 
                 <button id="scCheck" class="group w-full mt-6 py-5 bg-slate-900 text-white rounded-[1.5rem] font-black text-xs uppercase tracking-[0.2em] shadow-xl shadow-cyan-900/10 hover:bg-cyan-600 hover:scale-[1.01] active:scale-95 transition-all flex items-center justify-center gap-3">
-                    <span>CÜMLEYİ ANALİZ ET</span>
-                    <i class="fas fa-microchip animate-pulse text-cyan-400"></i>
+                    <span>HIZLI ANALİZ (Hataları Bul)</span>
+                    <i class="fas fa-bolt text-cyan-400"></i>
+                </button>
+
+                <button id="scAiCheck" onclick="window.checkWithMonsterAI()" class="group w-full mt-3 py-5 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-[1.5rem] font-black text-xs uppercase tracking-[0.2em] shadow-xl shadow-indigo-900/20 hover:scale-[1.01] active:scale-95 transition-all flex items-center justify-center gap-3 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <span>MONSTER AI ANALİZ (Tavsiye Edilen)</span>
+                    <i class="fas fa-robot animate-bounce text-white"></i>
                 </button>
             </div>
         </div>
@@ -66,6 +72,28 @@ const sentenceCorrectorHTML = `
                 </div>
                 <div class="flex gap-2" id="scSummary">
                     <!-- Dynamic Badges -->
+                </div>
+            </div>
+
+            <!-- AI DETAILED EXPLANATION AREA -->
+            <div id="scAiResult" class="hidden animate-in zoom-in duration-500">
+                <div class="bg-indigo-50 border border-indigo-100 rounded-[2rem] p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-[0.05] pointer-events-none">
+                        <i class="fas fa-brain text-6xl text-indigo-900"></i>
+                    </div>
+                    <h4 class="text-[10px] font-black text-indigo-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+                        <i class="fas fa-comment-alt"></i> Monster AI Açıklaması
+                    </h4>
+                    <p id="scAiExplanation" class="text-slate-700 text-sm leading-relaxed font-medium"></p>
+                    <div id="scAiScore" class="mt-6 pt-6 border-t border-indigo-100/50 flex items-center justify-between">
+                        <span class="text-[10px] font-black text-indigo-300 uppercase">Akademik Kalite Skoru:</span>
+                        <div class="flex items-center gap-2">
+                             <div class="w-24 h-2 bg-indigo-100 rounded-full overflow-hidden">
+                                <div id="scScoreBar" class="h-full bg-indigo-500" style="width: 0%"></div>
+                             </div>
+                             <span id="scScoreValue" class="text-xs font-black text-indigo-600">0/100</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
