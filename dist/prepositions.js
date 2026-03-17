@@ -261,8 +261,11 @@ function renderPrepCategory(category) {
  Type: ${item.type}
  </div>
 
- <div class="italic text-gray-600 mt-2 text-sm">
- Example: ${item.example || "-"}
+ <div class="mt-3">
+ <div class="text-sm italic text-gray-700">
+  ${item.exampleEn || item.example || "-"}
+ </div>
+ ${item.exampleTr ? `<div class="map-tr-sentence">${item.exampleTr}</div>` : ""}
  </div>
 
  <div class="text-yellow-400 text-sm mt-1">

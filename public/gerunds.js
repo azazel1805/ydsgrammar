@@ -13,7 +13,7 @@ const GI_SECTIONS = [
     formula: 'V + V-ing',
     verbs: ['enjoy', 'admit', 'avoid', 'deny', 'finish', 'consider', 'mind', 'suggest', 'recommend', 'risk', 'miss', 'practise', 'keep', 'delay', 'postpone', 'give up', 'put off', 'carry on'],
     examples: [
-      { en: 'She enjoys reading classic novels.', note: 'NOT: enjoy to read', tr: 'Klasik roman okumaktan zevk aliyor.' },
+      { en: `She <span class="map-tag map-1">enjoys</span> <span class="map-tag map-2">reading</span> classic novels.`, tr: `Klasik roman <span class="map-tag map-2">okumak</span>tan <span class="map-tag map-1">zevk alıyor</span>.` },
       { en: 'He admitted taking the money.', tr: 'Parayi aldigini kabul etti.' },
       { en: 'Would you mind opening the window?', tr: 'Pencereyi acar misiniz?' },
       { en: 'They keep arguing about money.', tr: 'Para konusunda tartismaya devam ediyorlar.' },
@@ -31,7 +31,7 @@ const GI_SECTIONS = [
     formula: 'V + to + V1',
     verbs: ['want', 'hope', 'wish', 'decide', 'plan', 'arrange', 'promise', 'offer', 'agree', 'refuse', 'manage', 'fail', 'attempt', 'tend', 'seem', 'expect', 'pretend', 'appear'],
     examples: [
-      { en: 'She decided to study medicine.', note: 'NOT: decided studying', tr: 'Tip okumaya karar verdi.' },
+      { en: `She <span class="map-tag map-1">decided</span> <span class="map-tag map-2">to study</span> medicine.`, tr: `Tıp <span class="map-tag map-2">okumaya</span> <span class="map-tag map-1">karar verdi</span>.` },
       { en: 'He managed to finish on time.', tr: 'Zamaninda bitirmeyi basardi.' },
       { en: 'They refused to cooperate.', tr: 'Isbirligi yapmayi reddettiler.' },
     ],
@@ -108,7 +108,7 @@ const GI_SECTIONS = [
       { en: 'She is interested in learning French.', tr: 'Fransizca ogrenmeyle ilgileniyor.' },
       { en: 'He is good at playing chess.', tr: 'Satranc oynamakta iyidir.' },
       { en: 'After finishing work, she went home.', tr: 'Isi bittikten sonra eve gitti.' },
-      { en: 'I look forward to hearing from you.', tr: 'Sizden haber almayı bekliyorum.' },
+      { en: `I <span class="map-tag map-1">look forward to</span> <span class="map-tag map-2">hearing</span> from you.`, tr: `Sizden haber <span class="map-tag map-2">almayı</span> <span class="map-tag map-1">dört gözle bekliyorum</span>.` },
       { en: 'I got used to waking up early.', tr: 'Erken kalkmaya alistim.' },
     ],
     mistake: 'YANLIS: "I look forward to see you." -> "to" burada edat!\n-> "I look forward to SEEING you."',

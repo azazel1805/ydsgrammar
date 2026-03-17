@@ -1,8 +1,8 @@
 const PREP_DATA = {
  verbs: [
 
-{pattern:"depend on",word:"depend",prep:"on",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"bağlı olmak",example:"Success depends on effort.",trap:["depend from"],patternNote:"depend on + noun/gerund"},
-{pattern:"result in",word:"result",prep:"in",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"ile sonuçlanmak",example:"The reform resulted in economic growth.",trap:["result to"],patternNote:"result in + noun"},
+{pattern:"depend on",word:"depend",prep:"on",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"bağlı olmak",exampleEn:`Success <span class="map-tag map-1">depends on</span> effort.`,exampleTr:`Başarı çabaya <span class="map-tag map-1">BAĞLIDIR</span>.`,trap:["depend from"],patternNote:"depend on + noun/gerund"},
+{pattern:"result in",word:"result",prep:"in",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"ile sonuçlanmak",exampleEn:`The reform <span class="map-tag map-1">resulted in</span> economic growth.`,exampleTr:`Reform ekonomik büyümeyle <span class="map-tag map-1">SONUÇLANDI</span>.`,trap:["result to"],patternNote:"result in + noun"},
 {pattern:"result from",word:"result",prep:"from",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"-den kaynaklanmak",example:"The crisis resulted from mismanagement.",trap:[],patternNote:"result from + cause"},
 {pattern:"lead to",word:"lead",prep:"to",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"-e yol açmak",example:"Lack of sleep leads to errors.",trap:[],patternNote:"lead to + noun"},
 {pattern:"contribute to",word:"contribute",prep:"to",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"katkıda bulunmak",example:"Pollution contributes to climate change.",trap:[],patternNote:"contribute to + noun/gerund"},
@@ -180,7 +180,7 @@ const PREP_DATA = {
 {pattern:"difference between",word:"difference",prep:"between",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"arasındaki fark",example:"The difference between the two models is clear.",trap:[],patternNote:"difference between A and B"},
 {pattern:"effect on",word:"effect",prep:"on",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"üzerindeki etki",example:"The effect on society was dramatic.",trap:[],patternNote:"effect on + noun"},
 {pattern:"example of",word:"example",prep:"of",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"örneği",example:"This is an example of innovation.",trap:[],patternNote:"example of + noun"},
-{pattern:"increase in",word:"increase",prep:"in",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"artış",example:"There is an increase in prices.",trap:["increase of"],patternNote:"increase in + noun"},
+{pattern:"increase in",word:"increase",prep:"in",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"artış",exampleEn:`There is an <span class="map-tag map-1">increase in</span> prices.`,exampleTr:`Fiyatlar<span class="map-tag map-1">DA</span> bir <span class="map-tag map-1">ARTIŞ</span> var.`,trap:["increase of"],patternNote:"increase in + noun"},
 {pattern:"influence on",word:"influence",prep:"on",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"üzerindeki etki",example:"Media has influence on youth.",trap:[],patternNote:"influence on + noun"},
 {pattern:"interest in",word:"interest",prep:"in",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"ilgi",example:"She has interest in psychology.",trap:[],patternNote:"interest in + noun"},
 {pattern:"lack of",word:"lack",prep:"of",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"eksiklik",example:"Lack of funding delayed the project.",trap:[],patternNote:"lack of + noun"},

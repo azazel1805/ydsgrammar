@@ -139,31 +139,46 @@ const modalsHTML = `
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 ">
- <tr>
- <td class="p-4 font-bold text-green-600">Must (be / have V3)</td>
- <td class="p-4">%95</td>
- <td class="p-4 hidden md:table-cell">Kesin gibi (strong deduction)</td>
- </tr>
- <tr>
- <td class="p-4 font-bold text-cyan-600">Be bound to</td>
- <td class="p-4">%90</td>
- <td class="p-4 hidden md:table-cell">Neredeyse kaçınılmaz</td>
- </tr>
- <tr>
- <td class="p-4 font-bold text-indigo-600">Be likely to</td>
- <td class="p-4">%75</td>
- <td class="p-4 hidden md:table-cell">Oldukça muhtemel</td>
- </tr>
- <tr>
- <td class="p-4 font-bold text-yellow-600">May / Might</td>
- <td class="p-4">%50</td>
- <td class="p-4 hidden md:table-cell">Olası</td>
- </tr>
- <tr>
- <td class="p-4 font-bold text-red-600">Can't (be / have V3)</td>
- <td class="p-4">%95 Negative</td>
- <td class="p-4 hidden md:table-cell">Mümkün değil</td>
- </tr>
+  <tr>
+  <td class="p-4 font-bold text-green-600">Must (be / have V3)</td>
+  <td class="p-4">%95</td>
+  <td class="p-4 hidden md:table-cell">
+    <div><span class="map-tag map-1">Must have done</span></div>
+    <div class="map-tr-sentence"><span class="map-tag map-1">Yapmış OLMALI</span>.</div>
+  </td>
+  </tr>
+  <tr>
+  <td class="p-4 font-bold text-cyan-600">Be bound to</td>
+  <td class="p-4">%90</td>
+  <td class="p-4 hidden md:table-cell">
+    <div><span class="map-tag map-1">Is bound to happen</span></div>
+    <div class="map-tr-sentence">Gerçekleşmesi <span class="map-tag map-1">KAÇINILMAZ</span>.</div>
+  </td>
+  </tr>
+  <tr>
+  <td class="p-4 font-bold text-indigo-600">Be likely to</td>
+  <td class="p-4">%75</td>
+  <td class="p-4 hidden md:table-cell">
+    <div><span class="map-tag map-1">Is likely to win</span></div>
+    <div class="map-tr-sentence">Kazanması <span class="map-tag map-1">MUHTEMEL</span>.</div>
+  </td>
+  </tr>
+  <tr>
+  <td class="p-4 font-bold text-yellow-600">May / Might</td>
+  <td class="p-4">%50</td>
+  <td class="p-4 hidden md:table-cell">
+    <div><span class="map-tag map-1">Might be</span> true</div>
+    <div class="map-tr-sentence">Doğru <span class="map-tag map-1">OLABİLİR</span>.</div>
+  </td>
+  </tr>
+  <tr>
+  <td class="p-4 font-bold text-red-600">Can't (be / have V3)</td>
+  <td class="p-4">%95 Negative</td>
+  <td class="p-4 hidden md:table-cell">
+    <div><span class="map-tag map-1">Can't have seen</span></div>
+    <div class="map-tr-sentence"><span class="map-tag map-1">Görmüş OLAMAZ</span>.</div>
+  </td>
+  </tr>
  </tbody>
  </table>
  </div>
@@ -204,9 +219,14 @@ const modalsHTML = `
  </td>
  <td class="p-4 hidden md:table-cell">
  <div class="example-block">
- <div class="example-text">Smoking <span class="highlight-modal">can</span> cause cancer. (Theoretical)</div>
- <div class="example-text">I <span class="highlight-modal">can</span> swim very well. (Ability)</div>
- <div class="example-text">You <span class="highlight-modal">can't</span> pass. (Prohibition)</div>
+ <div class="example-text">
+    <div>Smoking <span class="map-tag map-1">can</span> cause cancer.</div>
+    <div class="map-tr-sentence">Sigara kansere sebep <span class="map-tag map-1">OLABİLİR</span>.</div>
+ </div>
+ <div class="example-text mt-2">
+    <div>I <span class="map-tag map-1">can</span> <span class="map-tag map-2">swim</span>.</div>
+    <div class="map-tr-sentence"><span class="map-tag map-2">Yüz</span><span class="map-tag map-1">EBİLİRİM</span>.</div>
+ </div>
  </div>
  </td>
  </tr>
@@ -226,8 +246,14 @@ const modalsHTML = `
  </td>
  <td class="p-4 hidden md:table-cell">
  <div class="example-block">
- <div class="example-text">My grandfather <span class="highlight-modal">could</span> speak 5 languages.</div>
- <div class="example-text"><span class="highlight-modal">Could</span> you pass the salt, please?</div>
+ <div class="example-text">
+    <div>My grandfather <span class="map-tag map-1">could</span> speak 5 languages.</div>
+    <div class="map-tr-sentence">Dedem 5 dil <span class="map-tag map-1">KONUŞABİLİRDİ</span>.</div>
+ </div>
+ <div class="example-text mt-2">
+    <div><span class="map-tag map-1">Could you</span> pass the salt, please?</div>
+    <div class="map-tr-sentence">Tuzu <span class="map-tag map-1">UZATABİLİR MİSİNİZ</span>? (Kibar)</div>
+ </div>
  </div>
  </td>
  </tr>
@@ -247,8 +273,10 @@ const modalsHTML = `
  </td>
  <td class="p-4 hidden md:table-cell">
  <div class="example-block">
- <div class="example-text">The fire was huge, but everyone <span class="highlight-modal">was able to</span> escape. (Not "could")</div>
- <div class="example-text">I <span class="highlight-modal">will be able to</span> drive next year.</div>
+ <div class="example-text">
+    <div>The fire was huge, but everyone <span class="map-tag map-1">was able to</span> <span class="map-tag map-2">escape</span>.</div>
+    <div class="map-tr-sentence">Yangın büyüktü ama herkes <span class="map-tag map-2">KAÇMAYI</span> <span class="map-tag map-1">BAŞARDI</span>.</div>
+ </div>
  </div>
  </td>
  </tr>
@@ -269,8 +297,14 @@ const modalsHTML = `
  </td>
  <td class="p-4 hidden md:table-cell">
  <div class="example-block">
- <div class="example-text">Take an umbrella, it <span class="highlight-modal">might</span> rain later.</div>
- <div class="example-text"><span class="highlight-modal">May</span> I ask a question?</div>
+ <div class="example-text">
+    <div>Take an umbrella, it <span class="map-tag map-1">might</span> rain later.</div>
+    <div class="map-tr-sentence">Şemsiyeni al, sonra yağmur <span class="map-tag map-1">yağabilir</span>.</div>
+ </div>
+ <div class="example-text mt-2">
+    <div><span class="map-tag map-1">May</span> I ask a question?</div>
+    <div class="map-tr-sentence">Bir soru <span class="map-tag map-1">SORABİLİR MİYİM</span>?</div>
+ </div>
  </div>
  </td>
  </tr>
@@ -323,7 +357,10 @@ const modalsHTML = `
  </ul>
  </td>
  <td class="p-4 hidden md:table-cell">
- <div class="example-text">I <span class="highlight-modal">must</span> clean my house today. (My decision)</div>
+ <div class="example-text">
+    <div>I <span class="map-tag map-1">must</span> <span class="map-tag map-2">clean</span> my house today.</div>
+    <div class="map-tr-sentence">Bugün evimi <span class="map-tag map-2">TEMİZLE</span><span class="map-tag map-1">MELİYİM</span>.</div>
+ </div>
  </td>
  </tr>
 
@@ -339,7 +376,10 @@ const modalsHTML = `
  </ul>
  </td>
  <td class="p-4 hidden md:table-cell">
- <div class="example-text">You <span class="highlight-modal">have to</span> wear a seatbelt. (Law)</div>
+ <div class="example-text">
+    <div>You <span class="map-tag map-1">have to</span> <span class="map-tag map-2">wear</span> a seatbelt.</div>
+    <div class="map-tr-sentence">Emniyet kemeri <span class="map-tag map-2">TAK</span><span class="map-tag map-1">MAK ZORUNDASINIZ</span>.</div>
+ </div>
  </td>
  </tr>
 
@@ -439,7 +479,10 @@ const modalsHTML = `
  </ul>
  </td>
  <td class="p-4 hidden md:table-cell">
- <div class="example-text">The streets are wet. It <span class="highlight-modal">must have rained</span> last night.</div>
+ <div class="example-text">
+    <div>The streets are wet. It <span class="map-tag map-1">must have rained</span> last night.</div>
+    <div class="map-tr-sentence">Sokaklar ıslak. Dün gece <span class="map-tag map-1">yağmış OLMALI</span>.</div>
+ </div>
  </td>
  </tr>
 
@@ -456,7 +499,10 @@ const modalsHTML = `
  </ul>
  </td>
  <td class="p-4 hidden md:table-cell">
- <div class="example-text">He was with me. He <span class="highlight-modal">can't have stolen</span> the money.</div>
+ <div class="example-text">
+    <div>He was with me. He <span class="map-tag map-1">can't have stolen</span> the money.</div>
+    <div class="map-tr-sentence">Benimleydi. Parayı <span class="map-tag map-1">çalmış OLAMAZ</span>.</div>
+ </div>
  </td>
  </tr>
 
@@ -535,7 +581,10 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </ul>
  </td>
  <td class="p-4 hidden md:table-cell">
- <div class="example-text">You <span class="highlight-modal">should have studied</span> more for the exam. (You failed)</div>
+ <div class="example-text">
+    <div>You <span class="map-tag map-1">should have studied</span> more for the exam.</div>
+    <div class="map-tr-sentence">Sınava daha çok <span class="map-tag map-1">çalışMALIYDIN</span> (ama çalışmadın).</div>
+ </div>
  </td>
  </tr>
 

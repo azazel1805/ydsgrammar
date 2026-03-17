@@ -10,13 +10,15 @@ const REDUCTION_DATA = [
       {
         title: "Active (Etken) Kısaltma: V-ing",
         rule: "Eylem aktif ise 'who/which/that + fiil' yerine sadece fiilin -ing hali kullanılır.",
-        example: "The man who stands there -> The man standing there.",
+        example: `The man <span class="map-tag map-1">who stands</span> there -> The man <span class="map-tag map-1">standing</span> there.`,
+        tr: `Orada <span class="map-tag map-1">duran</span> adam.`,
         note: "Zaman farkı önemli değildir; genel veya anlık durumlar için kullanılır."
       },
       {
         title: "Passive (Edilgen) Kısaltma: V3",
         rule: "Eylem pasif ise 'who/which/that + be + V3' yerine sadece V3 kullanılır.",
-        example: "The book which was written by him -> The book written by him.",
+        example: `The book <span class="map-tag map-1">which was written</span> by him -> The book <span class="map-tag map-1">written</span> by him.`,
+        tr: `Onun tarafından <span class="map-tag map-1">yazılan</span> kitap.`,
         note: "YDS'de en sık çıkan kısaltma türüdür."
       },
       {
@@ -40,7 +42,8 @@ const REDUCTION_DATA = [
       {
         title: "Zaman Farkı Varsa: Having V3 / Having been V3",
         rule: "Eylemlerden biri diğerinden önce bitmişse 'Having' yapısı kullanılır.",
-        example: "After he had finished his work, he left -> Having finished his work, he left.",
+        example: `<span class="map-tag map-1">After he had finished</span> his work, he left -> <span class="map-tag map-1">Having finished</span> his work, he left.`,
+        tr: `İşini <span class="map-tag map-1">bitirdikten sonra</span> ayrıldı.`,
         note: "Sebep-sonuç ilişkisi (Because) için de sıkça kullanılır."
       },
       {
@@ -129,6 +132,7 @@ function getReductionsHTML() {
               <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 mb-3">
                 <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Örnek:</span>
                 <p class="text-sm font-medium text-slate-800 italic">${item.example}</p>
+                ${item.tr ? `<div class="map-tr-sentence text-xs mt-1">${item.tr}</div>` : ""}
               </div>
 
               <div class="flex items-start gap-2 text-xs text-red-600/70 py-2">

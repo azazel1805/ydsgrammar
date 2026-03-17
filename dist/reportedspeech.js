@@ -40,8 +40,8 @@ const RS_DATA = {
           tag: 'say vs tell Farki', color: '#2563eb',
           desc: '"say" -> nesne almaz. "tell" -> kisi nesnesi gerektirir.',
           examples: [
-            { en: 'He said (that) he was tired.', tr: 'Yorgun oldugunu soyledi.' },
-            { en: 'He told me (that) he was tired.', tr: 'Bana yorgun oldugunu soyledi.' },
+            { en: `<span class="map-tag map-1">He said</span> (that) <span class="map-tag map-2">he was</span> tired.`, tr: `Yorgun <span class="map-tag map-2">olduğunu</span> <span class="map-tag map-1">söyledi</span>.` },
+            { en: `<span class="map-tag map-1">He told me</span> (that) <span class="map-tag map-2">he was</span> tired.`, tr: `Bana yorgun <span class="map-tag map-2">olduğunu</span> <span class="map-tag map-1">söyledi</span>.` },
             { en: 'He told her the truth.', tr: 'Ona gercegi soyledi.' },
           ]
         },
@@ -77,8 +77,8 @@ const RS_DATA = {
           tag: 'Yes/No Sorulari (if/whether)', color: '#0891b2',
           desc: 'Evet/ilanin cevabi beklenen sorular "if" veya "whether" ile aktarilir.',
           examples: [
-            { en: '"Are you tired?" -> He asked if I was tired.', tr: '"Yorgun musun?" -> Yorgun olup olmadigimi sordu.' },
-            { en: '"Have you eaten?" -> She asked whether I had eaten.', tr: '"Yedin mi?" -> Yiyip yemedigimi sordu.' },
+            { en: `"<span class="map-tag map-2">Are you</span> tired?" -> <span class="map-tag map-1">He asked if</span> I was tired.`, tr: `"<span class="map-tag map-2">Yorgun musun</span>?" -> Yorgun <span class="map-tag map-1">olup olmadığımı sordu</span>.` },
+            { en: `"<span class="map-tag map-2">Have you eaten</span>?" -> <span class="map-tag map-1">She asked whether</span> I had eaten.`, tr: `"<span class="map-tag map-2">Yedin mi</span>?" -> Yiyip <span class="map-tag map-1">yemediğimi sordu</span>.` },
           ]
         },
         {
