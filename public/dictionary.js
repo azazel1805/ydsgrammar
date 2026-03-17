@@ -93,6 +93,56 @@ function getCEFR(score) {
 }
 
 /* =========================================
+ UNSPLASH
+ ========================================= */
+
+async function fetchUnsplashImages(word) {
+    try {
+        const res = await fetch(
+            `https://api.unsplash.com/search/photos?query=${encodeURIComponent(word)}&per_page=3`,
+            {
+                headers: {
+                    Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`
+                }
+            }
+        );
+
+        const data = await res.json();
+
+        if (data.results) {
+            return data.results.map(img => ({
+                thumb: img.urls.small,
+                full: img.urls.regular,
+                author: img.user.name,
+                authorLink: img.user.links.html
+            }));
+        }
+
+        return [];
+    } catch {
+        return [];
+    }
+}
+
+/* =========================================
+ TRANSLATE
+ ========================================= */
+
+async function translateText(text) {
+    try {
+        const res = await fetch("/.netlify/functions/nlpAnalyze", {
+            method: "POST",
+            body: JSON.stringify({ text: text })
+        });
+        const data = await res.json();
+        return data.translation || "";
+    } catch (e) {
+        console.error("Translation error:", e);
+        return "";
+    }
+}
+
+/* =========================================
  MAIN SEARCH
  ========================================= */
 

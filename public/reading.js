@@ -34,48 +34,81 @@ loadFullDictionary();
 
 /* ================= HTML ================= */
 const readingHTML = `
-<div class="space-y-8">
-<div class="p-8 rounded-2xl shadow-sm bg-white border border-slate-200 ">
-<div class="flex items-center justify-between mb-4">
-    <h2 class="text-xl font-bold text-red-800" style="font-family: 'Playfair Display', serif;">📘 Reading Intelligence</h2>
-    <div class="flex bg-slate-100 p-1 rounded-lg border border-slate-200 text-black">
-        <button id="toggleEnWiki" onclick="toggleWikiSource(false)" class="px-3 py-1 text-xs font-bold rounded-md bg-white text-slate-800 shadow-sm transition-all">English</button>
-        <button id="toggleSimpleWiki" onclick="toggleWikiSource(true)" class="px-3 py-1 text-xs font-bold rounded-md text-slate-500 hover:text-slate-800 transition-all">Simple En</button>
+<div class="max-w-[1400px] mx-auto space-y-8 animate-in fade-in duration-700">
+  <!-- HEADER & SETUP -->
+  <div class="bg-white rounded-[2.5rem] p-8 lg:p-10 border border-slate-100 shadow-2xl shadow-indigo-500/5 relative overflow-hidden">
+    <div class="absolute top-0 right-0 p-12 opacity-[0.03] pointer-events-none rotate-12">
+      <i class="fas fa-book-reader text-9xl"></i>
     </div>
-</div>
-<div class="flex flex-wrap gap-2 text-black">
-    <select id="categorySelect" class="p-2 rounded text-sm bg-slate-100 text-slate-900 border border-slate-300" onchange="updateTopics()"></select>
-    <select id="topicSelect" class="p-2 rounded text-sm bg-slate-100 text-slate-900 border border-slate-300"></select>
-</div>
-<div class="flex flex-wrap gap-2 mt-4">
-    <button onclick="loadReading()" class="bg-black hover:bg-slate-800 px-6 py-2 rounded-lg font-bold text-white transition shadow-lg">Makale Yükle</button>
-    <button onclick="loadRandomArticle()" class="bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg font-bold text-slate-900 transition border border-slate-200">🔄 Başka Konu</button>
-</div>
-<div id="readingStats" class="mt-4 text-[10px] uppercase tracking-widest font-bold text-slate-400 flex gap-4 border-t pt-4 border-slate-100"></div>
-<div id="readingText" class="mt-6 text-xl leading-relaxed break-words text-slate-800 selection:bg-yellow-200"></div>
-</div>
+    
+    <div class="relative z-10">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+         <div>
+            <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
+              <i class="fas fa-globe-americas"></i>
+              <span>Reading Intelligence Lab</span>
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-black text-slate-900 tracking-tight" style="font-family:'Playfair Display',serif;">
+              Reading <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Intelligence</span>
+            </h2>
+         </div>
+
+         <div class="flex items-center gap-1 bg-slate-50 p-1.5 rounded-2xl border border-slate-100 shadow-sm">
+            <button id="toggleEnWiki" onclick="toggleWikiSource(false)" class="px-5 py-2.5 text-[10px] font-black uppercase tracking-widest rounded-xl bg-white text-indigo-600 shadow-md transition-all">English</button>
+            <button id="toggleSimpleWiki" onclick="toggleWikiSource(true)" class="px-5 py-2.5 text-[10px] font-black uppercase tracking-widest rounded-xl text-slate-400 hover:text-slate-600 transition-all">Simple En</button>
+         </div>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-4 items-end">
+         <div class="lg:col-span-4">
+            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 ml-2">KATEGORİ</label>
+            <select id="categorySelect" class="w-full bg-slate-50/50 border-2 border-slate-100 rounded-2xl px-6 py-4 font-bold text-slate-800 focus:bg-white focus:border-indigo-500 outline-none transition-all cursor-pointer appearance-none" onchange="updateTopics()"></select>
+         </div>
+         <div class="lg:col-span-4">
+            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 ml-2">KONU</label>
+            <select id="topicSelect" class="w-full bg-slate-50/50 border-2 border-slate-100 rounded-2xl px-6 py-4 font-bold text-slate-800 focus:bg-white focus:border-indigo-500 outline-none transition-all cursor-pointer appearance-none"></select>
+         </div>
+         <div class="lg:col-span-4 flex gap-2">
+            <button onclick="loadReading()" class="flex-1 py-4.5 bg-slate-900 text-white rounded-2xl font-black text-xs uppercase tracking-widest shadow-xl shadow-slate-200 hover:bg-indigo-600 hover:scale-[1.02] active:scale-95 transition-all">YÜKLE</button>
+            <button onclick="loadRandomArticle()" class="w-14 h-[58px] bg-slate-50 text-slate-400 rounded-2xl border border-slate-100 hover:text-indigo-600 hover:bg-white hover:border-indigo-100 transition-all flex items-center justify-center">
+              <i class="fas fa-random"></i>
+            </button>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="readingContainer" class="hidden grid lg:grid-cols-12 gap-8 animate-in slide-in-from-bottom-4 duration-500">
+     <!-- TEXT CONTENT -->
+     <div class="lg:col-span-12 bg-white border border-slate-100 rounded-[2.5rem] p-8 lg:p-12 shadow-xl shadow-slate-200/50">
+        <div id="readingStats" class="flex flex-wrap gap-4 mb-8 pb-8 border-b border-slate-50"></div>
+        <div id="readingText" class="text-slate-800 leading-[1.8] text-lg lg:text-xl selection:bg-indigo-100 font-medium" style="font-family:'Lora',serif;">
+          <!-- Content here -->
+        </div>
+     </div>
+  </div>
 </div>
 
 <!-- Premium Word Modal -->
-<div id="wordModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-[200] p-4 overflow-y-auto">
-    <div class="bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
-        <div class="p-10">
-            <div class="flex justify-between items-start mb-8">
+<div id="wordModal" class="fixed inset-0 bg-slate-900/90 backdrop-blur-sm hidden items-center justify-center z-[200] p-4 animate-in fade-in duration-300">
+    <div class="bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden scale-in-center">
+        <div class="p-8 lg:p-10">
+            <div class="flex justify-between items-start mb-8 text-black">
                 <div>
-                    <h2 id="modalWord" class="text-5xl font-black text-slate-900 uppercase tracking-tighter italic" style="font-family: 'Inter', sans-serif;">WORD</h2>
-                    <p id="modalIpa" class="text-slate-400 font-mono mt-2 text-sm">// IPA //</p>
+                    <h2 id="modalWord" class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter italic" style="font-family:'Playfair Display',serif;">WORD</h2>
+                    <p id="modalIpa" class="text-indigo-500 font-black text-sm tracking-widest uppercase mt-2 opacity-60">// IPA //</p>
                 </div>
-                <button onclick="closeWordModal()" class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all">
-                    <i class="fas fa-times"></i>
+                <button onclick="closeWordModal()" class="w-12 h-12 flex items-center justify-center rounded-2xl bg-slate-50 text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all border border-slate-100 hover:border-red-100">
+                    <i class="fas fa-times text-lg"></i>
                 </button>
             </div>
             
-            <div id="modalContent" class="space-y-4 max-h-[450px] overflow-y-auto pr-2 custom-scrollbar text-black">
+            <div id="modalContent" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar text-black">
                 <!-- Cards injected here -->
             </div>
 
-            <div class="mt-10 flex gap-4">
-                <button onclick="closeWordModal()" class="flex-1 px-8 py-4 bg-slate-100 text-slate-600 font-black rounded-3xl hover:bg-slate-200 transition-all uppercase tracking-widest text-xs">KAPAT</button>
+            <div class="mt-10">
+                <button onclick="closeWordModal()" class="w-full py-4.5 bg-slate-50 text-slate-500 font-bold rounded-2xl hover:bg-slate-100 transition-all uppercase tracking-widest text-[10px] border border-slate-100">KAPAT</button>
             </div>
         </div>
     </div>
@@ -84,34 +117,44 @@ const readingHTML = `
 <style>
 .reading-word { 
     display: inline-block;
-    padding: 0 1px;
+    padding: 0 2px;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s;
+    text-decoration: underline;
+    text-decoration-color: #e2e8f0;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 .reading-word:hover { 
-    background-color: #fef08a !important; 
-    color: #000 !important;
+    background-color: #4338ca !important; 
+    color: #fff !important;
+    text-decoration-color: transparent;
 }
-/* Legend Markings */
 .academic-hilite { border-bottom: 2px solid #10b981; }
-.passive-hilite { color: #f43f5e; font-weight: bold; }
-.conjunction-hilite { border-bottom: 2px dashed #f59e0b; font-weight: bold; }
+.passive-hilite { color: #f43f5e; font-weight: 900; }
+.conjunction-hilite { border-bottom: 2px dashed #f59e0b; font-weight: 900; }
 
-.custom-scrollbar::-webkit-scrollbar { width: 4px; }
-.custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar { width: 5px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
 
 .word-info-card {
-    background: #fff;
+    background: #f8fafc;
     border: 1px solid #f1f5f9;
     border-radius: 1.5rem;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
 }
 .tr-meaning {
-    color: #ef4444; /* Red-500 */
-    font-weight: bold;
-    margin-top: 0.5rem;
+    color: #4338ca;
+    font-weight: 800;
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+    font-style: italic;
+}.scale-in-center { animation: scale-in-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; }
+@keyframes scale-in-center {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
 }
 </style>
 `;
@@ -237,6 +280,9 @@ function analyzeText(text) {
 
     const textContainer = document.getElementById("readingText");
     const statsContainer = document.getElementById("readingStats");
+    const container = document.getElementById("readingContainer");
+
+    if (container) container.classList.remove("hidden");
 
     if (textContainer) {
         textContainer.innerHTML = processedHtml + (truncated ? `<div class="mt-12 flex justify-center"><button onclick="showFullArticle()" class="bg-black px-10 py-4 rounded-2xl font-black text-white shadow-2xl hover:bg-slate-800 transition-all uppercase tracking-widest text-xs">Makaleyi Tamamla</button></div>` : "");
@@ -244,9 +290,18 @@ function analyzeText(text) {
 
     if (statsContainer) {
         statsContainer.innerHTML = `
-            <span>Kelimeler: ${wordCount}</span>
-            <span>Akademik: ${academicCount}</span>
-            <span>Passive: ${passiveCount}</span>
+            <div class="px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl flex items-center gap-2">
+               <span class="text-[9px] font-black text-slate-400 uppercase">Words:</span>
+               <span class="text-xs font-bold text-slate-700">${wordCount}</span>
+            </div>
+            <div class="px-5 py-3 bg-emerald-50 border border-emerald-100 rounded-2xl flex items-center gap-2">
+               <span class="text-[9px] font-black text-emerald-600 uppercase">Academic:</span>
+               <span class="text-xs font-bold text-emerald-700">${academicCount}</span>
+            </div>
+            <div class="px-5 py-3 bg-rose-50 border border-rose-100 rounded-2xl flex items-center gap-2">
+               <span class="text-[9px] font-black text-rose-600 uppercase">Passive:</span>
+               <span class="text-xs font-bold text-rose-700">${passiveCount}</span>
+            </div>
         `;
     }
 }
