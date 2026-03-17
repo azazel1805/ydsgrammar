@@ -24,11 +24,12 @@ export const handler = async (event) => {
                 content: `You are an expert YDS/YDT exam specialist and OCR expert. 
 Your task is to analyze the provided images of exam pages and extract the questions into a structured JSON format.
 
-INSTRUCTIONS:
+YOUR TASK:
 1. Extract ALL questions from the images. 
-2. Identify the question text, all 5 options (A, B, C, D, E), and determine the CORRECT answer using your advanced English knowledge.
-3. If there is a reading passage associated with the questions, extract the passage text once and assign it to the corresponding questions using 'passage_id'.
-4. Format the output STRICTLY as follows:
+2. Identify the question text, all 5 options (A, B, C, D, E).
+3. Determine the CORRECT answer. IMPORTANT: If any of the provided images contain an answer key (cevap anahtarı), prioritize using those answers. If no answer key is visible, use your advanced English knowledge to solve the questions.
+4. If there is a reading passage associated with the questions, extract the passage text once and assign it to the corresponding questions using 'passage_id'.
+5. Format the output STRICTLY as follows:
 {
   "meta": {
     "title": "${meta?.title || 'PDF Generated Exam'}",
@@ -60,7 +61,7 @@ INSTRUCTIONS:
             {
                 role: "user",
                 content: [
-                    { type: "text", text: "Please extract the questions from these exam pages." },
+                    { type: "text", text: "Please extract the questions from these exam pages. Use the answer key if available in the images." },
                     ...images.map(img => ({
                         type: "image_url",
                         image_url: { url: img }
@@ -76,7 +77,7 @@ INSTRUCTIONS:
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                model: "gpt-4o-mini",
+                model: "gpt-4o",
                 messages: messages,
                 max_tokens: 4096,
                 response_format: { type: "json_object" }
