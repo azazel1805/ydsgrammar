@@ -13,13 +13,13 @@ const ART_SECTIONS = [
         usages: [
             {
                 tag: 'Ilk Bahsedilen / Bilinmeyen', color: '#2563eb', examples: [
-                    { en: 'I saw a man in the street.', tr: 'Sokakta bir adam gordum. (kimin oldugu bilinmiyor)' },
+                    { en: `I saw <span class="map-tag map-1">a</span> man in the street.`, tr: `Sokakta <span class="map-tag map-1">bir</span> adam gördüm.` },
                     { en: 'She bought a car yesterday.', tr: 'Dun bir araba aldi. (hangi araba belli degil)' },
                 ]
             },
             {
                 tag: 'Meslekler', color: '#16a34a', examples: [
-                    { en: 'She is a doctor.', tr: 'O bir doktordur.' },
+                    { en: `She is <span class="map-tag map-1">a</span> doctor.`, tr: `O <span class="map-tag map-1">bir</span> doktordur.` },
                     { en: 'He works as an engineer.', tr: 'Muhendis olarak calisiyor.' },
                 ]
             },
@@ -55,7 +55,7 @@ const ART_SECTIONS = [
         usages: [
             {
                 tag: 'Ikinci Bahsedilen / Bilineni', color: '#0891b2', examples: [
-                    { en: 'I saw a man. The man was wearing a red coat.', tr: 'Bir adam gordum. Adam kirmizi palto giyiyordu.' },
+                    { en: `I saw a man. <span class="map-tag map-1">The</span> man was wearing a red coat.`, tr: `Bir adam gördüm. <span class="map-tag map-1">Adam</span> kırmizı palto giyiyordu.` },
                     { en: 'Can you close the door, please?', tr: 'Kapiyi kapatir misin? (hangi kapi belli)' },
                 ]
             },
@@ -67,7 +67,7 @@ const ART_SECTIONS = [
             },
             {
                 tag: 'Superlative / Ordinal', color: '#dc2626', examples: [
-                    { en: 'She is the best student in the class.', tr: 'Sinifinın en iyi ogrencisi.' },
+                    { en: `She is <span class="map-tag map-1">the best</span> student in the class.`, tr: `Sınıfın <span class="map-tag map-1">en iyi</span> öğrencisi.` },
                     { en: 'This is the first time I\'ve been here.', tr: 'Buraya ilk gelisim.' },
                 ]
             },
@@ -221,8 +221,8 @@ function buildArtCard(s) {
       <span class="art-tag mb-2 inline-flex" style="background:${u.color}18;color:${u.color};">${u.tag}</span>
       ${u.examples.map(ex => `
         <div class="art-example" style="border-left-color:${u.color}55;">
-          <p class="art-en">"${ex.en}"</p>
-          <p class="art-tr">-> ${ex.tr}</p>
+          <p class="text-sm font-bold">${ex.en}</p>
+          <div class="map-tr-sentence">${ex.tr}</div>
         </div>`).join('')}
     </div>`).join('');
 

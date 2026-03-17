@@ -70,7 +70,10 @@ const quantifiersHTML = `
                         <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase mb-2 inline-block">Olumlu (+)</span>
                         <h4 class="font-black text-xl text-slate-800 italic">A few / A little</h4>
                         <p class="text-sm text-slate-600">"Biraz var, bana yeter." (Az ama kafi)</p>
-                        <p class="text-[11px] text-emerald-600 mt-2 font-bold">Ex: I have a little money. (Kahve alabilirim.)</p>
+                        <div class="text-[11px] font-bold">
+                            <div>Ex: I have <span class="map-tag map-1">a little</span> money.</div>
+                            <div class="map-tr-sentence">(Kahve alabilirim; <span class="map-tag map-1">biraz</span> param var.)</div>
+                        </div>
                     </div>
                 </div>
                 <div class="space-y-4">
@@ -78,7 +81,10 @@ const quantifiersHTML = `
                         <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase mb-2 inline-block">Olumsuz (-)</span>
                         <h4 class="font-black text-xl text-slate-800 italic">Few / Little</h4>
                         <p class="text-sm text-slate-600">"Neredeyse hiç yok." (Yetersiz, olumsuz hava)</p>
-                        <p class="text-[11px] text-red-600 mt-2 font-bold">Ex: I have little money. (Aç kalacağım.)</p>
+                        <div class="text-[11px] font-bold">
+                            <div>Ex: I have <span class="map-tag map-1">little</span> money.</div>
+                            <div class="map-tr-sentence">(Aç kalacağım; <span class="map-tag map-1">neredeyse hiç</span> param yok.)</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,7 +155,11 @@ const quantifiersHTML = `
                         <td class="p-6 font-bold text-slate-900 italic text-lg">Each / Every</td>
                         <td class="p-6 text-emerald-600 font-black italic">C (Singular)</td>
                         <td class="p-6 text-slate-400 font-medium italic">General</td>
-                        <td class="p-6 text-slate-500 italic font-medium">Her zaman TEKİL isim ve TEKİL fiil alırlar. <i>Wait for each student!</i></td>
+                        <td class="p-6 text-slate-500 italic font-medium">
+                            <div>Her zaman TEKİL isim ve TEKİL fiil alırlar.</div>
+                            <div class="font-bold underline">Wait for <span class="map-tag map-1">each</span> <span class="map-tag map-2">student</span>!</div>
+                            <div class="map-tr-sentence"><span class="map-tag map-1">Her bir</span> <span class="map-tag map-2">öğrenci</span>yi bekle!</div>
+                        </td>
                     </tr>
                      <!-- ENOUGH -->
                      <tr class="hover:bg-slate-50 transition-colors">
@@ -202,7 +212,10 @@ const quantifiersHTML = `
                 </div>
                 <div class="flex gap-4">
                     <div class="font-black text-indigo-300 text-lg italic line-through">Neither</div>
-                    <div class="text-sm italic">İkisi de değil. (-) <br><span class="text-xs text-slate-400 italic">Neither plan worked.</span></div>
+                    <div class="text-xs">
+                        <div><span class="map-tag map-1">Neither</span> plan worked.</div>
+                        <div class="map-tr-sentence"><span class="map-tag map-1">İki</span> plan <span class="map-tag map-1">da</span> <span class="map-tag map-1">işe yaramadı</span>.</div>
+                    </div>
                 </div>
             </div>
         </div>

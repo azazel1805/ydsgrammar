@@ -46,12 +46,46 @@ const nounHTML = `
  <tr><th class="p-4 w-1/5">Connector</th><th class="p-4 w-1/3">Function / Trick</th><th class="p-4">Example</th></tr>
  </thead>
  <tbody class="divide-y divide-slate-100 ">
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold text-teal-700">That</td><td class="p-4">Kesin yargılar, bilimsel gerçekler, fikirler. Cümle tamdır. Nesne ise atılabilir.</td><td class="p-4 italic">I know <span class="highlight-verb">(that)</span> the earth is round.</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold text-teal-700">What</td><td class="p-4"><strong class="text-red-500">Crucial:</strong> "The thing that" anlamındadır. Cümlede özne veya nesne EKSİKTİR.</td><td class="p-4 italic">I don't know <span class="highlight-verb">what</span> you want. <br><span class="text-xs text-gray-500">(Want fiilinin nesnesi yok -> What oldu)</span></td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold text-teal-700">Whether / If</td><td class="p-4">"...olup olmadığı". Tereddüt, seçenek, belirsizlik bildirir. <br><span class="text-xs text-red-500">*If cümle başında veya prep sonrasında kullanılmaz.</span></td><td class="p-4 italic">I wonder <span class="highlight-verb">whether</span> she will come.</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold text-teal-700">The fact that</td><td class="p-4">Preposition'dan sonra "That" gelemez. Bu yüzden "The fact that" kullanılır.</td><td class="p-4 italic">Despite <span class="highlight-verb">the fact that</span> he is rich...</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold text-teal-700">Question Words</td><td class="p-4">Who, Where, When, Why, How. <br><strong>Kural:</strong> Asla soru devriği (Yardımcı fiil başa) yapılmaz. Düz cümle (S+V) olur.</td><td class="p-4 italic">Tell me <span class="highlight-verb">where you live</span>. <br><span class="text-xs line-through text-gray-500">Tell me where do you live.</span></td></tr>
- <tr class="hover:bg-slate-50 bg-teal-50/50 "><td class="p-4 font-bold text-red-800">Subjunctive</td><td class="p-4">Gereklilik, önem, ısrar bildiren sıfat/fiillerden sonra (essential, suggest) gelen that cümlesinde fiil <strong class="underline">yalın (V1)</strong> kullanılır. (Should gizlidir).</td><td class="p-4 italic">It is essential that he <span class="highlight-verb">be</span> here on time. <br><span class="text-xs text-slate-500">(Not 'is', just 'be')</span></td></tr>
+  <tr class="hover:bg-slate-50">
+  <td class="p-4 font-bold text-teal-700">That</td>
+  <td class="p-4">Kesin yargılar, bilimsel gerçekler, fikirler. Cümle tamdır. Nesne ise atılabilir.</td>
+  <td class="p-4">
+    <div class="text-sm font-bold">I know <span class="map-tag map-1">(that)</span> <span class="map-tag map-2">the earth is round</span>.</div>
+    <div class="map-tr-sentence">Dünyanın yuvarlak <span class="map-tag map-2">olduğunu</span> <span class="map-tag map-1">biliyorum</span>.</div>
+  </td>
+  </tr>
+  <tr class="hover:bg-slate-50">
+  <td class="p-4 font-bold text-teal-700">What</td>
+  <td class="p-4"><strong class="text-red-500">Crucial:</strong> "The thing that" anlamındadır. Cümlede özne veya nesne EKSİKTİR.</td>
+  <td class="p-4">
+    <div class="text-sm font-bold">I don't know <span class="map-tag map-1">what</span> <span class="map-tag map-2">you want</span>.</div>
+    <div class="map-tr-sentence">Senin ne <span class="map-tag map-2">istediğini</span> <span class="map-tag map-1">bilmiyorum</span>.</div>
+  </td>
+  </tr>
+  <tr class="hover:bg-slate-50">
+  <td class="p-4 font-bold text-teal-700">Whether / If</td>
+  <td class="p-4">"...olup olmadığı". Tereddüt, seçenek, belirsizlik bildirir. <br><span class="text-xs text-red-500">*If cümle başında veya prep sonrasında kullanılmaz.</span></td>
+  <td class="p-4">
+    <div class="text-sm font-bold">I wonder <span class="map-tag map-1">whether</span> <span class="map-tag map-2">she will come</span>.</div>
+    <div class="map-tr-sentence">Onun <span class="map-tag map-2">gelip</span> <span class="map-tag map-1">gelmeyeceğini</span> merak ediyorum.</div>
+  </td>
+  </tr>
+  <tr class="hover:bg-slate-50">
+  <td class="p-4 font-bold text-teal-700">Question Words</td>
+  <td class="p-4">Who, Where, When, Why, How. <br><strong>Kural:</strong> Asla soru devriği (Yardımcı fiil başa) yapılmaz. Düz cümle (S+V) olur.</td>
+  <td class="p-4">
+    <div class="text-sm font-bold">Tell me <span class="map-tag map-1">where</span> <span class="map-tag map-2">you live</span>.</div>
+    <div class="map-tr-sentence">Bana nerede <span class="map-tag map-2">yaşadığını</span> <span class="map-tag map-1">SÖYLE</span>.</div>
+  </td>
+  </tr>
+  <tr class="hover:bg-slate-50 bg-teal-50/50 ">
+  <td class="p-4 font-bold text-red-800">Subjunctive</td>
+  <td class="p-4">Gereklilik, önem, ısrar bildiren sıfat/fiillerden sonra (essential, suggest) gelen that cümlesinde fiil <strong class="underline">yalın (V1)</strong> kullanılır. (Should gizlidir).</td>
+  <td class="p-4">
+    <div class="text-sm font-bold">It is essential that he <span class="map-tag map-1">be</span> here on time.</div>
+    <div class="map-tr-sentence">Onun vaktinde burada <span class="map-tag map-1">olması</span> hayati önem taşır.</div>
+  </td>
+  </tr>
  </tbody>
  </table>
 </section>

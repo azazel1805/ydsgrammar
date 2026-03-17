@@ -1,6 +1,6 @@
 const PHRASAL_VERBS_DATA = [
-  { phrasal: "Account for", meaning: "Açıklamak, karşılamak, tekabül etmek", example: "High tech companies account for 10% of the total exports.", category: "Business/Academic" },
-  { phrasal: "Back up", meaning: "Desteklemek, yedeklemek", example: "The writer used statistics to back up his main argument.", category: "General" },
+  { phrasal: "Account for", meaning: "Açıklamak, karşılamak, tekabül etmek", exampleEn: `High tech companies <span class="map-tag map-1">account for</span> 10% of the total exports.`, exampleTr: `Yüksek teknoloji şirketleri toplam ihracatın %10'unu <span class="map-tag map-1">oluşturur</span>.`, example: "High tech companies account for 10% of the total exports.", category: "Business/Academic" },
+  { phrasal: "Back up", meaning: "Desteklemek, yedeklemek", exampleEn: `The writer used statistics to <span class="map-tag map-1">back up</span> his main argument.`, exampleTr: `Yazar, ana argümanını <span class="map-tag map-1">desteklemek</span> için istatistikler kullandı.`, example: "The writer used statistics to back up his main argument.", category: "General" },
   { phrasal: "Break out", meaning: "Birdenbire başlamak (savaş, yangın vb.)", example: "World War II broke out in 1939.", category: "History/Conflict" },
   { phrasal: "Bring about", meaning: "Sebep olmak, neden olmak", example: "The new law brought about many changes.", category: "Cause/Effect" },
   { phrasal: "Bring up", meaning: "Çocuk yetiştirmek, bir konuyu açmak", example: "She brought up three children on her own.", category: "Personal" },
@@ -126,7 +126,8 @@ function getPhrasalHTML() {
                   </div>
                   <div class="pt-5 border-t border-white/10 text-center">
                     <p class="text-[10px] font-black text-red-400 uppercase tracking-widest mb-2">ÖRNEK CÜMLE</p>
-                    <p class="text-sm italic text-slate-300 leading-relaxed font-serif">"${p.example}"</p>
+                    <p class="text-sm italic text-slate-300 leading-relaxed font-serif">${p.exampleEn || p.example}</p>
+                    ${p.exampleTr ? `<div class="map-tr-sentence text-white/60 text-[11px] mt-2">${p.exampleTr}</div>` : ""}
                   </div>
                 </div>
               </div>
