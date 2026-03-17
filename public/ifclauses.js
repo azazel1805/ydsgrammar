@@ -50,8 +50,8 @@ const IF_TYPES = [
                 tag: 'Gerceklesmesi Mumkun Kosul', color: '#15803d',
                 desc: 'Gerceklesesebilir bir kosul ve olasi sonucu.',
                 examples: [
-                    { en: 'If you study hard, you will pass the exam.', tr: 'Siki calisirsan sinavi gececeksin.' },
-                    { en: 'If it rains tomorrow, we won\'t go to the beach.', tr: 'Yarin yagmur yagarsa plaja gitmeyecegiz.' },
+                    { en: `<span class="map-tag map-1">If</span> you <span class="map-tag map-2">study hard</span>, you will pass the exam.`, tr: `<span class="map-tag map-2">Sıkı çalışır</span><span class="map-tag map-1">SAN</span> sınavı geçeceksin.` },
+                    { en: 'If it rains tomorrow, we won\'t go to the beach.', tr: 'Yarın yağmur yağarsa plaja gitmeyeceğiz.' },
                 ]
             },
             {
@@ -90,8 +90,8 @@ const IF_TYPES = [
                 tag: 'Su An Gercekdisi / Imkansiz', color: '#7c3aed',
                 desc: 'Su an gercek olmayan ya da gerceklesmesi zor kosullar.',
                 examples: [
-                    { en: 'If I were you, I would apologise.', tr: 'Senin yerinde olsam ozur dilerdim.' },
-                    { en: 'If she lived closer, we would meet more often.', tr: 'Daha yakinda yasasaydi daha sik bulusurduk.' },
+                    { en: `<span class="map-tag map-1">If I were</span> <span class="map-tag map-2">you</span>, I would apologise.`, tr: `<span class="map-tag map-2">Senin</span> <span class="map-tag map-1">yerinde olsam</span> özür dilerdim.` },
+                    { en: 'If she lived closer, we would meet more often.', tr: 'Daha yakında yaşasaydı daha sık buluşurduk.' },
                 ]
             },
             {
@@ -136,8 +136,8 @@ const IF_TYPES = [
                 tag: 'Gecmiste Olmayanin Sonucu', color: '#b45309',
                 desc: 'Gecmiste olmayan/yapilmayan seyin hayali sonucu.',
                 examples: [
-                    { en: 'If he had arrived on time, he wouldn\'t have missed the flight.', tr: 'Zamaninda gelseydi ucusu kacirmazdi.' },
-                    { en: 'If she had taken the medicine, she would have recovered faster.', tr: 'Ilaci icseydi daha hizli iyilesirdi.' },
+                    { en: `<span class="map-tag map-1">If he had arrived</span> <span class="map-tag map-2">on time</span>, he wouldn't have missed the flight.`, tr: `<span class="map-tag map-2">Zamanında</span> <span class="map-tag map-1">gelseydi</span> uçuşu kaçırmazdı.` },
+                    { en: 'If she had taken the medicine, she would have recovered faster.', tr: 'İlacı içseydi daha hızlı iyileşirdi.' },
                 ]
             },
             {
@@ -214,7 +214,7 @@ const IF_TYPES = [
                 tag: 'Unless = If not', color: '#be185d',
                 desc: '"unless" = "if + not" anlamindadir. Olumlu cumle ile kullanilir.',
                 examples: [
-                    { en: 'Unless you hurry, you\'ll miss the bus.', tr: 'Acele etmezsen otobusu kacirirsin. (= If you don\'t hurry)' },
+                    { en: `<span class="map-tag map-1">Unless</span> <span class="map-tag map-2">you hurry</span>, you'll miss the bus.`, tr: `<span class="map-tag map-2">Acele et</span><span class="map-tag map-1">MEZSEN</span> otobüsü kaçırırsın. (= If you don't hurry)` },
                     { en: 'She won\'t come unless she\'s invited.', tr: 'Davet edilmezse gelmeyecek.' },
                 ]
             },

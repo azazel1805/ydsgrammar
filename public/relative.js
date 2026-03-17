@@ -63,8 +63,14 @@ const relativeHTML = `
  <div class="text-sm">
  <strong class="block text-slate-800 ">Active Reduction</strong>
  Zaman ne olursa olsun, fiil aktifse Ving yapılır.
- <div class="italic text-slate-500 mt-1 text-xs">The boy <s>who is running</s> -> The boy <span class="font-bold text-indigo-600">running</span>.</div>
- <div class="italic text-slate-500 text-xs">The people <s>who live</s> here -> The people <span class="font-bold text-indigo-600">living</span> here.</div>
+  <div class="italic text-slate-500 mt-1 text-xs">
+    The boy <span class="map-tag map-1">who is running</span> -> The boy <span class="map-tag map-1">running</span>.
+    <div class="map-tr-sentence"><span class="map-tag map-1">Koşan</span> çocuk.</div>
+  </div>
+  <div class="italic text-slate-500 text-xs">
+    The people <span class="map-tag map-2">who live</span> here -> The people <span class="map-tag map-2">living</span> here.
+    <div class="map-tr-sentence">Burada <span class="map-tag map-2">yaşayan</span> insanlar.</div>
+  </div>
  </div>
  </div>
 
@@ -73,8 +79,14 @@ const relativeHTML = `
  <div class="text-sm">
  <strong class="block text-slate-800 ">Passive Reduction</strong>
  Fiil pasifse sadece V3 (Past Participle) kalır.
- <div class="italic text-slate-500 mt-1 text-xs">The car <s>which was stolen</s> -> The car <span class="font-bold text-indigo-600">stolen</span> yesterday.</div>
- <div class="italic text-slate-500 text-xs">Products <s>which are made</s> in China -> Products <span class="font-bold text-indigo-600">made</span> in China.</div>
+  <div class="italic text-slate-500 mt-1 text-xs">
+    The car <span class="map-tag map-1">which was stolen</span> yesterday -> The car <span class="map-tag map-1">stolen</span> yesterday.
+    <div class="map-tr-sentence">Dün <span class="map-tag map-1">çalınan</span> araba.</div>
+  </div>
+  <div class="italic text-slate-500 text-xs">
+    Products <span class="map-tag map-2">which are made</span> in China -> Products <span class="map-tag map-2">made</span> in China.
+    <div class="map-tr-sentence">Çin'de <span class="map-tag map-2">üretilen</span> ürünler.</div>
+  </div>
  </div>
  </div>
 
@@ -83,8 +95,14 @@ const relativeHTML = `
  <div class="text-sm">
  <strong class="block text-slate-800 ">Ordinal Numbers / Superlatives</strong>
  Nitelediği kelime "The first, the last, the best, the only, the next" ise "to infinitive" kullanılır.
- <div class="italic text-slate-500 mt-1 text-xs">He was the first man <span class="font-bold text-indigo-600">to go</span> to the moon.</div>
- <div class="italic text-slate-500 text-xs text-indigo-500">Passive hali: to be V3 (The only file <span class="font-bold">to be deleted</span>).</div>
+  <div class="italic text-slate-500 mt-1 text-xs">
+    He was the first man <span class="map-tag map-1">to go</span> to the moon.
+    <div class="map-tr-sentence">Ay'a <span class="map-tag map-1">giden</span> ilk insandı.</div>
+  </div>
+  <div class="italic text-slate-500 text-xs text-indigo-500">
+    The only file <span class="map-tag map-2">to be deleted</span>.
+    <div class="map-tr-sentence"><span class="map-tag map-2">Silinecek</span> tek dosya.</div>
+  </div>
  </div>
  </div>
  </div>

@@ -545,4 +545,40 @@ body {
 
 #chatMessages::-webkit-scrollbar-thumb:hover {
     background: #cbd5e1;
-}
+}
+
+/* =============================
+   STRUCTURAL MAPPING (Teacher's Suggestion)
+   ============================= */
+
+.map-tag {
+    display: inline-block;
+    padding: 0px 4px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-style: normal !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 2px solid transparent;
+}
+
+/* Mapping Colors */
+.map-1 { background: rgba(79, 70, 229, 0.08); color: #4f46e5; border-bottom-color: #4f46e5; }
+.map-2 { background: rgba(225, 29, 72, 0.08); color: #e11d48; border-bottom-color: #e11d48; }
+.map-3 { background: rgba(217, 119, 6, 0.08); color: #d97706; border-bottom-color: #d97706; }
+.map-4 { background: rgba(5, 150, 105, 0.08); color: #059669; border-bottom-color: #059669; }
+
+/* Interactive Hover Effect */
+.map-tag:hover {
+    background: rgba(0,0,0,0.05);
+    transform: translateY(-1px);
+}
+
+.map-tr-sentence {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-style: italic;
+    font-weight: 500;
+}
+

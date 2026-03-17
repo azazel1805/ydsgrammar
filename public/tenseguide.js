@@ -15,7 +15,7 @@ const TENSES = [
         usages: [
             {
                 tag: 'Alışkanlık & Rutin', color: '#16a34a', desc: 'Tekrarlayan eylemler, alışkanlıklar ve rutinler.', examples: [
-                    { en: 'She <span class="font-bold">drinks</span> coffee every morning.', tr: 'Her sabah kahve içer.' },
+                    { en: `<span class="map-tag map-2">She</span> <span class="map-tag map-1">drinks</span> coffee every morning.`, tr: `Her sabah kahve <span class="map-tag map-1">içer</span> (<span class="map-tag map-2">O</span>).` },
                     { en: 'He never <span class="font-bold">eats</span> fast food.', tr: 'Hiç fast food yemez.' },
                 ]
             },
@@ -53,7 +53,7 @@ const TENSES = [
         usages: [
             {
                 tag: 'Şu An Olan Eylem', color: '#0891b2', desc: 'Tam konuşma anında devam eden eylemler.', examples: [
-                    { en: 'She <span class="font-bold">is reading</span> a book right now.', tr: 'Şu anda bir kitap okuyor.' },
+                    { en: `She <span class="map-tag map-1">is reading</span> <span class="map-tag map-2">a book</span> right now.`, tr: `Şu anda <span class="map-tag map-2">bir kitap</span> <span class="map-tag map-1">okuyor</span>.` },
                     { en: 'They <span class="font-bold">are playing</span> football in the garden.', tr: 'Bahçede futbol oynuyorlar.' },
                 ]
             },
@@ -103,8 +103,8 @@ const TENSES = [
             },
             {
                 tag: 'Devam Eden Durum (since/for)', color: '#0891b2', desc: 'Geçmişte başlayıp hâlâ devam eden durumlar.', examples: [
-                    { en: 'She <span class="font-bold">has lived</span> here for ten years.', tr: 'On yıldır burada yaşıyor.' },
-                    { en: 'I<span class="font-bold">\'ve known</span> him since 2010.', tr: '2010\'dan beri onu tanıyorum.' },
+                    { en: `She <span class="map-tag map-1">has lived</span> here <span class="map-tag map-2">for</span> ten years.`, tr: `On yıl<span class="map-tag map-2">DIR</span> burada <span class="map-tag map-1">yaşıyor</span>.` },
+                    { en: `I<span class="map-tag map-1">'ve known</span> him <span class="map-tag map-2">since</span> 2010.`, tr: `2010'dan <span class="map-tag map-2">BERİ</span> onu <span class="map-tag map-1">tanıyorum</span>.` },
                 ]
             },
             {
