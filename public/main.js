@@ -257,27 +257,26 @@ window.loadQuizData = function () {
 ========================================== */
 
 window.switchTab = function (tabName) {
-    const userTabs = ['profile', 'dashboard'];
-    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams', 'premium-exercises'];
+    const premiumTabs = ['analyzer', 'testlab', 'restatement', 'paragraph', 'textdecon', 'fullexam', 'miniexams', 'premium-exercises', 'aireading', 'tutor-exam', 'wordpractice', 'phrasal'];
     const adminTabs = ['admin'];
 
-    // Level 1: Must be logged in
-    if ((userTabs.includes(tabName) || premiumTabs.includes(tabName)) && !window.currentUser) {
-        console.warn("Protected tab accessed without login:", tabName);
-        if (typeof window.openLoginModal === "function") window.openLoginModal();
-        else alert("Bu özellik sadece üyeler içindir. Lütfen giriş yapın.");
-        return;
-    }
-
-    // Level 2: Must be VIP for Premium Tabs
+    // Level 1: Premium Tabs requirement
     if (premiumTabs.includes(tabName)) {
+        if (!window.currentUser) {
+            console.warn("Premium tab accessed without login:", tabName);
+            if (typeof window.openLoginModal === "function") window.openLoginModal();
+            else alert("Bu özellik hazırlık platformu üyelerimiz içindir. Lütfen giriş yapın.");
+            return;
+        }
+
         const isVip = window.currentUser?.email === "onurtosuner@gmail.com" || localStorage.getItem("analyzer_access") === "true";
         if (!isVip) {
             console.warn("Premium tab accessed without VIP status:", tabName);
             alert("Bu özellik sadece Premium üyeler içindir. Kilidi açmak için lütfen Profil sayfasından VIP kodunuzu giriniz.");
             switchTab('profile');
             setTimeout(() => {
-                document.getElementById('premiumSection')?.scrollIntoView({ behavior: 'smooth' });
+                const pSec = document.getElementById('premiumSection');
+                if (pSec) pSec.scrollIntoView({ behavior: 'smooth' });
             }, 500);
             return;
         }
@@ -675,41 +674,22 @@ window.toggleModalTactics = function () {
 ========================================== */
 
 window.lockAnalyzerUI = function () {
-    const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "wordpracticeNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "wordpracticeMobileBtn"
-    ];
-
-    navButtons.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.classList.add("hidden");
-    });
-
+    // We don't hide the buttons anymore, so users can see Premium features
+    // Clicking them will trigger the switchTab auth wall.
+    
+    // However, we still show the "VIP Locked" footer in the menu
+    document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.remove('hidden'));
+    
     const floatingBot = document.getElementById("floatingChatbotContainer");
     if (floatingBot) floatingBot.classList.add("hidden");
-
-    document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.remove('hidden'));
 };
 
 window.unlockAnalyzerUI = function () {
-    const navButtons = [
-        "analyzerNavBtn", "testlabNavBtn", "restatementNavBtn", "paragraphNavBtn", "textDeconNavBtn", "chatbotNavBtn", "premiumNavBtn", "miniexamsNavBtn",
-        "phrasalNavBtn", "aireadingNavBtn", "tutorNavBtn", "premiumExercisesNavBtn", "wordpracticeNavBtn",
-        "analyzerMobileBtn", "testlabMobileBtn", "restatementMobileBtn", "paragraphMobileBtn", "textDeconMobileBtn", "chatbotMobileBtn", "premiumMobileBtn", "miniexamsMobileBtn",
-        "phrasalMobileBtn", "aireadingMobileBtn", "tutorMobileBtn", "premiumExercisesMobileBtn", "wordpracticeMobileBtn"
-    ];
-
-    navButtons.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.classList.remove("hidden");
-    });
+    // Hide the "VIP Locked" footer since the user is now VIP
+    document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.add('hidden'));
 
     const floatingBot = document.getElementById("floatingChatbotContainer");
     if (floatingBot) floatingBot.classList.remove("hidden");
-
-    document.querySelectorAll('.aiToolsLocked').forEach(el => el.classList.add('hidden'));
 };
 
 /* ==========================================

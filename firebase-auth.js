@@ -290,7 +290,7 @@ onAuthStateChanged(auth, (user) => {
     }
 
     // "Other things open" architecture:
-    // We don't hide the app wrapper. The login modal will show up only when needed.
+    // We don't hide the app wrapper. The site remains fully browseable.
     if (appWrapper) appWrapper.classList.remove("hidden");
     if (loginPage) {
         loginPage.classList.add("hidden");
@@ -311,29 +311,19 @@ onAuthStateChanged(auth, (user) => {
 
 window.openLoginModal = function () {
   const loginPage = document.getElementById("loginPage");
-  const appWrapper = document.getElementById("appWrapper");
   if (loginPage) {
     loginPage.classList.remove("hidden");
     loginPage.classList.add("fixed", "inset-0", "z-[9999]", "flex"); 
-    document.body.style.overflow = "hidden"; // Lock scroll
-    
-    // If we're showing the login modal, we might want to hide the app content
-    // behind it IF it's a critical section like Dashboard
-    const currentHash = window.location.hash;
-    if (currentHash === "#dashboard" || currentHash === "#profile") {
-        if (appWrapper) appWrapper.classList.add("hidden");
-    }
+    document.body.style.overflow = "hidden"; // Lock scroll ONLY while modal is open
   }
 };
 
 window.closeLoginModal = function () {
   const loginPage = document.getElementById("loginPage");
-  const appWrapper = document.getElementById("appWrapper");
   if (loginPage) {
     loginPage.classList.add("hidden");
     loginPage.classList.remove("fixed", "inset-0", "flex");
     document.body.style.overflow = "auto"; // Unlock scroll
-    if (appWrapper) appWrapper.classList.remove("hidden");
   }
 };
 
