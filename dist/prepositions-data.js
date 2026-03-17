@@ -3,12 +3,12 @@ const PREP_DATA = {
 
 {pattern:"depend on",word:"depend",prep:"on",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"bağlı olmak",exampleEn:`Success <span class="map-tag map-1">depends on</span> effort.`,exampleTr:`Başarı çabaya <span class="map-tag map-1">BAĞLIDIR</span>.`,trap:["depend from"],patternNote:"depend on + noun/gerund"},
 {pattern:"result in",word:"result",prep:"in",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"ile sonuçlanmak",exampleEn:`The reform <span class="map-tag map-1">resulted in</span> economic growth.`,exampleTr:`Reform ekonomik büyümeyle <span class="map-tag map-1">SONUÇLANDI</span>.`,trap:["result to"],patternNote:"result in + noun"},
-{pattern:"result from",word:"result",prep:"from",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"-den kaynaklanmak",example:"The crisis resulted from mismanagement.",trap:[],patternNote:"result from + cause"},
-{pattern:"lead to",word:"lead",prep:"to",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"-e yol açmak",example:"Lack of sleep leads to errors.",trap:[],patternNote:"lead to + noun"},
-{pattern:"contribute to",word:"contribute",prep:"to",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"katkıda bulunmak",example:"Pollution contributes to climate change.",trap:[],patternNote:"contribute to + noun/gerund"},
-{pattern:"suffer from",word:"suffer",prep:"from",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"çekmek",example:"Many patients suffer from anxiety.",trap:[],patternNote:"suffer from + illness/problem"},
-{pattern:"cope with",word:"cope",prep:"with",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"başa çıkmak",example:"Students cope with pressure.",trap:[],patternNote:"cope with + noun"},
-{pattern:"deal with",word:"deal",prep:"with",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"ilgilenmek",example:"The article deals with inflation.",trap:[],patternNote:"deal with + topic"},
+{pattern:"result from",word:"result",prep:"from",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"-den kaynaklanmak",exampleEn:`The crisis <span class="map-tag map-1">resulted from</span> mismanagement.`,exampleTr:`Kriz kötü yönetim <span class="map-tag map-1">DEN KAYNAKLANDI</span>.`,trap:[],patternNote:"result from + cause"},
+{pattern:"lead to",word:"lead",prep:"to",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"-e yol açmak",exampleEn:`Lack of sleep <span class="map-tag map-1">leads to</span> errors.`,exampleTr:`Uykusuzluk hatalara <span class="map-tag map-1">YOL AÇAR</span>.`,trap:[],patternNote:"lead to + noun"},
+{pattern:"contribute to",word:"contribute",prep:"to",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"katkıda bulunmak",exampleEn:`Pollution <span class="map-tag map-1">contributes to</span> climate change.`,exampleTr:`Kirlilik iklim değişikliğine <span class="map-tag map-1">KATKI YAPAR / YOL AÇAR</span>.`,trap:[],patternNote:"contribute to + noun/gerund"},
+{pattern:"suffer from",word:"suffer",prep:"from",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"çekmek",exampleEn:`Many patients <span class="map-tag map-1">suffer from</span> anxiety.`,exampleTr:`Birçok hasta kaygı <span class="map-tag map-1">ÇEKİYOR</span>.`,trap:[],patternNote:"suffer from + illness/problem"},
+{pattern:"cope with",word:"cope",prep:"with",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"başa çıkmak",exampleEn:`Students <span class="map-tag map-1">cope with</span> pressure.`,exampleTr:`Öğrenciler baskıyla <span class="map-tag map-1">BAŞA ÇIKAR</span>.`,trap:[],patternNote:"cope with + noun"},
+{pattern:"deal with",word:"deal",prep:"with",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"ilgilenmek",exampleEn:`The article <span class="map-tag map-1">deals with</span> inflation.`,exampleTr:`Makale enflasyonla <span class="map-tag map-1">İLGİLENİYOR</span>.`,trap:[],patternNote:"deal with + topic"},
 {pattern:"focus on",word:"focus",prep:"on",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"odaklanmak",example:"The study focuses on language.",trap:[],patternNote:"focus on + noun"},
 {pattern:"concentrate on",word:"concentrate",prep:"on",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"yoğunlaşmak",example:"She concentrated on her task.",trap:[],patternNote:"concentrate on + noun"},
 {pattern:"belong to",word:"belong",prep:"to",type:"Verb + Prep",risk:"very-high",academic:true,turkish:"ait olmak",example:"This book belongs to me.",trap:[],patternNote:"belong to + person"},
@@ -83,9 +83,9 @@ const PREP_DATA = {
  adjectives: [
  /* ================= VERY HIGH ================= */
 
-{pattern:"afraid of",word:"afraid",prep:"of",type:"Adjective + Prep",risk:"very-high",academic:false,turkish:"korkmak",example:"She is afraid of spiders.",trap:[],patternNote:"afraid of + noun/gerund"},
-{pattern:"aware of",word:"aware",prep:"of",type:"Adjective + Prep",risk:"very-high",academic:true,turkish:"farkında olmak",example:"She is aware of the risks.",trap:[],patternNote:"aware of + noun"},
-{pattern:"capable of",word:"capable",prep:"of",type:"Adjective + Prep",risk:"very-high",academic:true,turkish:"yapabilir durumda",example:"He is capable of solving the problem.",trap:[],patternNote:"capable of + gerund"},
+{pattern:"afraid of",word:"afraid",prep:"of",type:"Adjective + Prep",risk:"very-high",academic:false,turkish:"korkmak",exampleEn:`She is <span class="map-tag map-1">afraid of</span> spiders.`,exampleTr:`Örümcekler <span class="map-tag map-1">DEN KORKAR</span>.`,trap:[],patternNote:"afraid of + noun/gerund"},
+{pattern:"aware of",word:"aware",prep:"of",type:"Adjective + Prep",risk:"very-high",academic:true,turkish:"farkında olmak",exampleEn:`She is <span class="map-tag map-1">aware of</span> the risks.`,exampleTr:`Risklerin <span class="map-tag map-1">FARKINDADIR</span>.`,trap:[],patternNote:"aware of + noun"},
+{pattern:"capable of",word:"capable",prep:"of",type:"Adjective + Prep",risk:"very-high",academic:true,turkish:"yapabilir durumda",exampleEn:`He is <span class="map-tag map-1">capable of</span> solving the problem.`,exampleTr:`Sorunu çözme <span class="map-tag map-1">KABİLİYETİNE SAHİP</span>.`,trap:[],patternNote:"capable of + gerund"},
 {pattern:"different from",word:"different",prep:"from",type:"Adjective + Prep",risk:"very-high",academic:true,turkish:"farklı",example:"This is different from that.",trap:["different than"],patternNote:"different from + noun"},
 {pattern:"famous for",word:"famous",prep:"for",type:"Adjective + Prep",risk:"very-high",academic:false,turkish:"ile ünlü",example:"Italy is famous for its food.",trap:[],patternNote:"famous for + noun"},
 {pattern:"good at",word:"good",prep:"at",type:"Adjective + Prep",risk:"very-high",academic:false,turkish:"iyi olmak",example:"She is good at math.",trap:[],patternNote:"good at + gerund/noun"},
@@ -166,12 +166,12 @@ const PREP_DATA = {
 
 /* ================= VERY HIGH ================= */
 
-{pattern:"access to",word:"access",prep:"to",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"erişim",example:"Students need access to information.",trap:[],patternNote:"access to + noun"},
-{pattern:"advantage of",word:"advantage",prep:"of",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"avantaj",example:"They took advantage of the opportunity.",trap:[],patternNote:"advantage of + noun"},
-{pattern:"attitude toward",word:"attitude",prep:"toward",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"tutum",example:"Her attitude toward work is positive.",trap:["attitude against"],patternNote:"attitude toward + noun"},
-{pattern:"attitude to",word:"attitude",prep:"to",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"tutum (BrE)",example:"His attitude to education is strict.",trap:[],patternNote:"attitude to + noun"},
-{pattern:"belief in",word:"belief",prep:"in",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"inanç",example:"Belief in democracy is strong.",trap:[],patternNote:"belief in + noun"},
-{pattern:"cause of",word:"cause",prep:"of",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"sebep",example:"The cause of the problem is unknown.",trap:[],patternNote:"cause of + noun"},
+{pattern:"access to",word:"access",prep:"to",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"erişim",exampleEn:`Students need <span class="map-tag map-1">access to</span> information.`,exampleTr:`Öğrencilerin bilgi <span class="map-tag map-1">YE ERİŞİM</span>e ihtiyacı var.`,trap:[],patternNote:"access to + noun"},
+{pattern:"advantage of",word:"advantage",prep:"of",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"avantaj",exampleEn:`They took <span class="map-tag map-1">advantage of</span> the opportunity.`,exampleTr:`Fırsatın <span class="map-tag map-1">AVANTAJ</span>ını <span class="map-tag map-1">KULLANDILAR</span>.`,trap:[],patternNote:"advantage of + noun"},
+{pattern:"attitude toward",word:"attitude",prep:"toward",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"tutum",exampleEn:`Her <span class="map-tag map-1">attitude toward</span> work is positive.`,exampleTr:`İşe <span class="map-tag map-1">KARŞI TUTUM</span>u olumlu.`,trap:["attitude against"],patternNote:"attitude toward + noun"},
+{pattern:"attitude to",word:"attitude",prep:"to",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"tutum (BrE)",exampleEn:`His <span class="map-tag map-1">attitude to</span> education is strict.`,exampleTr:`Eğitime <span class="map-tag map-1">KARŞI TUTUM</span>u katı.`,trap:[],patternNote:"attitude to + noun"},
+{pattern:"belief in",word:"belief",prep:"in",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"inanç",exampleEn:`<span class="map-tag map-1">Belief in</span> democracy is strong.`,exampleTr:`Demokrasi <span class="map-tag map-1">YE OLAN İNANÇ</span> güçlü.`,trap:[],patternNote:"belief in + noun"},
+{pattern:"cause of",word:"cause",prep:"of",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"sebep",exampleEn:`The <span class="map-tag map-1">cause of</span> the problem is unknown.`,exampleTr:`Sorunun <span class="map-tag map-1">SEBEBİ</span> bilinmiyor.`,trap:[],patternNote:"cause of + noun"},
 {pattern:"conclusion about",word:"conclusion",prep:"about",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"hakkında sonuç",example:"They reached a conclusion about the issue.",trap:[],patternNote:"conclusion about + noun"},
 {pattern:"conclusion on",word:"conclusion",prep:"on",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"üzerine sonuç",example:"The study offers conclusions on climate change.",trap:[],patternNote:"conclusion on + topic"},
 {pattern:"connection between",word:"connection",prep:"between",type:"Noun + Prep",risk:"very-high",academic:true,turkish:"arasındaki bağlantı",example:"There is a connection between diet and health.",trap:[],patternNote:"connection between A and B"},
@@ -241,25 +241,15 @@ const PREP_DATA = {
  ],
 
  phrases: [
- { pattern:"in spite of", type:"phrase", risk:"very-high" },
- { pattern:"due to", type:"phrase", risk:"very-high" },
- { pattern:"because of", type:"phrase", risk:"very-high" },
- { pattern:"in contrast to", type:"phrase", risk:"very-high" },
- { pattern:"rather than", type:"phrase", risk:"very-high" },
- { pattern:"in addition to", type:"phrase", risk:"very-high" },
- { pattern:"with regard to", type:"phrase", risk:"very-high" },
- { pattern:"in terms of", type:"phrase", risk:"very-high" },
- { pattern:"prior to", type:"phrase", risk:"very-high" },
- { pattern:"on behalf of", type:"phrase", risk:"very-high" },
- { pattern:"in view of", type:"phrase", risk:"very-high" },
- { pattern:"in case of", type:"phrase", risk:"very-high" },
- { pattern:"regardless of", type:"phrase", risk:"very-high" },
- { pattern:"as a result of", type:"phrase", risk:"very-high" },
- { pattern:"instead of", type:"phrase", risk:"very-high" },
- { pattern:"according to", type:"phrase", risk:"very-high" },
- { pattern:"in favor of", type:"phrase", risk:"high" },
- { pattern:"with respect to", type:"phrase", risk:"high" },
- { pattern:"on account of", type:"phrase", risk:"high" },
- { pattern:"in response to", type:"phrase", risk:"high" }
+ { pattern:"in spite of", type:"phrase", risk:"very-high", turkish: "-e rağmen", exampleEn: `<span class="map-tag map-1">In spite of</span> the rain, we went out.`, exampleTr: `Yağmura <span class="map-tag map-1">RAĞMEN</span> dışarı çıktık.` },
+ { pattern:"due to", type:"phrase", risk:"very-high", turkish: "-den dolayı", exampleEn: `The delay was <span class="map-tag map-1">due to</span> heavy traffic.`, exampleTr: `Gecikme yoğun trafik <span class="map-tag map-1">TEN DOLAYI</span> idi.` },
+ { pattern:"because of", type:"phrase", risk:"very-high", turkish: "-den dolayı", exampleEn: `He failed <span class="map-tag map-1">because of</span> laziness.`, exampleTr: `Tembelliği <span class="map-tag map-1">YÜZÜNDEN</span> başarısız oldu.` },
+ { pattern:"in contrast to", type:"phrase", risk:"very-high", turkish: "-in aksine", exampleEn: `<span class="map-tag map-1">In contrast to</span> his brother, he is tall.`, exampleTr: `Kardeşinin <span class="map-tag map-1">AKSİNE</span>, o uzundur.` },
+ { pattern:"rather than", type:"phrase", risk:"very-high", turkish: "-den ziyade", exampleEn: `Try to solve it <span class="map-tag map-1">rather than</span> complaining.`, exampleTr: `Şikayet etmek <span class="map-tag map-1">YERİNE / DEN ZİYADE</span> çözmeye çalış.` },
+ { pattern:"in addition to", type:"phrase", risk:"very-high", turkish: "-e ek olarak", exampleEn: `<span class="map-tag map-1">In addition to</span> English, she speaks French.`, exampleTr: `İngilizceye <span class="map-tag map-1">EK OLARAK</span> Fransızca da konuşur.` },
+ { pattern:"with regard to", type:"phrase", risk:"very-high", turkish: "-e gelince / hususunda", exampleEn: `<span class="map-tag map-1">With regard to</span> the budget, we have no money.`, exampleTr: `Bütçe <span class="map-tag map-1">HUSUSUNDA</span> hiç paramız yok.` },
+ { pattern:"in terms of", type:"phrase", risk:"very-high", turkish: "... bakımından", exampleEn: `It is better <span class="map-tag map-1">in terms of</span> quality.`, exampleTr: `Kalite <span class="map-tag map-1">BAKIMINDAN</span> daha iyidir.` },
+ { pattern:"prior to", type:"phrase", risk:"very-high", turkish: "-den önce", exampleEn: `<span class="map-tag map-1">Prior to</span> the meeting, read the report.`, exampleTr: `Toplantı<span class="map-tag map-1">DAN ÖNCE</span> raporu oku.` },
+ { pattern:"on behalf of", type:"phrase", risk:"very-high", turkish: "-in adına", exampleEn: `I am here <span class="map-tag map-1">on behalf of</span> the company.`, exampleTr: `Şirket <span class="map-tag map-1">ADINA</span> buradayım.` }
  ]
 };

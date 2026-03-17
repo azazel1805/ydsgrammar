@@ -91,7 +91,7 @@ const IF_TYPES = [
                 desc: 'Su an gercek olmayan ya da gerceklesmesi zor kosullar.',
                 examples: [
                     { en: `<span class="map-tag map-1">If I were</span> <span class="map-tag map-2">you</span>, I would apologise.`, tr: `<span class="map-tag map-2">Senin</span> <span class="map-tag map-1">yerinde olsam</span> özür dilerdim.` },
-                    { en: 'If she lived closer, we would meet more often.', tr: 'Daha yakında yaşasaydı daha sık buluşurduk.' },
+                    { en: '<span class="map-tag map-1">If</span> she <span class="map-tag map-2">lived closer</span>, we would meet more often.', tr: 'Daha <span class="map-tag map-2">yakında yaşasaydı</span> (<span class="map-tag map-1">SE</span>) daha sık buluşurduk.' },
                 ]
             },
             {

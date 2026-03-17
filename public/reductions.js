@@ -24,8 +24,9 @@ const REDUCTION_DATA = [
       {
         title: "To-Infinitive Kısaltması (to V1 / to be V3)",
         rule: "Nitelenen isimden önce 'the first, the last, the only, the best' veya süperlatif bir ifade varsa 'to' kullanılır.",
-        example: "He was the first man who reached the moon -> ...the first man to reach the moon.",
-        note: "Passive ise 'to be V3' olur: 'The first bridge to be built'."
+        example: `The <span class="map-tag map-1">first man who reached</span> the moon -> The <span class="map-tag map-1">first man to reach</span> the moon.`,
+        tr: `Ay'a <span class="map-tag map-1">ulaşan ilk kişi</span>.`,
+        note: "Passive ise 'to be V3' olur: 'The first bridge <span class=\"map-tag map-2\">to be built</span>'."
       }
     ]
   },
@@ -36,8 +37,9 @@ const REDUCTION_DATA = [
       {
         title: "Aynı Anda Gerçekleşenler: V-ing / V3",
         rule: "İki cümledeki özne aynı olmak zorundadır.",
-        example: "While he was walking, he saw her -> Walking home, he saw her.",
-        note: "Passive olursa direkt V3 ile başlanır: 'Found in 1920, the artifact is priceless'."
+        example: `While he <span class="map-tag map-1">was walking</span>, he saw her -> <span class="map-tag map-1">Walking</span> home, he saw her.`,
+        tr: `Eve <span class="map-tag map-1">yürürken</span> onu gördü.`,
+        note: "Passive olursa direkt V3 ile başlanır: '<span class=\"map-tag map-2\">Found</span> in 1920' (1920'de <span class=\"map-tag map-2\">bulunan</span>)."
       },
       {
         title: "Zaman Farkı Varsa: Having V3 / Having been V3",
@@ -49,7 +51,8 @@ const REDUCTION_DATA = [
       {
         title: "Zıtlık Kısaltmaları (Although / Though)",
         rule: "Bağlaç korunabilir, sadece özne ve 'be' fiili atılır.",
-        example: "Although it is expensive, it is worth it -> Although expensive, it is worth it.",
+        example: `<span class="map-tag map-1">Although it is</span> expensive, it is worth it -> <span class="map-tag map-1">Although</span> expensive, it is worth it.`,
+        tr: `Pahalı <span class="map-tag map-1">olmasına rağmen</span>, buna değer.`,
         note: "Sıfat cümleciği gibi görünse de aslında bir zarf cümleciği kısaltmasıdır."
       }
     ]

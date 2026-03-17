@@ -37,7 +37,10 @@ const tenseAgreementHTML = `
             <i class="fas fa-arrows-left-right text-emerald-400"></i>
             <span class="font-bold text-emerald-800">Present / Future</span>
           </div>
-          <p class="text-xs italic text-slate-400 mt-2">Örn: I <span class="font-bold">know</span> that he <span class="font-bold">will come</span> tomorrow.</p>
+          <div class="text-xs italic text-slate-500 mt-2">
+            <div>I <span class="map-tag map-1">know</span> that he <span class="map-tag map-2">will come</span> tomorrow.</div>
+            <div class="mt-1 opacity-70">Onun yarın <span class="map-tag map-2">geleceğini</span> <span class="map-tag map-1">biliyorum</span>.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -57,7 +60,10 @@ const tenseAgreementHTML = `
             <i class="fas fa-arrows-left-right text-indigo-400"></i>
             <span class="font-bold text-indigo-800">Past / Would</span>
           </div>
-          <p class="text-xs italic text-slate-400 mt-2">Örn: She <span class="font-bold">said</span> that she <span class="font-bold">had finished</span> the work.</p>
+          <div class="text-xs italic text-slate-500 mt-2">
+            <div>She <span class="map-tag map-1">said</span> that she <span class="map-tag map-2">had finished</span> the work.</div>
+            <div class="mt-1 opacity-70">İşi <span class="map-tag map-2">bitirmiş olduğunu</span> <span class="map-tag map-1">söyledi</span>.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -164,7 +170,8 @@ const tenseAgreementHTML = `
       </p>
       <div class="mt-4 bg-white/50 p-4 rounded-xl inline-block border border-red-100">
         <p class="text-sm font-bold text-red-900 italic">❌ After he <span class="bg-red-200 px-1">will arrive</span>... (YANLIŞ)</p>
-        <p class="text-sm font-bold text-emerald-800 italic mt-1">✅ After he <span class="underline">arrives</span>... (DOĞRU)</p>
+        <p class="text-sm font-bold text-emerald-800 italic mt-1">✅ After he <span class="map-tag map-1">arrives</span>...</p>
+        <div class="text-xs text-slate-500 mt-1 opacity-70">O <span class="map-tag map-1">vardıktan sonra</span>...</div>
       </div>
     </div>
   </div>
@@ -177,28 +184,36 @@ const tenseAgreementHTML = `
     </div>
     <div class="grid md:grid-cols-2 gap-4">
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "I <span class="font-bold">knew</span> that he <span class="font-bold">had been working</span> there for years."
+        <div>I <span class="map-tag map-1">knew</span> that he <span class="map-tag map-2">had been working</span> there.</div>
+        <div class="map-tr-sentence">Orada <span class="map-tag map-2">çalışmakta olduğunu</span> <span class="map-tag map-1">biliyordum</span>.</div>
       </div>
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "By the time the firemen <span class="font-bold">arrived</span>, the house <span class="font-bold">had burnt</span> down."
+        <div>By the time they <span class="map-tag map-1">arrived</span>, the house <span class="map-tag map-2">had burnt</span> down.</div>
+        <div class="map-tr-sentence">Onlar <span class="map-tag map-1">vardığında</span>, ev çoktan <span class="map-tag map-2">yanmıştı</span>.</div>
       </div>
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "She <span class="font-bold">will have finished</span> her homework by the time her father <span class="font-bold">comes</span> home."
+        <div>She <span class="map-tag map-1">will have finished</span> by the time he <span class="map-tag map-2">comes</span>.</div>
+        <div class="map-tr-sentence">O <span class="map-tag map-2">gelene kadar</span>, (kadın) <span class="map-tag map-1">bitirmiş olacak</span>.</div>
       </div>
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "He <span class="font-bold">was playing</span> computer games while his mother <span class="font-bold">was cooking</span>."
+        <div>He <span class="map-tag map-1">was playing</span> while she <span class="map-tag map-2">was cooking</span>.</div>
+        <div class="map-tr-sentence">Kadın yemek <span class="map-tag map-2">yaparken</span>, o oyun <span class="map-tag map-1">oynuyordu</span>.</div>
       </div>
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "Since I <span class="font-bold">moved</span> to this city, I <span class="font-bold">have made</span> many friends."
+        <div>Since I <span class="map-tag map-1">moved</span>, I <span class="map-tag map-2">have made</span> many friends.</div>
+        <div class="map-tr-sentence"><span class="map-tag map-1">Taşındığımdan beri</span> birçok arkadaş <span class="map-tag map-2">edindim</span>.</div>
       </div>
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "Scientists <span class="font-bold">believe</span> that the climate <span class="font-bold">will change</span> drastically soon."
+        <div>Scientists <span class="map-tag map-1">believe</span> that the climate <span class="map-tag map-2">will change</span>.</div>
+        <div class="map-tr-sentence">Bilim insanları iklimin <span class="map-tag map-2">değişeceğine</span> <span class="map-tag map-1">inanıyorlar</span>.</div>
       </div>
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "If they <span class="font-bold">had left</span> earlier, they <span class="font-bold">would have caught</span> the train."
+        <div>If they <span class="map-tag map-1">had left</span> early, they <span class="map-tag map-2">would have caught</span> the train.</div>
+        <div class="map-tr-sentence">Erken <span class="map-tag map-1">ayrılsalardı</span> treni <span class="map-tag map-2">yakalayabilirlerdi</span>.</div>
       </div>
       <div class="bg-white p-4 rounded-xl border border-slate-100 italic text-sm example-text">
-        "While I <span class="font-bold">was walking</span> down the street, I <span class="font-bold">saw</span> an old friend."
+        <div>While I <span class="map-tag map-1">was walking</span>, I <span class="map-tag map-2">saw</span> an old friend.</div>
+        <div class="map-tr-sentence"><span class="map-tag map-1">Yürürken</span> eski bir arkadaşımı <span class="map-tag map-2">gördüm</span>.</div>
       </div>
     </div>
   </div>

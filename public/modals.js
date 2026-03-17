@@ -397,8 +397,8 @@ const modalsHTML = `
  </td>
  <td class="p-4">
  <div class="example-block">
- <div class="example-text">You <span class="highlight-modal">should</span> see a dentist.</div>
- <div class="example-text">You <span class="highlight-modal">had better</span> hurry, or you will miss the bus.</div>
+ <div class="example-text"><div>You <span class="map-tag map-1">should</span> <span class="map-tag map-2">see a dentist</span>.</div><div class="map-tr-sentence">Bir dişçiye <span class="map-tag map-2">GÖRÜN</span><span class="map-tag map-1">MELİSİN</span>.</div></div>
+ <div class="example-text"><div>You <span class="map-tag map-1">had better</span> <span class="map-tag map-2">hurry</span>, or you will miss the bus.</div><div class="map-tr-sentence"><span class="map-tag map-2">Acele etsen</span> <span class="map-tag map-1">İYİ OLUR</span>, yoksa otobüsü kaçıracaksın.</div></div>
  </div>
  </td>
  </tr>
@@ -422,7 +422,7 @@ const modalsHTML = `
  <div class="prob-bar w-full bg-slate-200 mb-2"><div class="prob-fill bg-green-500" style="width: 95%"></div></div>
  <p class="text-xs text-slate-500">%95 Sure (True)</p>
  <p class="mt-2 text-sm">"Olmalı." (Kesin o)</p>
- <div class="example-text mt-2">Light is on. He <span class="highlight-modal">must be</span> at home.</div>
+ <div class="example-text mt-2"><div>Light is on. He <span class="map-tag map-1">must be</span> <span class="map-tag map-2">at home</span>.</div><div class="map-tr-sentence">Işık yanıyor. O <span class="map-tag map-2">evde</span> <span class="map-tag map-1">OLMALI</span>.</div></div>
  </div>
 
  <!-- Possibility -->
@@ -431,7 +431,7 @@ const modalsHTML = `
  <div class="prob-bar w-full bg-slate-200 mb-2"><div class="prob-fill bg-yellow-500" style="width: 50%"></div></div>
  <p class="text-xs text-slate-500">%50 Possible</p>
  <p class="mt-2 text-sm">"Olabilir." (Belki)</p>
- <div class="example-text mt-2">He is not answering. He <span class="highlight-modal">might be</span> sleeping.</div>
+ <div class="example-text mt-2"><div>He is not answering. He <span class="map-tag map-1">might be</span> <span class="map-tag map-2">sleeping</span>.</div><div class="map-tr-sentence">Cevap vermiyor. <span class="map-tag map-2">Uyuyor</span> <span class="map-tag map-1">OLABİLİR</span>.</div></div>
  </div>
 
  <!-- Strong Negative -->
@@ -440,7 +440,7 @@ const modalsHTML = `
  <div class="prob-bar w-full bg-slate-200 mb-2"><div class="prob-fill bg-red-500" style="width: 95%"></div></div>
  <p class="text-xs text-slate-500">%95 Sure (Impossible)</p>
  <p class="mt-2 text-sm">"Olamaz." (Mümkün değil)</p>
- <div class="example-text mt-2">He just left. He <span class="highlight-modal">can't be</span> far away.</div>
+ <div class="example-text mt-2"><div>He just left. He <span class="map-tag map-1">can't be</span> <span class="map-tag map-2">far away</span>.</div><div class="map-tr-sentence">Az önce ayrıldı. <span class="map-tag map-2">Uzakta</span> <span class="map-tag map-1">OLAMAZ</span>.</div></div>
  </div>
  </div>
 </section>
@@ -519,7 +519,7 @@ const modalsHTML = `
 </td>
 <td class="p-4">
 <div class="example-text">
-I <span class="highlight-modal">would have helped</span> you if I had known.
+<div>I <span class="map-tag map-1">would have</span> <span class="map-tag map-2">helped</span> you if I had known.</div><div class="map-tr-sentence">Bilseydim sana <span class="map-tag map-2">yardım</span> <span class="map-tag map-1">EDERDİM</span>.</div>
 </div>
 </td>
 </tr>
@@ -538,7 +538,7 @@ I <span class="highlight-modal">would have helped</span> you if I had known.
 </td>
 <td class="p-4">
 <div class="example-text">
-I can't find my wallet. I <span class="highlight-modal">might have dropped</span> it.
+<div>I can't find my wallet. I <span class="map-tag map-1">might have</span> <span class="map-tag map-2">dropped</span> it.</div><div class="map-tr-sentence">Cüzdanımı bulamıyorum. Onu <span class="map-tag map-2">düşürmüş</span> <span class="map-tag map-1">OLABİLİRİM</span>.</div>
 </div>
 </td>
 </tr>
@@ -559,10 +559,10 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 <td class="p-4">
 <div class="example-block">
 <div class="example-text">
- You <span class="highlight-modal">could have told</span> me earlier!
+ <div>You <span class="map-tag map-1">could have</span> <span class="map-tag map-2">told</span> me earlier!</div><div class="map-tr-sentence">Bana daha önce <span class="map-tag map-2">söyleye</span><span class="map-tag map-1">BİLİRDİN</span>!</div>
 </div>
 <div class="example-text">
- She <span class="highlight-modal">may have forgotten</span> the meeting.
+ <div>She <span class="map-tag map-1">may have</span> <span class="map-tag map-2">forgotten</span> the meeting.</div><div class="map-tr-sentence">Toplantıyı <span class="map-tag map-2">unutmuş</span> <span class="map-tag map-1">OLABİLİR</span>.</div>
 </div>
 </div>
 </td>
@@ -595,12 +595,12 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  <div>
  <div class="font-bold text-lg text-purple-700">Needn't have V3</div>
  <p class="text-xs text-slate-500 mb-2">"Yapmana gerek yoktu (ama yaptın)"</p>
- <div class="example-text">I <span class="highlight-modal">needn't have bought</span> bread, we already had some. (Boşuna aldım)</div>
+ <div class="example-text"><div>I <span class="map-tag map-1">needn't have</span> <span class="map-tag map-2">bought</span> bread.</div><div class="map-tr-sentence">Ekmek <span class="map-tag map-2">al</span><span class="map-tag map-1">MANA GEREK YOKTU</span> (ama aldım).</div></div>
  </div>
  <div>
  <div class="font-bold text-lg text-slate-700 ">Didn't need to V1</div>
  <p class="text-xs text-slate-500 mb-2">"Gerek yoktu (ve muhtemelen yapmadım)"</p>
- <div class="example-text">It was Sunday, so I <span class="highlight-modal">didn't need to get up</span> early. (Kalkmadım)</div>
+ <div class="example-text"><div>It was Sunday, so I <span class="map-tag map-1">didn't need to</span> <span class="map-tag map-2">get up</span> early.</div><div class="map-tr-sentence">Pazardı, bu yüzden erken <span class="map-tag map-2">kalk</span><span class="map-tag map-1">MAMA GEREK YOKTU</span> (ve kalkmadım).</div></div>
  </div>
  </div>
  </td>
@@ -635,8 +635,8 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </ul>
  </td>
  <td class="p-4">
- <div class="example-text">I <span class="highlight-modal">would rather drink</span> tea than coffee.</div>
- <div class="example-text">I <span class="highlight-modal">would rather you didn't</span> smoke here.</div>
+ <div class="example-text"><div>I <span class="map-tag map-1">would rather</span> <span class="map-tag map-2">drink tea</span> than coffee.</div><div class="map-tr-sentence">Kahve yerine <span class="map-tag map-2">çay içmeyi</span> <span class="map-tag map-1">TERCİH EDERİM</span>.</div></div>
+ <div class="example-text"><div>I <span class="map-tag map-1">would rather</span> <span class="map-tag map-2">you didn't smoke</span> here.</div><div class="map-tr-sentence">Burada <span class="map-tag map-2">sigara içmemeni</span> <span class="map-tag map-1">TERCİH EDERİM</span>.</div></div>
  </td>
  </tr>
 <tr class="hover:bg-slate-50 align-top">
@@ -652,7 +652,7 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 </td>
 <td class="p-4">
 <div class="example-text">
- When we were children, we <span class="highlight-modal">would play</span> outside.
+ <div>When we were children, we <span class="map-tag map-1">would</span> <span class="map-tag map-2">play</span> outside.</div><div class="map-tr-sentence">Çocukken dışarıda <span class="map-tag map-2">oynar</span><span class="map-tag map-1">DIK</span>.</div>
 </div>
 </td>
 </tr>
@@ -668,19 +668,19 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  <div class="flex flex-col md:flex-row gap-2 md:items-center border-b border-slate-100 pb-2">
  <span class="badge-str w-32 shrink-0">Used to + V1</span>
  <span class="text-slate-600 text-sm">Eskiden yapardım (Artık yapmıyorum). Past Habit.</span>
- <span class="text-xs italic text-gray-500 ml-auto">Ex: I <b>used to smoke</b>.</span>
+ <span class="text-xs italic text-gray-500 ml-auto"><div>I <span class="map-tag map-1">used to</span> <span class="map-tag map-2">smoke</span>.</div><div class="map-tr-sentence">Eskiden <span class="map-tag map-2">sigara içer</span><span class="map-tag map-1">DİM</span>.</div></span>
  </div>
  <!-- Be used to -->
  <div class="flex flex-col md:flex-row gap-2 md:items-center border-b border-slate-100 pb-2">
  <span class="badge-str w-32 shrink-0">Be used to + Ving</span>
  <span class="text-slate-600 text-sm">Alışkın olmak (Durum).</span>
- <span class="text-xs italic text-gray-500 ml-auto">Ex: I <b>am used to driving</b> in traffic.</span>
+ <span class="text-xs italic text-gray-500 ml-auto"><div>I <span class="map-tag map-1">am used to</span> <span class="map-tag map-2">driving</span> in traffic.</div><div class="map-tr-sentence">Trafikte <span class="map-tag map-2">araba sürmeye</span> <span class="map-tag map-1">ALIŞKINIM</span>.</div></span>
  </div>
  <!-- Get used to -->
  <div class="flex flex-col md:flex-row gap-2 md:items-center">
  <span class="badge-str w-32 shrink-0">Get used to + Ving</span>
  <span class="text-slate-600 text-sm">Alışmak (Süreç).</span>
- <span class="text-xs italic text-gray-500 ml-auto">Ex: I <b>got used to living</b> alone.</span>
+ <span class="text-xs italic text-gray-500 ml-auto"><div>I <span class="map-tag map-1">got used to</span> <span class="map-tag map-2">living</span> alone.</div><div class="map-tr-sentence">Yalnız <span class="map-tag map-2">yaşamaya</span> <span class="map-tag map-1">ALIŞTIM</span>.</div></span>
  </div>
  </div>
  </td>
@@ -714,8 +714,8 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </ul>
  </td>
  <td class="p-4">
- <div class="example-text">No one <span class="highlight-modal">is to leave</span> this room. (Strict Order)</div>
- <div class="example-text">They didn't know they <span class="highlight-modal">were never to see</span> each other again.</div>
+ <div class="example-text"><div>No one <span class="map-tag map-1">is to</span> <span class="map-tag map-2">leave</span> this room.</div><div class="map-tr-sentence">Kimse bu odayı <span class="map-tag map-2">terk et</span><span class="map-tag map-1">MEYECEK</span> (Resmi Emir).</div></div>
+ <div class="example-text"><div>They didn't know they <span class="map-tag map-1">were never to</span> <span class="map-tag map-2">see</span> each other again.</div><div class="map-tr-sentence">Birbirlerini bir daha asla <span class="map-tag map-2">göre</span><span class="map-tag map-1">MEYECEKLERİNİ</span> bilmiyorlardı.</div></div>
  </td>
  </tr>
 
@@ -732,7 +732,7 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </ul>
  </td>
  <td class="p-4">
- <div class="example-text">You <span class="highlight-modal">are supposed to be</span> at work now. (Why are you here?)</div>
+ <div class="example-text"><div>You <span class="map-tag map-1">are supposed to</span> <span class="map-tag map-2">be at work</span> now.</div><div class="map-tr-sentence">Şu an <span class="map-tag map-2">işte olman</span> <span class="map-tag map-1">GEREKİYORDU</span>.</div></div>
  </td>
  </tr>
 
@@ -750,8 +750,8 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </ul>
  </td>
  <td class="p-4">
- <div class="example-text">I <span class="highlight-modal">daren't tell</span> him the truth.</div>
- <div class="example-text">He <span class="highlight-modal">didn't dare to look</span> back.</div>
+ <div class="example-text"><div>I <span class="map-tag map-1">daren't</span> <span class="map-tag map-2">tell</span> him the truth.</div><div class="map-tr-sentence">Ona gerçeği <span class="map-tag map-2">söylemeye</span> <span class="map-tag map-1">CESARET EDEMİYORUM</span>.</div></div>
+ <div class="example-text"><div>He <span class="map-tag map-1">didn't dare to</span> <span class="map-tag map-2">look back</span>.</div><div class="map-tr-sentence">Geriye <span class="map-tag map-2">bakmaya</span> <span class="map-tag map-1">CESARET EDEMEDİ</span>.</div></div>
  </td>
  </tr>
 
@@ -772,8 +772,8 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 </ul>
 </td>
 <td class="p-4">
-<div class="example-text">He studies 10 hours a day. He <span class="highlight-modal">is bound to</span> pass the exam.</div>
-<div class="example-text">If you keep driving so fast, you <span class="highlight-modal">are bound to</span> have an accident.</div>
+<div class="example-text"><div>He studies 10 hours a day. He <span class="map-tag map-1">is bound to</span> <span class="map-tag map-2">pass</span> the exam.</div><div class="map-tr-sentence">Sınavı <span class="map-tag map-2">geçmesi</span> <span class="map-tag map-1">KAÇINILMAZ</span>.</div></div>
+<div class="example-text"><div>If you keep driving so fast, you <span class="map-tag map-1">are bound to</span> <span class="map-tag map-2">have an accident</span>.</div><div class="map-tr-sentence"><span class="map-tag map-2">Kaza yapman</span> <span class="map-tag map-1">MUTLAK</span>.</div></div>
 </td>
 </tr>
 
@@ -792,8 +792,8 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 </ul>
 </td>
 <td class="p-4">
-<div class="example-text">She has trained hard. She <span class="highlight-modal">is likely to</span> win the gold medal.</div>
-<div class="example-text">It <span class="highlight-modal">is unlikely to</span> rain this afternoon. (Yağmur yağması düşük ihtimal)</div>
+<div class="example-text"><div>She has trained hard. She <span class="map-tag map-1">is likely to</span> <span class="map-tag map-2">win</span> the gold medal.</div><div class="map-tr-sentence">Altın madalyayı <span class="map-tag map-2">kazanması</span> <span class="map-tag map-1">MUHTEMEL</span>.</div></div>
+<div class="example-text"><div>It <span class="map-tag map-1">is unlikely to</span> <span class="map-tag map-2">rain</span> this afternoon.</div><div class="map-tr-sentence">Bu öğleden sonra yağmur <span class="map-tag map-2">yağması</span> <span class="map-tag map-1">DÜŞÜK İHTİMAL</span>.</div></div>
 </td>
 </tr>
 
@@ -811,8 +811,8 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 </ul>
 </td>
 <td class="p-4">
-<div class="example-text">The train <span class="highlight-modal">is due to</span> arrive at 8:15. (Planlanmış saat)</div>
-<div class="example-text">The meeting <span class="highlight-modal">is due to</span> start in ten minutes.</div>
+<div class="example-text"><div>The train <span class="map-tag map-1">is due to</span> <span class="map-tag map-2">arrive</span> at 8:15.</div><div class="map-tr-sentence">Trenin 8:15'te <span class="map-tag map-2">varması</span> <span class="map-tag map-1">BEKLENİYOR</span>.</div></div>
+<div class="example-text"><div>The meeting <span class="map-tag map-1">is due to</span> <span class="map-tag map-2">start</span> in ten minutes.</div><div class="map-tr-sentence">Toplantının 10 dakika içinde <span class="map-tag map-2">başlaması</span> <span class="map-tag map-1">PLANLANIYOR</span>.</div></div>
 </td>
 </tr>
 
@@ -830,7 +830,7 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 </td>
 <td class="p-4">
 <div class="example-text">
- The tenant <span class="highlight-modal">shall pay</span> the rent on time.
+ <div>The tenant <span class="map-tag map-1">shall</span> <span class="map-tag map-2">pay</span> the rent on time.</div><div class="map-tr-sentence">Kiracı kirayı zamanında <span class="map-tag map-2">ödemek</span> <span class="map-tag map-1">ZORUNDADIR</span>.</div>
 </div>
 </td>
 </tr>
@@ -853,7 +853,7 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  <div>
  <span class="badge-str text-xs">Prefer Ving to Ving</span>
  <p class="text-sm text-slate-600 mt-1">Genel hobiler, alışkanlıklar.</p>
- <div class="example-text mt-1">I <span class="highlight-modal">prefer walking</span> to running.</div>
+ <div class="example-text mt-1"><div>I <span class="map-tag map-1">prefer walking</span> to running.</div><div class="map-tr-sentence"><span class="map-tag map-1">Yürümeyi</span> koşmaya <span class="map-tag map-1">TERCİH EDERİM</span>.</div></div>
  </div>
  </div>
  </div>
@@ -864,11 +864,11 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  <div class="space-y-4">
  <div>
  <span class="badge-str text-xs">Would rather V1 than V1</span>
- <div class="example-text mt-1">I <span class="highlight-modal">would rather stay</span> home than go out tonight.</div>
+ <div class="example-text mt-1"><div>I <span class="map-tag map-1">would rather stay home</span> than go out tonight.</div><div class="map-tr-sentence">Bu gece dışarı çıkmaktansa <span class="map-tag map-1">evde kalmayı TERCİH EDERİM</span>.</div></div>
  </div>
  <div>
  <span class="badge-str text-xs">Would prefer to V1 rather than V1</span>
- <div class="example-text mt-1">I <span class="highlight-modal">would prefer to eat</span> salad rather than eat pasta.</div>
+ <div class="example-text mt-1"><div>I <span class="map-tag map-1">would prefer to eat salad</span> rather than eat pasta.</div><div class="map-tr-sentence">Makarna yerine <span class="map-tag map-1">salata yemeyi TERCİH EDERİM</span>.</div></div>
  </div>
  </div>
  </div>

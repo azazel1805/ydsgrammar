@@ -71,8 +71,8 @@ const quantifiersHTML = `
                         <h4 class="font-black text-xl text-slate-800 italic">A few / A little</h4>
                         <p class="text-sm text-slate-600">"Biraz var, bana yeter." (Az ama kafi)</p>
                         <div class="text-[11px] font-bold">
-                            <div>Ex: I have <span class="map-tag map-1">a little</span> money.</div>
-                            <div class="map-tr-sentence">(Kahve alabilirim; <span class="map-tag map-1">biraz</span> param var.)</div>
+                            <div>Ex: I have <span class="map-tag map-1">a little</span> <span class="map-tag map-2">money</span>.</div>
+                            <div class="map-tr-sentence">(Kahve alabilirim; <span class="map-tag map-1">biraz</span> <span class="map-tag map-2">param</span> var.)</div>
                         </div>
                     </div>
                 </div>
@@ -82,8 +82,8 @@ const quantifiersHTML = `
                         <h4 class="font-black text-xl text-slate-800 italic">Few / Little</h4>
                         <p class="text-sm text-slate-600">"Neredeyse hiç yok." (Yetersiz, olumsuz hava)</p>
                         <div class="text-[11px] font-bold">
-                            <div>Ex: I have <span class="map-tag map-1">little</span> money.</div>
-                            <div class="map-tr-sentence">(Aç kalacağım; <span class="map-tag map-1">neredeyse hiç</span> param yok.)</div>
+                            <div>Ex: I have <span class="map-tag map-1">little</span> <span class="map-tag map-2">money</span>.</div>
+                            <div class="map-tr-sentence">(Aç kalacağım; <span class="map-tag map-1">neredeyse hiç</span> <span class="map-tag map-2">param</span> yok.)</div>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ const quantifiersHTML = `
                         <td class="p-6 text-slate-400 font-medium italic">General</td>
                         <td class="p-6 text-slate-500 italic font-medium">
                             <div>Her zaman TEKİL isim ve TEKİL fiil alırlar.</div>
-                            <div class="font-bold underline">Wait for <span class="map-tag map-1">each</span> <span class="map-tag map-2">student</span>!</div>
+                            <div class="font-bold underline italic">Wait for <span class="map-tag map-1">each</span> <span class="map-tag map-2">student</span>!</div>
                             <div class="map-tr-sentence"><span class="map-tag map-1">Her bir</span> <span class="map-tag map-2">öğrenci</span>yi bekle!</div>
                         </td>
                     </tr>

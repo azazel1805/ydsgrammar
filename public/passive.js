@@ -101,21 +101,42 @@ class="flex justify-between items-center w-full text-left">
     <div>The window <span class="map-tag map-1">was broken</span> yesterday.</div>
     <div class="map-tr-sentence">Pencere dün <span class="map-tag map-1">kırıldı</span>.</div>
 </td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Present Cont.</td><td class="p-4 text-xs text-slate-500">am/is/are Ving</td><td class="p-4 font-bold text-orange-600">am/is/are BEING + V3</td><td class="p-4 italic">The room <span class="highlight-verb">is being cleaned</span> now.</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Past Cont.</td><td class="p-4 text-xs text-slate-500">was/were Ving</td><td class="p-4 font-bold text-orange-600">was/were BEING + V3</td><td class="p-4 italic">The car <span class="highlight-verb">was being repaired</span> when I came.</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Present Cont.</td><td class="p-4 text-xs text-slate-500">am/is/are Ving</td><td class="p-4 font-bold text-orange-600">am/is/are BEING + V3</td><td class="p-4">
+    <div>The room <span class="map-tag map-1">is being cleaned</span> now.</div>
+    <div class="map-tr-sentence">Oda şu an <span class="map-tag map-1">temizleniyor</span>.</div>
+</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Past Cont.</td><td class="p-4 text-xs text-slate-500">was/were Ving</td><td class="p-4 font-bold text-orange-600">was/were BEING + V3</td><td class="p-4">
+    <div>The car <span class="map-tag map-1">was being repaired</span> when I came.</div>
+    <div class="map-tr-sentence">Geldiğimde araba <span class="map-tag map-1">tamir ediliyordu</span>.</div>
+</td></tr>
  <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Present Perfect</td><td class="p-4 text-xs text-slate-500">have/has V3</td><td class="p-4 font-bold text-orange-600">have/has BEEN + V3</td><td class="p-4">
     <div>The project <span class="map-tag map-1">has been finished</span>.</div>
     <div class="map-tr-sentence">Proje <span class="map-tag map-1">tamamlandı</span>.</div>
 </td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Past Perfect</td><td class="p-4 text-xs text-slate-500">had V3</td><td class="p-4 font-bold text-orange-600">had BEEN + V3</td><td class="p-4 italic">It <span class="highlight-verb">had been done</span> before noon.</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Future (Will)</td><td class="p-4 text-xs text-slate-500">will V1</td><td class="p-4 font-bold text-orange-600">will BE + V3</td><td class="p-4 italic">It <span class="highlight-verb">will be solved</span> soon.</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Past Perfect</td><td class="p-4 text-xs text-slate-500">had V3</td><td class="p-4 font-bold text-orange-600">had BEEN + V3</td><td class="p-4">
+    <div>It <span class="map-tag map-1">had been done</span> before noon.</div>
+    <div class="map-tr-sentence">Öğleden önce <span class="map-tag map-1">yapılmıştı</span>.</div>
+</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Future (Will)</td><td class="p-4 text-xs text-slate-500">will V1</td><td class="p-4 font-bold text-orange-600">will BE + V3</td><td class="p-4">
+    <div>It <span class="map-tag map-1">will be solved</span> soon.</div>
+    <div class="map-tr-sentence">Yakında <span class="map-tag map-1">çözülecek</span>.</div>
+</td></tr>
  <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Modals</td><td class="p-4 text-xs text-slate-500">can/must/should V1</td><td class="p-4 font-bold text-orange-600">Modal + BE + V3</td><td class="p-4">
     <div>Rules <span class="map-tag map-1">must be followed</span>.</div>
     <div class="map-tr-sentence">Kurallara <span class="map-tag map-1">UYULMALIDIR</span>.</div>
 </td></tr>
- <tr class="hover:bg-slate-50 bg-orange-50/50 "><td class="p-4 font-bold text-rose-600">Perfect Modals</td><td class="p-4 text-xs text-slate-500">must have V3</td><td class="p-4 font-bold text-rose-600">Modal + have BEEN + V3</td><td class="p-4 italic">The file <span class="highlight-verb">must have been deleted</span>.</td></tr>
- <tr class="hover:bg-slate-50 bg-blue-50/50 "><td class="p-4 font-bold text-black">Infinitive</td><td class="p-4 text-xs text-slate-500">to V1</td><td class="p-4 font-bold text-black">to BE + V3</td><td class="p-4 italic">I want <span class="highlight-verb">to be informed</span> immediately.</td></tr>
- <tr class="hover:bg-slate-50 bg-blue-50/50 "><td class="p-4 font-bold text-black">Gerund</td><td class="p-4 text-xs text-slate-500">Ving</td><td class="p-4 font-bold text-black">BEING + V3</td><td class="p-4 italic">I hate <span class="highlight-verb">being lied</span> to.</td></tr>
+ <tr class="hover:bg-slate-50 bg-orange-50/50 "><td class="p-4 font-bold text-rose-600">Perfect Modals</td><td class="p-4 text-xs text-slate-500">must have V3</td><td class="p-4 font-bold text-rose-600">Modal + have BEEN + V3</td><td class="p-4">
+    <div>The file <span class="map-tag map-1">must have been deleted</span>.</div>
+    <div class="map-tr-sentence">Dosya <span class="map-tag map-1">silinmiş OLMALI</span>.</div>
+</td></tr>
+ <tr class="hover:bg-slate-50 bg-blue-50/50 "><td class="p-4 font-bold text-black">Infinitive</td><td class="p-4 text-xs text-slate-500">to V1</td><td class="p-4 font-bold text-black">to BE + V3</td><td class="p-4">
+    <div>I want <span class="map-tag map-1">to be informed</span> immediately.</div>
+    <div class="map-tr-sentence">Derhal <span class="map-tag map-1">bilgilendirilmek</span> istiyorum.</div>
+</td></tr>
+ <tr class="hover:bg-slate-50 bg-blue-50/50 "><td class="p-4 font-bold text-black">Gerund</td><td class="p-4 text-xs text-slate-500">Ving</td><td class="p-4 font-bold text-black">BEING + V3</td><td class="p-4">
+    <div>I hate <span class="map-tag map-1">being lied</span> to.</div>
+    <div class="map-tr-sentence">Bana yalan <span class="map-tag map-1">söylenmesinden</span> nefret ederim.</div>
+</td></tr>
  </tbody>
  </table>
 </section>
@@ -172,10 +193,10 @@ class="flex justify-between items-center w-full text-left">
  <section class="bg-white rounded-lg shadow border border-slate-200 p-5">
  <h3 class="font-bold text-lg mb-3 text-teal-700 ">Causatives (Ettirgen)</h3>
  <table class="w-full text-xs">
- <tr class="border-b "><td class="py-2 font-bold">Have s.o. DO</td><td class="py-2">I had the mechanic <span class="font-bold text-teal-600">fix</span> my car.</td></tr>
- <tr class="border-b "><td class="py-2 font-bold">Get s.o. TO DO</td><td class="py-2">I got my brother <span class="font-bold text-teal-600">to help</span> me.</td></tr>
- <tr class="border-b "><td class="py-2 font-bold">Make s.o. DO</td><td class="py-2">She made me <span class="font-bold text-teal-600">cry</span>.</td></tr>
- <tr class="bg-teal-50 "><td class="py-2 font-bold pl-2">PASSIVE FORM</td><td class="py-2">Have/Get something <span class="font-bold text-teal-600">V3 (DONE)</span><br><em>I had my hair cut.</em></td></tr>
+ <tr class="border-b "><td class="py-2 font-bold">Have s.o. DO</td><td class="py-2"><div>I had the mechanic <span class="map-tag map-1">fix</span> my car.</div><div class="map-tr-sentence">Tamirciye arabamı <span class="map-tag map-1">tamir ettirdim</span>.</div></td></tr>
+ <tr class="border-b "><td class="py-2 font-bold">Get s.o. TO DO</td><td class="py-2"><div>I got my brother <span class="map-tag map-1">to help</span> me.</div><div class="map-tr-sentence">Kardeşime yardım <span class="map-tag map-1">ettirdim</span> (sağladım).</div></td></tr>
+ <tr class="border-b "><td class="py-2 font-bold">Make s.o. DO</td><td class="py-2"><div>She made me <span class="map-tag map-1">cry</span>.</div><div class="map-tr-sentence">Beni <span class="map-tag map-1">ağlattı</span>.</div></td></tr>
+ <tr class="bg-teal-50 "><td class="py-2 font-bold pl-2">PASSIVE FORM</td><td class="py-2"><div>Have/Get something <span class="map-tag map-1">V3 (DONE)</span></div><div class="map-tr-sentence">I had my hair <span class="map-tag map-1">cut</span>. (Saçımı kestirdim.)</div></td></tr>
  </table>
  </section>
 

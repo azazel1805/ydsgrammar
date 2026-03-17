@@ -42,23 +42,23 @@ const RS_DATA = {
           examples: [
             { en: `<span class="map-tag map-1">He said</span> (that) <span class="map-tag map-2">he was</span> tired.`, tr: `Yorgun <span class="map-tag map-2">olduğunu</span> <span class="map-tag map-1">söyledi</span>.` },
             { en: `<span class="map-tag map-1">He told me</span> (that) <span class="map-tag map-2">he was</span> tired.`, tr: `Bana yorgun <span class="map-tag map-2">olduğunu</span> <span class="map-tag map-1">söyledi</span>.` },
-            { en: 'He told her the truth.', tr: 'Ona gercegi soyledi.' },
+            { en: '<span class="map-tag map-1">He told</span> her <span class="map-tag map-2">the truth</span>.', tr: 'Ona <span class="map-tag map-2">gerçeği</span> <span class="map-tag map-1">söyledi</span>.' },
           ]
         },
         {
           tag: 'Tense Backshift', color: '#7c3aed',
           desc: 'Reporting verb gecmisteyse ana cumlenin tense\'i bir adim geriye kayar.',
           examples: [
-            { en: '"I live in London." -> She said she lived in London.', tr: '"Londra\'da yasiyorum." -> Londra\'da yasadigini soyledi.' },
-            { en: '"I have been waiting." -> He said he had been waiting.', tr: '"Bekliyordum." -> Bekledigini soyledi.' },
+            { en: '"I <span class="map-tag map-1">live</span> in London." -> She said she <span class="map-tag map-1">lived</span> in London.', tr: '"Londra\'da <span class="map-tag map-1">yaşıyorum</span>." -> Londra\'da <span class="map-tag map-1">yaşadığını</span> söyledi.' },
+            { en: '"I <span class="map-tag map-1">have been waiting</span>." -> He said he <span class="map-tag map-1">had been waiting</span>.', tr: '"<span class="map-tag map-1">Bekliyordum</span>." -> <span class="map-tag map-1">Beklediğini</span> söyledi.' },
           ]
         },
         {
           tag: 'Backshift Gerekmeyebilir', color: '#16a34a',
           desc: 'Hala gercek olan durumlar, genel gercekler ve reporting verb "says" ise backshift gerekmez.',
           examples: [
-            { en: 'She says she is a doctor. (hala doktor)', tr: 'Doktor oldugunu soyluyor.' },
-            { en: 'He said the Earth is round. (genel gercek)', tr: 'Dunyanin yuvarlak oldugunu soyledi.' },
+            { en: 'She <span class="map-tag map-1">says</span> she <span class="map-tag map-2">is</span> a doctor.', tr: 'Doktor <span class="map-tag map-2">olduğunu</span> <span class="map-tag map-1">söylüyor</span>.' },
+            { en: 'He <span class="map-tag map-1">said</span> the Earth <span class="map-tag map-2">is</span> round.', tr: 'Dünyanın yuvarlak <span class="map-tag map-2">olduğunu</span> <span class="map-tag map-1">söyledi</span>.' },
           ]
         },
       ],
@@ -85,8 +85,8 @@ const RS_DATA = {
           tag: 'Wh- Sorulari', color: '#7c3aed',
           desc: 'Soru kelimesi ayni kalir; soru dizisi -> normal cumle dizisi (S+V).',
           examples: [
-            { en: '"Where do you live?" -> She asked where I lived.', tr: '"Nerede yasiyorsun?" -> Nerede yasadigimi sordu.' },
-            { en: '"What time did you arrive?" -> He asked what time I had arrived.', tr: '"Saat kacta geldin?" -> Saat kacta geldigimi sordu.' },
+            { en: '"Where <span class="map-tag map-2">do you live</span>?" -> <span class="map-tag map-1">She asked where</span> I lived.', tr: '"Nerede <span class="map-tag map-2">yaşıyorsun</span>?" -> Nerede <span class="map-tag map-1">yaşadığımı sordu</span>.' },
+            { en: '"What time <span class="map-tag map-2">did you arrive</span>?" -> <span class="map-tag map-1">He asked what time</span> I had arrived.', tr: '"Saat kaçta <span class="map-tag map-2">geldin</span>?" -> Saat kaçta <span class="map-tag map-1">geldiğimi sordu</span>.' },
           ]
         },
       ],
@@ -105,16 +105,16 @@ const RS_DATA = {
           tag: 'Emir (tell/order/command)', color: '#dc2626',
           desc: 'Dogrudan emirler "tell/order + kisi + to-inf" ile aktarilir.',
           examples: [
-            { en: '"Close the door!" -> She told me to close the door.', tr: '"Kapiyi kapat!" -> Kapiyi kapatmami soyledi.' },
-            { en: '"Don\'t be late!" -> He told us not to be late.', tr: '"Gec kalmayin!" -> Gec kalmamamizi soyledi.' },
+            { en: '"<span class="map-tag map-2">Close</span> the door!" -> <span class="map-tag map-1">She told me to close</span> the door.', tr: '"Kapıyı <span class="map-tag map-2">kapat</span>!" -> Kapıyı <span class="map-tag map-1">kapatmamı söyledi</span>.' },
+            { en: '"<span class="map-tag map-2">Don\'t be</span> late!" -> <span class="map-tag map-1">He told us not to be</span> late.', tr: '"Geç <span class="map-tag map-2">kalmayın</span>!" -> Geç <span class="map-tag map-1">kalmamamızı söyledi</span>.' },
           ]
         },
         {
           tag: 'Rica (ask)', color: '#7c3aed',
           desc: 'Nazik istekler "ask + kisi + to-inf" ile aktarilir.',
           examples: [
-            { en: '"Could you help me?" -> She asked me to help her.', tr: '"Yardim eder misin?" -> Yardim etmemi istedi.' },
-            { en: '"Please don\'t tell anyone." -> He asked her not to tell anyone.', tr: '"Kimseye soyleme lutfen." -> Kimseye soylememesini ricad etti.' },
+            { en: '"Could you <span class="map-tag map-2">help</span> me?" -> <span class="map-tag map-1">She asked me to help</span> her.', tr: '"<span class="map-tag map-2">Yardım</span> eder misin?" -> <span class="map-tag map-1">Yardım etmemi istedi</span>.' },
+            { en: '"Please <span class="map-tag map-2">don\'t tell</span> anyone." -> <span class="map-tag map-1">He asked her not to tell</span> anyone.', tr: '"Kimseye <span class="map-tag map-2">söyleme</span> lütfen." -> Kimseye <span class="map-tag map-1">söylememesini rica etti</span>.' },
           ]
         },
       ],
@@ -133,17 +133,17 @@ const RS_DATA = {
           tag: 'suggest Yapilari', color: '#16a34a',
           desc: '"suggest" to-infinitive almaz -- -ing veya that-clause kullanir.',
           examples: [
-            { en: '"Let\'s go to the cinema." -> He suggested going to the cinema.', tr: '"Sinemaya gidelim." -> Sinemaya gitmeyi onerdi.' },
-            { en: '"Why don\'t you try again?" -> She suggested that I should try again.', tr: '"Neden yeniden denemiyorsun?" -> Yeniden denememi onerdi.' },
+            { en: '"Let\'s <span class="map-tag map-2">go</span> to the cinema." -> <span class="map-tag map-1">He suggested going</span> to the cinema.', tr: '"Sinemaya <span class="map-tag map-2">gidelim</span>." -> Sinemaya <span class="map-tag map-1">gitmeyi önerdi</span>.' },
+            { en: '"Why don\'t you <span class="map-tag map-2">try</span> again?" -> <span class="map-tag map-1">She suggested that I should try</span> again.', tr: '"Neden yeniden <span class="map-tag map-2">denemiyorsun</span>?" -> Yeniden <span class="map-tag map-1">denememi önerdi</span>.' },
           ]
         },
         {
           tag: 'offer / promise / refuse / agree', color: '#0891b2',
           desc: 'Bu fiiller to-infinitive ile kullanilir.',
           examples: [
-            { en: '"I\'ll pay for it." -> He offered to pay for it.', tr: '"Ben oderim." -> Odemeyi teklif etti.' },
-            { en: '"Yes, I\'ll do it." -> She agreed to do it.', tr: '"Evet, yaparim." -> Yapmayı kabul etti.' },
-            { en: '"No, I won\'t come." -> He refused to come.', tr: '"Hayir, gelmeyecegim." -> Gelmeyi reddetti.' },
+            { en: '"I\'ll <span class="map-tag map-2">pay</span> for it." -> <span class="map-tag map-1">He offered to pay</span> for it.', tr: '"Ben <span class="map-tag map-2">öderim</span>." -> <span class="map-tag map-1">Ödemeyi teklif etti</span>.' },
+            { en: '"Yes, I\'ll <span class="map-tag map-2">do</span> it." -> <span class="map-tag map-1">She agreed to do</span> it.', tr: '"Evet, <span class="map-tag map-2">yaparım</span>." -> <span class="map-tag map-1">Yapmayı kabul etti</span>.' },
+            { en: '"No, I <span class="map-tag map-2">won\'t come</span>." -> <span class="map-tag map-1">He refused to come</span>.', tr: '"Hayır, <span class="map-tag map-2">gelmeyeceğim</span>." -> <span class="map-tag map-1">Gelmeyi reddetti</span>.' },
           ]
         },
       ],
@@ -162,31 +162,31 @@ const RS_DATA = {
           tag: 'V + to-inf', color: '#7c3aed',
           desc: 'agree, offer, promise, refuse, threaten, claim, decide',
           examples: [
-            { en: '"I will help." -> He promised to help.', tr: '"Yardim edecegim." -> Yardim edecegine soz verdi.' },
-            { en: '"I will not go!" -> She threatened not to go.', tr: '"Gitmeyecegim!" -> Gitmemekle tehdit etti.' },
+            { en: '"I will <span class="map-tag map-2">help</span>." -> <span class="map-tag map-1">He promised to help</span>.', tr: '"<span class="map-tag map-2">Yardım</span> edeceğim." -> <span class="map-tag map-1">Yardım edeceğine söz verdi</span>.' },
+            { en: '"I <span class="map-tag map-2">will not go</span>!" -> <span class="map-tag map-1">She threatened not to go</span>.', tr: '"<span class="map-tag map-2">Gitmeyeceğim</span>!" -> <span class="map-tag map-1">Gitmemekle tehdit etti</span>.' },
           ]
         },
         {
           tag: 'V + sb + to-inf', color: '#0891b2',
           desc: 'tell, ask, warn, advise, remind, invite, order, forbid, persuade, beg',
           examples: [
-            { en: '"Be careful!" -> He warned me to be careful.', tr: '"Dikkatli ol!" -> Dikkatli olmam icin uyardi.' },
-            { en: '"You should see a doctor." -> She advised me to see a doctor.', tr: '"Doktora gorununun." -> Doktora gorunmemi tavsiye etti.' },
+            { en: '"Be <span class="map-tag map-2">careful</span>!" -> <span class="map-tag map-1">He warned me to be</span> careful.', tr: '"<span class="map-tag map-2">Dikkatli</span> ol!" -> <span class="map-tag map-1">Dikkatli olmam için uyardı</span>.' },
+            { en: '"You should <span class="map-tag map-2">see</span> a doctor." -> <span class="map-tag map-1">She advised me to see</span> a doctor.', tr: '"Doktora <span class="map-tag map-2">görünün</span>." -> Doktora <span class="map-tag map-1">görünmemi tavsiye etti</span>.' },
           ]
         },
         {
           tag: 'V + -ing', color: '#dc2626',
           desc: 'admit, deny, suggest, recommend, accuse sb of, apologise for, insist on',
           examples: [
-            { en: '"I took it." -> He admitted taking it.', tr: '"Aldim." -> Aldigini kabul etti.' },
-            { en: '"I didn\'t do it." -> She denied doing it.', tr: '"Ben yapamadim." -> Yapmadigini inkar etti.' },
+            { en: '"I <span class="map-tag map-2">took</span> it." -> <span class="map-tag map-1">He admitted taking</span> it.', tr: '"<span class="map-tag map-2">Aldım</span>." -> <span class="map-tag map-1">Aldığını kabul etti</span>.' },
+            { en: '"I <span class="map-tag map-2">didn\'t do</span> it." -> <span class="map-tag map-1">She denied doing</span> it.', tr: '"Ben <span class="map-tag map-2">yapmadım</span>." -> <span class="map-tag map-1">Yapmadığını inkar etti</span>.' },
           ]
         },
         {
           tag: 'V + (that) clause', color: '#16a34a',
           desc: 'say, explain, claim, suggest, admit, complain, deny, add, remark, announce',
           examples: [
-            { en: '"I am exhausted." -> He complained (that) he was exhausted.', tr: '"Bitkin dusumduyorum." -> Bitkin dusugunden yakiniyordu.' },
+            { en: '"I am <span class="map-tag map-2">exhausted</span>." -> <span class="map-tag map-1">He complained (that) he was</span> exhausted.', tr: '"<span class="map-tag map-2">Bitkin</span> durumdayım." -> <span class="map-tag map-1">Bitkin olduğundan yakındı</span>.' },
           ]
         },
       ],

@@ -214,14 +214,14 @@ const tensesHTML = `
  <div class="rule-card lg:col-span-2">
  <div class="rule-header bg-amber-soft"><i class="fa-solid fa-code-branch mr-2"></i> IF Clauses (Conditionals Matrix)</div>
  <div class="overflow-x-auto">
- <table class="w-full text-left text-sm">
+ <table class="grammar-table w-full text-left text-sm">
  <thead class="bg-slate-50 text-xs uppercase font-bold text-slate-500">
  <tr>
  <th class="p-4 w-24">Type</th>
  <th class="p-4">Meaning (Anlam)</th>
- <th class="p-4 w-1/4">IF Clause Structure</th>
- <th class="p-4 w-1/4">Main Clause Structure</th>
- <th class="p-4 hidden sm:table-cell">Example</th>
+ <th class="p-4">IF Clause Structure</th>
+ <th class="p-4">Main Clause Structure</th>
+ <th class="p-4">Example</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 ">
@@ -231,7 +231,7 @@ const tensesHTML = `
  <td class="p-4 text-xs font-medium">Genel Geçer / Bilimsel (Fact)</td>
  <td class="p-4"><span class="badge-str text-xs">Simple Present (V1)</span></td>
  <td class="p-4"><span class="badge-str text-xs">Simple Present (V1)</span></td>
- <td class="p-4 hidden sm:table-cell text-xs italic text-slate-600 ">If you <b>heat</b> ice, it <b>melts</b>.</td>
+ <td class="p-4 text-xs italic text-slate-600 "><div>If you <span class="map-tag map-1">heat</span> ice, it <span class="map-tag map-2">melts</span>.</div><div class="map-tr-sentence">Buzu <span class="map-tag map-1">ısıtırsan</span>, <span class="map-tag map-2">erir</span>.</div></td>
  </tr>
  <!-- Type 1 -->
  <tr class="hover:bg-amber-50/50 ">
@@ -239,7 +239,7 @@ const tensesHTML = `
  <td class="p-4 text-xs font-medium">Gelecek İhtimali (Real Future)</td>
  <td class="p-4"><span class="badge-str text-xs">Simple Present (V1)</span></td>
  <td class="p-4"><span class="badge-str text-xs">Will / Can / May + V1</span></td>
- <td class="p-4 hidden sm:table-cell text-xs italic text-slate-600 ">If it <b>rains</b>, we <b>will stay</b> home.</td>
+ <td class="p-4 text-xs italic text-slate-600 "><div>If it <span class="map-tag map-1">rains</span>, we <span class="map-tag map-2">will stay</span> home.</div><div class="map-tr-sentence">Yağmur <span class="map-tag map-1">yağarsa</span> evde <span class="map-tag map-2">kalacağız</span>.</div></td>
  </tr>
  <!-- Type 2 -->
  <tr class="hover:bg-amber-50/50 bg-amber-50/30">
@@ -247,7 +247,7 @@ const tensesHTML = `
  <td class="p-4 text-xs font-medium">Hayali Şimdiki Zaman (Unreal Present)</td>
  <td class="p-4"><span class="badge-str text-xs">Simple Past (V2)</span></td>
  <td class="p-4"><span class="badge-str text-xs">Would / Could + V1</span></td>
- <td class="p-4 hidden sm:table-cell text-xs italic text-slate-600 ">If I <b>were</b> rich, I <b>would buy</b> a boat.</td>
+ <td class="p-4 text-xs italic text-slate-600 "><div>If I <span class="map-tag map-1">were</span> rich, I <span class="map-tag map-2">would buy</span> a boat.</div><div class="map-tr-sentence">Zengin <span class="map-tag map-1">olsaydım</span> bir tekne <span class="map-tag map-2">alır</span><span class="map-tag map-1">DIM</span>.</div></td>
  </tr>
  <!-- Type 3 -->
  <tr class="hover:bg-amber-50/50 bg-amber-50/30">
@@ -255,7 +255,7 @@ const tensesHTML = `
  <td class="p-4 text-xs font-medium">Geçmiş Pişmanlığı (Unreal Past)</td>
  <td class="p-4"><span class="badge-str text-xs">Past Perfect (Had V3)</span></td>
  <td class="p-4"><span class="badge-str text-xs">Would have + V3</span></td>
- <td class="p-4 hidden sm:table-cell text-xs italic text-slate-600 ">If I <b>had known</b>, I <b>would have come</b>.</td>
+ <td class="p-4 text-xs italic text-slate-600 "><div>If I <span class="map-tag map-1">had known</span>, I <span class="map-tag map-2">would have come</span>.</div><div class="map-tr-sentence"><span class="map-tag map-1">Bilmiş olsaydım</span> <span class="map-tag map-2">gelirdim</span>.</div></td>
  </tr>
  <!-- Mixed -->
  <tr class="hover:bg-amber-50/50 border-l-4 border-l-amber-500">
@@ -263,7 +263,7 @@ const tensesHTML = `
  <td class="p-4 text-xs font-medium">Geçmiş Sebep ➜ Şimdiki Sonuç</td>
  <td class="p-4"><span class="badge-str text-xs">Past Perfect (Had V3)</span></td>
  <td class="p-4"><span class="badge-str text-xs">Would + V1 (now)</span></td>
- <td class="p-4 hidden sm:table-cell text-xs italic text-slate-600 ">If I <b>hadn't spent</b> all my money, I <b>would be</b> rich <u>now</u>.</td>
+ <td class="p-4 text-xs italic text-slate-600 "><div>If I <span class="map-tag map-1">hadn't spent</span> all my money, I <span class="map-tag map-2">would be</span> rich <u>now</u>.</div><div class="map-tr-sentence">Tüm paramı <span class="map-tag map-1">harcamasaydım</span> şu an zengin <span class="map-tag map-2">olurdum</span>.</div></td>
  </tr>
  </tbody>
  </table>
@@ -279,13 +279,13 @@ const tensesHTML = `
  <h2 class="text-2xl font-bold text-slate-800 ">Present Tenses</h2>
  </div>
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table w-full text-left border-collapse">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500 font-semibold tracking-wider">
  <tr>
- <th class="p-4 w-1/5">Tense & Structure</th>
- <th class="p-4 w-1/5 hidden sm:table-cell">Keywords (Time Exp)</th>
- <th class="p-4 w-1/3">Detailed Usage & Explanations</th>
- <th class="p-4 w-1/3 hidden md:table-cell">Examples</th>
+ <th class="p-4">Tense & Structure</th>
+ <th class="p-4">Keywords (Time Exp)</th>
+ <th class="p-4">Detailed Usage & Explanations</th>
+ <th class="p-4">Examples</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 text-sm">
@@ -297,7 +297,7 @@ const tensesHTML = `
  <span class="badge-str">S + V1 / Vs</span>
  <div class="mt-2 text-xs text-slate-500">Neg: do/does not + V1</div>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">Every day/year</span>
  <span class="badge-time">Always/Usually</span>
  <span class="badge-time">Generally</span>
@@ -314,11 +314,11 @@ const tensesHTML = `
  <li><strong>Live Commentary:</strong> Maç spikerliği, hikaye anlatımı.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">Recent studies <span class="highlight-verb">show</span> that global temperatures are rising. (Fact)</div>
- <div class="example-text">The international conference <span class="highlight-verb">commences</span> tomorrow at 9 AM. (Schedule)</div>
- <div class="example-text">The author <span class="highlight-verb">argues</span> that early intervention is crucial. (Narrative)</div>
+ <div class="example-text"><div>Recent studies <span class="map-tag map-1">show</span> that global temperatures are rising.</div><div class="map-tr-sentence">Son çalışmalar küresel sıcaklıkların arttığını <span class="map-tag map-1">gösteriyor</span> (Genel Gerçek).</div></div>
+ <div class="example-text"><div>The international conference <span class="map-tag map-1">commences</span> tomorrow at 9 AM.</div><div class="map-tr-sentence">Uluslararası konferans yarın sabah 9'da <span class="map-tag map-1">başlıyor</span> (Tarife).</div></div>
+ <div class="example-text"><div>The author <span class="map-tag map-1">argues</span> that early intervention is crucial.</div><div class="map-tr-sentence">Yazar, erken müdahalenin hayati olduğunu <span class="map-tag map-1">savunuyor</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -329,7 +329,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Present Cont.</div>
  <span class="badge-str">am/is/are + Ving</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">Now / Right now</span>
  <span class="badge-time">At the moment</span>
  <span class="badge-time">Currently</span>
@@ -345,11 +345,11 @@ const tensesHTML = `
  <li><strong>Annoyance:</strong> "Always/Constantly" ile birlikte sürekli yapılan rahatsız edici işler.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">Currently, researchers <span class="highlight-verb">are investigating</span> the long-term effects.</div>
- <div class="example-text">Urbanization <span class="highlight-verb">is increasingly reshaping</span> the demographic structure. (Trend)</div>
- <div class="example-text">The industry <span class="highlight-verb">is constantly evolving</span> to meet new standards.</div>
+ <div class="example-text"><div>Currently, researchers <span class="map-tag map-1">are investigating</span> the long-term effects.</div><div class="map-tr-sentence">Şu anda araştırmacılar uzun vadeli etkileri <span class="map-tag map-1">inceliyorlar</span>.</div></div>
+ <div class="example-text"><div>Urbanization <span class="map-tag map-1">is increasingly reshaping</span> the structure.</div><div class="map-tr-sentence">Kentleşme yapıyı <span class="map-tag map-1">giderek yeniden şekillendiriyor</span> (Trend).</div></div>
+ <div class="example-text"><div>The industry <span class="map-tag map-1">is constantly evolving</span>.</div><div class="map-tr-sentence">Sektör <span class="map-tag map-1">sürekli evriliyor</span> (Değişim).</div></div>
  </div>
  </td>
  </tr>
@@ -360,7 +360,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Present Perfect</div>
  <span class="badge-str">Have/Has + V3</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">Since / For</span>
  <span class="badge-time">Just / Already / Yet</span>
  <span class="badge-time">Lately / Recently</span>
@@ -377,11 +377,11 @@ const tensesHTML = `
  <li><strong>Rule:</strong> "This is the first time..." yapısıyla kullanılır.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">Scientists <span class="highlight-verb">have recently discovered</span> a new species in the Amazon.</div>
- <div class="example-text">The government <span class="highlight-verb">has implemented</span> several new policies so far.</div>
- <div class="example-text">It is the first time such an extensive study <span class="highlight-verb">has been conducted</span>.</div>
+ <div class="example-text"><div>Scientists <span class="map-tag map-1">have recently discovered</span> a new species.</div><div class="map-tr-sentence">Bilim insanları son zamanlarda yeni bir tür <span class="map-tag map-1">keşfettiler</span>.</div></div>
+ <div class="example-text"><div>The government <span class="map-tag map-1">has implemented</span> several new policies so far.</div><div class="map-tr-sentence">Hükümet şu ana kadar birkaç yeni politikayı <span class="map-tag map-1">uygulamaya koydu</span>.</div></div>
+ <div class="example-text"><div>It is the first time such a study <span class="map-tag map-1">has been conducted</span>.</div><div class="map-tr-sentence">Böyle kapsamlı bir çalışma ilk kez <span class="map-tag map-1">yürütülüyor</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -392,7 +392,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Pres. Perf. Cont.</div>
  <span class="badge-str">Have/Has been + Ving</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">For ... hours</span>
  <span class="badge-time">Since morning</span>
  <span class="badge-time">All day / All week</span>
@@ -404,10 +404,10 @@ const tensesHTML = `
  <li><strong>Visible Side Effect:</strong> Eylem yeni bitmiş ama fiziksel belirtisi taze (Nefes nefese kalmak, ellerin kirli olması).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">The committee <span class="highlight-verb">has been trying</span> to resolve the economic crisis for months.</div>
- <div class="example-text">The market is failing because inflation <span class="highlight-verb">has been rising</span> rapidly.</div>
+ <div class="example-text"><div>The committee <span class="map-tag map-1">has been trying</span> to resolve the crisis.</div><div class="map-tr-sentence">Komite aylardır krizi çözmeye <span class="map-tag map-1">çalışıyor</span> (Süreç).</div></div>
+ <div class="example-text"><div>Inflation <span class="map-tag map-1">has been rising</span> rapidly.</div><div class="map-tr-sentence">Enflasyon hızla <span class="map-tag map-1">yükseliyor</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -423,13 +423,13 @@ const tensesHTML = `
  <h2 class="text-2xl font-bold text-slate-800 ">Past Tenses</h2>
  </div>
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table w-full text-left border-collapse">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500 font-semibold tracking-wider">
  <tr>
- <th class="p-4 w-1/5">Tense & Structure</th>
- <th class="p-4 w-1/5 hidden sm:table-cell">Keywords (Time Exp)</th>
- <th class="p-4 w-1/3">Detailed Usage & Explanations</th>
- <th class="p-4 w-1/3 hidden md:table-cell">Examples</th>
+ <th class="p-4">Tense & Structure</th>
+ <th class="p-4">Keywords (Time Exp)</th>
+ <th class="p-4">Detailed Usage & Explanations</th>
+ <th class="p-4">Examples</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 text-sm">
@@ -440,7 +440,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Simple Past</div>
  <span class="badge-str">V2 (did)</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">Yesterday</span>
  <span class="badge-time">Last week/year</span>
  <span class="badge-time">...ago</span>
@@ -455,11 +455,11 @@ const tensesHTML = `
  <li><strong>Hypothetical:</strong> "It is high time...", "I would rather you...", "It is time..." yapılarında <em>anlam şimdiki zaman olsa da</em> Past kullanılır.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">The Industrial Revolution <span class="highlight-verb">transformed</span> global economies in the 19th century.</div>
- <div class="example-text">The researchers <span class="highlight-verb">analyzed</span> the data and <span class="highlight-verb">published</span> their findings.</div>
- <div class="example-text">It is high time governments <span class="highlight-verb">took</span> decisive action.</div>
+ <div class="example-text"><div>The Industrial Revolution <span class="map-tag map-1">transformed</span> economies in the 19th century.</div><div class="map-tr-sentence">Sanayi Devrimi 19. yüzyılda ekonomileri <span class="map-tag map-1">dönüştürdü</span>.</div></div>
+ <div class="example-text"><div>The researchers <span class="map-tag map-1">analyzed</span> the data and <span class="map-tag map-2">published</span> findings.</div><div class="map-tr-sentence">Araştırmacılar verileri <span class="map-tag map-1">analiz ettiler</span> ve bulguları <span class="map-tag map-2">yayınladılar</span>.</div></div>
+ <div class="example-text"><div>It is time governments <span class="map-tag map-1">took</span> decisive action.</div><div class="map-tr-sentence">Hükümetlerin kararlı adımlar <span class="map-tag map-1">atma</span> vakti geldi.</div></div>
  </div>
  </td>
  </tr>
@@ -470,7 +470,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Past Continuous</div>
  <span class="badge-str">Was/Were + Ving</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">While / As / Just as</span>
  <span class="badge-time">When (interruption)</span>
  <span class="badge-time">At this time yesterday</span>
@@ -483,10 +483,10 @@ const tensesHTML = `
  <li><strong>Parallel Actions:</strong> "While" ile aynı anda yapılan iki uzun iş.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">The economy <span class="highlight-verb">was recovering</span> when the unexpected pandemic struck. (Interruption)</div>
- <div class="example-text">While European powers <span class="highlight-verb">were expanding</span>, indigenous cultures <span class="highlight-verb">were declining</span>. (Parallel)</div>
+ <div class="example-text"><div>The economy <span class="map-tag map-1">was recovering</span> when the pandemic struck.</div><div class="map-tr-sentence">Pandemi vurduğunda ekonomi <span class="map-tag map-1">toparlanıyordu</span> (Yarıda kesilme).</div></div>
+ <div class="example-text"><div>While European powers <span class="map-tag map-1">were expanding</span>, cultures <span class="map-tag map-2">were declining</span>.</div><div class="map-tr-sentence">Avrupalı güçler <span class="map-tag map-1">yayılırken</span>, yerel kültürler <span class="map-tag map-2">geriliyordu</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -497,7 +497,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Past Perfect</div>
  <span class="badge-str">Had + V3</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">By the time</span>
  <span class="badge-time">Before / After</span>
  <span class="badge-time">Until / Till</span>
@@ -512,11 +512,11 @@ const tensesHTML = `
  <li><strong>Rule:</strong> <em>By the time + V2 -> Had V3</em> kalıbı YDS klasiğidir.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">By the time the rescue team arrived, the survivors <span class="highlight-verb">had already relocated</span>.</div>
- <div class="example-text">The project failed because the management <span class="highlight-verb">had persistently ignored</span> the warnings.</div>
- <div class="example-text">No sooner <span class="highlight-verb">had the treaty been signed</span> than hostilities resumed.</div>
+ <div class="example-text"><div>By the time they arrived, survivors <span class="map-tag map-1">had already relocated</span>.</div><div class="map-tr-sentence">Onlar vardığında, hayatta kalanlar çoktan <span class="map-tag map-1">yer değiştirmişlerdi</span>.</div></div>
+ <div class="example-text"><div>The project failed because management <span class="map-tag map-1">had ignored</span> warnings.</div><div class="map-tr-sentence">Proje başarısız oldu çünkü yönetim uyarıları <span class="map-tag map-1">görmezden gelmişti</span>.</div></div>
+ <div class="example-text"><div>No sooner <span class="map-tag map-1">had the treaty been signed</span> than hostilities resumed.</div><div class="map-tr-sentence">Anlaşma <span class="map-tag map-1">imzalanır imzalanmaz</span> çatışmalar yeniden başladı.</div></div>
  </div>
  </td>
  </tr>
@@ -527,7 +527,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Past Perf. Cont.</div>
  <span class="badge-str">Had been + Ving</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">For ... hours (before V2)</span>
  <span class="badge-time">Since</span>
  <span class="badge-time">Prior to</span>
@@ -538,10 +538,10 @@ const tensesHTML = `
  <li><strong>Note:</strong> Olayın ne kadar sürdüğü vurgulanır, sonunda başka bir geçmiş olay olur.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">The roads were wet because it <span class="highlight-verb">had been raining</span> all night.</div>
- <div class="example-text">He <span class="highlight-verb">had been working</span> for 10 years when he got promoted.</div>
+ <div class="example-text"><div>The roads were wet because it <span class="map-tag map-1">had been raining</span> all night.</div><div class="map-tr-sentence">Yollar ıslaktı çünkü bütün gece yağmur <span class="map-tag map-1">yağmaktaydı</span>.</div></div>
+ <div class="example-text"><div>He <span class="map-tag map-1">had been working</span> for 10 years when he got promoted.</div><div class="map-tr-sentence">Terfi aldığında 10 yıldır <span class="map-tag map-1">çalışmaktaydı</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -557,13 +557,13 @@ const tensesHTML = `
  <h2 class="text-2xl font-bold text-slate-800 ">Future Tenses</h2>
  </div>
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table w-full text-left border-collapse">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500 font-semibold tracking-wider">
  <tr>
- <th class="p-4 w-1/5">Tense & Structure</th>
- <th class="p-4 w-1/5 hidden sm:table-cell">Keywords (Time Exp)</th>
- <th class="p-4 w-1/3">Detailed Usage & Explanations</th>
- <th class="p-4 w-1/3 hidden md:table-cell">Examples</th>
+ <th class="p-4">Tense & Structure</th>
+ <th class="p-4">Keywords (Time Exp)</th>
+ <th class="p-4">Detailed Usage & Explanations</th>
+ <th class="p-4">Examples</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 text-sm">
@@ -574,7 +574,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Future Simple</div>
  <span class="badge-str">Will + V1</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">Tomorrow / Next...</span>
  <span class="badge-time">Soon / Shortly</span>
  <span class="badge-time">In the future</span>
@@ -590,11 +590,11 @@ const tensesHTML = `
  <li><strong>Future Fact:</strong> Gelecek gerçekleri (Gelecek yıl 30 olacağım).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">I think humans <span class="highlight-verb">will live</span> on Mars one day.</div>
- <div class="example-text">Don't worry, I <span class="highlight-verb">will help</span> you. (Promise)</div>
- <div class="example-text">Hold on, I <span class="highlight-verb">will open</span> the door. (Decision)</div>
+ <div class="example-text"><div>I think humans <span class="map-tag map-1">will live</span> on Mars one day.</div><div class="map-tr-sentence">Bence insanlar bir gün Mars'ta <span class="map-tag map-1">yaşayacaklar</span>.</div></div>
+ <div class="example-text"><div>Don't worry, I <span class="map-tag map-1">will help</span> you.</div><div class="map-tr-sentence">Korkma, sana <span class="map-tag map-1">yardım edeceğim</span> (Söz).</div></div>
+ <div class="example-text"><div>Hold on, I <span class="map-tag map-1">will open</span> the door.</div><div class="map-tr-sentence">Bekle, kapıyı <span class="map-tag map-1">ben açarım</span> (Karar).</div></div>
  </div>
  </td>
  </tr>
@@ -605,7 +605,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Be Going To</div>
  <span class="badge-str">am/is/are going to</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">Next week</span>
  <span class="badge-time">Tonight</span>
  <span class="badge-time">According to...</span>
@@ -616,10 +616,10 @@ const tensesHTML = `
  <li><strong>Evidence-based Prediction:</strong> Güçlü bir kanıta dayalı tahmin (Bulutlar kara, yağmur yağacak).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">We <span class="highlight-verb">are going to visit</span> London next summer. (Plan)</div>
- <div class="example-text">Look at that car! It <span class="highlight-verb">is going to crash</span>! (Evidence)</div>
+ <div class="example-text"><div>We <span class="map-tag map-1">are going to visit</span> London next summer.</div><div class="map-tr-sentence">Gelecek yaz Londra'yı <span class="map-tag map-1">ziyaret edeceğiz</span> (Plan).</div></div>
+ <div class="example-text"><div>Look at that car! It <span class="map-tag map-1">is going to crash</span>!</div><div class="map-tr-sentence">Şu arabaya bak! <span class="map-tag map-1">Kaza yapacak</span>! (Kanıt).</div></div>
  </div>
  </td>
  </tr>
@@ -630,7 +630,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Future Cont.</div>
  <span class="badge-str">Will be + Ving</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">This time tomorrow</span>
  <span class="badge-time">At 10 AM next Monday</span>
  <span class="badge-time">In two years' time</span>
@@ -641,10 +641,10 @@ const tensesHTML = `
  <li><strong>Polite Question:</strong> Birinin planını kibarca sormak için (Will you be using the car?).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">This time tomorrow, I <span class="highlight-verb">will be sunbathing</span> in Antalya.</div>
- <div class="example-text">Don't call me at 8. I <span class="highlight-verb">will be having</span> dinner.</div>
+ <div class="example-text"><div>Tomorrow, I <span class="map-tag map-1">will be sunbathing</span>.</div><div class="map-tr-sentence">Yarın bu saatlerde <span class="map-tag map-1">güneşleniyor olacağım</span>.</div></div>
+ <div class="example-text"><div>Don't call me at 8. I <span class="map-tag map-1">will be having</span> dinner.</div><div class="map-tr-sentence">Beni 8'de arama. Yemek <span class="map-tag map-1">yiyor olacağım</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -655,7 +655,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Future Perfect</div>
  <span class="badge-str">Will have + V3</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">By / By the time</span>
  <span class="badge-time">By 2050</span>
  <span class="badge-time">By next week</span>
@@ -667,10 +667,10 @@ const tensesHTML = `
  <li><strong>Exam Tip:</strong> "By + Gelecek Tarih" görürseniz %90 bu tense.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">By 2030, we <span class="highlight-verb">will have consumed</span> half of the resources.</div>
- <div class="example-text">I <span class="highlight-verb">will have finished</span> the report by 5 PM.</div>
+ <div class="example-text"><div>By 2030, we <span class="map-tag map-1">will have consumed</span> half of resources.</div><div class="map-tr-sentence">2030'a kadar kaynakların yarısını <span class="map-tag map-1">tüketmiş olacağız</span>.</div></div>
+ <div class="example-text"><div>I <span class="map-tag map-1">will have finished</span> the report by 5 PM.</div><div class="map-tr-sentence">Raporu saat 5'e kadar <span class="map-tag map-1">bitirmiş olacağım</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -681,7 +681,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Fut. Perf. Cont.</div>
  <span class="badge-str">Will have been + Ving</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">By... for...</span>
  <span class="badge-time">By next year... for 10 years</span>
  </td>
@@ -690,9 +690,9 @@ const tensesHTML = `
  <li><strong>Duration in Future:</strong> Gelecekte bir noktaya gelindiğinde, bir işi ne kadar süredir yapıyor olacağımızı anlatır.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">By next month, I <span class="highlight-verb">will have been working</span> here for 10 years.</div>
+ <div class="example-text"><div>By next month, I <span class="map-tag map-1">will have been working</span> here for 10 years.</div><div class="map-tr-sentence">Gelecek ay buradaki 10. <span class="map-tag map-1">çalışma yılımı doldurmuş olacağım</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -708,13 +708,13 @@ const tensesHTML = `
  <h2 class="text-2xl font-bold text-slate-800 ">Habitual Past & Modals</h2>
  </div>
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table w-full text-left border-collapse">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500 font-semibold tracking-wider">
  <tr>
- <th class="p-4 w-1/5">Structure</th>
- <th class="p-4 w-1/5 hidden sm:table-cell">Keywords</th>
- <th class="p-4 w-1/3">Detailed Usage</th>
- <th class="p-4 w-1/3 hidden md:table-cell">Examples</th>
+ <th class="p-4">Structure</th>
+ <th class="p-4">Keywords</th>
+ <th class="p-4">Detailed Usage</th>
+ <th class="p-4">Examples</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 text-sm">
@@ -725,7 +725,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Used to</div>
  <span class="badge-str">Used to + V1</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">In the past</span>
  <span class="badge-time">When I was young</span>
  <span class="badge-time">No longer / Anymore</span>
@@ -736,10 +736,10 @@ const tensesHTML = `
  <li><strong>Past States:</strong> Eskiden geçerli olan gerçekler/durumlar (be, live, have).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">I <span class="highlight-verb">used to smoke</span> a lot, but I quit.</div>
- <div class="example-text">There <span class="highlight-verb">used to be</span> a park here.</div>
+ <div class="example-text"><div>I <span class="map-tag map-1">used to smoke</span> a lot, but I quit.</div><div class="map-tr-sentence">Eskiden çok <span class="map-tag map-1">sigara içerdim</span> ama bıraktım.</div></div>
+ <div class="example-text"><div>There <span class="map-tag map-1">used to be</span> a park here.</div><div class="map-tr-sentence">Burada eskiden bir park <span class="map-tag map-1">vardı</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -750,7 +750,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Would (Habit)</div>
  <span class="badge-str">Would + V1</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">In those days</span>
  <span class="badge-time">Whenever...</span>
  </td>
@@ -760,9 +760,9 @@ const tensesHTML = `
  <li><strong>Rule:</strong> "State Verbs" (sevmek, olmak, sahip olmak) ile KULLANILMAZ. Sadece aksiyon fiilleri.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">My dad <span class="highlight-verb">would take</span> us to the cinema every Friday.</div>
+ <div class="example-text"><div>My dad <span class="map-tag map-1">would take</span> us to the cinema.</div><div class="map-tr-sentence">Babam bizi her Cuma sinemaya <span class="map-tag map-1">götürürdü</span>.</div></div>
  </div>
  </td>
  </tr>
@@ -773,7 +773,7 @@ const tensesHTML = `
  <div class="font-bold text-lg text-slate-800 ">Future in Past</div>
  <span class="badge-str">Was/Were going to</span>
  </td>
- <td class="p-4 hidden sm:table-cell">
+ <td class="p-4">
  <span class="badge-time">But</span>
  <span class="badge-time">However</span>
  <span class="badge-time">Unfortunately</span>
@@ -784,9 +784,9 @@ const tensesHTML = `
  <li>Genellikle "ama" ile devam eden bir mazeret cümlesi takip eder.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
- <div class="example-text">I <span class="highlight-verb">was going to visit</span> you, but I got sick.</div>
+ <div class="example-text"><div>I <span class="map-tag map-1">was going to visit</span> you, but I got sick.</div><div class="map-tr-sentence">Seni <span class="map-tag map-1">ziyaret edecektim</span> ama hasta oldum.</div></div>
  </div>
  </td>
  </tr>

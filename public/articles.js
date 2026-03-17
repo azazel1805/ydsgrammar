@@ -13,32 +13,32 @@ const ART_SECTIONS = [
         usages: [
             {
                 tag: 'Ilk Bahsedilen / Bilinmeyen', color: '#2563eb', examples: [
-                    { en: `I saw <span class="map-tag map-1">a</span> man in the street.`, tr: `Sokakta <span class="map-tag map-1">bir</span> adam gördüm.` },
-                    { en: 'She bought a car yesterday.', tr: 'Dun bir araba aldi. (hangi araba belli degil)' },
+                    { en: `I saw <span class="map-tag map-1">a</span> <span class="map-tag map-2">man</span> in the street.`, tr: `Sokakta <span class="map-tag map-1">bir</span> <span class="map-tag map-2">adam</span> gördüm.` },
+                    { en: `She bought <span class="map-tag map-1">a</span> <span class="map-tag map-2">car</span> yesterday.`, tr: `Dün <span class="map-tag map-1">bir</span> <span class="map-tag map-2">araba</span> satın aldı.` },
                 ]
             },
             {
                 tag: 'Meslekler', color: '#16a34a', examples: [
-                    { en: `She is <span class="map-tag map-1">a</span> doctor.`, tr: `O <span class="map-tag map-1">bir</span> doktordur.` },
-                    { en: 'He works as an engineer.', tr: 'Muhendis olarak calisiyor.' },
+                    { en: `She is <span class="map-tag map-1">a</span> <span class="map-tag map-2">doctor</span>.`, tr: `O <span class="map-tag map-1">bir</span> <span class="map-tag map-2">doktor</span>dur.` },
+                    { en: `He works as <span class="map-tag map-1">an</span> <span class="map-tag map-2">engineer</span>.`, tr: `O <span class="map-tag map-1">bir</span> <span class="map-tag map-2">mühendis</span> olarak çalışıyor.` },
                 ]
             },
             {
                 tag: 'Ornek / Sinif Uyeligi', color: '#7c3aed', examples: [
-                    { en: 'A dog is a loyal animal.', tr: 'Kopek sadik bir hayvandir.' },
-                    { en: 'An apple a day keeps the doctor away.', tr: 'Gunluk bir elma doktoru uzak tutar.' },
+                    { en: `<span class="map-tag map-1">A</span> <span class="map-tag map-2">dog</span> is <span class="map-tag map-3">a</span> loyal animal.`, tr: `<span class="map-tag map-1">Bir</span> <span class="map-tag map-2">köpek</span> sadık <span class="map-tag map-3">bir</span> hayvandır.` },
+                    { en: `<span class="map-tag map-1">An</span> <span class="map-tag map-2">apple</span> a day keeps the doctor away.`, tr: `Günde <span class="map-tag map-1">bir</span> <span class="map-tag map-2">elma</span> doktoru uzak tutar.` },
                 ]
             },
             {
                 tag: 'Sayilarla (per / each)', color: '#b45309', examples: [
-                    { en: 'She earns $50 an hour.', tr: 'Saatte 50 dolar kazaniyor.' },
-                    { en: 'Take the medicine twice a day.', tr: 'Ilaci gunde iki kez alin.' },
+                    { en: `She earns $50 <span class="map-tag map-1">an</span> <span class="map-tag map-2">hour</span>.`, tr: `<span class="map-tag map-2">Saatte</span> 50 <span class="map-tag map-1">bir</span> dolar (saat başı) kazanıyor.` },
+                    { en: `Take the medicine twice <span class="map-tag map-1">a</span> <span class="map-tag map-2">day</span>.`, tr: `İlacı <span class="map-tag map-2">günde</span> iki <span class="map-tag map-1">kez</span> alın.` },
                 ]
             },
             {
                 tag: 'a vs an secimi', color: '#dc2626', examples: [
-                    { en: 'a university (yoo-), a European, a one-hour trip', tr: 'unlu harfle baslamayan sesle okunur -> a' },
-                    { en: 'an hour, an honour, an MBA, an FBI agent', tr: 'sessiz harfle baslayan ama sesli okunur -> an' },
+                    { en: '<span class="map-tag map-1">a university</span>, <span class="map-tag map-2">a European</span>', tr: '<span class="map-tag map-1">bir üniversite</span>, <span class="map-tag map-2">bir Avrupalı</span> (sessizle başlar)' },
+                    { en: '<span class="map-tag map-1">an hour</span>, <span class="map-tag map-2">an FBI agent</span>', tr: '<span class="map-tag map-1">bir saat</span>, <span class="map-tag map-2">bir FBI ajanı</span> (sesliyle başlar)' },
                 ]
             },
         ],
@@ -55,8 +55,8 @@ const ART_SECTIONS = [
         usages: [
             {
                 tag: 'Ikinci Bahsedilen / Bilineni', color: '#0891b2', examples: [
-                    { en: `I saw a man. <span class="map-tag map-1">The</span> man was wearing a red coat.`, tr: `Bir adam gördüm. <span class="map-tag map-1">Adam</span> kırmizı palto giyiyordu.` },
-                    { en: 'Can you close the door, please?', tr: 'Kapiyi kapatir misin? (hangi kapi belli)' },
+                    { en: `I saw a man. <span class="map-tag map-1">The</span> <span class="map-tag map-2">man</span> was wearing a red coat.`, tr: `Bir adam gördüm. <span class="map-tag map-1">(Sözü edilen)</span> <span class="map-tag map-2">Adam</span> kırmizı palto giyiyordu.` },
+                    { en: `Can you close <span class="map-tag map-1">the</span> <span class="map-tag map-2">door</span>, please?`, tr: `Lütfen <span class="map-tag map-2">kapıyı</span> <span class="map-tag map-1">(bilinen kapı)</span> kapatır mısın?` },
                 ]
             },
             {
@@ -67,8 +67,8 @@ const ART_SECTIONS = [
             },
             {
                 tag: 'Superlative / Ordinal', color: '#dc2626', examples: [
-                    { en: `She is <span class="map-tag map-1">the best</span> student in the class.`, tr: `Sınıfın <span class="map-tag map-1">en iyi</span> öğrencisi.` },
-                    { en: 'This is the first time I\'ve been here.', tr: 'Buraya ilk gelisim.' },
+                    { en: `She is <span class="map-tag map-1">the best</span> <span class="map-tag map-2">student</span>.`, tr: `O <span class="map-tag map-1">en iyi</span> <span class="map-tag map-2">öğrencidir</span>.` },
+                    { en: `This is <span class="map-tag map-1">the weight</span> of <span class="map-tag map-2">the first</span> time.`, tr: `Bu <span class="map-tag map-2">ilk</span> <span class="map-tag map-1">seferin</span> ağırlığıdır.` },
                 ]
             },
             {
@@ -141,9 +141,9 @@ const ART_SECTIONS = [
         usages: [
             {
                 tag: 'Article Gerektiren Sabit Ifadeler', color: '#9333ea', examples: [
-                    { en: 'in the morning / in the afternoon / in the evening', tr: 'AMMA: at night (geceleri -> the yok!)' },
-                    { en: 'play the piano / the guitar / the violin', tr: 'Calgi aletleri -> the ile' },
-                    { en: 'go to the cinema / the theatre / the gym', tr: 'Belirli mekanlar -> the ile' },
+                    { en: `<span class="map-tag map-1">in the morning</span> / <span class="map-tag map-2">in the evening</span>`, tr: `<span class="map-tag map-1">sabahleyin</span> / <span class="map-tag map-2">akşamleyin</span>` },
+                    { en: `play <span class="map-tag map-1">the piano</span> / <span class="map-tag map-2">the guitar</span>`, tr: `<span class="map-tag map-1">piyano</span> / <span class="map-tag map-2">gitar</span> çalmak` },
+                    { en: `go to <span class="map-tag map-1">the cinema</span> / <span class="map-tag map-2">the gym</span>`, tr: `<span class="map-tag map-1">sinemaya</span> / <span class="map-tag map-2">spor salonuna</span> gitmek` },
                 ]
             },
             {
