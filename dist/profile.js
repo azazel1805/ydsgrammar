@@ -35,11 +35,13 @@ const profileHTML = `
             </div>
         </div>
 
-        <div id="profileAuthButtons">
+        <div id="profileAuthButtons" class="z-20">
             <button id="profileLogoutBtn" onclick="logoutUser()" class="px-6 py-3 border border-red-100 text-red-700 rounded-xl text-xs font-bold hover:bg-red-50 transition-all active:scale-95 group relative overflow-hidden hidden">
                 <span class="relative z-10">Oturumu Kapat</span>
             </button>
-            <button id="profileLoginBtn" onclick="window.openLoginModal()" class="px-6 py-3 bg-red-800 text-white rounded-xl text-xs font-bold hover:bg-black transition-all active:scale-95">
+            <button id="profileLoginBtn" onclick="if(window.openLoginModal) window.openLoginModal(); else alert('Lütfen bekleyin, sistem yükleniyor...');" 
+                class="px-8 py-3 bg-red-800 text-white rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-black transition-all active:scale-95 shadow-xl shadow-red-900/20 cursor-pointer block"
+                style="background-color: #991b1b !important; color: white !important; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;">
                 Giriş Yap
             </button>
         </div>
@@ -211,14 +213,19 @@ async function renderProfile() {
         if (nameDisplay) nameDisplay.innerText = "Kütüphane Üyesi";
         if (emailDisplay) emailDisplay.innerText = "Lütfen giriş yapın";
         if (initialsDisplay) initialsDisplay.innerText = "Y";
-        if (document.getElementById("profileLoginBtn")) document.getElementById("profileLoginBtn").classList.remove("hidden");
-        if (document.getElementById("profileLogoutBtn")) document.getElementById("profileLogoutBtn").classList.add("hidden");
+        
+        const loginBtn = document.getElementById("profileLoginBtn");
+        const logoutBtn = document.getElementById("profileLogoutBtn");
+        if (loginBtn) { loginBtn.classList.remove("hidden"); loginBtn.style.display = "block"; }
+        if (logoutBtn) { logoutBtn.classList.add("hidden"); logoutBtn.style.display = "none"; }
         return;
     }
 
     // Toggle buttons
-    if (document.getElementById("profileLoginBtn")) document.getElementById("profileLoginBtn").classList.add("hidden");
-    if (document.getElementById("profileLogoutBtn")) document.getElementById("profileLogoutBtn").classList.remove("hidden");
+    const loginBtn = document.getElementById("profileLoginBtn");
+    const logoutBtn = document.getElementById("profileLogoutBtn");
+    if (loginBtn) { loginBtn.classList.add("hidden"); loginBtn.style.display = "none"; }
+    if (logoutBtn) { logoutBtn.classList.remove("hidden"); logoutBtn.style.display = "block"; }
 
     // Update UI with User Data
     nameDisplay.innerText = window.currentUser.displayName || "Kütüphane Üyesi";
