@@ -67,6 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
         initForum();
     }
 
+    if (typeof initAnalyzer === "function") {
+        initAnalyzer();
+    }
+
     if (typeof initFullExam === "function") {
         initFullExam();
     }
