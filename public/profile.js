@@ -35,9 +35,14 @@ const profileHTML = `
             </div>
         </div>
 
-        <button onclick="logoutUser()" class="px-6 py-3 border border-red-100 text-red-700 rounded-xl text-xs font-bold hover:bg-red-50 transition-all active:scale-95 group relative overflow-hidden">
-            <span class="relative z-10">Oturumu Kapat</span>
-        </button>
+        <div id="profileAuthButtons">
+            <button id="profileLogoutBtn" onclick="logoutUser()" class="px-6 py-3 border border-red-100 text-red-700 rounded-xl text-xs font-bold hover:bg-red-50 transition-all active:scale-95 group relative overflow-hidden hidden">
+                <span class="relative z-10">Oturumu Kapat</span>
+            </button>
+            <button id="profileLoginBtn" onclick="window.openLoginModal()" class="px-6 py-3 bg-red-800 text-white rounded-xl text-xs font-bold hover:bg-black transition-all active:scale-95">
+                Giriş Yap
+            </button>
+        </div>
     </div>
 
     <!-- Edit Profile Modal -->
@@ -201,10 +206,19 @@ async function renderProfile() {
     const photoContainer = document.getElementById("profilePhotoContainer");
     const vipBadge = document.getElementById("vipBadge");
 
-    if (!nameDisplay || !window.currentUser) {
-        console.warn("Profile render aborted: nameDisplay or currentUser missing.");
+    if (!window.currentUser) {
+        console.warn("Profile render: User not logged in, showing login state.");
+        if (nameDisplay) nameDisplay.innerText = "Kütüphane Üyesi";
+        if (emailDisplay) emailDisplay.innerText = "Lütfen giriş yapın";
+        if (initialsDisplay) initialsDisplay.innerText = "Y";
+        if (document.getElementById("profileLoginBtn")) document.getElementById("profileLoginBtn").classList.remove("hidden");
+        if (document.getElementById("profileLogoutBtn")) document.getElementById("profileLogoutBtn").classList.add("hidden");
         return;
     }
+
+    // Toggle buttons
+    if (document.getElementById("profileLoginBtn")) document.getElementById("profileLoginBtn").classList.add("hidden");
+    if (document.getElementById("profileLogoutBtn")) document.getElementById("profileLogoutBtn").classList.remove("hidden");
 
     // Update UI with User Data
     nameDisplay.innerText = window.currentUser.displayName || "Kütüphane Üyesi";
