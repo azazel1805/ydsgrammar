@@ -34,17 +34,17 @@ const relativeHTML = `
  <li>Sadece ek bilgi mi veriyor? → Non-defining</li>
  </ul>
 </div>
- <table class="w-full text-left text-sm">
+  <table class="grammar-table w-full text-left text-sm">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500">
- <tr><th class="p-4">Reference</th><th class="p-4">Subject Position</th><th class="p-4">Object Position</th><th class="p-4 hidden md:table-cell">Details / Tricks</th></tr>
+ <tr><th class="p-4">Reference</th><th class="p-4">Subject Position</th><th class="p-4">Object Position</th><th class="p-4">Details / Tricks</th></tr>
  </thead>
  <tbody class="divide-y divide-slate-100 ">
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Person</td><td class="p-4"><span class="badge-str">Who / That</span></td><td class="p-4"><span class="badge-str">Who / Whom / That / Ø</span></td><td class="p-4 hidden md:table-cell text-xs italic">Nesne durumunda (arkasından özne geliyorsa) relative pronoun atılabilir (Ø).</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Thing/Animal</td><td class="p-4"><span class="badge-str">Which / That</span></td><td class="p-4"><span class="badge-str">Which / That / Ø</span></td><td class="p-4 hidden md:table-cell text-xs italic">Virgül varsa (Non-defining) asla "That" kullanılmaz.</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Possession</td><td class="p-4" colspan="2"><span class="badge-str">Whose</span></td><td class="p-4 hidden md:table-cell text-xs italic">Mutlaka <span class="font-bold">Whose + Noun</span> şeklinde kullanılır. (Whose car, Whose idea).</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Place</td><td class="p-4" colspan="2"><span class="badge-str">Where</span> (= in/at/on which)</td><td class="p-4 hidden md:table-cell text-xs italic">Arkasından TAM CÜMLE gelmeli. Eğer fiil geliyorsa "Which" kullanılır. <br>(The city <b>where I live</b> vs The city <b>which is</b> crowded).</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Time</td><td class="p-4" colspan="2"><span class="badge-str">When</span> (= in/at/on which)</td><td class="p-4 hidden md:table-cell text-xs italic">The day when we met...</td></tr>
- <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Reason</td><td class="p-4" colspan="2"><span class="badge-str">Why</span> (= for which)</td><td class="p-4 hidden md:table-cell text-xs italic">Genelde "The reason why..." kalıbı.</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Person</td><td class="p-4"><span class="badge-str">Who / That</span></td><td class="p-4"><span class="badge-str">Who / Whom / That / Ø</span></td><td class="p-4 text-xs italic">Nesne durumunda (arkasından özne geliyorsa) relative pronoun atılabilir (Ø).</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Thing/Animal</td><td class="p-4"><span class="badge-str">Which / That</span></td><td class="p-4"><span class="badge-str">Which / That / Ø</span></td><td class="p-4 text-xs italic">Virgül varsa (Non-defining) asla "That" kullanılmaz.</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Possession</td><td class="p-4" colspan="2"><span class="badge-str">Whose</span></td><td class="p-4 text-xs italic">Mutlaka <span class="font-bold">Whose + Noun</span> şeklinde kullanılır. (Whose car, Whose idea).</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Place</td><td class="p-4" colspan="2"><span class="badge-str">Where</span> (= in/at/on which)</td><td class="p-4 text-xs italic">Arkasından TAM CÜMLE gelmeli. Eğer fiil geliyorsa "Which" kullanılır. <br>(The city <b>where I live</b> vs The city <b>which is</b> crowded).</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Time</td><td class="p-4" colspan="2"><span class="badge-str">When</span> (= in/at/on which)</td><td class="p-4 text-xs italic">The day when we met...</td></tr>
+ <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Reason</td><td class="p-4" colspan="2"><span class="badge-str">Why</span> (= for which)</td><td class="p-4 text-xs italic">Genelde "The reason why..." kalıbı.</td></tr>
  </tbody>
  </table>
 </section>
@@ -116,9 +116,12 @@ const relativeHTML = `
  <ul class="text-sm space-y-2 list-disc pl-4 text-slate-700 ">
  <li>Sadece <strong>"whom"</strong> (insan) ve <strong>"which"</strong> (cansız) preposition alabilir. (with whom, in which, for which).</li>
  <li><strong>Who</strong> ve <strong>That</strong> asla başına preposition almaz! (<s>with who</s>, <s>in that</s>).</li>
- <li><strong>Quantifiers:</strong> <span class="font-mono">some of which, all of whom, neither of which</span>... (Virgülden sonra gelir).
- <br><em class="text-xs">I have 3 brothers, all of <span class="font-bold">whom</span> are doctors.</em>
- </li>
+  <li><strong>Quantifiers:</strong> <span class="font-mono">some of which, all of whom, neither of which</span>... (Virgülden sonra gelir).
+  <div class="italic text-xs mt-1">
+    I have 3 brothers, <span class="map-tag map-1">all of whom</span> <span class="map-tag map-2">are doctors</span>.
+    <div class="map-tr-sentence">Hepsi <span class="map-tag map-2">doktor olan</span> (<span class="map-tag map-1">ki onların hepsi</span>) 3 erkek kardeşim var.</div>
+  </div>
+  </li>
  </ul>
  </section>
 
@@ -129,7 +132,8 @@ const relativeHTML = `
  Bazen "Which", kendinden önceki kelimeyi değil, <span class="underline font-bold">tüm cümleyi</span> niteler. Bu durumda "ve bu durum..." anlamı katar.
  </p>
  <div class="text-sm italic border-l-4 border-slate-400 pl-3">
- He passed the exam with a high score, <span class="font-bold text-indigo-600">which</span> made his parents very happy.
+  He passed the exam, <span class="map-tag map-1">which</span> <span class="map-tag map-2">made his parents happy</span>.
+  <div class="map-tr-sentence">Sınavı geçti, <span class="map-tag map-1">ki bu durum</span> <span class="map-tag map-2">ailesini mutlu etti</span>.</div>
  </div>
  <div class="text-xs text-gray-500 mt-1">(Ailesini mutlu eden şey sınavı geçmesi durumudur, sınavın kendisi değil.)</div>
  </section>

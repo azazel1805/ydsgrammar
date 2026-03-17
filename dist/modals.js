@@ -130,19 +130,19 @@ const modalsHTML = `
  </div>
 
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left text-sm">
+ <table class="grammar-table text-left text-sm">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500">
  <tr>
  <th class="p-4">Modal Structure</th>
  <th class="p-4">Certainty Level</th>
- <th class="p-4 hidden md:table-cell">Meaning</th>
+ <th class="p-4">Meaning</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 ">
   <tr>
   <td class="p-4 font-bold text-green-600">Must (be / have V3)</td>
   <td class="p-4">%95</td>
-  <td class="p-4 hidden md:table-cell">
+  <td class="p-4">
     <div><span class="map-tag map-1">Must have done</span></div>
     <div class="map-tr-sentence"><span class="map-tag map-1">Yapmış OLMALI</span>.</div>
   </td>
@@ -150,7 +150,7 @@ const modalsHTML = `
   <tr>
   <td class="p-4 font-bold text-cyan-600">Be bound to</td>
   <td class="p-4">%90</td>
-  <td class="p-4 hidden md:table-cell">
+  <td class="p-4">
     <div><span class="map-tag map-1">Is bound to happen</span></div>
     <div class="map-tr-sentence">Gerçekleşmesi <span class="map-tag map-1">KAÇINILMAZ</span>.</div>
   </td>
@@ -158,7 +158,7 @@ const modalsHTML = `
   <tr>
   <td class="p-4 font-bold text-indigo-600">Be likely to</td>
   <td class="p-4">%75</td>
-  <td class="p-4 hidden md:table-cell">
+  <td class="p-4">
     <div><span class="map-tag map-1">Is likely to win</span></div>
     <div class="map-tr-sentence">Kazanması <span class="map-tag map-1">MUHTEMEL</span>.</div>
   </td>
@@ -166,7 +166,7 @@ const modalsHTML = `
   <tr>
   <td class="p-4 font-bold text-yellow-600">May / Might</td>
   <td class="p-4">%50</td>
-  <td class="p-4 hidden md:table-cell">
+  <td class="p-4">
     <div><span class="map-tag map-1">Might be</span> true</div>
     <div class="map-tr-sentence">Doğru <span class="map-tag map-1">OLABİLİR</span>.</div>
   </td>
@@ -174,7 +174,7 @@ const modalsHTML = `
   <tr>
   <td class="p-4 font-bold text-red-600">Can't (be / have V3)</td>
   <td class="p-4">%95 Negative</td>
-  <td class="p-4 hidden md:table-cell">
+  <td class="p-4">
     <div><span class="map-tag map-1">Can't have seen</span></div>
     <div class="map-tr-sentence"><span class="map-tag map-1">Görmüş OLAMAZ</span>.</div>
   </td>
@@ -192,12 +192,12 @@ const modalsHTML = `
  </div>
  
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table text-left border-collapse">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500 font-semibold tracking-wider">
  <tr>
- <th class="p-4 w-1/4">Modal & Structure</th>
- <th class="p-4 w-1/3">Detailed Usage & Nuances</th>
- <th class="p-4 w-1/3 hidden md:table-cell">Examples</th>
+ <th class="p-4">Modal & Structure</th>
+ <th class="p-4">Detailed Usage & Nuances</th>
+ <th class="p-4">Examples</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 text-sm">
@@ -217,7 +217,7 @@ const modalsHTML = `
  <li><strong>Prohibition:</strong> Yasaklama/men etme (Informal).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
  <div class="example-text">
     <div>Smoking <span class="map-tag map-1">can</span> cause cancer.</div>
@@ -244,7 +244,7 @@ const modalsHTML = `
  <li><strong>Possibility:</strong> Şimdiki/Gelecek zaman ihtimali (%50).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
  <div class="example-text">
     <div>My grandfather <span class="map-tag map-1">could</span> speak 5 languages.</div>
@@ -271,7 +271,7 @@ const modalsHTML = `
  <li><strong>Future Ability:</strong> "Will be able to" (Can'in geleceği yoktur).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
  <div class="example-text">
     <div>The fire was huge, but everyone <span class="map-tag map-1">was able to</span> <span class="map-tag map-2">escape</span>.</div>
@@ -295,7 +295,7 @@ const modalsHTML = `
  <li><strong>Formal Permission:</strong> "May I...?" (Çok resmi).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
  <div class="example-text">
     <div>Take an umbrella, it <span class="map-tag map-1">might</span> rain later.</div>
@@ -335,12 +335,12 @@ const modalsHTML = `
  </div>
  
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table text-left border-collapse">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500 font-semibold tracking-wider">
  <tr>
- <th class="p-4 w-1/4">Modal</th>
- <th class="p-4 w-1/3">Usage</th>
- <th class="p-4 w-1/3 hidden md:table-cell">Example</th>
+ <th class="p-4">Modal</th>
+ <th class="p-4">Usage</th>
+ <th class="p-4">Example</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 text-sm">
@@ -356,7 +356,7 @@ const modalsHTML = `
  <li><strong>Strong Advice:</strong> "Mutlaka yapmalısın" (Film harika, izlemelisin).</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">
     <div>I <span class="map-tag map-1">must</span> <span class="map-tag map-2">clean</span> my house today.</div>
     <div class="map-tr-sentence">Bugün evimi <span class="map-tag map-2">TEMİZLE</span><span class="map-tag map-1">MELİYİM</span>.</div>
@@ -375,7 +375,7 @@ const modalsHTML = `
  <li><strong>External Obligation:</strong> Kanunlar, kurallar, dış etkenler. Bizim elimizde değil.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">
     <div>You <span class="map-tag map-1">have to</span> <span class="map-tag map-2">wear</span> a seatbelt.</div>
     <div class="map-tr-sentence">Emniyet kemeri <span class="map-tag map-2">TAK</span><span class="map-tag map-1">MAK ZORUNDASINIZ</span>.</div>
@@ -395,7 +395,7 @@ const modalsHTML = `
  <li><strong>Had better:</strong> Tehditvari tavsiye. Yapmazsan kötü bir şey olur.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-block">
  <div class="example-text">You <span class="highlight-modal">should</span> see a dentist.</div>
  <div class="example-text">You <span class="highlight-modal">had better</span> hurry, or you will miss the bus.</div>
@@ -456,12 +456,12 @@ const modalsHTML = `
  </p>
 
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table text-left border-collapse">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500 font-semibold tracking-wider">
  <tr>
- <th class="p-4 w-1/4">Structure (Modal + Have V3)</th>
- <th class="p-4 w-1/3">Meaning & Usage</th>
- <th class="p-4 w-1/3 hidden md:table-cell">Example</th>
+ <th class="p-4">Structure (Modal + Have V3)</th>
+ <th class="p-4">Meaning & Usage</th>
+ <th class="p-4">Example</th>
  </tr>
  </thead>
  <tbody class="divide-y divide-slate-100 text-sm">
@@ -478,7 +478,7 @@ const modalsHTML = `
  <li>Geçmişe dair güçlü, olumlu tahmin. Kanıt var, sonuç kesin gibi.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">
     <div>The streets are wet. It <span class="map-tag map-1">must have rained</span> last night.</div>
     <div class="map-tr-sentence">Sokaklar ıslak. Dün gece <span class="map-tag map-1">yağmış OLMALI</span>.</div>
@@ -498,7 +498,7 @@ const modalsHTML = `
  <li>Geçmişe dair güçlü, olumsuz tahmin. Mümkün değil.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">
     <div>He was with me. He <span class="map-tag map-1">can't have stolen</span> the money.</div>
     <div class="map-tr-sentence">Benimleydi. Parayı <span class="map-tag map-1">çalmış OLAMAZ</span>.</div>
@@ -517,7 +517,7 @@ const modalsHTML = `
 <li>Genellikle Type 3 Conditional içinde kullanılır.</li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-text">
 I <span class="highlight-modal">would have helped</span> you if I had known.
 </div>
@@ -536,7 +536,7 @@ I <span class="highlight-modal">would have helped</span> you if I had known.
 <li>%50 ihtimal (past possibility).</li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-text">
 I can't find my wallet. I <span class="highlight-modal">might have dropped</span> it.
 </div>
@@ -556,7 +556,7 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 <li><strong>YDS Trap:</strong> "Could have" çoğu zaman gerçekleşmemiş fırsat anlamındadır.</li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-block">
 <div class="example-text">
  You <span class="highlight-modal">could have told</span> me earlier!
@@ -580,7 +580,7 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  <li>Geçmişle ilgili eleştiri veya pişmanlık. Olay gerçekleşmedi.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">
     <div>You <span class="map-tag map-1">should have studied</span> more for the exam.</div>
     <div class="map-tr-sentence">Sınava daha çok <span class="map-tag map-1">çalışMALIYDIN</span> (ama çalışmadın).</div>
@@ -618,39 +618,39 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </div>
  
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table text-left border-collapse">
  <tbody class="divide-y divide-slate-100 text-sm">
  
  <!-- WOULD RATHER -->
  <tr class="hover:bg-slate-50 align-top">
- <td class="p-4 w-1/4">
+ <td class="p-4">
  <div class="font-bold text-lg text-slate-800 ">Would rather</div>
  <span class="badge-str">would rather V1 than V1</span>
  </td>
- <td class="p-4 w-1/3">
+ <td class="p-4">
  <ul class="usage-list">
  <li><strong>Meaning:</strong> Tercih etmek (Prefer gibidir ama "to" almaz).</li>
  <li><strong>Same Subject:</strong> I would rather stay home.</li>
  <li><strong>Different Subject:</strong> I would rather <u>you went</u> home. (Subjunctive - Past kullanılır!)</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">I <span class="highlight-modal">would rather drink</span> tea than coffee.</div>
  <div class="example-text">I <span class="highlight-modal">would rather you didn't</span> smoke here.</div>
  </td>
  </tr>
 <tr class="hover:bg-slate-50 align-top">
-<td class="p-4 w-1/4">
+<td class="p-4">
 <div class="font-bold text-lg text-slate-800 ">Would (Past Habit)</div>
 <span class="badge-str">would + V1</span>
 </td>
-<td class="p-4 w-1/3">
+<td class="p-4">
 <ul class="usage-list">
 <li>Geçmişte tekrarlanan alışkanlık.</li>
 <li>"Used to" gibi ama durum fiilleriyle kullanılmaz.</li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-text">
  When we were children, we <span class="highlight-modal">would play</span> outside.
 </div>
@@ -659,10 +659,10 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 
  <!-- USED TO TRIO -->
  <tr class="hover:bg-slate-50 align-top">
- <td class="p-4 w-1/4">
+ <td class="p-4">
  <div class="font-bold text-lg text-slate-800 ">The "Used to" Trio</div>
  </td>
- <td class="p-4 w-2/3" colspan="2">
+ <td class="p-4" colspan="2">
  <div class="space-y-3">
  <!-- Used to -->
  <div class="flex flex-col md:flex-row gap-2 md:items-center border-b border-slate-100 pb-2">
@@ -698,22 +698,22 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </div>
  
  <div class="overflow-hidden bg-white rounded-lg shadow border border-slate-200 ">
- <table class="w-full text-left border-collapse">
+ <table class="grammar-table text-left border-collapse">
  <tbody class="divide-y divide-slate-100 text-sm">
  
  <!-- BE TO -->
  <tr class="hover:bg-slate-50 align-top">
- <td class="p-4 w-1/4">
+ <td class="p-4">
  <div class="font-bold text-lg text-slate-800 ">Be to</div>
  <span class="badge-str">am/is/are to + V1</span>
  </td>
- <td class="p-4 w-1/3">
+ <td class="p-4">
  <ul class="usage-list">
  <li><strong>Formal Instruction:</strong> Resmi emir veya talimat (Must'ın çok resmi hali).</li>
  <li><strong>Destiny (Past):</strong> "Was/Were to" ile kader anlatır. (Olacaktı...)</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">No one <span class="highlight-modal">is to leave</span> this room. (Strict Order)</div>
  <div class="example-text">They didn't know they <span class="highlight-modal">were never to see</span> each other again.</div>
  </td>
@@ -721,35 +721,35 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
 
  <!-- BE SUPPOSED TO -->
  <tr class="hover:bg-slate-50 align-top">
- <td class="p-4 w-1/4">
+ <td class="p-4">
  <div class="font-bold text-lg text-slate-800 ">Be supposed to</div>
  <span class="badge-str">is/are supposed to</span>
  </td>
- <td class="p-4 w-1/3">
+ <td class="p-4">
  <ul class="usage-list">
  <li><strong>Expectation:</strong> Beklenti veya kural bildirir (Should gibi).</li>
  <li><strong>Contrast:</strong> Genellikle "ama yapmadı/yapmıyor" anlamı verir.</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">You <span class="highlight-modal">are supposed to be</span> at work now. (Why are you here?)</div>
  </td>
  </tr>
 
  <!-- DARE -->
  <tr class="hover:bg-slate-50 align-top">
- <td class="p-4 w-1/4">
+ <td class="p-4">
  <div class="font-bold text-lg text-rose-700 ">Dare</div>
  <span class="badge-str">Dare (to) V1</span>
  </td>
- <td class="p-4 w-1/3">
+ <td class="p-4">
  <ul class="usage-list">
  <li><strong>Courage:</strong> Cesaret etmek.</li>
  <li><strong>Semi-Modal:</strong> "I daren't go" (Modal gibi) veya "I don't dare to go" (Fiil gibi) kullanılabilir.</li>
  <li><strong>Phrase:</strong> "How dare you!" (Ne cüretle!)</li>
  </ul>
  </td>
- <td class="p-4 hidden md:table-cell">
+ <td class="p-4">
  <div class="example-text">I <span class="highlight-modal">daren't tell</span> him the truth.</div>
  <div class="example-text">He <span class="highlight-modal">didn't dare to look</span> back.</div>
  </td>
@@ -758,77 +758,77 @@ I can't find my wallet. I <span class="highlight-modal">might have dropped</span
  </tbody>
  <!-- BE BOUND TO / BE LIKELY TO / BE DUE TO -->
 <tr class="hover:bg-slate-50 align-top">
-<td class="p-4 w-1/4">
+<td class="p-4">
 <span class="badge-nuance bg-red-100 text-red-800 ">Kaçınılmazlık!</span>
 <div class="font-bold text-lg text-cyan-700 ">Be bound to</div>
 <span class="badge-str">am/is/are bound to + V1</span>
 <div class="text-xs text-slate-500 mt-1">Yüksek kesinlik</div>
 </td>
-<td class="p-4 w-1/3">
+<td class="p-4">
 <ul class="usage-list">
  <li><strong>Çok yüksek ihtimal / kaçınılmazlık:</strong> "Mutlaka ...ecek", "kesin ...ecek" anlamı.</li>
  <li><strong>YDS'de sık çıkar:</strong> Gelecekte neredeyse kesin olan durumlar için.</li>
  <li>Not: "bound to" olumsuz hali çok nadirdir.</li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-text">He studies 10 hours a day. He <span class="highlight-modal">is bound to</span> pass the exam.</div>
 <div class="example-text">If you keep driving so fast, you <span class="highlight-modal">are bound to</span> have an accident.</div>
 </td>
 </tr>
 
 <tr class="hover:bg-slate-50 align-top">
-<td class="p-4 w-1/4">
+<td class="p-4">
 <div class="font-bold text-lg text-indigo-700 ">Be likely to</div>
 <span class="badge-str">am/is/are likely to + V1</span>
 <div class="text-xs text-slate-500 mt-1">%70-80 ihtimal</div>
 <div class="prob-bar w-24 bg-slate-200 mt-1"><div class="prob-fill bg-indigo-500" style="width: 75%"></div></div>
 </td>
-<td class="p-4 w-1/3">
+<td class="p-4">
 <ul class="usage-list">
  <li><strong>Oldukça muhtemel:</strong> "Büyük ihtimalle ...ecek".</li>
  <li>May/Might'tan daha güçlü, ama must kadar kesin değil.</li>
  <li>Olumsuz: <strong>be unlikely to</strong></li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-text">She has trained hard. She <span class="highlight-modal">is likely to</span> win the gold medal.</div>
 <div class="example-text">It <span class="highlight-modal">is unlikely to</span> rain this afternoon. (Yağmur yağması düşük ihtimal)</div>
 </td>
 </tr>
 
 <tr class="hover:bg-slate-50 align-top">
-<td class="p-4 w-1/4">
+<td class="p-4">
 <div class="font-bold text-lg text-violet-700 ">Be due to</div>
 <span class="badge-str">am/is/are due to + V1</span>
 <div class="text-xs text-slate-500 mt-1">Planlanmış / beklenen</div>
 </td>
-<td class="p-4 w-1/3">
+<td class="p-4">
 <ul class="usage-list">
  <li><strong>Planlanmış gelecek:</strong> Tren/uçak/ders vb. resmi başlangıç zamanı.</li>
  <li><strong>Sebep anlamında da kullanılır:</strong> ama burada gelecek zaman anlamı kastediliyor.</li>
  <li>YDS tuzağı: "due to" ile "because of" karıştırmamak.</li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-text">The train <span class="highlight-modal">is due to</span> arrive at 8:15. (Planlanmış saat)</div>
 <div class="example-text">The meeting <span class="highlight-modal">is due to</span> start in ten minutes.</div>
 </td>
 </tr>
 
 <tr class="hover:bg-slate-50 align-top">
-<td class="p-4 w-1/4">
+<td class="p-4">
 <div class="font-bold text-lg text-cyan-700 ">Shall</div>
 <span class="badge-str">shall + V1</span>
 </td>
-<td class="p-4 w-1/3">
+<td class="p-4">
 <ul class="usage-list">
  <li>Formal / Legal English.</li>
  <li>Resmi sözleşmelerde zorunluluk bildirir.</li>
  <li>YDS Reading'de akademik metinlerde çıkar.</li>
 </ul>
 </td>
-<td class="p-4 hidden md:table-cell">
+<td class="p-4">
 <div class="example-text">
  The tenant <span class="highlight-modal">shall pay</span> the rent on time.
 </div>

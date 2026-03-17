@@ -18,16 +18,16 @@ const IF_TYPES = [
                 tag: 'Doga Yasalari & Bilimsel Gercekler', color: '#0369a1',
                 desc: 'Her zaman, kosulsuz olarak dogru olan gercekler.',
                 examples: [
-                    { en: 'If you heat water to 100\u00b0C, it boils.', tr: 'Suyu 100\u00b0C\'ye isitirsan kaynar.' },
-                    { en: 'If plants don\'t get sunlight, they die.', tr: 'Bitkiler gunes isigi almazlarsa olurler.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">heat water</span> to 100°C, <span class="map-tag map-3">it boils</span>.', tr: '<span class="map-tag map-2">Suyu</span> 100°C\'ye <span class="map-tag map-2">ısıtırsan</span> (<span class="map-tag map-1">SE</span>), <span class="map-tag map-3">kaynar</span>.' },
+                    { en: '<span class="map-tag map-1">If</span> <span class="map-tag map-2">plants</span> <span class="map-tag map-3">don\'t get</span> sunlight, <span class="map-tag map-4">they die</span>.', tr: '<span class="map-tag map-2">Bitkiler</span> güneş ışığı <span class="map-tag map-3">almazlarsa</span> (<span class="map-tag map-1">SE</span>), <span class="map-tag map-4">ölürler</span>.' },
                 ]
             },
             {
                 tag: 'Evrensel & Tekrarlayan Gercekler', color: '#16a34a',
                 desc: 'Her seferinde ayni sonucu veren eylem/durum.',
                 examples: [
-                    { en: 'If she doesn\'t sleep well, she gets a headache.', tr: 'Uyku uyumazsa bas agrisi olur.' },
-                    { en: 'If you press this button, the machine starts.', tr: 'Bu dugmeye basarsan makine baslar.' },
+                    { en: '<span class="map-tag map-1">If</span> she <span class="map-tag map-2">doesn\'t sleep well</span>, she gets a headache.', tr: 'İyi <span class="map-tag map-2">uyuyamazsa</span> (<span class="map-tag map-1">SE</span>) başı ağrır.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">press this button</span>, the machine starts.', tr: 'Bu <span class="map-tag map-2">düğmeye basarsan</span> (<span class="map-tag map-1">SE</span>) makine çalışır.' },
                 ]
             },
         ],
@@ -50,24 +50,24 @@ const IF_TYPES = [
                 tag: 'Gerceklesmesi Mumkun Kosul', color: '#15803d',
                 desc: 'Gerceklesesebilir bir kosul ve olasi sonucu.',
                 examples: [
-                    { en: `<span class="map-tag map-1">If</span> you <span class="map-tag map-2">study hard</span>, you will pass the exam.`, tr: `<span class="map-tag map-2">Sıkı çalışır</span><span class="map-tag map-1">SAN</span> sınavı geçeceksin.` },
-                    { en: 'If it rains tomorrow, we won\'t go to the beach.', tr: 'Yarın yağmur yağarsa plaja gitmeyeceğiz.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">study hard</span>, you will pass the exam.', tr: '<span class="map-tag map-2">Sıkı çalışır</span><span class="map-tag map-1">SAN</span> sınavı geçeceksin.' },
+                    { en: '<span class="map-tag map-1">If</span> it <span class="map-tag map-2">rains tomorrow</span>, we won\'t go to the beach.', tr: 'Yarın <span class="map-tag map-2">yağmur yağar</span><span class="map-tag map-1">SA</span> plaja gitmeyeceğiz.' },
                 ]
             },
             {
                 tag: 'Uyari & Tehdit', color: '#dc2626',
                 desc: 'Olasi bir olumsuz sonucu vurgulamak icin.',
                 examples: [
-                    { en: 'If you don\'t apologise, she will never speak to you again.', tr: 'Ozur dilemezsen seninle bir daha konusmaz.' },
-                    { en: 'If you keep doing this, you\'ll get fired.', tr: 'Bunu yapmaya devam edersen kovulacaksin.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">don\'t apologise</span>, she will never speak to you again.', tr: '<span class="map-tag map-2">Özür dilemez</span><span class="map-tag map-1">SEN</span> seninle bir daha konuşmaz.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">keep doing this</span>, you\'ll get fired.', tr: '<span class="map-tag map-2">Bunu yapmaya devam eder</span><span class="map-tag map-1">SEN</span> kovulacaksın.' },
                 ]
             },
             {
                 tag: 'Teklif & Oneri', color: '#7c3aed',
                 desc: 'Birinin bir seyi yapmasi halinde sunulan teklif.',
                 examples: [
-                    { en: 'If you need help, I\'ll be here.', tr: 'Yardima ihtiyacin olursa burada olacagim.' },
-                    { en: 'If you\'re hungry, I\'ll make something.', tr: 'Acsan bir seyler yapayim.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">need help</span>, I\'ll be here.', tr: '<span class="map-tag map-2">Yardıma ihtiyacın olur</span><span class="map-tag map-1">SA</span> burada olacağım.' },
+                    { en: '<span class="map-tag map-1">If</span> you\'re <span class="map-tag map-2">hungry</span>, I\'ll make something.', tr: '<span class="map-tag map-2">Aç</span><span class="map-tag map-1">SAN</span> bir şeyler yapayım.' },
                 ]
             },
         ],
@@ -98,16 +98,16 @@ const IF_TYPES = [
                 tag: 'Tavsiye (If I were you)', color: '#dc2626',
                 desc: 'Birisine tavsiye vermenin en yaygin kalibi.',
                 examples: [
-                    { en: 'If I were you, I wouldn\'t trust him.', tr: 'Senin yerinde olsam ona guvenmezdim.' },
-                    { en: 'If I were in your position, I\'d quit.', tr: 'Senin durumunda olsam birakirdim.' },
+                    { en: '<span class="map-tag map-1">If I were</span> <span class="map-tag map-2">you</span>, I wouldn\'t trust him.', tr: '<span class="map-tag map-2">Senin</span> <span class="map-tag map-1">yerinde olsam</span> ona güvenmezdim.' },
+                    { en: '<span class="map-tag map-1">If I were</span> in <span class="map-tag map-2">your position</span>, I\'d quit.', tr: '<span class="map-tag map-2">Senin durumunda</span> <span class="map-tag map-1">olsaydım</span> bırakırdım.' },
                 ]
             },
             {
                 tag: 'Hayal & Dilek', color: '#0891b2',
                 desc: 'Gerceklesmesini istedigimiz ama olmayan durumlar.',
                 examples: [
-                    { en: 'If I were a bird, I would fly over the sea.', tr: 'Kus olsaydim denizin uzerinde ucardim.' },
-                    { en: 'If I had more time, I would learn piano.', tr: 'Daha fazla zamanim olsaydi piyano ogrenirdim.' },
+                    { en: '<span class="map-tag map-1">If I were</span> a <span class="map-tag map-2">bird</span>, I would fly over the sea.', tr: '<span class="map-tag map-2">Kuş</span> <span class="map-tag map-1">olsaydım</span> denizin üzerinde uçardım.' },
+                    { en: '<span class="map-tag map-1">If</span> I <span class="map-tag map-2">had more time</span>, I would learn piano.', tr: 'Daha fazla <span class="map-tag map-2">zamanım olsaydı</span> (<span class="map-tag map-1">SE</span>) piyano öğrenirdim.' },
                 ]
             },
         ],
@@ -136,24 +136,24 @@ const IF_TYPES = [
                 tag: 'Gecmiste Olmayanin Sonucu', color: '#b45309',
                 desc: 'Gecmiste olmayan/yapilmayan seyin hayali sonucu.',
                 examples: [
-                    { en: `<span class="map-tag map-1">If he had arrived</span> <span class="map-tag map-2">on time</span>, he wouldn't have missed the flight.`, tr: `<span class="map-tag map-2">Zamanında</span> <span class="map-tag map-1">gelseydi</span> uçuşu kaçırmazdı.` },
-                    { en: 'If she had taken the medicine, she would have recovered faster.', tr: 'İlacı içseydi daha hızlı iyileşirdi.' },
+                    { en: '<span class="map-tag map-1">If he had arrived</span> <span class="map-tag map-2">on time</span>, he wouldn\'t <span class="map-tag map-3">have missed</span> the flight.', tr: '<span class="map-tag map-2">Zamanında</span> <span class="map-tag map-1">gelseydi</span> uçuşu <span class="map-tag map-3">kaçırmazdı</span>.' },
+                    { en: '<span class="map-tag map-1">If</span> she <span class="map-tag map-2">had taken</span> the medicine, she <span class="map-tag map-3">would have recovered</span> faster.', tr: 'İlacı <span class="map-tag map-2">içseydi</span> (<span class="map-tag map-1">SE</span>) daha <span class="map-tag map-3">hızlı iyileşirdi</span>.' },
                 ]
             },
             {
                 tag: 'Pismanlık & Kesle', color: '#dc2626',
                 desc: 'Gecmis kararlar/eylemler hakkinda pismanlık.',
                 examples: [
-                    { en: 'If I had listened to my parents, I wouldn\'t have made this mistake.', tr: 'Ailemi dinleseydim bu hatayı yapmazdım.' },
-                    { en: 'If we had left earlier, we would have caught the train.', tr: 'Daha erken ciksaydik trene yetisirdik.' },
+                    { en: '<span class="map-tag map-1">If</span> I <span class="map-tag map-2">had listened</span> to my parents, I wouldn\'t have made this mistake.', tr: 'Ailemi <span class="map-tag map-2">dinleseydim</span> (<span class="map-tag map-1">SE</span>) bu hatayı yapmazdım.' },
+                    { en: '<span class="map-tag map-1">If</span> we <span class="map-tag map-2">had left</span> earlier, we would have caught the train.', tr: 'Daha erken <span class="map-tag map-2">çıksaydık</span> (<span class="map-tag map-1">SE</span>) trene yetişirdik.' },
                 ]
             },
             {
                 tag: 'Suclama & Elestiri', color: '#6d28d9',
                 desc: 'Birinin gecmisteki eylemini elesttirmek icin.',
                 examples: [
-                    { en: 'If you had told me, I could have helped.', tr: 'Soylesesydin yardim edebilirdim.' },
-                    { en: 'If you had been more careful, this wouldn\'t have happened.', tr: 'Daha dikkatli olsaydın bu olmazdi.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">had told me</span>, I <span class="map-tag map-3">could have helped</span>.', tr: '<span class="map-tag map-2">Söyleseydin</span> (<span class="map-tag map-1">SE</span>) yardım <span class="map-tag map-3">edebilirdim</span>.' },
+                    { en: '<span class="map-tag map-1">If</span> you <span class="map-tag map-2">had been</span> more careful, this wouldn\'t have happened.', tr: 'Daha <span class="map-tag map-2">dikkatli olsaydın</span> (<span class="map-tag map-1">SE</span>) bu olmazdı.' },
                 ]
             },
         ],
@@ -176,16 +176,16 @@ const IF_TYPES = [
                 tag: 'Gecmis Neden -> Simdiki Sonuc', color: '#0f766e',
                 desc: 'If + Past Perfect -> would + V1\nGecmiste olan bir sey su anki durumu etkiliyor.',
                 examples: [
-                    { en: 'If he had studied medicine, he would be a doctor now.', tr: 'Tıp okusaydi su an doktor olurdu.' },
-                    { en: 'If she hadn\'t moved abroad, she would still be here.', tr: 'Yurt disına tasinmasaydi hala burada olurdu.' },
+                    { en: '<span class="map-tag map-1">If</span> he <span class="map-tag map-2">had studied medicine</span>, he <span class="map-tag map-3">would be a doctor</span> now.', tr: 'Tıp <span class="map-tag map-2">okusaydı</span> (<span class="map-tag map-1">SE</span>) şu an <span class="map-tag map-3">doktor olurdu</span>.' },
+                    { en: '<span class="map-tag map-1">If</span> she <span class="map-tag map-2">hadn\'t moved</span> abroad, she <span class="map-tag map-3">would still be</span> here.', tr: 'Yurt dışına <span class="map-tag map-2">taşınmasaydı</span> (<span class="map-tag map-1">SE</span>) hala burada <span class="map-tag map-3">olurdu</span>.' },
                 ]
             },
             {
                 tag: 'Simdiki Neden -> Gecmis Sonuc', color: '#7c3aed',
                 desc: 'If + Past Simple -> would have + V3\nSu andaki gercekdisi bir ozellik gecmisi etkiler.',
                 examples: [
-                    { en: 'If I were braver, I would have spoken up at the meeting.', tr: 'Daha cesur olsaydim toplantida konusurdum.' },
-                    { en: 'If she were more careful, she wouldn\'t have lost her passport.', tr: 'Daha dikkatli olsaydi pasaportunu kaybetmezdi.' },
+                    { en: '<span class="map-tag map-1">If I were</span> braver, I <span class="map-tag map-2">would have spoken up</span> at the meeting.', tr: 'Daha <span class="map-tag map-1">cesur olsaydım</span>, toplantıda <span class="map-tag map-2">konuşurdum</span>.' },
+                    { en: '<span class="map-tag map-1">If she were</span> more careful, she <span class="map-tag map-2">wouldn\'t have lost</span> her passport.', tr: 'Daha <span class="map-tag map-1">dikkatli olsaydı</span>, pasaportunu <span class="map-tag map-2">kaybetmezdi</span>.' },
                 ]
             },
         ],
@@ -214,40 +214,40 @@ const IF_TYPES = [
                 tag: 'Unless = If not', color: '#be185d',
                 desc: '"unless" = "if + not" anlamindadir. Olumlu cumle ile kullanilir.',
                 examples: [
-                    { en: `<span class="map-tag map-1">Unless</span> <span class="map-tag map-2">you hurry</span>, you'll miss the bus.`, tr: `<span class="map-tag map-2">Acele et</span><span class="map-tag map-1">MEZSEN</span> otobüsü kaçırırsın. (= If you don't hurry)` },
-                    { en: 'She won\'t come unless she\'s invited.', tr: 'Davet edilmezse gelmeyecek.' },
+                    { en: '<span class="map-tag map-1">Unless</span> <span class="map-tag map-2">you hurry</span>, you\'ll miss the bus.', tr: '<span class="map-tag map-2">Acele et</span><span class="map-tag map-1">MEZSEN</span> otobüsü kaçırırsın.' },
+                    { en: 'She won\'t come <span class="map-tag map-1">unless</span> she\'s <span class="map-tag map-2">invited</span>.', tr: '<span class="map-tag map-2">Davet edil</span><span class="map-tag map-1">MEZSE</span> gelmeyecek.' },
                 ]
             },
             {
                 tag: 'Provided / As Long As = Yalnizca Eger', color: '#0369a1',
                 desc: '"provided that" / "as long as" -> sart daha kisitlayici ve resmi.',
                 examples: [
-                    { en: 'You can borrow my car provided that you drive carefully.', tr: 'Dikkatli surdugun surece arabami odunc alabilirsin.' },
-                    { en: 'As long as you behave, you can stay.', tr: 'Iyi davrandigin surece kalabilirsin.' },
+                    { en: 'You can borrow my car <span class="map-tag map-1">provided that</span> you <span class="map-tag map-2">drive carefully</span>.', tr: 'Dikkatli <span class="map-tag map-2">sürdüğün</span> <span class="map-tag map-1">SÜRECE</span> arabamı ödünç alabilirsin.' },
+                    { en: '<span class="map-tag map-1">As long as</span> you <span class="map-tag map-2">behave</span>, you can stay.', tr: 'İyi <span class="map-tag map-2">davrandığın</span> <span class="map-tag map-1">SÜRECE</span> kalabilirsin.' },
                 ]
             },
             {
                 tag: 'In Case = Onlem Olarak', color: '#7c3aed',
                 desc: '"in case" -> gelecekteki olasiliga karsi simdiden onlem alma.',
                 examples: [
-                    { en: 'Take an umbrella in case it rains.', tr: 'Yagmur yagarsa diye semsiye al. (= Simdi al, yagarsa diye)' },
-                    { en: 'I\'ll save your number in case I need it later.', tr: 'Numarani kaydedeyim, ileride gerekirse diye.' },
+                    { en: 'Take an <span class="map-tag map-2">umbrella</span> <span class="map-tag map-1">in case</span> <span class="map-tag map-3">it rains</span>.', tr: '<span class="map-tag map-3">Yağmur yağarsa</span> <span class="map-tag map-1">DİYE</span> <span class="map-tag map-2">şemsiye</span> al.' },
+                    { en: 'I\'ll save your <span class="map-tag map-2">number</span> <span class="map-tag map-1">in case</span> I <span class="map-tag map-3">need it later</span>.', tr: 'İleride <span class="map-tag map-3">lazım olursa</span> <span class="map-tag map-1">DİYE</span> <span class="map-tag map-2">numaranı</span> kaydedeyim.' },
                 ]
             },
             {
                 tag: 'Even If = Olursa Bile', color: '#dc2626',
                 desc: '"Even if" -> kosul gerceklesse bile sonuc degismeyecek.',
                 examples: [
-                    { en: 'Even if you apologise, she won\'t forgive you.', tr: 'Ozur dilesen bile affetmeyecek.' },
-                    { en: 'I wouldn\'t eat that even if I were starving.', tr: 'Acliktan olsem bile onu yemezdim.' },
+                    { en: '<span class="map-tag map-1">Even if</span> you <span class="map-tag map-2">apologise</span>, she won\'t forgive you.', tr: '<span class="map-tag map-2">Özür dilesen</span> <span class="map-tag map-1">BİLE</span> seni affetmeyecek.' },
+                    { en: 'I wouldn\'t eat that <span class="map-tag map-1">even if</span> I <span class="map-tag map-2">were starving</span>.', tr: 'Açlıktan <span class="map-tag map-2">ölsem</span> <span class="map-tag map-1">BİLE</span> onu yemezdim.' },
                 ]
             },
             {
                 tag: 'Only If = Yalnizca Su Durumda', color: '#0891b2',
                 desc: '"only if" -> cok kisitlayici, tek kosul.',
                 examples: [
-                    { en: 'I\'ll come only if you promise to behave.', tr: 'Yalnizca iyi davranacagina soz verirsen gelirim.' },
-                    { en: 'Only if you apologise will she forgive you. (formal inversion)', tr: 'Yalnizca ozur dilersen affeder. (resmi ters cevrim)' },
+                    { en: 'I\'ll come <span class="map-tag map-1">only if</span> you <span class="map-tag map-2">promise to behave</span>.', tr: '<span class="map-tag map-1">YALNIZCA</span> <span class="map-tag map-2">iyi davranacağına söz verirsen</span> gelirim.' },
+                    { en: '<span class="map-tag map-1">Only if</span> you <span class="map-tag map-2">apologise</span> will she forgive you.', tr: '<span class="map-tag map-1">YALNIZCA</span> <span class="map-tag map-2">özür dilersen</span> seni affeder.' },
                 ]
             },
         ],
@@ -275,36 +275,36 @@ const IF_TYPES = [
                 tag: 'Su An Icin Dilek (Past Simple)', color: '#9333ea',
                 desc: 'Su an farkli olmasini istedigimiz durumlar.',
                 examples: [
-                    { en: 'I wish I were taller.', tr: 'Keske daha uzun olsaydim.' },
-                    { en: 'I wish I had more free time.', tr: 'Keske daha fazla bos zamanim olsaydi.' },
-                    { en: 'If only she lived closer!', tr: 'Keske daha yakinda yasasaydi!' },
+                    { en: 'I <span class="map-tag map-1">wish</span> I <span class="map-tag map-2">were</span> taller.', tr: '<span class="map-tag map-1">Keşke</span> daha uzun <span class="map-tag map-2">olsaydım</span>.' },
+                    { en: 'I <span class="map-tag map-1">wish</span> I <span class="map-tag map-2">had</span> more free time.', tr: '<span class="map-tag map-1">Keşke</span> daha fazla boş zamanım <span class="map-tag map-2">olsaydı</span>.' },
+                    { en: '<span class="map-tag map-1">If only</span> she <span class="map-tag map-2">lived</span> closer!', tr: '<span class="map-tag map-1">Keşke</span> daha yakında <span class="map-tag map-2">yaşasaydı</span>!' },
                 ]
             },
             {
                 tag: 'Gecmis Icin Pismanlık (Past Perfect)', color: '#dc2626',
                 desc: 'Gecmiste yapilmasini/yapilmamasini istedigimiz seyler.',
                 examples: [
-                    { en: 'I wish I had studied harder.', tr: 'Keske daha cok calismis olsaydim.' },
-                    { en: 'If only I hadn\'t said that!', tr: 'Keske bunu soylememis olsaydim!' },
-                    { en: 'I wish you had been there.', tr: 'Keske orada olmus olsaydin.' },
+                    { en: 'I <span class="map-tag map-1">wish</span> I <span class="map-tag map-2">had studied</span> harder.', tr: '<span class="map-tag map-1">Keşke</span> daha çok <span class="map-tag map-2">çalışmış olsaydım</span>.' },
+                    { en: '<span class="map-tag map-1">If only</span> I <span class="map-tag map-2">hadn\'t said</span> that!', tr: '<span class="map-tag map-1">Keşke</span> bunu <span class="map-tag map-2">söylememiş olsaydım</span>!' },
+                    { en: 'I <span class="map-tag map-1">wish</span> you <span class="map-tag map-2">had been</span> there.', tr: '<span class="map-tag map-1">Keşke</span> orada <span class="map-tag map-2">olmuş olsaydın</span>.' },
                 ]
             },
             {
                 tag: 'Birinin Davranisina Sikayet (would)', color: '#b45309',
                 desc: 'Birinin aliskanligı/davranisi hakkinda sikayet veya talep -- arzu degil!',
                 examples: [
-                    { en: 'I wish you would stop interrupting me!', tr: 'Keske beni kesmeyi biraksan!' },
-                    { en: 'I wish it would stop raining.', tr: 'Keske yagmur dursa.' },
-                    { en: 'If only she would listen!', tr: 'Keske dinleseydi!' },
+                    { en: 'I <span class="map-tag map-1">wish</span> you <span class="map-tag map-2">would stop interrupting</span> me!', tr: '<span class="map-tag map-1">Keşke</span> beni bölmeyi <span class="map-tag map-2">bıraksan</span>!' },
+                    { en: 'I <span class="map-tag map-1">wish</span> it <span class="map-tag map-2">would stop</span> raining.', tr: '<span class="map-tag map-1">Keşke</span> yağmur <span class="map-tag map-2">dursa</span> (durmasını dilerdim).' },
+                    { en: '<span class="map-tag map-1">If only</span> she <span class="map-tag map-2">would listen</span>!', tr: '<span class="map-tag map-2">Dinleseydi</span> <span class="map-tag map-1">keşke</span>!' },
                 ]
             },
             {
                 tag: 'It\'s Time / I\'d Rather', color: '#0369a1',
                 desc: '"Artik zamani" ve "tercih" icin benzer yapilar.',
                 examples: [
-                    { en: 'It\'s time you went to bed.', tr: 'Artik yatmanin zamani geldi.' },
-                    { en: 'It\'s high time she made a decision.', tr: 'Karar vermesinin tam zamani.' },
-                    { en: 'I\'d rather you didn\'t tell anyone.', tr: 'Kimseye soylememeni tercih ederdim.' },
+                    { en: 'It\'s <span class="map-tag map-1">time</span> you <span class="map-tag map-2">went</span> to bed.', tr: 'Yatma <span class="map-tag map-1">zamanın</span> <span class="map-tag map-2">geldi</span> (geçiyor).' },
+                    { en: 'It\'s high <span class="map-tag map-1">time</span> she <span class="map-tag map-2">made</span> a decision.', tr: 'Karar vermesinin <span class="map-tag map-1">tam zamanı</span> (çoktan <span class="map-tag map-2">yapmalıydı</span>).' },
+                    { en: 'I\'d <span class="map-tag map-1">rather</span> you <span class="map-tag map-2">didn\'t tell</span> anyone.', tr: 'Kimseye <span class="map-tag map-2">söylememeni</span> <span class="map-tag map-1">tercih ederim</span>. ' },
                 ]
             },
         ],
@@ -334,24 +334,24 @@ const IF_TYPES = [
                 tag: 'Were + to (2. Tip Resmi)', color: '#1d4ed8',
                 desc: '"If + were + to" -> resmi ve yazili dilde 2. tip conditional.',
                 examples: [
-                    { en: 'Were I to win the lottery, I would donate half.', tr: 'Piyangoyu kassaydim yarisini bagislardim.\n(= If I were to win...)' },
-                    { en: 'Were she to resign, the company would struggle.', tr: 'Istifa etseydi sirket zorlanirdi.' },
+                    { en: '<span class="map-tag map-1">Were I to win</span> the lottery, I would donate half.', tr: 'Piyangoyu <span class="map-tag map-1">kazansaydım</span> yarısını bağışlardım.' },
+                    { en: '<span class="map-tag map-1">Were she to resign</span>, the company would struggle.', tr: '<span class="map-tag map-1">İstifa etseydi</span> şirket zorlanırdı.' },
                 ]
             },
             {
                 tag: 'Had + Subject (3. Tip Resmi)', color: '#7c3aed',
                 desc: '"Had" one alinarak "If + Past Perfect" yerine kullanilir.',
                 examples: [
-                    { en: 'Had I known, I would have helped.', tr: 'Bilmis olsaydim yardim ederdim.\n(= If I had known...)' },
-                    { en: 'Had they arrived earlier, they wouldn\'t have missed the show.', tr: 'Daha erken gelselerdi gosteriyyi kacirmazlardi.' },
+                    { en: '<span class="map-tag map-1">Had I known</span>, I would have helped.', tr: '<span class="map-tag map-1">Bilmiş olsaydım</span> yardım ederdim.' },
+                    { en: '<span class="map-tag map-1">Had they arrived</span> earlier, they wouldn\'t have missed the show.', tr: 'Daha erken <span class="map-tag map-1">gelselerdi</span> gösteriyi kaçırmazlardı.' },
                 ]
             },
             {
                 tag: 'Should + Subject (1. Tip Resmi)', color: '#16a34a',
                 desc: '"Should" one alinarak 1. tip conditional\'i resmi kilar.',
                 examples: [
-                    { en: 'Should you need any help, don\'t hesitate to call.', tr: 'Herhangi bir yardima ihtiyacin olursa cekinme ara.\n(= If you should need...)' },
-                    { en: 'Should there be any problems, contact HR.', tr: 'Herhangi bir sorun olursa IK ile iletisime gecin.' },
+                    { en: '<span class="map-tag map-1">Should you need</span> any help, don\'t hesitate to call.', tr: 'Herhangi bir yardıma <span class="map-tag map-1">ihtiyacın olursa</span> aramakta çekinme.' },
+                    { en: '<span class="map-tag map-1">Should there be</span> any problems, contact HR.', tr: 'Herhangi bir sorun <span class="map-tag map-1">olursa</span> İK ile iletişime geçin.' },
                 ]
             },
         ],
@@ -412,7 +412,7 @@ function buildIfClausesHTML() {
   <!-- Summary Formula Banner -->
   <div class="rounded-2xl border border-slate-200 bg-slate-900 text-white p-5 mb-10 overflow-x-auto">
     <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Hizli Formul Ozeti</p>
-    <table class="w-full text-sm min-w-[480px]">
+    <table class="grammar-table w-full text-sm min-w-[480px]">
       <thead><tr class="border-b border-slate-700">
         <th class="text-left py-2 text-slate-400 font-semibold">Tip</th>
         <th class="text-left py-2 text-slate-400 font-semibold">If Cumlesi</th>
@@ -469,8 +469,8 @@ function buildIfCard(t) {
       </div>
       ${u.examples.map(ex => `
         <div class="ifc-example" style="border-left-color:${u.color}55;">
-          <p class="ifc-en">"${ex.en}"</p>
-          <p class="ifc-tr">-> ${ex.tr}</p>
+          <div class="ifc-en">${ex.en}</div>
+          <div class="map-tr-sentence">${ex.tr}</div>
         </div>`).join('')}
     </div>`).join('');
 
@@ -493,7 +493,7 @@ function buildIfCard(t) {
     const compHTML = t.comparison
         ? `<div class="mb-4">
         <p class="text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-2">${t.comparison.label}</p>
-        <table class="ifc-compare-table">
+        <table class="grammar-table ifc-compare-table">
           ${t.comparison.rows.map(r => `<tr><td>${r.left}</td><td>${r.right}</td></tr>`).join('')}
         </table>
        </div>`

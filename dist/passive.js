@@ -88,9 +88,9 @@ class="flex justify-between items-center w-full text-left">
 </div>
 
  
- <table class="w-full text-left text-sm">
+ <table class="grammar-table w-full text-left text-sm">
  <thead class="bg-slate-50 text-xs uppercase text-slate-500">
- <tr><th class="p-4 w-1/5">Tense / Structure</th><th class="p-4 w-1/4">Active Form</th><th class="p-4 w-1/4">Passive Form</th><th class="p-4">Example</th></tr>
+ <tr><th class="p-4">Tense / Structure</th><th class="p-4">Active Form</th><th class="p-4">Passive Form</th><th class="p-4">Example</th></tr>
  </thead>
  <tbody class="divide-y divide-slate-100 ">
  <tr class="hover:bg-slate-50"><td class="p-4 font-bold">Simple Present</td><td class="p-4 text-xs text-slate-500">do / does</td><td class="p-4 font-bold text-orange-600">am/is/are + V3</td><td class="p-4">
