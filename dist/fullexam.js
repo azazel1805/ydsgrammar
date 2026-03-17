@@ -339,33 +339,6 @@ async function feStartExam(btn) {
   if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// ─── Start custom exam (for AI PDF etc) ──────────────────────
-window.startCustomExam = function(examData) {
-    feExamData = examData;
-    feAnswers = {};
-    feCurrentIdx = 0;
-    feSecondsLeft = feExamData.meta.duration_minutes * 60;
-    feStarted = true;
-
-    // Hide selector screen (all selectors)
-    document.querySelectorAll('.tab-content').forEach(tc => {
-        const selector = tc.querySelector('.max-w-5xl'); 
-        if (selector) selector.classList.add('hidden');
-    });
-
-    // Show global engine
-    document.getElementById('globalFullExamContainer').classList.remove('hidden');
-    document.getElementById('feExamScreen').classList.remove('hidden');
-    document.getElementById('feResultScreen').classList.add('hidden');
-
-    feRenderQGrid();
-    feRenderQuestion();
-    feStartTimer();
-
-    const container = document.getElementById('globalFullExamContainer');
-    if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
-
 // ─── Timer ───────────────────────────────────────────────────
 function feStartTimer() {
   if (feTimerRef) clearInterval(feTimerRef);
