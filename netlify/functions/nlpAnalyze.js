@@ -51,12 +51,30 @@ export const handler = async (event) => {
         const transData = await transRes.json();
         const translation = transData.data?.translations[0]?.translatedText || null;
 
+        // 3. Back-Translation (TR -> EN) to get the "Cleaned" version
+        let backTranslation = null;
+        if (translation) {
+            const backTransRes = await fetch(transUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    q: translation,
+                    target: "en",
+                    format: "text"
+                })
+            });
+            const backTransData = await backTransRes.json();
+            backTranslation = backTransData.data?.translations[0]?.translatedText || null;
+        }
+
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 ...nlpData,
-                translation: translation
+                originalText: text,
+                translation: translation,
+                backTranslation: backTranslation
             })
         };
     } catch (error) {

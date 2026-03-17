@@ -96,6 +96,27 @@ const nlpAnalizHTML = `
             </div>
         </div>
 
+        <!-- Semantic Correction Suggestion (Back-Translation) -->
+        <div id="nlpRefinePanel" class="hidden animate-in zoom-in duration-500">
+            <div class="bg-indigo-50 border border-indigo-100 rounded-[2rem] p-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-[0.05] pointer-events-none">
+                    <i class="fas fa-magic text-6xl text-indigo-900"></i>
+                </div>
+                <h4 class="text-[10px] font-black text-indigo-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <i class="fas fa-check-double"></i> Semantik Düzeltme Önerisi
+                </h4>
+                <div class="space-y-4">
+                    <div class="p-4 bg-white/50 rounded-2xl border border-indigo-100/50">
+                        <p class="text-[9px] font-black text-indigo-300 uppercase tracking-widest mb-1">ANLAŞILAN ANLAM (RE-TRANS)</p>
+                        <p id="nlpRefinedText" class="text-indigo-900 font-bold text-lg italic"></p>
+                    </div>
+                    <p class="text-xs text-slate-500 font-medium">
+                        <i class="fas fa-info-circle mr-1"></i> Not: Sistem cümlenizi anlamından yola çıkarak otomatik tamir etti. Yukarıdaki sözdizimi analizi orijinal cümleyi temsil eder.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <!-- Translation Card -->
         <div class="bg-slate-900 rounded-3xl p-8 text-white shadow-xl">
             <h3 class="font-bold text-lg mb-4 flex items-center gap-2" style="font-family: 'Playfair Display', serif;">
@@ -230,6 +251,19 @@ function renderNlpResults(data) {
             }
         });
         document.getElementById("nlpCefr").innerText = reverseLevels[maxLevel];
+    }
+
+    // 6. Back-Translation Refresher Logic
+    const refinePanel = document.getElementById("nlpRefinePanel");
+    const refinedText = document.getElementById("nlpRefinedText");
+    const original = (data.originalText || "").trim().toLowerCase();
+    const back = (data.backTranslation || "").trim().toLowerCase();
+
+    if (back && back !== original && refinePanel && refinedText) {
+        refinePanel.classList.remove("hidden");
+        refinedText.innerText = data.backTranslation;
+    } else if (refinePanel) {
+        refinePanel.classList.add("hidden");
     }
 }
 
