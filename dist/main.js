@@ -272,12 +272,7 @@ window.switchTab = function (tabName) {
         const isVip = window.currentUser?.email === "onurtosuner@gmail.com" || localStorage.getItem("analyzer_access") === "true";
         if (!isVip) {
             console.warn("Premium tab accessed without VIP status:", tabName);
-            alert("Bu özellik sadece Premium üyeler içindir. Kilidi açmak için lütfen Profil sayfasından VIP kodunuzu giriniz.");
-            switchTab('profile');
-            setTimeout(() => {
-                const pSec = document.getElementById('premiumSection');
-                if (pSec) pSec.scrollIntoView({ behavior: 'smooth' });
-            }, 500);
+            goToPremiumPricing();
             return;
         }
     }
@@ -754,4 +749,12 @@ window.filterTab = function (input) {
         }
     });
 };
-
+window.goToPremiumPricing = function() {
+    window.switchTab('profile');
+    setTimeout(() => {
+        const pSec = document.getElementById('premiumSection');
+        if (pSec) {
+            pSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, 400);
+};
