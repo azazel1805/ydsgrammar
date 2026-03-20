@@ -21,6 +21,7 @@ const gamesHTML = `
             <button onclick="switchGameSubTab('game-chain')" id="btn-game-chain" class="game-tab-btn">🔄 Kelime Zinciri</button>
             <button onclick="switchGameSubTab('game-passaparola')" id="btn-game-passaparola" class="game-tab-btn">🎡 Passaparola</button>
             <button onclick="switchGameSubTab('game-architect')" id="btn-game-architect" class="game-tab-btn">🏗️ Cümle Mimarı</button>
+            <button onclick="switchGameSubTab('game-odd')" id="btn-game-odd" class="game-tab-btn">🔍 Aykırıyı Bul</button>
         </nav>
 
         <!-- GAME HOME -->
@@ -50,6 +51,11 @@ const gamesHTML = `
                     <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🏗️</div>
                     <h3 class="text-xl font-bold text-slate-900 group-hover:text-red-800 transition-colors">Cümle Mimarı</h3>
                     <p class="text-slate-500 text-sm italic mt-2">Kelimeleri doğru sıraya dizerek cümleyi kur.</p>
+                </div>
+                <div class="game-card group" onclick="switchGameSubTab('game-odd')">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🔍</div>
+                    <h3 class="text-xl font-bold text-slate-900 group-hover:text-red-800 transition-colors">Aykırıyı Bul</h3>
+                    <p class="text-slate-500 text-sm italic mt-2">Grup içindeki anlamca farklı kelimeyi seç.</p>
                 </div>
             </div>
         </div>
@@ -265,6 +271,44 @@ const gamesHTML = `
             </div>
         </div>
 
+        <!-- ODD ONE OUT -->
+        <div id="game-odd" class="game-container">
+            <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-slate-100">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <h3 class="text-2xl font-bold text-slate-900">Aykırıyı Bul (Odd One Out)</h3>
+                    <div class="flex items-center gap-4">
+                        <select id="odd-level" class="game-select" onchange="initOdd()">
+                            <option value="a1">A1-A2</option>
+                            <option value="b1">B1-B2</option>
+                            <option value="c1">C1-C2</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-sm italic mb-8">Aşağıdaki 4 kelimeden anlamca farklı olanı (aykırı olanı) seç.</p>
+                
+                <div class="max-w-2xl mx-auto space-y-8 py-8">
+                    <div id="odd-words" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="odd-word-btn">Kelimeler Yükleniyor...</div>
+                    </div>
+
+                    <div id="odd-feedback" class="text-center min-h-[40px] font-bold"></div>
+
+                    <div class="grid grid-cols-2 gap-4 max-w-xs mx-auto">
+                        <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100 text-center">
+                            <div class="text-[10px] text-blue-600 font-bold uppercase tracking-widest">SKOR</div>
+                            <div id="odd-score" class="text-2xl font-black text-blue-700">0</div>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-2xl border border-red-100 text-center">
+                            <div class="text-[10px] text-red-600 font-bold uppercase tracking-widest">CAN</div>
+                            <div id="odd-lives" class="text-2xl font-black text-red-700">3</div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="initOdd()" class="w-full game-btn-secondary py-4">PAS GEÇ / YENİ SORU</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -468,6 +512,42 @@ const gamesHTML = `
         0% { transform: scale(0.5); opacity: 0; }
         100% { transform: scale(1); opacity: 1; }
     }
+
+    .odd-word-btn {
+        background: #f8fafc;
+        border: 2px solid #f1f5f9;
+        padding: 24px;
+        border-radius: 24px;
+        font-size: 1.25rem;
+        font-weight: 800;
+        color: #1e293b;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80px;
+    }
+    .odd-word-btn:hover {
+        background: white;
+        border-color: #4f46e5;
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+        color: #4f46e5;
+    }
+    .odd-word-btn.correct {
+        background: #ecfdf5 !important;
+        border-color: #10b981 !important;
+        color: #047857 !important;
+        transform: scale(1.02);
+    }
+    .odd-word-btn.wrong {
+        background: #fef2f2 !important;
+        border-color: #ef4444 !important;
+        color: #b91c1c !important;
+        opacity: 0.7;
+    }
 </style>
 `;
 
@@ -492,6 +572,10 @@ let ppRemaining = [...ppAlphabet], ppPassed = [], ppCurrentIdx = 0, ppTime = 180
 let gameSentences = [];
 let currentSA = null, saUserWords = [], saScore = 0, saLives = 3;
 
+// ODD ONE OUT GLOBALS
+let oddData = [];
+let currentOdd = null, oddScore = 0, oddLives = 3;
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("tab-games");
     if (container) {
@@ -509,8 +593,12 @@ async function loadGameLexicon() {
         // Load sentences too
         const sRes = await fetch("/data/sentences.json");
         gameSentences = await sRes.json();
+
+        // Load odd one out data
+        const oRes = await fetch("/data/odd_one_out.json");
+        oddData = await oRes.json();
     } catch (e) {
-        console.error("Lexicon load error", e);
+        console.error("Data load error", e);
         gameLexicon = [{ w: "APPLE", l: "a1" }, { w: "BANANA", l: "a1" }, { w: "COMPUTER", l: "b1" }];
     }
 }
@@ -528,6 +616,7 @@ window.switchGameSubTab = function (id) {
     if (id === 'game-chain' && !chPrevWord) initChain();
     if (id === 'game-passaparola' && ppRemaining.length === 26) initPassaparola();
     if (id === 'game-architect' && !currentSA) initArchitect();
+    if (id === 'game-odd' && !currentOdd) initOdd();
 };
 
 window.toggleGameTR = function (game) {
@@ -961,5 +1050,87 @@ window.undoArchitect = function () {
         saUserWords.pop();
         saUserWordsIdx.pop();
         renderArchitect();
+    }
+};
+
+// --- ODD ONE OUT LOGIC ---
+window.initOdd = function() {
+    if (!oddData || !oddData.length) return;
+    const lvl = document.getElementById("odd-level").value;
+    
+    // Filter by level (a1 includes a1/a2, b1 includes b1/b2, c1 includes c1/c2)
+    const filtered = oddData.filter(item => {
+        if (lvl === 'a1') return ['a1', 'a2'].includes(item.level.toLowerCase());
+        if (lvl === 'b1') return ['b1', 'b2'].includes(item.level.toLowerCase());
+        if (lvl === 'c1') return ['c1', 'c2'].includes(item.level.toLowerCase());
+        return false;
+    });
+
+    if (!filtered.length) {
+        alert("Bu seviye için veri bulunamadı.");
+        return;
+    }
+
+    currentOdd = filtered[Math.floor(Math.random() * filtered.length)];
+    renderOdd();
+};
+
+function renderOdd() {
+    if (!currentOdd) return;
+
+    const container = document.getElementById("odd-words");
+    const feedback = document.getElementById("odd-feedback");
+    
+    container.innerHTML = "";
+    feedback.innerText = "";
+    feedback.className = "text-center min-h-[40px] font-bold";
+    
+    document.getElementById("odd-score").innerText = oddScore;
+    document.getElementById("odd-lives").innerText = oddLives;
+
+    currentOdd.words.forEach((word, idx) => {
+        const btn = document.createElement("div");
+        btn.className = "odd-word-btn animate-in fade-in zoom-in duration-300";
+        btn.innerText = word;
+        btn.onclick = () => checkOdd(idx);
+        container.appendChild(btn);
+    });
+}
+
+window.checkOdd = function(idx) {
+    if (!currentOdd) return;
+    
+    const container = document.getElementById("odd-words");
+    const btns = container.querySelectorAll(".odd-word-btn");
+    const feedback = document.getElementById("odd-feedback");
+    
+    // Disable all buttons
+    btns.forEach(b => b.classList.add('pointer-events-none'));
+
+    if (idx === currentOdd.answer) {
+        oddScore += 10;
+        btns[idx].classList.add("correct");
+        feedback.innerText = "TEBRİKLER! " + currentOdd.reason;
+        feedback.classList.add("text-emerald-600");
+    } else {
+        oddLives--;
+        btns[idx].classList.add("wrong");
+        btns[currentOdd.answer].classList.add("correct");
+        feedback.innerText = "YANLIŞ! Aykırı olan: " + currentOdd.words[currentOdd.answer] + ". " + currentOdd.reason;
+        feedback.classList.add("text-red-600");
+    }
+
+    document.getElementById("odd-score").innerText = oddScore;
+    document.getElementById("odd-lives").innerText = oddLives;
+
+    if (oddLives <= 0) {
+        setTimeout(() => {
+            alert("OYUN BİTTİ! Skorun: " + oddScore);
+            oddScore = 0;
+            oddLives = 3;
+            initOdd();
+        }, 1500);
+    } else {
+        setTimeout(initOdd, 2500);
     }
 };
