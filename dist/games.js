@@ -69,6 +69,10 @@ const gamesHTML = `
                         <select id="cw-level" class="game-select"><option value="a1">A1</option><option value="a2">a2</option><option value="b1">b1</option><option value="b2">b2</option><option value="c1">c1</option></select>
                         <select id="cw-mode" class="game-select"><option value="definition">Tanım</option><option value="synonym">Eş Anlam</option></select>
                         <button onclick="toggleGameTR('cw')" id="cw-tr-btn" class="game-btn-secondary">🇹🇷 TR AÇIK</button>
+                        <div class="bg-blue-50 px-4 py-2 rounded-xl border border-blue-100 flex items-center gap-2">
+                            <span class="text-[10px] text-blue-600 font-black uppercase tracking-widest">SKOR</span>
+                            <span id="cw-score" class="text-lg font-black text-blue-800">0</span>
+                        </div>
                         <button onclick="startCrossword()" class="game-btn-primary">YENİ BULMACA</button>
                     </div>
                 </div>
@@ -103,6 +107,10 @@ const gamesHTML = `
                         <select id="hm-level" class="game-select"><option value="a1">A1</option><option value="a2">a2</option><option value="b1">b1</option><option value="b2">b2</option><option value="c1">c1</option></select>
                         <select id="hm-len" class="game-select"><option value="any">Uzunluk</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9+</option></select>
                         <button onclick="toggleGameTR('hm')" id="hm-tr-btn" class="game-btn-secondary">🇹🇷 TR AÇIK</button>
+                        <div class="bg-blue-50 px-4 py-2 rounded-xl border border-blue-100 flex items-center gap-2">
+                            <span class="text-[10px] text-blue-600 font-black uppercase tracking-widest">PUAN</span>
+                            <span id="hm-score" class="text-lg font-black text-blue-800">0</span>
+                        </div>
                         <button onclick="startHangman()" class="game-btn-primary">KELİME GETİR</button>
                     </div>
                 </div>
@@ -556,10 +564,10 @@ let showHMTR = true;
 let showCWTR = true;
 
 // HANGMAN GLOBALS
-let hmWord = "", hmGuessed = [], hmLives = 6, hmEnHint = "", hmTrHint = "";
+let hmWord = "", hmGuessed = [], hmLives = 6, hmEnHint = "", hmTrHint = "", hmScore = 0;
 
 // CROSSWORD GLOBALS
-let cwCurrentData = null, cwDir = 'across';
+let cwCurrentData = null, cwDir = 'across', cwScore = 0;
 
 // CHAIN GLOBALS
 let chPrevWord = "", chUsedWords = [], chScore = 0, chMistakes = 0;
@@ -682,7 +690,14 @@ function renderHangman() {
     renderHangmanKB(); updateHangmanSVG();
 
     const win = hmWord && hmWord.split("").every(c => hmGuessed.includes(c));
-    if (win) { document.getElementById("hm-clue-box").innerHTML = "<div class='text-green-600 font-black text-2xl animate-bounce'>TEBRİKLER! 🎉</div>"; }
+    if (win) { 
+        if (!currentSA?._hmWon) { // Reuse flag concept or add hmWon to state
+            hmScore += 10; 
+            document.getElementById("hm-score").innerText = hmScore;
+            hmWord = ""; // Clear to prevent double score if re-rendered
+        }
+        document.getElementById("hm-clue-box").innerHTML = "<div class='text-green-600 font-black text-2xl animate-bounce'>TEBRİKLER! 🎉</div>"; 
+    }
     else if (hmLives <= 0) { document.getElementById("hm-clue-box").innerHTML = `<div class='text-red-600 font-bold'>OYUN BİTTİ! 💀</div>Kelime şuydu: <b class='text-slate-900'>${hmWord}</b>`; }
 }
 
@@ -804,7 +819,15 @@ async function loadCrosswordClues(p, m) {
 }
 
 window.checkCrosswordAnswers = function () {
-    document.querySelectorAll(".cw-input").forEach(i => { const ok = i.value.toUpperCase() === i.dataset.a; i.parentElement.className = "cw-cell white " + (ok ? "correct" : "wrong"); });
+    let sessionScore = 0;
+    document.querySelectorAll(".cw-input").forEach(i => { 
+        const ok = i.value.toUpperCase() === i.dataset.a; 
+        i.parentElement.className = "cw-cell white " + (ok ? "correct" : "wrong"); 
+        if (ok) sessionScore += 5; // Simplified: 5 points per letter or word? Let's do per letter for now or word.
+        // Actually, per correct cell is easier.
+    });
+    cwScore += sessionScore;
+    document.getElementById("cw-score").innerText = cwScore;
 };
 
 window.toggleCrosswordReveal = function () {
