@@ -201,6 +201,8 @@ const gamesHTML = `
                     </div>
                 </div>
             </div>
+        </div>
+
         <!-- SENTENCE ARCHITECT -->
         <div id="game-architect" class="game-container">
             <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-slate-100">
