@@ -61,12 +61,14 @@ const gamesHTML = `
                     </div>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div class="lg:col-span-2 bg-slate-50 p-4 rounded-3xl border border-slate-100 flex justify-center min-h-[400px] relative">
+                    <div class="lg:col-span-2 bg-slate-50 p-4 rounded-3xl border border-slate-100 flex flex-col items-center min-h-[400px] relative overflow-hidden">
                         <div id="cw-loader" class="absolute inset-0 flex flex-col items-center justify-center bg-white/80 z-10 hidden">
                              <div class="w-8 h-8 border-4 border-red-100 border-t-red-800 rounded-full animate-spin"></div>
                              <p class="text-xs font-bold mt-2 text-slate-500">Oluşturuluyor...</p>
                         </div>
-                        <div id="cw-grid" class="grid gap-1 bg-slate-200 p-1 border border-slate-200"></div>
+                        <div class="w-full overflow-x-auto py-4 flex justify-center custom-scrollbar">
+                            <div id="cw-grid" class="grid gap-1 bg-slate-200 p-1 border border-slate-200 shrink-0"></div>
+                        </div>
                     </div>
                     <div class="space-y-4">
                         <h4 class="font-bold text-slate-900 flex items-center gap-2"><i class="fas fa-search text-red-800"></i> İpuçları</h4>
@@ -278,29 +280,30 @@ const gamesHTML = `
     .hm-part.visible { opacity: 1; }
 
     /* Crossword */
-    #cw-grid { grid-template-columns: repeat(15, 1fr); }
+    #cw-grid { grid-template-columns: repeat(15, 1fr); cursor: text; }
     .cw-cell { width: 32px; height: 32px; background: #0f172a; position: relative; }
     .cw-cell.white { background: white; }
-    .cw-cell-num { position: absolute; top: 1px; left: 2px; font-size: 0.5rem; color: #94a3b8; font-weight: 800; }
-    .cw-input { width: 100%; height: 100%; border: none; background: transparent; text-align: center; font-weight: 900; color: #1e293b; outline: none; }
+    .cw-cell-num { position: absolute; top: 1px; left: 2px; font-size: 0.5rem; color: #94a3b8; font-weight: 800; pointer-events: none; }
+    .cw-input { width: 100%; height: 100%; border: none; background: transparent; text-align: center; font-weight: 900; color: #1e293b; outline: none; font-size: 1.1rem; }
     .cw-cell.correct { background: #dcfce7 !important; }
     .cw-cell.wrong { background: #fee2e2; }
     
     .cw-clue-item {
-        padding: 16px;
+        padding: 14px;
         background: #f8fafc;
         border-left: 4px solid #e2e8f0;
         border-radius: 12px;
         cursor: pointer;
         transition: all 0.3s;
+        font-size: 0.85rem;
     }
     .cw-clue-item:hover { border-left-color: #0f172a; background: #f1f5f9; }
     .cw-clue-item.active { border-left-color: #ef4444; background: #fef2f2; }
 
     /* Hangman Letters */
     .hm-letter-box {
-        width: 36px;
-        height: 48px;
+        width: 32px;
+        height: 44px;
         background: #f8fafc;
         border: 1px solid #e2e8f0;
         border-radius: 8px;
@@ -308,52 +311,57 @@ const gamesHTML = `
         align-items: center;
         justify-content: center;
         font-weight: 900;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: #0f172a;
         border-bottom: 4px solid #e2e8f0;
     }
     .hm-key {
         background: #f8fafc;
         border: 1px solid #f1f5f9;
-        padding: 10px 4px;
+        padding: 10px 2px;
         text-align: center;
         border-radius: 8px;
         font-weight: 800;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         cursor: pointer;
         transition: all 0.2s;
+        user-select: none;
     }
+    .hm-key:active { transform: scale(0.9); }
     .hm-key.used.correct { background: #22c55e; color: white; border-color: #16a34a; }
     .hm-key.used.wrong { background: #ef4444; color: white; border-color: #dc2626; opacity: 0.5; }
 
     /* Passaparola Circle */
     .pp-letter {
-        width: 26px; height: 26px;
+        width: 24px; height: 24px;
         background: rgba(255,255,255,0.05);
         color: rgba(255,255,255,0.4);
         display: flex; align-items: center; justify-content: center;
         border-radius: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
-        font-size: 0.6rem;
+        font-size: 0.55rem;
         font-weight: 900;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         border: 1px solid rgba(255,255,255,0.1);
+        user-select: none;
     }
     .pp-letter.current {
-        width: 40px; height: 40px;
+        width: 38px; height: 38px;
         background: #4f46e5;
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         z-index: 10;
         box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
         border-color: white;
     }
 
     @media (max-width: 640px) {
-        .cw-cell { width: 24px; height: 24px; }
-        .pp-letter { width: 20px; height: 20px; font-size: 0.5rem; }
-        .pp-letter.current { width: 30px; height: 30px; font-size: 0.8rem; }
+        .cw-cell { width: 28px; height: 28px; }
+        .cw-input { font-size: 1rem; }
+        .pp-letter { width: 18px; height: 18px; font-size: 0.45rem; }
+        .pp-letter.current { width: 28px; height: 28px; font-size: 0.7rem; }
+        .hm-letter-box { width: 24px; height: 36px; font-size: 1rem; }
     }
 </style>
 `;
