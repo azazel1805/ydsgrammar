@@ -208,7 +208,22 @@ const gamesHTML = `
             <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-slate-100">
                 <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
                     <h3 class="text-2xl font-bold text-slate-900">Cümle Mimarı</h3>
-                    <select id="sa-level" class="game-select" onchange="initArchitect()"><option value="a1">A1</option><option value="a2">a2</option><option value="b1">b1</option><option value="b2">b2</option><option value="c1">c1</option></select>
+                    <div class="flex items-center gap-4">
+                        <label class="flex items-center gap-2 cursor-pointer group">
+                            <span class="text-xs font-bold text-slate-500 group-hover:text-red-500 transition-colors">MONSTER MODE</span>
+                            <div class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="sa-monster" class="sr-only peer" onchange="initArchitect()">
+                                <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-500"></div>
+                            </div>
+                        </label>
+                        <select id="sa-level" class="game-select" onchange="initArchitect()">
+                            <option value="a1">A1</option>
+                            <option value="a2">A2</option>
+                            <option value="b1">B1</option>
+                            <option value="b2">B2</option>
+                            <option value="c1">C1</option>
+                        </select>
+                    </div>
                 </div>
                 <p class="text-slate-500 text-sm italic mb-8">Kelimeleri doğru sırayla seçerek anlamlı bir cümle oluştur.</p>
                 
@@ -867,7 +882,17 @@ function renderArchitect() {
     if (!currentSA) return;
 
     // UI Updates
-    document.getElementById("sa-tr-clue").innerText = currentSA.tr;
+    const isMonster = document.getElementById('sa-monster')?.checked;
+    const clueBox = document.getElementById("sa-clue");
+    if (clueBox) {
+        if (isMonster) {
+            clueBox.style.display = "none";
+        } else {
+            clueBox.style.display = "block";
+            document.getElementById("sa-tr-clue").innerText = currentSA.tr;
+        }
+    }
+    
     document.getElementById("sa-score").innerText = saScore;
     document.getElementById("sa-lives").innerText = saLives;
 
