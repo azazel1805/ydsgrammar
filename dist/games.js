@@ -229,7 +229,7 @@ const gamesHTML = `
                 
                 <div class="max-w-4xl mx-auto space-y-12 py-8">
                     <!-- Translation Clue -->
-                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 text-center">
+                    <div id="sa-clue" class="bg-slate-50 p-6 rounded-3xl border border-slate-100 text-center transition-all duration-300">
                         <div class="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-2">TÜRKÇE ANLAMI</div>
                         <div id="sa-tr-clue" class="text-xl font-bold text-slate-800">Cümle yükleniyor...</div>
                     </div>
