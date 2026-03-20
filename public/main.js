@@ -441,7 +441,8 @@ function updateSEO(tab) {
         "premium-exercises": { title: "Premium İnteraktif Alıştırmalar – YDS Kelime Lab", desc: "Okuma parçası üzerinden kelime eşleştirme ve interaktif dil alıştırmaları." },
         "reductions": { title: "Kısaltmalar (Reduced Clauses) – YDS & YDT Gramer", desc: "Sıfat ve zarf cümleciklerinde aktif/pasif kısaltma kuralları ve örnekler." },
         "premium-pricing": { title: "Premium VIP – YDS Monster", desc: "Monster VIP ayrıcalıklarını keşfedin ve hedefinize ulaşın." },
-        "admin": { title: "Admin Panel", desc: "Sistem yönetimi." }
+        "admin": { title: "Admin Panel", desc: "Sistem yönetimi." },
+        "games": { title: "YDS & YDT Oyun Merkezi – Eğlenerek Öğren", desc: "Adam Asmaca, Kare Bulmaca ve Passaparola gibi oyunlarla YDS kelimelerini geliştirin." }
     };
 
     const data = seoMap[tab] || { title: "yds.monster – YDS & YDT Master Encyclopedia", desc: "Kapsamlı YDS ve YDT hazırlık platformu." };
