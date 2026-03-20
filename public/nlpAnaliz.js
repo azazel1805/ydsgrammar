@@ -127,6 +127,16 @@ const nlpAnalizHTML = `
             </div>
         </div>
 
+        <!-- AI Deep Explanation -->
+        <div id="nlpExplanationBox" class="hidden animate-in fade-in slide-in-from-top-4 duration-700">
+            <div class="bg-indigo-50/50 border border-indigo-100/50 rounded-3xl p-8">
+                <h3 class="font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-microchip text-indigo-600"></i> AI Derin Analiz (Explanation)
+                </h3>
+                <div id="nlpExplanationText" class="text-slate-700 leading-relaxed text-lg whitespace-pre-wrap"></div>
+            </div>
+        </div>
+
     </div>
 </div>
 `;
@@ -158,11 +168,8 @@ async function runNlpAnalysis() {
         }
 
         renderNlpResults(data);
-        // Translation is now handled directly by the proxy response, but let's keep MyMemory as secondary or logic check
         if (data.translation) {
             document.getElementById("nlpTranslation").innerText = data.translation;
-        } else {
-            fetchTranslation(input.value.trim()); // Fallback if Google translation is missing
         }
         container.classList.remove("hidden");
     } catch (err) {
@@ -180,21 +187,8 @@ function renderNlpResults(data) {
     // 1. Stats
     document.getElementById("nlpTokenCount").innerText = tokens.length;
 
-    // 2. Tense Detection (Simple Rule-Based)
-    let detectedTense = "Present Simple (likely)";
-    const hasPerfect = tokens.some(t => t.lemma === "have" && t.partOfSpeech.tag === "VERB");
-    const hasWill = tokens.some(t => t.text.content.toLowerCase() === "will");
-    const hasPast = tokens.some(t => t.partOfSpeech.tense === "PAST");
-    const hasIng = tokens.some(t => t.partOfSpeech.aspect === "CONTINUOUS" || t.text.content.endsWith("ing"));
-
-    if (hasWill) detectedTense = "Future";
-    else if (hasPast && hasIng) detectedTense = "Past Continuous";
-    else if (hasPast) detectedTense = "Past Simple";
-    else if (hasPerfect && hasPast) detectedTense = "Past Perfect";
-    else if (hasPerfect) detectedTense = "Present Perfect";
-    else if (hasIng) detectedTense = "Present Continuous";
-
-    document.getElementById("nlpTense").innerText = detectedTense;
+    // 2. Tense Detection (Gemini priority)
+    document.getElementById("nlpTense").innerText = data.tense || "N/A";
 
     // 2.5 Categories
     const catCard = document.getElementById("nlpCategoryCard");
@@ -237,20 +231,32 @@ function renderNlpResults(data) {
         treeDiv.appendChild(tokenEl);
     });
 
-    // 5. CEFR guess (Using locally available oxford_master_5000 if global)
-    if (typeof oxford_master_5000 !== 'undefined') {
+    // 5. CEFR guess
+    if (data.cefr) {
+        document.getElementById("nlpCefr").innerText = data.cefr;
+    } else if (typeof oxford_master_5000 !== 'undefined') {
         let maxLevel = 1; // A1
         const levels = { "A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5 };
         const reverseLevels = { 1: "A1", 2: "A2", 3: "B1", 4: "B2", 5: "C1" };
 
         tokens.forEach(t => {
-            const word = t.lemma.toLowerCase();
+            const word = (t.lemma || "").toLowerCase();
             const found = oxford_master_5000.find(o => o.word.toLowerCase() === word);
             if (found && levels[found.level] > maxLevel) {
                 maxLevel = levels[found.level];
             }
         });
         document.getElementById("nlpCefr").innerText = reverseLevels[maxLevel];
+    }
+
+    // 5.5 AI Explanation Box
+    const explanationBox = document.getElementById("nlpExplanationBox");
+    const explanationText = document.getElementById("nlpExplanationText");
+    if (data.explanation) {
+        explanationBox.classList.remove("hidden");
+        explanationText.innerText = data.explanation;
+    } else {
+        explanationBox.classList.add("hidden");
     }
 
     // 6. Back-Translation Refresher Logic

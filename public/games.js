@@ -20,6 +20,7 @@ const gamesHTML = `
             <button onclick="switchGameSubTab('game-hangman')" id="btn-game-hangman" class="game-tab-btn">🪦 Adam Asmaca</button>
             <button onclick="switchGameSubTab('game-chain')" id="btn-game-chain" class="game-tab-btn">🔄 Kelime Zinciri</button>
             <button onclick="switchGameSubTab('game-passaparola')" id="btn-game-passaparola" class="game-tab-btn">🎡 Passaparola</button>
+            <button onclick="switchGameSubTab('game-architect')" id="btn-game-architect" class="game-tab-btn">🏗️ Cümle Mimarı</button>
         </nav>
 
         <!-- GAME HOME -->
@@ -44,6 +45,11 @@ const gamesHTML = `
                     <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🎡</div>
                     <h3 class="text-xl font-bold text-slate-900 group-hover:text-red-800 transition-colors">Passaparola</h3>
                     <p class="text-slate-500 text-sm italic mt-2">Çarkı tamamla, tüm harfleri doğru bil.</p>
+                </div>
+                <div class="game-card group" onclick="switchGameSubTab('game-architect')">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🏗️</div>
+                    <h3 class="text-xl font-bold text-slate-900 group-hover:text-red-800 transition-colors">Cümle Mimarı</h3>
+                    <p class="text-slate-500 text-sm italic mt-2">Kelimeleri doğru sıraya dizerek cümleyi kur.</p>
                 </div>
             </div>
         </div>
@@ -192,6 +198,51 @@ const gamesHTML = `
                             <button id="pp-pause-btn" onclick="pausePassaparola()" class="game-btn-secondary py-4">BEKLE (10s)</button>
                         </div>
                         <button onclick="initPassaparola()" class="w-full py-4 text-red-500 font-bold border-2 border-dashed border-red-200 rounded-3xl hover:bg-red-50 transition-all uppercase tracking-widest text-xs">OYUNU BİTİR / SIFIRLA</button>
+                    </div>
+                </div>
+            </div>
+        <!-- SENTENCE ARCHITECT -->
+        <div id="game-architect" class="game-container">
+            <div class="bg-white p-6 rounded-[2.5rem] shadow-sm border border-slate-100">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <h3 class="text-2xl font-bold text-slate-900">Cümle Mimarı</h3>
+                    <select id="sa-level" class="game-select" onchange="initArchitect()"><option value="a1">A1</option><option value="a2">a2</option><option value="b1">b1</option><option value="b2">b2</option><option value="c1">c1</option></select>
+                </div>
+                <p class="text-slate-500 text-sm italic mb-8">Kelimeleri doğru sırayla seçerek anlamlı bir cümle oluştur.</p>
+                
+                <div class="max-w-4xl mx-auto space-y-12 py-8">
+                    <!-- Translation Clue -->
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 text-center">
+                        <div class="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-2">TÜRKÇE ANLAMI</div>
+                        <div id="sa-tr-clue" class="text-xl font-bold text-slate-800">Cümle yükleniyor...</div>
+                    </div>
+
+                    <!-- Target Area (Slots) -->
+                    <div id="sa-slots" class="flex flex-wrap justify-center gap-3 min-h-[60px] p-4 bg-slate-900/5 rounded-3xl border-2 border-dashed border-slate-200">
+                        <!-- Clicked words go here -->
+                    </div>
+
+                    <!-- Source Area (Pool) -->
+                    <div id="sa-pool" class="flex flex-wrap justify-center gap-3 p-4">
+                        <!-- Shuffled words go here -->
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex justify-center gap-4">
+                        <button onclick="undoArchitect()" class="game-btn-secondary px-8">SON KELİMEYİ AL</button>
+                        <button onclick="initArchitect()" class="game-btn-primary px-8">YENİ CÜMLE</button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 gap-4 max-w-sm mx-auto">
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                            <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">DOĞRU</div>
+                            <div id="sa-score" class="text-2xl font-black text-slate-900">0</div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                            <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">CAN</div>
+                            <div id="sa-lives" class="text-2xl font-black text-red-800">3</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -363,6 +414,43 @@ const gamesHTML = `
         .pp-letter.current { width: 28px; height: 28px; font-size: 0.7rem; }
         .hm-letter-box { width: 24px; height: 36px; font-size: 1rem; }
     }
+
+    /* Sentence Architect Styles */
+    .sa-word-box {
+        background: white;
+        border: 2px solid #e2e8f0;
+        padding: 10px 20px;
+        border-radius: 16px;
+        font-weight: 800;
+        color: #1e293b;
+        cursor: pointer;
+        transition: all 0.2s;
+        user-select: none;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        font-size: 0.9rem;
+    }
+    .sa-word-box:hover {
+        border-color: #4f46e5;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    }
+    .sa-word-box.selected {
+        opacity: 0.3;
+        pointer-events: none;
+        transform: scale(0.95);
+    }
+    .sa-slot-word {
+        background: #0f172a;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 12px;
+        font-weight: 700;
+        animation: sa-pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes sa-pop {
+        0% { transform: scale(0.5); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
 </style>
 `;
 
@@ -383,6 +471,10 @@ let chPrevWord = "", chUsedWords = [], chScore = 0, chMistakes = 0;
 const ppAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 let ppRemaining = [...ppAlphabet], ppPassed = [], ppCurrentIdx = 0, ppTime = 180, ppTimer, ppScore = 0, ppQuestions = {}, ppIsPaused = false, ppPauseUsed = false;
 
+// ARCHITECT GLOBALS
+let gameSentences = [];
+let currentSA = null, saUserWords = [], saScore = 0, saLives = 3;
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("tab-games");
     if (container) {
@@ -395,29 +487,34 @@ async function loadGameLexicon() {
     try {
         const res = await fetch("/data/oxford_master_5000.json");
         const data = await res.json();
-        gameLexicon = data.map(x => ({w: x.word.toUpperCase(), l: x.level}));
+        gameLexicon = data.map(x => ({ w: x.word.toUpperCase(), l: x.level }));
+
+        // Load sentences too
+        const sRes = await fetch("/data/sentences.json");
+        gameSentences = await sRes.json();
     } catch (e) {
         console.error("Lexicon load error", e);
-        gameLexicon = [{w: "APPLE", l: "a1"}, {w: "BANANA", l: "a1"}, {w: "COMPUTER", l: "b1"}];
+        gameLexicon = [{ w: "APPLE", l: "a1" }, { w: "BANANA", l: "a1" }, { w: "COMPUTER", l: "b1" }];
     }
 }
 
 // TAB SWITCHING
-window.switchGameSubTab = function(id) {
+window.switchGameSubTab = function (id) {
     document.querySelectorAll('.game-container').forEach(c => c.classList.remove('active'));
     document.querySelectorAll('.game-tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     document.getElementById('btn-' + id).classList.add('active');
-    
+
     // Auto-init if first time
-    if(id === 'game-hangman' && !hmWord) startHangman();
-    if(id === 'game-crossword' && !cwCurrentData) startCrossword();
-    if(id === 'game-chain' && !chPrevWord) initChain();
-    if(id === 'game-passaparola' && ppRemaining.length === 26) initPassaparola();
+    if (id === 'game-hangman' && !hmWord) startHangman();
+    if (id === 'game-crossword' && !cwCurrentData) startCrossword();
+    if (id === 'game-chain' && !chPrevWord) initChain();
+    if (id === 'game-passaparola' && ppRemaining.length === 26) initPassaparola();
+    if (id === 'game-architect' && !currentSA) initArchitect();
 };
 
-window.toggleGameTR = function(game) {
-    if(game === 'hm') {
+window.toggleGameTR = function (game) {
+    if (game === 'hm') {
         showHMTR = !showHMTR;
         document.getElementById("hm-tr-btn").innerText = showHMTR ? "🇹🇷 TR AÇIK" : "🇹🇷 TR KAPALI";
         updateHangmanHintDisplay();
@@ -432,8 +529,8 @@ window.toggleGameTR = function(game) {
 };
 
 // --- HANGMAN LOGIC ---
-window.startHangman = function() {
-    if(!gameLexicon.length) { setTimeout(startHangman, 500); return; }
+window.startHangman = function () {
+    if (!gameLexicon.length) { setTimeout(startHangman, 500); return; }
     const lvl = document.getElementById("hm-level").value;
     const len = document.getElementById("hm-len").value;
     let pool = gameLexicon.filter(x => (x.l || 'a1').toLowerCase() === lvl.toLowerCase());
@@ -444,7 +541,7 @@ window.startHangman = function() {
     if (!pool.length) pool = gameLexicon.filter(x => (x.l || 'a1').toLowerCase() === lvl.toLowerCase());
     let item = pool[Math.floor(Math.random() * pool.length)];
     hmWord = item.w; hmGuessed = []; hmLives = 6; hmEnHint = ''; hmTrHint = '';
-    
+
     document.getElementById("hm-clue-box").innerText = "İpucu yükleniyor...";
     renderHangman(); fetchHangmanHint(hmWord);
 };
@@ -477,7 +574,7 @@ function renderHangman() {
     }
     document.getElementById("hm-lives").innerText = hmLives;
     renderHangmanKB(); updateHangmanSVG();
-    
+
     const win = hmWord && hmWord.split("").every(c => hmGuessed.includes(c));
     if (win) { document.getElementById("hm-clue-box").innerHTML = "<div class='text-green-600 font-black text-2xl animate-bounce'>TEBRİKLER! 🎉</div>"; }
     else if (hmLives <= 0) { document.getElementById("hm-clue-box").innerHTML = `<div class='text-red-600 font-bold'>OYUN BİTTİ! 💀</div>Kelime şuydu: <b class='text-slate-900'>${hmWord}</b>`; }
@@ -498,8 +595,8 @@ function updateHangmanSVG() {
 }
 
 // --- CROSSWORD LOGIC ---
-window.startCrossword = function() {
-    if(!gameLexicon.length) { setTimeout(startCrossword, 500); return; }
+window.startCrossword = function () {
+    if (!gameLexicon.length) { setTimeout(startCrossword, 500); return; }
     document.getElementById("cw-loader").style.display = "flex";
     const l = document.getElementById("cw-level").value;
     let pool = gameLexicon.filter(x => (x.l || 'a1').toLowerCase() === l.toLowerCase() && x.w.length > 2 && x.w.length < 11);
@@ -589,7 +686,7 @@ async function loadCrosswordClues(p, m) {
             const tr_r = await fetch(`https://api.mymemory.translated.net/get?q=${i.word}&langpair=en|tr`);
             const tr_d = await tr_r.json();
             cl += `<div class="cw-tr-line" style="display:${showCWTR ? 'block' : 'none'}; color:#64748b; font-size:0.75rem; margin-top:4px; border-top:1px solid #f1f5f9; padding-top:4px italic">🇹🇷 ${tr_d.responseData.translatedText}</div>`;
-        } catch (e) {}
+        } catch (e) { }
         return { clue: cl, num: i.num, dir: i.dir, word: i.word };
     }));
     document.getElementById("cw-loader").style.display = "none";
@@ -600,18 +697,18 @@ async function loadCrosswordClues(p, m) {
     });
 }
 
-window.checkCrosswordAnswers = function() {
+window.checkCrosswordAnswers = function () {
     document.querySelectorAll(".cw-input").forEach(i => { const ok = i.value.toUpperCase() === i.dataset.a; i.parentElement.className = "cw-cell white " + (ok ? "correct" : "wrong"); });
 };
 
-window.toggleCrosswordReveal = function() {
+window.toggleCrosswordReveal = function () {
     const els = document.querySelectorAll('.cw-reveal-ans');
     const isHidden = els[0]?.style.display === 'none';
     els.forEach(e => e.style.display = isHidden ? 'block' : 'none');
 };
 
 // --- WORD CHAIN LOGIC ---
-window.initChain = function() {
+window.initChain = function () {
     if (!gameLexicon.length) return;
     const lvl = document.getElementById("ch-level").value;
     const pool = gameLexicon.filter(x => (x.l || 'a1').toLowerCase() === lvl.toLowerCase());
@@ -634,7 +731,7 @@ function updateChainUI() {
     ids.forEach((id, i) => { let el = document.getElementById(id); if (i < chMistakes) el.classList.add("visible"); else el.classList.remove("visible"); });
 }
 
-window.checkChain = function() {
+window.checkChain = function () {
     const input = document.getElementById("ch-input"); const val = input.value.toUpperCase().trim(); const status = document.getElementById("ch-status");
     if (!val) return; input.value = "";
     if (chUsedWords.includes(val)) { status.innerText = "Kelime zaten kullanıldı!"; handleChainMistake(); return; }
@@ -651,10 +748,10 @@ function handleChainMistake() {
 }
 
 // --- PASSAPAROLA LOGIC ---
-window.initPassaparola = function() {
+window.initPassaparola = function () {
     clearInterval(ppTimer);
     const container = document.getElementById('pp-circle'); container.innerHTML = "";
-    const radius = 120, centerX = container.clientWidth/2 || 160, centerY = container.clientHeight/2 || 160;
+    const radius = 120, centerX = container.clientWidth / 2 || 160, centerY = container.clientHeight / 2 || 160;
     ppAlphabet.forEach((l, i) => {
         const angle = (i / 26) * 2 * Math.PI - Math.PI / 2;
         const div = document.createElement('div'); div.className = 'pp-letter'; div.textContent = l; div.id = `ppl-${l}`;
@@ -686,7 +783,7 @@ async function showPassaparolaQuestion() {
     const lvl = document.getElementById("pp-level").value;
     document.querySelectorAll(".pp-letter").forEach(el => el.classList.remove("current"));
     const target = document.getElementById(`ppl-${l}`);
-    if(target) target.classList.add("current");
+    if (target) target.classList.add("current");
     document.getElementById("pp-holo-letter").innerText = l;
     document.getElementById("pp-letter-label").innerText = `${l} ile başlayan...`;
     if (!ppQuestions[l]) {
@@ -703,28 +800,28 @@ async function showPassaparolaQuestion() {
     document.getElementById("pp-input").value = ""; document.getElementById("pp-input").focus();
 }
 
-window.checkPassaparola = function() {
+window.checkPassaparola = function () {
     const l = ppRemaining[ppCurrentIdx]; const ans = document.getElementById("pp-input").value.toUpperCase().trim();
     const el = document.getElementById(`ppl-${l}`);
     if (ans === ppQuestions[l].a) {
         ppScore += 10; document.getElementById("pp-score-badge").innerText = `🏆 ${ppScore}`;
-        if(el) { el.style.background = "#22c55e"; el.style.color = "white"; }
+        if (el) { el.style.background = "#22c55e"; el.style.color = "white"; }
         ppRemaining.splice(ppCurrentIdx, 1);
     } else {
-        if(el) { el.style.background = "#ef4444"; el.style.color = "white"; }
+        if (el) { el.style.background = "#ef4444"; el.style.color = "white"; }
         ppRemaining.splice(ppCurrentIdx, 1);
     }
     ppCurrentIdx = ppCurrentIdx % Math.max(1, ppRemaining.length); showPassaparolaQuestion();
 };
 
-window.passPassaparola = function() {
+window.passPassaparola = function () {
     const l = ppRemaining[ppCurrentIdx]; const el = document.getElementById(`ppl-${l}`);
-    if(el) { el.style.background = "#94a3b8"; el.style.color = "white"; }
+    if (el) { el.style.background = "#94a3b8"; el.style.color = "white"; }
     ppPassed.push(l); ppRemaining.splice(ppCurrentIdx, 1);
     ppCurrentIdx = ppCurrentIdx % Math.max(1, ppRemaining.length); showPassaparolaQuestion();
 };
 
-window.pausePassaparola = function() {
+window.pausePassaparola = function () {
     if (!ppPauseUsed && !ppIsPaused) {
         ppIsPaused = true; ppPauseUsed = true; let top = 10;
         const btn = document.getElementById("pp-pause-btn"); btn.disabled = true;
@@ -737,3 +834,94 @@ function endPassaparola() {
     document.getElementById("pp-question").innerHTML = `<div class="text-slate-900 text-2xl font-black">OTURUM SONLANDI</div>Puan: ${ppScore}`;
     document.getElementById("pp-input").disabled = true;
 }
+
+// --- SENTENCE ARCHITECT LOGIC ---
+window.initArchitect = function () {
+    if (!gameSentences.length) return;
+    const lvl = document.getElementById("sa-level").value;
+    const pool = gameSentences.filter(s => s.level.toLowerCase() === lvl.toLowerCase());
+    if (!pool.length) { alert("Bu seviye için henüz cümle eklenmemiş."); return; }
+
+    currentSA = pool[Math.floor(Math.random() * pool.length)];
+    saUserWords = [];
+    saLives = 3;
+    renderArchitect();
+};
+
+function renderArchitect() {
+    // UI Updates
+    document.getElementById("sa-tr-clue").innerText = currentSA.tr;
+    document.getElementById("sa-score").innerText = saScore;
+    document.getElementById("sa-lives").innerText = saLives;
+
+    // Slots Area
+    const slots = document.getElementById("sa-slots");
+    slots.innerHTML = "";
+    saUserWords.forEach((w, i) => {
+        const div = document.createElement("div");
+        div.className = "sa-slot-word";
+        div.innerText = w;
+        div.onclick = () => undoArchitect(); // Can also undo by clicking
+        slots.appendChild(div);
+    });
+
+    // Pool Area
+    const pool = document.getElementById("sa-pool");
+    pool.innerHTML = "";
+
+    // Original words split and shuffled
+    const originalWords = currentSA.en.split(" ");
+    const shuffled = [...originalWords].sort((a, b) => a.localeCompare(b)); // Sort by alphabet initially or shuffle
+    // Let's actually shuffle properly
+    const finalPool = currentSA._shuffled || [...originalWords].sort(() => Math.random() - 0.5);
+    currentSA._shuffled = finalPool; // Keep same shuffle for this sentence
+
+    finalPool.forEach((word, idx) => {
+        // Find how many times this word has been used already in saUserWords
+        const usedCount = saUserWords.filter(w => w === word).length;
+        const totalInSentence = originalWords.filter(w => w === word).length;
+
+        const btn = document.createElement("div");
+        btn.className = "sa-word-box";
+        if (usedCount >= totalInSentence) btn.classList.add("selected");
+        btn.innerText = word;
+        btn.onclick = () => selectArchitectWord(word);
+        pool.appendChild(btn);
+    });
+}
+
+window.selectArchitectWord = function (word) {
+    if (saLives <= 0) return;
+    saUserWords.push(word);
+
+    // Check if correct so far
+    const correctWords = currentSA.en.split(" ");
+    const currentIdx = saUserWords.length - 1;
+    if (saUserWords[currentIdx] !== correctWords[currentIdx]) {
+        // WRONG
+        saLives--;
+        saUserWords.pop();
+        alert("Yanlış kelime! Tekrar dene.");
+        if (saLives <= 0) {
+            alert("Canın bitti! Doğru cümle: " + currentSA.en);
+            initArchitect();
+            return;
+        }
+    } else {
+        // CORRECT so far
+        if (saUserWords.length === correctWords.length) {
+            saScore += 10;
+            alert("Tebrikler! Cümleyi doğru kurdun.");
+            initArchitect();
+            return;
+        }
+    }
+    renderArchitect();
+};
+
+window.undoArchitect = function () {
+    if (saUserWords.length > 0) {
+        saUserWords.pop();
+        renderArchitect();
+    }
+};
