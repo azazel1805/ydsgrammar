@@ -45,7 +45,7 @@ exports.handler = async (event) => {
         `;
 
         const response = await openai.chat.completions.create({
-            model: "gpt-4o",
+            model: "gpt-4o-mini",
             messages: [
                 { role: "system", content: "You are an expert English linguist and writing coach specializing in paragraph coherence and cohesion (YDS/YDT/TOEFL level)." },
                 { role: "user", content: prompt }

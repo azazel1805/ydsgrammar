@@ -836,19 +836,34 @@ function endPassaparola() {
 }
 
 // --- SENTENCE ARCHITECT LOGIC ---
+let saUserWordsIdx = []; // Track used pool indices
+
 window.initArchitect = function () {
-    if (!gameSentences.length) return;
-    const lvl = document.getElementById("sa-level").value;
+    if (!gameSentences || !gameSentences.length) return;
+    const lvlEl = document.getElementById("sa-level");
+    if (!lvlEl) return;
+    
+    const lvl = lvlEl.value;
     const pool = gameSentences.filter(s => s.level.toLowerCase() === lvl.toLowerCase());
-    if (!pool.length) { alert("Bu seviye için henüz cümle eklenmemiş."); return; }
+    if (!pool.length) { 
+        alert("Bu seviye için henüz cümle eklenmemiş."); 
+        return; 
+    }
 
     currentSA = pool[Math.floor(Math.random() * pool.length)];
+    // Standardize splitting
+    currentSA._correctWords = currentSA.en.trim().split(/\s+/);
+    currentSA._shuffled = [...currentSA._correctWords].sort(() => Math.random() - 0.5);
+    
     saUserWords = [];
+    saUserWordsIdx = [];
     saLives = 3;
     renderArchitect();
 };
 
 function renderArchitect() {
+    if (!currentSA) return;
+
     // UI Updates
     document.getElementById("sa-tr-clue").innerText = currentSA.tr;
     document.getElementById("sa-score").innerText = saScore;
@@ -859,69 +874,65 @@ function renderArchitect() {
     slots.innerHTML = "";
     saUserWords.forEach((w, i) => {
         const div = document.createElement("div");
-        div.className = "sa-slot-word";
+        div.className = "sa-slot-word animate-in zoom-in duration-200";
         div.innerText = w;
-        div.onclick = () => undoArchitect(); // Can also undo by clicking
+        div.onclick = () => undoArchitect(); 
         slots.appendChild(div);
     });
 
     // Pool Area
-    const pool = document.getElementById("sa-pool");
-    pool.innerHTML = "";
+    const poolArea = document.getElementById("sa-pool");
+    poolArea.innerHTML = "";
 
-    // Original words split and shuffled
-    const originalWords = currentSA.en.split(" ");
-    const shuffled = [...originalWords].sort((a, b) => a.localeCompare(b)); // Sort by alphabet initially or shuffle
-    // Let's actually shuffle properly
-    const finalPool = currentSA._shuffled || [...originalWords].sort(() => Math.random() - 0.5);
-    currentSA._shuffled = finalPool; // Keep same shuffle for this sentence
-
-    finalPool.forEach((word, idx) => {
-        // Find how many times this word has been used already in saUserWords
-        const usedCount = saUserWords.filter(w => w === word).length;
-        const totalInSentence = originalWords.filter(w => w === word).length;
+    const currentPool = currentSA._shuffled;
+    currentPool.forEach((word, idx) => {
+        const isUsed = saUserWordsIdx.includes(idx);
 
         const btn = document.createElement("div");
-        btn.className = "sa-word-box";
-        if (usedCount >= totalInSentence) btn.classList.add("selected");
+        btn.className = `sa-word-box transition-all ${isUsed ? 'selected opacity-50 pointer-events-none' : 'cursor-pointer hover:bg-slate-100'}`;
         btn.innerText = word;
-        btn.onclick = () => selectArchitectWord(word);
-        pool.appendChild(btn);
+        if (!isUsed) {
+            btn.onclick = () => selectArchitectWord(word, idx);
+        }
+        poolArea.appendChild(btn);
     });
 }
 
-window.selectArchitectWord = function (word) {
+window.selectArchitectWord = function (word, poolIdx) {
     if (saLives <= 0) return;
-    saUserWords.push(word);
+    
+    const correctWords = currentSA._correctWords;
+    const currentIdx = saUserWords.length;
 
-    // Check if correct so far
-    const correctWords = currentSA.en.split(" ");
-    const currentIdx = saUserWords.length - 1;
-    if (saUserWords[currentIdx] !== correctWords[currentIdx]) {
-        // WRONG
+    if (word !== correctWords[currentIdx]) {
         saLives--;
-        saUserWords.pop();
         alert("Yanlış kelime! Tekrar dene.");
         if (saLives <= 0) {
             alert("Canın bitti! Doğru cümle: " + currentSA.en);
             initArchitect();
-            return;
+        } else {
+            renderArchitect();
         }
-    } else {
-        // CORRECT so far
-        if (saUserWords.length === correctWords.length) {
-            saScore += 10;
-            alert("Tebrikler! Cümleyi doğru kurdun.");
-            initArchitect();
-            return;
-        }
+        return;
     }
+
+    saUserWords.push(word);
+    saUserWordsIdx.push(poolIdx);
     renderArchitect();
-};
+
+    if (saUserWords.length === correctWords.length) {
+        saScore += 10;
+        setTimeout(() => {
+            alert("Tebrikler! +10 Puan");
+            initArchitect();
+        }, 200);
+    }
+}
 
 window.undoArchitect = function () {
     if (saUserWords.length > 0) {
         saUserWords.pop();
+        saUserWordsIdx.pop();
         renderArchitect();
     }
 };

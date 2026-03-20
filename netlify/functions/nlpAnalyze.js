@@ -11,55 +11,56 @@ export const handler = async (event) => {
 
     try {
         const { text } = JSON.parse(event.body);
-        const apiKey = process.env.GOOGLE_NLP_API_KEY || process.env.GEMINI_API_KEY;
+        const apiKey = process.env.OPENAI_API_KEY;
 
         if (!text) return { statusCode: 400, headers, body: JSON.stringify({ error: "No text provided" }) };
-        if (!apiKey) return { statusCode: 500, headers, body: JSON.stringify({ error: "API Key not configured" }) };
+        if (!apiKey) return { statusCode: 500, headers, body: JSON.stringify({ error: "OpenAI API Key not configured" }) };
 
-        // Vertex AI / AI Studio API Key endpoint for Gemini 2.5 Flash-Lite
-        const geminiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
+        const systemPrompt = `Analyze the following English sentence for a Turkish YDS/YDT/IELTS student.
+Return ONLY valid JSON in the specified structure. Do not include markdown blocks.
 
-        const prompt = `Analiz etmek için şu İngilizce cümleyi kullan: "${text}"
-
-Her kelime için Google Cloud NLP formatında 'tokens' dizisi oluştur (tag: NOUN/VERB/ADJ/ADV/PRON/DET/ADP/CONJ/PRT/PUNCT; tense: PAST/PRESENT/FUTURE/vb.; lemma: kelime kökü).
-
-SADECE aşağıdaki JSON yapısında dön:
+Required JSON Structure:
 {
   "translation": "Türkçe çeviri",
   "tokens": [
     {
       "text": { "content": "word" },
-      "partOfSpeech": { "tag": "TAG", "tense": "TENSE", "aspect": "ASPECT", "case": "CASE", "mood": "MOOD" },
+      "partOfSpeech": { "tag": "NOUN/VERB/ADJ/ADV/PRON/DET/ADP/CONJ/PRT/PUNCT", "tense": "PAST/PRESENT/FUTURE/etc.", "aspect": "ASPECT", "case": "CASE", "mood": "MOOD" },
       "lemma": "root"
     }
   ],
-  "tense": "Zaman adı (ör: Present Perfect)",
-  "cefr": "Seviye (A1-C2)",
-  "backTranslation": "Cümlenin daha doğal İngilizce versiyonu",
-  "explanation": "Detaylı dilbilgisi açıklaması ve YDS/IELTS ipuçları (Türkçe)",
-  "categories": [{ "name": "Dilbilgisi Konusu" }]
+  "tense": "Detailed tense name in Turkish (e.g., Present Perfect Continuous)",
+  "cefr": "Estimated level (A1-C2)",
+  "backTranslation": "A more natural or alternative English version of the sentence",
+  "explanation": "Detailed grammar explanation and YDS/IELTS strategy tips in Turkish",
+  "categories": [{ "name": "Grammar Topic name in Turkish" }]
 }`;
 
-        const response = await fetch(geminiUrl, {
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: { 
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${apiKey}`
+            },
             body: JSON.stringify({
-                contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: {
-                    responseMimeType: "application/json",
-                    temperature: 0.2
-                }
+                model: "gpt-4o-mini",
+                temperature: 0.3,
+                messages: [
+                    { role: "system", content: systemPrompt },
+                    { role: "user", content: `Analyze this sentence: "${text}"` }
+                ]
             })
         });
 
         const data = await response.json();
         
         if (!response.ok) {
-            throw new Error(data.error?.message || "Gemini API failure");
+            throw new Error(data.error?.message || "OpenAI API failure");
         }
 
-        const rawResult = data.candidates[0].content.parts[0].text;
-        const result = JSON.parse(rawResult);
+        const rawResult = data.choices[0].message.content;
+        const cleanJson = rawResult.replace(/```json/g, "").replace(/```/g, "").trim();
+        const result = JSON.parse(cleanJson);
 
         return {
             statusCode: 200,
