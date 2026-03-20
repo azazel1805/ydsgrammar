@@ -584,6 +584,29 @@ let currentSA = null, saUserWords = [], saScore = 0, saLives = 3;
 let oddData = [];
 let currentOdd = null, oddScore = 0, oddLives = 3;
 
+window.saveGameScoreFirestore = async function(game, scoreVal) {
+    if (!window.currentUser || !window.firebaseExports) {
+        console.warn("User not logged in, score not saved to Firebase.");
+        return;
+    }
+    const { addDoc, collection } = window.firebaseExports;
+    try {
+        await addDoc(collection(window.db, "users", window.currentUser.uid, "gameScores"), {
+            game: game,
+            score: scoreVal,
+            timestamp: new Date()
+        });
+        if (window.userStats) {
+            window.userStats.gameScore += scoreVal;
+            if (document.getElementById("dashGameScores")) {
+                document.getElementById("dashGameScores").innerText = window.userStats.gameScore;
+            }
+        }
+    } catch (e) {
+        console.error("Score save error", e);
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("tab-games");
     if (container) {
@@ -691,10 +714,11 @@ function renderHangman() {
 
     const win = hmWord && hmWord.split("").every(c => hmGuessed.includes(c));
     if (win) { 
-        if (!currentSA?._hmWon) { // Reuse flag concept or add hmWon to state
+        if (!currentSA?._hmWon) { 
             hmScore += 10; 
             document.getElementById("hm-score").innerText = hmScore;
-            hmWord = ""; // Clear to prevent double score if re-rendered
+            window.saveGameScoreFirestore("Adam Asmaca", 10);
+            hmWord = ""; 
         }
         document.getElementById("hm-clue-box").innerHTML = "<div class='text-green-600 font-black text-2xl animate-bounce'>TEBRİKLER! 🎉</div>"; 
     }
@@ -828,6 +852,7 @@ window.checkCrosswordAnswers = function () {
     });
     cwScore += sessionScore;
     document.getElementById("cw-score").innerText = cwScore;
+    if (sessionScore > 0) window.saveGameScoreFirestore("Kare Bulmaca", sessionScore);
 };
 
 window.toggleCrosswordReveal = function () {
@@ -868,6 +893,7 @@ window.checkChain = function () {
     status.innerText = "Sözlük kontrol ediliyor...";
     if (gameLexicon.some(x => x.w === val)) {
         chPrevWord = val; chUsedWords.push(val); chScore++; status.innerText = "Doğru! Sıradaki harf: " + val.charAt(val.length - 1); updateChainUI();
+        window.saveGameScoreFirestore("Kelime Zinciri", 1);
     } else { status.innerText = "Kelime Oxford listesinde yok!"; handleChainMistake(); }
 };
 
@@ -934,6 +960,7 @@ window.checkPassaparola = function () {
     const el = document.getElementById(`ppl-${l}`);
     if (ans === ppQuestions[l].a) {
         ppScore += 10; document.getElementById("pp-score-badge").innerText = `🏆 ${ppScore}`;
+        window.saveGameScoreFirestore("Passaparola", 10);
         if (el) { el.style.background = "#22c55e"; el.style.color = "white"; }
         ppRemaining.splice(ppCurrentIdx, 1);
     } else {
@@ -1061,6 +1088,7 @@ window.selectArchitectWord = function (word, poolIdx) {
 
     if (saUserWords.length === correctWords.length) {
         saScore += 10;
+        window.saveGameScoreFirestore("Cümle Mimarı", 10);
         setTimeout(() => {
             alert("Tebrikler! +10 Puan");
             initArchitect();
@@ -1132,6 +1160,7 @@ window.checkOdd = function(idx) {
 
     if (idx === currentOdd.answer) {
         oddScore += 10;
+        window.saveGameScoreFirestore("Aykırıyı Bul", 10);
         btns[idx].classList.add("correct");
         feedback.innerText = "TEBRİKLER! " + currentOdd.reason;
         feedback.classList.add("text-emerald-600");

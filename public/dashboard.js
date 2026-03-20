@@ -14,6 +14,7 @@ window.userStats = {
     streak: 0,
     totalQuizzes: 0,
     wpCount: 0,
+    gameScore: 0,
     levelIcon: "🌱"
 };
 
@@ -125,9 +126,13 @@ const dashboardHTML = `
         <p class="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Global Sıralama</p>
         <p class="text-3xl font-bold text-red-900">#412</p>
     </div>
-    <div class="bg-blue-50 p-5 rounded-3xl border border-blue-100 col-span-2">
+    <div class="bg-blue-50 p-5 rounded-3xl border border-blue-100">
         <p class="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Kelime Çalışması</p>
         <p id="dashWPCount" class="text-3xl font-bold text-blue-900">0</p>
+    </div>
+    <div class="bg-indigo-50 p-5 rounded-3xl border border-indigo-100">
+        <p class="text-[10px] uppercase font-bold text-indigo-400 tracking-widest mb-1">Oyun Puanları</p>
+        <p id="dashGameScores" class="text-3xl font-bold text-indigo-900">0</p>
     </div>
     <div class="col-span-2 flex items-center justify-between px-2 pt-2">
         <div>
@@ -282,6 +287,17 @@ window.updateGamification = async function () {
             window.userStats.wpCount = wpSnapshot.size;
             if (document.getElementById("dashWPCount")) {
                 document.getElementById("dashWPCount").innerText = window.userStats.wpCount;
+            }
+
+            // Load Game Scores
+            const scoreSnapshot = await window.firebaseExports.getDocs(
+                window.firebaseExports.collection(window.db, "users", window.currentUser.uid, "gameScores")
+            );
+            let totalGameScore = 0;
+            scoreSnapshot.forEach(doc => totalGameScore += (doc.data().score || 0));
+            window.userStats.gameScore = totalGameScore;
+            if (document.getElementById("dashGameScores")) {
+                document.getElementById("dashGameScores").innerText = window.userStats.gameScore;
             }
         }
 

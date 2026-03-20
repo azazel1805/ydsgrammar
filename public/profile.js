@@ -110,6 +110,10 @@ const profileHTML = `
                     <p class="text-[10px] uppercase font-bold text-slate-500 tracking-widest mb-1">Seri</p>
                     <p class="text-2xl font-bold text-slate-800" id="profileStreak">...</p>
                 </div>
+                <div class="flex-1 bg-indigo-50 p-5 rounded-3xl border border-indigo-100">
+                    <p class="text-[10px] uppercase font-bold text-indigo-800 tracking-widest mb-1">Oyun</p>
+                    <p class="text-2xl font-bold text-indigo-900" id="profileGameScore">...</p>
+                </div>
             </div>
         </div>
     </div>
@@ -260,6 +264,7 @@ async function renderProfile() {
     if (window.userStats) {
         if (document.getElementById("profileXP")) document.getElementById("profileXP").innerText = window.userStats.xp + ' XP';
         if (document.getElementById("profileStreak")) document.getElementById("profileStreak").innerText = window.userStats.streak + ' Gün';
+        if (document.getElementById("profileGameScore")) document.getElementById("profileGameScore").innerText = window.userStats.gameScore;
     }
 
     // Load dynamic data
