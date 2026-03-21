@@ -1006,11 +1006,12 @@ function endPassaparola() {
             let statusIcon = q.status === 'wrong' ? '❌' : (q.status === 'passed' ? '⏭️' : '⚪');
             let statusColor = q.status === 'wrong' ? 'text-red-300' : 'text-slate-300';
             answersList += `
-                <div class="flex items-center justify-between py-2 border-b border-white/5 text-sm">
+                <div class="py-2 border-b border-white/5 space-y-1">
                     <div class="flex items-center gap-3">
-                        <span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center font-bold text-[10px]">${l}</span>
-                        <span class="${statusColor}">${statusIcon} ${q.a}</span>
+                        <span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center font-bold text-[10px] shrink-0">${l}</span>
+                        <span class="${statusColor} font-bold text-sm">${statusIcon} ${q.a}</span>
                     </div>
+                    <div class="text-[11px] text-indigo-100/60 leading-tight pl-9 italic">${q.q}</div>
                 </div>`;
         }
     });
