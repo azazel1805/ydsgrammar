@@ -948,8 +948,8 @@ async function showPassaparolaQuestion() {
         try {
             const r = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`); const d = await r.json();
             const def = Array.isArray(d) ? d[0].meanings[0].definitions[0].definition : "Tanım bulunamadı.";
-            ppQuestions[l] = { q: def, a: word };
-        } catch (e) { ppQuestions[l] = { q: "Tanım hatası: " + word, a: word }; }
+            ppQuestions[l] = { q: def, a: word, status: 'unanswered' };
+        } catch (e) { ppQuestions[l] = { q: "Tanım hatası: " + word, a: word, status: 'unanswered' }; }
     }
     document.getElementById('pp-question').innerText = ppQuestions[l].q;
     document.getElementById("pp-input").value = ""; document.getElementById("pp-input").focus();
@@ -962,9 +962,11 @@ window.checkPassaparola = function () {
         ppScore += 10; document.getElementById("pp-score-badge").innerText = `🏆 ${ppScore}`;
         window.saveGameScoreFirestore("Passaparola", 10);
         if (el) { el.style.background = "#22c55e"; el.style.color = "white"; }
+        ppQuestions[l].status = 'correct';
         ppRemaining.splice(ppCurrentIdx, 1);
     } else {
         if (el) { el.style.background = "#ef4444"; el.style.color = "white"; }
+        ppQuestions[l].status = 'wrong';
         ppRemaining.splice(ppCurrentIdx, 1);
     }
     ppCurrentIdx = ppCurrentIdx % Math.max(1, ppRemaining.length); showPassaparolaQuestion();
@@ -973,6 +975,7 @@ window.checkPassaparola = function () {
 window.passPassaparola = function () {
     const l = ppRemaining[ppCurrentIdx]; const el = document.getElementById(`ppl-${l}`);
     if (el) { el.style.background = "#94a3b8"; el.style.color = "white"; }
+    if (ppQuestions[l]) ppQuestions[l].status = 'passed';
     ppPassed.push(l); ppRemaining.splice(ppCurrentIdx, 1);
     ppCurrentIdx = ppCurrentIdx % Math.max(1, ppRemaining.length); showPassaparolaQuestion();
 };
@@ -987,8 +990,48 @@ window.pausePassaparola = function () {
 
 function endPassaparola() {
     clearInterval(ppTimer);
-    document.getElementById("pp-question").innerHTML = `<div class="text-slate-900 text-2xl font-black">OTURUM SONLANDI</div>Puan: ${ppScore}`;
+    
+    let summaryHtml = `<div class="space-y-4">
+        <div class="text-white text-2xl font-black uppercase tracking-tighter">Oturum Sonlandı</div>
+        <div class="bg-white/10 p-4 rounded-2xl border border-white/10">
+            <div class="text-[10px] text-indigo-200 font-bold uppercase tracking-widest mb-1">Toplam Puan</div>
+            <div class="text-3xl font-black text-white">${ppScore}</div>
+        </div>`;
+
+    // Answers List
+    let answersList = "";
+    Object.keys(ppQuestions).forEach(l => {
+        const q = ppQuestions[l];
+        if (q.status !== 'correct') {
+            let statusIcon = q.status === 'wrong' ? '❌' : (q.status === 'passed' ? '⏭️' : '⚪');
+            let statusColor = q.status === 'wrong' ? 'text-red-300' : 'text-slate-300';
+            answersList += `
+                <div class="flex items-center justify-between py-2 border-b border-white/5 text-sm">
+                    <div class="flex items-center gap-3">
+                        <span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center font-bold text-[10px]">${l}</span>
+                        <span class="${statusColor}">${statusIcon} ${q.a}</span>
+                    </div>
+                </div>`;
+        }
+    });
+
+    if (answersList) {
+        summaryHtml += `
+            <div class="space-y-2">
+                <div class="text-[10px] text-indigo-200 font-bold uppercase tracking-widest opacity-60">Yanlış & Boş Geçilenler</div>
+                <div class="max-h-48 overflow-y-auto pr-2 custom-scrollbar bg-black/20 rounded-2xl border border-white/5 p-3">
+                    ${answersList}
+                </div>
+            </div>`;
+    }
+
+    summaryHtml += `
+        <button onclick="initPassaparola()" class="w-full bg-white text-indigo-600 py-3 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-indigo-50 transition-colors mt-2">TEKRAR OYNA</button>
+    </div>`;
+
+    document.getElementById("pp-question").innerHTML = summaryHtml;
     document.getElementById("pp-input").disabled = true;
+    document.getElementById("pp-letter-label").innerText = "OYUN BİTTİ";
 }
 
 // --- SENTENCE ARCHITECT LOGIC ---
