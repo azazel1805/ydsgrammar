@@ -225,11 +225,31 @@ async function fetchFullArticle(title) {
         if (!text) return;
         fullArticleText = text;
         truncated = false;
-        if (text.length > MAX_CHAR) {
-            text = text.substring(0, MAX_CHAR);
-            let lastStop = Math.max(text.lastIndexOf("."), text.lastIndexOf("?"), text.lastIndexOf("!"));
-            if (lastStop > 100) text = text.substring(0, lastStop + 1);
-            truncated = true;
+        const words = text.trim().split(/\s+/);
+        if (words.length > 1000) {
+            let limit = 1000;
+            let charIndex = 0;
+            let count = 0;
+            const spaceRegex = /\s+/g;
+            let match;
+            
+            while ((match = spaceRegex.exec(text)) !== null) {
+                count++;
+                if (count >= limit) {
+                    charIndex = match.index;
+                    break;
+                }
+            }
+            
+            if (charIndex > 0) {
+                let nextSentenceEnd = text.substring(charIndex).search(/[.!?](\s|$)/);
+                if (nextSentenceEnd !== -1) {
+                    text = text.substring(0, charIndex + nextSentenceEnd + 1);
+                } else {
+                    text = text.substring(0, charIndex);
+                }
+                truncated = true;
+            }
         }
         analyzeText(text);
     } catch (e) {
@@ -285,7 +305,7 @@ function analyzeText(text) {
     if (container) container.classList.remove("hidden");
 
     if (textContainer) {
-        textContainer.innerHTML = processedHtml + (truncated ? `<div class="mt-12 flex justify-center"><button onclick="showFullArticle()" class="bg-black px-10 py-4 rounded-2xl font-black text-white shadow-2xl hover:bg-slate-800 transition-all uppercase tracking-widest text-xs">Makaleyi Tamamla</button></div>` : "");
+        textContainer.innerHTML = processedHtml + (truncated ? `<div class="mt-12 flex justify-center"><button onclick="showFullArticle()" class="bg-slate-900 px-10 py-5 rounded-2xl font-black text-white shadow-2xl hover:bg-indigo-600 hover:scale-105 active:scale-95 transition-all uppercase tracking-widest text-[11px]">DEVAMINI OKU</button></div>` : "");
     }
 
     if (statsContainer) {
@@ -348,7 +368,7 @@ async function showWordDetails(word) {
                 wordInfo = {
                     word: first.word,
                     ipa: first.phonetic || (first.phonetics?.find(p => p.text)?.text),
-                    definitions: first.meanings.map(m => m.definitions[0].definition),
+                    definitions: first.meanings.flatMap(m => m.definitions.map(d => d.definition)).filter(d => d),
                     synonyms: first.meanings[0].synonyms || [],
                     antonyms: first.meanings[0].antonyms || []
                 };
@@ -363,8 +383,12 @@ async function showWordDetails(word) {
     if (wordInfo) {
         modalIpa.innerText = wordInfo.ipa ? `// ${wordInfo.ipa} //` : "";
 
-        // Combine definitions with TR meaning
-        const defs = wordInfo.definitions || (wordInfo.examples ? [wordInfo.examples[0]] : ["Tanım bulunamadı."]);
+        // Combine and filter definitions with TR meaning
+        let defs = (wordInfo.definitions || []).filter(d => d && d !== "undefined");
+        if (defs.length === 0 && wordInfo.examples) {
+            defs = (wordInfo.examples || []).filter(e => e && e !== "undefined");
+        }
+        if (defs.length === 0) defs = ["Tanım bulunamadı."];
 
         defs.slice(0, 2).forEach((def, i) => {
             html += `
