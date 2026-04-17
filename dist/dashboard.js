@@ -174,6 +174,16 @@ const dashboardHTML = `
   </div>
  </div>
 
+ <!-- GAME PROMOTION -->
+ <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm flex flex-col items-center">
+  <h3 class="font-bold text-xl mb-6 text-slate-900" style="font-family: 'Playfair Display', serif;">
+  🎮 Passaparola Master Challenge
+  </h3>
+  <div class="w-full flex justify-center overflow-hidden rounded-2xl">
+    <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/4484944?linkback=true&amp;bg_color=ffffff&amp;link_color=000000&amp;border_color=000000" width="552" height="167"><a href="https://onurtosuner.itch.io/passaparola-master-english-vocabulary-challenge">Passaparola Master: English Vocabulary Challenge by onurtosuner</a></iframe>
+  </div>
+ </div>
+
  <!-- NOTES -->
  <div class="bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm">
   <h3 class="font-bold text-xl mb-6 text-slate-900" style="font-family: 'Playfair Display', serif;">
@@ -204,6 +214,7 @@ const dashboardHTML = `
 .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
 .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
 .animate-in { animation: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.itch-embed { max-width: 100%; height: 167px; }
 @keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 `;
