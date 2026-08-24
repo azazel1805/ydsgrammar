@@ -1,9 +1,17 @@
 /* =========================================
- YDS Vocabulary Engine v9.0
+ YDS Vocabulary Engine v9.1
  CEFR + Frequency Heat
  Multi TR per Definition
  3 Unsplash Images
  Firestore Notebook
+
+ v9.1 changes:
+ - Dictionary definitions are fetched through the
+   same-origin Netlify proxy (/.netlify/functions/dictionaryLookup)
+   to avoid intermittent CORS failures from api.dictionaryapi.dev.
+ - Extension requests (Datamuse/Unsplash) are individually guarded,
+   so a single failing service no longer aborts the whole result.
+ - "Not found" and "connection problem" now show distinct messages.
  ========================================= */
 
 const UNSPLASH_ACCESS_KEY = "0uDnN1Zl1YFXRG3vHAKgEZoTakXkCg65RV3LtgXiNcM";
@@ -80,6 +88,39 @@ const dictionaryHTML = `
 `;
 
 /* =========================================
+ HELPERS
+ ========================================= */
+
+// Escape a value so it can be safely placed inside a
+// single-quoted JS string within an inline onclick attribute.
+function escAttr(value) {
+    return String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+}
+
+// Escape a value for safe insertion as HTML text content.
+function escHtml(value) {
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+}
+
+// Fetch JSON from an optional service. Any failure (network,
+// CORS, bad JSON) resolves to an empty array so one flaky
+// third-party service can never abort the whole dictionary result.
+async function fetchJsonOrEmpty(url) {
+    try {
+        const res = await fetch(url);
+        if (!res.ok) return [];
+        return await res.json();
+    } catch (error) {
+        console.warn("Optional fetch failed:", url, error);
+        return [];
+    }
+}
+
+/* =========================================
  CEFR
  ========================================= */
 
@@ -106,6 +147,8 @@ async function fetchUnsplashImages(word) {
                 }
             }
         );
+
+        if (!res.ok) return [];
 
         const data = await res.json();
 
@@ -143,6 +186,41 @@ async function translateText(text) {
 }
 
 /* =========================================
+ RESULT MESSAGES (not-found / connection problem)
+ ========================================= */
+
+function showDictMessage(kind) {
+    const output = document.getElementById("dictOutput");
+    if (!output) return;
+
+    if (kind === "notfound") {
+        output.innerHTML = `
+          <div class="bg-white rounded-3xl p-12 text-center border ring-4 ring-slate-50">
+             <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-exclamation-triangle"></i>
+             </div>
+             <p class="font-bold text-slate-800 mb-1">Kelime bulunamadı</p>
+             <p class="text-sm text-slate-400">Yazımı kontrol edip tekrar deneyin.</p>
+          </div>
+        `;
+    } else {
+        output.innerHTML = `
+          <div class="bg-white rounded-3xl p-12 text-center border ring-4 ring-slate-50">
+             <div class="w-16 h-16 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-wifi"></i>
+             </div>
+             <p class="font-bold text-slate-800 mb-1">Bağlantı sorunu</p>
+             <p class="text-sm text-slate-400 mb-6">Sözlük servisine şu an ulaşılamadı. Lütfen tekrar deneyin.</p>
+             <button onclick="searchDictionaryWord()"
+                class="px-8 py-3 bg-slate-900 text-white rounded-xl font-black text-xs uppercase tracking-widest hover:bg-indigo-600 transition-all">
+                Tekrar Dene
+             </button>
+          </div>
+        `;
+    }
+}
+
+/* =========================================
  MAIN SEARCH
  ========================================= */
 
@@ -168,17 +246,56 @@ async function searchDictionaryWord(wordParam = null) {
 
     try {
 
-        const dictRes = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-        if (!dictRes.ok) throw new Error();
-        const dictData = await dictRes.json();
+        // 1) Definitions via the same-origin Netlify proxy.
+        //    (api.dictionaryapi.dev intermittently drops CORS headers,
+        //    which blocked direct browser requests.)
+        let dictRes = null;
+        try {
+            dictRes = await fetch(`/.netlify/functions/dictionaryLookup?word=${encodeURIComponent(word)}`);
+        } catch (error) {
+            console.warn("Dictionary proxy fetch failed:", error);
+        }
 
-        // Parallel fetch for extensions
+        // Fallback for local development (no Netlify functions available):
+        // try the upstream API directly.
+        if (!dictRes || dictRes.status >= 500) {
+            try {
+                dictRes = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+            } catch (error) {
+                console.warn("Direct dictionary fetch failed:", error);
+                dictRes = null;
+            }
+        }
+
+        if (!dictRes) {
+            showDictMessage("service");
+            return;
+        }
+
+        if (dictRes.status === 404) {
+            showDictMessage("notfound");
+            return;
+        }
+
+        if (!dictRes.ok) {
+            showDictMessage("service");
+            return;
+        }
+
+        const dictData = await dictRes.json();
+        if (!Array.isArray(dictData) || dictData.length === 0) {
+            showDictMessage("notfound");
+            return;
+        }
+
+        // 2) Parallel fetch for extensions — each call is guarded so a
+        //    single failing service can't take down the whole result.
         const [synData, antData, freqData, familyData, images] = await Promise.all([
-          fetch(`https://api.datamuse.com/words?rel_syn=${word}`).then(r => r.json()),
-          fetch(`https://api.datamuse.com/words?rel_ant=${word}`).then(r => r.json()),
-          fetch(`https://api.datamuse.com/words?sp=${word}&md=f`).then(r => r.json()),
-          fetch(`https://api.datamuse.com/words?ml=${word}&max=10`).then(r => r.json()),
-          fetchUnsplashImages(word)
+            fetchJsonOrEmpty(`https://api.datamuse.com/words?rel_syn=${encodeURIComponent(word)}`),
+            fetchJsonOrEmpty(`https://api.datamuse.com/words?rel_ant=${encodeURIComponent(word)}`),
+            fetchJsonOrEmpty(`https://api.datamuse.com/words?sp=${encodeURIComponent(word)}&md=f`),
+            fetchJsonOrEmpty(`https://api.datamuse.com/words?ml=${encodeURIComponent(word)}&max=10`),
+            fetchUnsplashImages(word)
         ]);
 
         let score = 0;
@@ -197,17 +314,17 @@ async function searchDictionaryWord(wordParam = null) {
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-10 border-b border-slate-50">
                <div>
                   <div class="flex items-center gap-4 mb-2">
-                    <h3 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter">${entry.word}</h3>
+                    <h3 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter">${escHtml(entry.word)}</h3>
                     <div class="flex gap-2">
-                       <button onclick="speakWord('${entry.word}')" class="w-10 h-10 rounded-xl bg-slate-50 hover:bg-indigo-50 text-slate-400 hover:text-indigo-600 transition-all flex items-center justify-center shadow-sm">
+                       <button onclick="speakWord('${escAttr(entry.word)}')" class="w-10 h-10 rounded-xl bg-slate-50 hover:bg-indigo-50 text-slate-400 hover:text-indigo-600 transition-all flex items-center justify-center shadow-sm">
                          <i class="fas fa-volume-up"></i>
                        </button>
-                       <button onclick="saveWord('${entry.word}')" class="w-10 h-10 rounded-xl bg-slate-50 hover:bg-amber-50 text-slate-400 hover:text-amber-500 transition-all flex items-center justify-center shadow-sm">
+                       <button onclick="saveWord('${escAttr(entry.word)}')" class="w-10 h-10 rounded-xl bg-slate-50 hover:bg-amber-50 text-slate-400 hover:text-amber-500 transition-all flex items-center justify-center shadow-sm">
                          <i class="fas fa-star"></i>
                        </button>
                     </div>
                   </div>
-                  <p class="text-indigo-500 font-black text-lg font-mono opacity-60 tracking-widest">${entry.phonetic || '// ... //'}</p>
+                  <p class="text-indigo-500 font-black text-lg font-mono opacity-60 tracking-widest">${escHtml(entry.phonetic || '// ... //')}</p>
                </div>
                
                <div class="bg-slate-50 p-4 rounded-3xl border border-slate-100 min-w-[200px]">
@@ -228,20 +345,20 @@ async function searchDictionaryWord(wordParam = null) {
                 <h4 class="text-xs font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2">
                    <i class="fas fa-align-left text-indigo-500"></i> Meanings & Translations
                 </h4>
-                ${entry.meanings.map(m => `
+                ${entry.meanings.map((m, mIdx) => `
                   <div class="group">
                     <div class="inline-block px-3 py-1 bg-indigo-50 text-indigo-600 rounded-lg text-[9px] font-black uppercase tracking-widest mb-4 ring-1 ring-indigo-100">
-                      ${m.partOfSpeech}
+                      ${escHtml(m.partOfSpeech)}
                     </div>
                     <div class="space-y-6">
-                      ${m.definitions.slice(0, 2).map((d, idx) => `
+                      ${m.definitions.slice(0, 2).map((d, dIdx) => `
                         <div class="relative pl-6 border-l-2 border-slate-100 group-hover:border-indigo-200 transition-colors">
-                           <p class="text-slate-800 font-medium leading-relaxed mb-2">${d.definition}</p>
-                           <div id="tr-${m.partOfSpeech}-${idx}" class="py-2.5 px-4 bg-emerald-50 rounded-2xl border border-emerald-100 text-emerald-800 font-bold text-sm italic shadow-sm shadow-emerald-100/50 animate-in slide-in-from-left-2 duration-500">
+                           <p class="text-slate-800 font-medium leading-relaxed mb-2">${escHtml(d.definition)}</p>
+                           <div id="tr-${mIdx}-${dIdx}" class="py-2.5 px-4 bg-emerald-50 rounded-2xl border border-emerald-100 text-emerald-800 font-bold text-sm italic shadow-sm shadow-emerald-100/50 animate-in slide-in-from-left-2 duration-500">
                               <i class="fas fa-language mr-2 opacity-40"></i> Yükleniyor...
                            </div>
                            ${d.example ? `
-                             <p class="mt-3 text-xs text-slate-400 italic bg-slate-50 p-3 rounded-xl border border-dashed border-slate-200">"${d.example}"</p>
+                             <p class="mt-3 text-xs text-slate-400 italic bg-slate-50 p-3 rounded-xl border border-dashed border-slate-200">"${escHtml(d.example)}"</p>
                            ` : ''}
                         </div>
                       `).join('')}
@@ -257,9 +374,9 @@ async function searchDictionaryWord(wordParam = null) {
                 ${images.length ? `
                   <div class="grid grid-cols-2 gap-3">
                     ${images.map((img, i) => `
-                      <div onclick="openImagePopup('${img.full}','${img.author}','${img.authorLink}')"
+                      <div onclick="openImagePopup('${escAttr(img.full)}','${escAttr(img.author)}','${escAttr(img.authorLink)}')"
                         class="aspect-video bg-slate-100 rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-md">
-                        <img src="${img.thumb}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="${escAttr(img.thumb)}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       </div>
                     `).join('')}
@@ -272,7 +389,7 @@ async function searchDictionaryWord(wordParam = null) {
                     <div>
                       <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Synonyms</p>
                       <div class="flex flex-wrap gap-2">
-                        ${synData.slice(0, 6).map(s => `<span onclick="searchDictionaryWord('${s.word}')" class="tag-pill bg-blue-50 text-blue-700 ring-1 ring-blue-100 hover:bg-blue-600 hover:text-white">${s.word}</span>`).join('')}
+                        ${synData.slice(0, 6).map(s => `<span onclick="searchDictionaryWord('${escAttr(s.word)}')" class="tag-pill bg-blue-50 text-blue-700 ring-1 ring-blue-100 hover:bg-blue-600 hover:text-white">${escHtml(s.word)}</span>`).join('')}
                       </div>
                     </div>
                   ` : ''}
@@ -281,7 +398,7 @@ async function searchDictionaryWord(wordParam = null) {
                     <div>
                       <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Antonyms</p>
                       <div class="flex flex-wrap gap-2">
-                        ${antData.slice(0, 6).map(s => `<span onclick="searchDictionaryWord('${s.word}')" class="tag-pill bg-rose-50 text-rose-700 ring-1 ring-rose-100 hover:bg-rose-600 hover:text-white">${s.word}</span>`).join('')}
+                        ${antData.slice(0, 6).map(s => `<span onclick="searchDictionaryWord('${escAttr(s.word)}')" class="tag-pill bg-rose-50 text-rose-700 ring-1 ring-rose-100 hover:bg-rose-600 hover:text-white">${escHtml(s.word)}</span>`).join('')}
                       </div>
                     </div>
                   ` : ''}
@@ -290,7 +407,7 @@ async function searchDictionaryWord(wordParam = null) {
                     <div>
                       <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Related / Family</p>
                       <div class="flex flex-wrap gap-2">
-                        ${familyData.slice(0, 6).map(s => `<span onclick="searchDictionaryWord('${s.word}')" class="tag-pill bg-indigo-50 text-indigo-700 ring-1 ring-indigo-100 hover:bg-indigo-600 hover:text-white">${s.word}</span>`).join('')}
+                        ${familyData.slice(0, 6).map(s => `<span onclick="searchDictionaryWord('${escAttr(s.word)}')" class="tag-pill bg-indigo-50 text-indigo-700 ring-1 ring-indigo-100 hover:bg-indigo-600 hover:text-white">${escHtml(s.word)}</span>`).join('')}
                       </div>
                     </div>
                   ` : ''}
@@ -306,24 +423,16 @@ async function searchDictionaryWord(wordParam = null) {
         entry.meanings.forEach((m, mIdx) => {
           m.definitions.slice(0, 2).forEach(async (d, dIdx) => {
             const tr = await translateText(d.definition);
-            const el = document.getElementById(`tr-${m.partOfSpeech}-${dIdx}`);
+            const el = document.getElementById(`tr-${mIdx}-${dIdx}`);
             if (el) {
-              el.innerHTML = `<i class="fas fa-language mr-2 opacity-40"></i> ${tr || 'Çeviri bulunamadı'}`;
+              el.innerHTML = `<i class="fas fa-language mr-2 opacity-40"></i> ${escHtml(tr) || 'Çeviri bulunamadı'}`;
             }
           });
         });
 
     } catch (e) {
         console.error(e);
-        output.innerHTML = `
-          <div class="bg-white rounded-3xl p-12 text-center border ring-4 ring-slate-50">
-             <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-exclamation-triangle"></i>
-             </div>
-             <p class="font-bold text-slate-800 mb-1">Kelime bulunamadı</p>
-             <p class="text-sm text-slate-400">Yazımı kontrol edip tekrar deneyin.</p>
-          </div>
-        `;
+        showDictMessage("service");
     }
 }
 
